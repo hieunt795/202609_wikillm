@@ -1,0 +1,11 @@
+# Lớp nguồn thô: input cục bộ, không phát hành lại.
+# Cách lấy lại và checksum để đối chiếu: 03_state/_sources_manifest.md
+/01_sources/
+
+# Cấu hình máy cục bộ (chứa đường dẫn người dùng)
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
