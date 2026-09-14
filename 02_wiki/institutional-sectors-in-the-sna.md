@@ -4,10 +4,10 @@ type: concept
 tags: [national-accounts, sna, sectoral-analysis]
 sources: [imf_macro_accounting]
 status: draft
-last_updated: 2026-09-12
+last_updated: 2026-09-14
 ---
 
-SNA chia toàn bộ nền kinh tế thành năm khu vực thể chế loại trừ lẫn nhau: doanh nghiệp phi tài chính, doanh nghiệp tài chính, đơn vị chính phủ, tổ chức phi lợi nhuận phục vụ hộ gia đình, và hộ gia đình.
+SNA chia toàn bộ nền kinh tế thành năm khu vực thể chế loại trừ lẫn nhau: doanh nghiệp phi tài chính, doanh nghiệp tài chính, đơn vị chính phủ, tổ chức phi lợi nhuận phục vụ hộ gia đình, và hộ gia đình (imf_macro_accounting, Ch.2, The Main Economic Sectors, d.636–649). Riêng khu vực chính phủ có một khung kế toán chi tiết của riêng nó, và ranh giới của nó được định nghĩa chặt hơn ở [[general-government]].
 
 Năm khu vực này hợp lại thành tổng nền kinh tế, nhưng chưa đủ để hệ thống cân. Phải thêm khu vực phần còn lại của thế giới, gom mọi giao dịch giữa đơn vị cư trú và không cư trú, thì những luồng chỉ có một phía là đơn vị cư trú mới có đối ứng. Đây là lý do SNA không đòi lập tài khoản cho hoạt động kinh tế diễn ra ở nước ngoài, nhưng bắt buộc ghi mọi giao dịch giữa cư trú và không cư trú.
 

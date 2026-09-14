@@ -4,10 +4,10 @@ type: concept
 tags: [wages, stabilization, transition-economies]
 sources: [imf_macro_accounting]
 status: draft
-last_updated: 2026-09-12
+last_updated: 2026-09-14
 ---
 
-Chính sách thu nhập là can thiệp trực tiếp của nhà nước vào diễn biến lương và giá, dùng như một cấu phần của chương trình ổn định hóa bên cạnh chính sách tài khóa và tiền tệ.
+Chính sách thu nhập là can thiệp trực tiếp của nhà nước vào diễn biến lương và giá, dùng như một cấu phần của chương trình ổn định hóa bên cạnh chính sách tài khóa và tiền tệ (imf_macro_accounting, Ch.2, Incomes Policy, d.1148–1164). Khi ba cấu phần này đi cùng một neo tỷ giá thì cấu hình đó có tên riêng: [[heterodox-stabilization]].
 
 Lý do dùng nó ở các nền kinh tế chuyển đổi mạnh hơn ở kinh tế thị trường, và nằm ở ba chỗ. Thứ nhất là cắt [[inertial-inflation-persists-because-it-is-written-into-contracts|quán tính lạm phát]] và chặn lạm phát chi phí đẩy hình thành. Thứ hai là ngăn doanh nghiệp bị rút vốn dần, bằng cách giảm bất định về sở hữu và quản trị. Thứ ba là củng cố độ tin cậy của chính phủ và giữ được neo tỷ giá.
 
