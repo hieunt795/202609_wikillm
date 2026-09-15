@@ -93,3 +93,8 @@
 - 6 trang mới: tăng thu chắp vá, tax-elasticity, độ nổi, độ trễ thu khi lạm phát cao, nỗ lực thuế, tanzi-diagnostic-test
 - Nối sang cụm A–B (thu, thâm hụt, tài trợ nước ngoài, cán cân thường xuyên)
 - Còn lại: Ch.3 cụm E
+
+## [2026-09-15:20-36-05] ingest | imf_macro_accounting Ch.3 cụm E — phân tích chi; Ch.3 phần lý luận xong
+- 12 trang mới (khung chi, 3 vấn đề chi, vai trò nhà nước, lương, bảo dưỡng, tiêu chí trợ cấp, đầu tư công, lưới an sinh, bán tài khoá, phong toả chi, tác động vĩ mô, vòng chi–lạm phát–thu); nâng stub subsidies; 1 stub public-goods
+- Ch.3 tổng cộng 51 trang mới + 5 stub; 39/201 cạnh đi ra ngoài khối Ch.3 (bản snapshot: 29/386)
+- Còn lại: Ch.1, Ch.4, Ch.5, Ch.6; Modern Money Mechanics

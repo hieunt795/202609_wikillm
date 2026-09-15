@@ -11,4 +11,4 @@ Khi lạm phát cao, khoảng trễ quá dài giữa lúc xác định nghĩa v�
 
 Vì vậy thu thuế kịp thời là một trong những điều kiện để hệ thống thuế co giãn theo GDP, cạnh việc đánh vào khu vực tăng trưởng, thuế suất luỹ tiến và thuế theo tỷ lệ giá trị — xem [[tax-elasticity]] (imf_macro_accounting, Ch.3, d.2337, d.2360). Cũng vì thế, độ trễ thu là một trong tám kiểm tra của [[tanzi-diagnostic-test]]: người nộp thuế có trả mà không trễ nhiều, sát thời điểm lẽ ra phải trả hay không (imf_macro_accounting, Ch.3, Box 3.5, d.2399).
 
-Đây là một kênh mà [[inflation|lạm phát]] tác động trực tiếp lên số thu tài khoá (imf_macro_accounting, Ch.3, d.2360).
+Đây là một kênh mà [[inflation|lạm phát]] tác động trực tiếp lên số thu tài khoá (imf_macro_accounting, Ch.3, d.2360). Nguồn nêu nó thành vòng luẩn quẩn ở nền kinh tế chuyển đổi: chi thêm kích lạm phát cao hơn, người nộp thuế trì hoãn nộp, và giá trị thực của số thu giảm — xem [[in-transition-economies-extra-spending-can-worsen-financing-through-inflation]] (imf_macro_accounting, Ch.3, The Macroeconomic Implications of Public Expenditure, d.2523).

@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.3 cụm E (tài khoá: phân tích chi); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.2 toàn bộ 7 cụm; Ch.3 cụm A–D. Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.2 toàn bộ 7 cụm; Ch.3 phần lý luận (cụm A–E). Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (83 KB / 721 dòng) | **Chưa ingest** | Toàn bộ — dưới ngưỡng nguồn dài nên ingest trọn 1 lượt, không cần file trạng thái (§10) | — |
 
 ## Trang wiki theo chủ đề
@@ -133,6 +133,21 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[tax-effort-compares-revenue-with-taxable-capacity-not-gdp]] — nỗ lực thuế và năng lực thuế
 - [[tanzi-diagnostic-test]] — tám kiểm tra năng suất thu
 
+**Phân tích chi**
+- [[public-expenditure-analysis-rests-on-five-elements]] — khung đánh giá mức và cơ cấu chi
+- [[public-spending-poses-three-problems-level-efficiency-and-mix]] — mức, hiệu quả, cơ cấu; vĩ mô và cấu trúc
+- [[low-public-spending-ratios-can-reflect-weak-financing-capacity-not-a-small-state]] — vai trò nhà nước
+- [[civil-service-pay-policy-shapes-government-spending-efficiency]] — lương công vụ
+- [[underspending-on-operations-and-maintenance-erodes-existing-capital]] — vận hành và bảo dưỡng
+- [[subsidies]] — định nghĩa, bảy dạng, công khai và ngầm
+- [[effective-subsidies-are-targeted-temporary-transparent-and-budget-financed]] — năm tiêu chí đánh giá trợ cấp
+- [[public-investment-should-complement-rather-than-compete-with-markets]] — chi đầu tư
+- [[social-safety-nets-trade-targeting-against-work-incentives]] — lưới an sinh
+- [[quasi-fiscal-operations]] — hoạt động bán tài khoá của ngân hàng trung ương và ngân hàng công
+- [[sequestering-expenditures-is-an-emergency-cut-that-distorts-allocation]] — phong toả chi
+- [[public-expenditure-raises-supply-in-the-long-run-but-crowds-out-private-spending]] — tác động vĩ mô
+- [[in-transition-economies-extra-spending-can-worsen-financing-through-inflation]] — vòng chi – lạm phát – thu
+
 **Stub — khái niệm đã có tên, chờ nội dung**
 - [[central-bank]] — cơ quan phát hành tiền cơ sở
 - [[cpi]] — chỉ số giá tiêu dùng, dạng Laspeyres
@@ -140,6 +155,6 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[exchange-rate]] — giá đồng tiền, neo danh nghĩa trong ổn định hoá
 - [[hyperinflation]] — lạm phát tới mức tiền mất chức năng cất trữ
 - [[indexation]] — tự điều chỉnh khoản danh nghĩa theo chỉ số giá
+- [[public-goods]] — tiêu dùng tập thể, thị trường không cung ứng
 - [[real-interest-rate]] — lãi suất danh nghĩa trừ lạm phát
 - [[reserve-money]] — tiền cơ sở, nền của khối tiền
-- [[subsidies]] — chuyển nhượng cho người sản xuất, lệch các mức giá SNA
