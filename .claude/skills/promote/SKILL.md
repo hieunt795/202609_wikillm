@@ -19,7 +19,7 @@ python .claude/hooks/validate_wiki_page.py --all
 
 Với từng trang trong danh sách, xác nhận đồng thời: `status: draft`; hook không báo gì cho trang; outlink ≥ 1; backlink ≥ 2 (đếm theo `lint/SKILL.md`); không còn `⚠️ Conflict`. Trang nào trượt → bỏ khỏi lượt này và báo lại lý do, không sửa trang để nó qua.
 
-**2. Ghi.** Chỉ đổi dòng `status: draft` → `status: stable` trong frontmatter. **Không** đổi `last_updated` (nội dung không đổi — §7.5), **không** đặt `reviewed:` (chỉ người dùng đặt — §9), không chạm thân bài.
+**2. Ghi.** Chỉ đổi dòng `status: draft` → `status: stable` trong frontmatter. **Không** đổi `last_updated` (nội dung không đổi — §7.5), **không** đặt `reviewed:` (việc của `/review` hoặc người dùng — §9), không chạm thân bài.
 
 **3. Chạy lại `--all`**, phải sạch.
 

@@ -64,3 +64,9 @@
 
 ## [2026-09-15] Không tạo stub `fiscal-deficit`
 - **Lý do:** audit đề xuất dựa trên đếm chuỗi "thâm hụt" (5 trang), nhưng 4/5 trang nói thâm hụt vãng lai; thâm hụt ngân sách chỉ xuất hiện ở 1 trang — dưới ngưỡng ≥ 3 trang. Tạo lại khi ingest Ch.3.
+
+## [2026-09-15] Cho phép model tự review trang
+- **Quyết định:** agent được đặt `reviewed:` qua `/review`, luôn kèm `reviewed_by: model`; người dùng đặt `reviewed_by: user`. Agent không ghi đè `user`.
+- **Lý do:** người dùng chọn giao việc review cho model. Tách `reviewed_by` để trường vẫn phân biệt được *model đã đối chiếu nguồn* với *người đã đọc* — lý do gốc của quyết định 2026-09-14 (`reviewed:` chỉ người đặt).
+- **Thay cho:** mục [2026-09-14] *`reviewed:` là trường tuỳ chọn, không có tiêu chí lint* — phần "chỉ người dùng đặt" bị thay; phần "không có tiêu chí lint" giữ nguyên.
+- **Giới hạn đã biết:** model soát trang do model viết, không độc lập hoàn toàn; bù bằng yêu cầu đọc lại đúng đoạn nguồn và gắn chú thích §7.5 cho từng claim đã đối chiếu.

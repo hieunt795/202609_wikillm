@@ -11,7 +11,7 @@ Wiki tri thức 3 lớp theo mô hình Karpathy, kèm 1 vùng trạng thái ph�
 
 Điều hướng nội dung: `02_wiki/index.md` (mục `## Sources` cho trạng thái ingest từng nguồn). Nhật ký thao tác: `log.md` (định dạng §12). Lý do các quyết định thiết kế: `decisions.md`. Ý tưởng dang dở: `_inbox.md` (§11). Tiến độ ingest theo chunk của nguồn dài: `03_state/<nguồn>.md` (§10).
 
-## Bốn operation
+## Năm operation
 
 Quy trình thực thi nằm trong skill, nạp theo nhu cầu:
 
@@ -21,6 +21,7 @@ Quy trình thực thi nằm trong skill, nạp theo nhu cầu:
 | Hỏi đáp trên wiki | `/query` | **Không** — tiết kiệm token |
 | Kiểm tra sức khoẻ wiki | `/lint` | Có (§4–§9, §11, §12) |
 | Nâng `draft` → `stable` sau khi người dùng duyệt | `/promote` | Có (§9, §12) |
+| Review trang đối chiếu nguồn, đặt `reviewed_by: model` | `/review` | Có (§7, §8, §9, §10, §12) |
 
 `agents.md` là bản đặc tả tổng quan cho người đọc; skill là bản thực thi.
 

@@ -60,3 +60,12 @@
 - Tạo: cpi, exchange-rate, hyperinflation, indexation, subsidies; chèn 17 link từ 14 trang cũ (không nâng `last_updated`)
 - Bỏ `fiscal-deficit`: chỉ 1 trang nhắc thâm hụt ngân sách (ghi ở `_inbox.md`)
 - Wiki: 56 trang (51 draft + 5 stub); `--all` sạch
+
+## [2026-09-15:20-04-31] schema | cho phép model tự review
+- Thêm cặp `reviewed` + `reviewed_by: user|model` (§1, §9); hook kiểm cặp trường; skill mới `/review`; op `review` vào §12
+- Lý do: `decisions.md` mục "Cho phép model tự review trang"
+
+## [2026-09-15:20-04-31] review | 5 trang hub
+- Đạt, chỉ thêm chú thích: gndi
+- Đã sửa claim theo nguồn: gdp (khấu hao làm GDP đánh giá cao *sản lượng*, không phải *năng lực tăng thêm*); production-income-… (bỏ "tín hiệu chất lượng thống kê" nguồn không nói, thêm sai số dồn vào thặng dư); the-saving-investment-gap-… (lý do tách khu vực viết lại theo nguồn); system-of-national-accounts-sna (bỏ "trong nước", "không gắn một trường phái")
+- 5/5 trang có chú thích §7.5, `reviewed_by: model`; `--all` sạch

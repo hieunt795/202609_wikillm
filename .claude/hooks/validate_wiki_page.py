@@ -4,7 +4,7 @@
 Ap dung cho file .md trong 02_wiki/ (tru index.md). Kiem cac luat trong
 00_schema.md: frontmatter (§1), taxonomy (§2), ten file khop title (§3),
 than bai khong heading + link kem ly do + chu thich vi tri (§7), quy uoc
-title (§8), vong doi status (§9).
+title (§8), vong doi status + cap reviewed/reviewed_by (§9).
 
 Hai che do:
   - hook  : doc JSON tu stdin (PostToolUse tren Write|Edit).
@@ -23,6 +23,7 @@ import sys
 REQUIRED_FIELDS = ["title", "type", "tags", "sources", "status", "last_updated"]
 VALID_TYPES = {"entity", "concept", "case", "analysis"}
 VALID_STATUS = {"stub", "draft", "stable", "stale"}
+VALID_REVIEWERS = {"user", "model"}
 
 # §7.5 chi ap cho trang duoc ghi TU ngay luat co hieu luc tro di.
 # 51 trang cu giu nguyen, khong backfill hang loat -- nhung trang nao
@@ -191,6 +192,20 @@ def check(path, pages=None, longsrc=None):
             "`last_updated: %s` khong phai ngay dang YYYY-MM-DD (§1)."
             % fields.get("last_updated", "")
         )
+
+    # §9: reviewed + reviewed_by di thanh cap.
+    if "reviewed" in fields or "reviewed_by" in fields:
+        if parse_date(fields.get("reviewed", "")) is None:
+            problems.append(
+                "`reviewed: %s` phai la ngay YYYY-MM-DD va di kem `reviewed_by` (§9)."
+                % fields.get("reviewed", "")
+            )
+        who = fields.get("reviewed_by", "").strip().strip("\"'")
+        if who not in VALID_REVIEWERS:
+            problems.append(
+                "`reviewed_by: %s` khong hop le (§9). Chi chap nhan: user, model."
+                % fields.get("reviewed_by", "")
+            )
 
     clean = strip_code_fences(body)
 

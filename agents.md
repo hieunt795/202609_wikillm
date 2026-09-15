@@ -4,13 +4,14 @@
 >
 > Nguyên tắc cũ vẫn giữ: không lặp lại nội dung đã có trong `00_schema.md` — chỉ trích dẫn mục cần đọc.
 
-## Bốn operation
+## Năm operation
 
 | Operation | Skill (nguồn thực thi) | Đầu vào | Đầu ra | Cần `00_schema.md`? |
 |---|---|---|---|---|
 | **Ingest** | `.claude/skills/ingest/SKILL.md` | Nguồn mới trong `01_sources/`; file trạng thái `03_state/<nguồn>.md` (§10) | 3–5 ý chính chờ duyệt → 5–15 trang `02_wiki/` + stub + cập nhật `index.md` (§Sources + mục lục) + cập nhật `03_state/<nguồn>.md` + 1 mục `log.md` | Có — §1, §2, §4–§12 |
 | **Query** | `.claude/skills/query/SKILL.md` | Câu hỏi của người dùng | Câu trả lời tổng hợp; tuỳ chọn 1 trang `analysis` (cần xác nhận) | **Không** |
 | **Lint** | `.claude/skills/lint/SKILL.md` | Toàn bộ `02_wiki/` + `_inbox.md` | Báo cáo lỗi + triage inbox + danh sách *Đủ điều kiện `stable`* + 1 mục `log.md` | Có — §4–§9, §11, §12 |
+| **Review** | `.claude/skills/review/SKILL.md` | Trang chỉ định, hoặc hàng đợi chưa review xếp theo backlink (≤ 5 trang/lượt) | `reviewed` + `reviewed_by: model` cho trang đạt; sửa claim sai kèm chú thích §7.5; 1 mục `log.md` | Có — §7, §8, §9, §10, §12 |
 | **Promote** | `.claude/skills/promote/SKILL.md` | Danh sách *Đủ điều kiện `stable`* đã được người dùng duyệt | Đổi `status: draft → stable` + 1 mục `log.md` | Có — §9, §12 |
 
 Ingest, Query, Lint đều dùng mẫu **hai lượt**: lượt 1 quét frontmatter (rẻ), lượt 2 chỉ mở full content những trang đã xác định là cần. Đây là cơ chế kiểm soát token chính của dự án.

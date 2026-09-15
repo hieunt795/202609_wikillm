@@ -11,7 +11,8 @@ tags: []
 sources: []        # liên kết tới nguồn trong 01_sources
 status: stub | draft | stable | stale     # vòng đời: xem §9
 last_updated:
-reviewed:          # TUỲ CHỌN — ngày người dùng xác nhận đã đọc qua; không có = chưa xác nhận (§9)
+reviewed:          # TUỲ CHỌN — ngày trang được review đối chiếu nguồn; không có = chưa review (§9)
+reviewed_by:       # user | model — bắt buộc khi có reviewed (§9)
 ```
 
 ## 2. Taxonomy (phân loại trang wiki)
@@ -161,16 +162,18 @@ Trước 2026-09-15 bảng trên không gán bước `draft → stable` cho oper
 
 Điều kiện đủ để lên `stable`: hook `--all` không báo gì cho trang; outlink ≥ 1; backlink ≥ 2; không còn `⚠️ Conflict`; không bị flag ở tiêu chí nào của lượt lint gần nhất. Backlink ≥ 2 để một trang `stable` không thành mồ côi chỉ vì mất một cạnh.
 
-### `status` không đo việc người dùng đã đọc qua
+### `status` không đo việc trang đã được review
 
 `status` chỉ đo **vòng đời nội dung**: trang đã đủ chất chưa, có nguồn mới chưa merge chưa. Nó không phân biệt "trang agent vừa viết cho agent dùng" với "trang người dùng đã đọc và xác nhận". Kể cả `stable` cũng chỉ có nghĩa *lint máy không bắt được lỗi và người dùng đã duyệt danh sách Promote* — duyệt một danh sách tên trang không phải là đọc từng trang.
 
 Hai trục này trực giao nên **không gộp vào `status`**: gộp lại sẽ sinh ra các ô lai vô nghĩa (`stale` nhưng đã duyệt? `stub` đã duyệt?) và làm bảng chuyển tiếp ở trên mất tính đơn tuyến.
 
-Giải pháp: trường **`reviewed:` tuỳ chọn** trong frontmatter (§1), giá trị là ngày người dùng xác nhận đã đọc qua trang. Không có trường này = chưa xác nhận.
+Giải pháp: cặp trường **`reviewed:` + `reviewed_by:`** tuỳ chọn trong frontmatter (§1). `reviewed:` là ngày trang được review; `reviewed_by:` cho biết ai review. Không có cặp này = chưa review.
 
-- **Tuỳ chọn, không bắt buộc.** Hook không kiểm; 51 trang hiện có không phải backfill.
-- **Chỉ người dùng đặt `reviewed:`.** Agent không tự đặt, kể cả khi vừa sửa xong trang — trường này ghi nhận *người đã đọc*, agent đặt hộ thì trường mất hết ý nghĩa.
+- **Tuỳ chọn, không bắt buộc.** Hook chỉ kiểm tính hợp lệ khi trường có mặt: `reviewed:` là ngày `YYYY-MM-DD` và phải đi kèm `reviewed_by: user` hoặc `reviewed_by: model`.
+- **`reviewed_by: model`** — agent review qua `/review` (`.claude/skills/review/SKILL.md`): đối chiếu từng claim với đúng đoạn nguồn, kiểm diễn đạt, liên kết, title. Được phép từ 2026-09-15 theo quyết định của người dùng. Đây là kiểm chứng **nội dung khớp nguồn**, không phải *người đã đọc* — và là model tự soát trang do model viết, nên không độc lập hoàn toàn.
+- **`reviewed_by: user`** — người dùng tự đọc và đặt. Chỉ người dùng được ghi giá trị này. Agent **không** ghi đè một cặp `reviewed_by: user` đã có; người dùng thì được ghi đè `model` bằng `user`.
+- Tách `reviewed_by` thay vì để agent đặt trần `reviewed:` là để trường này vẫn trả lời được câu hỏi ban đầu của nó: *người dùng đã đọc trang này chưa?* — lọc `reviewed_by: user`.
 - `reviewed:` cũ hơn `last_updated:` nghĩa là trang đã đổi sau lần duyệt. Đây là **thông tin tham khảo, không phải lỗi lint** — cố ý không thêm tiêu chí lint cho trường này: ở quy mô một người dùng, biến nó thành lỗi chỉ tạo ra nhiễu phải bỏ qua mỗi lượt.
 
 ## 10. Nguồn dài: ngưỡng phân loại và file trạng thái ingest
@@ -264,7 +267,7 @@ Quy ước:
 ```
 
 - **Dấu thời gian:** `YYYY-MM-DD:hh-MM-ss`, giờ Việt Nam (UTC+7), 24 giờ. Lấy bằng lệnh `TZ=UTC-7 date "+%Y-%m-%d:%H-%M-%S"` (cú pháp POSIX, dấu ngược) — không ước lượng, không dùng giờ UTC của máy. Mục ghi trước 2026-09-15 không lưu giờ nên để `00-00-00` — nghĩa là *không rõ giờ*, không phải nửa đêm.
-- **`<op>` chỉ nhận 6 giá trị:** `ingest` · `query` · `lint` · `promote` · `schema` (sửa schema/skill/hook/tài liệu vận hành) · `repo` (git: publish, rollback, tag).
+- **`<op>` chỉ nhận 7 giá trị:** `ingest` · `query` · `lint` · `promote` · `review` · `schema` (sửa schema/skill/hook/tài liệu vận hành) · `repo` (git: publish, rollback, tag).
 - **Tiền tố `## [` là giao diện máy đọc** — `grep "^## \[" log.md | tail -5` lấy 5 mục gần nhất (theo gist Karpathy). Không viết `## [` ở đầu dòng cho mục đích khác.
 - **Log kể chuyện gì đã xảy ra, không chứa lập luận.** Lý do của một quyết định → `decisions.md`, hoặc thẳng vào mục schema liên quan. Ý tưởng dang dở, đề xuất cho lượt sau → `_inbox.md` (§11). Trạng thái "còn lại phần nào" → `03_state/` (§10).
 - Bản log dài trước khi rút gọn (2026-09-15) vẫn còn trong git: `git show e2adb7a:log.md`.
