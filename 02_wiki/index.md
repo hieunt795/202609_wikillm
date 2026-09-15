@@ -27,7 +27,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[value-added]] — giá trị thực sự tạo thêm, đơn vị nền của mọi phép đo sản lượng
 - [[gdp]] — tổng value added theo nguyên tắc cư trú
 - [[production-income-and-expenditure-approaches-yield-the-same-gdp]] — ba cách đo, một con số
-- [[measured-gdp-covers-only-what-markets-price]] — GDP bỏ sót gì và vì sao
+- [[measured-gdp-is-an-imperfect-gauge-of-output-and-welfare]] — GDP đo sản xuất và phúc lợi chưa chuẩn ở đâu, vì sao
 
 **Giá và sản lượng thực**
 - [[real-gdp]] — sản lượng theo giá cố định

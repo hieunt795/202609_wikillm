@@ -98,3 +98,23 @@
 - 12 trang mới (khung chi, 3 vấn đề chi, vai trò nhà nước, lương, bảo dưỡng, tiêu chí trợ cấp, đầu tư công, lưới an sinh, bán tài khoá, phong toả chi, tác động vĩ mô, vòng chi–lạm phát–thu); nâng stub subsidies; 1 stub public-goods
 - Ch.3 tổng cộng 51 trang mới + 5 stub; 39/201 cạnh đi ra ngoài khối Ch.3 (bản snapshot: 29/386)
 - Còn lại: Ch.1, Ch.4, Ch.5, Ch.6; Modern Money Mechanics
+
+## [2026-09-15:23-44-16] review | 5 trang
+- Đạt sau khi sửa: gross-national-saving, absorption, current-account-balance, the-private-sector-resource-gap-must-be-financed-by-other-sectors, inflation
+- Claim sai/không có nguồn: tiết kiệm Ba Lan sụt "không phải do tiêu xài" (d.1206 nói có); đánh đổi mức sống/năng lực tương lai; tách khu vực là "cách duy nhất" chẩn đoán CAB; giá tương đối là "tín hiệu" CSTT không nên xử lý
+- Giữ lại: không; ghi `_inbox.md` mâu thuẫn trong nguồn về tiết kiệm Ba Lan 1992 cho lượt cụm F
+
+## [2026-09-15:23-49-06] review | 5 trang
+- Đạt nguyên trạng (chỉ thêm chú thích): a-one-time-price-shock-becomes-inflation-only-if-monetary-policy-accommodates-it, current-account-deficit-means-absorption-exceeds-national-income
+- Đạt sau khi sửa: gni (GDP đo theo "lãnh thổ" → nguồn nói theo cư trú; bỏ ý nợ/lao động nước ngoài làm lệch chẩn đoán); depreciation (bỏ ý sai lệch so sánh quốc tế; tách lý do dùng số gộp cho GDP và cho tiết kiệm); final-consumption (bỏ ý "không thể chọn riêng một vế")
+- Giữ lại: không
+
+## [2026-09-15:23-52-17] review | 5 trang
+- Đạt sau khi sửa: gross-investment (bỏ "nén đầu tư khác bản chất nén tiêu dùng"), incomes-policy (thêm giả định tỷ trọng lương/GDP không đổi; bỏ "chỉ mua thời gian"), institutional-sectors-in-the-sna (sửa quan hệ nhân quả ROW), types-of-inflation (bỏ "mỗi nguyên nhân một công cụ"; "hầu hết" → "thường")
+- Sửa bổ sung inflation (lượt trước bỏ sót câu "phân loại để chọn công cụ" không có nguồn)
+- Giữ lại: measured-gdp-covers-only-what-markets-price — title không khớp nội dung, ghi `_inbox.md`
+
+## [2026-09-15:23-56-40] review | 6 trang
+- Đổi tên measured-gdp-covers-only-what-markets-price → measured-gdp-is-an-imperfect-gauge-of-output-and-welfare (người dùng chốt; 5 link + index cập nhật; mục inbox đóng), sửa câu mở đầu và "phải ước lượng" → "vẫn tính nhưng đo không chính xác"; đạt
+- Đạt nguyên trạng: polands-output-collapse-1990-91-came-from-three-distinct-causes. Đạt sau khi sửa: a-real-output-index-… ("không phải chuyện thống kê thuần tuý"), gdp-deflator (bỏ "quan trọng nhất"; thêm điều kiện "trực tiếp, ngắn hạn" cho giá nhập khẩu), inertial-inflation-… (bỏ "thắt cầu phải trả giá bằng sản lượng"; "lập luận chính" → "lý do đầu tiên"), laspeyres-and-paasche-… (bỏ "không nên đọc con số đơn lẻ như sự thật")
+- Giữ lại: không
