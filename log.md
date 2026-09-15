@@ -168,3 +168,8 @@
 - §8 luật 1: title phủ định hợp lệ (người dùng chốt, decisions.md); lint bỏ tiêu chí title phủ định; giữ nguyên 2 title phủ định
 - Viết lại câu stub macroeconomic-sectors (tập trung tương tác); chèn 5 link (lưới an sinh ×2, soft-budget-constraint ×3), không nâng last_updated
 - Inbox: xoá 2 mục; ghi chú conflict Ch.1 chuyển vào dòng Ch.1 của 03_state
+
+## [2026-09-16:01-08-46] ingest | imf_macro_accounting — khái niệm từ lint 2026-09-16 (đa chương)
+- 4 trang mới: balance-of-payments, state-owned-enterprises, aggregate-demand, nominal-anchor; nâng 6 stub lên draft: indexation, exchange-rate, crowding-out, real-interest-rate, public-goods, hyperinflation
+- Vật liệu Ch.2–Ch.3, cộng trích lẻ có ghi rõ chương từ Ch.1, Ch.4, Ch.5, Ch.6 (ghi dải dòng vào 03_state); chèn 12 link tới trang mới (không nâng last_updated)
+- Còn lại: Ch.1, Ch.4, Ch.5, Ch.6 (ingest trọn chương); Modern Money Mechanics; stub chờ: central-bank, reserve-money, net-exports, current-account-balance, macroeconomic-sectors, soft-budget-constraint

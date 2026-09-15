@@ -16,7 +16,7 @@ Ký hiệu: `[x]` xong · `[~]` đang dở (cột *Ghi chú* phải nêu rõ ph�
 | Xong | Chunk | Dòng | Mục trong nguồn | Ghi chú |
 |---|---|---|---|---|
 | `[x]` | Bìa, mục lục, lời tựa | d.1–376 | Front matter | Bỏ qua, không tạo trang (§2) |
-| `[ ]` | Ch.1 — Poland's Transition to the Market: An Overview | d.377–606 | Ch.1 trọn chương | Chưa ingest. Lường trước 2 conflict số liệu Ba Lan với Ch.2: d.556 so với d.1206; d.502–507 so với d.1519 |
+| `[ ]` | Ch.1 — Poland's Transition to the Market: An Overview | d.377–606 | Ch.1 trọn chương | Chưa ingest. Lường trước 2 conflict số liệu Ba Lan với Ch.2: d.556 so với d.1206; d.502–507 so với d.1519 Đã trích lẻ (2026-09-16) cho trang khái niệm, chưa ingest: d.385, d.401–405, d.422–424, d.432–438, d.514–518, d.544, d.568–570, d.601. |
 | `[x]` | Ch.2 · cụm A1 — SNA, khu vực, đại lượng hạch toán | d.607–795 | The System of National Accounts → Gross National Saving | **Viết lại 2026-09-15:** 12 trang viết mới (giữ title) + 1 trang mới (5 khu vực phân tích) + 2 stub (`macroeconomic-sectors`, `net-exports`) |
 | `[x]` | Ch.2 · cụm A2 — đồng nhất thức đối ngoại, GDP thực, giới hạn đo GDP | d.797–934 | Basic Accounting Relationships → Problems of GDP Measurement | **Viết lại 2026-09-15:** 6 trang viết mới (giữ title); `current-account-balance` hạ về stub chờ Ch.4; phần so sánh CPI – deflator để cụm C |
 | `[x]` | Ch.2 · cụm B — đo lường trong kinh tế chuyển đổi | d.935–962 + Box 2.3 (d.981–1010) | Special Measurement Problems; The Transition from the MPS to the SNA; Box 2.3 MPS | **Viết lại 2026-09-15:** 4 trang viết mới (giữ title) + 2 trang mới (phạm vi khu vực vật chất; quy NMP về GDP) |
@@ -32,9 +32,9 @@ Ký hiệu: `[x]` xong · `[~]` đang dở (cột *Ghi chú* phải nêu rõ ph�
 | `[x]` | Ch.3 · cụm E — phân tích chi | d.2411–2530 | Analyzing Expenditures; Types of Public Expenditures; Box 3.6 Social Safety Nets; Box 3.7 Quasi-Fiscal Operations; Box 3.8; Macroeconomic Implications; Interactions | 12 trang mới + 1 stub; nâng stub `subsidies` thành draft. Ch.3 phần lý luận xong |
 | `[x]` | Ch.3 · bối cảnh — khu vực tài khoá Ba Lan | d.2531–2603 | Fiscal Sector → Financing of the Deficit | Bỏ qua: tường thuật bối cảnh, wiki đã đủ case Ba Lan từ Ch.2 (§2 *ưu tiên lý luận trước tường thuật*; người dùng chốt 2026-09-15) |
 | `[x]` | Ch.3 · Exercises, Issues for Discussion, bảng số liệu, Appendix thuế 1994 | d.2604–3425 | — | Bỏ qua, không tạo trang (§2) |
-| `[ ]` | Ch.4 — Balance of Payments Accounts and Analysis | d.3426–4529 | Ch.4 trọn chương | Chưa ingest. Là chương gốc của `current-account-balance` (trang này hiện chỉ dựng từ chú thích 10 của Ch.2 — xem log 2026-09-12) |
-| `[ ]` | Ch.5 — Monetary Accounts and Analysis | d.4530–5587 | Ch.5 trọn chương + Appendix: Accounting for Some Transactions with the IMF | Chưa ingest. Tự nó vượt ngưỡng nguồn dài → sẽ phải chia cụm |
-| `[ ]` | Ch.6 — The Flow of Funds: Macroeconomic Interrelations | d.5588–6065 | Ch.6 trọn chương | Chưa ingest; phần *Exercises* (d.5790+) bỏ qua (§2) |
+| `[ ]` | Ch.4 — Balance of Payments Accounts and Analysis | d.3426–4529 | Ch.4 trọn chương | Chưa ingest. Là chương gốc của `current-account-balance` (trang này hiện chỉ dựng từ chú thích 10 của Ch.2 — xem log 2026-09-12) Đã trích lẻ (2026-09-16): d.3428–3436 (định nghĩa, cho `balance-of-payments`), d.4051–4053 (chính sách tỷ giá). |
+| `[ ]` | Ch.5 — Monetary Accounts and Analysis | d.4530–5587 | Ch.5 trọn chương + Appendix: Accounting for Some Transactions with the IMF | Chưa ingest. Tự nó vượt ngưỡng nguồn dài → sẽ phải chia cụm Đã trích lẻ (2026-09-16): d.5018–5022, d.5040–5054 (lãi suất thực), d.5124–5126 (Box 5.10 siêu lạm phát), d.5138–5146. |
+| `[ ]` | Ch.6 — The Flow of Funds: Macroeconomic Interrelations | d.5588–6065 | Ch.6 trọn chương | Chưa ingest; phần *Exercises* (d.5790+) bỏ qua (§2) Đã trích lẻ (2026-09-16): d.5825 (Table 6.2). |
 
 Ranh giới chương lấy từ heading của chính file nguồn. Ranh giới cụm A–G trong Ch.2 là **dựng lại** từ heading nguồn — 5 dòng log hiện có đặt tên cụm nhưng không ghi dải dòng, nên mapping cụm → dòng là suy luận ngược, không phải số liệu gốc. Lượt ingest sau ghi dải dòng ngay khi xử lý để không phải dựng lại lần nữa.
 

@@ -46,11 +46,14 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[core-inflation-strips-out-one-time-price-level-jumps]] — tốc độ nền so với con số đo được
 - [[a-one-time-price-shock-becomes-inflation-only-if-monetary-policy-accommodates-it]] — điều kiện tiền tệ
 - [[inertial-inflation-persists-because-it-is-written-into-contracts]] — vì sao quán tính tự duy trì
+- [[indexation]] — điều chỉnh khoản danh nghĩa theo lạm phát; kênh duy trì quán tính
+- [[hyperinflation]] — định nghĩa Cagan, ba đặc điểm, Ba Lan 1989
 
 **Đại lượng thu nhập và sử dụng**
 - [[gni]] — thu nhập người cư trú kiếm được
 - [[gndi]] — thu nhập khả dụng để tiêu hoặc để dành
 - [[absorption]] — tổng cầu nội địa (C + I)
+- [[aggregate-demand]] — cầu với hàng trong nước, gồm xuất khẩu ròng
 - [[gross-national-saving]] — phần dư sau tiêu dùng
 - [[final-consumption]] — phần hộ gia đình và chính phủ sử dụng, đối lập với tiêu dùng trung gian
 - [[gross-investment]] — bổ sung vốn vật chất, không phải mua tài sản tài chính
@@ -58,6 +61,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[leakages-equal-injections-in-the-circular-flow]] — dòng luân chuyển nối các khu vực, rò rỉ bằng bơm vào
 
 **Đồng nhất thức đối ngoại**
+- [[balance-of-payments]] — báo cáo giao dịch với phần còn lại của thế giới; chương gốc là Ch.4
 - [[current-account-deficit-means-absorption-exceeds-national-income]] — GNDI − A = CAB
 - [[the-saving-investment-gap-equals-the-current-account-balance]] — S − I = CAB
 - [[the-private-sector-resource-gap-must-be-financed-by-other-sectors]] — ràng buộc ngân sách ở cấp khu vực
@@ -73,6 +77,8 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 **Chính sách giá và thu nhập**
 - [[price-liberalization]] — lợi ích và điều kiện đi kèm
+- [[exchange-rate]] — giá bị méo, neo danh nghĩa, chịu tác động của tài trợ thâm hụt
+- [[nominal-anchor]] — biến danh nghĩa được cố định để neo kỳ vọng lạm phát
 - [[open-trade-and-a-convertible-currency-are-the-fastest-route-to-rational-relative-prices]] — giá hợp lý bám giá thế giới
 - [[price-convergence-keeps-pressure-on-inflation-through-the-transition]] — vì sao áp lực giá kéo dài, tỷ giá thực tăng
 - [[incomes-policy]] — ba cách tiếp cận và lý do dùng
@@ -106,6 +112,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[bank-recapitalization-enters-the-gfs-deficit-only-through-interest]] — nhận nợ phi tiền mặt
 - [[privatization-receipts-are-an-asset-exchange-not-deficit-reduction]] — giảm thâm hụt một lần là ảo
 - [[conventional-fiscal-deficit]] — định nghĩa và hai hạn chế
+- [[state-owned-enterprises]] — doanh nghiệp công trong GFS và trong chuyển đổi
 
 **Đo thâm hụt tài khoá**
 - [[government-saving-investment-gap-approximates-the-overall-fiscal-deficit]] — ràng buộc ngân sách của khu vực chính phủ và ba nguồn lấp
@@ -121,11 +128,13 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[government-borrowing-from-commercial-banks-either-monetizes-or-crowds-out]] — tùy ngân hàng trung ương có nới dự trữ
 - [[nonbank-deficit-financing-postpones-inflation-but-raises-future-debt-costs]] — trái phiếu trong nước
 - [[external-deficit-financing-is-limited-by-reserves-and-creditworthiness]] — vay nước ngoài, rút dự trữ
+- [[crowding-out]] — chi tiêu, vay công lấn chi tiêu tư qua lãi suất
 - [[seigniorage]] — nguồn thu từ phát hành tiền, tách thành phần thuần và thuế lạm phát
 - [[inflation-tax-revenue-peaks-because-high-inflation-shrinks-its-base]] — đường chữ U ngược
 
 **Nợ công và tính bền vững**
 - [[fiscal-sustainability]] — hub: định nghĩa đồng thuận, ổn định nợ và khả năng thanh toán
+- [[real-interest-rate]] — lãi suất trừ lạm phát kỳ vọng; biến trung tâm của bền vững nợ
 - [[high-debt-ratios-raise-real-interest-rates-and-erode-market-confidence]] — nợ cao tốn kém rồi mất bền
 - [[public-debt-dynamics-depend-on-the-primary-balance-seigniorage-and-the-interest-growth-gap]] — phương trình động học nợ
 - [[when-interest-exceeds-growth-a-permanent-primary-deficit-cannot-exceed-seigniorage]] — hai chế độ r > g và r < g
@@ -145,6 +154,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 **Phân tích chi**
 - [[public-expenditure-analysis-rests-on-five-elements]] — khung đánh giá mức và cơ cấu chi
+- [[public-goods]] — tiêu dùng tập thể, thị trường không cung ứng
 - [[public-spending-poses-three-problems-level-efficiency-and-mix]] — mức, hiệu quả, cơ cấu; vĩ mô và cấu trúc
 - [[low-public-spending-ratios-can-reflect-weak-financing-capacity-not-a-small-state]] — vai trò nhà nước
 - [[civil-service-pay-policy-shapes-government-spending-efficiency]] — lương công vụ
@@ -160,14 +170,8 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 **Stub — khái niệm đã có tên, chờ nội dung**
 - [[central-bank]] — cơ quan phát hành tiền cơ sở
-- [[crowding-out]] — vay của chính phủ ép chi tiêu tư nhân qua lãi suất
 - [[current-account-balance]] — cán cân vãng lai; chờ nội dung từ Ch.4
-- [[exchange-rate]] — giá đồng tiền, neo danh nghĩa trong ổn định hoá
-- [[hyperinflation]] — lạm phát tới mức tiền mất chức năng cất trữ
-- [[indexation]] — tự điều chỉnh khoản danh nghĩa theo chỉ số giá
 - [[macroeconomic-sectors]] — các khu vực vĩ mô và tương tác giữa chúng
 - [[net-exports]] — xuất khẩu trừ nhập khẩu, tác động của ngoại thương lên tổng cầu
-- [[public-goods]] — tiêu dùng tập thể, thị trường không cung ứng
-- [[real-interest-rate]] — lãi suất danh nghĩa trừ lạm phát
 - [[reserve-money]] — tiền cơ sở, nền của khối tiền
 - [[soft-budget-constraint]] — ràng buộc ngân sách doanh nghiệp lách được nhờ nhà nước, ngân hàng
