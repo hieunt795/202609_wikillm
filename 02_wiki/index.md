@@ -1,6 +1,6 @@
 # Index
 
-> Mục lục trang wiki theo chủ đề. Cập nhật mỗi lần ingest tạo trang mới (xem `agents.md` §Ingest).
+> Mục lục trang wiki theo chủ đề. Cập nhật mỗi khi có trang mới (xem `.claude/skills/ingest/SKILL.md` bước 6).
 
 ## Sources
 
@@ -83,3 +83,10 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[polish-price-liberalization-left-inflation-stuck-at-30-percent]] — thả giá và lạm phát nền
 - [[polands-excess-wage-tax-popiwek-was-discontinued-after-five-years]] — kiểm soát lương trên thực tế
 - [[polish-unemployment-rose-from-near-zero-to-16-percent-in-four-years]] — từ thất nghiệp trá hình sang công khai
+
+**Stub — khái niệm đã có tên, chờ nội dung**
+- [[cpi]] — chỉ số giá tiêu dùng, dạng Laspeyres
+- [[exchange-rate]] — giá đồng tiền, neo danh nghĩa trong ổn định hoá
+- [[hyperinflation]] — lạm phát tới mức tiền mất chức năng cất trữ
+- [[indexation]] — tự điều chỉnh khoản danh nghĩa theo chỉ số giá
+- [[subsidies]] — chuyển nhượng cho người sản xuất, lệch các mức giá SNA

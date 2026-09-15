@@ -8,4 +8,7 @@
 >
 > **Triage mỗi lượt lint.** Mỗi mục có đúng 3 kết cục: nâng thành trang wiki, gộp vào trang đã có, hoặc xoá. Không có kết cục "để đó". Mục tồn quá 3 lượt lint là nợ kỹ thuật — lint báo cáo ở tiêu chí *Nợ inbox*.
 
-(trống)
+- [2026-09-15] Nợ chú thích §7.5: 51 trang tạo ngày 2026-09-12 chưa có chú thích vị trí nguồn. Không backfill hàng loạt; trả dần khi trang được sửa nội dung (hook đòi chú thích với `last_updated` ≥ 2026-09-14).
+- [2026-09-15] Stub `fiscal-deficit` chưa tạo: hiện chỉ 1 trang nhắc thâm hụt ngân sách (`types-of-inflation`). Xét lại khi ingest Ch.3.
+- [2026-09-15] Khi làm lại Ch.1/Ch.3 (tag `ch3-snapshot`): quyết lại có phục hồi §2 *ưu tiên lý luận trước tường thuật* và §5 *ba phép kiểm, bỏ tiêu chí độ dài* hay không; lường trước 2 conflict số liệu Ba Lan (d.1206 so với d.556; d.1519 so với d.502–507) và việc khối tài khoá Ch.3 ít liên kết sang Ch.2.
+- [2026-09-15] Câu hỏi cho query đầu tiên: ba cách đọc CAB (GNDI − A, S − I, khoảng chênh khu vực tư) ràng buộc nhau thế nào trong case Ba Lan?

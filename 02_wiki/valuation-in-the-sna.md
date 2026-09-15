@@ -7,7 +7,7 @@ status: draft
 last_updated: 2026-09-12
 ---
 
-SNA phân biệt hai hệ định giá — theo giá hiện hành và theo giá cố định — và trong mỗi hệ còn phân biệt ba mức giá tùy theo cách xử lý thuế, trợ cấp trên sản phẩm và cước vận tải.
+SNA phân biệt hai hệ định giá — theo giá hiện hành và theo giá cố định — và trong mỗi hệ còn phân biệt ba mức giá tùy theo cách xử lý thuế, [[subsidies|trợ cấp]] trên sản phẩm và cước vận tải.
 
 Giá cơ bản là khoản người sản xuất nhận được, trừ thuế phải nộp và cộng trợ cấp trên sản lượng, không bao gồm cước vận tải. Giá người sản xuất là khoản người sản xuất nhận được sau khi trừ VAT hoặc các thuế khấu trừ tương tự, cũng không gồm cước vận tải. Giá người mua là khoản người mua trả, không tính VAT được khấu trừ, và khác hai loại trên ở chỗ đã bao gồm cước vận tải.
 
