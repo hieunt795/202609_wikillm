@@ -70,3 +70,7 @@
 - **Lý do:** người dùng chọn giao việc review cho model. Tách `reviewed_by` để trường vẫn phân biệt được *model đã đối chiếu nguồn* với *người đã đọc* — lý do gốc của quyết định 2026-09-14 (`reviewed:` chỉ người đặt).
 - **Thay cho:** mục [2026-09-14] *`reviewed:` là trường tuỳ chọn, không có tiêu chí lint* — phần "chỉ người dùng đặt" bị thay; phần "không có tiêu chí lint" giữ nguyên.
 - **Giới hạn đã biết:** model soát trang do model viết, không độc lập hoàn toàn; bù bằng yêu cầu đọc lại đúng đoạn nguồn và gắn chú thích §7.5 cho từng claim đã đối chiếu.
+
+## [2026-09-15] Ch.3 chỉ ingest phần lý luận, ingest lại từ nguồn
+- **Quyết định:** ingest 5 cụm lý luận A–E; bỏ qua bối cảnh tài khoá Ba Lan (d.2531–2603) và Exercises/bảng/phụ lục (d.2604–3425). Viết mới từ nguồn, không khôi phục trang từ tag `ch3-snapshot`. Duyệt ý chính từng cụm.
+- **Lý do:** người dùng chọn. Phục hồi nguyên tắc §2 *ưu tiên lý luận trước tường thuật* làm căn cứ ghi trong bản đồ chunk.

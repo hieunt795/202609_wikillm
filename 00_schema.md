@@ -28,6 +28,8 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 
 `concept` có một pattern con cần nhận diện: **bridge note** — trang chỉ mô tả *quan hệ* giữa 2 khái niệm liền kề (vd `current-account-deficit-means-absorption-exceeds-national-income` nối `absorption` với `gndi`). Bridge note là trang độc lập, không được nhét vào một trong hai trang đầu mút.
 
+**Ưu tiên lý luận trước tường thuật.** Khi một nguồn tách rõ phần khung khái niệm với phần tường thuật bối cảnh một quốc gia/giai đoạn, ingest phần khung khái niệm trước và ingest phần bối cảnh **chỉ khi** wiki còn thiếu minh chứng cho một `concept` đã có. Lý do: `case` tồn tại để chống lưng cho `concept` (bảng trên), nên khi concept đã đủ minh chứng thì thêm case không tăng sức giải thích mà chỉ làm loãng wiki. Phần bối cảnh bị bỏ qua vẫn có dòng riêng trong bản đồ chunk kèm lý do (§10), không xoá khỏi bảng.
+
 **Không có trang tóm tắt nguồn.** Gist Karpathy tạo một trang tóm tắt cho mỗi nguồn khi ingest; dự án này cố ý không làm vậy. Lý do: Evergreen yêu cầu wiki hướng khái niệm, không hướng nguồn — trang "tóm tắt cuốn X" chính là *literature note* mà Matuschak xếp ngoài thang evergreen. Vai trò của trang tóm tắt đã được chia cho ba chỗ: `index.md` §Sources (nguồn nạp tới đâu), `03_state/` (bản đồ chunk + xuất xứ), và trường `sources:` cộng chú thích §7.5 trên từng trang. Đây là lựa chọn có chủ đích — lần audit sau đừng tính là thiếu sót.
 
 ## 3. Quy ước cấu trúc & đặt tên

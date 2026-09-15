@@ -69,3 +69,12 @@
 - Đạt, chỉ thêm chú thích: gndi
 - Đã sửa claim theo nguồn: gdp (khấu hao làm GDP đánh giá cao *sản lượng*, không phải *năng lực tăng thêm*); production-income-… (bỏ "tín hiệu chất lượng thống kê" nguồn không nói, thêm sai số dồn vào thặng dư); the-saving-investment-gap-… (lý do tách khu vực viết lại theo nguồn); system-of-national-accounts-sna (bỏ "trong nước", "không gắn một trường phái")
 - 5/5 trang có chú thích §7.5, `reviewed_by: model`; `--all` sạch
+
+## [2026-09-15:20-17-49] schema | chuẩn bị ingest Ch.3
+- Phục hồi §2 *ưu tiên lý luận trước tường thuật*; bản đồ chunk chia Ch.3 thành cụm A–E, bối cảnh Ba Lan và Exercises/phụ lục đánh bỏ qua
+- Lý do: `decisions.md` mục "Ch.3 chỉ ingest phần lý luận"
+
+## [2026-09-15:20-17-49] ingest | imf_macro_accounting Ch.3 cụm A — khung kế toán tài khoá GFS
+- 11 trang mới: government-finance-statistics-gfs (hub), general-government, conventional-fiscal-deficit, cơ sở tiền mặt, nợ đọng, thu, viện trợ, cho vay ròng, tái cấp vốn ngân hàng, tư nhân hoá, quỹ ngoài ngân sách/đối ứng
+- Nối sang Ch.2: 4 link mới từ trang cũ (không nâng last_updated); mục inbox stub fiscal-deficit đóng vì đã có conventional-fiscal-deficit
+- Còn lại: Ch.3 cụm B–E
