@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | **Ch.2 đang viết lại từ nguồn:** xong A1; còn A2, B–G (trang cũ vẫn trong wiki tới khi cụm được viết lại; bản gốc ở tag `ch2-snapshot`). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.3 phần lý luận (cụm A–E); Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | **Ch.2 đang viết lại từ nguồn:** xong A1, A2; còn B–G (trang cũ vẫn trong wiki tới khi cụm được viết lại; bản gốc ở tag `ch2-snapshot`). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.3 phần lý luận (cụm A–E); Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (83 KB / 721 dòng) | **Chưa ingest** | Toàn bộ — dưới ngưỡng nguồn dài nên ingest trọn 1 lượt, không cần file trạng thái (§10) | — |
 
 ## Trang wiki theo chủ đề
@@ -56,7 +56,6 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[current-account-deficit-means-absorption-exceeds-national-income]] — GNDI − A = CAB
 - [[the-saving-investment-gap-equals-the-current-account-balance]] — S − I = CAB
 - [[the-private-sector-resource-gap-must-be-financed-by-other-sectors]] — ràng buộc ngân sách ở cấp khu vực
-- [[current-account-balance]] — cùng một con số đọc được từ ba phía
 
 **Lao động và tiền lương**
 - [[unemployment-rate]] — cách đo và các sai lệch của nó
@@ -153,6 +152,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[central-bank]] — cơ quan phát hành tiền cơ sở
 - [[cpi]] — chỉ số giá tiêu dùng, dạng Laspeyres
 - [[crowding-out]] — vay của chính phủ ép chi tiêu tư nhân qua lãi suất
+- [[current-account-balance]] — cán cân vãng lai; chờ nội dung từ Ch.4
 - [[exchange-rate]] — giá đồng tiền, neo danh nghĩa trong ổn định hoá
 - [[hyperinflation]] — lạm phát tới mức tiền mất chức năng cất trữ
 - [[indexation]] — tự điều chỉnh khoản danh nghĩa theo chỉ số giá

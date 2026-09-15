@@ -4,13 +4,11 @@ type: concept
 tags: [national-accounts, external-sector, identities]
 sources: [imf_macro_accounting]
 status: draft
-last_updated: 2026-09-12
-reviewed: 2026-09-15
-reviewed_by: model
+last_updated: 2026-09-15
 ---
 
-Cán cân vãng lai, xét theo hạch toán sau sự việc (ex post), đúng bằng chênh lệch giữa [[gndi]] và [[absorption]]: GNDI − A = CAB (imf_macro_accounting, Ch.2, Aggregate Income and Absorption and the External Current Account Balance, d.803–805; Box 2.2, d.835–847).
+Xét ex post, cán cân vãng lai đúng bằng khoảng chênh giữa [[gndi]] và [[absorption]]: GNDI − A = CAB (imf_macro_accounting, Ch.2, Aggregate Income and Absorption and the External Current Account Balance, d.803–805).
 
-Diễn giải trực giác là một nước rơi vào thâm hụt vãng lai đúng khi nó tiêu vượt khả năng, tức hấp thụ nhiều hơn thu nhập kiếm được. Hệ quả chính sách đi thẳng ra từ đó: muốn thu hẹp thâm hụt thì phải nâng thu nhập, giảm hấp thụ, hoặc cả hai. Nâng sản lượng trong ngắn hạn chỉ khả thi nếu còn năng lực sản xuất nhàn rỗi, còn trung hạn thì phải dựa vào chính sách cơ cấu; giảm hấp thụ thì luôn quy về nén tiêu dùng hoặc nén đầu tư (imf_macro_accounting, Ch.2, cùng mục, d.807).
+Đồng nhất thức này suy ra từ chính các định nghĩa GDP, GNI và GNDI: GDP = A + (X − M), cộng thu nhập nhân tố và chuyển nhượng ròng từ nước ngoài thì GNDI = A + (X − M + Yf + TRf), và phần trong ngoặc chính là [[current-account-balance|cán cân vãng lai]] (imf_macro_accounting, Ch.2, Box 2.2, d.837–845; chú thích 10, d.831). Nó là nền của cách tiếp cận hấp thụ tới cán cân thanh toán; diễn giải trực giác là thâm hụt vãng lai xảy ra khi một nước chi tiêu vượt khả năng, tức hấp thụ vượt thu nhập (imf_macro_accounting, Ch.2, Aggregate Income and Absorption and the External Current Account Balance, d.807).
 
-Đây là nền tảng của cách tiếp cận hấp thụ (absorption approach) tới cán cân thanh toán. Nhưng cần giữ đúng giới hạn của nó: đây là một đồng nhất thức hạch toán, không phải một lý thuyết về hành vi của [[current-account-balance]] — nó cho biết các đại lượng phải khớp nhau như thế nào, chứ không cho biết vì sao chúng biến động. Muốn giải thích biến động thì phải đưa thêm tỷ giá, lãi suất và các cú sốc ngoại sinh vào (imf_macro_accounting, Ch.2, cùng mục, d.807–809). Đồng nhất thức song sinh của nó, phát biểu theo tiết kiệm và đầu tư, là [[the-saving-investment-gap-equals-the-current-account-balance]] (imf_macro_accounting, Ch.2, cùng mục, d.811–815, d.823).
+Hệ quả cho thiết kế chương trình điều chỉnh là muốn giảm thâm hụt thì phải tăng thu nhập, giảm hấp thụ, hoặc cả hai. Tăng sản lượng — và qua đó thu nhập — trong ngắn hạn đòi hỏi còn năng lực sản xuất nhàn rỗi, trong trung hạn đòi hỏi chính sách cơ cấu phù hợp; giảm hấp thụ thì qua nén [[final-consumption|tiêu dùng cuối cùng]], [[gross-investment|đầu tư]], hoặc cả hai (imf_macro_accounting, Ch.2, cùng mục, d.807). Nhưng đây chỉ là quan hệ kế toán, không phải lý thuyết về hành vi của cán cân vãng lai: muốn giải thích diễn biến phải đưa thêm các yếu tố như [[exchange-rate|tỷ giá]], lãi suất và cú sốc ngoại sinh (imf_macro_accounting, Ch.2, cùng mục, d.807–809). Phát biểu tương đương theo tiết kiệm và đầu tư là [[the-saving-investment-gap-equals-the-current-account-balance]] (imf_macro_accounting, Ch.2, cùng mục, d.811, d.823).

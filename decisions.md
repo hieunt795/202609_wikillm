@@ -80,3 +80,7 @@
 - **Lý do:** người dùng chọn. Khoảng 39 link từ Ch.3 trỏ vào trang Ch.2 — xoá cả 51 trang một lần sẽ để lại link chết qua nhiều lượt và `--all` không sạch (ingest bước 8). Cụm A cũ vượt ngưỡng 15 trang/lượt (§4). d.1011–1017 là văn bản chính của mục *Measuring Inflation* nằm sau Box 2.3.
 - **Bổ sung theo yêu cầu người dùng (cụm A1):** trang riêng cho năm khu vực phân tích (d.636–648) và stub `macroeconomic-sectors` — tương tác giữa các khu vực là trọng tâm cần phát triển (Ch.6 flow of funds); stub `net-exports`.
 
+## [2026-09-15] Hạ `current-account-balance` về stub cho tới khi ingest Ch.4
+- **Quyết định:** trang chuyển `draft → stub`, thân bài còn 1 câu định nghĩa nối tới hai đồng nhất thức đối ngoại.
+- **Lý do:** người dùng chọn. Trong Ch.2, định nghĩa CAB chỉ có ở chú thích 10 (d.831); chương gốc là Ch.4 (d.3426–4529). Bước chuyển này không có trong bảng §9 — là ngoại lệ có chủ đích, trang sẽ lên `draft` khi ingest Ch.4.
+

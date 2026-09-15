@@ -123,3 +123,8 @@
 - Viết mới từ nguồn 12 trang (giữ title): SNA, value-added, final-consumption, gross-investment, depreciation, absorption, gdp, ba cách đo GDP, leakages, gni, gndi, gross-national-saving; 1 trang mới: macroeconomic-analysis-divides-the-economy-into-five-main-sectors
 - 2 stub: macroeconomic-sectors, net-exports; bản đồ chunk: tách A1/A2, chuyển d.1011–1017 sang cụm C, B–G về `[ ]`
 - Còn lại Ch.2: A2, B–G (bản gốc ở tag ch2-snapshot)
+
+## [2026-09-16:00-18-49] ingest | imf_macro_accounting Ch.2 cụm A2 (viết lại) — đồng nhất thức đối ngoại, GDP thực, giới hạn đo GDP
+- Viết mới từ nguồn 6 trang (giữ title): GNDI − A = CAB, S − I = CAB, khoảng chênh khu vực tư (nối macroeconomic-sectors), real-gdp, gdp-deflator (chưa gồm phần so với CPI), measured-gdp-…
+- current-account-balance hạ draft → stub, chờ Ch.4 (decisions.md)
+- Còn lại Ch.2: B–G (bản gốc ở tag ch2-snapshot)
