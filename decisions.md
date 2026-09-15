@@ -84,3 +84,8 @@
 - **Quyết định:** trang chuyển `draft → stub`, thân bài còn 1 câu định nghĩa nối tới hai đồng nhất thức đối ngoại.
 - **Lý do:** người dùng chọn. Trong Ch.2, định nghĩa CAB chỉ có ở chú thích 10 (d.831); chương gốc là Ch.4 (d.3426–4529). Bước chuyển này không có trong bảng §9 — là ngoại lệ có chủ đích, trang sẽ lên `draft` khi ingest Ch.4.
 
+## [2026-09-16] Title phủ định là hợp lệ
+- **Quyết định:** bỏ luật "ưu tiên khẳng định tích cực thay vì phủ định" (§8 luật 1 cũ). Title phủ định hợp lệ khi nhận định vốn là phủ định; lint không còn flag title phủ định. Giữ nguyên `full-employment-does-not-mean-zero-unemployment` và `when-interest-exceeds-growth-a-permanent-primary-deficit-cannot-exceed-seigniorage`.
+- **Lý do:** người dùng chỉ ra phủ định thường không có dạng xác định tương đương ("không ăn cơm" không đồng nghĩa "ăn cháo"); ép đổi sẽ làm sai nghĩa. "Khẳng định" trong §8 được hiểu là câu trần thuật.
+- **Thay cho:** §8 luật 1 bản trước 2026-09-16.
+

@@ -133,7 +133,7 @@ Chọn dạng title theo loại nội dung:
 
 Ba luật kèm theo:
 
-1. **Ưu tiên khẳng định tích cực thay vì phủ định.** Title phủ định che mất lý thuyết nằm dưới nó. Vd: thay vì `mps-cannot-measure-non-material-services` → viết `mps-counts-only-output-of-the-material-sphere`.
+1. **Title phủ định hợp lệ khi bản thân nhận định là phủ định.** "Khẳng định" trong bảng trên nghĩa là câu *trần thuật* — một mệnh đề có thể đúng hay sai — chứ không phải câu *xác định*; câu phủ định vẫn là một nhận định. Không ép đổi title phủ định sang dạng xác định, vì phủ định thường không có dạng xác định tương đương: "không ăn cơm" không đồng nghĩa với "ăn cháo" (người dùng chốt 2026-09-16). Chỉ viết lại khi có dạng xác định vừa giữ nguyên nghĩa vừa nói được nhiều hơn — vd `mps-cannot-measure-non-material-services` → `mps-counts-only-output-of-the-material-sphere` nêu thêm MPS đo cái gì.
 2. **Title dạng câu hỏi là trạng thái tạm.** Khi đã đủ chứng cứ, refactor thành title khẳng định và cập nhật các `[[wikilink]]` trỏ tới.
 3. **Không đặt được title sắc gọn = dấu hiệu trang vi phạm Atomic** (§5) — tách trang, không đặt title mơ hồ cho xong.
 

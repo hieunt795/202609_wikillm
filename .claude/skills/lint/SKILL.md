@@ -36,7 +36,7 @@ Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell (`cat
 | Trang stale | `last_updated` cũ hơn nguồn liên quan đã ingest sau đó |
 | Trùng lặp entity | hai trang cùng mô tả một thực thể |
 | Vi phạm Atomic | thân bài có heading cấp 2+, hoặc `[[wikilink]]` dồn thành danh sách "xem thêm" không kèm lý do (§5, §7) |
-| Vi phạm title | `case`/`analysis` đặt title danh từ thay vì câu khẳng định; title phủ định; title mơ hồ (§8) |
+| Vi phạm title | `case`/`analysis` đặt title danh từ thay vì câu trần thuật; title mơ hồ hoặc không mô tả toàn bộ nội dung trang (§8). Title phủ định **không** phải lỗi (§8 luật 1) |
 | Nợ stub | `status: stub` chưa được ingest nội dung sau 3 lượt ingest kể từ khi tạo (§9) |
 | Sai vòng đời status | `stable` nhưng có nguồn mới ingest sau `last_updated` mà chưa chuyển `stale` (§9) |
 | Nhiễu OCR còn sót | thân bài chứa token đặc trưng lỗi OCR bị copy nguyên từ nguồn — xem bộ mẫu bên dưới |

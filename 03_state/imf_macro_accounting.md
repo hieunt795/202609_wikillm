@@ -16,7 +16,7 @@ Ký hiệu: `[x]` xong · `[~]` đang dở (cột *Ghi chú* phải nêu rõ ph�
 | Xong | Chunk | Dòng | Mục trong nguồn | Ghi chú |
 |---|---|---|---|---|
 | `[x]` | Bìa, mục lục, lời tựa | d.1–376 | Front matter | Bỏ qua, không tạo trang (§2) |
-| `[ ]` | Ch.1 — Poland's Transition to the Market: An Overview | d.377–606 | Ch.1 trọn chương | Chưa ingest |
+| `[ ]` | Ch.1 — Poland's Transition to the Market: An Overview | d.377–606 | Ch.1 trọn chương | Chưa ingest. Lường trước 2 conflict số liệu Ba Lan với Ch.2: d.556 so với d.1206; d.502–507 so với d.1519 |
 | `[x]` | Ch.2 · cụm A1 — SNA, khu vực, đại lượng hạch toán | d.607–795 | The System of National Accounts → Gross National Saving | **Viết lại 2026-09-15:** 12 trang viết mới (giữ title) + 1 trang mới (5 khu vực phân tích) + 2 stub (`macroeconomic-sectors`, `net-exports`) |
 | `[x]` | Ch.2 · cụm A2 — đồng nhất thức đối ngoại, GDP thực, giới hạn đo GDP | d.797–934 | Basic Accounting Relationships → Problems of GDP Measurement | **Viết lại 2026-09-15:** 6 trang viết mới (giữ title); `current-account-balance` hạ về stub chờ Ch.4; phần so sánh CPI – deflator để cụm C |
 | `[x]` | Ch.2 · cụm B — đo lường trong kinh tế chuyển đổi | d.935–962 + Box 2.3 (d.981–1010) | Special Measurement Problems; The Transition from the MPS to the SNA; Box 2.3 MPS | **Viết lại 2026-09-15:** 4 trang viết mới (giữ title) + 2 trang mới (phạm vi khu vực vật chất; quy NMP về GDP) |

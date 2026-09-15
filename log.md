@@ -163,3 +163,8 @@
 - Bước 0 sạch; 2 Conflict (người dùng hoãn), 4 khái niệm chưa có trang, 1 cặp nghi trùng, 3 vi phạm title, 11 nợ stub; 0 OCR, stale, Atomic, mồ côi
 - 101 trang đủ điều kiện stable (55 Ch.2, 46 Ch.3), chưa trang nào qua review; 2 mục inbox đề xuất xoá
 - Báo cáo: Claude outputs/lint-2026-09-16.md
+
+## [2026-09-16:00-58-12] schema | xử lý lint 2026-09-16 (phần không phải ingest)
+- §8 luật 1: title phủ định hợp lệ (người dùng chốt, decisions.md); lint bỏ tiêu chí title phủ định; giữ nguyên 2 title phủ định
+- Viết lại câu stub macroeconomic-sectors (tập trung tương tác); chèn 5 link (lưới an sinh ×2, soft-budget-constraint ×3), không nâng last_updated
+- Inbox: xoá 2 mục; ghi chú conflict Ch.1 chuyển vào dòng Ch.1 của 03_state
