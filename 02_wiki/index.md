@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.2 toàn bộ 7 cụm; Ch.3 phần lý luận (cụm A–E). Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | **Ch.2 đang viết lại từ nguồn:** xong A1; còn A2, B–G (trang cũ vẫn trong wiki tới khi cụm được viết lại; bản gốc ở tag `ch2-snapshot`). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.3 phần lý luận (cụm A–E); Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (83 KB / 721 dòng) | **Chưa ingest** | Toàn bộ — dưới ngưỡng nguồn dài nên ingest trọn 1 lượt, không cần file trạng thái (§10) | — |
 
 ## Trang wiki theo chủ đề
@@ -22,6 +22,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[valuation-in-the-sna]] — giá cơ bản, giá người sản xuất, giá người mua
 - [[the-1993-sna-added-balance-sheets-and-fuller-income-accounts]] — khác biệt so với bản 1968
 - [[mps-material-product-system]] — khung hạch toán của kinh tế kế hoạch
+- [[macroeconomic-analysis-divides-the-economy-into-five-main-sectors]] — năm khu vực phân tích và vai trò của từng khu vực
 
 **Đại lượng sản lượng**
 - [[value-added]] — giá trị thực sự tạo thêm, đơn vị nền của mọi phép đo sản lượng
@@ -46,10 +47,10 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[gndi]] — thu nhập khả dụng để tiêu hoặc để dành
 - [[absorption]] — tổng cầu nội địa (C + I)
 - [[gross-national-saving]] — phần dư sau tiêu dùng
-- [[final-consumption]] — ranh giới với tiêu dùng trung gian nằm ở mục đích sử dụng
+- [[final-consumption]] — phần hộ gia đình và chính phủ sử dụng, đối lập với tiêu dùng trung gian
 - [[gross-investment]] — bổ sung vốn vật chất, không phải mua tài sản tài chính
 - [[depreciation]] — đại lượng tách mọi cặp gộp/ròng
-- [[leakages-equal-injections-in-the-circular-flow]] — hình ảnh trực quan dưới các đồng nhất thức
+- [[leakages-equal-injections-in-the-circular-flow]] — dòng luân chuyển nối các khu vực, rò rỉ bằng bơm vào
 
 **Đồng nhất thức đối ngoại**
 - [[current-account-deficit-means-absorption-exceeds-national-income]] — GNDI − A = CAB
@@ -155,6 +156,8 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[exchange-rate]] — giá đồng tiền, neo danh nghĩa trong ổn định hoá
 - [[hyperinflation]] — lạm phát tới mức tiền mất chức năng cất trữ
 - [[indexation]] — tự điều chỉnh khoản danh nghĩa theo chỉ số giá
+- [[macroeconomic-sectors]] — các khu vực vĩ mô và tương tác giữa chúng
+- [[net-exports]] — xuất khẩu trừ nhập khẩu, tác động của ngoại thương lên tổng cầu
 - [[public-goods]] — tiêu dùng tập thể, thị trường không cung ứng
 - [[real-interest-rate]] — lãi suất danh nghĩa trừ lạm phát
 - [[reserve-money]] — tiền cơ sở, nền của khối tiền

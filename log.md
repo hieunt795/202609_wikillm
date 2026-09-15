@@ -118,3 +118,8 @@
 - Đổi tên measured-gdp-covers-only-what-markets-price → measured-gdp-is-an-imperfect-gauge-of-output-and-welfare (người dùng chốt; 5 link + index cập nhật; mục inbox đóng), sửa câu mở đầu và "phải ước lượng" → "vẫn tính nhưng đo không chính xác"; đạt
 - Đạt nguyên trạng: polands-output-collapse-1990-91-came-from-three-distinct-causes. Đạt sau khi sửa: a-real-output-index-… ("không phải chuyện thống kê thuần tuý"), gdp-deflator (bỏ "quan trọng nhất"; thêm điều kiện "trực tiếp, ngắn hạn" cho giá nhập khẩu), inertial-inflation-… (bỏ "thắt cầu phải trả giá bằng sản lượng"; "lập luận chính" → "lý do đầu tiên"), laspeyres-and-paasche-… (bỏ "không nên đọc con số đơn lẻ như sự thật")
 - Giữ lại: không
+
+## [2026-09-16:00-12-21] ingest | imf_macro_accounting Ch.2 cụm A1 (viết lại) — SNA, khu vực, đại lượng hạch toán
+- Viết mới từ nguồn 12 trang (giữ title): SNA, value-added, final-consumption, gross-investment, depreciation, absorption, gdp, ba cách đo GDP, leakages, gni, gndi, gross-national-saving; 1 trang mới: macroeconomic-analysis-divides-the-economy-into-five-main-sectors
+- 2 stub: macroeconomic-sectors, net-exports; bản đồ chunk: tách A1/A2, chuyển d.1011–1017 sang cụm C, B–G về `[ ]`
+- Còn lại Ch.2: A2, B–G (bản gốc ở tag ch2-snapshot)

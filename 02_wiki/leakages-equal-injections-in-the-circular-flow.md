@@ -1,14 +1,14 @@
 ---
 title: leakages-equal-injections-in-the-circular-flow
 type: concept
-tags: [national-accounts, macro-framework, demand]
+tags: [national-accounts, macro-framework, sectoral-analysis]
 sources: [imf_macro_accounting]
 status: draft
-last_updated: 2026-09-12
+last_updated: 2026-09-15
 ---
 
-Trong dòng luân chuyển thu nhập và chi tiêu của một nền kinh tế, tổng các khoản rò rỉ ra khỏi dòng chi tiêu nội địa luôn bằng tổng các khoản bơm vào nó.
+Trong dòng luân chuyển thu nhập và chi tiêu, tổng các khoản rò rỉ khỏi dòng chi tiêu nội địa luôn bằng tổng các khoản bơm vào (imf_macro_accounting, Ch.2, The Circular Flow of Income and Spending, d.682).
 
-Dòng chính chảy giữa doanh nghiệp và hộ gia đình: tiền đi từ doanh nghiệp sang hộ gia đình dưới dạng thu nhập, rồi quay lại doanh nghiệp dưới dạng chi tiêu. Tại nhiều điểm, tiền bị rút khỏi dòng này — thuế khu vực tư nộp cho chính phủ, và tiền chi cho hàng nhập khẩu vốn trở thành thu nhập của người không cư trú. Bù lại là các khoản bơm vào từ những chủ thể ngoài hộ gia đình nội địa: chuyển nhượng và mua sắm của chính phủ, [[gross-investment]], và xuất khẩu.
+Chart 2.1 vẽ luồng thu nhập ở nửa dưới và luồng chi tiêu ở nửa trên; luồng tiền chính chạy giữa doanh nghiệp và hộ gia đình — sang hộ gia đình dưới dạng thu nhập, quay về doanh nghiệp dưới dạng chi tiêu (imf_macro_accounting, Ch.2, cùng mục, d.682). Rò rỉ là tiền bị rút khỏi dòng này, như thuế khu vực tư nộp và chi cho nhập khẩu. Bơm vào là chi tiêu của các chủ thể ngoài hộ gia đình trong nước: chuyển nhượng và mua sắm của chính phủ, [[gross-investment|đầu tư]], và xuất khẩu (imf_macro_accounting, Ch.2, cùng mục, d.682). Cùng các luồng này được đo bằng số ở [[production-income-and-expenditure-approaches-yield-the-same-gdp]] (imf_macro_accounting, Ch.2, Box 2.1, d.739; d.747).
 
-Đẳng thức rò rỉ bằng bơm vào là hình ảnh trực quan nằm dưới các đồng nhất thức kế toán trừu tượng hơn. Nó chính là lý do [[production-income-and-expenditure-approaches-yield-the-same-gdp]] — mọi giá trị làm ra đều phải rời dòng ở đâu đó và quay lại ở đâu đó — và là cách dễ hình dung nhất để thấy vì sao phần chi vượt thu của một khu vực buộc phải là phần thu vượt chi của khu vực khác, như phát biểu ở [[the-private-sector-resource-gap-must-be-financed-by-other-sectors]]. Đọc theo chiều đối ngoại, chênh lệch giữa rò rỉ nhập khẩu và bơm vào xuất khẩu chính là phần cốt lõi của [[current-account-balance]].
+Giá trị của hình vẽ là nó cho thấy các quan hệ giữa những khu vực và thị trường chính của nền kinh tế (imf_macro_accounting, Ch.2, cùng mục, d.682) — tức cách [[macroeconomic-analysis-divides-the-economy-into-five-main-sectors|năm khu vực phân tích]] nối với nhau, chủ đề của [[macroeconomic-sectors]]. Chart 2.1 chỉ vẽ tài trợ từ thị trường tài chính trong nước cho gọn, dù hộ gia đình, doanh nghiệp và chính phủ đều có thể vay nước ngoài (imf_macro_accounting, Ch.2, chú thích Chart 2.1, d.749); phần tài trợ đó được đếm đầy đủ cho khu vực tư ở [[the-private-sector-resource-gap-must-be-financed-by-other-sectors]] (imf_macro_accounting, Ch.2, The Resource Gap of the Nongovernment Sector and Its Financing, d.869–873).

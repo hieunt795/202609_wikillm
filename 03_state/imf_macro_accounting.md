@@ -17,13 +17,14 @@ Ký hiệu: `[x]` xong · `[~]` đang dở (cột *Ghi chú* phải nêu rõ ph�
 |---|---|---|---|---|
 | `[x]` | Bìa, mục lục, lời tựa | d.1–376 | Front matter | Bỏ qua, không tạo trang (§2) |
 | `[ ]` | Ch.1 — Poland's Transition to the Market: An Overview | d.377–606 | Ch.1 trọn chương | Chưa ingest |
-| `[x]` | Ch.2 · cụm A — đại lượng & đồng nhất thức hạch toán quốc gia | d.607–934 | The System of National Accounts → Problems of GDP Measurement | 14 trang + 6 stub |
-| `[x]` | Ch.2 · cụm B — đo lường trong kinh tế chuyển đổi | d.935–962 + Box 2.3 (d.981–1018) | Special Measurement Problems; The Transition from the MPS to the SNA; Box 2.3 MPS | Nâng stub `mps-material-product-system` |
-| `[x]` | Ch.2 · cụm C — lạm phát | d.963–980, d.1019–1058 | Inflation; Measuring Inflation; Box 2.4 Price Index Formulas; Analyzing Inflation | Nâng stub `inflation`; 8 trang mới cùng cụm B |
-| `[x]` | Ch.2 · cụm D — thu nhập, lương thực tế, thất nghiệp | d.1059–1131 | Incomes and Employment → Box 2.5 | 5 trang |
-| `[x]` | Ch.2 · cụm E — chính sách giá và thu nhập | d.1132–1182 | Pricing Policies; Incomes Policy; Designing and Enforcing Wage Controls | 5 trang |
-| `[x]` | Ch.2 · cụm F — case Ba Lan 1989–94 | d.1183–1523 | Real Sector Developments → Exercises and Issues for Discussion | 6 trang case; phần *Exercises* bỏ qua (§2) |
-| `[x]` | Ch.2 · cụm G — khung kế toán SNA chi tiết | d.1524–1953 | Appendix: The 1993 SNA Accounting Framework → Differences Between the 1993 and 1968 SNA Systems | 6 trang; `system-of-national-accounts-sna` thành hub |
+| `[x]` | Ch.2 · cụm A1 — SNA, khu vực, đại lượng hạch toán | d.607–795 | The System of National Accounts → Gross National Saving | **Viết lại 2026-09-15:** 12 trang viết mới (giữ title) + 1 trang mới (5 khu vực phân tích) + 2 stub (`macroeconomic-sectors`, `net-exports`) |
+| `[ ]` | Ch.2 · cụm A2 — đồng nhất thức đối ngoại, GDP thực, giới hạn đo GDP | d.797–934 | Basic Accounting Relationships → Problems of GDP Measurement | Chờ viết lại; trang cũ còn trong wiki |
+| `[ ]` | Ch.2 · cụm B — đo lường trong kinh tế chuyển đổi | d.935–962 + Box 2.3 (d.981–1010) | Special Measurement Problems; The Transition from the MPS to the SNA; Box 2.3 MPS | Chờ viết lại. Bản cũ: nâng stub `mps-material-product-system` |
+| `[ ]` | Ch.2 · cụm C — lạm phát | d.963–980, d.1011–1058 | Inflation; Measuring Inflation (văn bản chính tiếp tục ở d.1011–1017 sau Box 2.3); Box 2.4 Price Index Formulas; Analyzing Inflation | Chờ viết lại. Bản cũ: nâng stub `inflation`; 8 trang mới cùng cụm B |
+| `[ ]` | Ch.2 · cụm D — thu nhập, lương thực tế, thất nghiệp | d.1059–1131 | Incomes and Employment → Box 2.5 | Chờ viết lại. Bản cũ: 5 trang |
+| `[ ]` | Ch.2 · cụm E — chính sách giá và thu nhập | d.1132–1182 | Pricing Policies; Incomes Policy; Designing and Enforcing Wage Controls | Chờ viết lại. Bản cũ: 5 trang |
+| `[ ]` | Ch.2 · cụm F — case Ba Lan 1989–94 | d.1183–1523 | Real Sector Developments → Exercises and Issues for Discussion | Chờ viết lại. Bản cũ: 6 trang case; phần *Exercises* bỏ qua (§2) |
+| `[ ]` | Ch.2 · cụm G — khung kế toán SNA chi tiết | d.1524–1953 | Appendix: The 1993 SNA Accounting Framework → Differences Between the 1993 and 1968 SNA Systems | Chờ viết lại. Bản cũ: 6 trang |
 | `[x]` | Ch.3 · cụm A — khung kế toán tài khoá GFS | d.1954–2062 | Lời dẫn chương; Defining the Government Sector → Conventional Fiscal Deficit | 11 trang mới; Chart 3.1 dùng làm căn cứ ranh giới khu vực, Chart 3.2 bỏ qua (OCR hỏng) |
 | `[x]` | Ch.3 · cụm B — cân đối, thước đo và tài trợ thâm hụt | d.2063–2217, d.2228–2238 | Fiscal Analysis; Government Saving-Investment Gap; Measures of the Fiscal Imbalance; Financing the Deficit; Box 3.1 Inflation Tax and Seigniorage (d.2163–2208) | 13 trang mới + 3 stub; cập nhật trang nợ đọng. Chart 3.3 là ảnh, bỏ qua. Mục *Financing the Deficit* bị Box 3.1 và Box 3.2 chen giữa nên nằm rải hai đoạn |
 | `[x]` | Ch.3 · cụm C — nợ công và tính bền vững | d.2218–2227, d.2240–2308, d.2343–2358 (+ chú thích d.2339) | Box 3.2 Debt Neutrality; The Sustainability of Fiscal Policy; Box 3.3 Expenditure Arrears; Box 3.4 Measures of Sustainability | 9 trang mới + 1 stub. Chú thích no-Ponzi nằm ở d.2339, OCR đánh số nhầm thành 21. Box 3.4 nằm lọt trong mục phân tích thu nhưng thuộc chủ đề bền vững |
@@ -36,3 +37,5 @@ Ký hiệu: `[x]` xong · `[~]` đang dở (cột *Ghi chú* phải nêu rõ ph�
 | `[ ]` | Ch.6 — The Flow of Funds: Macroeconomic Interrelations | d.5588–6065 | Ch.6 trọn chương | Chưa ingest; phần *Exercises* (d.5790+) bỏ qua (§2) |
 
 Ranh giới chương lấy từ heading của chính file nguồn. Ranh giới cụm A–G trong Ch.2 là **dựng lại** từ heading nguồn — 5 dòng log hiện có đặt tên cụm nhưng không ghi dải dòng, nên mapping cụm → dòng là suy luận ngược, không phải số liệu gốc. Lượt ingest sau ghi dải dòng ngay khi xử lý để không phải dựng lại lần nữa.
+
+**Viết lại Ch.2 (từ 2026-09-15, người dùng chọn).** Bản cũ lưu ở tag git `ch2-snapshot`. Viết lại từng cụm; trang cũ của cụm chỉ bị thay/xoá khi cụm đó được viết lại, để link từ Ch.3 không chết qua nhiều lượt. Giữ title cũ khi title vẫn đúng. Cụm A tách thành A1/A2 theo ngưỡng §4; d.1011–1017 (so sánh CPI – deflator, văn bản chính nằm sau Box 2.3) chuyển từ cụm B sang C.

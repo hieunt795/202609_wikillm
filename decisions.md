@@ -74,3 +74,9 @@
 ## [2026-09-15] Ch.3 chỉ ingest phần lý luận, ingest lại từ nguồn
 - **Quyết định:** ingest 5 cụm lý luận A–E; bỏ qua bối cảnh tài khoá Ba Lan (d.2531–2603) và Exercises/bảng/phụ lục (d.2604–3425). Viết mới từ nguồn, không khôi phục trang từ tag `ch3-snapshot`. Duyệt ý chính từng cụm.
 - **Lý do:** người dùng chọn. Phục hồi nguyên tắc §2 *ưu tiên lý luận trước tường thuật* làm căn cứ ghi trong bản đồ chunk.
+
+## [2026-09-15] Viết lại Ch.2 từ nguồn, theo từng cụm
+- **Quyết định:** viết lại toàn bộ Ch.2 thay cho ingest bổ sung hay review tiếp. Bản cũ lưu ở tag `ch2-snapshot` (commit 49efa84). Trang cũ của một cụm chỉ bị thay/xoá khi cụm đó được viết lại; giữ title cũ khi title vẫn đúng. Tách cụm A thành A1 (d.607–795) và A2 (d.797–934); chuyển d.1011–1017 từ cụm B sang C. Duyệt ý chính từng cụm.
+- **Lý do:** người dùng chọn. Khoảng 39 link từ Ch.3 trỏ vào trang Ch.2 — xoá cả 51 trang một lần sẽ để lại link chết qua nhiều lượt và `--all` không sạch (ingest bước 8). Cụm A cũ vượt ngưỡng 15 trang/lượt (§4). d.1011–1017 là văn bản chính của mục *Measuring Inflation* nằm sau Box 2.3.
+- **Bổ sung theo yêu cầu người dùng (cụm A1):** trang riêng cho năm khu vực phân tích (d.636–648) và stub `macroeconomic-sectors` — tương tác giữa các khu vực là trọng tâm cần phát triển (Ch.6 flow of funds); stub `net-exports`.
+
