@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.3 cụm B–E (tài khoá: thâm hụt và tài trợ, nợ công, phân tích thu, phân tích chi); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.2 toàn bộ 7 cụm; Ch.3 cụm A. Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.3 cụm C–E (tài khoá: nợ công, phân tích thu, phân tích chi); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.2 toàn bộ 7 cụm; Ch.3 cụm A–B. Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (83 KB / 721 dòng) | **Chưa ingest** | Toàn bộ — dưới ngưỡng nguồn dài nên ingest trọn 1 lượt, không cần file trạng thái (§10) | — |
 
 ## Trang wiki theo chủ đề
@@ -97,9 +97,29 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[privatization-receipts-are-an-asset-exchange-not-deficit-reduction]] — giảm thâm hụt một lần là ảo
 - [[conventional-fiscal-deficit]] — định nghĩa và hai hạn chế
 
+**Đo thâm hụt tài khoá**
+- [[government-saving-investment-gap-approximates-the-overall-fiscal-deficit]] — ràng buộc ngân sách của khu vực chính phủ và ba nguồn lấp
+- [[the-right-fiscal-deficit-measure-depends-on-the-question-asked]] — bốn yếu tố chọn thước đo
+- [[public-sector-borrowing-requirement]] — thước đo rộng nhất
+- [[current-fiscal-deficit-rests-on-an-arbitrary-capital-current-split]] — vì sao cán cân thường xuyên ít hữu ích
+- [[primary-deficit]] — chính sách tuỳ nghi hiện tại và nợ
+- [[operational-deficit]] — tách phần lãi bù lạm phát
+
+**Tài trợ thâm hụt**
+- [[each-way-of-financing-a-deficit-carries-its-own-macroeconomic-imbalance]] — hub: bốn cách, bốn mất cân đối
+- [[monetizing-the-deficit-creates-high-powered-money-and-inflation]] — vay ngân hàng trung ương
+- [[government-borrowing-from-commercial-banks-either-monetizes-or-crowds-out]] — tùy ngân hàng trung ương có nới dự trữ
+- [[nonbank-deficit-financing-postpones-inflation-but-raises-future-debt-costs]] — trái phiếu trong nước
+- [[external-deficit-financing-is-limited-by-reserves-and-creditworthiness]] — vay nước ngoài, rút dự trữ
+- [[seigniorage]] — nguồn thu từ phát hành tiền, tách thành phần thuần và thuế lạm phát
+- [[inflation-tax-revenue-peaks-because-high-inflation-shrinks-its-base]] — đường chữ U ngược
+
 **Stub — khái niệm đã có tên, chờ nội dung**
+- [[central-bank]] — cơ quan phát hành tiền cơ sở
 - [[cpi]] — chỉ số giá tiêu dùng, dạng Laspeyres
+- [[crowding-out]] — vay của chính phủ ép chi tiêu tư nhân qua lãi suất
 - [[exchange-rate]] — giá đồng tiền, neo danh nghĩa trong ổn định hoá
 - [[hyperinflation]] — lạm phát tới mức tiền mất chức năng cất trữ
 - [[indexation]] — tự điều chỉnh khoản danh nghĩa theo chỉ số giá
+- [[reserve-money]] — tiền cơ sở, nền của khối tiền
 - [[subsidies]] — chuyển nhượng cho người sản xuất, lệch các mức giá SNA

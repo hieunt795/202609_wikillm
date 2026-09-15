@@ -78,3 +78,8 @@
 - 11 trang mới: government-finance-statistics-gfs (hub), general-government, conventional-fiscal-deficit, cơ sở tiền mặt, nợ đọng, thu, viện trợ, cho vay ròng, tái cấp vốn ngân hàng, tư nhân hoá, quỹ ngoài ngân sách/đối ứng
 - Nối sang Ch.2: 4 link mới từ trang cũ (không nâng last_updated); mục inbox stub fiscal-deficit đóng vì đã có conventional-fiscal-deficit
 - Còn lại: Ch.3 cụm B–E
+
+## [2026-09-15:20-23-39] ingest | imf_macro_accounting Ch.3 cụm B — thước đo và tài trợ thâm hụt
+- 13 trang mới: 6 trang thước đo (S−I chính phủ, chọn thước đo, PSBR, cán cân thường xuyên, primary, operational), 5 trang tài trợ (hub + 4 kênh), seigniorage, trần thuế lạm phát
+- 3 stub: central-bank, reserve-money, crowding-out; cập nhật payments-arrears-… (nợ đọng là tài trợ cưỡng ép)
+- Còn lại: Ch.3 cụm C–E
