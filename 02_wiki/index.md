@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.3 cụm C–E (tài khoá: nợ công, phân tích thu, phân tích chi); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.2 toàn bộ 7 cụm; Ch.3 cụm A–B. Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.3 cụm D–E (tài khoá: phân tích thu, phân tích chi); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.2 toàn bộ 7 cụm; Ch.3 cụm A–C. Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (83 KB / 721 dòng) | **Chưa ingest** | Toàn bộ — dưới ngưỡng nguồn dài nên ingest trọn 1 lượt, không cần file trạng thái (§10) | — |
 
 ## Trang wiki theo chủ đề
@@ -114,6 +114,17 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[seigniorage]] — nguồn thu từ phát hành tiền, tách thành phần thuần và thuế lạm phát
 - [[inflation-tax-revenue-peaks-because-high-inflation-shrinks-its-base]] — đường chữ U ngược
 
+**Nợ công và tính bền vững**
+- [[fiscal-sustainability]] — hub: định nghĩa đồng thuận, ổn định nợ và khả năng thanh toán
+- [[high-debt-ratios-raise-real-interest-rates-and-erode-market-confidence]] — nợ cao tốn kém rồi mất bền
+- [[public-debt-dynamics-depend-on-the-primary-balance-seigniorage-and-the-interest-growth-gap]] — phương trình động học nợ
+- [[when-interest-exceeds-growth-a-permanent-primary-deficit-cannot-exceed-seigniorage]] — hai chế độ r > g và r < g
+- [[stabilizing-the-debt-ratio-caps-the-deficit-at-debt-times-nominal-growth]] — mục tiêu ngân sách để ổn định nợ
+- [[government-solvency-is-a-forward-looking-balance-sheet]] — ràng buộc liên thời gian, tài sản ròng
+- [[fiscal-sustainability-indicators-measure-the-adjustment-needed]] — tài sản ròng, primary gap, tax gap
+- [[ricardian-equivalence]] — vay nợ là thuế hoãn lại? bằng chứng yếu
+- [[expenditure-arrears-raise-the-cost-of-providing-government-services]] — nợ đọng chi tiêu
+
 **Stub — khái niệm đã có tên, chờ nội dung**
 - [[central-bank]] — cơ quan phát hành tiền cơ sở
 - [[cpi]] — chỉ số giá tiêu dùng, dạng Laspeyres
@@ -121,5 +132,6 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[exchange-rate]] — giá đồng tiền, neo danh nghĩa trong ổn định hoá
 - [[hyperinflation]] — lạm phát tới mức tiền mất chức năng cất trữ
 - [[indexation]] — tự điều chỉnh khoản danh nghĩa theo chỉ số giá
+- [[real-interest-rate]] — lãi suất danh nghĩa trừ lạm phát
 - [[reserve-money]] — tiền cơ sở, nền của khối tiền
 - [[subsidies]] — chuyển nhượng cho người sản xuất, lệch các mức giá SNA

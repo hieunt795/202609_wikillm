@@ -83,3 +83,8 @@
 - 13 trang mới: 6 trang thước đo (S−I chính phủ, chọn thước đo, PSBR, cán cân thường xuyên, primary, operational), 5 trang tài trợ (hub + 4 kênh), seigniorage, trần thuế lạm phát
 - 3 stub: central-bank, reserve-money, crowding-out; cập nhật payments-arrears-… (nợ đọng là tài trợ cưỡng ép)
 - Còn lại: Ch.3 cụm C–E
+
+## [2026-09-15:20-27-59] ingest | imf_macro_accounting Ch.3 cụm C — nợ công và tính bền vững
+- 9 trang mới: fiscal-sustainability (hub), động học nợ, hai chế độ r−g, ổn định nợ, khả năng thanh toán, 3 chỉ số bền vững, nợ cao, Ricardian equivalence, nợ đọng chi tiêu
+- 1 stub: real-interest-rate; thêm link từ 4 trang cụm B
+- Còn lại: Ch.3 cụm D–E
