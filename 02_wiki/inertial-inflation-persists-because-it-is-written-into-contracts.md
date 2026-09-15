@@ -5,12 +5,10 @@ tags: [prices, inflation, expectations]
 sources: [imf_macro_accounting]
 status: draft
 last_updated: 2026-09-15
-reviewed: 2026-09-15
-reviewed_by: model
 ---
 
-Lạm phát quán tính tự duy trì ở cùng một tốc độ vì tốc độ đó đã được dự tính trước và cài sẵn vào hợp đồng lương lẫn hợp đồng tài chính (imf_macro_accounting, Ch.2, Analyzing Inflation, d.1051).
+Lạm phát quán tính có xu hướng giữ nguyên tốc độ cho tới khi có biến cố kinh tế làm nó thay đổi: khi lạm phát ổn định, tốc độ hiện hành được dự tính trước và cài vào hợp đồng lương và hợp đồng tài chính, và chính các hợp đồng này lại duy trì nó (imf_macro_accounting, Ch.2, Analyzing Inflation, d.1051).
 
-Cơ chế là một vòng tự xác nhận: khi lạm phát ổn định, mọi bên đều kỳ vọng nó tiếp tục và đưa kỳ vọng đó vào điều khoản hợp đồng, khiến nó tiếp tục thật (imf_macro_accounting, Ch.2, cùng mục, d.1051; Incomes Policy, chú thích 17, d.1158). Phần lớn lạm phát hiện đại thuộc loại này, và tốc độ quán tính chính là cái mà [[core-inflation-strips-out-one-time-price-level-jumps|lạm phát lõi]] cố đo (imf_macro_accounting, Ch.2, Analyzing Inflation, d.1051).
+Phần lớn lạm phát hiện đại được xếp vào loại này, và tốc độ quán tính đôi khi được gọi là lạm phát lõi hay lạm phát nền, như ở [[core-inflation-strips-out-one-time-price-level-jumps]] (imf_macro_accounting, Ch.2, cùng mục, d.1051). Quán tính thường được thừa hưởng từ lạm phát cầu dư thừa trong quá khứ hoặc từ các cú sốc giá ngoại sinh, rồi được kéo dài qua hợp đồng và cam kết lương, kể cả [[indexation|chỉ số hóa]] (imf_macro_accounting, Ch.2, Incomes Policy, chú thích 17, d.1158). Cú sốc cung hay cầu đẩy lạm phát thực tế lệch khỏi tốc độ nền này (imf_macro_accounting, Ch.2, Analyzing Inflation, d.1053–1055).
 
-Vì quán tính nằm trong hợp đồng lương, cắt quán tính lạm phát là lý do đầu tiên được nêu để dùng [[incomes-policy]] trong các chương trình ổn định hóa — can thiệp thẳng vào khâu lương để cắt vòng lặp (imf_macro_accounting, Ch.2, Incomes Policy, d.1152–1154). Các cú sốc phía cung như giá dầu hay mất mùa, và phía cầu như kỳ vọng thu nhập tăng nhanh, là những thứ đẩy lạm phát thực tế lệch khỏi tốc độ quán tính này (imf_macro_accounting, Ch.2, Analyzing Inflation, d.1053–1055).
+Vì quán tính nằm trong hợp đồng lương, cắt quán tính là lý do đầu tiên được nêu để dùng [[incomes-policy]] (imf_macro_accounting, Ch.2, Incomes Policy, d.1152–1154). Nó là một trong bốn nhóm ở [[types-of-inflation]] (imf_macro_accounting, Ch.2, Analyzing Inflation, d.1044–1051).

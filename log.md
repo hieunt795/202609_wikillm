@@ -133,3 +133,8 @@
 - Viết mới từ nguồn 4 trang (giữ title): mps-material-product-system, transition-statistics-…, a-real-output-index-…, to-what-extent-was-polands-output-decline-1990-91-overstated
 - 2 trang mới: mps-counts-only-output-of-the-material-sphere, converting-mps-net-material-product-to-gdp-requires-four-adjustments
 - Còn lại Ch.2: C–G (bản gốc ở tag ch2-snapshot)
+
+## [2026-09-16:00-28-45] ingest | imf_macro_accounting Ch.2 cụm C (viết lại) — lạm phát và chỉ số giá
+- Viết mới từ nguồn 6 trang (giữ title): inflation, lạm phát lõi, cú tăng giá một lần, types-of-inflation, lạm phát quán tính, Laspeyres/Paasche
+- Nâng cpi stub → draft; 1 trang cầu nối mới cpi-and-the-gdp-deflator-differ-…; cập nhật gdp-deflator trỏ sang trang cầu nối
+- Còn lại Ch.2: D–G (bản gốc ở tag ch2-snapshot)

@@ -5,12 +5,10 @@ tags: [prices, inflation]
 sources: [imf_macro_accounting]
 status: draft
 last_updated: 2026-09-15
-reviewed: 2026-09-15
-reviewed_by: model
 ---
 
-Lạm phát là mức tăng kéo dài và dai dẳng của mặt bằng giá chung, cần phân biệt dứt khoát với thay đổi giá tương đối của từng mặt hàng (imf_macro_accounting, Ch.2, Measuring Inflation, d.967).
+Lạm phát là sự tăng kéo dài và dai dẳng của mặt bằng giá chung trong nền kinh tế, và phải được phân biệt với thay đổi giá tương đối của từng hàng hóa, dịch vụ (imf_macro_accounting, Ch.2, Measuring Inflation, d.967).
 
-Phân biệt này không phải chuyện chữ nghĩa. Một đợt tăng giá chung thường đi kèm thay đổi cơ cấu giá tương đối, nhưng chỉ phần tăng chung mới là lạm phát; phần còn lại chỉ là dịch chuyển giá giữa các mặt hàng (imf_macro_accounting, Ch.2, cùng mục, d.967). Một cú tăng giá tương đối ở mặt hàng then chốt như dầu vẫn có thể châm ngòi cho lạm phát lan rộng, nhưng đó là chuỗi nhân quả có điều kiện chứ không tự động — xem [[a-one-time-price-shock-becomes-inflation-only-if-monetary-policy-accommodates-it]] (imf_macro_accounting, Ch.2, cùng mục, d.971, d.975).
+Một đợt tăng mặt bằng giá thường đi kèm thay đổi cơ cấu giá tương đối, nhưng chỉ phần tăng chung mới là lạm phát (imf_macro_accounting, Ch.2, cùng mục, d.967). Giá tương đối của một mặt hàng then chốt như dầu thay đổi có thể khởi động quá trình dẫn tới lạm phát lan rộng, dù hành động chính sách thích hợp có thể giữ cho lạm phát không trầm trọng thêm (imf_macro_accounting, Ch.2, cùng mục, d.967–971); điều kiện để một cú như vậy thành lạm phát kéo dài nằm ở [[a-one-time-price-shock-becomes-inflation-only-if-monetary-policy-accommodates-it]] (imf_macro_accounting, Ch.2, cùng mục, d.975).
 
-Thước đo rộng nhất là [[gdp-deflator]], vốn bao phủ mọi hàng hóa và dịch vụ sản xuất trong nước (imf_macro_accounting, Ch.2, cùng mục, d.971, d.977). Khi cần tách phần tăng giá mang tính nền khỏi các cú nhảy một lần, đại lượng phải nhìn là [[core-inflation-strips-out-one-time-price-level-jumps]] (imf_macro_accounting, Ch.2, cùng mục, d.973); còn cách gom lạm phát thành các nhóm theo nguồn gốc — do chính sách, chi phí đẩy, cầu kéo, quán tính — nằm ở [[types-of-inflation]] (imf_macro_accounting, Ch.2, Analyzing Inflation, d.1044–1057).
+Cũng phải tách một lần tăng mặt bằng giá khỏi lạm phát nền, như ở [[core-inflation-strips-out-one-time-price-level-jumps]] (imf_macro_accounting, Ch.2, cùng mục, d.973). Thước đo rộng nhất là [[gdp-deflator]], đo giá của mọi hàng hóa và dịch vụ làm ra (imf_macro_accounting, Ch.2, cùng mục, d.971); thước đo thông dụng là [[cpi]] (imf_macro_accounting, Ch.2, cùng mục, d.977); hai chỉ số khác nhau theo [[cpi-and-the-gdp-deflator-differ-in-coverage-import-prices-and-weights]] (imf_macro_accounting, Ch.2, cùng mục, d.977, d.1011–1017). Các nguồn gốc của lạm phát được gom thành nhóm ở [[types-of-inflation]] (imf_macro_accounting, Ch.2, Analyzing Inflation, d.1044).
