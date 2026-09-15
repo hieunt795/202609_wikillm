@@ -148,3 +148,8 @@
 - Viết mới từ nguồn 5 trang (giữ title): price-liberalization, price-convergence-… (gộp tỷ giá thực d.1146), incomes-policy, designing-wage-controls-…, wage-controls-lose-effectiveness-… (thêm d.1224)
 - 1 trang mới: open-trade-and-a-convertible-currency-…; 1 stub: soft-budget-constraint; nối lại trang case giá Ba Lan (tránh mồ côi)
 - Còn lại Ch.2: F–G (bản gốc ở tag ch2-snapshot)
+
+## [2026-09-16:00-40-41] ingest | imf_macro_accounting Ch.2 cụm F (viết lại) — case Ba Lan 1989–94
+- Viết mới từ nguồn 6 trang case (giữ title); 1 trang mới: polish-real-wages-stabilized-but-lagged-productivity-gains
+- ⚠️ Conflict trên polish-national-saving-…: tiết kiệm 1992 (d.1206 so với d.1204 + Table 2.3 d.1407); đóng mục inbox tương ứng
+- Còn lại Ch.2: G (bản gốc ở tag ch2-snapshot)

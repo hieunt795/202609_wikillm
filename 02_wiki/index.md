@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | **Ch.2 đang viết lại từ nguồn:** xong A1, A2, B, C, D, E; còn F–G (trang cũ vẫn trong wiki tới khi cụm được viết lại; bản gốc ở tag `ch2-snapshot`). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.3 phần lý luận (cụm A–E); Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | **Ch.2 đang viết lại từ nguồn:** xong A1–F; còn G (trang cũ vẫn trong wiki tới khi cụm được viết lại; bản gốc ở tag `ch2-snapshot`). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.3 phần lý luận (cụm A–E); Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (83 KB / 721 dòng) | **Chưa ingest** | Toàn bộ — dưới ngưỡng nguồn dài nên ingest trọn 1 lượt, không cần file trạng thái (§10) | — |
 
 ## Trang wiki theo chủ đề
@@ -86,9 +86,10 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[polands-output-collapse-1990-91-came-from-three-distinct-causes]] — vĩ mô, thể chế, đo lường
 - [[to-what-extent-was-polands-output-decline-1990-91-overstated]] — câu hỏi còn để ngỏ
 - [[polands-recovery-from-1992-was-led-by-consumption-then-exports]] — phục hồi 1992–94
-- [[polish-national-saving-fell-sharply-at-the-onset-of-transition]] — tiết kiệm rơi rồi hồi
+- [[polish-national-saving-fell-sharply-at-the-onset-of-transition]] — tiết kiệm rơi mạnh; ⚠️ nguồn mâu thuẫn về năm 1992
 - [[polish-price-liberalization-left-inflation-stuck-at-30-percent]] — thả giá và lạm phát nền
 - [[polands-excess-wage-tax-popiwek-was-discontinued-after-five-years]] — kiểm soát lương trên thực tế
+- [[polish-real-wages-stabilized-but-lagged-productivity-gains]] — lương thực hồi nhẹ, tụt sau năng suất
 - [[polish-unemployment-rose-from-near-zero-to-16-percent-in-four-years]] — từ thất nghiệp trá hình sang công khai
 
 **Khung kế toán tài khoá (GFS)**

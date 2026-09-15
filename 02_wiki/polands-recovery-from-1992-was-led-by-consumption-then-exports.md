@@ -4,11 +4,11 @@ type: case
 tags: [poland, transition-economies, 1992-1994]
 sources: [imf_macro_accounting]
 status: draft
-last_updated: 2026-09-12
+last_updated: 2026-09-15
 ---
 
-Sản lượng Ba Lan chạm đáy năm 1991 rồi phục hồi mạnh: GDP thực tăng 2.6% năm 1992, khoảng 4% năm 1993 và khoảng 6% năm 1994.
+Sau khi chạm đáy năm 1991, kinh tế Ba Lan phục hồi ấn tượng: GDP thực tăng 2,6% năm 1992, khoảng 4% năm 1993 và khoảng 6% năm 1994, với sản xuất công nghiệp — khoảng 40% GDP — là nền chính (imf_macro_accounting, Ch.2, Real Sector Developments, Output and Demand, d.1202).
 
-Công nghiệp, chiếm khoảng 40% GDP, là nền của đợt phục hồi, và đi kèm là cải thiện năng suất đáng kể — tức đây là phản ứng cung thật chứ không chỉ là cầu hồi lại. Động lực ban đầu đến từ cầu nội địa, đặc biệt là tiêu dùng, vốn tăng mạnh suốt 1992-93 trước khi chậm lại năm 1994. Từ 1993-94, xuất khẩu trở thành đóng góp quan trọng, tăng thực trên 30% mỗi năm nếu tính cả thương mại xuyên biên giới không ghi nhận — đúng phần mà thống kê chính thức bỏ sót theo [[transition-statistics-understate-private-sector-growth]]. Đầu tư cố định cũng tăng, chủ yếu do khu vực tư nhân.
+Tăng trưởng từ 1992 là một phản ứng cung ấn tượng gắn với tăng năng suất đáng kể, và theo nguồn chủ yếu do cầu nội địa tăng, nhất là tiêu dùng, dẫn dắt; tiêu dùng tăng mạnh suốt 1992–93 rồi chậm lại năm 1994 (imf_macro_accounting, Ch.2, cùng mục, d.1204). Xuất khẩu tăng nhanh cũng đóng góp quan trọng, nhất là 1993–94: tính cả buôn bán qua biên giới không ghi nhận, xuất khẩu tăng thực hơn 30% mỗi năm tới 1994 — phần không ghi nhận đó là loại hoạt động mà [[transition-statistics-understate-private-sector-growth]] mô tả (imf_macro_accounting, Ch.2, cùng mục, d.1204; Special Measurement Problems in Transition Economies, d.942, d.949). Đầu tư cố định cũng tăng, chủ yếu nhờ khu vực tư (imf_macro_accounting, Ch.2, Real Sector Developments, Output and Demand, d.1204).
 
-Mặt trái của đợt tăng tiêu dùng này hiện ra ở tiết kiệm quốc gia, xem [[polish-national-saving-fell-sharply-at-the-onset-of-transition]]. Và tăng trưởng trở lại không kéo việc làm trở lại ngay: doanh nghiệp vẫn tiếp tục cắt giảm lao động, theo [[polish-unemployment-rose-from-near-zero-to-16-percent-in-four-years]].
+Mặt kia của tiêu dùng tăng là tiết kiệm quốc gia sụt mạnh, ở [[polish-national-saving-fell-sharply-at-the-onset-of-transition]] (imf_macro_accounting, Ch.2, cùng mục, d.1206); và sản lượng hồi phục chưa kéo việc làm theo, vì doanh nghiệp tiếp tục sa thải, như ở [[polish-unemployment-rose-from-near-zero-to-16-percent-in-four-years]] (imf_macro_accounting, Ch.2, Real Sector Developments, Unemployment, d.1240). Tăng năng suất công nghiệp — nhờ công nghệ mới đi kèm đầu tư nước ngoài và việc cắt giảm lao động — là mốc mà lương thực tụt lại phía sau, ở [[polish-real-wages-stabilized-but-lagged-productivity-gains]] (imf_macro_accounting, Ch.2, Real Sector Developments, Incomes Policy and Wages, d.1226, d.1236).
