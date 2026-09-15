@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.3 cụm D–E (tài khoá: phân tích thu, phân tích chi); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.2 toàn bộ 7 cụm; Ch.3 cụm A–C. Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.3 cụm E (tài khoá: phân tích chi); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.2 toàn bộ 7 cụm; Ch.3 cụm A–D. Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (83 KB / 721 dòng) | **Chưa ingest** | Toàn bộ — dưới ngưỡng nguồn dài nên ingest trọn 1 lượt, không cần file trạng thái (§10) | — |
 
 ## Trang wiki theo chủ đề
@@ -124,6 +124,14 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[fiscal-sustainability-indicators-measure-the-adjustment-needed]] — tài sản ròng, primary gap, tax gap
 - [[ricardian-equivalence]] — vay nợ là thuế hoãn lại? bằng chứng yếu
 - [[expenditure-arrears-raise-the-cost-of-providing-government-services]] — nợ đọng chi tiêu
+
+**Phân tích thu**
+- [[ad-hoc-revenue-increases-build-distortionary-tax-systems-that-still-underyield]] — tăng thu chắp vá
+- [[tax-elasticity]] — số thu tăng theo GDP khi hệ thống thuế giữ nguyên
+- [[tax-buoyancy-exceeds-elasticity-when-discretionary-changes-raise-revenue]] — độ nổi so với độ co giãn
+- [[collection-lags-erode-real-tax-revenue-under-high-inflation]] — độ trễ thu khi lạm phát cao
+- [[tax-effort-compares-revenue-with-taxable-capacity-not-gdp]] — nỗ lực thuế và năng lực thuế
+- [[tanzi-diagnostic-test]] — tám kiểm tra năng suất thu
 
 **Stub — khái niệm đã có tên, chờ nội dung**
 - [[central-bank]] — cơ quan phát hành tiền cơ sở

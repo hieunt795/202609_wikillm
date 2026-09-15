@@ -88,3 +88,8 @@
 - 9 trang mới: fiscal-sustainability (hub), động học nợ, hai chế độ r−g, ổn định nợ, khả năng thanh toán, 3 chỉ số bền vững, nợ cao, Ricardian equivalence, nợ đọng chi tiêu
 - 1 stub: real-interest-rate; thêm link từ 4 trang cụm B
 - Còn lại: Ch.3 cụm D–E
+
+## [2026-09-15:20-31-38] ingest | imf_macro_accounting Ch.3 cụm D — phân tích thu
+- 6 trang mới: tăng thu chắp vá, tax-elasticity, độ nổi, độ trễ thu khi lạm phát cao, nỗ lực thuế, tanzi-diagnostic-test
+- Nối sang cụm A–B (thu, thâm hụt, tài trợ nước ngoài, cán cân thường xuyên)
+- Còn lại: Ch.3 cụm E
