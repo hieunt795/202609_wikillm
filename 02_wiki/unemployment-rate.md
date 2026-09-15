@@ -4,11 +4,11 @@ type: concept
 tags: [labour, unemployment, measurement]
 sources: [imf_macro_accounting]
 status: draft
-last_updated: 2026-09-12
+last_updated: 2026-09-15
 ---
 
-Tỷ lệ thất nghiệp là phần trăm những người trong lực lượng lao động không có việc làm thường xuyên và đang tìm việc.
+Tỷ lệ thất nghiệp là phần trăm những người trong lực lượng lao động không có việc làm thường xuyên và đang tìm việc: số người thất nghiệp chia cho lực lượng lao động (imf_macro_accounting, Ch.2, Employment and Unemployment, d.1070–1072).
 
-Định nghĩa này gắn chặt với định nghĩa lực lượng lao động: tất cả những người trong độ tuổi lao động, thường từ 16 trở lên, đang làm việc hoặc đang tìm việc. Ai không thuộc hai nhóm đó thì nằm ngoài cả tử số lẫn mẫu số, và chính đường biên này tạo ra sai lệch quan trọng nhất của chỉ số.
+Lực lượng lao động gồm mọi người trong độ tuổi lao động — thường từ 16 tuổi — đang làm việc hoặc đang tìm việc; trong đó người không có việc làm thường xuyên và đang tìm việc được coi là thất nghiệp (imf_macro_accounting, Ch.2, cùng mục, d.1069). Vì mẫu số là lực lượng lao động chứ không phải dân số, con số chịu tác động từ hai phía: người nản chí rời khỏi lực lượng lao động khiến tỷ lệ thấp hơn mức thiếu việc thật, như ở [[discouraged-workers-make-the-unemployment-rate-understate-joblessness]] (imf_macro_accounting, Ch.2, cùng mục, d.1074); và tỷ lệ tham gia lực lượng lao động — lực lượng lao động chia cho dân số trong độ tuổi lao động — thay đổi, chẳng hạn khi phụ nữ tham gia thị trường lao động nhiều hơn, có thể làm tỷ lệ thất nghiệp đổi đáng kể (imf_macro_accounting, Ch.2, cùng mục, d.1075–1079).
 
-Người lao động nản chí — thất nghiệp lâu, tìm mãi không được rồi thôi không tìm nữa — rời khỏi lực lượng lao động nên không còn được đếm là thất nghiệp, khiến tỷ lệ đo được thấp hơn mức thất nghiệp thật. Ở chiều ngược lại, thay đổi tỷ lệ tham gia lực lượng lao động, chẳng hạn khi phụ nữ gia nhập thị trường lao động nhiều hơn, có thể làm tỷ lệ thất nghiệp biến động mà số việc làm không đổi. Vì vậy con số này phải đọc kèm cơ cấu, và phải tách theo nguyên nhân như ở [[types-of-unemployment]] mới rút ra được hàm ý chính sách; mức nào là chấp nhận được thì lại là câu hỏi của [[nairu]].
+Con số cần đọc cùng mốc so sánh: toàn dụng không có nghĩa là thất nghiệp bằng không, theo [[full-employment-does-not-mean-zero-unemployment]] (imf_macro_accounting, Ch.2, cùng mục, d.1081), và mức thất nghiệp tương thích với lạm phát ổn định là [[nairu]] (imf_macro_accounting, Ch.2, cùng mục, d.1082). Về mặt phân tích, nên tách thất nghiệp theo nguyên nhân như ở [[types-of-unemployment]] (imf_macro_accounting, Ch.2, cùng mục, d.1084).

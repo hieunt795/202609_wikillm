@@ -138,3 +138,8 @@
 - Viết mới từ nguồn 6 trang (giữ title): inflation, lạm phát lõi, cú tăng giá một lần, types-of-inflation, lạm phát quán tính, Laspeyres/Paasche
 - Nâng cpi stub → draft; 1 trang cầu nối mới cpi-and-the-gdp-deflator-differ-…; cập nhật gdp-deflator trỏ sang trang cầu nối
 - Còn lại Ch.2: D–G (bản gốc ở tag ch2-snapshot)
+
+## [2026-09-16:00-31-56] ingest | imf_macro_accounting Ch.2 cụm D (viết lại) — lương thực, thất nghiệp
+- Viết mới từ nguồn 5 trang (giữ title): real-wages, real-wage-growth-is-bounded-by-productivity-growth, unemployment-rate, nairu, types-of-unemployment
+- 2 trang mới: discouraged-workers-make-the-unemployment-rate-understate-joblessness, full-employment-does-not-mean-zero-unemployment
+- Còn lại Ch.2: E–G (bản gốc ở tag ch2-snapshot)

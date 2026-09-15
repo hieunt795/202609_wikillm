@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | **Ch.2 đang viết lại từ nguồn:** xong A1, A2, B, C; còn D–G (trang cũ vẫn trong wiki tới khi cụm được viết lại; bản gốc ở tag `ch2-snapshot`). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.3 phần lý luận (cụm A–E); Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | **Ch.2 đang viết lại từ nguồn:** xong A1, A2, B, C, D; còn E–G (trang cũ vẫn trong wiki tới khi cụm được viết lại; bản gốc ở tag `ch2-snapshot`). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.3 phần lý luận (cụm A–E); Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (83 KB / 721 dòng) | **Chưa ingest** | Toàn bộ — dưới ngưỡng nguồn dài nên ingest trọn 1 lượt, không cần file trạng thái (§10) | — |
 
 ## Trang wiki theo chủ đề
@@ -63,6 +63,8 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 **Lao động và tiền lương**
 - [[unemployment-rate]] — cách đo và các sai lệch của nó
+- [[discouraged-workers-make-the-unemployment-rate-understate-joblessness]] — người bỏ tìm việc rơi khỏi cả tử lẫn mẫu
+- [[full-employment-does-not-mean-zero-unemployment]] — toàn dụng là mức việc làm tối ưu
 - [[types-of-unemployment]] — thời vụ, ma sát, chu kỳ, cơ cấu, trá hình
 - [[nairu]] — mức thất nghiệp tương thích với lạm phát ổn định
 - [[real-wages]] — sức mua của lương, phân biệt với thu nhập thực
