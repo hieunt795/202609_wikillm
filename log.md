@@ -143,3 +143,8 @@
 - Viết mới từ nguồn 5 trang (giữ title): real-wages, real-wage-growth-is-bounded-by-productivity-growth, unemployment-rate, nairu, types-of-unemployment
 - 2 trang mới: discouraged-workers-make-the-unemployment-rate-understate-joblessness, full-employment-does-not-mean-zero-unemployment
 - Còn lại Ch.2: E–G (bản gốc ở tag ch2-snapshot)
+
+## [2026-09-16:00-35-38] ingest | imf_macro_accounting Ch.2 cụm E (viết lại) — chính sách giá và thu nhập
+- Viết mới từ nguồn 5 trang (giữ title): price-liberalization, price-convergence-… (gộp tỷ giá thực d.1146), incomes-policy, designing-wage-controls-…, wage-controls-lose-effectiveness-… (thêm d.1224)
+- 1 trang mới: open-trade-and-a-convertible-currency-…; 1 stub: soft-budget-constraint; nối lại trang case giá Ba Lan (tránh mồ côi)
+- Còn lại Ch.2: F–G (bản gốc ở tag ch2-snapshot)
