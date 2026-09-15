@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | **Ch.2 đang viết lại từ nguồn:** xong A1, A2; còn B–G (trang cũ vẫn trong wiki tới khi cụm được viết lại; bản gốc ở tag `ch2-snapshot`). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.3 phần lý luận (cụm A–E); Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | **Ch.2 đang viết lại từ nguồn:** xong A1, A2, B; còn C–G (trang cũ vẫn trong wiki tới khi cụm được viết lại; bản gốc ở tag `ch2-snapshot`). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.3 phần lý luận (cụm A–E); Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (83 KB / 721 dòng) | **Chưa ingest** | Toàn bộ — dưới ngưỡng nguồn dài nên ingest trọn 1 lượt, không cần file trạng thái (§10) | — |
 
 ## Trang wiki theo chủ đề
@@ -22,6 +22,8 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[valuation-in-the-sna]] — giá cơ bản, giá người sản xuất, giá người mua
 - [[the-1993-sna-added-balance-sheets-and-fuller-income-accounts]] — khác biệt so với bản 1968
 - [[mps-material-product-system]] — khung hạch toán của kinh tế kế hoạch
+- [[mps-counts-only-output-of-the-material-sphere]] — MPS loại dịch vụ phi vật chất
+- [[converting-mps-net-material-product-to-gdp-requires-four-adjustments]] — quy NMP về GDP
 - [[macroeconomic-analysis-divides-the-economy-into-five-main-sectors]] — năm khu vực phân tích và vai trò của từng khu vực
 
 **Đại lượng sản lượng**

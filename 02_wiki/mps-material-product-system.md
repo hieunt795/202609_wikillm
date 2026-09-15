@@ -4,13 +4,11 @@ type: entity
 tags: [national-accounts, transition-economies, framework]
 sources: [imf_macro_accounting]
 status: draft
-last_updated: 2026-09-12
+last_updated: 2026-09-15
 ---
 
-Material Product System (MPS) là khung hạch toán quốc gia của các nền kinh tế kế hoạch hóa tập trung, trong đó chỉ hoạt động thuộc "lĩnh vực vật chất" được coi là tạo ra thu nhập quốc dân.
+MPS (Material Product System) là phương pháp hạch toán quốc gia mà các nền kinh tế kế hoạch tập trung tự xây dựng, và vẫn là khung hạch toán chính ở một số nền kinh tế chuyển đổi (imf_macro_accounting, Ch.2, The Transition from the MPS to the SNA, d.961).
 
-Ranh giới vật chất / phi vật chất là khác biệt căn bản so với [[system-of-national-accounts-sna]]. Sản phẩm vật chất gồm hàng hóa cộng các dịch vụ vật chất như vận tải hàng hóa, thương mại, bảo trì sửa chữa. Các dịch vụ phi vật chất — dịch vụ công, giáo dục, y tế, dịch vụ cá nhân, vận tải không phục vụ sản xuất hàng hóa — bị loại khỏi thước đo sản lượng, nên một nền kinh tế càng dịch chuyển sang dịch vụ thì MPS càng bỏ sót nhiều.
+Dù các tổ chức quốc tế đã cố cải thiện cầu nối giữa MPS và [[system-of-national-accounts-sna|SNA]], việc mọi nước chuyển hẳn sang SNA còn cần thời gian, và ở nhiều nước GDP vẫn được nâng lên từ các ước tính gốc dựng theo khái niệm MPS (imf_macro_accounting, Ch.2, cùng mục, d.961). Vì vậy người dùng số liệu của các nền kinh tế này cần biết hai khung khác nhau ở đâu (imf_macro_accounting, Ch.2, cùng mục, d.961).
 
-Khác biệt thứ hai nằm ở khấu hao: SNA khuyến nghị tính theo giá thay thế, MPS dựa vào giá gốc vốn thấp hơn nhiều. Đại lượng trung tâm của MPS là net material product (NMP), đã trừ khấu hao — nhưng vì khấu hao bị tính thấp nên NMP có xu hướng thổi phồng giá trị sản lượng. Tồn kho cũng định giá theo giá mua, nên trong môi trường lạm phát cao các khoản lãi lỗ nắm giữ làm méo luôn ước lượng đầu tư.
-
-Muốn suy ra [[gdp]] từ NMP phải cộng lại khấu hao và tổn thất tài sản cố định để ra gross material product, rồi cộng value added của lĩnh vực phi vật chất, trừ đầu vào phi vật chất đã dùng cho sản xuất vật chất, và điều chỉnh cho khác biệt phân loại. Vì đây là một chuỗi ước lượng chứ không phải số gốc, GDP của nhiều nền kinh tế chuyển đổi giai đoạn này nên được đọc như con số quy đổi có sai số.
+Khác biệt lớn thứ nhất là phạm vi: MPS chỉ tính sản lượng của khu vực vật chất, theo [[mps-counts-only-output-of-the-material-sphere]] (imf_macro_accounting, Ch.2, Box 2.3, d.985–988). Khác biệt thứ hai là khấu hao: đại lượng sản lượng cơ bản của MPS là sản phẩm vật chất ròng (NMP), đã trừ khấu hao tính theo giá gốc lịch sử chứ không theo giá thay thế như SNA khuyến nghị (imf_macro_accounting, Ch.2, Box 2.3, d.992–994). Ngoài ra MPS định giá thay đổi tồn kho theo giá mua nên thường phóng đại nó, và xử lý khác SNA với đi lại cá nhân, chi quân sự, dịch vụ nhà ở, sửa chữa lớn và tài sản cố định thanh lý (imf_macro_accounting, Ch.2, Box 2.3, d.996). Cách quy một con số NMP về GDP nằm ở [[converting-mps-net-material-product-to-gdp-requires-four-adjustments]] (imf_macro_accounting, Ch.2, Box 2.3, d.998–1009).
