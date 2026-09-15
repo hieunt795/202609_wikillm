@@ -158,3 +158,8 @@
 - Viết mới từ nguồn 6 trang (giữ title); 2 trang mới: sna-transactions-are-goods-and-services-distributive-or-financial, polands-1992-sna-accounts-… (⚠️ Conflict d.1609 so với Table 2.3)
 - Ch.2 viết lại xong 8/8 cụm; không còn trang thiếu chú thích §7.5 → đóng mục nợ trong inbox
 - Còn lại: Ch.1, Ch.4, Ch.5, Ch.6; Modern Money Mechanics
+
+## [2026-09-16:00-50-57] lint | 125 trang
+- Bước 0 sạch; 2 Conflict (người dùng hoãn), 4 khái niệm chưa có trang, 1 cặp nghi trùng, 3 vi phạm title, 11 nợ stub; 0 OCR, stale, Atomic, mồ côi
+- 101 trang đủ điều kiện stable (55 Ch.2, 46 Ch.3), chưa trang nào qua review; 2 mục inbox đề xuất xoá
+- Báo cáo: Claude outputs/lint-2026-09-16.md
