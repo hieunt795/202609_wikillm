@@ -25,8 +25,6 @@ reviewed:          # TUỲ CHỌN — ngày người dùng xác nhận đã đ�
 
 Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, bảng số liệu thô. Nếu cần, chỉ trích dẫn số liệu bên trong trang `case` liên quan, không tạo trang riêng cho bảng.
 
-**Ưu tiên lý luận trước tường thuật.** Khi một nguồn tách rõ phần khung khái niệm với phần tường thuật bối cảnh một quốc gia/giai đoạn, ingest phần khung khái niệm trước và ingest phần bối cảnh **chỉ khi** wiki còn thiếu minh chứng cho một `concept` đã có. Lý do: `case` tồn tại để chống lưng cho `concept` (bảng trên), nên khi một concept đã đủ minh chứng thì thêm case nữa không tăng sức giải thích mà chỉ làm loãng tỷ lệ lý luận/tường thuật của wiki. Phần bối cảnh bị bỏ qua vẫn phải có dòng riêng trong bản đồ chunk kèm lý do (§10), không xoá khỏi bảng.
-
 `concept` có một pattern con cần nhận diện: **bridge note** — trang chỉ mô tả *quan hệ* giữa 2 khái niệm liền kề (vd `income-absorption-identity` nối absorption với GNDI). Bridge note là trang độc lập, không được nhét vào một trong hai trang đầu mút.
 
 ## 3. Quy ước cấu trúc & đặt tên
@@ -44,6 +42,7 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 | Ingest | Tạo/cập nhật 5–15 trang wiki mỗi lần |
 | Lint | Chạy sau mỗi 10 lần ingest, hoặc theo lịch định kỳ |
 | Mâu thuẫn (conflict) | Không tự sửa — đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn, chờ xử lý |
+| Kích thước 1 trang | Đủ nhỏ để viết trọn trong 1 lượt, không cần chia nhiều lượt. Nếu không viết hết được trong 1 lượt → trang đang gộp nhiều ý, phải tách (§5) |
 | Phân loại nguồn ngắn / nguồn dài | Ngưỡng định lượng ở §10. Nguồn dài bắt buộc có file trạng thái trong `03_state/` |
 | Triage `_inbox.md` | Mỗi lượt lint (§11) |
 
@@ -52,24 +51,15 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 Mỗi trang wiki chỉ chứa 1 ý tưởng/khái niệm duy nhất — **nhưng phải bao quát đầy đủ ý tưởng đó**. Atomic là một điểm cân bằng, không phải "càng nhỏ càng tốt": trang quá rộng làm mờ kết nối cụ thể, trang quá vụn làm loãng mạng liên kết.
 Nếu nội dung trích từ nguồn chứa >1 ý tưởng độc lập có thể đứng riêng → tách thành nhiều trang, không gộp vào 1 trang dài.
 
-**Ba phép kiểm, theo thứ tự. Không dùng số từ làm căn cứ ở bất kỳ bước nào.**
-
-1. **Kiểm tra title** — có viết được một câu khẳng định duy nhất mô tả đúng toàn bộ nội dung trang không? Nếu title chính xác buộc phải dùng "và" để nối hai mệnh đề khác nhau thì trang đang chứa hai ý (§8).
-2. **Kiểm tra nhu cầu liên kết tới từng phần** — có trang nào sẽ cần liên kết tới chỉ một phần của trang này không? Nếu có, phần đó cần tồn tại như một trang riêng. Đây là phép kiểm phân biệt được nhiều trường hợp nhất.
-3. **Kiểm tra heading** — thân bài cần heading cấp 2+ để tách ý là dấu hiệu trang chứa nhiều ý (§7).
-
-**Danh sách liệt kê lấy từ nguồn là một ý có N thành phần, không phải N ý.** Tách nó tạo ra N trang mà không trang nào cần liên kết tới riêng lẻ.
-
-Khi một phần nội dung cần tồn tại độc lập, có hai cách xử lý. Theo Evergreen, chi phí của trang quá rộng là các liên kết tới phần nội dung nằm trong nó không hình thành được, vì phần đó không có tên riêng để liên kết tới. Cách xử lý là cấp tên riêng cho phần đó: tách thành trang mới, hoặc giữ nguyên trang dài và chuyển nó thành trang liên kết tới các trang đã tồn tại sẵn ở nơi khác.
-
-**Độ dài không phải tiêu chí.** Đo trên 116 trang ngày 2026-09-14: độ dài với số outlink r = +0,07; độ dài với số backlink r = −0,09. Độ dài chủ yếu phụ thuộc việc nguồn có liệt kê hay không — trang có title dạng liệt kê trung vị 355 từ, các trang khác 268 từ. Trang ở bậc trên của thang phân loại Evergreen (trang tổng hợp, trang đầu mối) có độ dài lớn là đúng thiết kế: `system-of-national-accounts-sna` dài 405 từ và liên kết tới 10 trang khác.
+Hai dấu hiệu vi phạm:
+- Trang có bất kỳ heading cấp 2+ trong thân bài → cần tách (xem §7).
+- **Không đặt được title sắc gọn cho trang** → hoặc tư duy chưa rõ, hoặc trang đang chứa nhiều ý (xem §8).
 
 Chủ đề (topic) là đơn vị gom nhóm tạm thời để tìm liên kết khi ingest (xem `agents.md` §Ingest bước 2b) — một chủ đề thường chứa nhiều trang atomic, không phải 1 chủ đề = 1 trang. Luật Atomic ở trên vẫn là luật quyết định ranh giới trang cuối cùng trong mỗi chủ đề.
 
 ## 6. Liên kết giữa các trang wiki (densely linked)
 
 - Liên kết giữa trang wiki với trang wiki khác dùng `[[wikilink]]` ngay trong thân bài (không dùng field frontmatter riêng).
-- **Hai dạng link, cùng một đích.** `[[tên-trang]]` và `[[tên-trang|nhãn hiển thị]]` là như nhau; dạng có `|` dùng khi tên trang không đọc lọt vào câu văn (vd `[[real-wages|lương thực]]`). Phần trước dấu `|` **luôn** là tên file, phần sau chỉ là chữ hiển thị. Mọi công cụ đếm liên kết phải cắt ở `|` trước khi so khớp — grep `[[tên-trang]]` trần sẽ bỏ sót toàn bộ link dạng này.
 - `sources: []` trong frontmatter chỉ dùng để trỏ tới `01_sources/`, không dùng để liên kết giữa các trang wiki.
 - Một trang hợp lệ cần có ít nhất 1 outlink (`[[wikilink]]` trỏ ra) và lý tưởng có backlink (trang khác trỏ vào) — trừ trang `status: stub` vốn chưa có thân bài (§9). Xem tiêu chí lint ở `agents.md` §Lint.
 - Cách viết `[[wikilink]]` trong câu: xem §7.
@@ -89,7 +79,7 @@ Thân bài (phần dưới frontmatter) tuân theo 5 luật:
 
    Chú thích đi kèm **claim**, không đi kèm trang: một trang gộp vật liệu từ nhiều mục thì mỗi claim mang chú thích của mục sinh ra nó. Không dồn tất cả thành một chú thích cuối trang — cùng lý do với luật 3.
 
-   **Áp dụng từ lượt ingest kế tiếp trở đi.** Các trang có trước ngày luật có hiệu lực không sửa hàng loạt; backfill là một khoản nợ kỹ thuật riêng, đã ghi trong `log.md`. Hook thực thi luật này theo `last_updated`: trang nào được chạm vào và nâng ngày lên thì phải có chú thích, tức nợ trả dần theo lúc động tới chứ không sinh thêm nợ mới.
+   **Áp dụng từ lượt ingest kế tiếp trở đi.** 51 trang đã có không sửa hàng loạt; backfill là một khoản nợ kỹ thuật riêng, đã ghi trong `log.md`.
 
 Ví dụ:
 
@@ -158,7 +148,7 @@ Hai trục này trực giao nên **không gộp vào `status`**: gộp lại s�
 
 Giải pháp: trường **`reviewed:` tuỳ chọn** trong frontmatter (§1), giá trị là ngày người dùng xác nhận đã đọc qua trang. Không có trường này = chưa xác nhận.
 
-- **Tuỳ chọn, không bắt buộc.** Hook không kiểm; các trang có sẵn không phải backfill.
+- **Tuỳ chọn, không bắt buộc.** Hook không kiểm; 51 trang hiện có không phải backfill.
 - **Chỉ người dùng đặt `reviewed:`.** Agent không tự đặt, kể cả khi vừa sửa xong trang — trường này ghi nhận *người đã đọc*, agent đặt hộ thì trường mất hết ý nghĩa.
 - `reviewed:` cũ hơn `last_updated:` nghĩa là trang đã đổi sau lần duyệt. Đây là **thông tin tham khảo, không phải lỗi lint** — cố ý không thêm tiêu chí lint cho trường này: ở quy mô một người dùng, biến nó thành lỗi chỉ tạo ra nhiễu phải bỏ qua mỗi lượt.
 

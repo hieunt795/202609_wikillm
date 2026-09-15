@@ -39,11 +39,10 @@ Chi tiết ở `00_schema.md`; năm điều dễ sai nhất:
 - `[[wikilink]]` nằm **trong câu văn kèm lý do**, không dồn thành danh sách "xem thêm" cuối trang (§7).
 - **`tags` không phải liên kết** — chỉ là chỉ mục lọc rẻ (§6).
 - **Viết lại bằng lời mình**, không sao chép nguyên văn nguồn (§7).
-- Claim từ **nguồn dài** phải kèm chú thích vị trí `(<nguồn>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7.5) — hook thực thi theo `last_updated`, nên trang cũ không phải backfill hàng loạt nhưng trang nào chạm vào thì phải trả.
+- Claim từ **nguồn dài** phải kèm chú thích vị trí `(<nguồn>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7.5) — áp dụng từ lượt ingest kế tiếp, không backfill 51 trang cũ.
 
 ## Ghi chú vận hành
 
 - Không sửa `00_schema.md` / `agents.md` / skill vụn vặt từng lần — gộp theo batch để giữ prompt cache ổn định.
 - Ý tưởng chưa đủ chín để thành trang → ghi vào `_inbox.md`, **không** nhét vào một trang `02_wiki/` cho tiện (§11). Triage mỗi lượt lint.
-- Hook `PostToolUse` tự kiểm frontmatter, liên kết, link chết và chú thích §7.5 mỗi khi ghi file trong `02_wiki/`. Cảnh báo từ hook phải xử lý ngay, không để tồn đến lượt lint.
-- Hook chỉ bắt tool `Write|Edit` — ghi file bằng shell thì phải tự chạy `python .claude/hooks/validate_wiki_page.py --all` sau đó.
+- Hook `PostToolUse` tự kiểm frontmatter và liên kết mỗi khi ghi file trong `02_wiki/`. Cảnh báo từ hook phải xử lý ngay, không để tồn đến lượt lint.

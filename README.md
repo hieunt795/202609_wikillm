@@ -31,10 +31,10 @@ Mỗi lần ghi file trong `02_wiki/`, hook `.claude/hooks/validate_wiki_page.py
 
 ## Vì sao không có `01_sources/`
 
-Nguồn là tài liệu của bên thứ ba (ấn phẩm IMF có bản quyền), kho này chỉ phát hành phần wiki do dự án tự viết — mọi trang đều là chữ viết lại, không trích nguyên văn.
+Nguồn là tài liệu của bên thứ ba (ấn phẩm IMF có bản quyền), kho này chỉ phát hành phần wiki do dự án tự viết — 51 trang đều là chữ viết lại, không trích nguyên văn.
 
 Chú thích vị trí trong trang wiki trỏ tới **số dòng** của file nguồn, nên vẫn kiểm chứng được: `03_state/_sources_manifest.md` ghi nhan đề, nơi xuất bản và SHA-256 của từng file. Tự lấy bản gốc, đặt đúng đường dẫn, đối chiếu checksum là số dòng khớp tuyệt đối.
 
 ## Trạng thái
 
-Số trang hiện tại và tiến độ từng nguồn: xem mục `## Sources` đầu `02_wiki/index.md`; chi tiết theo chương nằm ở `03_state/`. Kết quả audit gần nhất và các khoản nợ kỹ thuật đang mở nằm ở cuối `log.md`.
+51 trang wiki, 0 link chết, 0 trang mồ côi. Đã ingest Chương 2 của nguồn IMF (23% tài liệu). Kết quả audit gần nhất và các khoản nợ kỹ thuật đang mở nằm ở dòng cuối `log.md`.

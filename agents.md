@@ -29,8 +29,7 @@ Cả ba đều dùng mẫu **hai lượt**: lượt 1 quét frontmatter (rẻ), 
 - Không sửa `agents.md` / `00_schema.md` / skill vụn vặt từng lần — gộp thay đổi theo batch để giữ nội dung ổn định (hỗ trợ prompt caching).
 - Không bao giờ sửa nội dung trong `01_sources/`, và không thêm file nào vào đó — kể cả file do agent sở hữu (§3).
 - Ý tưởng/insight chưa đủ chín thành trang evergreen → `_inbox.md` ở gốc dự án, tách khỏi `02_wiki/` (§11). Triage mỗi lượt lint, mỗi mục có đúng 3 kết cục: nâng thành trang, gộp vào trang đã có, hoặc xoá.
-- Hook `PostToolUse` (`.claude/hooks/validate_wiki_page.py`) tự kiểm frontmatter, wikilink, link chết, luật không-heading, chú thích §7.5 và quy ước title §8 mỗi khi ghi file trong `02_wiki/`. Cảnh báo hook phải xử lý ngay, không để dồn tới lượt lint.
-- **Hook chỉ bắt được tool `Write|Edit`.** File ghi bằng shell đi vòng qua nó. Sau mỗi lượt ghi file bằng shell, chạy `python .claude/hooks/validate_wiki_page.py --all` để quét lại toàn bộ.
+- Hook `PostToolUse` (`.claude/hooks/validate_wiki_page.py`) tự kiểm frontmatter, wikilink và luật không-heading mỗi khi ghi file trong `02_wiki/`. Cảnh báo hook phải xử lý ngay, không để dồn tới lượt lint.
 
 ## Khi sửa quy trình
 

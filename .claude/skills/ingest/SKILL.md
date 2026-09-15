@@ -13,8 +13,6 @@ description: Nạp nguồn mới từ 01_sources vào wiki 02_wiki theo schema d
 
 Bỏ qua: bài tập cuối chương, bảng số liệu thô (§2). Số liệu cần thiết thì trích dẫn bên trong trang `case` liên quan, không tạo trang riêng.
 
-Cũng bỏ qua phần tường thuật bối cảnh quốc gia khi wiki đã đủ minh chứng cho các concept liên quan — xem nguyên tắc *ưu tiên lý luận trước tường thuật* (§2). Với `imf_macro_accounting`, quyết định này đã được chốt cho từng chương trong bản đồ chunk ở `03_state/imf_macro_accounting.md`: đọc cột *Ghi chú* trước khi mở nguồn.
-
 **Nguồn ngắn hay nguồn dài?** Đo bằng `wc -c -l <file>` rồi đối chiếu ngưỡng §10 — không ước lượng bằng mắt.
 
 - **Nguồn ngắn** (≤ 120 KB *và* ≤ 1.200 dòng): đọc trọn 1 lượt. Không cần file trạng thái.
@@ -49,23 +47,11 @@ Với **nguồn dài**: mỗi claim kèm chú thích vị trí `(<nguồn>, <ch�
 
 **7. Cập nhật `03_state/<tên_nguồn>.md`** (nguồn dài). Đổi ô trạng thái chunk vừa xử lý sang `[x]`, hoặc `[~]` kèm ghi chú phần nào còn lại nếu dừng giữa chừng; cập nhật `last_updated`. Bảng này và mục `## Sources` ở index phải khớp nhau.
 
-**8. Kiểm trước khi ghi log — bắt buộc, không bỏ qua kể cả khi thấy chắc chắn.**
-
-```bash
-python .claude/hooks/validate_wiki_page.py --all
-```
-
-Hook `PostToolUse` chỉ bắt tool `Write|Edit`; ingest thường ghi file bằng shell nên hook không chạy lần nào. Ngoài ra hook trên từng file **không thể** biết một trang có backlink hay không — đó là thuộc tính của cả đồ thị. Chế độ `--all` tính được và báo trang mồ côi.
-
-Lỗi này đã xảy ra hai lần trong cùng một ngày: cụm A của Ch.3 và cụm D+E để lại tổng cộng 12 trang backlink = 0, đều là trường hợp cụm mới link ra ngoài đầy đủ nhưng không trang cũ nào link ngược vào. Bước 4 yêu cầu backlink hai chiều cho **từng trang** là chưa đủ, vì lỗi phát sinh ở **cấp cụm**.
-
-Có trang mồ côi → thêm liên kết **có lý do thật** từ trang liên quan, không vá cho đủ chỉ tiêu. Nếu thực sự không tìm được lý do, ghi vào `log.md` như concept cô lập (bước 4) thay vì bịa một câu nối.
-
-**9. Append 1 dòng vào `log.md`:** `[YYYY-MM-DD] ingest <nguồn> <chương/cụm> → <tóm tắt trang tạo/nâng cấp>`. Ghi rõ phần nào của nguồn còn lại chưa ingest.
+**8. Append 1 dòng vào `log.md`:** `[YYYY-MM-DD] ingest <nguồn> <chương/cụm> → <tóm tắt trang tạo/nâng cấp>`. Ghi rõ phần nào của nguồn còn lại chưa ingest.
 
 ## Sai lầm thường gặp
 
-- Gộp cả cụm chủ đề vào 1 trang dài → vi phạm Atomic. Quyết định ranh giới bằng **ba phép kiểm §5** (title, nhu cầu liên kết tới từng phần, heading), theo đúng thứ tự đó. **Không dùng số từ làm căn cứ** — đo trên toàn wiki, độ dài không tương quan với bất kỳ chỉ số mạng nào.
+- Gộp cả cụm chủ đề vào 1 trang dài → vi phạm Atomic. Cần heading để tách ý = dấu hiệu phải tách trang.
 - Sao chép nguyên văn nguồn → không tạo ra hiểu biết. Công thức giữ ký hiệu được, phần diễn giải phải viết lại.
 - Dồn link thành mục "xem thêm" cuối trang → link không lý do không tạo giá trị mạng.
 - Đặt title danh từ cho trang `case` → `case`/`analysis` phải dùng câu khẳng định hoàn chỉnh (§8).
