@@ -153,3 +153,8 @@
 - Viết mới từ nguồn 6 trang case (giữ title); 1 trang mới: polish-real-wages-stabilized-but-lagged-productivity-gains
 - ⚠️ Conflict trên polish-national-saving-…: tiết kiệm 1992 (d.1206 so với d.1204 + Table 2.3 d.1407); đóng mục inbox tương ứng
 - Còn lại Ch.2: G (bản gốc ở tag ch2-snapshot)
+
+## [2026-09-16:00-46-02] ingest | imf_macro_accounting Ch.2 cụm G (viết lại) — khung SNA chi tiết; Ch.2 viết lại xong
+- Viết mới từ nguồn 6 trang (giữ title); 2 trang mới: sna-transactions-are-goods-and-services-distributive-or-financial, polands-1992-sna-accounts-… (⚠️ Conflict d.1609 so với Table 2.3)
+- Ch.2 viết lại xong 8/8 cụm; không còn trang thiếu chú thích §7.5 → đóng mục nợ trong inbox
+- Còn lại: Ch.1, Ch.4, Ch.5, Ch.6; Modern Money Mechanics

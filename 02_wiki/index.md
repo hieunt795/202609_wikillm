@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | **Ch.2 đang viết lại từ nguồn:** xong A1–F; còn G (trang cũ vẫn trong wiki tới khi cụm được viết lại; bản gốc ở tag `ch2-snapshot`). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.3 phần lý luận (cụm A–E); Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Ch.2 đã viết lại toàn bộ từ nguồn (2026-09-15; bản cũ ở tag `ch2-snapshot`). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan); Ch.4 (cán cân thanh toán); Ch.5 (tiền tệ); Ch.6 (flow of funds). Đã xong: Ch.3 phần lý luận (cụm A–E); Ch.3 bỏ qua phần bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (83 KB / 721 dòng) | **Chưa ingest** | Toàn bộ — dưới ngưỡng nguồn dài nên ingest trọn 1 lượt, không cần file trạng thái (§10) | — |
 
 ## Trang wiki theo chủ đề
@@ -18,6 +18,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[sna-sequence-of-accounts]] — sáu tài khoản nối nhau qua balancing item
 - [[institutional-sectors-in-the-sna]] — năm khu vực thể chế cộng phần còn lại của thế giới
 - [[sna-records-transactions-on-an-accrual-basis-with-double-entry]] — quy ước ghi nhận
+- [[sna-transactions-are-goods-and-services-distributive-or-financial]] — ba loại giao dịch và tồn lượng
 - [[residency-in-the-sna-follows-the-centre-of-economic-interest]] — ai là đơn vị cư trú
 - [[valuation-in-the-sna]] — giá cơ bản, giá người sản xuất, giá người mua
 - [[the-1993-sna-added-balance-sheets-and-fuller-income-accounts]] — khác biệt so với bản 1968
@@ -90,6 +91,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[polish-price-liberalization-left-inflation-stuck-at-30-percent]] — thả giá và lạm phát nền
 - [[polands-excess-wage-tax-popiwek-was-discontinued-after-five-years]] — kiểm soát lương trên thực tế
 - [[polish-real-wages-stabilized-but-lagged-productivity-gains]] — lương thực hồi nhẹ, tụt sau năng suất
+- [[polands-1992-sna-accounts-show-government-dissaving-and-household-saving]] — tài khoản SNA 1992 theo khu vực; ⚠️ nguồn mâu thuẫn về tiết kiệm gộp
 - [[polish-unemployment-rose-from-near-zero-to-16-percent-in-four-years]] — từ thất nghiệp trá hình sang công khai
 
 **Khung kế toán tài khoá (GFS)**
