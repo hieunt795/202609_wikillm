@@ -344,3 +344,7 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 ## [2026-09-16:23-01-21] promote | 12 trang lên stable
 - Danh sách "Đủ điều kiện stable" của lint 292 trang; người dùng duyệt, bỏ qua /review
 - Loại: 0; --all sạch trước và sau; hiện 252 stable / 40 draft
+
+## [2026-09-16:23-04-25] ingest | imf_macro_accounting Ch.3–6 — xử lý lint 292 trang, 3 khái niệm mới
+- 3 trang mới: capital-flight, financial-programming, currency-board
+- Chèn 9 link từ trang cũ (không nâng last_updated); index + 03_state cập nhật; --all sạch (295 trang)
