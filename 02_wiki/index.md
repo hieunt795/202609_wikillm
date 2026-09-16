@@ -92,7 +92,14 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 **Cán cân thanh toán — phân loại chuẩn (Ch.4 cụm B)**
 - [[criteria-for-selecting-standard-balance-of-payments-components]] — 4 tiêu chí chọn thành phần chuẩn
 - [[current-account-entries-are-recorded-gross-while-capital-and-financial-account-entries-are-net]] — gộp vs ròng
-- [[functional-categories-of-the-financial-account]] — FDI, portfolio, other investment, reserve assets
+- [[goods-in-the-balance-of-payments]] — hạng mục hàng hóa của tài khoản vãng lai
+- [[services-in-the-balance-of-payments]] — vận tải, du lịch, dịch vụ chính phủ, khác
+- [[income-in-the-balance-of-payments]] — thù lao người lao động, thu nhập đầu tư
+- [[capital-account-in-the-balance-of-payments]] — chuyển nhượng vốn + tài sản phi tài chính không do sản xuất
+- [[functional-categories-of-the-financial-account]] — hub 4 nhóm: FDI, portfolio, other investment, reserve assets
+- [[direct-investment]] — vốn cổ phần, lợi nhuận tái đầu tư, vốn khác
+- [[portfolio-investment]] — chứng khoán nợ/cổ phần dài hạn, công cụ thị trường tiền tệ, phái sinh
+- [[other-investment]] — tín dụng thương mại, vay mượn, tín dụng IMF
 - [[reserve-assets-in-the-balance-of-payments-are-flows-not-stocks]] — tại sao dự trữ vẫn là biến động
 - [[how-imf-transactions-affect-the-balance-of-payments]] — 3 loại giao dịch với IMF
 - [[exceptional-financing-in-the-balance-of-payments]] — tái cơ cấu, nợ quá hạn, xóa nợ, debt-equity swap
