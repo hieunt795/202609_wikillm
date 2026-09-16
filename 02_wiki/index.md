@@ -261,10 +261,13 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[consolidation-nets-out-inter-entity-claims-unlike-aggregation]] — hợp nhất triệt tiêu khoản mục liên thực thể
 - [[money-serves-as-a-medium-of-exchange-store-of-value-and-unit-of-account]] — ba chức năng của tiền
 - [[money-aggregates-form-a-nested-hierarchy-from-narrow-money-to-broad-liquidity]] — M1 ⊂ M2 ⊂ M3 ⊂ M4 ⊂ L
+- [[quasi-money]] — QM, tiền gửi có kỳ hạn/tiết kiệm, số hạng TD trong M2
 - [[the-typical-monetary-authorities-balance-sheet-itemizes-foreign-assets-and-shows-reserve-money-by-holder]] — bảng cân đối thô Box 5.1, trước khi rút gọn thành đồng nhất thức RM
 - [[the-analytical-monetary-authorities-balance-sheet-groups-items-into-nfa-nda-and-rm]] — bảng phân tích gọn Box 5.2, lớp trung gian giữa Box 5.1 và đồng nhất thức RM
 - [[the-typical-deposit-money-bank-balance-sheet-groups-assets-by-counterparty-and-liabilities-by-instrument]] — bảng cân đối thô Box 5.5, tài sản theo đối tác/nợ theo công cụ
 - [[the-analytical-deposit-money-bank-balance-sheet-separates-required-from-excess-reserves]] — bảng phân tích gọn Box 5.6, dự trữ bắt buộc/vượt mức
+- [[required-reserves]] — r, r_d, r_t; dòng Required trên bảng phân tích DMB
+- [[excess-reserves]] — r_e; lựa chọn của DMB, không phải chỉ tiêu chính sách
 - [[monetary-accounts-net-claims-on-government-but-keep-claims-on-deposit-money-banks-gross]] — vì sao tín dụng cho chính phủ bị trừ tiền gửi còn tín dụng cho DMB thì không
 
 **Ch.5 — cân đối: đồng nhất thức tiền tệ, cầu tiền, tỷ giá (batch W2)**

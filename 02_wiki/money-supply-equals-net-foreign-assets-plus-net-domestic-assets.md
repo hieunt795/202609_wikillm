@@ -17,7 +17,7 @@ $$M2 = NFA + NDC + OIN_b$$
 
 (imf_macro_accounting, Ch.5, The Monetary Survey, d.4768–4776). Bản trình bày dạng bảng của đúng cách nhóm NFA/NDA này ở phía DMB nằm ở [[the-analytical-deposit-money-bank-balance-sheet-separates-required-from-excess-reserves]].
 
-$M2$ cũng có thể viết trực tiếp theo loại công cụ mà công chúng nắm giữ — tiền mặt lưu thông ($CY$), tiền gửi không kỳ hạn ($DD$), tiền gửi có kỳ hạn/tiết kiệm ($TD$) — một cách viết khác của cùng đại lượng, không phải một đồng nhất thức độc lập:
+$M2$ cũng có thể viết trực tiếp theo loại công cụ mà công chúng nắm giữ — tiền mặt lưu thông ($CY$), tiền gửi không kỳ hạn ($DD$), [[quasi-money|tiền gửi có kỳ hạn/tiết kiệm]] ($TD$) — một cách viết khác của cùng đại lượng, không phải một đồng nhất thức độc lập:
 
 $$M2 = CY + DD + TD$$
 
