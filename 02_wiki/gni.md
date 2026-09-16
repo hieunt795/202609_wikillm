@@ -7,7 +7,7 @@ status: draft
 last_updated: 2026-09-15
 ---
 
-GNI (gross national income) bằng [[gdp]] cộng thu nhập nhân tố ròng từ nước ngoài:
+GNI (gross national income) bằng [[gdp]] cộng [[net-factor-income-from-abroad|thu nhập nhân tố ròng từ nước ngoài]] ($Y_f$):
 
 $$GNI = GDP + Y_f$$
 

@@ -89,3 +89,8 @@
 - **Lý do:** người dùng chỉ ra phủ định thường không có dạng xác định tương đương ("không ăn cơm" không đồng nghĩa "ăn cháo"); ép đổi sẽ làm sai nghĩa. "Khẳng định" trong §8 được hiểu là câu trần thuật.
 - **Thay cho:** §8 luật 1 bản trước 2026-09-16.
 
+
+## [2026-09-16] Thành phần có tên kinh tế riêng phải có trang wiki riêng
+- **Quyết định:** áp dụng hồi tố cho toàn bộ wiki đã ingest (Ch.2–Ch.6, ~211 trang). Mọi thành phần trong một đồng nhất thức, bảng cân đối hay box có tên gọi kinh tế/tài chính thật (compensation of employees, operating surplus, private/government consumption, required/excess reserves, Treasury bills, SDR holdings...) được tách thành trang `concept` riêng, kể cả khi trang đó rất ngắn. Không tách trang cho hệ số/tỷ trọng đại số thuần tuý không mang tên riêng (trọng số tăng trưởng, $b$, $t$/$t-1$...). Chi tiết: `00_schema.md` §5.
+- **Lý do:** người dùng phát hiện qua Box 2.1 (SNA: Key Aggregates) rằng nhiều đại lượng có tên riêng (W, OS, TSP, CP, CG, Y_f, TR_f...) chỉ được giải thích lồng trong câu văn của trang identity, không tra được như một node độc lập.
+- **Hệ quả vận hành:** backfill là một dự án nhiều lượt, đi theo từng chương (Ch.2 trước vì vừa được rà, sau đó Ch.3–Ch.6); mỗi lượt vẫn theo ngưỡng 5–15 trang/lượt (§4) và phải chạy `validate_wiki_page.py --all` + ghi log riêng.

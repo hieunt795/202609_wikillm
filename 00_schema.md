@@ -63,6 +63,10 @@ Hai dấu hiệu vi phạm:
 
 Chủ đề (topic) là đơn vị gom nhóm tạm thời để tìm liên kết khi ingest (xem `.claude/skills/ingest/SKILL.md` bước 2) — một chủ đề thường chứa nhiều trang atomic, không phải 1 chủ đề = 1 trang. Luật Atomic ở trên vẫn là luật quyết định ranh giới trang cuối cùng trong mỗi chủ đề.
 
+**Thành phần có tên kinh tế riêng trong một đồng nhất thức/bảng cân đối/box phải có trang riêng** (người dùng chốt 2026-09-16, áp dụng hồi tố cho toàn bộ wiki đã ingest). Trước quyết định này, một thành phần như $W$ (compensation of employees), $OS$ (operating surplus), $CP$/$CG$ (tiêu dùng tư nhân/chính phủ), "Treasury bills", "SDR holdings" chỉ được giải thích trong câu văn của trang chứa đồng nhất thức/bảng cân đối đó. Từ nay: nếu thành phần có một tên gọi kinh tế/tài chính thật (không phải biến số thuần đại số), nó được tách thành trang `concept` riêng, dù trang đó có thể rất ngắn — atomic ở mức thành phần, không chỉ ở mức đồng nhất thức.
+
+**Ngoại lệ — không tách trang cho:** hệ số/tỷ trọng thuần đại số không mang tên kinh tế riêng biệt (ví dụ trọng số tăng trưởng trong công thức 5.4, tỷ lệ $b$ trong số nhân tiền, chỉ số thời gian $t$/$t-1$); các đại lượng đã có trang riêng dưới một tên khác — kiểm trùng bằng grep title/alias trước khi tạo, không tạo trang trùng nội dung dưới tên khác.
+
 ## 6. Liên kết giữa các trang wiki (densely linked)
 
 - Liên kết giữa trang wiki với trang wiki khác dùng `[[wikilink]]` ngay trong thân bài (không dùng field frontmatter riêng).

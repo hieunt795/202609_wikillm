@@ -31,6 +31,10 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[value-added]] — giá trị thực sự tạo thêm, đơn vị nền của mọi phép đo sản lượng
 - [[gdp]] — tổng value added theo nguyên tắc cư trú
 - [[production-income-and-expenditure-approaches-yield-the-same-gdp]] — ba cách đo, một con số
+- [[compensation-of-employees]] — W, cấu phần thù lao lao động trong GDP cách thu nhập
+- [[operating-surplus]] — OS, thặng dư hoạt động gộp doanh nghiệp, gồm cả khấu hao
+- [[taxes-less-subsidies-on-products]] — TSP, cấu phần thứ ba của GDP cách thu nhập
+- [[net-domestic-product]] — NDP = GDP − D
 - [[measured-gdp-is-an-imperfect-gauge-of-output-and-welfare]] — GDP đo sản xuất và phúc lợi chưa chuẩn ở đâu, vì sao
 
 **Giá và sản lượng thực**
@@ -51,13 +55,21 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 **Đại lượng thu nhập và sử dụng**
 - [[gni]] — thu nhập người cư trú kiếm được
+- [[net-factor-income-from-abroad]] — Y_f, khoản cộng từ GDP ra GNI
 - [[gndi]] — thu nhập khả dụng để tiêu hoặc để dành
+- [[net-current-transfers]] — TR_f, khoản cộng từ GNI ra GNDI
+- [[net-national-disposable-income]] — NNDI = GNDI − D
 - [[absorption]] — tổng cầu nội địa (C + I)
 - [[aggregate-demand]] — cầu với hàng trong nước, gồm xuất khẩu ròng
 - [[gross-national-saving]] — phần dư sau tiêu dùng
 - [[final-consumption]] — phần hộ gia đình và chính phủ sử dụng, đối lập với tiêu dùng trung gian
+- [[private-consumption]] — CP, cấu phần tư nhân của C (Box 2.1)
+- [[general-government-consumption]] — CG, cấu phần chính phủ của C (Box 2.1)
 - [[gross-investment]] — bổ sung vốn vật chất, không phải mua tài sản tài chính
 - [[depreciation]] — đại lượng tách mọi cặp gộp/ròng
+- [[exports-of-goods-and-nonfactor-services]] — X, cấu phần GDP cách chi tiêu
+- [[imports-of-goods-and-nonfactor-services]] — M, cấu phần GDP cách chi tiêu (trừ ra)
+- [[net-exports]] — X − M, khác trade-balance ở Ch.4 vì gồm cả dịch vụ
 - [[leakages-equal-injections-in-the-circular-flow]] — dòng luân chuyển nối các khu vực, rò rỉ bằng bơm vào
 
 **Đồng nhất thức đối ngoại**
@@ -170,6 +182,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[government-saving-investment-gap-approximates-the-overall-fiscal-deficit]] — ràng buộc ngân sách của khu vực chính phủ và ba nguồn lấp
 - [[the-right-fiscal-deficit-measure-depends-on-the-question-asked]] — bốn yếu tố chọn thước đo
 - [[public-sector-borrowing-requirement]] — thước đo rộng nhất
+- [[current-fiscal-deficit]] — thu thường xuyên trừ chi thường xuyên
 - [[current-fiscal-deficit-rests-on-an-arbitrary-capital-current-split]] — vì sao cán cân thường xuyên ít hữu ích
 - [[primary-deficit]] — chính sách tuỳ nghi hiện tại và nợ
 - [[operational-deficit]] — tách phần lãi bù lạm phát
@@ -182,6 +195,8 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[external-deficit-financing-is-limited-by-reserves-and-creditworthiness]] — vay nước ngoài, rút dự trữ
 - [[crowding-out]] — chi tiêu, vay công lấn chi tiêu tư qua lãi suất
 - [[seigniorage]] — nguồn thu từ phát hành tiền, tách thành phần thuần và thuế lạm phát
+- [[pure-seigniorage]] — thành phần đến từ tăng trưởng thực/cầu tiền dịch chuyển
+- [[inflation-tax]] — thành phần đến từ lạm phát nhân số dư tiền thực
 - [[inflation-tax-revenue-peaks-because-high-inflation-shrinks-its-base]] — đường chữ U ngược
 
 **Nợ công và tính bền vững**
@@ -192,7 +207,9 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[when-interest-exceeds-growth-a-permanent-primary-deficit-cannot-exceed-seigniorage]] — hai chế độ r > g và r < g
 - [[stabilizing-the-debt-ratio-caps-the-deficit-at-debt-times-nominal-growth]] — mục tiêu ngân sách để ổn định nợ
 - [[government-solvency-is-a-forward-looking-balance-sheet]] — ràng buộc liên thời gian, tài sản ròng
-- [[fiscal-sustainability-indicators-measure-the-adjustment-needed]] — tài sản ròng, primary gap, tax gap
+- [[fiscal-sustainability-indicators-measure-the-adjustment-needed]] — hub ba chỉ số
+- [[primary-gap]] — PDV cân đối cơ bản ổn định nợ trừ cân đối thực tế
+- [[medium-term-tax-gap]] — điều chỉnh tỷ lệ thuế cần để ổn định nợ
 - [[ricardian-equivalence]] — vay nợ là thuế hoãn lại? bằng chứng yếu
 - [[expenditure-arrears-raise-the-cost-of-providing-government-services]] — nợ đọng chi tiêu
 
@@ -211,6 +228,9 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[low-public-spending-ratios-can-reflect-weak-financing-capacity-not-a-small-state]] — vai trò nhà nước
 - [[civil-service-pay-policy-shapes-government-spending-efficiency]] — lương công vụ
 - [[underspending-on-operations-and-maintenance-erodes-existing-capital]] — vận hành và bảo dưỡng
+- [[wages-and-salaries-expenditure]] — chi lương công chức
+- [[government-goods-and-services-expenditure]] — chi phí hành chính, vận hành
+- [[government-capital-expenditure]] — đầu tư công có tính sản xuất
 - [[subsidies]] — định nghĩa, bảy dạng, công khai và ngầm
 - [[effective-subsidies-are-targeted-temporary-transparent-and-budget-financed]] — năm tiêu chí đánh giá trợ cấp
 - [[public-investment-should-complement-rather-than-compete-with-markets]] — chi đầu tư
@@ -222,7 +242,6 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 **Stub — khái niệm đã có tên, chờ nội dung**
 - [[macroeconomic-sectors]] — các khu vực vĩ mô và tương tác giữa chúng
-- [[net-exports]] — xuất khẩu trừ nhập khẩu, tác động của ngoại thương lên tổng cầu
 - [[soft-budget-constraint]] — ràng buộc ngân sách doanh nghiệp lách được nhờ nhà nước, ngân hàng
 - [[nonbank-financial-institutions]] — tầng thứ ba của thống kê tài chính IFS
 

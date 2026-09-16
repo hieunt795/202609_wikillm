@@ -7,7 +7,7 @@ status: draft
 last_updated: 2026-09-15
 ---
 
-Trợ cấp là mọi hỗ trợ của chính phủ cho người sản xuất hoặc người tiêu dùng mà chính phủ không nhận lại khoản đền bù nào (imf_macro_accounting, Ch.3, Types of Public Expenditures, d.2446; chú thích 34, d.2458).
+Trợ cấp là mọi hỗ trợ của chính phủ cho người sản xuất hoặc người tiêu dùng mà chính phủ không nhận lại khoản đền bù nào — một trong bốn hạng mục kinh tế chính của chi tiêu công cùng [[wages-and-salaries-expenditure|chi lương]], [[government-goods-and-services-expenditure|chi hàng hoá, dịch vụ]] và [[government-capital-expenditure|chi đầu tư]] (imf_macro_accounting, Ch.3, Types of Public Expenditures, d.2435, d.2446; chú thích 34, d.2458).
 
 Trợ cấp có bảy dạng: trả tiền trực tiếp; cho vay với lãi suất thấp hơn lãi suất chính phủ đi vay và có bảo lãnh của chính phủ (trợ cấp tín dụng); giảm nghĩa vụ thuế cụ thể (trợ cấp thuế); cung ứng hàng hoá, dịch vụ dưới giá thị trường (trợ cấp hiện vật); chính phủ mua hàng trên giá thị trường (trợ cấp mua sắm); khoản trả ngầm qua quy định quản lý làm thay đổi giá hoặc quyền tiếp cận thị trường; và duy trì đồng tiền định giá cao (trợ cấp qua [[exchange-rate|tỷ giá]]) (imf_macro_accounting, Ch.3, d.2446). Trong hạch toán quốc gia, trợ cấp trên sản phẩm là một trong các yếu tố làm các mức giá ở [[valuation-in-the-sna]] lệch nhau (imf_macro_accounting, Ch.2, Appendix, Valuation Concepts in the SNA, d.1573–1575).
 
