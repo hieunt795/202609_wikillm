@@ -9,6 +9,14 @@ last_updated: 2026-09-15
 
 GDP thực — SNA gọi là GDP theo giá cố định — đo giá trị sản lượng của nền kinh tế bằng giá của một năm gốc cố định (imf_macro_accounting, Ch.2, Nominal and Real GDP, d.887).
 
-Cần đại lượng này vì [[gdp]] danh nghĩa đo sản lượng theo giá của chính năm đó, nên thay đổi của nó trộn lẫn thay đổi giá với thay đổi sản lượng vật chất; chia GDP danh nghĩa cho một chỉ số giá chung là [[gdp-deflator]] thì chỉ còn lại thay đổi sản lượng: GDP thực = GDP danh nghĩa / deflator × 100 (imf_macro_accounting, Ch.2, cùng mục, d.884–897). Theo tốc độ, (1 + v) ≈ (1 + g) × (1 + p), với v là tăng trưởng GDP danh nghĩa, g là tăng trưởng thực và p là lạm phát đo bằng deflator (imf_macro_accounting, Ch.2, cùng mục, d.905–914).
+Cần đại lượng này vì [[gdp]] danh nghĩa đo sản lượng theo giá của chính năm đó, nên thay đổi của nó trộn lẫn thay đổi giá với thay đổi sản lượng vật chất; chia GDP danh nghĩa cho một chỉ số giá chung là [[gdp-deflator]] thì chỉ còn lại thay đổi sản lượng:
+
+$$GDP_{thực} = \frac{GDP_{danh nghĩa}}{deflator} \times 100$$
+
+(imf_macro_accounting, Ch.2, cùng mục, d.884–897). Theo tốc độ,
+
+$$(1 + v) \approx (1 + g) \times (1 + p)$$
+
+với $v$ là tăng trưởng GDP danh nghĩa, $g$ là tăng trưởng thực và $p$ là lạm phát đo bằng deflator (imf_macro_accounting, Ch.2, cùng mục, d.905–914).
 
 GDP thực hữu ích để đo tăng trưởng sản lượng thực, và dù không phải thước đo lý tưởng của thu nhập thực hay mức sống, nó vẫn là thước đo thu nhập thực được dùng rộng rãi nhất (imf_macro_accounting, Ch.2, cùng mục, d.887); những chỗ nó đo sai nằm ở [[measured-gdp-is-an-imperfect-gauge-of-output-and-welfare]] (imf_macro_accounting, Ch.2, Problems of GDP Measurement, d.918). Ở kinh tế chuyển đổi, cơ cấu sản xuất và tiêu dùng đổi nhanh còn chỉ số giá thiếu tin cậy, nên thường nên dựng GDP thực từ chỉ số khối lượng thay vì giảm phát GDP danh nghĩa bằng deflator (imf_macro_accounting, Ch.2, chú thích 11, d.929) — cùng gốc với vấn đề ở [[a-real-output-index-needs-prices-that-reflect-relative-scarcity]] (imf_macro_accounting, Ch.2, Special Measurement Problems in Transition Economies, d.944).

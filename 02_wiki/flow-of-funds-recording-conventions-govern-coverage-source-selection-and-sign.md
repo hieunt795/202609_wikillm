@@ -1,0 +1,12 @@
+---
+title: flow-of-funds-recording-conventions-govern-coverage-source-selection-and-sign
+type: concept
+tags: [flow-of-funds, accounting]
+sources: [imf_macro_accounting]
+status: draft
+last_updated: 2026-09-16
+---
+
+Bốn quy ước chi phối cách dựng [[the-flow-of-funds-table-is-a-zero-sum-quadruple-entry-matrix|bảng flow of funds]]. Về phạm vi, bảng chỉ ghi giao dịch *giữa* hai khu vực — giao dịch nội bộ một khu vực biến mất khi hợp nhất khu vực đó, còn các khoản lặt vặt như thay đổi nợ quá hạn hay điều chỉnh định giá được gộp chung dưới một khoản mục cân bằng gọi là sai số và thiếu sót ròng (imf_macro_accounting, Ch.6, The Recording Conventions, d.5682). Về nguồn số liệu, khi cùng một giao dịch có số liệu khác nhau từ hai hệ thống — ví dụ thay đổi tài sản đối ngoại ròng đọc từ cán cân thanh toán khác với đọc từ khảo sát tiền tệ — phải chọn đúng một nguồn duy nhất, ưu tiên tài khoản thu nhập–sản phẩm quốc gia và ba hệ thống liên kết là thống kê tài chính chính phủ, thống kê cán cân thanh toán, thống kê tiền tệ–ngân hàng (imf_macro_accounting, Ch.6, cùng mục, d.5699) — [[a-real-flow-of-funds-table-must-reconcile-gfs-nipa-and-bop-data-recorded-on-different-bases|một ví dụ thực tế]] cho thấy việc chọn nguồn này phức tạp hơn nhiều so với quy tắc nghe qua tưởng đơn giản.
+
+Khu vực ngân hàng, theo quy ước, không có giao dịch phi tài chính nên khoảng chênh tiết kiệm–đầu tư của nó luôn bằng 0 (imf_macro_accounting, Ch.6, cùng mục, d.5700) — đây là điều kiện khiến [[money-supply-equals-net-foreign-assets-plus-net-domestic-assets|đồng nhất thức khảo sát tiền tệ]] xuất hiện nguyên vẹn ở cột tài trợ của khu vực này thay vì đi kèm một cân đối phi tài chính riêng. Khu vực đối ngoại được nhìn từ góc phần còn lại thế giới, không phải từ góc nước sở tại: thâm hụt vãng lai của nước sở tại được ghi là thặng dư vãng lai của phần còn lại thế giới, và ngược lại (imf_macro_accounting, Ch.6, cùng mục, d.5701) — cùng phép đảo dấu đã thấy ở [[current-account-balance-equals-the-change-in-net-foreign-assets]] khi đọc CAB như tài sản ròng đối với phần còn lại thế giới. Cuối cùng, quy ước dấu chung là: giao dịch làm tăng tài sản hoặc giảm nợ của khu vực mang dấu âm, giao dịch làm giảm tài sản hoặc tăng nợ mang dấu dương (imf_macro_accounting, Ch.6, Flow of Funds Framework: The Basics, d.5673) — nhờ đó khoản chính phủ đi vay nước ngoài ghi dương ở cột chính phủ trong khi phần còn lại thế giới cho vay (tăng tài sản) ghi âm ở cột đối ngoại, giữ cho hàng luôn cộng về 0.

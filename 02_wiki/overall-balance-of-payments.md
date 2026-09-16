@@ -1,0 +1,14 @@
+---
+title: overall-balance-of-payments
+type: concept
+tags: [external-sector, balance-of-payments, analysis]
+sources: [imf_macro_accounting]
+status: draft
+last_updated: 2026-09-16
+---
+
+Cán cân tổng thể bằng [[current-account-balance|cán cân vãng lai]] cộng mọi giao dịch vốn và tài chính không bị coi là khoản mục tài trợ; trong trình bày phân tích, thay đổi tài sản đối ngoại ròng của nhà chức trách tiền tệ và các khoản tài trợ không tự định được xếp xuống "dưới vạch" theo [[above-the-line-and-below-the-line-determine-a-balance-of-payments-surplus-or-deficit|cách chia trên/dưới vạch]] (imf_macro_accounting, Ch.4, Notions of Balance, d.3663). Đây là chỉ số quan trọng cho vị thế thanh toán đối ngoại tổng thể của một nước.
+
+Thâm hụt cán cân tổng thể thường được tài trợ bằng sụt giảm tài sản đối ngoại ròng — con số này cho thấy ngân hàng trung ương đã tài trợ mất cân đối thanh toán tới đâu (dưới chế độ tỷ giá cố định) hoặc đã can thiệp gián tiếp vào thị trường ngoại hối để điều tiết mất cân đối tới đâu (dưới chế độ tỷ giá thả nổi) (imf_macro_accounting, Ch.4, cùng mục, d.3663). Đây chính là kênh nối cán cân tổng thể với [[reserve-assets-in-the-balance-of-payments-are-flows-not-stocks|biến động tài sản dự trữ]]: cán cân tổng thể dương hay âm về bản chất là con số đối ứng của biến động dự trữ. Đặt đúng đường chia trên/dưới vạch cho cán cân tổng thể không đơn giản: chỉ tính biến động dự trữ gộp của nhà chức trách tiền tệ là một cách, nhưng một số nghĩa vụ ngân hàng trung ương — như dùng tín dụng IMF hay hạn mức tín dụng vay được — cho phép tái tạo dự trữ gộp mà không cần rút dự trữ, nên cũng cần xếp dưới vạch cùng dự trữ; xếp toàn bộ giao dịch của hệ thống ngân hàng dưới vạch là cách khác, rộng hơn, nối trực tiếp cán cân thanh toán với cung thanh khoản trong nước — nhưng chỉ hợp lý khi ngân hàng trung ương kiểm soát trực tiếp và hiệu quả tài sản đối ngoại của các ngân hàng thương mại (imf_macro_accounting, Ch.4, Recording Changes in Reserve Assets, d.3951–3979). Định nghĩa hữu dụng nhất về mặt phân tích là xếp dưới vạch mọi giao dịch nằm dưới **quyền kiểm soát trực tiếp** của nhà chức trách tiền tệ — dự trữ gộp cộng các nghĩa vụ ngân hàng trung ương dễ nhận diện dùng để tài trợ cán cân thanh toán (imf_macro_accounting, Ch.4, cùng mục, d.3981).
+
+Cán cân tổng thể không nhất thiết chỉ do tài khoản thương mại và tài khoản vốn quyết định — theo cách tiếp cận tiền tệ với cán cân thanh toán (thảo luận đầy đủ ở Ch.5), quan hệ nhân quả có thể ngược lại: một thay đổi trong cầu đối với nội tệ (chứ không phải đồng tiền định giá dùng làm đơn vị cán cân thanh toán, xem [[unit-of-account-in-the-balance-of-payments]]) có thể tự nó gây ra thặng dư hay thâm hụt cán cân tổng thể, rồi từ đó kéo theo thay đổi ở cả cán cân vãng lai lẫn cán cân vốn/tài chính (imf_macro_accounting, Ch.4, cùng mục, d.3983).

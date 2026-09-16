@@ -1,0 +1,12 @@
+---
+title: exceptional-financing-in-the-balance-of-payments
+type: concept
+tags: [external-sector, balance-of-payments, external-debt]
+sources: [imf_macro_accounting]
+status: draft
+last_updated: 2026-09-16
+---
+
+Tài trợ ngoại lệ (exceptional financing) là nhóm giao dịch bổ sung mà trình bày chuẩn của cán cân thanh toán không tách riêng khỏi giao dịch thông thường, nhưng các trình bày phân tích tách ra vì tầm quan trọng của chúng — đặc biệt với các nước từng gặp khó khăn trả nợ (imf_macro_accounting, Ch.4, Supplementary Information, d.3609). Bốn loại giao dịch tài trợ ngoại lệ chính là: tái cơ cấu nợ hiện có (thay hợp đồng cũ bằng hợp đồng mới hoãn lịch trả nợ, tác động tới cả lãi ghi ở tài khoản vãng lai lẫn trả gốc ghi ở tài khoản tài chính, và có thể xử lý luôn cả nợ quá hạn lẫn lịch trả gốc/lãi đúng hạn); nợ quá hạn về lãi hoặc gốc (nợ quá hạn lãi được xử lý như thể đã "trả" bằng một khoản vay ngắn hạn mới — ghi nợ thu nhập ở tài khoản vãng lai, bù bằng ghi có ở nợ ngắn hạn thuộc tài khoản tài chính); xóa nợ chính thức, tức chủ nợ nhà nước tự nguyện hủy một phần hay toàn bộ khoản nợ theo hợp đồng, ghi là chuyển nhượng chính thức trong tài khoản vốn; và hoán đổi nợ-vốn cổ phần, trong đó ngân hàng đổi khoản nợ đòi (thường chiết khấu) lấy phần vốn cổ phần do người không cư trú đầu tư (imf_macro_accounting, Ch.4, cùng mục, d.3611–3616).
+
+Xóa nợ do chủ nợ tư nhân thực hiện không ghi vào cán cân thanh toán mà vào tài khoản định giá lại của SNA, khác với xóa nợ chính thức ở trên (imf_macro_accounting, Ch.4, chú thích 6, d.3615). Việc tái cơ cấu và nợ quá hạn cùng chia sẻ một cơ chế kế toán với [[double-entry-accounting-in-the-balance-of-payments|ghi sổ kép]]: khoản chưa trả không biến mất khỏi cán cân mà chuyển hình thức ghi nhận, từ đó cần phân biệt rõ với [[transfers-in-the-balance-of-payments|chuyển nhượng]] — vốn là dòng không hoàn lại — vì xóa nợ tuy được ghi như chuyển nhượng nhưng bản chất là hủy một nghĩa vụ đã tồn tại, không phải một khoản viện trợ mới. Vì [[overall-balance-of-payments|cán cân tổng thể]] ex post luôn cân bằng, mọi mất cân đối đều phải được tài trợ bằng cách nào đó — dùng dự trữ, vay IMF, hoặc tài trợ ngoại lệ; tài trợ ngoại lệ không mang tính tự định (chính phủ thường phải đàm phán để có được, nhất là ở nước gánh nặng nợ) và không chắc lặp lại đều đặn hàng năm, nên trong phân tích cán cân thanh toán, các giao dịch này thường được tách xuống dưới vạch như một loại tài trợ đặc biệt, không đại diện cho xu hướng thường xuyên (imf_macro_accounting, Ch.4, Exceptional Financing, d.4023–4031).

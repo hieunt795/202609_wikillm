@@ -173,3 +173,90 @@
 - 4 trang mới: balance-of-payments, state-owned-enterprises, aggregate-demand, nominal-anchor; nâng 6 stub lên draft: indexation, exchange-rate, crowding-out, real-interest-rate, public-goods, hyperinflation
 - Vật liệu Ch.2–Ch.3, cộng trích lẻ có ghi rõ chương từ Ch.1, Ch.4, Ch.5, Ch.6 (ghi dải dòng vào 03_state); chèn 12 link tới trang mới (không nâng last_updated)
 - Còn lại: Ch.1, Ch.4, Ch.5, Ch.6 (ingest trọn chương); Modern Money Mechanics; stub chờ: central-bank, reserve-money, net-exports, current-account-balance, macroeconomic-sectors, soft-budget-constraint
+
+## [2026-09-16:08-17-02] ingest | imf_macro_accounting Ch.4 cụm A — khung khái niệm BOP
+- 8 trang mới (double-entry, transfers, net-errors-and-omissions, flow-vs-stock, valuation, unit-of-account, NIIP, BPM5) + merge 3 trang (balance-of-payments, residency-in-the-sna, sna-accrual-double-entry)
+- Ch.4 (158 KB) tự vượt ngưỡng nguồn dài, chia 6 cụm A–F trong `03_state/imf_macro_accounting.md`; cụm A xong
+- Còn lại: cụm B (phân loại chuẩn BOP, d.3551–3648) → E (dự trữ), cụm F (case Ba Lan) tuỳ tình trạng minh chứng
+
+## [2026-09-16:08-25-54] ingest | imf_macro_accounting Ch.4 cụm B — phân loại chuẩn BOP
+- current-account-balance nâng stub→draft; 7 trang mới (tiêu chí phân loại, gộp/ròng, 4 nhóm tài khoản tài chính, dự trữ là flow không phải stock, giao dịch IMF, tài trợ ngoại lệ, chất lượng dữ liệu kinh tế chuyển đổi)
+- Merge: balance-of-payments, balance-of-payments-manual-fifth-edition, transition-statistics-understate-private-sector-growth
+- Còn lại Ch.4: cụm C (phân tích vị thế đối ngoại, d.3649–3829) → F (case Ba Lan)
+
+## [2026-09-16:08-34-02] ingest | imf_macro_accounting Ch.4 cụm C — phân tích vị thế đối ngoại
+- 12 trang mới: đường chia trên/dưới vạch, trade-balance, overall-balance, CAB=ΔFI+ΔRES, học thuyết Lawson, CA theo chế độ tỷ giá, solvency/sustainability vãng lai, cơ cấu thương mại, chiến lược hướng ngoại, trade bias (ERP), assessing-exchange-rate
+- Merge: exchange-rate, current-account-deficit-means-absorption-exceeds-national-income
+- Bỏ qua d.3816–3829 (Services/Income/Transfers chi tiết, ít giá trị mới) và bảng Ba Lan 4.3/4.4 (§2). Còn lại Ch.4: cụm D (nợ nước ngoài, FDI, d.3830–3938) → F
+
+## [2026-09-16:08-36-45] schema | công thức trình bày bằng $$...$$, không lẫn văn xuôi
+- 00_schema.md §7 luật 4: thêm quy ước đồng nhất thức/công thức dùng khối $$...$$ hoặc $...$, người dùng chốt
+- Sửa 3 trang vừa ghi trong lượt Ch.4 cụm C: current-account-balance-equals-the-change-in-net-foreign-assets, trade-bias-is-measured-by-..., current-account-deficit-means-absorption-exceeds-national-income
+- Ghi nợ vào _inbox.md: các trang công thức cũ (Ch.2/Ch.3) ghi trước quy ước này chưa được sửa
+
+## [2026-09-16:08-47-16] ingest | imf_macro_accounting Ch.4 cụm D — tài khoản vốn/tài chính và nợ nước ngoài
+- 8 trang mới: nguồn tài trợ CAB=FDI+NFB+ΔRES, chuỗi lựa chọn chính sách tài trợ thâm hụt, định nghĩa nợ gộp, phương trình động thái nợ (D_t=D_{t-1}+B_t-A_t), 3 tỷ số gánh nặng nợ, bền vững nợ nước ngoài (Box 4.9), FDI không tạo nợ (Box 4.10), động lực vốn chính phủ vs tư nhân
+- Merge: functional-categories-of-the-financial-account, external-deficit-financing-is-limited-by-reserves-and-creditworthiness
+- Còn lại Ch.4: cụm E (dự trữ và tài trợ, d.3939–4032) → cụm F (case Ba Lan, tuỳ minh chứng)
+
+## [2026-09-16:08-52-23] ingest | imf_macro_accounting Ch.4 cụm E — dự trữ và tài trợ
+- 6 trang mới: NFA hệ thống ngân hàng, dùng dự trữ tài trợ thâm hụt tạm thời, 4 rủi ro luồng vốn vào lớn (Box 4.11), dự trữ đủ phụ thuộc độ tin cậy chính sách (case Ba Lan 1991), công thức dự trữ/nhập khẩu, chỉ báo tổn thương tài chính sau Mexico 1994
+- Merge: overall-balance-of-payments (định nghĩa đường chia trên/dưới vạch + cách tiếp cận tiền tệ), exceptional-financing-in-the-balance-of-payments (lý do xếp dưới vạch)
+- Ch.4 cụm A–E xong. Còn cụm F (case Ba Lan BOP + tỷ giá zloty, d.4033–4076) — chỉ ingest nếu concept A–E còn thiếu minh chứng (§2)
+
+## [2026-09-16:08-57-54] ingest | imf_macro_accounting Ch.4 cụm F — bỏ qua
+- Bỏ qua case Ba Lan (BOP, tỷ giá zloty, d.4033–4076): tường thuật, concept A–E đã đủ minh chứng thực tế (case Ba Lan 1991 dự trữ, dữ liệu chuyển đổi), theo §2 ưu tiên lý luận trước tường thuật — người dùng chốt
+- Ch.4 coi như xong toàn bộ (cụm A–E ingest, cụm F bỏ qua có ghi chú); index.md và 03_state cập nhật khớp
+
+## [2026-09-16:08-57-54] schema | rà soát công thức/đồng nhất thức toàn wiki theo chuẩn $$...$$
+- Sửa định dạng (không đổi nội dung/last_updated) cho 13 trang Ch.2–Ch.3 ghi trước quy ước: absorption, depreciation, gdp, gdp-deflator, gndi, gni, gross-national-saving, real-gdp, production-income-and-expenditure-approaches-yield-the-same-gdp, real-wage-growth-is-bounded-by-productivity-growth, the-saving-investment-gap-equals-the-current-account-balance, public-debt-dynamics-depend-on-the-primary-balance-seigniorage-and-the-interest-growth-gap, the-private-sector-resource-gap-must-be-financed-by-other-sectors, government-saving-investment-gap-approximates-the-overall-fiscal-deficit
+- Sửa 1 trang Ch.4 (current-account-monitoring-depends-on-the-exchange-rate-regime)
+- Xoá mục nợ tương ứng trong _inbox.md (đã xử lý xong). Hook --all sạch: 169 trang, 0 lỗi, 0 mồ côi
+
+## [2026-09-16:09-16-27] review | Phân biệt đồng tiền định giá / đồng nội tệ trong cụm trang tỷ giá
+Sửa 4 trang (unit-of-account-in-the-balance-of-payments, exchange-rate, current-account-monitoring-depends-on-the-exchange-rate-regime, overall-balance-of-payments) để nêu rõ CAB/ΔFI/ΔRES tính theo đồng tiền định giá (đơn vị BOP), không phải đồng nội tệ.
+Quy ước ký hiệu $ (Box 5.8, Ch.5) chưa ingest nên chưa đưa vào; chỉ dựa trên d.3508 (Ch.4, đã ingest).
+
+## [2026-09-16:09-26-16] ingest | Trích lẻ từ cụm F (Ch.4) và Ch.1: tốc độ trượt crawling peg, 5 bài học tỷ giá
+1 trang mới: the-rate-of-crawl-under-a-crawling-peg-can-be-set-passively-or-actively (d.4067–4070).
+Bổ sung bài học 2, 3, 5 (d.514–534, Ch.1) vào exchange-rate; cập nhật index.md và 03_state.
+
+## [2026-09-16:09-39-53] ingest | Ch.5 — đọc toàn chương, tổ chức lại kế hoạch viết theo 4 trục
+Đọc bài bản toàn Ch.5 (trừ Exercises). Thay bảng chunk tuần tự A–G bằng 4 batch viết theo chủ đề (W1 cấu trúc/đối tượng, W2 cân đối, W3 cơ chế, W4 đặc thù chuyển đổi + IMF).
+Chưa ghi trang nào; 03_state/imf_macro_accounting.md ghi chi tiết dải dòng đã đọc và nội dung từng batch.
+
+## [2026-09-16:09-48-03] ingest | imf_macro_accounting Ch.5 batch W1 — cấu trúc hệ thống tiền tệ
+6 trang mới (3 tầng IFS, ngân hàng nhận tiền gửi, quy ước tồn kho/cơ sở tiền mặt, quy đổi tỷ giá cuối kỳ, hợp nhất khác tổng hợp, chức năng tiền, thang đo M1–L) + merge central-bank.
+Stub mới: nonbank-financial-institutions, valuation-adjustments-...-of-stocks (link-forward cho W2). Còn W2, W3, W4.
+
+## [2026-09-16:09-53-07] ingest | imf_macro_accounting Ch.5 batch W2 — đồng nhất thức tiền tệ và tỷ giá
+7 trang mới (M2=NFA+NDC+OIN_b, liên kết khảo sát tiền tệ–BOP ΔNFA=CAB+ΔFI=-ΔRES, số nhân tiền, lý thuyết số lượng, cầu tiền, lý thuyết cầu tài sản, valuation adjustments Eₜ/VAd) + merge reserve-money + bổ sung real-interest-rate.
+Cross-link ngược vào exchange-rate và current-account-monitoring-depends-on-the-exchange-rate-regime, đóng vòng đồng tiền định giá/nội tệ. Còn W3, W4.
+
+## [2026-09-16:09-58-25] ingest | imf_macro_accounting Ch.5 batch W3 — cơ chế vận hành chính sách tiền tệ
+7 trang mới: 5 công cụ điều tiết tiền cơ sở, kiểm soát không hoàn toàn, tỷ giá cố định/thả nổi và tự chủ tiền tệ, tiệt trùng + hội đồng tiền tệ, di chuyển vốn hoàn hảo, đô la hoá, đổi mới tài chính.
+Cross-link vào real-interest-rate, monetizing-the-deficit-creates-high-powered-money-and-inflation. Còn W4.
+
+## [2026-09-16:10-03-55] ingest | imf_macro_accounting Ch.5 batch W4 — kinh tế chuyển đổi + kỹ thuật IMF, hoàn tất Ch.5
+7 trang mới: vòng quay tiền nhảy bậc, thiếu cạnh tranh ngân hàng/thị trường tài chính, nợ đọng liên doanh nghiệp, chính sách tiền tệ lệ thuộc ngân sách, quota/tranche/RPF, NPF=RPF-UFC=Q-H, case số liệu 4 bảng cân đối.
+Case Ba Lan F2 (d.5136-5177) bỏ qua theo §2 (đã duyệt cùng batch). Ch.5 hoàn tất cả 4 batch W1-W4 (27 trang mới + 3 merge/bổ sung).
+
+## [2026-09-16:10-19-43] ingest | imf_macro_accounting Ch.6 — flow of funds, hoàn tất chương
+Đọc toàn chương (d.5588–5790), phần lớn nội dung ghép 7 cột bảng flow of funds vào các đồng nhất thức đã ingest ở Ch.2/3/4/5.
+6 trang mới (cấu trúc ma trận, quy ước ghi sổ, bảng phân giải cột, phương pháp luận, twin deficits, cơ chế truyền dẫn thâm hụt) + 7 cross-link vào trang cũ. Exercises/bảng số liệu Ba Lan bỏ qua theo §2.
+
+## [2026-09-16:10-30-48] ingest | imf_macro_accounting Ch.5 review — cấu trúc bảng cân đối thô
+Đọc lại toàn bộ mục liên quan bảng cân đối trong Ch.5 và các trang wiki Ch.5/Ch.6 đã tạo.
+3 trang mới: bảng cân đối thô Box 5.1 (nhà chức trách tiền tệ), Box 5.5 (DMB), quy ước ròng/gộp bất đối xứng giữa tín dụng chính phủ và DMB. Ch.6 không có nội dung bảng cân đối (chương flow, không phải stock).
+
+## [2026-09-16:10-33-36] ingest | imf_macro_accounting rà soát toàn bộ Box Ch.5+Ch.6
+Kiểm kê đầy đủ Box 5.1–5.10 và Box 6.1–6.4: tất cả đã có trong wiki, trừ Box 5.6/5.7 không trích xuất được từ nguồn (mất bảng khi OCR, không phải lỗ hổng ingest).
+1 bổ sung: chi tiết dấu ở Box 6.3 (khoản vay nước ngoài ghi +200/-200 hai phía) vào trang cấu trúc ma trận flow of funds.
+
+## [2026-09-16:10-40-29] ingest | imf_macro_accounting rà soát toàn bộ Table Ch.5+Ch.6
+Table 5.1–5.7 và Table 6.2–6.6 (số liệu Ba Lan/Transitia) nằm trong Exercises đã bỏ qua theo §2; phần số liệu Table 6.6 bị lỗi OCR nặng nên không trích số.
+1 trang mới từ chú thích Table 6.6 (rõ, không lỗi): cách dung hoà số liệu GFS/NIPA/BOP/tiền tệ khi dựng bảng flow of funds thật, minh chứng cụ thể cho quy ước chọn nguồn đã có.
+
+## [2026-09-16:11-05-53] ingest | imf_macro_accounting Ch.5 bổ sung Box 5.2/5.6 + công thức 5.3–5.5
+Tạo 2 trang mới: `the-analytical-monetary-authorities-balance-sheet-groups-items-into-nfa-nda-and-rm` (Box 5.2), `the-analytical-deposit-money-bank-balance-sheet-separates-required-from-excess-reserves` (Box 5.6). Cập nhật `reserve-money` (công thức 5.3, 5.4), `money-supply-equals-net-foreign-assets-plus-net-domestic-assets` (công thức 5.5 + 2 công thức tăng trưởng M2 không đánh số), cùng 3 trang liên quan (link ngược).
+Đính chính ghi chú review trước đó về Box 5.6 (OCR không phải lỗ hổng thật) trong `03_state/imf_macro_accounting.md`. Box 5.7 xác nhận không có bảng T-account riêng trong nguồn.

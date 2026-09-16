@@ -7,7 +7,11 @@ status: draft
 last_updated: 2026-09-15
 ---
 
-Tiết kiệm quốc gia gộp (S) là chênh lệch giữa [[gndi]] và [[final-consumption]]: S = GNDI − C (imf_macro_accounting, Ch.2, Gross National Saving, d.790–795).
+Tiết kiệm quốc gia gộp ($S$) là chênh lệch giữa [[gndi]] và [[final-consumption]]:
+
+$$S = GNDI - C$$
+
+(imf_macro_accounting, Ch.2, Gross National Saving, d.790–795).
 
 Nói chặt thì thu nhập khả dụng quốc gia ròng, đã trừ [[depreciation]], mới là đại lượng nên dùng khi phân tích việc tạo ra thu nhập và của cải; nhưng GNDI được dùng rộng rãi hơn và hợp hơn cho phân tích luồng vốn, vì các khoản thu chi trong tài khoản vĩ mô đều ghi trên cơ sở gộp (imf_macro_accounting, Ch.2, chú thích 9, d.792, d.829). Một đại lượng đôi khi được dùng thay là tiết kiệm trong nước gộp, bằng S trừ chuyển nhượng vãng lai ròng và thu nhập nhân tố ròng từ nước ngoài (imf_macro_accounting, Ch.2, chú thích 9, d.829).
 

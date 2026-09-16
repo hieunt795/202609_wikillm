@@ -1,0 +1,14 @@
+---
+title: the-flow-of-funds-table-is-a-zero-sum-quadruple-entry-matrix
+type: concept
+tags: [flow-of-funds, accounting, sectoral-analysis]
+sources: [imf_macro_accounting]
+status: draft
+last_updated: 2026-09-16
+---
+
+Bảng flow of funds ghép giao dịch phi tài chính, cân đối tiết kiệm–đầu tư, và giao dịch tài chính của các khu vực kinh tế vào một ma trận duy nhất, với khu vực xếp theo cột và loại giao dịch xếp theo hàng (imf_macro_accounting, Ch.6, Flow of Funds Framework: The Basics, d.5664). Ma trận này là hiện thân cụ thể của [[the-flow-of-funds-approach-treats-sectoral-balances-as-constraints-unlike-market-equilibrium-models|cách nhìn cân đối khu vực như ràng buộc]], khác với cách tiếp cận cân bằng thị trường truyền thống. Công cụ này hữu ích vì bốn lẽ: nó tóm tắt tương tác giữa các khu vực — kể cả khu vực đối ngoại — một cách hệ thống; giúp lộ ra chỗ số liệu các nguồn khác nhau không khớp nhau; cho biết khu vực nào đang thặng dư, khu vực nào đang thâm hụt và vì sao; và hỗ trợ mô phỏng chính sách (imf_macro_accounting, Ch.6, cùng mục, d.5659–5662).
+
+Vì hệ được coi là đóng — xuất khẩu của một nước (X) đúng bằng nhập khẩu của phần còn lại thế giới (−X) — nên tổng mỗi hàng luôn bằng 0; và vì khoảng chênh thu–chi mỗi khu vực (resource gap) phải được chính giao dịch tài chính của khu vực đó bù đắp trọn vẹn ex post, tổng mỗi cột cũng bằng 0 (imf_macro_accounting, Ch.6, cùng mục, d.5664, d.5674). Ma trận vì thế mang tính "quadruple-entry": mỗi giao dịch được ghi một lần dưới dạng giao dịch thực và một lần đối ứng dưới dạng giao dịch tài chính, ở cả hai khu vực liên quan — tổng cộng bốn bút toán cho một giao dịch (imf_macro_accounting, Ch.6, cùng mục, d.5674).
+
+Minh hoạ đơn giản nhất là một nền kinh tế mở hai khu vực — kinh tế trong nước và phần còn lại thế giới — với xuất khẩu 100, nhập khẩu 300 và vay nước ngoài 200: khoảng chênh thu–chi trong nước là −200, đúng bằng khoản vay nước ngoài bù vào, còn phía thế giới ghi nhận đối xứng +200 (imf_macro_accounting, Ch.6, Flow of Funds Framework: The Basics, d.5664–5673, Box 6.2). Đây chính là nơi tính "quadruple" thể hiện đầy đủ: ở khối phi tài chính, khoảng chênh ghi −200 cho kinh tế trong nước và +200 cho phần còn lại thế giới; ở khối tài chính, khoản vay nước ngoài ghi +200 cho kinh tế trong nước (tăng nợ) nhưng ghi −200 cho phần còn lại thế giới, vì đó là phần còn lại thế giới *cho vay* — tức tăng tài sản tài chính, mang dấu âm theo đúng quy ước dấu (imf_macro_accounting, Ch.6, Flow of Funds Framework: The Basics, Box 6.3, d.5673). Ma trận đầy đủ cho bốn khu vực — tư nhân, chính phủ, ngân hàng, đối ngoại — mở rộng cùng nguyên tắc này và được trình bày cột theo cột ở [[the-flow-of-funds-table-decomposes-the-economy-wide-identity-into-sector-columns]]. Cách khu vực ngân hàng và khu vực đối ngoại được xử lý trong ma trận, cùng quy ước dấu của từng bút toán, thuộc về [[flow-of-funds-recording-conventions-govern-coverage-source-selection-and-sign]].
