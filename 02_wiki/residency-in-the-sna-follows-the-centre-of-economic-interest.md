@@ -3,7 +3,7 @@ title: residency-in-the-sna-follows-the-centre-of-economic-interest
 type: concept
 tags: [national-accounts, sna, residency]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

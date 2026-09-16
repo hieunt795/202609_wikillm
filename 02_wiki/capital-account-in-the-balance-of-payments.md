@@ -3,7 +3,7 @@ title: capital-account-in-the-balance-of-payments
 type: concept
 tags: [external-sector, balance-of-payments, capital-flows]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

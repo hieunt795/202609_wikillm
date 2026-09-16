@@ -3,7 +3,7 @@ title: government-net-lending-is-classed-as-expenditure-because-its-motive-is-po
 type: concept
 tags: [fiscal, gfs, deficit]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

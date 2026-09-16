@@ -3,7 +3,7 @@ title: gfs-records-government-transactions-on-a-cash-basis
 type: concept
 tags: [fiscal, gfs, accounting]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

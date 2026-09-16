@@ -3,7 +3,7 @@ title: types-of-unemployment
 type: concept
 tags: [labour, unemployment, transition-economies]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

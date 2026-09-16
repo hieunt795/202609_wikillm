@@ -3,7 +3,7 @@ title: polands-output-collapse-1990-91-came-from-three-distinct-causes
 type: case
 tags: [poland, transition-economies, 1990-1991]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

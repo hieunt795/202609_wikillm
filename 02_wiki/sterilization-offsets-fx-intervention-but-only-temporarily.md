@@ -3,11 +3,11 @@ title: sterilization-offsets-fx-intervention-but-only-temporarily
 type: concept
 tags: [monetary-policy, exchange-rate-regime]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 
-Cách duy nhất để bù lại tác động tự động của [[fixed-exchange-rates-make-the-money-supply-endogenous-while-floating-rates-restore-monetary-control|tỷ giá cố định lên cung tiền]] là nghiệp vụ tiệt trùng (sterilization): ngân hàng trung ương bù tác động của một lần can thiệp ngoại hối bằng một nghiệp vụ thị trường mở ngược chiều — ví dụ bán ngoại tệ (làm giảm tài sản đối ngoại ròng) đi kèm mua chứng khoán chính phủ (làm tăng tài sản trong nước ròng) — để giảm bớt tác động ròng lên tiền cơ sở và cung tiền; nhờ vậy mối liên hệ trực tiếp giữa mất cân đối đối ngoại và thay đổi cung tiền tạm thời bị cắt đứt (imf_macro_accounting, Ch.5, Special Issues in Monetary Analysis, Exchange rate regimes and monetary analysis, d.5060–5065).
+Cách duy nhất để bù lại tác động tự động của [[fixed-exchange-rates-make-the-money-supply-endogenous-while-floating-rates-restore-monetary-control|tỷ giá cố định lên cung tiền]] là nghiệp vụ tiệt trùng (sterilization): ngân hàng trung ương bù tác động của một lần [[foreign-exchange-intervention|can thiệp ngoại hối]] bằng một [[open-market-operations|nghiệp vụ thị trường mở]] ngược chiều — ví dụ bán ngoại tệ (làm giảm tài sản đối ngoại ròng) đi kèm mua chứng khoán chính phủ (làm tăng tài sản trong nước ròng) — để giảm bớt tác động ròng lên tiền cơ sở và cung tiền; nhờ vậy mối liên hệ trực tiếp giữa mất cân đối đối ngoại và thay đổi cung tiền tạm thời bị cắt đứt (imf_macro_accounting, Ch.5, Special Issues in Monetary Analysis, Exchange rate regimes and monetary analysis, d.5060–5065).
 
 Nhưng tiệt trùng chỉ có tác dụng trong thời gian ngắn, vì hai giới hạn: nó cần một thị trường chứng khoán đủ rộng và vận hành tốt — điều kiện [[underdeveloped-banking-competition-and-financial-markets-limit-indirect-monetary-control-in-transition-economies|nhiều nền kinh tế chuyển đổi chưa có]]; và nó tốn chi phí lãi trên số chứng khoán chính phủ mua vào, chi phí này tăng nhanh nếu ngân hàng trung ương phải bán nhiều chứng khoán để bù một luồng vốn vào lớn (imf_macro_accounting, Ch.5, cùng mục, d.5065–5070).
 

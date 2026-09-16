@@ -3,7 +3,7 @@ title: assets-are-held-based-on-expected-return-risk-and-liquidity
 type: concept
 tags: [monetary-policy, interest-rates]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

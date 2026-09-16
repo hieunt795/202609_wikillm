@@ -3,7 +3,7 @@ title: a-one-time-price-shock-becomes-inflation-only-if-monetary-policy-accommod
 type: concept
 tags: [prices, inflation, monetary-policy]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

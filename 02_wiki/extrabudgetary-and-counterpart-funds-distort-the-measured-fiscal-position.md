@@ -3,7 +3,7 @@ title: extrabudgetary-and-counterpart-funds-distort-the-measured-fiscal-position
 type: concept
 tags: [fiscal, gfs, transition-economies]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

@@ -3,7 +3,7 @@ title: quota-payment-and-reserve-tranche-drawdowns-leave-net-foreign-assets-unch
 type: concept
 tags: [monetary-policy, financial-system, identities]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

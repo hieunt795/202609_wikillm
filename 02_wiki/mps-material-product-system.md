@@ -3,7 +3,7 @@ title: mps-material-product-system
 type: entity
 tags: [national-accounts, transition-economies, framework]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

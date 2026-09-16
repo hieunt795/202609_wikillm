@@ -3,11 +3,11 @@ title: fiscal-sustainability
 type: concept
 tags: [fiscal, sustainability]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 
-Chưa có định nghĩa được chấp nhận chung về chính sách tài khoá bền vững, nhưng có đồng thuận rộng rằng chính sách là không bền vững nếu thế tài khoá hiện tại và dự kiến khiến tỷ lệ nợ công/GDP tăng nhanh và kéo dài (imf_macro_accounting, Ch.3, The Sustainability of Fiscal Policy, d.2242).
+Chưa có định nghĩa được chấp nhận chung về [[fiscal-policy|chính sách tài khoá]] bền vững, nhưng có đồng thuận rộng rằng chính sách là không bền vững nếu thế tài khoá hiện tại và dự kiến khiến tỷ lệ nợ công/GDP tăng nhanh và kéo dài (imf_macro_accounting, Ch.3, The Sustainability of Fiscal Policy, d.2242).
 
 Vì vậy chỉ báo then chốt dựa trên quy mô và tốc độ tăng của nợ/GDP. Nợ/GDP cao dai dẳng vừa tốn kém vừa rốt cuộc không bền, theo hai cơ chế ở [[high-debt-ratios-raise-real-interest-rates-and-erode-market-confidence]] (imf_macro_accounting, Ch.3, d.2242). Một cách tiếp cận là coi chính sách bền vững là chính sách không làm nợ/GDP tăng, tức giữ ổn định tỷ lệ này dưới các giả định hợp lý về tăng trưởng, lãi suất và lạm phát; điều kiện định lượng tương ứng ở [[stabilizing-the-debt-ratio-caps-the-deficit-at-debt-times-nominal-growth]] (imf_macro_accounting, Ch.3, d.2244, d.2295).
 

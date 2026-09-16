@@ -3,7 +3,7 @@ title: net-foreign-assets-of-the-banking-system
 type: concept
 tags: [external-sector, reserves, monetary]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

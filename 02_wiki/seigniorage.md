@@ -3,7 +3,7 @@ title: seigniorage
 type: concept
 tags: [inflation, monetary-policy, fiscal]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

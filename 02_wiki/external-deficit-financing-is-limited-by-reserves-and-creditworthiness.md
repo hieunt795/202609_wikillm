@@ -3,7 +3,7 @@ title: external-deficit-financing-is-limited-by-reserves-and-creditworthiness
 type: concept
 tags: [fiscal, financing, external-sector]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

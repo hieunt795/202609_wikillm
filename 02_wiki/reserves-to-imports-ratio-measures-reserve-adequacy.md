@@ -3,7 +3,7 @@ title: reserves-to-imports-ratio-measures-reserve-adequacy
 type: concept
 tags: [external-sector, reserves, indicators]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

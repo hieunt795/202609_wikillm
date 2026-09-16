@@ -3,7 +3,7 @@ title: polands-recovery-from-1992-was-led-by-consumption-then-exports
 type: case
 tags: [poland, transition-economies, 1992-1994]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

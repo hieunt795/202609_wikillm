@@ -3,7 +3,7 @@ title: a-worked-example-shows-how-monetary-authorities-dmb-and-nbfi-balance-shee
 type: case
 tags: [monetary-policy, financial-system]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

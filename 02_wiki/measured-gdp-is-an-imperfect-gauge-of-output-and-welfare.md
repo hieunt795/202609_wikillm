@@ -3,7 +3,7 @@ title: measured-gdp-is-an-imperfect-gauge-of-output-and-welfare
 type: concept
 tags: [national-accounts, measurement]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

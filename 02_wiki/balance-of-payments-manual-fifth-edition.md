@@ -3,7 +3,7 @@ title: balance-of-payments-manual-fifth-edition
 type: entity
 tags: [external-sector, balance-of-payments, methodology]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

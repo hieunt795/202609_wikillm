@@ -3,7 +3,7 @@ title: government-revenue-is-a-receipt-that-creates-no-repayment-obligation
 type: concept
 tags: [fiscal, gfs, accounting]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

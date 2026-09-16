@@ -3,7 +3,7 @@ title: public-goods
 type: concept
 tags: [fiscal, public-expenditure]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

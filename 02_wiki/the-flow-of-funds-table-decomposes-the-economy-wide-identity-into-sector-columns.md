@@ -3,7 +3,7 @@ title: the-flow-of-funds-table-decomposes-the-economy-wide-identity-into-sector-
 type: concept
 tags: [flow-of-funds, sectoral-analysis, identities]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

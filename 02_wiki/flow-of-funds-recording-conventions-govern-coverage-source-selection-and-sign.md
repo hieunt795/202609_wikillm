@@ -3,7 +3,7 @@ title: flow-of-funds-recording-conventions-govern-coverage-source-selection-and-
 type: concept
 tags: [flow-of-funds, accounting]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

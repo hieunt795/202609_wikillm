@@ -276,3 +276,71 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 
 ## [2026-09-16:07-44-33] review | backfill §5 Ch.6 — rà soát, không tạo trang mới (Batch 5, hoàn tất kế hoạch)
 Đọc lại toàn bộ cấu trúc bảng flow of funds (7 cột, Box 6.1–6.4, Table 6.1) theo chính sách §5 (thành phần có tên kinh tế riêng phải có trang riêng). Kết luận: không có khoản mục mới cần tách trang — Ch.6 chỉ xếp lại các đồng nhất thức đã ingest từ Ch.2–5 vào một ma trận cột-khu vực, không tự tạo khoản mục mới; "twin deficits" (Box 6.1) đã có trang từ trước. Ghi rõ vào `03_state/imf_macro_accounting.md` để phân biệt "đã rà soát, không có gì" với "chưa rà soát". **Kế hoạch backfill §5 hoàn tất cho toàn bộ phạm vi đã ingest (Ch.2–Ch.6):** tổng cộng 5 batch, 26 trang mới (Ch.2: 11 + nâng 1 stub→draft, Ch.3: 8, Ch.4: 7, Ch.5: 3, Ch.6: 0).
+
+## [2026-09-16:22-14-49] lint | 240 trang
+- Bước 0 sạch; Conflict 2 (hoãn); Atomic 1 (exchange-rate); title 3; nợ stub 3/3; khái niệm chưa có trang 9; 4 cặp SNA–BOP thiếu link; OCR/mồ côi/link chết/inbox 0
+- Đủ điều kiện stable: 188 trang (0 đã review); 46 trang draft backlink < 2
+- Báo cáo: Claude outputs/lint-2026-09-16-240.md
+
+## [2026-09-16:22-21-29] schema | xử lý lint 240 trang — đổi tên 4 trang
+- analyzing-changes-in-the-structure-of-trade → trade-data-by-commodity-and-partner-separates-structural-from-temporary-trade-shocks; assessing-the-appropriateness-of-the-exchange-rate → exchange-rate-appropriateness-is-judged-by-four-indicator-groups-none-sufficient-alone
+- macroeconomic-sectors → sectoral-interactions; the-1993-sna-added-balance-sheets-and-fuller-income-accounts → the-1993-sna-revised-the-1968-system-in-five-ways
+- 11 link + index cập nhật, không nâng last_updated; --all sạch
+
+## [2026-09-16:22-23-41] promote | 188 trang lên stable
+- Danh sách "Đủ điều kiện stable" của lint 240 trang, người dùng duyệt và chọn bỏ qua /review; Ch.2 71 · Ch.3 60 · Ch.4 27 · Ch.5 26 · Ch.6 4 (chi tiết: Claude outputs/lint-2026-09-16-240.md §9)
+- Loại: 0 (kiểm lại điều kiện ngay trước khi ghi; the-1993-sna-… theo tên mới)
+- --all sạch trước và sau; không đổi last_updated, không đặt reviewed
+
+## [2026-09-16:22-31-41] ingest | imf_macro_accounting — xử lý lint 240 trang, lượt A (đa chương)
+- 5 trang mới: case tỷ giá Ba Lan (tách từ exchange-rate), real-exchange-rate, monetary-policy, fiscal-policy, international-monetary-fund-imf; nâng 3 stub lên draft: sectoral-interactions, soft-budget-constraint, nonbank-financial-institutions; exchange-rate bỏ đoạn Ba Lan
+- Chèn 7 link từ trang cũ tới trang mới (không nâng last_updated); index + 03_state + decisions cập nhật; --all sạch (245 trang)
+- Còn lại: lượt B (thành phần tiền tệ Ch.5), C (dự trữ/IMF/tài trợ đặc biệt), D (Box 3.5–3.7)
+
+## [2026-09-16:22-35-56] ingest | imf_macro_accounting Ch.5 — xử lý lint 240 trang, lượt B (thành phần tiền tệ §5)
+- 10 trang mới: currency-in-circulation, demand-deposits, narrow-money-m1, net-domestic-assets, net-domestic-credit, net-credit-to-government, credit-to-the-private-sector, claims-on-deposit-money-banks, other-items-net, foreign-currency-deposits
+- Chèn 16 link từ trang cũ (không nâng last_updated); index + 03_state cập nhật; --all sạch (255 trang)
+- Còn lại: lượt C (dự trữ/IMF/tài trợ đặc biệt), lượt D (Box 3.5–3.7)
+
+## [2026-09-16:22-39-53] ingest | imf_macro_accounting Ch.4–5 — xử lý lint 240 trang, lượt C (dự trữ, IMF, tài trợ đặc biệt §5)
+- 11 trang mới: foreign-exchange-reserve-assets, monetary-gold, special-drawing-rights-sdr, reserve-position-in-the-imf, use-of-imf-credit, government-deposits, treasury-bills, debt-rescheduling, arrears-on-external-debt-servicing, debt-forgiveness, debt-equity-swaps
+- Chèn 16 link từ trang cũ (không nâng last_updated); index + 03_state cập nhật; --all sạch (266 trang)
+- Còn lại: lượt D (Box 3.5 Tanzi, 3.6 lưới an sinh, 3.7 bán tài khoá)
+
+## [2026-09-16:22-44-45] ingest | imf_macro_accounting Ch.3 — xử lý lint 240 trang, lượt D (Box 3.5–3.7 §5)
+- 14 trang mới: 8 chỉ số Tanzi; targeted-commodity-subsidies-and-cash-compensation, social-security-arrangements, unemployment-benefits-and-public-works; exchange-rate-subsidies, credit-subsidies, exchange-rate-guarantees-and-other-contingent-liabilities
+- Chèn 15 link từ trang cũ (không nâng last_updated); trích lẻ d.2551, d.2590–2596 từ chunk bối cảnh Ba Lan; index + 03_state cập nhật; --all sạch (280 trang)
+- Còn lại: lượt E (hình thức trợ cấp)
+
+## [2026-09-16:22-46-15] ingest | imf_macro_accounting Ch.3 — xử lý lint 240 trang, lượt E (hình thức trợ cấp §5)
+- 6 trang mới: cash-grant-subsidies, tax-subsidies, in-kind-subsidies, procurement-subsidies, regulatory-subsidies, implicit-subsidies; tanzi-erosion-index thêm ví dụ thuế doanh thu Ba Lan (d.2571–2573)
+- Chèn 9 link từ trang cũ (không nâng last_updated); index + 03_state cập nhật; --all sạch (286 trang)
+- Kế hoạch tách trang thành phần §5 không ngoại lệ hoàn tất
+
+## [2026-09-16:22-50-46] lint | 286 trang
+- Bước 0 sạch; Conflict 2 (hoãn); Atomic 1 (case tỷ giá Ba Lan); trùng lặp một phần 1 (subsidies/implicit-subsidies); khái niệm chưa có trang 4; title/stub/OCR/inbox/mồ côi/link chết 0
+- Đủ điều kiện stable: 53 trang (0 đã review); 41 trang draft backlink < 2
+- Báo cáo: Claude outputs/lint-2026-09-16-286.md
+
+## [2026-09-16:22-55-15] ingest | imf_macro_accounting — xử lý lint 286 trang (tách trang, bỏ trùng)
+- Tách 5 bài học chính sách khỏi case tỷ giá Ba Lan thành polands-exchange-rate-experience-yields-five-policy-lessons (Ch.1 d.514–534); exchange-rate cập nhật link
+- subsidies: rút đoạn trợ cấp ngầm còn 1 câu + link implicit-subsidies; stable → draft, last_updated 2026-09-16
+- index cập nhật; --all sạch (287 trang)
+
+## [2026-09-16:22-55-16] promote | 53 trang lên stable
+- Danh sách "Đủ điều kiện stable" của lint 286 trang; người dùng duyệt, bỏ qua /review (38 trang mới từ lượt A–E)
+- Loại: 0; --all sạch trước và sau; hiện 240 stable / 47 draft
+
+## [2026-09-16:22-58-04] ingest | imf_macro_accounting Ch.2/4/5 — xử lý lint 286 trang, 5 khái niệm mới
+- 5 trang mới: exchange-rate-regimes, devaluation, foreign-exchange-intervention, open-market-operations, discount-window
+- Chèn 13 link từ trang cũ (không nâng last_updated); index + 03_state cập nhật; --all sạch (292 trang)
+- Công cụ trực tiếp thứ 4, 5 đã có trang (monetizing-the-deficit-…, required-reserves)
+
+## [2026-09-16:23-00-01] lint | 292 trang
+- Bước 0 sạch; Conflict 2 (hoãn); khái niệm chưa có trang 3; Atomic/title/trùng lặp/stub/OCR/inbox/mồ côi/link chết 0
+- Đủ điều kiện stable: 12 trang (0 đã review); 38 trang draft backlink < 2
+- Báo cáo: Claude outputs/lint-2026-09-16-292.md
+
+## [2026-09-16:23-01-21] promote | 12 trang lên stable
+- Danh sách "Đủ điều kiện stable" của lint 292 trang; người dùng duyệt, bỏ qua /review
+- Loại: 0; --all sạch trước và sau; hiện 252 stable / 40 draft

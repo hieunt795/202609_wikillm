@@ -3,7 +3,7 @@ title: current-account-balance
 type: concept
 tags: [external-sector, balance-of-payments, aggregates]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

@@ -3,7 +3,7 @@ title: when-interest-exceeds-growth-a-permanent-primary-deficit-cannot-exceed-se
 type: concept
 tags: [fiscal, sustainability]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

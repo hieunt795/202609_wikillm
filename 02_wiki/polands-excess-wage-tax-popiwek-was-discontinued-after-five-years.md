@@ -3,7 +3,7 @@ title: polands-excess-wage-tax-popiwek-was-discontinued-after-five-years
 type: case
 tags: [poland, transition-economies, wages, incomes-policy]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

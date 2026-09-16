@@ -3,15 +3,15 @@ title: money-supply-equals-net-foreign-assets-plus-net-domestic-assets
 type: concept
 tags: [monetary-policy, identities]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 
-Vì tài sản luôn bằng nợ trên bảng cân đối, khối tiền rộng ([[money-aggregates-form-a-nested-hierarchy-from-narrow-money-to-broad-liquidity|M2]]) của toàn hệ thống ngân hàng — hợp nhất [[central-bank|nhà chức trách tiền tệ]] với [[deposit-money-banks|ngân hàng nhận tiền gửi]] thành khảo sát tiền tệ — luôn khớp đúng bằng tổng đối ứng của nó ở phía tài sản: tài sản đối ngoại ròng (NFA, quy theo nội tệ) cộng tài sản trong nước ròng (NDA):
+Vì tài sản luôn bằng nợ trên bảng cân đối, khối tiền rộng ([[money-aggregates-form-a-nested-hierarchy-from-narrow-money-to-broad-liquidity|M2]]) của toàn hệ thống ngân hàng — hợp nhất [[central-bank|nhà chức trách tiền tệ]] với [[deposit-money-banks|ngân hàng nhận tiền gửi]] thành khảo sát tiền tệ — luôn khớp đúng bằng tổng đối ứng của nó ở phía tài sản: tài sản đối ngoại ròng (NFA, quy theo nội tệ) cộng [[net-domestic-assets|tài sản trong nước ròng]] (NDA):
 
 $$M2 = NFA + NDA$$
 
-và vì NDA lại tách thành tín dụng trong nước ròng (NDC) và khoản mục khác ròng ($OIN_b$):
+và vì NDA lại tách thành [[net-domestic-credit|tín dụng trong nước ròng]] (NDC) và khoản mục khác ròng ($OIN_b$):
 
 $$M2 = NFA + NDC + OIN_b$$
 

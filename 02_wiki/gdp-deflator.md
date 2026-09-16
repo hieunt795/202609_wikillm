@@ -3,7 +3,7 @@ title: gdp-deflator
 type: concept
 tags: [national-accounts, prices, index-numbers]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

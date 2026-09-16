@@ -3,7 +3,7 @@ title: transfers-in-the-balance-of-payments
 type: concept
 tags: [external-sector, balance-of-payments, transfers]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

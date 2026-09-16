@@ -3,13 +3,13 @@ title: the-money-multiplier-links-reserve-money-to-the-money-supply
 type: concept
 tags: [monetary-policy, identities]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 
 Dưới hệ thống dự trữ phân đoạn, mức tăng ban đầu của [[reserve-money|tiền cơ sở]] làm nền cho [[deposit-money-banks|ngân hàng nhận tiền gửi]] mở rộng tiếp tiền gửi thành một bội số của mức tăng đó, vì mỗi khoản tiền gửi chỉ cần giữ lại một phần làm dự trữ, phần còn lại được cho vay và cuối cùng lại trở thành tiền gửi mới (imf_macro_accounting, Ch.5, The Concept of the Money Multiplier, d.4937–4942).
 
-Với $RM = CY + R$ (tiền mặt cộng dự trữ ngân hàng) và $M = CY + DD$ (tiền mặt cộng tiền gửi không kỳ hạn), số nhân tiền là
+Với $RM = CY + R$ ([[currency-in-circulation|tiền mặt]] cộng dự trữ ngân hàng) và $M = CY + DD$ (tiền mặt cộng [[demand-deposits|tiền gửi không kỳ hạn]]), số nhân tiền là
 
 $$mm = \frac{M}{RM} = \frac{CY+DD}{CY+R}$$
 

@@ -3,7 +3,7 @@ title: the-private-sector-resource-gap-must-be-financed-by-other-sectors
 type: concept
 tags: [national-accounts, sectoral-analysis, financing]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 
@@ -25,4 +25,4 @@ $$S_p - I_p + FDI_p + NFB_p + \Delta NDC_p - \Delta M2 - NB = 0$$
 
 (imf_macro_accounting, Ch.2, cùng mục, d.873–877). Khoản NB là một kênh tài trợ [[conventional-fiscal-deficit|thâm hụt ngân sách]], xuất hiện ở phía chính phủ trong [[government-saving-investment-gap-approximates-the-overall-fiscal-deficit]] (imf_macro_accounting, Ch.3, Government Saving-Investment Gap, d.2084–2086).
 
-Cộng khoảng chênh này với khoảng chênh của chính phủ cho ra quan hệ [[twin-deficits-describes-the-co-movement-of-the-fiscal-and-current-account-balances|twin deficits]] với cán cân vãng lai, và bản thân khoảng chênh này là một cột trong [[the-flow-of-funds-table-decomposes-the-economy-wide-identity-into-sector-columns|bảng flow of funds]] tổng hợp bốn khu vực. Nắm các quan hệ kế toán này là điều kiện để thấy khu vực tư tác động và chịu tác động từ phần còn lại của nền kinh tế ra sao, và là bước đệm cho phân tích luồng vốn giữa các khu vực — phần [[macroeconomic-sectors|tương tác giữa các khu vực]] (imf_macro_accounting, Ch.2, cùng mục, d.880).
+Cộng khoảng chênh này với khoảng chênh của chính phủ cho ra quan hệ [[twin-deficits-describes-the-co-movement-of-the-fiscal-and-current-account-balances|twin deficits]] với cán cân vãng lai, và bản thân khoảng chênh này là một cột trong [[the-flow-of-funds-table-decomposes-the-economy-wide-identity-into-sector-columns|bảng flow of funds]] tổng hợp bốn khu vực. Nắm các quan hệ kế toán này là điều kiện để thấy khu vực tư tác động và chịu tác động từ phần còn lại của nền kinh tế ra sao, và là bước đệm cho phân tích luồng vốn giữa các khu vực — phần [[sectoral-interactions|tương tác giữa các khu vực]] (imf_macro_accounting, Ch.2, cùng mục, d.880).

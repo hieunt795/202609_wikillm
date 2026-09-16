@@ -3,7 +3,7 @@ title: each-way-of-financing-a-deficit-carries-its-own-macroeconomic-imbalance
 type: concept
 tags: [fiscal, deficit, financing]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

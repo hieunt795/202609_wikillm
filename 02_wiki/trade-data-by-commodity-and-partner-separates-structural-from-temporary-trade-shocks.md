@@ -1,5 +1,5 @@
 ---
-title: analyzing-changes-in-the-structure-of-trade
+title: trade-data-by-commodity-and-partner-separates-structural-from-temporary-trade-shocks
 type: concept
 tags: [external-sector, trade, analysis]
 sources: [imf_macro_accounting]

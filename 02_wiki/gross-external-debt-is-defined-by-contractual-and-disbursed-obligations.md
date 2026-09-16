@@ -3,7 +3,7 @@ title: gross-external-debt-is-defined-by-contractual-and-disbursed-obligations
 type: concept
 tags: [external-sector, external-debt]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

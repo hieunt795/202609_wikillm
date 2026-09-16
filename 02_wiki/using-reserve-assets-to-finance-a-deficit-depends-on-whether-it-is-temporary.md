@@ -3,7 +3,7 @@ title: using-reserve-assets-to-finance-a-deficit-depends-on-whether-it-is-tempor
 type: concept
 tags: [external-sector, reserves, policy]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

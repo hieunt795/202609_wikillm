@@ -3,7 +3,7 @@ title: stabilizing-the-debt-ratio-caps-the-deficit-at-debt-times-nominal-growth
 type: concept
 tags: [fiscal, sustainability, deficit]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

@@ -3,7 +3,7 @@ title: mps-counts-only-output-of-the-material-sphere
 type: concept
 tags: [national-accounts, transition-economies]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

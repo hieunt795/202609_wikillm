@@ -3,7 +3,7 @@ title: functional-categories-of-the-financial-account
 type: concept
 tags: [external-sector, balance-of-payments, capital-flows]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

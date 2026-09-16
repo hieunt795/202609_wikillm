@@ -3,7 +3,7 @@ title: privatization-receipts-are-an-asset-exchange-not-deficit-reduction
 type: concept
 tags: [fiscal, gfs, transition-economies]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

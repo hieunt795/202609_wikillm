@@ -3,7 +3,7 @@ title: foreign-direct-investment-is-non-debt-creating
 type: concept
 tags: [external-sector, fdi, external-debt]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

@@ -1,9 +1,9 @@
 ---
-title: the-1993-sna-added-balance-sheets-and-fuller-income-accounts
+title: the-1993-sna-revised-the-1968-system-in-five-ways
 type: concept
 tags: [national-accounts, sna, standards]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

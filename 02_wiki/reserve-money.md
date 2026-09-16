@@ -3,7 +3,7 @@ title: reserve-money
 type: concept
 tags: [monetary-policy]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 
@@ -13,7 +13,7 @@ Tiền dự trữ (reserve money, high-powered money, tiền cơ sở — RM) l�
 
 $$RM \equiv NFA^* + NCG^* + CDMB^* + CPS^* + OIN^*$$
 
-trong đó $NFA^*$ là tài sản đối ngoại ròng (rộng hơn khái niệm dự trữ chính thức — còn gồm cả tài sản ngoại tệ không quy đổi được hay phát sinh từ hiệp định thanh toán song phương), $NCG^*$ là tín dụng ròng cho chính phủ (trừ tiền gửi chính phủ, vì chính phủ tiếp cận tín dụng dễ hơn khu vực khác nên chi tiêu của chính phủ không bị ràng buộc bởi số dư tiền gửi), $CDMB^*$ là tín dụng cho ngân hàng nhận tiền gửi, $CPS^*$ là tín dụng cho khu vực tư (thường không đáng kể vì cho vay tư nhân chủ yếu là việc của DMB), — khoản tín dụng này được giữ ở dạng gộp chứ không trừ tiền gửi của DMB, khác hẳn cách xử lý $NCG^*$, xem [[monetary-accounts-net-claims-on-government-but-keep-claims-on-deposit-money-banks-gross]] — và $OIN^*$ là khoản mục khác ròng — gồm tài sản vật chất của nhà chức trách tiền tệ, vốn và quỹ dự trữ, lợi nhuận/lỗ, và đặc biệt là [[valuation-adjustments-separate-transaction-flows-from-exchange-rate-revaluation-of-stocks|điều chỉnh định giá lại tài sản đối ngoại ròng do biến động tỷ giá]] (imf_macro_accounting, Ch.5, cùng mục, d.4602–4627).
+trong đó $NFA^*$ là tài sản đối ngoại ròng (rộng hơn khái niệm dự trữ chính thức — còn gồm cả tài sản ngoại tệ không quy đổi được hay phát sinh từ hiệp định thanh toán song phương), $NCG^*$ là [[net-credit-to-government|tín dụng ròng cho chính phủ]] (trừ tiền gửi chính phủ, vì chính phủ tiếp cận tín dụng dễ hơn khu vực khác nên chi tiêu của chính phủ không bị ràng buộc bởi số dư tiền gửi), $CDMB^*$ là tín dụng cho ngân hàng nhận tiền gửi, $CPS^*$ là tín dụng cho khu vực tư (thường không đáng kể vì cho vay tư nhân chủ yếu là việc của DMB), — khoản tín dụng này được giữ ở dạng gộp chứ không trừ tiền gửi của DMB, khác hẳn cách xử lý $NCG^*$, xem [[monetary-accounts-net-claims-on-government-but-keep-claims-on-deposit-money-banks-gross]] — và $OIN^*$ là [[other-items-net|khoản mục khác]] ròng — gồm tài sản vật chất của nhà chức trách tiền tệ, vốn và quỹ dự trữ, lợi nhuận/lỗ, và đặc biệt là [[valuation-adjustments-separate-transaction-flows-from-exchange-rate-revaluation-of-stocks|điều chỉnh định giá lại tài sản đối ngoại ròng do biến động tỷ giá]] (imf_macro_accounting, Ch.5, cùng mục, d.4602–4627).
 
 Ở dạng thay đổi tồn kho (dòng chảy):
 

@@ -3,7 +3,7 @@ title: current-account-deficit-means-absorption-exceeds-national-income
 type: concept
 tags: [national-accounts, external-sector, identities]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

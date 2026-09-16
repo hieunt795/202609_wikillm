@@ -3,7 +3,7 @@ title: general-government-consumption
 type: concept
 tags: [national-accounts, sna, demand, fiscal]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

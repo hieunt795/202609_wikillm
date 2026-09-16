@@ -3,7 +3,7 @@ title: converting-mps-net-material-product-to-gdp-requires-four-adjustments
 type: concept
 tags: [national-accounts, transition-economies, measurement]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

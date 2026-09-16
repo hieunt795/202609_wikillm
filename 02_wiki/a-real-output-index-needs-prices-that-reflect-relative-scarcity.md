@@ -3,7 +3,7 @@ title: a-real-output-index-needs-prices-that-reflect-relative-scarcity
 type: concept
 tags: [transition-economies, measurement, index-numbers]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

@@ -3,7 +3,7 @@ title: public-investment-should-complement-rather-than-compete-with-markets
 type: concept
 tags: [fiscal, expenditure, capital]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

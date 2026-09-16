@@ -3,7 +3,7 @@ title: wage-controls-lose-effectiveness-rapidly-after-a-short-period
 type: concept
 tags: [wages, stabilization, imf-programs]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

@@ -3,7 +3,7 @@ title: twin-deficits-describes-the-co-movement-of-the-fiscal-and-current-account
 type: concept
 tags: [fiscal, external-sector, sectoral-analysis]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

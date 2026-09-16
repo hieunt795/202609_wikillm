@@ -3,7 +3,7 @@ title: indexation
 type: concept
 tags: [inflation, wages, expectations]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

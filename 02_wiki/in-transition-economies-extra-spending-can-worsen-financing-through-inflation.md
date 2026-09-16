@@ -3,7 +3,7 @@ title: in-transition-economies-extra-spending-can-worsen-financing-through-infla
 type: concept
 tags: [fiscal, expenditure, inflation, transition-economies]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

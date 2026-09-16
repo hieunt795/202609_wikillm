@@ -3,7 +3,7 @@ title: imports-of-goods-and-nonfactor-services
 type: concept
 tags: [national-accounts, sna, external-sector, demand]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

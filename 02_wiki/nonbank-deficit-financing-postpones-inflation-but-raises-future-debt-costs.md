@@ -3,7 +3,7 @@ title: nonbank-deficit-financing-postpones-inflation-but-raises-future-debt-cost
 type: concept
 tags: [fiscal, financing]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

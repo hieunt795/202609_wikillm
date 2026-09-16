@@ -3,7 +3,7 @@ title: polish-unemployment-rose-from-near-zero-to-16-percent-in-four-years
 type: case
 tags: [poland, transition-economies, unemployment]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

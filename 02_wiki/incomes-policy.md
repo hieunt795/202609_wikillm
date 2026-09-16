@@ -3,7 +3,7 @@ title: incomes-policy
 type: concept
 tags: [wages, stabilization, transition-economies]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

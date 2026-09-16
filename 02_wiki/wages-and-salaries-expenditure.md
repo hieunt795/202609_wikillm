@@ -3,7 +3,7 @@ title: wages-and-salaries-expenditure
 type: concept
 tags: [fiscal, expenditure, wages]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

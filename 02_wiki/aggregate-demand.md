@@ -3,7 +3,7 @@ title: aggregate-demand
 type: concept
 tags: [national-accounts, demand]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

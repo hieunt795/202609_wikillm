@@ -3,7 +3,7 @@ title: the-saving-investment-gap-equals-the-current-account-balance
 type: concept
 tags: [national-accounts, external-sector, identities, saving]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

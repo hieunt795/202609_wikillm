@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Ch.2 và Ch.4 đã xong (Ch.4 tự vượt ngưỡng nguồn dài — 158 KB — nên chia 6 cụm A–F; cụm A–E ingest 2026-09-16, cụm F case Ba Lan bỏ qua vì §2 ưu tiên lý luận trước tường thuật, các concept đã đủ minh chứng — 1 khái niệm tổng quát trong cụm F (tốc độ trượt crawling peg) vẫn được trích ra riêng 2026-09-16). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan, dù đã trích lẻ nhiều đoạn). Ch.6 (flow of funds) xong 2026-09-16 — phần lớn là gắn 7 cột của bảng flow of funds vào các đồng nhất thức đã ingest ở Ch.2/3/4/5, cộng 6 trang mới về cấu trúc ma trận, quy ước ghi sổ, twin deficits, cơ chế truyền dẫn thâm hụt tài khoá; Exercises và các bảng số liệu Ba Lan sau đó (d.5790+, gồm Table 6.2 đã trích lẻ trước) bỏ qua theo §2. Ch.5 (tiền tệ) xong cả 4 batch (W1–W4) 2026-09-16; case Ba Lan cụ thể (F2, Background for Monetary Analysis) bỏ qua theo §2 — khái niệm liên quan (vòng quay, đô la hoá, lãi suất thực âm) đã bao phủ tổng quát ở W3/W4. Ch.3 phần lý luận xong (cụm A–E), bỏ qua bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Xử lý lint 240 trang (2026-09-16): lượt A xong (tách case tỷ giá Ba Lan, 4 khái niệm mới, nâng 3 stub); lượt B xong (10 thành phần tiền tệ Ch.5); lượt C xong (11 trang dự trữ/IMF/tài trợ đặc biệt); lượt D xong (14 trang Box 3.5–3.7); lượt E xong (6 trang hình thức trợ cấp); tách trang thành phần theo §5 (không ngoại lệ) đã hoàn tất. Xử lý lint 286 trang (2026-09-16): tách 5 bài học tỷ giá Ba Lan thành trang riêng, 5 khái niệm mới (chế độ tỷ giá, phá giá, 3 công cụ tiền tệ trực tiếp). Ch.2 và Ch.4 đã xong (Ch.4 tự vượt ngưỡng nguồn dài — 158 KB — nên chia 6 cụm A–F; cụm A–E ingest 2026-09-16, cụm F case Ba Lan bỏ qua vì §2 ưu tiên lý luận trước tường thuật, các concept đã đủ minh chứng — 1 khái niệm tổng quát trong cụm F (tốc độ trượt crawling peg) vẫn được trích ra riêng 2026-09-16). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan, dù đã trích lẻ nhiều đoạn). Ch.6 (flow of funds) xong 2026-09-16 — phần lớn là gắn 7 cột của bảng flow of funds vào các đồng nhất thức đã ingest ở Ch.2/3/4/5, cộng 6 trang mới về cấu trúc ma trận, quy ước ghi sổ, twin deficits, cơ chế truyền dẫn thâm hụt tài khoá; Exercises và các bảng số liệu Ba Lan sau đó (d.5790+, gồm Table 6.2 đã trích lẻ trước) bỏ qua theo §2. Ch.5 (tiền tệ) xong cả 4 batch (W1–W4) 2026-09-16; case Ba Lan cụ thể (F2, Background for Monetary Analysis) bỏ qua theo §2 — khái niệm liên quan (vòng quay, đô la hoá, lãi suất thực âm) đã bao phủ tổng quát ở W3/W4. Ch.3 phần lý luận xong (cụm A–E), bỏ qua bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (83 KB / 721 dòng) | **Chưa ingest** | Toàn bộ — dưới ngưỡng nguồn dài nên ingest trọn 1 lượt, không cần file trạng thái (§10) | — |
 
 ## Trang wiki theo chủ đề
@@ -21,11 +21,12 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[sna-transactions-are-goods-and-services-distributive-or-financial]] — ba loại giao dịch và tồn lượng
 - [[residency-in-the-sna-follows-the-centre-of-economic-interest]] — ai là đơn vị cư trú
 - [[valuation-in-the-sna]] — giá cơ bản, giá người sản xuất, giá người mua
-- [[the-1993-sna-added-balance-sheets-and-fuller-income-accounts]] — khác biệt so với bản 1968
+- [[the-1993-sna-revised-the-1968-system-in-five-ways]] — khác biệt so với bản 1968
 - [[mps-material-product-system]] — khung hạch toán của kinh tế kế hoạch
 - [[mps-counts-only-output-of-the-material-sphere]] — MPS loại dịch vụ phi vật chất
 - [[converting-mps-net-material-product-to-gdp-requires-four-adjustments]] — quy NMP về GDP
 - [[macroeconomic-analysis-divides-the-economy-into-five-main-sectors]] — năm khu vực phân tích và vai trò của từng khu vực
+- [[sectoral-interactions]] — giao dịch thu–chi của mỗi khu vực sinh giao dịch tài chính với khu vực khác; $(S_p-I_p)+(S_g-I_g)=CAB$
 
 **Đại lượng sản lượng**
 - [[value-added]] — giá trị thực sự tạo thêm, đơn vị nền của mọi phép đo sản lượng
@@ -114,10 +115,10 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[current-account-monitoring-depends-on-the-exchange-rate-regime]] — peg vs float quyết định ΔRES hay ΔFI hấp thụ cú sốc
 - [[the-rate-of-crawl-under-a-crawling-peg-can-be-set-passively-or-actively]] — trượt bị động theo lạm phát hay chủ động đánh đổi cạnh tranh
 - [[solvency-and-sustainability-of-the-current-account]] — PV thặng dư tương lai vs tiếp diễn chính sách hiện hành
-- [[analyzing-changes-in-the-structure-of-trade]] — cơ cấu mặt hàng và địa lý của thương mại
+- [[trade-data-by-commodity-and-partner-separates-structural-from-temporary-trade-shocks]] — cơ cấu mặt hàng và địa lý của thương mại
 - [[outward-oriented-trade-strategies-are-associated-with-successful-exporters]] — chiến lược trung lập và 4 yếu tố khuyến khích xuất khẩu
 - [[trade-bias-is-measured-by-the-ratio-of-effective-protection-for-importables-to-exportables]] — tb = ERP(nhập)/ERP(xuất)
-- [[assessing-the-appropriateness-of-the-exchange-rate]] — 4 chỉ báo: tỷ giá thực, dự trữ, vãng lai, thị trường song song
+- [[exchange-rate-appropriateness-is-judged-by-four-indicator-groups-none-sufficient-alone]] — 4 chỉ báo: tỷ giá thực, dự trữ, vãng lai, thị trường song song
 
 **Cán cân thanh toán — tài khoản vốn/tài chính và nợ nước ngoài (Ch.4 cụm D)**
 - [[sources-of-current-account-financing-are-fdi-net-borrowing-and-reserve-changes]] — CAB + FDI + NFB + ΔRES ≡ 0
@@ -137,6 +138,19 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[reserves-to-imports-ratio-measures-reserve-adequacy]] — quy tắc 3 tháng nhập khẩu
 - [[reserve-adequacy-indicators-shifted-toward-financial-vulnerability-after-the-1994-mexico-crisis]] — tỷ số cung tiền/dự trữ, kỳ hạn nợ, độ mở
 
+**Tài sản dự trữ, giao dịch với IMF, tài trợ đặc biệt — thành phần (§5, lượt C)**
+- [[foreign-exchange-reserve-assets]] — tiền mặt, tiền gửi, chứng khoán ngoại tệ; dự trữ gộp không đo quy mô mất cân đối
+- [[monetary-gold]] — vàng dự trữ; vàng phi tiền tệ là hàng hoá; tiền tệ hoá vàng không ghi dòng
+- [[special-drawing-rights-sdr]] — tài sản dự trữ do IMF tạo; phân bổ mới chỉ đổi tồn lượng (BPM5), làm NFA tăng
+- [[reserve-position-in-the-imf]] — phần quota nộp bằng dự trữ và nội tệ IMF đã dùng; nộp quota không đổi NFA
+- [[use-of-imf-credit]] — mua ngoại tệ của IMF; "đầu tư khác, khoản vay" trong BOP, nợ đối ngoại của MA
+- [[government-deposits]] — trừ vào tín dụng cho chính phủ, không tính vào tiền dự trữ
+- [[treasury-bills]] — khoản mục tín dụng cho chính phủ; công cụ của nghiệp vụ thị trường mở
+- [[debt-rescheduling]] — hoãn trả nợ bằng hợp đồng mới; chi phối tài khoản vốn Ba Lan 1991–93
+- [[arrears-on-external-debt-servicing]] — lãi/gốc quá hạn; lãi quá hạn ghi như trả bằng vay ngắn hạn
+- [[debt-forgiveness]] — chủ nợ chính thức huỷ nợ; chuyển nhượng trong tài khoản vốn
+- [[debt-equity-swaps]] — đổi khoản nợ lấy vốn cổ phần của người không cư trú; đầu tư trực tiếp đặc biệt
+
 **Lao động và tiền lương**
 - [[unemployment-rate]] — cách đo và các sai lệch của nó
 - [[discouraged-workers-make-the-unemployment-rate-understate-joblessness]] — người bỏ tìm việc rơi khỏi cả tử lẫn mẫu
@@ -149,12 +163,16 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 **Chính sách giá và thu nhập**
 - [[price-liberalization]] — lợi ích và điều kiện đi kèm
 - [[exchange-rate]] — giá bị méo, neo danh nghĩa, chịu tác động của tài trợ thâm hụt
+- [[real-exchange-rate]] — tỷ giá danh nghĩa điều chỉnh theo chi phí lao động đơn vị/giá tương đối; thước đo sức cạnh tranh
+- [[exchange-rate-regimes]] — cố định, rổ tiền, trượt công bố trước, thả nổi có quản lý, thả nổi; quyết định mức tự chủ tiền tệ
+- [[devaluation]] — hạ giá trị chính thức của nội tệ; tăng giá một lần; cần khi thâm hụt vãng lai không tài trợ được
 - [[nominal-anchor]] — biến danh nghĩa được cố định để neo kỳ vọng lạm phát
 - [[open-trade-and-a-convertible-currency-are-the-fastest-route-to-rational-relative-prices]] — giá hợp lý bám giá thế giới
 - [[price-convergence-keeps-pressure-on-inflation-through-the-transition]] — vì sao áp lực giá kéo dài, tỷ giá thực tăng
 - [[incomes-policy]] — ba cách tiếp cận và lý do dùng
 - [[designing-wage-controls-means-choosing-a-norm-indexation-coverage-and-enforcement]] — bốn bước thiết kế
 - [[wage-controls-lose-effectiveness-rapidly-after-a-short-period]] — vì sao chỉ nên tạm thời
+- [[soft-budget-constraint]] — doanh nghiệp lách ràng buộc ngân sách nhờ chính phủ/ngân hàng; tự do hoá giá là điều kiện cứng hoá
 
 **Đo lường trong kinh tế chuyển đổi**
 - [[transition-statistics-understate-private-sector-growth]] — sai lệch ở khâu bao phủ
@@ -170,6 +188,13 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[polish-real-wages-stabilized-but-lagged-productivity-gains]] — lương thực hồi nhẹ, tụt sau năng suất
 - [[polands-1992-sna-accounts-show-government-dissaving-and-household-saving]] — tài khoản SNA 1992 theo khu vực; ⚠️ nguồn mâu thuẫn về tiết kiệm gộp
 - [[polish-unemployment-rose-from-near-zero-to-16-percent-in-four-years]] — từ thất nghiệp trá hình sang công khai
+- [[polands-exchange-rate-path-from-dollar-peg-to-managed-float-balanced-disinflation-and-competitiveness]] — bốn chế độ tỷ giá 1990–95
+- [[polands-exchange-rate-experience-yields-five-policy-lessons]] — năm bài học chính sách tỷ giá rút từ kinh nghiệm Ba Lan
+
+**Chính sách vĩ mô và tổ chức quốc tế**
+- [[monetary-policy]] — nhà chức trách tiền tệ điều tiết tiền qua tiền dự trữ; tự chủ phụ thuộc chế độ tỷ giá và nhu cầu tài trợ của chính phủ
+- [[fiscal-policy]] — thuế, chi tiêu công, vay nợ; tác động trực tiếp lên tổng cầu
+- [[international-monetary-fund-imf]] — bên cho vay, bên tạo SDR, bên ban hành chuẩn thống kê (BPM5, GFS, IFS)
 
 **Khung kế toán tài khoá (GFS)**
 - [[government-finance-statistics-gfs]] — khung thống kê tài chính chính phủ của IMF, hub của cụm
@@ -227,6 +252,14 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[collection-lags-erode-real-tax-revenue-under-high-inflation]] — độ trễ thu khi lạm phát cao
 - [[tax-effort-compares-revenue-with-taxable-capacity-not-gdp]] — nỗ lực thuế và năng lực thuế
 - [[tanzi-diagnostic-test]] — tám kiểm tra năng suất thu
+- [[tanzi-concentration-index]] — Tanzi 1: số thu đến từ ít sắc thuế, ít thuế suất
+- [[tanzi-dispersion-index]] — Tanzi 2: ít hoặc không có sắc thuế thu ít mà phiền hà
+- [[tanzi-erosion-index]] — Tanzi 3: cơ sở thuế thực tế sát cơ sở tiềm năng
+- [[tanzi-collection-lags-index]] — Tanzi 4: nộp thuế không trễ; quan trọng khi lạm phát cao
+- [[tanzi-specificity-index]] — Tanzi 5: ít sắc thuế theo mức cố định; gắn với độ co giãn
+- [[tanzi-objectivity-index]] — Tanzi 6: thuế đánh trên cơ sở đo được khách quan
+- [[tanzi-enforcement-index]] — Tanzi 7: hệ thống được thực thi đầy đủ, hiệu quả
+- [[tanzi-cost-of-collection-index]] — Tanzi 8: chi phí thu thuế thấp nhất có thể
 
 **Phân tích chi**
 - [[public-expenditure-analysis-rests-on-five-elements]] — khung đánh giá mức và cơ cấu chi
@@ -246,15 +279,23 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[sequestering-expenditures-is-an-emergency-cut-that-distorts-allocation]] — phong toả chi
 - [[public-expenditure-raises-supply-in-the-long-run-but-crowds-out-private-spending]] — tác động vĩ mô
 - [[in-transition-economies-extra-spending-can-worsen-financing-through-inflation]] — vòng chi – lạm phát – thu
-
-**Stub — khái niệm đã có tên, chờ nội dung**
-- [[macroeconomic-sectors]] — các khu vực vĩ mô và tương tác giữa chúng
-- [[soft-budget-constraint]] — ràng buộc ngân sách doanh nghiệp lách được nhờ nhà nước, ngân hàng
-- [[nonbank-financial-institutions]] — tầng thứ ba của thống kê tài chính IFS
+- [[targeted-commodity-subsidies-and-cash-compensation]] — lưới an sinh 1: giữ sức mua lương thực cơ bản khi lạm phát
+- [[social-security-arrangements]] — lưới an sinh 2: lương hưu, tàn tật, nuôi con; hệ thống hưu trí Ba Lan
+- [[unemployment-benefits-and-public-works]] — lưới an sinh 3: trợ cấp thất nghiệp Ba Lan 12 tháng, 36% lương bình quân
+- [[exchange-rate-subsidies]] — trợ cấp qua tỷ giá; hoạt động bán tài khoá
+- [[credit-subsidies]] — cho vay dưới lãi suất chính phủ, có bảo lãnh; hoạt động bán tài khoá
+- [[exchange-rate-guarantees-and-other-contingent-liabilities]] — nghĩa vụ chưa có nguồn/tiềm tàng; hoạt động bán tài khoá
+- [[cash-grant-subsidies]] — trợ cấp tiền mặt; hình thức minh bạch nhất
+- [[tax-subsidies]] — giảm nghĩa vụ thuế cụ thể
+- [[in-kind-subsidies]] — cung ứng dưới giá thị trường; giá năng lượng thấp gây lãng phí
+- [[procurement-subsidies]] — chính phủ mua trên giá thị trường
+- [[regulatory-subsidies]] — trả ngầm qua quy định làm đổi giá hoặc quyền tiếp cận thị trường
+- [[implicit-subsidies]] — trợ cấp không hiện ra trong ngân sách; khó kiểm soát hơn trợ cấp công khai
 
 **Ch.5 — cấu trúc hệ thống tiền tệ và nhà chức trách tiền tệ (batch W1)**
 - [[financial-statistics-are-organized-in-three-tiers-from-institutional-balance-sheets-to-the-financial-survey]] — bảng cân đối riêng → khảo sát tiền tệ → khảo sát tài chính
 - [[central-bank]] — nhà chức trách tiền tệ: định nghĩa chức năng, vai trò, người cho vay cuối cùng
+- [[nonbank-financial-institutions]] — bảo hiểm, quỹ tương hỗ, hưu trí, quỹ thị trường tiền tệ; tầng thứ ba của IFS
 - [[deposit-money-banks]] — 4 vai trò, dự trữ phân đoạn, cầu dự trữ
 - [[monetary-statistics-are-stock-data-recorded-on-a-cash-basis]] — tồn kho, cơ sở tiền mặt
 - [[foreign-currency-items-in-monetary-statistics-are-converted-at-the-end-period-exchange-rate]] — tỷ giá cuối kỳ cho tồn kho, khác BOP
@@ -281,6 +322,18 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[real-interest-rate]] — Rᵣ ≈ Rₙ − Pₑ (đã bổ sung Ch.5)
 - [[valuation-adjustments-separate-transaction-flows-from-exchange-rate-revaluation-of-stocks]] — Eₜ, VAd (Box 5.8)
 
+**Ch.5 — thành phần của các đồng nhất thức tiền tệ (§5, lượt B)**
+- [[currency-in-circulation]] — CY, tiền mặt ngoài ngân hàng; khác tiền đã phát hành; tham số $c$ của số nhân
+- [[demand-deposits]] — DD, rút ngay; mẫu số của các tỷ lệ trong số nhân tiền
+- [[narrow-money-m1]] — $M1 = CY + DD$; $M2 = M1 + QM$
+- [[net-domestic-assets]] — NDA; $M2 = NFA + NDA$, $NDA = NDC + OIN_b$
+- [[net-domestic-credit]] — NDC; tín dụng ròng cho chính phủ cộng tín dụng cho khu vực khác
+- [[net-credit-to-government]] — NCG, ghi ròng tiền gửi chính phủ; phần tạo tiền mạnh
+- [[credit-to-the-private-sector]] — CPS; nhỏ ở ngân hàng trung ương, dấu hiệu lấn át ở Ba Lan
+- [[claims-on-deposit-money-banks]] — CDMB, ghi gộp; lãi suất chiết khấu là công cụ chính sách
+- [[other-items-net]] — OIN, nhóm còn lại; chứa điều chỉnh định giá tỷ giá và đối ứng phân bổ SDR
+- [[foreign-currency-deposits]] — FC; thước đo đô la hoá, thuộc M2
+
 **Ch.5 — cơ chế vận hành chính sách tiền tệ (batch W3)**
 - [[monetary-authorities-influence-reserve-money-through-five-direct-instruments]] — can thiệp ngoại hối, thị trường mở, tài trợ thâm hụt, chiết khấu, dự trữ bắt buộc
 - [[monetary-authorities-control-over-reserve-money-is-incomplete]] — NFA và NCG một phần nằm ngoài tầm chính sách
@@ -289,6 +342,9 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 - [[perfect-capital-mobility-with-a-fixed-exchange-rate-strips-monetary-policy-of-independence]] — lãi suất trong nước bị ép về mức thế giới
 - [[currency-substitution-undermines-monetary-control]] — đô la hoá
 - [[financial-innovation-blurs-the-boundary-of-money]] — đổi mới tài chính, đánh đổi liên quan/kiểm soát
+- [[foreign-exchange-intervention]] — mua bán ngoại tệ làm tài sản đối ngoại và tiền dự trữ đổi cùng chiều
+- [[open-market-operations]] — mua bán giấy tờ có giá của chính phủ; công cụ trung hoà can thiệp ngoại hối
+- [[discount-window]] — tín dụng của ngân hàng trung ương cho ngân hàng; lãi suất chiết khấu báo hiệu lập trường chính sách
 
 **Ch.5 — đặc thù kinh tế chuyển đổi + kỹ thuật IMF (batch W4)**
 - [[transition-economies-experience-large-discrete-jumps-in-money-velocity]] — vòng quay tiền nhảy bậc, phục hồi chậm

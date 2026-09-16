@@ -3,7 +3,7 @@ title: public-expenditure-analysis-rests-on-five-elements
 type: concept
 tags: [fiscal, expenditure]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

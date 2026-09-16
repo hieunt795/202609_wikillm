@@ -3,7 +3,7 @@ title: capital-inflow-surges-pose-four-macroeconomic-management-risks
 type: concept
 tags: [external-sector, capital-flows, policy]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

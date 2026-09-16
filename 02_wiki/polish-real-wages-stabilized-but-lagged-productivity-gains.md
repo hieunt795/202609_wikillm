@@ -3,7 +3,7 @@ title: polish-real-wages-stabilized-but-lagged-productivity-gains
 type: case
 tags: [poland, transition-economies, wages]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

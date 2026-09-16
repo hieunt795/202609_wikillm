@@ -3,7 +3,7 @@ title: to-what-extent-was-polands-output-decline-1990-91-overstated
 type: case
 tags: [poland, transition-economies, measurement]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

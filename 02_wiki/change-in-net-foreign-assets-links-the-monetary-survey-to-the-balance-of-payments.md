@@ -3,7 +3,7 @@ title: change-in-net-foreign-assets-links-the-monetary-survey-to-the-balance-of-
 type: concept
 tags: [monetary-policy, balance-of-payments, identities, exchange-rate]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

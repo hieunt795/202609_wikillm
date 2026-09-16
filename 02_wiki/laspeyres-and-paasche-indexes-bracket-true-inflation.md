@@ -3,7 +3,7 @@ title: laspeyres-and-paasche-indexes-bracket-true-inflation
 type: concept
 tags: [prices, index-numbers, measurement]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

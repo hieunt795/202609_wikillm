@@ -3,7 +3,7 @@ title: the-typical-deposit-money-bank-balance-sheet-groups-assets-by-counterpart
 type: concept
 tags: [monetary-policy, financial-system]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

@@ -3,7 +3,7 @@ title: full-employment-does-not-mean-zero-unemployment
 type: concept
 tags: [labour, unemployment]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

@@ -3,7 +3,7 @@ title: expenditure-arrears-raise-the-cost-of-providing-government-services
 type: concept
 tags: [fiscal, deficit, transition-economies]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

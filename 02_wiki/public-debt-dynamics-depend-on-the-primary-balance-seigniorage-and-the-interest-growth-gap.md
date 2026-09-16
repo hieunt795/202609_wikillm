@@ -3,7 +3,7 @@ title: public-debt-dynamics-depend-on-the-primary-balance-seigniorage-and-the-in
 type: concept
 tags: [fiscal, sustainability, deficit]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

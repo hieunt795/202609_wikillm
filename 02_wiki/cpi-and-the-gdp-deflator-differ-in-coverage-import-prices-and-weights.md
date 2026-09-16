@@ -3,7 +3,7 @@ title: cpi-and-the-gdp-deflator-differ-in-coverage-import-prices-and-weights
 type: concept
 tags: [prices, index-numbers, inflation]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

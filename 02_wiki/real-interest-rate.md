@@ -3,7 +3,7 @@ title: real-interest-rate
 type: concept
 tags: [monetary-policy, interest-rates, fiscal]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

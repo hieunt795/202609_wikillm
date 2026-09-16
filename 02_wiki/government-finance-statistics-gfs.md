@@ -3,7 +3,7 @@ title: government-finance-statistics-gfs
 type: entity
 tags: [fiscal, gfs, framework]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

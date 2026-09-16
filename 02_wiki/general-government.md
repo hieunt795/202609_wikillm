@@ -3,7 +3,7 @@ title: general-government
 type: concept
 tags: [fiscal, gfs, sectoral-analysis]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

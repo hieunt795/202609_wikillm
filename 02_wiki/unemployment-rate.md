@@ -3,7 +3,7 @@ title: unemployment-rate
 type: concept
 tags: [labour, unemployment, measurement]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

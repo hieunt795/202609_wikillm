@@ -3,7 +3,7 @@ title: open-trade-and-a-convertible-currency-are-the-fastest-route-to-rational-r
 type: concept
 tags: [transition-economies, prices, external-sector]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

@@ -3,7 +3,7 @@ title: high-debt-ratios-raise-real-interest-rates-and-erode-market-confidence
 type: concept
 tags: [fiscal, sustainability]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

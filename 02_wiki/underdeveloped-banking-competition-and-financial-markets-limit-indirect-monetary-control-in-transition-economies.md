@@ -3,7 +3,7 @@ title: underdeveloped-banking-competition-and-financial-markets-limit-indirect-m
 type: concept
 tags: [monetary-policy, transition-economies]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

@@ -3,7 +3,7 @@ title: tax-buoyancy-exceeds-elasticity-when-discretionary-changes-raise-revenue
 type: concept
 tags: [fiscal, taxation]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

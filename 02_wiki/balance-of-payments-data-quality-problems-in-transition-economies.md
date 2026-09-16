@@ -3,7 +3,7 @@ title: balance-of-payments-data-quality-problems-in-transition-economies
 type: concept
 tags: [external-sector, balance-of-payments, transition-economies, measurement]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

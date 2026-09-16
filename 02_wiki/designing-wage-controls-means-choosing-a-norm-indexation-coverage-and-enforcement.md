@@ -3,7 +3,7 @@ title: designing-wage-controls-means-choosing-a-norm-indexation-coverage-and-enf
 type: concept
 tags: [wages, stabilization, transition-economies]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

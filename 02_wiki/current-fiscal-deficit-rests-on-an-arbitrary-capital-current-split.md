@@ -3,7 +3,7 @@ title: current-fiscal-deficit-rests-on-an-arbitrary-capital-current-split
 type: concept
 tags: [fiscal, deficit, saving]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

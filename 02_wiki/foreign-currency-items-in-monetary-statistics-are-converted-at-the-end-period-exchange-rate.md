@@ -3,7 +3,7 @@ title: foreign-currency-items-in-monetary-statistics-are-converted-at-the-end-pe
 type: concept
 tags: [monetary-policy, exchange-rate, financial-system]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

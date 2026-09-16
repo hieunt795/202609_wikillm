@@ -94,3 +94,12 @@
 - **Quyết định:** áp dụng hồi tố cho toàn bộ wiki đã ingest (Ch.2–Ch.6, ~211 trang). Mọi thành phần trong một đồng nhất thức, bảng cân đối hay box có tên gọi kinh tế/tài chính thật (compensation of employees, operating surplus, private/government consumption, required/excess reserves, Treasury bills, SDR holdings...) được tách thành trang `concept` riêng, kể cả khi trang đó rất ngắn. Không tách trang cho hệ số/tỷ trọng đại số thuần tuý không mang tên riêng (trọng số tăng trưởng, $b$, $t$/$t-1$...). Chi tiết: `00_schema.md` §5.
 - **Lý do:** người dùng phát hiện qua Box 2.1 (SNA: Key Aggregates) rằng nhiều đại lượng có tên riêng (W, OS, TSP, CP, CG, Y_f, TR_f...) chỉ được giải thích lồng trong câu văn của trang identity, không tra được như một node độc lập.
 - **Hệ quả vận hành:** backfill là một dự án nhiều lượt, đi theo từng chương (Ch.2 trước vì vừa được rà, sau đó Ch.3–Ch.6); mỗi lượt vẫn theo ngưỡng 5–15 trang/lượt (§4) và phải chạy `validate_wiki_page.py --all` + ghi log riêng.
+
+## [2026-09-16] §5 không có ngoại lệ mới — huỷ các "quyết định phạm vi" của backfill Batch 2–4
+- **Quyết định:** mọi thành phần có tên kinh tế riêng đều có trang riêng, kể cả mục liệt kê định tính trong box (Box 3.5, 3.6, 3.7, 4.4) và khoản mục chi tiết của bảng cân đối MA/DMB (vàng, ngoại hối, SDR, tín phiếu kho bạc, tiền gửi chính phủ, CY, DD, NDA, NCG, CPS, CDMB, OIN...). Chỉ giữ hai ngoại lệ đã có ở `00_schema.md` §5 (hệ số đại số thuần tuý; đại lượng đã có trang dưới tên khác). Làm theo lượt B–D, mỗi lượt duyệt ý chính riêng.
+- **Lý do:** người dùng chốt khi xử lý lint 240 trang: không đặt ngoại lệ, tìm phương án tách trang cho từng thành phần.
+- **Thay cho:** các đoạn "Quyết định phạm vi (giữ nguyên, không tách trang)" trong ghi chú Backfill §5 Batch 2–4 ở `03_state/imf_macro_accounting.md`.
+
+## [2026-09-16] Promote 188 trang không qua `/review`
+- **Quyết định:** nâng toàn bộ danh sách *Đủ điều kiện `stable`* của lint 240 trang mà không chạy `/review` trước.
+- **Lý do:** người dùng chọn. Hệ quả: `stable` ở lượt này chỉ có nghĩa hook sạch, đủ liên kết và không Conflict; 0/188 trang có `reviewed`.

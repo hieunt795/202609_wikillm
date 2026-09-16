@@ -3,7 +3,7 @@ title: collection-lags-erode-real-tax-revenue-under-high-inflation
 type: concept
 tags: [fiscal, taxation, inflation]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

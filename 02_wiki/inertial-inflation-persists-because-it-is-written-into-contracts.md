@@ -3,7 +3,7 @@ title: inertial-inflation-persists-because-it-is-written-into-contracts
 type: concept
 tags: [prices, inflation, expectations]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

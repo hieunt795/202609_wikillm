@@ -3,7 +3,7 @@ title: public-spending-poses-three-problems-level-efficiency-and-mix
 type: concept
 tags: [fiscal, expenditure]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

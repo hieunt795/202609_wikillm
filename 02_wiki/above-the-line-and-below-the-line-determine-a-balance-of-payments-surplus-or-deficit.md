@@ -3,7 +3,7 @@ title: above-the-line-and-below-the-line-determine-a-balance-of-payments-surplus
 type: concept
 tags: [external-sector, balance-of-payments, analysis]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

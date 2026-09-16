@@ -3,7 +3,7 @@ title: grants-are-better-treated-as-financing-in-fiscal-analysis
 type: concept
 tags: [fiscal, gfs, financing]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

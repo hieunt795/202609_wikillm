@@ -3,7 +3,7 @@ title: underspending-on-operations-and-maintenance-erodes-existing-capital
 type: concept
 tags: [fiscal, expenditure, capital]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

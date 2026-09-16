@@ -3,7 +3,7 @@ title: payments-arrears-split-the-cash-deficit-from-the-accrual-deficit
 type: concept
 tags: [fiscal, deficit, accounting]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

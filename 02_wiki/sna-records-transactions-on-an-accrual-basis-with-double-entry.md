@@ -3,7 +3,7 @@ title: sna-records-transactions-on-an-accrual-basis-with-double-entry
 type: concept
 tags: [national-accounts, sna, accounting]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 
