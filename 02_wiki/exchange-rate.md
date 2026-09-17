@@ -6,7 +6,6 @@ sources: [imf_macro_accounting]
 status: stable
 last_updated: 2026-09-16
 ---
-
 Tỷ giá xuất hiện trong nguồn ở ba vai trò: một mức giá có thể bị bóp méo, một công cụ neo danh nghĩa trong ổn định hóa, và một biến chịu tác động của cách tài trợ thâm hụt (imf_macro_accounting, Ch.2, Pricing Policies, d.1136; Real Sector Developments, Output and Demand, d.1187; imf_macro_accounting, Ch.3, Financing the Deficit, d.2230).
 
 Khi bàn tỷ giá, cần phân biệt rõ đồng tiền định giá — ngoại tệ ổn định dùng làm đơn vị quy đổi và so sánh, như trong [[unit-of-account-in-the-balance-of-payments]] — với đồng tiền nội tệ mà chính sách tỷ giá của một nước tác động trực tiếp; nhầm lẫn hai vai trò này dễ dẫn tới đọc sai chiều biến động khi đối chiếu cán cân vãng lai, cán cân tổng thể theo [[current-account-monitoring-depends-on-the-exchange-rate-regime|chế độ tỷ giá]], hay số liệu của các khu vực kinh tế khác (tài khóa, tiền tệ) vốn lập bằng nội tệ chứ không phải đồng tiền định giá (imf_macro_accounting, Ch.4, Unit of Account, d.3508). Ch.5 hình thức hoá quy ước này bằng ký hiệu $E_t$ và tách rõ phần thay đổi do giao dịch khỏi phần thay đổi do bản thân tỷ giá, xem [[valuation-adjustments-separate-transaction-flows-from-exchange-rate-revaluation-of-stocks]].
