@@ -348,3 +348,7 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 ## [2026-09-16:23-04-25] ingest | imf_macro_accounting Ch.3–6 — xử lý lint 292 trang, 3 khái niệm mới
 - 3 trang mới: capital-flight, financial-programming, currency-board
 - Chèn 9 link từ trang cũ (không nâng last_updated); index + 03_state cập nhật; --all sạch (295 trang)
+
+## [2026-09-17:18-07-56] repo | reset main về 38d3381 (bản cuối ngày 2026-09-16)
+- Bỏ khỏi local 9 commit ngày 2026-09-17 (6287ec9 → b1ba033: audit skill, ingest Bindseil + Capitalism and Freedom, trường school); vẫn còn trong reflog
+- Wiki về 295 trang, 03_state còn 2 file; origin/main (9c7daaa) chưa đổi — local behind 6

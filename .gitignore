@@ -12,3 +12,5 @@ desktop.ini
 
 # Bản audit do Claude xuất ra, không thuộc wiki
 /Claude outputs/
+
+/.audit_reports/
