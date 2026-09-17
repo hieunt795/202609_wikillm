@@ -1,2 +1,0 @@
-- [LLM Wiki concept (Karpathy gist)](project_llm_wiki_concept.md) — 3-layer architecture (sources/wiki/schema) + ingest/query/lint ops, the reference design for this project
-- [Evergreen Notes concept (Matuschak)](project_evergreen_notes_concept.md) — 5 principles (atomic, concept-oriented, densely linked, associative, personal) for wiki page design/linking

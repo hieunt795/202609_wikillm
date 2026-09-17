@@ -10,7 +10,11 @@
 Thumbs.db
 desktop.ini
 
-# Bản audit do Claude xuất ra, không thuộc wiki
+# Báo cáo lint/audit do Claude xuất ra, không thuộc wiki (00_schema.md §3)
 /Claude outputs/
 
-/.audit_reports/
+# Cấu hình Obsidian cục bộ
+/.obsidian/
+
+# Python
+__pycache__/

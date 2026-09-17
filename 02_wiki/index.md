@@ -8,8 +8,18 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (829 KB / 6.065 dòng) | **Đang ingest dở** | Xử lý lint 240 trang (2026-09-16): lượt A xong (tách case tỷ giá Ba Lan, 4 khái niệm mới, nâng 3 stub); lượt B xong (10 thành phần tiền tệ Ch.5); lượt C xong (11 trang dự trữ/IMF/tài trợ đặc biệt); lượt D xong (14 trang Box 3.5–3.7); lượt E xong (6 trang hình thức trợ cấp); tách trang thành phần theo §5 (không ngoại lệ) đã hoàn tất. Xử lý lint 286 trang (2026-09-16): tách 5 bài học tỷ giá Ba Lan thành trang riêng, 5 khái niệm mới (chế độ tỷ giá, phá giá, 3 công cụ tiền tệ trực tiếp). Xử lý lint 292 trang: 3 khái niệm mới (vốn tháo chạy, chương trình tài chính, hội đồng tiền tệ). Ch.2 và Ch.4 đã xong (Ch.4 tự vượt ngưỡng nguồn dài — 158 KB — nên chia 6 cụm A–F; cụm A–E ingest 2026-09-16, cụm F case Ba Lan bỏ qua vì §2 ưu tiên lý luận trước tường thuật, các concept đã đủ minh chứng — 1 khái niệm tổng quát trong cụm F (tốc độ trượt crawling peg) vẫn được trích ra riêng 2026-09-16). Chưa ingest: Ch.1 (tổng quan chuyển đổi Ba Lan, dù đã trích lẻ nhiều đoạn). Ch.6 (flow of funds) xong 2026-09-16 — phần lớn là gắn 7 cột của bảng flow of funds vào các đồng nhất thức đã ingest ở Ch.2/3/4/5, cộng 6 trang mới về cấu trúc ma trận, quy ước ghi sổ, twin deficits, cơ chế truyền dẫn thâm hụt tài khoá; Exercises và các bảng số liệu Ba Lan sau đó (d.5790+, gồm Table 6.2 đã trích lẻ trước) bỏ qua theo §2. Ch.5 (tiền tệ) xong cả 4 batch (W1–W4) 2026-09-16; case Ba Lan cụ thể (F2, Background for Monetary Analysis) bỏ qua theo §2 — khái niệm liên quan (vòng quay, đô la hoá, lãi suất thực âm) đã bao phủ tổng quát ở W3/W4. Ch.3 phần lý luận xong (cụm A–E), bỏ qua bối cảnh Ba Lan và Exercises (§2) | `03_state/imf_macro_accounting.md` |
-| `Modern Money Mechanics` | Nguồn ngắn (83 KB / 721 dòng) | **Chưa ingest** | Toàn bộ — dưới ngưỡng nguồn dài nên ingest trọn 1 lượt, không cần file trạng thái (§10) | — |
+| `imf_macro_accounting` | Nguồn dài (849 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1; Ch.2–6 xong (chi tiết theo chunk ở state file) | `03_state/imf_macro_accounting.md` |
+| `Modern Money Mechanics` | Nguồn ngắn (85 KB / 721 dòng) | **Chưa ingest** | Toàn bộ, ingest trọn 1 lượt | — |
+| `capitalism_and_freedom` | Nguồn dài (565 KB / 2.055 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
+| `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
+| `cargill_central_bank_policy` | Nguồn dài (1.206 KB / 5.623 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
+| `choudhry_principles_of_banking` | Nguồn dài (2.664 KB / 14.955 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
+| `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
+| `choudhry_fixed_income_markets` | Nguồn dài (1.941 KB / 15.414 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
+| `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Chưa ingest** | Ch.1–39 (front matter, Bibliography, Index bỏ qua) | `03_state/fixed_income_during.md` |
+| `tata_bank_alm` | Nguồn dài (450 KB / 3.345 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
+
+Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *Phần còn lại* chỉ ghi một câu; diễn biến từng lượt nằm ở `log.md`, tiến độ theo chunk nằm ở state file.
 
 ## Trang wiki theo chủ đề
 

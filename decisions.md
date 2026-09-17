@@ -5,6 +5,8 @@
 > Định dạng: mỗi quyết định là 1 mục `## [YYYY-MM-DD] <tiêu đề>`, gồm *Quyết định* · *Lý do* · *Thay cho* (nếu có). Quyết định bị đảo thì thêm mục mới trỏ về mục cũ, không sửa mục cũ.
 >
 > Bản log dài trước 2026-09-15 (chứa lập luận gốc của các mục 2026-09-12 → 2026-09-14): `git show e2adb7a:log.md`.
+>
+> Từ 2026-09-17, mục cũ ghi "Lý do: `00_schema.md` §X" được hiểu là tiểu mục §X của mục *[2026-09-17] Lý do dời từ `00_schema.md`* bên dưới; bản schema còn lý do: `git show 812200a:00_schema.md`.
 
 ## [2026-09-14] Thêm mục `## Sources` vào `index.md`
 - **Quyết định:** bảng trạng thái cấp nguồn ở đầu `index.md`, cập nhật mỗi lượt ingest kể cả lượt không tạo trang.
@@ -103,3 +105,70 @@
 ## [2026-09-16] Promote 188 trang không qua `/review`
 - **Quyết định:** nâng toàn bộ danh sách *Đủ điều kiện `stable`* của lint 240 trang mà không chạy `/review` trước.
 - **Lý do:** người dùng chọn. Hệ quả: `stable` ở lượt này chỉ có nghĩa hook sạch, đủ liên kết và không Conflict; 0/188 trang có `reviewed`.
+
+## [2026-09-17] Reset về `38d3381`, bỏ toàn bộ việc ngày 2026-09-17
+- **Quyết định:** đưa `main` về bản cuối ngày 2026-09-16 và force-push; không giữ nhánh backup. Bị bỏ: 10 commit `6287ec9` → `b1ba033` (audit skill lần 1 với đổi tên `review-node` và cờ `--backlinks/--ocr/--now`; trường `school`; source id; ingest Bindseil Intro–Ch.13 và Capitalism and Freedom Ch.II–V, IX; lint 479 trang). Các commit này chỉ còn trong reflog máy cục bộ, sẽ mất khi git dọn reflog.
+- **Lý do:** người dùng chọn làm lại từ bản 295 trang.
+- **Lưu ý cho lượt audit sau:** một số thứ bị bỏ được làm lại có chủ đích trong batch audit v2 cùng ngày (đổi tên `review-node`, cờ hook, source id, bản kê đủ 10 nguồn). Trường `school` và nội dung ingest Bindseil/Friedman **không** được làm lại; đừng đề xuất khôi phục chỉ vì chúng từng tồn tại.
+
+## [2026-09-17] Khôi phục CRLF cho file OCR của IMF
+- **Quyết định:** đổi `Macroeconomic Accounting and Analysis IMF.md` từ LF về CRLF để khớp lại SHA-256 trong bản kê.
+- **Lý do:** lúc 13:40 ngày 2026-09-17 một công cụ đã đổi ký tự xuống dòng CRLF sang LF (giảm đúng 6.065 byte = số dòng). Nội dung và số dòng không đổi nên chú thích §7.5 vẫn đúng; khôi phục CRLF cho đúng từng byte bản gốc. Người dùng duyệt việc ghi vào `01_sources/` này. Phòng ngừa: `validate_wiki_page.py --verify-sources` ở bước 0 của lint.
+
+## [2026-09-17] Chuyển `_source_note.md` ra khỏi `01_sources/`
+- **Quyết định:** ghi chú người dùng trong `01_sources/fixed_income_during/_source_note.md` (ISBN, chia phần, PDF có text layer, dự kiến file highlight) chuyển sang bản kê và `03_state/fixed_income_during.md`; file gốc xoá theo quyết định của người dùng.
+- **Lý do:** giữ phép thử §3 "mọi file `.md`/`.pdf` trong `01_sources/` đều là nguồn có trong bản kê" đúng tuyệt đối, cùng lý do đã hoàn nguyên `_ingest_state.md` ngày 2026-09-14.
+
+## [2026-09-17] Sách During là một nguồn nhiều file
+- **Quyết định:** 42 file chương của *Fixed Income Trading and Risk Management* là một source id `fixed_income_during`, một state file, 42 dòng chunk; chú thích §7.5 thêm hậu tố file.
+- **Lý do:** người dùng chọn. Từng file đều dưới ngưỡng nguồn dài nhưng tổng 1.112 KB / 7.300 dòng vượt ngưỡng; tách 42 nguồn sẽ làm `sources:` và `index.md` §Sources vụn theo chương, trái với cách các sách khác được khai.
+- **Thay cho:** —. Quy ước chung: `00_schema.md` §10 mục *Nguồn nhiều file*.
+
+## [2026-09-17] Đổi skill `review` thành `review-node`
+- **Quyết định:** thư mục và `name:` đổi thành `review-node`; op trong `log.md` vẫn là `review`.
+- **Lý do:** skill không nạp được vì description chứa `reviewed_by: model` không có nháy (YAML đọc thành mapping); tên `review` còn trùng lệnh dựng sẵn `/review` của Claude Code. Description giờ đặt trong nháy kép.
+
+## [2026-09-17] Ingest, review-node và trang `analysis` của query áp skill `writing-style`
+- **Quyết định:** khi viết hoặc sửa thân bài trang wiki, agent áp skill `writing-style` (cấp tài khoản) theo profile wiki.
+- **Lý do:** người dùng chọn cho ingest và review; trang `analysis` của query là trang wiki nên áp cùng quy tắc. Câu trả lời query không tạo trang thì không bắt buộc.
+- **Thay cho:** việc chưa có quyết định nào (audit v2, B16).
+
+## [2026-09-17] Gộp `agents.md` vào `CLAUDE.md`
+- **Quyết định:** xoá `agents.md`; ràng buộc 6 (cập nhật §Sources + state file mỗi lượt ingest), mẫu hai lượt và danh sách lượt bắt buộc chạy `--all` chuyển vào `CLAUDE.md`. README chỉ trỏ.
+- **Lý do:** ba file lặp bảng operation và luật cứng, và đã lệch nhau (5 luật so với 7 ràng buộc). `CLAUDE.md` là file Claude Code tự nạp nên giữ nó.
+
+## [2026-09-17] Báo cáo lint/audit lưu ở `Claude outputs/`
+- **Quyết định:** mọi báo cáo do Claude xuất ra nằm ở `Claude outputs/` (không commit), tên theo `00_schema.md` §3. Thư mục `.audit_reports/` bị bỏ; báo cáo lint 479 trang của nhánh đã reset chuyển sang `Claude outputs/lint-2026-09-17-479-discarded.md`.
+- **Lý do:** preference của người dùng; lint skill trước đó không quy định đường dẫn nên log và thư mục thực tế lệch nhau.
+
+## [2026-09-17] Hook xác định nguồn dài từ bản kê; thêm lệnh phụ trợ
+- **Quyết định:** `validate_wiki_page.py` coi một nguồn là nguồn dài khi bản kê xếp "Nguồn dài" hoặc có state file, và báo `sources:` trỏ tới id không có trong bản kê. Thêm `--backlinks`, `--ocr`, `--stub-debt`, `--inbox-debt`, `--verify-sources`, `--now`.
+- **Lý do:** trước đó nguồn dài chưa có state file lọt qua kiểm §7.5. Các phép đếm backlink, quét OCR, đếm nợ và lấy giờ trước đây skill bắt model tự dựng bằng grep/awk; lint từng ghi nhận grep `[[...]]` sai cả hai chiều và awk so ngày đếm sai nợ stub.
+
+## [2026-09-17] Lint gộp *Trang stale* và *Sai vòng đời status*
+- **Quyết định:** còn 11 tiêu chí; tiêu chí gộp tên *Stale chưa đánh dấu*.
+- **Lý do:** hai tiêu chí cùng định nghĩa "trang `stable` có nguồn liên quan ingest sau `last_updated`".
+
+## [2026-09-17] Bỏ `.claude/memory/`
+- **Quyết định:** xoá hai file tóm tắt khái niệm Karpathy/Matuschak trong `.claude/memory/`; nguồn tham chiếu duy nhất là hai link gốc trong phần Context của Project (và README).
+- **Lý do:** hai nơi cùng giữ một nội dung dễ lệch nhau; người dùng đã chọn Context dạng link để luôn đọc bản gốc. Bản cũ: `git show 812200a:.claude/memory/`.
+
+## [2026-09-17] Lý do dời từ `00_schema.md`
+Schema chỉ giữ luật; lý do dời về đây theo từng mục.
+- **§2 Ưu tiên lý luận trước tường thuật:** `case` tồn tại để chống lưng cho `concept`, nên khi concept đã đủ minh chứng thì thêm case không tăng sức giải thích mà chỉ làm loãng wiki.
+- **§2 Không có trang tóm tắt nguồn:** gist Karpathy tạo trang tóm tắt cho mỗi nguồn; Evergreen yêu cầu wiki hướng khái niệm, và trang "tóm tắt cuốn X" chính là *literature note* mà Matuschak xếp ngoài thang evergreen.
+- **§3 Title tiếng Anh:** giữ được thuật ngữ gốc của nguồn và không phải bỏ dấu khi chuyển sang kebab-case.
+- **§5 Thành phần có tên riêng:** người dùng phát hiện qua Box 2.1 rằng nhiều đại lượng có tên riêng chỉ được giải thích lồng trong câu của trang đồng nhất thức, không tra được như một node độc lập (xem mục 2026-09-16).
+- **§6 Hai dạng link:** grep `[[tên-trang]]` trần bỏ sót toàn bộ link dạng `[[tên-trang|nhãn]]`, và `[[...]]` trong grep bị hiểu là bracket expression.
+- **§6 Stub link:** liên kết bị hoãn sang batch sau thường mất luôn.
+- **§7.4 Viết lại, không chép:** chỉ khi diễn đạt lại mới lộ ra chỗ chưa hiểu và chỗ mâu thuẫn. Đồng nhất thức viết dạng công thức vì người đọc cần nhận ra ngay và trích lại chính xác; `S − I = CAB` lẫn trong câu dễ bị đọc lướt như một cụm từ (người dùng chốt 2026-09-16).
+- **§7.5 Chú thích vị trí:** `sources:` chỉ nói claim đến từ file nào; với file 849 KB, xác minh một câu phải đọc lại phần lớn nguồn. Nguồn ngắn đọc trọn lại được trong 1 lượt nên không bắt buộc. Không backfill hàng loạt để không sinh một dự án sửa 51 trang cùng lúc; nợ trả dần khi trang được sửa.
+- **§7.5 `last_updated` đo nội dung:** xem mục 2026-09-15.
+- **§8 Title là API:** title đứng độc lập khỏi nguồn thì trang tái sử dụng được ở ngữ cảnh khác. Title phủ định hợp lệ vì phủ định thường không có dạng xác định tương đương: "không ăn cơm" không đồng nghĩa với "ăn cháo" (người dùng chốt 2026-09-16).
+- **§9 Bảng "Ai làm":** trước 2026-09-15 không operation nào sở hữu bước `draft → stable`, nên mọi trang kẹt ở `draft` và tiêu chí stale không bao giờ kích hoạt. Backlink ≥ 2 để một trang `stable` không thành mồ côi chỉ vì mất một cạnh.
+- **§9 `reviewed` tách khỏi `status`:** hai trục trực giao; gộp lại sinh ô lai vô nghĩa (`stale` nhưng đã duyệt, `stub` đã duyệt) và làm bảng chuyển tiếp mất tính đơn tuyến. Tách `reviewed_by` để trường vẫn trả lời được *người dùng đã đọc trang này chưa* (lọc `reviewed_by: user`). Không có tiêu chí lint cho `reviewed:` cũ hơn `last_updated:` vì ở quy mô một người dùng nó chỉ tạo nhiễu phải bỏ qua mỗi lượt.
+- **§10 Ngưỡng 120 KB:** khoảng 30k token, vẫn đọc trọn được 1 lượt nhưng chiếm gần hết ngân sách context, không còn chỗ cho bước đối chiếu với toàn bộ `02_wiki/`. Không dùng số heading: `Modern Money Mechanics` có 66 heading trong 721 dòng mà vẫn đọc trọn được.
+- **§10 `03_state/` thay vì đặt cạnh nguồn:** đặt cạnh nguồn tra cứu tiện hơn một nhịp nhưng phải khoét ngoại lệ vào luật bất biến, và luật cứng đã có ngoại lệ thứ nhất thì sẽ có ngoại lệ thứ hai. Đánh đổi: nhớ thêm một đường dẫn, state file tự khai `file:`.
+- **§10 Bản kê SHA-256:** `01_sources/` không commit (tài liệu bên thứ ba); chú thích §7.5 và bản đồ chunk trỏ tới số dòng, nên người đọc chỉ kiểm chứng được khi đối chiếu đúng bản file. Chunk bỏ qua vẫn có dòng riêng để lượt sau không tưởng còn sót. Số dòng dùng làm khoá được vì nguồn bất biến.
+- **§11 `_inbox.md` tách khỏi `02_wiki/`:** mọi trang trong `02_wiki/` phải atomic hợp lệ và bị hook kiểm mỗi lần ghi; ý tưởng dang dở không thoả luật đó, không có chỗ riêng thì bị nhét bừa vào một trang hoặc mất luôn.
+- **§12 Tiền tố `## [`:** theo gist Karpathy, để `grep` lấy được các mục gần nhất.

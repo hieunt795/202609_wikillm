@@ -352,3 +352,12 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 ## [2026-09-17:18-07-56] repo | reset main về 38d3381 (bản cuối ngày 2026-09-16)
 - Bỏ khỏi local 9 commit ngày 2026-09-17 (6287ec9 → b1ba033: audit skill, ingest Bindseil + Capitalism and Freedom, trường school); vẫn còn trong reflog
 - Wiki về 295 trang, 03_state còn 2 file; origin/main (9c7daaa) chưa đổi — local behind 6
+
+## [2026-09-17:19-08-08] schema | batch audit v2 (cấu trúc + skill)
+- Skill review → review-node (sửa YAML); ingest/lint/promote/query sửa theo B2–B13, áp writing-style; agents.md gộp vào CLAUDE.md; schema 30 → 21 KB, lý do dời sang decisions.md
+- Hook thêm --backlinks/--ocr/--stub-debt/--inbox-debt/--verify-sources/--now, nguồn dài đọc từ bản kê; bản kê + index §Sources đủ 10 nguồn; 03_state/fixed_income_during.md
+- 01_sources: file OCR IMF khôi phục CRLF (khớp SHA), _source_note.md chuyển ra và xoá (người dùng duyệt); --all sạch 295 trang, --verify-sources 0 lệch
+
+## [2026-09-17:19-08-08] repo | commit batch audit v2
+- Đính chính mục repo trước: origin/main đã được force-push về 812200a, không còn 9c7daaa; các commit ngày 2026-09-17 chỉ còn trong reflog cục bộ
+- Commit cục bộ, chưa push

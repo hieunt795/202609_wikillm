@@ -1,6 +1,6 @@
 # Schema — Quy tắc dự án LLM Wiki
 
-> File này định nghĩa mô hình dữ liệu (data model) của wiki. `agents.md` tham chiếu đến các mục dưới đây cho từng operation, không lặp lại nội dung.
+> File này định nghĩa mô hình dữ liệu (data model) của wiki. `CLAUDE.md` và các skill trong `.claude/skills/` tham chiếu tới các mục dưới đây, không lặp lại nội dung. Lý do đứng sau từng luật nằm ở `decisions.md` (mục *[2026-09-17] Lý do dời từ `00_schema.md`* và các mục trước đó); schema chỉ giữ luật.
 
 ## 1. Frontmatter chuẩn cho trang wiki (`02_wiki/*.md`)
 
@@ -8,7 +8,7 @@
 title:
 type: entity | concept | case | analysis
 tags: []
-sources: []        # liên kết tới nguồn trong 01_sources
+sources: []        # source id trong 03_state/_sources_manifest.md (§10)
 status: stub | draft | stable | stale     # vòng đời: xem §9
 last_updated:
 reviewed:          # TUỲ CHỌN — ngày trang được review đối chiếu nguồn; không có = chưa review (§9)
@@ -22,77 +22,78 @@ reviewed_by:       # user | model — bắt buộc khi có reviewed (§9)
 | entity | Người, tổ chức, công cụ, khung/hệ thống có danh tính riêng (vd: SNA, GFS) | Ingest |
 | concept | Khái niệm, ý tưởng, định nghĩa tổng quát — áp dụng được ngoài 1 bối cảnh cụ thể | Ingest |
 | case | Tường thuật gắn với 1 bối cảnh cụ thể (quốc gia + giai đoạn thời gian), không tổng quát hóa được, dùng làm minh chứng thực tế cho `concept` liên quan | Ingest |
-| analysis | Tổng hợp, so sánh, nhận định agent tự sinh ra từ nhiều nguồn/trang đã có trong wiki | Query (cần xác nhận người dùng trước khi tạo — xem `.claude/skills/query/SKILL.md` bước 5) |
+| analysis | Tổng hợp, so sánh, nhận định agent tự sinh ra từ nhiều nguồn/trang đã có trong wiki | Query (cần xác nhận người dùng trước khi tạo — `.claude/skills/query/SKILL.md` bước 5) |
 
 Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, bảng số liệu thô. Nếu cần, chỉ trích dẫn số liệu bên trong trang `case` liên quan, không tạo trang riêng cho bảng.
 
-`concept` có một pattern con cần nhận diện: **bridge note** — trang chỉ mô tả *quan hệ* giữa 2 khái niệm liền kề (vd `current-account-deficit-means-absorption-exceeds-national-income` nối `absorption` với `gndi`). Bridge note là trang độc lập, không được nhét vào một trong hai trang đầu mút.
+`concept` có một pattern con: **bridge note** — trang chỉ mô tả *quan hệ* giữa 2 khái niệm liền kề (vd `current-account-deficit-means-absorption-exceeds-national-income` nối `absorption` với `gndi`). Bridge note là trang độc lập, không nhét vào một trong hai trang đầu mút.
 
-**Ưu tiên lý luận trước tường thuật.** Khi một nguồn tách rõ phần khung khái niệm với phần tường thuật bối cảnh một quốc gia/giai đoạn, ingest phần khung khái niệm trước và ingest phần bối cảnh **chỉ khi** wiki còn thiếu minh chứng cho một `concept` đã có. Lý do: `case` tồn tại để chống lưng cho `concept` (bảng trên), nên khi concept đã đủ minh chứng thì thêm case không tăng sức giải thích mà chỉ làm loãng wiki. Phần bối cảnh bị bỏ qua vẫn có dòng riêng trong bản đồ chunk kèm lý do (§10), không xoá khỏi bảng.
+**Ưu tiên lý luận trước tường thuật.** Khi một nguồn tách rõ phần khung khái niệm với phần tường thuật bối cảnh, ingest phần khung khái niệm trước; ingest phần bối cảnh **chỉ khi** wiki còn thiếu minh chứng cho một `concept` đã có. Phần bối cảnh bị bỏ qua vẫn có dòng riêng trong bản đồ chunk kèm lý do (§10).
 
-**Không có trang tóm tắt nguồn.** Gist Karpathy tạo một trang tóm tắt cho mỗi nguồn khi ingest; dự án này cố ý không làm vậy. Lý do: Evergreen yêu cầu wiki hướng khái niệm, không hướng nguồn — trang "tóm tắt cuốn X" chính là *literature note* mà Matuschak xếp ngoài thang evergreen. Vai trò của trang tóm tắt đã được chia cho ba chỗ: `index.md` §Sources (nguồn nạp tới đâu), `03_state/` (bản đồ chunk + xuất xứ), và trường `sources:` cộng chú thích §7.5 trên từng trang. Đây là lựa chọn có chủ đích — lần audit sau đừng tính là thiếu sót.
+**Không có trang tóm tắt nguồn.** Vai trò đó chia cho `index.md` §Sources, `03_state/` và trường `sources:` cộng chú thích §7.5 trên từng trang. Đây là lựa chọn có chủ đích, không phải thiếu sót.
 
 ## 3. Quy ước cấu trúc & đặt tên
 
-- `02_wiki/` là cấu trúc phẳng — không tách thư mục con theo loại; phân loại qua trường `type` trong frontmatter.
+- `02_wiki/` là cấu trúc phẳng — không tách thư mục con theo loại; phân loại qua trường `type`.
 - Tên file trang wiki: kebab-case, khớp với `title`.
-- **Ngôn ngữ:** `title` và tên file viết bằng **tiếng Anh**; thân bài viết bằng **tiếng Việt**. Title tiếng Anh giữ được thuật ngữ gốc của nguồn và không phải bỏ dấu khi chuyển sang kebab-case.
-- `01_sources/` là bất biến — **chỉ đọc, không ngoại lệ**: không sửa nội dung, không thêm file, không đổi tên, không xoá. Mọi thứ agent cần *ghi* về một nguồn đều nằm ngoài thư mục đó.
-- `03_state/` là vùng trạng thái do agent sở hữu, máy-đọc-được, gồm 2 loại file: 1 bản đồ chunk `03_state/<tên_nguồn>.md` cho mỗi nguồn dài, và 1 bản kê xuất xứ chung `03_state/_sources_manifest.md` (§10). Tách khỏi `01_sources/` chính là để luật bất biến ở trên không cần ngoại lệ nào.
-- Vùng capture tạm `_inbox.md` nằm ở gốc dự án, **không** nằm trong `02_wiki/` (§11). Đây là văn xuôi cho người đọc, khác bản chất với `03_state/` nên không gộp chung.
+- **Ngôn ngữ:** `title` và tên file viết bằng **tiếng Anh**; thân bài viết bằng **tiếng Việt**, theo profile wiki của skill `writing-style`.
+- `01_sources/` là bất biến — **chỉ đọc, không ngoại lệ**: không sửa nội dung, không thêm file, không đổi tên, không xoá. Mọi thứ agent cần *ghi* về một nguồn đều nằm ngoài thư mục đó. Phép thử: mọi file `.md`/`.pdf` trong `01_sources/` đều có trong bản kê và khớp SHA-256 (`validate_wiki_page.py --verify-sources`).
+- `03_state/` là vùng trạng thái do agent sở hữu, máy đọc được, gồm 1 bản kê xuất xứ chung `03_state/_sources_manifest.md` và 1 bản đồ chunk `03_state/<source id>.md` cho mỗi nguồn dài đã bắt đầu ingest (§10).
+- Vùng capture tạm `_inbox.md` nằm ở gốc dự án, **không** nằm trong `02_wiki/` (§11).
+- Báo cáo lint/audit lưu ở `Claude outputs/` (không commit), tên `lint-<YYYY-MM-DD>-<số trang>.md` hoặc `audit-<YYYY-MM-DD>-<chủ đề>.md`.
 
 ## 4. Ngưỡng vận hành
 
 | Hoạt động | Ngưỡng |
 |---|---|
-| Ingest | Tạo/cập nhật 5–15 trang wiki mỗi lần |
+| Ingest | Tạo/cập nhật 5–15 trang wiki mỗi lần (stub không tính) |
 | Lint | Chạy sau mỗi 10 lần ingest, hoặc theo lịch định kỳ |
+| Review | Tối đa 5 trang mỗi lượt |
 | Mâu thuẫn (conflict) | Không tự sửa — đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn, chờ xử lý |
-| Kích thước 1 trang | Đủ nhỏ để viết trọn trong 1 lượt, không cần chia nhiều lượt. Nếu không viết hết được trong 1 lượt → trang đang gộp nhiều ý, phải tách (§5) |
-| Phân loại nguồn ngắn / nguồn dài | Ngưỡng định lượng ở §10. Nguồn dài bắt buộc có file trạng thái trong `03_state/` |
+| Kích thước 1 trang | Đủ nhỏ để viết trọn trong 1 lượt. Không viết hết được trong 1 lượt → trang đang gộp nhiều ý, phải tách (§5) |
+| Phân loại nguồn ngắn / nguồn dài | Ngưỡng ở §10. Nguồn dài có file trạng thái trong `03_state/` từ lượt ingest đầu |
 | Triage `_inbox.md` | Mỗi lượt lint (§11) |
 
 ## 5. Nguyên tắc Atomic
 
-Mỗi trang wiki chỉ chứa 1 ý tưởng/khái niệm duy nhất — **nhưng phải bao quát đầy đủ ý tưởng đó**. Atomic là một điểm cân bằng, không phải "càng nhỏ càng tốt": trang quá rộng làm mờ kết nối cụ thể, trang quá vụn làm loãng mạng liên kết.
-Nếu nội dung trích từ nguồn chứa >1 ý tưởng độc lập có thể đứng riêng → tách thành nhiều trang, không gộp vào 1 trang dài.
+Mỗi trang wiki chỉ chứa 1 ý tưởng/khái niệm duy nhất — **nhưng phải bao quát đầy đủ ý tưởng đó**. Atomic là điểm cân bằng, không phải "càng nhỏ càng tốt". Nội dung trích từ nguồn chứa >1 ý tưởng độc lập có thể đứng riêng → tách thành nhiều trang.
 
 Hai dấu hiệu vi phạm:
-- Trang có bất kỳ heading cấp 2+ trong thân bài → cần tách (xem §7).
-- **Không đặt được title sắc gọn cho trang** → hoặc tư duy chưa rõ, hoặc trang đang chứa nhiều ý (xem §8).
+- Trang có heading cấp 2+ trong thân bài → cần tách (§7).
+- **Không đặt được title sắc gọn** → tư duy chưa rõ, hoặc trang đang chứa nhiều ý (§8).
 
-Chủ đề (topic) là đơn vị gom nhóm tạm thời để tìm liên kết khi ingest (xem `.claude/skills/ingest/SKILL.md` bước 2) — một chủ đề thường chứa nhiều trang atomic, không phải 1 chủ đề = 1 trang. Luật Atomic ở trên vẫn là luật quyết định ranh giới trang cuối cùng trong mỗi chủ đề.
+Chủ đề (topic) là đơn vị gom nhóm tạm thời khi ingest (`.claude/skills/ingest/SKILL.md` bước 2) — một chủ đề thường chứa nhiều trang atomic. Luật Atomic quyết định ranh giới trang cuối cùng.
 
-**Thành phần có tên kinh tế riêng trong một đồng nhất thức/bảng cân đối/box phải có trang riêng** (người dùng chốt 2026-09-16, áp dụng hồi tố cho toàn bộ wiki đã ingest). Trước quyết định này, một thành phần như $W$ (compensation of employees), $OS$ (operating surplus), $CP$/$CG$ (tiêu dùng tư nhân/chính phủ), "Treasury bills", "SDR holdings" chỉ được giải thích trong câu văn của trang chứa đồng nhất thức/bảng cân đối đó. Từ nay: nếu thành phần có một tên gọi kinh tế/tài chính thật (không phải biến số thuần đại số), nó được tách thành trang `concept` riêng, dù trang đó có thể rất ngắn — atomic ở mức thành phần, không chỉ ở mức đồng nhất thức.
+**Thành phần có tên kinh tế riêng phải có trang riêng.** Mọi thành phần trong một đồng nhất thức, bảng cân đối hay box có tên gọi kinh tế/tài chính thật (vd $W$ compensation of employees, $OS$ operating surplus, $CP$/$CG$, Treasury bills, SDR holdings) được tách thành trang `concept` riêng, dù trang có thể rất ngắn. Không có ngoại lệ theo loại box hay bảng (quyết định 2026-09-16).
 
-**Ngoại lệ — không tách trang cho:** hệ số/tỷ trọng thuần đại số không mang tên kinh tế riêng biệt (ví dụ trọng số tăng trưởng trong công thức 5.4, tỷ lệ $b$ trong số nhân tiền, chỉ số thời gian $t$/$t-1$); các đại lượng đã có trang riêng dưới một tên khác — kiểm trùng bằng grep title/alias trước khi tạo, không tạo trang trùng nội dung dưới tên khác.
+**Không tách trang cho:** hệ số/tỷ trọng thuần đại số không mang tên kinh tế riêng (trọng số tăng trưởng trong công thức 5.4, tỷ lệ $b$ trong số nhân tiền, chỉ số thời gian $t$/$t-1$); đại lượng đã có trang riêng dưới tên khác — kiểm trùng bằng grep title/alias trước khi tạo.
 
 ## 6. Liên kết giữa các trang wiki (densely linked)
 
-- Liên kết giữa trang wiki với trang wiki khác dùng `[[wikilink]]` ngay trong thân bài (không dùng field frontmatter riêng).
-- **Hai dạng link, cùng một đích.** `[[tên-trang]]` và `[[tên-trang|nhãn hiển thị]]` là như nhau; dạng có `|` dùng khi tên trang không đọc lọt vào câu văn (vd `[[real-wages|lương thực]]`). Phần trước dấu `|` **luôn** là tên file, phần sau chỉ là chữ hiển thị. Mọi công cụ đếm liên kết phải cắt ở `|` trước khi so khớp — grep `[[tên-trang]]` trần sẽ bỏ sót toàn bộ link dạng này.
-- `sources: []` trong frontmatter chỉ dùng để trỏ tới `01_sources/`, không dùng để liên kết giữa các trang wiki.
-- Một trang hợp lệ cần có ít nhất 1 outlink (`[[wikilink]]` trỏ ra) và lý tưởng có backlink (trang khác trỏ vào) — trừ trang `status: stub` vốn chưa có thân bài (§9). Xem tiêu chí lint ở `.claude/skills/lint/SKILL.md`.
-- Cách viết `[[wikilink]]` trong câu: xem §7.
-- **`tags` KHÔNG phải cơ chế liên kết.** Tag chỉ là chỉ mục rẻ để lọc nhanh khi quét frontmatter (tối ưu token). Hai trang cùng tag *chưa* được coi là đã liên kết — quan hệ ý tưởng phải luôn được viết thành `[[wikilink]]` có lý do.
-- **Stub link được khuyến khích:** khi cần trỏ tới một khái niệm chưa được ingest, tạo luôn trang `status: stub` (chỉ title + frontmatter, thân bài 1 câu định nghĩa ngắn hoặc để trống) rồi link tới — không hoãn liên kết lại để chờ ingest batch sau, vì liên kết bị hoãn thường mất luôn.
-- Heuristic chọn trang để link ở bước Ingest 3b: hỏi **"trang này sẽ cần xuất hiện lại trong ngữ cảnh nào?"** — không hỏi "trang này thuộc category nào".
+- Liên kết giữa trang wiki dùng `[[wikilink]]` ngay trong thân bài (không dùng field frontmatter riêng).
+- **Hai dạng link, cùng một đích.** `[[tên-trang]]` và `[[tên-trang|nhãn hiển thị]]` là như nhau; phần trước `|` luôn là tên file. Đếm liên kết bằng `validate_wiki_page.py --backlinks [<trang>]`, không grep tay.
+- `sources: []` chỉ trỏ tới nguồn (source id), không dùng để liên kết giữa các trang wiki.
+- Trang hợp lệ có ít nhất 1 outlink và lý tưởng có backlink — trừ trang `status: stub` (§9). Tiêu chí lint: `.claude/skills/lint/SKILL.md`.
+- Cách viết `[[wikilink]]` trong câu: §7.
+- **`tags` KHÔNG phải cơ chế liên kết.** Tag chỉ là chỉ mục rẻ để lọc khi quét frontmatter. Quan hệ ý tưởng phải viết thành `[[wikilink]]` có lý do.
+- **Stub link được khuyến khích:** khi cần trỏ tới khái niệm chưa ingest, tạo luôn trang `status: stub` rồi link — không hoãn sang batch sau.
+- Heuristic chọn trang để link khi ingest: hỏi **"trang này sẽ cần xuất hiện lại trong ngữ cảnh nào?"** — không hỏi "trang này thuộc category nào".
 
 ## 7. Cấu trúc thân bài trang wiki
 
 Thân bài (phần dưới frontmatter) tuân theo 5 luật:
 
-1. **Không dùng heading (`##`, `###`...) trong thân bài.** Title trong frontmatter là heading duy nhất của trang. Nếu nội dung cần heading để tách ý, đó là dấu hiệu phải tách thành nhiều trang (§5), không thêm heading vào 1 trang.
-2. **Câu đầu tiên nêu thẳng định nghĩa/ý tưởng cốt lõi**, không dẫn nhập kiểu "Trong chương này...", "Theo tài liệu...". Không giải thích lại kiến thức phổ quát mà model đã biết.
-3. **Liên kết `[[wikilink]]` nằm trong câu văn, kèm lý do liên kết ngắn** — không dồn thành danh sách "xem thêm" rời ở cuối trang. Một link không giải thích lý do không tạo giá trị mạng thật.
-4. **Viết lại bằng ngôn ngữ của mình, không sao chép nguyên văn nguồn.** Sao chép nguyên văn không tạo ra hiểu biết — chỉ khi diễn đạt lại mới lộ ra chỗ chưa hiểu và chỗ mâu thuẫn. Công thức/định nghĩa kỹ thuật được phép giữ nguyên ký hiệu, nhưng phần diễn giải phải là lời viết lại. **Đồng nhất thức và công thức trình bày dưới dạng công thức**, không viết lẫn vào văn xuôi: dùng khối `$$...$$` cho công thức đứng riêng một dòng, `$...$` cho ký hiệu/biến chèn trong câu (người dùng chốt 2026-09-16). Lý do: một đồng nhất thức là đối tượng người đọc cần nhận ra ngay và có thể trích dẫn lại chính xác, viết kiểu `S − I = CAB` lẫn trong câu dễ bị đọc lướt qua như một cụm từ thay vì một quan hệ toán học.
-5. **Claim lấy từ nguồn dài phải kèm chú thích vị trí.** Khi claim lấy từ một nguồn thuộc diện *nguồn dài* (§10), câu chứa claim ghi vị trí trong nguồn ngay sau claim, dạng `(<nguồn>, <chương>, <mục>)`, thêm dải dòng `d.<từ>–<đến>` khi mục dài. Lý do: `sources: []` chỉ nói claim đến *từ file nào* — với file 829 KB thì xác minh lại một câu phải đọc lại phần lớn nguồn. Nguồn ngắn không bắt buộc vì đọc trọn lại được trong 1 lượt.
+1. **Không dùng heading (`##`, `###`...) trong thân bài.** Title là heading duy nhất. Cần heading để tách ý = phải tách trang (§5).
+2. **Câu đầu tiên nêu thẳng định nghĩa/ý tưởng cốt lõi**, không dẫn nhập kiểu "Trong chương này...". Không giải thích lại kiến thức phổ quát.
+3. **`[[wikilink]]` nằm trong câu văn, kèm lý do liên kết ngắn** — không dồn thành danh sách "xem thêm" cuối trang.
+4. **Viết lại bằng ngôn ngữ của mình, không sao chép nguyên văn nguồn.** Công thức/định nghĩa kỹ thuật được giữ ký hiệu, phần diễn giải phải là lời viết lại. **Đồng nhất thức và công thức trình bày dưới dạng công thức**: `$$...$$` cho công thức đứng riêng dòng, `$...$` cho ký hiệu chèn trong câu.
+5. **Claim lấy từ nguồn dài phải kèm chú thích vị trí** ngay sau claim, dạng `(<source id>, <chương>, <mục>, d.<từ>–<đến>)`. Nguồn nhiều file (§10) thêm file: `(<source id>, <chương>, <mục>, file <hậu tố>, d.<từ>–<đến>)`, vd `(fixed_income_during, Ch.4, Bank Money Creation, file -5, d.12–30)`. Nguồn ngắn không bắt buộc.
 
-   Chú thích đi kèm **claim**, không đi kèm trang: một trang gộp vật liệu từ nhiều mục thì mỗi claim mang chú thích của mục sinh ra nó. Không dồn tất cả thành một chú thích cuối trang — cùng lý do với luật 3.
+   Chú thích đi kèm **claim**, không đi kèm trang: mỗi claim mang chú thích của mục sinh ra nó; không dồn thành một chú thích cuối trang.
 
-   **Áp dụng từ lượt ingest kế tiếp trở đi.** Các trang có trước ngày luật có hiệu lực không sửa hàng loạt; backfill là một khoản nợ kỹ thuật riêng, theo dõi trong `_inbox.md`. Hook thực thi luật này theo `last_updated`: trang nào có `last_updated` từ 2026-09-14 trở đi thì phải có chú thích — tức nợ trả dần khi trang được sửa nội dung, không sinh thêm nợ mới.
+   **Áp dụng cho trang có `last_updated` từ 2026-09-14.** Trang cũ hơn không backfill hàng loạt; nợ trả dần khi trang được sửa nội dung. Hook thực thi theo `last_updated`.
 
-   **`last_updated` đo nội dung, không đo liên kết.** Chỉ nâng `last_updated` khi claim trong trang thay đổi (thêm, sửa, xoá claim; merge nguồn mới). Một lượt chỉ chèn `[[wikilink]]` vào câu có sẵn — ví dụ nối trang cũ tới stub mới — không đổi claim nào nên **không** nâng ngày. Lý do: tiêu chí *stale* (§9) so `last_updated` với ngày ingest nguồn, nên ngày phải phản ánh nội dung.
+   **`last_updated` đo nội dung, không đo liên kết.** Chỉ nâng khi claim thay đổi (thêm, sửa, xoá claim; merge nguồn mới). Chỉ chèn `[[wikilink]]` hoặc thêm chú thích vị trí cho claim có sẵn → **không** nâng.
 
 Ví dụ:
 
@@ -119,108 +120,88 @@ tính thu nhập phát sinh trong nước, nó bỏ qua thu nhập nhận từ/t
 lý do cần [[gni]] bổ sung (imf_macro_accounting, Ch.2, Gross National Income, d.757–779).
 ```
 
-Bốn chú thích trong ví dụ trỏ tới bốn mục khác nhau của cùng một chương — đó là điểm của luật 5: mỗi claim
-về đúng chỗ sinh ra nó, không phải về đúng file.
+Bốn chú thích trỏ tới bốn mục khác nhau của cùng một chương: mỗi claim về đúng chỗ sinh ra nó.
 
 ## 8. Quy ước đặt title
 
-Title là **giao diện (API) của trang** — là thứ các trang khác "gọi" tới qua `[[wikilink]]`. Title phải đứng độc lập khỏi nguồn gốc: đọc riêng title vẫn hiểu trang nói gì, không cần biết nó trích từ tài liệu nào.
-
-Chọn dạng title theo loại nội dung:
+Title là **giao diện (API) của trang** — thứ các trang khác gọi tới qua `[[wikilink]]`. Đọc riêng title vẫn hiểu trang nói gì, không cần biết nguồn.
 
 | Loại nội dung | Dạng title | Ví dụ |
 |---|---|---|
-| Thuật ngữ cốt lõi mà nhiều trang khác trỏ tới (`concept`, `entity`) | Danh từ / cụm danh từ | `gdp`, `absorption`, `system-of-national-accounts-sna` |
-| Nhận định, phát hiện, tường thuật (`case`, `analysis`, bridge note) | **Câu hoàn chỉnh mang tính khẳng định** | `polands-excess-wage-tax-popiwek-was-discontinued-after-five-years` |
-| `concept` mà nội dung là một nhận định chứ không phải định nghĩa thuật ngữ (*declarative note* trong thang Matuschak) | **Câu hoàn chỉnh mang tính khẳng định** | `wage-controls-lose-effectiveness-rapidly-after-a-short-period` |
-| Nội dung nguồn còn tranh luận, chưa đủ chứng cứ kết luận | **Câu hỏi** | `to-what-extent-was-polands-output-decline-1990-91-overstated` |
+| Thuật ngữ cốt lõi nhiều trang trỏ tới (`concept`, `entity`) | Danh từ / cụm danh từ | `gdp`, `absorption`, `system-of-national-accounts-sna` |
+| Nhận định, phát hiện, tường thuật (`case`, `analysis`, bridge note) | **Câu trần thuật hoàn chỉnh** | `polands-excess-wage-tax-popiwek-was-discontinued-after-five-years` |
+| `concept` có nội dung là nhận định (*declarative note*) | **Câu trần thuật hoàn chỉnh** | `wage-controls-lose-effectiveness-rapidly-after-a-short-period` |
+| Nội dung nguồn còn tranh luận, chưa đủ chứng cứ | **Câu hỏi** | `to-what-extent-was-polands-output-decline-1990-91-overstated` |
 
 Ba luật kèm theo:
 
-1. **Title phủ định hợp lệ khi bản thân nhận định là phủ định.** "Khẳng định" trong bảng trên nghĩa là câu *trần thuật* — một mệnh đề có thể đúng hay sai — chứ không phải câu *xác định*; câu phủ định vẫn là một nhận định. Không ép đổi title phủ định sang dạng xác định, vì phủ định thường không có dạng xác định tương đương: "không ăn cơm" không đồng nghĩa với "ăn cháo" (người dùng chốt 2026-09-16). Chỉ viết lại khi có dạng xác định vừa giữ nguyên nghĩa vừa nói được nhiều hơn — vd `mps-cannot-measure-non-material-services` → `mps-counts-only-output-of-the-material-sphere` nêu thêm MPS đo cái gì.
-2. **Title dạng câu hỏi là trạng thái tạm.** Khi đã đủ chứng cứ, refactor thành title khẳng định và cập nhật các `[[wikilink]]` trỏ tới.
-3. **Không đặt được title sắc gọn = dấu hiệu trang vi phạm Atomic** (§5) — tách trang, không đặt title mơ hồ cho xong.
+1. **Title phủ định hợp lệ khi bản thân nhận định là phủ định.** Không ép đổi sang dạng xác định; chỉ viết lại khi có dạng xác định vừa giữ nghĩa vừa nói được nhiều hơn (vd `mps-cannot-measure-non-material-services` → `mps-counts-only-output-of-the-material-sphere`).
+2. **Title dạng câu hỏi là trạng thái tạm.** Đủ chứng cứ thì refactor thành câu trần thuật và cập nhật các `[[wikilink]]` trỏ tới.
+3. **Không đặt được title sắc gọn = trang vi phạm Atomic** (§5) — tách trang.
 
-Tên file luôn là kebab-case của title (§3), kể cả với title dạng câu.
+Tên file luôn là kebab-case của title (§3).
 
 ## 9. Vòng đời `status`
 
-| status | Nghĩa | Chuyển tiếp |
-|---|---|---|
-| `stub` | Chỉ có title + frontmatter, thân bài rỗng hoặc 1 câu. Sinh ra khi trang khác cần link tới khái niệm chưa ingest (§6) | → `draft` khi được ingest nội dung thật |
-| `draft` | Đã có nội dung từ ít nhất 1 nguồn, chưa được đối chiếu/bồi đắp | → `stable` qua operation **Promote**: lint liệt kê trang đủ điều kiện → người dùng duyệt → `/promote` ghi |
-| `stable` | Nội dung đủ, liên kết đủ, không mâu thuẫn tồn đọng | → `stale` khi có nguồn mới liên quan được ingest sau `last_updated` |
-| `stale` | Có nguồn mới liên quan nhưng trang chưa cập nhật | → `draft` sau khi merge nội dung mới, rồi lại qua Promote |
+| status | Nghĩa | Chuyển tiếp | Ai làm |
+|---|---|---|---|
+| `stub` | Chỉ có title + frontmatter, thân bài rỗng hoặc 1 câu. Sinh ra khi trang khác cần link tới khái niệm chưa ingest (§6) | → `draft` khi được ingest nội dung thật | Ingest (tạo và nâng) |
+| `draft` | Đã có nội dung từ ít nhất 1 nguồn | → `stable` khi người dùng duyệt danh sách *Đủ điều kiện `stable`* của lint | **Promote** (`.claude/skills/promote/SKILL.md`) |
+| `stable` | Nội dung đủ, liên kết đủ, không mâu thuẫn tồn đọng | → `stale` khi nguồn mới liên quan được ingest mà lượt đó không merge vào trang | Ingest |
+| `stale` | Có nguồn mới liên quan nhưng trang chưa cập nhật | → `draft` sau khi merge nội dung mới, rồi lại qua Promote | Ingest |
 
-`stub` tồn đọng quá lâu là nợ kỹ thuật của wiki — lint phải báo cáo stub chưa được ingest sau nhiều lượt (xem `.claude/skills/lint/SKILL.md`, tiêu chí *Nợ stub*).
+`stable`/`stale` được merge nội dung mới → về `draft` (Ingest, hoặc Review khi sửa claim sai).
 
-### Ai chịu trách nhiệm từng bước chuyển
+**Điều kiện lên `stable`:** hook `--all` không báo gì cho trang; outlink ≥ 1; backlink ≥ 2; không còn `⚠️ Conflict`; không bị flag ở tiêu chí nào của lượt lint gần nhất.
 
-Trước 2026-09-15 bảng trên không gán bước `draft → stable` cho operation nào: lint chỉ báo cáo, ingest không nâng trạng thái, nên mọi trang kẹt ở `draft` và hai tiêu chí *stale* / *sai vòng đời* không bao giờ kích hoạt. Phân vai hiện tại:
+**Nợ stub:** stub chưa được ingest nội dung sau 3 lượt ingest kể từ khi tạo. Đếm bằng `validate_wiki_page.py --stub-debt`.
 
-| Chuyển tiếp | Ai làm |
-|---|---|
-| (mới) → `stub` | Ingest, hoặc lượt sửa nợ stub sau lint |
-| `stub` → `draft` | Ingest |
-| `draft` → `stable` | **Promote** (`.claude/skills/promote/SKILL.md`), chỉ với trang người dùng đã duyệt trong danh sách *Đủ điều kiện `stable`* của lint |
-| `stable` → `stale` | Ingest — khi nạp nguồn mới liên quan tới trang `stable` mà lượt đó không merge vào trang |
-| `stable`/`stale` → `draft` | Ingest — khi merge nội dung mới vào trang |
+### Trường `reviewed` / `reviewed_by`
 
-Điều kiện đủ để lên `stable`: hook `--all` không báo gì cho trang; outlink ≥ 1; backlink ≥ 2; không còn `⚠️ Conflict`; không bị flag ở tiêu chí nào của lượt lint gần nhất. Backlink ≥ 2 để một trang `stable` không thành mồ côi chỉ vì mất một cạnh.
+`status` chỉ đo vòng đời nội dung, không đo việc trang đã được đối chiếu hay đã được người đọc. Trục đó dùng cặp trường tuỳ chọn **`reviewed:` + `reviewed_by:`** (§1). Không có cặp này = chưa review.
 
-### `status` không đo việc trang đã được review
+- Hook chỉ kiểm khi trường có mặt: `reviewed:` là ngày `YYYY-MM-DD` và đi kèm `reviewed_by: user` hoặc `reviewed_by: model`.
+- **`reviewed_by: model`** — agent đặt qua `/review-node` (`.claude/skills/review-node/SKILL.md`) sau khi đối chiếu từng claim với đúng đoạn nguồn. Đây là kiểm chứng nội dung khớp nguồn, không phải *người đã đọc*.
+- **`reviewed_by: user`** — chỉ người dùng ghi. Agent không ghi đè `user`; người dùng được ghi đè `model` bằng `user`.
+- `reviewed:` cũ hơn `last_updated:` = trang đã đổi sau lần duyệt. Đây là thông tin tham khảo, **không** phải lỗi lint; hàng đợi mặc định của `/review-node` nhặt lại các trang này.
 
-`status` chỉ đo **vòng đời nội dung**: trang đã đủ chất chưa, có nguồn mới chưa merge chưa. Nó không phân biệt "trang agent vừa viết cho agent dùng" với "trang người dùng đã đọc và xác nhận". Kể cả `stable` cũng chỉ có nghĩa *lint máy không bắt được lỗi và người dùng đã duyệt danh sách Promote* — duyệt một danh sách tên trang không phải là đọc từng trang.
-
-Hai trục này trực giao nên **không gộp vào `status`**: gộp lại sẽ sinh ra các ô lai vô nghĩa (`stale` nhưng đã duyệt? `stub` đã duyệt?) và làm bảng chuyển tiếp ở trên mất tính đơn tuyến.
-
-Giải pháp: cặp trường **`reviewed:` + `reviewed_by:`** tuỳ chọn trong frontmatter (§1). `reviewed:` là ngày trang được review; `reviewed_by:` cho biết ai review. Không có cặp này = chưa review.
-
-- **Tuỳ chọn, không bắt buộc.** Hook chỉ kiểm tính hợp lệ khi trường có mặt: `reviewed:` là ngày `YYYY-MM-DD` và phải đi kèm `reviewed_by: user` hoặc `reviewed_by: model`.
-- **`reviewed_by: model`** — agent review qua `/review` (`.claude/skills/review/SKILL.md`): đối chiếu từng claim với đúng đoạn nguồn, kiểm diễn đạt, liên kết, title. Được phép từ 2026-09-15 theo quyết định của người dùng. Đây là kiểm chứng **nội dung khớp nguồn**, không phải *người đã đọc* — và là model tự soát trang do model viết, nên không độc lập hoàn toàn.
-- **`reviewed_by: user`** — người dùng tự đọc và đặt. Chỉ người dùng được ghi giá trị này. Agent **không** ghi đè một cặp `reviewed_by: user` đã có; người dùng thì được ghi đè `model` bằng `user`.
-- Tách `reviewed_by` thay vì để agent đặt trần `reviewed:` là để trường này vẫn trả lời được câu hỏi ban đầu của nó: *người dùng đã đọc trang này chưa?* — lọc `reviewed_by: user`.
-- `reviewed:` cũ hơn `last_updated:` nghĩa là trang đã đổi sau lần duyệt. Đây là **thông tin tham khảo, không phải lỗi lint** — cố ý không thêm tiêu chí lint cho trường này: ở quy mô một người dùng, biến nó thành lỗi chỉ tạo ra nhiễu phải bỏ qua mỗi lượt.
-
-## 10. Nguồn dài: ngưỡng phân loại và file trạng thái ingest
+## 10. Nguồn: phân loại, bản kê và file trạng thái
 
 ### Ngưỡng phân loại
 
-Một nguồn trong `01_sources/` là **nguồn dài** khi vượt bất kỳ ngưỡng nào dưới đây:
+Một nguồn là **nguồn dài** khi vượt bất kỳ ngưỡng nào:
 
 | Chỉ số | Ngưỡng nguồn dài |
 |---|---|
 | Dung lượng text | > 120 KB |
 | Số dòng | > 1.200 dòng |
-| Một chương đơn lẻ | tự nó đã vượt một trong hai ngưỡng trên |
+| Một chương đơn lẻ | tự nó vượt một trong hai ngưỡng trên |
 
-Cơ sở của con số: ~120 KB ≈ 30k token — vẫn đọc trọn được 1 lượt, nhưng chiếm gần hết ngân sách context và không còn chỗ cho bước đối chiếu với toàn bộ `02_wiki/` (Ingest bước 2). Quá ngưỡng đó thì mẫu hai lượt mất tác dụng, buộc phải ingest theo chương/cụm.
+Không dùng số heading làm tiêu chí. Đo bằng lệnh `wc -c -l <file>`, không ước lượng. Nguồn nhiều file đo trên tổng các file.
 
-Không dùng số heading làm tiêu chí: một nguồn ngắn có cấu trúc dày (`Modern Money Mechanics` có 66 heading trong 721 dòng) vẫn đọc trọn được 1 lượt.
+Phân loại của từng nguồn ghi ở bản kê (dưới), không ghi ở đây.
 
-Đo bằng lệnh, không ước lượng bằng mắt: `wc -c -l <file>`.
+### Bản kê xuất xứ nguồn
 
-Hiện trạng:
+`03_state/_sources_manifest.md` là nơi duy nhất liệt kê nguồn. Gồm:
 
-| Nguồn | Dung lượng | Số dòng | Phân loại |
-|---|---|---|---|
-| `imf_macro_accounting` | 829 KB | 6.065 | **Nguồn dài** — có `03_state/imf_macro_accounting.md` |
-| `Modern Money Mechanics` | 83 KB | 721 | Nguồn ngắn — ingest trọn 1 lượt, không cần file trạng thái |
+- **Bảng Source id**: `source id` · thư mục trong `01_sources/` · phân loại · state file. `source id` là khoá dùng trong `sources:` (§1), trong chú thích §7.5 và làm tên `03_state/<source id>.md`. Nguồn mới dùng snake_case. Hook đọc bảng này để biết nguồn nào là nguồn dài và để báo `sources:` trỏ tới id lạ.
+- **Mỗi nguồn một mục**: nhan đề, tác giả, nơi và năm xuất bản, cách có file, và bảng đường dẫn · bytes · số dòng · SHA-256 cho từng file `.md`/`.pdf`.
+
+Thêm nguồn mới vào bản kê và `index.md` §Sources **ngay trong lượt ingest đầu tiên** của nguồn đó. `validate_wiki_page.py --verify-sources` so bản kê với đĩa; chạy ở bước 0 của lint.
 
 ### File trạng thái ingest
 
-Mỗi **nguồn dài** có đúng 1 file trạng thái `03_state/<tên_nguồn>.md`.
+Mỗi **nguồn dài** có đúng 1 file `03_state/<source id>.md`, tạo ở lượt ingest đầu. Đây là **nguồn sự thật duy nhất** cho câu hỏi "còn lại phần nào". `log.md` kể *chuyện gì đã xảy ra*; file trạng thái nói *hiện đang ở đâu*. Hai file không mâu thuẫn nhau.
 
-Đây là **nguồn sự thật duy nhất** cho câu hỏi "còn lại phần nào" — agent không diễn giải lại văn xuôi trong `log.md` để trả lời câu hỏi đó. Phân vai: `log.md` là nhật ký append-only kể *chuyện gì đã xảy ra*; file trạng thái là bảng nói *hiện đang ở đâu*. Hai file không thay thế nhau và không được mâu thuẫn nhau.
+Không đặt file trạng thái cạnh nguồn trong `01_sources/` (luật bất biến §3). Lượt audit sau đừng đề xuất chuyển ngược lại.
 
-**Vì sao `03_state/` chứ không đặt cạnh nguồn trong `01_sources/`:** đặt cạnh nguồn tra cứu tiện hơn một nhịp, nhưng phải khoét một ngoại lệ vào luật bất biến `01_sources/` (§3) — và một luật cứng đã có ngoại lệ thứ nhất thì sẽ có ngoại lệ thứ hai. `03_state/` giữ luật đó tuyệt đối và kiểm được bằng một câu hỏi duy nhất: *có file nào trong `01_sources/` không phải tài liệu nguồn không?* Đánh đổi: phải nhớ thêm một đường dẫn, và file trạng thái phải tự khai đường dẫn nguồn ở trường `file:`. Đây là lựa chọn có chủ đích, không phải sơ suất — lần audit sau đừng đề xuất chuyển ngược lại.
-
-Cấu trúc bắt buộc: frontmatter tối thiểu + một bảng bản đồ chunk dạng checkbox.
+Cấu trúc: frontmatter tối thiểu + một bảng bản đồ chunk dạng checkbox.
 
 ```markdown
 ---
-source: <tên thư mục nguồn>
-file: <đường dẫn đầy đủ tới file nguồn, tính từ gốc dự án>
+source: <source id>
+file: <đường dẫn file nguồn, tính từ gốc dự án>
 total_lines: <số dòng>
 last_updated: YYYY-MM-DD
 ---
@@ -232,36 +213,26 @@ last_updated: YYYY-MM-DD
 | `[ ]` | Ch.4 — Balance of Payments | d.3426–4529 | ... | |
 ```
 
-Ô trạng thái dùng đúng 3 ký hiệu:
-
 | Ký hiệu | Nghĩa |
 |---|---|
 | `[x]` | đã ingest xong |
 | `[~]` | đang ingest dở — cột *Ghi chú* **phải** nêu rõ phần nào còn lại |
 | `[ ]` | chưa ingest |
 
-Đơn vị chunk: **chương** với nguồn có chương; **cụm chủ đề** khi một chương tự nó vượt ngưỡng nguồn dài. Mỗi chunk ghi kèm dải dòng `d.<từ>–<đến>` tính theo file nguồn khai ở `file:` — dải dòng chính là thứ khiến chú thích vị trí ở §7.5 kiểm chứng được. Số dòng dùng làm khoá tra cứu được chính vì `01_sources/` bất biến: nguồn không bị sửa thì số dòng không trôi.
+Đơn vị chunk: **chương** với nguồn có chương; **cụm chủ đề** khi một chương tự nó vượt ngưỡng nguồn dài. Mỗi chunk ghi dải dòng `d.<từ>–<đến>` theo file khai ở `file:`. Chunk cố ý bỏ qua (mục lục, lời tựa, bài tập, phụ lục số liệu thô — §2) vẫn có dòng riêng, đánh `[x]` và ghi "bỏ qua, không tạo trang".
 
-Chunk cố ý bỏ qua (mục lục, lời tựa, bài tập cuối chương, phụ lục số liệu thô — §2) vẫn có dòng riêng, đánh `[x]` và ghi chú "bỏ qua, không tạo trang". Bỏ hẳn khỏi bảng sẽ khiến lượt sau tưởng là còn sót.
+**Nguồn nhiều file** (một cuốn sách tách thành nhiều file, vd `fixed_income_during` có 42 file theo chương): một source id, một mục bản kê liệt kê mọi file, một state file. `file:` khai mẫu tên file; mỗi dòng chunk ghi file ở cột *Mục trong nguồn* (vd `File -5.md: Chapter 4`); dải dòng tính trong file đó. Chú thích §7.5 thêm hậu tố file.
 
-### Bản kê xuất xứ nguồn
-
-`03_state/_sources_manifest.md` ghi cho **mọi** nguồn (dài lẫn ngắn): nhan đề, tác giả, nơi và năm xuất bản, đường dẫn từng file, số byte, số dòng, SHA-256.
-
-Lý do tồn tại: `01_sources/` không được đưa lên kho công khai (tài liệu bên thứ ba), nên một bản clone không có file nguồn. Chú thích vị trí §7.5 và bản đồ chunk ở trên đều trỏ tới *số dòng* của file nguồn — chỉ còn kiểm chứng được nếu người đọc tự lấy bản gốc và đối chiếu được đúng bản nào. SHA-256 là thứ làm việc đó. Thêm nguồn mới thì thêm mục vào bản kê ngay trong lượt ingest đầu tiên.
+Dòng ghi chú về nguồn (ghi chú người dùng, đặc điểm bản chuyển đổi) được phép đặt giữa frontmatter và bảng; lịch sử xử lý không đặt ở đây.
 
 ## 11. Vùng capture tạm (`_inbox.md`)
 
-`_inbox.md` ở gốc dự án là nơi ghi ý tưởng/insight chưa đủ chín thành trang evergreen: câu hỏi chợt nảy ra khi đọc nguồn, nghi ngờ về một trang đã có, liên kết chưa chắc, chủ đề muốn ingest sau.
+`_inbox.md` ở gốc dự án ghi ý tưởng/insight chưa đủ chín thành trang evergreen: câu hỏi chợt nảy ra khi đọc nguồn, nghi ngờ về một trang đã có, liên kết chưa chắc, chủ đề muốn ingest sau, vấn đề cấu trúc do review phát hiện. `status: stub` không thay được vùng này: stub giữ chỗ cho khái niệm *đã biết tên*.
 
-Lý do tách khỏi `02_wiki/`: mọi trang trong `02_wiki/` phải là trang atomic hợp lệ (§5, §7) và bị hook kiểm mỗi lần ghi. Ý tưởng dang dở không thoả được luật đó — không có chỗ chứa riêng thì nó hoặc bị nhét bừa vào một trang (làm trang vi phạm Atomic), hoặc mất luôn. `status: stub` **không** thay thế được vùng này: stub giữ chỗ cho một *khái niệm đã biết tên*, còn inbox chứa được cả câu hỏi chưa có tên.
-
-Quy ước:
-
-- Định dạng phẳng, mỗi ý là 1 gạch đầu dòng kèm ngày: `- [YYYY-MM-DD] <ý tưởng>`. Không frontmatter, không luật trang wiki, không giới hạn atomic.
-- `_inbox.md` nằm **ngoài mạng liên kết**: không trang nào trong `02_wiki/` được `[[wikilink]]` trỏ vào nó, và nó không xuất hiện trong `index.md`.
-- **Triage mỗi lượt lint.** Mỗi mục có đúng 3 kết cục: nâng thành trang wiki, gộp vào trang đã có, hoặc xoá. Không có kết cục "để đó".
-- Mục tồn quá 3 lượt lint là nợ kỹ thuật — lint báo cáo (tiêu chí *Nợ inbox*), không tự xử lý.
+- Định dạng phẳng, mỗi ý 1 gạch đầu dòng kèm ngày: `- [YYYY-MM-DD] <ý tưởng>`. Không frontmatter, không luật trang wiki.
+- `_inbox.md` nằm **ngoài mạng liên kết**: không `[[wikilink]]` nào trỏ vào, không xuất hiện trong `index.md`.
+- **Triage mỗi lượt lint.** Mỗi mục có đúng 3 kết cục: nâng thành trang wiki, gộp vào trang đã có, hoặc xoá.
+- Mục tồn quá 3 lượt lint là nợ kỹ thuật — lint báo cáo (tiêu chí *Nợ inbox*, đếm bằng `validate_wiki_page.py --inbox-debt`).
 
 ## 12. Định dạng `log.md`
 
@@ -272,8 +243,9 @@ Quy ước:
 - tối đa 3 dòng gạch đầu dòng: kết quả, số trang, phần còn lại
 ```
 
-- **Dấu thời gian:** `YYYY-MM-DD:hh-MM-ss`, giờ Việt Nam (UTC+7), 24 giờ. Lấy bằng lệnh `TZ=UTC-7 date "+%Y-%m-%d:%H-%M-%S"` (cú pháp POSIX, dấu ngược) — không ước lượng, không dùng giờ UTC của máy. Mục ghi trước 2026-09-15 không lưu giờ nên để `00-00-00` — nghĩa là *không rõ giờ*, không phải nửa đêm.
-- **`<op>` chỉ nhận 7 giá trị:** `ingest` · `query` · `lint` · `promote` · `review` · `schema` (sửa schema/skill/hook/tài liệu vận hành) · `repo` (git: publish, rollback, tag).
-- **Tiền tố `## [` là giao diện máy đọc** — `grep "^## \[" log.md | tail -5` lấy 5 mục gần nhất (theo gist Karpathy). Không viết `## [` ở đầu dòng cho mục đích khác.
-- **Log kể chuyện gì đã xảy ra, không chứa lập luận.** Lý do của một quyết định → `decisions.md`, hoặc thẳng vào mục schema liên quan. Ý tưởng dang dở, đề xuất cho lượt sau → `_inbox.md` (§11). Trạng thái "còn lại phần nào" → `03_state/` (§10).
-- Bản log dài trước khi rút gọn (2026-09-15) vẫn còn trong git: `git show e2adb7a:log.md`.
+- **Dấu thời gian:** giờ Việt Nam (UTC+7), 24 giờ. Lấy bằng `python .claude/hooks/validate_wiki_page.py --now` — không ước lượng, không dùng giờ UTC của máy. Mục ghi trước 2026-09-15 để `00-00-00` = *không rõ giờ*.
+- **`<op>` chỉ nhận 7 giá trị:** `ingest` · `query` · `lint` · `promote` · `review` (skill `/review-node`) · `schema` (sửa schema/skill/hook/tài liệu vận hành) · `repo` (git: publish, rollback, tag).
+- **Tiền tố `## [` là giao diện máy đọc** — `grep "^## \[" log.md | tail -5` lấy 5 mục gần nhất. Không viết `## [` ở đầu dòng cho mục đích khác.
+- **Log không chứa lập luận.** Lý do → `decisions.md`. Ý tưởng dang dở → `_inbox.md`. Trạng thái "còn lại phần nào" → `03_state/`.
+- Mục mới luôn thêm ở **cuối file**; không sửa mục cũ. Mục cũ sai thì mục kế tiếp cùng loại ghi đính chính.
+- Bản log dài trước khi rút gọn (2026-09-15): `git show e2adb7a:log.md`.

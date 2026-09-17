@@ -1,32 +1,43 @@
 ---
 name: query
-description: Trả lời câu hỏi bằng cách tổng hợp từ các trang trong 02_wiki. Dùng khi người dùng hỏi về nội dung tri thức trong wiki — kinh tế vĩ mô, hạch toán quốc gia, GDP, lạm phát, thất nghiệp, case Ba Lan, SNA — hoặc yêu cầu tra cứu, tổng hợp, so sánh, giải thích dựa trên wiki. Không dùng cho ingest nguồn mới hay kiểm tra sức khoẻ wiki.
+description: Trả lời câu hỏi bằng cách tổng hợp từ các trang trong 02_wiki. Dùng cho mọi câu hỏi về nội dung tri thức đã nạp vào wiki — kinh tế vĩ mô, hạch toán quốc gia, cán cân thanh toán, tài khoá, tiền tệ, ngân hàng trung ương, ngân hàng, thị trường trái phiếu và thu nhập cố định, lạm phát, tỷ giá — kể cả khi người dùng không nhắc chữ "wiki"; và khi người dùng muốn tra cứu, tổng hợp, so sánh, giải thích dựa trên wiki, hoặc hỏi wiki đã có gì về một chủ đề. Không dùng cho ingest nguồn mới, kiểm tra sức khoẻ wiki hay review trang.
 ---
 
 # Query — tổng hợp câu trả lời từ wiki
 
-**KHÔNG đọc `00_schema.md`.** Query không cần biết data model; đọc schema ở đây là lãng phí token thuần tuý.
+**Không đọc `00_schema.md` khi chỉ trả lời.** Query không cần data model; schema dài khoảng 21 KB, đọc ở đây là tốn token vô ích. Nhánh tạo trang `analysis` (bước 5) mới đọc §1, §7, §8, §12.
 
 ## Quy trình hai lượt
 
-**1. Định hướng.** Đọc `02_wiki/index.md` — mục `## Sources` ở đầu file cho biết ngay nguồn nào đã nạp tới đâu, trước khi mất công tìm trong mục lục chủ đề.
+**1. Định hướng.** Chỉ đọc mục `## Sources` của `02_wiki/index.md` (cho biết nguồn nào đã nạp tới đâu), không đọc cả file:
 
-**2. Lượt rẻ — quét frontmatter.** Grep title/tags của các trang khả nghi. **Không mở full content** ở bước này. Vài chục trang × ~1,6 KB, mở hết là lãng phí.
+```bash
+sed -n '/^## Sources/,/^## Trang/p' 02_wiki/index.md
+```
 
-**3. Lượt đắt — mở có chọn lọc.** Chỉ đọc full content những trang đã xác định là liên quan ở lượt 2. Đi theo `[[wikilink]]` trong thân bài để mở rộng nếu cần — mạng liên kết chính là đường dẫn tra cứu.
+Cần mục lục chủ đề thì grep trong `index.md` theo từ khoá thay vì đọc hết.
 
-**4. Tổng hợp.** Trả lời kèm trích dẫn trang wiki lẫn nguồn gốc trong `01_sources/`.
+**2. Lượt rẻ — tìm trang khả nghi bằng tên file và frontmatter.** **Không mở full content** ở bước này.
 
-**5. Kết tinh — chỉ khi đáng.** Nếu câu trả lời tạo ra tổng hợp có giá trị tái sử dụng lâu dài → **hỏi người dùng xác nhận** trước khi tạo trang `type: analysis`. Không tự ghi nếu không có gì mới đáng lưu.
+```bash
+ls 02_wiki | grep -i "<từ khoá>"
+grep -l -i -E "^(title|tags):.*<từ khoá>" 02_wiki/*.md
+```
 
-Nếu người dùng đồng ý tạo trang: trang `analysis` tuân thủ đầy đủ luật trang wiki (title dạng câu khẳng định, không heading trong thân bài, link kèm lý do).
+Title là tiếng Anh, thân bài tiếng Việt: câu hỏi tiếng Việt thì đổi sang thuật ngữ tiếng Anh trước khi grep (vd "dự trữ bắt buộc" → `required-reserve`).
 
-Hai điều kiện của hook mà trang `analysis` dễ vướng: `sources:` không được rỗng — ghi các nguồn gốc của những trang đã tổng hợp; và nếu trong đó có nguồn dài thì §7.5 áp dụng như mọi trang khác — chú thích vị trí lấy lại từ chính các trang đã tổng hợp, không tự dựng; trang nguồn chưa có chú thích thì nói rõ là chưa truy được tới dòng. Thêm trang vào `index.md`, chạy `python .claude/hooks/validate_wiki_page.py --all`, rồi ghi 1 mục `log.md` theo `00_schema.md` §12: `## [YYYY-MM-DD:hh-MM-ss] query | <câu hỏi rút gọn>`.
+**3. Lượt đắt — mở có chọn lọc.** Chỉ đọc full content những trang đã xác định là liên quan. Đi theo `[[wikilink]]` trong thân bài để mở rộng khi cần — mạng liên kết chính là đường tra cứu.
+
+**4. Tổng hợp.** Trả lời kèm trích dẫn trang wiki (`[[tên-trang]]`) và chú thích nguồn gốc đã có trên trang (source id, chương, dải dòng). Không tự dựng chú thích mà trang không có.
+
+**5. Kết tinh — chỉ khi đáng.** Câu trả lời tạo ra tổng hợp có giá trị tái sử dụng lâu dài → **hỏi người dùng xác nhận** trước khi tạo trang `type: analysis` (luật cứng 4). Không có gì mới đáng lưu thì không đề nghị.
+
+Người dùng đồng ý → đọc `00_schema.md` §1, §7, §8, §12, rồi viết trang theo đủ luật trang wiki: title câu trần thuật, không heading, link kèm lý do, thân bài áp skill `writing-style` (profile wiki). Hai điều kiện hook dễ vướng: `sources:` không rỗng — ghi source id của các trang đã tổng hợp; nếu có nguồn dài thì §7.5 áp dụng — chú thích lấy lại từ chính các trang đã tổng hợp, trang nguồn chưa có chú thích thì nói rõ là chưa truy được tới dòng. Thêm trang vào `index.md`, chạy `python .claude/hooks/validate_wiki_page.py --all`, rồi ghi 1 mục vào cuối `log.md`: `## [<giờ từ --now>] query | <câu hỏi rút gọn>`.
 
 Câu trả lời không tạo trang thì **không** ghi log — log chỉ ghi operation làm thay đổi wiki.
 
 ## Khi wiki không đủ dữ liệu
 
-Nói thẳng là wiki chưa phủ phần đó và chỉ ra chương/cụm nguồn nào cần ingest — đừng suy đoán lấp chỗ trống rồi trình bày như thể lấy từ wiki.
+Nói thẳng là wiki chưa phủ phần đó và chỉ ra nguồn/chương nào cần ingest — đừng suy đoán lấp chỗ trống rồi trình bày như thể lấy từ wiki. Kiến thức nền của model có thể bổ sung nếu người dùng cần, nhưng tách riêng và ghi rõ là không đến từ wiki.
 
-Phần nào của nguồn còn chưa nạp: đọc mục `## Sources` trong `02_wiki/index.md`; cần chi tiết theo chương/cụm thì mở `03_state/<tên_nguồn>.md`. **Không** đọc `log.md` để suy ra — nó là nhật ký, không phải bảng trạng thái.
+Phần nào của nguồn còn chưa nạp: mục `## Sources`; cần chi tiết theo chương thì mở `03_state/<source id>.md`. **Không** đọc `log.md` để suy ra — nó là nhật ký, không phải bảng trạng thái.
