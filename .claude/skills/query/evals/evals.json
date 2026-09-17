@@ -1,0 +1,56 @@
+{
+  "skill_name": "query",
+  "evals": [
+    {
+      "id": 0,
+      "name": "query-cab-equals-nfa",
+      "prompt": "Vì sao cán cân vãng lai lại bằng thay đổi tài sản nước ngoài ròng? Trả lời dựa trên wiki.",
+      "expected_output": "Trả lời đúng đồng nhất thức CAB = ΔNFA (có tính giao dịch vốn/sai số), trích [[trang]] có thật, không đọc 00_schema.md, không đọc trọn index.md, không tạo trang hay ghi log.",
+      "files": [],
+      "assertions": [
+        "Không đọc 00_schema.md khi chỉ trả lời",
+        "Không đọc trọn 02_wiki/index.md (chỉ mục Sources/grep)",
+        "Không đọc log.md để suy trạng thái",
+        "Không sửa file nào trong wiki",
+        "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
+        "Trích ít nhất 2 trang wiki",
+        "Giải thích bằng đồng nhất thức CAB–ΔNFA/ΔRES và ghi sổ kép"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "query-lender-of-last-resort-not-covered",
+      "prompt": "wiki có gì về lender of last resort không? fed đóng vai trò đó thế nào trong khủng hoảng 2008",
+      "expected_output": "Nói rõ wiki chưa có trang lender-of-last-resort/Fed 2008, chỉ ra nguồn chưa ingest có thể phủ (Bindseil, Cargill), không bịa nội dung như thể từ wiki, không tạo trang/log.",
+      "files": [],
+      "assertions": [
+        "Không đọc 00_schema.md khi chỉ trả lời",
+        "Không đọc trọn 02_wiki/index.md (chỉ mục Sources/grep)",
+        "Không đọc log.md để suy trạng thái",
+        "Không sửa file nào trong wiki",
+        "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
+        "Trích ít nhất 2 trang wiki",
+        "Nói rõ wiki chưa có nội dung về Fed/2008",
+        "Chỉ ra nguồn chưa ingest có thể phủ (Cargill/Bindseil)",
+        "Kiến thức ngoài wiki (nếu có) được ghi rõ là không từ wiki"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "query-cpi-vs-deflator-poland",
+      "prompt": "CPI với GDP deflator khác nhau chỗ nào, hồi Ba Lan chuyển đổi thì nên nhìn chỉ số nào để đo lạm phát?",
+      "expected_output": "Nêu khác biệt phạm vi, giá nhập khẩu, quyền số (Laspeyres/Paasche) theo trang wiki; phần Ba Lan dựa trên trang case có thật; trích [[trang]] và chú thích nguồn có sẵn; hỏi xác nhận nếu muốn tạo trang analysis, không tự tạo.",
+      "files": [],
+      "assertions": [
+        "Không đọc 00_schema.md khi chỉ trả lời",
+        "Không đọc trọn 02_wiki/index.md (chỉ mục Sources/grep)",
+        "Không đọc log.md để suy trạng thái",
+        "Không sửa file nào trong wiki",
+        "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
+        "Trích ít nhất 2 trang wiki",
+        "Nêu đủ 3 khác biệt: phạm vi, giá nhập khẩu, quyền số Laspeyres/Paasche",
+        "Hỏi xác nhận trước khi tạo trang analysis, không tự tạo"
+      ]
+    }
+  ]
+}

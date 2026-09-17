@@ -361,3 +361,8 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 ## [2026-09-17:19-08-08] repo | commit batch audit v2
 - Đính chính mục repo trước: origin/main đã được force-push về 812200a, không còn 9c7daaa; các commit ngày 2026-09-17 chỉ còn trong reflog cục bộ
 - Commit cục bộ, chưa push
+
+## [2026-09-17:19-23-19] schema | evals vòng 1 cho query và review-node
+- Thêm .claude/skills/{query,review-node}/evals/evals.json (5 prompt, assertion kiểm được bằng script); chạy trên bản sao, wiki thật không đổi
+- Pass rate bản mới 100% so với bản cũ 92%; kết quả: Claude outputs/eval-review-query-review-node-iter1.html
+- Hook: không in traceback khi pipe bị đóng sớm (--backlinks | head)

@@ -644,4 +644,11 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except BrokenPipeError:  # vd `--backlinks | head`: nguoi doc dong pipe som
+        try:
+            sys.stdout = open(os.devnull, "w")
+        except Exception:
+            pass
+        sys.exit(0)
