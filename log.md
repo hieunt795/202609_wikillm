@@ -366,3 +366,13 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Thêm .claude/skills/{query,review-node}/evals/evals.json (5 prompt, assertion kiểm được bằng script); chạy trên bản sao, wiki thật không đổi
 - Pass rate bản mới 100% so với bản cũ 92%; kết quả: Claude outputs/eval-review-query-review-node-iter1.html
 - Hook: không in traceback khi pipe bị đóng sớm (--backlinks | head)
+
+## [2026-09-17:19-37-25] review | 1 trang
+- Đã sửa: reserve-money (stable → draft, reviewed_by: model), áp bản đối chiếu của eval vòng 1 sau khi kiểm lại nguồn d.4584–4675
+- Claim sai: "ghi gộp" gắn nhầm CPS* (thuộc CDMB*); CPS* thiếu phạm vi (d.4614); "bốn" → năm khoản mục (5.1); phép phân rã 5.3–5.4 bị gán cho financial programming (bỏ link); chú thích định nghĩa RM d.4593–4609 → d.4618
+- Giữ lại: không; _inbox thêm 1 mục cho chú thích sai ở central-bank
+
+## [2026-09-17:23-52-03] schema | tối ưu description query + review-node
+- review-node: thêm bước ghi _inbox khi trang khác mắc cùng lỗi; description viết lại theo ý định "check trang với nguồn" (trigger 15/20 → 19/20 trên bộ 20 câu, 3 lượt/câu)
+- query: description thêm ý "tìm, liệt kê các trang về một khái niệm" (19/20 → 20/20)
+- Bộ câu test ở máy cloud, chưa lưu vào repo

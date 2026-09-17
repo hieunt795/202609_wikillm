@@ -1,6 +1,6 @@
 ---
 name: query
-description: Trả lời câu hỏi bằng cách tổng hợp từ các trang trong 02_wiki. Dùng cho mọi câu hỏi về nội dung tri thức đã nạp vào wiki — kinh tế vĩ mô, hạch toán quốc gia, cán cân thanh toán, tài khoá, tiền tệ, ngân hàng trung ương, ngân hàng, thị trường trái phiếu và thu nhập cố định, lạm phát, tỷ giá — kể cả khi người dùng không nhắc chữ "wiki"; và khi người dùng muốn tra cứu, tổng hợp, so sánh, giải thích dựa trên wiki, hoặc hỏi wiki đã có gì về một chủ đề. Không dùng cho ingest nguồn mới, kiểm tra sức khoẻ wiki hay review trang.
+description: 'Trả lời câu hỏi bằng cách tổng hợp từ các trang trong 02_wiki. Dùng cho mọi câu hỏi về nội dung tri thức đã nạp vào wiki — kinh tế vĩ mô, hạch toán quốc gia, cán cân thanh toán, tài khoá, tiền tệ, ngân hàng trung ương, ngân hàng, thị trường trái phiếu và thu nhập cố định, lạm phát, tỷ giá — kể cả khi người dùng không nhắc chữ "wiki"; và khi người dùng muốn tra cứu, tổng hợp, so sánh, giải thích dựa trên wiki, hỏi wiki đã có gì về một chủ đề, hoặc muốn tìm, liệt kê các trang nói về một khái niệm. Không dùng cho ingest nguồn mới, kiểm tra sức khoẻ wiki hay review trang.'
 ---
 
 # Query — tổng hợp câu trả lời từ wiki

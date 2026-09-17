@@ -1,6 +1,6 @@
 ---
 name: review-node
-description: "Model tự review trang wiki (node) trong 02_wiki bằng cách đối chiếu từng claim với đúng đoạn nguồn trong 01_sources, kiểm diễn đạt, liên kết và title; trang đạt được đặt reviewed và reviewed_by model. Dùng khi người dùng muốn review, review-node, duyệt nội dung, soát trang, kiểm chứng trang với nguồn, kiểm tra trang có khớp sách không, tìm claim sai, hoặc xử lý hàng đợi chưa review. Không dùng cho review code hay pull request."
+description: 'Dùng skill này khi người dùng muốn xác minh một trang wiki trong 02_wiki có đúng với nguồn gốc trong 01_sources hay không. Kích hoạt với yêu cầu ngắn kiểu "review trang X" và cả khi không có chữ "review", chỉ cần ý định là "check lại trang này với sách/nguồn": nghi một câu hoặc số liệu trên trang sai, thiếu điều kiện, diễn giải lệch; nghi trang có câu do agent tự thêm mà nguồn không nói; nghi chú thích trích dẫn (dải dòng, file nguồn) dẫn sai chỗ; muốn đối chiếu từng claim với đúng đoạn nguồn; muốn soát, duyệt, kiểm chứng một trang hay một lô trang; muốn chọn N trang chưa review (theo backlink hoặc hàng đợi mặc định) để xử lý; muốn đánh dấu trang đã kiểm là reviewed. Không dùng cho: review code, pull request, hay tài liệu ngoài wiki; kiểm sức khoẻ và cấu trúc toàn wiki hoặc kiểm nguồn bị sửa (lint); nạp nguồn mới (ingest); sửa văn phong hay góp ý bố cục mà không đối chiếu nguồn.'
 ---
 
 # Review-node — đối chiếu trang với nguồn
@@ -36,6 +36,7 @@ Review là **kiểm chứng nội dung khớp nguồn**. Không phải lint (lin
 - **Claim sai so với nguồn** → sửa đúng claim đó theo nguồn, kèm chú thích, nâng `last_updated`; trang `stable` thì về `draft` (§9). Câu sửa áp skill `writing-style` profile wiki. Sau khi sửa và kiểm lại cả trang mới được đặt `reviewed`.
 - **Hai đoạn nguồn nói khác nhau** → **không sửa**: đánh `⚠️ Conflict` kèm cả hai claim + vị trí (luật cứng 2); không đặt `reviewed`.
 - **Vấn đề cấu trúc** (title sai, cần tách trang, link sai đích) → không tự tách/đổi tên; ghi `_inbox.md`; không đặt `reviewed`.
+- **Trang khác mắc cùng lỗi** (chép cùng claim sai hoặc cùng dải dòng sai, phát hiện khi đối chiếu) → không sửa trang đó trong lượt này, vì nó chưa được đọc trọn; ghi `_inbox.md` một mục nêu tên trang, chú thích sai và vị trí đúng, để lượt review sau nhặt lên.
 - Không bao giờ ghi đè `reviewed_by: user`.
 
 **6. Chạy `python .claude/hooks/validate_wiki_page.py --all`**, phải sạch.
