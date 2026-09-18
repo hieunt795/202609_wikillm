@@ -376,3 +376,11 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - review-node: thêm bước ghi _inbox khi trang khác mắc cùng lỗi; description viết lại theo ý định "check trang với nguồn" (trigger 15/20 → 19/20 trên bộ 20 câu, 3 lượt/câu)
 - query: description thêm ý "tìm, liệt kê các trang về một khái niệm" (19/20 → 20/20)
 - Bộ câu test ở máy cloud, chưa lưu vào repo
+
+## [2026-09-18:23-02-43] schema | thêm công cụ ghi câu hỏi theo yêu cầu
+- Chính thức hoá `.claude/tools/log_questions.py`: chạy thủ công, phân loại bằng rule cục bộ, deduplicate và append JSONL
+- Dữ liệu mặc định: `.claude/local/question-logger/questions.jsonl`; không gọi LLM
+
+## [2026-09-18:23-13-37] schema | mở rộng question logger ra toàn dự án
+- Không truyền `--input`: quét toàn bộ Codex session có `cwd` hoặc workspace root thuộc repo hiện tại; vẫn giữ chế độ một file
+- Lần chạy đầu toàn dự án: 22 chat, 157 prompt; lần chạy lại ghi thêm 0 record
