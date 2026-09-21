@@ -1,28 +1,24 @@
-# `.claude_draft`
+# `.claude`
 
-Gói thử nghiệm này mô phỏng hệ thống chỉ dẫn Claude đề xuất trong `CLAUDE_RULES_REPORT.md`. Nó không được Claude Code tự nạp và không thay thế `CLAUDE.md` hoặc `.claude/` đang hoạt động ở root.
+Gói chỉ dẫn đang hoạt động cho dự án LLM Wiki — Macroeconomics.
 
-## Phạm vi
+## Cấu trúc
 
-- `CLAUDE.md` và `.claude/rules/` chứa bối cảnh, guardrail và rule thử nghiệm.
-- `.claude/skills/` và `.claude/hooks/` là bản sao của logic hiện hành, với đường dẫn runtime đổi sang gói draft.
-- Validator vẫn đọc dữ liệu thật tại root thông qua working directory hoặc `CLAUDE_PROJECT_DIR`.
-- Handoff thử nghiệm được ghi trong `.claude_draft/session_handoffs/`.
-- Chưa tạo agents, agent memory hoặc `settings.local.json` vì chưa có nhu cầu vận hành tương ứng.
+- `CLAUDE.md` — bối cảnh dự án, guardrail và quy tắc áp dụng chéo.
+- `.claude/rules/` — rule chuyên biệt theo chủ đề; không dùng `@import`.
+- `.claude/skills/` — workflow chi tiết cho từng operation (`/ingest`, `/query`, `/lint`, `/promote`, `/review-node`).
+- `.claude/hooks/` — script kiểm tra xác định được bằng máy (validator).
+- `.claude/settings.json` — cấu hình guardrail thực thi tự động.
+- `session_handoffs/` — handoff giữa các phiên làm việc có thay đổi repo.
 
-## Kiểm thủ công
-
-Chạy từ root project:
+## Chạy validator thủ công
 
 ```powershell
-python .claude_draft/.claude/hooks/validate_wiki_page.py --all
-python .claude_draft/.claude/hooks/validate_wiki_page.py --verify-sources
-python .claude_draft/.claude/hooks/validate_wiki_page.py --now
+python .claude/hooks/validate_wiki_page.py --all
+python .claude/hooks/validate_wiki_page.py --verify-sources
+python .claude/hooks/validate_wiki_page.py --now
 ```
 
-## Kích hoạt sau review
+## Lưu bản cũ
 
-1. Đối chiếu `CLAUDE.md` và bốn rules với `00_schema.md`, năm skills và validator.
-2. Chạy thử từng nhóm wiki, source/state, records và handoff.
-3. Chỉ chuyển nội dung đã duyệt sang `CLAUDE.md` và `.claude/` ở root.
-4. Không xoá bản hiện hành hoặc bản thử nghiệm cũ trước khi xác nhận hệ thống mới ổn định.
+Bản cấu hình trước được lưu tại `.old/`.

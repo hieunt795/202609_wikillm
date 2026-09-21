@@ -1,7 +1,4 @@
-# LLM Wiki — Macroeconomics · CLAUDE.md Draft
-
-> Bản thử nghiệm để review thủ công trong `.claude_draft/`. Claude Code không tự
-> nạp gói này; `CLAUDE.md` và `.claude/` ở root vẫn có hiệu lực.
+# LLM Wiki — Macroeconomics · CLAUDE.md
 
 ## Tổng quan dự án
 
@@ -22,8 +19,8 @@ rõ, tuân thủ schema và chỉ vào wiki sau đúng operation cùng các bư�
 | `03_state/_sources_manifest.md` | Source id, xuất xứ, kích thước và checksum |
 | `03_state/<source-id>.md` | Trạng thái chunk của nguồn dài |
 | `00_schema.md` | Data model và tiêu chuẩn trang wiki |
-| `.claude_draft/.claude/skills/*/SKILL.md` | Quy trình thử nghiệm cho từng operation |
-| `.claude_draft/.claude/hooks/validate_wiki_page.py` | Kiểm tra xác định được bằng máy |
+| `.claude/skills/*/SKILL.md` | Quy trình cho từng operation |
+| `.claude/hooks/validate_wiki_page.py` | Kiểm tra xác định được bằng máy |
 | `log.md` | Nhật ký kết quả operation dạng append-only |
 | `decisions.md` | Quyết định thiết kế và lý do |
 | `_inbox.md` | Ý tưởng hoặc vấn đề chưa đủ chín |
@@ -70,20 +67,17 @@ Nếu `CLAUDE.md`, schema, rule và skill mâu thuẫn, dừng trước khi ghi,
 
 ## Phân tầng chỉ dẫn
 
-- Rule chuyên biệt: `.claude_draft/.claude/rules/`; không dùng `@import`.
-- Workflow theo tác vụ: `.claude_draft/.claude/skills/`.
-- Guardrail cần thực thi bằng máy: `.claude_draft/.claude/hooks/` và
-  `.claude_draft/.claude/settings.json`.
+- Rule chuyên biệt: `.claude/rules/`; không dùng `@import`.
+- Workflow theo tác vụ: `.claude/skills/`.
+- Guardrail cần thực thi bằng máy: `.claude/hooks/` và `.claude/settings.json`.
 - Chi tiết data model, taxonomy và lifecycle: `00_schema.md`.
 
-Khi kích hoạt, review rồi chuyển nội dung đã duyệt sang `CLAUDE.md` và `.claude/`
-ở root. Không sao chép toàn bộ schema hoặc skill vào rules. Giữ file này dưới
-120 dòng.
+Không sao chép toàn bộ schema hoặc skill vào rules. Giữ file này dưới 120 dòng.
 
 ## Session handoff
 
 Phiên làm thay đổi repo hoặc trạng thái vận hành phải tạo đúng một file mới:
-`.claude_draft/session_handoffs/YYYY-MM-DD-HHmm-<short-slug>.md`. Phiên chỉ đọc,
+`.claude/session_handoffs/YYYY-MM-DD-HHmm-<short-slug>.md`. Phiên chỉ đọc,
 khảo sát hoặc hỏi đáp không thay đổi trạng thái thì không tạo. Chi tiết ở rule
 handoff.
 
