@@ -384,3 +384,113 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 ## [2026-09-18:23-13-37] schema | mở rộng question logger ra toàn dự án
 - Không truyền `--input`: quét toàn bộ Codex session có `cwd` hoặc workspace root thuộc repo hiện tại; vẫn giữ chế độ một file
 - Lần chạy đầu toàn dự án: 22 chat, 157 prompt; lần chạy lại ghi thêm 0 record
+
+## [2026-09-21:18-48-48] ingest | bindseil_monetary_policy Introduction + Ch.1–2
+- Tạo 7 trang mới (separation-principle, operational-target, monetary-policy-instruments-three-tools, central-bank-financial-accounts-model, relative-vs-absolute-intermediation, collateral-constraint, autonomous-factors, liquidity-deficit-banking-system); merge Bindseil vào 3 trang stable (monetary-policy, open-market-operations, discount-window → draft)
+- Dựng 03_state/bindseil_monetary_policy.md với bản đồ chunk đầy đủ (17 chunk)
+- Còn lại: Ch.3–18 (chi tiết ở state file)
+
+## [2026-09-21:18-53-09] ingest | bindseil_monetary_policy Ch.3
+- 2 trang mới: overnight-rate-is-the-natural-operational-target-of-monetary-policy, reserve-position-doctrine-rise-and-fall-at-the-fed
+- Merge Ch.3 §3.1 taxonomy (explicit/implicit, quantity/rate, one/many) vào operational-target-of-monetary-policy
+- Còn lại: Ch.4–18
+
+## [2026-09-21:18-57-27] ingest | bindseil_monetary_policy Ch.4
+- 3 trang mới: three-techniques-to-control-short-term-interest-rates (hub), one-directional-standing-facility-monetary-policy, interest-rate-corridor-symmetric-approach
+- Còn lại: Ch.5–18
+
+## [2026-09-21:19-01-55] ingest | bindseil_monetary_policy Ch.5
+- 1 trang mới: martingale-property-of-overnight-rates-and-reserve-averaging
+- Link từ three-techniques-to-control-short-term-interest-rates sang trang martingale
+- Còn lại: Ch.6–18
+
+## [2026-09-21:19-05-18] ingest | bindseil_monetary_policy Ch.6
+- 3 trang mới: standing-facilities-in-monetary-policy-operations, optimal-width-of-the-interest-rate-corridor, taralac-facility-target-rate-limited-access
+- Cập nhật cross-links tại: discount-window, monetary-policy-instruments-three-tools, interest-rate-corridor-symmetric-approach, three-techniques-to-control-short-term-interest-rates
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+- Còn lại: Ch.7–18
+
+## [2026-09-21:19-07-06] ingest | bindseil_monetary_policy Ch.7
+- 3 trang mới: outright-vs-credit-open-market-operations, tender-procedures-for-credit-open-market-operations, liquidity-absorbing-open-market-operations
+- Làm giàu trang open-market-operations với góc nhìn lịch sử và phân loại của Bindseil Ch.7
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+- Còn lại: Ch.8–18
+
+## [2026-09-21:19-09-02] ingest | bindseil_monetary_policy Ch.8
+- 2 trang mới: functions-of-reserve-requirements-in-monetary-policy, reserve-requirement-system-specifications-and-averaging
+- Làm giàu trang required-reserves (chuyển sang draft, thêm nguồn bindseil, giải cấu trúc số nhân tiền tệ và phân tích chi phí tín dụng/hạn chế collateral)
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+- Còn lại: Ch.9–18
+
+## [2026-09-21:19-11-06] ingest | bindseil_monetary_policy Ch.9
+- 3 trang mới: central-bank-collateral-framework-design-and-risk-control, market-impact-of-collateral-framework-and-leverage-constraints, collateral-pool-segregation-and-double-adverse-selection
+- Làm giàu trang collateral-constraint-on-central-bank-credit với công thức CVPH, hàm haircut luỹ thừa và lý do khan hiếm tài sản thế chấp tất yếu
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+- Còn lại: Ch.10–18
+
+## [2026-09-21:19-12-48] ingest | bindseil_monetary_policy Ch.10
+- 2 trang mới: optimal-monetary-policy-operations-frameworks-in-normal-times (hub), comparative-central-bank-operational-frameworks-normal-times
+- Kết nối separation-principle-of-monetary-policy với khuôn khổ tối ưu trong thời bình
+- Hoàn thành toàn bộ Phần I (Part I: Monetary Policy Operations in Normal Times, Ch.1–10) của Bindseil
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+- Còn lại: Ch.11–18 (Phần II: Khủng hoảng thanh khoản và người cho vay cuối cùng)
+
+## [2026-09-21:19-37-00] ingest | bindseil_monetary_policy Ch.11
+- 3 trang mới: mechanics-of-liquidity-crises-and-feedback-loops, bank-runs-investor-strikes-and-multiple-equilibria, monetary-policy-transmission-breakdown-and-zero-lower-bound
+- Bổ sung đứt gãy truyền dẫn, quy tắc Wicksell mở rộng R = i + j + k và ma trận mục tiêu đa chiều (I*, Q*) vào separation-principle-of-monetary-policy và operational-target-of-monetary-policy; bổ sung stigma và nghịch lý minh bạch vào discount-window
+- Mở đầu Phần II (Part II: Monetary Policy Operations in Times of Crisis and the LOLR); wiki đạt 325 trang, 0 lỗi, 0 mồ côi
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+- Còn lại: Ch.12–18
+
+## [2026-09-21:19-39-00] ingest | bindseil_monetary_policy Ch.12
+- 4 trang mới: collateral-scarcity-and-effective-term-funding-costs, effective-corridor-asymmetry-and-stigma-in-overnight-rates, asset-encumbrance-and-subordination-of-unsecured-creditors, securities-lending-programmes-and-central-bank-collateral-swaps
+- Bổ sung phân tích phá vỡ tính đối xứng do rủi ro cạn kiệt collateral và stigma vào interest-rate-corridor-symmetric-approach; bổ sung các kênh tác động Ch.12 vào collateral-constraint-on-central-bank-credit
+- Wiki đạt 329 trang, 0 lỗi, 0 mồ côi
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+- Còn lại: Ch.13–18
+
+## [2026-09-21:19-41-00] ingest | bindseil_monetary_policy Ch.13
+- 4 trang mới: narrowing-interest-rate-corridor-and-absolute-central-bank-intermediation, fixed-rate-full-allotment-and-maturity-lengthening-in-crisis, seven-channels-of-central-bank-asset-purchase-programmes, dangers-of-ultra-accommodating-monetary-policy-and-the-wicksellian-counter-defense
+- Bổ sung vai trò thu hẹp hành lang trong khủng hoảng vào optimal-width-of-the-interest-rate-corridor; bổ sung trung gian tuyệt đối và hình thái bảng cân đối vào relative-vs-absolute-central-bank-intermediation; bổ sung chuyển đổi OMOs khủng hoảng vào open-market-operations
+- Wiki đạt 333 trang, 0 lỗi, 0 mồ côi
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+- Còn lại: Ch.14–18
+
+## [2026-09-21:19-44-00] ingest | bindseil_monetary_policy Ch.14
+- 3 trang mới: lender-of-last-resort-foundations-and-bagehot-principles, central-bank-inertia-and-active-crisis-lolr-measures, emergency-liquidity-assistance-framework-and-constructive-ambiguity
+- Bổ sung phân định standing facility vs ELA vào standing-facilities-in-monetary-policy-operations; bổ sung các kênh LOLR và ELA vào discount-window
+- Wiki đạt 336 trang, 0 lỗi, 0 mồ côi
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+- Còn lại: Ch.15–18
+
+## [2026-09-21:19-46-00] ingest | bindseil_monetary_policy Ch.15
+- 3 trang mới: central-bank-risk-taking-and-liquidity-support-trade-off, endogenous-risk-and-upward-sloping-haircut-loss-curve, bindseil-jablecki-risk-endogeneity-and-two-errors-model
+- Làm giàu trang central-bank-collateral-framework-design-and-risk-control với cơ chế tính nội sinh của rủi ro và hàm mục tiêu hai sai lầm
+- Wiki đạt 339 trang, 0 lỗi, 0 mồ côi
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+- Còn lại: Ch.16–18
+
+## [2026-09-21:19-49-00] ingest | bindseil_monetary_policy Ch.16
+- 3 trang mới: lender-of-last-resort-moral-hazard-and-liquidity-externalities, liquidity-regulation-and-central-bank-operations-arbitrage, surcharges-for-over-proportional-reliance-on-the-central-bank
+- Bổ sung rủi ro đạo đức và quy định thanh khoản vào lender-of-last-resort-foundations-and-bagehot-principles; bổ sung kinh doanh chênh lệch pháp lý LCR vào relative-vs-absolute-central-bank-intermediation
+- Wiki đạt 342 trang, 0 lỗi, 0 mồ côi
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+- Còn lại: Ch.17–18
+
+## [2026-09-21:19-52-00] ingest | bindseil_monetary_policy Ch.17
+- 3 trang mới: international-lender-of-last-resort-and-dual-liquidity-crises, central-bank-fx-swap-lines-and-cross-border-liquidity, target2-balances-and-balance-of-payments-mechanics
+- Làm giàu trang international-monetary-fund-imf với vai trò định chế neo giữ ILOLR hóa giải rủi ro đạo đức và rủi ro tín dụng đối ngoại
+- Wiki đạt 345 trang, 0 lỗi, 0 mồ côi
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+- Còn lại: Ch.18 (kết thúc nguồn sách)
+
+## [2026-09-21:19-54-00] ingest | bindseil_monetary_policy Ch.18 (Hoàn tất toàn bộ nguồn sách)
+- 2 trang mới: optimal-monetary-policy-operations-frameworks-in-crisis-times (hub tổng hợp toàn bộ Phần II Khủng hoảng), exit-strategies-from-non-conventional-monetary-policy
+- Làm giàu trang optimal-monetary-policy-operations-frameworks-in-normal-times và liquidity-absorbing-open-market-operations
+- Hoàn tất 100% việc tiếp nhận toàn bộ cuốn sách Ulrich Bindseil (2014, 4.474 dòng, 18 chương)
+- Toàn bộ wiki đạt 347 trang, 0 trang lỗi, 0 trang mồ côi
+- Cập nhật index.md và state file bindseil_monetary_policy.md
+
+
+
+

@@ -1,0 +1,16 @@
+---
+title: operational-target-of-monetary-policy
+type: concept
+tags: [monetary, central-banking, monetary-policy-implementation]
+sources: [bindseil_monetary_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+Mục tiêu vận hành của chính sách tiền tệ là biến số thoả mãn bốn điều kiện: (i) ngân hàng trung ương có thể kiểm soát đủ; (ii) có ảnh hưởng kinh tế thực sự tới mục tiêu cuối cùng như ổn định giá; (iii) phản ánh lập trường chính sách tiền tệ, tức được quyết định bởi cơ quan ra quyết định (FOMC của Fed, Governing Council của ECB); (iv) cung cấp hướng dẫn cần và đủ cho bộ phận vận hành để thực thi (bindseil_monetary_policy, Ch.1, §1.1, d.372). Trong thời bình, lãi suất ngắn hạn liên ngân hàng qua đêm là mục tiêu vận hành được dùng phổ biến nhất.
+
+Lựa chọn mục tiêu vận hành gắn liền với [[separation-principle-of-monetary-policy|separation principle]]: đây là đầu vào "ngoại sinh" từ bộ phận macroeconomics, bộ phận vận hành thị trường nhận vào và thực thi qua [[monetary-policy-instruments-three-tools|ba công cụ]]. Bộ phận vận hành không tự đặt mục tiêu này — họ chỉ đảm bảo mức lãi suất mục tiêu thực sự hình thành trên thị trường tiền tệ, thay vì chỉ thông báo bằng lời ("open mouth operations là không đủ") (bindseil_monetary_policy, Ch.1, §1.1, d.372–376).
+
+Trong khủng hoảng tài chính, một mục tiêu vận hành duy nhất không còn đủ vì cơ chế truyền dẫn từ lãi suất ngắn hạn tới các điều kiện tài chính khác bị gián đoạn. Tình huống này buộc NHTW phải tác động đồng thời vào nhiều biến, làm phức tạp cả quyết định lẫn truyền thông chính sách — đây là thời điểm [[separation-principle-of-monetary-policy]] sụp đổ (bindseil_monetary_policy, Ch.1, §1.1, d.372). Khi lãi suất ngắn hạn chạm zero lower bound, kiểm soát lãi suất qua đêm ở mức 0 là không đủ và NHTW chuyển sang ma trận mục tiêu đa chiều $(I^*, Q^*)$ tác động trực tiếp lên lãi suất dài hạn hoặc các tài sản kém thanh khoản hơn (xem chi tiết tại [[monetary-policy-transmission-breakdown-and-zero-lower-bound]]; bindseil_monetary_policy, Ch.1, §1.2, d.382; Ch.11, §11.8, d.2415–2450).
+
+Ch.3 §3.1 của Bindseil (2014) phân loại các cách tiếp cận mục tiêu vận hành theo bốn chiều. **Tường minh hay ngầm định**: Fed từ ~1990 công bố rõ federal funds rate target; ECB và Bank of England trước 2007 dùng target ngầm định (phát tín hiệu qua mức lãi suất operations). **Lượng hoá hay không**: Fed thập niên 1950–1960 có quantitative targets nhưng không lượng hoá chính xác. **Công bố ngay hay không**: Fed trước 1994 không công bố quyết định sau họp — thị trường phải đọc tín hiệu từ operations của New York Fed. **Một hay nhiều target**: Giai đoạn bình thường (1994–2007) Fed chỉ có một target (fed funds rate); trong khủng hoảng sau 2010, Fed đồng thời quan tâm tới ten-year Treasury yields và RMBS rates. Ba loại target chính về bản chất: lãi suất ngắn hạn (chuẩn tiền-1914 và hậu-1990), khái niệm dự trữ định lượng (Mỹ 1920–1983), và tỷ giá (cho NHTW gắn cứng tỷ giá). Lịch sử thất bại của kiểm soát định lượng: xem [[reserve-position-doctrine-rise-and-fall-at-the-fed]]. Lý do overnight rate là lựa chọn tối ưu trong loại lãi suất: xem [[overnight-rate-is-the-natural-operational-target-of-monetary-policy]] (bindseil_monetary_policy, Ch.3, §3.1, d.763–787).

@@ -1,0 +1,29 @@
+---
+title: international-lender-of-last-resort-and-dual-liquidity-crises
+type: concept
+tags: [chinh-sach-tien-te, ngan-hang-trung-uong, ty-gia, nguoi-cho-vay-cuoi-cung, khung-hoang-tai-chinh]
+sources: [bindseil_monetary_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+**Bối cảnh và sự cần thiết của Người cho vay cuối cùng quốc tế (ILOLR)**: Trong hệ thống một đồng tiền và một ngân hàng trung ương (NHTW), NHTW luôn có khả năng cung ứng thanh khoản nội tệ vô hạn nhờ quyền phát hành tiền pháp định. Tuy nhiên, trong các chế độ [[exchange-rate|tỷ giá hối đoái]] cố định, nền kinh tế đô la hóa, hoặc đối với các tập đoàn ngân hàng quốc tế hoạt động đa tiền tệ, NHTW không thể tự in ngoại tệ để thực hiện chức năng [[lender-of-last-resort-foundations-and-bagehot-principles|người cho vay cuối cùng (LOLR)]]. Khi đó, ngoại tệ thay thế tiền giấy trở thành tài sản "trú ẩn an toàn" (safe haven) tối hậu, và chính bản thân NHTW có thể rơi vào tình trạng mất thanh khoản khi cạn kiệt dự trữ ngoại hối nhằm bảo vệ mức tỷ giá cam kết (từng xảy ra tại Đức tháng 7/1931 hay các cuộc khủng hoảng kép tại châu Á thập niên 1990) (Fischer, 1999; Calvo, 1988; Kaminsky & Reinhart, 1999; Obstfeld, 2009; Bindseil & Winkler, 2013; bindseil_monetary_policy, Ch.17, §17.1, d.3829–3832).
+
+**Mô hình tài khoản tài chính hai quốc gia và cú sốc tháo chạy vốn (Capital flight)**: Bindseil mô hình hóa cơ chế khủng hoảng thanh khoản quốc tế thông qua hệ thống tài khoản tài chính khép kín giữa quốc gia trú ẩn an toàn (Quốc gia 1 - như Fed/Mỹ) và quốc gia căng thẳng tài chính (Quốc gia 2 - như Panama):
+- Khi người gửi tiền dịch chuyển tiền gửi $k$ từ ngân hàng Quốc gia 2 sang ngân hàng Quốc gia 1, một giao dịch ngoại hối giao ngay (FX spot) phát sinh do hai khoản tiền gửi định danh bằng hai đồng tiền khác nhau.
+- Để duy trì tỷ giá cố định (giả định $E = 1$), cung tiền tệ 2 dư thừa và cầu tiền tệ 1 dư thừa phải được triệt tiêu thông qua can thiệp thị trường ngoại hối của NHTW 2 bằng dự trữ ngoại hối ($FR_2$).
+- Nếu quy mô tháo chạy vốn $k \le FR_2$, NHTW 2 bán ngoại tệ để can thiệp, lượng dự trữ ngoại hối giảm xuống $FR_2 - k$, và cân bằng tỷ giá được giữ vững.
+- Khi cú sốc tháo chạy vốn vượt quá quy mô dự trữ ($k > FR_2$), NHTW 2 cạn kiệt dự trữ ngoại hối và hoàn toàn mất khả năng bảo vệ neo tỷ giá trừ khi nhận được khoản tín dụng liên ngân hàng trung ương (inter-central bank loan) từ NHTW 1 (bindseil_monetary_policy, Ch.17, §17.1, d.3833–3857).
+
+**Bẫy tăng lãi suất và sự sụp đổ của phản ứng chính sách truyền thống**: Về mặt lý thuyết, NHTW 2 có thể đảo ngược dòng vốn tháo chạy bằng cách tăng mạnh lãi suất trong nước nhằm thu hút vốn ngoại. Tuy nhiên, biện pháp này phá vỡ việc sử dụng lãi suất như công cụ ổn định giá cả và sản lượng (Obstfeld et al., 2005). Nghiêm trọng hơn, lãi suất vọt lên bóp nghẹt hoạt động kinh tế thực, làm xói mòn khả năng thanh toán của các doanh nghiệp và ngân hàng trong nước, từ đó thổi bùng mối nghi ngờ về khả năng trả nợ và đẩy nhanh cuộc khủng hoảng thanh khoản thành sụp đổ toàn diện (bindseil_monetary_policy, Ch.17, §17.1, d.3858–3860).
+
+**Trò chơi rút nợ công ngoại tệ và hiện tượng đa cân bằng (Investor Strike Game)**: Xét bảng cân đối của một quốc gia có nợ nước ngoài ngắn hạn với tài sản $2 + E$ và nợ nước ngoài ngắn hạn gồm 2 nhà đầu tư (mỗi bên nắm 1 đơn vị nợ). Gọi $f(x)$ là hàm chi phí thanh lý biên để chuyển hóa tài sản quốc gia thành ngoại tệ ngắn hạn ($f(0) = 0, df/dx \ge 0$), và $g(y)$ là tổng chi phí để tạo ra $y$ lượng tiền mặt ngoại tệ. Tương tự như [[bank-runs-investor-strikes-and-multiple-equilibria|mô hình rút tiền hàng loạt của ngân hàng]], trạng thái cân bằng không rút vốn duy nhất chỉ được duy trì khi tổng chi phí đáp ứng rút vốn của một nhà đầu tư không vượt quá vốn tự có của quốc gia:
+$$g(1) < E$$
+Nếu quốc gia hứng chịu một cú sốc làm suy giảm vốn tự có $E$ hoặc làm hàm chi phí $g(y)$ dốc đứng lên (do giảm giá sâu tài sản công khi bán tháo gấp hoặc suy giảm niềm tin chính trị), hệ thống sẽ rơi vào trạng thái đa cân bằng: nhà đầu tư thứ hai sẽ từ chối đảo nợ nếu nhà đầu tư thứ nhất rút vốn, kích hoạt cuộc đình công của nhà đầu tư (investor strike) dẫn tới vỡ nợ ngoại tệ hoặc phá giá bắt buộc (bindseil_monetary_policy, Ch.17, §17.1, d.3880–3906).
+
+**Rào cản cho vay liên NHTW và vai trò của IMF**: Trong bối cảnh căng thẳng, việc tiếp cận hạn mức tín dụng từ NHTW nước ngoài (NHTW 1) là giải pháp duy nhất dập tắt thế đa cân bằng. Tuy nhiên, NHTW 1 thường ngần ngại cấp tín dụng do: (i) lo ngại rủi ro lạm phát và bất ổn kinh tế vĩ mô trong nước; (ii) nguy cơ rủi ro đạo đức khi chính phủ nước vay vốn lơ là cải cách phục hồi niềm tin; (iii) rủi ro tín dụng đối tác khi nước vay mất khả năng hoàn trả. [[international-monetary-fund-imf|Quỹ Tiền tệ Quốc tế (IMF)]] được thiết lập như định chế trung gian giải quyết cả ba nút thắt này thông qua cơ chế giám sát điều kiện ngặt nghèo (conditionality programmes), đảm bảo thực thi chức năng ILOLR mà không làm tổn hại kỷ luật tài chính quốc tế (bindseil_monetary_policy, Ch.17, §17.1, d.3907–3914).
+
+**Các biến thể hiện đại của ILOLR**: Bên cạnh cơ chế IMF, thực tiễn quản trị khủng hoảng tài chính toàn cầu thế kỷ 21 đã hình thành hai kênh ILOLR phi truyền thống mang tính quyết định:
+1. Mạng lưới [[central-bank-fx-swap-lines-and-cross-border-liquidity|đường dây hoán đổi ngoại hối liên ngân hàng trung ương (FX swap lines)]], giải tỏa cơn khát USD cho các hệ thống ngân hàng đa tiền tệ ngoài Mỹ mà không làm phát sinh rủi ro tín dụng cho Fed.
+2. Cơ chế bù trừ liên ngân hàng tự động thông qua [[target2-balances-and-balance-of-payments-mechanics|số dư TARGET2 trong Eurosystem]], vận hành như một lá chắn ILOLR phi tập trung giúp hấp thu các cú sốc tháo chạy tiền gửi và mất cân đối vãng lai giữa các quốc gia thành viên (bindseil_monetary_policy, Ch.17, §17.2–Phụ lục B, d.3917–4019).
+

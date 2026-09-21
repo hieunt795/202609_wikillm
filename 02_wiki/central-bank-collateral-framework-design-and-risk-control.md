@@ -1,0 +1,28 @@
+---
+title: central-bank-collateral-framework-design-and-risk-control
+type: concept
+tags: [monetary, central-banking, monetary-policy-implementation, collateral, risk-management]
+sources: [bindseil_monetary_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+Khuôn khổ tài sản bảo đảm (collateral framework) và các biện pháp kiểm soát rủi ro đi kèm là cấu phần nền tảng quyết định khả năng cung cấp thanh khoản của ngân hàng trung ương và bảo vệ an toàn bảng cân đối của chính NHTW (bindseil_monetary_policy, Ch.9, §9.1–9.3, d.1587–1712).
+
+**Thuộc tính mong muốn của tài sản bảo đảm**: NHTW yêu cầu tài sản thế chấp phải đáp ứng 7 tiêu chuẩn kỹ thuật: (i) *tính chắc chắn về pháp lý (legal certainty)*: quyền định đoạt và thanh lý tài sản không bị tranh chấp khi đối tác vỡ nợ; (ii) *chất lượng tín dụng tối thiểu (credit quality)*: rủi ro vỡ nợ không thể bù đắp đơn thuần bằng định giá vì tài sản xếp hạng thấp chịu rủi ro trượt hạng (credit migration) và bất cân xứng thông tin cao; (iii) *tính đơn giản (simplicity)*: các tài sản phức tạp (như CDO nhiều tầng) đòi hỏi chi phí thẩm định rất lớn; (iv) *tính minh bạch thị trường và giá sẵn có (price availability)*: tránh phải dựa vào định giá lý thuyết kém chính xác; (v) *thanh khoản thị trường (market liquidity)*: đảm bảo khả năng bán nhanh mà không làm sụp đổ giá; (vi) *chi phí lưu ký và thanh toán bù trừ thấp*; (vii) *mệnh giá nội tệ* nhằm tránh rủi ro tỷ giá (d.1641–1658).
+
+**Quy trình thiết kế 5 bước và điểm cắt tối ưu xã hội**: Bindseil (2014) đề xuất quy trình xây dựng danh mục tài sản đủ điều kiện:
+1. *Liệt kê danh mục tài sản tiềm năng* thỏa mãn các điều kiện tiên quyết về pháp lý.
+2. *Áp dụng nguyên tắc tương đương rủi ro (risk equivalence principle)*: sử dụng các biện pháp giảm thiểu rủi ro (đặc biệt là haircut) để đưa rủi ro thặng dư sau haircut của mọi tài sản về cùng một mức dung nạp mà NHTW chấp nhận.
+3. *Xếp hạng tài sản theo chi phí tăng dần* trên mỗi đơn vị tín dụng NHTW tiềm năng (chi phí phân tích, quản lý rủi ro, thanh toán).
+4. *Xác định điểm cắt tối ưu (cut-off line)* dựa trên phân tích chi phí - lợi ích xã hội: lợi ích biên của việc mở rộng đệm thanh khoản giảm dần (giảm xác suất cạn kiệt tài sản thế chấp khi gặp sốc), trong khi chi phí biên tăng dần do phải quản lý các tài sản ngày càng kém thanh khoản. Giao điểm giữa hai đường xác định quy mô danh mục tối ưu duy nhất.
+5. *Giám sát việc sử dụng thực tế của đối tác* để kiểm soát rủi ro tập trung (d.1661–1672).
+
+**Ba kỹ thuật kiểm soát rủi ro chính**:
+- *Hạn mức (Limits)*: Hạn chế dư nợ tín dụng đối với từng ngân hàng hoặc hạn chế tỷ trọng của từng loại tài sản/tổ chức phát hành trong rổ tài sản thế chấp (ví dụ: ABS không vượt quá 20%, một tổ chức phát hành tư nhân không quá 5% rổ tài sản) nhằm triệt tiêu rủi ro tập trung.
+- *Định giá và yêu cầu ký quỹ bổ sung (Valuation and margin calls)*: Định giá lại tài sản hàng ngày theo giá thị trường (mark-to-market). Eurosystem áp dụng ngưỡng kích hoạt đối xứng 0.5%: khi giá trị sau haircut giảm dưới 99.5% khoản vay, ngân hàng bị gọi ký quỹ bổ sung; khi vượt 100.5%, phần tài sản thế chấp dư được hoàn trả (d.1681–1682).
+- *Tỷ lệ chiết khấu (Haircuts)*: Khấu trừ một tỷ lệ phần trăm $h$ khỏi giá trị thị trường để bù đắp rủi ro sụt giảm giá trị trong thời gian thanh lý có trật tự (orderly liquidation time). Haircut được hiệu chuẩn để bao phủ 99% biến động giá tiềm năng, kết hợp cả ba nguồn bất định: rủi ro giá thị trường $\sigma_M^2$, độ bất định của mô hình định giá $\sigma_V^2$, và rủi ro giãn chênh lệch lợi suất / trượt hạng tín dụng $\sigma_S^2$: $\sigma_T^2 = \sigma_M^2 + \sigma_V^2 + \sigma_S^2$. Ma trận haircut của ECB phân loại chi tiết theo xếp hạng tín nhiệm, kỳ hạn còn lại và 6 nhóm thanh khoản định chế (Bảng 9.1, d.1691–1708).
+
+**Tính bất đối xứng của rủi ro repo đối với NHTW**: Trong repo thương mại thông thường, việc áp haircut cao bảo vệ bên cho vay tiền nhưng lại tạo rủi ro tín dụng không bảo đảm cho bên vay tiền. Tuy nhiên, khi NHTW là bên cho vay, do NHTW không thể phá sản, các ngân hàng thương mại không bao giờ phải chịu rủi ro đối tác từ phía NHTW. Do đó, về mặt kinh tế, NHTW có vị thế đặc biệt phù hợp để chấp nhận các tài sản kém thanh khoản với mức haircut cao thích đáng mà không làm méo mó thị trường (d.1711–1712). Trong khủng hoảng hệ thống, rủi ro trở nên nội sinh: việc áp đặt haircut quá mức sẽ kích hoạt rút tiền hàng loạt và gây tổn thất lớn hơn cho chính NHTW (xem [[endogenous-risk-and-upward-sloping-haircut-loss-curve]]), đòi hỏi NHTW phải cân bằng giữa rủi ro và hỗ trợ thanh khoản theo [[bindseil-jablecki-risk-endogeneity-and-two-errors-model|mô hình hai loại sai lầm]].
+
+Xem thêm: [[collateral-constraint-on-central-bank-credit]], [[market-impact-of-collateral-framework-and-leverage-constraints]], [[collateral-pool-segregation-and-double-adverse-selection]], [[central-bank-risk-taking-and-liquidity-support-trade-off]], [[relative-vs-absolute-central-bank-intermediation]].

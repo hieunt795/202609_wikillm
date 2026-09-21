@@ -1,0 +1,24 @@
+---
+title: effective-corridor-asymmetry-and-stigma-in-overnight-rates
+type: concept
+tags: [monetary, central-banking, interest-rate-corridor, stigma, overnight-rate]
+sources: [bindseil_monetary_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+Tính phi đối xứng hiệu dụng của hành lang lãi suất và hội chứng kỳ thị (effective corridor asymmetry and stigma) được Bindseil (2014, Ch.12, §12.2, d.2643–2719) phân tích để giải thích sự thất bại trong việc kiểm soát lãi suất qua đêm của các ngân hàng trung ương ngay trong ngày đầu tiên của cuộc khủng hoảng tài chính toàn cầu (ngày 9/8/2007).
+
+**Sự kiện ngày 9 tháng 8 năm 2007 và nghịch lý hành lang đối xứng**: Trong mô hình [[interest-rate-corridor-symmetric-approach|hành lang lãi suất đối xứng]] chuẩn thời bình, nếu thanh khoản tổng thể ở trạng thái trung hòa, sự gia tăng phương sai của các cú sốc thanh khoản ngẫu nhiên đối xứng không làm thay đổi kỳ vọng lãi suất qua đêm (vẫn neo tại trung điểm hành lang). Tuy nhiên, vào sáng ngày 9/8/2007, bất chấp điều kiện thanh khoản tổng thể của Eurosystem không đổi, lãi suất qua đêm liên ngân hàng (EONIA) và chênh lệch giá mua - bán (bid-ask spread) trên thị trường tiền tệ Frankfurt tăng vọt không kiểm soát, buộc ECB phải thực hiện nghiệp vụ tinh chỉnh (fine-tuning operation) khẩn cấp với quy mô kỷ lục 94.8 tỷ EUR. Lãi suất chỉ hạ nhiệt tạm thời và hành lang đối xứng truyền thống không bao giờ vận hành trở lại như trước (bindseil_monetary_policy, Ch.12, §12.2, d.2645–2656).
+
+**Bốn nguyên nhân biến hành lang chính thức thành hành lang phi đối xứng thực tế**: Bindseil chỉ ra rằng hành lang lãi suất hiệu dụng (effective corridor) trên thực tế bị lệch nghiêng mạnh về phía trên do bốn yếu tố:
+1. *Bất đối xứng do cơ chế bình quân hóa dự trữ bắt buộc (Perez Quiros & Rodriguez, 2006)*: Dư thừa dự trữ cuối ngày không bắt buộc ngân hàng phải gửi vào tiện ích tiền gửi (deposit facility) nếu ngân hàng vẫn còn nghĩa vụ [[reserve-requirement-system-specifications-and-averaging|bình quân hóa dự trữ bắt buộc]] trong kỳ duy trì (chi phí cơ hội bằng 0). Ngược lại, việc thấu chi tài khoản cuối ngày ngay lập tức kích hoạt nghĩa vụ vay bắt buộc qua tiện ích cho vay qua đêm (borrowing facility).
+2. *Ngưỡng cạn kiệt tài sản bảo đảm và cú nhảy ELA*: Nếu một cú sốc rút thanh khoản vượt quá giá trị tài sản bảo đảm khả dụng (CVPH), ngân hàng không thể tiếp cận borrowing facility thông thường mà bị đẩy sang hỗ trợ thanh khoản khẩn cấp (Emergency Liquidity Assistance - ELA) với chi phí trừng phạt $i_{ELA} \gg i_B$ (hoặc đối mặt vỡ nợ kỹ thuật).
+3. *Hội chứng kỳ thị cửa sổ chiết khấu (discount window stigma)*: Việc tiếp cận tiện ích cho vay qua đêm của NHTW bị thị trường coi là tín hiệu yếu kém thanh khoản trầm trọng. Nghiên cứu thực nghiệm của Armantier et al. (2011) tại Fed cho thấy các ngân hàng sẵn sàng trả thêm mức chênh lệch lãi suất bình quân ít nhất 37 điểm cơ bản (và lên tới 150 điểm cơ bản sau sự kiện Lehman Brothers) để vay qua cơ chế đấu thầu Term Auction Facility (TAF) thay vì phải gõ cửa [[discount-window|cửa sổ chiết khấu]]. Chi phí tâm lý và rủi ro bị cắt hạn mức tín dụng khiến chi phí hiệu dụng thực tế của borrowing facility bị cộng thêm phần bù kỳ thị: $i_B + \text{stigma}$.
+4. *Phần bù rủi ro tín dụng trong lãi suất liên ngân hàng không bảo đảm*: Các chỉ số lãi suất qua đêm như EONIA hoặc Fed Funds là giao dịch không bảo đảm, nên tự động tích hợp thêm phần bù rủi ro vỡ nợ của đối tác khi bất định gia tăng (bindseil_monetary_policy, Ch.12, §12.2, d.2657–2667).
+
+**Phương trình xác định lãi suất qua đêm và phản ứng chính sách (Bảng 12.2)**: Khi tính tới các yếu tố phi đối xứng, lãi suất cân bằng trên thị trường tiền tệ hàng ngày được xác định theo công thức 12.6 của Bindseil:
+$$i = P(\text{excess}) \cdot i_D + P(\text{borrowing facility}) \cdot (i_B + \text{stigma}) + P(ELA) \cdot i_{ELA}$$
+Khi độ biến động $\sigma_k$ tăng từ 1 lên 4 (Kịch bản I sang III), xác suất phải viện đến ELA tăng từ 0.1% lên 22.7%, đẩy lãi suất qua đêm $i$ tăng từ 3.01% lên **4.36%** (vượt xa mức mục tiêu 3.00% ở giữa hành lang 2%–4%). Để kéo lãi suất qua đêm quay trở lại trung điểm hành lang, NHTW có hai giải pháp:
+- *Bơm thanh khoản phi trung hòa qua mua đứt chứng khoán ($x > 0$)*: NHTW tiến hành nghiệp vụ thị trường mở với quy mô chứng khoán $S = B + x$ vượt trội so với lượng tiền giấy $B$. Trong Kịch bản V, bơm thêm $x = 3.75$ giúp đẩy xác suất thừa dự trữ $P(\text{excess})$ lên 68%, ép lãi suất qua đêm rơi trở lại đúng 3.00%.
+- *Nới lỏng haircut tài sản bảo đảm (Kịch bản VI)*: Giảm haircut $h$ từ 70% xuống 30% giúp triệt tiêu hoàn toàn xác suất ELA ($P(ELA) = 0$), đưa lãi suất về lại 3.00% mà không cần bơm thanh khoản thặng dư khổng lồ, dù phải đánh đổi bằng mức độ chịu rủi ro cao hơn của NHTW (bindseil_monetary_policy, Ch.12, §12.2, d.2673–2719).

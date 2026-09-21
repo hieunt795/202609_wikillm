@@ -1,6 +1,6 @@
 ---
 type: sources-manifest
-last_updated: 2026-09-17
+last_updated: 2026-09-21
 ---
 
 Xuất xứ và checksum của các nguồn trong `01_sources/`.
@@ -22,7 +22,7 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `imf_macro_accounting` | `imf_macro_accounting/` | Nguồn dài | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | `Modern Money Mechanics/` | Nguồn ngắn | — |
 | `capitalism_and_freedom` | `Capitalism and Freedom/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
-| `bindseil_monetary_policy` | `bindseil_monetary_policy/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
+| `bindseil_monetary_policy` | `bindseil_monetary_policy/` | Nguồn dài | `03_state/bindseil_monetary_policy.md` |
 | `cargill_central_bank_policy` | `cargill_central_bank_policy/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 | `choudhry_principles_of_banking` | `choudhry_banking_fixed_income/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 | `choudhry_analysing_yield_curve` | `choudhry_banking_fixed_income/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
@@ -89,7 +89,7 @@ Tên file có ba khoảng trắng liền nhau trước `( PDFDrive )` — giữ 
 | Xuất bản | Oxford University Press, 2014 — First Edition, © Ulrich Bindseil 2014 |
 | Phân loại | Nguồn dài (`00_schema.md` §10) — 1.128 KB / 4.473 dòng |
 | Nguồn file | PDF kèm theo; `.md` chuyển đổi ngoài dự án bằng docling |
-| Tiến độ ingest | Chưa ingest — state file dựng ở lượt ingest đầu (§10) |
+| Tiến độ ingest | Hoàn tất 100% — `03_state/bindseil_monetary_policy.md` |
 
 | Đường dẫn | Bytes | Dòng | SHA-256 |
 |---|---|---|---|

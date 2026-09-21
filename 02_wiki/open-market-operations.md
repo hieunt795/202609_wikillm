@@ -2,9 +2,9 @@
 title: open-market-operations
 type: concept
 tags: [monetary, central-banking, financial-markets]
-sources: [imf_macro_accounting]
-status: stable
-last_updated: 2026-09-16
+sources: [imf_macro_accounting, bindseil_monetary_policy]
+status: draft
+last_updated: 2026-09-21
 ---
 
 Nghiệp vụ thị trường mở là việc ngân hàng trung ương mua bán giấy tờ có giá của chính phủ, thường trên thị trường thứ cấp. Đây là một cách được ưa dùng để thay đổi lượng tiền cơ sở, và là một trong [[monetary-authorities-influence-reserve-money-through-five-direct-instruments|năm công cụ trực tiếp]] tác động lên [[reserve-money|tiền dự trữ]] (imf_macro_accounting, Ch.5, Interpretation of Balance Sheet Changes, d.4657, d.4669). Khi ngân hàng trung ương mua chứng khoán chính phủ của công chúng, lượng chứng khoán nó nắm giữ tăng, và nợ của nó tăng tương ứng dưới dạng tiền dự trữ (imf_macro_accounting, Ch.5, cùng mục, d.4669). Tiền dự trữ tăng dưới dạng [[currency-in-circulation|tiền mặt lưu hành]] nếu ngân hàng trung ương trả bằng tiền in mới, hoặc dưới dạng tiền gửi của ngân hàng tại ngân hàng trung ương nếu nó trả bằng séc ký trên chính mình (imf_macro_accounting, Ch.5, cùng mục, d.4669).
@@ -12,3 +12,9 @@ Nghiệp vụ thị trường mở là việc ngân hàng trung ương mua bán 
 Tác động này có một điều kiện: chứng khoán chính phủ được mua bán không được dùng làm dự trữ ngân hàng. Nếu chúng được tính là dự trữ, việc mua bán không làm tiền dự trữ thay đổi (imf_macro_accounting, Ch.5, cùng mục, chú thích 6, d.4663). Nếu việc mua một tài sản được bù bằng việc bán một tài sản khác, tiền cơ sở cũng không đổi; khi đó tác động của giao dịch ban đầu được gọi là đã được trung hoà (imf_macro_accounting, Ch.5, cùng mục, chú thích 7, d.4661). Giấy tờ có giá được giao dịch gồm cả [[treasury-bills|tín phiếu kho bạc]].
 
 Nghiệp vụ thị trường mở là công cụ trung hoà tác động của [[foreign-exchange-intervention|can thiệp ngoại hối]] lên cung tiền dưới tỷ giá cố định: một đợt bán ngoại tệ làm giảm tài sản đối ngoại ròng được bù bằng một đợt mua chứng khoán trên thị trường mở (imf_macro_accounting, Ch.5, Special Issues in Monetary Analysis, d.5060), như trong [[sterilization-offsets-fx-intervention-but-only-temporarily]]. Ở nền kinh tế chuyển đổi, thị trường tài chính kém phát triển giới hạn khả năng dùng công cụ gián tiếp này, xem [[underdeveloped-banking-competition-and-financial-markets-limit-indirect-monetary-control-in-transition-economies]].
+
+Bindseil (2014) hệ thống hoá OMO thành hai dạng cơ bản: (i) **Outright OMO** — mua bán hẳn tài sản; (ii) **Credit OMO** — cho vay có kỳ hạn có tài sản bảo đảm qua đấu thầu (tender) (bindseil_monetary_policy, Ch.1, §1.1, d.359; Ch.7, §7.2, d.1387). Phân tích chuyên sâu về sự lựa chọn giữa hai phương thức này được trình bày tại [[outright-vs-credit-open-market-operations]]. Quy trình thực thi credit OMOs được chuẩn hoá qua các hình thức đấu thầu lãi suất cố định hoặc biến đổi, xem [[tender-procedures-for-credit-open-market-operations]]. Khi hệ thống ngân hàng rơi vào trạng thái thặng dư thanh khoản lớn (do tích luỹ ngoại hối hoặc QE), NHTW sử dụng [[liquidity-absorbing-open-market-operations|nghiệp vụ thị trường mở hấp thụ thanh khoản]] để ngăn chặn sự sụp đổ của lãi suất ngắn hạn.
+
+Lịch sử OMO ghi nhận sự phát hiện tình cờ tại Fed đầu thập niên 1920 khi Fed mua chứng khoán để tạo thu nhập và nhận ra dự trữ ngân hàng nở rộng kéo theo sự mở rộng tín dụng (Mishkin 2004; bindseil_monetary_policy, Ch.7, §7.1, d.1365). Trong thời kỳ hiện đại trước 2007, vai trò của OMO không còn được hiểu theo quan niệm số nhân tiền tệ định lượng cơ học mà là công cụ bù đắp biến động của [[autonomous-factors-of-central-bank-balance-sheet|autonomous factors]], đưa dự trữ về mức cân bằng xác suất nhằm neo giữ lãi suất ngắn hạn tại [[operational-target-of-monetary-policy|mục tiêu vận hành]] (bindseil_monetary_policy, Ch.7, §7.1, d.1373).
+
+Trong khủng hoảng tài chính, các nghiệp vụ OMO chuyển mình mạnh mẽ: credit OMOs được chuyển sang cơ chế phân bổ toàn bộ theo lãi suất cố định (FRFA) và kéo dài kỳ hạn tới 3 năm (xem [[fixed-rate-full-allotment-and-maturity-lengthening-in-crisis]]); trong khi outright OMOs phát triển thành các chương trình mua tài sản quy mô lớn (QE/LSAP/Credit Easing) với 7 kênh truyền dẫn nhằm dập tắt giảm phát và hạ chi phí vốn dài hạn (xem [[seven-channels-of-central-bank-asset-purchase-programmes]]; bindseil_monetary_policy, Ch.13, §13.2–§13.3, d.3025–3171).

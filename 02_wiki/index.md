@@ -11,7 +11,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `imf_macro_accounting` | Nguồn dài (849 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1; Ch.2–6 xong (chi tiết theo chunk ở state file) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (85 KB / 721 dòng) | **Chưa ingest** | Toàn bộ, ingest trọn 1 lượt | — |
 | `capitalism_and_freedom` | Nguồn dài (565 KB / 2.055 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
+| `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Đang ingest dở** | Introduction + Ch.1–2 xong; Ch.3–18 còn lại (chi tiết ở state file) | `03_state/bindseil_monetary_policy.md` |
 | `cargill_central_bank_policy` | Nguồn dài (1.206 KB / 5.623 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `choudhry_principles_of_banking` | Nguồn dài (2.664 KB / 14.955 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
@@ -376,3 +376,92 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[fiscal-imbalance-transmits-differently-to-the-private-sector-depending-on-how-it-is-financed]] — tài trợ bằng thuế so với bằng tín dụng ngân hàng trung ương tác động khác nhau tới khu vực tư và cán cân vãng lai
 - [[a-real-flow-of-funds-table-must-reconcile-gfs-nipa-and-bop-data-recorded-on-different-bases]] — dựng bảng thật từ Table 6.6 (Ba Lan) đòi hỏi tính lại chỉ tiêu để dung hoà cơ sở ghi nhận khác nhau giữa các hệ thống nguồn
 - [[financial-programming]] — gói chính sách định lượng, phối hợp; khung IMF dựa trên phân biệt tiền nguồn gốc trong nước/đối ngoại
+
+**Vận hành chính sách tiền tệ (Bindseil — Intro + Ch.1–2)**
+- [[separation-principle-of-monetary-policy]] — phân ly giữa monetary macroeconomics và monetary policy implementation trong thời bình; sụp đổ trong khủng hoảng
+- [[operational-target-of-monetary-policy]] — 4 điều kiện của mục tiêu vận hành; tại sao lãi suất ngắn hạn là lựa chọn chuẩn
+- [[monetary-policy-instruments-three-tools]] — hub 3 công cụ: open market ops, standing facilities, reserve requirements
+- [[central-bank-financial-accounts-model]] — phương pháp hệ thống tài khoản khép kín 4 khu vực để mô hình hoá monetary policy operations
+- [[relative-vs-absolute-central-bank-intermediation]] — khi nào bảng cân đối NHTW nở; phân biệt trung gian tương đối và tuyệt đối
+- [[collateral-constraint-on-central-bank-credit]] — haircut và eligibility giới hạn tổng tín dụng NHTW có thể cung cấp
+- [[autonomous-factors-of-central-bank-balance-sheet]] — các mục ngoài kiểm soát của vận hành: tiền giấy, tiền gửi chính phủ, dự trữ ngoại hối
+- [[liquidity-deficit-of-the-banking-system]] — original vs post-outright deficit; chỉ số leanness của NHTW
+
+**Vận hành chính sách tiền tệ (Bindseil — Ch.3)**
+- [[overnight-rate-is-the-natural-operational-target-of-monetary-policy]] — tại sao overnight là kỳ hạn tối ưu; Fisher equation; bẫy kỳ hạn dài
+- [[reserve-position-doctrine-rise-and-fall-at-the-fed]] — lịch sử 70 năm kiểm soát định lượng tại Fed (1920–1990); 6 giai đoạn; lý do thất bại
+
+**Vận hành chính sách tiền tệ (Bindseil — Ch.4)**
+- [[three-techniques-to-control-short-term-interest-rates]] — hub: 3 kỹ thuật cơ bản kiểm soát lãi suất ngắn hạn
+- [[one-directional-standing-facility-monetary-policy]] — structural deficit (Reichsbank) vs structural surplus (Fed post-2009)
+- [[interest-rate-corridor-symmetric-approach]] — symmetric corridor, full allotment; ECB/BoE trước và trong khủng hoảng
+
+**Vận hành chính sách tiền tệ (Bindseil — Ch.5)**
+- [[martingale-property-of-overnight-rates-and-reserve-averaging]] — tại sao overnight rate là martingale; timing OMO trong ngày; reserve averaging qua kỳ duy trì
+
+**Vận hành chính sách tiền tệ (Bindseil — Ch.6)**
+- [[standing-facilities-in-monetary-policy-operations]] — 3 loại standing facilities (discount, Lombard, deposit); tách biệt với ELA; bác bỏ real bills doctrine
+- [[optimal-width-of-the-interest-rate-corridor]] — đánh đổi ổn định lãi suất vs duy trì thanh khoản liên ngân hàng; mô hình Bindseil-Jablecki (2011b)
+- [[taralac-facility-target-rate-limited-access]] — công cụ đệm thanh khoản Taralac neo lãi suất tại target mà không cần OMO hàng ngày
+
+**Vận hành chính sách tiền tệ (Bindseil — Ch.7)**
+- [[outright-vs-credit-open-market-operations]] — mua đứt vs cho vay tái cấp vốn; danh mục SOMA của Fed vs Eurosystem; kiểm soát đường cong lợi suất
+- [[tender-procedures-for-credit-open-market-operations]] — đấu thầu fixed-rate vs variable-rate (English/Dutch); hiện tượng overbidding; ma trận tự động vs tuỳ ý
+- [[liquidity-absorbing-open-market-operations]] — xử lý thặng dư thanh khoản (ngoại hối EMEs vs QE); 4 công cụ hút dự trữ dư và phổ thanh khoản tài sản
+
+**Vận hành chính sách tiền tệ (Bindseil — Ch.8)**
+- [[functions-of-reserve-requirements-in-monetary-policy]] — 6 chức năng lịch sử và hiện đại; giải cấu trúc số nhân tiền tệ; đệm thanh khoản và thuế ngầm
+- [[reserve-requirement-system-specifications-and-averaging]] — quy chuẩn kỳ tính toán (contemporaneous vs lagged); cơ chế bình quân hoá; cải cách 2004 của ECB
+
+**Vận hành chính sách tiền tệ (Bindseil — Ch.9)**
+- [[central-bank-collateral-framework-design-and-risk-control]] — quy trình thiết kế 5 bước và điểm cắt tối ưu xã hội; 3 kỹ thuật kiểm soát rủi ro (hạn mức, định giá/ký quỹ, haircuts)
+- [[market-impact-of-collateral-framework-and-leverage-constraints]] — phí quyền và định giá tài sản; mô hình Ashcraft et al. (2011) coi haircut là công cụ CSTT vĩ mô; mô hình collateral gap
+- [[collateral-pool-segregation-and-double-adverse-selection]] — quy luật Gresham kép trong tín dụng NHTW; 4 giải pháp ứng phó; so sánh Fed (TAF), BoE (asset swap) và Eurosystem
+
+**Vận hành chính sách tiền tệ (Bindseil — Ch.10)**
+- [[optimal-monetary-policy-operations-frameworks-in-normal-times]] — hub: 8 tiêu chuẩn khuôn khổ tối ưu; 3 mô hình khả thi trong thời bình; đồng thuận thực tiễn và 2 tranh luận chưa ngã ngũ
+- [[comparative-central-bank-operational-frameworks-normal-times]] — khảo sát thực nghiệm 4 NHTW (Australia, BoE, ECB, Fed); sự tách biệt giữa kiểm soát lãi suất qua đêm và độ biến động lãi suất 3 tháng
+
+**Vận hành chính sách tiền tệ trong khủng hoảng (Bindseil — Ch.11)**
+- [[mechanics-of-liquidity-crises-and-feedback-loops]] — cơ chế vi mô khủng hoảng thanh khoản: lựa chọn đối nghịch Flannery, trò chơi tích trữ thanh khoản, vòng xoáy haircut VaR và bán tháo Cifuentes
+- [[bank-runs-investor-strikes-and-multiple-equilibria]] — đa cân bằng và rút vốn: mô hình Diamond-Dybvig 3 trạng thái, nghịch lý minh bạch thông tin, đình công đảo nợ bán buôn và khủng hoảng nợ công Eurozone
+- [[monetary-policy-transmission-breakdown-and-zero-lower-bound]] — đứt gãy truyền dẫn: bóc tách R = i + j + k, quy tắc Wicksell mở rộng, cái bẫy ZLB và sự sụp đổ của nguyên tắc phân tách với ma trận (I*, Q*)
+
+**Vận hành chính sách tiền tệ trong khủng hoảng (Bindseil — Ch.12)**
+- [[collateral-scarcity-and-effective-term-funding-costs]] — khan hiếm tài sản bảo đảm và chi phí tài trợ kỳ hạn 1 năm; công thức 3 trạng thái; phản ứng chính sách khi chạm ZLB
+- [[effective-corridor-asymmetry-and-stigma-in-overnight-rates]] — tính phi đối xứng hiệu dụng của hành lang lãi suất; cú sốc ngày 9/8/2007; 4 nguồn phi đối xứng và hội chứng kỳ thị (stigma)
+- [[asset-encumbrance-and-subordination-of-unsecured-creditors]] — vấn đề ràng buộc tài sản thế chấp; thứ cấp hóa chủ nợ không bảo đảm; công thức LGD# và phần bù rủi ro tại ngoại vi Eurozone
+- [[securities-lending-programmes-and-central-bank-collateral-swaps]] — cơ chế hoán đổi collateral và cho vay chứng khoán; giữ trung hòa lượng dự trữ; Fed TSLF và BoE SLS/DWF
+
+**Vận hành chính sách tiền tệ trong khủng hoảng (Bindseil — Ch.13)**
+- [[narrowing-interest-rate-corridor-and-absolute-central-bank-intermediation]] — thu hẹp hành lang lãi suất; mô hình Bindseil & Jablecki 3 phân đoạn; vai trò công cụ CSTT phi quy ước hạ chi phí trung gian
+- [[fixed-rate-full-allotment-and-maturity-lengthening-in-crisis]] — chuyển đổi credit OMOs: cơ chế phân bổ toàn bộ (FRFA), kéo dài kỳ hạn tới 3 năm (LTROs), và các chương trình tài trợ gắn mục tiêu tín dụng (FLS, LSP)
+- [[seven-channels-of-central-bank-asset-purchase-programmes]] — 7 kênh tác động của mua đứt tài sản (QE/LSAP/Credit Easing); so sánh Bernanke vs BoJ; hiệu ứng nén lợi suất thực nghiệm
+- [[dangers-of-ultra-accommodating-monetary-policy-and-the-wicksellian-counter-defense]] — tranh luận chính sách: 4 hiểm họa theo BIS (doanh nghiệp xác sống, nén biên lợi nhuận, tìm kiếm lợi suất) vs phản biện Wicksell; 2 hình thái bảng cân đối khủng hoảng
+
+**Vận hành chính sách tiền tệ trong khủng hoảng (Bindseil — Ch.14)**
+- [[lender-of-last-resort-foundations-and-bagehot-principles]] — nền tảng lý thuyết LOLR: di sản Harman và Bagehot (nguyên lý quán tính và tính nội sinh của rủi ro); 6 cơ sở kinh tế học hiện đại
+- [[central-bank-inertia-and-active-crisis-lolr-measures]] — kích hoạt LOLR tự động qua quán tính; rủi ro vỡ nợ kép tăng 1000 lần; 6 biện pháp can thiệp chủ động vượt ngoài quán tính
+- [[emergency-liquidity-assistance-framework-and-constructive-ambiguity]] — hỗ trợ thanh khoản khẩn cấp (ELA): 7 khác biệt so với tín dụng chuẩn; mô hình HKMA và sự mập mờ mang tính xây dựng
+
+**Vận hành chính sách tiền tệ trong khủng hoảng (Bindseil — Ch.15)**
+- [[central-bank-risk-taking-and-liquidity-support-trade-off]] — đánh đổi giữa rủi ro tài chính và hỗ trợ thanh khoản; 4 trường phái quan điểm; mô hình đường biên hiệu quả và hàm phúc lợi W(R, L)
+- [[endogenous-risk-and-upward-sloping-haircut-loss-curve]] — rủi ro nội sinh và đường cong tổn thất dốc lên theo haircut; tại sao hạ haircut từ 60% xuống 50% giúp triệt tiêu rủi ro vỡ nợ; minh chứng cho kế hoạch dũng cảm của Bagehot
+- [[bindseil-jablecki-risk-endogeneity-and-two-errors-model]] — mô hình động 2 kỳ Bindseil & Jablecki: đánh đổi giữa sai lầm loại 1 (thanh lý non dự án tốt) và sai lầm loại 2 (nuôi dưỡng ngân hàng xác sống); tác động của độ nhiễu và chi phí vỡ nợ
+
+**Vận hành chính sách tiền tệ trong khủng hoảng (Bindseil — Ch.16)**
+- [[lender-of-last-resort-moral-hazard-and-liquidity-externalities]] — rủi ro đạo đức của LOLR và 2 ngoại tác hệ thống (bán tháo tài sản và liên kết mạng lưới); giới hạn của cứu trợ thanh khoản thuần túy
+- [[liquidity-regulation-and-central-bank-operations-arbitrage]] — quy chuẩn thanh khoản Basel III (LCR); chỉ số khoảng cách tới mất thanh khoản (DTI); kinh doanh chênh lệch pháp lý qua trung gian NHTW tuyệt đối và tương đối
+- [[surcharges-for-over-proportional-reliance-on-the-central-bank]] — cơ chế phụ thu lãi suất theo mức độ phụ thuộc quá tỷ lệ; mô hình Bindseil với vùng đệm miễn trừ; 2 kịch bản định chuẩn thời bình vs khủng hoảng
+
+**Vận hành chính sách tiền tệ trong khủng hoảng (Bindseil — Ch.17)**
+- [[international-lender-of-last-resort-and-dual-liquidity-crises]] — người cho vay cuối cùng quốc tế (ILOLR); khủng hoảng tỷ giá cố định, cạn kiệt dự trữ và mô hình đình công nhà đầu tư; vai trò trung gian có điều kiện của IMF
+- [[central-bank-fx-swap-lines-and-cross-border-liquidity]] — mạng lưới hoán đổi ngoại hối liên NHTW (FX swap lines); lợi thế thể chế của NHTW sở tại (Bernanke 2008); bài học định giá hạ thấp để ngăn ngừa kỳ thị (stigma)
+- [[target2-balances-and-balance-of-payments-mechanics]] — số dư TARGET2 trong Eurosystem; đồng nhất thức hạch toán giữa thâm hụt vãng lai (CUR) và tháo chạy vốn (CAP); vai trò chốt chặn thanh khoản tự động của liên minh tiền tệ
+
+**Vận hành chính sách tiền tệ trong khủng hoảng (Bindseil — Ch.18)**
+- [[optimal-monetary-policy-operations-frameworks-in-crisis-times]] — hub: tổng hợp khuôn khổ vận hành tối ưu trong khủng hoảng; 11 bài học và nguyên tắc chuẩn tắc từ thực tiễn; sự chuyển biến từ kỹ thuật sang nghệ thuật
+- [[exit-strategies-from-non-conventional-monetary-policy]] — chiến lược thoái lui khỏi các chính sách phi quy ước; vấn đề ý chí chính trị vs năng lực kỹ thuật; nguyên tắc chiếc kim duy nhất trên la bàn
+
+
+
