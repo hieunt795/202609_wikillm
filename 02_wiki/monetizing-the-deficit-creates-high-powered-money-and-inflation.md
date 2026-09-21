@@ -2,13 +2,16 @@
 title: monetizing-the-deficit-creates-high-powered-money-and-inflation
 type: concept
 tags: [fiscal, financing, inflation, monetary-policy]
-sources: [imf_macro_accounting]
-status: stable
-last_updated: 2026-09-15
+sources: [imf_macro_accounting, cargill_central_bank_policy]
+status: draft
+last_updated: 2026-09-21
 ---
 
 Chính phủ vay [[central-bank|ngân hàng trung ương]] tương đương với tạo ra [[reserve-money|tiền cơ sở]]; khi tiền được tạo ra nhanh hơn cầu tiền ở mặt bằng giá hiện tại, số dư tiền mặt thừa xuất hiện và cuối cùng đẩy mặt bằng giá chung lên (imf_macro_accounting, Ch.3, Financing the Deficit, d.2145).
 
+Mở rộng dưới lăng kính của [[loanable-funds-framework-determines-equilibrium-interest-rate-and-bond-price|khung quỹ cho vay]], Cargill chỉ ra rằng việc tiền tệ hóa nợ công dịch chuyển đường cung quỹ sang phải để triệt tiêu đà tăng lãi suất do thâm hụt tài khóa gây ra, nhưng chỉ duy trì được trạng thái cân bằng tạm thời trong ngắn hạn (cargill_central_bank_policy, Ch.5, Policy Implications: Government versus the Central Bank, d.1757). Về lâu dài, lượng tiền tệ bơm ra quá mức sẽ thúc đẩy lạm phát kỳ vọng theo [[fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-inflation|hiệu ứng Fisher]], đẩy lãi suất danh nghĩa lên cao hơn nữa và làm nảy sinh [[debt-monetization-creates-conflict-between-fiscal-deficits-and-central-bank-independence|xung đột thể chế sâu sắc với tính độc lập của ngân hàng trung ương]].
+
 Ở nhiều nền kinh tế chuyển đổi, phần lớn thâm hụt được tiền tệ hoá và vì thế là nguồn chính của lạm phát (imf_macro_accounting, Ch.3, d.2145) — đúng dạng lạm phát do chính sách ở [[types-of-inflation]]. Ở nước đô la hoá cao, hệ quả lạm phát của tiền tệ hoá thâm hụt còn bị khuếch đại vì [[currency-substitution-undermines-monetary-control|dịch chuyển khỏi nội tệ làm giảm cầu thực với chính đồng tiền đang bị tạo thêm]]. Khả năng chính phủ nắm nguồn lực thực bằng cách in tiền gọi là [[seigniorage]], gắn chặt với thuế lạm phát; hai khái niệm bằng nhau khi công chúng giữ nguyên cầu về số dư tiền thực (imf_macro_accounting, Ch.3, d.2145). Nguồn thu này có trần, như ở [[inflation-tax-revenue-peaks-because-high-inflation-shrinks-its-base]], và nghiên cứu kinh điển về động học tiền tệ trong [[hyperinflation|siêu lạm phát]] của Cagan được nguồn dẫn làm nền cho phần này (imf_macro_accounting, Ch.3, chú thích 17, d.2161).
 
 Khoản vay ngân hàng thương mại mà ngân hàng trung ương tái cấp vốn cũng rơi vào nhánh này, không thể coi là tài trợ phi tiền tệ (imf_macro_accounting, Ch.3, d.2209; chú thích 19, d.2234). Điểm chung với [[a-one-time-price-shock-becomes-inflation-only-if-monetary-policy-accommodates-it]] là biến quyết định nằm ở việc tiền có được nới ra hay không — ở đây là để tài trợ ngân sách.
+

@@ -491,6 +491,32 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Toàn bộ wiki đạt 347 trang, 0 trang lỗi, 0 trang mồ côi
 - Cập nhật index.md và state file bindseil_monetary_policy.md
 
+## [2026-09-21:20-18-50] ingest | cargill_central_bank_policy Ch.1 — The Financial and Monetary Regime
+- 9 trang mới: financial-and-monetary-regime, real-and-financial-sectors-interact-..., potential-gdp-..., gdp-gap-..., natural-rate-of-unemployment-..., u6-unemployment-rate-..., okuns-law-..., a-well-functioning-financial-..., government-policy-failure-...; cập nhật liên kết 6 trang cũ
+- Khởi dựng 03_state/cargill_central_bank_policy.md (17 chương); cập nhật _sources_manifest.md và index.md §Sources; wiki đạt 356 trang, 0 lỗi, 0 mồ côi
+- Còn lại: Ch.2–17
 
+## [2026-09-21:20-26-30] ingest | cargill_central_bank_policy Ch.2 — Basic Concepts Regarding Money
+- 8 trang mới: money-is-a-market-innovation-..., money-is-the-only-one-hundred-percent-liquid-asset, credit-cards-are-liabilities-..., consumer-price-index-has-four-sources-of-upward-bias, cpi-upward-bias-expands-government-deficits-..., monetary-standards-evolved-..., modern-monetary-system-functions-as-an-inverted-pyramid, money-is-non-neutral-...
+- Cập nhật 5 trang: money-serves-as-a-medium-..., the-quantity-theory-..., cpi, narrow-money-m1, quasi-money; cập nhật state file và index.md; wiki đạt 364 trang, 0 lỗi, 0 mồ côi; còn lại Ch.3–17
 
+## [2026-09-21:20-32-59] ingest | cargill_central_bank_policy Ch.3 — The Financial System and Flow of Funds
+- 6 trang mới: flow-of-funds-fundamental-equation-..., economic-sectors-are-classified-..., financial-system-transfers-funds-..., direct-financial-markets-fail-small-participants-..., financial-markets-are-divided-into-money-markets-..., financial-institutions-operate-as-balanced-budget-...
+- Cập nhật 4 trang: deposit-money-banks, nonbank-financial-institutions, the-flow-of-funds-table-is-a-zero-sum-..., financial-and-monetary-regime; cập nhật state file và index.md; wiki đạt 370 trang, 0 lỗi, 0 mồ côi; còn lại Ch.4–17
+
+## [2026-09-21:20-41-30] ingest | cargill_central_bank_policy Ch.4 — Interest Rates in the Financial System
+- 6 trang mới: interest-rate-connects-the-present-..., interest-rates-in-indirect-finance-..., interest-rate-ceilings-distort-credit-..., yield-to-maturity-equates-present-value-..., discount-yield-understates-the-true-return-..., interest-rate-risk-increases-with-maturity-...
+- Cập nhật 4 trang: real-and-financial-sectors-interact-..., financial-system-transfers-funds-..., government-policy-failure-..., financial-markets-are-divided-into-money-markets-...; cập nhật state file và index.md; wiki đạt 376 trang, 0 lỗi, 0 mồ côi; còn lại Ch.5–17
+
+## [2026-09-21:20-47-47] ingest | cargill_central_bank_policy Ch.5 — The Level of Interest Rates
+- 7 trang mới: loanable-funds-framework-..., interest-rates-move-procyclically-..., debt-monetization-creates-conflict-..., fisher-effect-shifts-nominal-..., expected-inflation-is-measured-..., negative-interest-rates-distort-..., monetary-expansion-lowers-interest-rates-...
+- Cập nhật 5 trang: real-interest-rate, crowding-out, monetizing-the-deficit-..., real-and-financial-sectors-interact-..., monetary-policy-transmission-breakdown-...; cập nhật state file và index.md; wiki đạt 383 trang, 0 lỗi, 0 mồ côi; còn lại Ch.6–17
+
+## [2026-09-21:20-54-13] ingest | cargill_central_bank_policy Ch.6 — The Structure of Interest Rates
+- 8 trang mới: interest-rate-structure-is-determined-..., default-risk-premium-widens-..., liquidity-premium-compensates-..., tax-exemption-lowers-municipal-..., pure-expectations-hypothesis-..., liquidity-premium-hypothesis-..., segmented-markets-hypothesis-..., yield-curve-functions-as-a-rorschach-...
+- Cập nhật 5 trang: loanable-funds-framework-..., interest-rate-risk-increases-..., financial-markets-are-divided-into-money-markets-..., fisher-effect-shifts-nominal-..., interest-rates-move-procyclically-...; cập nhật state file và index.md; wiki đạt 391 trang, 0 lỗi, 0 mồ côi; còn lại Ch.7–17
+
+## [2026-09-21:21-04-47] ingest | cargill_central_bank_policy Ch.7–9 — International Dimensions, Role of Government, Regulation & Supervision
+- 13 trang mới: statement-of-international-transactions-..., exchange-rate-determination-balances-..., real-interest-rate-increases-appreciate-..., internal-external-balance-links-..., greshams-law-and-uniform-coinage-..., government-safety-net-solves-..., government-credit-allocation-subsidies-..., public-choice-theory-explains-..., supervision-differs-from-regulation-..., prompt-corrective-action-establishes-..., risk-based-capital-requirements-aim-..., supervisory-stress-testing-provides-..., macroprudential-regulation-bridges-...
+- Cập nhật 5 trang: central-bank, government-policy-failure-..., financial-and-monetary-regime, lender-of-last-resort-foundations-..., exchange-rate-regimes; cập nhật state file và index.md; wiki đạt 404 trang, 0 lỗi, 0 mồ côi; còn lại Ch.10–17
 

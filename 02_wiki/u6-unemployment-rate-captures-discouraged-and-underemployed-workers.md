@@ -1,0 +1,10 @@
+---
+title: u6-unemployment-rate-captures-discouraged-and-underemployed-workers
+type: concept
+tags: [labour, unemployment, measurement]
+sources: [cargill_central_bank_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+Tỷ lệ thất nghiệp U6 là chỉ báo thất nghiệp mở rộng đo lường toàn diện tình trạng thiếu hụt việc làm, bao gồm toàn bộ người thất nghiệp theo chuẩn thông thường, người lao động nản chí, người lao động cận biên và người làm việc bán thời gian vì lý do kinh tế (cargill_central_bank_policy, Ch.1, Measuring Economic Performance, d.532). Thước đo dân sự chuẩn (ký hiệu U3 trong thống kê lao động, hay $UR = \frac{NE}{LF}$) gặp phải khiếm khuyết cơ học trong suy thoái: người lao động nản chí do không tìm được việc đã ngừng tìm kiếm, khiến họ bị loại khỏi cả số người thất nghiệp ($NE$) lẫn quy mô lực lượng lao động ($LF$), từ đó kéo giảm tỷ lệ thất nghiệp tính toán một cách giả tạo theo phân tích tại [[discouraged-workers-make-the-unemployment-rate-understate-joblessness]] (cargill_central_bank_policy, Ch.1, cùng mục, d.520). Ngoài ra, thước đo chuẩn bỏ sót hai nhóm lao động quan trọng khác: lao động cận biên (marginal workers — nhóm từng tìm việc trong 12 tháng gần nhất nhưng không tìm việc trong 4 tuần qua) và lao động bán thời gian không tự nguyện (những người làm việc dưới ngưỡng 30 giờ/tuần nhưng khao khát làm việc toàn thời gian) (cargill_central_bank_policy, Ch.1, cùng mục, d.530). Thước đo U6 tích hợp cả ba phân nhóm này vào mẫu số lực lượng lao động mở rộng, cung cấp bức tranh chân thực về mức độ tổn thương của nguồn nhân lực; số liệu thực nghiệm Hoa Kỳ giai đoạn 1994–2016 cho thấy U6 thường xuyên vượt U3 trung bình 4,7 điểm phần trăm (cargill_central_bank_policy, Ch.1, cùng mục, d.532). Việc kết hợp U3 và U6 là bước đi cần thiết để xác định chính xác khoảng cách việc làm thực tế so với [[natural-rate-of-unemployment-equals-frictional-plus-structural-unemployment|tỷ lệ thất nghiệp tự nhiên]], qua đó đo lường trọn vẹn tổn thất nhân dụng theo [[okuns-law-relates-the-gdp-gap-to-the-unemployment-gap|định luật Okun]].

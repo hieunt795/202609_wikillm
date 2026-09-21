@@ -23,7 +23,7 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `Modern Money Mechanics` | `Modern Money Mechanics/` | Nguồn ngắn | — |
 | `capitalism_and_freedom` | `Capitalism and Freedom/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 | `bindseil_monetary_policy` | `bindseil_monetary_policy/` | Nguồn dài | `03_state/bindseil_monetary_policy.md` |
-| `cargill_central_bank_policy` | `cargill_central_bank_policy/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
+| `cargill_central_bank_policy` | `cargill_central_bank_policy/` | Nguồn dài | `03_state/cargill_central_bank_policy.md` |
 | `choudhry_principles_of_banking` | `choudhry_banking_fixed_income/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 | `choudhry_analysing_yield_curve` | `choudhry_banking_fixed_income/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 | `choudhry_fixed_income_markets` | `choudhry_banking_fixed_income/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
@@ -107,7 +107,7 @@ File `.md` do docling chuyển đổi từ PDF (frontmatter `extractor: docling`
 | Xuất bản | Cambridge University Press, 2017 — © Thomas F. Cargill 2017 |
 | Phân loại | Nguồn dài (`00_schema.md` §10) — 1.178 KB / 5.623 dòng. Sách giáo khoa |
 | Nguồn file | PDF kèm theo; `.md` chuyển đổi ngoài dự án bằng docling |
-| Tiến độ ingest | Chưa ingest — state file dựng ở lượt ingest đầu (§10) |
+| Tiến độ ingest | Đang ingest dở — `03_state/cargill_central_bank_policy.md` |
 
 | Đường dẫn | Bytes | Dòng | SHA-256 |
 |---|---|---|---|

@@ -1,0 +1,16 @@
+---
+title: direct-financial-markets-fail-small-participants-due-to-risk-return-tradeoff-asymmetry
+type: concept
+tags: [financial-markets, market-failure, risk-return, financial-intermediation]
+sources: [cargill_central_bank_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+Mặc dù thị trường tài chính trực tiếp có tính cạnh tranh cao và đóng vai trò phát tín hiệu giá, chúng thất bại có tính cơ cấu trong việc đáp ứng nhu cầu vốn của các chủ thể kinh tế quy mô nhỏ (cargill_central_bank_policy, Ch.3, Limitations of Direct Financial Markets, d.1257–1278). Sự thất bại này bắt nguồn từ sáu rào cản ma sát: sự cần thiết phải trùng hợp về mệnh giá lớn, sự trùng hợp về kỳ hạn cố định, yêu cầu hiểu biết kỹ thuật phức tạp, sự bất cân xứng thông tin trong đánh giá tín nhiệm, chi phí công bố thông tin tài chính quá lớn đối với người vay nhỏ, và đặc biệt là việc người cho vay nhỏ không thể phân tán rủi ro do quy mô vốn hữu hạn (cargill_central_bank_policy, Ch.3, d.1259–1261).
+
+Hệ quả của các rào cản này được mô hình hóa qua sự bất đối xứng giữa các đường cong đánh đổi rủi ro - lợi suất (risk-return tradeoff curves) (cargill_central_bank_policy, Ch.3, Figure 3.1, d.1262–1274). Đường cong đánh đổi của một người cho vay lớn ($RR_1$) thoải hơn vì chủ thể này có đủ nguồn vốn để đa dạng hóa danh mục đầu tư nhằm triệt tiêu rủi ro phi hệ thống và đủ quy mô để hấp thụ chi phí cố định trong việc thẩm định và giám sát tín dụng. Ngược lại, người cho vay nhỏ do bị buộc phải "đặt tất cả trứng vào một giỏ" và thiếu năng lực theo dõi con nợ nên có mức độ ngại rủi ro thực tế cao hơn rất nhiều; đường đánh đổi rủi ro - lợi suất của họ ($RR_2$) nằm sát trục tung hơn và có độ dốc cực lớn, hàm ý rằng họ đòi hỏi một mức bù lợi suất kỳ vọng tăng vọt cho bất kỳ sự gia tăng rủi ro nhỏ nào.
+
+Độ dốc quá lớn của đường $RR_2$ tạo ra sự bất khả dung hòa giữa mức sinh lời đòi hỏi của người cho vay nhỏ và khả năng chi trả của người đi vay (cargill_central_bank_policy, Ch.3, d.1275–1278). Giả sử một doanh nghiệp vừa và nhỏ cần vay 50.000 USD trong 5 năm để mở rộng nhà xưởng với tỷ suất sinh lời nội bộ (internal rate of return - IRR) ước tính là 10%—nghĩa là dự án chỉ có lãi nếu chi phí vay vốn thấp hơn 10%. Tuy nhiên, một người cho vay cá nhân nhỏ khi đối mặt với rủi ro vỡ nợ của một doanh nghiệp đơn lẻ sẽ đòi hỏi tỷ suất sinh lời tối thiểu lên tới 20% theo đường $RR_2$. Khoảng cách 10 điểm phần trăm này khiến giao dịch trực tiếp hoàn toàn bị triệt tiêu, phản ánh một dạng [[government-policy-failure-is-as-critical-as-market-failure-in-financial-crises|thất bại thị trường]] kinh điển trong việc phân bổ nguồn lực.
+
+Bế tắc này giải thích lý do vì sao tài chính trực tiếp chỉ chiếm thiểu số luồng vốn và khẳng định tính tất yếu của [[financial-system-transfers-funds-through-direct-and-indirect-channels|kênh tài chính gián tiếp]]: các trung gian tài chính như [[deposit-money-banks|các tổ chức nhận tiền gửi]] đứng ra gom các khoản tiết kiệm nhỏ lẻ để tạo lập danh mục cho vay phân tán rộng khắp, hạ thấp chi phí thẩm định trên mỗi đơn vị vốn và triệt tiêu rủi ro vỡ nợ cho người gửi tiền nhờ mạng lưới bảo hiểm tiền gửi, từ đó cung ứng vốn cho người đi vay với mức lãi suất thấp hơn nhiều so với ngưỡng đòi hỏi của các chủ thể nhỏ trong thị trường trực tiếp.

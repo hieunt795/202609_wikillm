@@ -11,8 +11,8 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `imf_macro_accounting` | Nguồn dài (849 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1; Ch.2–6 xong (chi tiết theo chunk ở state file) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (85 KB / 721 dòng) | **Chưa ingest** | Toàn bộ, ingest trọn 1 lượt | — |
 | `capitalism_and_freedom` | Nguồn dài (565 KB / 2.055 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Đang ingest dở** | Introduction + Ch.1–2 xong; Ch.3–18 còn lại (chi tiết ở state file) | `03_state/bindseil_monetary_policy.md` |
-| `cargill_central_bank_policy` | Nguồn dài (1.206 KB / 5.623 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
+| `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–18 xong (chi tiết ở state file) | `03_state/bindseil_monetary_policy.md` |
+| `cargill_central_bank_policy` | Nguồn dài (1.206 KB / 5.623 dòng) | **Đang ingest dở** | Ch.1–9 xong; Ch.10–17 còn lại (chi tiết ở state file) | `03_state/cargill_central_bank_policy.md` |
 | `choudhry_principles_of_banking` | Nguồn dài (2.664 KB / 14.955 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `choudhry_fixed_income_markets` | Nguồn dài (1.941 KB / 15.414 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
@@ -50,6 +50,9 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 
 **Giá và sản lượng thực**
 - [[real-gdp]] — sản lượng theo giá cố định
+- [[potential-gdp-measures-productive-capacity-at-full-employment]] — sản lượng tối đa khi toàn dụng lao động với công nghệ và cấu trúc hiện có
+- [[gdp-gap-measures-deviation-of-actual-output-from-potential]] — (Y − Y*)/Y*, chỉ báo vị thế chu kỳ kinh doanh
+- [[okuns-law-relates-the-gdp-gap-to-the-unemployment-gap]] — liên kết khoảng cách GDP với khoảng cách thất nghiệp
 - [[gdp-deflator]] — chỉ số giá của toàn bộ sản lượng
 - [[cpi]] — chỉ số giá rổ hàng tiêu dùng, dạng Laspeyres
 - [[cpi-and-the-gdp-deflator-differ-in-coverage-import-prices-and-weights]] — ba khác biệt giữa CPI và deflator
@@ -164,8 +167,10 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 
 **Lao động và tiền lương**
 - [[unemployment-rate]] — cách đo và các sai lệch của nó
+- [[u6-unemployment-rate-captures-discouraged-and-underemployed-workers]] — thước đo thất nghiệp mở rộng tích hợp lao động nản chí và bán thời gian bắt buộc
 - [[discouraged-workers-make-the-unemployment-rate-understate-joblessness]] — người bỏ tìm việc rơi khỏi cả tử lẫn mẫu
 - [[full-employment-does-not-mean-zero-unemployment]] — toàn dụng là mức việc làm tối ưu
+- [[natural-rate-of-unemployment-equals-frictional-plus-structural-unemployment]] — mức thất nghiệp tự nhiên bằng cọ xát cộng cơ cấu khi GDP gap = 0
 - [[types-of-unemployment]] — thời vụ, ma sát, chu kỳ, cơ cấu, trá hình
 - [[nairu]] — mức thất nghiệp tương thích với lạm phát ổn định
 - [[real-wages]] — sức mua của lương, phân biệt với thu nhập thực
@@ -463,5 +468,73 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[optimal-monetary-policy-operations-frameworks-in-crisis-times]] — hub: tổng hợp khuôn khổ vận hành tối ưu trong khủng hoảng; 11 bài học và nguyên tắc chuẩn tắc từ thực tiễn; sự chuyển biến từ kỹ thuật sang nghệ thuật
 - [[exit-strategies-from-non-conventional-monetary-policy]] — chiến lược thoái lui khỏi các chính sách phi quy ước; vấn đề ý chí chính trị vs năng lực kỹ thuật; nguyên tắc chiếc kim duy nhất trên la bàn
 
+**Chế độ tài chính và chính sách tiền tệ (Cargill — Ch.1)**
+- [[financial-and-monetary-regime]] — khung 3 trụ cột (hệ thống tài chính, giám sát chính phủ, NHTW) với 5 chức năng bất biến
+- [[real-and-financial-sectors-interact-through-loanable-funds-and-interest-rates]] — tương tác phản hồi hai chiều qua quỹ cho vay và lãi suất
+- [[a-well-functioning-financial-and-monetary-regime-is-necessary-but-not-sufficient-for-stability]] — điều kiện cần nhưng không đủ cho tăng trưởng và ổn định
+- [[government-policy-failure-is-as-critical-as-market-failure-in-financial-crises]] — sai lầm chính sách của chính phủ và NHTW là căn nguyên ngang bằng hoặc vượt trội thất bại thị trường
 
+**Khái niệm cơ bản về tiền tệ (Cargill — Ch.2)**
+- [[money-is-a-market-innovation-to-overcome-barter-inefficiencies]] — tiền tệ là sáng kiến thị trường phi tập trung giải quyết sự bất tiện của hàng-đổi-hàng
+- [[money-is-the-only-one-hundred-percent-liquid-asset]] — tiền là tài sản duy nhất có thanh khoản 100%; vị trí các tài sản trên phổ thanh khoản
+- [[credit-cards-are-liabilities-and-not-part-of-the-money-supply]] — thẻ tín dụng là nghĩa vụ nợ ngắn hạn, không phải tiền tệ hay một phần của cung tiền
+- [[consumer-price-index-has-four-sources-of-upward-bias]] — 4 nguồn thiên lệch hệ thống của CPI thổi phồng lạm phát 1,1%/năm theo Ủy ban Boskin
+- [[cpi-upward-bias-expands-government-deficits-through-automatic-indexation]] — tác động tài khóa kép của thiên lệch CPI làm phình to thâm hụt ngân sách qua COLA và thuế
+- [[monetary-standards-evolved-from-commodity-money-to-fiat-credit-money]] — 3 giai đoạn tiến hóa chuẩn tiền tệ từ hàng hóa, quy đổi kim loại đến tiền pháp định
+- [[modern-monetary-system-functions-as-an-inverted-pyramid]] — hệ thống tiền tệ vận hành như kim tự tháp ngược dựa trên niềm tin với chân đế hẹp là tiền cơ sở
+- [[money-is-non-neutral-in-the-short-run-but-neutral-in-the-long-run]] — tiền tệ phi trung lập trong ngắn hạn do giá cứng nhắc nhưng trung lập hoàn toàn trong dài hạn
+
+**Hệ thống tài chính và luồng vốn (Cargill — Ch.3)**
+- [[flow-of-funds-fundamental-equation-links-real-and-financial-decisions]] — phương trình cơ bản (S - I) = (L - B) gắn kết quyết định kinh tế thực và tài chính
+- [[economic-sectors-are-classified-into-surplus-deficit-and-balanced-units]] — 3 lăng kính phân loại khu vực thành đơn vị thặng dư, thâm hụt và cân bằng
+- [[financial-system-transfers-funds-through-direct-and-indirect-channels]] — 2 kênh tài trợ: tài chính trực tiếp không bảng cân đối duy trì vs tài chính gián tiếp qua định chế
+- [[direct-financial-markets-fail-small-participants-due-to-risk-return-tradeoff-asymmetry]] — thị trường trực tiếp thất bại với chủ thể nhỏ do bất đối xứng đường cong RR2 vs RR1
+- [[financial-markets-are-divided-into-money-markets-and-capital-markets-by-maturity]] — thị trường tiền tệ (<=1 năm) vs thị trường vốn (>1 năm); công cụ và thanh khoản
+- [[financial-institutions-operate-as-balanced-budget-entities-in-the-flow-of-funds]] — định chế tài chính là thực thể ngân sách cân bằng (S ~ I, B ~ L), đóng vai trò ống dẫn vốn
+
+**Lãi suất trong hệ thống tài chính (Cargill — Ch.4)**
+- [[interest-rate-connects-the-present-to-the-future-through-time-value-of-money]] — lãi suất là cơ chế kết nối hiện tại và tương lai thông qua giá trị thời gian của tiền; sự phân biệt giữa lãi suất danh nghĩa và thực
+- [[interest-rates-in-indirect-finance-are-administered-with-a-lag-behind-market-rates]] — lãi suất ấn định của ngân hàng phản ứng có độ trễ trước biến động thị trường mở do chi phí giao dịch, hợp đồng ngầm và quy định
+- [[interest-rate-ceilings-distort-credit-allocation-and-induce-disintermediation]] — trần lãi suất (Quy định Q) gây hiện tượng phi trung gian hóa tài chính (disintermediation) và phân bổ tín dụng phi hiệu quả
+- [[yield-to-maturity-equates-present-value-of-cash-flows-to-asset-price]] — lợi suất đáo hạn (YTM) là chuẩn mực đo lường chiết khấu dòng tiền chuẩn xác nhất theo phương pháp nội suy
+- [[discount-yield-understates-the-true-return-on-zero-coupon-instruments]] — lợi suất chiết khấu đánh giá thấp tỷ suất sinh lời thực tế của công cụ chiết khấu do mẫu số mệnh giá và quy ước 360 ngày
+- [[interest-rate-risk-increases-with-maturity-and-separates-total-return-from-yield]] — rủi ro lãi suất gia tăng theo kỳ hạn và tách biệt tỷ suất sinh lời tổng thể khỏi lợi suất đáo hạn danh nghĩa
+
+**Mặt bằng lãi suất (Cargill — Ch.5)**
+- [[loanable-funds-framework-determines-equilibrium-interest-rate-and-bond-price]] — khung quỹ cho vay xác định lãi suất cân bằng và giá trái phiếu; ưu thế thể chế so với ưa thích thanh khoản
+- [[interest-rates-move-procyclically-due-to-asymmetric-business-cycle-shifts-in-loanable-funds]] — lãi suất biến động đồng chu kỳ do dịch chuyển bất đối xứng của cầu quỹ lấn át cung quỹ trong mở rộng kinh tế
+- [[debt-monetization-creates-conflict-between-fiscal-deficits-and-central-bank-independence]] — thâm hụt tài khóa gây chèn lấn và áp lực tiền tệ hóa nợ công; cơ sở đòi hỏi tính độc lập của ngân hàng trung ương
+- [[fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-inflation]] — hiệu ứng Fisher: lạm phát kỳ vọng dịch chuyển cung cầu quỹ làm lãi suất danh nghĩa điều chỉnh tỷ lệ 1-1 với lạm phát kỳ vọng
+- [[expected-inflation-is-measured-through-surveys-econometric-models-and-tips-spreads]] — ba phương pháp đo lường lạm phát kỳ vọng: khảo sát kỳ vọng (Livingston), mô hình kinh tế lượng và chênh lệch TIPS
+- [[negative-interest-rates-distort-financial-intermediation-and-test-the-zero-lower-bound]] — lãi suất âm phá vỡ giả định chặn dưới ZLB, bóp méo trung gian tài chính và cho thấy giới hạn của chính sách tiền tệ
+- [[monetary-expansion-lowers-interest-rates-via-liquidity-effect-before-income-and-fisher-effects-raise-them]] — động học 3 pha của tăng cung tiền (thanh khoản -> thu nhập -> kỳ vọng giá); lãi suất danh nghĩa là chỉ báo đánh lừa về lập trường tiền tệ
+
+**Cấu trúc lãi suất và đường cong lợi suất (Cargill — Ch.6)**
+- [[interest-rate-structure-is-determined-by-default-risk-liquidity-taxes-and-maturity]] — khung 4 yếu tố xác định cấu trúc lãi suất, chuẩn mực kho bạc và phương trình Fisher mở rộng
+- [[default-risk-premium-widens-during-recessions-and-narrows-during-expansions]] — phần bù rủi ro vỡ nợ đo lường qua credit spread và quy luật vận động ngược chu kỳ
+- [[liquidity-premium-compensates-for-secondary-market-depth-and-transaction-costs]] — phần bù thanh khoản bù đắp độ sâu thị trường thứ cấp và chi phí giao dịch; sự hòa trộn với rủi ro vỡ nợ
+- [[tax-exemption-lowers-municipal-bond-yields-and-reveals-implicit-marginal-tax-rates]] — miễn thuế trái phiếu chính quyền địa phương tạo trợ cấp ngầm và phản ánh thuế suất biên ngầm qua arbitrage
+- [[pure-expectations-hypothesis-equates-long-term-rates-to-the-average-of-expected-short-rates]] — giả thuyết kỳ vọng thuần túy: lãi suất dài hạn bằng trung bình cộng không thiên lệch của lãi suất ngắn hạn kỳ vọng
+- [[liquidity-premium-hypothesis-explains-the-prevalence-of-upward-sloping-yield-curves]] — giả thuyết phần bù thanh khoản gia tăng theo kỳ hạn giải thích toàn diện tính đồng biến và ưu thế áp đảo của đường cong dốc lên
+- [[segmented-markets-hypothesis-views-maturities-as-disconnected-institutional-compartments]] — giả thuyết thị trường phân khúc và môi trường ưu tiên: định giá cục bộ theo kỳ hạn và hạn chế thể chế
+- [[yield-curve-functions-as-a-rorschach-test-of-inflation-and-business-cycle-expectations]] — đường cong lợi suất là chỉ báo sớm về lạm phát và chu kỳ; đường cong đảo ngược cảnh báo suy thoái; ẩn dụ bài test vết mực Rorschach
+
+**Kích thước quốc tế của hệ thống tài chính (Cargill — Ch.7)**
+- [[statement-of-international-transactions-mirrors-current-and-financial-accounts]] — bảng giao dịch quốc tế phản chiếu giữa CA và FA ($CA + FA = 0$); thâm hụt CA đồng nghĩa là đơn vị thâm hụt ròng
+- [[exchange-rate-determination-balances-short-run-financial-flows-and-long-run-trade]] — cơ chế xác định tỷ giá cân bằng giữa dòng tài sản tài chính ngắn hạn (FA view) và dòng hàng hóa dài hạn (CA view)
+- [[real-interest-rate-increases-appreciate-currency-while-inflation-expectations-depreciate-it]] — hiệu ứng Fisher đối với tỷ giá: lãi suất thực tăng làm tăng giá đồng tiền, lạm phát kỳ vọng làm giảm giá đồng tiền
+- [[internal-external-balance-links-domestic-saving-investment-gaps-to-current-account-deficits]] — cân bằng nội - ngoại $(S - I) + (T - G) = CA$; giải mã nghịch lý USD giảm giá nhưng thâm hụt vãng lai Mỹ tiếp tục phình to do spending binge
+
+**Vai trò cơ bản của chính phủ trong chế độ tài chính - tiền tệ (Cargill — Ch.8)**
+- [[greshams-law-and-uniform-coinage-rationalize-initial-government-monetary-roles]] — định luật Gresham ("tiền xấu đuổi tiền tốt") và nhu cầu đúc tiền chuẩn hóa; nguy cơ lạm dụng quyền năng đúc tiền tạo lạm phát
+- [[government-safety-net-solves-bank-runs-but-generates-systemic-moral-hazard]] — mạng lưới an toàn (LOLR + FDIC) bảo vệ mô hình kim tự tháp ngược nhưng triệt tiêu kỷ luật thị trường, sinh rủi ro đạo đức, forbearance và too-big-to-fail
+- [[government-credit-allocation-subsidies-distort-markets-and-induce-systemic-fragility]] — trợ cấp phân bổ tín dụng nhà ở (Fannie/Freddie, CRA 1977) bóp méo thị trường, gây bong bóng tài sản và khủng hoảng tài chính mà không nâng cao tỷ lệ sở hữu nhà bền vững
+- [[public-choice-theory-explains-regulatory-capture-and-monetary-politicization]] — lý thuyết lựa chọn công: tha hóa thể chế (regulatory capture), tư bản thân hữu (crony capitalism) và áp lực chính trị tiền tệ hóa nợ công
+
+**Quy định và thanh tra giám sát hệ thống tài chính (Cargill — Ch.9)**
+- [[supervision-differs-from-regulation-through-continuous-monitoring-and-camels-examination]] — phân biệt quy định (luật chơi tĩnh) và thanh tra giám sát (đánh giá động); hệ thống CAMELS và nguyên tắc bảo mật thông tin xếp hạng
+- [[prompt-corrective-action-establishes-tripwire-capital-ratios-to-curb-regulatory-forbearance]] — cơ chế can thiệp sớm bắt buộc (PCA) theo luật FDICIA 1991: hệ thống dây bẫy an toàn vốn 5 bậc xóa bỏ sự tùy quyền khoan hồng của thanh tra
+- [[risk-based-capital-requirements-aim-to-constrain-leverage-but-incentivize-regulatory-arbitrage]] — quy chuẩn an toàn vốn Basel (I, II, III): trọng số rủi ro RWA và nghịch lý kinh doanh chênh lệch pháp lý (regulatory arbitrage)
+- [[supervisory-stress-testing-provides-forward-looking-macroprudential-evaluation]] — kiểm tra sức chịu đựng giám sát (Dodd-Frank 2010): dự phóng 9 quý theo 3 kịch bản vĩ mô đối với SIFIs và công khai kết quả
+- [[macroprudential-regulation-bridges-financial-stability-and-macroeconomic-policy-despite-informational-limits]] — quy định an toàn vĩ mô: hợp nhất ổn định tài chính và chính sách vĩ mô; 4 thách thức và giới hạn nhận diện bong bóng tài sản
 

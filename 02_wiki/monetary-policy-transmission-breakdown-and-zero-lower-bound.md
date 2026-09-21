@@ -2,7 +2,7 @@
 title: monetary-policy-transmission-breakdown-and-zero-lower-bound
 type: concept
 tags: [monetary, central-banking, financial-crises, monetary-transmission, zero-lower-bound]
-sources: [bindseil_monetary_policy]
+sources: [bindseil_monetary_policy, cargill_central_bank_policy]
 status: draft
 last_updated: 2026-09-21
 ---
@@ -22,6 +22,9 @@ $$i^* = r_{nat} + E(\pi) - j - k$$
 Khi khủng hoảng xảy ra, cú sốc cầu làm lãi suất thực tự nhiên lao dốc ($r_{nat} \approx 0$), kỳ vọng lạm phát giảm sút ($E(\pi) \approx 1.5\%$), trong khi phần bù rủi ro $k$ nhảy vọt lên $4\%$. Khi đó, mức lãi suất điều hành tối ưu theo lý thuyết phải là:
 $$i^* = 0\% + 1.5\% - 0\% - 4\% = -2.5\%$$
 Tuy nhiên, do sự tồn tại của tiền mặt giấy với lợi suất danh nghĩa bằng 0 (zero nominal yield), các ngân hàng trung ương vấp phải giới hạn lãi suất zero (ZLB / Effective Lower Bound - ELB). Do $i$ bị chặn dưới ở mức 0% ($i \ge 0$), chi phí tài trợ thực tế tối thiểu trong nền kinh tế bị neo cứng ở mức $R_{min} = 0 + j + k > 0$, cao hơn nhiều so với mức cân bằng vĩ mô cần thiết. Nền kinh tế rơi vào cái bẫy giảm phát (deflationary trap) và suy thoái kéo dài mà công cụ lãi suất ngắn hạn truyền thống bất lực không thể đảo ngược (bindseil_monetary_policy, Ch.11, §11.7, d.2365–2410).
+
+Trong khi lý thuyết chuẩn tắc coi ZLB là một rào cản tuyệt đối, thực tế điều hành năm 2015–2016 tại Châu Âu và Nhật Bản cho thấy các ngân hàng trung ương đã phá vỡ ranh giới này để áp dụng [[negative-interest-rates-distort-financial-intermediation-and-test-the-zero-lower-bound|lãi suất danh nghĩa âm]]; tuy nhiên, Cargill (2017, Ch.5, d.1600–1611) nhấn mạnh rằng chính sách này gây biến dạng nặng nề lên biên lãi ròng của các ngân hàng thương mại và chứng minh giới hạn bất khả kháng của chính sách tiền tệ trong việc vực dậy tổng cầu.
+
 
 **Sự sụp đổ của nguyên tắc phân tách và ma trận mục tiêu đa chiều $(I^*, Q^*)$**: Tại mục §11.8, Bindseil khẳng định sự sụp đổ dứt khoát của nguyên tắc phân tách. Trong thời bình, một vô hướng duy nhất $i^*$ (lãi suất qua đêm) là đủ làm [[operational-target-of-monetary-policy|mục tiêu vận hành]] cho bộ phận thị trường. Nhưng khi thị trường tiền tệ phân mảnh (market segmentation) và arbitrage tê liệt, việc kiểm soát $i$ ở mức 0% không tự động truyền dẫn sang các khúc thị trường khác. NHTW bắt buộc phải thiết lập ma trận mục tiêu đa chiều gồm cả mức giá $I^*$ và lượng thanh khoản $Q^*$ cho từng phân khúc chuyên biệt:
 $$(I^*, Q^*) = \begin{pmatrix} i_1^*, & q_1^* \\ i_2^*, & q_2^* \\ \vdots & \vdots \\ i_m^*, & q_m^* \end{pmatrix}$$

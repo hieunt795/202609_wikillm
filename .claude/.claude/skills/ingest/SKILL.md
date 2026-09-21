@@ -58,12 +58,12 @@ Viết thân bài bằng lời của mình và áp skill `writing-style` (profil
 **8. Kiểm trước khi ghi log — bắt buộc.**
 
 ```bash
-python .claude_draft/.claude/hooks/validate_wiki_page.py --all
+python .claude/.claude/hooks/validate_wiki_page.py --all
 ```
 
 Hook `PostToolUse` chỉ bắt tool `Write|Edit`; file ghi bằng shell đi vòng qua nó. Trang mồ côi chỉ `--all` tính được. Có trang mồ côi → thêm liên kết **có lý do thật** từ trang liên quan, không vá cho đủ chỉ tiêu.
 
-**9. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] ingest | <source id> <chương/cụm>`, tối đa 3 dòng: trang tạo/cập nhật, stub mới, phần nguồn còn lại. Giờ lấy bằng `python .claude_draft/.claude/hooks/validate_wiki_page.py --now`.
+**9. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] ingest | <source id> <chương/cụm>`, tối đa 3 dòng: trang tạo/cập nhật, stub mới, phần nguồn còn lại. Giờ lấy bằng `python .claude/.claude/hooks/validate_wiki_page.py --now`.
 
 ## Sai lầm thường gặp
 

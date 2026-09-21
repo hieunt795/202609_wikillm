@@ -14,7 +14,7 @@ Chạy sau mỗi 10 lượt ingest hoặc theo lịch (§4). Đọc `00_schema.m
 **0. Chạy các lệnh máy trước mọi thứ khác:**
 
 ```bash
-H=.claude_draft/.claude/hooks/validate_wiki_page.py
+H=.claude/.claude/hooks/validate_wiki_page.py
 python $H --all              # trang: frontmatter, heading, link chết, source id, §7.5, title, mồ côi
 python $H --verify-sources   # 01_sources/ khớp bản kê (luật cứng 1)
 python $H --ocr              # ứng viên nhiễu OCR
@@ -57,7 +57,7 @@ Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi v
 - **Đủ điều kiện `stable`** (§9): mọi trang `status: draft` thoả **đồng thời** — `--all` không báo gì cho trang; outlink ≥ 1; backlink ≥ 2 (`--backlinks`); không còn `⚠️ Conflict`; không bị flag ở tiêu chí nào của lượt này. Lint **không** đổi `status`; người dùng duyệt danh sách rồi chạy `/promote`.
 - **Triage `_inbox.md`**: mỗi mục còn tồn đề xuất đúng 1 trong 3 kết cục — nâng thành trang, gộp vào trang đã có, hoặc xoá (§11). Người dùng quyết định.
 
-**5. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] lint | <số trang> trang`, tối đa 3 dòng: số lỗi theo loại, số trang đủ điều kiện `stable`, đường dẫn báo cáo. Giờ lấy bằng `python .claude_draft/.claude/hooks/validate_wiki_page.py --now`.
+**5. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] lint | <số trang> trang`, tối đa 3 dòng: số lỗi theo loại, số trang đủ điều kiện `stable`, đường dẫn báo cáo. Giờ lấy bằng `python .claude/.claude/hooks/validate_wiki_page.py --now`.
 
 ## Lưu ý
 

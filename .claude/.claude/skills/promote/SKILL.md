@@ -14,8 +14,8 @@ description: Nâng trạng thái trang wiki từ draft lên stable sau khi ngư�
 **1. Kiểm lại điều kiện ngay trước khi ghi** — wiki có thể đã đổi từ lúc lint:
 
 ```bash
-python .claude_draft/.claude/hooks/validate_wiki_page.py --all
-python .claude_draft/.claude/hooks/validate_wiki_page.py --backlinks   # bảng đếm backlink
+python .claude/.claude/hooks/validate_wiki_page.py --all
+python .claude/.claude/hooks/validate_wiki_page.py --backlinks   # bảng đếm backlink
 ```
 
 Với từng trang trong danh sách, xác nhận đồng thời: `status: draft`; `--all` không báo gì cho trang; outlink ≥ 1; backlink ≥ 2; không còn `⚠️ Conflict`. Trang nào trượt → bỏ khỏi lượt này và báo lại lý do, không sửa trang để nó qua.
@@ -24,7 +24,7 @@ Với từng trang trong danh sách, xác nhận đồng thời: `status: draft`
 
 **3. Chạy lại `--all`**, phải sạch.
 
-**4. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] promote | <số trang> trang lên stable`, dòng dưới liệt kê tên trang (hoặc số trang nếu quá dài) và các trang bị loại kèm lý do. Giờ lấy bằng `python .claude_draft/.claude/hooks/validate_wiki_page.py --now`.
+**4. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] promote | <số trang> trang lên stable`, dòng dưới liệt kê tên trang (hoặc số trang nếu quá dài) và các trang bị loại kèm lý do. Giờ lấy bằng `python .claude/.claude/hooks/validate_wiki_page.py --now`.
 
 ## Sai lầm thường gặp
 

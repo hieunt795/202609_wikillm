@@ -1,0 +1,18 @@
+---
+title: debt-monetization-creates-conflict-between-fiscal-deficits-and-central-bank-independence
+type: concept
+tags: [fiscal-policy, central-banking, debt-monetization, central-bank-independence, crowding-out]
+sources: [cargill_central_bank_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+Chi tiêu của chính phủ có xu hướng nội sinh luôn gia tăng theo thời gian do các chính trị gia phải đáp ứng yêu cầu của các nhóm lợi ích đặc thù và sử dụng ngân sách công như một công cụ duy trì quyền lực chính trị (cargill_central_bank_policy, Ch.5, Policy Implications: Government versus the Central Bank, d.1733–1736). Về mặt kỹ thuật, chi tiêu chính phủ chỉ có thể được tài trợ qua ba con đường: tăng thuế, tăng vay nợ từ công chúng, hoặc in tiền tăng cung tiền.
+
+Việc phụ thuộc vào tăng thuế mang rủi ro chính trị rất lớn, khiến các chính phủ—ngay cả cánh tả—đều hết sức ngần ngại khi ban hành các chính sách thuế mới (cargill_central_bank_policy, Ch.5, d.1749). Do đó, phát hành nợ công (bán trái phiếu chính phủ) được coi là lựa chọn khả dĩ hơn về mặt chính trị. Tuy nhiên, trong [[loanable-funds-framework-determines-equilibrium-interest-rate-and-bond-price|khung quỹ cho vay]], thâm hụt ngân sách làm tăng vọt cung trái phiếu ($S_B$), tương đương với việc dịch chuyển đường cầu quỹ cho vay sang phải ($D_{LF1} \to D_{LF2}$) (cargill_central_bank_policy, Ch.5, d.1690, d.1731, d.1749). Hệ quả là lãi suất thị trường bị đẩy lên cao ($r_1 \to r_2$), thu hút sự chú ý tiêu cực của công chúng và gây ra hiện tượng [[crowding-out|chèn lấn chi tiêu tư nhân]] khi các doanh nghiệp và hộ gia đình buộc phải thu hẹp quy mô đầu tư và tiêu dùng vì chi phí vay mượn đắt đỏ (cargill_central_bank_policy, Ch.5, d.1749–1750).
+
+Để né tránh cái giá kinh tế của việc tăng lãi suất, chính phủ tìm cách gây áp lực trực tiếp hoặc gián tiếp buộc [[central-bank|ngân hàng trung ương]] nới lỏng chính sách tiền tệ nhằm mua lại số trái phiếu chính phủ mới phát hành—tức thực hiện [[monetizing-the-deficit-creates-high-powered-money-and-inflation|tiền tệ hóa nợ công (debt monetization)]] (cargill_central_bank_policy, Ch.5, d.1751–1753). Hành động bơm tiền của ngân hàng trung ương làm dịch chuyển đường cung quỹ cho vay sang phải ($S_{LF1} \to S_{LF2}$), kéo lãi suất từ $r_2$ trở về lại mức ban đầu $r_1$, vô hiệu hóa tạm thời tác động tăng lãi suất của thâm hụt tài khóa (cargill_central_bank_policy, Ch.5, d.1757).
+
+Tuy nhiên, cơ chế này chỉ tạo ra ảo ảnh cân bằng trong ngắn hạn với cái giá rất đắt: tổng quy mô tín dụng và nợ nần trong hệ thống bị thổi phồng vượt bậc từ $LF_1$ lên $LF_2$ rồi nhảy vọt lên $LF_3$ (cargill_central_bank_policy, Ch.5, d.1757). Trong dài hạn, việc gia tăng cung tiền ồ ạt sẽ kích hoạt lạm phát và lạm phát kỳ vọng theo [[fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-inflation|hiệu ứng Fisher]], đẩy lãi suất danh nghĩa lên những mức cao hơn nhiều so với trước đó; ngân hàng trung ương hoàn toàn bất lực trong việc duy trì lãi suất thấp vĩnh viễn bằng cách in tiền (cargill_central_bank_policy, Ch.5, d.1758, d.1624).
+
+Xung đột lợi ích sâu sắc giữa chương trình tài khóa ngắn hạn của chính phủ và nhiệm vụ ổn định giá cả dài hạn của ngân hàng trung ương là cơ sở lý luận kinh tế nền tảng giải thích tại sao trong [[financial-and-monetary-regime|chế độ tài chính và tiền tệ]], các quốc gia hiện đại bắt buộc phải tái cấu trúc thể chế để trao tính độc lập cao độ cho ngân hàng trung ương, nhằm dựng lên "bức tường lửa" ngăn chặn chính quyền đương nhiệm can thiệp và biến ngân hàng trung ương thành cỗ máy tài trợ thâm hụt ngân sách (cargill_central_bank_policy, Ch.5, d.1759–1761).

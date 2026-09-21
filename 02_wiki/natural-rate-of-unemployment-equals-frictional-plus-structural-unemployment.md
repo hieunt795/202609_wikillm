@@ -1,0 +1,10 @@
+---
+title: natural-rate-of-unemployment-equals-frictional-plus-structural-unemployment
+type: concept
+tags: [labour, unemployment]
+sources: [cargill_central_bank_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+Tỷ lệ thất nghiệp tự nhiên (natural unemployment rate, ký hiệu $UR^*$) là mức thất nghiệp mà nền kinh tế đạt được khi [[gdp-gap-measures-deviation-of-actual-output-from-potential|khoảng cách GDP]] bằng 0, nghĩa là khi sản lượng thực tế tăng trưởng đúng dọc theo đường [[potential-gdp-measures-productive-capacity-at-full-employment|GDP tiềm năng]] (cargill_central_bank_policy, Ch.1, Measuring Economic Performance, d.534). Đại lượng này được xác định bởi nền tảng công nghệ, nguồn lực và thể chế thị trường: nền kinh tế càng linh hoạt và có tiến bộ kỹ thuật cao thì tỷ lệ thất nghiệp tự nhiên càng thấp, và ngược lại (cargill_central_bank_policy, Ch.1, cùng mục, d.534). Về mặt bản chất, tỷ lệ thất nghiệp tự nhiên được cấu thành từ hai dạng trong [[types-of-unemployment]]: thất nghiệp cọ xát (frictional unemployment, nảy sinh từ thời gian cần thiết để người lao động và chủ sử dụng lao động khớp nối thông tin tuyển dụng) cộng với thất nghiệp cơ cấu (structural unemployment, bắt nguồn từ sự lệch pha kỹ năng do biến đổi ngành nghề và công nghệ) (cargill_central_bank_policy, Ch.1, cùng mục, d.540). Trong khi đó, thất nghiệp chu kỳ (cyclical unemployment) chính là độ lệch giữa [[unemployment-rate|tỷ lệ thất nghiệp thực tế]] $UR$ và mức tự nhiên $UR^*$; độ lệch này gắn chặt với khoảng cách sản lượng thông qua mối quan hệ đánh đổi tại [[okuns-law-relates-the-gdp-gap-to-the-unemployment-gap|định luật Okun]]. Khái niệm này là cơ sở trực tiếp chứng minh vì sao [[full-employment-does-not-mean-zero-unemployment|toàn dụng lao động không có nghĩa là thất nghiệp bằng không]], đồng thời kết nối chặt chẽ với mốc kiểm soát lạm phát ổn định tại [[nairu]]. Trong quá trình theo dõi thực tế, việc phân định mức thất nghiệp tự nhiên khỏi các biến động danh nghĩa đòi hỏi phải đối chiếu cả thước đo chuẩn lẫn thước đo mở rộng [[u6-unemployment-rate-captures-discouraged-and-underemployed-workers|U6]].

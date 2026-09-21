@@ -1,0 +1,16 @@
+---
+title: interest-rate-ceilings-distort-credit-allocation-and-induce-disintermediation
+type: concept
+tags: [interest-rates, price-controls, regulation, financial-crises, banking]
+sources: [cargill_central_bank_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+Những nỗ lực của chính phủ nhằm can thiệp áp đặt trần khống chế lãi suất (interest rate ceilings và luật chống cho vay nặng lãi - usury laws) thường xuất phát từ quan niệm sai lầm xem lãi suất là một mức giá "bất công", nhưng trên thực tế luôn gây ra sự méo mó phân bổ nguồn lực và dẫn tới những hệ quả ngược với mục tiêu bảo vệ xã hội (cargill_central_bank_policy, Ch.4, Government Interest Rate Regulation & A Short History of Interest Rate Regulation, d.1410–1447).
+
+Khi chính phủ thiết lập trần lãi suất cho vay thấp hơn mức cân bằng thị trường, cơ chế giá cả bị vô hiệu hóa và kích hoạt một trạng thái dư cầu tín dụng trầm trọng (cargill_central_bank_policy, Ch.4, Figure 4.2, d.1440–1445). Tại mức lãi suất trần bị kìm hãm nhân tạo, người đi vay muốn vay khối lượng lớn hơn nhiều trong khi các định chế tài chính lại thu hẹp nguồn cung cấp vốn. Để giải quyết tình trạng thiếu hụt tín dụng này, các ngân hàng buộc phải áp dụng cơ chế phân phối tín dụng theo hạn ngạch (credit rationing): họ ưu tiên cấp vốn cho những khách hàng có tài sản bảo đảm lớn, thu nhập cao và lịch sử làm việc ổn định, đồng thời gạt bỏ hoàn toàn các hộ gia đình nghèo và doanh nghiệp nhỏ—chính là nhóm đối tượng yếu thế mà luật pháp ban đầu dự định bảo hộ. Thêm vào đó, thị trường nảy sinh các hành vi lách luật kém hiệu quả và gia tăng chi phí giao dịch, như ép buộc khách hàng đóng thêm các khoản phí thẩm định hồ sơ hoặc duy trì số dư tiền gửi bù đắp (compensating balances).
+
+Ở chiều ngược lại, việc áp đặt trần lãi suất tiền gửi—tiêu biểu là Quy chế Q (Regulation Q) được áp dụng tại Hoa Kỳ từ sau Đại suy thoái—đã trở thành ngòi nổ cho các bất ổn hệ thống khi môi trường vĩ mô biến động (cargill_central_bank_policy, Ch.4, d.1432–1439, d.1446–1447). Trong giai đoạn lạm phát tăng vọt thập niên 1970, trong khi lãi suất thị trường trực tiếp tự do tăng vọt lên mức hai con số, các trần lãi suất của Regulation Q đã ghìm chặt lãi suất tiền gửi tiết kiệm ở mức thấp. Khoảng chênh lệch lợi suất khổng lồ này kích hoạt hiện tượng rút vốn ồ ạt khỏi [[financial-system-transfers-funds-through-direct-and-indirect-channels|trung gian tài chính]] (disintermediation): công chúng đồng loạt rút tiền khỏi [[deposit-money-banks|các ngân hàng thương mại]] và các tổ chức tiết kiệm (S&Ls) để chuyển sang đầu tư trực tiếp vào thương phiếu và tín phiếu kho bạc.
+
+Hiện tượng rút vốn này đã kích thích thị trường tư nhân sáng tạo ra các sản phẩm đổi mới tài chính nhằm lách luật—như các quỹ tương hỗ thị trường tiền tệ (MMMFs) và tài khoản NOW—nhưng đồng thời đẩy toàn bộ ngành S&L vào bờ vực mất khả năng thanh toán trong thập niên 1980. Thất bại lịch sử của các chính sách trần lãi suất là minh chứng điển hình cho thấy [[government-policy-failure-is-as-critical-as-market-failure-in-financial-crises|thất bại chính sách của chính phủ]] khi can thiệp thô bạo vào quy luật thị trường có thể làm tê liệt hệ thống tài chính và triệt tiêu phúc lợi của các chủ thể kinh tế yếu thế.

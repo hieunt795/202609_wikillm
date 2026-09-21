@@ -1,0 +1,15 @@
+---
+title: real-and-financial-sectors-interact-through-loanable-funds-and-interest-rates
+type: concept
+tags: [macroeconomics, financial-system, loanable-funds]
+sources: [cargill_central_bank_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+Khu vực thực và khu vực tài chính là hai cấu phần không thể tách rời của nền kinh tế vĩ mô, gắn kết mật thiết với nhau qua cơ chế phản hồi hai chiều liên tục giữa cung cầu quỹ cho vay (loanable funds) và lãi suất (cargill_central_bank_policy, Ch.1, The Real and Financial Sectors of the Economy, d.458–464). Ở chiều thứ nhất, với một mức lãi suất định trước, khu vực thực quyết định sản lượng, việc làm, thu nhập, tiêu dùng và tiết kiệm; trong đó tiết kiệm hình thành nên nguồn cung quỹ cho vay, còn kế hoạch chi tiêu và đầu tư tạo ra lực cầu quỹ cho vay trong khu vực tài chính (cargill_central_bank_policy, Ch.1, cùng mục, d.468). Ở chiều thứ hai, tương tác cung cầu quỹ cho vay trên thị trường tài chính xác lập mức lãi suất cân bằng và khối lượng tín dụng cung ứng; lãi suất này chính là biến số [[interest-rate-connects-the-present-to-the-future-through-time-value-of-money|kết nối hiện tại với tương lai phản ánh giá trị thời gian của tiền]], dội ngược trở lại khu vực thực, trực tiếp điều tiết hành vi đầu tư, tiêu dùng, việc làm và mức giá sản lượng (cargill_central_bank_policy, Ch.1, cùng mục, d.472; Ch.4, d.1368–1389).
+
+Mô hình tương tác này được hình thức hóa toàn diện trong [[loanable-funds-framework-determines-equilibrium-interest-rate-and-bond-price|khung quỹ cho vay]] tại thị trường tài chính trực tiếp, nơi các biến động về thu nhập và của cải khu vực thực tác động không cân xứng lên cung và cầu vốn, tạo nên [[interest-rates-move-procyclically-due-to-asymmetric-business-cycle-shifts-in-loanable-funds|tính chất đồng chu kỳ của lãi suất]] (cargill_central_bank_policy, Ch.5, d.1630–1643, d.1680–1685). Đồng thời, kỳ vọng về lạm phát từ khu vực thực truyền dẫn trực tiếp vào lãi suất danh nghĩa theo [[fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-inflation|hiệu ứng Fisher]].
+
+Biến số mức giá đóng vai trò là thước đo phân định giá trị danh nghĩa và giá trị thực ở cả hai khu vực: phân biệt sản lượng danh nghĩa với [[real-gdp|sản lượng thực]] và tiền lương thực ở khu vực thực, đồng thời tách bạch lãi suất danh nghĩa với lãi suất thực, dòng tín dụng danh nghĩa với dòng tín dụng thực ở khu vực tài chính (cargill_central_bank_policy, Ch.1, cùng mục, d.458, d.462). Toàn bộ [[financial-and-monetary-regime|chế độ tài chính - tiền tệ]] nằm trong khu vực tài chính theo nghĩa rộng để dẫn dắt chu trình chu chuyển vốn này, gắn liền với các quan hệ cân đối dòng tiền tại [[sectoral-interactions|tương tác giữa các khu vực kinh tế]]. Sự thông suốt của mối tương tác này là điều kiện cốt yếu để duy trì sản lượng thực quanh [[potential-gdp-measures-productive-capacity-at-full-employment|GDP tiềm năng]] và giữ ổn định theo [[a-well-functioning-financial-and-monetary-regime-is-necessary-but-not-sufficient-for-stability]].
+

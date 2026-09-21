@@ -1,0 +1,16 @@
+---
+title: monetary-standards-evolved-from-commodity-money-to-fiat-credit-money
+type: concept
+tags: [money, monetary-standard, economic-history, fiat-money]
+sources: [cargill_central_bank_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+Lịch sử hệ thống tiền tệ phản ánh quá trình chuyển dịch liên tục nhằm tối ưu hóa chi phí giao dịch và mở rộng tính linh hoạt của phương tiện lưu thông, đưa [[money-is-a-market-innovation-to-overcome-barter-inefficiencies|tiền tệ như một sáng kiến thị trường]] phát triển qua ba hình thái chuẩn tiền tệ (monetary standards) cơ bản (cargill_central_bank_policy, Ch.2, The Evolution of Monetary Standards, d.940–987).
+
+Giai đoạn đầu tiên là chuẩn tiền hàng hóa (commodity money standard), trong đó các vật phẩm có giá trị nội tại tự nhiên như gia súc, thuốc lá, và phổ biến nhất là kim loại quý (vàng và bạc) được sử dụng trực tiếp làm phương tiện thanh toán (cargill_central_bank_policy, Ch.2, The Evolution of Monetary Standards, d.944–953). Ưu điểm của tiền hàng hóa là tính bảo đảm tự nhiên cho [[money-serves-as-a-medium-of-exchange-store-of-value-and-unit-of-account|chức năng cất trữ giá trị]] và hạn chế được nguy cơ chính phủ tùy tiện in tiền gây lạm phát; tuy nhiên, nhược điểm chí mạng là chi phí khai khoáng, đúc tiền, vận chuyển và bảo quản rất đắt đỏ, đồng thời tốc độ tăng trưởng cung tiền hoàn toàn phụ thuộc ngẫu nhiên vào sản lượng khai thác mỏ thay vì nhu cầu thực tế của nền kinh tế.
+
+Giai đoạn thứ hai là chuẩn tiền giấy có thể quy đổi (convertible paper money standard), điển hình là bản vị vàng (gold standard) thế kỷ 19 và đầu thế kỷ 20 (cargill_central_bank_policy, Ch.2, The Evolution of Monetary Standards, d.954–968). Nhà nước hoặc các ngân hàng phát hành giấy bạc cam kết quy đổi trực tiếp ra một lượng vàng/bạc cố định theo yêu cầu của người nắm giữ. Mô hình này cắt giảm triệt để chi phí vận chuyển kim loại nặng, nhưng làm nảy sinh rủi ro thanh khoản hệ thống: vì các ngân hàng thương mại phát hành lượng giấy bạc vượt quá lượng vàng thực tế dự trữ (ngân hàng dự trữ phân đoạn), bất kỳ sự suy giảm niềm tin nào cũng có thể kích hoạt hiện tượng tháo chạy ngân hàng (bank run) hủy hoại hệ thống thanh toán.
+
+Giai đoạn thứ ba là chuẩn tiền pháp định bất khả quy đổi (fiat/credit money standard), chính thức xác lập trên toàn cầu sau khi Hoa Kỳ chấm dứt khả năng chuyển đổi USD ra vàng vào năm 1971 (cargill_central_bank_policy, Ch.2, The Evolution of Monetary Standards, d.969–987). Tiền pháp định không có giá trị sử dụng nội tại và không được bảo đảm bằng bất kỳ kho dự trữ kim loại nào; giá trị của nó bắt nguồn hoàn toàn từ quy định pháp lý của nhà nước (legal tender) và niềm tin của công chúng vào sự ổn định kinh tế và năng lực quản lý của cơ quan phát hành. Dù cho phép ngân hàng trung ương linh hoạt điều tiết cung tiền theo mục tiêu vĩ mô, chuẩn tiền pháp định đặt nền kinh tế trước nguy cơ lạm phát phi mã nếu kỷ luật phát hành tiền bị phá vỡ, biến cấu trúc lưu thông thành [[modern-monetary-system-functions-as-an-inverted-pyramid|kim tự tháp ngược của hệ thống tiền tệ hiện đại]] hoàn toàn neo dựa vào niềm tin tín dụng.

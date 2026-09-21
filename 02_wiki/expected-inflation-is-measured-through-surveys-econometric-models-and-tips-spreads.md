@@ -1,0 +1,21 @@
+---
+title: expected-inflation-is-measured-through-surveys-econometric-models-and-tips-spreads
+type: concept
+tags: [inflation-expectations, econometric-modeling, tips, survey-data, interest-rates]
+sources: [cargill_central_bank_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+Lạm phát kỳ vọng ($P^e$) là biến số kinh tế vĩ mô có vai trò quyết định nhưng không thể quan sát trực tiếp trên thị trường; việc đo lường chính xác biến số này là con đường duy nhất giúp tách bạch cấu phần [[real-interest-rate|lãi suất thực]] khỏi lãi suất danh nghĩa theo [[fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-inflation|hiệu ứng Fisher]] (cargill_central_bank_policy, Ch.5, Measuring Expected Inflation, d.1799–1800). Trong thực tiễn phân tích kinh tế tài chính, có ba phương pháp tiếp cận chính để lượng hóa lạm phát kỳ vọng:
+
+1. **Phương pháp điều tra khảo sát (Survey-based measures)**:
+   - *Khảo sát Livingston (Livingston Survey)*: Khởi xướng từ năm 1946 bởi Joseph Livingston (nhà bình luận tài chính của *The Philadelphia Inquirer*), thực hiện định kỳ hai lần mỗi năm (tháng 6 và tháng 12) đối với 40–60 chuyên gia kinh tế hàng đầu để dự báo mức [[cpi|chỉ số giá tiêu dùng CPI]] cho 12 tháng tới (cargill_central_bank_policy, Ch.5, d.1801–1803). Kể từ năm 1990, cơ sở dữ liệu này được Ngân hàng Dự trữ Liên bang Philadelphia chính thức quản lý và duy trì, tạo thành chuỗi dữ liệu kỳ vọng lạm phát liên tục dài nhất tại Hoa Kỳ. Dữ liệu thực tế cho thấy lạm phát kỳ vọng Livingston có hệ số tương quan rất cao (0,8) với lợi suất tín phiếu kho bạc kỳ hạn 1 năm trong giai đoạn 1953–2015 (cargill_central_bank_policy, Ch.5, d.1807).
+   - *Khảo sát tâm lý người tiêu dùng của Đại học Michigan (University of Michigan Survey)*: Đo lường kỳ vọng lạm phát trực tiếp từ các hộ gia đình thay vì các chuyên gia (cargill_central_bank_policy, Ch.5, d.1807). Mặc dù các phương pháp khảo sát đều chịu ảnh hưởng của sai số mẫu (sampling error) và [[consumer-price-index-has-four-sources-of-upward-bias|thiên lệch thống kê của CPI]], Cargill đánh giá khảo sát là thước đo thực tế đáng tin cậy nhất vì chúng phản ánh trực tiếp niềm tin chủ quan của các chủ thể kinh tế mà không áp đặt các giả định kinh tế lượng nhân tạo (cargill_central_bank_policy, Ch.5, d.1813).
+
+2. **Phương pháp mô hình hóa kinh tế lượng (Econometric modeling)**:
+   - Sử dụng các mô hình chuỗi thời gian nhiều yếu tố phức tạp (multi-factor time-series models), điển hình như mô hình ước lượng lạm phát kỳ vọng theo nhiều kỳ hạn của Ngân hàng Dự trữ Liên bang Cleveland (cargill_central_bank_policy, Ch.5, d.1809). Hạn chế căn bản của phương pháp này nằm ở việc rất khó xác định đúng tập hợp các biến số chi phối kỳ vọng lạm phát cũng như giải quyết bài toán các tham số cấu trúc thay đổi liên tục theo thời gian (cargill_central_bank_policy, Ch.5, d.1810).
+
+3. **Phương pháp chênh lệch lợi suất trái phiếu bảo vệ chống lạm phát (TIPS spreads / Breakeven inflation)**:
+   - Từ tháng 1 năm 1997, Bộ Tài chính Hoa Kỳ bắt đầu phát hành Trái phiếu Kho bạc Bảo vệ chống Lạm phát (Treasury Inflation-Protected Securities - TIPS), trong đó cả tiền lãi coupon và mệnh giá gốc đều được điều chỉnh tăng tự động theo tỷ lệ lạm phát (cargill_central_bank_policy, Ch.5, d.1811). Do đó, lợi suất thị trường của TIPS phản ánh trực tiếp lãi suất thực phi rủi ro. Bằng cách so sánh lợi suất của trái phiếu kho bạc danh nghĩa thông thường với lợi suất TIPS có cùng kỳ hạn đáo hạn, thị trường thu được mức lạm phát hòa vốn (breakeven inflation rate) đại diện cho lạm phát kỳ vọng (cargill_central_bank_policy, Ch.5, d.1811).
+   - Tuy nhiên, phương pháp này bị nhiễu đáng kể do thị trường TIPS có tính thanh khoản kém hơn nhiều so với thị trường trái phiếu kho bạc truyền thống; khoảng chênh lệch lợi suất vì thế bị lẫn lộn giữa kỳ vọng lạm phát với phần bù thanh khoản (liquidity premium) (cargill_central_bank_policy, Ch.5, d.1812).

@@ -1,0 +1,10 @@
+---
+title: potential-gdp-measures-productive-capacity-at-full-employment
+type: concept
+tags: [national-accounts, gdp, output]
+sources: [cargill_central_bank_policy]
+status: draft
+last_updated: 2026-09-21
+---
+
+GDP tiềm năng (potential real GDP, ký hiệu $Y^*$) là mức sản lượng thực mà một nền kinh tế có khả năng sản xuất trong một thời kỳ nhất định khi sử dụng đầy đủ các nguồn lực sẵn có dựa trên nền tảng công nghệ và cấu trúc thể chế hiện hữu (cargill_central_bank_policy, Ch.1, Measuring Economic Performance, d.492). Khái niệm này đồng nghĩa với mức sản lượng tại trạng thái toàn dụng; tuy nhiên, theo nguyên lý [[full-employment-does-not-mean-zero-unemployment|toàn dụng không đồng nghĩa với thất nghiệp bằng không]], nền kinh tế tại mức sản lượng tiềm năng vẫn tồn tại một tỷ lệ thất nghiệp dương nhất định do cấu trúc thị trường ấn định, gọi là [[natural-rate-of-unemployment-equals-frictional-plus-structural-unemployment|tỷ lệ thất nghiệp tự nhiên]] (cargill_central_bank_policy, Ch.1, cùng mục, d.492). Bản thân GDP tiềm năng không mang tính tối ưu hay chuẩn tắc tự thân, mà chỉ đóng vai trò thước đo quy chiếu để so sánh với thành tựu thực tế: một quốc gia có thể có mức tiềm năng thấp nếu cơ cấu kinh tế chứa đựng nhiều sự kém hiệu quả hoặc thất thoát vô ích (deadweight loss), như thực tế từng diễn ra tại các nền kinh tế kế hoạch hoá tập trung (cargill_central_bank_policy, Ch.1, cùng mục, d.494). Khoảng chênh lệch giữa [[real-gdp|sản lượng thực tế]] $Y$ và sản lượng tiềm năng $Y^*$ hình thành nên [[gdp-gap-measures-deviation-of-actual-output-from-potential|khoảng cách GDP]] để nhận diện chu kỳ kinh tế, đồng thời phản ánh trực tiếp tổn thất xã hội thông qua [[okuns-law-relates-the-gdp-gap-to-the-unemployment-gap|định luật Okun]]. Trong dài hạn, công nghệ và thể chế quyết định độ dốc tăng trưởng của GDP tiềm năng, trong khi [[a-well-functioning-financial-and-monetary-regime-is-necessary-but-not-sufficient-for-stability|chế độ tài chính - tiền tệ lành mạnh]] cung cấp bệ đỡ cần thiết để nền kinh tế vận hành tiệm cận mức tiềm năng đó.
