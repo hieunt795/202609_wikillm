@@ -1,6 +1,7 @@
 # Session Handoff: 2026-09-21-2108 Cargill Central Bank Policy Ch 7-9 Ingest
 
 ## 1. Kết quả phiên
+
 - Hoàn thành ingest 3 chương (Ch.7, Ch.8, Ch.9) của nguồn `cargill_central_bank_policy`.
 - Tạo mới 13 trang concept atomic đạt chuẩn:
   - `central-bank-liquidity-support-via-discount-window.md`
@@ -26,11 +27,13 @@
 - Chuẩn hóa toàn bộ cấu hình, rules và skills: chuyển toàn bộ tham chiếu `.claude_draft` sang `.claude`.
 
 ## 2. Kiểm tra đã chạy
+
 - `python .claude/.claude/hooks/validate_wiki_page.py --all`: 404/404 trang hợp lệ, 0 lỗi cú pháp, 0 trang mồ côi.
 - `python .claude/.claude/hooks/validate_wiki_page.py --verify-sources`: SHA-256 các file nguồn khớp nguyên bản.
 - Rà soát toàn bộ repo không còn tham chiếu nào tới `.claude_draft`.
 
 ## 3. Việc còn lại & Bước tiếp theo
+
 - Nguồn `cargill_central_bank_policy` đã ingest xong Ch.1–9 (đến dòng 7844 / 11520).
 - Phiên tiếp theo tiếp tục ingest các chương còn lại (Ch.10 trở đi) theo skill `ingest`.
 - Blocker: Không có.
