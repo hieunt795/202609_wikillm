@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:gist.github.com)",
+      "WebFetch(domain:gist.githubusercontent.com)",
+      "WebFetch(domain:notes.andymatuschak.org)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(claude *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  },
+  "skillOverrides": {
+    "codebase-memory": "off"
+  }
+}
