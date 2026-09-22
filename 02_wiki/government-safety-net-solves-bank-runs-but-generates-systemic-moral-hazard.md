@@ -9,7 +9,7 @@ tags:
   - lender-of-last-resort
   - financial-regulation
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 
@@ -27,4 +27,4 @@ Rủi ro đạo đức này được khuếch đại nghiêm trọng bởi hai c
 - Khoan hồng và trì hoãn xử lý (forgiveness and forbearance): do e ngại việc đóng cửa ngân hàng sẽ làm trầm trọng thêm suy thoái hoặc kích hoạt hoảng loạn, cơ quan giám sát thường ngần ngại đóng cửa các ngân hàng có giá trị tài sản ròng âm, cho phép các "ngân hàng xác sống" (zombie institutions) tiếp tục tồn tại và đánh cược vào các khoản vay mạo hiểm hơn nữa để mong lội ngược dòng, làm tăng vọt chi phí giải cứu của người nộp thuế (điển hình là cuộc khủng hoảng S&L thập niên 1980 với chi phí xử lý lên tới 214 tỷ USD tính theo thời giá 2014) (cargill_central_bank_policy, Ch.8, Moral Hazard, d.2696–2700).
 - Học thuyết quá lớn để sụp đổ (Too-Big-To-Fail - TBTF): các tập đoàn tài chính khổng lồ nhận thức rõ rằng sự sụp đổ của họ sẽ kéo theo nguy cơ sụp đổ toàn bộ nền kinh tế, do đó họ tin chắc sẽ nhận được gói cứu trợ từ chính phủ, từ đó càng liều lĩnh tích lũy rủi ro ngoài bảng cân đối kế toán.
 
-Để kiểm soát rủi ro đạo đức sinh ra từ mạng lưới an toàn, nhà nước bắt buộc phải thiết lập hệ thống [[supervision-differs-from-regulation-through-continuous-monitoring-and-camels-examination|thanh tra giám sát định chế tài chính]] khắt khe và ban hành cơ chế [[prompt-corrective-action-establishes-tripwire-capital-ratios-to-curb-regulatory-forbearance|can thiệp sớm bắt buộc]] dựa trên tỷ lệ an toàn vốn.
+Để kiểm soát rủi ro đạo đức sinh ra từ mạng lưới an toàn, nhà nước bắt buộc phải thiết lập hệ thống [[supervision-differs-from-regulation-through-continuous-monitoring-and-camels-examination|thanh tra giám sát định chế tài chính]] khắt khe và ban hành cơ chế [[prompt-corrective-action-establishes-tripwire-capital-ratios-to-curb-regulatory-forbearance|can thiệp sớm bắt buộc]] dựa trên tỷ lệ an toàn vốn. Tuy nhiên, khi mạng lưới bảo lãnh ngầm được mở rộng sang các định chế bảo trợ chính phủ như Fannie Mae và Freddie Mac, rủi ro đạo đức đã vượt khỏi tầm kiểm soát của các cơ quan quản lý và trực tiếp dẫn tới [[great-recession-stemmed-from-the-fatal-combination-of-ultra-easy-money-and-housing-subsidies|sự sụp đổ mang tính hủy diệt của thị trường tài chính trong cuộc Đại Suy thoái 2008]] (cargill_central_bank_policy, Ch.17, d.5231–5238).

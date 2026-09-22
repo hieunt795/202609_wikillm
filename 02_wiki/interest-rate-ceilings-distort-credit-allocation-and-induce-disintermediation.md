@@ -3,7 +3,7 @@ title: interest-rate-ceilings-distort-credit-allocation-and-induce-disintermedia
 type: concept
 tags: [interest-rates, price-controls, regulation, financial-crises, banking]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 
@@ -13,4 +13,4 @@ Khi chính phủ thiết lập trần lãi suất cho vay thấp hơn mức cân
 
 Ở chiều ngược lại, việc áp đặt trần lãi suất tiền gửi—tiêu biểu là Quy chế Q (Regulation Q) được áp dụng tại Hoa Kỳ từ sau Đại suy thoái—đã trở thành ngòi nổ cho các bất ổn hệ thống khi môi trường vĩ mô biến động (cargill_central_bank_policy, Ch.4, d.1432–1439, d.1446–1447). Trong giai đoạn lạm phát tăng vọt thập niên 1970, trong khi lãi suất thị trường trực tiếp tự do tăng vọt lên mức hai con số, các trần lãi suất của Regulation Q đã ghìm chặt lãi suất tiền gửi tiết kiệm ở mức thấp. Khoảng chênh lệch lợi suất khổng lồ này kích hoạt hiện tượng rút vốn ồ ạt khỏi [[financial-system-transfers-funds-through-direct-and-indirect-channels|trung gian tài chính]] (disintermediation): công chúng đồng loạt rút tiền khỏi [[deposit-money-banks|các ngân hàng thương mại]] và các tổ chức tiết kiệm (S&Ls) để chuyển sang đầu tư trực tiếp vào thương phiếu và tín phiếu kho bạc.
 
-Hiện tượng rút vốn này đã kích thích thị trường tư nhân sáng tạo ra các sản phẩm đổi mới tài chính nhằm lách luật—như các quỹ tương hỗ thị trường tiền tệ (MMMFs) và tài khoản NOW—nhưng đồng thời đẩy toàn bộ ngành S&L vào bờ vực mất khả năng thanh toán trong thập niên 1980. Thất bại lịch sử của các chính sách trần lãi suất là minh chứng điển hình cho thấy [[government-policy-failure-is-as-critical-as-market-failure-in-financial-crises|thất bại chính sách của chính phủ]] khi can thiệp thô bạo vào quy luật thị trường có thể làm tê liệt hệ thống tài chính và triệt tiêu phúc lợi của các chủ thể kinh tế yếu thế.
+Hiện tượng rút vốn này đã kích thích thị trường tư nhân sáng tạo ra các sản phẩm đổi mới tài chính nhằm lách luật—như các quỹ tương hỗ thị trường tiền tệ (MMFs) và tài khoản NOW—nhưng đồng thời đẩy toàn bộ ngành S&L vào bờ vực mất khả năng thanh toán trong thập niên 1980, gây ra [[savings-and-loan-collapse-manifested-interest-rate-risk-and-disintermediation|sự sụp đổ của hệ thống hiệp hội S&L]] với tổn thất hàng trăm tỷ USD ngân sách giải cứu. Thất bại lịch sử của các chính sách trần lãi suất là minh chứng điển hình cho thấy [[government-policy-failure-is-as-critical-as-market-failure-in-financial-crises|thất bại chính sách của chính phủ]] khi can thiệp thô bạo vào quy luật thị trường có thể làm tê liệt hệ thống tài chính và triệt tiêu phúc lợi của các chủ thể kinh tế yếu thế.

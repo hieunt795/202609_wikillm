@@ -3,7 +3,7 @@ title: exit-strategies-from-non-conventional-monetary-policy
 type: concept
 tags: [chinh-sach-tien-te, ngan-hang-trung-uong, thoai-lui-chinh-sach, thanh-khoan, lai-suat]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

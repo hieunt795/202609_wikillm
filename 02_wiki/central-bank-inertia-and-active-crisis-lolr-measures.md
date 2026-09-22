@@ -3,7 +3,7 @@ title: central-bank-inertia-and-active-crisis-lolr-measures
 type: concept
 tags: [monetary, central-banking, lolr, bagehot-rule, credit-risk, crisis-management]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

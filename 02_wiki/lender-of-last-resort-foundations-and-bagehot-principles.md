@@ -3,7 +3,7 @@ title: lender-of-last-resort-foundations-and-bagehot-principles
 type: concept
 tags: [monetary, central-banking, lolr, bagehot-rule, financial-stability, liquidity-crises]
 sources: [bindseil_monetary_policy, cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

@@ -3,7 +3,7 @@ title: financial-institutions-operate-as-balanced-budget-entities-in-the-flow-of
 type: concept
 tags: [flow-of-funds, financial-institutions, financial-system, accounting]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

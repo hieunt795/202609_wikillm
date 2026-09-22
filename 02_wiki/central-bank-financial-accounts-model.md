@@ -3,7 +3,7 @@ title: central-bank-financial-accounts-model
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, financial-accounts]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

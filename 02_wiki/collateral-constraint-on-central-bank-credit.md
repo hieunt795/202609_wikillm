@@ -3,7 +3,7 @@ title: collateral-constraint-on-central-bank-credit
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, collateral, liquidity]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

@@ -3,8 +3,8 @@ title: money-is-non-neutral-in-the-short-run-but-neutral-in-the-long-run
 type: concept
 tags: [money, monetary-neutrality, monetary-policy, macroeconomics]
 sources: [cargill_central_bank_policy]
-status: draft
-last_updated: 2026-09-21
+status: stable
+last_updated: 2026-09-22
 ---
 
 Tác động của tiền tệ đối với hoạt động kinh tế thực phụ thuộc cơ bản vào khung thời gian phân tích, hình thành nên sự đồng thuận vĩ mô hiện đại rằng tiền tệ phi trung lập trong ngắn hạn nhưng mang tính trung lập trong dài hạn (cargill_central_bank_policy, Ch.2, The Relationship between Money and Economic Activity, d.1045–1060).
@@ -13,4 +13,4 @@ Trong ngắn hạn, tiền tệ có tính phi trung lập (non-neutrality) sâu 
 
 Tuy nhiên, trong dài hạn, tiền tệ lại thể hiện tính trung lập tuyệt đối (monetary neutrality) (cargill_central_bank_policy, Ch.2, The Relationship between Money and Economic Activity, d.1055–1060). Theo thời gian, người lao động và doanh nghiệp sẽ nhận ra mức giá chung đã gia tăng và điều chỉnh lại kỳ vọng lạm phát; các hợp đồng tiền lương và giá đầu vào dần được thương lượng lại theo hướng tăng lên tương ứng với lượng tiền mới được tạo ra. Chi phí sản xuất gia tăng triệt tiêu hoàn toàn lợi thế biên lợi nhuận tạm thời của các nhà sản xuất, kéo sản lượng thực tế và việc làm quay trở lại trạng thái cân bằng tự nhiên.
 
-Kết quả cuối cùng trong dài hạn là sự gia tăng cung tiền chỉ làm thay đổi tỷ lệ thuận mức giá chung danh nghĩa mà không làm thay đổi các biến số kinh tế thực (như năng suất lao động, tích lũy tư bản hay công nghệ), hoàn toàn phù hợp với kết luận cốt lõi của [[the-quantity-theory-links-money-velocity-prices-and-output|thuyết số lượng tiền tệ]]. Sự phân định này chính là cơ sở lý thuyết để các ngân hàng trung ương áp dụng chính sách tiền tệ nhằm ổn định chu kỳ ngắn hạn nhưng không lạm dụng in tiền để theo đuổi tăng trưởng dài hạn.
+Kết quả cuối cùng trong dài hạn là sự gia tăng cung tiền chỉ làm thay đổi tỷ lệ thuận mức giá chung danh nghĩa mà không làm thay đổi các biến số kinh tế thực (như năng suất lao động, tích lũy tư bản hay công nghệ), hoàn toàn phù hợp với kết luận cốt lõi của [[the-quantity-theory-links-money-velocity-prices-and-output|thuyết số lượng tiền tệ]]. Quy luật này được mô hình hóa chặt chẽ trong [[macroeconomic-models-provide-road-map-for-central-bank-policy-transmission|mô hình kinh tế vĩ mô của ngân hàng trung ương]]: cả [[natural-rate-hypothesis-invalidates-the-permanent-phillips-curve-tradeoff|đường cong Phillips mới]] và [[aggregate-supply-and-demand-framework-synthesizes-short-run-nonneutrality-and-long-run-neutrality|khung phân tích tổng cầu - tổng cung (AD/AS)]] đều chỉ ra rằng sự điều chỉnh của lạm phát kỳ vọng và giá cả linh hoạt luôn đưa nền kinh tế trở về trạng thái cân bằng tự nhiên dọc theo các đường $LRPC$ và $LRAS$ thẳng đứng (cargill_central_bank_policy, Ch.14, d.4433–4434, d.4477–4481).

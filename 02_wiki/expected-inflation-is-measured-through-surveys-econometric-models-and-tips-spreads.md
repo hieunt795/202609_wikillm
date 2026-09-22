@@ -3,7 +3,7 @@ title: expected-inflation-is-measured-through-surveys-econometric-models-and-tip
 type: concept
 tags: [inflation-expectations, econometric-modeling, tips, survey-data, interest-rates]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

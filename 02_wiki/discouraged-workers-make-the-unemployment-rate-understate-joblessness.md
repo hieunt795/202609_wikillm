@@ -3,7 +3,7 @@ title: discouraged-workers-make-the-unemployment-rate-understate-joblessness
 type: concept
 tags: [labour, unemployment, measurement]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-15
 ---
 

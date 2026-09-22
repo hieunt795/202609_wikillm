@@ -3,11 +3,11 @@ title: fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-infl
 type: concept
 tags: [interest-rates, inflation, fisher-effect, loanable-funds, monetary-economics]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 
-Khi dỡ bỏ giả định giá cả bất biến, mặt bằng lãi suất danh nghĩa quan sát được trên thị trường ($nr$) tách biệt khỏi [[real-interest-rate|lãi suất thực]] bất khả quan sát ($rr$) thông qua tỷ lệ lạm phát kỳ vọng ($P^e$) trong suốt kỳ hạn của công cụ nợ theo phương trình Fisher (cargill_central_bank_policy, Ch.5, The Nominal Interest Rate and the Real Interest Rate, d.1764–1772):
+Khi dỡ bỏ giả định giá cả bất biến, mặt bằng [[nominal-interest-rate|lãi suất danh nghĩa]] quan sát được trên thị trường ($nr$) tách biệt khỏi [[real-interest-rate|lãi suất thực]] bất khả quan sát ($rr$) thông qua tỷ lệ lạm phát kỳ vọng ($P^e$) trong suốt kỳ hạn của công cụ nợ theo phương trình Fisher (cargill_central_bank_policy, Ch.5, The Nominal Interest Rate and the Real Interest Rate, d.1764–1772):
 $$nr = rr + P^e$$
 
 Lãi suất thực $rr$ đại diện cho tỷ suất sinh lời thực tế của người cho vay và chi phí thực tế của người đi vay, được xác định bởi tám yếu tố căn bản của [[loanable-funds-framework-determines-equilibrium-interest-rate-and-bond-price|khung quỹ cho vay]] trong điều kiện $P^e = 0$ (cargill_central_bank_policy, Ch.5, d.1773). Khi thị trường hình thành kỳ vọng lạm phát dương ($P^e > 0$), lạm phát kỳ vọng đóng vai trò là yếu tố căn bản thứ chín làm dịch chuyển đồng thời cả cung và cầu quỹ cho vay theo phương thẳng đứng một khoảng đúng bằng $P^e$ (cargill_central_bank_policy, Ch.5, d.1781–1796):

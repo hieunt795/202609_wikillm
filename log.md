@@ -520,3 +520,62 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 13 trang mới: statement-of-international-transactions-..., exchange-rate-determination-balances-..., real-interest-rate-increases-appreciate-..., internal-external-balance-links-..., greshams-law-and-uniform-coinage-..., government-safety-net-solves-..., government-credit-allocation-subsidies-..., public-choice-theory-explains-..., supervision-differs-from-regulation-..., prompt-corrective-action-establishes-..., risk-based-capital-requirements-aim-..., supervisory-stress-testing-provides-..., macroprudential-regulation-bridges-...
 - Cập nhật 5 trang: central-bank, government-policy-failure-..., financial-and-monetary-regime, lender-of-last-resort-foundations-..., exchange-rate-regimes; cập nhật state file và index.md; wiki đạt 404 trang, 0 lỗi, 0 mồ côi; còn lại Ch.10–17
 
+## [2026-09-21:22-53-06] lint | 404 trang
+- 0 lỗi schema/mồ côi/link chết, 2 conflict tồn đọng, 0 nợ stub, 0 nợ inbox, 11 khái niệm đề xuất tạo stub
+- 120 trang draft đủ điều kiện lên stable (outlink >= 1, backlink >= 2, không conflict)
+- Báo cáo chi tiết: Claude outputs/lint-2026-09-21-404.md
+
+## [2026-09-21:23-03-55] ingest | tạo 11 stub từ kết quả lint 404 trang
+- Tạo 11 stub concept: money-supply, foreign-exchange-reserves, repurchase-agreement, moral-hazard, yield-curve, deflation, sterilization, non-performing-loans, currency-swap, quantitative-easing, credit-spread
+- Cập nhật liên kết từ 14 trang liên quan và bổ sung vào index.md; wiki đạt 415 trang, 0 lỗi, 0 mồ côi
+
+## [2026-09-22:21-07-15] ingest | cargill_central_bank_policy Ch.10 — A Short History of the U.S. Financial and Monetary Regime in Transition
+- 4 trang mới: regulatory-market-dialectic-drives-financial-regime-evolution, dual-banking-system-emerged-as-a-market-innovation-around-taxation, savings-and-loan-collapse-manifested-interest-rate-risk-and-disintermediation, us-financial-deregulation-eliminated-great-depression-era-competitive-barriers; cập nhật 3 trang
+- Cập nhật 03_state/cargill_central_bank_policy.md và 02_wiki/index.md; wiki đạt 419 trang, 0 lỗi, 0 mồ côi
+- Còn lại: Ch.11–17 (cargill_central_bank_policy)
+
+## [2026-09-22:21-21-03] ingest | cargill_central_bank_policy Ch.11 — The Five Steps and Step 1: Institutional Design
+- 5 trang mới: five-step-framework-structures-central-bank-policy-analysis, central-banks-are-necessarily-public-institutions-despite-private-ownership-fictions, de-jure-central-bank-independence-diverges-from-de-facto-policy-autonomy, central-bank-transparency-anchors-public-expectations-across-five-dimensions, institutional-structure-of-the-federal-reserve-concentrates-power-in-the-board-and-fomc
+- Cập nhật 3 trang: central-bank, debt-monetization-creates-conflict-between-fiscal-deficits-and-central-bank-independence, public-choice-theory-explains-regulatory-capture-and-monetary-politicization
+- Cập nhật 03_state/cargill_central_bank_policy.md và 02_wiki/index.md; wiki đạt 424 trang, 0 lỗi, 0 mồ côi; còn lại Ch.12–17
+
+## [2026-09-22:21-25-51] ingest | cargill_central_bank_policy Ch.12 — Central Banks, Base Money and the Money Supply
+- 5 trang mới: central-banks-create-base-money-out-of-thin-air-through-open-market-operations, money-supply-expansion-stops-when-absorbing-factors-exhaust-high-powered-money, currency-deposit-ratio-reflects-opportunity-costs-and-underground-economy-incentives, central-bank-controls-the-monetary-base-but-cannot-predictably-control-the-money-supply, money-multiplier-collapsed-post-2008-due-to-interest-on-excess-reserves-and-bank-risk-aversion
+- Cập nhật 3 trang: the-money-multiplier-links-reserve-money-to-the-money-supply, modern-monetary-system-functions-as-an-inverted-pyramid, autonomous-factors-of-central-bank-balance-sheet
+- Cập nhật 03_state/cargill_central_bank_policy.md và 02_wiki/index.md; wiki đạt 429 trang, 0 lỗi, 0 mồ côi; còn lại Ch.13–17
+
+## [2026-09-22:21-31-49] ingest | cargill_central_bank_policy Ch.13 — Tools of Monetary Policy and Policy Instruments
+- 4 trang mới: selective-credit-controls-decayed-due-to-fungibility-and-regulatory-circumvention, forward-guidance-evolved-from-moral-suasion-as-conditional-transparent-commitment, central-banks-cannot-simultaneously-target-money-supply-and-interest-rates, interest-rate-targeting-dominates-monetary-aggregates-due-to-measurement-and-control-limits
+- Cập nhật 4 trang: open-market-operations, loanable-funds-framework-determines-equilibrium-interest-rate-and-bond-price, central-bank-transparency-anchors-public-expectations-across-five-dimensions, us-financial-deregulation-eliminated-great-depression-era-competitive-barriers
+## [2026-09-22:21-38-52] ingest | cargill_central_bank_policy Ch.14 — Step 4: The Central Bank Model of the Economy
+- 4 trang mới: macroeconomic-models-provide-road-map-for-central-bank-policy-transmission, natural-rate-hypothesis-invalidates-the-permanent-phillips-curve-tradeoff, aggregate-supply-and-demand-framework-synthesizes-short-run-nonneutrality-and-long-run-neutrality, macroeconomic-schools-diverge-on-market-stability-and-rules-versus-discretion
+- Cập nhật 3 trang cũ: natural-rate-of-unemployment-equals-frictional-plus-structural-unemployment, money-is-non-neutral-in-the-short-run-but-neutral-in-the-long-run, potential-gdp-measures-productive-capacity-at-full-employment; cập nhật state file và index.md
+- Wiki đạt 437 trang, 0 lỗi, 0 mồ côi; còn lại: Ch.15–17 (cargill_central_bank_policy)
+
+## [2026-09-22:21-46-41] ingest | cargill_central_bank_policy Ch.15 — Step 5: Final Policy Targets
+- 4 trang mới: price-stability-is-defined-by-low-and-stable-inflation-rather-than-zero-percent, monetary-policy-lags-can-render-countercyclical-stabilization-destabilizing, inflation-targeting-framework-anchors-expectations-through-transparent-commitment, federal-reserve-dual-mandate-creates-inflation-bias-and-time-inconsistency
+- Cập nhật 3 trang cũ: central-bank, consumer-price-index-has-four-sources-of-upward-bias, five-step-framework-structures-central-bank-policy-analysis; cập nhật state file và index.md
+- Wiki đạt 441 trang, 0 lỗi, 0 mồ côi; còn lại: Ch.16–17 (cargill_central_bank_policy)
+
+## [2026-09-22:21-59-35] ingest | cargill_central_bank_policy Ch.16–17 (Hoàn tất 100% nguồn sách)
+- 10 trang mới: Ch.16 (monetary-policy-tactics-..., taylor-rule-..., lucas-critique-..., time-inconsistency-..., constrained-discretion-...) và Ch.17 (great-depression-monetary-contraction-..., accord-of-nineteen-fifty-one-..., great-inflation-originated-..., great-moderation-benefited-..., great-recession-stemmed-...)
+- Cập nhật 6 trang liên quan: open-market-operations, macroeconomic-schools-..., five-step-framework-..., government-policy-failure-..., government-safety-net-..., de-jure-central-bank-independence-...; cập nhật 03_state/cargill_central_bank_policy.md (17/17 chương - 100%) và 02_wiki/index.md
+- Hook kiểm định validate_wiki_page.py --all: 451 trang quét, 0 lỗi, 0 mồ côi. Hoàn tất toàn bộ nguồn cargill_central_bank_policy!
+
+## [2026-09-22:22-06-04] lint | 451 trang
+- 0 lỗi schema/mồ côi/link chết, 2 conflict tồn đọng, 11 nợ stub, 0 nợ inbox, 9 khái niệm đề xuất tạo stub
+- 147 trang draft đủ điều kiện lên stable (outlink >= 1, backlink >= 2, không conflict)
+- Báo cáo chi tiết: Claude outputs/lint-2026-09-22-451.md
+
+## [2026-09-22:22-12-31] promote | 147 trang lên stable
+- Nâng 147 trang draft đủ điều kiện (outlink >= 1, backlink >= 2, không conflict) theo danh sách người dùng duyệt từ lint 451 trang lên stable
+- 52 trang draft còn lại giữ nguyên (50 trang backlink = 1, 2 trang đang gắn nhãn ⚠️ Conflict); không đổi last_updated, không chạm thân bài
+- Wiki hiện đạt: 388 stable, 52 draft, 11 stub; hook validate_wiki_page.py --all sạch (451 trang quét, 0 lỗi, 0 mồ côi)
+
+## [2026-09-22:22-20-45] ingest | tạo 9 stub từ kết quả lint 451 trang & triage inbox
+- Tạo 9 stub concept: nominal-interest-rate, interbank-market, financial-intermediation, deposit-insurance, liquidity-risk, adverse-selection, asset-bubble, asymmetric-information, reverse-repurchase-agreement
+- Triage _inbox.md: sửa trích dẫn d.4584 trong central-bank và làm sạch inbox; cập nhật liên kết từ 10 trang liên quan và bổ sung vào index.md
+- Wiki đạt 460 trang (388 stable, 52 draft, 20 stub); hook validate_wiki_page.py --all quét 460 trang, 0 lỗi, 0 mồ côi
+
+
+

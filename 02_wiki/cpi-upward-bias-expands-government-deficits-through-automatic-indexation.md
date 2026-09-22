@@ -3,7 +3,7 @@ title: cpi-upward-bias-expands-government-deficits-through-automatic-indexation
 type: concept
 tags: [cpi, fiscal-policy, government-deficit, indexation]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

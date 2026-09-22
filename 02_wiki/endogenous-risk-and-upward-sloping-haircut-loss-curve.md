@@ -3,7 +3,7 @@ title: endogenous-risk-and-upward-sloping-haircut-loss-curve
 type: concept
 tags: [monetary, central-banking, lolr, endogenous-risk, haircuts, collateral-framework, bank-runs]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

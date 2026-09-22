@@ -3,7 +3,7 @@ title: discount-yield-understates-the-true-return-on-zero-coupon-instruments
 type: concept
 tags: [interest-rates, money-market, treasury-bills, yield-to-maturity, discount-yield]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

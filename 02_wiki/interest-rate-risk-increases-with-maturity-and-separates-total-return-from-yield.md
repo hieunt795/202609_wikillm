@@ -3,7 +3,7 @@ title: interest-rate-risk-increases-with-maturity-and-separates-total-return-fro
 type: concept
 tags: [interest-rates, interest-rate-risk, bond-pricing, total-return, portfolio-management]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

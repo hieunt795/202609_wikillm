@@ -3,7 +3,7 @@ title: bank-runs-investor-strikes-and-multiple-equilibria
 type: concept
 tags: [monetary, central-banking, financial-crises, bank-runs, sovereign-debt]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 
@@ -17,7 +17,7 @@ Minh chứng thực tiễn điển hình là cuộc rút tiền tại Northern R
 
 **Nghịch lý minh bạch thông tin (information disclosure paradox)**: Trong điều kiện bình thường, minh bạch hóa thông tin giúp củng cố kỷ luật thị trường (market discipline). Tuy nhiên, trong khủng hoảng thanh khoản, việc công bố thông tin một ngân hàng đang nhận hỗ trợ thanh khoản khẩn cấp (Emergency Liquidity Assistance - ELA) hoặc vay qua [[discount-window|cửa sổ chiết khấu]] lập tức bị thị trường diễn giải thành tín hiệu vỡ nợ (stigma), kích hoạt ngay lập tức một cuộc rút tiền toàn diện từ phía người gửi tiền và các chủ nợ bán lẻ (như trường hợp công bố khoản vay của Bank of England đối với Northern Rock). Do đó, sự mập mờ mang tính xây dựng (constructive ambiguity) và bảo mật thông tin hỗ trợ khẩn cấp là điều kiện tiên quyết để ngăn chặn đa cân bằng xấu (bindseil_monetary_policy, Ch.11, §11.3, d.2095–2110).
 
-**Rút vốn bán buôn và đình công đảo nợ (wholesale roll-over strikes)**: Khác với người gửi lẻ được bảo vệ bởi bảo hiểm tiền gửi, các định chế tài trợ bán buôn (thị trường repo, thương phiếu có bảo đảm - ABCP, chứng chỉ tiền gửi - CD) là các nhà đầu tư tổ chức có độ nhạy cảm rủi ro cực cao.
+**Rút vốn bán buôn và đình công đảo nợ (wholesale roll-over strikes)**: Khác với người gửi lẻ được bảo vệ bởi bảo hiểm tiền gửi, các định chế tài trợ bán buôn (thị trường [[repurchase-agreement|hợp đồng mua lại (repo)]], thương phiếu có bảo đảm - ABCP, chứng chỉ tiền gửi - CD) là các nhà đầu tư tổ chức có độ nhạy cảm rủi ro cực cao.
 - *Khủng hoảng ABCP tháng 8/2007*: Các công ty mục đích đặc biệt (SPV/conduits) phát hành ABCP kỳ hạn 30–90 ngày để tài trợ cho tài sản thế chấp dưới chuẩn dài hạn. Khi rủi ro vỡ nợ bùng nổ, các quỹ thị trường tiền tệ (MMF) từ chối mua đảo nợ (roll-over strike). Do conduits có cam kết hỗ trợ thanh khoản từ ngân hàng mẹ, hàng trăm tỷ USD nghĩa vụ thanh toán lập tức dội ngược lại bảng cân đối kế toán của các ngân hàng thương mại.
 - *Cú vỡ quỹ Reserve Primary Fund sau vụ sụp đổ Lehman Brothers*: Việc quỹ phá vỡ mức giá trị tài sản ròng 1 USD (breaking the buck) dẫn tới cuộc tháo chạy hoảng loạn trên toàn bộ thị trường MMF, phong tỏa nguồn tài trợ thương phiếu cho các tập đoàn kinh tế phi tài chính lớn nhất thế giới (bindseil_monetary_policy, Ch.11, §11.4, d.2140–2180).
 

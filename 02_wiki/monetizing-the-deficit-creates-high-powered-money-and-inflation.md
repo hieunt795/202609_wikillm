@@ -3,7 +3,7 @@ title: monetizing-the-deficit-creates-high-powered-money-and-inflation
 type: concept
 tags: [fiscal, financing, inflation, monetary-policy]
 sources: [imf_macro_accounting, cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

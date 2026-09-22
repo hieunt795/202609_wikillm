@@ -3,7 +3,7 @@ title: the-quantity-theory-links-money-velocity-prices-and-output
 type: concept
 tags: [monetary-policy, inflation, identities]
 sources: [imf_macro_accounting, cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

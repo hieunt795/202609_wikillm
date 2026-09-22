@@ -3,7 +3,7 @@ title: market-impact-of-collateral-framework-and-leverage-constraints
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, collateral, interest-rates, asset-pricing]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

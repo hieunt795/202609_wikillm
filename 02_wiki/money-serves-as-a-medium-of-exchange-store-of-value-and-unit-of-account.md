@@ -3,7 +3,7 @@ title: money-serves-as-a-medium-of-exchange-store-of-value-and-unit-of-account
 type: concept
 tags: [monetary-policy]
 sources: [imf_macro_accounting, cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

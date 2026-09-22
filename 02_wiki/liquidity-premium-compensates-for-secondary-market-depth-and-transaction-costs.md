@@ -3,7 +3,7 @@ title: liquidity-premium-compensates-for-secondary-market-depth-and-transaction-
 type: concept
 tags: [liquidity, liquidity-premium, secondary-markets, bond-market, interest-rates]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

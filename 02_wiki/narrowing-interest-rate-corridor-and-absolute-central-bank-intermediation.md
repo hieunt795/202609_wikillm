@@ -3,7 +3,7 @@ title: narrowing-interest-rate-corridor-and-absolute-central-bank-intermediation
 type: concept
 tags: [monetary, central-banking, interest-rate-corridor, financial-intermediation, credit-costs]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

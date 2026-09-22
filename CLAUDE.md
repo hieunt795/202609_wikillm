@@ -71,35 +71,40 @@ Cảnh báo của hook phải xử lý ngay, không để tồn đến lượt l
 
 ## Trạng thái phiên làm việc (Session Status & Next Steps)
 
-*Cập nhật lúc: 2026-09-21:21-04-47 (Wiki đạt 404 trang, 0 lỗi, 0 mồ côi)*
+*Cập nhật lúc: 2026-09-22:22-20-45 (Wiki đạt 460 trang, 0 lỗi, 0 mồ côi)*
 
 ### 1. Những gì đã hoàn thành trong session này
-- Ingest liên tiếp 9 chương đầu của nguồn `cargill_central_bank_policy` (Thomas F. Cargill, 2017):
-  - Ch.1 (Khái niệm chế độ tài chính - tiền tệ): 9 trang mới + 6 cập nhật liên kết.
-  - Ch.2 (Khái niệm cơ bản về tiền tệ, lạm phát, kim tự tháp ngược): 8 trang mới + 5 cập nhật.
-  - Ch.3 (Hệ thống tài chính và luồng vốn): 6 trang mới + 4 cập nhật.
-  - Ch.4 (Lãi suất trong hệ thống tài chính, trần lãi suất, rủi ro kỳ hạn): 6 trang mới + 4 cập nhật.
-  - Ch.5 (Mặt bằng lãi suất, quỹ cho vay, hiệu ứng Fisher, tiền tệ hóa nợ): 7 trang mới + 5 cập nhật.
-  - Ch.6 (Cấu trúc lãi suất và đường cong lợi suất): 8 trang mới + 5 cập nhật.
-  - Ch.7–9 (Kích thước quốc tế, Vai trò chính phủ, Quy định và giám sát hệ thống tài chính): 13 trang mới + 5 cập nhật.
-- Cập nhật đồng bộ các file quản trị: `03_state/cargill_central_bank_policy.md`, `02_wiki/index.md`, `log.md`.
-- Kiểm định toàn bộ 404 trang bằng `validate_wiki_page.py --all`: 0 lỗi schema/heading/link/sources, 0 trang mồ côi.
+- Ingest hoàn tất toàn bộ các chương còn lại của nguồn `cargill_central_bank_policy` (Thomas F. Cargill, 2017) từ Ch.10 đến Ch.17 (100% nguồn sách hoàn tất):
+  - Ch.10 (Lịch sử chuyển đổi thể chế tài chính - tiền tệ Hoa Kỳ): 4 trang mới + 3 cập nhật liên kết.
+  - Ch.11 (Khung phân tích 5 bước, bản chất công quyền NHTW, de jure vs de facto): 5 trang mới + 3 cập nhật liên kết.
+  - Ch.12 (Tạo tiền cơ sở OMO, phương trình hấp thụ, tỷ lệ k, sụp đổ số nhân tiền): 5 trang mới + 3 cập nhật liên kết.
+  - Ch.13 (Công cụ tín dụng chọn lọc suy tàn, forward guidance, thế lưỡng nan Poole, mục tiêu lãi suất): 4 trang mới + 4 cập nhật liên kết.
+  - Ch.14 (Mô hình kinh tế vĩ mô làm bản đồ dẫn đường, giả thuyết tỷ lệ tự nhiên, khung AD/AS, phân kỳ trường phái): 4 trang mới + 3 cập nhật liên kết.
+  - Ch.15 (Ổn định giá cả lạm phát thấp phương sai thấp, độ trễ chính sách, lạm phát mục tiêu, phê phán nhiệm vụ kép Fed): 4 trang mới + 3 cập nhật liên kết.
+  - Ch.16 (Chiến thuật điều hành OMOs vs chiến lược vĩ mô, quy tắc Taylor và nguyên tắc Taylor, phê phán Lucas, bẫy bất nhất thời gian Kydland-Prescott, tùy nghi có kiềm chế Bernanke-Mishkin): 5 trang mới + 3 cập nhật liên kết.
+  - Ch.17 (Năm thời kỳ lịch sử: Đại Suy thoái 1929 và thất bại Fed, Hiệp ước 1951 và chính sách even keel, Đại Lạm phát 1965–1981 và Reg Q, Đại Điều hòa 1982–2007 và Volcker disinflation, Đại Suy thoái 2007–2009 tiền rẻ và trợ cấp nợ nhà ở): 5 trang mới + 3 cập nhật liên kết.
+- Cập nhật đồng bộ các file quản trị: `03_state/cargill_central_bank_policy.md` (đánh dấu hoàn tất 17/17 chương - 100%), `02_wiki/index.md` (chuyển sang Hoàn tất 100% và bổ sung danh mục 10 trang Ch.16 & Ch.17), `log.md`.
+- Chạy quy trình kiểm tra sức khỏe wiki `/lint` trên toàn bộ 451 trang: xuất báo cáo chi tiết `Claude outputs/lint-2026-09-22-451.md`, xác định 147 trang draft đủ điều kiện thăng hạng `stable`, đề xuất tạo 9 khái niệm mới và xử lý 1 mục inbox.
+- Thực hiện operation `/promote`: nâng 147 trang draft đủ điều kiện lên `stable` theo duyệt của người dùng (tổng số trang stable đạt 388).
+- Triage hoàn tất `_inbox.md`: chuẩn hóa trích dẫn d.4584 trong `central-bank.md` và làm sạch inbox.
+- Tạo 9 trang `status: stub` từ kết quả lint: `nominal-interest-rate`, `interbank-market`, `financial-intermediation`, `deposit-insurance`, `liquidity-risk`, `adverse-selection`, `asset-bubble`, `asymmetric-information`, `reverse-repurchase-agreement`, liên kết từ 10 trang liên quan và cập nhật `index.md`.
+- Kiểm định toàn bộ 460 trang bằng `validate_wiki_page.py --all`: 0 lỗi schema/heading/link/sources, 0 trang mồ côi (388 stable, 52 draft, 20 stub).
 
 ### 2. Trạng thái hiện tại của từng phần
-- `cargill_central_bank_policy`: Đang ingest dở, đã hoàn thành 9/17 chương (dòng 424–3009, 2.586 dòng / 46.0% dung lượng nguồn).
-- `bindseil_monetary_policy`: Đã hoàn tất 100% (18/18 chương).
+- `cargill_central_bank_policy`: **Hoàn tất 100%** (17/17 chương, 5.623 dòng).
+- `bindseil_monetary_policy`: **Hoàn tất 100%** (18/18 chương).
 - `imf_macro_accounting`: Hoàn thành Ch.2–6, còn Ch.1.
-- Các nguồn còn lại: `Modern Money Mechanics`, `capitalism_and_freedom`, `choudhry_*`, `fixed_income_during`, `tata_bank_alm` đang ở trạng thái chưa ingest.
+- Các nguồn còn lại: `Modern Money Mechanics` (nguồn ngắn 85 KB, sẵn sàng ingest trọn 1 lượt), `capitalism_and_freedom`, `choudhry_*`, `fixed_income_during`, `tata_bank_alm` đang ở trạng thái chưa ingest.
 
 ### 3. Các bước tiếp theo cần làm trong session sau
-- **Lựa chọn 1**: Tiếp tục ingest các chương tiếp theo của `cargill_central_bank_policy`:
-  - Ch.10: *A Short History of the U.S. Financial and Monetary Regime in Transition* (d.3010–3312, 303 dòng) — lịch sử các cuộc chuyển đổi thể chế tài chính Mỹ.
-  - Ch.11: *The Five Steps and Step 1: The Institutional Design of the Central Bank* (d.3313–3570, 258 dòng) — thiết kế thể chế và tính độc lập của NHTW.
-  - Ch.12: *Central Banks, Base Money and the Money Supply* (d.3571–4010, 440 dòng) — tiền cơ sở, số nhân tiền tệ và kiểm soát cung tiền.
-- **Lựa chọn 2**: Chạy `/lint` rà soát toàn diện kho tri thức khi vượt mốc 400 trang để đánh giá các ứng viên đủ điều kiện thăng hạng `stable`.
+- Tùy chọn nguồn ingest kế tiếp:
+  - **Lựa chọn 1**: Ingest nguồn ngắn `Modern Money Mechanics` (85 KB / 721 dòng, quy trình tạo tiền qua bảng cân đối ngân hàng thương mại của Fed Chicago, hoàn thành trọn 1 lượt).
+  - **Lựa chọn 2**: Hoàn tất nốt Ch.1 của `imf_macro_accounting` để đưa nguồn này lên 100%.
+  - **Lựa chọn 3**: Ingest nguồn dài kinh điển `capitalism_and_freedom` (Milton Friedman, 565 KB / 2.055 dòng) hoặc các nguồn chuyên sâu về định chế/ngân hàng (`choudhry_principles_of_banking`, `fixed_income_during`).
 
 ### 4. Quyết định quan trọng đã đưa ra và lý do
-- **Định dạng `sources:` trong Frontmatter bắt buộc là inline list `[source_id]`**: Hook kiểm định `validate_wiki_page.py` dùng regex đơn giản khớp theo từng dòng (`line.splitlines()`), không hỗ trợ cấu trúc YAML multi-line (`sources:\n  - id`). Nếu viết multi-line, trường `sources` sẽ bị coi là rỗng và báo lỗi vi phạm §1.
-- **Ghép 3 chương (Ch.7, 8, 9) với ngân sách 13 trang atomic (~4–5 trang/chương)**: Tối ưu hóa dung lượng nguồn (~900 dòng) nằm trọn trong trần 5–15 trang/lượt của skill `/ingest`, bảo đảm tính cô đọng sâu sắc của từng claim mà không gây loãng đồ thị tri thức.
-- **Tái sử dụng các hub và trang sẵn có từ Ch.2–3**: Thay vì tạo mới các trang trùng lặp về phân loại thặng dư/thâm hụt hay trung gian tài chính, các trang mới trỏ trực tiếp về `modern-monetary-system-functions-as-an-inverted-pyramid`, `economic-sectors-are-classified-into-surplus-deficit-and-balanced-units`, `financial-institutions-operate-as-balanced-budget-entities-in-the-flow-of-funds`, giúp tăng độ sâu mạng lưới và giữ tỷ lệ trang mồ côi bằng 0.
+- **Định dạng `sources:` trong Frontmatter bắt buộc là inline list `[source_id]`**: Hook kiểm định `validate_wiki_page.py` dùng regex đơn giản khớp theo từng dòng (`line.splitlines()`), không hỗ trợ cấu trúc YAML multi-line (`sources:\n  - id`).
+- **Tuân thủ triệt để Quy tắc §7.3 về danh sách bullet**: Đầu dòng bullet (`- `, `* `) không được mở đầu trực tiếp bằng `[[wikilink]]` để tránh bị hook bắt lỗi "dồn link thành danh sách xem thêm". Wikilink bắt buộc phải được lồng tự nhiên trong ngữ cảnh văn xuôi diễn giải.
+- **Tập trung hóa các khái niệm lịch sử vào phân tích thể chế chính sách**: Năm thời kỳ lịch sử trong Ch.17 được cấu trúc thành các trang atomic tập trung vào cơ chế thất bại chính sách (policy failure) và xung đột thể chế thay vì chỉ tường thuật diễn biến sự kiện thuần túy.
+
 

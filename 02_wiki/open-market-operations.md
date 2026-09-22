@@ -2,8 +2,8 @@
 title: open-market-operations
 type: concept
 tags: [monetary, central-banking, financial-markets]
-sources: [imf_macro_accounting, bindseil_monetary_policy]
-status: draft
+sources: [imf_macro_accounting, bindseil_monetary_policy, cargill_central_bank_policy]
+status: stable
 last_updated: 2026-09-21
 ---
 
@@ -18,3 +18,5 @@ Bindseil (2014) hệ thống hoá OMO thành hai dạng cơ bản: (i) **Outrigh
 Lịch sử OMO ghi nhận sự phát hiện tình cờ tại Fed đầu thập niên 1920 khi Fed mua chứng khoán để tạo thu nhập và nhận ra dự trữ ngân hàng nở rộng kéo theo sự mở rộng tín dụng (Mishkin 2004; bindseil_monetary_policy, Ch.7, §7.1, d.1365). Trong thời kỳ hiện đại trước 2007, vai trò của OMO không còn được hiểu theo quan niệm số nhân tiền tệ định lượng cơ học mà là công cụ bù đắp biến động của [[autonomous-factors-of-central-bank-balance-sheet|autonomous factors]], đưa dự trữ về mức cân bằng xác suất nhằm neo giữ lãi suất ngắn hạn tại [[operational-target-of-monetary-policy|mục tiêu vận hành]] (bindseil_monetary_policy, Ch.7, §7.1, d.1373).
 
 Trong khủng hoảng tài chính, các nghiệp vụ OMO chuyển mình mạnh mẽ: credit OMOs được chuyển sang cơ chế phân bổ toàn bộ theo lãi suất cố định (FRFA) và kéo dài kỳ hạn tới 3 năm (xem [[fixed-rate-full-allotment-and-maturity-lengthening-in-crisis]]); trong khi outright OMOs phát triển thành các chương trình mua tài sản quy mô lớn (QE/LSAP/Credit Easing) với 7 kênh truyền dẫn nhằm dập tắt giảm phát và hạ chi phí vốn dài hạn (xem [[seven-channels-of-central-bank-asset-purchase-programmes]]; bindseil_monetary_policy, Ch.13, §13.2–§13.3, d.3025–3171).
+
+Hệ thống hóa của Thomas F. Cargill phân loại OMO thành hai nhóm nghiệp vụ: nghiệp vụ vĩnh viễn (permanent outright: mua bán đứt trái phiếu kho bạc và lần đầu tiên mở rộng sang chứng khoán bảo đảm bằng thế chấp MBS từ tháng 2/2009 để hỗ trợ thị trường nhà ở) và nghiệp vụ tạm thời (temporary: các hợp đồng mua lại repo RP và bán lại reverse RP có kỳ hạn ngắn dưới 14 ngày) (cargill_central_bank_policy, Ch.13, Open Market Operations, d.4037–4052). Trong kỷ nguyên hậu khủng hoảng, khi quy mô danh mục chứng khoán vĩnh viễn được duy trì cuộn vòng ở mức kỷ lục, các giao dịch repo tạm thời đóng vai trò là công cụ chính yếu giúp ngân hàng trung ương tinh chỉnh lượng dự trữ khả dụng để neo giữ lãi suất liên ngân hàng tại mức mục tiêu. Xét theo mục đích điều hành, Cargill nhấn mạnh sự phân định bản chất giữa [[monetary-policy-tactics-differ-from-strategy-in-central-bank-operations|nghiệp vụ thị trường mở năng động (dynamic OMOs)]] nhằm chủ động dịch chuyển lập trường chính sách và nghiệp vụ thị trường mở phòng thủ (defensive OMOs) nhằm bù trừ các nhân tố tự trị ngoại sinh để bảo vệ mức lãi suất mục tiêu, chứng minh rằng chiều hướng mua/bán chứng khoán thuần túy không phản ánh đúng lập trường nới lỏng hay thắt chặt của chính sách tiền tệ (cargill_central_bank_policy, Ch.16, d.4771–4776).

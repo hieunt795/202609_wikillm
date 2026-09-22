@@ -3,7 +3,7 @@ title: nonbank-financial-institutions
 type: concept
 tags: [monetary, financial-system]
 sources: [imf_macro_accounting, cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

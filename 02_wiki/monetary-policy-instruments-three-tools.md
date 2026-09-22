@@ -3,7 +3,7 @@ title: monetary-policy-instruments-three-tools
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

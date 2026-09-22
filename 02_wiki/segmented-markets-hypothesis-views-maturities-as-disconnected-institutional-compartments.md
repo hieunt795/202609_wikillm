@@ -3,7 +3,7 @@ title: segmented-markets-hypothesis-views-maturities-as-disconnected-institution
 type: concept
 tags: [term-structure, segmented-markets, preferred-habitat, financial-institutions, interest-rates]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

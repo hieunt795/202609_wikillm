@@ -2,8 +2,8 @@
 title: autonomous-factors-of-central-bank-balance-sheet
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, liquidity]
-sources: [bindseil_monetary_policy]
-status: draft
+sources: [bindseil_monetary_policy, cargill_central_bank_policy]
+status: stable
 last_updated: 2026-09-21
 ---
 
@@ -20,3 +20,5 @@ Và khi có reserve requirements, NHTW phải điều chỉnh operations sao cho
 $$\text{Monetary policy operations} = \text{Reserve requirements} + \text{Net autonomous factors}$$
 
 Vế trái là "cung" dự trữ, vế phải là "cầu" dự trữ (bindseil_monetary_policy, Ch.2, §2.5, d.604–617). Vì autonomous factors biến động không dự đoán hoàn toàn được — đặc biệt tiền gửi chính phủ — NHTW phải liên tục dự báo chúng để xác định khối lượng operations cần thiết. Eurosystem tháng 2/2012 minh họa rõ: autonomous factors hút 310 tỷ EUR ròng, reserve requirements thêm 94 tỷ EUR, nên total monetary policy operations cần bơm 404 tỷ EUR (bindseil_monetary_policy, Ch.2, §2.5, d.621). Đây là nền tảng để hiểu [[liquidity-deficit-of-the-banking-system]].
+
+Trong mô hình bảng cân đối đơn giản của Thomas F. Cargill, các khoản mục như cho vay chiết khấu ($L$), dự trữ ngoại hối ($FE$) và tiền gửi chính phủ ($GD$) đại diện cho các yếu tố tự trị mà ngân hàng trung ương chỉ kiểm soát một phần hoặc bị động tiếp nhận (cargill_central_bank_policy, Ch.12, d.3979–3980). Tuy nhiên, bằng cách chủ động mua bán chứng khoán ($S$) trên thị trường mở, [[central-bank-controls-the-monetary-base-but-cannot-predictably-control-the-money-supply|ngân hàng trung ương hoàn toàn có thể triệt tiêu sự biến động của các yếu tố tự trị để ấn định chính xác lượng tiền cơ sở mong muốn]], dù quyền năng này không đồng nghĩa với việc kiểm soát chắc chắn tổng lượng cung tiền $M2$.

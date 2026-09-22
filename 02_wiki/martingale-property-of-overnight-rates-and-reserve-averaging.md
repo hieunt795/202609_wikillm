@@ -3,7 +3,7 @@ title: martingale-property-of-overnight-rates-and-reserve-averaging
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, interest-rates, money-market]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

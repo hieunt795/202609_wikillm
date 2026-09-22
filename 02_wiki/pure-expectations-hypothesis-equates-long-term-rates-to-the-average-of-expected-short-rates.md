@@ -3,7 +3,7 @@ title: pure-expectations-hypothesis-equates-long-term-rates-to-the-average-of-ex
 type: concept
 tags: [term-structure, expectations-hypothesis, yield-curve, interest-rates]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

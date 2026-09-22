@@ -3,7 +3,7 @@ title: international-lender-of-last-resort-and-dual-liquidity-crises
 type: concept
 tags: [chinh-sach-tien-te, ngan-hang-trung-uong, ty-gia, nguoi-cho-vay-cuoi-cung, khung-hoang-tai-chinh]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

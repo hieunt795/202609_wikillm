@@ -3,7 +3,7 @@ title: reserve-adequacy-depends-more-on-policy-credibility-than-on-the-exchange-
 type: concept
 tags: [external-sector, reserves, exchange-rate-regime, credibility]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

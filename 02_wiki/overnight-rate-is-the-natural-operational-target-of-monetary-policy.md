@@ -3,7 +3,7 @@ title: overnight-rate-is-the-natural-operational-target-of-monetary-policy
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, interest-rates]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 
@@ -13,4 +13,4 @@ Ba cách thoát khỏi bẫy này nếu nhắm tới kỳ hạn dài hơn: (a) c
 
 Nền lý thuyết cho lãi suất làm target bắt đầu từ Thornton (1802) và Wicksell (1898): lãi suất NHTW cần bám vào "natural rate" — tỷ suất lợi nhuận thực của vốn — để ngăn lạm phát. Fisher equation cụ thể hoá điều này: lãi suất danh nghĩa ≈ lãi suất thực + lạm phát kỳ vọng (i = r + π). Nếu NHTW giữ lãi suất tiền tệ luôn bằng lãi suất thực, không có lạm phát (bindseil_monetary_policy, Ch.3, §3.2, d.791–821). Ví dụ phản diện kinh điển: Reichsbank giữ discount rate 5% suốt 1914–1922 dù lạm phát đã vọt lên 40% từ năm 1915, dẫn đến siêu lạm phát Weimar — đây là lúc một "Hugo Stinnes" có thể kiếm khổng lồ bằng cách vay tiền rẻ mua mọi thứ (bindseil_monetary_policy, Ch.3, §3.2, d.815–819).
 
-Từ góc nhìn thực tiễn, ba chiều cần chọn khi chỉ định lãi suất target: (i) lãi suất liên ngân hàng hay lãi suất operations của NHTW? (ii) secured (repo) hay unsecured? (iii) overnight hay kỳ hạn dài hơn? Trong thị trường bình thường, (i) và (ii) không quan trọng vì các mức lãi suất này cách nhau chưa tới ngưỡng thay đổi nhỏ nhất của NHTW (25 bps). Chỉ (iii) là quyết định thực sự quan trọng — và overnight là câu trả lời gần như phổ quát (bindseil_monetary_policy, Ch.3, §3.2, d.823–824).
+Từ góc nhìn thực tiễn, ba chiều cần chọn khi chỉ định lãi suất target: (i) lãi suất trên [[interbank-market|thị trường liên ngân hàng]] hay lãi suất operations của NHTW? (ii) secured (repo) hay unsecured? (iii) overnight hay kỳ hạn dài hơn? Trong thị trường bình thường, (i) và (ii) không quan trọng vì các mức lãi suất này cách nhau chưa tới ngưỡng thay đổi nhỏ nhất của NHTW (25 bps). Chỉ (iii) là quyết định thực sự quan trọng — và overnight là câu trả lời gần như phổ quát (bindseil_monetary_policy, Ch.3, §3.2, d.823–824).

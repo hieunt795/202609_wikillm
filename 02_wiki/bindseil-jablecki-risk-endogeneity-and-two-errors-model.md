@@ -3,7 +3,7 @@ title: bindseil-jablecki-risk-endogeneity-and-two-errors-model
 type: concept
 tags: [monetary, central-banking, lolr, endogenous-risk, collateral-framework, welfare-optimization]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

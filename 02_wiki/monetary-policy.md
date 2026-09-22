@@ -3,7 +3,7 @@ title: monetary-policy
 type: concept
 tags: [monetary, policy, central-banking]
 sources: [imf_macro_accounting, bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

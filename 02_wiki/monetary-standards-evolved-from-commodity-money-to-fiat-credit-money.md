@@ -3,7 +3,7 @@ title: monetary-standards-evolved-from-commodity-money-to-fiat-credit-money
 type: concept
 tags: [money, monetary-standard, economic-history, fiat-money]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

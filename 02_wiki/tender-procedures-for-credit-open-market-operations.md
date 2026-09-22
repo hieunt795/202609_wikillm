@@ -3,7 +3,7 @@ title: tender-procedures-for-credit-open-market-operations
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, open-market-operations, tenders]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

@@ -3,7 +3,7 @@ title: yield-to-maturity-equates-present-value-of-cash-flows-to-asset-price
 type: concept
 tags: [interest-rates, yield-to-maturity, bond-pricing, present-value, financial-mathematics]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

@@ -3,7 +3,7 @@ title: financial-markets-are-divided-into-money-markets-and-capital-markets-by-m
 type: concept
 tags: [financial-markets, money-market, capital-market, debt-instruments]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

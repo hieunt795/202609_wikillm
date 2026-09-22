@@ -3,7 +3,7 @@ title: liquidity-premium-hypothesis-explains-the-prevalence-of-upward-sloping-yi
 type: concept
 tags: [term-structure, liquidity-premium, yield-curve, interest-rate-risk, interest-rates]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

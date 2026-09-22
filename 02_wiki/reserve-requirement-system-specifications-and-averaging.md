@@ -3,7 +3,7 @@ title: reserve-requirement-system-specifications-and-averaging
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, reserve-requirements, money-market]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

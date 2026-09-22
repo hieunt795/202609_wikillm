@@ -3,7 +3,7 @@ title: interest-rates-move-procyclically-due-to-asymmetric-business-cycle-shifts
 type: concept
 tags: [interest-rates, business-cycles, loanable-funds, macroeconomic-dynamics]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

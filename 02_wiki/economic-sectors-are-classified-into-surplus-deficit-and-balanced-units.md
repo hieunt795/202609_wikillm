@@ -3,7 +3,7 @@ title: economic-sectors-are-classified-into-surplus-deficit-and-balanced-units
 type: concept
 tags: [flow-of-funds, sectoral-analysis, financial-system]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

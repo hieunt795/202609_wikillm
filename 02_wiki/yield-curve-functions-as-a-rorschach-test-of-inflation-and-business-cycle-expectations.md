@@ -3,11 +3,11 @@ title: yield-curve-functions-as-a-rorschach-test-of-inflation-and-business-cycle
 type: concept
 tags: [yield-curve, leading-indicators, inflation-expectations, business-cycles, recession-indicator]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 
-Đường cong lợi suất (yield curve) biểu thị mối quan hệ giữa lợi suất đáo hạn và kỳ hạn của các công cụ nợ có cùng mức độ rủi ro (thường là chứng khoán kho bạc), được các nhà hoạch định chính sách và giới đầu tư coi là một trong những chỉ báo sớm hàng đầu (leading indicators) về lạm phát tương lai và chiều hướng của chu kỳ kinh tế (cargill_central_bank_policy, Ch.6, The Yield Curve as a Leading Indicator, d.2063–2065, d.2095–2097). Cơ chế truyền dẫn thông tin này bắt nguồn từ việc lãi suất danh nghĩa dài hạn tích hợp kỳ vọng về các mức lãi suất ngắn hạn tương lai theo [[liquidity-premium-hypothesis-explains-the-prevalence-of-upward-sloping-yield-curves|giả thuyết phần bù thanh khoản]], trong đó mỗi mức lãi suất ngắn hạn lại bao gồm lãi suất thực và tỷ lệ lạm phát kỳ vọng theo [[fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-inflation|hiệu ứng Fisher]] ($nr = rr + P^e$).
+[[yield-curve|Đường cong lợi suất (yield curve)]] biểu thị mối quan hệ giữa lợi suất đáo hạn và kỳ hạn của các công cụ nợ có cùng mức độ rủi ro (thường là chứng khoán kho bạc), được các nhà hoạch định chính sách và giới đầu tư coi là một trong những chỉ báo sớm hàng đầu (leading indicators) về lạm phát tương lai và chiều hướng của chu kỳ kinh tế (cargill_central_bank_policy, Ch.6, The Yield Curve as a Leading Indicator, d.2063–2065, d.2095–2097). Cơ chế truyền dẫn thông tin này bắt nguồn từ việc lãi suất danh nghĩa dài hạn tích hợp kỳ vọng về các mức lãi suất ngắn hạn tương lai theo [[liquidity-premium-hypothesis-explains-the-prevalence-of-upward-sloping-yield-curves|giả thuyết phần bù thanh khoản]], trong đó mỗi mức lãi suất ngắn hạn lại bao gồm lãi suất thực và tỷ lệ lạm phát kỳ vọng theo [[fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-inflation|hiệu ứng Fisher]] ($nr = rr + P^e$).
 
 Đường cong lợi suất phản ánh hai kênh kỳ vọng vĩ mô độc lập:
 1. **Kênh kỳ vọng lạm phát (Holding real rate constant)**: Khi thị trường kỳ vọng lạm phát sẽ leo thang trong tương lai ($P^e$ tăng dần qua các thời kỳ), các mức lãi suất danh nghĩa ngắn hạn tương lai buộc phải tăng tương ứng để bù đắp mất giá tiền tệ. Qua cơ chế tính trung bình của cấu trúc kỳ hạn, lợi suất dài hạn tăng mạnh hơn lợi suất ngắn hạn hiện tại, làm đường cong lợi suất dốc lên rõ rệt (cargill_central_bank_policy, Ch.6, d.2069–2078, Bảng 6.3). Ngược lại, kỳ vọng lạm phát hạ nhiệt làm giảm độ dốc của đường cong.

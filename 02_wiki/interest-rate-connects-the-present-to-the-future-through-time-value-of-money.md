@@ -3,7 +3,7 @@ title: interest-rate-connects-the-present-to-the-future-through-time-value-of-mo
 type: concept
 tags: [interest-rates, time-value-of-money, present-value, financial-theory]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

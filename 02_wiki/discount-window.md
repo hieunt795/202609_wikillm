@@ -3,7 +3,7 @@ title: discount-window
 type: concept
 tags: [monetary, central-banking, interest-rates]
 sources: [imf_macro_accounting, bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

@@ -3,7 +3,7 @@ title: fixed-rate-full-allotment-and-maturity-lengthening-in-crisis
 type: concept
 tags: [monetary, central-banking, open-market-operations, full-allotment, refinancing-facilities]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

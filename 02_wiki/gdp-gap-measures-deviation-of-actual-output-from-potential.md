@@ -3,7 +3,7 @@ title: gdp-gap-measures-deviation-of-actual-output-from-potential
 type: concept
 tags: [national-accounts, gdp, business-cycles]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

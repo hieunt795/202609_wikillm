@@ -3,7 +3,7 @@ title: consumer-price-index-has-four-sources-of-upward-bias
 type: concept
 tags: [cpi, inflation, price-index, measurement]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 
@@ -19,4 +19,4 @@ Thứ ba là thiên lệch thay đổi chất lượng (quality change bias). M�
 
 Thứ tư là thiên lệch hàng hóa mới (new goods bias). Các sản phẩm công nghệ hoặc dịch vụ mới xuất hiện thường có chu kỳ giảm giá rất mạnh trong vài năm đầu phát hành; tuy nhiên, quy trình đưa một mặt hàng mới vào rổ CPI chính thức thường mất nhiều năm, khiến chỉ số bỏ lỡ giai đoạn giá hạ nhiệt mạnh nhất này.
 
-Do phản ánh sai lệch [[the-quantity-theory-links-money-velocity-prices-and-output|mức giá chung]], thiên lệch CPI không chỉ làm sai lệch các phân tích kinh tế thực mà còn gây ra hậu quả tài khóa nghiêm trọng: nó [[cpi-upward-bias-expands-government-deficits-through-automatic-indexation|thổi phồng thâm hụt ngân sách chính phủ]] thông qua các cơ chế lập chỉ số tự động cho phúc lợi an sinh xã hội và điều chỉnh biểu thuế thu nhập.
+Do phản ánh sai lệch [[the-quantity-theory-links-money-velocity-prices-and-output|mức giá chung]], thiên lệch CPI không chỉ làm sai lệch các phân tích kinh tế thực mà còn gây ra hậu quả tài khóa nghiêm trọng: nó [[cpi-upward-bias-expands-government-deficits-through-automatic-indexation|thổi phồng thâm hụt ngân sách chính phủ]] thông qua các cơ chế lập chỉ số tự động cho phúc lợi an sinh xã hội và điều chỉnh biểu thuế thu nhập. Mặt khác, trong hoạch định chính sách tiền tệ, chính độ lệch thiên vị tăng giá này là lý do kỹ thuật căn bản để các ngân hàng trung ương xác lập [[price-stability-is-defined-by-low-and-stable-inflation-rather-than-zero-percent|mục tiêu ổn định giá cả ở mức lạm phát 2% thay vì 0%]], nhằm tránh đẩy nền kinh tế rơi vào tình trạng giảm phát ngầm nguy hiểm (cargill_central_bank_policy, Ch.15, d.4563–4565).

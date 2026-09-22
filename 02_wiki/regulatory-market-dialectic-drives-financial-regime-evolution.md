@@ -1,0 +1,19 @@
+---
+title: regulatory-market-dialectic-drives-financial-regime-evolution
+type: concept
+tags: [financial-regime, regulation, market-innovation, political-economy]
+sources: [cargill_central_bank_policy]
+status: stable
+last_updated: 2026-09-22
+---
+
+Tiến trình chuyển đổi và tái thiết kế thể chế tài chính và tiền tệ vận động theo chu trình biện chứng quản lý – thị trường (regulatory-market dialectic), một khái niệm do Edward Kane (1979) phát triển dựa trên triết học biến dịch của Hegel và Marx để mô tả xung đột thường trực giữa can thiệp nhà nước và hành vi tối đa hóa lợi nhuận của khu vực tư nhân (cargill_central_bank_policy, Ch.10, A Taxonomy of a Changing Financial and Monetary Regime, d.3048–3055). Trong khi quy định của chính phủ thường mang tính bị động, chậm trễ và thiên về bảo vệ hiện trạng (status quo) do sự chi phối của các nhóm lợi ích đặc quyền và nỗi lo mất thẩm quyền của các cơ quan quản lý, thì sáng tạo thị trường lại chủ động, linh hoạt và luôn tìm cách vượt qua các rào cản pháp lý làm hạn chế cơ hội sinh lời (cargill_central_bank_policy, Ch.10, cùng mục, d.3042–3046). Kể từ thập niên 1960, sự bùng nổ của công nghệ điện toán và viễn thông đã làm giảm mạnh chi phí giao dịch cho việc đưa ra các tài sản và dịch vụ tài chính mới, gia tăng động lực né tránh quy định và khiến việc thực thi pháp luật kiểm soát của chính phủ ngày càng trở nên phức tạp (cargill_central_bank_policy, Ch.10, cùng mục, d.3040).
+
+Quá trình chuyển đổi của bất kỳ [[financial-and-monetary-regime|chế độ tài chính - tiền tệ]] nào được cấu trúc hóa thông qua chuỗi năm bước phân loại tổng quát (cargill_central_bank_policy, Ch.10, Five Steps to Financial and Monetary Regime Transition, d.3056–3074):
+1. Khởi đầu với thể chế hiện hữu gồm các tổ chức tài chính công và tư, cấu trúc thị trường, cơ quan giám sát và ngân hàng trung ương đang đáp ứng năm chức năng cốt lõi.
+2. Xuất hiện các chất xúc tác chuyển đổi khi môi trường kinh tế, chính trị hoặc công nghệ thay đổi làm phát sinh xung đột nội tại với thiết kế thể chế hiện có, bộc lộ qua đổ vỡ định chế, gián đoạn luồng chu chuyển vốn hoặc bất ổn giá cả.
+3. Sáng tạo thị trường và đổi mới quản lý được kích hoạt bởi các rối loạn tài chính; trong đó sáng tạo thị trường luôn xuất hiện trước để giải tỏa các rào cản hạn chế, chẳng hạn như sự ra đời của tài khoản NOW thập niên 1970 và các quỹ tương hỗ thị trường tiền tệ (MMFs) nhằm lách trần lãi suất tiền gửi Regulation Q (cargill_central_bank_policy, Ch.10, d.3050–3053).
+4. Kháng cự chuyển đổi nổi lên từ các nhóm đã thích nghi với trật tự cũ: các cơ quan chính phủ kháng cự vì sợ suy giảm tầm ảnh hưởng chính trị, trong khi các định chế tư nhân như [[deposit-money-banks|ngân hàng thương mại]] vận động chính quyền cấm đoán các định chế phi ngân hàng phát hành công cụ cạnh tranh (cargill_central_bank_policy, Ch.10, d.3044, d.3064–3067).
+5. Kết quả chuyển đổi được định hình tùy thuộc vào độ hoàn thiện của các cải cách quản lý và tương quan quyền lực; khi chính phủ buộc phải từ bỏ các nỗ lực tái quản lý bất khả thi để chính thức thừa nhận, hợp thức hóa và tích hợp sáng tạo thị trường vào hệ thống luật pháp (cargill_central_bank_policy, Ch.10, d.3054, d.3070–3073).
+
+Quy luật biện chứng này chứng minh rằng phần lớn các cuộc cải cách tài chính lớn trên thế giới trong các thập niên gần đây thực chất là sự công nhận chính thức của nhà nước đối với những sáng tạo thị trường đã đi trước một bước. Động lực lách luật này không chỉ lý giải sự ra đời của [[dual-banking-system-emerged-as-a-market-innovation-around-taxation|hệ thống ngân hàng lưỡng tính Hoa Kỳ]] từ thế kỷ 19 mà còn là động lực trực tiếp dẫn tới làn sóng [[us-financial-deregulation-eliminated-great-depression-era-competitive-barriers|phi điều tiết hóa tài chính]] và các cuộc khủng hoảng như [[savings-and-loan-collapse-manifested-interest-rate-risk-and-disintermediation|sự sụp đổ của hệ thống S&L]] khi quy định hành chính cố tình áp chế các quy luật thị trường khách quan.

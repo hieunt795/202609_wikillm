@@ -3,7 +3,7 @@ title: optimal-monetary-policy-operations-frameworks-in-normal-times
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, operational-framework]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

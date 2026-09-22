@@ -3,7 +3,7 @@ title: interest-rate-corridor-symmetric-approach
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, interest-rates, corridor]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

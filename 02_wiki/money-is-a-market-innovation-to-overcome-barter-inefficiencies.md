@@ -3,7 +3,7 @@ title: money-is-a-market-innovation-to-overcome-barter-inefficiencies
 type: concept
 tags: [money, barter, financial-innovation]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

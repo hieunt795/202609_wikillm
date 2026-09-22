@@ -3,7 +3,7 @@ title: taralac-facility-target-rate-limited-access
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, corridor, standing-facilities, interest-rates]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

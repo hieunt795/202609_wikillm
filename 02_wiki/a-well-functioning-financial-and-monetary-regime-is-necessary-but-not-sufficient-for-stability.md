@@ -3,7 +3,7 @@ title: a-well-functioning-financial-and-monetary-regime-is-necessary-but-not-suf
 type: concept
 tags: [financial-system, monetary-regime, economic-policy]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

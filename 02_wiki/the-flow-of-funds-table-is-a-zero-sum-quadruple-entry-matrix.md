@@ -3,7 +3,7 @@ title: the-flow-of-funds-table-is-a-zero-sum-quadruple-entry-matrix
 type: concept
 tags: [flow-of-funds, accounting, sectoral-analysis]
 sources: [imf_macro_accounting, cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

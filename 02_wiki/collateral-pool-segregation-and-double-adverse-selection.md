@@ -3,11 +3,11 @@ title: collateral-pool-segregation-and-double-adverse-selection
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, collateral, adverse-selection]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 
-Hiện tượng lựa chọn đối nghịch kép (double adverse selection) và sự phân tách các rổ tài sản bảo đảm (collateral pool segregation) là những thách thức chiến lược hàng đầu trong việc quản trị rủi ro bảng cân đối của ngân hàng trung ương (bindseil_monetary_policy, Ch.9, §9.5, d.1815–1855).
+Hiện tượng lựa chọn đối nghịch kép—dạng mở rộng trong tín dụng NHTW từ nguyên lý [[adverse-selection|lựa chọn đối nghịch]] vi mô—và sự phân tách các rổ tài sản bảo đảm (collateral pool segregation) là những thách thức chiến lược hàng đầu trong việc quản trị rủi ro bảng cân đối của ngân hàng trung ương (bindseil_monetary_policy, Ch.9, §9.5, d.1815–1855).
 
 **Quy luật Gresham kép trong tín dụng NHTW (Double Gresham's Law)**: NHTW luôn phải đối mặt với nguy cơ lựa chọn đối nghịch trên hai phương diện đồng thời: (i) *về phía đối tác*: các ngân hàng có sức khoẻ tài chính yếu kém hơn và bị thị trường tư nhân từ chối sẽ phụ thuộc vượt trội vào nguồn vay tái cấp vốn của NHTW; (ii) *về phía tài sản*: các ngân hàng có xu hướng thế chấp những tài sản có chất lượng thấp nhất và kém thanh khoản nhất cho NHTW, trong khi giữ lại những tài sản chất lượng cao nhất (như trái phiếu chính phủ) để giao dịch trên thị trường liên ngân hàng tư nhân hoặc bán thanh lý khi cần thiết (d.1817).
 

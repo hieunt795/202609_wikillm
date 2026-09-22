@@ -3,7 +3,7 @@ title: liquidity-regulation-and-central-bank-operations-arbitrage
 type: concept
 tags: [chinh-sach-tien-te, ngan-hang-trung-uong, thanh-khoan, quan-ly-rui-ro]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

@@ -3,7 +3,7 @@ title: currency-board
 type: concept
 tags: [exchange-rate, monetary, transition]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

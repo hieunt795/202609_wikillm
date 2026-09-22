@@ -3,7 +3,7 @@ title: financial-and-monetary-regime
 type: concept
 tags: [financial-system, central-bank, monetary-regime]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 
@@ -11,6 +11,6 @@ Chế độ tài chính - tiền tệ (financial and monetary regime) là tổng
 
 Cấu trúc kim tự tháp ngược này tất yếu sản sinh hai dạng thất bại thị trường hệ thống (cargill_central_bank_policy, Ch.8, Two Inverted Pyramid Problems, d.2550–2577):
 - Vấn đề lây lan (contagion problem): do dự trữ chỉ chiếm một tỷ lệ nhỏ, sự mất niềm tin của công chúng có thể kích hoạt các đợt tháo chạy dây chuyền (bank runs), kéo sập toàn bộ hệ thống ngay cả với các ngân hàng hoàn toàn lành mạnh.
-- Vấn đề mở rộng cung tiền mất kiểm soát (money supply problem): động cơ tối đa hóa lợi nhuận của từng ngân hàng đơn lẻ thúc đẩy việc mở rộng tín dụng quá mức và giảm đệm an toàn, châm ngòi cho lạm phát vĩ mô.
+- Vấn đề mở rộng cung tiền mất kiểm soát (money supply problem): động cơ tối đa hóa lợi nhuận của từng ngân hàng đơn lẻ thúc đẩy việc mở rộng [[money-supply|cung tiền]] và tín dụng quá mức mà giảm đệm an toàn, châm ngòi cho lạm phát vĩ mô.
 
-Để duy trì tính toàn vẹn của chế độ, nhà nước buộc phải đảm nhận ba trách nhiệm can thiệp nền tảng: điều tiết cung tiền pháp định, cung cấp chức năng người cho vay cuối cùng kết hợp bảo hiểm tiền gửi thông qua [[government-safety-net-solves-bank-runs-but-generates-systemic-moral-hazard|mạng lưới an toàn tài chính]], và thiết lập hệ thống [[supervision-differs-from-regulation-through-continuous-monitoring-and-camels-examination|thanh tra giám sát]] cùng cơ chế [[prompt-corrective-action-establishes-tripwire-capital-ratios-to-curb-regulatory-forbearance|can thiệp sớm bắt buộc]] để kiểm soát rủi ro đạo đức. Khi chế độ gặp sự cố, [[government-policy-failure-is-as-critical-as-market-failure-in-financial-crises|thất bại chính sách của chính phủ và ngân hàng trung ương]] thường là nguồn gốc gây bất ổn vĩ mô nghiêm trọng ngang bằng hoặc vượt trội các thất bại thị trường thông thường.
+Để duy trì tính toàn vẹn của chế độ, nhà nước buộc phải đảm nhận ba trách nhiệm can thiệp nền tảng: điều tiết cung tiền pháp định, cung cấp chức năng người cho vay cuối cùng kết hợp bảo hiểm tiền gửi thông qua [[government-safety-net-solves-bank-runs-but-generates-systemic-moral-hazard|mạng lưới an toàn tài chính]], và thiết lập hệ thống [[supervision-differs-from-regulation-through-continuous-monitoring-and-camels-examination|thanh tra giám sát]] cùng cơ chế [[prompt-corrective-action-establishes-tripwire-capital-ratios-to-curb-regulatory-forbearance|can thiệp sớm bắt buộc]] để kiểm soát [[moral-hazard|rủi ro đạo đức]]. Sự tiến hóa trong lịch sử của chế độ không tĩnh tại mà vận động không ngừng theo quy luật [[regulatory-market-dialectic-drives-financial-regime-evolution|biện chứng quản lý – thị trường]] giữa sáng tạo lách luật của khu vực tư nhân và phản ứng điều tiết của chính phủ, trải qua các giai đoạn từ mở rộng kiểm soát sang làn sóng [[us-financial-deregulation-eliminated-great-depression-era-competitive-barriers|phi điều tiết hóa tài chính]] trước khi tái can thiệp trở lại. Khi chế độ gặp sự cố, [[government-policy-failure-is-as-critical-as-market-failure-in-financial-crises|thất bại chính sách của chính phủ và ngân hàng trung ương]] thường là nguồn gốc gây bất ổn vĩ mô nghiêm trọng ngang bằng hoặc vượt trội các thất bại thị trường thông thường.

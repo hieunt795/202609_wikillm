@@ -3,7 +3,7 @@ title: seven-channels-of-central-bank-asset-purchase-programmes
 type: concept
 tags: [monetary, central-banking, asset-purchases, quantitative-easing, credit-easing, monetary-transmission]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

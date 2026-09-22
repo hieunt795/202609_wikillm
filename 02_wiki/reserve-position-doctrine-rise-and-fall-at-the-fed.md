@@ -3,7 +3,7 @@ title: reserve-position-doctrine-rise-and-fall-at-the-fed
 type: concept
 tags: [monetary, central-banking, monetary-policy-history, united-states]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

@@ -3,7 +3,7 @@ title: interest-rate-structure-is-determined-by-default-risk-liquidity-taxes-and
 type: concept
 tags: [interest-rates, term-structure, yield-curve, bond-market]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

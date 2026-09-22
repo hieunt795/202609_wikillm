@@ -3,7 +3,7 @@ title: optimal-width-of-the-interest-rate-corridor
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, corridor, interest-rates, money-market]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

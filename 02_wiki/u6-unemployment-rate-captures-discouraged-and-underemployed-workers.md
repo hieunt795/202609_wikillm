@@ -3,7 +3,7 @@ title: u6-unemployment-rate-captures-discouraged-and-underemployed-workers
 type: concept
 tags: [labour, unemployment, measurement]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

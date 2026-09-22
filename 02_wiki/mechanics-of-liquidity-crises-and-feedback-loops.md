@@ -3,7 +3,7 @@ title: mechanics-of-liquidity-crises-and-feedback-loops
 type: concept
 tags: [monetary, central-banking, financial-crises, liquidity-risk, market-microstructure]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

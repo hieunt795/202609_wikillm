@@ -3,7 +3,7 @@ title: surcharges-for-over-proportional-reliance-on-the-central-bank
 type: concept
 tags: [chinh-sach-tien-te, ngan-hang-trung-uong, thanh-khoan, nguoi-cho-vay-cuoi-cung]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

@@ -3,7 +3,7 @@ title: okuns-law-relates-the-gdp-gap-to-the-unemployment-gap
 type: concept
 tags: [macroeconomics, gdp, unemployment]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

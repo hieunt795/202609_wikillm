@@ -2,7 +2,7 @@
 source: cargill_central_bank_policy
 file: 01_sources/cargill_central_bank_policy/Cargill_Financial_System_Policy.md
 total_lines: 5624
-last_updated: 2026-09-21
+last_updated: 2026-09-22
 ---
 
 Nguồn một file duy nhất. Chú thích §7.5 dùng dải dòng trong file này.
@@ -19,12 +19,12 @@ Nguồn một file duy nhất. Chú thích §7.5 dùng dải dòng trong file n�
 | `[x]` | Part II · Ch.7 | d.2111–2452 | International Dimensions of the Financial System | 4 trang mới + 2 cập nhật liên kết |
 | `[x]` | Part III · Ch.8 | d.2453–2751 | The Basic Roles of Government in the Financial and Monetary Regime | 4 trang mới + 4 cập nhật liên kết |
 | `[x]` | Part III · Ch.9 | d.2752–3009 | Regulation and Supervision of the Financial System | 5 trang mới + 4 cập nhật liên kết |
-| `[ ]` | Part III · Ch.10 | d.3010–3312 | A Short History of the U.S. Financial and Monetary Regime in Transition | |
-| `[ ]` | Part IV · Ch.11 | d.3313–3570 | The Five Steps and Step 1: The Institutional Design of the Central Bank | |
-| `[ ]` | Part IV · Ch.12 | d.3571–4010 | Central Banks, Base Money and the Money Supply | |
-| `[ ]` | Part IV · Ch.13 | d.4011–4191 | Step 2: The Tools of Monetary Policy; and Step 3: Monetary Policy Instruments | |
-| `[ ]` | Part IV · Ch.14 | d.4192–4503 | Step 4: The Central Bank Model of the Economy | |
-| `[ ]` | Part IV · Ch.15 | d.4504–4717 | Step 5: Final Policy Targets | |
-| `[ ]` | Part IV · Ch.16 | d.4718–4964 | Monetary Policy Tactics, Strategy and Rules versus Discretion | |
-| `[ ]` | Part V · Ch.17 | d.4965–5325 | Five Important Periods in the U.S. Financial and Monetary Regime | |
+| `[x]` | Part III · Ch.10 | d.3010–3312 | A Short History of the U.S. Financial and Monetary Regime in Transition | 4 trang mới + 3 cập nhật liên kết |
+| `[x]` | Part IV · Ch.11 | d.3313–3570 | The Five Steps and Step 1: The Institutional Design of the Central Bank | 5 trang mới + 3 cập nhật liên kết |
+| `[x]` | Part IV · Ch.12 | d.3571–4010 | Central Banks, Base Money and the Money Supply | 5 trang mới + 3 cập nhật liên kết |
+| `[x]` | Part IV · Ch.13 | d.4011–4191 | Step 2: The Tools of Monetary Policy; and Step 3: Monetary Policy Instruments | 4 trang mới + 3 cập nhật liên kết |
+| `[x]` | Part IV · Ch.14 | d.4192–4503 | Step 4: The Central Bank Model of the Economy | 4 trang mới + 3 cập nhật liên kết |
+| `[x]` | Part IV · Ch.15 | d.4504–4717 | Step 5: Final Policy Targets | 4 trang mới + 3 cập nhật liên kết |
+| `[x]` | Part IV · Ch.16 | d.4718–4964 | Monetary Policy Tactics, Strategy and Rules versus Discretion | 5 trang mới + 3 cập nhật liên kết |
+| `[x]` | Part V · Ch.17 | d.4965–5325 | Five Important Periods in the U.S. Financial and Monetary Regime | 5 trang mới + 3 cập nhật liên kết |
 | `[x]` | Index & References | d.5326–5624 | Index | Bỏ qua, không tạo trang |

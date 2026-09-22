@@ -3,7 +3,7 @@ title: financial-programming
 type: concept
 tags: [macroeconomic-policy, imf, flow-of-funds]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

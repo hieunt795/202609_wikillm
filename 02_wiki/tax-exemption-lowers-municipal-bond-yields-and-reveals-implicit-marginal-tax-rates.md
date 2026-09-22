@@ -3,7 +3,7 @@ title: tax-exemption-lowers-municipal-bond-yields-and-reveals-implicit-marginal-
 type: concept
 tags: [taxation, municipal-bonds, arbitrage, fiscal-policy, interest-rates]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

@@ -3,7 +3,7 @@ title: monetary-policy-transmission-breakdown-and-zero-lower-bound
 type: concept
 tags: [monetary, central-banking, financial-crises, monetary-transmission, zero-lower-bound]
 sources: [bindseil_monetary_policy, cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

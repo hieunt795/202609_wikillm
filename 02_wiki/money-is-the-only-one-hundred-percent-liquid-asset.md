@@ -3,7 +3,7 @@ title: money-is-the-only-one-hundred-percent-liquid-asset
 type: concept
 tags: [money, liquidity, financial-system]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

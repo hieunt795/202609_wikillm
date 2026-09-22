@@ -3,7 +3,7 @@ title: monetary-expansion-lowers-interest-rates-via-liquidity-effect-before-inco
 type: concept
 tags: [monetary-policy, interest-rates, liquidity-effect, income-effect, fisher-effect]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

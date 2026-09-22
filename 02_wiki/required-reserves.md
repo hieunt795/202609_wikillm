@@ -3,7 +3,7 @@ title: required-reserves
 type: concept
 tags: [monetary-policy, financial-system, central-banking, reserve-requirements]
 sources: [imf_macro_accounting, bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

@@ -3,7 +3,7 @@ title: interest-rates-in-indirect-finance-are-administered-with-a-lag-behind-mar
 type: concept
 tags: [interest-rates, direct-finance, indirect-finance, banking, monetary-transmission]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

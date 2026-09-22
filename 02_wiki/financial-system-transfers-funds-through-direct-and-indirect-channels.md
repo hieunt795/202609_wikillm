@@ -3,7 +3,7 @@ title: financial-system-transfers-funds-through-direct-and-indirect-channels
 type: concept
 tags: [financial-system, direct-finance, indirect-finance, financial-markets, banking]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

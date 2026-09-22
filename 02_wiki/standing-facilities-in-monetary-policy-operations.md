@@ -3,7 +3,7 @@ title: standing-facilities-in-monetary-policy-operations
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, standing-facilities, discount-window]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 
