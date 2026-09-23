@@ -28,11 +28,25 @@ Vế `^  - .*` bắt tag viết dạng YAML nhiều dòng (khoảng 1/10 số tr
 
 Title là tiếng Anh, thân bài tiếng Việt: câu hỏi tiếng Việt thì đổi sang thuật ngữ tiếng Anh trước khi grep (vd "dự trữ bắt buộc" → `required-reserve`).
 
+Thuật ngữ có ≥ 2 cách dịch hợp lý không tương đương nghĩa (vd "dự trữ" → `reserve`/`reserve-money`/`foreign-exchange-reserve`), hoặc câu hỏi nhắc từ viết tắt/thực thể có thể hiểu nhiều nghĩa → hỏi người dùng làm rõ trước khi grep. Chỉ hỏi khi lựa chọn sai sẽ đổi hẳn kết quả tìm; không hỏi khi câu đã đủ rõ.
+
 **3. Lượt đắt — mở có chọn lọc.** Chỉ đọc full content những trang đã xác định là liên quan. Đi theo `[[wikilink]]` trong thân bài để mở rộng khi cần — mạng liên kết chính là đường tra cứu.
+
+Với mỗi trang cốt lõi (trực tiếp liên quan tới câu hỏi, không phải mọi trang mở rộng qua outlink), **luôn** gọi thêm:
+
+```bash
+python .claude/hooks/validate_wiki_page.py --backlinks <trang>
+```
+
+Outlink một chiều có thể bỏ sót trang trỏ ngược vào (backlink 2 chiều chỉ được đảm bảo từ lượt ingest tạo/sửa trang — §6 — không đảm bảo mọi trang cũ). Triage kết quả bằng tên file như lượt rẻ, chỉ mở full content trang backlink thực sự liên quan.
+
+**Giới hạn 1 vòng:** chỉ mở rộng thêm đúng 1 vòng qua trang mới phát hiện (từ outlink hoặc từ `--backlinks`) — không đệ quy tiếp sang vòng 2 dù trang mới mở lại có outlink/backlink riêng. Sau 1 vòng vẫn thấy thiếu → nói rõ phạm vi đã tra cho người dùng, không tự mở rộng vô hạn.
 
 **4. Tổng hợp.** Trả lời kèm trích dẫn trang wiki (`[[tên-trang]]`) và chú thích nguồn gốc đã có trên trang (source id, chương, dải dòng). Không tự dựng chú thích mà trang không có.
 
 **5. Kết tinh — chỉ khi đáng.** Câu trả lời tạo ra tổng hợp có giá trị tái sử dụng lâu dài → **hỏi người dùng xác nhận** trước khi tạo trang `type: analysis` (luật cứng 4). Không có gì mới đáng lưu thì không đề nghị.
+
+Trước khi tạo, kiểm trùng như `ingest` bước 2: `grep -l "^type: analysis" 02_wiki/*.md`, đối chiếu title các trang analysis đã có xem đã có trang nào tổng hợp đúng ý này chưa. Có → merge/cập nhật trang đó thay vì tạo trang mới. Không có → tạo mới.
 
 Người dùng đồng ý → đọc `00_schema.md` §1, §7, §8, §12, rồi viết trang theo đủ luật trang wiki: title câu trần thuật, không heading, link kèm lý do, thân bài áp skill `writing-style` (profile wiki). Hai điều kiện hook dễ vướng: `sources:` không rỗng — ghi source id của các trang đã tổng hợp; nếu có nguồn dài thì §7.5 áp dụng — chú thích lấy lại từ chính các trang đã tổng hợp, trang nguồn chưa có chú thích thì nói rõ là chưa truy được tới dòng. Thêm trang vào `index.md`, chạy `python .claude/hooks/validate_wiki_page.py --all`, rồi ghi 1 mục vào cuối `log.md`: `## [<giờ từ --now>] query | <câu hỏi rút gọn>`.
 

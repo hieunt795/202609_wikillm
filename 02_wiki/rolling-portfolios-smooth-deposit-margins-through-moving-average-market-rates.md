@@ -1,0 +1,25 @@
+---
+title: rolling-portfolios-smooth-deposit-margins-through-moving-average-market-rates
+type: concept
+tags: [alm, replicating-portfolio, rolling-portfolio, moving-average, ftp, deposit-margin]
+sources: [tata_bank_alm]
+status: stable
+last_updated: 2026-09-23
+---
+
+Danh mục cuốn chiếu (Rolling Portfolio) là bước phát triển then chốt từ mô hình suy giảm thế hệ theo [[replicating-portfolios-model-non-maturity-deposits-via-vintage-run-off-tranches]], nhằm chuyển đổi mô hình từ trạng thái thanh lý đóng (*run-off view*) sang trạng thái hoạt động liên tục ổn định (*steady-state rolling view*) của một ngân hàng thương mại đang tăng trưởng (tata_bank_alm, Ch.2, Rolling Portfolio, d.1875–1881). Trong thực tế hoạt động, các khoản tiền gửi thanh toán bị khách hàng rút đi liên tục được bù đắp đầy đủ bằng các khoản tiền gửi mới từ những khách hàng khác; khi đó, tổng quy mô tiền gửi không kỳ hạn của ngân hàng duy trì không đổi theo thời gian (tata_bank_alm, Ch.2, Rolling Portfolio, d.1881).
+
+Nhìn nhận sổ tiền gửi như một danh mục đầu tư tích lũy theo thời gian phản ánh sát thực tế hơn nhiều so với việc coi nó là một khối tài sản đồng nhất (tata_bank_alm, Ch.2, Rolling Portfolio, d.1879). Bằng cách thiết lập dòng thời gian (*timeline*) cho các dòng tiền (ví dụ: trong số 50 triệu EUR tiền gửi thanh toán, 8 triệu EUR dự kiến rút trong năm nay có thể là khoản tiền gửi từ 4 năm trước, còn 8 triệu EUR gửi vào ngày hôm nay dự kiến sẽ duy trì trong 5 năm tới), ngân hàng xác định được mức lãi suất cơ hội (*opportunity interest rate*) mà nguồn vốn khách hàng có thể tạo ra trên thị trường liên ngân hàng (tata_bank_alm, Ch.2, Rolling Portfolio, d.1875–1883). Về mặt tác nghiệp, bộ phận Nguồn vốn (Treasury / ALM) được ủy quyền tiếp nhận toàn bộ nguồn vốn tiền gửi từ mạng lưới chi nhánh và quản lý chúng theo mức lãi suất thị trường (tata_bank_alm, Ch.2, Rolling Portfolio, d.1883).
+
+Bởi vì các khoản đầu tư giả định của dòng tiền khách hàng diễn ra tại nhiều thời điểm khác nhau trong quá khứ, tỷ suất sinh lời cơ hội bình quân của danh mục cuốn chiếu là sự pha trộn của chuỗi lãi suất lịch sử, hình thành nên **lãi suất bình quân trượt (Moving Average — MA)** (tata_bank_alm, Ch.2, Rolling Portfolio, d.1889). Ví dụ, nếu sử dụng lãi suất hoán đổi EUR Swap 5 năm làm chuẩn mực cơ hội:
+- Phân đoạn 8 triệu EUR gửi từ 4 năm trước chỉ mang lại lợi suất -0,3% (mức lãi suất swap 5 năm thời kỳ lãi suất âm);
+- Trong khi phân đoạn 8 triệu EUR mới nhất của năm hiện hành đạt mức lợi suất 3,0% (lãi suất swap 5 năm hiện tại);
+- Kết quả là mức lợi suất bình quân trượt tổng thể của danh mục 50 triệu EUR đạt mức 0,8% (tata_bank_alm, Ch.2, Rolling Portfolio, d.1891).
+
+Tỷ suất bình quân trượt 0,8% này được Treasury chuyển giao nội bộ cho khối kinh doanh khách hàng như một mức giá chuyển nhượng vốn [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]] (tata_bank_alm, Ch.2, Rolling Portfolio, d.1893). Khi đó, biên đóng góp thương mại của bộ phận huy động tiền gửi được tính bằng:
+$$Margin_{khach\_hang} = L\tilde{a}i\ su\hat{a}t\ FTP\ (MA) - L\tilde{a}i\ su\hat{a}t\ chi\ tr\h{a}\ cho\ kh\acute{a}ch\ h\grave{a}ng$$
+Nếu do áp lực cạnh tranh thị trường, ngân hàng phải trả lãi suất 1,0% cho tiền gửi thanh toán, biên đóng góp của bộ phận tiền gửi tạm thời âm -0,2% (0,8% - 1,0%) (tata_bank_alm, Ch.2, Rolling Portfolio, d.1895).
+
+Theo thời gian, cơ chế tái đầu tư cuốn chiếu (*replication over time*) đóng vai trò như một bộ giảm xóc vĩ mô (tata_bank_alm, Ch.2, Replication Over Time, d.1911–1915). Khi bước sang năm tiếp theo, khoản đầu tư 5 năm thực hiện từ 5 năm trước đáo hạn và rời khỏi danh mục; dòng tiền này được thay thế bằng khoản tiền gửi mới và được Treasury tái đầu tư ở lãi suất swap 5 năm mới tại mức 3,5% (tata_bank_alm, Ch.2, Replication Over Time, d.1913–1922). Cơ chế bình quân trượt MA tự động "loại bỏ lãi suất quá khứ thấp và nạp vào lãi suất thị trường cao", đẩy tỷ suất FTP nội bộ từ 0,8% lên 1,5% (tata_bank_alm, Ch.2, Replication Over Time, d.1915; tata_bank_alm, Ch.2, Replication Over Time, d.1933). Nếu ngân hàng vẫn giữ nguyên mức lãi suất chi trả cho khách hàng là 1,0% do tính dính của tiền gửi, biên lợi nhuận của khối kinh doanh đảo chiều tăng vọt lên +0,5% (tata_bank_alm, Ch.2, Replication Over Time, d.1935).
+
+Cơ chế rolling portfolio giúp làm mượt biến động thu nhập, bảo vệ bảng cân đối kế toán khỏi những cú sốc lãi suất thị trường ngắn hạn (tata_bank_alm, Ch.2, Replication Over Time, d.1935). Để tối đa hóa hiệu quả của danh mục cuốn chiếu, ngân hàng phải thực hiện hiệu chuẩn cấu trúc các kỳ hạn thông qua [[replicating-portfolio-calibration-optimizes-margin-sharpe-ratios-across-key-rates]]. Tuy nhiên, tính hợp lệ của phương pháp rolling MA dựa trên giả định bất biến về quy mô tiền gửi; khi quy mô thực tế mở rộng hoặc thu hẹp, ngân hàng buộc phải kích hoạt kỹ thuật [[dynamic-replication-hedges-deposit-volume-fluctuations-at-prevailing-market-rates]] để tránh những sai lệch đo lường từ [[sticky-deposit-rates-and-unstable-deposit-betas-challenge-replication-models]].

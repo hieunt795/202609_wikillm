@@ -1,0 +1,21 @@
+---
+title: matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions
+type: concept
+tags: [alm, ftp, nim, matched-maturity, structural-contribution, treasury]
+sources: [tata_bank_alm]
+status: stable
+last_updated: 2026-09-23
+---
+
+Phương pháp cân khớp kỳ hạn (Matched Maturity Method) là kỹ thuật triển khai chuẩn mực trong hệ thống [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]], cho phép bóc tách biên thu nhập lãi thuần (Net Interest Margin — NIM) tổng thể của ngân hàng thành các phần biên đóng góp độc lập của từng bộ phận kinh doanh và phần đóng góp cấu trúc thuộc về khối Nguồn vốn (Treasury) (tata_bank_alm, Ch.2, Net Interest Margin, d.1591; tata_bank_alm, Ch.2, Transfer Price Curve, d.1617). NIM là chênh lệch giữa doanh thu lãi ($II$) và chi phí lãi ($IE$); tuy nhiên một phép tính NIM thuần túy không thể trả lời câu hỏi: phần lợi nhuận tạo ra thuộc về công lao của bộ phận huy động tiền gửi hay bộ phận cho vay khách hàng (tata_bank_alm, Ch.2, Net Interest Margin, d.1599).
+
+Trong phương pháp Matched Maturity, mỗi khoản tài sản hoặc công nợ phát sinh được gán một mức lãi suất FTP đối ứng lấy từ đường cong giá chuyển nhượng (Transfer Price Curve) khớp đúng với kỳ hạn thực tế của giao dịch đó (tata_bank_alm, Ch.2, Transfer Price Curve, d.1617). Khi tài sản và công nợ có sự lệch pha về kỳ hạn, việc phân bổ NIM diễn ra theo cơ chế tách lớp rõ ràng (tata_bank_alm, Ch.2, Transfer Price Curve, d.1623). Xét ví dụ định lượng của Tata: ngân hàng huy động khoản tiền gửi kỳ hạn 1 năm với lãi suất 1% và dùng toàn bộ số tiền đó để giải ngân khoản vay kỳ hạn 2 năm với lãi suất 4%, tạo ra NIM toàn ngân hàng trong năm đầu tiên là 3% mỗi năm (tata_bank_alm, Ch.2, Transfer Price Curve, d.1623). Thay vì so sánh trực tiếp hai mức lãi suất khách hàng với nhau, mô hình đối chiếu từng giao dịch với đường cong FTP:
+- Mức lãi suất FTP kỳ hạn 1 năm là 2%: Bộ phận tiền gửi nhận biên đóng góp thương mại là $2\% - 1\% = 1\%$ (tata_bank_alm, Ch.2, Transfer Price Curve, d.1623);
+- Mức lãi suất FTP kỳ hạn 2 năm là 3%: Bộ phận cho vay nhận biên đóng góp thương mại là $4\% - 3\% = 1\%$ (tata_bank_alm, Ch.2, Transfer Price Curve, d.1623);
+- Khoản chênh lệch giữa lãi suất FTP 2 năm và 1 năm trên đường cong ($3\% - 2\% = 1\%$) được gọi là **Đóng góp cấu trúc (Structural Contribution)** và được hạch toán chuyển giao về cho Treasury (tata_bank_alm, Ch.2, Transfer Price Curve, d.1623; tata_bank_alm, Ch.2, Structural Contribution, d.1631).
+
+Khoản đóng góp cấu trúc 1% chính là thù lao kinh tế bù đắp cho Treasury vì đã đứng ra tiếp nhận và chịu đựng hai rủi ro hệ thống phát sinh từ sự lệch pha bảng cân đối (tata_bank_alm, Ch.2, Structural Contribution, d.1631–1633):
+1. **Rủi ro tái tài trợ ([[liquidity-risk]])**: Tại thời điểm kết thúc năm thứ nhất, tiền gửi khách hàng đáo hạn trong khi vốn vẫn bị giam chặt ở khoản vay 2 năm; nếu không thể huy động được nguồn tiền gửi thay thế hoặc thị trường đóng băng, ngân hàng sẽ đối mặt với khủng hoảng thiếu hụt thanh khoản (tata_bank_alm, Ch.2, Structural Contribution, d.1633);
+2. **Rủi ro lãi suất ([[interest-rate-gap-risk-stems-from-repricing-timing-mismatches]])**: Do lãi suất tiền gửi chỉ cố định trong 1 năm, nếu lãi suất thị trường tăng vọt trong năm thứ hai, Treasury sẽ buộc phải đảo nợ nguồn vốn mới với chi phí lãi cao hơn, dẫn tới nguy cơ xói mòn hoặc đảo chiều âm toàn bộ biên thu nhập lãi thuần (tata_bank_alm, Ch.2, Structural Contribution, d.1633).
+
+Nhờ kỹ thuật Matched Maturity kết hợp bóc tách rủi ro theo [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]], khối kinh doanh được bảo vệ hoàn toàn trước các biến động thị trường để tập trung tối ưu hóa biên độ thương mại, trong khi rủi ro cấu trúc được tập trung quản trị tại một đầu mối duy nhất.

@@ -3,7 +3,7 @@ title: collateral-scarcity-and-effective-term-funding-costs
 type: concept
 tags: [monetary, central-banking, collateral-framework, liquidity-risk, monetary-transmission]
 sources: [bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-21
 ---
 

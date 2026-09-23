@@ -3,7 +3,7 @@ title: securities-settlement-fails-are-disciplined-by-fails-charges-and-cured-th
 type: concept
 tags: [settlement, repo-market, market-discipline, financial-regulations]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

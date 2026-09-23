@@ -3,7 +3,7 @@ title: partial-index-replication-optimizes-tracking-error-against-cash-drag-and-
 type: concept
 tags: [index-tracking, partial-replication, cash-drag, tracking-error, portfolio-optimization]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

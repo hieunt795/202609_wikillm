@@ -3,7 +3,7 @@ title: treasury-bill-maturity-clustering-functions-as-a-barometer-for-government
 type: concept
 tags: [treasury-bills, government-shutdown, debt-ceiling, default-risk, us-treasury]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

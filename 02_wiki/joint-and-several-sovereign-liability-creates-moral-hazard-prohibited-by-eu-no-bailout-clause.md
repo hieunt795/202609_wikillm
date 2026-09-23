@@ -3,7 +3,7 @@ title: joint-and-several-sovereign-liability-creates-moral-hazard-prohibited-by-
 type: concept
 tags: [sovereign-debt, fiscal-policy, bond-market]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

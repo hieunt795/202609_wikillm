@@ -3,7 +3,7 @@ title: fixed-income-price-discovery-transmits-hierarchically-from-liquid-benchma
 type: concept
 tags: [fixed-income, price-discovery, market-microstructure, liquidity]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

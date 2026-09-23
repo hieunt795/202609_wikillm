@@ -3,7 +3,7 @@ title: treasury-repo-market-operates-through-three-distinct-client-segments
 type: concept
 tags: [repo-market, monetary-policy, financial-plumbing, primary-dealers]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

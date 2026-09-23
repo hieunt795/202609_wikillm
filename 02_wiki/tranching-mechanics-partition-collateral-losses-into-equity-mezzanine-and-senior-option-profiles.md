@@ -3,7 +3,7 @@ title: tranching-mechanics-partition-collateral-losses-into-equity-mezzanine-and
 type: concept
 tags: [abs, tranching, waterfall, equity-tranche, mezzanine-tranche, senior-tranche, pacs, option-replication]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

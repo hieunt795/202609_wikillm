@@ -3,7 +3,7 @@ title: central-banks-face-policy-reaction-traps-when-energy-supply-shocks-elevat
 type: concept
 tags: [central-banking, monetary-policy, inflation-shocks, term-structure]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

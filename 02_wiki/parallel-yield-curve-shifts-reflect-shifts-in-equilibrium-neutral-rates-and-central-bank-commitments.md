@@ -3,7 +3,7 @@ title: parallel-yield-curve-shifts-reflect-shifts-in-equilibrium-neutral-rates-a
 type: concept
 tags: [yield-curve, term-structure, monetary-policy, expectations-hypothesis]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

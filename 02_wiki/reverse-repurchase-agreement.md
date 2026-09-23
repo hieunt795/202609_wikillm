@@ -3,7 +3,7 @@ title: reverse-repurchase-agreement
 type: concept
 tags: [open-market-operations, monetary-policy, central-bank]
 sources: [cargill_central_bank_policy, bindseil_monetary_policy, clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

@@ -1,0 +1,16 @@
+---
+title: interest-rate-projection-approaches-contrast-forward-rates-with-unchanged-yield-curves
+type: concept
+tags: [alm, irrbb, yield-curve, forward-rates, nii, forecasting]
+sources: [tata_bank_alm]
+status: stable
+last_updated: 2026-09-23
+---
+
+Khi các vị thế tài sản hoặc nợ đến hạn và được tái tạo theo quy tắc của [[balance-sheet-evolution-assumptions-differentiate-run-off-static-and-dynamic-views]], bộ phận ALM bắt buộc phải đưa ra giả định rõ ràng về mặt bằng lãi suất tương lai để tính toán [[net-interest-income-forecast-serves-as-baseline-for-prospective-alm-simulations]] (tata_bank_alm, Ch.2, Assumptions About Future Interest Rates, d.1045). Trong thực tiễn mô hình hóa ngân hàng, có hai trường phái lý thuyết và thực nghiệm đối lập nhau trong việc dự phóng đường cong lãi suất (tata_bank_alm, Ch.2, Assumptions About Future Interest Rates, d.1047–1049).
+
+Trường phái thứ nhất sử dụng lãi suất kỳ hạn (Forward Rates) làm thước đo dự báo tốt nhất cho lãi suất tương lai, bắt nguồn từ lý thuyết kỳ vọng (*expectation theory*) vốn giả định lãi suất dài hạn là kỳ vọng trung bình của các mức lãi suất ngắn hạn trong tương lai (tata_bank_alm, Ch.2, Assumptions About Future Interest Rates, d.1047). Tỷ giá kỳ hạn có thể bóc tách từ đường cong giao ngay (*spot yield curve*) hoặc quan sát trực tiếp trên thị trường phái sinh thông qua hợp đồng kỳ hạn lãi suất (FRA) hay hợp đồng tương lai (tata_bank_alm, Ch.2, Assumptions About Future Interest Rates, d.1047). Ưu điểm tác nghiệp cốt lõi của trường phái này là lãi suất kỳ hạn phản ánh chính xác mức giá mà ngân hàng có thể giao dịch và phòng hộ ngay lập tức trên thị trường tài chính (tata_bank_alm, Ch.2, Assumptions About Future Interest Rates, d.1047).
+
+Trường phái thứ hai — thường được các chuyên gia thực hành ALM ưa chuộng — xem môi trường lãi suất giao ngay hiện tại (*unchanged yield curve / current market levels*) là điểm tựa dự báo thực tế nhất (tata_bank_alm, Ch.2, Assumptions About Future Interest Rates, d.1049). Lãi suất kỳ hạn trên thị trường không phải là ước lượng phi thiên lệch (*unbiased predictors*) bởi chúng luôn hàm chứa phần bù rủi ro thanh khoản (*liquidity risk premium*), tạo ra độ lệch có xu hướng thổi phồng lãi suất tương lai cao hơn thực tế (tata_bank_alm, Ch.2, Assumptions About Future Interest Rates, d.1049). Hàng loạt nghiên cứu thực nghiệm học thuật đã kiểm định và bác bỏ năng lực dự báo của đường cong forward rates, do đó giả định một thế giới không đổi với lãi suất duy trì ở mức hiện hành được xem là kịch bản chuẩn mực thận trọng (tata_bank_alm, Ch.2, Assumptions About Future Interest Rates, d.1049).
+
+Nguyên tắc quản trị ALM khuyến nghị không nên áp dụng các mô hình cấu trúc kỳ hạn quá tinh vi và phức tạp vào việc mô phỏng NII, nhằm tránh trường hợp độ nhạy rủi ro tính toán được chỉ phản ánh các thiên lệch nội sinh của bản thân mô hình toán thay vì bản chất rủi ro của danh mục (tata_bank_alm, Ch.2, Assumptions About Future Interest Rates, d.1051). Việc lựa chọn giả định lãi suất đóng vai trò quyết định trong việc bóc tách ảo giác sinh lời của các chiến lược phòng hộ hoán đổi theo [[receiver-interest-rate-swaps-stabilize-falling-rate-nii-while-magnifying-eve-duration-risk]] và lượng hóa độ nhạy ngắn hạn trong [[earning-gap-analysis-estimates-short-term-nii-sensitivity-via-periodic-impact-weights]].

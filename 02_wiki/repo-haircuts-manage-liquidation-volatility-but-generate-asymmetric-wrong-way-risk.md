@@ -3,7 +3,7 @@ title: repo-haircuts-manage-liquidation-volatility-but-generate-asymmetric-wrong
 type: concept
 tags: [repo-market, haircut, risk-management, central-bank-operations]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

@@ -3,7 +3,7 @@ title: commodity-import-energy-shocks-transmit-directly-into-offshore-dollar-fun
 type: concept
 tags: [dollar-funding, energy-shocks, eurodollar, petrodollar, terms-of-trade]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

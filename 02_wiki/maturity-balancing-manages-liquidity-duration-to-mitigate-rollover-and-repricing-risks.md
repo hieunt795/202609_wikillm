@@ -3,7 +3,7 @@ title: maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-re
 type: concept
 tags: [alm, interest-rate-risk, liquidity-management]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-22
 ---
 

@@ -1,0 +1,18 @@
+---
+title: regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp
+type: concept
+tags: [alm, ftp, lcr, nsfr, basel-iii, regulation, ccp, margining]
+sources: [tata_bank_alm]
+status: stable
+last_updated: 2026-09-23
+---
+
+Các cải cách quy chuẩn an toàn tài chính sau cuộc khủng hoảng 2007–2008 (đặc biệt là khung Basel III và Chỉ thị CRD của Liên minh Châu Âu) đã áp đặt hàng loạt ràng buộc thanh khoản và vốn khắt khe, tạo ra các chi phí tài trợ cận biên (*marginal funding costs*) trực tiếp lên cả các vị thế nội bảng và ngoại bảng của ngân hàng (tata_bank_alm, Ch.2, Regulatory Requirements, d.1700). Để phản ánh chính xác hiệu quả kinh tế và ngăn ngừa sự tích tụ rủi ro ngầm, hệ thống [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]] hiện đại bắt buộc phải tích hợp các chi phí tuân thủ pháp lý này vào cấu trúc đường cong FTP (tata_bank_alm, Ch.2, Regulatory Requirements, d.1700).
+
+Bốn động lực chi phí pháp lý chính được tích hợp vào đường cong FTP bao gồm (tata_bank_alm, Ch.2, Regulatory Requirements, d.1702–1720):
+1. **Tỷ lệ đảm bảo thanh khoản (Liquidity Coverage Ratio — LCR)**: Yêu cầu ngân hàng phải nắm giữ đủ tài sản có tính thanh khoản cao (HQLA) để chống đỡ kịch bản rút vốn căng thẳng trong 30 ngày (tata_bank_alm, Ch.2, Liquidity Coverage Ratio, d.1704). Việc duy trì danh mục HQLA lợi suất thấp làm phát sinh chi phí cơ hội vốn đáng kể; do đó, bất kỳ giao dịch kinh doanh mới nào đòi hỏi bổ sung thêm HQLA đều phải chịu một khoản phụ phí LCR trên đường cong FTP (tata_bank_alm, Ch.2, Liquidity Coverage Ratio, d.1704). Ngược lại, các sản phẩm tạo ra dòng tiền vào LCR giúp thu hẹp quy mô danh mục HQLA bắt buộc sẽ được thưởng điểm khuyến khích vốn (tata_bank_alm, Ch.2, Liquidity Coverage Ratio, d.1706);
+2. **Tỷ lệ nguồn vốn ổn định ròng (Net Stable Funding Ratio — NSFR)**: Đòi hỏi ngân hàng phải duy trì cơ cấu nguồn vốn ổn định phù hợp với tính thanh khoản của tài sản trong chân trời 1 năm (tata_bank_alm, Ch.2, Net Stable Funding Ratio, d.1710). Nhiều vị thế — tiêu biểu là các hợp đồng phái sinh dù không đòi hỏi vốn tài trợ ban đầu (tự tài trợ) — lại làm suy giảm mạnh tỷ lệ NSFR của ngân hàng, buộc tổ chức phải phát hành thêm nợ dài hạn với chi phí đắt đỏ; hệ thống FTP sẽ phạt thêm phí đối với các vị thế gây hao hụt chỉ số NSFR này (tata_bank_alm, Ch.2, Net Stable Funding Ratio, d.1710);
+3. **Nghĩa vụ bù trừ trung tâm (Clearing Mandate)**: Quy định bắt buộc bù trừ các hợp đồng phái sinh OTC chuẩn hóa qua các đối tác bù trừ trung tâm (CCP) kéo theo chi phí tài trợ tiền mặt ký quỹ ban đầu (*Initial Margin*) và ký quỹ biến đổi (*Variation Margin*) theo [[ccp-waterfall-protects-clearing-houses-through-margining-default-funds-and-mandatory-bidding]] (tata_bank_alm, Ch.2, Clearing Mandate, d.1714);
+4. **Yêu cầu ký quỹ phái sinh song phương (Bilateral Margining)**: Các hợp đồng phái sinh phi chuẩn không qua bù trừ trung tâm bị siết chặt yêu cầu ký quỹ song phương, làm gia tăng gánh nặng chi phí vốn tài trợ tài sản thế chấp (tata_bank_alm, Ch.2, Margin Requirements, d.1718–1720).
+
+Nếu một hệ thống FTP không định giá đúng chi phí của các ràng buộc quy chuẩn trên, các khối kinh doanh sẽ có xu hướng đẩy mạnh các sản phẩm làm suy kiệt các tỷ số thanh khoản theo [[liquidity-risk]] do không phải gánh chịu chi phí khắc phục vốn. Việc tích hợp LCR và NSFR cùng các phụ phí dự phòng theo [[contingency-liquidity-and-embedded-optionality-require-specialized-ftp-add-ons]] bảo đảm việc định giá sản phẩm trên [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]] luôn phản ánh đầy đủ mọi chi phí kinh tế biên của ngân hàng.

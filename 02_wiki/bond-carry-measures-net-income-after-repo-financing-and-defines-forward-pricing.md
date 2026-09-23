@@ -3,7 +3,7 @@ title: bond-carry-measures-net-income-after-repo-financing-and-defines-forward-p
 type: concept
 tags: [bond-market, carry, repo-market]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

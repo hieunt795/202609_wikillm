@@ -3,7 +3,7 @@ title: rating-migration-matrices-resolve-the-maturity-paradox-and-reveal-corpora
 type: concept
 tags: [rating-migration, markov-chain, maturity-paradox, absorbing-state, mean-reversion, sovereign-credit, fallen-angels]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

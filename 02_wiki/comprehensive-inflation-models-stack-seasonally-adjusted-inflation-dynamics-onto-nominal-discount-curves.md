@@ -3,7 +3,7 @@ title: comprehensive-inflation-models-stack-seasonally-adjusted-inflation-dynami
 type: concept
 tags: [inflation-modelling, composite-curve, real-discount-factor, spline-fitting, quantitative-finance]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

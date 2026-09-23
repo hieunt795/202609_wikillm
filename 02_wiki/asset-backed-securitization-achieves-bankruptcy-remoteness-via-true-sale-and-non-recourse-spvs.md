@@ -3,7 +3,7 @@ title: asset-backed-securitization-achieves-bankruptcy-remoteness-via-true-sale-
 type: concept
 tags: [abs, securitization, spv, true-sale, bankruptcy-remoteness, non-recourse, sts-framework, basel-arbitrage]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

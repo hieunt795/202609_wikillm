@@ -3,7 +3,7 @@ title: spline-spread-dispersion-measures-indirect-arbitrage-capacity-without-tra
 type: concept
 tags: [market-liquidity, yield-curve, arbitrage, indicators]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

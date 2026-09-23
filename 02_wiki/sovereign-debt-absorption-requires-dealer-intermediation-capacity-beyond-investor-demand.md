@@ -3,7 +3,7 @@ title: sovereign-debt-absorption-requires-dealer-intermediation-capacity-beyond-
 type: concept
 tags: [primary-dealers, sovereign-debt, market-making, repo-financing]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

@@ -3,7 +3,7 @@ title: clean-and-dirty-bond-prices-separate-market-valuation-from-accrued-intere
 type: concept
 tags: [bond-market, pricing, fixed-income]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

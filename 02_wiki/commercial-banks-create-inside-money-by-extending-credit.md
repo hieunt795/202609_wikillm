@@ -3,7 +3,7 @@ title: commercial-banks-create-inside-money-by-extending-credit
 type: concept
 tags: [banking, money-creation, inside-money, credit]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

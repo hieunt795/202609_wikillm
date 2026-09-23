@@ -3,7 +3,7 @@ title: sovereign-debt-maturity-trade-offs-balance-rate-volatility-against-refina
 type: concept
 tags: [sovereign-debt, debt-management, maturity-profile, interest-rate-swaps, refinancing-risk]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

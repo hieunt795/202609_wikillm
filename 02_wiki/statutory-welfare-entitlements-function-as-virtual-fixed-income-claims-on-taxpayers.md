@@ -3,7 +3,7 @@ title: statutory-welfare-entitlements-function-as-virtual-fixed-income-claims-on
 type: concept
 tags: [fiscal-policy, fixed-income, national-balance-sheet, welfare]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

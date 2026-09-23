@@ -3,7 +3,7 @@ title: tri-party-repo-centralizes-collateral-administration-and-economizes-on-ca
 type: concept
 tags: [repo-market, tri-party-repo, financial-infrastructure, clearing]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

@@ -3,7 +3,7 @@ title: banks-fundamentally-rely-on-short-term-liabilities-to-finance-long-term-c
 type: concept
 tags: [commercial-banking, maturity-transformation, financial-intermediation]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-22
 ---
 

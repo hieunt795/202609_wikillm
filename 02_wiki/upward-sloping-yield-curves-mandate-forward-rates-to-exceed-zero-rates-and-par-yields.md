@@ -3,7 +3,7 @@ title: upward-sloping-yield-curves-mandate-forward-rates-to-exceed-zero-rates-an
 type: concept
 tags: [yield-curve, forward-rate, zero-rate, par-yield, term-structure]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

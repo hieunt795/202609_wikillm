@@ -3,7 +3,7 @@ title: private-credit-selective-defaults-obscure-systemic-banking-fragility
 type: concept
 tags: [private-credit, shadow-banking, selective-defaults, pik-toggle, systemic-risk, banking-system, financial-intermediation]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

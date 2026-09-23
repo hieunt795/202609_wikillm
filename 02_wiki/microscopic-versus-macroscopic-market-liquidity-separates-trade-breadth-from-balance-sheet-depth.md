@@ -3,7 +3,7 @@ title: microscopic-versus-macroscopic-market-liquidity-separates-trade-breadth-f
 type: concept
 tags: [market-liquidity, market-microstructure, fixed-income]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

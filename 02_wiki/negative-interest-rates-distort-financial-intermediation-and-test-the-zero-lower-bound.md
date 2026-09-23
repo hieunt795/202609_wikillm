@@ -3,7 +3,7 @@ title: negative-interest-rates-distort-financial-intermediation-and-test-the-zer
 type: concept
 tags: [negative-interest-rates, zero-lower-bound, central-banking, monetary-policy, financial-institutions]
 sources: [cargill_central_bank_policy, fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

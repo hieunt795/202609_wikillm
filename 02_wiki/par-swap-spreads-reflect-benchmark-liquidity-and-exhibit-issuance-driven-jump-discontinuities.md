@@ -3,7 +3,7 @@ title: par-swap-spreads-reflect-benchmark-liquidity-and-exhibit-issuance-driven-
 type: concept
 tags: [par-spread, swap-spread, benchmark-bonds, basis-trade, on-the-run]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

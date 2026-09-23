@@ -3,7 +3,7 @@ title: long-only-fixed-income-portfolios-cannot-achieve-complete-risk-neutrality
 type: concept
 tags: [long-only, risk-neutrality, portfolio-constraints, duration-sensitivity, fixed-income-risk]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

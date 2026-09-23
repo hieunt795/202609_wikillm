@@ -3,7 +3,7 @@ title: domestic-gold-pricing-diverges-from-international-benchmarks-due-to-struc
 type: concept
 tags: [financial-markets, liquidity-premium, vietnam-financial-system]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-22
 ---
 

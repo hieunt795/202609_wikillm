@@ -3,7 +3,7 @@ title: bill-discounting-and-rediscounting-provide-dual-recourse-liquidity-to-the
 type: concept
 tags: [discount-window, rediscounting, central-banking, liquidity]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

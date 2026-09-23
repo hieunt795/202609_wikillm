@@ -3,7 +3,7 @@ title: rmbs-negative-convexity-arises-from-embedded-borrower-prepayment-options-
 type: concept
 tags: [rmbs, negative-convexity, negative-duration, wal-extension, prepayment-option, dynamic-hedging, price-yield-distortion]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

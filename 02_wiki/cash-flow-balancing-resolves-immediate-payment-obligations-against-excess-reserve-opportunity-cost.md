@@ -3,7 +3,7 @@ title: cash-flow-balancing-resolves-immediate-payment-obligations-against-excess
 type: concept
 tags: [alm, liquidity-management, payment-systems]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-22
 ---
 

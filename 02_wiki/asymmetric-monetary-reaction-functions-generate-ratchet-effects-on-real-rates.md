@@ -3,7 +3,7 @@ title: asymmetric-monetary-reaction-functions-generate-ratchet-effects-on-real-r
 type: concept
 tags: [monetary-policy, reaction-function, real-interest-rate, fisher-equation, inflation-expectations, ratchet-effect]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

@@ -3,7 +3,7 @@ title: holding-period-return-combines-carry-and-roll-down-quantified-by-break-ev
 type: concept
 tags: [holding-period-return, carry, roll-down, break-even-buffer, bond-trading]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

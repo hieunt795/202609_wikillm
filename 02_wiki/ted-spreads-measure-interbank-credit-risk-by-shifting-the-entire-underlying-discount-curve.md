@@ -3,7 +3,7 @@ title: ted-spreads-measure-interbank-credit-risk-by-shifting-the-entire-underlyi
 type: concept
 tags: [ted-spread, option-adjusted-spread, interbank-risk, discount-curve, eurodollar]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

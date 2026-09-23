@@ -3,7 +3,7 @@ title: inflation-seasonality-distorts-clean-prices-and-breakeven-rates-absent-cy
 type: concept
 tags: [inflation-seasonality, clean-price, breakeven-inflation, seasonal-filtering, tips]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

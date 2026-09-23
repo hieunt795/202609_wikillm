@@ -5,6 +5,8 @@ tags: [monetary-policy, financial-system]
 sources: [imf_macro_accounting, cargill_central_bank_policy]
 status: stable
 last_updated: 2026-09-21
+reviewed: 2026-09-23
+reviewed_by: model
 ---
 
 Ngân hàng nhận tiền gửi (DMB) là các ngân hàng và tổ chức tài chính có nghĩa vụ nợ đáng kể dưới dạng tiền gửi thanh toán ngay, có thể chuyển nhượng bằng séc hay phương tiện khác để thực hiện thanh toán (imf_macro_accounting, Ch.5, Deposit Money Banks, d.4680–4681; cargill_central_bank_policy, Ch.3, Indirect Finance, d.1287–1308). Trong hệ thống tài chính Hoa Kỳ, các định chế nhận tiền gửi bao gồm ngân hàng thương mại và ba loại hình tổ chức tiết kiệm (thrifts): các hiệp hội tiết kiệm và cho vay (S&Ls), ngân hàng tiết kiệm tương hỗ, và các hiệp hội tín dụng (credit unions) (cargill_central_bank_policy, Ch.3, d.1287–1308). Trong đó, ngân hàng thương mại có quy mô lớn nhất và danh mục tài sản đa dạng nhất, trong khi các tổ chức thrifts ban đầu chuyên trách cho vay thế chấp bất động sản và tín dụng tiêu dùng nhưng dần hội tụ công năng tương tự ngân hàng.

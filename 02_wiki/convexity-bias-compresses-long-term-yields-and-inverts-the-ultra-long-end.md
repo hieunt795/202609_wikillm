@@ -3,7 +3,7 @@ title: convexity-bias-compresses-long-term-yields-and-inverts-the-ultra-long-end
 type: concept
 tags: [yield-curve, convexity, term-structure, quantitative-finance]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

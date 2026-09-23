@@ -3,7 +3,7 @@ title: repo-rate-spikes-transmit-to-federal-funds-rate-via-fhlb-arbitrage
 type: concept
 tags: [repo-market, federal-funds, monetary-transmission, liquidity-risk]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

@@ -3,7 +3,7 @@ title: bond-convexity-exhibits-non-monotonic-maturity-scaling-at-ultra-long-hori
 type: concept
 tags: [convexity, interest-rate-risk, bond-market]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

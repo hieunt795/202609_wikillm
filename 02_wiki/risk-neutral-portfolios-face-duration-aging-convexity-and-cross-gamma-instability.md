@@ -3,7 +3,7 @@ title: risk-neutral-portfolios-face-duration-aging-convexity-and-cross-gamma-ins
 type: concept
 tags: [risk-neutrality, duration-aging, convexity, cross-gamma, portfolio-risk-management]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

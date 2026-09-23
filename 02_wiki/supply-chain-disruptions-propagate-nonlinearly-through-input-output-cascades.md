@@ -3,7 +3,7 @@ title: supply-chain-disruptions-propagate-nonlinearly-through-input-output-casca
 type: concept
 tags: [supply-chains, nonlinear-inflation, input-output, cost-push, inflation-persistence]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

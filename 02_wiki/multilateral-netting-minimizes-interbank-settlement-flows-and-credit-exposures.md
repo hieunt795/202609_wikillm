@@ -3,7 +3,7 @@ title: multilateral-netting-minimizes-interbank-settlement-flows-and-credit-expo
 type: concept
 tags: [payment-systems, interbank-market, clearing, banking]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

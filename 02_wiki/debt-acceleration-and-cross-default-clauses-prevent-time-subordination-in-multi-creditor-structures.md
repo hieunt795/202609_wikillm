@@ -3,7 +3,7 @@ title: debt-acceleration-and-cross-default-clauses-prevent-time-subordination-in
 type: concept
 tags: [credit-risk, acceleration, cross-default, time-subordination, clawbacks, covenants, pik-notes]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

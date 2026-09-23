@@ -3,7 +3,7 @@ title: turn-premium-reflects-year-end-balance-sheet-constraints-rather-than-poli
 type: concept
 tags: [money-market, repo-market, term-structure]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

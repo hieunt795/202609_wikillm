@@ -3,7 +3,7 @@ title: central-counterparties-transform-bilateral-counterparty-risk-into-liquidi
 type: concept
 tags: [clearing, ccp, systemic-risk, financial-infrastructure]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

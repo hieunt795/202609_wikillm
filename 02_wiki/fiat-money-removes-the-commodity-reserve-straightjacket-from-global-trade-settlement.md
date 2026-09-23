@@ -3,7 +3,7 @@ title: fiat-money-removes-the-commodity-reserve-straightjacket-from-global-trade
 type: concept
 tags: [fiat-money, trade-balance, gold-standard, balance-of-payments]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

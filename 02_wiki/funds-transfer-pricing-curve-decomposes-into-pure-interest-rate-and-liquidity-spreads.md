@@ -1,0 +1,23 @@
+---
+title: funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads
+type: concept
+tags: [alm, ftp, yield-curve, liquidity-premium, risk-free-rate, pricing]
+sources: [tata_bank_alm]
+status: stable
+last_updated: 2026-09-23
+---
+
+Trong thiết kế hệ thống [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]], việc gộp chung rủi ro lãi suất và rủi ro thanh khoản vào một đường cong đơn lẻ sẽ gây ra các sai lệch nghiêm trọng khi định giá các cấu trúc sản phẩm phức tạp (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1641). Để khắc phục hạn chế này, đường cong giá chuyển nhượng vốn chuẩn mực được bóc tách một cách tường minh thành hai cấu phần độc lập: đường cong lãi suất phi rủi ro thuần túy (*pure interest rate risk curve*) và phần bù thanh khoản tài trợ vốn (*funding spread / liquidity premium*):
+$$FTP\ Rate = Risk\ Free\ Rate + Liquidity\ Premium$$
+(tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1641; tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1661).
+
+Để xây dựng đường cong lãi suất phi rủi ro chuẩn, thực tiễn ngân hàng quốc tế cân nhắc năm phương pháp tiếp cận chủ đạo với các ưu nhược điểm đặc thù (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1643–1658):
+1. **Trái phiếu chính phủ quốc gia**: Khả thi cao tại Hoa Kỳ với đường cong Trái phiếu Kho bạc nhờ quyền phát hành tiền tệ hợp pháp; nhưng không thể áp dụng trực tiếp tại Khu vực đồng Euro (Eurozone) do không có quốc gia riêng lẻ nào nắm quyền in đồng Euro, khiến nợ công từng nước luôn hàm chứa phần bù rủi ro vỡ nợ phân hóa (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1645);
+2. **Trái phiếu chính phủ Eurozone xếp hạng AAA**: Rất gần với mức phi rủi ro tuyệt đối nhưng số lượng chính phủ đạt chuẩn AAA quá ít (chỉ 5 quốc gia tính đến 2024), dẫn đến quy mô thanh khoản hạn chế (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1646–1652);
+3. **Lãi suất qua đêm €STR và phái sinh OIS/Futures**: Đại diện cho lãi suất phi rủi ro chuẩn mới (RFR) của Eurozone dựa trên dữ liệu giao dịch thực tế; tuy nhiên €STR được tính dồn hồi tố (*in arrears*) nên chưa hình thành cấu trúc kỳ hạn hướng tới tương lai tự nhiên (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1653);
+4. **Lãi suất Repo bù trừ trung tâm CCP**: Giao dịch có tài sản bảo đảm chất lượng cao và triệt tiêu rủi ro đối tác qua bù trừ tập trung; song thị trường repo chủ yếu mang tính ngắn hạn (dưới 1–2 năm) và tiềm ẩn nguy cơ đóng băng thanh khoản trong khủng hoảng (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1654);
+5. **Đường cong hoán đổi lãi suất EURIBOR Swap**: Sở hữu thanh khoản sâu rộng trải dài tới 30 năm và có tài sản thế chấp bảo lãnh song phương; song bản thân lãi suất cơ sở EURIBOR vẫn phản ánh rủi ro tín dụng liên ngân hàng không bảo đảm (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1655–1657).
+
+Phần bù thanh khoản (Funding Spread) được cộng thêm vào đường cong phi rủi ro, phản ánh chi phí thực tế mà ngân hàng phải trả trên thị trường vốn để huy động các nguồn tiền có kỳ hạn tương ứng (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1659). Ngân hàng hiệu chuẩn phần bù này thông qua các cơ hội phát hành nợ thực tế: ví dụ nếu ngân hàng phát hành trái phiếu kỳ hạn 2 năm lãi suất cố định ở mức 3,0% và trái phiếu lãi suất thả nổi 2 năm ở mức 2,2%, phần bù thanh khoản cho kỳ hạn 2 năm được ấn định là 80 bps trên đường cong phi rủi ro (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1659).
+
+Ưu điểm tác nghiệp mang tính đột phá của kỹ thuật bóc tách này là cho phép định giá chính xác các sản phẩm ngân hàng có **kỳ hạn điều chỉnh lãi suất tham chiếu khác với kỳ hạn hợp đồng thực tế** (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1661). Xét một khoản cho vay khách hàng kỳ hạn 2 năm nhưng điều chỉnh lãi suất định kỳ mỗi năm một lần (1-year reset): lãi suất FTP được tính bằng lãi suất phi rủi ro kỳ hạn 1 năm ($1{,}6\%$) cộng với phần bù thanh khoản cam kết vốn kỳ hạn 2 năm ($0{,}8\%$), xác lập mức giá vốn nội bộ chính xác là $2{,}4\%$ (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1661). Khi ngân hàng giao dịch đa tiền tệ, bàn ALM trung tâm sẽ bổ sung khoản điều chỉnh chênh lệch tỷ giá chéo (*cross-currency basis swap adjustment*) vào đường cong cơ sở để hình thành đường cong FTP ngoại tệ chuẩn hóa (tata_bank_alm, Ch.2, Multi-currency FTP Curve, d.1665–1673), làm tiền đề để tích hợp tiếp các phụ phí theo [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]] và [[contingency-liquidity-and-embedded-optionality-require-specialized-ftp-add-ons]].

@@ -3,7 +3,7 @@ title: bootstrapping-and-reverse-bootstrapping-isolate-zero-rates-and-replicate-
 type: concept
 tags: [yield-curve, bootstrapping, fixed-income, quantitative-methods]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

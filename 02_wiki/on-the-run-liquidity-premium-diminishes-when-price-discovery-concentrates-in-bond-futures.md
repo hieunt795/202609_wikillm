@@ -3,7 +3,7 @@ title: on-the-run-liquidity-premium-diminishes-when-price-discovery-concentrates
 type: concept
 tags: [bond-market, liquidity-premium, bond-futures, sovereign-debt]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

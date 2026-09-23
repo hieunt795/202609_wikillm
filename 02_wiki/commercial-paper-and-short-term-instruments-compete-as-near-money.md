@@ -3,7 +3,7 @@ title: commercial-paper-and-short-term-instruments-compete-as-near-money
 type: concept
 tags: [money-market, commercial-paper, near-money, liquidity]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

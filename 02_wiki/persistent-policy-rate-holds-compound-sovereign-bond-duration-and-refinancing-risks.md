@@ -3,7 +3,7 @@ title: persistent-policy-rate-holds-compound-sovereign-bond-duration-and-refinan
 type: concept
 tags: [sovereign-debt, treasury-market, policy-rate-hold, term-premium, refinancing-risk, dealer-intermediation, supply-shock]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

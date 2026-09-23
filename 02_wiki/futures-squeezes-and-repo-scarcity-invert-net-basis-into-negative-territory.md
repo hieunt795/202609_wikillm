@@ -10,7 +10,7 @@ tags:
   - implied-repo-rate
   - market-stress
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

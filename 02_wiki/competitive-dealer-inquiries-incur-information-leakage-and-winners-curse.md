@@ -3,7 +3,7 @@ title: competitive-dealer-inquiries-incur-information-leakage-and-winners-curse
 type: concept
 tags: [market-microstructure, otc-market, trading-strategies, information-asymmetry]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

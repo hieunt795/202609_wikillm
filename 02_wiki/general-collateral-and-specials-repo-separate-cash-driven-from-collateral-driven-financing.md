@@ -3,7 +3,7 @@ title: general-collateral-and-specials-repo-separate-cash-driven-from-collateral
 type: concept
 tags: [repo-market, general-collateral, specials, market-microstructure]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

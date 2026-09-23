@@ -3,7 +3,7 @@ title: mortgage-prepayments-combine-demographic-attrition-economic-refinancing-a
 type: concept
 tags: [rmbs, prepayments, attrition, economic-refinancing, burn-out-effect, smm, cpr, logistic-saturation]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

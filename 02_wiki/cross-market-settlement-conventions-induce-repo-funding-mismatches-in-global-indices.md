@@ -3,7 +3,7 @@ title: cross-market-settlement-conventions-induce-repo-funding-mismatches-in-glo
 type: concept
 tags: [settlement-conventions, cross-market, repo-financing, global-bond-indices, cash-flow-mismatch]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

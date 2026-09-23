@@ -3,7 +3,7 @@ title: active-spot-foreign-exchange-intervention-injects-primary-liquidity-direc
 type: concept
 tags: [foreign-exchange, monetary-operations, liquidity-management]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-22
 ---
 

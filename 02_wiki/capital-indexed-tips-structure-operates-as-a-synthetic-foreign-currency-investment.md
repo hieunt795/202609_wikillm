@@ -3,7 +3,7 @@ title: capital-indexed-tips-structure-operates-as-a-synthetic-foreign-currency-i
 type: concept
 tags: [tips, inflation-linked-bonds, purchasing-power, capital-indexed, foreign-currency-analogy]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

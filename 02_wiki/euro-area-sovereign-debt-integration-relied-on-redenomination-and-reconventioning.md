@@ -3,7 +3,7 @@ title: euro-area-sovereign-debt-integration-relied-on-redenomination-and-reconve
 type: concept
 tags: [euro-area, sovereign-debt, redenomination, reconventioning, market-integration]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

@@ -3,7 +3,7 @@ title: sovereign-fx-intervention-integrates-fima-repo-facility-to-prevent-treasu
 type: concept
 tags: [fx-intervention, fima-repo, central-banks, treasury-market, dollar-liquidity]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

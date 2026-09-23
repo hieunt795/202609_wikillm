@@ -5,6 +5,8 @@ tags: [national-accounts, sna, aggregates]
 sources: [imf_macro_accounting]
 status: stable
 last_updated: 2026-09-15
+reviewed: 2026-09-23
+reviewed_by: model
 ---
 
 GDP (gross domestic product) là tổng [[value-added]] của mọi khu vực trong nền kinh tế, và đo giá trị hàng hóa, dịch vụ cuối cùng làm ra (imf_macro_accounting, Ch.2, The Main Aggregates, d.660).

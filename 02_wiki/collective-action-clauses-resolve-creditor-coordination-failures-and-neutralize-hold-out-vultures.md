@@ -3,7 +3,7 @@ title: collective-action-clauses-resolve-creditor-coordination-failures-and-neut
 type: concept
 tags: [collective-action-clauses, cac, debt-restructuring, hold-out-creditors, vulture-funds, debt-exchange, game-theory]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

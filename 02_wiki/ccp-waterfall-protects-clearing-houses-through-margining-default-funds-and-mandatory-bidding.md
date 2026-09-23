@@ -3,7 +3,7 @@ title: ccp-waterfall-protects-clearing-houses-through-margining-default-funds-an
 type: concept
 tags: [ccp, clearing, risk-management, margin-requirements]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

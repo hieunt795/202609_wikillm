@@ -3,7 +3,7 @@ title: institutional-preferred-habitats-and-solvency-regulations-induce-structur
 type: concept
 tags: [pension-funds, preferred-habitat, convexity, regulation, fixed-income]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

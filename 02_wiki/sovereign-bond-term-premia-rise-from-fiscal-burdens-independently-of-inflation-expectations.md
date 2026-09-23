@@ -3,7 +3,7 @@ title: sovereign-bond-term-premia-rise-from-fiscal-burdens-independently-of-infl
 type: concept
 tags: [term-premia, sovereign-debt, fiscal-deficits, yield-curve, bond-market]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

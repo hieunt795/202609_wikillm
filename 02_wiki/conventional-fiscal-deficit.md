@@ -5,6 +5,8 @@ tags: [fiscal, deficit, gfs]
 sources: [imf_macro_accounting]
 status: stable
 last_updated: 2026-09-15
+reviewed: 2026-09-23
+reviewed_by: model
 ---
 
 Thâm hụt tài khoá quy ước là chênh lệch giữa tổng thu cộng viện trợ với tổng chi cộng cho vay ròng: thâm hụt = (thu + viện trợ) − (chi + cho vay ròng) (imf_macro_accounting, Ch.3, Conventional Fiscal Deficit, d.2055–2057).

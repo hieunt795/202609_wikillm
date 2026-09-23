@@ -3,7 +3,7 @@ title: bond-index-construction-balances-ex-ante-replicability-and-liquidity-fric
 type: concept
 tags: [bond-indices, index-mechanics, replicability, market-liquidity, portfolio-benchmarking]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

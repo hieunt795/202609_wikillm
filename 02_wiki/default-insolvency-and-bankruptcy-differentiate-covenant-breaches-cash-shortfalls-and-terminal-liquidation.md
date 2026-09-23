@@ -3,7 +3,7 @@ title: default-insolvency-and-bankruptcy-differentiate-covenant-breaches-cash-sh
 type: concept
 tags: [credit-risk, default, insolvency, bankruptcy, debt-restructuring, liquidation]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

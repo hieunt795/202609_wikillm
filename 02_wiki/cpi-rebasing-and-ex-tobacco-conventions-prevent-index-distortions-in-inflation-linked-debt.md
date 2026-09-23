@@ -3,7 +3,7 @@ title: cpi-rebasing-and-ex-tobacco-conventions-prevent-index-distortions-in-infl
 type: concept
 tags: [cpi, rebasing, rebalancing, ex-tobacco, indexation]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

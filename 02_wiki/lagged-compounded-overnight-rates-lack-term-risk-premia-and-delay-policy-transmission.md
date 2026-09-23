@@ -3,7 +3,7 @@ title: lagged-compounded-overnight-rates-lack-term-risk-premia-and-delay-policy-
 type: concept
 tags: [reference-rates, monetary-policy-transmission, rfr, ois]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

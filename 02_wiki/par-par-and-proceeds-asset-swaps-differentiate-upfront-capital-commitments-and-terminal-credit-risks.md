@@ -3,7 +3,7 @@ title: par-par-and-proceeds-asset-swaps-differentiate-upfront-capital-commitment
 type: concept
 tags: [asset-swap, par-par-swap, proceeds-swap, repo-floor, credit-risk]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

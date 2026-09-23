@@ -3,7 +3,7 @@ title: delivery-versus-payment-eliminates-herstatt-risk-through-intermediary-set
 type: concept
 tags: [settlement, payment-systems, clearing, counterparty-risk]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

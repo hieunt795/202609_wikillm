@@ -3,7 +3,7 @@ title: sovereign-debt-operates-as-a-repeat-game-devoid-of-judicial-liquidation-a
 type: concept
 tags: [sovereign-debt, repeat-game, sovereign-immunity, seniority, credit-support, joint-and-several]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

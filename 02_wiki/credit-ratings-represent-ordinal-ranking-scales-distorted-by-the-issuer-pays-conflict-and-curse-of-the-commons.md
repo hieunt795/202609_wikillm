@@ -3,7 +3,7 @@ title: credit-ratings-represent-ordinal-ranking-scales-distorted-by-the-issuer-p
 type: concept
 tags: [credit-ratings, ordinal-scale, issuer-pays, rating-agencies, curse-of-the-commons, sovereign-ceiling, natural-oligopoly]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

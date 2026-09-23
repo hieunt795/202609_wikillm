@@ -3,7 +3,7 @@ title: financial-intermediation
 type: concept
 tags: [financial-system, banking, macroeconomics, shadow-banking]
 sources: [cargill_central_bank_policy, clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

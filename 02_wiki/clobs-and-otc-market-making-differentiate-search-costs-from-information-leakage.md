@@ -3,7 +3,7 @@ title: clobs-and-otc-market-making-differentiate-search-costs-from-information-l
 type: concept
 tags: [market-microstructure, otc-market, exchanges, trading]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

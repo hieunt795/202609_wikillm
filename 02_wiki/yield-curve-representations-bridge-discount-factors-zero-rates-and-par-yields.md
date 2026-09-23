@@ -3,7 +3,7 @@ title: yield-curve-representations-bridge-discount-factors-zero-rates-and-par-yi
 type: concept
 tags: [yield-curve, term-structure, quantitative-finance, valuation]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

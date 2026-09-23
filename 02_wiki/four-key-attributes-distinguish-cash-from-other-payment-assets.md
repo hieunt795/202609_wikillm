@@ -3,7 +3,7 @@ title: four-key-attributes-distinguish-cash-from-other-payment-assets
 type: concept
 tags: [cash, money, payment-systems, central-banking]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

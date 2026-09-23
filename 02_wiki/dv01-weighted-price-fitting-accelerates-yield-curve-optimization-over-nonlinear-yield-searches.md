@@ -3,7 +3,7 @@ title: dv01-weighted-price-fitting-accelerates-yield-curve-optimization-over-non
 type: concept
 tags: [yield-curve, quantitative-finance, optimization, numerical-methods]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

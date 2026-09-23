@@ -8,7 +8,7 @@ tags:
   - transparency
   - expectation-anchoring
 sources: [cargill_central_bank_policy, fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

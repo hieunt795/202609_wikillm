@@ -3,7 +3,7 @@ title: financial-market-duration-repricing-executes-monetary-tightening-on-centr
 type: concept
 tags: [financial-conditions, duration-risk, sovereign-yield-curve, monetary-tightening, market-repricing, term-premium]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

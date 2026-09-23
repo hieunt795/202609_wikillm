@@ -28,8 +28,7 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `choudhry_analysing_yield_curve` | `choudhry_banking_fixed_income/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 | `choudhry_fixed_income_markets` | `choudhry_banking_fixed_income/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 | `fixed_income_during` | `fixed_income_during/` | Nguồn dài | `03_state/fixed_income_during.md` |
-| `tata_bank_alm` | `tata_bank_alm/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
-| `clippings` | `Clippings/` | Nguồn dài | `03_state/clippings.md` |
+| `tata_bank_alm` | `tata_bank_alm/` | Nguồn dài | `03_state/tata_bank_alm.md` |
 | `clippings` | `Clippings/` | Nguồn dài | `03_state/clippings.md` |
 
 ## imf_macro_accounting
@@ -248,7 +247,7 @@ File `.md` do docling chuyển đổi từ PDF (frontmatter `extractor: docling`
 | Xuất bản | Springer Nature Switzerland AG, 2025 — ISBN 978-3-031-80204-1; eBook 978-3-031-80205-8; doi 10.1007/978-3-031-80205-8 |
 | Phân loại | Nguồn dài (`00_schema.md` §10) — 439 KB / 3.345 dòng |
 | Nguồn file | PDF kèm theo; `.md` chuyển đổi ngoài dự án bằng docling |
-| Tiến độ ingest | Chưa ingest — state file dựng ở lượt ingest đầu (§10) |
+| Tiến độ ingest | Đang ingest dở — `03_state/tata_bank_alm.md` |
 
 | Đường dẫn | Bytes | Dòng | SHA-256 |
 |---|---|---|---|

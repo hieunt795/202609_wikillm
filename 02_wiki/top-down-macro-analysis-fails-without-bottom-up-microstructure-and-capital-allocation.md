@@ -3,7 +3,7 @@ title: top-down-macro-analysis-fails-without-bottom-up-microstructure-and-capita
 type: concept
 tags: [macro-methodology, top-down-analysis, bottom-up-analysis, capital-allocation, market-microstructure, cost-of-funds]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

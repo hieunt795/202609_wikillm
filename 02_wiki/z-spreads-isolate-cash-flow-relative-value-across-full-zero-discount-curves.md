@@ -3,7 +3,7 @@ title: z-spreads-isolate-cash-flow-relative-value-across-full-zero-discount-curv
 type: concept
 tags: [z-spread, spline-spread, relative-value, cash-flow-discounting, curve-spreads]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

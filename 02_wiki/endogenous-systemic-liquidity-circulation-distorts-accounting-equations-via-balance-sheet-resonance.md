@@ -3,7 +3,7 @@ title: endogenous-systemic-liquidity-circulation-distorts-accounting-equations-v
 type: concept
 tags: [endogenous-liquidity, balance-sheet-resonance, treasury-deposits, final-assets, fx-reserves, interbank-circulation]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

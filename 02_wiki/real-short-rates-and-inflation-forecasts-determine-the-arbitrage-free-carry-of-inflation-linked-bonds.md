@@ -3,7 +3,7 @@ title: real-short-rates-and-inflation-forecasts-determine-the-arbitrage-free-car
 type: concept
 tags: [real-short-rate, bond-carry, repo-financing, forward-pricing, tips]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

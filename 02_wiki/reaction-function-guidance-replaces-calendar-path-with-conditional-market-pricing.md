@@ -3,7 +3,7 @@ title: reaction-function-guidance-replaces-calendar-path-with-conditional-market
 type: concept
 tags: [central-banking, forward-guidance, reaction-function, warsh-regime, yield-curve]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

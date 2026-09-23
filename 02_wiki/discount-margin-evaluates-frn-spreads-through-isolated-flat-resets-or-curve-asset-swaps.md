@@ -3,7 +3,7 @@ title: discount-margin-evaluates-frn-spreads-through-isolated-flat-resets-or-cur
 type: concept
 tags: [floating-rate-notes, valuation, yield-curve]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

@@ -3,7 +3,7 @@ title: central-bank-output-legitimacy-cannot-substitute-for-input-legitimacy-und
 type: concept
 tags: [central-banking, institutional-design, ecb, legitimacy, monetary-mandate, constitutional-law]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

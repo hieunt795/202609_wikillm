@@ -3,7 +3,7 @@ title: securities-differ-from-bilateral-contracts-by-transferability-without-cou
 type: concept
 tags: [fixed-income, securities, financial-contracts]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

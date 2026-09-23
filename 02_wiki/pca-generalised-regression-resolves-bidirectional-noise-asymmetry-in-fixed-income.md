@@ -3,7 +3,7 @@ title: pca-generalised-regression-resolves-bidirectional-noise-asymmetry-in-fixe
 type: concept
 tags: [pca, linear-regression, hedging, noise-modeling, fixed-income-risk]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

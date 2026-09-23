@@ -693,7 +693,93 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Cập nhật 2 chiều 5 trang: clean-and-dirty-bond-prices-separate-market-valuation-from-accrued-interest-settlement, floating-rate-notes-reset-to-par-at-coupon-dates-when-quoted-margin-equals-credit-spread, institutional-preferred-habitats-and-solvency-regulations-induce-structural-short-convexity, sovereign-debt-refinancing-dependency-constrains-monetary-policy-horizons, turn-premium-reflects-year-end-balance-sheet-constraints-rather-than-policy-rate-expectations; cập nhật 03_state/fixed_income_during.md (42/42 file - 100% hoàn thành) và 02_wiki/index.md
 - Hoàn tất 100% toàn bộ nguồn sách Alexander Düring (Fixed Income Trading and Risk Management, 39 chương, 7.300 dòng nguồn, 8 phần)
 
+## [2026-09-23:16-06-36] query | quan hệ giữa các sector macro (phân tích netting private sector)
+- 1 trang analysis mới: the-imf-private-sector-column-nets-household-surplus-against-enterprise-deficit — bảng 7-cột IMF gộp hộ gia đình/doanh nghiệp vào 1 cột trong khi ma trận 5-cột Cargill tách riêng, có thể che dòng vốn nội bộ
+- Backlink từ the-private-sector-resource-gap-must-be-financed-by-other-sectors (không nâng last_updated); index.md cập nhật; --all sạch (631 trang)
+
+## [2026-09-23:16-12-41] schema | query lượt đắt luôn gọi --backlinks cho trang cốt lõi
+- query/SKILL.md bước 3: thêm gọi `validate_wiki_page.py --backlinks <trang>` cho mỗi trang trực tiếp liên quan, không chỉ đi outlink; triage bằng tên file như lượt rẻ
+- Lý do: backlink 2 chiều chỉ đảm bảo từ lượt ingest tạo/sửa trang, không đảm bảo trang cũ; decisions.md ghi chi tiết
+
+## [2026-09-23:16-26-24] schema | query — 3 kỷ luật mượn từ deep-research
+- query/SKILL.md: bước 3 cap 1 vòng mở rộng outlink/backlinks; bước 2 hỏi làm rõ khi thuật ngữ Việt→Anh mơ hồ; bước 5 dedup `grep type: analysis` trước khi tạo trang mới
+- Lý do: đối chiếu kiến trúc thật của anthropic-skills:deep-research; không mượn fan-out subagent vì đụng luật cấm auto-spawn; decisions.md ghi chi tiết
+
+## [2026-09-23:18-03-30] ingest | imf_macro_accounting Ch.5 backfill F1 — tách trang gộp, 4/7 khó khăn kinh tế chuyển đổi
+- Đọc lại "Monetary Analysis in Transition Economies: Some Special Issues" (d.5100–5132): 4/7 khó khăn đã có nhưng gộp chung 1 trang vi phạm §5 Atomic. Xoá trang gộp, tách 4 trang mới + stub `monobank` + nâng `non-performing-loans` stub→draft
+- Sửa backlink ở 9 trang liên quan (3 trang trỏ tới trang cũ + 6 trang bổ sung link ngược); index.md mục lục Ch.5 cập nhật
+- `--all` sạch (635 trang, 0 vấn đề, 0 mồ côi); Ch.1 vẫn là phần duy nhất chưa ingest của nguồn này
+
+## [2026-09-23:18-17-07] lint | 635 trang
+- Lỗi: 2 Conflict tồn đọng (không đổi), 15 nợ stub (16 stub, `monobank` chưa tính), 24 báo giả OCR, 0 stale, 0 vi phạm Atomic/title, 0 mồ côi/link chết
+- 153 trang draft đủ điều kiện `stable` (backlink ≥ 2, hết Conflict); báo cáo: `Claude outputs/lint-2026-09-23-635.md`
+
+## [2026-09-23:18-28-44] lint | 635 trang — mở rộng mục 3 và mục 5 theo yêu cầu
+- Mục 3 quét toàn bộ 635 trang (không chỉ cụm mới nhất): thêm 14 khái niệm ứng viên (Fed, ECB, ALM, ZLB, PVBP, MMF, ABS, LCR, primary dealer, term premium, bid-ask spread, RWA, NIM, open interest, TAF, LDR)
+- Mục 5 đối chiếu có cấu trúc 635 title (42 cặp trùng ≥4 từ khoá, đọc 9 cặp nghi ngờ nhất) — 0 trùng lặp thật; tự phát hiện và sửa lỗi regex (`\|` sai cú pháp) từng báo nhầm 2 trang đã tồn tại là thiếu
+- Báo cáo cập nhật cùng file `Claude outputs/lint-2026-09-23-635.md`
+
+## [2026-09-23:18-42-34] promote | 153 trang lên stable
+- Nâng 153 trang draft đủ điều kiện (outlink >= 1, backlink >= 2, không conflict) theo danh sách người dùng duyệt từ lint 635 trang lên stable
+- 87 trang draft còn lại giữ nguyên (85 trang backlink = 1, 2 trang đang gắn nhãn ⚠️ Conflict); không đổi last_updated, không chạm thân bài
+- Wiki hiện đạt: 532 stable, 87 draft, 16 stub; hook validate_wiki_page.py --all sạch (635 trang quét, 0 lỗi, 0 mồ côi)
+
+## [2026-09-23:18-47-03] review | 5 trang
+- Đạt đối chiếu nguồn gốc: central-bank (sửa dải dòng Ch.15 d.4514–4537 → d.4682–4713 về dual mandate/time inconsistency), deposit-money-banks, gdp, conventional-fiscal-deficit, subsidies
+- Cả 5 trang đều gắn reviewed: 2026-09-23 và reviewed_by: model; không đổi last_updated do claim không đổi
+- Giữ lại: không; validate_wiki_page.py --all sạch (635 trang quét, 0 lỗi, 0 mồ côi)
+
+## [2026-09-23:19-16-02] ingest | tata_bank_alm Ch.1 — Introduction
+- 9 trang mới: interest-rate-risk-in-the-banking-book-irrbb (hub), economic-value-and-earnings-perspectives-complement-each-other-in-alm, 3 cấu phần IRRBB (gap-risk, basis-risk, option-risk), credit-spread-risk-in-the-banking-book-csrbb, supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital, banks-predominantly-hedge-duration-mismatches-on-balance-sheet-rather-than-via-derivatives, key-rate-duration-isolates-interest-rate-sensitivity-to-non-parallel-yield-curve-shifts; cập nhật 2 trang (alm-balance-sheet-balancing-..., modified-duration-and-pvbp-...)
+- Khởi tạo 03_state/tata_bank_alm.md (bản đồ chunk Ch.1–6), cập nhật _sources_manifest.md và 02_wiki/index.md; 0 stub mới, 0 mồ côi, 0 link chết
+- Còn lại: Ch.2–6 (chi tiết theo chunk ở state file)
+
+## [2026-09-23:19-24-00] ingest | tata_bank_alm Ch.2 cụm A — Economic Value & Earnings Measures
+- 9 trang mới: economic-value-of-equity-eve-measures-net-present-value-of-banking-book-cash-flows, repricing-gap-analysis-allocates-cash-flows-into-time-bands-by-next-reset-date, duration-gap-analysis-quantifies-balance-sheet-mismatch-scaled-by-asset-base, net-interest-income-forecast-serves-as-baseline-for-prospective-alm-simulations, balance-sheet-evolution-assumptions-differentiate-run-off-static-and-dynamic-views, interest-rate-projection-approaches-contrast-forward-rates-with-unchanged-yield-curves, earning-gap-analysis-estimates-short-term-nii-sensitivity-via-periodic-impact-weights, receiver-interest-rate-swaps-stabilize-falling-rate-nii-while-magnifying-eve-duration-risk, monitoring-market-value-changes-outside-nii-horizon-prevents-deferred-interest-rate-losses; cập nhật 3 trang (economic-value-and-earnings-perspectives-complement-each-other-in-alm, interest-rate-gap-risk-stems-from-repricing-timing-mismatches, supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital)
+- Cập nhật 03_state/tata_bank_alm.md (đánh dấu Ch.2 cụm A xong) và 02_wiki/index.md; tổng 654 trang wiki, 0 mồ côi, 0 link chết
+- Còn lại: Ch.2 cụm B–C; Ch.3–6 (chi tiết theo chunk ở state file)
+
+## [2026-09-23:19-30-00] ingest | tata_bank_alm Ch.2 cụm B — Funds Transfer Pricing (FTP)
+- 7 trang mới: funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks (hub), matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions, funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads, ftp-business-steering-functions-as-a-political-tool-for-balance-sheet-allocation, regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp, funds-transfer-pricing-contrasts-with-derivatives-funding-value-adjustments, contingency-liquidity-and-embedded-optionality-require-specialized-ftp-add-ons; cập nhật 3 trang (xva-adjustments-reconcile-unmargined-otc-derivatives-with-cleared-market-prices, liquidity-risk, alm-balance-sheet-balancing-progresses-through-four-operational-dimensions)
+- Cập nhật 03_state/tata_bank_alm.md (đánh dấu Ch.2 cụm B xong) và 02_wiki/index.md; tổng 661 trang wiki, 0 mồ côi, 0 link chết
+## [2026-09-23:19-38-00] ingest | tata_bank_alm Ch.2 cụm C — Non-maturity Products & Replicating Model
+- 7 trang mới: non-maturity-products-decouple-liquidity-profiles-from-interest-rate-profiles, embedded-behavioral-options-alter-banking-book-cash-flows-subject-to-eba-five-year-cap, replicating-portfolios-model-non-maturity-deposits-via-vintage-run-off-tranches, rolling-portfolios-smooth-deposit-margins-through-moving-average-market-rates, replicating-portfolio-calibration-optimizes-margin-sharpe-ratios-across-key-rates, dynamic-replication-hedges-deposit-volume-fluctuations-at-prevailing-market-rates, sticky-deposit-rates-and-unstable-deposit-betas-challenge-replication-models; cập nhật 3 trang (interest-rate-option-risk-combines-automatic-and-embedded-behavioural-options, behavioral-modeling-of-tt1-liabilities-distorts-when-banks-actively-intervene-on-pricing-and-sales, funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks)
+- Cập nhật 03_state/tata_bank_alm.md (đánh dấu Ch.2 cụm C xong) và 02_wiki/index.md; tổng 667 trang wiki, 0 mồ côi, 0 link chết
+- Còn lại: Ch.3–6 (chi tiết theo chunk ở state file)
 ## [2026-09-23:19-37-46] schema | /research — sửa theo audit + eval 3 case
 - Viết lại research/SKILL.md (1 cổng duyệt gộp, schema theo nhánh, đọc theo mục, nguồn nhiều file, nhánh Conflict/inbox); đồng bộ CLAUDE.md, query description, rules/project-records.md
 - Sửa grep tag YAML nhiều dòng ở research + query (60/661 trang bị bỏ sót)
 - Eval dry-run 3 case × 2 bản: 9/9 cả hai; repo không bị ghi; chi tiết ở decisions.md
+
+## [2026-09-23:19-48-00] ingest | tata_bank_alm Ch.3 — Bank ALM in Practice
+- 7 trang mới: bank-specific-alm-tailors-balance-sheet-governance-to-business-models-and-regional-habitats, net-interest-income-planning-integrates-volume-run-off-and-margin-beta-across-horizons, behavioral-alm-models-customer-irrbb-optionality-and-asymmetric-interbank-competition, holistic-alm-elevates-balance-sheet-strategy-from-tactical-compliance-to-technological-advantage, zero-lower-bound-interest-rate-floors-distort-banking-book-margins-under-nirp, coupon-floors-and-indicator-floors-induce-asymmetric-nii-exposures-in-negative-rates, rapid-rate-tightening-exposes-duration-gaps-and-asymmetric-prepayment-speeds; cập nhật 3 trang (alm-balance-sheet-balancing-progresses-through-four-operational-dimensions, net-interest-income-forecast-serves-as-baseline-for-prospective-alm-simulations, interest-rate-option-risk-combines-automatic-and-embedded-behavioural-options)
+- Cập nhật 03_state/tata_bank_alm.md (đánh dấu Ch.3 xong) và 02_wiki/index.md; tổng 674 trang wiki, 0 mồ côi, 0 link chết
+- Còn lại: Ch.4–6 (chi tiết theo chunk ở state file)
+
+## [2026-09-23:20-00-00] ingest | tata_bank_alm Ch.4 — Case Study: The Collapse of Silicon Valley Bank
+- 6 trang mới: silicon-valley-bank-collapse-epitomizes-unhedged-duration-mismatches-and-uninsured-deposit-runs (case), held-to-maturity-gaap-accounting-masks-unrealized-economic-value-losses-in-banking-books, unhedged-interest-rate-swap-unwinding-magnifies-balance-sheet-vulnerability-for-short-term-pnl, svb-three-year-duration-gap-breached-supervisory-outlier-thresholds-absent-deposit-modeling-manipulation, regulatory-arbitrage-via-deposit-duration-assumptions-distorts-supervisory-irrbb-compliance, supervisory-and-governance-failures-in-interest-rate-risk-management-lessons-from-svb; cập nhật 3 trang (duration-gap-analysis-quantifies-balance-sheet-mismatch-scaled-by-asset-base, supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital, economic-value-of-equity-eve-measures-net-present-value-of-banking-book-cash-flows)
+- Cập nhật 03_state/tata_bank_alm.md (đánh dấu Ch.4 xong) và 02_wiki/index.md; tổng 680 trang wiki, 0 mồ côi, 0 link chết
+- Còn lại: Ch.5–6 (chi tiết theo chunk ở state file)
+
+## [2026-09-23:20-10-00] ingest | tata_bank_alm Ch.5 — Update on Regulatory and Supervisory Changes to IRRBB
+- 6 trang mới: multitiered-irrbb-regulatory-framework-spans-bcbs-crd-crr-and-eba-technical-standards, eba-standardized-approach-for-irrbb-harmonizes-eve-and-nii-measurement, simplified-standardized-approach-provides-conservative-irrbb-metrics-for-small-banks, maturity-dependent-linear-rate-floor-bounds-post-shock-yield-curves-under-irrbb, simultaneous-compliance-problem-constrains-fixed-rate-allocation-under-dual-sot-limits, supervisory-irrbb-reporting-mandates-five-standardized-templates-under-eu-2024-855; cập nhật 5 trang cũ (supervisory-outlier-test-..., monitoring-market-value-changes-..., economic-value-and-earnings-..., interest-rate-risk-in-the-banking-book-irrbb, zero-lower-bound-interest-rate-floors-...)
+- Cập nhật 03_state/tata_bank_alm.md (đánh dấu Ch.5 xong) và 02_wiki/index.md; tổng 686 trang wiki, 0 mồ côi, 0 link chết, mọi trang mới đều >= 2 backlinks
+- Còn lại: Ch.6 — The Future of ALM (d.3109–3269)
+
+## [2026-09-23:20-16-00] ingest | tata_bank_alm Ch.6 — The Future of ALM
+- 6 trang mới: fintech-disruption-accelerates-deposit-disintermediation-and-shortens-behavioral-maturities, tokenized-deposits-and-smart-contracts-enable-automated-interest-rate-arbitrage, deep-alm-and-advanced-analytics-enable-real-time-customer-level-balance-sheet-steering, model-governance-for-ai-in-alm-balances-predictive-power-against-black-box-opacity, climate-risk-transmission-channels-impact-bank-balance-sheets-and-ftp-pricing, granular-customer-segmentation-enhances-behavioral-modeling-of-banking-book-optionality; cập nhật 5 trang cũ (funds-transfer-pricing-..., contingency-liquidity-..., non-maturity-products-..., behavioral-alm-models-..., holistic-alm-elevates-...)
+- Cập nhật 03_state/tata_bank_alm.md (đánh dấu Ch.6 và toàn bộ nguồn xong 100%) và 02_wiki/index.md; tổng 692 trang wiki, 0 mồ côi, 0 link chết, mọi trang mới đều >= 2 backlinks
+- Nguồn tata_bank_alm hoàn tất toàn diện 6/6 chương
+
+## [2026-09-23:20-28-32] lint | 692 trang
+- 0 lỗi hook validate_wiki_page.py --all; 0 mồ côi; 182/182 file nguồn khớp; 16 nợ stub; 2 conflict cũ tồn đọng
+- 60 trang draft đủ điều kiện stable (outlink >= 1, backlink >= 2, không conflict); 86 trang draft giữ nguyên
+- Báo cáo: Claude outputs/lint-2026-09-23-692.md
+
+## [2026-09-23:20-32-11] promote | 60 trang lên stable
+- Nâng 60 trang draft đủ điều kiện (outlink >= 1, backlink >= 2, không conflict) theo danh sách người dùng duyệt từ lint 692 trang lên stable
+- 86 trang draft còn lại giữ nguyên (84 trang backlink = 1, 2 trang đang gắn nhãn ⚠️ Conflict); không đổi last_updated, không chạm thân bài
+- Wiki hiện đạt: 590 stable, 86 draft, 16 stub; hook validate_wiki_page.py --all sạch (692 trang quét, 0 lỗi, 0 mồ côi)
+
+
+

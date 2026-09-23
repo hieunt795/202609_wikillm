@@ -3,7 +3,7 @@ title: floating-rate-notes-reset-to-par-at-coupon-dates-when-quoted-margin-equal
 type: concept
 tags: [floating-rate-notes, bond-market, valuation]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

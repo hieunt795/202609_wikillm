@@ -3,7 +3,7 @@ title: japan-net-international-creditor-position-anchors-global-jpy-carry-trade
 type: concept
 tags: [jpy-carry-trade, net-foreign-assets, primary-income, boj, global-liquidity]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

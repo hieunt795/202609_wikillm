@@ -3,7 +3,7 @@ title: covered-bonds-combine-on-balance-sheet-dual-recourse-with-insolvency-ring
 type: concept
 tags: [covered-bonds, dual-recourse, cover-pool, pfandbrief, insolvency-ring-fencing, specialist-bank]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

@@ -3,7 +3,7 @@ title: central-banks-are-necessarily-public-institutions-despite-private-ownersh
 type: concept
 tags: [central-bank, public-goods, financial-institutions, governance]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-22
 ---
 

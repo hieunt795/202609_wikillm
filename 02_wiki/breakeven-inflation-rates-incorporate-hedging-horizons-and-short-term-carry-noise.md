@@ -3,7 +3,7 @@ title: breakeven-inflation-rates-incorporate-hedging-horizons-and-short-term-car
 type: concept
 tags: [breakeven-inflation, inflation-expectations, carry, energy-prices, market-microstructure]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

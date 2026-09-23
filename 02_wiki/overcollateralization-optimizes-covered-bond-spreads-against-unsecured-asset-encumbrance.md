@@ -3,7 +3,7 @@ title: overcollateralization-optimizes-covered-bond-spreads-against-unsecured-as
 type: concept
 tags: [covered-bonds, overcollateralization, asset-encumbrance, asset-replenishment, funding-cost, credit-risk]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

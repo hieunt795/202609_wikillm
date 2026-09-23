@@ -9,7 +9,7 @@ tags:
   - repo-fails
   - carry
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

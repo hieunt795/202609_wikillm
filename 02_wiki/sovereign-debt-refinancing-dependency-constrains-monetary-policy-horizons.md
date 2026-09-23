@@ -3,7 +3,7 @@ title: sovereign-debt-refinancing-dependency-constrains-monetary-policy-horizons
 type: concept
 tags: [sovereign-debt, debt-refinancing, rollover-risk, fiscal-dominance, monetary-policy, interest-expense, treasury-curve]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

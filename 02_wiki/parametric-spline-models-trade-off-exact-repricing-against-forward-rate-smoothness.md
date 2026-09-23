@@ -3,7 +3,7 @@ title: parametric-spline-models-trade-off-exact-repricing-against-forward-rate-s
 type: concept
 tags: [yield-curve, spline-models, nelson-siegel, quantitative-finance]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

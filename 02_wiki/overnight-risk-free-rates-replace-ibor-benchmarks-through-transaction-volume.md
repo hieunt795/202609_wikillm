@@ -3,7 +3,7 @@ title: overnight-risk-free-rates-replace-ibor-benchmarks-through-transaction-vol
 type: concept
 tags: [money-market, reference-rates, sofr, estr, benchmark-reform]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

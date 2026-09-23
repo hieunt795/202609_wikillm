@@ -5,6 +5,8 @@ tags: [fiscal, expenditure, prices]
 sources: [imf_macro_accounting]
 status: stable
 last_updated: 2026-09-16
+reviewed: 2026-09-23
+reviewed_by: model
 ---
 
 Trợ cấp là mọi hỗ trợ của chính phủ cho người sản xuất hoặc người tiêu dùng mà chính phủ không nhận lại khoản đền bù nào — một trong bốn hạng mục kinh tế chính của chi tiêu công cùng [[wages-and-salaries-expenditure|chi lương]], [[government-goods-and-services-expenditure|chi hàng hoá, dịch vụ]] và [[government-capital-expenditure|chi đầu tư]] (imf_macro_accounting, Ch.3, Types of Public Expenditures, d.2435, d.2446; chú thích 34, d.2458).

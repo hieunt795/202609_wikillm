@@ -3,7 +3,7 @@ title: producer-price-stage-differential-signals-systemic-supply-chain-inflation
 type: concept
 tags: [producer-prices, supply-chains, ppi, stage-differential, inflation-diagnostics]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

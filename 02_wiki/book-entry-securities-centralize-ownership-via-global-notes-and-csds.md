@@ -3,7 +3,7 @@ title: book-entry-securities-centralize-ownership-via-global-notes-and-csds
 type: concept
 tags: [fixed-income, securities, financial-infrastructure, custody]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

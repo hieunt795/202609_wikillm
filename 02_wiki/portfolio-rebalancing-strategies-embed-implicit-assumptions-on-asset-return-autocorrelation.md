@@ -3,7 +3,7 @@ title: portfolio-rebalancing-strategies-embed-implicit-assumptions-on-asset-retu
 type: concept
 tags: [portfolio-rebalancing, dynamic-asset-allocation, autocorrelation, trend-following, mean-reversion]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

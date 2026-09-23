@@ -3,7 +3,7 @@ title: persistent-fiscal-deficits-operate-as-a-monetary-force-expanding-private-
 type: concept
 tags: [fiscal-policy, monetary-policy, banking-system, safe-assets]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

@@ -3,7 +3,7 @@ title: quantitative-easing
 type: concept
 tags: [monetary-policy, unconventional-monetary-policy, central-bank]
 sources: [bindseil_monetary_policy, cargill_central_bank_policy, clippings, fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

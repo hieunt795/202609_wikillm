@@ -3,7 +3,7 @@ title: statutory-subordination-and-bail-in-frameworks-mandate-loss-absorption-fo
 type: concept
 tags: [statutory-subordination, bail-in, brrd, tlac, mrel, coco-bonds, banking-regulation, credit-risk]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

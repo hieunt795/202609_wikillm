@@ -3,7 +3,7 @@ title: fixed-income-instruments
 type: concept
 tags: [fixed-income, financial-instruments, securities]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

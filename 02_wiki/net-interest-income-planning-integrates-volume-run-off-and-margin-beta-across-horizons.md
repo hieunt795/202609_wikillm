@@ -1,0 +1,23 @@
+---
+title: net-interest-income-planning-integrates-volume-run-off-and-margin-beta-across-horizons
+type: concept
+tags: [alm, nii-planning, scenario-planning, margin-beta, margin-compression, budgeting]
+sources: [tata_bank_alm]
+status: stable
+last_updated: 2026-09-23
+---
+
+Lập kế hoạch thu nhập lãi thuần (NII Planning) là quy trình tài chính hướng tới tương lai quan trọng bậc nhất của bộ phận ALM, đóng vai trò kết nối mục tiêu kinh doanh thương mại với kỷ luật an toàn vốn và phòng ngừa rủi ro bảng cân đối (tata_bank_alm, Ch.3, NII Planning, d.2283). Quy trình này vượt xa một phép dự phóng toán học thuần túy bởi nó chứa đựng chiều kích chính trị nội bộ và thiên kiến tâm lý sâu sắc (*significant political dimension*): các khối kinh doanh luôn tìm mọi cách né tránh việc lập kế hoạch NII sụt giảm (do lo sợ bị cắt giảm ngân sách, nhân sự và vị thế quyền lực trong tổ chức), nhưng đồng thời cũng e ngại đặt chỉ tiêu tăng trưởng NII quá cao nhằm tránh rủi ro vỡ kế hoạch ảnh hưởng đến lương thưởng và thăng tiến cá nhân (tata_bank_alm, Ch.3, NII Planning, d.2283–2285).
+
+Để bảo đảm tính khách quan dựa trên dữ liệu, hệ thống ALM thiết lập kế hoạch NII theo ba chân trời thời gian độc lập (tata_bank_alm, Ch.3, Planning Horizons, d.2289–2293):
+1. **Dự báo (Forecast)**: Áp dụng cho năm dương lịch hoặc tài chính hiện hành, là sự kết hợp giữa kết quả thực tế đã ghi nhận trong các tháng đã qua và ước lượng cho các tháng còn lại; chất lượng dự báo tăng dần theo tiến trình năm tài chính và được cập nhật định kỳ từ 3 đến 4 lần mỗi năm (tata_bank_alm, Ch.3, Planning Horizons, d.2289–2291);
+2. **Ngân sách (Budget)**: Kế hoạch phân bổ tài chính chi tiết thuần túy dự phóng cho toàn bộ năm tài chính kế tiếp (tata_bank_alm, Ch.3, Planning Horizons, d.2289; tata_bank_alm, Ch.3, Planning Horizons, d.2293);
+3. **Kế hoạch chiến lược (Plan)**: Dự phóng trung hạn kéo dài từ 3 đến 5 năm, định hình cấu trúc bảng cân đối theo [[bank-specific-alm-tailors-balance-sheet-governance-to-business-models-and-regional-habitats]] (tata_bank_alm, Ch.3, Planning Horizons, d.2289).
+
+Trọng tâm của quy trình lập kế hoạch là phương pháp phân tích đa kịch bản (Scenario Planning) (tata_bank_alm, Ch.3, Scenario Planning, d.2297–2309). Ngân hàng xây dựng kịch bản cơ sở (*baseline scenario*) phản ánh môi trường lãi suất kỳ vọng cao nhất — thường lấy từ đường cong lãi suất giao ngay hiện hành hoặc đường cong lãi suất kỳ hạn forward — cùng các kịch bản lãi suất thay thế nhằm kiểm tra độ phân tán của dòng thu nhập (tata_bank_alm, Ch.3, Scenario Planning, d.2307–2309). Kế hoạch NII tại từng kịch bản được bóc tách thành hai cấu phần độc lập:
+- **Kế hoạch quy mô (Volume Planning)**: Từng mảng kinh doanh phải được lập kế hoạch riêng biệt do đặc thù suy giảm dòng tiền (*run-off*) khác nhau; quy mô tài sản/nợ tương lai được xác định bằng số dư di sản còn lại sau run-off cộng với quy mô kinh doanh mới (*new customer business*), phù hợp với góc nhìn động theo [[balance-sheet-evolution-assumptions-differentiate-run-off-static-and-dynamic-views]] và [[dynamic-replication-hedges-deposit-volume-fluctuations-at-prevailing-market-rates]] (tata_bank_alm, Ch.3, Volume Planning, d.2313–2317);
+- **Kế hoạch biên lợi nhuận (Margin Planning)**: Dự toán mức độ suy giảm biên (*margin compression*) hoặc mở rộng biên (*margin expansion*) dưới tác động của cạnh tranh và chu kỳ lãi suất thị trường (tata_bank_alm, Ch.3, Margin Planning, d.2321–2323).
+
+Bằng chứng thực nghiệm khẳng định Net Interest Margin (NIM) biến động mang tính định hướng rõ rệt theo mặt bằng lãi suất chung thông qua hệ số **Margin-Beta** (tata_bank_alm, Ch.3, Margin Planning, d.2325–2331). Nghiên cứu định lượng của Busch et al. (2021) trên các ngân hàng Đức ước tính rằng biên lãi thuần sụt giảm trung bình **5 bps mỗi năm** sau khi lãi suất thị trường dịch chuyển giảm 100 bps; khảo sát rộng hơn của Cruz-García et al. (2019) trên 32 quốc gia giai đoạn 2008–2014 cho thấy biên lãi thuần di chuyển **19 bps** cho mỗi 100 bps thay đổi của lãi suất thị trường ngắn hạn (tata_bank_alm, Ch.3, Margin Planning, d.2325).
+
+Một bản kế hoạch ALM toàn diện bắt buộc phải tổng hòa kế hoạch NII với các thước đo độ nhạy EVE, kiểm soát khe hở thời lượng khi đối mặt [[rapid-rate-tightening-exposes-duration-gaps-and-asymmetric-prepayment-speeds]], đồng thời tích hợp các ràng buộc an toàn thanh khoản (LCR, NSFR) và an toàn vốn để bảo đảm tuân thủ toàn diện các giới hạn nội bộ và quy định giám sát (tata_bank_alm, Ch.3, Comprehensive ALM Plan, d.2339–2344), tạo nền tảng vững chắc cho [[net-interest-income-forecast-serves-as-baseline-for-prospective-alm-simulations]].

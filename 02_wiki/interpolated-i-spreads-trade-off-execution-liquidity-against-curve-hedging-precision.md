@@ -3,7 +3,7 @@ title: interpolated-i-spreads-trade-off-execution-liquidity-against-curve-hedgin
 type: concept
 tags: [i-spread, swap-spread, hedging, liquidity, fixed-income-derivatives]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

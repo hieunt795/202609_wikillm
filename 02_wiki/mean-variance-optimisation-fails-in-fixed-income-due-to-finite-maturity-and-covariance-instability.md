@@ -3,7 +3,7 @@ title: mean-variance-optimisation-fails-in-fixed-income-due-to-finite-maturity-a
 type: concept
 tags: [mean-variance, portfolio-optimisation, markowitz-limitations, fixed-income-risk, covariance-instability]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

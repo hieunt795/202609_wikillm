@@ -3,7 +3,7 @@ title: futures-convexity-adjustment-arises-from-daily-variation-margining-cash-f
 type: concept
 tags: [futures, derivatives, convexity, money-market, interest-rates]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

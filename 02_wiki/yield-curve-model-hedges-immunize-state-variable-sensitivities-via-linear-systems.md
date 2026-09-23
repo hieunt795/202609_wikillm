@@ -3,7 +3,7 @@ title: yield-curve-model-hedges-immunize-state-variable-sensitivities-via-linear
 type: concept
 tags: [curve-hedging, yield-curve-models, state-variables, linear-systems, pca-hedging]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

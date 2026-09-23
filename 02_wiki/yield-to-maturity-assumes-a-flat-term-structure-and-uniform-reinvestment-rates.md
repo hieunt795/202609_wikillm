@@ -3,7 +3,7 @@ title: yield-to-maturity-assumes-a-flat-term-structure-and-uniform-reinvestment-
 type: concept
 tags: [yield-curve, bond-market, valuation]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 
