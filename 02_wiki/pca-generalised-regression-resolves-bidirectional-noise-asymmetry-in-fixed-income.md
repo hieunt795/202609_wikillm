@@ -1,0 +1,14 @@
+---
+title: pca-generalised-regression-resolves-bidirectional-noise-asymmetry-in-fixed-income
+type: concept
+tags: [pca, linear-regression, hedging, noise-modeling, fixed-income-risk]
+sources: [fixed_income_during]
+status: draft
+last_updated: 2026-09-23
+---
+
+Hồi quy bình phương tối thiểu thông thường (OLS) trong tài chính thường gặp khiếm khuyết cấu trúc nghiêm trọng do giả định bất đối xứng về nhiễu (fixed_income_during, Ch.33, PCA as Generalised Regression, d.52–65). Mô hình OLS tiêu chuẩn thiết lập phương trình tuyến tính $y = \alpha + \beta x$ với giả định ngầm định rằng biến độc lập $x$ được đo lường chính xác tuyệt đối, trong khi toàn bộ sai số ngẫu nhiên được dồn vào biến phụ thuộc $y$ (fixed_income_during, Ch.33, PCA as Generalised Regression, d.66–68). Khi đảo ngược vai trò để ước lượng tỷ lệ phòng hộ nghịch đảo $x = \alpha' + \beta' y$, kết quả thực nghiệm thực tế không bao giờ thỏa mãn đồng nhất thức toán học $\beta' = 1 / \beta$ (fixed_income_during, Ch.33, PCA as Generalised Regression, d.60–65). Sự sai lệch này chứng minh phương trình hồi quy OLS đã bị xác định sai quy cách (misspecified) trước tính chất ngẫu nhiên hai chiều của dữ liệu thị trường (fixed_income_during, Ch.36, Regression Hedges, d.72–77).
+
+Trong thị trường thu nhập cố định, hai lợi suất hoặc giá trái phiếu không có quan hệ nhân quả một chiều rõ rệt mà cùng chịu sự dẫn dắt của một nhân tố tín hiệu chung tiềm ẩn $z$, đồng thời mỗi biến đều chịu tác động của các số hạng nhiễu riêng biệt $\epsilon_x$ và $\epsilon_y$ (fixed_income_during, Ch.33, PCA as Generalised Regression, d.70–78). Khi giả định tín hiệu chung $z$ chi phối phần lớn phương sai tổng thể, bài toán hồi quy được chuyển hóa một cách tự nhiên thành bài toán phân tích thành phần chính (PCA) tổng quát (fixed_income_during, Ch.33, PCA as Generalised Regression, d.78). Vector riêng của ma trận hiệp phương sai tương ứng với giá trị riêng lớn nhất $\lambda_+$ xác định tỷ lệ tải $\beta_y / \beta_x$, cung cấp ước lượng không thiên lệch và đối xứng cho hệ số hồi quy (fixed_income_during, Ch.33, PCA as Generalised Regression, d.78–92).
+
+Phương pháp hồi quy tổng quát PCA khôi phục trọn vẹn tính chất đối xứng nghịch đảo khi hoán đổi các biến, đồng thời cho phép tính toán nghiệm dạng đóng đối với hệ hai biến thông qua đa thức đặc trưng bậc hai của ma trận $2 \times 2$ (fixed_income_during, Ch.33, PCA as Generalised Regression, d.78–86). Cơ chế này tạo nền tảng vững chắc cho việc xác định tỷ lệ phòng hộ giá trị tương đối giữa các công cụ nợ, tránh được các thiên lệch kỹ thuật do việc chọn biến độc lập tùy tiện trong OLS truyền thống. Phương pháp này liên kết chặt chẽ với việc nhận diện cấu trúc nhân tố đường cong trong [[yield-curve-pca-factors-link-curvature-convexity-to-implied-rate-volatility]] và cung cấp công cụ toán học nền tảng để triển khai [[yield-curve-model-hedges-immunize-state-variable-sensitivities-via-linear-systems]].

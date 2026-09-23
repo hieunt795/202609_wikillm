@@ -42,7 +42,8 @@ Chi tiết ở `00_schema.md`; những điều dễ sai nhất:
 - `[[wikilink]]` nằm **trong câu văn kèm lý do**, không dồn thành danh sách "xem thêm" (§7).
 - **`tags` không phải liên kết** — chỉ là chỉ mục lọc rẻ (§6).
 - **Viết lại bằng lời mình**, không sao chép nguyên văn nguồn (§7); thân bài áp skill `writing-style` profile wiki.
-- `sources:` dùng **source id** của bản kê (§1, §10).
+- `sources:` dùng **source id** của bản kê (§1, §10), bắt buộc dạng inline list `[id1, id2]` — hook đọc theo dòng, không hiểu YAML nhiều dòng.
+- Bullet không được mở đầu bằng `[[wikilink]]` (hook coi là danh sách "xem thêm"); lồng link vào câu diễn giải.
 - Claim từ **nguồn dài** kèm chú thích vị trí `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7.5) — áp cho trang có `last_updated` từ 2026-09-14. Chỉ chèn link hoặc chú thích thì **không** nâng `last_updated`.
 
 ## Công cụ kiểm
@@ -69,41 +70,7 @@ Cảnh báo của hook phải xử lý ngay, không để tồn đến lượt l
 - Không sửa `00_schema.md` / `CLAUDE.md` / skill vụn vặt từng lần — gộp theo batch để giữ prompt cache ổn định.
 - Ý tưởng chưa đủ chín → `_inbox.md`, **không** nhét vào một trang `02_wiki/` cho tiện (§11). Triage mỗi lượt lint.
 
-## Trạng thái phiên làm việc (Session Status & Next Steps)
+## Trạng thái phiên làm việc
 
-*Cập nhật lúc: 2026-09-23:11-45-00 (Wiki đạt 522 trang, 0 lỗi, 0 mồ côi)*
-
-### 1. Những gì đã hoàn thành trong session này
-- Hoàn tất 100% **Part One: Preliminaries** của nguồn `fixed_income_during` (Alexander Düring, *Fixed Income Trading and Risk Management*, Ch.1–9):
-  - Ch.1–2 (Mở đầu & Tiền tệ, tín dụng): 8 trang mới + 1 stub (`dollarization`) + cập nhật 5 trang liên quan (log 10:18:30).
-  - Ch.3–6 (Ngân hàng, Bù trừ, Hối phiếu, NHTW, Mục tiêu mức giá): 6 trang mới + cập nhật 4 trang (log 11:04:53).
-  - Ch.7–9 (Khung vận hành, Delphic/Odyssean Forward Guidance, QE 8 kênh, Inside/Outside money, Helicopter money, Free float distortion, VaR shock, Input/Output Legitimacy): 6 trang mới + cập nhật 6 trang (log 11:38:36).
-  - Tổng cộng Part One: 20 trang concept mới, 1 stub, cập nhật 15 trang.
-- Trước đó trong buổi sáng: Ingest hoàn tất 100% toàn bộ nguồn `clippings` (82 bài viết, 6 cụm, đưa wiki từ 460 lên 501 trang).
-- Cập nhật đồng bộ các file quản trị:
-  - `03_state/fixed_income_during.md`: Đánh dấu Ch.1–9 `[x]`, hoàn tất 100% Part One.
-  - `02_wiki/index.md`: Cập nhật bảng Sources (còn Ch.10–39) và bổ sung 20 trang mới vào phân mục Thị trường thu nhập cố định.
-  - `log.md`: Đã append các entry chuẩn xác.
-  - Session handoff: Tạo file `.claude/session_handoffs/2026-09-23-1145-fixed-income-during-part-one-complete.md`.
-- Kiểm định toàn bộ 522 trang bằng `validate_wiki_page.py --all`: **0 lỗi schema, 0 trang mồ côi**.
-
-### 2. Trạng thái hiện tại của từng phần
-- `clippings`: **Hoàn tất 100%** (82 file, 6 cụm).
-- `cargill_central_bank_policy`: **Hoàn tất 100%** (17/17 chương).
-- `bindseil_monetary_policy`: **Hoàn tất 100%** (18/18 chương).
-- `fixed_income_during`: **Hoàn tất Part One (Ch.1–9)**; còn lại Part Two–Eight (Ch.10–39, chi tiết ở `03_state/fixed_income_during.md`).
-- `imf_macro_accounting`: Hoàn thành Ch.2–6, còn Ch.1.
-- Các nguồn còn lại: `Modern Money Mechanics` (nguồn ngắn 85 KB, sẵn sàng ingest trọn 1 lượt), `capitalism_and_freedom`, `choudhry_*`, `tata_bank_alm` đang ở trạng thái chưa ingest.
-
-### 3. Các bước tiếp theo cần làm trong session sau
-- Tùy chọn nguồn ingest kế tiếp:
-  - **Lựa chọn 1**: Tiếp tục nguồn `fixed_income_during` sang Part Two — Cash Instruments (bắt đầu bằng Ch.10–12 hoặc Ch.13–14).
-  - **Lựa chọn 2**: Ingest nguồn ngắn `Modern Money Mechanics` (85 KB / 721 dòng, quy trình tạo tiền qua bút tệ ngân hàng của Fed Chicago) trong đúng 1 lượt chạy.
-  - **Lựa chọn 3**: Hoàn tất nốt Ch.1 của `imf_macro_accounting` để đưa nguồn này lên 100%.
-
-### 4. Quyết định quan trọng đã đưa ra và lý do
-- **Định dạng `sources:` trong Frontmatter bắt buộc là inline list `[source_id]`**: Hook kiểm định `validate_wiki_page.py` dùng regex đơn giản khớp theo từng dòng (`line.splitlines()`), không hỗ trợ cấu trúc YAML multi-line (`sources:\n  - id`).
-- **Tuân thủ triệt để Quy tắc §7.3 về danh sách bullet**: Đầu dòng bullet (`- `, `* `) không được mở đầu trực tiếp bằng `[[wikilink]]` để tránh bị hook bắt lỗi "dồn link thành danh sách xem thêm". Wikilink bắt buộc phải được lồng tự nhiên trong ngữ cảnh văn xuôi diễn giải.
-- **Tập trung hóa các khái niệm lịch sử vào phân tích thể chế chính sách**: Năm thời kỳ lịch sử trong Ch.17 được cấu trúc thành các trang atomic tập trung vào cơ chế thất bại chính sách (policy failure) và xung đột thể chế thay vì chỉ tường thuật diễn biến sự kiện thuần túy.
-
+Không ghi trạng thái vào file này (nạp mọi lượt → tốn token). Đầu session: đọc handoff mới nhất trong `.claude/session_handoffs/` + `02_wiki/index.md` §Sources.
 

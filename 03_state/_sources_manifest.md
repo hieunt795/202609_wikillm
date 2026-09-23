@@ -1,6 +1,6 @@
 ---
 type: sources-manifest
-last_updated: 2026-09-22
+last_updated: 2026-09-23
 ---
 
 Xuất xứ và checksum của các nguồn trong `01_sources/`.
@@ -148,7 +148,7 @@ File `.md` do docling chuyển đổi từ PDF (frontmatter `extractor: docling`
 | Xuất bản | John Wiley & Sons (Wiley Finance), 2021 — © 2021 John Wiley & Sons, Ltd; ISBN 9781119756330 (theo ghi chú người dùng, xem `03_state/fixed_income_during.md`) |
 | Phân loại | Nguồn dài (`00_schema.md` §10) — tổng 1.086 KB / 7.300 dòng trên 42 file `.md`; từng file đều dưới ngưỡng |
 | Nguồn file | Sách tách thành 42 PDF theo chương, mỗi PDF kèm `.md` chuyển đổi ngoài dự án bằng docling. File `-1` là front matter, `-k` (k = 2…40) là Chương k−1, `-41` Bibliography, `-42` Index |
-| Tiến độ ingest | `03_state/fixed_income_during.md` |
+| Tiến độ ingest | Hoàn tất 100% — `03_state/fixed_income_during.md` |
 
 | Đường dẫn | Bytes | Dòng | SHA-256 |
 |---|---|---|---|

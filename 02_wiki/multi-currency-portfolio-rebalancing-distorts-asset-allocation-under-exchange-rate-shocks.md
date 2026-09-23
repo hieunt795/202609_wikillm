@@ -1,0 +1,14 @@
+---
+title: multi-currency-portfolio-rebalancing-distorts-asset-allocation-under-exchange-rate-shocks
+type: concept
+tags: [multi-currency, portfolio-rebalancing, exchange-rate-shocks, asset-allocation, cross-currency-frictions]
+sources: [fixed_income_during]
+status: draft
+last_updated: 2026-09-23
+---
+
+Trong quản trị danh mục đầu tư toàn cầu, biến động tỷ giá hối đoái tạo ra những biến dạng cơ học nguy hiểm đối với các chiến lược tái cân bằng tỷ trọng cố định (constant asset allocation) (fixed_income_during, Ch.38, Constant Asset Allocation, d.58). Do tỷ giá giữa các đồng tiền chủ chốt có mức độ biến động lớn hơn nhiều so với biến động giá trái phiếu trong điều kiện bình thường, hiệu ứng chuyển đổi tiền tệ có thể lấn át hoàn toàn hiệu suất nội tại của từng lớp tài sản tại thị trường sở tại (fixed_income_during, Ch.38, Constant Asset Allocation, d.58).
+
+Hệ quả của ma sát này được minh chứng qua sự phân kỳ hành vi nghịch lý giữa các nhà đầu tư có đồng tiền hạch toán cơ sở khác nhau (fixed_income_during, Ch.38, Constant Asset Allocation, d.58). Giả sử một quỹ đầu tư toàn cầu có trụ sở tại khu vực Euro duy trì tỷ trọng tài sản cố định đối với chứng khoán định danh bằng đồng đô la Mỹ (USD) (fixed_income_during, Ch.38, Constant Asset Allocation, d.58). Khi đồng USD tăng giá mạnh so với EUR, giá trị quy đổi sang EUR của các tài sản Mỹ tăng vọt, đẩy tỷ trọng của chúng vượt trần mục tiêu; để tái lập tỷ trọng cố định, quỹ Euro buộc phải bán tháo tài sản Mỹ ngay cả khi chính tài sản đó đang sụt giảm giá trị nếu tính theo đồng USD trên thị trường nội địa (fixed_income_during, Ch.38, Constant Asset Allocation, d.58). Cùng thời điểm đó, một quỹ nội địa Mỹ áp dụng cùng một nguyên tắc tỷ trọng cố định sẽ nhìn nhận mức giảm giá nội tệ này như một sự thua sút hiệu suất và tiến hành mua gom thêm (fixed_income_during, Ch.38, Constant Asset Allocation, d.58).
+
+Sự đối đầu trực tiếp giữa lệnh bán của quỹ toàn cầu và lệnh mua của quỹ nội địa hoàn toàn bị chi phối bởi cú sốc tỷ giá hối đoái chứ không phản ánh bất kỳ sự phân kỳ nào về nhận định giá trị cơ bản của công cụ nợ (fixed_income_during, Ch.38, Constant Asset Allocation, d.58). Hiện tượng này chứng minh rằng việc áp dụng các quy tắc tái cân bằng máy móc trên danh mục đa tiền tệ có thể vô tình tạo ra các vị thế đầu cơ tiền tệ cưỡng bức, bóp méo mục tiêu phân bổ vốn ban đầu (fixed_income_during, Ch.38, Constant Asset Allocation, d.58). Động lực này tương tác chặt chẽ với rủi ro cross-gamma được nhận diện trong [[risk-neutral-portfolios-face-duration-aging-convexity-and-cross-gamma-instability]], bổ trợ cho các giả định tự tương quan phân bổ tại [[portfolio-rebalancing-strategies-embed-implicit-assumptions-on-asset-return-autocorrelation]] và kết nối với các ma sát chu kỳ thanh toán đa thị trường trong [[cross-market-settlement-conventions-induce-repo-funding-mismatches-in-global-indices]].

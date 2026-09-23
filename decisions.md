@@ -186,3 +186,9 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 - **Quyết định:** (1) Dùng `git mv` để đưa `.claude/.claude/*` lên `.claude/` (rename-tracked, giữ lịch sử); sửa path tự tham chiếu trong `settings.json`, 5 SKILL file, và rule `source-management.md`. (2) Xoá `.claude/CLAUDE.md` (duplicate), giữ root `CLAUDE.md` (có session status) làm bản chính thức. (3) Archive `CLAUDEV4_1.local.md` và `CLAUDE_RULES_REPORT.md` vào `.claude/archive/`. (4) Sửa root `CLAUDE.md:65` path `log_questions.py` → `Claude outputs/log_questions.py`.
 - **Lý do:** lỗi nesting gây mất chức năng, không chỉ tổ chức. Skill bị scope sai khiến lệnh cốt lõi có thể không xuất hiện bình thường.
 - **Rủi ro:** không có — all changes là git mv + path updates. Kiểm chứng: 0 ref tới `.claude/.claude/` còn lại ngoài log; hook chạy được; skill project-wide.
+
+## [2026-09-23] Bỏ trạng thái phiên khỏi `CLAUDE.md`
+
+- **Quyết định:** xoá mục "Trạng thái phiên làm việc" (~35 dòng) khỏi root `CLAUDE.md`, thay bằng 1 dòng trỏ tới handoff mới nhất + `index.md` §Sources. Hai quy tắc định dạng còn dùng lâu dài (`sources:` inline list; bullet không mở đầu bằng `[[wikilink]]`) chuyển vào mục "Nhắc nhanh về trang wiki".
+- **Lý do:** `CLAUDE.md` nạp vào mọi lượt của mọi session; trạng thái phiên trùng với `.claude/session_handoffs/` và đã lỗi thời (còn ghi Part One trong khi handoff 14:32 đã xong Part Two). Người dùng duyệt để tối ưu token.
+- **Ch.17 `fixed_income_during`:** năm thời kỳ lịch sử được tách thành trang atomic xoay quanh cơ chế thất bại chính sách (policy failure) và xung đột thể chế, không tường thuật sự kiện — chuyển từ `CLAUDE.md` sang đây.

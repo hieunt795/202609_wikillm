@@ -16,7 +16,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `choudhry_principles_of_banking` | Nguồn dài (2.664 KB / 14.955 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `choudhry_fixed_income_markets` | Nguồn dài (1.941 KB / 15.414 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Đang ingest dở** | Ch.21–39 (Ch.1–20 xong; front matter, Bib, Index bỏ qua) | `03_state/fixed_income_during.md` |
+| `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Đang ingest dở** | Ch.28–39 (Ch.1–27 xong; front matter, Bib, Index bỏ qua) | `03_state/fixed_income_during.md` |
 | `tata_bank_alm` | Nguồn dài (450 KB / 3.345 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `clippings` | Nguồn dài (82 file, 882 KB / 6.684 dòng) | **Hoàn tất 100%** | Toàn bộ 6 cụm (82 file) xong (chi tiết ở state file) | `03_state/clippings.md` |
 
@@ -738,4 +738,89 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[parallel-yield-curve-shifts-reflect-shifts-in-equilibrium-neutral-rates-and-central-bank-commitments]] — dịch chuyển song song thống trị đường cong phản ánh điều chỉnh ước lượng lãi suất thực trung lập dài hạn và cam kết của NHTW
 - [[convexity-bias-compresses-long-term-yields-and-inverts-the-ultra-long-end]] — thiên lệch độ lồi tăng theo căn bậc hai của kỳ hạn, đè nén lợi suất kỳ hạn dài và gây đảo ngược cấu trúc kỳ hạn đoạn siêu dài
 - [[institutional-preferred-habitats-and-solvency-regulations-induce-structural-short-convexity]] — môi trường ưa thích của định chế và quy chế thanh khoản Solvency tạo trạng thái bán độ lồi cưỡng bức (short convexity)
+
+**Carry, Roll-Down & Chênh lệch đường cong lợi suất (Fixed Income Düring — Ch.21–22 / Part Two)**
+- [[upward-sloping-yield-curves-mandate-forward-rates-to-exceed-zero-rates-and-par-yields]] — cấu trúc toán học của đường cong dốc lên quy định forward rate vượt trên zero rate và zero rate vượt trên par yield
+- [[holding-period-return-combines-carry-and-roll-down-quantified-by-break-even-yield-buffers]] — lợi suất nắm giữ tích hợp giữa carry tài trợ repo và roll-down trượt dốc, đo lường bằng đệm lợi suất hòa vốn
+- [[z-spreads-isolate-cash-flow-relative-value-across-full-zero-discount-curves]] — z-spread (spline spread) chiết khấu từng dòng tiền độc lập trên đường cong zero, tự động điều chỉnh theo rủi ro thời lượng
+- [[par-swap-spreads-reflect-benchmark-liquidity-and-exhibit-issuance-driven-jump-discontinuities]] — par swap spread phản ánh tính thanh khoản của trái phiếu chuẩn và bộc lộ các bước nhảy gián đoạn do phát hành mới
+- [[par-par-and-proceeds-asset-swaps-differentiate-upfront-capital-commitments-and-terminal-credit-risks]] — hoán đổi tài sản par-par và proceeds phân hóa giữa cam kết vốn trả trước và rủi ro tín dụng đối tác khi đáo hạn
+- [[interpolated-i-spreads-trade-off-execution-liquidity-against-curve-hedging-precision]] — chênh lệch hoán đổi nội suy (I-spread) đánh đổi giữa tính thanh khoản thực thi nhanh và độ trôi giá trị phòng hộ
+- [[ted-spreads-measure-interbank-credit-risk-by-shifting-the-entire-underlying-discount-curve]] — chênh lệch TED lượng hóa rủi ro liên ngân hàng bằng phương pháp dịch chuyển trực tiếp toàn bộ đường cong chiết khấu
+
+**Trái phiếu liên kết lạm phát, Định giá TIPS & Động học lạm phát (Fixed Income Düring — Ch.23 / Part Three)**
+- [[capital-indexed-tips-structure-operates-as-a-synthetic-foreign-currency-investment]] — cấu trúc nợ liên kết lạm phát TIPS bảo toàn sức mua thực tế, vận hành tương đương khoản đầu tư ngoại tệ tổng hợp
+- [[sovereign-inflation-linked-issuance-hedges-tax-creep-and-extracts-the-inflation-risk-premium]] — phát hành nợ liên kết lạm phát phòng hộ hiện tượng trượt thuế (tax creep) và khai thác phần bù rủi ro lạm phát
+- [[cpi-rebasing-and-ex-tobacco-conventions-prevent-index-distortions-in-inflation-linked-debt]] — kỹ thuật nối chuỗi đổi năm cơ sở và quy ước loại trừ thuốc lá bảo vệ tính liên tục và thanh khoản của nợ liên kết lạm phát
+- [[inflation-seasonality-distorts-clean-prices-and-breakeven-rates-absent-cyclical-filtering]] — tính mùa vụ của chỉ số CPI bắt buộc giá sạch hấp thụ biến động, gây méo mó lạm phát hòa vốn nếu thiếu lọc chu kỳ
+- [[breakeven-inflation-rates-incorporate-hedging-horizons-and-short-term-carry-noise]] — lạm phát hòa vốn thị trường phản ánh sự lây nhiễm từ biến động giá năng lượng và hoạt động phòng hộ của bàn giao dịch
+- [[real-short-rates-and-inflation-forecasts-determine-the-arbitrage-free-carry-of-inflation-linked-bonds]] — chi phí mang của trái phiếu liên kết lạm phát phụ thuộc vào lãi suất ngắn hạn thực và dự báo lạm phát kỳ hạn
+- [[comprehensive-inflation-models-stack-seasonally-adjusted-inflation-dynamics-onto-nominal-discount-curves]] — mô hình định giá toàn diện xếp chồng động học lạm phát thực lên đường cong danh nghĩa, triệt tiêu sai số mùa vụ
+
+**Rủi ro tín dụng, Thứ bậc nợ & Xếp hạng tín nhiệm (Fixed Income Düring — Ch.24 / Part Four)**
+- [[default-insolvency-and-bankruptcy-differentiate-covenant-breaches-cash-shortfalls-and-terminal-liquidation]] — phân biệt vỡ nợ kỹ thuật (vi phạm covenant), mất khả năng thanh toán dòng tiền và phá sản giải thể tài sản
+- [[debt-acceleration-and-cross-default-clauses-prevent-time-subordination-in-multi-creditor-structures]] — điều khoản gia tốc nợ và vỡ nợ chéo triệt tiêu tính ưu tiên hoàn trả theo thời gian trong cấu trúc nhiều chủ nợ
+- [[statutory-subordination-and-bail-in-frameworks-mandate-loss-absorption-for-systemic-bank-creditors]] — thứ bậc nợ luật định và cơ chế bail-in (BRRD, TLAC/MREL, CoCo) cưỡng chế chia sẻ tổn thất cho chủ nợ ngân hàng
+- [[sovereign-debt-operates-as-a-repeat-game-devoid-of-judicial-liquidation-and-enforceable-seniority]] — nợ chính phủ vận hành như trò chơi lặp lại không có cơ chế cưỡng chế thanh lý tư pháp hay thứ bậc nợ thực thi độc lập
+- [[collective-action-clauses-resolve-creditor-coordination-failures-and-neutralize-hold-out-vultures]] — điều khoản hành động tập thể (CACs) ràng buộc biểu quyết đa số, phá vỡ bế tắc cân bằng Nash của các quỹ kền kền bám trụ
+- [[credit-ratings-represent-ordinal-ranking-scales-distorted-by-the-issuer-pays-conflict-and-curse-of-the-commons]] — xếp hạng tín nhiệm là thang đo thứ bậc định tính, chịu méo mó từ xung đột lợi ích người phát hành trả tiền và bi kịch tài sản chung
+- [[rating-migration-matrices-resolve-the-maturity-paradox-and-reveal-corporate-versus-sovereign-risk-divergence]] — ma trận dịch chuyển xếp hạng giải quyết nghịch lý rủi ro kỳ hạn và bộc lộ sự phân kỳ cấu trúc giữa doanh nghiệp và quốc gia
+
+**Trái phiếu có bảo đảm, Chứng khoán hóa ABS & Thế chấp nhà ở RMBS (Fixed Income Düring — Ch.25–27 / Part Four)**
+- [[covered-bonds-combine-on-balance-sheet-dual-recourse-with-insolvency-ring-fencing]] — trái phiếu có bảo đảm tối ưu hóa chi phí vốn qua cơ chế hoàn trả kép nội bảng và khoanh vùng tài sản khỏi thủ tục phá sản
+- [[overcollateralization-optimizes-covered-bond-spreads-against-unsecured-asset-encumbrance]] — tài sản bảo đảm vượt mức (OC) tối ưu hóa giữa biên độ covered bond và chi phí đắt đỏ do trói buộc tài sản (asset encumbrance)
+- [[danish-balance-principle-links-mortgage-origination-to-bond-pricing-through-delivery-and-prepayment-options]] — nguyên tắc cân bằng Đan Mạch khớp nối 1-1 khoản vay và trái phiếu qua quyền giao nộp (delivery) và trả trước (prepayment)
+- [[asset-backed-securitization-achieves-bankruptcy-remoteness-via-true-sale-and-non-recourse-spvs]] — chứng khoán hóa ABS đạt tính cách ly phá sản ngoại bảng qua mua đứt bán đoạn (true sale) và SPV phi truy đòi
+- [[tranching-mechanics-partition-collateral-losses-into-equity-mezzanine-and-senior-option-profiles]] — kỹ thuật phân tầng rủi ro phân bổ tổn thất tài sản thành các hồ sơ quyền chọn equity (call), mezzanine (straddle) và senior (put)
+- [[mortgage-prepayments-combine-demographic-attrition-economic-refinancing-and-burn-out-effects]] — động học trả nợ trước hạn tích hợp hao mòn nhân khẩu, tái tài trợ kinh tế, hiệu ứng kiệt quệ (burn-out) và hàm bão hòa logistic
+- [[rmbs-negative-convexity-arises-from-embedded-borrower-prepayment-options-and-wal-extension]] — độ lồi âm và thời lượng âm của RMBS phát sinh từ quyền chọn trả trước nhúng sẵn và hiện tượng kéo dài thời gian đáo hạn (WAL extension)
+- [[tba-market-mechanics-and-dollar-rolls-manage-mortgage-origination-uncertainty]] — cơ chế thị trường giao dịch chuyển tiếp TBA và nghiệp vụ dollar roll (bù hoãn mua) xử lý bất định sản lượng nợ thế chấp
+
+**Hợp đồng tương lai trái phiếu chính phủ & Kinh doanh chênh lệch giá Basis (Fixed Income Düring — Ch.28 / Part Five)**
+- [[physical-delivery-bond-futures-deter-market-manipulation-through-post-settlement-inventory-exposure]] — giao nhận vật chất răn đe thao túng giá nhờ duy trì rủi ro kho hàng sau thanh toán, phụ thuộc sống còn vào thanh khoản repo
+- [[bond-futures-market-microstructure-differentiates-clearing-netting-and-cftc-trader-categories]] — vi cấu trúc hợp đồng tương lai: bù trừ ròng agency vs principal netting, lọc nhiễu khối lượng roll và phân loại CFTC COT
+- [[conversion-factors-induce-duration-dependent-cheapest-to-deliver-biases-around-notional-coupons]] — hệ số chuyển đổi chuẩn hóa giá hóa đơn quanh coupon danh nghĩa 6% và thiên kiến thời lượng định vị trái phiếu rẻ nhất CTD
+- [[bond-futures-basis-and-implied-repo-rate-quantify-arbitrage-free-cash-and-carry-relationships]] — bộ ba gross basis, net basis và implied repo rate (IRR) trong kinh doanh chênh lệch giá cash-and-carry và tỷ lệ phòng hộ CTD
+- [[quality-delivery-options-embed-negative-convexity-and-convexity-drag-in-bond-futures]] — quyền chọn hoán đổi chất lượng tạo độ lồi âm ngụ ý, lực cản độ lồi (convexity drag) và bước nhảy vọt rủi ro tại ngày thông báo giao hàng
+- [[futures-rolls-maintain-interest-rate-hedges-via-pvbp-neutral-roll-ratios-below-parity]] — hoán đổi kỳ hạn futures roll ở trạng thái backwardation, tỷ lệ đảo vị thế trung hòa PVBP dưới 1 và cơ chế mở rộng Open Interest
+- [[futures-delivery-windows-confer-timing-options-governed-by-carry-sign-and-repo-fails-risk]] — cửa sổ giao nhận mang lại quyền chọn định thời cho bên bán, phụ thuộc dấu của carry và rủi ro thất bại bù trừ repo fails
+- [[futures-squeezes-and-repo-scarcity-invert-net-basis-into-negative-territory]] — hiện tượng ép giá futures qua thâu tóm repo specials đảo chiều net basis sang vùng âm và đẩy IRR tiệm cận trần lãi suất tái cấp vốn
+- [[cash-settled-bond-futures-and-exchange-for-physical-substitute-delivery-with-swap-or-yield-baskets]] — hợp đồng tương lai thanh toán tiền mặt EDSP với PVBP cố định bằng 1 và giao dịch hoán đổi vật chất EFP bù trừ swap OTC
+
+**Hợp đồng hoán đổi lãi suất, Nén giao dịch & Vi cấu trúc Swaps (Fixed Income Düring — Ch.29 / Part Five)**
+- [[plain-vanilla-interest-rate-swaps-trade-pure-risk-and-resolve-preferred-habitat-friction]] — hoán đổi dòng tiền rủi ro thuần túy, giải tỏa ma sát môi trường ưa thích và phân hóa phụ lục bảo lãnh CSA
+- [[swap-rate-term-structures-diverge-from-bank-bond-yields-due-to-panel-survivorship-bias]] — cấu trúc kỳ hạn swap rate phân kỳ khỏi lợi suất nợ ngân hàng do thiên lệch sống sót của hội đồng fixing và vai trò của IMM swaps
+- [[multilateral-trade-compression-and-re-couponing-deflate-gross-notional-and-margin-drag]] — nén giao dịch đa phương TriOptima triệt tiêu danh nghĩa tổng và kỹ thuật re-couponing giải phóng lực cản ký quỹ bảng cân đối
+
+**Giao dịch đường cong & Giá trị tương đối trái phiếu (Fixed Income Düring — Ch.30–32 / Part Six)**
+- [[fixed-income-trade-governance-balances-probabilistic-stop-loss-and-epistemological-consistency]] — quản trị giao dịch thu nhập cố định: dừng lỗ xác suất trailing stop-loss, bẫy luật số lớn và giới hạn nhận thức luận Mean-Variance
+- [[statistical-arbitrage-in-fixed-income-forfeits-initial-trend-movements-against-fundamental-dislocations]] — kinh doanh chênh lệch thống kê: sự đánh đổi giữa mean reversion và bỏ lỡ sóng dạt ban đầu trước các dịch chuyển cơ bản dài hạn
+- [[curve-trading-hierarchies-systematically-immunize-lower-order-risk-dimensions]] — phân tầng rủi ro giao dịch đường cong: hệ n phương trình tự động triệt tiêu rủi ro bậc 1 đến n-1 độc lập với mô hình kinh tế
+- [[steepeners-and-flatteners-neutralize-duration-via-pvbp-weighting-amid-structural-kinks]] — giao dịch dốc hóa và phẳng hóa: trung hòa thời lượng qua tỷ lệ PVBP và khai thác điểm gãy cấu trúc phòng hộ của bảo hiểm nhân thọ
+- [[butterfly-and-condor-trades-exploit-curve-curvature-and-differing-market-quoting-conventions]] — giao dịch butterfly và condor: khai thác độ cong đường cong lợi suất và giải mã quy ước niêm yết trái ngược giữa bond và swap
+- [[yield-curve-pca-factors-link-curvature-convexity-to-implied-rate-volatility]] — nhân tố PCA đường cong lợi suất: kết nối độ cong với độ biến động ngụ ý VXTYN qua độ lồi dương và hạn chế tham số Nelson-Siegel
+- [[bond-relative-value-metrics-select-reference-curves-aligned-with-instrument-hedging-practices]] — lựa chọn đường cong tham chiếu giá trị tương đối: liên kết sovereign spline, composite spline và swap curve theo tập quán phòng hộ thực tế
+- [[bond-relative-value-strategies-combine-directional-spreads-with-multi-contract-futures-hedging]] — chiến lược giá trị tương đối trái phiếu: spread widener/tightener, basis trade mỏng và phòng hộ đa hợp đồng tương lai theo CTD
+
+**Quản trị rủi ro danh mục, Phòng hộ & Tái cân bằng (Fixed Income Düring — Ch.33–38 / Part Seven)**
+- [[pca-generalised-regression-resolves-bidirectional-noise-asymmetry-in-fixed-income]] — hồi quy tổng quát PCA: khắc phục bất đối xứng nhiễu hai chiều của OLS và khôi phục tính nghịch đảo đối xứng trong phòng hộ
+- [[pca-eigenvalue-herfindahl-index-measures-yield-curve-complexity-and-hedging-breadth]] — chỉ số Herfindahl của giá trị riêng PCA: đo lường mức độ phức tạp động học đường cong và định hướng số lượng công cụ phòng hộ
+- [[bond-index-construction-balances-ex-ante-replicability-and-liquidity-frictions]] — cơ chế xây dựng chỉ số trái phiếu: cân bằng giữa định nghĩa tiền nghiệm, tính khả thi sao chép thực tế và ma sát thanh khoản
+- [[cross-market-settlement-conventions-induce-repo-funding-mismatches-in-global-indices]] — quy ước thanh toán đa thị trường: xung đột chu kỳ T+2 vs T+0/T+1 và giải pháp tài trợ repo trong tái phân bổ danh mục toàn cầu
+- [[risk-neutral-portfolios-face-duration-aging-convexity-and-cross-gamma-instability]] — tính bất ổn định của danh mục trung hòa rủi ro: già hóa thời lượng DV01, hiệu ứng độ lồi và rủi ro cross-gamma ngoại hối
+- [[long-only-fixed-income-portfolios-cannot-achieve-complete-risk-neutrality]] — danh mục trái phiếu chỉ mua: điều kiện độ nhạy trái dấu bất khả thi và tính bất khả triệt tiêu hoàn toàn rủi ro lãi suất thuần túy
+- [[partial-index-replication-optimizes-tracking-error-against-cash-drag-and-turnover-costs]] — sao chép bán phần chỉ số: tối ưu hóa Lagrange spanning set, ràng buộc thanh khoản mềm và hóa giải lực cản tiền mặt bằng phái sinh
+- [[yield-curve-model-hedges-immunize-state-variable-sensitivities-via-linear-systems]] — phòng hộ theo mô hình đường cong: triệt tiêu độ nhạy biến trạng thái qua hệ phương trình tuyến tính và cấu trúc bướm trung hòa PCA
+- [[mean-variance-optimisation-fails-in-fixed-income-due-to-finite-maturity-and-covariance-instability]] — thất bại của tối ưu hóa Markowitz trong thu nhập cố định: kỳ hạn hữu hạn, già hóa duration và ma trận hiệp phương sai bất ổn
+- [[dimension-reduction-via-asset-classes-and-pca-stabilizes-mean-variance-matrix-inversion]] — giảm chiều dữ liệu qua nhóm tài sản và PCA: ổn định phép nghịch đảo ma trận hiệp phương sai và kiểm soát rủi ro đặc thù
+- [[portfolio-rebalancing-strategies-embed-implicit-assumptions-on-asset-return-autocorrelation]] — chiến lược tái cân bằng danh mục: giả định tự tương quan lợi suất ngầm định giữa no reallocation, tỷ trọng cố định, trend-following và mean reversion
+- [[multi-currency-portfolio-rebalancing-distorts-asset-allocation-under-exchange-rate-shocks]] — biến dạng tái cân bằng danh mục đa tiền tệ: cú sốc tỷ giá hối đoái gây lệch pha quyết định mua bán giữa các quỹ nội địa và toàn cầu
+
+**Thị trường trái phiếu chính phủ toàn cầu & Cấu trúc thể chế (Fixed Income Düring — Ch.39 / Part Eight)**
+- [[euro-area-sovereign-debt-integration-relied-on-redenomination-and-reconventioning]] — hội nhập nợ công khu vực Euro: đổi đơn vị tiền tệ redenomination, chuẩn hóa quy ước reconventioning act/act và tổ chức lại bàn giao dịch
+- [[sovereign-debt-maturity-trade-offs-balance-rate-volatility-against-refinancing-stability]] — đánh đổi cấu trúc kỳ hạn nợ công: cân bằng giữa biến động lãi suất và sự ổn định tái tài trợ, cùng giới hạn thị trường khi Kho bạc dùng hoán đổi IRS
+- [[sovereign-exchange-auctions-and-liquidity-facilities-mitigate-redemption-profile-clumping]] — đấu thầu hoán đổi và cơ sở thanh khoản nợ công: kỹ thuật làm trơn hồ sơ đáo hạn của Bỉ, phát hành bổ sung trái phiếu cũ của Pháp và cơ sở repo của Hà Lan
+- [[sovereign-floating-rate-debt-matches-retail-banking-assets-amid-benchmark-transitions]] — nợ chính phủ lãi suất thả nổi: công cụ CCT/CCT€ của Ý khớp dòng tiền ngân hàng tiết kiệm và chuyển dịch chuẩn đối chuẩn sang Euribor
+- [[funded-pension-systems-anchor-ultra-long-sovereign-yield-curves-the-uk-gilt-case]] — hệ thống quỹ hưu trí tích lũy neo giữ đường cong siêu dài: cấu trúc thị trường trái phiếu chính phủ Anh Gilts, Consols và UKTI
+- [[treasury-bill-maturity-clustering-functions-as-a-barometer-for-government-shutdown-risks]] — mật độ kỳ hạn tín phiếu Kho bạc Hoa Kỳ: phong vũ biểu định giá rủi ro chậm thanh toán trong các đợt bế tắc trần nợ công và đóng cửa chính phủ
 

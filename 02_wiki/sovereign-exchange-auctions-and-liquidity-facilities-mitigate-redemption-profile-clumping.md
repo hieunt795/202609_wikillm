@@ -1,0 +1,14 @@
+---
+title: sovereign-exchange-auctions-and-liquidity-facilities-mitigate-redemption-profile-clumping
+type: concept
+tags: [debt-management, exchange-auctions, liquidity-facilities, repo-facilities, short-squeeze]
+sources: [fixed_income_during]
+status: draft
+last_updated: 2026-09-23
+---
+
+Các cơ quan quản lý nợ công quốc gia đã phát triển nhiều công cụ can thiệp cấu trúc nhằm làm trơn hồ sơ đáo hạn (redemption profile) và bảo vệ thanh khoản thị trường thứ cấp trước các nguy cơ dồn ứ nghĩa vụ nợ hoặc ép giá kỹ thuật (fixed_income_during, Ch.39, Belgium, France, The Netherlands, d.62, 125, 356). Nếu để các trái phiếu tự nhiên tiến về ngày đáo hạn mà không có sự can thiệp, kho bạc sẽ phải đối mặt với các đỉnh thanh toán nợ gốc khổng lồ trong một khoảng thời gian ngắn, gây căng thẳng thanh khoản ngân sách nghiêm trọng và tạo ra sự phân tán thanh khoản trên các dòng sản phẩm cũ (fixed_income_during, Ch.39, Belgium, d.62).
+
+Kho bạc Nhà nước Bỉ là định chế tiên phong ứng dụng các phiên đấu thầu hoán đổi (exchange auctions) để xử lý triệt để thách thức này (fixed_income_during, Ch.39, Belgium, d.62). Bằng cách cho phép các nhà đầu tư hoán đổi các lô trái phiếu OLO có kỳ hạn còn lại dưới một năm lấy các trái phiếu chuẩn kỳ hạn dài mới phát hành, cơ quan quản lý nợ Bỉ vừa hợp nhất các dòng sản phẩm phân tán, vừa chủ động triệt tiêu các điểm nghẽn dòng tiền trước khi chúng kịp biến thành áp lực thanh toán thực tế (fixed_income_during, Ch.39, Belgium, d.62). Tại Pháp, Cơ quan Quản lý Nợ (AFT) áp dụng phương thức đấu thầu bổ sung vào các trái phiếu cũ (tapping off-the-run bonds) kết hợp vận hành một cơ sở cho vay chứng khoán chuyên biệt (lending facility), cho phép các đại lý sơ cấp SVT vay mượn trái phiếu để bù đắp các trạng thái bán khống và ngăn ngừa rủi ro thất bại giao nhận chứng khoán (fixed_income_during, Ch.39, France, d.125, 127).
+
+Đặc biệt tại Hà Lan, Cơ quan Kho bạc DSTA giải quyết rủi ro thanh khoản của các lô phát hành quy mô nhỏ (dưới 5 tỷ EUR) bằng cách cung cấp một cơ sở repo chính thức cho các nhà tạo lập thị trường (fixed_income_during, Ch.39, The Netherlands, d.356). Cơ sở này ngăn chặn nguy cơ các nhà đầu tư lớn thâu tóm nguồn cung lưu hành tự do để tạo ra các đợt ép giá bán khống (short squeezes), bảo đảm thị trường vận hành ổn định ngay cả đối với các mã nợ có quy mô vốn hóa khiêm tốn (fixed_income_during, Ch.39, The Netherlands, d.356). Các sáng kiến thể chế này kết nối chặt chẽ với cơ chế giải tỏa rủi ro thanh toán trong [[securities-settlement-fails-are-disciplined-by-fails-charges-and-cured-through-repo-or-buy-ins]], tương tác với hoạt động tài trợ repo có bảo đảm tại [[general-collateral-and-specials-repo-separate-cash-driven-from-collateral-driven-financing]] và bổ trợ cho các mục tiêu cân bằng danh mục tại [[sovereign-debt-maturity-trade-offs-balance-rate-volatility-against-refinancing-stability]].

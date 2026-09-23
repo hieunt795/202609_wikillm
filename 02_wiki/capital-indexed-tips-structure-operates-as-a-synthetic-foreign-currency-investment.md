@@ -1,0 +1,14 @@
+---
+title: capital-indexed-tips-structure-operates-as-a-synthetic-foreign-currency-investment
+type: concept
+tags: [tips, inflation-linked-bonds, purchasing-power, capital-indexed, foreign-currency-analogy]
+sources: [fixed_income_during]
+status: draft
+last_updated: 2026-09-23
+---
+
+Cấu trúc trái phiếu liên kết lạm phát kiểu TIPS điều chỉnh mọi dòng tiền bao gồm coupon định kỳ, giá trị hoàn trả gốc và giá hóa đơn thanh toán thông qua việc nhân với tỷ số chỉ số $R_t = I_t / I_0$, trong đó $I_t$ là chỉ số giá tham chiếu tại ngày thanh toán và $I_0$ là chỉ số giá cơ sở (fixed_income_during, Ch.23, Introduction, d.34; Cashflows of inflation-linked bonds, d.52–56). Cơ chế này đảm bảo mọi khoản thanh toán đều duy trì sức mua thực tế đối với giỏ hàng hóa tiêu dùng, biến các khoản coupon danh nghĩa thành các dòng coupon thực (fixed_income_during, Ch.23, Cashflows of inflation-linked bonds, d.56). Phần lớn thị trường áp dụng mức sàn giảm phát tại $R_0 = 1$ cho dòng tiền hoàn vốn gốc khi đáo hạn, bảo vệ nhà đầu tư khỏi nguy cơ mất vốn danh nghĩa nếu xảy ra giảm phát kéo dài (fixed_income_during, Ch.23, Cashflows of inflation-linked bonds, d.60).
+
+Về mặt toán học và tài chính, cấu trúc điều chỉnh của TIPS vận hành tương đương với một khoản đầu tư bằng ngoại tệ, trong đó chỉ số giá tiêu dùng đóng vai trò như tỷ giá hối đoái danh nghĩa (fixed_income_during, Ch.23, Cashflows of inflation-linked bonds, d.62). Đồng ngoại tệ giả định này được định nghĩa là có sức mua thực tế cố định theo thời gian, giúp giải thích mối tương quan giữa việc phát hành nợ ngoại tệ và nợ liên kết lạm phát tại các nền kinh tế mở quy mô nhỏ (fixed_income_during, Ch.23, Cashflows of inflation-linked bonds, d.62).
+
+Do TIPS bù đắp tổn thất sức mua của nợ gốc vào thời điểm đáo hạn, phần bù lạm phát không cần tích hợp vào coupon định kỳ, khiến mức coupon thực của TIPS thấp hơn nhiều so với trái phiếu danh nghĩa cùng kỳ hạn (fixed_income_during, Ch.23, Cashflows of inflation-linked bonds, d.68). Cấu trúc này khác biệt với mô hình trả theo kỳ của trái phiếu thả nổi lạm phát, nơi coupon thả nổi dồn tích lạm phát từng kỳ và nợ gốc được hoàn trả ngang mệnh giá mà không nhân tỷ số chỉ số (fixed_income_during, Ch.23, Cashflows of inflation-linked bonds, d.70–74). Cấu trúc dòng tiền đa tầng của TIPS là đối tượng ứng dụng tiêu biểu cho kỹ thuật chiết khấu dòng tiền trong [[z-spreads-isolate-cash-flow-relative-value-across-full-zero-discount-curves]], đồng thời chịu chi phối bởi động cơ quản lý nợ công tại [[sovereign-inflation-linked-issuance-hedges-tax-creep-and-extracts-the-inflation-risk-premium]]. Để duy trì tính liên tục của tỷ số chỉ số qua các thời kỳ, thị trường áp dụng [[cpi-rebasing-and-ex-tobacco-conventions-prevent-index-distortions-in-inflation-linked-debt|kỹ thuật nối chuỗi khi cơ quan thống kê đổi năm cơ sở và quy ước loại trừ thuốc lá]].

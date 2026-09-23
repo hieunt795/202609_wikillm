@@ -1,0 +1,14 @@
+---
+title: dimension-reduction-via-asset-classes-and-pca-stabilizes-mean-variance-matrix-inversion
+type: concept
+tags: [dimension-reduction, pca, mean-variance, matrix-inversion, asset-classes, numerical-stability]
+sources: [fixed_income_during]
+status: draft
+last_updated: 2026-09-23
+---
+
+Sự bất ổn định số học khi nghịch đảo ma trận hiệp phương sai quy mô lớn ($V^{-1}$) là trở ngại kỹ thuật căn bản khiến mô hình tối ưu hóa Mean-Variance khó áp dụng trực tiếp cho hàng trăm mã trái phiếu riêng lẻ (fixed_income_during, Ch.37, Mean-Variance Optimisation, d.106). Khi số lượng tài sản tăng lên, các lỗi đo lường mẫu số liệu tích tụ và mối tương quan cao giữa các kỳ hạn lân cận đẩy ma trận hiệp phương sai rơi vào trạng thái gần suy biến (near-singular), khiến nghiệm trọng số tối ưu $w$ dao động cực đoan và không khả thi trong giao dịch thực tế (fixed_income_during, Ch.37, Mean-Variance Optimisation, d.106).
+
+Để khôi phục tính ổn định số học, các nhà quản lý danh mục triển khai hai kỹ thuật giảm chiều dữ liệu (dimension reduction) có hệ thống (fixed_income_during, Ch.37, Mean-Variance Optimisation, d.108–110). Phương pháp thứ nhất là trừu tượng hóa các chứng khoán đơn lẻ thành các lớp tài sản hoặc chỉ số phụ đại diện (sub-indices), chẳng hạn nhóm "trái phiếu chính phủ Đức 2–5 năm" hoặc chỉ số iBoxx trái phiếu doanh nghiệp hạng A (fixed_income_during, Ch.37, Mean-Variance Optimisation, d.102, 108). Quá trình tối ưu hóa trọng số danh mục được thực hiện trên không gian số chiều thấp của các chỉ số này, trong khi tỷ trọng nội bộ của từng tài sản riêng lẻ bên trong mỗi nhóm được mặc định tuân theo trọng số vốn hóa tự nhiên (fixed_income_during, Ch.37, Mean-Variance Optimisation, d.108).
+
+Phương pháp thứ hai là trích xuất không gian nhân tố rủi ro trực giao thông qua phân tích thành phần chính (PCA) (fixed_income_during, Ch.37, Mean-Variance Optimisation, d.110). Thuật toán giải bài toán phân bổ tối ưu trên danh mục các nhân tố tiềm ẩn (mức độ, độ dốc, độ cong), sau đó dùng phép biến đổi ma trận để ánh xạ các trọng số nhân tố ngược trở lại tập hợp các công cụ nợ cụ thể trên thị trường (fixed_income_during, Ch.37, Mean-Variance Optimisation, d.110). Mặc dù kỹ thuật này ổn định hoàn toàn nghiệm đại số của phương trình Markowitz, phương trình phân rã tuyến tính $r_i = \sum \beta_{ij} f_j + \epsilon_i$ vẫn để lại thành phần rủi ro đặc thù $\epsilon_i$ không thể đa dạng hóa hoàn toàn (fixed_income_during, Ch.37, Mean-Variance Optimisation, d.112–116). Cơ chế này kết nối chặt chẽ với những giới hạn cấu trúc được mổ xẻ tại [[mean-variance-optimisation-fails-in-fixed-income-due-to-finite-maturity-and-covariance-instability]], đồng thời kế thừa các đặc tính toán học của [[pca-generalised-regression-resolves-bidirectional-noise-asymmetry-in-fixed-income]] và các nhân tố đường cong tại [[yield-curve-pca-factors-link-curvature-convexity-to-implied-rate-volatility]].
