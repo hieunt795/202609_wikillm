@@ -13,5 +13,6 @@ paths:
 - `log.md` là append-only. Mỗi operation có thay đổi ghi đúng một mục theo `00_schema.md`.
 - `/query` chỉ trả lời, không tạo trang hoặc đổi trạng thái, thì không ghi log.
 - `/lint` chỉ tạo báo cáo và triage; không tự sửa wiki.
-- Báo cáo lint/audit đi vào `Claude outputs/`, không phải `02_wiki/`.
+- `/research` luôn ghi một mục log (kể cả lượt chỉ ra báo cáo), như `/lint`.
+- Báo cáo lint/audit/research đi vào `Claude outputs/`, không phải `02_wiki/`.
 - Research, audit, draft, log và transcript không phải tri thức đã được chấp nhận.

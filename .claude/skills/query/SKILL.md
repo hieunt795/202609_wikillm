@@ -1,6 +1,6 @@
 ---
 name: query
-description: 'Trả lời câu hỏi bằng cách tổng hợp từ các trang trong 02_wiki. Dùng cho mọi câu hỏi về nội dung tri thức đã nạp vào wiki — kinh tế vĩ mô, hạch toán quốc gia, cán cân thanh toán, tài khoá, tiền tệ, ngân hàng trung ương, ngân hàng, thị trường trái phiếu và thu nhập cố định, lạm phát, tỷ giá — kể cả khi người dùng không nhắc chữ "wiki"; và khi người dùng muốn tra cứu, tổng hợp, so sánh, giải thích dựa trên wiki, hỏi wiki đã có gì về một chủ đề, hoặc muốn tìm, liệt kê các trang nói về một khái niệm. Không dùng cho ingest nguồn mới, kiểm tra sức khoẻ wiki hay review trang.'
+description: 'Trả lời câu hỏi bằng cách tổng hợp từ các trang trong 02_wiki. Dùng cho mọi câu hỏi về nội dung tri thức đã nạp vào wiki — kinh tế vĩ mô, hạch toán quốc gia, cán cân thanh toán, tài khoá, tiền tệ, ngân hàng trung ương, ngân hàng, thị trường trái phiếu và thu nhập cố định, lạm phát, tỷ giá — kể cả khi người dùng không nhắc chữ "wiki"; và khi người dùng muốn tra cứu, tổng hợp, so sánh, giải thích dựa trên wiki, hỏi wiki đã có gì về một chủ đề, hoặc muốn tìm, liệt kê các trang nói về một khái niệm. Không dùng cho ingest nguồn mới, kiểm tra sức khoẻ wiki, review trang, hay đào sâu/bổ sung claim cho cả một cụm trang theo chủ đề (research).'
 ---
 
 # Query — tổng hợp câu trả lời từ wiki
@@ -21,8 +21,10 @@ Cần mục lục chủ đề thì grep trong `index.md` theo từ khoá thay v�
 
 ```bash
 ls 02_wiki | grep -i "<từ khoá>"
-grep -l -i -E "^(title|tags):.*<từ khoá>" 02_wiki/*.md
+grep -l -i -E "^(title|tags):.*<từ khoá>|^  - .*<từ khoá>" 02_wiki/*.md
 ```
+
+Vế `^  - .*` bắt tag viết dạng YAML nhiều dòng (khoảng 1/10 số trang).
 
 Title là tiếng Anh, thân bài tiếng Việt: câu hỏi tiếng Việt thì đổi sang thuật ngữ tiếng Anh trước khi grep (vd "dự trữ bắt buộc" → `required-reserve`).
 

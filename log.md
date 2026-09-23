@@ -692,3 +692,8 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 6 trang mới: euro-area-sovereign-debt-integration-relied-on-redenomination-and-reconventioning, sovereign-debt-maturity-trade-offs-balance-rate-volatility-against-refinancing-stability, sovereign-exchange-auctions-and-liquidity-facilities-mitigate-redemption-profile-clumping, sovereign-floating-rate-debt-matches-retail-banking-assets-amid-benchmark-transitions, funded-pension-systems-anchor-ultra-long-sovereign-yield-curves-the-uk-gilt-case, treasury-bill-maturity-clustering-functions-as-a-barometer-for-government-shutdown-risks
 - Cập nhật 2 chiều 5 trang: clean-and-dirty-bond-prices-separate-market-valuation-from-accrued-interest-settlement, floating-rate-notes-reset-to-par-at-coupon-dates-when-quoted-margin-equals-credit-spread, institutional-preferred-habitats-and-solvency-regulations-induce-structural-short-convexity, sovereign-debt-refinancing-dependency-constrains-monetary-policy-horizons, turn-premium-reflects-year-end-balance-sheet-constraints-rather-than-policy-rate-expectations; cập nhật 03_state/fixed_income_during.md (42/42 file - 100% hoàn thành) và 02_wiki/index.md
 - Hoàn tất 100% toàn bộ nguồn sách Alexander Düring (Fixed Income Trading and Risk Management, 39 chương, 7.300 dòng nguồn, 8 phần)
+
+## [2026-09-23:19-37-46] schema | /research — sửa theo audit + eval 3 case
+- Viết lại research/SKILL.md (1 cổng duyệt gộp, schema theo nhánh, đọc theo mục, nguồn nhiều file, nhánh Conflict/inbox); đồng bộ CLAUDE.md, query description, rules/project-records.md
+- Sửa grep tag YAML nhiều dòng ở research + query (60/661 trang bị bỏ sót)
+- Eval dry-run 3 case × 2 bản: 9/9 cả hai; repo không bị ghi; chi tiết ở decisions.md
