@@ -1,0 +1,14 @@
+---
+title: xva-adjustments-reconcile-unmargined-otc-derivatives-with-cleared-market-prices
+type: concept
+tags: [derivatives, valuation, xva, cva, fva]
+sources: [fixed_income_during]
+status: draft
+last_updated: 2026-09-23
+---
+
+Các khoản điều chỉnh định giá hợp đồng (xVA) là tập hợp các chi phí vốn và thanh khoản được cộng hoặc trừ vào mô hình định giá phái sinh OTC song phương, nhằm phản ánh sự sai lệch giữa hợp đồng song phương với mức giá tham chiếu của các hợp đồng được bù trừ tập trung qua CCP (fixed_income_during, Ch.12, Contract Value Adjustments (xVA), d.104–108). Chuẩn mực kế toán định giá theo giá trị hợp lý (fair value) giả định một giao dịch độc lập giữa các bên tự nguyện, nhưng trong thực tế, giá trị kinh tế của một hợp đồng phái sinh mới phụ thuộc mật thiết vào toàn bộ danh mục giao dịch sẵn có với cùng đối tác và thỏa thuận thế chấp tương ứng (fixed_income_during, Ch.12, Contract Value Adjustments (xVA), d.106; Ch.12, Credit Value Adjustment, d.118).
+
+Khoản điều chỉnh rủi ro tín dụng (Credit Value Adjustment - CVA) áp dụng cho các giao dịch không có thỏa thuận ký quỹ, lượng hóa chi phí vốn theo quy định an toàn vốn cho phần giá trị thị trường dương có nguy cơ tổn thất khi đối tác vỡ nợ (fixed_income_during, Ch.12, Credit Value Adjustment, d.116). Các ngân hàng thường phòng ngừa rủi ro CVA bằng hợp đồng hoán đổi rủi ro tín dụng (CDS) (fixed_income_during, Ch.12, Credit Value Adjustment, d.120). Khi hợp đồng có điều khoản ký quỹ bắt buộc, rủi ro tín dụng được triệt tiêu nhưng phát sinh khoản điều chỉnh chi phí vốn tài trợ (Funding Value Adjustment - FVA) (fixed_income_during, Ch.12, Funding Value Adjustment, d.124). FVA phản ánh chi phí huy động vốn không có bảo đảm của ngân hàng (thường cao hơn 50 điểm cơ bản) để nộp tiền mặt ký quỹ, trong khi khoản ký quỹ này chỉ được trả lãi ở mức lãi suất qua đêm tham chiếu như SOFR hoặc €STR (fixed_income_during, Ch.12, Funding Value Adjustment, d.126). Khoản điều chỉnh nợ (Debit Value Adjustment - DVA) ghi nhận chi phí kinh tế khi tổ chức bị hạ xếp hạng tín nhiệm, buộc phải bổ sung thêm tài sản thế chấp theo hợp đồng (fixed_income_during, Ch.12, Debit Value Adjustment, d.134).
+
+Hệ thống xVA kết nối trực tiếp với [[central-counterparties-transform-bilateral-counterparty-risk-into-liquidity-and-concentration-risk|cơ chế bù trừ trung tâm CCP]] và [[ccp-waterfall-protects-clearing-houses-through-margining-default-funds-and-mandatory-bidding|các tầng ký quỹ VM và IM]]. Khi kết hợp với [[futures-convexity-adjustment-arises-from-daily-variation-margining-cash-flows|khoản điều chỉnh lồi phát sinh từ ký quỹ hợp đồng tương lai]], hệ thống xVA giúp dung hòa đường cong chiết khấu giữa các công cụ phái sinh song phương và các hợp đồng giao dịch trên sở (fixed_income_during, Ch.13, Convexity Adjustment, d.279). Chi phí xVA tạo áp lực kinh tế thúc đẩy các tổ chức chuẩn hóa danh mục để đưa vào hạ tầng bù trừ tập trung của [[fixed-income-instruments|thị trường thu nhập cố định]].

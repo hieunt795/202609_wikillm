@@ -1,0 +1,18 @@
+---
+title: sovereign-fx-intervention-integrates-fima-repo-facility-to-prevent-treasury-market-dislocation
+type: concept
+tags: [fx-intervention, fima-repo, central-banks, treasury-market, dollar-liquidity]
+sources: [clippings]
+status: draft
+last_updated: 2026-09-23
+---
+
+Nghiệp vụ can thiệp tỷ giá tích hợp FIMA Repo Facility (sovereign FX intervention via FIMA repo) là cơ chế can thiệp ngoại hối hiện đại trong đó ngân hàng trung ương nước ngoài sử dụng công cụ Thỏa thuận Mua lại dành cho Cơ quan Tiền tệ Quốc tế và Nước ngoài (FIMA Repo Facility) của Cục Dự trữ Liên bang Mỹ (Fed) để tạm thời hoán đổi chứng khoán Kho bạc Mỹ lấy thanh khoản USD dự trữ mà không phải bán tháo trực tiếp tài sản ra thị trường thứ cấp (clippings, Cụm 4, Tích hợp FIMA vào Can thiệp Tỷ giá, file Yen-tervention.md, d.12–14, d.52–54).
+
+Trong các mô hình quản trị tỷ giá truyền thống, khi một đồng tiền (như đồng Yên Nhật) đối mặt với áp lực mất giá nghiêm trọng do chênh lệch lãi suất nới rộng hoặc cú sốc năng lượng, cơ quan tài chính (như Bộ Tài chính Nhật Bản MOF) buộc phải can thiệp mua nội tệ bằng cách bán dự trữ ngoại hối USD (clippings, Cụm 4, Cơ chế Can thiệp Tỷ giá Cổ điển, file Yen-tervention.md, d.12, d.50–54). Do phần lớn dự trữ ngoại hối của các quốc gia đồng minh được nắm giữ dưới dạng trái phiếu Kho bạc Mỹ (UST), việc can thiệp đơn phương quy mô lớn (lên tới hàng chục tỷ USD mỗi đợt) đồng nghĩa với việc các cơ quan quản lý phải thanh lý ồ ạt UST trên thị trường thứ cấp (clippings, Cụm 4, Bán tháo Dự trữ UST trên Thị trường Thứ cấp, file Yen-tervention.md, d.54). Trong bối cảnh dung lượng bảng cân đối của các đại lý sơ cấp đang bị thắt chặt bởi các quy định an toàn vốn, áp lực bán tháo từ khu vực chính thức nước ngoài có thể gây tắc nghẽn thanh khoản nghiêm trọng và làm đảo lộn cấu trúc thị trường trái phiếu Mỹ như từng diễn ra trong cuộc khủng hoảng "Dash for Cash" tháng 3 năm 2020 (clippings, Cụm 4, Nguy cơ Đứt gãy Thị trường Kho bạc, file Yen-tervention.md, d.54).
+
+Việc tích hợp công cụ FIMA Repo Facility — được Fed thiết lập từ năm 2020 như một giao dịch [[repurchase-agreement|hợp đồng mua lại repo]] qua đêm có thể tái tục — giải quyết triệt để mâu thuẫn giữa mục tiêu bảo vệ [[exchange-rate|tỷ giá hối đoái]] và yêu cầu bảo đảm ổn định tài chính thị trường nợ công Mỹ (clippings, Cụm 4, Vai trò Bảo vệ Hạ tầng của FIMA, file Yen-tervention.md, d.52–56):
+- Giữ nguyên tài sản bảo đảm trên bảng cân đối: Ngân hàng trung ương can thiệp thế chấp UST trực tiếp tại Fed để nhận tiền gửi dự trữ USD thanh toán giao ngay mà không kích hoạt giao dịch bán tháo ra thị trường tự do, loại bỏ hoàn toàn áp lực đè nặng lên các nhà tạo lập thị trường (clippings, Cụm 4, Cầm cố Repo vs Bán thẳng, file Yen-tervention.md, d.52, d.56).
+- Bảo vệ cơ sở hạ tầng tiền tệ cốt lõi của Fed: Fed đóng vai trò là bên trung gian đối ứng tối cao, hấp thụ rủi ro thanh khoản của các đối tác nước ngoài để bảo vệ tính thanh khoản của thị trường Kho bạc — tài sản dự trữ an toàn lớn nhất của hệ thống tài chính toàn cầu (clippings, Cụm 4, Bảo vệ Hạ tầng Tiền tệ của Fed, file Yen-tervention.md, d.56).
+
+Sự xuất hiện của các chiến dịch can thiệp phối hợp sử dụng FIMA phản ánh bước tiến quan trọng trong nhận thức chính sách: sự bất ổn của tỷ giá không còn được nhìn nhận như một hiện tượng tâm lý đầu cơ cô lập, mà là biểu hiện bề nổi của sự căng thẳng cấu trúc trong mạng lưới thanh khoản USD ngoại biên (Eurodollar system), đòi hỏi việc quản lý tỷ giá phải gắn chặt với quản trị hạ tầng tài sản bảo đảm và thanh khoản bán buôn toàn cầu theo [[commodity-import-energy-shocks-transmit-directly-into-offshore-dollar-funding-stresses]] (clippings, Cụm 4, Quản trị Tỷ giá gắn với Hạ tầng Eurodollar, file Yen-tervention.md, d.58, d.68–70).

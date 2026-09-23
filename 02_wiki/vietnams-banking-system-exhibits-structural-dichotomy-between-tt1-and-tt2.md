@@ -1,0 +1,13 @@
+---
+title: vietnams-banking-system-exhibits-structural-dichotomy-between-tt1-and-tt2
+type: concept
+tags: [vietnam-financial-system, interbank-market, banking-regulation]
+sources: [clippings]
+status: draft
+last_updated: 2026-09-22
+---
+
+Hệ thống ngân hàng Việt Nam vận hành dựa trên sự phân kỳ cấu trúc nhị phân sâu sắc giữa Thị trường 1 (TT1 - thị trường giao dịch với khách hàng dân cư và doanh nghiệp) và Thị trường 2 (TT2 - thị trường bán buôn giữa các tổ chức tín dụng) (clippings, ALM, Phân kỳ TT1 và TT2, file Lãi suất chưa thể hạ Nhấn mạnh lại điểm nghẽn từ TT1. LDR không giải quyết được vấn đề.md, d.21–23; clippings, ALM, Cấu trúc TT1 vs TT2, file ALM P5 – Bước đầu hiểu về sự phức tạp giữa Tây vs Ta trong ALM.md, d.17–20).
+
+TT1 là nơi diễn ra các hoạt động huy động tiền gửi và giải ngân tín dụng thực tế cho nền kinh tế thực, đặc trưng bởi chi phí vốn có độ trễ lớn và các ràng buộc quy định chặt chẽ; trong khi đó, TT2 là [[interbank-market]] chuyên điều phối thanh khoản ngắn hạn và phản ánh trực tiếp các biện pháp can thiệp của Ngân hàng Nhà nước (clippings, ALM, Đặc tính TT1 vs TT2, file Chi phí vốn VND - Lý do tại sao lại lớn.md, d.15–45). Sự phân tầng này tạo ra rào cản ngăn cách dòng vốn: nguồn thanh khoản liên ngân hàng chi phí thấp trên TT2 không thể tự do chuyển đổi để tài trợ cho tài sản tín dụng trung dài hạn trên TT1 do các giới hạn tỷ lệ cho vay trên tổng tiền gửi (LDR) và trần tỷ lệ vốn ngắn hạn cho vay trung dài hạn (clippings, ALM, Giới hạn LDR, file Lãi suất chưa thể hạ Nhấn mạnh lại điểm nghẽn từ TT1. LDR không giải quyết được vấn đề.md, d.23–25; clippings, ALM, Quy định an toàn tỷ lệ, file DTTT thay thế TT22.md, d.15–35). Bối cảnh này dẫn tới hiện tượng [[tt1-deposit-rate-stickiness-prevents-interbank-liquidity-from-lowering-lending-rates]] và phản ánh nguyên lý [[central-bank-interest-rate-corridor-requires-separate-facilities-for-interbank-and-credit-markets|hành lang lãi suất cần có các công cụ phân tầng riêng biệt]], tương đồng với tình trạng được phân tích trong [[underdeveloped-banking-competition-and-financial-markets-limit-indirect-monetary-control-in-transition-economies]] khi thị trường tài chính thiếu các công cụ phái sinh để hoán đổi rủi ro kỳ hạn giữa hai thị trường. Sự phân kỳ nhị phân này cũng lý giải tại sao cơ chế [[offshore-foreign-currency-debt-pricing-diverges-from-domestic-benchmarks]] lại có mặt bằng chi phí vốn tách biệt hoàn toàn khỏi lãi suất nội tệ, đồng thời minh chứng cho hiện tượng [[endogenous-systemic-liquidity-circulation-distorts-accounting-equations-via-balance-sheet-resonance]] khi các dòng tiền gửi kho bạc và thanh khoản TT2 chạy vòng quanh hệ thống mà không thể chuyển hóa thành dòng tín dụng giá rẻ trên TT1.
+

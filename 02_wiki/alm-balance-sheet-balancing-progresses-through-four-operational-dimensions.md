@@ -1,0 +1,13 @@
+---
+title: alm-balance-sheet-balancing-progresses-through-four-operational-dimensions
+type: concept
+tags: [alm, commercial-banking, liquidity-management]
+sources: [clippings]
+status: draft
+last_updated: 2026-09-22
+---
+
+Quy trình cân đối bảng cân đối trong quản trị Tài sản – Nợ (ALM) của [[deposit-money-banks]] tiến triển qua bốn chiều kích có mức độ phức tạp tăng dần: cân dòng tiền, cân kỳ hạn, cân tỷ lệ cấu trúc, và cân hành vi nguồn vốn gắn liền với cơ chế định giá chuyển giao nội bộ FTP (clippings, ALM, Cân dòng tiền, file Cân dòng tiền – Khái niệm đầu tiên về cân đối- ALM P1.md, d.15–33; clippings, ALM, Cân kỳ hạn, file Cân nguồn – Phần tiếp theo Cân kỳ hạn.md, d.15–22; clippings, ALM, Cân tỷ lệ, file ALM P3 Cân nguồn Cân Tỷ lệ.md, d.15–19; clippings, ALM, Hành vi nguồn tiền, file ALM Part 4 Hiểu hành vi nguồn tiền.md, d.15–39).
+
+Ở tầng vận hành sơ cấp nhất, [[cash-flow-balancing-resolves-immediate-payment-obligations-against-excess-reserve-opportunity-cost]] chỉ giải quyết quy mô thanh khoản bù trừ trong ngày và đáp ứng yêu cầu dự trữ bắt buộc bình quân (clippings, ALM, Cân dòng tiền, file Cân dòng tiền – Khái niệm đầu tiên về cân đối- ALM P1.md, d.17–25). Bước kế tiếp là [[maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks]] nhằm xác định độ dài thời gian mà trạng thái thặng dư hoặc thiếu hụt thanh khoản tồn tại, từ đó lựa chọn kỳ hạn giao dịch trên [[interbank-market]] để tối ưu hóa chi phí vốn và kiểm soát [[liquidity-risk]] (clippings, ALM, Cân kỳ hạn, file Cân nguồn – Phần tiếp theo Cân kỳ hạn.md, d.23–39). Tầng thứ ba chuyển trọng tâm sang cân đối tỷ lệ quy định và cấu trúc tài sản – nợ, xác lập loại nguồn vốn nào được phép tài trợ cho loại tài sản nào dưới các ràng buộc an toàn vĩ mô như tỷ lệ cho vay trên huy động (LDR) và trần sử dụng vốn ngắn hạn cho vay trung dài hạn (clippings, ALM, Cân tỷ lệ, file ALM P3 Cân nguồn Cân Tỷ lệ.md, d.15–19). Cuối cùng, tầng cao nhất đòi hỏi sự thấu hiểu sâu sắc về [[behavioral-modeling-of-tt1-liabilities-distorts-when-banks-actively-intervene-on-pricing-and-sales]], phân biệt bản chất giữa nguồn tiền gửi không kỳ hạn (CASA) gắn với hệ sinh thái giao dịch và tiền gửi có kỳ hạn nhạy cảm với lãi suất, chuyển ALM từ vị thế kế toán thụ động sang phối hợp kinh doanh và định giá sản phẩm (clippings, ALM, Hành vi nguồn tiền, file ALM Part 4 Hiểu hành vi nguồn tiền.md, d.25–39). Khi hệ thống tài chính vận hành dựa trên cơ chế nội sinh thay vì đón nhận dòng tiền sơ cấp ngoại sinh từ chi tiêu tài khóa, hiện tượng [[endogenous-systemic-liquidity-circulation-distorts-accounting-equations-via-balance-sheet-resonance]] sẽ xuất hiện, khiến các nỗ lực cân đối ở cả bốn chiều kích này bị vặn xoắn và khuếch đại chi phí vốn cho toàn bộ hệ thống ngân hàng.
+

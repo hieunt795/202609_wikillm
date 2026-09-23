@@ -1,0 +1,16 @@
+---
+title: general-collateral-and-specials-repo-separate-cash-driven-from-collateral-driven-financing
+type: concept
+tags: [repo-market, general-collateral, specials, market-microstructure]
+sources: [fixed_income_during]
+status: draft
+last_updated: 2026-09-23
+---
+
+Thị trường hợp đồng mua lại (repo) phân hóa thành hai phân khúc hoạt động cốt lõi là tài trợ tài sản chung (General Collateral - GC) và tài trợ đặc biệt (Specials), phản ánh sự phân tách rõ rệt giữa động cơ tìm kiếm thanh khoản tiền mặt và động cơ mượn chứng khoán chuyên biệt (fixed_income_during, Ch.14, The Repurchase Market, d.10–18).
+
+Phân khúc GC là giao dịch định hướng tiền mặt (cash-driven), trong đó các bên vay và cho vay vốn giao dịch trên một rổ chứng khoán đạt chuẩn quy định rộng rãi, chẳng hạn như trái phiếu chính phủ Đức kỳ hạn 1–10 năm (fixed_income_during, Ch.14, The Repurchase Market, d.12). Bên nhận tiền mặt có toàn quyền lựa chọn loại chứng khoán cụ thể trong rổ để bàn giao sau khi lãi suất repo GC đã được thống nhất (fixed_income_during, Ch.14, The Repurchase Market, d.12). Lãi suất repo GC luôn thấp hơn lãi suất cho vay không bảo đảm cùng kỳ hạn, phản ánh mức giảm thiểu rủi ro tín dụng nhờ tài sản bảo đảm (fixed_income_during, Ch.14, The Repurchase Market, d.12).
+
+Trái lại, phân khúc Specials là giao dịch định hướng chứng khoán (collateral-driven), nơi loại chứng khoán dùng làm tài sản thế chấp được chỉ định cụ thể ngay tại thời điểm đàm phán hợp đồng (fixed_income_during, Ch.14, The Repurchase Market, d.16). Khi phát sinh nhu cầu vay mượn đột biến đối với một mã trái phiếu xác định (phục vụ giao hàng hợp đồng tương lai hoặc hỗ trợ vị thế bán khống của nhà tạo lập thị trường), bên cho vay tiền mặt sẵn sàng chấp nhận một mức lãi suất repo thấp hơn đáng kể so với mức GC, ví dụ "20 điểm cơ bản special" (fixed_income_during, Ch.14, The Repurchase Market, d.16, d.24). Phân khúc liên đại lý (interdealer) đóng vai trò làm cầu nối tìm kiếm các tài sản đang bị khóa trong các hợp đồng GC dài hạn để giải phóng sang phân khúc specials (fixed_income_during, Ch.14, The Repurchase Market, d.18).
+
+Sự phân hóa này làm rõ cơ chế vận hành của [[repurchase-agreement|hợp đồng mua lại repo]], đồng thời chi phối việc áp dụng [[repo-haircuts-manage-liquidation-volatility-but-generate-asymmetric-wrong-way-risk|tỷ lệ khấu trừ tài sản haircut]] và hạ tầng đối trừ chi phí qua [[tri-party-repo-centralizes-collateral-administration-and-economizes-on-cash-transfers|hệ thống repo ba bên]]. Chi phí tài trợ repo GC đóng vai trò làm lãi suất cơ sở để tính toán [[bond-carry-measures-net-income-after-repo-financing-and-defines-forward-pricing|carry và định giá kỳ hạn trái phiếu]], trong khi hiện tượng thắt chặt nguồn vốn cuối kỳ của các ngân hàng kích hoạt [[turn-premium-reflects-year-end-balance-sheet-constraints-rather-than-policy-rate-expectations|phần bù chuyển năm turn premium]] trên lãi suất repo ngắn hạn.

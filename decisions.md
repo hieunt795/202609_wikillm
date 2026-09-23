@@ -172,3 +172,10 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 - **§10 Bản kê SHA-256:** `01_sources/` không commit (tài liệu bên thứ ba); chú thích §7.5 và bản đồ chunk trỏ tới số dòng, nên người đọc chỉ kiểm chứng được khi đối chiếu đúng bản file. Chunk bỏ qua vẫn có dòng riêng để lượt sau không tưởng còn sót. Số dòng dùng làm khoá được vì nguồn bất biến.
 - **§11 `_inbox.md` tách khỏi `02_wiki/`:** mọi trang trong `02_wiki/` phải atomic hợp lệ và bị hook kiểm mỗi lần ghi; ý tưởng dang dở không thoả luật đó, không có chỗ riêng thì bị nhét bừa vào một trang hoặc mất luôn.
 - **§12 Tiền tố `## [`:** theo gist Karpathy, để `grep` lấy được các mục gần nhất.
+
+## [2026-09-23] Copy skill `writing-style` từ cấp tài khoản vào project local
+
+- **Quyết định:** tạo bản sao `writing-style` SKILL.md vào `.claude/.claude/skills/writing-style/` (cùng cấp với `ingest`, `lint`, `promote`, `query`, `review-node`). Skill `/ingest` gọi tường minh bản local qua Skill tool trước khi viết/sửa thân bài trang wiki, thay vì chỉ nhắc tên skill cấp tài khoản.
+- **Lý do:** skill cấp tài khoản nằm ngoài repo, có thể đổi hoặc không sync giữa máy/phiên; bản local đảm bảo ingest luôn áp đúng bộ quy tắc A–I đã kiểm chứng, theo dõi được qua git history.
+- **Phạm vi:** chỉ sửa `ingest/SKILL.md` bước 3 theo yêu cầu người dùng. `review-node` và `query` vẫn trích dẫn skill `writing-style` cấp tài khoản như quyết định 2026-09-17 — chưa đồng bộ, cần quyết định riêng nếu sau này muốn áp toàn bộ.
+- **Rủi ro theo dõi:** nếu bản cấp tài khoản được cập nhật thêm rule hoặc đổi ID, bản local sẽ lệch — cần đối chiếu thủ công khi phát hiện khác biệt.

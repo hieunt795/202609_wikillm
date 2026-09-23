@@ -1,0 +1,14 @@
+---
+title: overnight-risk-free-rates-replace-ibor-benchmarks-through-transaction-volume
+type: concept
+tags: [money-market, reference-rates, sofr, estr, benchmark-reform]
+sources: [fixed_income_during]
+status: draft
+last_updated: 2026-09-23
+---
+
+Các chuẩn lãi suất phi rủi ro qua đêm (Overnight Risk-Free Rates - RFRs) thay thế các chỉ số liên ngân hàng truyền thống (IBOR) nhằm loại bỏ rủi ro gian lận và phản ánh chính xác chi phí vốn bán buôn thực tế dựa trên khối lượng giao dịch thị trường khổng lồ (fixed_income_during, Ch.13, Benchmark Reform, d.181–183). Chuẩn LIBOR và Euribor trước đây dựa trên khảo sát ý kiến chủ quan của hội đồng các ngân hàng lớn (panel banks) về mức lãi suất kỳ hạn không bảo đảm (unsecured term lending) (fixed_income_during, Ch.13, LIBOR, EURIBOR, and Friends, d.135). Cơ chế khảo sát này bộc lộ điểm yếu cốt tử khi các vụ bê bối thao túng tỷ giá bị phanh phui và các ngân hàng thương mại thu hẹp dần các giao dịch vay mượn kỳ hạn không bảo đảm để chuyển sang thị trường qua đêm có tài sản thế chấp (fixed_income_during, Ch.13, LIBOR, EURIBOR, and Friends, d.143, d.157).
+
+Các cơ quan quản lý tiền tệ quốc tế thúc đẩy quá trình cải cách chuẩn lãi suất theo hai hướng chính: áp dụng phương pháp lai (hybrid methodology) tăng cường tỷ trọng dữ liệu giao dịch thật cho các chuẩn kỳ hạn, hoặc dịch chuyển căn bản sang các chuẩn lãi suất qua đêm có thanh khoản cao nhất (fixed_income_during, Ch.13, Benchmark Reform, d.183). Thị trường tài chính Mỹ thiết lập chuẩn SOFR (Secured Overnight Funding Rate) bao quát toàn bộ các phân khúc của thị trường repo Kho bạc; khu vực đồng Euro đưa vào vận hành chuẩn €STR; thị trường Anh áp dụng SONIA và Nhật Bản sử dụng TONAR thay thế cho lãi suất qua đêm không bảo đảm mutan (fixed_income_during, Ch.13, Overnight Benchmarks, d.165). Tình trạng thanh khoản dư thừa từ các gói nới lỏng định lượng khiến khối lượng giao dịch nội bộ giữa các ngân hàng sụt giảm, buộc các chỉ số RFR mới phải mở rộng phạm vi sang các giao dịch có sự tham gia của các tổ chức phi ngân hàng (fixed_income_during, Ch.13, Overnight Benchmarks, d.167).
+
+Sự dịch chuyển sang chuẩn qua đêm dựa trên giao dịch thực tế gắn chặt với hạ tầng vận hành của [[general-collateral-and-specials-repo-separate-cash-driven-from-collateral-driven-financing|thị trường repo tài sản bảo đảm]], song đồng thời đặt ra thách thức cho các hợp đồng tín dụng thương mại dài hạn vốn đòi hỏi các giải pháp xử lý kỹ thuật như [[lagged-compounded-overnight-rates-lack-term-risk-premia-and-delay-policy-transmission|lãi suất qua đêm dồn lãi có độ trễ]]. Trên thị trường trái phiếu, việc bãi bỏ chuẩn kỳ hạn buộc các công cụ như [[floating-rate-notes-reset-to-par-at-coupon-dates-when-quoted-margin-equals-credit-spread|trái phiếu thả nổi]] phải tái cấu trúc công thức tính coupon theo hướng [[rfr-compounded-in-arrears-notes-require-observation-lags-and-synthetic-term-rates-to-quote-accrued-interest|tính lãi kép sau kỳ với khoảng trễ quan sát]].

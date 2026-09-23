@@ -16,8 +16,11 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `choudhry_principles_of_banking` | Nguồn dài (2.664 KB / 14.955 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `choudhry_fixed_income_markets` | Nguồn dài (1.941 KB / 15.414 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Chưa ingest** | Ch.1–39 (front matter, Bibliography, Index bỏ qua) | `03_state/fixed_income_during.md` |
+| `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Đang ingest dở** | Ch.18–39 (Ch.1–17 xong; front matter, Bib, Index bỏ qua) | `03_state/fixed_income_during.md` |
 | `tata_bank_alm` | Nguồn dài (450 KB / 3.345 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
+| `clippings` | Nguồn dài (82 file, 882 KB / 6.684 dòng) | **Hoàn tất 100%** | Toàn bộ 6 cụm (82 file) xong (chi tiết ở state file) | `03_state/clippings.md` |
+
+
 
 Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *Phần còn lại* chỉ ghi một câu; diễn biến từng lượt nằm ở `log.md`, tiến độ theo chunk nằm ở state file.
 
@@ -612,5 +615,113 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[asymmetric-information]] — bất cân xứng thông tin: tình trạng chênh lệch thông tin giữa các bên sinh ra lựa chọn đối nghịch và rủi ro đạo đức
 - [[reverse-repurchase-agreement]] — hợp đồng mua lại đảo ngược (reverse repo): nghiệp vụ thị trường mở hút thanh khoản và thiết lập sàn lãi suất
 
+**Quản trị bảng cân đối ngân hàng thương mại và ALM (Clippings — Cụm 1)**
+- [[alm-balance-sheet-balancing-progresses-through-four-operational-dimensions]] — quy trình cân đối bảng cân đối ALM tiến triển qua bốn chiều kích: dòng tiền, kỳ hạn, tỷ lệ/cấu trúc và hành vi/định giá FTP
+- [[cash-flow-balancing-resolves-immediate-payment-obligations-against-excess-reserve-opportunity-cost]] — cân dòng tiền là lớp vận hành sơ cấp giải quyết nghĩa vụ thanh toán tức thời và chi phí cơ hội của dự trữ thặng dư
+- [[maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks]] — cân kỳ hạn xác định thời gian tồn tại của trạng thái thanh khoản để triệt tiêu rủi ro tái tài trợ rollover và rủi ro định giá lại
+- [[behavioral-modeling-of-tt1-liabilities-distorts-when-banks-actively-intervene-on-pricing-and-sales]] — mô hình hóa hành vi nguồn vốn TT1 bị biến dạng khi ngân hàng chủ động can thiệp giá và chính sách giữ chân tại thời điểm đáo hạn
+- [[banks-fundamentally-rely-on-short-term-liabilities-to-finance-long-term-capital-formation]] — ngân hàng luôn dùng nợ phải trả ngắn hạn liên tục tái tục để tài trợ cho tích lũy tư bản dài hạn của nền kinh tế
+- [[treasury-deposits-at-commercial-banks-provide-temporary-liquidity-without-easing-structural-funding-gaps]] — tiền gửi Kho bạc tại NHTM chỉ cung ứng thanh khoản tình thế trong ngắn hạn mà không giải quyết được khoảng trống vốn cấu trúc
+- [[vietnams-banking-system-exhibits-structural-dichotomy-between-tt1-and-tt2]] — phân kỳ cấu trúc nhị phân giữa thị trường khách hàng TT1 và thị trường liên ngân hàng TT2 gây chia cắt dòng vốn
+- [[multiple-balance-sheet-mismatches-compound-banking-systemic-risk]] — bốn tầng bất cân xứng đồng thời trên bảng cân đối (kỳ hạn, lãi suất, tiền tệ, phân khúc) tích tụ và khuếch đại rủi ro hệ thống
+- [[tt1-deposit-rate-stickiness-prevents-interbank-liquidity-from-lowering-lending-rates]] — tính bám dính của lãi suất TT1 và tắc nghẽn vòng quay tín dụng ngắn hạn ngăn thanh khoản rẻ từ liên ngân hàng hạ lãi suất cho vay
+- [[central-bank-interest-rate-corridor-requires-separate-facilities-for-interbank-and-credit-markets]] — hành lang lãi suất của NHTW cần các công cụ phân tầng riêng giữa liên ngân hàng ngắn hạn và tín dụng trung hạn
+- [[active-spot-foreign-exchange-intervention-injects-primary-liquidity-directly-into-banking-system]] — can thiệp mua ngoại hối giao ngay chủ động (Buy Spot) tạo kênh bơm thanh khoản sơ cấp trực tiếp vào hệ thống NHTM và TT1
+- [[central-banks-prioritize-public-policy-mandates-over-accounting-profitability]] — ngân hàng trung ương ưu tiên mục tiêu chính sách vĩ mô công quyền thay vì tối đa hóa lợi nhuận kế toán
+- [[domestic-gold-pricing-diverges-from-international-benchmarks-due-to-structural-liquidity-constraints]] — giá vàng nội địa phân kỳ khỏi chuẩn quốc tế do thanh khoản cấu trúc căng thẳng, CASA suy giảm và kéo dãn kỳ hạn nợ
 
+**Điều hành Fed, thị trường Repo và nợ công Kho bạc (Clippings — Cụm 2)**
+- [[treasury-repo-market-operates-through-three-distinct-client-segments]] — cấu trúc thị trường repo Kho bạc vận hành qua ba phân khúc khách hàng C2D, Interdealer, D2C với các dealers làm trạm trung chuyển trung tâm
+- [[repo-rate-spikes-transmit-to-federal-funds-rate-via-fhlb-arbitrage]] — các đợt tăng vọt lãi suất repo lan truyền sang lãi suất quỹ liên bang EFFR qua hoạt động kinh doanh chênh lệch giá của FHLB khi thanh khoản dự trữ khan hiếm
+- [[quantitative-tightening-differs-from-quantitative-easing-through-balance-sheet-asymmetry]] — tính bất đối xứng giữa QE (mở rộng bảng cân đối) và QT (rút dự trữ sơ cấp Reserves -> UST mà không nhất thiết làm thu hẹp bảng cân đối ngân hàng)
+- [[persistent-fiscal-deficits-operate-as-a-monetary-force-expanding-private-balance-sheets]] — thâm hụt tài khóa dai dẳng hoạt động như lực lượng tiền tệ trực tiếp bơm tiền gửi và tạo tài sản an toàn 0% risk weight tái cấu trúc hệ thống ngân hàng
+- [[bank-absorption-of-sovereign-debt-is-governed-by-a-regulatory-triangle]] — tam giác quản trị quy định SLR (dung lượng), IRRBB (cơ cấu kỳ hạn), và Stress Testing (sức chống chịu) kiểm soát năng lực hấp thụ nợ công của hệ thống ngân hàng
+- [[sovereign-debt-absorption-requires-dealer-intermediation-capacity-beyond-investor-demand]] — việc hấp thụ nợ công đòi hỏi năng lực trung gian lưu kho và tài trợ repo của các đại lý sơ cấp ngoài nhu cầu sở hữu cuối cùng của nhà đầu tư
+- [[treasury-buybacks-function-as-debt-management-rather-than-monetary-yield-curve-control]] — nghiệp vụ mua lại trái phiếu của Kho bạc là công cụ quản trị nợ và giải phóng dung lượng dealer chứ không phải chính sách tiền tệ hay kiểm soát đường cong lợi suất YCC
+- [[central-banks-face-policy-reaction-traps-when-energy-supply-shocks-elevate-headline-inflation]] — ngân hàng trung ương rơi vào bẫy hàm phản ứng khi duy trì thắt chặt quá mức vì áp lực uy tín trước các cú sốc năng lượng đẩy CPI bề nổi
+
+**Lạm phát phi tuyến, chênh lệch tầng giá và cấu trúc tài chính vĩ mô toàn cầu (Clippings — Cụm 3)**
+- [[supply-chain-disruptions-propagate-nonlinearly-through-input-output-cascades]] — lan truyền phi tuyến của gián đoạn chuỗi cung ứng: vượt qua năng lực đệm tồn kho, khuếch đại qua mạng lưới đầu vào - đầu ra và tạo lạm phát lõi kéo dài
+- [[producer-price-stage-differential-signals-systemic-supply-chain-inflation-cascades]] — chênh lệch lạm phát sản xuất theo tầng $\Delta(t) = S1 - S4 \ge 3\text{ pp}$ kết hợp Stage 3 vượt Stage 4 là tín hiệu xác nhận sóng lạm phát chi phí đã lan tỏa vào khâu chế tạo trung gian
+- [[sovereign-bond-term-premia-rise-from-fiscal-burdens-independently-of-inflation-expectations]] — phần bù kỳ hạn trái phiếu chính phủ gia tăng từ rủi ro gánh nặng tài khóa và dư cung nợ công ngay cả khi kỳ vọng lạm phát dài hạn vẫn neo giữ ổn định
+- [[global-risk-appetite-reallocates-across-sectors-under-surging-sovereign-yields]] — khẩu vị rủi ro toàn cầu thích ứng bất đối xứng khi lợi suất tăng qua việc xoay trục dòng vốn giữa các lĩnh vực và khuếch đại biến động qua đòn bẩy ngắn hạn short gamma
+
+**Thị trường ngoại hối châu Á, tỷ giá & Carry Trade (Clippings — Cụm 4)**
+- [[industrial-overcapacity-drives-transition-from-supply-funding-to-productive-buyer-funding]] — dư thừa công suất công nghiệp và sự chuyển dịch từ tài trợ phía cung sang tài trợ người mua hiệu quả
+- [[conditional-cny-carry-trade-finances-global-real-absorption-without-capital-account-liberalization]] — cơ chế CNY Carry Trade có điều kiện: xuất khẩu vốn gắn với kinh tế thực và thanh toán nội tệ không cần mở toang tài khoản vốn
+- [[japan-net-international-creditor-position-anchors-global-jpy-carry-trade]] — vị thế chủ nợ quốc tế ròng của Nhật Bản định hình vai trò JPY funding và nguy cơ tăng chi phí vốn toàn cầu khi BOJ bình thường hóa
+- [[sovereign-fx-intervention-integrates-fima-repo-facility-to-prevent-treasury-market-dislocation]] — can thiệp tỷ giá tích hợp FIMA repo: hoán đổi tạm thời UST lấy USD ngăn ngừa đứt gãy thị trường Kho bạc Mỹ
+- [[commodity-import-energy-shocks-transmit-directly-into-offshore-dollar-funding-stresses]] — cú sốc nhập khẩu năng lượng chuyển hóa trực tiếp thành áp lực căng thẳng thanh khoản USD ngoại biên (Eurodollar)
+
+**Cơ chế phản ứng của NHTW, Forward Guidance & thị trường định giá (Clippings — Cụm 5)**
+- [[reaction-function-guidance-replaces-calendar-path-with-conditional-market-pricing]] — định hướng theo hàm phản ứng thay thế lộ trình lịch trình bằng cơ chế để thị trường tự định giá đường cong theo quy tắc vĩ mô
+- [[asymmetric-monetary-reaction-functions-generate-ratchet-effects-on-real-rates]] — hàm phản ứng bất đối xứng tạo hiệu ứng bánh cóc đẩy lãi suất thực tăng vọt qua kênh kép của đồng nhất thức Fisher dù lãi suất điều hành giữ nguyên
+- [[absence-of-policy-roadmaps-anchors-markets-to-high-frequency-data-noise]] — tình trạng thiếu vắng lộ trình chính sách khiến phần bù kỳ hạn IRS phẳng lỳ và buộc thị trường định giá sự bất định qua phản ứng thái quá với tin tức cao tần
+- [[financial-market-duration-repricing-executes-monetary-tightening-on-central-banks-behalf]] — tái định giá rủi ro kỳ hạn thị trường tự động thắt chặt các điều kiện tài chính vĩ mô thay cho NHTW và giảm thiểu lợi ích biên của các đợt tăng lãi suất điều hành
+- [[persistent-policy-rate-holds-compound-sovereign-bond-duration-and-refinancing-risks]] — giữ nguyên lãi suất kéo dài trước lạm phát cao làm xói mòn uy tín chính sách, mở rộng phần bù kỳ hạn và làm bùng nổ rủi ro tái cấp vốn nợ công
+
+**Phương pháp luận vĩ mô, cấu trúc tín dụng tư nhân & rủi ro nợ công (Clippings — Cụm 6)**
+- [[top-down-macro-analysis-fails-without-bottom-up-microstructure-and-capital-allocation]] — phân tích vĩ mô Top-down thất bại nếu tách rời cấu trúc vi mô, sự phân kỳ phân bổ vốn và mức độ cô đặc chỉ số
+- [[private-credit-selective-defaults-obscure-systemic-banking-fragility]] — vỡ nợ có chọn lọc trong tín dụng tư nhân qua hoán đổi nợ kiệt quệ và PIK toggles che giấu rủi ro hệ thống lan truyền vào ngân hàng
+- [[sovereign-debt-refinancing-dependency-constrains-monetary-policy-horizons]] — sự phụ thuộc vào tái cấp vốn nợ công biến nợ chính phủ thành bài toán luân chuyển dòng tiền và ràng buộc thời hạn thắt chặt của NHTW
+- [[offshore-foreign-currency-debt-pricing-diverges-from-domestic-benchmarks]] — định giá nợ ngoại tệ offshore phân kỳ hoàn toàn khỏi lãi suất nội tệ nội địa và phản ánh các tầng phần bù rủi ro quốc tế
+- [[endogenous-systemic-liquidity-circulation-distorts-accounting-equations-via-balance-sheet-resonance]] — hiện tượng cộng hưởng bảng cân đối do vận hành thanh khoản nội sinh làm biến dạng các phép cân đối số học và kéo dồn dòng tiền vào tài sản cuối
+- [[technological-automation-shifts-scarcity-from-commodity-production-to-relational-sectors]] — tự động hóa công nghệ đẩy bản chất của sự khan hiếm và tỷ trọng chi tiêu từ sản xuất hàng hóa chuẩn hóa sang khu vực quan hệ
+
+**Thị trường thu nhập cố định, Tiền tệ & Chính sách phi quy ước (Fixed Income Düring — Ch.1–9 / Part One)**
+- [[fixed-income-instruments]] — hợp đồng quy định nghĩa vụ thanh toán xác định độc lập với tình trạng tài chính bên phát hành, phân biệt với vốn cổ phần
+- [[securities-differ-from-bilateral-contracts-by-transferability-without-counterparty-consent]] — tính chuyển nhượng tự do không cần sự đồng thuận của đối tác phân biệt chứng khoán nợ khỏi hợp đồng song phương
+- [[modern-credit-markets-shift-lenders-from-wealthy-elites-to-retirement-savers]] — sự đảo chiều cấu trúc tín dụng: người lao động tiết kiệm hưu trí cho doanh nghiệp và hộ gia đình vay nợ
+- [[statutory-welfare-entitlements-function-as-virtual-fixed-income-claims-on-taxpayers]] — quyền lợi an sinh xã hội vô điều kiện vận hành như dòng niên kim thu nhập cố định ảo trên bảng cân đối quốc gia
+- [[four-key-attributes-distinguish-cash-from-other-payment-assets]] — bốn đặc tính phân biệt tiền mặt: tất toán tức thì, ẩn danh, phi tập trung và dễ nhận biết
+- [[seigniorage-and-transaction-costs-create-a-price-band-around-commodity-money-value]] — hành lang biến động giá trị tiền kim loại giữa chi phí đúc, nấu chảy và thuế seigniorage
+- [[lex-monetae-grants-sovereign-currency-authority-but-does-not-eliminate-cross-border-or-market-constraints]] — nguyên lý chủ quyền tiền tệ không xóa bỏ ràng buộc nghĩa vụ nợ quốc tế hay liên minh tiền tệ
+- [[fiat-money-removes-the-commodity-reserve-straightjacket-from-global-trade-settlement]] — tiền pháp định giải phóng thâm hụt thương mại quốc tế khỏi chiếc áo bó co hẹp dự trữ kim loại quý
+- [[commercial-banks-create-inside-money-by-extending-credit]] — NHTM tạo tiền nội sinh ghi sổ thông qua mở rộng tín dụng song phương trên bảng cân đối kép
+- [[multilateral-netting-minimizes-interbank-settlement-flows-and-credit-exposures]] — bù trừ đa phương qua ma trận giao dịch tối ưu hóa thanh khoản và giảm thiểu rủi ro tín dụng đối tác
+- [[commercial-bills-and-cheques-represent-claims-on-money-rather-than-money-itself]] — hối phiếu và séc đại diện cho quyền đòi tiền chứ không phải tiền tệ do thiếu tính pháp định và độ trễ tất toán
+- [[bill-discounting-and-rediscounting-provide-dual-recourse-liquidity-to-the-banking-system]] — chiết khấu và tái chiết khấu hối phiếu cung cấp thanh khoản sơ cấp với cơ chế bảo đảm kép và là cội nguồn của cửa sổ chiết khấu
+- [[narrow-banking-mandates-one-hundred-percent-reserve-backing-eliminating-private-credit-money]] — ngân hàng hẹp áp đặt dự trữ 100% bằng tiền trung ương để triệt tiêu việc tạo tiền tín dụng tư nhân
+- [[price-level-targeting-commits-to-offset-past-inflation-deviations-unlike-inflation-targeting]] — mục tiêu mức giá ràng buộc bù đắp sai lệch lạm phát quá khứ, đối lập với lạm phát mục tiêu
+- [[delphic-versus-odyssean-forward-guidance-delineates-forecast-contingency-from-unconditional-commitment]] — phân biệt forward guidance Delphic (dự báo có điều kiện) và Odyssean (cam kết vô điều kiện), đánh đổi tính khả tín và rủi ro vi phạm mandate
+- [[large-scale-asset-purchases-expand-inside-money-and-lengthen-commercial-bank-balance-sheets]] — mua tài sản quy mô lớn từ khu vực phi ngân hàng mở rộng outside money đi kèm inside money, kéo giãn bảng cân đối NHTM và kích cầu repo GC
+- [[helicopter-money-materializes-through-sovereign-debt-rollover-and-seigniorage-remittance]] — helicopter money vận hành qua tái đầu tư vô hạn gốc nợ chính phủ kết hợp hoàn trả thặng dư seigniorage thay vì hủy nợ hình thức
+- [[index-tracking-asset-purchases-distort-free-float-liquidity-due-to-forced-holders]] — mua tài sản theo tỷ trọng chỉ số làm bóp nghẹt nguồn cung lưu hành tự do (free float) của tài sản chất lượng cao do sự hiện diện của forced holders
+- [[prolonged-volatility-suppression-breeds-liquidity-fragility-and-var-shocks]] — nén biến động kéo dài làm suy thoái năng lực tạo lập thị trường, tích tụ vị thế một chiều và kích hoạt bán tháo cắt lỗ dây chuyền theo mô hình VaR
+- [[central-bank-output-legitimacy-cannot-substitute-for-input-legitimacy-under-treaty-constraints]] — tính chính danh từ kết quả (output legitimacy) không thể thay thế cho ủy quyền hiến định (input legitimacy); nguyên tắc cân bằng tính tương xứng theo phán quyết BVerfG 2020
+
+**Công cụ tiền mặt, Cấu trúc vi mô & Bù trừ trung tâm (Fixed Income Düring — Ch.10–12 / Part Two)**
+- [[book-entry-securities-centralize-ownership-via-global-notes-and-csds]] — chứng khoán ghi sổ tập trung hóa sở hữu qua chứng chỉ nợ tổng (global note) và mạng lưới trung tâm lưu ký CSD/ICSD
+- [[schuldschein-avoids-mark-to-market-accounting-through-transfer-restrictions]] — hợp đồng vay Schuldschein của Đức cho phép né tránh hạch toán giá thị trường nhờ giới hạn số lần chuyển nhượng
+- [[fixed-income-price-discovery-transmits-hierarchically-from-liquid-benchmarks-to-illiquid-securities]] — quá trình khám phá giá truyền dẫn phân tầng từ công cụ thanh khoản dẫn dắt sang chứng khoán kém thanh khoản
+- [[competitive-dealer-inquiries-incur-information-leakage-and-winners-curse]] — hỏi giá cạnh tranh qua nhiều đại lý làm rò rỉ thông tin dòng lệnh và gây ra rủi ro winner's curse cho đại lý thắng thầu
+- [[delivery-versus-payment-eliminates-herstatt-risk-through-intermediary-settlement-cycles]] — cơ chế DvP triệt tiêu rủi ro thanh toán Herstatt thông qua các chu kỳ khớp lệnh và đối trừ định kỳ của tổ chức trung gian
+- [[securities-settlement-fails-are-disciplined-by-fails-charges-and-cured-through-repo-or-buy-ins]] — thất bại giao chứng khoán được kỷ luật bằng phí phạt giao trễ và xử lý qua nghiệp vụ vay repo hoặc mua ép buộc
+- [[central-counterparties-transform-bilateral-counterparty-risk-into-liquidity-and-concentration-risk]] — đối tác bù trừ trung tâm (CCP) chuyển hóa rủi ro tín dụng song phương thành rủi ro thanh khoản và rủi ro sụp đổ tập trung
+- [[ccp-waterfall-protects-clearing-houses-through-margining-default-funds-and-mandatory-bidding]] — thác cơ chế bảo vệ của CCP ngăn ngừa mất khả năng thanh toán qua ký quỹ VM/IM, quỹ vỡ nợ tương hỗ và nghĩa vụ bỏ thầu bắt buộc
+- [[xva-adjustments-reconcile-unmargined-otc-derivatives-with-cleared-market-prices]] — hệ thống điều chỉnh định giá xVA (CVA, FVA, DVA) lượng hóa chi phí vốn và thanh khoản của các hợp đồng phái sinh song phương so với giá chuẩn bù trừ tập trung
+
+**Thị trường tiền tệ, Chuẩn lãi suất RFRs & Cấu trúc Repo (Fixed Income Düring — Ch.13–14 / Part Two)**
+- [[commercial-paper-and-short-term-instruments-compete-as-near-money]] — thương phiếu và công cụ ngắn hạn cạnh tranh trực tiếp với tiền gửi ngân hàng như tài sản tiền tệ gần (near-money)
+- [[overnight-risk-free-rates-replace-ibor-benchmarks-through-transaction-volume]] — các chuẩn lãi suất phi rủi ro qua đêm (SOFR, €STR, SONIA) thay thế chuẩn IBOR nhờ khối lượng giao dịch thực tế
+- [[lagged-compounded-overnight-rates-lack-term-risk-premia-and-delay-policy-transmission]] — lãi suất qua đêm dồn lãi có độ trễ thiếu phần bù rủi ro kỳ hạn và gây trễ hạn truyền dẫn chính sách tiền tệ
+- [[futures-convexity-adjustment-arises-from-daily-variation-margining-cash-flows]] — khoản điều chỉnh lồi của hợp đồng tương lai phát sinh từ luồng tiền ký quỹ biến đổi (VM) hàng ngày
+- [[general-collateral-and-specials-repo-separate-cash-driven-from-collateral-driven-financing]] — phân định giữa repo tài sản chung GC (định hướng tiền mặt) và repo specials (định hướng chứng khoán)
+- [[repo-haircuts-manage-liquidation-volatility-but-generate-asymmetric-wrong-way-risk]] — tỷ lệ khấu trừ haircut quản trị biến động thanh lý nhưng tạo rủi ro sai chiều bất đối xứng cho bên cung cấp tài sản
+- [[collateral-rehypothecation-chains-amplify-cascading-settlement-delays-across-counterparties]] — chuỗi tái thế chấp tài sản bảo đảm khuếch đại tình trạng chậm trễ thanh toán dây chuyền giữa các đối tác
+- [[tri-party-repo-centralizes-collateral-administration-and-economizes-on-cash-transfers]] — repo ba bên tập trung hóa quản trị tài sản bảo đảm và tiết giảm chi phí luân chuyển tiền mặt
+
+**Định giá Trái phiếu, Rủi ro Lãi suất & Công cụ Lãi suất Thả nổi (Fixed Income Düring — Ch.15–17 / Part Two)**
+- [[turn-premium-reflects-year-end-balance-sheet-constraints-rather-than-policy-rate-expectations]] — phần bù chuyển năm phản ánh áp lực co cụm bảng cân đối kế toán quy định cuối kỳ thay vì kỳ vọng lãi suất chính sách
+- [[joint-and-several-sovereign-liability-creates-moral-hazard-prohibited-by-eu-no-bailout-clause]] — nghĩa vụ liên đới trong phát hành nợ công gây rủi ro đạo đức và bị Điều 125 TFEU cấm trong khu vực Euro
+- [[dutch-and-american-auctions-differentiate-dealer-bidding-incentives-through-the-winners-curse]] — đấu thầu sơ cấp kiểu Mỹ và Hà Lan phân hóa động lực đặt lệnh của đại lý qua tác động bẫy kẻ thắng cuộc
+- [[clean-and-dirty-bond-prices-separate-market-valuation-from-accrued-interest-settlement]] — giá sạch loại bỏ biến động răng cưa của lãi dồn tích để định giá thị trường, giá bẩn xác định dòng tiền thanh toán
+- [[yield-to-maturity-assumes-a-flat-term-structure-and-uniform-reinvestment-rates]] — lợi suất đáo hạn giả định cấu trúc kỳ hạn phẳng và tái đầu tư đồng nhất, làm sai lệch tỷ suất sinh lời thực tế
+- [[modified-duration-and-pvbp-measure-investor-interest-rate-risk-across-differing-capital-bases]] — modified duration đo rủi ro tương đối theo tài sản quản lý (AUM), PVBP đo rủi ro tiền mặt tuyệt đối theo sổ giao dịch danh nghĩa
+- [[bond-convexity-exhibits-non-monotonic-maturity-scaling-at-ultra-long-horizons]] — độ lồi nợ gốc đạt cực đại ở trung hạn rồi giảm ở kỳ hạn siêu dài do hiện giá suy giảm theo hàm mũ
+- [[bond-carry-measures-net-income-after-repo-financing-and-defines-forward-pricing]] — carry trái phiếu đo lường thu nhập ròng sau chi phí tài trợ repo và xác định mức giá kỳ hạn phi kinh doanh chênh lệch giá
+- [[floating-rate-notes-reset-to-par-at-coupon-dates-when-quoted-margin-equals-credit-spread]] — trái phiếu thả nổi tự động hồi quy về mệnh giá tại ngày chốt coupon khi biên độ chào bán bằng phần bù rủi ro tín dụng
+- [[rfr-compounded-in-arrears-notes-require-observation-lags-and-synthetic-term-rates-to-quote-accrued-interest]] — trái phiếu thả nổi RFR tính lãi kép sau kỳ sử dụng lãi suất trung gian và độ trễ quan sát để niêm yết lãi dồn tích
+- [[discount-margin-evaluates-frn-spreads-through-isolated-flat-resets-or-curve-asset-swaps]] — biên độ chiết khấu của FRN phân tách giữa phương pháp tính biệt lập giả định lãi suất phẳng và phương pháp hoán đổi tài sản theo đường cong
+- [[constant-maturity-floaters-fail-par-reset-due-to-coupon-and-discount-tenor-mismatch]] — trái phiếu thả nổi kỳ hạn cố định phá vỡ đặc tính hồi quy mệnh giá do lệch pha kỳ hạn coupon và chiết khấu
 

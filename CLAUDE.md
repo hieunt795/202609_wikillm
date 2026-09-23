@@ -71,36 +71,35 @@ Cảnh báo của hook phải xử lý ngay, không để tồn đến lượt l
 
 ## Trạng thái phiên làm việc (Session Status & Next Steps)
 
-*Cập nhật lúc: 2026-09-22:22-20-45 (Wiki đạt 460 trang, 0 lỗi, 0 mồ côi)*
+*Cập nhật lúc: 2026-09-23:11-45-00 (Wiki đạt 522 trang, 0 lỗi, 0 mồ côi)*
 
 ### 1. Những gì đã hoàn thành trong session này
-- Ingest hoàn tất toàn bộ các chương còn lại của nguồn `cargill_central_bank_policy` (Thomas F. Cargill, 2017) từ Ch.10 đến Ch.17 (100% nguồn sách hoàn tất):
-  - Ch.10 (Lịch sử chuyển đổi thể chế tài chính - tiền tệ Hoa Kỳ): 4 trang mới + 3 cập nhật liên kết.
-  - Ch.11 (Khung phân tích 5 bước, bản chất công quyền NHTW, de jure vs de facto): 5 trang mới + 3 cập nhật liên kết.
-  - Ch.12 (Tạo tiền cơ sở OMO, phương trình hấp thụ, tỷ lệ k, sụp đổ số nhân tiền): 5 trang mới + 3 cập nhật liên kết.
-  - Ch.13 (Công cụ tín dụng chọn lọc suy tàn, forward guidance, thế lưỡng nan Poole, mục tiêu lãi suất): 4 trang mới + 4 cập nhật liên kết.
-  - Ch.14 (Mô hình kinh tế vĩ mô làm bản đồ dẫn đường, giả thuyết tỷ lệ tự nhiên, khung AD/AS, phân kỳ trường phái): 4 trang mới + 3 cập nhật liên kết.
-  - Ch.15 (Ổn định giá cả lạm phát thấp phương sai thấp, độ trễ chính sách, lạm phát mục tiêu, phê phán nhiệm vụ kép Fed): 4 trang mới + 3 cập nhật liên kết.
-  - Ch.16 (Chiến thuật điều hành OMOs vs chiến lược vĩ mô, quy tắc Taylor và nguyên tắc Taylor, phê phán Lucas, bẫy bất nhất thời gian Kydland-Prescott, tùy nghi có kiềm chế Bernanke-Mishkin): 5 trang mới + 3 cập nhật liên kết.
-  - Ch.17 (Năm thời kỳ lịch sử: Đại Suy thoái 1929 và thất bại Fed, Hiệp ước 1951 và chính sách even keel, Đại Lạm phát 1965–1981 và Reg Q, Đại Điều hòa 1982–2007 và Volcker disinflation, Đại Suy thoái 2007–2009 tiền rẻ và trợ cấp nợ nhà ở): 5 trang mới + 3 cập nhật liên kết.
-- Cập nhật đồng bộ các file quản trị: `03_state/cargill_central_bank_policy.md` (đánh dấu hoàn tất 17/17 chương - 100%), `02_wiki/index.md` (chuyển sang Hoàn tất 100% và bổ sung danh mục 10 trang Ch.16 & Ch.17), `log.md`.
-- Chạy quy trình kiểm tra sức khỏe wiki `/lint` trên toàn bộ 451 trang: xuất báo cáo chi tiết `Claude outputs/lint-2026-09-22-451.md`, xác định 147 trang draft đủ điều kiện thăng hạng `stable`, đề xuất tạo 9 khái niệm mới và xử lý 1 mục inbox.
-- Thực hiện operation `/promote`: nâng 147 trang draft đủ điều kiện lên `stable` theo duyệt của người dùng (tổng số trang stable đạt 388).
-- Triage hoàn tất `_inbox.md`: chuẩn hóa trích dẫn d.4584 trong `central-bank.md` và làm sạch inbox.
-- Tạo 9 trang `status: stub` từ kết quả lint: `nominal-interest-rate`, `interbank-market`, `financial-intermediation`, `deposit-insurance`, `liquidity-risk`, `adverse-selection`, `asset-bubble`, `asymmetric-information`, `reverse-repurchase-agreement`, liên kết từ 10 trang liên quan và cập nhật `index.md`.
-- Kiểm định toàn bộ 460 trang bằng `validate_wiki_page.py --all`: 0 lỗi schema/heading/link/sources, 0 trang mồ côi (388 stable, 52 draft, 20 stub).
+- Hoàn tất 100% **Part One: Preliminaries** của nguồn `fixed_income_during` (Alexander Düring, *Fixed Income Trading and Risk Management*, Ch.1–9):
+  - Ch.1–2 (Mở đầu & Tiền tệ, tín dụng): 8 trang mới + 1 stub (`dollarization`) + cập nhật 5 trang liên quan (log 10:18:30).
+  - Ch.3–6 (Ngân hàng, Bù trừ, Hối phiếu, NHTW, Mục tiêu mức giá): 6 trang mới + cập nhật 4 trang (log 11:04:53).
+  - Ch.7–9 (Khung vận hành, Delphic/Odyssean Forward Guidance, QE 8 kênh, Inside/Outside money, Helicopter money, Free float distortion, VaR shock, Input/Output Legitimacy): 6 trang mới + cập nhật 6 trang (log 11:38:36).
+  - Tổng cộng Part One: 20 trang concept mới, 1 stub, cập nhật 15 trang.
+- Trước đó trong buổi sáng: Ingest hoàn tất 100% toàn bộ nguồn `clippings` (82 bài viết, 6 cụm, đưa wiki từ 460 lên 501 trang).
+- Cập nhật đồng bộ các file quản trị:
+  - `03_state/fixed_income_during.md`: Đánh dấu Ch.1–9 `[x]`, hoàn tất 100% Part One.
+  - `02_wiki/index.md`: Cập nhật bảng Sources (còn Ch.10–39) và bổ sung 20 trang mới vào phân mục Thị trường thu nhập cố định.
+  - `log.md`: Đã append các entry chuẩn xác.
+  - Session handoff: Tạo file `.claude/session_handoffs/2026-09-23-1145-fixed-income-during-part-one-complete.md`.
+- Kiểm định toàn bộ 522 trang bằng `validate_wiki_page.py --all`: **0 lỗi schema, 0 trang mồ côi**.
 
 ### 2. Trạng thái hiện tại của từng phần
-- `cargill_central_bank_policy`: **Hoàn tất 100%** (17/17 chương, 5.623 dòng).
+- `clippings`: **Hoàn tất 100%** (82 file, 6 cụm).
+- `cargill_central_bank_policy`: **Hoàn tất 100%** (17/17 chương).
 - `bindseil_monetary_policy`: **Hoàn tất 100%** (18/18 chương).
+- `fixed_income_during`: **Hoàn tất Part One (Ch.1–9)**; còn lại Part Two–Eight (Ch.10–39, chi tiết ở `03_state/fixed_income_during.md`).
 - `imf_macro_accounting`: Hoàn thành Ch.2–6, còn Ch.1.
-- Các nguồn còn lại: `Modern Money Mechanics` (nguồn ngắn 85 KB, sẵn sàng ingest trọn 1 lượt), `capitalism_and_freedom`, `choudhry_*`, `fixed_income_during`, `tata_bank_alm` đang ở trạng thái chưa ingest.
+- Các nguồn còn lại: `Modern Money Mechanics` (nguồn ngắn 85 KB, sẵn sàng ingest trọn 1 lượt), `capitalism_and_freedom`, `choudhry_*`, `tata_bank_alm` đang ở trạng thái chưa ingest.
 
 ### 3. Các bước tiếp theo cần làm trong session sau
 - Tùy chọn nguồn ingest kế tiếp:
-  - **Lựa chọn 1**: Ingest nguồn ngắn `Modern Money Mechanics` (85 KB / 721 dòng, quy trình tạo tiền qua bảng cân đối ngân hàng thương mại của Fed Chicago, hoàn thành trọn 1 lượt).
-  - **Lựa chọn 2**: Hoàn tất nốt Ch.1 của `imf_macro_accounting` để đưa nguồn này lên 100%.
-  - **Lựa chọn 3**: Ingest nguồn dài kinh điển `capitalism_and_freedom` (Milton Friedman, 565 KB / 2.055 dòng) hoặc các nguồn chuyên sâu về định chế/ngân hàng (`choudhry_principles_of_banking`, `fixed_income_during`).
+  - **Lựa chọn 1**: Tiếp tục nguồn `fixed_income_during` sang Part Two — Cash Instruments (bắt đầu bằng Ch.10–12 hoặc Ch.13–14).
+  - **Lựa chọn 2**: Ingest nguồn ngắn `Modern Money Mechanics` (85 KB / 721 dòng, quy trình tạo tiền qua bút tệ ngân hàng của Fed Chicago) trong đúng 1 lượt chạy.
+  - **Lựa chọn 3**: Hoàn tất nốt Ch.1 của `imf_macro_accounting` để đưa nguồn này lên 100%.
 
 ### 4. Quyết định quan trọng đã đưa ra và lý do
 - **Định dạng `sources:` trong Frontmatter bắt buộc là inline list `[source_id]`**: Hook kiểm định `validate_wiki_page.py` dùng regex đơn giản khớp theo từng dòng (`line.splitlines()`), không hỗ trợ cấu trúc YAML multi-line (`sources:\n  - id`).

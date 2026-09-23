@@ -17,3 +17,6 @@ Trong phân tích tài khóa, lãi suất thực là biến trung tâm của b�
 
 Ở Ba Lan, lãi suất thực của tiền gửi ngắn hạn nhìn chung vẫn âm trong khi lãi suất cho vay dương đáng kể, và lãi suất cho vay chịu ảnh hưởng chủ yếu từ lãi suất tái cấp vốn của ngân hàng trung ương (imf_macro_accounting, Ch.5, Background for Monetary Analysis, d.5146).
 
+Trong điều hành tiền tệ hiện đại, biến động của lãi suất thực không chỉ phụ thuộc vào các quyết định nâng hay hạ lãi suất danh nghĩa mà còn chịu sự chi phối mạnh mẽ từ hàm phản ứng của ngân hàng trung ương; cơ chế [[asymmetric-monetary-reaction-functions-generate-ratchet-effects-on-real-rates]] chỉ ra rằng khi nhà điều hành đặt rào cản bất đối xứng trước dữ liệu lạm phát, lãi suất thực kỳ vọng có thể tăng vọt (thắt chặt thụ động) ngay cả khi lãi suất điều hành danh nghĩa được giữ nguyên.
+
+

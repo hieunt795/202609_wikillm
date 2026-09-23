@@ -1,0 +1,12 @@
+---
+title: joint-and-several-sovereign-liability-creates-moral-hazard-prohibited-by-eu-no-bailout-clause
+type: concept
+tags: [sovereign-debt, fiscal-policy, bond-market]
+sources: [fixed_income_during]
+status: draft
+last_updated: 2026-09-23
+---
+
+Cấu trúc trách nhiệm pháp lý trong các chương trình phát hành trái phiếu chung phân tách rõ giữa nghĩa vụ riêng rẽ và nghĩa vụ liên đới (fixed_income_during, Ch.16, Issuers, d.85–102). Với cơ cấu nghĩa vụ riêng rẽ, mỗi bên phát hành chỉ chịu trách nhiệm hoàn trả đúng phần nợ theo hạn ngạch đã phân bổ, giống như các đợt phát hành trái phiếu chung của các bang tại Đức (fixed_income_during, Ch.16, Issuers, d.103–115). Ngược lại, cơ cấu nghĩa vụ liên đới ràng buộc mọi bên phát hành vào trách nhiệm thanh toán toàn diện, cho phép chủ nợ đòi bồi hoàn toàn bộ khoản vay từ bất kỳ thành viên nào nếu có bên mất khả năng thanh toán, tương tự mô hình chính quyền địa phương tại Nhật Bản (fixed_income_during, Ch.16, Issuers, d.116–124).
+
+Nghĩa vụ liên đới làm suy yếu kỷ luật ngân sách và kích hoạt rủi ro đạo đức khi các chủ thể tài khóa yếu kém có thể tận dụng chi phí huy động vốn thấp của các thành viên có năng lực tín dụng cao (fixed_income_during, Ch.16, Issuers, d.125–130). Vì lý do này, Điều 125 của Hiệp ước về sự vận hành của Liên minh châu Âu (Điều khoản cấm cứu trợ tài chính) nghiêm cấm việc thiết lập nghĩa vụ liên đới giữa các quốc gia thành viên khu vực Euro (fixed_income_during, Ch.16, Issuers, d.131–138). Ràng buộc này buộc các tổ chức siêu quốc gia tại châu Âu như ESM và EIB phải phát triển cơ chế huy động vốn dựa trên vốn góp thực tế và vốn cam kết gọi, thay vì dựa vào nghĩa vụ bảo lãnh chéo của ngân sách các nước thành viên. Khuôn khổ này bảo đảm tính chính danh pháp lý tương thích với nguyên tắc phân tích tại [[central-bank-output-legitimacy-cannot-substitute-for-input-legitimacy-under-treaty-constraints]], đồng thời định hình quy mô phát hành nợ công gắn với [[bank-absorption-of-sovereign-debt-is-governed-by-a-regulatory-triangle]] và [[sovereign-debt-absorption-requires-dealer-intermediation-capacity-beyond-investor-demand]].

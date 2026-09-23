@@ -1,0 +1,17 @@
+---
+title: treasury-buybacks-function-as-debt-management-rather-than-monetary-yield-curve-control
+type: concept
+tags: [debt-management, treasury-buybacks, yield-curve, primary-dealers]
+sources: [clippings]
+status: draft
+last_updated: 2026-09-23
+---
+
+Các chương trình mua lại trái phiếu của Bộ Tài chính Mỹ (Treasury buybacks) hoạt động như một công cụ quản trị nợ (debt management) nhằm hỗ trợ thanh khoản thị trường và tái tạo năng lực bảng cân đối cho hệ thống đại lý sơ cấp, chứ không phải là một công cụ chính sách tiền tệ kiểm soát đường cong lợi suất (Yield Curve Control - YCC) hay một phiên bản tài khóa của nghiệp vụ hoán đổi kỳ hạn (Operation Twist) (clippings, Quản trị Nợ Kho bạc, Phân định Quản trị Nợ và Chính sách Tiền tệ, file Say after me Treasury buybacks are not YCC.md, d.16–19, d.28).
+
+Mục tiêu kỹ thuật cốt lõi của nghiệp vụ buyback là tạo ra một đầu mối mua lại định kỳ và có thể dự báo đối với các trái phiếu dài hạn nằm ngoài các kỳ hạn chuẩn (off-the-run bonds) — vốn là phân khúc có tính thanh khoản thứ cấp thấp, mức chênh lệch giá mua bán (bid-ask spread) lớn và chiếm dụng đáng kể hạn mức vốn của các primary dealers (clippings, Quản trị Nợ Kho bạc, Mua lại Trái phiếu Off-the-run, file Hiểu đúng về can thiệp UST buyback.md, d.15–20; file Say after me Treasury buybacks are not YCC.md, d.20–23, d.34–37). Bằng cách hấp thụ các chứng khoán kém thanh khoản này và bù đắp nguồn tiền bằng cách phát hành thêm [[treasury-bills|tín phiếu ngắn hạn]] hoặc giải ngân từ số dư tài khoản TGA, Kho bạc giúp giải phóng dung lượng bảng cân đối cho các dealers để họ tiếp tục thực hiện chức năng tạo lập thị trường theo [[sovereign-debt-absorption-requires-dealer-intermediation-capacity-beyond-investor-demand]] (clippings, Quản trị Nợ Kho bạc, Tái tạo Dung lượng Đại lý và Tín phiếu, file Say after me Treasury buybacks are not YCC.md, d.34–37, d.56–58).
+
+Khác biệt căn bản giữa quản trị nợ của cơ quan tài chính và chính sách tiền tệ của [[central-bank|ngân hàng trung ương]] nằm ở nguồn vốn và mục tiêu kiểm soát giá:
+- Mua lại nợ công không xóa bỏ nghĩa vụ tài trợ thâm hụt tài khóa của chính phủ; lượng tiền chi trả để mua lại cuối cùng vẫn phải được tài trợ bằng nợ mới hoặc rút từ tiền gửi ngân khố, thay đổi cấu trúc kỳ hạn của nợ công chứ không trực tiếp mở rộng lượng tiền dự trữ sơ cấp trong hệ thống tài chính (clippings, Quản trị Nợ Kho bạc, Phân định Quản trị Nợ và Chính sách Tiền tệ, file Say after me Treasury buybacks are not YCC.md, d.24–27).
+- Quy mô của các đợt buyback (vài tỷ USD mỗi đợt) quá nhỏ so với thị trường nợ công có quy mô hàng chục nghìn tỷ USD, hoàn toàn không thể thiết lập mức trần lợi suất hay cưỡng ép [[yield-curve|đường cong lợi suất]] vận động theo ý chí hành chính như chính sách YCC do ngân hàng trung ương thực thi với năng lực phát hành tiền vô hạn (clippings, Quản trị Nợ Kho bạc, Quy mô Buyback so với Thị trường, file Say after me Treasury buybacks are not YCC.md, d.32–33, d.70–74).
+- Mặc dù việc rút ngắn kỳ hạn nợ lưu hành tạo ra hiệu ứng làm giảm gánh nặng rủi ro thời hạn (duration burden) tương tự như Operation Twist, cơ chế này không đi kèm việc bành trướng thanh khoản tiền tệ (monetary liquidity) mà thuần túy là sự điều phối cơ cấu phát hành nhằm tối ưu hóa chi phí và điều kiện thanh khoản thị trường tiền tệ (clippings, Quản trị Nợ Kho bạc, Khác biệt bản chất với YCC và Operation Twist, file Hiểu đúng về can thiệp UST buyback.md, d.27–29, d.39–43).

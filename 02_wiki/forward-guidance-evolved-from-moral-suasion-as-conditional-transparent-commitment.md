@@ -7,9 +7,9 @@ tags:
   - central-bank-communication
   - transparency
   - expectation-anchoring
-sources: [cargill_central_bank_policy]
+sources: [cargill_central_bank_policy, fixed_income_during]
 status: draft
-last_updated: 2026-09-22
+last_updated: 2026-09-23
 ---
 
 Bên cạnh các công cụ định lượng điều tiết dự trữ và lãi suất, các ngân hàng trung ương có truyền thống lâu đời trong việc sử dụng truyền thông để định hướng hành vi của hệ thống tài chính. Phương thức này đã trải qua một bước chuyển dịch thể chế sâu sắc, tiến hóa từ chiến thuật "thuyết phục đạo đức" (moral suasion) mang tính cảnh báo mơ hồ sang cơ chế "định hướng kỳ vọng" (forward guidance) có tính minh bạch và cam kết cao (cargill_central_bank_policy, Ch.13, Moral Suasion and Forward Guidance, d.4101–4106).
@@ -21,3 +21,6 @@ Trong lịch sử, thuyết phục đạo đức là nỗ lực của ngân hàn
 Mặc dù vậy, Thomas F. Cargill lưu ý rằng các công cụ truyền thông luôn đối mặt với hai giới hạn nội tại (cargill_central_bank_policy, Ch.13, Moral Suasion and Forward Guidance, d.4107–4108):
 1. Tính mập mờ trong điều kiện kích hoạt: Ngân hàng trung ương hiếm khi có thể làm rõ toàn diện họ sẽ hành động chính xác như thế nào dưới mọi kịch bản bất ngờ của nền kinh tế, khiến thông điệp truyền thông đôi khi vẫn gây nhiễu loạn thị trường.
 2. Hành động có tính chất quyết định hơn lời nói ("actions rather than words"): Uy tín và hiệu lực thực tế của chính sách tiền tệ trong [[five-step-framework-structures-central-bank-policy-analysis|khung phân tích chính sách tiền tệ]] rốt cuộc phải được hiện thực hóa thông qua các nghiệp vụ thị trường mở và điều chỉnh công cụ tài chính cụ thể. Lời nói chỉ có sức mạnh định hướng khi thị trường tin chắc rằng ngân hàng trung ương sẵn sàng triển khai các công cụ vật chất tương ứng để bảo vệ cam kết đó.
+
+Trong bối cảnh hậu đại dịch và lạm phát cao kéo dài, khuôn khổ định hướng kỳ vọng theo lịch trình thời gian bộc lộ nghịch lý "soi gương" và được nâng cấp sang [[reaction-function-guidance-replaces-calendar-path-with-conditional-market-pricing]], yêu cầu thị trường tự định giá đường cong theo hàm phản ứng vĩ mô. Tuy nhiên, việc thu hẹp định hướng tương lai mà không công bố lộ trình rõ ràng cũng tạo ra hệ lụy [[absence-of-policy-roadmaps-anchors-markets-to-high-frequency-data-noise]], khiến thị trường tài chính mất mỏ neo dài hạn và phản ứng thái quá trước các số liệu cao tần ngắn hạn. Về mặt lý thuyết cam kết, Campbell et al. (2012) phân định sâu sắc tính chất này qua [[delphic-versus-odyssean-forward-guidance-delineates-forecast-contingency-from-unconditional-commitment|hai mô hình Delphic (dự báo kinh tế có điều kiện) và Odyssean (cam kết vô điều kiện trói buộc hành động)]], làm rõ ranh giới giữa việc định hình kỳ vọng và rủi ro tự đẩy ngân hàng trung ương vào thế vi phạm mục tiêu hiến định (fixed_income_during, Ch.8, Volatility, file -9, d.26).
+

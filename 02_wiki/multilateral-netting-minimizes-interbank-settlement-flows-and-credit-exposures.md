@@ -1,0 +1,14 @@
+---
+title: multilateral-netting-minimizes-interbank-settlement-flows-and-credit-exposures
+type: concept
+tags: [payment-systems, interbank-market, clearing, banking]
+sources: [fixed_income_during]
+status: draft
+last_updated: 2026-09-23
+---
+
+Bù trừ đa phương (multilateral netting) là cơ chế thanh toán trong đó các luồng nghĩa vụ chi trả chéo giữa một mạng lưới nhiều ngân hàng được đối trừ đồng thời trên một ma trận thanh toán tập trung, cô đọng toàn bộ các luồng giao dịch gộp thành một vị thế ròng duy nhất (phải thu hoặc phải trả) cho mỗi ngân hàng thành viên (fixed_income_during, Ch.4, Extension to Multiple Banks, file -5, d.48–50). Khi tiền gửi tại các ngân hàng khác nhau về bản chất là các khoản nợ tư nhân mang rủi ro tín dụng riêng biệt của từng tổ chức phát hành, việc khách hàng chuyển tiền từ ngân hàng này sang ngân hàng khác buộc ngân hàng nhận phải chấp nhận rủi ro tín dụng đối tác hoặc đòi hỏi thanh toán bằng tiền pháp định (fixed_income_during, Ch.4, Extension to Multiple Banks, file -5, d.44). 
+
+Nếu chỉ áp dụng bù trừ song phương (bilateral netting) giữa từng cặp ngân hàng A và B dựa trên chênh lệch dương $f_{AB} - f_{BA}$, khối lượng thanh khoản tiền mặt cần luân chuyển vẫn rất lớn; việc mở rộng lên bù trừ đa phương qua trung tâm thanh toán bù trừ cho phép tính toán triệt tiêu các luồng tiền gián tiếp đi qua các định chế trung gian trong ma trận dòng tiền (fixed_income_during, Ch.4, Extension to Multiple Banks, file -5, d.48). Về mặt lịch sử, cơ chế này từng được thực hiện thủ công cho các tấm séc giấy bằng cách sắp xếp séc trên các bàn lớn chia ô theo ma trận mạng lưới ngân hàng (fixed_income_during, Ch.4, Extension to Multiple Banks, file -5, d.50). 
+
+Nguyên lý đối trừ đa phương này được kế thừa và mở rộng ở cấp độ thị trường tài chính toàn diện thông qua [[central-counterparties-transform-bilateral-counterparty-risk-into-liquidity-and-concentration-risk|mô hình đối tác bù trừ trung tâm (CCP)]], nơi cơ chế chuyển nhượng giao dịch (give-up) thu gọn toàn bộ ma trận giao dịch song phương thành một vị thế duy nhất với tổ chức hạ tầng (fixed_income_during, Ch.12, Direct Clearing, d.10–14). Đồng thời, các chu kỳ thanh toán định kỳ trong ngày của [[delivery-versus-payment-eliminates-herstatt-risk-through-intermediary-settlement-cycles|cơ chế chuyển giao đồng thời DvP]] áp dụng thuật toán đối trừ này để giảm thiểu lượng tài sản phong tỏa tạm thời (fixed_income_during, Ch.11, Settlement Mechanisms, d.262). Do việc giảm thiểu nghĩa vụ thanh toán bằng tiền mặt mang lại lợi ích chung to lớn về chi phí vốn và an toàn thanh khoản, các ngân hàng thương mại luôn có động lực kinh tế mạnh mẽ để hợp tác thiết lập hạ tầng bù trừ dùng chung dù cạnh tranh gay gắt trên thị trường tiền gửi và tín dụng theo [[commercial-banks-create-inside-money-by-extending-credit|cơ chế tạo tiền nội sinh của hệ thống ngân hàng]].

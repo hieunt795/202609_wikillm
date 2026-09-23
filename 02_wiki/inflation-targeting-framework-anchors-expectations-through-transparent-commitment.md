@@ -7,12 +7,12 @@ tags:
   - central-bank-transparency
   - policy-credibility
   - expectations-anchor
-sources: [cargill_central_bank_policy]
-status: stable
-last_updated: 2026-09-22
+sources: [cargill_central_bank_policy, fixed_income_during]
+status: draft
+last_updated: 2026-09-23
 ---
 
-Khuôn khổ lạm phát mục tiêu (inflation targeting) là một cơ chế điều hành chính sách tiền tệ trong đó [[central-bank|ngân hàng trung ương]] tuyên bố công khai và minh bạch một con số lạm phát cụ thể hoặc một biên độ mục tiêu (point with tolerance band) cần đạt được trong trung và dài hạn (cargill_central_bank_policy, Ch.15, The Primacy of Price Stability and Inflation Targeting, d.4614–4616). Về mặt bản chất, đây là một cam kết thể chế công khai khẳng định nguyên tắc [[price-stability-is-defined-by-low-and-stable-inflation-rather-than-zero-percent|tính tối thượng của ổn định giá cả]], tuyên bố dứt khoát rằng cơ quan điều hành sẽ không tìm cách khai thác sự đánh đổi ngắn hạn giữa lạm phát và việc làm trên đường cong Phillips (d.4614).
+Khuôn khổ lạm phát mục tiêu (inflation targeting) là một cơ chế điều hành chính sách tiền tệ trong đó [[central-bank|ngân hàng trung ương]] tuyên bố công khai và minh bạch một con số lạm phát cụ thể hoặc một biên độ mục tiêu (point with tolerance band) cần đạt được trong trung và dài hạn (cargill_central_bank_policy, Ch.15, The Primacy of Price Stability and Inflation Targeting, d.4614–4616). Về mặt bản chất, đây là một cam kết thể chế công khai khẳng định nguyên tắc [[price-stability-is-defined-by-low-and-stable-inflation-rather-than-zero-percent|tính tối thượng của ổn định giá cả]], tuyên bố dứt khoát rằng cơ quan điều hành sẽ không tìm cách khai thác sự đánh đổi ngắn hạn giữa lạm phát và việc làm trên đường cong Phillips (d.4614). Về mặt cơ chế cam kết, lạm phát mục tiêu phân biệt rõ rệt với [[price-level-targeting-commits-to-offset-past-inflation-deviations-unlike-inflation-targeting|khuôn khổ mục tiêu mức giá]] ở chỗ nó xem các sai lệch lạm phát phát sinh trong quá khứ là "chuyện đã rồi" (by-gones) và không tìm cách bù đắp mức trôi dạt tích lũy của mặt bằng giá (fixed_income_during, Ch.6, Objectives of Monetary Policy, file -7, d.10).
 
 Về mặt lịch sử, mặc dù Ngân hàng Trung ương Thụy Điển (Riksbank) từng áp dụng mục tiêu mức giá vào năm 1931, Ngân hàng Dự trữ New Zealand (RBNZ) vào năm 1989 là định chế đầu tiên trong thời kỳ hậu Thế chiến II chính thức áp dụng khuôn khổ lạm phát mục tiêu để dập tắt chu kỳ lạm phát phi mã kéo dài (d.4616). Mô hình này sau đó đã nhanh chóng được nhân rộng tại gần 30 quốc gia phát triển và đang phát triển (bao gồm Canada, Vương quốc Anh, Úc, Chile, Hàn Quốc, Thụy Điển) như một chuẩn mực neo giữ kỳ vọng kinh tế vĩ mô (d.4616–4620).
 

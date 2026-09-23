@@ -1,0 +1,19 @@
+---
+title: commodity-import-energy-shocks-transmit-directly-into-offshore-dollar-funding-stresses
+type: concept
+tags: [dollar-funding, energy-shocks, eurodollar, petrodollar, terms-of-trade]
+sources: [clippings]
+status: draft
+last_updated: 2026-09-23
+---
+
+Cú sốc nhập khẩu hàng hóa năng lượng chuyển hóa trực tiếp thành áp lực căng thẳng thanh khoản USD ngoại biên (offshore dollar funding stress) là hiện tượng chi phí năng lượng quốc tế tăng vọt tự động kích hoạt sự thiếu hụt thanh khoản đồng USD bán buôn tức thì tại các quốc gia nhập khẩu ròng do toàn bộ dầu mỏ và khí đốt tự nhiên hóa lỏng (LNG) bắt buộc phải được thanh toán bằng USD thay vì bằng nội tệ (clippings, Cụm 4, Cú sốc Năng lượng là Cú sốc Funding USD, file Yen-tervention.md, d.36–38).
+
+Trong các mô hình kinh tế vĩ mô truyền thống, các đợt tăng giá dầu thô thường chỉ được tiếp cận dưới góc độ lạm phát: giá năng lượng leo thang đẩy chỉ số giá tiêu dùng tăng cơ học, làm xói mòn điều kiện thương mại (terms of trade) và thúc đẩy ngân hàng trung ương thắt chặt chính sách (clippings, Cụm 4, Giới hạn Phân tích Kinh tế Vĩ mô Cổ điển, file Yen-tervention.md, d.38; file Some thoughts on Asia FX and rates—Fed, AI, oil, and differentiation.md, d.58–60). Tuy nhiên, trước khi năng lượng kịp thẩm thấu vào các chỉ tiêu giá cả và tiền lương, nó đã hiện diện ngay lập tức dưới dạng một khoản cầu thanh khoản USD bắt buộc tại các ngân hàng thương mại và doanh nghiệp nhập khẩu (clippings, Cụm 4, Yêu cầu Thanh khoản USD Tức thì, file Yen-tervention.md, d.38). Do các doanh nghiệp nhập khẩu không thể chi trả cho các chuyến tàu chở dầu bằng kỳ vọng lạm phát hay đồng nội tệ mà phải thanh toán bằng tiền mặt USD, mỗi bước nhảy vọt của giá dầu làm gia tăng đột biến khối lượng USD mà hệ thống tài chính nội địa phải huy động trên thị trường liên ngân hàng quốc tế để duy trì cùng một dung lượng năng lượng vật chất nhập khẩu (clippings, Cụm 4, Nhu cầu USD Ngoại biên Tăng Vọt, file Yen-tervention.md, d.36–38).
+
+Tiến trình truyền dẫn này làm trầm trọng hóa áp lực mất giá của các đồng tiền châu Á thông qua ba nấc khuếch đại:
+1. Đứt gãy cân bằng cung cầu USD bán buôn: Sự gia tăng đột ngột của nhu cầu thanh toán năng lượng diễn ra trùng thời điểm các điều kiện tài chính toàn cầu bị thắt chặt do Fed duy trì lãi suất cao, khiến chi phí vay mượn USD ngoại biên (Eurodollar wholesale funding) tăng vọt và làm cạn kiệt nguồn cung ngoại tệ sẵn có trên thị trường nội địa (clippings, Cụm 4, Thắt chặt Thị trường Bán buôn Eurodollar, file Yen-tervention.md, d.38–40).
+2. Xói mòn kép cán cân thanh toán: Nhập khẩu năng lượng đắt đỏ làm thâm hụt tài khoản vãng lai mở rộng nhanh chóng, triệt tiêu tấm đệm dự trữ ngoại hối và buộc các định chế tài chính phải tìm kiếm các kênh tài trợ bắc cầu ngắn hạn với chi phí đắt đỏ (clippings, Cụm 4, Xói mòn Cán cân Vãng lai, file Some thoughts on Asia FX and rates—Fed, AI, oil, and differentiation.md, d.14, d.60).
+3. Khuếch đại đầu cơ qua giao dịch chênh lệch lãi suất: Chênh lệch lãi suất danh nghĩa nới rộng giữa đồng USD và các đồng tiền có lãi suất nội địa thấp (như JPY) khuyến khích các nhà đầu tư đẩy mạnh các vị thế bán khống đồng tiền nhập khẩu để tài trợ cho tài sản USD, tạo nên đà mất giá tự gia cố vượt ngoài các yếu tố cơ bản (clippings, Cụm 4, Đầu cơ Carry Trade như Bộ Khuếch đại, file Yen-tervention.md, d.42; file Some thoughts on Asia FX and rates—Fed, AI, oil, and differentiation.md, d.38).
+
+Cơ chế này lý giải tại sao các biện pháp điều chỉnh lãi suất chính sách đơn thuần của các ngân hàng trung ương nhập khẩu năng lượng thường thất bại trong việc chặn đứng đà lao dốc của tỷ giá nếu dòng chảy thanh khoản USD quốc tế không được giải tỏa, buộc các cơ quan quản lý phải phối hợp với mạng lưới các định chế phát hành USD để can thiệp thông qua [[sovereign-fx-intervention-integrates-fima-repo-facility-to-prevent-treasury-market-dislocation]].

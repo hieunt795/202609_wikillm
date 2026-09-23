@@ -2,9 +2,9 @@
 title: central-bank-collateral-framework-design-and-risk-control
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, collateral, risk-management]
-sources: [bindseil_monetary_policy]
-status: stable
-last_updated: 2026-09-21
+sources: [bindseil_monetary_policy, fixed_income_during]
+status: draft
+last_updated: 2026-09-23
 ---
 
 Khuôn khổ tài sản bảo đảm (collateral framework) và các biện pháp kiểm soát rủi ro đi kèm là cấu phần nền tảng quyết định khả năng cung cấp thanh khoản của ngân hàng trung ương và bảo vệ an toàn bảng cân đối của chính NHTW (bindseil_monetary_policy, Ch.9, §9.1–9.3, d.1587–1712).
@@ -24,5 +24,7 @@ Khuôn khổ tài sản bảo đảm (collateral framework) và các biện phá
 - *Tỷ lệ chiết khấu (Haircuts)*: Khấu trừ một tỷ lệ phần trăm $h$ khỏi giá trị thị trường để bù đắp rủi ro sụt giảm giá trị trong thời gian thanh lý có trật tự (orderly liquidation time). Haircut được hiệu chuẩn để bao phủ 99% biến động giá tiềm năng, kết hợp cả ba nguồn bất định: rủi ro giá thị trường $\sigma_M^2$, độ bất định của mô hình định giá $\sigma_V^2$, và rủi ro giãn chênh lệch lợi suất / trượt hạng tín dụng $\sigma_S^2$: $\sigma_T^2 = \sigma_M^2 + \sigma_V^2 + \sigma_S^2$. Ma trận haircut của ECB phân loại chi tiết theo xếp hạng tín nhiệm, kỳ hạn còn lại và 6 nhóm thanh khoản định chế (Bảng 9.1, d.1691–1708).
 
 **Tính bất đối xứng của rủi ro repo đối với NHTW**: Trong repo thương mại thông thường, việc áp haircut cao bảo vệ bên cho vay tiền nhưng lại tạo rủi ro tín dụng không bảo đảm cho bên vay tiền. Tuy nhiên, khi NHTW là bên cho vay, do NHTW không thể phá sản, các ngân hàng thương mại không bao giờ phải chịu rủi ro đối tác từ phía NHTW. Do đó, về mặt kinh tế, NHTW có vị thế đặc biệt phù hợp để chấp nhận các tài sản kém thanh khoản với mức haircut cao thích đáng mà không làm méo mó thị trường (d.1711–1712). Trong khủng hoảng hệ thống, rủi ro trở nên nội sinh: việc áp đặt haircut quá mức sẽ kích hoạt rút tiền hàng loạt và gây tổn thất lớn hơn cho chính NHTW (xem [[endogenous-risk-and-upward-sloping-haircut-loss-curve]]), đòi hỏi NHTW phải cân bằng giữa rủi ro và hỗ trợ thanh khoản theo [[bindseil-jablecki-risk-endogeneity-and-two-errors-model|mô hình hai loại sai lầm]].
+
+**Khung tài sản bảo đảm dưới lăng kính lập trường chính sách tiền tệ**: Alexander Düring nhấn mạnh rằng đối với các ngân hàng trung ương sử dụng repo làm công cụ cung ứng thanh khoản, lựa chọn phạm vi tài sản bảo đảm không thuần túy là quyết định kỹ thuật vận hành mà gắn liền với lập trường chính sách tiền tệ (fixed_income_during, Ch.8, Collateral, file -9, d.30–32). Dưới góc độ vận hành hẹp, danh mục tài sản bảo đảm chỉ cần đủ lớn để hệ thống ngân hàng hấp thu lượng thanh khoản NHTW muốn cung cấp và chỉ bao gồm tài sản có chất lượng cao nhất (pristine collateral) (fixed_income_during, Ch.8, Collateral, file -9, d.30). Tuy nhiên, Eurosystem lựa chọn khung tài sản bảo đảm rất rộng cho các nghiệp vụ chuẩn thường nhật nhằm đảm bảo khả năng tiếp cận thanh khoản trực tiếp của đa dạng các tổ chức tín dụng, tránh để hệ thống tài chính phải phụ thuộc vào các kênh tái phân phối thứ cấp của các ngân hàng thương mại lớn (fixed_income_during, Ch.8, Collateral, file -9, d.32). Để bù đắp rủi ro tín dụng của danh mục mở rộng này, Eurosystem thay thế cơ chế sàng lọc loại trừ bằng việc áp dụng hung hãn các tỷ lệ chiết khấu haircut sâu kết hợp định giá và gọi ký quỹ hàng ngày (daily margining) (fixed_income_during, Ch.8, Collateral, file -9, d.32).
 
 Xem thêm: [[collateral-constraint-on-central-bank-credit]], [[market-impact-of-collateral-framework-and-leverage-constraints]], [[collateral-pool-segregation-and-double-adverse-selection]], [[central-bank-risk-taking-and-liquidity-support-trade-off]], [[relative-vs-absolute-central-bank-intermediation]].
