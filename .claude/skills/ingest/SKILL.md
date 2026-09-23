@@ -36,7 +36,7 @@ Dùng vài từ khoá tiếng Anh cho mỗi khái niệm (thuật ngữ gốc v�
 - **Trang `stable` liên quan tới nguồn này nhưng lượt ingest không merge vào** → đổi sang `stale` (§9).
 - **Chưa có** → tạo trang mới. Ranh giới trang theo §5, title theo §8, thân bài theo §7.
 
-Viết thân bài bằng lời của mình. Trước khi viết hoặc sửa thân bài trang mới/cập nhật, **gọi Skill tool với `writing-style`** (bản local tại `.claude/.claude/skills/writing-style/`, profile wiki) để nạp bộ quy tắc A–I, rồi áp quy tắc đó vào văn bản đang viết. Với **nguồn dài**: mỗi claim kèm chú thích `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7.5); nguồn nhiều file thêm `file <hậu tố>`. Dải dòng lấy từ chunk đang đọc.
+Viết thân bài bằng lời của mình. Trước khi viết hoặc sửa thân bài trang mới/cập nhật, **gọi Skill tool với `writing-style`** (bản local tại `.claude/skills/writing-style/`, profile wiki) để nạp bộ quy tắc A–I, rồi áp quy tắc đó vào văn bản đang viết. Với **nguồn dài**: mỗi claim kèm chú thích `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7.5); nguồn nhiều file thêm `file <hậu tố>`. Dải dòng lấy từ chunk đang đọc.
 
 **4. Liên kết — làm trước khi lưu, không hoãn.** Với mỗi trang mới/cập nhật, tìm 1–3 trang liên quan bằng câu hỏi **"trang này sẽ cần xuất hiện lại trong ngữ cảnh nào?"** (§6) — không dựa vào tag trùng.
 
@@ -58,12 +58,12 @@ Viết thân bài bằng lời của mình. Trước khi viết hoặc sửa th�
 **8. Kiểm trước khi ghi log — bắt buộc.**
 
 ```bash
-python .claude/.claude/hooks/validate_wiki_page.py --all
+python .claude/hooks/validate_wiki_page.py --all
 ```
 
 Hook `PostToolUse` chỉ bắt tool `Write|Edit`; file ghi bằng shell đi vòng qua nó. Trang mồ côi chỉ `--all` tính được. Có trang mồ côi → thêm liên kết **có lý do thật** từ trang liên quan, không vá cho đủ chỉ tiêu.
 
-**9. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] ingest | <source id> <chương/cụm>`, tối đa 3 dòng: trang tạo/cập nhật, stub mới, phần nguồn còn lại. Giờ lấy bằng `python .claude/.claude/hooks/validate_wiki_page.py --now`.
+**9. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] ingest | <source id> <chương/cụm>`, tối đa 3 dòng: trang tạo/cập nhật, stub mới, phần nguồn còn lại. Giờ lấy bằng `python .claude/hooks/validate_wiki_page.py --now`.
 
 ## Sai lầm thường gặp
 

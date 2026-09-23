@@ -12,5 +12,5 @@ paths:
 - Mỗi nguồn dài có đúng một file `03_state/<source-id>.md`; state là nguồn sự thật về tiến độ ingest.
 - Không dựng lại trạng thái hiện tại từ `log.md` khi state hoặc manifest đã có dữ liệu chuyên trách.
 - Mỗi lượt ingest cập nhật đồng bộ state và mục Sources trong `02_wiki/index.md`, kể cả khi không tạo trang mới.
-- Dùng `python .claude/.claude/hooks/validate_wiki_page.py --verify-sources` để kiểm integrity nguồn.
+- Dùng `python .claude/hooks/validate_wiki_page.py --verify-sources` để kiểm integrity nguồn.
 - Khi hai nguồn mâu thuẫn, ghi `⚠️ Conflict` kèm cả hai claim và locator rồi chờ người dùng; không tự hòa giải.

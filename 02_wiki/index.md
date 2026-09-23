@@ -16,7 +16,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `choudhry_principles_of_banking` | Nguồn dài (2.664 KB / 14.955 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `choudhry_fixed_income_markets` | Nguồn dài (1.941 KB / 15.414 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Đang ingest dở** | Ch.18–39 (Ch.1–17 xong; front matter, Bib, Index bỏ qua) | `03_state/fixed_income_during.md` |
+| `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Đang ingest dở** | Ch.21–39 (Ch.1–20 xong; front matter, Bib, Index bỏ qua) | `03_state/fixed_income_during.md` |
 | `tata_bank_alm` | Nguồn dài (450 KB / 3.345 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `clippings` | Nguồn dài (82 file, 882 KB / 6.684 dòng) | **Hoàn tất 100%** | Toàn bộ 6 cụm (82 file) xong (chi tiết ở state file) | `03_state/clippings.md` |
 
@@ -724,4 +724,18 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[rfr-compounded-in-arrears-notes-require-observation-lags-and-synthetic-term-rates-to-quote-accrued-interest]] — trái phiếu thả nổi RFR tính lãi kép sau kỳ sử dụng lãi suất trung gian và độ trễ quan sát để niêm yết lãi dồn tích
 - [[discount-margin-evaluates-frn-spreads-through-isolated-flat-resets-or-curve-asset-swaps]] — biên độ chiết khấu của FRN phân tách giữa phương pháp tính biệt lập giả định lãi suất phẳng và phương pháp hoán đổi tài sản theo đường cong
 - [[constant-maturity-floaters-fail-par-reset-due-to-coupon-and-discount-tenor-mismatch]] — trái phiếu thả nổi kỳ hạn cố định phá vỡ đặc tính hồi quy mệnh giá do lệch pha kỳ hạn coupon và chiết khấu
+
+**Thanh khoản thị trường, Mô hình đường cong & Phân tích cấu trúc kỳ hạn (Fixed Income Düring — Ch.18–20 / Part Two)**
+- [[microscopic-versus-macroscopic-market-liquidity-separates-trade-breadth-from-balance-sheet-depth]] — phân tầng thanh khoản vi mô (bề rộng giao dịch) và thanh khoản vĩ mô (chiều sâu bảng cân đối lưu kho rủi ro)
+- [[clobs-and-otc-market-making-differentiate-search-costs-from-information-leakage]] — sổ lệnh tập trung (CLOBs) và tạo lập thị trường OTC đánh đổi giữa chi phí tìm kiếm đối tác và rò rỉ thông tin
+- [[spline-spread-dispersion-measures-indirect-arbitrage-capacity-without-trading-bias]] — độ phân tán sai số khớp đường cong spline đo lường gián tiếp sức chịu tải chênh lệch giá và sự thu hẹp bảng cân đối dealer
+- [[on-the-run-liquidity-premium-diminishes-when-price-discovery-concentrates-in-bond-futures]] — phần bù thanh khoản on-the-run biến mất khi chức năng khám phá giá và phòng hộ tập trung vào hợp đồng tương lai
+- [[yield-curve-representations-bridge-discount-factors-zero-rates-and-par-yields]] — liên kết chuyển đổi toán học giữa bốn biểu diễn cấu trúc kỳ hạn: hệ số chiết khấu, lãi suất zero, forward rate và par curve
+- [[bootstrapping-and-reverse-bootstrapping-isolate-zero-rates-and-replicate-cash-flow-profiles]] — bóc tách bootstrapping trích xuất zero rates từ giá thị trường và reverse bootstrapping tái lập cấu trúc dòng tiền nghĩa vụ
+- [[parametric-spline-models-trade-off-exact-repricing-against-forward-rate-smoothness]] — mô hình spline tham số hóa đánh đổi giữa độ chính xác định giá lại trái phiếu và độ trơn nhẵn của đường cong lãi suất kỳ hạn
+- [[composite-spline-models-prevent-sub-sovereign-curve-crossings-through-spread-decomposition]] — mô hình spline phức hợp phân tách đường cong chênh lệch để triệt tiêu hiện tượng giao cắt phi lý giữa đường cong cận quốc gia và chính phủ
+- [[dv01-weighted-price-fitting-accelerates-yield-curve-optimization-over-nonlinear-yield-searches]] — khớp giá theo trọng số DV01 tối ưu hóa bình phương tối thiểu tuyến tính, tăng tốc độ giải nghiệm hàng trăm lần so với tìm kiếm lợi suất phi tuyến
+- [[parallel-yield-curve-shifts-reflect-shifts-in-equilibrium-neutral-rates-and-central-bank-commitments]] — dịch chuyển song song thống trị đường cong phản ánh điều chỉnh ước lượng lãi suất thực trung lập dài hạn và cam kết của NHTW
+- [[convexity-bias-compresses-long-term-yields-and-inverts-the-ultra-long-end]] — thiên lệch độ lồi tăng theo căn bậc hai của kỳ hạn, đè nén lợi suất kỳ hạn dài và gây đảo ngược cấu trúc kỳ hạn đoạn siêu dài
+- [[institutional-preferred-habitats-and-solvency-regulations-induce-structural-short-convexity]] — môi trường ưa thích của định chế và quy chế thanh khoản Solvency tạo trạng thái bán độ lồi cưỡng bức (short convexity)
 

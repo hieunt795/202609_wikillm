@@ -62,7 +62,7 @@ Cảnh báo của hook phải xử lý ngay, không để tồn đến lượt l
 
 ## Công cụ ghi câu hỏi theo yêu cầu
 
-`python .claude/tools/log_questions.py` chỉ chạy khi được gọi thủ công. Mặc định, công cụ quét toàn bộ Codex session có `cwd` thuộc repo hiện tại; `--input <conversation.json|jsonl>` giới hạn vào một file cụ thể. Công cụ lấy message `role=user`, phân loại bằng rule cục bộ, bỏ bản trùng và append vào `.claude/local/question-logger/questions.jsonl`; không gọi LLM. Dùng `--dry-run` để xem record dự kiến mà không ghi file.
+`python "Claude outputs/log_questions.py"` chỉ chạy khi được gọi thủ công (local-only, gitignored). Mặc định, công cụ quét toàn bộ Codex session có `cwd` thuộc repo hiện tại; `--input <conversation.json|jsonl>` giới hạn vào một file cụ thể. Công cụ lấy message `role=user`, phân loại bằng rule cục bộ, bỏ bản trùng và append vào `.claude/local/question-logger/questions.jsonl`; không gọi LLM. Dùng `--dry-run` để xem record dự kiến mà không ghi file.
 
 ## Ghi chú vận hành
 

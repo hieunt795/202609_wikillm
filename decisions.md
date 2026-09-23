@@ -179,3 +179,10 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 - **Lý do:** skill cấp tài khoản nằm ngoài repo, có thể đổi hoặc không sync giữa máy/phiên; bản local đảm bảo ingest luôn áp đúng bộ quy tắc A–I đã kiểm chứng, theo dõi được qua git history.
 - **Phạm vi:** chỉ sửa `ingest/SKILL.md` bước 3 theo yêu cầu người dùng. `review-node` và `query` vẫn trích dẫn skill `writing-style` cấp tài khoản như quyết định 2026-09-17 — chưa đồng bộ, cần quyết định riêng nếu sau này muốn áp toàn bộ.
 - **Rủi ro theo dõi:** nếu bản cấp tài khoản được cập nhật thêm rule hoặc đổi ID, bản local sẽ lệch — cần đối chiếu thủ công khi phát hiện khác biệt.
+
+## [2026-09-23] Sửa lỗi nesting `.claude/.claude/` và dọn file thừa
+
+- **Phát hiện:** commit `abd8dbc` (2026-09-21) đã vô tình rename `.claude/{hooks,rules,skills,settings.json}` thành `.claude/.claude/{hooks,rules,skills,settings.json}` — lồng sai một cấp. Hậu quả: `.claude/settings.json` hook path tự tham chiếu đúng nội bộ nhưng không nằm ở vị trí chuẩn, và 6 skill chính bị harness scope riêng cho `.claude/` thay vì project-wide.
+- **Quyết định:** (1) Dùng `git mv` để đưa `.claude/.claude/*` lên `.claude/` (rename-tracked, giữ lịch sử); sửa path tự tham chiếu trong `settings.json`, 5 SKILL file, và rule `source-management.md`. (2) Xoá `.claude/CLAUDE.md` (duplicate), giữ root `CLAUDE.md` (có session status) làm bản chính thức. (3) Archive `CLAUDEV4_1.local.md` và `CLAUDE_RULES_REPORT.md` vào `.claude/archive/`. (4) Sửa root `CLAUDE.md:65` path `log_questions.py` → `Claude outputs/log_questions.py`.
+- **Lý do:** lỗi nesting gây mất chức năng, không chỉ tổ chức. Skill bị scope sai khiến lệnh cốt lõi có thể không xuất hiện bình thường.
+- **Rủi ro:** không có — all changes là git mv + path updates. Kiểm chứng: 0 ref tới `.claude/.claude/` còn lại ngoài log; hook chạy được; skill project-wide.

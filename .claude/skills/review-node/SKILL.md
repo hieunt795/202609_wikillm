@@ -11,7 +11,7 @@ Review là **kiểm chứng nội dung khớp nguồn**. Không phải lint (lin
 
 ## Quy trình
 
-**1. Chọn trang.** Người dùng chỉ định; nếu không, lấy hàng đợi mặc định: trang `status` khác `stub`, chưa có `reviewed` hoặc có `reviewed` cũ hơn `last_updated`, bỏ trang đã có `reviewed_by: user`, xếp theo số backlink giảm dần (`python .claude/.claude/hooks/validate_wiki_page.py --backlinks` in sẵn bảng đếm). **Tối đa 5 trang mỗi lượt** (§4) — review cẩn thận quan trọng hơn review nhiều.
+**1. Chọn trang.** Người dùng chỉ định; nếu không, lấy hàng đợi mặc định: trang `status` khác `stub`, chưa có `reviewed` hoặc có `reviewed` cũ hơn `last_updated`, bỏ trang đã có `reviewed_by: user`, xếp theo số backlink giảm dần (`python .claude/hooks/validate_wiki_page.py --backlinks` in sẵn bảng đếm). **Tối đa 5 trang mỗi lượt** (§4) — review cẩn thận quan trọng hơn review nhiều.
 
 **2. Đọc trọn trang**, tách thân bài thành danh sách claim.
 
@@ -39,7 +39,7 @@ Review là **kiểm chứng nội dung khớp nguồn**. Không phải lint (lin
 - **Trang khác mắc cùng lỗi** (chép cùng claim sai hoặc cùng dải dòng sai, phát hiện khi đối chiếu) → không sửa trang đó trong lượt này, vì nó chưa được đọc trọn; ghi `_inbox.md` một mục nêu tên trang, chú thích sai và vị trí đúng, để lượt review sau nhặt lên.
 - Không bao giờ ghi đè `reviewed_by: user`.
 
-**6. Chạy `python .claude/.claude/hooks/validate_wiki_page.py --all`**, phải sạch.
+**6. Chạy `python .claude/hooks/validate_wiki_page.py --all`**, phải sạch.
 
 **7. Ghi 1 mục vào cuối `log.md`** theo §12: `## [<giờ từ --now>] review | <số trang> trang`, tối đa 3 dòng: trang đạt · trang đã sửa (kèm claim sai ngắn gọn) · trang bị giữ lại và lý do.
 
