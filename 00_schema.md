@@ -22,7 +22,7 @@ reviewed_by:       # user | model — bắt buộc khi có reviewed (§9)
 | entity | Người, tổ chức, công cụ, khung/hệ thống có danh tính riêng (vd: SNA, GFS) | Ingest |
 | concept | Khái niệm, ý tưởng, định nghĩa tổng quát — áp dụng được ngoài 1 bối cảnh cụ thể | Ingest |
 | case | Tường thuật gắn với 1 bối cảnh cụ thể (quốc gia + giai đoạn thời gian), không tổng quát hóa được, dùng làm minh chứng thực tế cho `concept` liên quan | Ingest |
-| analysis | Tổng hợp, so sánh, nhận định agent tự sinh ra từ nhiều nguồn/trang đã có trong wiki | Query (cần xác nhận người dùng trước khi tạo — `.claude/skills/query/SKILL.md` bước 5) |
+| analysis | Tổng hợp, so sánh, nhận định agent tự sinh ra từ nhiều nguồn/trang đã có trong wiki | Query, Research (cần xác nhận người dùng trước khi tạo — `.claude/skills/query/SKILL.md` bước 5, `.claude/skills/research/SKILL.md` chức năng A) |
 
 Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, bảng số liệu thô. Nếu cần, chỉ trích dẫn số liệu bên trong trang `case` liên quan, không tạo trang riêng cho bảng.
 
@@ -40,7 +40,7 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 - `01_sources/` là bất biến — **chỉ đọc, không ngoại lệ**: không sửa nội dung, không thêm file, không đổi tên, không xoá. Mọi thứ agent cần *ghi* về một nguồn đều nằm ngoài thư mục đó. Phép thử: mọi file `.md`/`.pdf` trong `01_sources/` đều có trong bản kê và khớp SHA-256 (`validate_wiki_page.py --verify-sources`).
 - `03_state/` là vùng trạng thái do agent sở hữu, máy đọc được, gồm 1 bản kê xuất xứ chung `03_state/_sources_manifest.md` và 1 bản đồ chunk `03_state/<source id>.md` cho mỗi nguồn dài đã bắt đầu ingest (§10).
 - Vùng capture tạm `_inbox.md` nằm ở gốc dự án, **không** nằm trong `02_wiki/` (§11).
-- Báo cáo lint/audit lưu ở `Claude outputs/` (không commit), tên `lint-<YYYY-MM-DD>-<số trang>.md` hoặc `audit-<YYYY-MM-DD>-<chủ đề>.md`.
+- Báo cáo lint/audit/research lưu ở `Claude outputs/` (không commit), tên `lint-<YYYY-MM-DD>-<số trang>.md`, `audit-<YYYY-MM-DD>-<chủ đề>.md`, hoặc `research-<YYYY-MM-DD>-<chủ đề>.md`.
 
 ## 4. Ngưỡng vận hành
 
@@ -49,6 +49,7 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 | Ingest | Tạo/cập nhật 5–15 trang wiki mỗi lần (stub không tính) |
 | Lint | Chạy sau mỗi 10 lần ingest, hoặc theo lịch định kỳ |
 | Review | Tối đa 5 trang mỗi lượt |
+| Research | Cluster đọc trọn tối đa 10 trang/lượt; enrich (ghi claim mới) tối đa 5 trang/lượt |
 | Mâu thuẫn (conflict) | Không tự sửa — đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn, chờ xử lý |
 | Kích thước 1 trang | Đủ nhỏ để viết trọn trong 1 lượt. Không viết hết được trong 1 lượt → trang đang gộp nhiều ý, phải tách (§5) |
 | Phân loại nguồn ngắn / nguồn dài | Ngưỡng ở §10. Nguồn dài có file trạng thái trong `03_state/` từ lượt ingest đầu |
@@ -150,7 +151,7 @@ Tên file luôn là kebab-case của title (§3).
 | `stable` | Nội dung đủ, liên kết đủ, không mâu thuẫn tồn đọng | → `stale` khi nguồn mới liên quan được ingest mà lượt đó không merge vào trang | Ingest |
 | `stale` | Có nguồn mới liên quan nhưng trang chưa cập nhật | → `draft` sau khi merge nội dung mới, rồi lại qua Promote | Ingest |
 
-`stable`/`stale` được merge nội dung mới → về `draft` (Ingest, hoặc Review khi sửa claim sai).
+`stable`/`stale` được merge nội dung mới → về `draft` (Ingest; Review khi sửa claim sai; Research khi enrich thêm claim mới sau khi người dùng duyệt danh sách đề xuất — `.claude/skills/research/SKILL.md` chức năng B).
 
 **Điều kiện lên `stable`:** hook `--all` không báo gì cho trang; outlink ≥ 1; backlink ≥ 2; không còn `⚠️ Conflict`; không bị flag ở tiêu chí nào của lượt lint gần nhất.
 
@@ -244,7 +245,7 @@ Dòng ghi chú về nguồn (ghi chú người dùng, đặc điểm bản chuy�
 ```
 
 - **Dấu thời gian:** giờ Việt Nam (UTC+7), 24 giờ. Lấy bằng `python .claude/hooks/validate_wiki_page.py --now` — không ước lượng, không dùng giờ UTC của máy. Mục ghi trước 2026-09-15 để `00-00-00` = *không rõ giờ*.
-- **`<op>` chỉ nhận 7 giá trị:** `ingest` · `query` · `lint` · `promote` · `review` (skill `/review-node`) · `schema` (sửa schema/skill/hook/tài liệu vận hành) · `repo` (git: publish, rollback, tag).
+- **`<op>` chỉ nhận 8 giá trị:** `ingest` · `query` · `lint` · `promote` · `review` (skill `/review-node`) · `research` (skill `/research`) · `schema` (sửa schema/skill/hook/tài liệu vận hành) · `repo` (git: publish, rollback, tag).
 - **Tiền tố `## [` là giao diện máy đọc** — `grep "^## \[" log.md | tail -5` lấy 5 mục gần nhất. Không viết `## [` ở đầu dòng cho mục đích khác.
 - **Log không chứa lập luận.** Lý do → `decisions.md`. Ý tưởng dang dở → `_inbox.md`. Trạng thái "còn lại phần nào" → `03_state/`.
 - Mục mới luôn thêm ở **cuối file**; không sửa mục cũ. Mục cũ sai thì mục kế tiếp cùng loại ghi đính chính.
