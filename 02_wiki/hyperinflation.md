@@ -4,7 +4,7 @@ type: concept
 tags: [inflation, prices]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-16
+last_updated: 2026-09-24
 ---
 
 Siêu lạm phát là sự tăng kéo dài của mặt bằng giá chung ở tốc độ cực cao; định nghĩa được chấp nhận rộng rãi là của Cagan: giá tăng từ 50% mỗi tháng trở lên, kéo dài trong vài tháng (imf_macro_accounting, Ch.5, Box 5.10 Money and Hyperinflation, d.5124).

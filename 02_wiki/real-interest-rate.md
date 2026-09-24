@@ -7,7 +7,7 @@ status: stable
 last_updated: 2026-09-24
 ---
 
-Lãi suất thực là lãi suất đã điều chỉnh theo lạm phát kỳ vọng: R_r ≈ R_n − P_e, với R_n là [[nominal-interest-rate|lãi suất danh nghĩa]] và P_e là lạm phát kỳ vọng; khi lạm phát thấp phép trừ này là xấp xỉ tốt, còn khi lạm phát cao phải dùng dạng rời rạc (1 + R_n/100)/(1 + P_e/100) − 1 (imf_macro_accounting, Ch.5, Box 5.9, Nominal and Real Interest Rates, d.5040–5054).
+Lãi suất thực là lãi suất đã điều chỉnh theo lạm phát kỳ vọng: $R_r \approx R_n - P_e$, với $R_n$ là [[nominal-interest-rate|lãi suất danh nghĩa]] và $P_e$ là lạm phát kỳ vọng; khi lạm phát thấp phép trừ này là xấp xỉ tốt, còn khi lạm phát cao phải dùng dạng rời rạc $(1 + R_n/100)/(1 + P_e/100) - 1$ (imf_macro_accounting, Ch.5, Box 5.9, Nominal and Real Interest Rates, d.5040–5054).
 
 Dưới lăng kính của [[loanable-funds-framework-determines-equilibrium-interest-rate-and-bond-price|khung quỹ cho vay]], lãi suất thực là lợi tức thực tế của người cho vay và chi phí thực tế của người đi vay, được xác định bởi các yếu tố kinh tế thực căn bản khi lạm phát kỳ vọng bằng 0 (cargill_central_bank_policy, Ch.5, Nominal and Real Interest Rates, d.1773). Lãi suất thực là một biến số trừu tượng không thể quan sát trực tiếp trên thị trường, đòi hỏi phải sử dụng [[expected-inflation-is-measured-through-surveys-econometric-models-and-tips-spreads|các phương pháp đo lường lạm phát kỳ vọng]] như khảo sát Livingston hay chênh lệch lợi suất TIPS để bóc tách khỏi lãi suất danh nghĩa theo [[fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-inflation|hiệu ứng Fisher]].
 

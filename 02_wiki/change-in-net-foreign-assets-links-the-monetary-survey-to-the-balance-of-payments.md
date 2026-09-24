@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy, balance-of-payments, identities, exchange-rate]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-16
+last_updated: 2026-09-24
 ---
 
 Khảo sát tiền tệ làm nổi bật hai mối liên hệ cốt lõi của hệ thống ngân hàng: với vị thế đối ngoại của một nước qua tài sản đối ngoại ròng, và với ngân sách nhà nước qua tín dụng ròng cho chính phủ; hệ thống ngân hàng còn nối với khu vực thực qua cầu tiền và tín dụng cho khu vực tư (imf_macro_accounting, Ch.5, Monetary Analysis, d.4808–4812).

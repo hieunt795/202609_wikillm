@@ -4,7 +4,7 @@ type: case
 tags: [monetary-policy, financial-system]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-16
+last_updated: 2026-09-24
 ---
 
 Phụ lục Ch.5 cho một ví dụ số liệu giả định đầy đủ, minh hoạ cụ thể [[financial-statistics-are-organized-in-three-tiers-from-institutional-balance-sheets-to-the-financial-survey|ba tầng thống kê tài chính IFS]] khớp nhau ra sao trên cùng một nền kinh tế mẫu (imf_macro_accounting, Ch.5, Appendix, Appendix chart, d.5540–5541).

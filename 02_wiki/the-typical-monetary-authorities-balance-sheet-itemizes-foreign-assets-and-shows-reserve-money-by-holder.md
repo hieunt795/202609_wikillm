@@ -1,12 +1,16 @@
 ---
-title: the-typical-monetary-authorities-balance-sheet-itemizes-foreign-assets-and-shows-reserve-money-by-holder
-type: concept
-tags: [monetary-policy, financial-system]
-sources: [imf_macro_accounting]
+title: The typical monetary authorities balance sheet itemizes foreign assets and shows reserve money by holder
+type: analysis
+tags: [monetary-accounts, imf]
 status: stable
-last_updated: 2026-09-23
+sources: [imf_macro_accounting]
+last_updated: 2026-09-24
+reviewed: 2026-09-24
+reviewed_by: model
 ---
 
-Trước khi rút gọn thành đồng nhất thức phân tích ở [[reserve-money]], bảng cân đối "kiểu chuẩn" của [[central-bank|nhà chức trách tiền tệ]] trình bày chi tiết hơn nhiều theo từng khoản mục cụ thể (imf_macro_accounting, Ch.5, The Balance Sheet of Monetary Authorities, Box 5.1, d.4588–4598) — bản trình bày trung gian giữa hai lớp này là [[the-analytical-monetary-authorities-balance-sheet-groups-items-into-nfa-nda-and-rm]]. Thuật ngữ "nhà chức trách tiền tệ" là một khái niệm chức năng chứ không thuần túy là một định chế pháp nhân; bên cạnh ngân hàng trung ương, khái niệm này bao gồm các cơ quan chính phủ đảm nhiệm chức năng tiền tệ như kho bạc phát hành tiền xu hoặc quản lý quỹ bình ổn hối đoái, và theo quy ước IMF toàn bộ các chức năng này được gộp chung vào một đơn vị kế toán duy nhất (imf_macro_accounting, Ch.5, The Definition and Role of Monetary Authorities, d.4572–4580). Phía tài sản tách tài sản đối ngoại thành vàng, ngoại hối, vị thế dự trữ tại Quỹ, nắm giữ SDR, tiền gửi tại ngân hàng đại lý nước ngoài, và đầu tư nước ngoài; tách tín dụng cho chính phủ thành tín phiếu, trái phiếu chính phủ khác, cho vay/ứng trước; và tách riêng tín dụng cho doanh nghiệp nhà nước phi tài chính, khu vực tư, DMB (tái chiết khấu, ứng trước có bảo đảm, tín dụng khác), và tổ chức tài chính phi ngân hàng (imf_macro_accounting, Ch.5, cùng mục, Box 5.1, d.4588–4598). Quy ước kế toán ghi nhận tín dụng chính phủ dạng ròng trong khi giữ tín dụng cho DMB dạng gộp được phân tích cụ thể tại [[monetary-accounts-net-claims-on-government-but-keep-claims-on-deposit-money-banks-gross]].
+Bảng cân đối điển hình (typical balance sheet) của Nhà chức trách tiền tệ liệt kê chi tiết các khoản mục tài sản và nguồn vốn theo loại công cụ và đối tượng nắm giữ (imf_macro_accounting, Ch.5, d.4588–4600).
 
-Phía nợ tách [[reserve-money|tiền cơ sở]] theo *người nắm giữ* — tiền mặt ngoài ngân hàng, tiền mặt trong quỹ của DMB, tiền gửi của DMB, tiền gửi không kỳ hạn của khu vực tư, tiền gửi không kỳ hạn khu vực công khác chính phủ, và tiền gửi của tổ chức tài chính phi ngân hàng — chi tiết hơn hẳn đồng nhất thức RM vốn chỉ gộp chung "tiền gửi ngân hàng và phi ngân hàng" (imf_macro_accounting, Ch.5, cùng mục, Box 5.1, hàng Reserve Money, d.4590). Các khoản nợ khác gồm tiền gửi có kỳ hạn/tiết kiệm/ngoại tệ, trái phiếu, tiền gửi hạn chế liên quan nhập khẩu, nợ đối ngoại — tiền gửi ngân hàng trung ương nước ngoài, hạn mức hoán đổi, sử dụng tín dụng IMF, nợ nước ngoài khác, xem chi tiết giao dịch với IMF ở [[imf-quota-and-credit-tranches-determine-a-members-reserve-position-in-the-fund]] — tiền gửi chính phủ, và vốn tự có (imf_macro_accounting, Ch.5, cùng mục, Box 5.1, d.4591–4598). Các giao dịch với IMF phản ánh cấu trúc hai phía: nắm giữ SDR và vị thế dự trữ tại Quỹ thuộc tài sản đối ngoại, trong khi sử dụng tín dụng IMF nằm ở nợ đối ngoại; việc nộp quota hoặc vay theo hạn mức tín dụng không làm thay đổi tài sản đối ngoại ròng ($NFA^*$), còn một đợt phân bổ SDR mới làm tăng $NFA^*$ do phía nợ đối ứng được ghi vào tài khoản vốn và khoản mục khác ròng thay vì nghĩa vụ nợ đối ngoại chính thức (imf_macro_accounting, Ch.5, cùng mục, Box 5.4, d.4698–4700).
+Về phía tài sản, bảng cân đối bóc tách chi tiết cấu phần của tài sản ngoại biên, bao gồm vàng tiền tệ, ngoại hối, vị thế dự trữ tại Quỹ Tiền tệ Quốc tế (IMF), quyền rút vốn đặc biệt (SDRs) và các khoản đầu tư nước ngoài. Các khoản tín dụng nội địa được phân loại theo đối tượng nhận vốn: chính phủ (tín phiếu, trái phiếu, tạm ứng), ngân hàng nhận tiền gửi (chiết khấu, thấu chi), và các định chế phi tài chính.
+
+Về phía nguồn vốn, khoản mục [[reserve-money|tiền cơ sở (reserve money)]] được phân loại theo chủ thể nắm giữ thay vì chỉ ghi nhận tổng mức. Hệ thống hạch toán chia tách rõ lượng tiền mặt lưu thông ngoài hệ thống ngân hàng (currency outside banks), tiền mặt tại quỹ của ngân hàng thương mại (vault cash), và tiền gửi dự trữ của các ngân hàng thương mại tại ngân hàng trung ương. Việc phân bổ chi tiết này cung cấp bức tranh nguyên thủy về cấu trúc tài sản tài chính trước khi cơ quan thống kê gom nhóm chúng vào [[the-analytical-monetary-authorities-balance-sheet-groups-items-into-nfa-nda-and-rm|bảng phân tích]].

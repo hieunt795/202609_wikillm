@@ -3,8 +3,8 @@ title: transition-economies-experience-large-discrete-jumps-in-money-velocity
 type: concept
 tags: [monetary-policy, transition-economies, inflation]
 sources: [imf_macro_accounting]
-status: draft
-last_updated: 2026-09-16
+status: stable
+last_updated: 2026-09-24
 ---
 
 Ở nhiều nền kinh tế chuyển đổi, lạm phát cao và biến động mạnh đi kèm vòng quay tiền tăng, nhưng mức tăng thường xảy ra thành từng bước nhảy rời rạc lớn chứ không theo xu hướng trơn tru — trường hợp cực đoan như Armenia và Georgia cuối 1993, vòng quay tăng gấp ba chỉ trong một quý (imf_macro_accounting, Ch.5, Monetary Analysis in Transition Economies: Some Special Issues, Rapid changes in velocity, d.5104–5105).

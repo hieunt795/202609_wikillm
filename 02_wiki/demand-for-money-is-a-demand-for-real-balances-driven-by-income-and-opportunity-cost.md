@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy, inflation]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-16
+last_updated: 2026-09-24
 ---
 
 Cầu tiền về bản chất là cầu số dư tiền *thực* ($M/P$, tức khối tiền danh nghĩa giảm phát theo mặt bằng giá) chứ không phải cầu một số lượng đơn vị tiền tệ danh nghĩa cụ thể, vì người ta giữ tiền vì thứ nó mua được (imf_macro_accounting, Ch.5, Demand for Money, d.4912–4915).

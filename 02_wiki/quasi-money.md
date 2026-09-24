@@ -1,14 +1,16 @@
 ---
-title: quasi-money
+title: Quasi-money
 type: concept
-tags: [monetary-policy]
-sources: [imf_macro_accounting, cargill_central_bank_policy]
+tags: [monetary-accounts, imf]
 status: stable
-last_updated: 2026-09-21
+sources: [imf_macro_accounting]
+last_updated: 2026-09-24
+reviewed: 2026-09-24
+reviewed_by: model
 ---
 
-Bán-tiền (quasi-money, QM) là tiền gửi có kỳ hạn và tiết kiệm trong hệ thống ngân hàng — thành phần được cộng vào [[money-aggregates-form-a-nested-hierarchy-from-narrow-money-to-broad-liquidity|M1]] để tạo ra tiền rộng (M2) (imf_macro_accounting, Ch.5, The Monetary Survey, d.4719; cargill_central_bank_policy, Ch.2, The Concept and Measurement of Money, d.850–893).
+Tiền chuẩn (Quasi-money) đại diện cho các tài sản tài chính có tính thanh khoản thấp hơn [[narrow-money-m1|tiền hẹp (M1)]] nhưng vẫn có thể chuyển đổi thành tiền mặt hoặc tiền gửi thanh toán trong một khoảng thời gian ngắn với rủi ro mất giá không đáng kể (imf_macro_accounting, Ch.5, d.4719–4721).
 
-So với M1, các tài sản chuẩn tệ nằm ở vị trí thấp hơn trên [[money-is-the-only-one-hundred-percent-liquid-asset|phổ thanh khoản]] nhưng bù lại chúng mang lại tỷ suất sinh lời danh nghĩa cho người gửi tiền (cargill_central_bank_policy, Ch.2, The Concept and Measurement of Money, d.796–808). Trong hệ thống tài chính Hoa Kỳ, bán-tiền thuộc M2 bao gồm ba nhóm chính: tiền gửi có kỳ hạn mệnh giá nhỏ (dưới 100.000 USD), tiền gửi tiết kiệm (bao gồm cả tài khoản tiền gửi thị trường tiền tệ - MMDAs do các ngân hàng cung cấp), và các quỹ tương hỗ thị trường tiền tệ bán lẻ (retail MMMFs) (cargill_central_bank_policy, Ch.2, d.850–876). Các tài sản này phục vụ chủ yếu chức năng cất trữ giá trị và có thể chuyển đổi nhanh chóng sang tiền mặt hoặc tiền gửi thanh toán khi cần.
+Trong Khảo sát tiền tệ, tiền chuẩn thường bao gồm tiền gửi có kỳ hạn (time deposits) và tiền gửi tiết kiệm (savings deposits) tại hệ thống ngân hàng. Tại nhiều quốc gia có độ mở tài chính lớn, tiền chuẩn còn bao hàm cả tiền gửi ngoại tệ của cư dân (foreign currency deposits), chứng chỉ tiền gửi và các hợp đồng mua lại chứng khoán.
 
-M2 — bao trùm gần như toàn bộ nghĩa vụ nợ của hệ thống ngân hàng — vì vậy còn gồm cả [[foreign-currency-deposits|tiền gửi ngoại tệ]] của người cư trú bên cạnh bán-tiền nội tệ (imf_macro_accounting, Ch.5, cùng mục, d.4759–4767). Trong công thức $M2 = CY + DD + TD$ của [[money-supply-equals-net-foreign-assets-plus-net-domestic-assets]], bán-tiền tương ứng với số hạng $TD$ (tiền gửi có kỳ hạn/tiết kiệm), đứng cạnh $CY$ (tiền mặt lưu thông) và $DD$ ([[demand-deposits|tiền gửi không kỳ hạn]], cấu thành M1) (imf_macro_accounting, Ch.5, cùng mục, d.4766).
+Khi cộng gộp tiền hẹp (M1) và tiền chuẩn, cơ quan thống kê thu được thước đo cung tiền rộng (Broad money - M2), phản ánh toàn bộ quy mô nợ phải trả tiền tệ của hệ thống ngân hàng đối với nền kinh tế (imf_macro_accounting, Ch.5, d.4759–4766). Sự dịch chuyển giữa tiền hẹp và tiền chuẩn phản ánh độ nhạy cảm của người gửi tiền đối với chênh lệch lãi suất và chi phí cơ hội của việc giữ tiền mặt.

@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-17
+last_updated: 2026-09-24
 reviewed: 2026-09-17
 reviewed_by: model
 ---

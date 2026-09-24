@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy, financial-system, identities]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-16
+last_updated: 2026-09-24
 ---
 
 Giao dịch giữa một nước thành viên và IMF được ghi trên bảng cân đối của [[central-bank|nhà chức trách tiền tệ]]: nắm giữ SDR được xếp vào tài sản đối ngoại; phần đối ứng của việc phân bổ SDR là một khoản nợ trong tài khoản vốn/khoản mục khác ròng; [[imf-quota-and-credit-tranches-determine-a-members-reserve-position-in-the-fund|vị thế dự trữ tại Quỹ]] (RPF) nằm ở phía tài sản đối ngoại, còn phần sử dụng tín dụng Quỹ nằm ở phía nợ đối ngoại (imf_macro_accounting, Ch.5, Box 5.4, Transactions with the IMF, d.4699–4703).

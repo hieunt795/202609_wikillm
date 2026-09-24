@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy, transition-economies]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-16
+last_updated: 2026-09-24
 ---
 
 Khi các nước thắt chặt chính sách tín dụng mà không buộc được doanh nghiệp thực sự đối mặt với [[soft-budget-constraint|ràng buộc ngân sách cứng]], kết quả thường là phi trung gian hoá (disintermediation) mạnh — dòng vốn dịch chuyển ra khỏi hệ thống ngân hàng: doanh nghiệp dùng nợ đọng thanh toán lẫn nhau ("tín dụng liên doanh nghiệp") để thay thế tín dụng ngân hàng, hiện tượng đã tăng nhanh ở nhiều nền kinh tế chuyển đổi từ 1990, ví dụ Romania và các nước thuộc Liên Xô cũ như Nga (imf_macro_accounting, Ch.5, Monetary Analysis in Transition Economies: Some Special Issues, Interenterprise arrears, d.5109–5112).

@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy, transition-economies, interest-rates]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-23
+last_updated: 2026-09-24
 ---
 
 Khối lượng lớn các khoản vay kỳ hạn dài với lãi suất thấp cố định — điển hình là vay mua nhà ở — làm phức tạp quá trình tự do hoá lãi suất ở các nền kinh tế chuyển đổi (imf_macro_accounting, Ch.5, Monetary Analysis in Transition Economies: Some Special Issues, d.5118). Nâng lãi suất thị trường lên trong khi các khoản vay cũ vẫn khoá ở mức lãi suất thấp buộc ngân hàng trung ương phải cân nhắc tác động lên bảng cân đối của ngân hàng thương mại và người vay hiện hữu trước khi tự do hoá hoàn toàn.

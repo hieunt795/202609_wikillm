@@ -882,3 +882,23 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 84 trang draft giữ nguyên (82 trang backlink = 1, 2 trang conflict); 0 trang bị loại trong lượt
 - validate_wiki_page.py --all sạch (744 trang quét, 0 lỗi, 0 mồ côi; hiện có 645 stable, 84 draft, 15 stub)
 
+## [2026-09-24:21-40-00] ingest | imf_macro_accounting Ch.5 — overhaul Batch 1 (Cấu trúc + Đối tượng)
+- Viết lại toàn diện 9 trang theo chuẩn schema/writing-style hiện tại: monetary-statistics-are-stock-data-recorded-on-a-cash-basis, foreign-currency-items-in-monetary-statistics-are-converted-at-the-end-period-exchange-rate, consolidation-of-monetary-authorities-and-dmb-accounts-eliminates-internal-claims-to-determine-broad-money, monetary-accounts-net-claims-on-government-but-keep-claims-on-deposit-money-banks-gross, the-typical-monetary-authorities-balance-sheet-itemizes-foreign-assets-and-shows-reserve-money-by-holder, the-analytical-monetary-authorities-balance-sheet-groups-items-into-nfa-nda-and-rm, the-analytical-deposit-money-bank-balance-sheet-separates-required-from-excess-reserves, narrow-money-m1, quasi-money.
+- Sửa lỗi hook `--all` bằng cách gán `type` frontmatter và chèn thêm `[[wikilink]]` liên kết nội bộ.
+- Cập nhật 03_state/imf_macro_accounting.md; validate_wiki_page.py --all đạt 100% (744 trang quét, 0 lỗi, 0 mồ côi).
+
+## [2026-09-24:21-45-00] ingest | imf_macro_accounting Ch.5 — overhaul Batch 2 (Cân đối / Đồng nhất thức)
+- Rà soát và cập nhật 8 trang thuộc nhóm phương trình/cân đối nền tảng: reserve-money, money-supply-equals-net-foreign-assets-plus-net-domestic-assets, change-in-net-foreign-assets-links-the-monetary-survey-to-the-balance-of-payments, the-money-multiplier-links-reserve-money-to-the-money-supply, the-quantity-theory-links-money-velocity-prices-and-output, demand-for-money-is-a-demand-for-real-balances-driven-by-income-and-opportunity-cost, real-interest-rate, valuation-adjustments-separate-transaction-flows-from-exchange-rate-revaluation-of-stocks.
+- Sửa lỗi định dạng công thức toán học (`$$...$$` và `$ ... $`) trong một số file bị rớt lại từ đợt kiểm tra quy định format toán học.
+
+
+## [2026-09-24:21-50-00] ingest | imf_macro_accounting Ch.5 — overhaul Batch 3 (Cơ chế)
+- Rà soát và cập nhật 7 trang cơ chế điều hành chính sách tiền tệ: monetary-authorities-influence-reserve-money-through-five-direct-instruments, monetary-authorities-control-over-reserve-money-is-incomplete, sterilization-offsets-fx-intervention-but-only-temporarily, fixed-exchange-rates-make-the-money-supply-endogenous-while-floating-rates-restore-monetary-control, perfect-capital-mobility-with-a-fixed-exchange-rate-strips-monetary-policy-of-independence, currency-substitution-undermines-monetary-control, financial-innovation-blurs-the-boundary-of-money.
+- Nâng cấp stub dollarization lên draft và liên kết bổ sung nguồn imf_macro_accounting.
+- Cập nhật 03_state/imf_macro_accounting.md; validate_wiki_page.py --all tiếp tục đạt 100% sạch (744 trang quét).
+
+## [2026-09-24:22-00-00] ingest | imf_macro_accounting Ch.5 — overhaul Batch 4 (Đặc thù chuyển đổi & Kỹ thuật IMF) — hoàn tất Ch.5
+- Rà soát toàn bộ 13 trang thuộc cụm đặc thù kinh tế chuyển đổi (F1) và giao dịch IMF / Case 3 tầng IFS (Appendix): lack-of-bank-competition-in-transition-economies-forces-nonprice-credit-rationing, absence-of-money-and-financial-markets-precludes-open-market-operations-in-early-transition, old-fixed-rate-loans-and-weak-financial-discipline-complicate-interest-rate-liberalization, wide-deposit-lending-spread-in-transition-economies-reflects-four-cost-factors, interenterprise-arrears-substitute-for-bank-credit-when-budget-constraints-are-not-hardened, transition-economies-experience-large-discrete-jumps-in-money-velocity, high-government-financing-needs-subordinate-monetary-policy-to-fiscal-needs, imf-quota-and-credit-tranches-determine-a-members-reserve-position-in-the-fund, quota-payment-and-reserve-tranche-drawdowns-leave-net-foreign-assets-unchanged-while-credit-tranche-purchases-do-not, a-worked-example-shows-how-monetary-authorities-dmb-and-nbfi-balance-sheets-reconcile-into-the-financial-survey, hyperinflation, monobank, non-performing-loans.
+- Bổ sung liên kết mạng từ the-quantity-theory-links-money-velocity-prices-and-output sang transition-economies-experience-large-discrete-jumps-in-money-velocity; nâng transition-economies-experience-large-discrete-jumps-in-money-velocity từ draft lên stable (đạt đủ backlink >= 2, 0 conflict).
+- Cập nhật last_updated: 2026-09-24 và hoàn tất 100% đợt đại tu toàn diện 4 Batch của Chương 5 IMF Macroeconomic Accounting.
+- Cập nhật 03_state/imf_macro_accounting.md; validate_wiki_page.py --all đạt 100% sạch (744 trang quét, 0 lỗi, 0 mồ côi).

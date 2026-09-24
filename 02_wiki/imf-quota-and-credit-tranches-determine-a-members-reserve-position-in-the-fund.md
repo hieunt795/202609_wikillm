@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy, financial-system]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-16
+last_updated: 2026-09-24
 ---
 
 Khi gia nhập [[international-monetary-fund-imf|IMF]], một nước được ấn định một hạn ngạch (quota), đóng góp bằng nội tệ (không dưới 75%) và bằng một tài sản dự trữ như ngoại tệ chuyển đổi được (tới 25%); IMF duy trì ba tài khoản với cơ quan lưu ký của thành viên (thường là ngân hàng trung ương) — Tài khoản số 1 cho giao dịch nghiệp vụ (mua, mua lại, trả nợ vay…), Tài khoản số 2 cho giao dịch hành chính, và Tài khoản chứng khoán IMF cho chứng khoán không lãi suất, không chuyển nhượng mà thành viên có thể dùng thay tiền mặt khi đóng hạn ngạch (imf_macro_accounting, Ch.5, Appendix, Concepts and Definitions, d.5434–5449).

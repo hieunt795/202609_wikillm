@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy, exchange-rate-regime, capital-flows]
 sources: [imf_macro_accounting]
 status: draft
-last_updated: 2026-09-16
+last_updated: 2026-09-24
 ---
 
 Vốn di chuyển qua biên giới đóng vai trò trung gian giữa các nước tương tự vai trò trung gian tài chính của ngân hàng trong một nước, và làm chính sách kinh tế trong nước gắn chặt hơn với cán cân thanh toán; hội nhập tài chính toàn cầu ngày càng sâu cũng gắn chặt hơn [[monetary-policy|chính sách tiền tệ]] trong nước với diễn biến tiền tệ ở nước ngoài (imf_macro_accounting, Ch.5, Special Issues in Monetary Analysis, Role of capital flows, d.5086–5093).

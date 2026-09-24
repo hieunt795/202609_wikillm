@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy, exchange-rate, identities]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-16
+last_updated: 2026-09-24
 ---
 
 Thay đổi tồn kho của một khoản mục bảng cân đối giữa hai kỳ không chỉ phản ánh dòng giao dịch mà còn phản ánh biến động giá thị trường hay tỷ giá dùng để định giá lại tồn kho đó; đánh đồng hai điều này dễ gây hiểu sai, nhất là khi tỷ giá biến động mạnh trong giai đoạn phân tích (imf_macro_accounting, Ch.5, Box 5.8, Valuation Adjustments, d.4841–4843).

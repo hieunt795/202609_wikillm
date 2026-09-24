@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-23
+last_updated: 2026-09-24
 ---
 
 Dù nắm [[monetary-authorities-influence-reserve-money-through-five-direct-instruments|năm công cụ trực tiếp]], quyền kiểm soát của [[central-bank|nhà chức trách tiền tệ]] đối với [[reserve-money|tiền cơ sở]] không hoàn toàn: thay đổi tài sản đối ngoại ròng phản ánh kết quả cán cân thanh toán nên không thể coi là biến hoàn toàn do chính sách quyết định; tín dụng ròng cho chính phủ ở nhiều nước lại điều chỉnh một cách thụ động theo vị thế ngân sách, nhất là ở nước ngân hàng trung ương thiếu độc lập (imf_macro_accounting, Ch.5, The Balance Sheet of Monetary Authorities, d.4653). Cả biến động tài sản đối ngoại ròng và các luồng tiền gửi ngân sách đều thuộc nhóm các [[autonomous-factors-of-central-bank-balance-sheet|nhân tố tự định trên bảng cân đối]], khiến quy mô tiền cơ sở không thể ấn định đơn phương. Định nghĩa tài sản đối ngoại ròng ($NFA^*$) của cơ quan tiền tệ rộng hơn dự trữ quốc tế ròng chính thức ($NIR$); ở nhiều nền kinh tế chuyển đổi, $NFA^*$ chứa cả ngoại tệ không chuyển đổi được và trái quyền thanh toán song phương chỉ dùng để thanh toán với các nước chỉ định, khiến tính khả dụng của tài sản dự trữ khi xảy ra khủng hoảng cán cân thanh toán bị hạn chế đáng kể (imf_macro_accounting, Ch.5, The Balance Sheet of Monetary Authorities, d.4610).

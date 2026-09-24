@@ -1,12 +1,16 @@
 ---
-title: monetary-statistics-are-stock-data-recorded-on-a-cash-basis
+title: Monetary statistics are stock data recorded on a cash basis
 type: concept
-tags: [monetary-policy, financial-system]
+tags: [monetary-accounts, imf]
+status: stable
 sources: [imf_macro_accounting]
-status: draft
-last_updated: 2026-09-16
+last_updated: 2026-09-24
+reviewed: 2026-09-24
+reviewed_by: model
 ---
 
-Thống kê tiền tệ dựa trên bảng cân đối kế toán nên về bản chất là số liệu *tồn kho* — tài sản và nợ tại một thời điểm — chứ không phải số liệu *dòng chảy* ghi nhận giao dịch trong một giai đoạn; tuy vậy, phân tích lại chủ yếu nhìn vào thay đổi tồn kho giữa hai kỳ, tức là suy ra dòng chảy từ chênh lệch tồn kho, nên cả tồn kho đầu kỳ lẫn thay đổi đều quan trọng (imf_macro_accounting, Ch.5, Accounting Principles Underlying Monetary Statistics, d.4559–4561).
+Dữ liệu thống kê tiền tệ (monetary statistics) là dữ liệu tồn lượng (stock data) đo lường tại một thời điểm cụ thể, khác với các dữ liệu luồng (như phân tích trong [[foreign-currency-items-in-monetary-statistics-are-converted-at-the-end-period-exchange-rate]]) (flow data) đo lường giao dịch trong một khoảng thời gian.
 
-IFS ghi nhận giao dịch theo cơ sở tiền mặt (khi nghĩa vụ được thanh toán, không phải khi phát sinh), trong khi số liệu khu vực ngân hàng ở nhiều nước lại theo cơ sở dồn tích vì bảng cân đối ngân hàng dựng theo quy tắc kế toán doanh nghiệp; do phần lớn giao dịch ngân hàng được thực hiện gần như ngay lập tức bằng tiền mặt, khác biệt này ít có ý nghĩa thực tế (imf_macro_accounting, Ch.5, cùng mục, d.4562). Bản chất tồn kho này còn quyết định luôn cách [[foreign-currency-items-in-monetary-statistics-are-converted-at-the-end-period-exchange-rate|quy đổi các khoản mục ngoại tệ]] trên cùng bảng cân đối.
+Hệ thống ghi nhận các giao dịch trên cơ sở tiền mặt (cash basis), nghĩa là khi nghĩa vụ thanh toán được hoàn tất thực tế. Điều này khác với quy tắc cơ sở dồn tích (accrual basis) áp dụng trong [[system-of-national-accounts-sna|Hệ thống Tài khoản Quốc gia (SNA)]] hay Thống kê Tài chính Chính phủ (GFS).
+
+Mặc dù hệ thống ngân hàng thường lập bảng cân đối kế toán nội bộ theo quy tắc dồn tích của kế toán doanh nghiệp, sự khác biệt này ít tạo ra độ lệch lớn vì hầu hết các giao dịch của ngân hàng đều được thanh toán ngay lập tức bằng tiền mặt (imf_macro_accounting, Ch.5, d.4560–4563). Phân tích tiền tệ sử dụng tồn lượng nhưng thường đánh giá sự biến động thông qua chênh lệch tồn lượng giữa hai kỳ (flow) để so sánh với quy mô nợ phải trả đầu kỳ (imf_macro_accounting, Ch.5, d.4560–4561).

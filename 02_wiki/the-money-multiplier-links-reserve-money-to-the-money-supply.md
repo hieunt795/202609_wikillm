@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy, identities]
 sources: [imf_macro_accounting, cargill_central_bank_policy]
 status: stable
-last_updated: 2026-09-16
+last_updated: 2026-09-24
 ---
 
 Dưới hệ thống dự trữ phân đoạn, mức tăng ban đầu của [[reserve-money|tiền cơ sở]] làm nền cho [[deposit-money-banks|ngân hàng nhận tiền gửi]] mở rộng tiếp tiền gửi thành một bội số của mức tăng đó, vì mỗi khoản tiền gửi chỉ cần giữ lại một phần làm dự trữ, phần còn lại được cho vay và cuối cùng lại trở thành tiền gửi mới (imf_macro_accounting, Ch.5, The Concept of the Money Multiplier, d.4937–4942).

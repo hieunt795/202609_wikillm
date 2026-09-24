@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy]
 sources: [imf_macro_accounting]
 status: draft
-last_updated: 2026-09-16
+last_updated: 2026-09-24
 ---
 
 Đổi mới và tự do hoá tài chính — nhờ công nghệ thông tin và các kỹ thuật thị trường tài chính mới — ngày càng làm mờ ranh giới giữa tài sản tài chính là tiền và không phải tiền: tiền gửi không kỳ hạn ở nhiều nước trả lãi suất gần bằng tài sản khác, và các quỹ tương hỗ đầu tư cổ phiếu/trái phiếu ngày càng dễ rút, khiến tài sản gần-tiền này làm cầu tiền kém ổn định và khó dự đoán hơn, gây khó khăn cho điều hành chính sách tiền tệ (imf_macro_accounting, Ch.5, Special Issues in Monetary Analysis, Financial innovation and deregulation, d.4996–4998).

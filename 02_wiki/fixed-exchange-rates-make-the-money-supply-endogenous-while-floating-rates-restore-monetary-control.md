@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy, exchange-rate-regime]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-16
+last_updated: 2026-09-24
 ---
 
 Chế độ tỷ giá quyết định trực tiếp mức độ tự chủ của chính sách tiền tệ. Dưới tỷ giá cố định, nhà chức trách tiền tệ cam kết mua/bán nội tệ đổi ngoại tệ ở một mức giá định trước; mỗi khi tỷ giá thị trường có nguy cơ lệch khỏi mức đó, họ phải can thiệp, khiến tài sản đối ngoại ròng — và qua đó tiền cơ sở, cung tiền — tự động điều chỉnh theo yêu cầu giữ tỷ giá, thay vì theo mục tiêu chính sách; nói cách khác, chấp nhận cố định tỷ giá đồng nghĩa với từ bỏ quyền kiểm soát cung tiền (imf_macro_accounting, Ch.5, Special Issues in Monetary Analysis, Exchange rate regimes and monetary analysis, d.5024–5030).

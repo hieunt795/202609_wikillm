@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy, transition-economies, banking]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-23
+last_updated: 2026-09-24
 ---
 
 Thiếu cạnh tranh giữa các ngân hàng cản trở quá trình chuyển sang công cụ [[monetary-authorities-influence-reserve-money-through-five-direct-instruments|kiểm soát tiền tệ gián tiếp]] ở các nền kinh tế chuyển đổi (imf_macro_accounting, Ch.5, Monetary Analysis in Transition Economies: Some Special Issues, d.5106). Cầu dự trữ của ngân hàng không nhạy với lãi suất, vì nhiều ngân hàng chưa hành xử như tổ chức thương mại tối đa hoá lợi nhuận (imf_macro_accounting, cùng mục, d.5106–5107).

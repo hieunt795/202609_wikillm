@@ -4,7 +4,7 @@ type: concept
 tags: [monetary-policy]
 sources: [imf_macro_accounting]
 status: stable
-last_updated: 2026-09-23
+last_updated: 2026-09-24
 ---
 
 [[central-bank|Nhà chức trách tiền tệ]] có năm công cụ trực tiếp để tác động lên [[reserve-money|tiền cơ sở]] (imf_macro_accounting, Ch.5, Interpretation of Balance Sheet Changes, d.4655–4656):
