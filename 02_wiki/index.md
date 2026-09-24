@@ -18,11 +18,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `choudhry_fixed_income_markets` | Nguồn dài (1.941 KB / 15.414 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–39 xong (chi tiết ở state file) | `03_state/fixed_income_during.md` |
 | `tata_bank_alm` | Nguồn dài (450 KB / 3.345 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–6 xong (chi tiết ở state file) | `03_state/tata_bank_alm.md` |
-
 | `clippings` | Nguồn dài (82 file, 882 KB / 6.684 dòng) | **Hoàn tất 100%** | Toàn bộ 6 cụm (82 file) xong (chi tiết ở state file) | `03_state/clippings.md` |
-
-
-
 
 Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *Phần còn lại* chỉ ghi một câu; diễn biến từng lượt nằm ở `log.md`, tiến độ theo chunk nằm ở state file.
 

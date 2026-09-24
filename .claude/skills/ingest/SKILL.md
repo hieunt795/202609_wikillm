@@ -1,11 +1,31 @@
 ---
 name: ingest
-description: Nạp nguồn mới từ 01_sources vào wiki 02_wiki theo schema dự án. Dùng khi người dùng muốn ingest, nạp nguồn, thêm chương mới, đọc tài liệu vào wiki, trích xuất khái niệm từ nguồn, tạo trang wiki từ tài liệu, xử lý cụm tiếp theo, add source to wiki, thêm sách mới, hoặc bất kỳ yêu cầu nào biến nội dung trong 01_sources thành trang trong 02_wiki — kể cả khi người dùng chỉ nêu tên sách/chương (Bindseil, Choudhry, During, Friedman, IMF) mà không nói chữ "ingest".
+description: Nạp nguồn từ 01_sources vào wiki 02_wiki theo schema dự án — **PHẢI dùng skill này cho mọi lượt cập nhật wiki từ tài liệu nguồn.** Trigger khi người dùng: nạp, thêm chương/sách, đọc tài liệu vào wiki, trích khái niệm, tạo trang, xử lý cụm tiếp theo, cập nhật trạng thái ingest — hoặc chỉ nêu tên tác giả (Bindseil, Choudhry, During, Friedman, IMF, Tata ALM) mà không nói "ingest". Không bỏ skill này dù người dùng không nói rõ ràng.
 ---
 
 # Ingest — nạp nguồn vào wiki
 
 Đọc toàn bộ `00_schema.md` trước khi tạo trang đầu tiên: ingest dùng gần như mọi mục (§1 frontmatter, §2 taxonomy, §3 đặt tên, §4 ngưỡng, §5 atomic, §6 liên kết, §7 thân bài, §8 title, §9 status, §10 nguồn, §11 inbox, §12 log).
+
+## Tham chiếu (Bundled resources)
+
+**Tài liệu bắt buộc đọc:**
+- `../../00_schema.md` — Schema wiki (§1–§12), định nghĩa mọi mục
+- `.claude/rules/source-management.md` — Quy tắc quản lý nguồn
+- `.claude/rules/wiki-pages.md` — Quy tắc trang wiki
+
+**Công cụ:**
+- `.claude/hooks/validate_wiki_page.py` — Validator hook, chạy tự động sau Write/Edit hoặc bằng `--all`
+
+**Skill phụ:**
+- `/writing-style` — Bộ quy tắc viết (gọi ở bước 3 trước khi viết thân bài)
+
+## Test prompts — kiểm tra skill hoạt động
+
+Dùng những ví dụ này để validate skill:
+- "Nạp ch.5–8 từ sách Choudhry Yield Curve Analysis vào wiki"
+- "Thêm khái niệm yield curve shift từ IMF Handbook 2024, phần chương 3"
+- "Tiếp tục ingest Tata ALM book — bước 1 là xác định phần còn lại ở state file"
 
 ## Quy trình
 
@@ -77,3 +97,17 @@ Hook `PostToolUse` chỉ bắt tool `Write|Edit`; file ghi bằng shell đi vòn
 - Ingest xong mà quên `## Sources` + `03_state/<source id>.md` → lượt sau phải dựng lại trạng thái từ văn xuôi `log.md`.
 - Chép nguyên chú thích vị trí từ trang khác mà không kiểm lại dải dòng → chú thích sai còn tệ hơn không có.
 - Ghi bất cứ file nào vào `01_sources/`, hoặc mở file nguồn bằng công cụ tự đổi ký tự xuống dòng → vi phạm luật cứng 1. Chỉ đọc nguồn bằng `sed -n`, `grep`, Read.
+
+## Xử lý lỗi
+
+**Nếu `--all` báo trang mồ côi sau bước 3:**
+- Thêm liên kết thực từ trang liên quan (không vá cho đủ chỉ tiêu). Câu lệnh `grep -l "title:" 02_wiki/*.md | xargs grep -l "<từ khoá>"` để tìm trang liên quan.
+
+**Nếu không tìm được trang liên quan nào:**
+- Ghi concept vào `_inbox.md` với ghi chú "concept cô lập từ <source id>, triage ở lượt lint sau".
+
+**Nếu lỗi không thể fix trước khi ghi log.md (ví dụ: liên kết bị hỏng, sourcenote sai format):**
+- DỪNG, không commit, không tạo log entry. Thông báo cho người dùng. Người dùng có thể revert bằng `git checkout`.
+
+**Nếu step 4 (liên kết) thất bại giữa chừng:**
+- Hủy các file trang đã tạo ở step 3 bằng `git checkout -- 02_wiki/`, rồi start lại từ bước 3 với danh sách trang đã chỉnh sửa.
