@@ -13,7 +13,7 @@ $$S_g = R_g - C_g, \qquad S_g - I_g = R_g - E_g$$
 
 (imf_macro_accounting, Ch.3, Government Saving-Investment Gap, d.2065–2081).
 
-Khoảng chênh này chỉ có ít đường lấp: vay ròng nước ngoài ($NFB_g$), vay hệ thống ngân hàng trong nước ($\Delta NDC_g$), và vay khu vực tư ngoài ngân hàng ($NB$); gọi tổng tài trợ là $F_g$ thì
+Khoảng chênh này chỉ có ít đường lấp: vay ròng nước ngoài ($NFB_g$), vay hệ thống ngân hàng trong nước ($\Delta NDC_g$, tức thay đổi [[net-credit-to-government|tín dụng ròng cho chính phủ]] của hệ thống ngân hàng), và vay khu vực tư ngoài ngân hàng ($NB$); gọi tổng tài trợ là $F_g$ thì
 
 $$F_g = NFB_g + \Delta NDC_g + NB, \qquad (S_g - I_g) + F_g = 0 \text{ (ex post)}$$
 

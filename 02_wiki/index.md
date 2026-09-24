@@ -362,6 +362,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[fixed-exchange-rates-make-the-money-supply-endogenous-while-floating-rates-restore-monetary-control]] — cố định = nội sinh, thả nổi = toàn quyền
 - [[sterilization-offsets-fx-intervention-but-only-temporarily]] — nghiệp vụ trung hòa và giới hạn, hội đồng tiền tệ
 - [[central-bank-balance-sheet-sterilization-capacity-depends-on-financial-market-depth-and-institutional-independence]] — *(analysis)* năng lực trung hòa bảng cân đối: đối chiếu quan điểm kiểm soát tiền cơ sở tuyệt đối (Cargill, Bindseil) với quyền kiểm soát không hoàn toàn do thị trường nông và sức ép tài khóa (IMF)
+- [[the-policy-anchor-decides-whether-net-foreign-assets-are-autonomous-on-the-central-bank-balance-sheet]] — *(analysis)* IMF (neo tỷ giá), Cargill (Mỹ, thả nổi), Bindseil (Eurosystem, mục tiêu lãi suất) đọc cùng bảng cân đối NHTW theo ba cách
 - [[perfect-capital-mobility-with-a-fixed-exchange-rate-strips-monetary-policy-of-independence]] — lãi suất trong nước bị ép về mức thế giới
 - [[currency-substitution-undermines-monetary-control]] — đô la hoá
 - [[financial-innovation-blurs-the-boundary-of-money]] — đổi mới tài chính, đánh đổi liên quan/kiểm soát

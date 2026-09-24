@@ -7,9 +7,9 @@ tags:
   - financial-innovation
   - fungibility
   - regulatory-dialectic
-sources: [cargill_central_bank_policy]
+sources: [cargill_central_bank_policy, imf_macro_accounting]
 status: draft
-last_updated: 2026-09-22
+last_updated: 2026-09-24
 ---
 
 Trong lịch sử điều hành chính sách tiền tệ, các công cụ tác động được chia thành hai nhóm tiếp cận đối lập: công cụ chung (general tools) và công cụ có chọn lọc (selective tools). Thomas F. Cargill sử dụng ẩn dụ về một khu rừng lớn để phân định bản chất của hai nhóm công cụ này: công cụ chung tập trung điều tiết quy mô tổng thể của cả khu rừng (tổng cung quỹ cho vay của nền kinh tế) và để các lực lượng thị trường tự do định đoạt việc phân bổ dòng vốn; ngược lại, công cụ chọn lọc can thiệp trực tiếp vào từng cái cây riêng lẻ nhằm hướng dòng tín dụng vào các lĩnh vực kinh tế cụ thể theo ý chí chủ quan của nhà chức trách (cargill_central_bank_policy, Ch.13, The Tools of Monetary Policy and the Decline of Selective Tools, d.4027–4028).
@@ -22,3 +22,5 @@ Sự thoái trào của các biện pháp kiểm soát tín dụng có chọn l�
 3. Tạo ra các tổn hại hệ thống và hậu quả ngoài ý muốn: Các can thiệp hành chính vào giá và hạn mức tín dụng thường bóp méo nghiêm trọng cơ chế định giá rủi ro, như trường hợp trần lãi suất huy động Regulation Q nhằm bảo hộ hệ thống tiết kiệm cho vay cuối cùng đã dẫn tới [[savings-and-loan-collapse-manifested-interest-rate-risk-and-disintermediation|sự sụp đổ hàng loạt của các hiệp hội S&L trong thập niên 1980]].
 4. Xung đột trực diện với xu thế tự do hóa và cạnh tranh thị trường: Các rào cản tín dụng định hướng hoàn toàn không tương thích với cấu trúc tài chính mở, liên thông và cạnh tranh cao hình thành từ [[us-financial-deregulation-eliminated-great-depression-era-competitive-barriers|tiến trình phi điều tiết hóa tài chính]] bốn thập kỷ qua.
 5. Hiệu quả vượt trội của các công cụ chung: Các công cụ vĩ mô chung—đặc biệt là nghiệp vụ thị trường mở—tỏ ra linh hoạt, chính xác và có sức lan tỏa kinh tế rộng lớn hơn nhiều mà không gây ra những hệ lụy [[government-credit-allocation-subsidies-distort-markets-and-induce-systemic-fragility|bóp méo phân bổ tín dụng nhà nước]].
+
+Sự suy tàn của các công cụ kiểm soát tín dụng có chọn lọc đã định hình lại căn bản phương pháp can thiệp vĩ mô: thay vì can thiệp hành chính vào từng danh mục cho vay vi mô dễ bị vô hiệu hoá bởi tính chuyển hoá linh hoạt của dòng vốn, các chương trình lập trình tài chính hiện đại của IMF chuyển trọng tâm sang kiểm soát tổng lượng qua việc ấn định trần [[net-domestic-credit|tín dụng trong nước ròng]] ($NDC$) hoặc [[net-domestic-assets|tài sản trong nước ròng]] ($NDA$); cơ chế này tôn trọng quyền tự chủ định giá và phân bổ vốn của các tổ chức tín dụng theo tín hiệu thị trường trong khi vẫn bảo đảm mục tiêu kiểm soát tổng thanh khoản và cán cân thanh toán (cargill_central_bank_policy, Ch.13, The Tools of Monetary Policy and the Decline of Selective Tools, d.4027–4032; imf_macro_accounting, Ch.5, Monetary Analysis, d.4831–4834).

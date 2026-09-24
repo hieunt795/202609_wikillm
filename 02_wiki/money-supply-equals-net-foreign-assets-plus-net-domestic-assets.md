@@ -3,7 +3,7 @@ title: money-supply-equals-net-foreign-assets-plus-net-domestic-assets
 type: concept
 tags: [monetary-policy, identities]
 sources: [imf_macro_accounting]
-status: stable
+status: draft
 last_updated: 2026-09-24
 ---
 
@@ -25,12 +25,12 @@ $$M2 = CY + DD + TD$$
 
 Đồng nhất thức này là bản sao ở cấp toàn hệ thống ngân hàng của [[reserve-money|đồng nhất thức bảng cân đối nhà chức trách tiền tệ]] — cùng cấu trúc "tài sản đối ngoại + tài sản trong nước", chỉ khác phạm vi hợp nhất. Áp cùng phép chia cho giá trị kỳ trước như với RM, tốc độ tăng trưởng M2 cũng tách thành tổng đóng góp thô của từng khoản mục tài sản:
 
-$$\frac{\Delta M2}{M2_{t-1}} = \frac{\Delta NFA}{M2_{t-1}} + \frac{\Delta NDCG}{M2_{t-1}} + \frac{\Delta CPS}{M2_{t-1}} + \frac{\Delta OIN_b}{M2_{t-1}}$$
+$$\frac{\Delta M2}{M2_{t-1}} = \frac{\Delta NFA}{M2_{t-1}} + \frac{\Delta NCG}{M2_{t-1}} + \frac{\Delta CPS}{M2_{t-1}} + \frac{\Delta OIN_b}{M2_{t-1}}$$
 
 rồi viết lại thành tích tốc độ tăng trưởng riêng nhân tỷ trọng trong M2:
 
-$$\frac{\Delta M2}{M2_{t-1}} = \frac{\Delta NFA}{NFA_{t-1}}\cdot\frac{NFA_{t-1}}{M2_{t-1}} + \frac{\Delta NDCG}{NDCG_{t-1}}\cdot\frac{NDCG_{t-1}}{M2_{t-1}} + \frac{\Delta CPS}{CPS_{t-1}}\cdot\frac{CPS_{t-1}}{M2_{t-1}} + \frac{\Delta OIN_b}{OIN_{b,t-1}}\cdot\frac{OIN_{b,t-1}}{M2_{t-1}}$$
+$$\frac{\Delta M2}{M2_{t-1}} = \frac{\Delta NFA}{NFA_{t-1}}\cdot\frac{NFA_{t-1}}{M2_{t-1}} + \frac{\Delta NCG}{NCG_{t-1}}\cdot\frac{NCG_{t-1}}{M2_{t-1}} + \frac{\Delta CPS}{CPS_{t-1}}\cdot\frac{CPS_{t-1}}{M2_{t-1}} + \frac{\Delta OIN_b}{OIN_{b,t-1}}\cdot\frac{OIN_{b,t-1}}{M2_{t-1}}$$
 
-(imf_macro_accounting, Ch.5, cùng mục, d.4794, d.4798–4802 — nguồn không định nghĩa lại $NDCG$ ở đây; theo cấu trúc song song với $NCG^*$ trong đồng nhất thức RM ở [[reserve-money]], khả năng cao đây là tín dụng ròng cho chính phủ tách riêng khỏi CPS, nhưng nguồn không nói rõ — không tự khẳng định chắc chắn. Nguồn cũng không đánh số hai công thức này, chỉ ghi "algebraic manipulations similar to equations 5.1–5.4").
+(imf_macro_accounting, Ch.5, cùng mục, d.4794, d.4798–4802). Nguồn ghi số hạng thứ hai là $NDCG$ và không định nghĩa lại nó ở đây. Wiki ghi là $NCG$, tức [[net-credit-to-government|tín dụng ròng cho chính phủ]] của toàn hệ thống ngân hàng, vì hai lẽ. Thứ nhất, số hạng này đứng cạnh $CPS$ ở đúng vị trí mà $NCG^*$ đứng trong đồng nhất thức RM ở [[reserve-money]]. Thứ hai, trái quyền ròng của hệ thống ngân hàng với chính phủ là một khoản mục tài sản của khảo sát tiền tệ (imf_macro_accounting, Ch.5, Monetary Analysis, d.4835; Box 5.6, d.4790). Nguồn không đánh số hai công thức này, chỉ ghi rằng phép biến đổi đại số tương tự các phương trình 5.1–5.4.
 
 Trong [[the-flow-of-funds-table-decomposes-the-economy-wide-identity-into-sector-columns|bảng flow of funds]], chính đồng nhất thức này đóng vai trò cột tài trợ của khu vực ngân hàng — khu vực duy nhất có khoảng chênh phi tài chính bằng 0 theo quy ước. Với mục đích phân tích tiền tệ, thay đổi NFA cần loại trừ phần [[valuation-adjustments-separate-transaction-flows-from-exchange-rate-revaluation-of-stocks|điều chỉnh định giá lại do biến động tỷ giá]] — trong thực hành, việc này được thực hiện bằng cách định giá các khoản mục ngoại tệ trên bảng cân đối theo một tỷ giá cố định và gộp phần chênh lệch định giá vào $OIN_b$, để $\Delta NFA$ chỉ còn phản ánh giao dịch thật (imf_macro_accounting, Ch.5, cùng mục, chú thích 14, d.4776).

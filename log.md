@@ -916,3 +916,44 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 ## [2026-09-24:22-31-00] review | 2 trang
 - Sửa claim sai (đặt reviewed model): valuation-adjustments-… (thêm nhóm thay đổi khác d.4843, giả định minh hoạ d.4853, locator VAd d.4845–4871, OIN d.4873; bỏ "đầy đủ nhất trong nguồn"); stock-flow analysis (locator VAd, thêm d.2339 no-Ponzi, bỏ xếp lãi nhập gốc vào Other)
 - valuation-adjustments-… stable → draft; không trang nào bị giữ lại; mục _inbox locator Box 5.8 đã xử lý, xoá
+
+## [2026-09-24:22-33-34] research | NDA (Net Domestic Assets)
+- Cluster 12 trang (10 core + 2 bổ sung theo người dùng); enrich 5 trang: 5 claim mới (IMF Ch.5), 5 link nội bộ; 5 trang stable → draft
+- Làm rõ cơ chế trần NDA (NDA ceiling), vai trò kinh tế vĩ mô NCG/CPS, hàm phản ứng lạm phát, triệt tiêu nội bộ CDMB* và kỹ thuật tỷ giá cố định OIN
+- Báo cáo: Claude outputs/research-2026-09-24-nda.md
+
+## [2026-09-24:22-49-31] research | NDC (Net Domestic Credit)
+- Cluster 13 trang (gỡ hạn mức theo yêu cầu người dùng); enrich 6 trang: 6 claim mới (IMF Ch.3, Ch.5; Cargill Ch.13), 6 link nội bộ; 5 trang stable → draft
+- Làm rõ cơ chế hấp thụ nợ công qua dự trữ dư thừa, bóp méo phân bổ tín dụng, né tránh trần NDC qua nợ đọng liên doanh nghiệp và chuyển từ kiểm soát chọn lọc sang trần tổng lượng
+- Báo cáo: Claude outputs/research-2026-09-24-ndc.md
+
+## [2026-09-24:22-59-53] research | OINs (Other Items Net)
+- Cluster 10 trang; enrich 5 trang: 8 claim mới (IMF Ch.5), 5 link nội bộ; 2 trang stable → draft
+- Làm rõ cấu phần OIN* và OIN_d (vốn, quỹ, lãi/lỗ, SDR, float), dấu kế toán nợ/tài sản, cơ chế hấp thu tái định giá VAd và đối chiếu 3 tầng IFS
+- Báo cáo: Claude outputs/research-2026-09-24-oins.md
+
+## [2026-09-24:23-10-20] research | net-credit-to-government
+- Cluster 14 trang (vượt trần 10 theo yêu cầu người dùng); enrich 4 trang: 6 claim mới (IMF Ch.3, Ch.5), 6 link; government-deposits stable → draft
+- 5 mục _inbox.md chờ /review-node; case Ba Lan Ch.5 d.5147–5177 dừng vì chưa [x]
+- Báo cáo: Claude outputs/research-2026-09-24-net-credit-to-government.md
+
+## [2026-09-24:23-14-41] review | 5 trang
+- Đạt sau sửa (reviewed_by: model): net-credit-to-government (đoạn 2 viết lại theo d.4835/d.2209, sửa chú thích d.5142, bổ sung chú thích), net-domestic-credit (đoạn 2 nói quá d.4837), government-borrowing-… (bỏ claim dự trữ dư thừa không có trong nguồn, sửa lý do link), high-government-financing-needs-… (bỏ đoạn 2 không có trong nguồn), fiscal-imbalance-… (dải dòng d.5769–5772 → d.5786–5788, bỏ "luôn nới lỏng")
+- Giữ lại: không; 1 mục _inbox.md cho credit-to-the-private-sector (sai tên mục ở chú thích d.5142)
+
+## [2026-09-24:23-25-04] research | thống nhất ký hiệu NCG
+- Quy ước: $NCG^*$ cấp nhà chức trách tiền tệ, $NCG$ cấp hệ thống ngân hàng; $NDCG$ trong công thức M2 đổi thành $NCG$ (ghi chú ký hiệu gốc); giữ $\Delta NDC_g$ trong đồng nhất thức tài trợ khu vực, thêm câu nối
+- 5 trang: net-credit-to-government (câu quy ước), net-domestic-credit, money-supply-… (stable → draft, bỏ câu rào đón về NDCG), government-borrowing-…, government-saving-investment-gap-… (chỉ thêm link)
+
+## [2026-09-24:23-41-36] research | bảng cân đối nhà chức trách tiền tệ
+- Cluster 17 trang (vượt trần 10 theo yêu cầu người dùng); enrich 4 trang: 7 claim mới (IMF, Bindseil, Cargill), 7 link, 1 analysis (neo chính sách quyết định NFA có là nhân tố tự định); typical, central-bank, autonomous-factors stable → draft
+- 7 mục _inbox.md chờ /review-node
+- Báo cáo: Claude outputs/research-2026-09-24-monetary-authorities-balance-sheet.md
+
+## [2026-09-24:23-46-32] review | 5 trang
+- Đã sửa, đặt reviewed_by: model: the-analytical-… (OIN* ngược chiều d.4624; "mỗi nguồn gốc ứng một công cụ" sai: dự trữ bắt buộc qua bên nợ), sterilization-capacity-… (đọc sai Bindseil, công thức Cargill không giải mã được trong md, d.5065–5070 → d.5060–5062), claims-on-DMB (ghép cặp hợp nhất sai), monetary-accounts-net-… (bỏ "khu vực tư gộp" và lý do tự thêm, bổ sung lý do 2 d.4612), consolidation-of-… (bỏ lý do tính trùng, sửa link M2)
+- 3 trang stable → draft; 2 mục _inbox.md mới (locator sterilization-offsets; title/type 4 trang cho lint)
+
+## [2026-09-24:23-51-01] review | 4 trang
+- Đã sửa, đặt reviewed_by: model: the-typical-… (danh mục Box 5.1, bỏ "định chế phi tài chính"), credit-to-the-private-sector (bỏ "động lực chủ yếu của NDA", sửa d.4837 nói quá, bỏ mốc 1991–94, sửa tên mục d.5142), central-bank (Bank of Ireland không "tư nhân", HKMA không "ủy thác in", đoạn giám sát viết lại theo d.2600–2602, nhiệm vụ kép theo d.4690–4708, sửa 4 chú thích lệch dòng)
+- Đạt, chỉ sửa chú thích: sterilization-offsets-… (d.5065–5070 → d.5062, d.5071–5083 → d.5082)

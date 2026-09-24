@@ -2,15 +2,15 @@
 title: Consolidation of monetary authorities and DMB accounts eliminates internal claims to determine broad money
 type: analysis
 tags: [monetary-accounts, imf]
-status: stable
+status: draft
 sources: [imf_macro_accounting]
 last_updated: 2026-09-24
 reviewed: 2026-09-24
 reviewed_by: model
 ---
 
-Quá trình xây dựng Khảo sát Tiền tệ (Monetary Survey) đòi hỏi cơ quan thống kê thực hiện hợp nhất (consolidation) bảng cân đối của Nhà chức trách tiền tệ (Monetary Authorities) và Ngân hàng nhận tiền gửi (Deposit Money Banks) thay vì chỉ cộng gộp số học (aggregation) đơn thuần (imf_macro_accounting, Ch.5, d.4566–4568).
+Khảo sát tiền tệ (monetary survey) được lập bằng cách hợp nhất (consolidation) bảng cân đối của nhà chức trách tiền tệ với bảng cân đối của các ngân hàng nhận tiền gửi. Hợp nhất khác cộng gộp (aggregation) ở chỗ nó loại bỏ các giao dịch giữa những đơn vị được hợp nhất (imf_macro_accounting, Ch.5, Accounting Principles Underlying Monetary Statistics, d.4566). Việc này làm theo hai bậc. Trước hết, bảng cân đối của mọi ngân hàng nhận tiền gửi được hợp nhất với nhau, và các khoản phải thu, phải trả liên ngân hàng bị bù trừ. Sau đó, bảng cân đối của nhà chức trách tiền tệ được hợp nhất với bảng đã hợp nhất của các ngân hàng (imf_macro_accounting, Ch.5, cùng mục, d.4566).
 
-Kỹ thuật hợp nhất sẽ triệt tiêu hoàn toàn các giao dịch nội bộ và yêu sách chéo (internal claims) giữa các tổ chức trong cùng hệ thống. Ví dụ, khoản tiền gửi dự trữ của ngân hàng thương mại tại ngân hàng trung ương và các khoản vay tái cấp vốn của ngân hàng trung ương cho ngân hàng thương mại sẽ bị loại trừ khi hợp nhất.
+Giữa nhà chức trách tiền tệ và các ngân hàng có hai cặp trái quyền bị loại. Cặp thứ nhất là dự trữ của ngân hàng tại ngân hàng trung ương, khớp với phần dự trữ ngân hàng trong tiền dự trữ. Cặp thứ hai là tín dụng của nhà chức trách tiền tệ cho ngân hàng, khớp với khoản "tín dụng từ ngân hàng trung ương" bên nợ của ngân hàng. Trong ví dụ số của nguồn, hai cặp này là 200 và 85 (imf_macro_accounting, Ch.5, Appendix, d.5546, d.5564–5569), như trình bày ở [[a-worked-example-shows-how-monetary-authorities-dmb-and-nbfi-balance-sheets-reconcile-into-the-financial-survey]].
 
-Việc triệt tiêu các yêu sách nội bộ nhằm mục đích xác định chính xác quy mô cung tiền thực tế (như [[narrow-money-m1|M1]], [[quasi-money|M2]]) mà hệ thống ngân hàng cung cấp cho các khu vực kinh tế khác. Nếu chỉ tổng hợp số học, bảng cân đối chung sẽ bị tính trùng (double counting) các giao dịch trung gian, dẫn đến thổi phồng quy mô tiền tệ so với lượng thanh khoản thực sự lưu thông trong nền kinh tế.
+Sau khi hợp nhất, tài sản và nợ của khảo sát tiền tệ là tài sản và nợ của toàn hệ thống ngân hàng (imf_macro_accounting, Ch.5, The Monetary Survey, d.4711). Bên nợ cho lượng tiền mà hệ thống ngân hàng tạo ra: [[narrow-money-m1|tiền hẹp M1]] và [[money-aggregates-form-a-nested-hierarchy-from-narrow-money-to-broad-liquidity|tiền rộng M2]] (imf_macro_accounting, Ch.5, cùng mục, d.4713–4719). Mục đích nguồn nêu cho khảo sát tiền tệ là cung cấp kịp thời số liệu tiền tệ và tín dụng của cả hệ thống ngân hàng, để người làm chính sách theo dõi và điều chỉnh chính sách tiền tệ khi cần (imf_macro_accounting, Ch.5, cùng mục, d.4711).

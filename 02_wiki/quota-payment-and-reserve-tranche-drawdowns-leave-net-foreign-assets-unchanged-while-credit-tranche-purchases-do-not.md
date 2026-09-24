@@ -7,7 +7,7 @@ status: stable
 last_updated: 2026-09-24
 ---
 
-Giao dịch giữa một nước thành viên và IMF được ghi trên bảng cân đối của [[central-bank|nhà chức trách tiền tệ]]: nắm giữ SDR được xếp vào tài sản đối ngoại; phần đối ứng của việc phân bổ SDR là một khoản nợ trong tài khoản vốn/khoản mục khác ròng; [[imf-quota-and-credit-tranches-determine-a-members-reserve-position-in-the-fund|vị thế dự trữ tại Quỹ]] (RPF) nằm ở phía tài sản đối ngoại, còn phần sử dụng tín dụng Quỹ nằm ở phía nợ đối ngoại (imf_macro_accounting, Ch.5, Box 5.4, Transactions with the IMF, d.4699–4703).
+Giao dịch giữa một nước thành viên và IMF được ghi trên bảng cân đối của [[central-bank|nhà chức trách tiền tệ]]: nắm giữ SDR được xếp vào tài sản đối ngoại; phần đối ứng của việc phân bổ SDR là một khoản nợ trong tài khoản vốn/[[other-items-net|khoản mục khác ròng]]; [[imf-quota-and-credit-tranches-determine-a-members-reserve-position-in-the-fund|vị thế dự trữ tại Quỹ]] (RPF) nằm ở phía tài sản đối ngoại, còn phần sử dụng tín dụng Quỹ nằm ở phía nợ đối ngoại (imf_macro_accounting, Ch.5, Box 5.4, Transactions with the IMF, d.4699–4703).
 
 Thanh toán hạn ngạch và mua hạn mức tín dụng đầu tiên (first credit tranche) là hai ví dụ giao dịch để nguyên tài sản đối ngoại ròng: khi đóng hạn ngạch, phần tăng vị thế dự trữ tại Quỹ được bù đúng bằng phần giảm dự trữ ngoại hối đã dùng để đóng; khi mua hạn mức tín dụng, phần ngoại hối tăng thêm từ khoản vay bù đúng bằng phần nợ đối ngoại tăng thêm (sử dụng tín dụng Quỹ) (imf_macro_accounting, Ch.5, cùng mục, d.4703–4706). Ngược lại, một đợt phân bổ SDR mới làm tăng tài sản đối ngoại ròng thực sự, vì phần tăng tài sản không đi kèm một khoản nợ tương ứng (imf_macro_accounting, Ch.5, cùng mục, d.4706–4708).
 
