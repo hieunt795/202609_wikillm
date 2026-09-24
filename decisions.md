@@ -8,6 +8,12 @@
 >
 > Từ 2026-09-17, mục cũ ghi "Lý do: `00_schema.md` §X" được hiểu là tiểu mục §X của mục *[2026-09-17] Lý do dời từ `00_schema.md`* bên dưới; bản schema còn lý do: `git show 812200a:00_schema.md`.
 
+## [2026-09-24] Mở rộng C1/B1, thêm D3 cho writing-style; tách references/
+
+- **Quyết định:** Mở rộng nội dung rule C1 (chủ thể cụ thể) và B1 (quota động từ sáo) để làm rõ định nghĩa; thêm rule D3 (tiếng Anh trong văn bản tiếng Việt) với cảnh báo dịch sai; tạo thư mục `references/` trong `writing-style` để chứa chi tiết, ví dụ, danh sách (progressive disclosure). Giữ nguyên số ID rule, chỉ mở rộng nội dung ngắn gọn trỏ link.
+- **Lý do:** Audit skill writing-style (2026-09-24) phát hiện 3 vấn đề ưu tiên cao: (1) C1 không rõ loại chủ thể nào tính là "cụ thể" — gây áp dụng không nhất quán; (2) B1 không định nghĩa phạm vi tính "toàn văn bản" — dễ misinterpret khi ingest; (3) thiếu rule về tiếng Anh → không ngăn tái diễn lỗi dịch nghiêm trọng "sterilization → tiệt trùng" (y học sai, đã sửa 8 file wiki trong audit 2026-09-23). Progressive disclosure (tách chi tiết sang `references/`) giúp (a) SKILL.md giữ gọn dễ đọc, (b) cập nhật danh sách/ví dụ mà không động SKILL.md → bảo vệ prompt cache, (c) model chỉ load chi tiết khi cần. Tiền lệ đầu tiên dùng thư mục `references/` trong project.
+- **File thay đổi:** `.claude/skills/writing-style/SKILL.md` (C1/B1/D3 mở rộng, +6 dòng so với 158 dòng gốc → ~164 dòng), `.claude/skills/writing-style/references/subject-guidelines.md` (mới), `.claude/skills/writing-style/references/hollow-verbs.md` (mới), `.claude/skills/writing-style/references/vietnamese-translation-errors.md` (mới, seed 1 case xác nhận).
+
 ## [2026-09-14] Thêm mục `## Sources` vào `index.md`
 - **Quyết định:** bảng trạng thái cấp nguồn ở đầu `index.md`, cập nhật mỗi lượt ingest kể cả lượt không tạo trang.
 - **Lý do:** trước đó muốn biết nguồn nạp tới đâu phải diễn giải lại văn xuôi trong `log.md`.

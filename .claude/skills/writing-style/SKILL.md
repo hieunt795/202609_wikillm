@@ -16,6 +16,7 @@ Rule số là ID ổn định — skill khác trích dẫn qua số ("áp A1, C1
 3. Tự vấn: "Câu này có đọc như AI viết không?" — sửa nốt phần còn sót.
 4. Nếu đoạn có box giải thích, định nghĩa thuật ngữ, hoặc số liệu dẫn chứng: đối chiếu với mẫu tham chiếu ở cuối file trước khi chốt.
 5. Nếu là trang wiki dạng phẳng (không heading trong thân bài): áp thêm ràng buộc ở cuối mục §F (profile wiki). Nếu là báo cáo/tài liệu khác: áp profile báo cáo.
+6. Rule nào trỏ tới `references/` chỉ cần mở khi gặp trường hợp nghi ngờ cụ thể (ví dụ: nghi ngờ câu không có chủ thể cụ thể thì mở `references/subject-guidelines.md`), không bắt buộc đọc trước.
 
 ---
 
@@ -37,7 +38,7 @@ Rule số là ID ổn định — skill khác trích dẫn qua số ("áp A1, C1
 
 ## B — Từ vựng
 
-**B1. Hạn ngạch động từ/cụm sáo rỗng — tối đa 3 lần/từ trong toàn văn bản:** *dẫn đến hệ quả là, bộc lộ, kích hoạt, thể hiện rõ nét, triệt tiêu, bào mòn, vô hiệu hóa, ép buộc, phá hủy, thiết lập.* Thay bằng từ đồng nghĩa thường (do đó/vì vậy, thể hiện qua/phản ánh, thúc đẩy/gây ra, rõ ràng, làm mất/thu hẹp...).
+**B1. Hạn ngạch động từ/cụm sáo rỗng — tối đa 3 lần/từ:** phạm vi tính = mỗi trang wiki riêng, mỗi section báo cáo riêng, khi ingest lượt lớn tính từng trang không cộng dồn. Danh sách từ cấm và từ thay thế: xem `references/hollow-verbs.md`.
 
 **B2. Cấm tuyệt đối từ cực đoan thuộc trường nghĩa bạo lực/thảm họa trong văn phân tích kinh tế:** *chết người, bạo liệt, ký sinh (cho nền kinh tế/mô hình), tàn khốc, khốc liệt, thiêu rụi, nghiền nát, quét sạch, tàn phá (không có thảm họa thật), đào mồ chôn.* Mô tả biến động mạnh chỉ cần đúng động từ tài chính chuẩn ("lao dốc", "biến động mạnh", "đảo chiều liên tục") — không cần từ cực đoan để nhấn mạnh.
 
@@ -53,7 +54,7 @@ Rule số là ID ổn định — skill khác trích dẫn qua số ("áp A1, C1
 
 ## C — Chủ thể và tính cụ thể
 
-**C1. Mọi câu phân tích nhân-quả phải có chủ thể hành động cụ thể** — tổ chức, biến số, hoặc nhóm chủ thể xác định, không phải danh ngữ trừu tượng. Không xác định được chủ thể là dấu hiệu luận điểm chưa đủ cơ sở — kiểm tra lại trước khi viết.
+**C1. Mọi câu phân tích nhân-quả phải có chủ thể hành động cụ thể** — (1) tổ chức cụ thể (NHNN, IMF, ngân hàng thương mại), (2) biến số kinh tế đóng vai trò tác nhân (lãi suất, tỷ giá, cơ sở tiền tệ), hoặc (3) nhóm chủ thể xác định (các nhà đầu tư, người sử dụng lao động). Không phải danh ngữ trừu tượng (cơ chế, quy trình, rủi ro, xu hướng) hay tác nhân mơ hồ (thị trường, người ta, họ không định danh). Phân loại, ví dụ sai→đúng: `references/subject-guidelines.md`. Không xác định được chủ thể là dấu hiệu luận điểm chưa đủ cơ sở — kiểm tra lại trước khi viết.
 
 **C2. Mọi số liệu thị trường/kỳ báo cáo phải gắn nguồn hoặc kỳ quan sát cụ thể** — dạng "[X] theo [nguồn], tính đến [thời điểm]", hoặc nếu văn bản đã định nghĩa một "kỳ báo cáo" chung ở đầu bài thì có thể neo vào đó xuyên suốt. Áp dụng cho số liệu mới đưa vào văn bản; khi chỉ rewrite/biên tập câu chữ của một đoạn đã có sẵn mà không thêm số liệu mới, không bắt buộc tự chế nguồn cho số liệu vốn đã thiếu nguồn trong bản gốc, trừ khi người dùng yêu cầu bổ sung. Với trang wiki có sẵn quy ước chú thích vị trí nguồn riêng, rule này chỉ nhắc lại, không thêm nghĩa vụ mới.
 
@@ -64,6 +65,8 @@ Rule số là ID ổn định — skill khác trích dẫn qua số ("áp A1, C1
 **D1. Một khái niệm — một thuật ngữ chuẩn dùng nhất quán toàn văn bản.** Định nghĩa lần đầu kèm viết tắt nếu có, sau đó dùng viết tắt xuyên suốt. Không đảo giữa các biến thể đồng nghĩa trong cùng một văn bản.
 
 **D2. Quy tắc viết hoa:** tên tổ chức quốc tế viết tắt tiếng Anh kèm chú giải lần đầu ("Quỹ Tiền tệ Quốc tế (IMF)" → sau đó "IMF"); tên chính sách/văn bản pháp luật Việt Nam viết hoa chữ đầu mỗi từ danh riêng; thuật ngữ kinh tế thông dụng không viết hoa ("lãi suất", "tín dụng", "tỷ giá").
+
+**D3. Quy tắc tiếng Anh trong văn bản tiếng Việt:** Nếu thuật ngữ tiếng Anh có dịch tiếng Việt ngắn gọn tương đương — định nghĩa 1 lần dạng "[Dịch Việt] ([Tiếng Anh])" rồi dùng bản dịch xuyên suốt (áp D1). Ví dụ: "hợp đồng tương lai (futures)", "hợp đồng mua lại (repurchase agreement hay repo)", sau đó dùng "hợp đồng tương lai" hoặc "repo". Nếu không có dịch ngắn gọn — giữ tiếng Anh xuyên suốt (ví dụ: haircut). **Cảnh báo:** một số thuật ngữ bị dịch sai nghiêm trọng (dịch máy theo nghĩa chuyên ngành khác) — đối chiếu `references/vietnamese-translation-errors.md` trước khi tự dịch thuật ngữ mới gặp lần đầu.
 
 ## E — Giọng văn
 
