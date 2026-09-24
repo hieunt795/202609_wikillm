@@ -902,3 +902,17 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Bổ sung liên kết mạng từ the-quantity-theory-links-money-velocity-prices-and-output sang transition-economies-experience-large-discrete-jumps-in-money-velocity; nâng transition-economies-experience-large-discrete-jumps-in-money-velocity từ draft lên stable (đạt đủ backlink >= 2, 0 conflict).
 - Cập nhật last_updated: 2026-09-24 và hoàn tất 100% đợt đại tu toàn diện 4 Batch của Chương 5 IMF Macroeconomic Accounting.
 - Cập nhật 03_state/imf_macro_accounting.md; validate_wiki_page.py --all đạt 100% sạch (744 trang quét, 0 lỗi, 0 mồ côi).
+
+## [2026-09-24:22-21-55] research | stock và flow — quan hệ động học
+- Cluster 13 trang (người dùng duyệt vượt giới hạn 10); enrich 4 trang: 8 claim mới (IMF Ch.4, Cargill Ch.3), 6 link, 1 analysis mới; 3 trang stable → draft
+- 4 mục _inbox chờ /review-node (d.3470, d.1149, diễn giải lãi ở debt-dynamics, link/locator monetary-statistics)
+- Báo cáo: Claude outputs/research-2026-09-24-stock-flow.md
+
+## [2026-09-24:22-27-12] review | 5 trang
+- Sửa claim sai (đặt reviewed model): balance-of-payments-flows-differ-… (hai tồn kho là dự trữ và nợ nước ngoài, d.3470); flow-of-funds-fundamental-… ("tiết kiệm lũy kế" → tiết kiệm của kỳ; bỏ "hữu hình"); debt-dynamics-… (lý do vắng số hạng lãi, d.3875)
+- monetary-statistics-… (bỏ GFS, link dời chỗ, locator); foreign-currency-items-… (bỏ gán tỷ giá bình quân cho BOP, thêm điều kiện OIN d.4873, bỏ câu tiền cơ sở); 2 trang stable → draft
+- Không trang nào bị giữ lại; 1 mục _inbox mới: locator Box 5.8 lệch ở valuation-adjustments-… và trang analysis stock-flow
+
+## [2026-09-24:22-31-00] review | 2 trang
+- Sửa claim sai (đặt reviewed model): valuation-adjustments-… (thêm nhóm thay đổi khác d.4843, giả định minh hoạ d.4853, locator VAd d.4845–4871, OIN d.4873; bỏ "đầy đủ nhất trong nguồn"); stock-flow analysis (locator VAd, thêm d.2339 no-Ponzi, bỏ xếp lãi nhập gốc vào Other)
+- valuation-adjustments-… stable → draft; không trang nào bị giữ lại; mục _inbox locator Box 5.8 đã xử lý, xoá

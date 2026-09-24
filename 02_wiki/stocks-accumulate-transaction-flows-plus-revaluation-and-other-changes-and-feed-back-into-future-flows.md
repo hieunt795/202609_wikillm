@@ -1,0 +1,24 @@
+---
+title: stocks-accumulate-transaction-flows-plus-revaluation-and-other-changes-and-feed-back-into-future-flows
+type: analysis
+tags: [identities, stocks, accounting, sustainability]
+sources: [imf_macro_accounting, cargill_central_bank_policy]
+status: draft
+last_updated: 2026-09-24
+reviewed: 2026-09-24
+reviewed_by: model
+---
+
+Một tồn lượng trong tài khoản vĩ mô thay đổi giữa hai thời điểm vì ba loại nguyên nhân: luồng giao dịch trong kỳ, định giá lại do tỷ giá và giá cả biến động, và các thay đổi khác không phải giao dịch. [[net-international-investment-position|Vị thế đầu tư quốc tế ròng]] là nơi nguồn IMF nêu đủ cả ba thành phần trong cùng một định nghĩa (imf_macro_accounting, Ch.4, The Net International Investment Position, d.3547). Box 5.8 nêu cụ thể nhóm thay đổi khác, gồm phân bổ hoặc huỷ SDR và việc chủ nợ xoá nợ (imf_macro_accounting, Ch.5, Box 5.8, Valuation Adjustments, d.4843). Viết gọn lại thành
+
+$$Stock_t = Stock_{t-1} + Flow_t + Rev_t + Other_t$$
+
+trong đó chỉ $Flow_t$ xuất hiện trong các bảng luồng như cán cân thanh toán hay ngân sách, còn $Rev_t$ và $Other_t$ chỉ lộ ra khi so hai tồn lượng.
+
+Ở phần giao dịch, đẳng thức luồng của một khu vực là sai phân của đẳng thức tồn lượng. Lấy thay đổi hai vế của bảng cân đối $RA + FA = LIAB + NW$ giữa hai kỳ rồi đổi tên các đại lượng sẽ cho [[flow-of-funds-fundamental-equation-links-real-and-financial-decisions|phương trình cơ bản của bảng luồng vốn]] $(S - I) = (L - B)$ (cargill_central_bank_policy, Ch.3, Sector Budgets, Income and Balance Sheets and the Fundamental Flow of Funds Equation, d.1157–1174). Tiết kiệm của kỳ nối báo cáo thu nhập với bảng cân đối, vì nó luôn bằng thay đổi tài sản ròng (cargill_central_bank_policy, Ch.3, cùng mục, d.1149–1151). Cargill đo thay đổi bảng cân đối bằng giao dịch, nên đẳng thức $\Delta NW = S$ chỉ đúng khi bỏ qua phần định giá lại; đây là suy luận của trang này, nguồn không bàn trực tiếp.
+
+Phần định giá lại là lý do không dùng chênh lệch tồn lượng thay cho luồng được. Với một khoản mục ngoại tệ, phần định giá lại bằng $A_{t-1}^S(E_t - E_{t-1}) + \Delta A_t^S(E_t - E_t^*)$, nên tồn lượng đầu kỳ càng lớn thì biến động tỷ giá càng làm chênh lệch lệch xa luồng giao dịch (imf_macro_accounting, Ch.5, Box 5.8, Valuation Adjustments, d.4869–4871), như phân tích ở [[valuation-adjustments-separate-transaction-flows-from-exchange-rate-revaluation-of-stocks]]. Thống kê tiền tệ gặp vấn đề này trực tiếp: dữ liệu gốc là tồn lượng, còn luồng chỉ suy ra bằng chênh lệch giữa hai kỳ (imf_macro_accounting, Ch.5, Accounting Principles Underlying Monetary Statistics, d.4560), theo [[monetary-statistics-are-stock-data-recorded-on-a-cash-basis]]. Cán cân thanh toán xử lý theo hướng ngược lại: BPM5 loại mọi thay đổi định giá, tiền tệ hoá vàng và phân bổ SDR khỏi dữ liệu luồng và chỉ ghi chúng vào tồn lượng (imf_macro_accounting, Ch.4, Box 4.2, d.3521), áp cụ thể cho [[reserve-assets-in-the-balance-of-payments-are-flows-not-stocks|tài sản dự trữ]] (imf_macro_accounting, Ch.4, (ii) Capital and financial account, d.3589–3591). Với nợ nước ngoài, [[debt-dynamics-equation-links-the-stock-of-external-debt-to-disbursements-and-amortization|phương trình tồn kho nợ]] chỉ là xấp xỉ vì định giá lại theo đồng tiền, lãi nhập gốc và xoá nợ (imf_macro_accounting, Ch.4, Debt Stocks and Debt-Creating Flows, d.3869); trong đó xoá nợ thuộc nhóm $Other_t$ theo Box 5.8 (imf_macro_accounting, Ch.5, Box 5.8, d.4843).
+
+Chiều ngược lại, tồn lượng sinh ra luồng của kỳ sau. Trong [[public-debt-dynamics-depend-on-the-primary-balance-seigniorage-and-the-interest-growth-gap|phương trình động thái nợ công]] $\dot{d} = p_d + (r - g) \cdot d - s$, số hạng $(r - g) \cdot d$ là luồng do chính tồn lượng nợ tạo ra, tức quán tính tự thân của tỷ lệ nợ (imf_macro_accounting, Ch.3, The Sustainability of Fiscal Policy, d.2248–2268). Ở khu vực đối ngoại, tồn lượng tài sản và nợ được dùng để xác định thu nhập đầu tư ghi trong tài khoản vãng lai, nên hai bộ số liệu phải dùng chung một hệ phân loại (imf_macro_accounting, Ch.4, The Net International Investment Position, d.3549). Thâm hụt vãng lai đến lượt nó lại kéo vị thế tài sản đối ngoại ròng xuống (imf_macro_accounting, Ch.4, The Capital and Financial Account and External Debt, d.3839), theo [[current-account-balance-equals-the-change-in-net-foreign-assets]], và vòng giữa tồn lượng với luồng khép lại.
+
+Cộng dồn ràng buộc luồng qua mọi kỳ, kèm điều kiện loại trừ trò Ponzi (imf_macro_accounting, Ch.3, chú thích cuối mục, d.2339), cho ra ràng buộc tồn lượng liên thời gian: nợ hiện tại theo % GDP phải bằng giá trị hiện tại của các thặng dư cơ bản và seigniorage kỳ vọng (imf_macro_accounting, Ch.3, The Sustainability of Fiscal Policy, d.2297–2305), như ở [[government-solvency-is-a-forward-looking-balance-sheet]]. Vì vậy, phân tích tính bền vững phải theo dõi cả hai chiều. Luồng quyết định tồn lượng tương lai, còn tồn lượng hiện tại cùng lãi suất và tỷ giá quyết định luồng phải trả.

@@ -103,6 +103,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[valuation-in-the-balance-of-payments]] — giá thị trường, hàng đổi hàng, fob/cif
 - [[unit-of-account-in-the-balance-of-payments]] — quy đổi về ngoại tệ ổn định
 - [[net-international-investment-position]] — tài sản trừ nợ đối ngoại tại một thời điểm
+- [[stocks-accumulate-transaction-flows-plus-revaluation-and-other-changes-and-feed-back-into-future-flows]] — *(analysis)* stock = stock kỳ trước + giao dịch + định giá lại + thay đổi khác; stock sinh flow kỳ sau
 - [[balance-of-payments-manual-fifth-edition]] — BPM5, khác biệt với BPM4
 
 **Cán cân thanh toán — phân loại chuẩn (Ch.4 cụm B)**
