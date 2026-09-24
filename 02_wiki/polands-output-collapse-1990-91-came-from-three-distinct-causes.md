@@ -7,7 +7,7 @@ status: stable
 last_updated: 2026-09-15
 ---
 
-Sản lượng thực của Ba Lan sụt mạnh trong 1990–91 khi nền kinh tế rơi vào suy thoái sâu; đợt suy thoái khiến giới phân tích bất ngờ, và nhìn chung được quy về ba nhóm nguyên nhân: vĩ mô, thể chế và đo lường (imf_macro_accounting, Ch.2, Real Sector Developments, Output and Demand, d.1189).
+Sản lượng thực của Ba Lan sụt mạnh trong 1990–91 khi nền kinh tế rơi vào suy thoái sâu; đợt suy thoái khiến giới phân tích bất ngờ, và quy về ba nhóm nguyên nhân: vĩ mô, thể chế và đo lường (imf_macro_accounting, Ch.2, Real Sector Developments, Output and Demand, d.1189).
 
 Bối cảnh là nền kinh tế đã yếu đi nhiều trong thập niên 1980 sau mấy lần cải cách hệ thống kế hoạch không thành; tới 1989 Ba Lan đứng bên bờ [[hyperinflation|siêu lạm phát]], lạm phát tháng 10 lên 55% và tăng trưởng thực gần như bằng không (imf_macro_accounting, Ch.2, cùng mục, d.1187). Chính phủ đáp lại bằng một chương trình cải cách tham vọng, được mô tả là cách ổn định hóa "hơi dị hướng", gồm siết chính sách tài chính, một [[exchange-rate|tỷ giá]] cố định tạm thời làm [[nominal-anchor|neo danh nghĩa]] để chặn siêu lạm phát, và một [[incomes-policy|chính sách thu nhập dựa trên thuế]] để kiềm chế tăng lương (imf_macro_accounting, Ch.2, cùng mục, d.1187).
 

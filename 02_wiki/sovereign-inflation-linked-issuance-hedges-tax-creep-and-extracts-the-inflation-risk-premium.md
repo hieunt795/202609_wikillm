@@ -3,7 +3,7 @@ title: sovereign-inflation-linked-issuance-hedges-tax-creep-and-extracts-the-inf
 type: concept
 tags: [sovereign-debt, tax-creep, progressive-tax, inflation-risk-premium, debt-management]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

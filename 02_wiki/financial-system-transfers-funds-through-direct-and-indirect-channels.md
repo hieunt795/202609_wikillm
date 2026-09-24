@@ -5,6 +5,8 @@ tags: [financial-system, direct-finance, indirect-finance, financial-markets, ba
 sources: [cargill_central_bank_policy]
 status: stable
 last_updated: 2026-09-21
+reviewed: 2026-09-24
+reviewed_by: model
 ---
 
 Trong [[financial-and-monetary-regime|chế độ tài chính và tiền tệ]], nguồn vốn được chuyển dịch từ các chủ thể thặng dư sang các chủ thể thâm hụt thông qua hai kênh cơ bản có tính chất vận hành khác biệt: tài chính trực tiếp (direct finance) và tài chính gián tiếp (indirect finance hay intermediation finance) (cargill_central_bank_policy, Ch.3, Introduction & Two Channels of Finance, d.1071–1080, d.1205–1226).

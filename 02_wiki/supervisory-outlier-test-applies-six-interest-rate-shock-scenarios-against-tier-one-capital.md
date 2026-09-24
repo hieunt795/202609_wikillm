@@ -5,6 +5,8 @@ tags: [supervisory-outlier-test, irrbb, eba, capital-adequacy, stress-testing]
 sources: [tata_bank_alm]
 status: stable
 last_updated: 2026-09-23
+reviewed: 2026-09-24
+reviewed_by: model
 ---
 
 Bài kiểm tra ngoại lệ giám sát (Supervisory Outlier Test — SOT) là khuôn khổ định lượng an toàn bắt buộc đối với các ngân hàng thương mại tại Liên minh Châu Âu theo Chỉ thị Vốn Yêu cầu (CRD IV) và Quy định Ủy quyền của Ủy ban Châu Âu (EU) 2024/856, nhằm đánh giá khả năng chống chịu của [[interest-rate-risk-in-the-banking-book-irrbb]] trước các cú sốc lãi suất đột ngột và bất ngờ (tata_bank_alm, Ch.1, Changes in Interest Rates, d.601). Khác với các dự báo hội tụ tỷ giá kỳ hạn thông thường vốn đã được phản ánh vào giá thị trường, SOT giả định các dịch chuyển tức thời của đường cong lợi suất tác động trực tiếp lên toàn bộ các vị thế hiện hữu trên bảng cân đối của tổ chức tín dụng (tata_bank_alm, Ch.1, Changes in Interest Rates, d.599).

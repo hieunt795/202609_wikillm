@@ -1,0 +1,14 @@
+---
+title: markov-property-reduces-contingent-claim-valuation-to-single-state-pdes
+type: concept
+tags: [markov-property, contingent-claims, interest-rate-models, valuation, pde, quantitative-finance]
+sources: [choudhry_analysing_yield_curve]
+status: draft
+last_updated: 2026-09-24
+---
+
+Đặc tính Markov (Markov property) là giả định cấu trúc then chốt trong mô hình hóa lãi suất ngắn hạn, quy định rằng phân phối xác suất của lãi suất tại bất kỳ thời điểm tương lai nào chỉ phụ thuộc duy nhất vào mức lãi suất hiện tại $r(t)$ mà hoàn toàn độc lập với toàn bộ quỹ đạo lịch sử đã đưa nó tới mức đó (choudhry_analysing_yield_curve, Ch.3, The Short-Term Rate and the Yield Curve, d.1960; Appendix 3.1, d.2060–2062). Trong lý thuyết kinh tế tài chính, việc xem xét lãi suất ngắn hạn như một quá trình Markov tương đương với giả định thị trường hiệu quả dạng vừa (semi-strong form efficient market), khẳng định rằng mọi dữ liệu lịch sử trong quá khứ đã được chiết khấu và phản ánh trọn vẹn vào giá trị tức thời hiện tại (choudhry_analysing_yield_curve, Ch.3, Appendix 3.1, d.2060).
+
+Ý nghĩa thực tiễn mang tính quyết định của đặc tính Markov đối với toán tài chính là việc loại bỏ tính phụ thuộc đường dẫn (path-independence) trong định giá các quyền đòi dự phòng (contingent claims) như quyền chọn trái phiếu, hợp đồng trần/sàn lãi suất (caps/floors) và hoán đổi (swaps) (choudhry_analysing_yield_curve, Ch.3, The Short-Term Rate and the Yield Curve, d.1960). Nếu một quá trình ngẫu nhiên phụ thuộc vào đường đi lịch sử, việc định giá đòi hỏi phải giải các bài toán tích phân đa chiều khổng lồ hoặc mô phỏng Monte Carlo theo từng bước thời gian. Ngược lại, nhờ đặc tính Markov, giá trị của bất kỳ công cụ phái sinh lãi suất nào cũng có thể được xác định bằng cách giải một phương trình vi phân đạo hàm riêng (PDE) đơn biến duy nhất chỉ chứa hai chiều không gian là biến trạng thái hiện tại $r$ và thời gian $t$ (choudhry_analysing_yield_curve, Ch.3, The Short-Term Rate and the Yield Curve, d.1960).
+
+Sự kết hợp giữa đặc tính Markov và [[itos-lemma-transforms-short-rate-stochastic-dynamics-into-bond-pricing-pdes|bổ đề Itô]] tạo nên nền tảng giải tích giúp các mô hình cân bằng short-rate sở hữu lời giải đóng tốc độ cao. Dẫu vậy, đặc tính Markov cũng áp đặt những giới hạn nghiêm ngặt: nó tạo nên sự cứng nhắc về cấu trúc phụ thuộc trong [[one-factor-term-structure-models-force-perfect-yield-correlation-across-maturities]], đồng thời đòi hỏi các kỹ thuật biến đổi biến trạng thái phức tạp khi chuyển dịch sang [[term-structure-modeling-bifurcates-into-short-rate-diffusion-and-forward-rate-hjm-frameworks|khung mô hình lãi suất kỳ hạn toàn phần HJM]]. Khung lý thuyết này bảo đảm tính tương thích toán học với [[arbitrage-free-bond-prices-evolve-as-martingales-under-risk-neutral-measures|nguyên lý định giá martingale dưới độ đo trung lập rủi ro]].

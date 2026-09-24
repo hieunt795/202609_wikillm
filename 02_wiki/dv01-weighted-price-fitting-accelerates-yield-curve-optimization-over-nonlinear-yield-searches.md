@@ -2,11 +2,14 @@
 title: dv01-weighted-price-fitting-accelerates-yield-curve-optimization-over-nonlinear-yield-searches
 type: concept
 tags: [yield-curve, quantitative-finance, optimization, numerical-methods]
-sources: [fixed_income_during]
+sources: [fixed_income_during, choudhry_analysing_yield_curve]
 status: stable
-last_updated: 2026-09-23
+last_updated: 2026-09-24
 ---
 
 Quy trình khớp đường cong lợi suất tham số đòi hỏi việc xác định bộ tham số tối ưu nhằm cực tiểu hóa hàm sai số giữa dữ liệu thị trường và giá trị mô hình (fixed_income_during, Ch.19, Fitting Curve Models, d.319–325). Phương pháp tiếp cận truyền thống dựa trên hàm mục tiêu sai số lợi suất gặp rào cản chi phí tính toán lớn do phải thực hiện các thuật toán tìm nghiệm phi tuyến lặp đi lặp lại để chuyển đổi giá bẩn của từng trái phiếu thành lợi suất đáo hạn tương ứng (fixed_income_during, Ch.19, Fitting Curve Models, d.325–336).
 
 Nhằm nâng cao hiệu suất xử lý, các hệ thống định giá lượng hóa hiện đại sử dụng phép xấp xỉ tuyến tính chuyển đổi sai lệch lợi suất thành sai lệch giá có trọng số DV01 (fixed_income_during, Ch.19, Fitting Curve Models, d.332–336). Nhờ việc giá bẩn mô hình có thể tính toán nhanh chóng thông qua tích vô hướng giữa dòng tiền tương lai và hệ số chiết khấu, giải thuật tối ưu hóa trọng số DV01 đạt tốc độ xử lý nhanh hơn nhiều bậc độ lớn mà vẫn đảm bảo độ tin cậy tương đương về mặt kinh tế (fixed_income_during, Ch.19, Fitting Curve Models, d.336). Dù vậy, các kỹ thuật loại bỏ điểm dữ liệu ngoại lai tự động cần được kiểm soát chặt chẽ để tránh làm thay đổi cấu trúc mẫu quan sát qua các phiên giao dịch liên tiếp (fixed_income_during, Ch.19, Fitting Curve Models, d.338–341). Kỹ thuật này kế thừa trực tiếp thước đo độ nhạy giá tại [[modified-duration-and-pvbp-measure-investor-interest-rate-risk-across-differing-capital-bases]], dựa trên quy ước tính toán giá bẩn trong [[clean-and-dirty-bond-prices-separate-market-valuation-from-accrued-interest-settlement]], và là công cụ bổ trợ đắc lực cho các mô hình tại [[parametric-spline-models-trade-off-exact-repricing-against-forward-rate-smoothness]] cũng như giải thuật [[bootstrapping-and-reverse-bootstrapping-isolate-zero-rates-and-replicate-cash-flow-profiles]].
+
+Tại Chương 13, Kenneth Kortanek và Vladimir Medvedev thúc đẩy bước tiến tiếp theo của tối ưu hóa định giá chiết khấu bằng việc chuyển đổi toàn bộ bài toán giá trái phiếu thành mô hình quy hoạch hình học (Geometric Programming - GP) thông qua phép đổi biến số dương ngặt $x_i = e^{y_i}$ (choudhry_analysing_yield_curve, Ch.13, d.5022–5036; d.5410–5434). Thay vì giải bài toán phi tuyến phức tạp trong không gian lợi suất hoặc dựa hoàn toàn vào xấp xỉ tuyến tính cục bộ DV01, bài toán đối ngẫu GP được quy đổi thành một quy hoạch lồi có hệ ràng buộc tuyến tính giải được bằng thuật toán điểm trong với thời gian tính toán tức thời trên hàng trăm công cụ nợ, đồng thời bảo đảm tính đối ngẫu hoàn hảo (perfect duality) để thực hiện phân tích độ nhạy giải tích chính xác [[geometric-programming-optimizes-continuous-discount-curves-under-bounded-uncertainty]], đóng góp nền tảng cho việc trích xuất đường cong phụ trợ [[ancillary-yield-curves-expand-benchmark-definitions-via-strict-irr-admissibility]].
+

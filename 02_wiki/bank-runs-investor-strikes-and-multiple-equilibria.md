@@ -5,6 +5,8 @@ tags: [monetary, central-banking, financial-crises, bank-runs, sovereign-debt]
 sources: [bindseil_monetary_policy]
 status: stable
 last_updated: 2026-09-21
+reviewed: 2026-09-24
+reviewed_by: model
 ---
 
 Hiện tượng rút tiền hàng loạt (bank runs) và đình công của nhà đầu tư (investor strikes) được Bindseil (2014, Ch.11, §11.3–§11.5, d.2060–2250) mô hình hóa như các trạng thái thất bại phối hợp (coordination failure) và đa cân bằng (multiple equilibria), xảy ra ở ba cấp độ: tiền gửi bán lẻ, thị trường tài trợ bán buôn ngắn hạn, và nợ công chính phủ.

@@ -2,9 +2,11 @@
 title: exchange-rate
 type: concept
 tags: [external-sector, prices, stabilization]
-sources: [imf_macro_accounting]
+sources: [imf_macro_accounting, clippings]
 status: stable
 last_updated: 2026-09-16
+reviewed: 2026-09-24
+reviewed_by: model
 ---
 Tỷ giá xuất hiện trong nguồn ở ba vai trò: một mức giá có thể bị bóp méo, một công cụ neo danh nghĩa trong ổn định hóa, và một biến chịu tác động của cách tài trợ thâm hụt (imf_macro_accounting, Ch.2, Pricing Policies, d.1136; Real Sector Developments, Output and Demand, d.1187; imf_macro_accounting, Ch.3, Financing the Deficit, d.2230).
 

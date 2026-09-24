@@ -218,3 +218,9 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 - **Enrich liên nguồn có giới hạn:** ngoài `sources:` của trang, chỉ được dùng chunk `[x]` mà trang khác trong cluster đã trích dẫn tới đúng chủ đề — định vị rẻ qua chú thích §7.5 sẵn có, không lục toàn bộ nguồn. Giữ được giá trị đối chiếu Bindseil/Cargill/During mà không phình chi phí.
 - **Grep tag nhiều dòng:** thêm vế `^  - .*<kw>` vào lượt rẻ của `research` và `query` — 60/661 trang viết `tags:` dạng YAML nhiều dòng; lệnh cũ bỏ sót (vd `bond-futures`: 1 → 10 trang).
 - **Bằng chứng (eval dry-run, bản mới vs snapshot cũ, `Claude outputs/research-workspace/`):** cả hai 9/9 assertion (assertion chưa phân biệt được — bản cũ bù bằng đọc trọn schema); token +5%; dòng nguồn đọc bond futures 277 vs 501; bản mới tách được 2 mâu thuẫn nguồn thật ở cụm LOLR mà bản cũ gộp thành "lệch khung", và 1 cổng duyệt thay vì 2.
+
+## [2026-09-24] Chú thích §7.5 cho nguồn `fixed_income_during` chấp nhận định dạng số chương
+
+- **Quyết định:** chuẩn hóa quy ước chú thích vị trí cho nguồn `fixed_income_during` theo định dạng `(fixed_income_during, Ch.X, Sec.X.Y, d.A–B)` mà không bắt buộc hậu tố `file` (`Fixed Income - Alexander During-k.md`), vì ánh xạ giữa số chương và số file là đơn ánh xác định một chiều theo bảng mục lục trong `03_state/fixed_income_during.md` (chương $X$ tương ứng file $-(X+1)$). Hook kiểm tra và các skill chấp nhận định dạng này; không yêu cầu backfill hàng loạt 777 chú thích hiện hành.
+- **Lý do:** giải quyết mâu thuẫn giữa header `03_state/fixed_income_during.md` và `00_schema.md` §7.5 (ghi nhận tại `_inbox.md` ngày 2026-09-23). Việc giữ định dạng số chương đảm bảo tính ngắn gọn, trực quan khi đọc và nhất quán trên toàn bộ 42 chương của nguồn.
+

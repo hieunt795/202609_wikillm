@@ -2,9 +2,9 @@
 title: real-interest-rate
 type: concept
 tags: [monetary-policy, interest-rates, fiscal]
-sources: [imf_macro_accounting, cargill_central_bank_policy]
+sources: [imf_macro_accounting, cargill_central_bank_policy, choudhry_analysing_yield_curve]
 status: stable
-last_updated: 2026-09-21
+last_updated: 2026-09-24
 ---
 
 Lãi suất thực là lãi suất đã điều chỉnh theo lạm phát kỳ vọng: R_r ≈ R_n − P_e, với R_n là [[nominal-interest-rate|lãi suất danh nghĩa]] và P_e là lạm phát kỳ vọng; khi lạm phát thấp phép trừ này là xấp xỉ tốt, còn khi lạm phát cao phải dùng dạng rời rạc (1 + R_n/100)/(1 + P_e/100) − 1 (imf_macro_accounting, Ch.5, Box 5.9, Nominal and Real Interest Rates, d.5040–5054).
@@ -15,8 +15,11 @@ Ví dụ của nguồn: giá tăng 10% mà vay được với lãi 6% thì chi p
 
 Trong phân tích tài khóa, lãi suất thực là biến trung tâm của bền vững nợ. Vay trong nước quá mức đi kèm lãi suất thực cao (imf_macro_accounting, Ch.3, Financing the Deficit, d.2143); lãi suất thực cao vừa hại tăng trưởng vừa làm tăng chi phí trả nợ, và nếu vượt tốc độ tăng trưởng thì chi trả nợ có thể bùng nổ, như ở [[nonbank-deficit-financing-postpones-inflation-but-raises-future-debt-costs]] (imf_macro_accounting, Ch.3, cùng mục, d.2212). Tỷ lệ nợ cao gây áp lực lên lãi suất thực qua [[crowding-out|chèn lấn]] và phần bù rủi ro, như ở [[high-debt-ratios-raise-real-interest-rates-and-erode-market-confidence]] (imf_macro_accounting, Ch.3, The Sustainability of Fiscal Policy, d.2242; chú thích 21, d.2278). Khả năng thanh toán đòi hỏi tỷ lệ nợ trên GDP tăng chậm hơn lãi suất thực trừ tăng trưởng thực (imf_macro_accounting, Ch.3, cùng mục, d.2246); khi lãi suất thực thấp hơn tăng trưởng, một nước có thể tăng trưởng để thoát nợ, nhưng vay quá nhiều có thể đẩy lãi suất vượt tăng trưởng và biến chính sách bền vững thành không bền vững (imf_macro_accounting, Ch.3, cùng mục, d.2292) — hai chế độ ở [[public-debt-dynamics-depend-on-the-primary-balance-seigniorage-and-the-interest-growth-gap]]. Chênh lệch giữa lãi suất thực và tăng trưởng thực cũng là suất chiết khấu trong ràng buộc ngân sách liên thời kỳ (imf_macro_accounting, Ch.3, cùng mục, d.2301) và là đầu vào của các chỉ số ở [[fiscal-sustainability-indicators-measure-the-adjustment-needed]] (imf_macro_accounting, Ch.3, Box 3.4, d.2350–2352).
 
-Ở Ba Lan, lãi suất thực của tiền gửi ngắn hạn nhìn chung vẫn âm trong khi lãi suất cho vay dương đáng kể, và lãi suất cho vay chịu ảnh hưởng chủ yếu từ lãi suất tái cấp vốn của ngân hàng trung ương (imf_macro_accounting, Ch.5, Background for Monetary Analysis, d.5146).
+Ở Ba Lan, lãi suất thực của tiền gửi ngắn hạn vẫn ở mức âm trong khi lãi suất cho vay dương đáng kể, và lãi suất cho vay chịu ảnh hưởng chủ yếu từ lãi suất tái cấp vốn của ngân hàng trung ương (imf_macro_accounting, Ch.5, Background for Monetary Analysis, d.5146).
 
 Trong điều hành tiền tệ hiện đại, biến động của lãi suất thực không chỉ phụ thuộc vào các quyết định nâng hay hạ lãi suất danh nghĩa mà còn chịu sự chi phối mạnh mẽ từ hàm phản ứng của ngân hàng trung ương; cơ chế [[asymmetric-monetary-reaction-functions-generate-ratchet-effects-on-real-rates]] chỉ ra rằng khi nhà điều hành đặt rào cản bất đối xứng trước dữ liệu lạm phát, lãi suất thực kỳ vọng có thể tăng vọt (thắt chặt thụ động) ngay cả khi lãi suất điều hành danh nghĩa được giữ nguyên.
+
+Từ góc độ thị trường tài chính và cấu trúc kỳ hạn, Choudhry chỉ ra rằng giả định kinh tế học cổ điển coi lãi suất thực là một hằng số bất biến hoàn toàn bị bác bỏ bởi thực tiễn thị trường trái phiếu liên kết lạm phát (choudhry_analysing_yield_curve, Ch.7, Index-Linked Bonds and Real Yields, d.3340). Lãi suất thực biến động liên tục và gắn chặt với chi phí vốn thực (real cost of capital) cùng tốc độ tăng trưởng GDP thực của nền kinh tế, được biểu diễn toàn diện dưới dạng cấu trúc kỳ hạn tại [[real-yield-curves-reflect-real-cost-of-capital-and-fluctuate-with-economic-growth]] và làm điểm tựa tính toán lạm phát kỳ hạn trong [[implied-forward-inflation-curves-isolate-marginal-inflation-expectations-via-fisher-identity]].
+
 
 

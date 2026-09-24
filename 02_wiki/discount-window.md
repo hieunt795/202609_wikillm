@@ -5,6 +5,8 @@ tags: [monetary, central-banking, interest-rates]
 sources: [imf_macro_accounting, bindseil_monetary_policy, fixed_income_during]
 status: stable
 last_updated: 2026-09-23
+reviewed: 2026-09-24
+reviewed_by: model
 ---
 
 Cửa sổ chiết khấu là tập hợp các thoả thuận mà ngân hàng trung ương dùng để điều tiết lượng tín dụng của nó cho hệ thống ngân hàng, và là một trong [[monetary-authorities-influence-reserve-money-through-five-direct-instruments|năm công cụ trực tiếp]] tác động lên [[reserve-money|tiền dự trữ]] (imf_macro_accounting, Ch.5, Interpretation of Balance Sheet Changes, d.4657, d.4677). Yếu tố quan trọng nhất trong các thoả thuận này là lãi suất ngân hàng trung ương áp cho khoản vay, tức lãi suất chiết khấu (imf_macro_accounting, Ch.5, cùng mục, d.4677). Ngân hàng trung ương tác động lên tiền dự trữ qua cả khối lượng lẫn điều kiện cho vay; trên thực tế, tín dụng cho [[deposit-money-banks|ngân hàng nhận tiền gửi]] là nguồn tiền dự trữ mà nó kiểm soát trực tiếp nhất (imf_macro_accounting, Ch.5, cùng mục, d.4677). Khoản tín dụng này được ghi thành [[claims-on-deposit-money-banks]] trong bảng cân đối của nhà chức trách tiền tệ.

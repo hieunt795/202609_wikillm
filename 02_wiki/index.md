@@ -14,7 +14,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–18 xong (chi tiết ở state file) | `03_state/bindseil_monetary_policy.md` |
 | `cargill_central_bank_policy` | Nguồn dài (1.206 KB / 5.623 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–17 xong (chi tiết ở state file) | `03_state/cargill_central_bank_policy.md` |
 | `choudhry_principles_of_banking` | Nguồn dài (2.664 KB / 14.955 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
+| `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–13 xong (chi tiết ở state file) | `03_state/choudhry_analysing_yield_curve.md` |
 | `choudhry_fixed_income_markets` | Nguồn dài (1.941 KB / 15.414 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–39 xong (chi tiết ở state file) | `03_state/fixed_income_during.md` |
 | `tata_bank_alm` | Nguồn dài (450 KB / 3.345 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–6 xong (chi tiết ở state file) | `03_state/tata_bank_alm.md` |
@@ -338,6 +338,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 **Ch.5 — cân đối: đồng nhất thức tiền tệ, cầu tiền, tỷ giá (batch W2)**
 - [[reserve-money]] — RM ≡ NFA*+NCG*+CDMB*+CPS*+OIN*
 - [[money-supply-equals-net-foreign-assets-plus-net-domestic-assets]] — M2 = NFA + NDC + OIN_b
+- [[consolidation-of-monetary-authorities-and-dmb-accounts-eliminates-internal-claims-to-determine-broad-money]] — *(analysis)* hợp nhất MA và DMB loại trừ trái quyền nội bộ, chuyển RM thành M2 qua số nhân và đối ứng NFA/NDA
 - [[change-in-net-foreign-assets-links-the-monetary-survey-to-the-balance-of-payments]] — ΔNFA = CAB + ΔFI = -ΔRES, cách tiếp cận tiền tệ với BOP
 - [[the-money-multiplier-links-reserve-money-to-the-money-supply]] — mm = (c+1)/(c+r)
 - [[the-quantity-theory-links-money-velocity-prices-and-output]] — MV = PY
@@ -362,7 +363,8 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[monetary-authorities-influence-reserve-money-through-five-direct-instruments]] — can thiệp ngoại hối, thị trường mở, tài trợ thâm hụt, chiết khấu, dự trữ bắt buộc
 - [[monetary-authorities-control-over-reserve-money-is-incomplete]] — NFA và NCG một phần nằm ngoài tầm chính sách
 - [[fixed-exchange-rates-make-the-money-supply-endogenous-while-floating-rates-restore-monetary-control]] — cố định = nội sinh, thả nổi = toàn quyền
-- [[sterilization-offsets-fx-intervention-but-only-temporarily]] — tiệt trùng và giới hạn, hội đồng tiền tệ
+- [[sterilization-offsets-fx-intervention-but-only-temporarily]] — nghiệp vụ trung hòa và giới hạn, hội đồng tiền tệ
+- [[central-bank-balance-sheet-sterilization-capacity-depends-on-financial-market-depth-and-institutional-independence]] — *(analysis)* năng lực trung hòa bảng cân đối: đối chiếu quan điểm kiểm soát tiền cơ sở tuyệt đối (Cargill, Bindseil) với quyền kiểm soát không hoàn toàn do thị trường nông và sức ép tài khóa (IMF)
 - [[perfect-capital-mobility-with-a-fixed-exchange-rate-strips-monetary-policy-of-independence]] — lãi suất trong nước bị ép về mức thế giới
 - [[currency-substitution-undermines-monetary-control]] — đô la hoá
 - [[financial-innovation-blurs-the-boundary-of-money]] — đổi mới tài chính, đánh đổi liên quan/kiểm soát
@@ -542,7 +544,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[exchange-rate-determination-balances-short-run-financial-flows-and-long-run-trade]] — cơ chế xác định tỷ giá cân bằng giữa dòng tài sản tài chính ngắn hạn (FA view) và dòng hàng hóa dài hạn (CA view)
 - [[real-interest-rate-increases-appreciate-currency-while-inflation-expectations-depreciate-it]] — hiệu ứng Fisher đối với tỷ giá: lãi suất thực tăng làm tăng giá đồng tiền, lạm phát kỳ vọng làm giảm giá đồng tiền
 - [[internal-external-balance-links-domestic-saving-investment-gaps-to-current-account-deficits]] — cân bằng nội - ngoại $(S - I) + (T - G) = CA$; giải mã nghịch lý USD giảm giá nhưng thâm hụt vãng lai Mỹ tiếp tục phình to do spending binge
-- [[sterilization]] — vô hiệu hóa: nghiệp vụ triệt tiêu tác động của can thiệp ngoại hối lên cung tiền trong nước
+- [[sterilization]] — nghiệp vụ trung hòa: nghiệp vụ bù trừ tác động của can thiệp ngoại hối lên cung tiền trong nước
 
 **Vai trò cơ bản của chính phủ trong chế độ tài chính - tiền tệ (Cargill — Ch.8)**
 - [[greshams-law-and-uniform-coinage-rationalize-initial-government-monetary-roles]] — định luật Gresham ("tiền xấu đuổi tiền tốt") và nhu cầu đúc tiền chuẩn hóa; nguy cơ lạm dụng quyền năng đúc tiền tạo lạm phát
@@ -903,3 +905,80 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[model-governance-for-ai-in-alm-balances-predictive-power-against-black-box-opacity]] — quản trị mô hình AI trong ALM: chuẩn mực giải trình EBA GL/2022/14, rủi ro hộp đen FSB, nguy cơ bầy đàn mô hình model herding và trợ lý AI SupTech cho thanh tra
 - [[climate-risk-transmission-channels-impact-bank-balance-sheets-and-ftp-pricing]] — rủi ro khí hậu trong ALM: 4 kênh truyền dẫn vào bảng cân đối, phụ phí định giá chuyển vốn Climate FTP add-on, bài kiểm tra sức ép ECB 2022 và Hướng dẫn mô hình nội bộ ECB 2024
 - [[granular-customer-segmentation-enhances-behavioral-modeling-of-banking-book-optionality]] — phân khúc khách hàng đa biến vi mô: 5 tiêu chí định lượng Soulellis, kiểm định hồi tố backtesting và nhận diện các điểm mù tâm lý tổ chức theo thanh tra Fed hậu SVB
+
+**Phân tích & Diễn giải Đường cong Lợi suất (Choudhry — Ch.1)**
+- [[yield-curve]] — đường cong lợi suất: đồ thị thể hiện cấu trúc kỳ hạn, 4 chức năng thị trường, phân biệt lợi suất YTM và lãi suất zero-coupon thực sự
+- [[coupon-bias-induces-relative-yield-distortions-along-ytm-curves]] — hiệu ứng coupon: rủi ro tái đầu tư và chính sách thuế khiến trái phiếu coupon cao giao dịch rẻ hơn so với đường cong
+- [[par-yield-curve-derives-required-coupons-for-at-par-debt-issuance]] — đường cong lợi suất ngang mệnh giá: phương pháp bóc tách từ hệ số chiết khấu zero và vai trò ấn định coupon phát hành nợ sơ cấp
+- [[implied-forward-rates-function-as-hedge-rates-rather-than-accurate-market-forecasts]] — lãi suất kỳ hạn ngụ ý: vận hành như mức lãi suất phòng hộ không chênh lệch giá thay vì công cụ dự báo chuẩn xác điểm rơi thị trường
+- [[local-expectations-hypothesis-resolves-jensens-inequality-under-risk-neutrality]] — giả thuyết kỳ vọng cục bộ: biến thể duy nhất đảm bảo điều kiện phi kinh doanh chênh lệch giá và giải quyết bất đẳng thức Jensen
+- [[humped-yield-curves-reflect-peaked-interest-rate-expectations-or-maturity-habitat-imbalances]] — đường cong lợi suất hình bướu: phản ánh kỳ vọng lãi suất tạo đỉnh hoặc sự bất đối xứng cung cầu giữa ngân hàng (đầu ngắn) và quỹ hưu trí (đầu dài)
+- [[cubic-splines-preserve-forward-rate-smoothness-via-first-and-second-derivative-continuity]] — khớp đường cong cubic spline: duy trì tính liên tục của độ dốc và độ lồi tại các điểm nút, ngăn chặn bước nhảy gãy khúc trên đường cong forward
+- [[collateralized-clearing-and-hedging-demand-drive-interest-rate-swaps-below-sovereign-yields]] — nghịch lý chênh lệch hoán đổi âm hậu 2008: cơ chế bù trừ CCP, cầu phòng hộ nhận cố định dài hạn và quy định vốn ngân hàng kéo lãi suất swap xuống dưới lợi suất trái phiếu chính phủ
+
+**Động học Lãi suất Giao ngay & Kỳ hạn trong Thời gian Liên tục (Choudhry — Ch.2)**
+- [[instantaneous-forward-curves-lead-spot-curve-inflections-and-peak-earlier]] — đường cong kỳ hạn tức thời dẫn dắt và tạo đỉnh sớm: hệ quả vi tích phân và quy luật tỷ suất biên khiến forward rate bắt buộc quay đầu giảm trước đỉnh của spot curve
+- [[arbitrage-free-bond-prices-evolve-as-martingales-under-risk-neutral-measures]] — định giá trái phiếu phi trọng tài theo quá trình martingale: kỳ vọng trung lập rủi ro của tài khoản tiền tệ và tích phân lãi suất ngắn hạn
+- [[mcculloch-spline-fitting-estimates-continuous-discount-functions-from-incomplete-and-noisy-coupon-bonds]] — phương pháp spline McCulloch và hồi quy OLS: ước lượng hàm chiết khấu liên tục, xử lý nhiễu thanh khoản và khoảng trống kỳ hạn của trái phiếu coupon
+- [[term-structure-modeling-bifurcates-into-short-rate-diffusion-and-forward-rate-hjm-frameworks]] — hai trường phái mô hình hóa cấu trúc kỳ hạn: phân nhánh giữa khuếch tán lãi suất ngắn hạn (short-rate diffusion) và khung mô hình lãi suất kỳ hạn liên tục (HJM)
+
+**Mô hình hóa Lãi suất I: Khái niệm Cơ sở, Bổ đề Itô & Khuếch tán Ngẫu nhiên (Choudhry — Ch.3)**
+- [[ornstein-uhlenbeck-mean-reversion-prevents-infinite-drift-in-short-rate-diffusion]] — cơ chế hoàn lương Ornstein-Uhlenbeck: ngăn chặn sự trôi dạt vô cực của lãi suất ngắn hạn và hội tụ về mức trung hòa dài hạn
+- [[itos-lemma-transforms-short-rate-stochastic-dynamics-into-bond-pricing-pdes]] — bổ đề Itô và phương trình vi phân định giá trái phiếu: biến đổi vi phân ngẫu nhiên bậc hai và phòng hộ phi chênh lệch giá
+- [[one-factor-term-structure-models-force-perfect-yield-correlation-across-maturities]] — mô hình một nhân tố và rào cản tương quan hoàn hảo: sự cứng nhắc của giả định đơn biến và nhu cầu mở rộng đa nhân tố
+- [[markov-property-reduces-contingent-claim-valuation-to-single-state-pdes]] — đặc tính Markov của lãi suất ngắn hạn: tính chất phi phụ thuộc quỹ đạo lịch sử và thu gọn định giá phái sinh về phương trình PDE đơn biến
+
+**Mô hình hóa Lãi suất II: Động học Giá Tài sản, Chuyển động Brown & Phân phối Lognormal (Choudhry — Ch.4)**
+- [[geometric-brownian-motion-ensures-strictly-positive-asset-prices-via-multiplicative-increments]] — chuyển động Brown hình học: bảo đảm giá tài sản luôn dương qua gia số nhân tử và giới hạn khi mô hình hóa lãi suất
+- [[itos-lemma-derives-the-lognormal-asset-price-distribution-via-convexity-drag-correction]] — bổ đề Itô và phân phối log-normal: khấu trừ độ lồi $-\frac{1}{2}\sigma^2$ và sự suy giảm tăng trưởng tích lũy
+- [[bond-price-diffusion-derives-duration-scaling-and-quadratic-convexity-drift-from-yield-dynamics]] — phương trình khuếch tán giá trái phiếu: xác lập quy luật tỷ lệ thời lượng và thặng dư độ lồi bậc hai $+\frac{1}{2}s^2(T-t)^2$
+- [[pull-to-par-effect-forces-bond-price-volatility-to-decay-deterministically-to-zero-at-maturity]] — hiệu ứng kéo về mệnh giá: sự suy giảm tất định của độ biến động giá trái phiếu về không khi đáo hạn
+
+**Mô hình hóa Lãi suất III: Mô hình Cân bằng, Mô hình Phi trọng tài & Cấu trúc Kỳ hạn Lãi suất Ngắn hạn (Choudhry — Ch.5)**
+- [[equilibrium-models-generate-term-structures-from-macro-assumptions-while-arbitrage-free-models-calibrate-to-market-prices]] — mô hình cân bằng và phi trọng tài: sự đối lập triết học giữa suy diễn kinh tế vĩ mô dài hạn và kỹ thuật khớp giá thị trường
+- [[vasicek-model-incorporates-mean-reversion-into-gaussian-dynamics-but-permits-negative-interest-rates]] — mô hình Vasicek: động học Gaussian Ornstein-Uhlenbeck, cấu trúc giá trái phiếu affine và rủi ro lãi suất âm khi biến động lớn
+- [[cox-ingersoll-ross-model-scales-volatility-by-the-square-root-of-rates-to-preclude-negative-yields]] — mô hình Cox-Ingersoll-Ross: quá trình khuếch tán căn bậc hai $\sigma\sqrt{r_t}$, điều kiện Feller và loại trừ hoàn toàn lãi suất âm
+- [[hull-white-model-extends-vasicek-via-time-dependent-drift-to-match-the-initial-yield-curve]] — mô hình Hull-White: mở rộng Vasicek qua hàm trôi dạt theo thời gian $\theta(t)$, tái lập chính xác đường cong giao ngay và duy trì nghiệm giải tích đóng
+- [[black-derman-toy-model-imposes-lognormal-short-rate-dynamics-on-arbitrage-free-binomial-trees]] — mô hình Black-Derman-Toy: cấu trúc cây nhị phân lognormal, bảo đảm lãi suất luôn dương và thuật toán hiệu chuẩn số quy nạp xuôi
+
+**Mô hình hóa Lãi suất IV: Khung HJM, Mô hình Thị trường BGM & Phân bổ Mô hình (Choudhry — Ch.6)**
+- [[heath-jarrow-morton-framework-locks-forward-rate-drift-strictly-to-volatility-structures]] — khung mô hình Heath-Jarrow-Morton: sự tiến hóa toàn bộ đường cong kỳ hạn tức thời và điều kiện phi trọng tài khóa chặt trôi dạt theo biến động
+- [[libor-market-models-bridge-hjm-to-observable-discrete-forward-rates-and-black-76-swaption-pricing]] — mô hình thị trường LIBOR / BGM: cầu nối giữa lý thuyết HJM và lãi suất kỳ hạn rời rạc quan sát được, tương thích chuẩn Black-76 cho caps và swaptions
+- [[jump-diffusion-interest-rate-models-capture-abrupt-policy-rate-shocks-via-poisson-processes]] — mô hình khuếch tán bước nhảy: tích hợp quá trình Poisson nắm bắt cú sốc gián đoạn chính sách tiền tệ và giải thích nụ cười biến động
+- [[relative-value-trading-mandates-equilibrium-models-while-derivative-market-making-requires-arbitrage-free-models]] — quy tắc phân công mô hình: giao dịch giá trị tương đối bắt buộc dùng mô hình cân bằng, tạo lập phái sinh bắt buộc dùng mô hình phi trọng tài
+- [[multi-factor-term-structure-models-are-demanded-by-cross-rate-correlation-and-volatility-smiles]] — tiêu chuẩn lựa chọn mô hình đa nhân tố: sản phẩm nhạy cảm tương quan chéo spread/quanto, nụ cười biến động và chứng khoán thế chấp MBS nhạy cảm độ dốc
+
+**Đường cong Lợi suất Trái phiếu Liên kết Lạm phát & Kỳ vọng Lạm phát (Choudhry — Ch.7)**
+- [[real-yield-curves-reflect-real-cost-of-capital-and-fluctuate-with-economic-growth]] — đường cong lợi suất thực: phản ánh chi phí vốn thực, biến động theo tăng trưởng GDP thực và bác bỏ giả định hằng số cổ điển
+- [[implied-forward-inflation-curves-isolate-marginal-inflation-expectations-via-fisher-identity]] — đường cong lạm phát kỳ hạn ngụ ý: bóc tách kỳ vọng lạm phát biên tại từng kỳ hạn qua đồng nhất thức Fisher ghép lãi và nhận diện phần bù bất định
+- [[indexation-lags-require-iterative-consistency-procedures-in-real-term-structure-estimation]] — quy trình lặp nhất quán lạm phát: xử lý nghịch lý độ trễ chỉ số hóa dòng tiền và kỹ thuật giảm thiểu điểm nút spline khi khớp cấu trúc kỳ hạn thực
+
+**Định giá và Phân tích Đường cong Lợi suất Kỷ nguyên Hậu 2008 (Choudhry — Ch.8)**
+- [[dual-curve-discounting-separates-rate-projection-from-collateralized-cash-flow-discounting]] — khuôn khổ chiết khấu hai đường cong: phân định đường cong dự phóng LIBOR và đường cong chiết khấu OIS sau khủng hoảng 2008
+- [[credit-support-annex-discounting-incorporates-cheapest-to-deliver-collateral-optionality]] — chiết khấu theo phụ lục CSA: quyền chọn giao nộp tài sản bảo đảm rẻ nhất (CTD) và đường cong chiết khấu lai đa tiền tệ
+- [[derivatives-funding-valuation-adjustments-apply-bank-internal-cost-of-funds-directly-to-expected-exposure]] — điều chỉnh định giá vốn (FVA): áp dụng trực tiếp đường cong chi phí vốn nội bộ (COF/FTP) lên mức phơi nhiễm kỳ vọng
+- [[cross-currency-basis-and-quanto-adjustments-align-internal-funding-curves-across-currencies]] — chênh lệch cơ sở tiền tệ chéo và điều chỉnh quanto: quy trình tập trung chuẩn hóa đường cong điều vốn ngoại tệ và bù đắp tương quan tỷ giá - tín dụng
+
+**Phân tích Lợi suất và Chiết khấu trong Môi trường Lãi suất Âm (Choudhry — Ch.9)**
+- [[discount-factor-functions-exhibit-asymmetric-convexity-and-exceed-unity-in-negative-interest-rates]] — hàm hệ số chiết khấu trong lãi suất âm: tính chất vượt quá 1, điểm kỳ dị tại r = -1, độ lồi bất đối xứng và cơ chế ghép lãi
+- [[negative-yield-to-maturity-implies-bond-market-prices-exceed-nominal-aggregate-cash-flows]] — lợi suất đáo hạn âm: hàm ý giá thị trường trái phiếu vượt tổng danh nghĩa dòng tiền tương lai, tính đơn nhất nghiệm phương trình đa thức và phân tích thực nghiệm trái phiếu chính phủ Thụy Sĩ/Đức
+
+**Ước lượng và Khớp Đường cong Lợi suất I: Spline và Mô hình Nelson-Siegel (Choudhry — Ch.10)**
+- [[nelson-siegel-and-svensson-models-fit-parsimonious-forward-curves-with-asymptotic-long-rate-stability]] — mô hình Nelson-Siegel và Svensson: ước lượng cấu trúc kỳ hạn tinh gọn, bảo đảm tiệm cận ngang ở kỳ hạn dài $\beta_0$ và loại bỏ sự phụ thuộc vào điểm nút spline
+- [[b-splines-and-regression-splines-transform-piecewise-polynomial-curve-fitting-into-linear-least-squares]] — B-splines và hồi quy spline: chuyển hóa bài toán khớp đường cong đa thức từng khúc thành hồi quy bình phương tối thiểu tuyến tính OLS thông qua hàm cơ sở và biến ghép
+- [[forward-rate-oscillation-reveals-magnified-fitting-errors-and-disqualifies-linear-interpolation]] — hiện tượng dao động lãi suất kỳ hạn ngụ ý: sự khuếch đại sai số vi mô từ hàm chiết khấu và lý do thị trường bãi bỏ phép nội suy tuyến tính
+
+**Ước lượng và Khớp Đường cong Lợi suất II: Mô hình VRP Spline và Anderson-Sleath (Choudhry — Ch.11)**
+- [[variable-roughness-penalty-splines-balance-short-end-flexibility-and-long-end-smoothness]] — spline phạt độ gập ghềnh biến thiên: kỹ thuật Waggoner VRP và Fisher GCV dung hòa độ linh hoạt ngắn hạn và độ trơn ổn định dài hạn
+- [[anderson-sleath-model-weights-fitting-errors-by-inverse-modified-duration]] — mô hình Anderson-Sleath của Bank of England: chuẩn hóa sai số định giá theo nghịch đảo thời lượng điều chỉnh $1/MD_i$ và đặc tính cô lập cú sốc cục bộ so với Svensson
+- [[exponential-splines-linearize-discount-functions-via-asymptotic-maturity-transforms]] — spline hàm mũ Vasicek-Fong: tuyến tính hóa hàm chiết khấu qua phép biến đổi tiệm cận $x = 1 - e^{-\alpha T}$, cubic exponential splines và đánh giá thực nghiệm của Shea
+
+**Đường cong Lợi suất và Giao dịch Giá trị Tương đối (Choudhry — Ch.12)**
+- [[excess-yield-spreads-isolate-local-relative-value-across-coupon-and-liquidity-dimensions]] — chênh lệch lợi suất thặng dư: bóc tách giá trị tương đối cục bộ qua mô hình chênh lệch coupon $r_m - r_{mp} = c(C_{PD} - r_{mp}) + d$, định kiến né tránh coupon cao và sàn thanh khoản tín phiếu kho bạc
+- [[bpv-weighted-yield-spread-trading-immunizes-first-order-directional-risk-under-strict-stop-loss-governance]] — giao dịch spread cân bằng BPV: triệt tiêu rủi ro thị trường định hướng bậc một, rủi ro trôi tỷ trọng phi tuyến của Modified Duration và khung kỷ luật ba nhân tố (target spread, fixed horizon, stop-loss 50%)
+- [[repo-specialness-and-financing-costs-dictate-the-break-even-hurdle-of-curve-spread-trades]] — chi phí tài trợ repo và rủi ro lãi suất đặc biệt: ngưỡng hòa vốn của chiến lược spread liên phân đoạn, chi phí mang giữ ròng (net carry) và hiện tượng ép giá repo chân bán khống
+
+**Xác định Giá trị Tương đối trên Thị trường Kho bạc Hoa Kỳ (Choudhry — Ch.13)**
+- [[ancillary-yield-curves-expand-benchmark-definitions-via-strict-irr-admissibility]] — đường cong phụ trợ Ancillary Curve: mở rộng định nghĩa trái phiếu chuẩn qua tiêu chuẩn sàng lọc sai số IRR dưới 1 điểm cơ bản, độ chính xác MAPE vượt trội và sự hòa nhập đồng quy với Benchmark Curve
+- [[geometric-programming-optimizes-continuous-discount-curves-under-bounded-uncertainty]] — quy hoạch hình học GP và bất định phi ngẫu nhiên: đổi biến hàm mũ $x_i = e^{y_i}$, tối ưu hóa posynomials, tiếp cận sai số bị chặn set-membership và điều kiện đối ngẫu hoàn hảo khi phân tách T-bills
+- [[ancillary-anchored-butterfly-trades-isolate-relative-value-in-hyper-liquid-treasury-markets]] — giao dịch Butterfly neo theo trái phiếu Ancillary: khai thác giá trị tương đối trong thị trường Kho bạc siêu thanh khoản, bán khống mã Ancillary định giá đắt và phòng hộ hai cánh qua bài toán quy hoạch tuyến tính LP trung hòa vốn và thời lượng

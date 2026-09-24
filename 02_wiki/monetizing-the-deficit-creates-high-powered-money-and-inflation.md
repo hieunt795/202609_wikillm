@@ -5,6 +5,8 @@ tags: [fiscal, financing, inflation, monetary-policy]
 sources: [imf_macro_accounting, cargill_central_bank_policy]
 status: stable
 last_updated: 2026-09-21
+reviewed: 2026-09-24
+reviewed_by: model
 ---
 
 Chính phủ vay [[central-bank|ngân hàng trung ương]] tương đương với tạo ra [[reserve-money|tiền cơ sở]]; khi tiền được tạo ra nhanh hơn cầu tiền ở mặt bằng giá hiện tại, số dư tiền mặt thừa xuất hiện và cuối cùng đẩy mặt bằng giá chung lên (imf_macro_accounting, Ch.3, Financing the Deficit, d.2145).

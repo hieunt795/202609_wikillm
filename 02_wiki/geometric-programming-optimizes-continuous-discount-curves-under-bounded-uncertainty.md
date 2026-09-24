@@ -1,0 +1,20 @@
+---
+title: geometric-programming-optimizes-continuous-discount-curves-under-bounded-uncertainty
+type: concept
+tags: [yield-curve, term-structure, optimization, geometric-programming, non-stochastic-uncertainty, duality, us-treasury]
+sources: [choudhry_analysing_yield_curve]
+status: stable
+last_updated: 2026-09-24
+---
+
+Quy hoạch hình học (Geometric Programming - GP) dưới điều kiện bất định phi ngẫu nhiên (Non-Stochastic / Set-Membership Uncertainty) do Kenneth Kortanek và Vladimir Medvedev phát triển là phương pháp luận tối ưu hóa phi tuyến chuyển đổi bài toán chiết khấu dòng tiền phức tạp trên thị trường trái phiếu thành một bài toán quy hoạch lồi giải được bằng các thuật toán điểm trong với tốc độ hội tụ vượt trội (choudhry_analysing_yield_curve, Ch.13, Sec. "The Nature of the Underlying Optimisation...", d.4954–5058; "An Approach to Treating Uncertainty Quantification", d.5059–5088; Appendix, d.5407–5453).
+
+Xuất phát từ phương trình định giá dòng tiền chiết khấu liên tục $P = \sum C_i \exp(-\int_0^{T_i} f(s) ds)$, việc lấy tích phân hàm lãi suất kỳ hạn $f(s)$ trên các phân đoạn thời gian tạo ra các biến trạng thái tích lũy $y_i$. Do toán tử chiết khấu chứa số mũ tự nhiên của $y_i$, Kortanek và Medvedev thực hiện phép đổi biến sang hệ biến số dương ngặt:
+$$x_i = e^{y_i} > 0$$
+Phép biến đổi hàm mũ này quy đổi phương trình giá trái phiếu và các điều kiện biên của đường cong thành các đa thức biến thực với hệ số dương (posynomials) mang số mũ thực tùy ý. Bài toán quy hoạch hình học nguyên thủy (Primal GP) sau đó được chuyển đổi giải tích sang bài toán đối ngẫu (Dual GP) dưới dạng quy hoạch lồi có hệ ràng buộc tuyến tính thông qua hàm đối ngẫu $-\ln F$. Cấu trúc đối ngẫu này cho phép các thuật toán điểm trong giải quyết hệ thống gồm hơn 500 biến và 500 ràng buộc trong thời gian tính toán gần như tức thời (negligible computational time) mà không gặp phải các điểm kỳ dị phi tuyến của phương pháp bình phương tối thiểu phi tuyến truyền thống (choudhry_analysing_yield_curve, Ch.13, d.5030–5036; d.5415–5434).
+
+Về mặt xử lý sai số, khác với kinh tế lượng tài chính thông thường vốn giả định các sai số ngẫu nhiên tuân theo một phân phối xác suất xác định (như phân phối chuẩn), Kortanek và Medvedev áp dụng lý thuyết điều khiển tập hợp (guaranteed set-membership approach của Gusev và Romanov 2001). Sự bất định của dữ liệu giá trái phiếu được mô tả dưới dạng các hàm nhiễu động từng đoạn bị chặn trong các tập xác định hữu hạn:
+$$w_* \le w(t) \le w^*$$
+Cách tiếp cận phi ngẫu nhiên này loại trừ các giả định kinh tế lượng áp đặt về tính chuẩn của sai số, phản ánh trung thực thực tế thị trường nơi dữ liệu giá thường xuyên chịu các cú sốc thanh khoản cá biệt hoặc nhiễu đo lường phi ngẫu nhiên (choudhry_analysing_yield_curve, Ch.13, d.5065–5072).
+
+Trong lý thuyết quy hoạch hình học, việc đạt được "tính đối ngẫu hoàn hảo" (Perfect Duality — khi giá trị hàm mục tiêu của bài toán nguyên thủy và bài toán đối ngẫu trùng khít hoàn toàn, tức khoảng cách đối ngẫu $\text{duality gap} \to 0$) là điều kiện tiên quyết để thực hiện phân tích độ nhạy giải tích (sensitivity analysis) đối với cấu trúc kỳ hạn (choudhry_analysing_yield_curve, Ch.13, d.5034; d.5373–5390). Nghiên cứu thực nghiệm chỉ ra rằng khi đưa toàn bộ 33 tín phiếu T-bills vào cùng mô hình với trái phiếu coupon, bài toán không thể đạt được Perfect Duality do sự xung đột về cơ chế định giá (T-bills áp dụng lãi suất chiết khấu trên cơ sở năm 360 ngày và không có coupon). Ngược lại, khi tách riêng hoặc loại bỏ T-bills (chỉ tối ưu hóa các trái phiếu và kỳ phiếu từ 1 đến 30 năm), thuật toán đạt được tính đối ngẫu hoàn hảo tuyệt đối sau 31 vòng lặp với khoảng cách đối ngẫu thu hẹp về mức $10^{-10}$, cho phép tính toán các đạo hàm nhạy cảm rủi ro chính xác phục vụ tối ưu hóa đường cong [[dv01-weighted-price-fitting-accelerates-yield-curve-optimization-over-nonlinear-yield-searches]], hỗ trợ bóc tách đường cong Ancillary [[ancillary-yield-curves-expand-benchmark-definitions-via-strict-irr-admissibility]] và xác lập ngưỡng hòa vốn cho các chiến lược spread [[repo-specialness-and-financing-costs-dictate-the-break-even-hurdle-of-curve-spread-trades]].

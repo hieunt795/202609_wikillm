@@ -781,5 +781,104 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 86 trang draft còn lại giữ nguyên (84 trang backlink = 1, 2 trang đang gắn nhãn ⚠️ Conflict); không đổi last_updated, không chạm thân bài
 - Wiki hiện đạt: 590 stable, 86 draft, 16 stub; hook validate_wiki_page.py --all sạch (692 trang quét, 0 lỗi, 0 mồ côi)
 
+## [2026-09-23:21-28-24] research | bảng cân đối của MAs (money authorities)
+- Cluster 10 trang; enrich 5 trang
+- 8 claim mới ở 5 trang, 5 liên kết, 1 analysis; hook sạch 693 trang
+- Báo cáo: Claude outputs/research-2026-09-23-monetary-authorities-balance-sheet.md
 
+## [2026-09-23:21-50-00] lint | audit thuật ngữ sterilization và writing-style
+- Xóa bỏ triệt để thuật ngữ dịch sai "tiệt trùng (sterilization)" ở 8 trang wiki, 1 state file và index.md, chuẩn hóa thành "nghiệp vụ trung hòa (sterilization)" / "can thiệp trung hòa"
+- Quét và chuẩn hóa văn phong theo project skill writing-style trên toàn bộ wiki: sửa 8 trang vi phạm B2 (từ ngữ cực đoan/bạo lực), 9 trang vi phạm H1 ("đóng vai trò là" -> "là"), 5 trang vi phạm E4 & B1 (ẩn dụ "bốc hơi" & cụm "dẫn đến hệ quả là"), 5 trang vi phạm I4 (filler "nhìn chung")
+- Không nâng last_updated theo §7.5; hook validate_wiki_page.py --all sạch 0 lỗi; 0 match cho "tiệt trùng" và các cụm từ cấm
+- Báo cáo: Claude outputs/audit-2026-09-23-thuat-ngu-writing-style.md
+
+## [2026-09-24:11-26-00] ingest | choudhry_analysing_yield_curve Ch.1 — The Yield Curve
+- 7 trang mới: coupon-bias-induces-relative-yield-distortions-along-ytm-curves, par-yield-curve-derives-required-coupons-for-at-par-debt-issuance, implied-forward-rates-function-as-hedge-rates-rather-than-accurate-market-forecasts, local-expectations-hypothesis-resolves-jensens-inequality-under-risk-neutrality, humped-yield-curves-reflect-peaked-interest-rate-expectations-or-maturity-habitat-imbalances, cubic-splines-preserve-forward-rate-smoothness-via-first-and-second-derivative-continuity, collateralized-clearing-and-hedging-demand-drive-interest-rate-swaps-below-sovereign-yields
+- Nâng 1 stub: yield-curve; cập nhật 6 trang liên quan: pure-expectations-hypothesis-..., liquidity-premium-hypothesis-..., yield-to-maturity-assumes-..., yield-curve-representations-..., institutional-preferred-habitats-..., swap-rate-term-structures-...; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Tổng 701 trang wiki, 0 lỗi, 0 mồ côi; còn lại: Ch.2–13 (choudhry_analysing_yield_curve)
+
+## [2026-09-24:11-55-00] ingest | choudhry_analysing_yield_curve Ch.2 — A Further Look at Spot and Forward Rates
+- 4 trang mới: instantaneous-forward-curves-lead-spot-curve-inflections-and-peak-earlier, arbitrage-free-bond-prices-evolve-as-martingales-under-risk-neutral-measures, mcculloch-spline-fitting-estimates-continuous-discount-functions-from-incomplete-and-noisy-coupon-bonds, term-structure-modeling-bifurcates-into-short-rate-diffusion-and-forward-rate-hjm-frameworks
+- Cập nhật 4 trang: upward-sloping-yield-curves-..., bootstrapping-and-reverse-bootstrapping-..., yield-to-maturity-assumes-..., yield-curve-representations-...; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Tổng 705 trang wiki, 0 lỗi, 0 mồ côi; còn lại: Ch.3–13 (choudhry_analysing_yield_curve)
+
+## [2026-09-24:13-10-00] ingest | choudhry_analysing_yield_curve Ch.3 — Interest Rate Modelling I: Primer on Basic Concepts
+- 4 trang mới: ornstein-uhlenbeck-mean-reversion-prevents-infinite-drift-in-short-rate-diffusion, itos-lemma-transforms-short-rate-stochastic-dynamics-into-bond-pricing-pdes, one-factor-term-structure-models-force-perfect-yield-correlation-across-maturities, markov-property-reduces-contingent-claim-valuation-to-single-state-pdes
+- Cập nhật 3 trang: parallel-yield-curve-shifts-..., term-structure-modeling-bifurcates-..., key-rate-duration-isolates-...; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Tổng 709 trang wiki, 0 lỗi, 0 mồ côi; còn lại: Ch.4–13 (choudhry_analysing_yield_curve)
+
+## [2026-09-24:13-18-00] ingest | choudhry_analysing_yield_curve Ch.4 — Interest Rate Modelling II: The Dynamic of Asset Prices
+- 4 trang mới: geometric-brownian-motion-ensures-strictly-positive-asset-prices-via-multiplicative-increments, itos-lemma-derives-the-lognormal-asset-price-distribution-via-convexity-drag-correction, bond-price-diffusion-derives-duration-scaling-and-quadratic-convexity-drift-from-yield-dynamics, pull-to-par-effect-forces-bond-price-volatility-to-decay-deterministically-to-zero-at-maturity
+- Cập nhật 2 trang: arbitrage-free-bond-prices-evolve-as-martingales-under-risk-neutral-measures, convexity-bias-compresses-long-term-yields-and-inverts-the-ultra-long-end; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Tổng 713 trang wiki, 0 lỗi, 0 mồ côi; còn lại: Ch.5–13 (choudhry_analysing_yield_curve)
+
+## [2026-09-24:13-28-00] ingest | choudhry_analysing_yield_curve Ch.5 — Interest Rate Models I
+- 5 trang mới: equilibrium-models-generate-term-structures-from-macro-assumptions-while-arbitrage-free-models-calibrate-to-market-prices, vasicek-model-incorporates-mean-reversion-into-gaussian-dynamics-but-permits-negative-interest-rates, cox-ingersoll-ross-model-scales-volatility-by-the-square-root-of-rates-to-preclude-negative-yields, hull-white-model-extends-vasicek-via-time-dependent-drift-to-match-the-initial-yield-curve, black-derman-toy-model-imposes-lognormal-short-rate-dynamics-on-arbitrage-free-binomial-trees
+- Cập nhật 3 trang: term-structure-modeling-bifurcates-..., one-factor-term-structure-models-force-..., ornstein-uhlenbeck-mean-reversion-prevents-...; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Tổng 718 trang wiki, 0 lỗi, 0 mồ côi; còn lại: Ch.6–13 (choudhry_analysing_yield_curve)
+
+## [2026-09-24:13-36-00] ingest | choudhry_analysing_yield_curve Ch.6 — Interest Rate Models II
+- 5 trang mới: heath-jarrow-morton-framework-locks-forward-rate-drift-strictly-to-volatility-structures, libor-market-models-bridge-hjm-to-observable-discrete-forward-rates-and-black-76-swaption-pricing, jump-diffusion-interest-rate-models-capture-abrupt-policy-rate-shocks-via-poisson-processes, relative-value-trading-mandates-equilibrium-models-while-derivative-market-making-requires-arbitrage-free-models, multi-factor-term-structure-models-are-demanded-by-cross-rate-correlation-and-volatility-smiles
+- Cập nhật 3 trang: term-structure-modeling-bifurcates-..., one-factor-term-structure-models-force-..., statistical-arbitrage-in-fixed-income-...; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Tổng 723 trang wiki, 0 lỗi, 0 mồ côi; còn lại: Ch.7–13 (choudhry_analysing_yield_curve)
+
+## [2026-09-24:13-44-00] ingest | choudhry_analysing_yield_curve Ch.7 — The Index-Linked Bond Yield Curve
+- 3 trang mới: real-yield-curves-reflect-real-cost-of-capital-and-fluctuate-with-economic-growth, implied-forward-inflation-curves-isolate-marginal-inflation-expectations-via-fisher-identity, indexation-lags-require-iterative-consistency-procedures-in-real-term-structure-estimation
+- Cập nhật 3 trang: real-interest-rate, breakeven-inflation-rates-incorporate-hedging-horizons-and-short-term-carry-noise, expected-inflation-is-measured-through-surveys-econometric-models-and-tips-spreads; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Tổng 726 trang wiki, 0 lỗi, 0 mồ côi; còn lại: Ch.8–13 (choudhry_analysing_yield_curve)
+
+## [2026-09-24:14-00-00] ingest | choudhry_analysing_yield_curve Ch.8 — Yield Curve Analytics in the Post-2008 Era
+- 4 trang mới: dual-curve-discounting-separates-rate-projection-from-collateralized-cash-flow-discounting, credit-support-annex-discounting-incorporates-cheapest-to-deliver-collateral-optionality, derivatives-funding-valuation-adjustments-apply-bank-internal-cost-of-funds-directly-to-expected-exposure, cross-currency-basis-and-quanto-adjustments-align-internal-funding-curves-across-currencies
+- Cập nhật 3 trang: plain-vanilla-interest-rate-swaps-trade-pure-risk-and-resolve-preferred-habitat-friction, liquidity-premium-compensates-for-secondary-market-depth-and-transaction-costs, multilateral-trade-compression-and-re-couponing-deflate-gross-notional-and-margin-drag; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Tổng 730 trang wiki, 0 lỗi, 0 mồ côi; còn lại: Ch.9–13 (choudhry_analysing_yield_curve)
+
+## [2026-09-24:14-04-00] ingest | choudhry_analysing_yield_curve Ch.9 — Negative Interest Rate Analytics
+- 2 trang mới: discount-factor-functions-exhibit-asymmetric-convexity-and-exceed-unity-in-negative-interest-rates, negative-yield-to-maturity-implies-bond-market-prices-exceed-nominal-aggregate-cash-flows
+- Cập nhật 2 trang: yield-to-maturity-equates-present-value-of-cash-flows-to-asset-price, negative-interest-rates-distort-financial-intermediation-and-test-the-zero-lower-bound; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Tổng 732 trang wiki, 0 lỗi, 0 mồ côi; còn lại: Ch.10–13 (choudhry_analysing_yield_curve)
+
+## [2026-09-24:14-08-00] ingest | choudhry_analysing_yield_curve Ch.10 — Estimating and Fitting the Yield Curve I
+- 3 trang mới: nelson-siegel-and-svensson-models-fit-parsimonious-forward-curves-with-asymptotic-long-rate-stability, b-splines-and-regression-splines-transform-piecewise-polynomial-curve-fitting-into-linear-least-squares, forward-rate-oscillation-reveals-magnified-fitting-errors-and-disqualifies-linear-interpolation
+- Cập nhật 3 trang: cubic-splines-preserve-forward-rate-smoothness-via-first-and-second-derivative-continuity, parametric-spline-models-trade-off-exact-repricing-against-forward-rate-smoothness, mcculloch-spline-fitting-estimates-continuous-discount-functions-from-incomplete-and-noisy-coupon-bonds; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Tổng 735 trang wiki, 0 lỗi, 0 mồ côi; còn lại: Ch.11–13 (choudhry_analysing_yield_curve)
+
+## [2026-09-24:14-18-00] ingest | choudhry_analysing_yield_curve Ch.11 — Estimating and Fitting the Yield Curve II
+- 3 trang mới: variable-roughness-penalty-splines-balance-short-end-flexibility-and-long-end-smoothness, anderson-sleath-model-weights-fitting-errors-by-inverse-modified-duration, exponential-splines-linearize-discount-functions-via-asymptotic-maturity-transforms
+- Cập nhật 3 trang: parametric-spline-models-trade-off-exact-repricing-against-forward-rate-smoothness, nelson-siegel-and-svensson-models-fit-parsimonious-forward-curves-with-asymptotic-long-rate-stability, mcculloch-spline-fitting-estimates-continuous-discount-functions-from-incomplete-and-noisy-coupon-bonds; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Tổng 738 trang wiki, 0 lỗi, 0 mồ côi; còn lại: Ch.12–13 (choudhry_analysing_yield_curve)
+
+## [2026-09-24:14-26-00] ingest | choudhry_analysing_yield_curve Ch.12 — Yield Curves and Relative Value
+- 3 trang mới: excess-yield-spreads-isolate-local-relative-value-across-coupon-and-liquidity-dimensions, bpv-weighted-yield-spread-trading-immunizes-first-order-directional-risk-under-strict-stop-loss-governance, repo-specialness-and-financing-costs-dictate-the-break-even-hurdle-of-curve-spread-trades
+- Cập nhật 3 trang: coupon-bias-induces-relative-yield-distortions-along-ytm-curves, steepeners-and-flatteners-neutralize-duration-via-pvbp-weighting-amid-structural-kinks, general-collateral-and-specials-repo-separate-cash-driven-from-collateral-driven-financing; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Tổng 741 trang wiki, 0 lỗi, 0 mồ côi; còn lại: Ch.13 (choudhry_analysing_yield_curve)
+
+## [2026-09-24:14-31-00] ingest | choudhry_analysing_yield_curve Ch.13 — Identifying Relative Value in the US Treasury Market
+- 3 trang mới: ancillary-yield-curves-expand-benchmark-definitions-via-strict-irr-admissibility, geometric-programming-optimizes-continuous-discount-curves-under-bounded-uncertainty, ancillary-anchored-butterfly-trades-isolate-relative-value-in-hyper-liquid-treasury-markets
+- Cập nhật 3 trang: butterfly-and-condor-trades-exploit-curve-curvature-and-differing-market-quoting-conventions, dv01-weighted-price-fitting-accelerates-yield-curve-optimization-over-nonlinear-yield-searches, repo-specialness-and-financing-costs-dictate-the-break-even-hurdle-of-curve-spread-trades; cập nhật 03_state/choudhry_analysing_yield_curve.md và index.md
+- Nguồn choudhry_analysing_yield_curve hoàn tất 100% (Ch.1–13 xong; Appendix & Index bỏ qua theo §2); tổng 744 trang wiki, 0 lỗi, 0 mồ côi
+
+## [2026-09-24:15-28-46] review | 5 trang
+- Đạt đối chiếu nguồn gốc: exchange-rate (bổ sung clippings vào sources), monetizing-the-deficit-creates-high-powered-money-and-inflation, financial-and-monetary-regime, supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital, current-account-balance (thêm chú thích §7.5 Ch.2 d.797–815)
+- Cả 5 trang đều gắn reviewed: 2026-09-24 và reviewed_by: model; không đổi last_updated do claim không đổi; sửa 4 link chết tồn đọng ở Ch.10–11
+- Giữ lại: không; validate_wiki_page.py --all sạch (744 trang quét, 0 lỗi, 0 mồ côi)
+
+## [2026-09-24:15-41-26] review | 5 trang
+- Đạt đối chiếu nguồn gốc: potential-gdp-measures-productive-capacity-at-full-employment, alm-balance-sheet-balancing-progresses-through-four-operational-dimensions, financial-system-transfers-funds-through-direct-and-indirect-channels, bank-runs-investor-strikes-and-multiple-equilibria, discount-window
+- Cả 5 trang đều gắn reviewed: 2026-09-24 và reviewed_by: model; không đổi last_updated do claim không đổi
+- Giữ lại: không; validate_wiki_page.py --all sạch (744 trang quét, 0 lỗi, 0 mồ côi)
+
+## [2026-09-24:15-58-27] lint | 744 trang
+- 0 lỗi hook validate_wiki_page.py --all; 0 mồ côi; 182/182 file nguồn khớp; 15 nợ stub; 2 conflict cũ tồn đọng
+- 73 trang draft đủ điều kiện stable (outlink >= 1, backlink >= 2, không conflict); 84 trang draft giữ nguyên
+- Báo cáo: Claude outputs/lint-2026-09-24-744.md
+
+## [2026-09-24:16-10-00] schema | triage _inbox.md và chuẩn hóa chú thích During, Ch.28
+- Cập nhật 03_state/_sources_manifest.md: cargill_central_bank_policy hoàn tất 100%
+- Sửa dải dòng chú thích §7.5 Ch.28 (bond futures) ở 2 trang; ghi nhận chuẩn hóa định dạng chú thích During vào decisions.md
+- Dọn sạch 3 mục trong _inbox.md (0 nợ inbox); validate_wiki_page.py --verify-sources và --all đạt 100%
+
+## [2026-09-24:16-26-42] promote | 73 trang lên stable
+- Nâng 73 trang draft đủ điều kiện (báo cáo lint-2026-09-24-744.md) lên stable; không đổi last_updated, không đụng thân bài
+- 84 trang draft giữ nguyên (82 trang backlink = 1, 2 trang conflict); 0 trang bị loại trong lượt
+- validate_wiki_page.py --all sạch (744 trang quét, 0 lỗi, 0 mồ côi; hiện có 645 stable, 84 draft, 15 stub)
 

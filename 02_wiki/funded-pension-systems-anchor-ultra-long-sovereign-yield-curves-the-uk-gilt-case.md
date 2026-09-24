@@ -3,7 +3,7 @@ title: funded-pension-systems-anchor-ultra-long-sovereign-yield-curves-the-uk-gi
 type: concept
 tags: [pension-funds, uk-gilts, ultra-long-curve, debt-management, funded-pension-system]
 sources: [fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

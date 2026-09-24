@@ -1,0 +1,19 @@
+---
+title: multi-factor-term-structure-models-are-demanded-by-cross-rate-correlation-and-volatility-smiles
+type: concept
+tags: [interest-rate-models, multi-factor-models, volatility-smile, quanto-options, mortgage-backed-securities, term-structure]
+sources: [choudhry_analysing_yield_curve]
+status: stable
+last_updated: 2026-09-24
+---
+
+Trong hầu hết các ứng dụng định giá trái phiếu phổ thông và trái phiếu có quyền chọn mua (callable bonds), mô hình cấu trúc kỳ hạn một nhân tố đã cung cấp độ chính xác hoàn toàn đầy đủ với hiệu quả tính toán vượt trội (choudhry_analysing_yield_curve, Ch.6, Assessing One-Factor and Multi-Factor Models, d.3226, d.3234). Điều này xuất phát từ bản chất cơ học của định giá: để xác định giá trị của một trái phiếu tại một thời điểm tương lai, biến số duy nhất cần xác định là mức lợi suất của trái phiếu đó tại thời điểm đó (quá trình một nhân tố); đồng thời, phần lớn các biến động thực nghiệm của đường cong lợi suất là các bước dịch chuyển gần song song (parallel shifts), khiến giả định tương quan hoàn hảo của mô hình đơn biến không gây ra sai số trọng yếu cho các danh mục vani (choudhry_analysing_yield_curve, Ch.6, d.3226, d.3234). Việc triển khai mô hình đa nhân tố đòi hỏi nguồn lực tính toán khổng lồ để giải các hệ phương trình vi phân nhiều chiều hoặc chạy mô phỏng Monte Carlo đa biến, do đó các ngân hàng chỉ chuyển sang mô hình đa nhân tố khi độ phức tạp của sản phẩm vượt quá khả năng mô tả của mô hình một biến (choudhry_analysing_yield_curve, Ch.6, d.3234).
+
+Choudhry xác lập bốn trường hợp cấu trúc bắt buộc phải sử dụng mô hình đa nhân tố nhằm tránh sai lệch định giá nghiêm trọng (choudhry_analysing_yield_curve, Ch.6, d.3236–3242):
+
+1. Sản phẩm phụ thuộc vào hai mức lãi suất tham chiếu khác nhau: Điển hình là các quyền chọn chênh lệch lãi suất (interest rate spread options) hoặc quyền chọn định lượng (quanto options), nơi cấu trúc hoàn trả là hàm số phụ thuộc vào tương quan chéo và độ lệch giữa hai mức lãi suất độc lập (choudhry_analysing_yield_curve, Ch.6, d.3238);
+2. Định giá các quyền chọn kỳ hạn dài hoặc quyền chọn sâu ngoài tiền/trong tiền (deep OTM/ITM) chịu tác động mạnh của nụ cười biến động (volatility smile): Khi độ biến động của lãi suất biến thiên ngẫu nhiên theo thời gian (stochastic volatility), giả định biến động cố định hoặc tất định của mô hình một nhân tố hoàn toàn thất bại trong việc định giá đúng phần bù rủi ro biến động ở các vùng biên (choudhry_analysing_yield_curve, Ch.6, d.3239);
+3. Định giá các chứng khoán có dòng tiền nhạy cảm với độ dốc của đường cong lợi suất: Điển hình là chứng khoán đảm bảo bằng tài sản thế chấp (mortgage-backed securities - MBS), nơi tốc độ trả nợ trước hạn (prepayment rate) của người đi vay phụ thuộc mật thiết vào độ chênh lệch giữa lãi suất ngắn hạn và lãi suất thế chấp dài hạn, đòi hỏi mô hình phải nắm bắt sự thay đổi độ dốc (steepening/flattening) độc lập với mức lãi suất tuyệt đối (choudhry_analysing_yield_curve, Ch.6, d.3240);
+4. Định giá các hợp đồng quyền chọn kỳ hạn siêu dài đòi hỏi mô phỏng toàn diện mọi quỹ đạo khả dĩ của lãi suất chiết khấu trong tương lai, nơi rủi ro xoắn vặn và uốn cong đường cong tích lũy dần theo thời gian (choudhry_analysing_yield_curve, Ch.6, d.3241).
+
+Các tiêu chí này định hình ranh giới kỹ thuật giữa [[one-factor-term-structure-models-force-perfect-yield-correlation-across-maturities]] và các khung mô hình toàn phần như [[heath-jarrow-morton-framework-locks-forward-rate-drift-strictly-to-volatility-structures]] hay [[libor-market-models-bridge-hjm-to-observable-discrete-forward-rates-and-black-76-swaption-pricing]], tương thích với hiện tượng gián đoạn trong [[jump-diffusion-interest-rate-models-capture-abrupt-policy-rate-shocks-via-poisson-processes]], đồng thời kết nối chặt chẽ với các nhân tố xoắn vặn đường cong được bóc tách tại [[yield-curve-pca-factors-link-curvature-convexity-to-implied-rate-volatility]].

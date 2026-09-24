@@ -5,6 +5,8 @@ tags: [alm, commercial-banking, liquidity-management]
 sources: [clippings, tata_bank_alm]
 status: stable
 last_updated: 2026-09-23
+reviewed: 2026-09-24
+reviewed_by: model
 ---
 
 Quy trình cân đối bảng cân đối trong quản trị Tài sản – Nợ (ALM) của [[deposit-money-banks]] tiến triển qua bốn chiều kích có mức độ phức tạp tăng dần: cân dòng tiền, cân kỳ hạn, cân tỷ lệ cấu trúc, và cân hành vi nguồn vốn gắn liền với cơ chế định giá chuyển giao vốn nội bộ [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]] (clippings, ALM, Cân dòng tiền, file Cân dòng tiền – Khái niệm đầu tiên về cân đối- ALM P1.md, d.15–33; clippings, ALM, Cân kỳ hạn, file Cân nguồn – Phần tiếp theo Cân kỳ hạn.md, d.15–22; clippings, ALM, Cân tỷ lệ, file ALM P3 Cân nguồn Cân Tỷ lệ.md, d.15–19; clippings, ALM, Hành vi nguồn tiền, file ALM Part 4 Hiểu hành vi nguồn tiền.md, d.15–39). Dưới góc độ học thuật và thực tiễn ngân hàng quốc tế, Fidelio Tata định nghĩa ALM như một nghề thủ công (*craft*) kết hợp giữa tính nghệ thuật thực tế và tư duy khoa học định lượng (tata_bank_alm, Ch.1, ALM in Banks, d.434–435). Mục tiêu bao trùm của tiến trình này là giải quyết bài toán tối ưu hóa đa mục tiêu giữa lợi nhuận, thanh khoản, quy mô vốn và kiểm soát rủi ro, nhằm tối đa hóa tỷ số đánh đổi biên lợi nhuận kỳ vọng trên mỗi đơn vị rủi ro biến động (*risk vs return trade-off*) (tata_bank_alm, Ch.1, Purpose of ALM and IRRBB, d.488; tata_bank_alm, Ch.1, Risk vs. Return, d.579–584).
