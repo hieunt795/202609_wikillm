@@ -2,7 +2,7 @@
 source: cargill_central_bank_policy
 file: 01_sources/cargill_central_bank_policy/Cargill_Financial_System_Policy.md
 total_lines: 5624
-last_updated: 2026-09-22
+last_updated: 2026-09-25
 ---
 
 Nguồn một file duy nhất. Chú thích §7.5 dùng dải dòng trong file này.
@@ -21,7 +21,7 @@ Nguồn một file duy nhất. Chú thích §7.5 dùng dải dòng trong file n�
 | `[x]` | Part III · Ch.9 | d.2752–3009 | Regulation and Supervision of the Financial System | 5 trang mới + 4 cập nhật liên kết |
 | `[x]` | Part III · Ch.10 | d.3010–3312 | A Short History of the U.S. Financial and Monetary Regime in Transition | 4 trang mới + 3 cập nhật liên kết |
 | `[x]` | Part IV · Ch.11 | d.3313–3570 | The Five Steps and Step 1: The Institutional Design of the Central Bank | 5 trang mới + 3 cập nhật liên kết |
-| `[x]` | Part IV · Ch.12 | d.3571–4010 | Central Banks, Base Money and the Money Supply | 5 trang mới + 3 cập nhật liên kết |
+| `[x]` | Part IV · Ch.12 | d.3571–4010 | Central Banks, Base Money and the Money Supply | 5 trang mới + 3 cập nhật liên kết. Trích lẻ 2026-09-25: d.3979 cho `sterilization` (stub → draft) |
 | `[x]` | Part IV · Ch.13 | d.4011–4191 | Step 2: The Tools of Monetary Policy; and Step 3: Monetary Policy Instruments | 4 trang mới + 3 cập nhật liên kết |
 | `[x]` | Part IV · Ch.14 | d.4192–4503 | Step 4: The Central Bank Model of the Economy | 4 trang mới + 3 cập nhật liên kết |
 | `[x]` | Part IV · Ch.15 | d.4504–4717 | Step 5: Final Policy Targets | 4 trang mới + 3 cập nhật liên kết |

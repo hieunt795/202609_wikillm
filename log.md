@@ -1009,3 +1009,35 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Update: quasi-fiscal-operations.md (thêm link) + index.md (thêm vào danh mục quasi-fiscal-mechanics)
 - Validation: 778 trang, 0 lỗi, 0 mồ côi
 
+## [2026-09-25:11-45-50] research | quasi-fiscal (công cụ QFO + hub)
+- Cluster 8 trang; enrich 3 trang
+- 6 claim mới ở 3 trang (quasi-fiscal-operations, credit-subsidies về draft), 4 link; 1 mục inbox (primary-liquidity lệch d.4653)
+- Báo cáo: Claude outputs/research-2026-09-25-quasi-fiscal.md
+
+## [2026-09-25:11-54-22] research | cơ chế trợ cấp tỷ giá
+- Cluster 8 trang; enrich 4 trang
+- 8 claim mới ở 4 trang (cả 4 stable → draft), 1 link; 1 mục inbox (unit-of-account câu không nguồn)
+- Báo cáo: Claude outputs/research-2026-09-25-exchange-rate-subsidies.md
+
+## [2026-09-25:12-37-19] review | 1 trang
+- Đã sửa: unit-of-account-in-the-balance-of-payments (bỏ cảnh báo "đọc sai chiều" và câu hai bút toán lệch — không có trong d.3508/d.3510); reviewed_by: model
+- Ghi inbox: exchange-rate dòng 13 mắc cùng claim không nguồn (d.3508)
+
+## [2026-09-25:12-45-41] review | 4 trang
+- Đã sửa: exchange-rate (bỏ cảnh báo d.3508 không nguồn; clippings chỉ nói Nhật, thêm d.22–24; stable → draft), primary-liquidity-injection (policy-controlled lệch d.4653; thuật ngữ không có trong nguồn; nhân tiền về d.4707), quasi-fiscal-operations (bỏ "không phải ý định lừa dối"; câu PSBR theo d.2107), analysis 8 kênh (thêm locator, bỏ seigniorage, bù trừ tự động, RM↑50; ví dụ r = 10% ghi là minh hoạ)
+- Cả 4 trang reviewed_by: model; inbox thêm 4 trang thành phần có locator sai hoặc claim không nguồn
+
+## [2026-09-25:12-55-41] research | chế độ tỷ giá
+- Cluster 16 trang (vượt giới hạn 10 theo chỉ định người dùng); enrich 5 trang
+- 7 claim mới ở 5 trang, 7 link; 3 trang stable → draft; enrich trang Ba Lan dừng vì Ch.1 [ ]; 2 mục inbox
+- Báo cáo: Claude outputs/research-2026-09-25-exchange-rate-regimes.md
+
+## [2026-09-25:12-59-16] lint | 16 trang (cluster chế độ tỷ giá)
+- 0 lỗi máy/mồ côi/conflict/OCR; trùng lặp 2, khái niệm chưa có trang 2, Atomic 1, title 1, nợ stub 1; verify-sources: 1 file Clippings chưa kê
+- 5 trang đủ điều kiện stable; triage 9 mục inbox (3 xoá, 6 gộp)
+- Báo cáo: Claude outputs/lint-2026-09-25-16.md
+
+## [2026-09-25:13-04-51] ingest | imf_macro_accounting + cargill_central_bank_policy — dọn nợ lint cluster tỷ giá
+- sterilization stub → draft (IMF d.3969, d.5060–5062, d.5082; Cargill d.3979); 2 stub mới: managed-float, parallel-foreign-exchange-market
+- 13 link chèn vào câu có sẵn (7 managed-float, 6 parallel-…; bỏ underground-economy vì "chợ đen" ở đó là kinh tế ngầm)
+- Không đổi phần nguồn còn lại; state 2 nguồn + index §Sources đã cập nhật

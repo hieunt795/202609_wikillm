@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (849 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1; Ch.2–6 xong; đang đối chiếu lại Ch.2 (B1–B2 xong 2026-09-25, còn B3–B4), chi tiết ở state file | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (849 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1; Ch.2–6 xong; đang đối chiếu lại Ch.2 (B1–B2 xong 2026-09-25, còn B3–B4); 2026-09-25 thêm lượt dọn nợ lint tỷ giá, chi tiết ở state file | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (85 KB / 721 dòng) | **Chưa ingest** | Toàn bộ, ingest trọn 1 lượt | — |
 | `capitalism_and_freedom` | Nguồn dài (565 KB / 2.055 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–18 xong (chi tiết ở state file) | `03_state/bindseil_monetary_policy.md` |
@@ -201,6 +201,8 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[exchange-rate]] — giá bị méo, neo danh nghĩa, chịu tác động của tài trợ thâm hụt
 - [[real-exchange-rate]] — tỷ giá danh nghĩa điều chỉnh theo chi phí lao động đơn vị/giá tương đối; thước đo sức cạnh tranh
 - [[exchange-rate-regimes]] — cố định, rổ tiền, trượt công bố trước, thả nổi có quản lý, thả nổi; quyết định mức tự chủ tiền tệ
+- [[managed-float]] — NHTW mua bán ngoại tệ để điều chỉnh đường đi tỷ giá; thả nổi "bẩn" (stub)
+- [[parallel-foreign-exchange-market]] — tỷ giá chợ đen báo mức lệch của tỷ giá chính thức; thị trường mỏng (stub)
 - [[devaluation]] — hạ giá trị chính thức của nội tệ; tăng giá một lần; cần khi thâm hụt vãng lai không tài trợ được
 - [[currency-board]] — tiền dự trữ chỉ phát hành khi có đủ ngoại tệ; không trung hoà được; Estonia, Lithuania
 - [[nominal-anchor]] — biến danh nghĩa được cố định để neo kỳ vọng lạm phát
@@ -576,7 +578,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[exchange-rate-determination-balances-short-run-financial-flows-and-long-run-trade]] — cơ chế xác định tỷ giá cân bằng giữa dòng tài sản tài chính ngắn hạn (FA view) và dòng hàng hóa dài hạn (CA view)
 - [[real-interest-rate-increases-appreciate-currency-while-inflation-expectations-depreciate-it]] — hiệu ứng Fisher đối với tỷ giá: lãi suất thực tăng làm tăng giá đồng tiền, lạm phát kỳ vọng làm giảm giá đồng tiền
 - [[internal-external-balance-links-domestic-saving-investment-gaps-to-current-account-deficits]] — cân bằng nội - ngoại $(S - I) + (T - G) = CA$; giải mã nghịch lý USD giảm giá nhưng thâm hụt vãng lai Mỹ tiếp tục phình to do spending binge
-- [[sterilization]] — nghiệp vụ trung hòa: nghiệp vụ bù trừ tác động của can thiệp ngoại hối lên cung tiền trong nước
+- [[sterilization]] — trung hoà: nghiệp vụ thị trường mở ngược chiều bù tác động của can thiệp ngoại hối lên tiền dự trữ; hội đồng tiền tệ loại trừ
 
 **Vai trò cơ bản của chính phủ trong chế độ tài chính - tiền tệ (Cargill — Ch.8)**
 - [[greshams-law-and-uniform-coinage-rationalize-initial-government-monetary-roles]] — định luật Gresham ("tiền xấu đuổi tiền tốt") và nhu cầu đúc tiền chuẩn hóa; nguy cơ lạm dụng quyền năng đúc tiền tạo lạm phát
