@@ -996,3 +996,9 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Title: 29 trang Title Case → đúng tên file; 5 trang Ch.5 analysis một nguồn → concept; đổi tên to-what-extent-…-1990-91-… → to-what-extent-was-polands-early-transition-output-decline-overstated (sửa 5 link + ví dụ §8 schema)
 - Trang mới: broad-money (draft, Ch.5 d.4713–5144), velocity-of-money (stub); inbox xoá 16/16 mục đã xử lý; decisions.md + ingest/SKILL.md: ngoại lệ stale cho ingest lại dạng đối chiếu, quy ước title
 - Không xử lý: foreign-exchange-reserves không phải trùng (nghĩa dự trữ quốc tế, rộng hơn cấu phần FX), giữ lại; 14 nợ stub chờ /research; 2 conflict chờ B3–B4; --all 768 trang sạch
+
+## [2026-09-25:10-17-17] research | quasi-fiscal mechanics: 8 concept + 1 analysis
+- Tạo: 9 trang mới (8 concept pages kênh mechanics + 1 analysis page tổng hợp); update quasi-fiscal-operations + index.md §quasi-fiscal-mechanics
+- Validation: 777 trang, 0 lỗi, 0 mồ côi; analysis page đã có backlink từ quasi-fiscal-operations
+- Phạm vi: tám kênh mechanics từ phát hành tiền cơ sở → bù trừ NFA-NDA; synthesis không nhét thêm claim mới từ nguồn
+

@@ -329,6 +329,17 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[regulatory-subsidies]] — trả ngầm qua quy định làm đổi giá hoặc quyền tiếp cận thị trường
 - [[implicit-subsidies]] — trợ cấp không hiện ra trong ngân sách; khó kiểm soát hơn trợ cấp công khai
 
+**Quasi-fiscal mechanics — tám kênh tác động lên bảng cân đối MA (Phân tích chi tiết)**
+- [[how-quasi-fiscal-operations-distort-ma-accounts-through-eight-mechanic-channels]] *(analysis)* — tổng hợp tám kênh mechanics từ quyết định cấp tín dụng tới tác động cuối cùng lên dự trữ
+- [[primary-liquidity-injection-when-quasi-fiscal-central-bank-lends]] — Kênh 1: MA phát hành tiền cơ sở mới khi cho vay bán tài khoá
+- [[quasi-fiscal-losses-hidden-in-monetary-authorities-other-items-net]] — Kênh 2: Lỗ từ lãi suất ưu đãi được ẩn trong OIN
+- [[monetary-survey-consolidation-eliminates-quasi-fiscal-internal-claims]] — Kênh 3: Consolidation loại bỏ giao dịch nội bộ MA↔DMB
+- [[money-multiplier-cascade-from-quasi-fiscal-primary-injection]] — Kênh 4: Tiền cơ sở được phóng đại thành tiền rộng qua multiplier
+- [[quasi-fiscal-spending-increases-imports-and-deteriorates-current-account]] — Kênh 5: Tiền rộng tăng → chi tiêu → nhập khẩu ↑ → CAB ↓
+- [[nfa-nda-offset-mechanism-under-quasi-fiscal-and-fixed-exchange-rate]] — Kênh 6: Dưới tỷ giá cố định, NFA↓ bù NDC↑; bù trừ 1:1
+- [[balance-sheet-expansion-leanness-when-quasi-fiscal-loans-issued]] — Kênh 7: Bảng cân đối MA nở (leanness tăng)
+- [[quadruple-entry-flow-of-funds-quasi-fiscal-transactions-across-sectors]] — Kênh 8: Ghi 4 bút toán trong ma trận flow-of-funds để phát hiện dòng tiền ẩn
+
 **Ch.5 — cấu trúc hệ thống tiền tệ và nhà chức trách tiền tệ (batch W1)**
 - [[financial-statistics-are-organized-in-three-tiers-from-institutional-balance-sheets-to-the-financial-survey]] — bảng cân đối riêng → khảo sát tiền tệ → khảo sát tài chính
 - [[central-bank]] — nhà chức trách tiền tệ: định nghĩa chức năng, vai trò, người cho vay cuối cùng
