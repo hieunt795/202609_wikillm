@@ -132,7 +132,7 @@ Title là **giao diện (API) của trang** — thứ các trang khác gọi t�
 | Thuật ngữ cốt lõi nhiều trang trỏ tới (`concept`, `entity`) | Danh từ / cụm danh từ | `gdp`, `absorption`, `system-of-national-accounts-sna` |
 | Nhận định, phát hiện, tường thuật (`case`, `analysis`, bridge note) | **Câu trần thuật hoàn chỉnh** | `polands-excess-wage-tax-popiwek-was-discontinued-after-five-years` |
 | `concept` có nội dung là nhận định (*declarative note*) | **Câu trần thuật hoàn chỉnh** | `wage-controls-lose-effectiveness-rapidly-after-a-short-period` |
-| Nội dung nguồn còn tranh luận, chưa đủ chứng cứ | **Câu hỏi** | `to-what-extent-was-polands-output-decline-1990-91-overstated` |
+| Nội dung nguồn còn tranh luận, chưa đủ chứng cứ | **Câu hỏi** | `to-what-extent-was-polands-early-transition-output-decline-overstated` |
 
 Ba luật kèm theo:
 

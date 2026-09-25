@@ -1,6 +1,6 @@
 ---
-title: Consolidation of monetary authorities and DMB accounts eliminates internal claims to determine broad money
-type: analysis
+title: consolidation-of-monetary-authorities-and-dmb-accounts-eliminates-internal-claims-to-determine-broad-money
+type: concept
 tags: [monetary-accounts, imf]
 status: draft
 sources: [imf_macro_accounting]

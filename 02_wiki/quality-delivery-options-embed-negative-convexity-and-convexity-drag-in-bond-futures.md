@@ -1,5 +1,5 @@
 ---
-title: "Quality Delivery Options Embed Negative Convexity and Convexity Drag in Bond Futures"
+title: quality-delivery-options-embed-negative-convexity-and-convexity-drag-in-bond-futures
 type: concept
 tags:
   - derivatives

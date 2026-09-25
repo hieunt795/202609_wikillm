@@ -1,5 +1,5 @@
 ---
-title: "Yield Curve PCA Factors Link Curvature Convexity to Implied Rate Volatility"
+title: yield-curve-pca-factors-link-curvature-convexity-to-implied-rate-volatility
 type: concept
 tags:
   - trading

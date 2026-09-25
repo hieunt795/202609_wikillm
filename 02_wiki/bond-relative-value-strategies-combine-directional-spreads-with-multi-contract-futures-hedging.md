@@ -1,5 +1,5 @@
 ---
-title: "Bond Relative Value Strategies Combine Directional Spreads with Multi-Contract Futures Hedging"
+title: bond-relative-value-strategies-combine-directional-spreads-with-multi-contract-futures-hedging
 type: concept
 tags:
   - trading

@@ -1,5 +1,5 @@
 ---
-title: "Swap Rate Term Structures Diverge from Bank Bond Yields Due to Panel Survivorship Bias"
+title: swap-rate-term-structures-diverge-from-bank-bond-yields-due-to-panel-survivorship-bias
 type: concept
 tags:
   - derivatives

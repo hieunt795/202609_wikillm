@@ -53,7 +53,7 @@ Dùng vài từ khoá tiếng Anh cho mỗi khái niệm (thuật ngữ gốc v�
 **3. Với mỗi entity/concept/case trong cụm:**
 
 - **Đã có trang** → merge thông tin mới, thêm source id vào `sources:`, nâng `last_updated`. Trang `stable`/`stale` được merge → về `draft` (§9). Mâu thuẫn với nội dung cũ → **không tự sửa**, đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn (luật cứng 2).
-- **Trang `stable` liên quan tới nguồn này nhưng lượt ingest không merge vào** → đổi sang `stale` (§9).
+- **Trang `stable` liên quan tới nguồn này nhưng lượt ingest không merge vào** → đổi sang `stale` (§9). Ngoại lệ: lượt ingest lại ở chế độ đối chiếu đã đọc lại trang và thấy đúng thì giữ `stable` (decisions.md 2026-09-25).
 - **Chưa có** → tạo trang mới. Ranh giới trang theo §5, title theo §8, thân bài theo §7.
 
 Viết thân bài bằng lời của mình. Trước khi viết hoặc sửa thân bài trang mới/cập nhật, **gọi Skill tool với `writing-style`** (bản local tại `.claude/skills/writing-style/`, profile wiki) để nạp bộ quy tắc A–I, rồi áp quy tắc đó vào văn bản đang viết. Với **nguồn dài**: mỗi claim kèm chú thích `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7.5); nguồn nhiều file thêm `file <hậu tố>`. Dải dòng lấy từ chunk đang đọc.

@@ -1,5 +1,5 @@
 ---
-title: "Futures Squeezes and Repo Scarcity Invert Net Basis into Negative Territory"
+title: futures-squeezes-and-repo-scarcity-invert-net-basis-into-negative-territory
 type: concept
 tags:
   - derivatives

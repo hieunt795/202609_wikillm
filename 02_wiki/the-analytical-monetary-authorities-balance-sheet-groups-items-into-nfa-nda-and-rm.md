@@ -1,6 +1,6 @@
 ---
-title: The analytical monetary authorities balance sheet groups items into NFA, NDA and RM
-type: analysis
+title: the-analytical-monetary-authorities-balance-sheet-groups-items-into-nfa-nda-and-rm
+type: concept
 tags: [monetary-accounts, imf]
 status: draft
 sources: [imf_macro_accounting]

@@ -1,5 +1,5 @@
 ---
-title: "Fixed Income Trade Governance Balances Probabilistic Stop-Loss and Epistemological Consistency"
+title: fixed-income-trade-governance-balances-probabilistic-stop-loss-and-epistemological-consistency
 type: concept
 tags:
   - trading

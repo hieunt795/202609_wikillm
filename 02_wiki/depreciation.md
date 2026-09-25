@@ -9,7 +9,7 @@ last_updated: 2026-09-15
 
 Khấu hao, còn gọi là tiêu hao vốn cố định (consumption of fixed capital), là chi phí thay thế phần vốn bị hao mòn trong một kỳ (imf_macro_accounting, Ch.2, The Main Aggregates, d.664).
 
-Nó là đại lượng tách bản gộp khỏi bản ròng. Đầu tư ròng bằng [[gross-investment]] trừ khấu hao và đo chính xác hơn phần năng lực sản xuất tăng thêm (imf_macro_accounting, Ch.2, cùng mục, d.664–668); [[net-domestic-product|sản phẩm trong nước ròng]] (NDP) bằng [[gdp]] trừ khấu hao,
+Nó là đại lượng tách bản gộp khỏi bản ròng. [[net-investment|Đầu tư ròng]] bằng [[gross-investment]] trừ khấu hao và đo chính xác hơn phần năng lực sản xuất tăng thêm (imf_macro_accounting, Ch.2, cùng mục, d.664–668); [[net-domestic-product|sản phẩm trong nước ròng]] (NDP) bằng [[gdp]] trừ khấu hao,
 
 $$NDP = GDP - D$$
 

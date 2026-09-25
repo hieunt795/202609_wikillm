@@ -1,5 +1,5 @@
 ---
-title: "Bond Futures Market Microstructure Differentiates Clearing Netting and CFTC Trader Categories"
+title: bond-futures-market-microstructure-differentiates-clearing-netting-and-cftc-trader-categories
 type: concept
 tags:
   - derivatives

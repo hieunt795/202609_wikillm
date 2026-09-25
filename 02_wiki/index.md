@@ -8,7 +8,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (849 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1; Ch.2–6 xong (chi tiết theo chunk ở state file) | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (849 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1; Ch.2–6 xong; đang đối chiếu lại Ch.2 (B1–B2 xong 2026-09-25, còn B3–B4), chi tiết ở state file | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (85 KB / 721 dòng) | **Chưa ingest** | Toàn bộ, ingest trọn 1 lượt | — |
 | `capitalism_and_freedom` | Nguồn dài (565 KB / 2.055 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
 | `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–18 xong (chi tiết ở state file) | `03_state/bindseil_monetary_policy.md` |
@@ -35,11 +35,15 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[the-1993-sna-revised-the-1968-system-in-five-ways]] — khác biệt so với bản 1968
 - [[mps-material-product-system]] — khung hạch toán của kinh tế kế hoạch
 - [[mps-counts-only-output-of-the-material-sphere]] — MPS loại dịch vụ phi vật chất
+- [[net-material-product]] — NMP, đại lượng ròng của MPS, khấu hao theo giá gốc
+- [[gross-material-product]] — GMP = NMP + khấu hao, đối diện GDP
 - [[converting-mps-net-material-product-to-gdp-requires-four-adjustments]] — quy NMP về GDP
 - [[macroeconomic-analysis-divides-the-economy-into-five-main-sectors]] — năm khu vực phân tích và vai trò của từng khu vực
 - [[sectoral-interactions]] — giao dịch thu–chi của mỗi khu vực sinh giao dịch tài chính với khu vực khác; $(S_p-I_p)+(S_g-I_g)=CAB$
 
 **Đại lượng sản lượng**
+- [[gross-output]] — Q, tổng giá trị sản xuất, đếm trùng đầu vào
+- [[intermediate-consumption]] — đầu vào dùng hết trong sản xuất, bị trừ khỏi Q
 - [[value-added]] — giá trị thực sự tạo thêm, đơn vị nền của mọi phép đo sản lượng
 - [[gdp]] — tổng value added theo nguyên tắc cư trú
 - [[production-income-and-expenditure-approaches-yield-the-same-gdp]] — ba cách đo, một con số
@@ -48,8 +52,10 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[taxes-less-subsidies-on-products]] — TSP, cấu phần thứ ba của GDP cách thu nhập
 - [[net-domestic-product]] — NDP = GDP − D
 - [[measured-gdp-is-an-imperfect-gauge-of-output-and-welfare]] — GDP đo sản xuất và phúc lợi chưa chuẩn ở đâu, vì sao
+- [[underground-economy]] — giao dịch che giấu, cách ước lượng, tác động lên tăng trưởng đo được
 
 **Giá và sản lượng thực**
+- [[nominal-gdp]] — sản lượng theo giá hiện hành, trộn giá với lượng
 - [[real-gdp]] — sản lượng theo giá cố định
 - [[potential-gdp-measures-productive-capacity-at-full-employment]] — sản lượng tối đa khi toàn dụng lao động với công nghệ và cấu trúc hiện có
 - [[gdp-gap-measures-deviation-of-actual-output-from-potential]] — (Y − Y*)/Y*, chỉ báo vị thế chu kỳ kinh doanh
@@ -58,10 +64,18 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[cpi]] — chỉ số giá rổ hàng tiêu dùng, dạng Laspeyres
 - [[cpi-and-the-gdp-deflator-differ-in-coverage-import-prices-and-weights]] — ba khác biệt giữa CPI và deflator
 - [[laspeyres-and-paasche-indexes-bracket-true-inflation]] — quyền số cố định và quyền số hiện hành lệch hai phía
+- [[laspeyres-price-index]] — quyền số năm gốc, phóng đại lạm phát
+- [[paasche-price-index]] — quyền số năm hiện hành, đánh giá thấp lạm phát
+- [[wholesale-price-index]] — WPI, giá khâu bán buôn, dạng Laspeyres
+- [[producer-price-index]] — PPI, giá khâu sản xuất, quyền số cố định
+- [[sauerbeck-index]] — quyền số kỳ gốc, so với tháng trước
 
 **Lạm phát**
 - [[inflation]] — tăng giá chung kéo dài, phân biệt với giá tương đối
 - [[types-of-inflation]] — do chính sách, chi phí đẩy, cầu kéo, quán tính
+- [[policy-induced-inflation]] — mở rộng tiền tệ để tài trợ thâm hụt
+- [[cost-push-inflation]] — chi phí (lương) tăng; không kéo dài nếu tiền tệ không nới theo
+- [[demand-pull-inflation]] — tổng cầu dư thừa, thường do chính sách quá nới
 - [[core-inflation-strips-out-one-time-price-level-jumps]] — tốc độ nền so với con số đo được
 - [[a-one-time-price-shock-becomes-inflation-only-if-monetary-policy-accommodates-it]] — điều kiện tiền tệ
 - [[inertial-inflation-persists-because-it-is-written-into-contracts]] — vì sao quán tính tự duy trì
@@ -78,10 +92,12 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[absorption]] — tổng cầu nội địa (C + I)
 - [[aggregate-demand]] — cầu với hàng trong nước, gồm xuất khẩu ròng
 - [[gross-national-saving]] — phần dư sau tiêu dùng
+- [[gross-domestic-saving]] — S − TR_f − Y_f, bản tiết kiệm không tính thu nhập từ nước ngoài
 - [[final-consumption]] — phần hộ gia đình và chính phủ sử dụng, đối lập với tiêu dùng trung gian
 - [[private-consumption]] — CP, cấu phần tư nhân của C (Box 2.1)
 - [[general-government-consumption]] — CG, cấu phần chính phủ của C (Box 2.1)
 - [[gross-investment]] — bổ sung vốn vật chất, không phải mua tài sản tài chính
+- [[net-investment]] — đầu tư gộp trừ khấu hao, đo năng lực sản xuất tăng thêm
 - [[depreciation]] — đại lượng tách mọi cặp gộp/ròng
 - [[exports-of-goods-and-nonfactor-services]] — X, cấu phần GDP cách chi tiêu
 - [[imports-of-goods-and-nonfactor-services]] — M, cấu phần GDP cách chi tiêu (trừ ra)
@@ -201,7 +217,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 
 **Case: Ba Lan 1989–1994**
 - [[polands-output-collapse-1990-91-came-from-three-distinct-causes]] — vĩ mô, thể chế, đo lường
-- [[to-what-extent-was-polands-output-decline-1990-91-overstated]] — câu hỏi còn để ngỏ
+- [[to-what-extent-was-polands-early-transition-output-decline-overstated]] — câu hỏi còn để ngỏ
 - [[polands-recovery-from-1992-was-led-by-consumption-then-exports]] — phục hồi 1992–94
 - [[polish-national-saving-fell-sharply-at-the-onset-of-transition]] — tiết kiệm rơi mạnh; ⚠️ nguồn mâu thuẫn về năm 1992
 - [[polish-price-liberalization-left-inflation-stuck-at-30-percent]] — thả giá và lạm phát nền
@@ -339,6 +355,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[change-in-net-foreign-assets-links-the-monetary-survey-to-the-balance-of-payments]] — ΔNFA = CAB + ΔFI = -ΔRES, cách tiếp cận tiền tệ với BOP
 - [[the-money-multiplier-links-reserve-money-to-the-money-supply]] — mm = (c+1)/(c+r)
 - [[the-quantity-theory-links-money-velocity-prices-and-output]] — MV = PY
+- [[velocity-of-money]] — V = PY/M, vòng quay thu nhập của tiền (stub)
 - [[demand-for-money-is-a-demand-for-real-balances-driven-by-income-and-opportunity-cost]] — cầu số dư tiền thực
 - [[assets-are-held-based-on-expected-return-risk-and-liquidity]] — lợi suất, rủi ro, thanh khoản
 - [[real-interest-rate]] — Rᵣ ≈ Rₙ − Pₑ (đã bổ sung Ch.5)
@@ -348,6 +365,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[currency-in-circulation]] — CY, tiền mặt ngoài ngân hàng; khác tiền đã phát hành; tham số $c$ của số nhân
 - [[demand-deposits]] — DD, rút ngay; mẫu số của các tỷ lệ trong số nhân tiền
 - [[narrow-money-m1]] — $M1 = CY + DD$; $M2 = M1 + QM$
+- [[broad-money]] — M2 = M1 + QM = CY + DD + TD; bên nợ của khảo sát tiền tệ, đối ứng NFA + NDA
 - [[net-domestic-assets]] — NDA; $M2 = NFA + NDA$, $NDA = NDC + OIN_b$
 - [[net-domestic-credit]] — NDC; tín dụng ròng cho chính phủ cộng tín dụng cho khu vực khác
 - [[net-credit-to-government]] — NCG, ghi ròng tiền gửi chính phủ; phần tạo tiền mạnh
@@ -386,7 +404,11 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 **Ch.6 — flow of funds: ghép các cân đối khu vực vào một ma trận**
 - [[the-flow-of-funds-table-is-a-zero-sum-quadruple-entry-matrix]] — cấu trúc cột-khu vực/hàng-giao dịch, tính chất tổng-bằng-0
 - [[flow-of-funds-recording-conventions-govern-coverage-source-selection-and-sign]] — phạm vi, chọn nguồn, quy ước ngân hàng/đối ngoại, quy ước dấu
-- [[the-flow-of-funds-table-decomposes-the-economy-wide-identity-into-sector-columns]] — 7 cột của bảng ứng với các đồng nhất thức đã ingest
+- [[the-flow-of-funds-table-decomposes-the-economy-wide-identity-into-sector-columns]] — 7 cột của bảng ứng với 8 đồng nhất thức Box 6.4
+- [[reading-the-flow-of-funds-by-rows-shows-which-sectors-face-financing-difficulties]] — 3 khối hàng, hàng cân bằng OIN ở mọi khu vực, đọc cân đối và tài trợ theo hàng
+- [[government-disposable-income]] — GNDI_g = RR − TR_g − INT_g; cách tính S_g trong bảng flow of funds
+- [[private-disposable-income]] — GNDI_p, phần GNDI trong nước ngoài chính phủ; S_p − I_p = GNDI_p − C_p − I_p
+- [[external-imbalance-is-diagnosed-by-tracing-which-sector-saving-investment-balance-deteriorated]] — truy thâm hụt vãng lai về khu vực và về tiết kiệm/đầu tư, rồi truy nguồn tài trợ
 - [[the-flow-of-funds-approach-treats-sectoral-balances-as-constraints-unlike-market-equilibrium-models]] — khác biệt phương pháp luận với cân bằng thị trường
 - [[twin-deficits-describes-the-co-movement-of-the-fiscal-and-current-account-balances]] — vì sao thâm hụt ngân sách và thâm hụt vãng lai không di chuyển cùng chiều một cách tất yếu
 - [[fiscal-imbalance-transmits-differently-to-the-private-sector-depending-on-how-it-is-financed]] — tài trợ bằng thuế so với bằng tín dụng ngân hàng trung ương tác động khác nhau tới khu vực tư và cán cân vãng lai

@@ -1,5 +1,5 @@
 ---
-title: Monetary statistics are stock data recorded on a cash basis
+title: monetary-statistics-are-stock-data-recorded-on-a-cash-basis
 type: concept
 tags: [monetary-accounts, imf]
 status: draft

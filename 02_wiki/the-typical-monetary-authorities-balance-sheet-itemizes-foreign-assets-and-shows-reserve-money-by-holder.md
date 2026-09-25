@@ -1,6 +1,6 @@
 ---
-title: The typical monetary authorities balance sheet itemizes foreign assets and shows reserve money by holder
-type: analysis
+title: the-typical-monetary-authorities-balance-sheet-itemizes-foreign-assets-and-shows-reserve-money-by-holder
+type: concept
 tags: [monetary-accounts, imf]
 status: draft
 sources: [imf_macro_accounting]

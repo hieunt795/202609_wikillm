@@ -1,5 +1,5 @@
 ---
-title: "Bond Futures Basis and Implied Repo Rate Quantify Arbitrage-Free Cash-and-Carry Relationships"
+title: bond-futures-basis-and-implied-repo-rate-quantify-arbitrage-free-cash-and-carry-relationships
 type: concept
 tags:
   - derivatives

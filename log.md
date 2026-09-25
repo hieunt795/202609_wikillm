@@ -957,3 +957,42 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 ## [2026-09-24:23-51-01] review | 4 trang
 - Đã sửa, đặt reviewed_by: model: the-typical-… (danh mục Box 5.1, bỏ "định chế phi tài chính"), credit-to-the-private-sector (bỏ "động lực chủ yếu của NDA", sửa d.4837 nói quá, bỏ mốc 1991–94, sửa tên mục d.5142), central-bank (Bank of Ireland không "tư nhân", HKMA không "ủy thác in", đoạn giám sát viết lại theo d.2600–2602, nhiệm vụ kép theo d.4690–4708, sửa 4 chú thích lệch dòng)
 - Đạt, chỉ sửa chú thích: sterilization-offsets-… (d.5065–5070 → d.5062, d.5071–5083 → d.5082)
+
+## [2026-09-25:09-18-05] ingest | imf_macro_accounting Ch.6 — viết lại (Flow of Funds)
+- 4 trang mới: reading-the-flow-of-funds-by-rows-…, government-disposable-income, private-disposable-income, external-imbalance-is-diagnosed-…; viết lại 4 trang (sector-columns + Box 6.4, recording-conventions, a-real-flow-of-funds sửa claim chú thích 4, constraints); chỉ thêm link/locator 3 trang
+- Không stub mới; --all sạch (750 trang, 0 vấn đề, 0 mồ côi)
+- Ch.6 xong; phần còn lại của nguồn: Ch.1 (xem state file)
+
+## [2026-09-25:09-25-37] review | 5 trang
+- Đã sửa và đặt reviewed_by: model cho cả 5 trang. government-disposable-income: bỏ claim "C_g ở Ch.3 gồm chuyển nhượng và lãi" (d.2073 không nói) và câu "hai cách tính cho cùng một khoảng chênh". private-disposable-income: bỏ vế "gồm hộ gia đình lẫn doanh nghiệp". reading-by-rows: bỏ "phần lớn".
+- external-imbalance: link CAB=ΔNFA gán sai phạm vi (đồng nhất thức bao cả ba nguồn tài trợ); bỏ "hay cả hai". sector-columns: sửa mâu thuẫn với d.5776 (bảng có chỉ ra khu vực mất cân đối), thêm locator d.5594, d.5673
+- Còn chờ review từ lượt ingest Ch.6: a-real-flow-of-funds, recording-conventions, constraints
+
+## [2026-09-25:09-38-21] ingest | imf_macro_accounting Ch.2 B1 (A1+A2, d.607–934) — đối chiếu lại
+- 6 trang mới: gross-output, intermediate-consumption, net-investment, gross-domestic-saving, nominal-gdp, underground-economy
+- Sửa claim, về draft: net-domestic-product, compensation-of-employees, real-gdp, gdp, net-exports, measured-gdp-…; thêm locator 7 trang
+- Còn B2 (d.935–1058), B3 (d.1059–1241), B4 (d.1524–1650)
+
+## [2026-09-25:09-43-19] ingest | imf_macro_accounting Ch.2 B2 (B+C, d.935–1058) — đối chiếu lại
+- 10 trang mới: net-material-product, gross-material-product, laspeyres-price-index, paasche-price-index, wholesale-price-index, producer-price-index, sauerbeck-index, policy-induced-inflation, cost-push-inflation, demand-pull-inflation
+- core-inflation-… về draft (2 câu không nguồn IMF → câu trỏ); 14 trang khác khớp nguồn; 2 mục mới ở _inbox
+- Còn B3 (d.1059–1241), B4 (d.1524–1650)
+
+## [2026-09-25:09-45-53] review | 5 trang
+- Đạt: gdp (thêm locator d.656), gndi
+- Sửa, về draft: reserve-money (bỏ diễn giải trọng số không có trong nguồn, d.4647–4651); reserve-assets-… (chú thích 5 ở d.3597 không phải d.3591; câu tách NFA hệ thống ngân hàng gán lý do sai → theo d.3975–3977); cpi (2 câu không nguồn → câu trỏ; locator Boskin d.932–936)
+- Gỡ mục cpi khỏi _inbox (đã xử lý)
+
+## [2026-09-25:09-48-40] review | 5 trang (ingest lại Ch.2, lượt 1/5)
+- Đạt: real-gdp (tách câu nối chấm phẩy, không đổi claim), core-inflation-… (thêm locator Pricing Policies d.1134–1144 cho ý tự do hóa giá), measured-gdp-…, net-exports, laspeyres-price-index (thêm locator Paasche d.1015)
+- Không có claim sai; còn 17 trang từ luồng ingest lại Ch.2 chờ review
+
+## [2026-09-25:09-54-11] lint | 766 trang
+- Máy: 0 lỗi trang, 0 mồ côi; 1 file nguồn chưa kê (Clippings/Term premia); 25 OCR đều báo giả. Tay: 2 conflict tồn, 5 vi phạm title/type, 1 cặp trùng (foreign-exchange-reserves), 14 nợ stub, 2 khái niệm chưa có trang (broad-money, velocity), 0 stale
+- Inbox: 14/16 mục đề xuất xoá (đã xử lý ở review 24/9); 58 trang đủ điều kiện stable (28 đã review, 30 chưa)
+- Báo cáo: Claude outputs/lint-2026-09-25-766.md
+
+## [2026-09-25:10-02-03] schema | xử lý lint 2026-09-25 (766 trang)
+- Title: 29 trang Title Case → đúng tên file; 5 trang Ch.5 analysis một nguồn → concept; đổi tên to-what-extent-…-1990-91-… → to-what-extent-was-polands-early-transition-output-decline-overstated (sửa 5 link + ví dụ §8 schema)
+- Trang mới: broad-money (draft, Ch.5 d.4713–5144), velocity-of-money (stub); inbox xoá 16/16 mục đã xử lý; decisions.md + ingest/SKILL.md: ngoại lệ stale cho ingest lại dạng đối chiếu, quy ước title
+- Không xử lý: foreign-exchange-reserves không phải trùng (nghĩa dự trữ quốc tế, rộng hơn cấu phần FX), giữ lại; 14 nợ stub chờ /research; 2 conflict chờ B3–B4; --all 768 trang sạch

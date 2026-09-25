@@ -1,5 +1,5 @@
 ---
-title: "Physical Delivery Bond Futures Deter Market Manipulation Through Post-Settlement Inventory Exposure"
+title: physical-delivery-bond-futures-deter-market-manipulation-through-post-settlement-inventory-exposure
 type: concept
 tags:
   - derivatives

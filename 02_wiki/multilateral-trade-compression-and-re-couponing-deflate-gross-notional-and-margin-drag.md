@@ -1,5 +1,5 @@
 ---
-title: "Multilateral Trade Compression and Re-Couponing Deflate Gross Notional and Margin Drag"
+title: multilateral-trade-compression-and-re-couponing-deflate-gross-notional-and-margin-drag
 type: concept
 tags:
   - derivatives

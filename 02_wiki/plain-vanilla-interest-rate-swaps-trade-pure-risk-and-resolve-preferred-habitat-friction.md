@@ -1,5 +1,5 @@
 ---
-title: "Plain Vanilla Interest Rate Swaps Trade Pure Risk and Resolve Preferred Habitat Friction"
+title: plain-vanilla-interest-rate-swaps-trade-pure-risk-and-resolve-preferred-habitat-friction
 type: concept
 tags:
   - derivatives

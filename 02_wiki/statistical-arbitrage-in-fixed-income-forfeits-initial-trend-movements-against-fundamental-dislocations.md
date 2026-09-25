@@ -1,5 +1,5 @@
 ---
-title: "Statistical Arbitrage in Fixed Income Forfeits Initial Trend Movements Against Fundamental Dislocations"
+title: statistical-arbitrage-in-fixed-income-forfeits-initial-trend-movements-against-fundamental-dislocations
 type: concept
 tags:
   - trading

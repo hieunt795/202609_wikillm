@@ -3,9 +3,9 @@ title: reserve-money
 type: concept
 tags: [monetary-policy]
 sources: [imf_macro_accounting]
-status: stable
-last_updated: 2026-09-24
-reviewed: 2026-09-17
+status: draft
+last_updated: 2026-09-25
+reviewed: 2026-09-25
 reviewed_by: model
 ---
 
@@ -25,7 +25,7 @@ $$\Delta RM = \Delta NFA^* + \Delta NCG^* + \Delta CDMB^* + \Delta CPS^* + \Delt
 
 $$\frac{\Delta RM_t}{RM_{t-1}} = \frac{\Delta NFA^*_t}{RM_{t-1}} + \frac{\Delta NCG^*_t}{RM_{t-1}} + \frac{\Delta CDMB^*_t}{RM_{t-1}} + \frac{\Delta CPS^*_t}{RM_{t-1}} + \frac{\Delta OIN^*_t}{RM_{t-1}}$$
 
-(imf_macro_accounting, Ch.5, cùng mục, d.4636–4639; bản chuyển đổi của nguồn lặp số hạng $CDMB^*$ hai lần, công thức trên bỏ số hạng trùng để khớp năm khoản mục tài sản của (5.1)). Viết lại mỗi số hạng thành tích của tốc độ tăng trưởng riêng của khoản mục đó nhân tỷ trọng khoản mục trong RM kỳ trước, tốc độ tăng RM trở thành tổng có trọng số của tốc độ tăng các khoản mục tài sản. Cách viết này tách được một khoản mục đóng góp lớn vì bản thân nó tăng nhanh hay vì nó chiếm tỷ trọng lớn:
+(imf_macro_accounting, Ch.5, cùng mục, d.4636–4639; bản chuyển đổi của nguồn lặp số hạng $CDMB^*$ hai lần, công thức trên bỏ số hạng trùng để khớp năm khoản mục tài sản của (5.1)). Viết lại mỗi số hạng thành tích của tốc độ tăng trưởng riêng của khoản mục đó nhân tỷ trọng khoản mục trong RM kỳ trước, tốc độ tăng RM trở thành tổng có trọng số của tốc độ tăng các khoản mục tài sản, với trọng số là tỷ trọng kỳ trước của từng khoản mục trong RM kỳ trước (imf_macro_accounting, Ch.5, cùng mục, d.4647–4651):
 
 $$\frac{\Delta RM_t}{RM_{t-1}} = \frac{\Delta NFA^*_t}{NFA^*_{t-1}}\cdot\frac{NFA^*_{t-1}}{RM_{t-1}} + \frac{\Delta NCG^*_t}{NCG^*_{t-1}}\cdot\frac{NCG^*_{t-1}}{RM_{t-1}} + \frac{\Delta CDMB^*_t}{CDMB^*_{t-1}}\cdot\frac{CDMB^*_{t-1}}{RM_{t-1}} + \frac{\Delta OIN^*_t}{OIN^*_{t-1}}\cdot\frac{OIN^*_{t-1}}{RM_{t-1}}$$
 

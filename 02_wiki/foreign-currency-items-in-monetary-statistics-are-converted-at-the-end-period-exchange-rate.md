@@ -1,5 +1,5 @@
 ---
-title: Foreign currency items in monetary statistics are converted at the end-period exchange rate
+title: foreign-currency-items-in-monetary-statistics-are-converted-at-the-end-period-exchange-rate
 type: concept
 tags: [monetary-accounts, imf]
 status: draft

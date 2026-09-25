@@ -7,7 +7,7 @@ status: stable
 last_updated: 2026-09-15
 ---
 
-Tiêu dùng cuối cùng là hàng hóa và dịch vụ — cả nhập khẩu lẫn sản xuất trong nước — được hộ gia đình và khu vực chính phủ sử dụng; đối lập với nó là tiêu dùng trung gian, tức đầu vào của sản xuất (imf_macro_accounting, Ch.2, The Main Aggregates, d.658).
+Tiêu dùng cuối cùng là hàng hóa và dịch vụ — cả nhập khẩu lẫn sản xuất trong nước — được hộ gia đình và khu vực chính phủ sử dụng; đối lập với nó là [[intermediate-consumption|tiêu dùng trung gian]], tức đầu vào của sản xuất (imf_macro_accounting, Ch.2, The Main Aggregates, d.658).
 
 Hai loại tiêu dùng được đối xử ngược nhau khi đo sản lượng: tiêu dùng trung gian bị trừ ra để tính [[value-added]], còn tiêu dùng cuối cùng là một khoản sử dụng cuối cùng được cộng vào khi tính [[gdp]] theo cách chi tiêu ở [[production-income-and-expenditure-approaches-yield-the-same-gdp]] (imf_macro_accounting, Ch.2, cùng mục, d.656; The Production Approach, d.690; The Expenditure Approach, d.724–731). Trong cách chi tiêu, C gồm tiêu dùng cuối cùng của cả chính phủ lẫn khu vực ngoài chính phủ (imf_macro_accounting, Ch.2, The Expenditure Approach, d.731); Box 2.1 tách riêng hai cấu phần này thành [[private-consumption]] ($CP$) và [[general-government-consumption]] ($CG$).
 

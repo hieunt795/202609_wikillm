@@ -1,5 +1,5 @@
 ---
-title: "Bond Relative Value Metrics Select Reference Curves Aligned with Instrument Hedging Practices"
+title: bond-relative-value-metrics-select-reference-curves-aligned-with-instrument-hedging-practices
 type: concept
 tags:
   - trading

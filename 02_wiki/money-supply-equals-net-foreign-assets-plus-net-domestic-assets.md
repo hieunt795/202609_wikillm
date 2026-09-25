@@ -7,7 +7,7 @@ status: draft
 last_updated: 2026-09-24
 ---
 
-Vì tài sản luôn bằng nợ trên bảng cân đối, khối tiền rộng ([[money-aggregates-form-a-nested-hierarchy-from-narrow-money-to-broad-liquidity|M2]]) của toàn hệ thống ngân hàng — hợp nhất [[central-bank|nhà chức trách tiền tệ]] với [[deposit-money-banks|ngân hàng nhận tiền gửi]] thành khảo sát tiền tệ — luôn khớp đúng bằng tổng đối ứng của nó ở phía tài sản: tài sản đối ngoại ròng (NFA, quy theo nội tệ) cộng [[net-domestic-assets|tài sản trong nước ròng]] (NDA):
+Vì tài sản luôn bằng nợ trên bảng cân đối, khối [[broad-money|tiền rộng (M2)]] của toàn hệ thống ngân hàng — hợp nhất [[central-bank|nhà chức trách tiền tệ]] với [[deposit-money-banks|ngân hàng nhận tiền gửi]] thành khảo sát tiền tệ — luôn khớp đúng bằng tổng đối ứng của nó ở phía tài sản: tài sản đối ngoại ròng (NFA, quy theo nội tệ) cộng [[net-domestic-assets|tài sản trong nước ròng]] (NDA):
 
 $$M2 = NFA + NDA$$
 

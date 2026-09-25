@@ -1,5 +1,5 @@
 ---
-title: "Cash-Settled Bond Futures and Exchange-for-Physical Substitute Delivery with Swap or Yield Baskets"
+title: cash-settled-bond-futures-and-exchange-for-physical-substitute-delivery-with-swap-or-yield-baskets
 type: concept
 tags:
   - derivatives

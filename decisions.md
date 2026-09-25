@@ -230,3 +230,15 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 - **Quyết định:** chuẩn hóa quy ước chú thích vị trí cho nguồn `fixed_income_during` theo định dạng `(fixed_income_during, Ch.X, Sec.X.Y, d.A–B)` mà không bắt buộc hậu tố `file` (`Fixed Income - Alexander During-k.md`), vì ánh xạ giữa số chương và số file là đơn ánh xác định một chiều theo bảng mục lục trong `03_state/fixed_income_during.md` (chương $X$ tương ứng file $-(X+1)$). Hook kiểm tra và các skill chấp nhận định dạng này; không yêu cầu backfill hàng loạt 777 chú thích hiện hành.
 - **Lý do:** giải quyết mâu thuẫn giữa header `03_state/fixed_income_during.md` và `00_schema.md` §7.5 (ghi nhận tại `_inbox.md` ngày 2026-09-23). Việc giữ định dạng số chương đảm bảo tính ngắn gọn, trực quan khi đọc và nhất quán trên toàn bộ 42 chương của nguồn.
 
+
+## [2026-09-25] Ingest lại theo chế độ đối chiếu không đẩy trang stable sang `stale`
+
+- **Quyết định:** trong lượt ingest lại một chunk đã `[x]` ở chế độ đối chiếu (đọc lại nguồn, đối chiếu từng trang đang trích dẫn chunk đó), trang `stable` đã được đối chiếu và thấy đúng thì giữ `stable`, kể cả khi lượt chỉ thêm link/locator hoặc không đổi gì. Chỉ trang bị sửa claim mới về `draft` (§9). Luật "trang stable liên quan nhưng không được merge → `stale`" ở `ingest/SKILL.md` bước 3 chỉ áp cho lượt ingest nguồn mới hoặc chunk mới, nơi trang cũ không được đọc lại.
+- **Lý do:** `stale` báo rằng trang có thể lệch so với nguồn vừa nạp mà chưa ai kiểm. Ở chế độ đối chiếu, việc kiểm đó chính là nội dung của lượt ingest, nên gắn `stale` sẽ báo sai. Lint 2026-09-25 (766 trang) gặp khoảng 85 trang rơi vào trường hợp này sau khi làm lại Ch.2, Ch.5 và Ch.6 của `imf_macro_accounting`.
+- **Phạm vi:** thêm một câu ngoại lệ vào `ingest/SKILL.md` bước 3; không đổi `00_schema.md`.
+
+## [2026-09-25] `title` phải đúng bằng tên file, không chỉ khớp sau khi kebab hoá
+
+- **Quyết định:** chuẩn hoá 29 trang có `title` dạng Title Case (có dấu cách, có ngoặc kép) về đúng chuỗi kebab-case của tên file, theo quy ước 742/766 trang đang dùng. 5 trang Ch.5 gắn `type: analysis` dù chỉ một nguồn và nội dung là concept được đổi về `concept`.
+- **Lý do:** hook so `kebab(title)` với tên file nên Title Case lọt qua `--all`, trong khi `00_schema.md` §3 yêu cầu tên file khớp `title`. Hai cách viết song song làm lệch grep `^title:` ở lượt rẻ của query/research.
+- **Việc còn mở:** hook chưa bắt lỗi này; nên siết phép so khi sửa hook lần tới (gộp batch). 4 trang `type: analysis` một nguồn của `tata_bank_alm` chưa đổi, vì cần đọc thân bài để chọn `concept` hay `case`.

@@ -7,7 +7,7 @@ status: stable
 last_updated: 2026-09-16
 ---
 
-Thuế trừ trợ cấp trên sản phẩm ($TSP$) là cấu phần thứ ba của [[gdp|GDP]] tính theo cách thu nhập, và cũng là khoản cộng thêm khi quy đổi GDP theo giá cơ bản sang GDP theo giá thị trường (imf_macro_accounting, Ch.2, The Income Approach, d.720).
+Thuế trừ trợ cấp trên sản phẩm ($TSP$) là cấu phần thứ ba của [[gdp|GDP]] tính theo cách thu nhập, và cũng là khoản cộng thêm khi quy đổi GDP theo giá cơ bản sang GDP theo giá thị trường (imf_macro_accounting, Ch.2, The Income Approach, d.720; Box 2.1, d.765–766).
 
 $$GDP = W + OS + TSP$$
 

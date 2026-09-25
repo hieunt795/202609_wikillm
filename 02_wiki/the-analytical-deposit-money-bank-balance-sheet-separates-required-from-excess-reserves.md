@@ -1,6 +1,6 @@
 ---
-title: The analytical deposit money bank balance sheet separates required from excess reserves
-type: analysis
+title: the-analytical-deposit-money-bank-balance-sheet-separates-required-from-excess-reserves
+type: concept
 tags: [monetary-accounts, imf]
 status: stable
 sources: [imf_macro_accounting]

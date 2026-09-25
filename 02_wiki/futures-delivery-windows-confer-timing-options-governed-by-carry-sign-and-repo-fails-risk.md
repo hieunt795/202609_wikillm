@@ -1,5 +1,5 @@
 ---
-title: "Futures Delivery Windows Confer Timing Options Governed by Carry Sign and Repo Fails Risk"
+title: futures-delivery-windows-confer-timing-options-governed-by-carry-sign-and-repo-fails-risk
 type: concept
 tags:
   - derivatives

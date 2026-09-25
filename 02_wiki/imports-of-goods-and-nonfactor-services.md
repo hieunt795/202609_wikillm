@@ -11,4 +11,4 @@ Nhập khẩu hàng hóa và dịch vụ phi nhân tố ($M$) là một cấu ph
 
 $$GDP = C + I + (X - M)$$
 
-($X$ = [[exports-of-goods-and-nonfactor-services]]) — xem đầy đủ ở [[production-income-and-expenditure-approaches-yield-the-same-gdp]] (imf_macro_accounting, Ch.2, cùng mục, d.724–737). $X - M$ hợp thành [[net-exports|xuất khẩu ròng]]. Cùng logic "phi nhân tố" như $X$: không gồm thu nhập từ yếu tố sản xuất trả cho người không cư trú, khoản đó tính ở [[net-factor-income-from-abroad]].
+($X$ = [[exports-of-goods-and-nonfactor-services]]) — xem đầy đủ ở [[production-income-and-expenditure-approaches-yield-the-same-gdp]] (imf_macro_accounting, Ch.2, cùng mục, d.724–737). $X - M$ hợp thành [[net-exports|xuất khẩu ròng]]. Cùng logic "phi nhân tố" như $X$: không gồm thu nhập từ yếu tố sản xuất trả cho người không cư trú, khoản đó tính ở [[net-factor-income-from-abroad]] (imf_macro_accounting, Ch.2, chú thích 5, d.676; Gross National Income, d.774).

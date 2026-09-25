@@ -1,5 +1,5 @@
 ---
-title: "Curve Trading Hierarchies Systematically Immunize Lower-Order Risk Dimensions"
+title: curve-trading-hierarchies-systematically-immunize-lower-order-risk-dimensions
 type: concept
 tags:
   - trading

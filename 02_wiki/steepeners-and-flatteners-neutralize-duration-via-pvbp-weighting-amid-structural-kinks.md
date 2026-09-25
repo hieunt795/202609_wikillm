@@ -1,5 +1,5 @@
 ---
-title: "Steepeners and Flatteners Neutralize Duration via PVBP Weighting Amid Structural Kinks"
+title: steepeners-and-flatteners-neutralize-duration-via-pvbp-weighting-amid-structural-kinks
 type: concept
 tags:
   - trading
