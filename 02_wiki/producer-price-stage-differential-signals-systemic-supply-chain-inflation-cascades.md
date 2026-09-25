@@ -3,8 +3,8 @@ title: producer-price-stage-differential-signals-systemic-supply-chain-inflation
 type: concept
 tags: [producer-prices, supply-chains, ppi, stage-differential, inflation-diagnostics]
 sources: [clippings]
-status: stable
-last_updated: 2026-09-23
+status: draft
+last_updated: 2026-09-25
 ---
 
 Chênh lệch lạm phát sản xuất theo tầng (producer price stage differential, ký hiệu $\Delta(t) = S1_t^{y/y} - S4_t^{y/y}$) là thước đo chẩn đoán và xác nhận lạm phát chi phí đẩy được xây dựng từ hệ thống luồng sản xuất phân định theo cầu cuối cùng và cầu trung gian (FD-ID) của Cục Thống kê Lao động Hoa Kỳ (BLS), trong đó khoảng cách vượt ngưỡng $\tau^* \approx +3\text{ điểm phần trăm}$ kết hợp cùng sự bứt tốc của tầng sản xuất trung gian (Stage 3 vượt Stage 4) báo hiệu cú sốc thượng nguồn đã chuyển hóa thành làn sóng lan truyền có tính hệ thống thay vì chỉ là biến động cục bộ ở giá hàng hóa cơ bản (clippings, Cụm 3, Khái niệm Chênh lệch Tầng Giá, file The Return of Nonlinear Inflation Part II.md, d.20–22, d.82–86).
@@ -22,3 +22,5 @@ Các tầng này mang đặc tính không lồng ghép (non-nested), nghĩa là 
 - Điều kiện 2 ($S3 > S4$): Lạm phát tầng 3 vượt lên trên lạm phát tầng 4. Khi chỉ có Stage 1 tăng mạnh do năng lượng mà Stage 3 vẫn nằm dưới Stage 4, cú sốc mang tính khu biệt hàng hóa; nhưng khi Stage 3 bứt tốc vượt Stage 4, chi phí đã lan vào các khâu trung gian như hạt nhựa, hóa chất công nghiệp, vận tải nội địa và bao bì, báo hiệu áp lực sẽ tràn sang các mặt hàng [[cpi]] cốt lõi (clippings, Cụm 3, Đảo ngược Thứ tự Stage 3 và Stage 4, file The Return of Nonlinear Inflation Part II.md, d.70–72; file The Return of Nonlinear Inflation Part II Update.md, d.40–46).
 
 Việc áp dụng khung chẩn đoán này giúp loại bỏ thiên lệch tâm lý coi mọi đợt tăng giá dầu đều chỉ là tạm thời, đồng thời cảnh báo rủi ro các dự báo lạm phát của ngân hàng trung ương có thể bị hạ thấp một cách cơ học khi mô hình kinh tế lượng dựa trên đường cong giá tương lai năng lượng mà bỏ quên sóng chi phí đang di chuyển bên trong mạng lưới sản xuất (clippings, Cụm 3, Sai lầm Mô hình Tuyến tính, file The Return of Nonlinear Inflation Part II Update.md, d.60–64).
+
+Số liệu tháng 8/2026 minh họa vì sao hai điều kiện phải được kiểm tra cùng nhau. Chênh lệch Stage 1–Stage 4 tăng từ 3,3 lên 4,5 điểm phần trăm, nhưng Stage 3 ở mức 6,5% vẫn thấp hơn Stage 4 là 6,7%; áp lực thượng nguồn tăng mà tín hiệu cascade chưa được xác nhận (clippings, FOMC, PPI reading, file FOMC An Almost Certain Hike.md, d.83–97). Trạng thái này phù hợp với [[supply-chain-rerouting-can-reduce-aggregate-pressure-before-chokepoints-reopen]].
