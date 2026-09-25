@@ -1002,3 +1002,10 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Validation: 777 trang, 0 lỗi, 0 mồ côi; analysis page đã có backlink từ quasi-fiscal-operations
 - Phạm vi: tám kênh mechanics từ phát hành tiền cơ sở → bù trừ NFA-NDA; synthesis không nhét thêm claim mới từ nguồn
 
+
+## [2026-09-25:10-21-45] research | macro-accounting mechanics: foundation page
+- Tạo: 1 trang concept "macro-accounting-mechanics-explains-how-transactions-create-distortion-in-reported-deficits" (bridge note giữa quasi-fiscal-operations và 8 kênh chi tiết)
+- Nội dung: Giải thích ba nguyên lý kế toán (kép, consolidation, nhân tiền) và cơ chế che giấu thâm hụt từ đó
+- Update: quasi-fiscal-operations.md (thêm link) + index.md (thêm vào danh mục quasi-fiscal-mechanics)
+- Validation: 778 trang, 0 lỗi, 0 mồ côi
+

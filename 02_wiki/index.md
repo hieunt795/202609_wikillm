@@ -330,6 +330,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[implicit-subsidies]] — trợ cấp không hiện ra trong ngân sách; khó kiểm soát hơn trợ cấp công khai
 
 **Quasi-fiscal mechanics — tám kênh tác động lên bảng cân đối MA (Phân tích chi tiết)**
+- [[macro-accounting-mechanics-explains-how-transactions-create-distortion-in-reported-deficits]] — ba nguyên lý kế toán (kép, consolidation, nhân tiền) khiến quasi-fiscal che giấu thâm hụt
 - [[how-quasi-fiscal-operations-distort-ma-accounts-through-eight-mechanic-channels]] *(analysis)* — tổng hợp tám kênh mechanics từ quyết định cấp tín dụng tới tác động cuối cùng lên dự trữ
 - [[primary-liquidity-injection-when-quasi-fiscal-central-bank-lends]] — Kênh 1: MA phát hành tiền cơ sở mới khi cho vay bán tài khoá
 - [[quasi-fiscal-losses-hidden-in-monetary-authorities-other-items-net]] — Kênh 2: Lỗ từ lãi suất ưu đãi được ẩn trong OIN

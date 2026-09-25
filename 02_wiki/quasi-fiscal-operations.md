@@ -7,7 +7,7 @@ status: stable
 last_updated: 2026-09-15
 ---
 
-Hoạt động bán tài khoá là các hoạt động của [[central-bank|ngân hàng trung ương]] và các tổ chức tài chính công làm phát sinh giao dịch tài chính ảnh hưởng tới quy mô thực của thâm hụt tài khoá; ở nhiều nền kinh tế chuyển đổi chúng khá phổ biến (imf_macro_accounting, Ch.3, Box 3.7, d.2493).
+Hoạt động bán tài khoá là các hoạt động của [[central-bank|ngân hàng trung ương]] và các tổ chức tài chính công làm phát sinh giao dịch tài chính ảnh hưởng tới quy mô thực của thâm hụt tài khoá; ở nhiều nền kinh tế chuyển đổi chúng khá phổ biến (imf_macro_accounting, Ch.3, Box 3.7, d.2493). [[macro-accounting-mechanics-explains-how-transactions-create-distortion-in-reported-deficits|Cơ chế hạch toán macro]] giải thích tại sao quasi-fiscal che giấu thâm hụt: do kế toán kép, consolidation, và nhân tiền tệ — không phải ý định lừa dối.
 
 Các dạng chính gồm [[exchange-rate-subsidies|trợ cấp tỷ giá]] thực hiện qua hệ thống hối đoái; [[credit-subsidies|cho chính phủ, doanh nghiệp công hoặc tư nhân vay ưu đãi]]; và [[exchange-rate-guarantees-and-other-contingent-liabilities|các nghĩa vụ chưa có nguồn hoặc tiềm tàng]] như bảo lãnh tỷ giá (imf_macro_accounting, Ch.3, d.2495–2497). Chúng là một kênh của [[subsidies|trợ cấp]] ngầm (imf_macro_accounting, Ch.3, Types of Public Expenditures, d.2448).
 
