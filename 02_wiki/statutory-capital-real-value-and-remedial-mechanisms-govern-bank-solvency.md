@@ -1,8 +1,8 @@
 ---
 title: statutory-capital-real-value-and-remedial-mechanisms-govern-bank-solvency
 type: concept
-tags: [banking, statutory-capital, real-capital-value, solvency, prompt-corrective-action, bank-restructuring, license-revocation, regulation]
-sources: [sbv_draft_circular_replace_22]
+tags: [banking, statutory-capital, real-capital-value, solvency, prompt-corrective-action, bank-restructuring, license-revocation, regulation, basel, principles]
+sources: [sbv_draft_circular_replace_22, bcbs_144]
 status: draft
 last_updated: 2026-09-26
 ---
@@ -37,6 +37,7 @@ Tùy thuộc vào mức độ nghiêm trọng và thời gian kéo dài của t�
   1. Giá trị thực của vốn điều lệ, vốn được cấp giảm xuống **dưới 50% mức vốn pháp định**;
   2. Giá trị thực thấp hơn vốn pháp định kéo dài **liên tục trong thời gian 6 tháng**, mặc dù tổ chức tín dụng đã có phương án xử lý báo cáo trước đó.
 
-Hệ thống ngưỡng cảnh báo và chế tài nghiêm khắc này tạo ra áp lực pháp lý tối cao buộc Hội đồng quản trị và Ban điều hành phải chủ động duy trì các tầng đệm vốn kinh tế và vốn mục tiêu bền vững theo quy trình [[icaap-framework-determines-economic-capital-and-target-capital-under-stress]], đồng thời kiểm soát chặt chẽ tỷ lệ đòn bẩy tuyệt đối theo [[basel-iii-leverage-ratio-constrains-unweighted-balance-sheet-expansion]].
+Hệ thống ngưỡng cảnh báo và chế tài can thiệp sớm của Việt Nam vận hành hoàn toàn tương thích với các nguyên tắc can thiệp sớm của Basel theo [[supervisory-early-remedial-actions-mandate-liquidity-gap-reductions-and-capital-add-ons]] (bcbs_144, file bcbs144.md, Principle 16, d.595–610). Khi một ngân hàng suy giảm vốn thực tế hoặc đối mặt với các nguy cơ đứt gãy thanh khoản nghiêm trọng, cơ quan giám sát bắt buộc phải áp đặt lộ trình khắc phục cưỡng chế, đồng thời kích hoạt cơ chế chia sẻ thông tin khẩn cấp giữa cơ quan giám sát nước mẹ và nước sở tại theo [[cross-border-supervisory-cooperation-and-crisis-information-sharing-contain-contagion]] (bcbs_144, file bcbs144.md, Principle 17, d.619–629) nhằm ngăn ngừa hiện tượng rút vốn xuyên biên giới và rủi ro đổ vỡ dây chuyền.
 
-Xem thêm: [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]], [[icaap-framework-determines-economic-capital-and-target-capital-under-stress]], [[expected-loss-and-provisioning-shortfall-mechanics-adjust-regulatory-capital]], [[credit-risk-governance-mandates-portfolio-limits-and-problem-credit-containment]], [[basel-iii-leverage-ratio-constrains-unweighted-balance-sheet-expansion]].
+Xem thêm: [[supervisory-early-remedial-actions-mandate-liquidity-gap-reductions-and-capital-add-ons]], [[cross-border-supervisory-cooperation-and-crisis-information-sharing-contain-contagion]], [[supervisory-liquidity-review-process-evaluates-governance-stress-testing-and-cushion-adequacy]], [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]], [[icaap-framework-determines-economic-capital-and-target-capital-under-stress]], [[expected-loss-and-provisioning-shortfall-mechanics-adjust-regulatory-capital]], [[credit-risk-governance-mandates-portfolio-limits-and-problem-credit-containment]], [[basel-iii-leverage-ratio-constrains-unweighted-balance-sheet-expansion]].
+

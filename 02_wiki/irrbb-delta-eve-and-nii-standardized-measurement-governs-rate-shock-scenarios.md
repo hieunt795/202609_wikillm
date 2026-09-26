@@ -2,12 +2,12 @@
 title: irrbb-delta-eve-and-nii-standardized-measurement-governs-rate-shock-scenarios
 type: concept
 tags: [banking, alm, irrbb, delta-eve, delta-nii, interest-rate-shocks, bcbs-d578, cash-flow-discounting, regulation]
-sources: [sbv_circular_83_2025]
+sources: [sbv_circular_83_2025, bcbs_368]
 status: draft
 last_updated: 2026-09-26
 ---
 
-Phương pháp đo lường chuẩn hóa rủi ro lãi suất trên sổ ngân hàng (Interest Rate Risk in the Banking Book - IRRBB) thiết lập thuật toán định lượng độ nhạy kép của toàn bộ bảng cân đối tài chính ngân hàng thông qua hai thước đo bổ trợ: Thay đổi giá trị kinh tế của vốn chủ sở hữu ($\Delta EVE$) và Thay đổi thu nhập lãi thuần ($\Delta NII$) dưới các kịch bản sốc lãi suất đồng bộ (sbv_circular_83_2025, file TT83.md, Điều 53–55, d.926–954; Phụ lục V, d.1564–1844).
+Phương pháp đo lường chuẩn hóa rủi ro lãi suất trên sổ ngân hàng (Interest Rate Risk in the Banking Book - IRRBB Standardised Measurement) thiết lập thuật toán định lượng độ nhạy kép của toàn bộ bảng cân đối tài chính ngân hàng thông qua hai thước đo bổ trợ: Thay đổi giá trị kinh tế của vốn chủ sở hữu ($\Delta EVE$) và Thay đổi thu nhập lãi thuần ($\Delta NII$) dưới các kịch bản sốc lãi suất đồng bộ (sbv_circular_83_2025, file TT83.md, Điều 53–55, d.926–954; Phụ lục V, d.1564–1844; nguyên bản chuẩn tắc quốc tế tại bcbs_368, file d368.md, Section IV, d.536–800, Paragraph 99–132). Khung chuẩn hóa này vận hành theo quy trình 5 giai đoạn chặt chẽ được phân tích tại [[irrbb-standardised-framework-five-stage-measurement-architecture]].
 
 **1. Phân nhóm tài sản, nợ phải trả và ngoại bảng nhạy cảm lãi suất**
 
@@ -71,4 +71,4 @@ Song song với thước đo dài hạn $\Delta EVE$, ngân hàng đo lường T
 
 - **Lộ trình áp dụng**: Từ ngày 01/07/2026 đến ngày 31/12/2027, ngân hàng được quyền lựa chọn đo lường và xác định hạn mức IRRBB theo chỉ tiêu $\Delta NII$ hoặc $\Delta EVE$. Chậm nhất kể từ ngày **01/01/2028**, tất cả các ngân hàng bắt buộc phải vận hành đo lường, thiết lập hạn mức và thực hiện kiểm tra sức chịu đựng IRRBB đồng thời theo cả hai chỉ tiêu $\Delta NII$ và $\Delta EVE$, đồng thời tích hợp $\Delta EVE$ vào công thức tính vốn kinh tế $RWA_{IRRBB}$ thuộc quy trình ICAAP theo [[icaap-framework-determines-economic-capital-and-target-capital-under-stress]] (sbv_circular_83_2025, file TT83.md, Điều 74.4, d.1242–1245).
 
-Xem thêm: [[irrbb-supervisory-framework-measures-eve-and-nii-sensitivity-across-interest-rate-shocks]], [[interest-rate-risk-in-the-banking-book-irrbb]], [[multitiered-irrbb-regulatory-framework-spans-bcbs-crd-crr-and-eba-technical-standards]], [[icaap-framework-determines-economic-capital-and-target-capital-under-stress]], [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]].
+Xem thêm: [[irrbb-standardised-framework-five-stage-measurement-architecture]], [[standardised-repricing-cash-flow-bucketing-and-nineteen-tenor-schedule]], [[standardised-nmd-categorisation-and-core-deposit-caps-framework]], [[standardised-loan-prepayment-modelling-and-cpr-multipliers]], [[standardised-term-deposit-early-redemption-risk-and-tdrr-scalars]], [[automatic-interest-rate-options-standardised-valuation-and-volatility-shocks]], [[standardised-delta-eve-calculation-and-multi-currency-aggregation-rules]], [[supervisory-outlier-test-mandates-fifteen-percent-tier-one-capital-threshold]], [[pillar-3-irrbb-quantitative-disclosure-standards-mandate-table-b-metrics]].

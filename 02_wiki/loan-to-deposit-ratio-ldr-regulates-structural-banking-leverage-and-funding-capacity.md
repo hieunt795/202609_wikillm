@@ -1,8 +1,8 @@
 ---
 title: loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity
 type: concept
-tags: [banking, alm, ldr, loan-to-deposit, liquidity, funding-structure, treasury, regulation]
-sources: [sbv_draft_circular_replace_22]
+tags: [banking, alm, ldr, loan-to-deposit, liquidity, funding-structure, treasury, regulation, basel, principles]
+sources: [sbv_draft_circular_replace_22, bcbs_144]
 status: draft
 last_updated: 2026-09-26
 ---
@@ -51,6 +51,9 @@ Mẫu số $D$ phản ánh quy mô nguồn vốn huy động ổn định từ t
 
 Khoản 6 Điều 13 quy định cơ chế miễn trừ áp dụng tỷ lệ LDR: Ngân hàng không bắt buộc phải tuân thủ trần LDR 85% nếu giá trị vốn điều lệ/vốn được cấp khả dụng (sau khi trừ lỗ lũy kế, tài sản cố định và góp vốn) lớn hơn tổng dư nợ cho vay của ngân hàng (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Điều 13.6, d.393–394). Trường hợp này thường áp dụng cho các chi nhánh ngân hàng nước ngoài hoặc ngân hàng mới thành lập có quy mô vốn tài trợ ban đầu dồi dào chưa giải ngân hết.
 
+Dưới lăng kính Nguyên tắc 7 của BCBS 144 về đa dạng hóa nguồn vốn và quản trị tiếp cận thị trường [[funding-diversification-and-market-access-testing-mitigate-wholesale-refinancing-freezes]], tỷ lệ LDR không chỉ là một chỉ tiêu an toàn vĩ mô mà còn là chốt chặn khống chế sự phụ thuộc nguy hiểm vào nguồn vốn bán buôn ngắn hạn (wholesale funding). BCBS 144 xác lập quy luật tương quan: một ngân hàng càng có tỷ lệ LDR cao và tài trợ phần chênh lệch (funding gap) bằng vốn thị trường/bán buôn, thì càng bắt buộc phải duy trì tỷ lệ đệm tài sản thanh khoản cao (HQLA buffer) không phong tỏa lớn hơn để phòng ngừa rủi ro đóng băng thanh khoản tái cấp vốn (bcbs_144, file bcbs144.md, Principle 7, d.339). Hơn nữa, việc đa dạng hóa các cấu phần nguồn vốn ($D$) và kiểm tra định kỳ khả năng tiếp cận thị trường thực tế giúp ngân hàng tránh được ảo tưởng về thanh khoản khi thị trường căng thẳng.
+
 Trong quản trị ALM và định giá điều chuyển vốn nội bộ theo [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]], tỷ lệ LDR 85% đóng vai trò là một "ràng buộc bóng" (shadow constraint). Khi LDR của ngân hàng tiến sát ngưỡng 85%, Treasury và ALCO phải áp đặt thêm phụ phí chi phí thanh khoản biên (Marginal Liquidity Cost) vào biểu giá bán vốn [[regulatory-deposit-insurance-and-statutory-reserves-apportion-into-market-1-cof]] hoặc nâng giá mua vốn VOF để kích thích các chi nhánh tăng cường huy động vốn Thị trường 1 theo [[planned-nim-allocation-determines-ftp-deposit-mobilization-margins]]. Tỷ lệ LDR kiểm soát thanh khoản cơ cấu tĩnh, bổ trợ trực tiếp cho các thước đo dòng tiền động và đệm thanh khoản khẩn cấp theo [[liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans]].
 
-Xem thêm: [[deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-profiles]], [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]], [[regulatory-deposit-insurance-and-statutory-reserves-apportion-into-market-1-cof]], [[planned-nim-allocation-determines-ftp-deposit-mobilization-margins]], [[liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans]], [[basel-iii-leverage-ratio-constrains-unweighted-balance-sheet-expansion]].
+Xem thêm: [[deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-profiles]], [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]], [[regulatory-deposit-insurance-and-statutory-reserves-apportion-into-market-1-cof]], [[planned-nim-allocation-determines-ftp-deposit-mobilization-margins]], [[liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans]], [[basel-iii-leverage-ratio-constrains-unweighted-balance-sheet-expansion]], [[funding-diversification-and-market-access-testing-mitigate-wholesale-refinancing-freezes]].
+

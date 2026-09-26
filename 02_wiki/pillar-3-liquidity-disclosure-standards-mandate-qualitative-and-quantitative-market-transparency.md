@@ -1,8 +1,8 @@
 ---
 title: pillar-3-liquidity-disclosure-standards-mandate-qualitative-and-quantitative-market-transparency
 type: concept
-tags: [banking, pillar-3, disclosure, liquidity-risk, lcr, nsfr, transparency, regulation]
-sources: [sbv_draft_circular_replace_22]
+tags: [banking, pillar-3, disclosure, liquidity-risk, lcr, nsfr, transparency, regulation, basel, principles]
+sources: [sbv_draft_circular_replace_22, bcbs_144]
 status: draft
 last_updated: 2026-09-26
 ---
@@ -20,4 +20,7 @@ Về thông tin định lượng, ngân hàng có trách nhiệm cung cấp các
 - **Cấu trúc nguồn vốn và tài sản**: Cung cấp bức tranh phân bổ kỳ hạn của tài sản và nợ, phân tích mức độ đa dạng hóa của các kênh tài trợ vốn (tiền gửi bán lẻ, huy động doanh nghiệp, phát hành giấy tờ có giá, vay liên ngân hàng) nhằm chứng minh ngân hàng không phụ thuộc tập trung vào một nguồn tài trợ đơn lẻ (sbv_draft_circular_replace_22, Phụ lục IV Phần II Mục 3.d–đ, d.2004–2005).
 - **Phương pháp giảm thiểu rủi ro và các khái niệm kỹ thuật**: Trình bày các công cụ và cơ chế được ngân hàng áp dụng để giảm thiểu rủi ro thanh khoản, việc duy trì kế hoạch tài trợ dự phòng (Contingency Funding Plan — CFP) gắn với các kịch bản kiểm tra sức chịu đựng dòng tiền theo [[liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans]], cùng các khái niệm và giả định định lượng được dùng trong mô hình quản trị thanh khoản nội bộ (sbv_draft_circular_replace_22, Phụ lục IV Phần II Mục 3.e–g, d.2006–2008).
 
-Việc chuẩn hóa công bố thông tin thanh khoản định kỳ 6 tháng tạo ra áp lực kỷ luật thị trường trực tiếp lên các tổ chức tín dụng. Khi các bên gửi tiền, nhà đầu tư trái phiếu và các định chế tài chính đối tác có thể so sánh minh bạch mức độ an toàn LCR, NSFR và mức độ đa dạng nguồn vốn của từng ngân hàng, chi phí huy động vốn trên thị trường sẽ phản ánh chính xác rủi ro thanh khoản nội tại, thúc đẩy toàn hệ thống nâng cao năng lực quản trị rủi ro thanh khoản một cách bền vững.
+Các quy chuẩn công bố thông tin thanh khoản của Việt Nam phản ánh nguyên vẹn chuẩn mực quốc tế của Ủy ban Basel tại [[liquidity-risk-public-disclosure-standards-mandate-qualitative-and-quantitative-market-transcipline]] (bcbs_144, file bcbs144.md, Principle 13, d.540–566). Theo BCBS 144 Nguyên tắc 13, tính minh bạch định lượng cần được làm sâu sắc hơn qua việc công khai chi tiết quy mô và cơ cấu đệm tài sản thanh khoản unencumbered [[unencumbered-high-quality-liquid-asset-cushion-insures-against-stress-cash-flow-deficits]], ước tính dòng tiền ra phát sinh khi bị hạ bậc tín nhiệm (downgrade triggers), phân tích chênh lệch dòng tiền ròng lũy kế theo từng thang kỳ hạn ngắn [[prospective-cash-flow-forecasting-and-funding-gap-analysis-model-liquidity-stickiness]], cũng như công khai các rào cản luân chuyển vốn nội bộ (trapped liquidity) giữa các pháp nhân. Việc chuẩn hóa công bố thông tin thanh khoản định kỳ tạo ra áp lực kỷ luật thị trường trực tiếp lên các tổ chức tín dụng, thúc đẩy toàn hệ thống nâng cao năng lực quản trị rủi ro thanh khoản một cách bền vững.
+
+Xem thêm: [[liquidity-risk-public-disclosure-standards-mandate-qualitative-and-quantitative-market-transcipline]], [[unencumbered-high-quality-liquid-asset-cushion-insures-against-stress-cash-flow-deficits]], [[multi-scenario-liquidity-stress-testing-integrates-behavioral-shocks-and-informs-capital-planning]], [[contingency-funding-plan-establishes-crisis-governance-and-operational-escalation-frameworks]], [[funding-diversification-and-market-access-testing-mitigate-wholesale-refinancing-freezes]], [[prospective-cash-flow-forecasting-and-funding-gap-analysis-model-liquidity-stickiness]], [[early-warning-indicators-and-mismatch-limits-operationalize-proactive-liquidity-monitoring]], [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]], [[basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stability]].
+

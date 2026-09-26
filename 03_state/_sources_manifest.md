@@ -35,6 +35,9 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `sbv_circular_14_2025` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_circular_14_2025.md` |
 | `sbv_circular_83_2025` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_circular_83_2025.md` |
 | `sbv_draft_circular_replace_22` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_draft_circular_replace_22.md` |
+| `bcbs_144` | `basel/` | Nguồn dài | `03_state/bcbs_144.md` |
+| `bcbs_238` | `basel/` | Nguồn dài | `03_state/bcbs_238.md` |
+| `bcbs_368` | `basel/` | Nguồn dài | `03_state/bcbs_368.md` |
 
 
 ## imf_macro_accounting
@@ -519,10 +522,53 @@ File `.md` do docling chuyển đổi từ PDF (frontmatter `extractor: docling`
 | Tác giả | Thống đốc Ngân hàng Nhà nước Việt Nam |
 | Xuất bản | Ngân hàng Nhà nước Việt Nam (Hà Nội, dự thảo ngày 21/04/2026) |
 | Phân loại | Nguồn dài (`00_schema.md` §10) — 358.720 bytes / 2.009 dòng |
-| Tiến độ ingest | Đang ingest — `03_state/sbv_draft_circular_replace_22.md` |
+| Tiến độ ingest | Hoàn tất 100% — `03_state/sbv_draft_circular_replace_22.md` |
 
 | Đường dẫn | Bytes | Dòng | SHA-256 |
 |---|---|---|---|
 | `01_sources/vietnam-regulator/alm/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md` | 358.720 | 2.009 | `d6dc151f84323f65854de7144cd35c4a774189dfe934df7aab9610f13783c224` |
+
+## bcbs_144
+
+| | |
+|---|---|
+| Nhan đề | *Principles for Sound Liquidity Risk Management and Supervision* (BCBS 144) |
+| Tác giả | Basel Committee on Banking Supervision (BCBS) |
+| Xuất bản | Bank for International Settlements (Basel, Thụy Sĩ, tháng 9/2008) — ISBN print: 92-9131-767-5, ISBN web: 92-9197-767-5 |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 138.489 bytes / 641 dòng |
+| Tiến độ ingest | Hoàn tất 100% — `03_state/bcbs_144.md` |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/basel/bcbs144.md` | 138.489 | 641 | `e80256beeb5632ed2491a1e0a004ac52612e937a05e599b695531982680abbb3` |
+
+## bcbs_238
+
+| | |
+|---|---|
+| Nhan đề | *Basel III: The Liquidity Coverage Ratio and liquidity risk monitoring tools* (BCBS 238) |
+| Tác giả | Basel Committee on Banking Supervision (BCBS) |
+| Xuất bản | Bank for International Settlements (Basel, Thụy Sĩ, tháng 1/2013) — ISBN print: 92-9131-912-0, ISBN online: 92-9197-912-0 |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 262.852 bytes / 1.263 dòng |
+| Tiến độ ingest | Hoàn tất 100% — `03_state/bcbs_238.md` |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/basel/bcbs238.md` | 262.852 | 1.263 | `ccc9c5041e378a6496fa2563fb2f397a12eabc85fb49cf23d29a65803b6ff08c` |
+
+## bcbs_368
+
+| | |
+|---|---|
+| Nhan đề | *Standards - Interest rate risk in the banking book* (BCBS d368 / Standards 2016) |
+| Tác giả | Basel Committee on Banking Supervision (BCBS) |
+| Xuất bản | Bank for International Settlements (Basel, Thụy Sĩ, tháng 4/2016) — ISBN print: 978-92-9197-497-9, ISBN online: 978-92-9197-498-6 |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 189.433 bytes / 1.207 dòng |
+| Tiến độ ingest | Hoàn tất 100% — `03_state/bcbs_368.md` |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/basel/d368.md` | 189.433 | 1.207 | `a9d2209cf2cb08b7768d04366a16abadf600019910209477967c8f622d3a3f39` |
+
 
 

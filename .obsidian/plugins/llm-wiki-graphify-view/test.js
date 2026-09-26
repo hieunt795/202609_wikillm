@@ -20,7 +20,12 @@ const excluded = { path: "03_state/state.md", basename: "state" };
 const lookalike = { path: "02_wiki_backup/old.md", basename: "old" };
 const app = {
   vault: { getMarkdownFiles: () => [a, b, c, excluded, lookalike] },
-  metadataCache: { getFileCache: (file) => file === c ? { tags: [{ tag: "#ALM" }] } : { tags: [] }, resolvedLinks: {
+  metadataCache: { getFileCache: (file) => {
+    if (file === a) return { tags: [{ tag: "#banking" }] };
+    if (file === b) return { tags: [{ tag: "#Basel-III" }] };
+    if (file === c) return { tags: [{ tag: "#ALM" }] };
+    return { tags: [] };
+  }, resolvedLinks: {
     "02_wiki/a.md": { "02_wiki/b.md": 3, "03_state/state.md": 10, "02_wiki_backup/old.md": 4 },
     "02_wiki/b.md": { "02_wiki/a.md": 2 },
     "03_state/state.md": { "02_wiki/a.md": 20 }
@@ -31,8 +36,10 @@ assert.strictEqual(graph.nodes.length, 3);
 assert.strictEqual(graph.edges.length, 2);
 assert.strictEqual(graph.legend.length, 2);
 assert.ok(!graph.nodes.some((n) => n.id === excluded.path || n.id === lookalike.path));
+assert.ok(graph.nodes.find((n) => n.id === a.path).color.background.startsWith("rgba(255, 230, 0,"));
+assert.ok(graph.nodes.find((n) => n.id === b.path).color.background.startsWith("rgba(255, 230, 0,"));
 assert.ok(graph.nodes.find((n) => n.id === c.path).color.background.startsWith("rgba(255, 230, 0,"));
-assert.strictEqual(graph.nodes.find((n) => n.id === c.path).hasAlmTag, true);
+assert.ok(graph.nodes.every((n) => n.hasHighlightedTag));
 assert.strictEqual(graph.nodes.find((n) => n.id === a.path).degree, 5);
 assert.strictEqual(graph.nodes.find((n) => n.id === a.path).outbound, 3);
 assert.strictEqual(graph.nodes.find((n) => n.id === a.path).inbound, 2);

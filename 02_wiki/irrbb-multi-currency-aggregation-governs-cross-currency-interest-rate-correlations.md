@@ -1,0 +1,16 @@
+---
+title: irrbb-multi-currency-aggregation-governs-cross-currency-interest-rate-correlations
+type: concept
+tags: [irrbb, multi-currency, correlation, aggregation, yield-curve, alm]
+sources: [bcbs_368]
+status: draft
+last_updated: 2026-09-26
+---
+
+Quy tắc tổng hợp rủi ro đa tiền tệ trong IRRBB theo Chuẩn mực BCBS 368 (Nguyên tắc 4 và 5) bắt buộc ngân hàng có vị thế tài sản và nợ bằng nhiều loại tiền tệ khác nhau phải tiến hành đo lường trạng thái rủi ro lãi suất một cách độc lập và riêng biệt theo từng đồng tiền trọng yếu, đồng thời kiểm soát nghiêm ngặt các giả định về hệ số tương quan lãi suất chéo (cross-currency interest rate correlations) khi thực hiện tổng hợp mức tổn thất $\Delta EVE$ và $\Delta NII$ trên quy mô toàn ngân hàng (bcbs_368, file d368.md, Section II.1, Principle 4 & 5, d.211, d.270). Xuất phát điểm của quy định này là do cấu trúc kỳ hạn, độ dốc, mức độ biến động lịch sử và chu kỳ chính sách tiền tệ của các đường cong lợi suất ở từng khu vực tiền tệ (như USD, EUR, JPY, GBP hay VND) hoàn toàn khác biệt nhau, khiến một cú sốc lãi suất đồng nhất không bao giờ tác động đối xứng lên các đồng tiền (bcbs_368, file d368.md, Principle 5, d.270).
+
+Khi một ngân hàng sở hữu các vị thế ngoại tệ trọng yếu, hệ thống đo lường nội bộ (IMS) phải áp dụng các kịch bản sốc lãi suất được hiệu chỉnh riêng biệt theo từng đồng tiền (bcbs_368, file d368.md, Principle 4, d.211). Đối với các ngân hàng phát triển phương pháp luận tổng hợp IRRBB giữa các đồng tiền (aggregation methods), việc bù trừ rủi ro (offsetting/netting) giữa các đồng tiền có lãi suất dịch chuyển ngược chiều phụ thuộc sống còn vào giả định về hệ số tương quan ($\rho_{i,j}$) giữa các đường cong lợi suất:
+$$\Delta EVE_{total} = \sqrt{\sum_{i} \sum_{j} \Delta EVE_i \cdot \Delta EVE_j \cdot \rho_{i,j}}$$
+hoặc theo các mô hình mô phỏng phân phối đa biến (bcbs_368, file d368.md, Principle 5, d.270). Tuy nhiên, BCBS cảnh báo các định chế tài chính không được phép lạm dụng các giả định tương quan lịch sử để giảm thiểu giá trị rủi ro tổng hợp trên sổ sách: trong điều kiện thị trường căng thẳng vĩ mô, khủng hoảng địa chính trị hoặc khủng hoảng thanh khoản quốc tế, các mối quan hệ tương quan lịch sử thường bị đứt gãy nghiêm trọng (correlation breakdown), khiến các giả định bù trừ vị thế chéo trở nên vô hiệu và khuếch đại tổn thất thực tế (bcbs_368, file d368.md, Principle 4, d.211, d.220; Principle 5, d.270).
+
+Do đó, theo Nguyên tắc 5 và yêu cầu công bố thông tin Trụ cột 3 (Table A mục g), ngân hàng phải lập tài liệu chi tiết giải trình phương pháp luận tổng hợp giữa các đồng tiền, chứng minh tính vững chắc của các giả định hệ số tương quan lãi suất và thực hiện kiểm tra độ nhạy (sensitivity analysis) để đánh giá tác động khi tương quan giữa các đồng tiền tiến tới 0 hoặc 1 (bcbs_368, file d368.md, Principle 5, d.270, d.274; Table A, d.369). Trong trường hợp ngân hàng không chứng minh được tính vững chắc của các tương quan chéo hoặc đối với Khung chuẩn hóa (Standardised Framework), cơ quan thanh tra giám sát yêu cầu nguyên tắc thận trọng tối đa: các mức suy giảm giá trị kinh tế ($\Delta EVE < 0$) trên từng đồng tiền phải được cộng gộp thuần túy (không được lấy phần lãi $\Delta EVE > 0$ ở đồng tiền này để bù đắp phần lỗ ở đồng tiền khác), bảo đảm phản ánh trung thực mức độ rủi ro vốn tự có của ngân hàng (bcbs_368, file d368.md, Section IV, d.830–890).

@@ -1,8 +1,8 @@
 ---
 title: contingent-liquidity-charge-prices-undrawn-credit-commitments
 type: concept
-tags: [alm, ftp, contingent-liquidity, off-balance-sheet, ccf, liquidity-buffer, commitments]
-sources: [vab_ftp_methodology, sbv_circular_14_2025, sbv_draft_circular_replace_22]
+tags: [alm, ftp, contingent-liquidity, off-balance-sheet, ccf, liquidity-buffer, commitments, basel, principles]
+sources: [vab_ftp_methodology, sbv_circular_14_2025, sbv_draft_circular_replace_22, bcbs_144]
 status: draft
 last_updated: 2026-09-26
 ---
@@ -18,8 +18,11 @@ Trong các công thức trên, đại lượng $C$ biểu thị tổng số dư 
 
 Đặc biệt, dưới khung tỷ lệ bao phủ thanh khoản theo Dự thảo Thông tư thay thế Thông tư 22/2019/TT-NHNN, dòng tiền ra từ cam kết ngoại bảng không chỉ dừng lại ở hệ số $CCF$ an toàn vốn mà được chuẩn hóa thông qua tỷ lệ rút tiền cam kết thanh khoản dự phòng tại [[contingent-liquidity-outflows-and-credit-facility-drawdowns-stress-test-off-balance-commitments]] (sbv_draft_circular_replace_22, Phụ lục I, d.1258–1443). Theo đó, dòng tiền ra cam kết ngoại bảng được phân tầng khắt khe: 5% đối với bán lẻ/SME, 10%–40% đối với doanh nghiệp phi tài chính và lên đến 40%–100% đối với các định chế tài chính, cùng các giả định áp lực hạ bậc tín nhiệm và yêu cầu tài sản bảo đảm bổ sung cho phái sinh. Các dòng tiền rút dự kiến này trực tiếp làm tăng Dòng tiền ra ròng 30 ngày trong [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]], đòi hỏi ngân hàng phải tăng cường nắm giữ lớp đệm [[hqla-eligibility-and-unwinding-haircut-mechanics-calibrate-liquidity-buffers]], qua đó cung cấp cơ sở định lượng pháp lý khách quan để ALCO hiệu chỉnh Tỷ lệ dự trữ thanh khoản và ấn định chi phí thanh khoản dự phòng vào giá bán hạn mức.
 
+Dưới lăng kính chuẩn mực quốc tế của BCBS 144 Nguyên tắc 5, quản trị rủi ro thanh khoản tiềm tàng đòi hỏi một khuôn khổ toàn diện vượt trên các hệ số quy định tĩnh: [[contingent-liquidity-risk-framework-mandates-asymmetric-spv-treatment-and-commitment-modeling]] xác lập nguyên tắc ngân hàng phải lập mô hình dự báo dòng rút vốn ngoại bảng dựa trên các sự kiện kích hoạt (trigger events như hạ bậc xếp hạng tín nhiệm, suy giảm giá trị tài sản bảo đảm, hoặc rủi ro uy tín buộc ngân hàng hỗ trợ thanh khoản cho các SPV/conduits do mình tài trợ) (bcbs_144, file bcbs144.md, Principle 5, d.218–239). Nguyên tắc này quy định việc xử lý bất đối xứng: ngân hàng phải dự phòng đầy đủ cho các cam kết cấp vốn đối với SPV trong mọi kịch bản căng thẳng, nhưng cấm tuyệt đối tính thanh khoản thặng dư của SPV vào nguồn của ngân hàng. Đồng thời, theo Nguyên tắc 4 của BCBS 144, toàn bộ chi phí duy trì đệm thanh khoản dự phòng và chi phí rủi ro thanh khoản tiềm tàng phát sinh từ các cam kết ngoại bảng bắt buộc phải được lượng hóa và phân bổ đầy đủ vào biểu giá điều chuyển vốn nội bộ ở cấp độ từng giao dịch (deal-level FTP add-on) theo [[internal-liquidity-cost-allocation-mandates-deal-level-ftp-for-on-and-off-balance-activities]] (bcbs_144, file bcbs144.md, Principle 4, d.148–154).
+
 Đơn vị Quản lý Vốn tập trung (CFU) tính toán Chi phí duy trì tài sản thanh khoản theo công thức chênh lệch:
 $$\text{Chi phí duy trì TSTK} = VOF_{\text{bình quân TT1}} - \text{Lãi suất bình quân TSTK}$$
 trong đó $VOF_{\text{bình quân TT1}}$ là lãi suất mua vốn bình quân thực tế của tất cả các kỳ hạn trên đường cong VOF Thị trường 1 theo [[vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing]], đại diện cho chi phí huy động nguồn vốn biên mà ngân hàng bỏ ra để tài trợ cho tài sản; còn Lãi suất bình quân TSTK là mức sinh lời thực tế của các tài sản thanh khoản cao đang nắm giữ làm đệm thanh khoản như trái phiếu chính phủ, tín phiếu kho bạc hoặc tiền gửi tại Ngân hàng Nhà nước (vab_ftp_methodology, Điều 5.2.b, d.614).
 
 Thông qua cơ chế thu phí thanh khoản tiềm tàng này, khối Nguồn vốn và ALCO theo [[vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu]] chuyển hóa toàn bộ chi phí cơ hội của việc duy trì tài sản thanh khoản cao về đúng các khối kinh doanh phát hành hạn mức ngoại bảng. Kỹ thuật định giá này ngăn chặn các chi nhánh cấp hạn mức tín dụng tràn lan vượt quá nhu cầu thực tế của khách hàng, buộc các đơn vị kinh doanh phải tính toán phí cam kết hoặc bù đắp lãi suất cho vay thực tế để bù đắp chi phí thanh khoản dự phòng mà ngân hàng phải gánh chịu.
+

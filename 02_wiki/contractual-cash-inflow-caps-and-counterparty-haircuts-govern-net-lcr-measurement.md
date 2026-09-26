@@ -1,13 +1,13 @@
 ---
 title: contractual-cash-inflow-caps-and-counterparty-haircuts-govern-net-lcr-measurement
 type: concept
-tags: [banking, alm, liquidity-risk, lcr, cash-inflows, inflow-cap, reverse-repo, counterparty-haircuts, net-cash-outflows, regulation]
-sources: [sbv_draft_circular_replace_22]
+tags: [banking, alm, liquidity-risk, lcr, cash-inflows, inflow-cap, reverse-repo, counterparty-haircuts, net-cash-outflows, regulation, basel, basel-iii, bcbs-238]
+sources: [sbv_draft_circular_replace_22, bcbs_238]
 status: draft
 last_updated: 2026-09-26
 ---
 
-Quy tắc đo lường dòng tiền vào theo hợp đồng và chốt chặn trần thu hồi vốn theo Phụ lục I của Dự thảo Thông tư thay thế Thông tư 22/2019/TT-NHNN thiết lập các nguyên tắc thận trọng nhằm ngăn ngừa việc tổ chức tín dụng phóng đại khả năng thu hồi vốn để làm giảm mẫu số dòng tiền ra ròng trong tỷ lệ [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]]. Bằng cách áp dụng các hệ số thu tiền (inflow rates) có chiết khấu theo loại đối tác, loại trừ hoàn toàn các nguồn thu mang tính điều kiện và áp đặt trần khống chế dòng tiền vào tối đa không quá 75% tổng dòng tiền ra dự kiến, quy chuẩn bảo đảm ngân hàng luôn duy trì một lượng đệm HQLA tự thân tối thiểu để phòng thủ độc lập trước các cú sốc thanh khoản (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Phụ lục I Phần C, d.1496–1617).
+Quy tắc đo lường dòng tiền vào theo hợp đồng và chốt chặn trần thu hồi vốn theo Phụ lục I của Dự thảo Thông tư thay thế Thông tư 22/2019/TT-NHNN và chuẩn mực toàn cầu Basel III (BCBS 238, Paragraph 142–160) thiết lập các nguyên tắc thận trọng nhằm ngăn ngừa việc tổ chức tín dụng phóng đại khả năng thu hồi vốn để làm giảm mẫu số dòng tiền ra ròng trong tỷ lệ [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]]. Bằng cách áp dụng các hệ số thu tiền (inflow rates) có chiết khấu theo loại đối tác, loại trừ hoàn toàn các nguồn thu mang tính điều kiện và áp đặt trần khống chế dòng tiền vào tối đa không quá 75% tổng dòng tiền ra dự kiến, quy chuẩn bảo đảm ngân hàng luôn duy trì một lượng đệm HQLA tự thân tối thiểu để phòng thủ độc lập trước các cú sốc thanh khoản (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Phụ lục I Phần C, d.1496–1617; bcbs_238, file bcbs238.md, Paragraph 142–160, d.580–634). Chi tiết cơ chế định lượng trần 75% và ma trận đối tác chuyên sâu theo Basel III được chuẩn hóa tại [[basel-iii-cash-inflows-and-75-percent-cap-framework-safeguards-minimum-hqla-buffer]] và [[secured-lending-and-counterparty-cash-inflow-matrices-calibrate-rehypothecation-risk]].
 
 **1. Nguyên tắc ghi nhận dòng tiền vào dự kiến (Phần C.I)**
 
@@ -29,6 +29,8 @@ Dòng tiền vào chỉ được ghi nhận từ các quyền đòi hợp đồn
 | Tài sản Cấp 2B khác (TPDN BBB-, Cổ phiếu bluechip) | **50%** | Thu tiền bằng đúng mức chiết khấu 50% |
 | Cho vay ký quỹ chứng khoán (Margin loans) | **50%** | Giả định ngân hàng chỉ thu hồi được 50% số dư nợ cho vay margin khi thị trường chứng khoán giảm mạnh |
 | Tài sản tài chính khác không thuộc HQLA | **100%** | Ngân hàng thu hồi toàn bộ 100% tiền mặt và trả lại tài sản kém thanh khoản cho đối tác |
+
+*Ngoại lệ tái cầm cố (Rehypothecation) và Vị thế bán khống theo Basel III (Paragraph 146–147)*: Nếu tài sản bảo đảm nhận được từ giao dịch reverse repo hoặc vay chứng khoán đã bị tái sử dụng để che chắn vị thế bán khống kéo dài quá 30 ngày, ngân hàng bắt buộc phải áp hệ số dòng tiền vào là **0%** (thay vì 15%–100%), do ngân hàng buộc phải tiếp tục gia hạn hợp đồng hoặc chi tiền mua chứng khoán để bảo vệ trạng thái bán khống theo [[secured-lending-and-counterparty-cash-inflow-matrices-calibrate-rehypothecation-risk]].
 
 **3. Dòng tiền vào theo phân loại đối tác giao dịch (Mục IV)**
 
@@ -53,4 +55,4 @@ $$\text{Dòng tiền ra ròng} = \text{Dòng tiền ra dự kiến} - \text{Dòn
 - Trong một cuộc hoảng loạn thanh khoản thực tế, dòng tiền vào theo hợp đồng rất dễ bị đình trệ do khách hàng chậm trả nợ hoặc phá sản dây chuyền. Trần khống chế 75% buộc mọi ngân hàng thương mại bất kể quy mô **phải luôn luôn tự trang bị một lượng HQLA tối thiểu bằng 25% tổng dòng tiền ra dự kiến**, tạo đệm an toàn tự phòng hộ độc lập không phụ thuộc vào hành vi trả nợ của bên ngoài;
 - Quy chuẩn này tạo ra mối gắn kết chặt chẽ với quy tắc định giá chi phí cơ hội vốn trên đường cong FTP tại [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]] và khuôn khổ quản trị thanh khoản nội bộ tại [[liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans]].
 
-Xem thêm: [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]], [[hqla-eligibility-and-unwinding-haircut-mechanics-calibrate-liquidity-buffers]], [[retail-and-wholesale-deposit-run-off-rates-differentiate-short-term-liquidity-outflows]], [[contingent-liquidity-outflows-and-credit-facility-drawdowns-stress-test-off-balance-commitments]], [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]], [[liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans]], [[loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity]].
+Xem thêm: [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]], [[basel-iii-cash-inflows-and-75-percent-cap-framework-safeguards-minimum-hqla-buffer]], [[secured-lending-and-counterparty-cash-inflow-matrices-calibrate-rehypothecation-risk]], [[consolidated-lcr-cross-border-framework-regulates-home-host-discretion-and-trapped-liquidity]], [[hqla-eligibility-and-unwinding-haircut-mechanics-calibrate-liquidity-buffers]], [[retail-and-wholesale-deposit-run-off-rates-differentiate-short-term-liquidity-outflows]], [[contingent-liquidity-outflows-and-credit-facility-drawdowns-stress-test-off-balance-commitments]], [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]], [[liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans]], [[loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity]].

@@ -1,5 +1,5 @@
 .llm-graphify-original-view { display: flex; padding: 0 !important; overflow: hidden; }
-.llm-graphify-node-info { box-sizing: border-box; width: 25%; min-width: 0; flex: 0 0 25%; height: 100%; padding: 20px; overflow-y: auto; background: #1a1a2e; color: #d7dbe5; border-right: 1px solid #2a2a4e; opacity: 1; transform: translateX(0); transition: width .22s ease, flex-basis .22s ease, padding .22s ease, opacity .16s ease, transform .22s ease; }
+.llm-graphify-node-info { box-sizing: border-box; width: 50%; min-width: 0; flex: 0 0 50%; height: 100%; padding: 20px; overflow-y: auto; background: #1a1a2e; color: #d7dbe5; border-right: 1px solid #2a2a4e; opacity: 1; transform: translateX(0); transition: width .22s ease, flex-basis .22s ease, padding .22s ease, opacity .16s ease, transform .22s ease; }
 .llm-graphify-node-info.is-collapsed { width: 0; flex-basis: 0; padding-left: 0; padding-right: 0; overflow: hidden; border-right-width: 0; opacity: 0; transform: translateX(-16px); pointer-events: none; }
 .llm-graphify-node-info > h3 { margin: 0 0 12px; color: #aaa; font-size: 13px; letter-spacing: .05em; text-transform: uppercase; }
 .llm-graphify-node-info-content { overflow-wrap: anywhere; font-size: 14px; }

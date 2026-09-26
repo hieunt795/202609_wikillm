@@ -1121,5 +1121,70 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 3 trang cập nhật: basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stability, basel-iii-leverage-ratio-constrains-unweighted-balance-sheet-expansion, liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans; 0 stub mới
 - Nguồn hoàn tất 100% (cả 4/4 chunk, 15 trang concept mới); state file + manifest + index §Sources đã cập nhật
 
+## [2026-09-26:15-35-00] ingest | bcbs_144 d.1–182
+- 3 trang mới: bcbs-sound-principles-establish-foundational-liquidity-risk-management-and-supervisory-mandates, board-approved-liquidity-risk-tolerance-aligns-business-strategy-with-stress-survival-horizons, internal-liquidity-cost-allocation-mandates-deal-level-ftp-for-on-and-off-balance-activities
+- 3 trang cập nhật: funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks, liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans, risk-appetite-framework-and-capital-targets-anchor-multi-year-risk-strategy; 0 stub mới
+- Phần còn lại: Chunk 2 (d.183–371), Chunk 3 (d.372–539) & Chunk 4 (d.540–641); state file + manifest + index §Sources đã cập nhật
+
+## [2026-09-26:15-46-00] ingest | bcbs_144 d.183–371
+- 4 trang mới: prospective-cash-flow-forecasting-and-funding-gap-analysis-model-liquidity-stickiness, contingent-liquidity-risk-framework-mandates-asymmetric-spv-treatment-and-commitment-modeling, early-warning-indicators-and-mismatch-limits-operationalize-proactive-liquidity-monitoring, funding-diversification-and-market-access-testing-mitigate-wholesale-refinancing-freezes
+- 3 trang cập nhật: liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans, contingent-liquidity-charge-prices-undrawn-credit-commitments, loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity; 0 stub mới
+- Phần còn lại: Chunk 3 (d.372–539) & Chunk 4 (d.540–641); state file + index §Sources đã cập nhật
+
+## [2026-09-26:15-50-00] ingest | bcbs_144 d.372–539
+- 5 trang mới: intraday-liquidity-risk-management-mandates-real-time-monitoring-and-priority-sequencing, collateral-management-framework-differentiates-encumbered-assets-and-monitors-tied-positions, multi-scenario-liquidity-stress-testing-integrates-behavioral-shocks-and-informs-capital-planning, contingency-funding-plan-establishes-crisis-governance-and-operational-escalation-frameworks, unencumbered-high-quality-liquid-asset-cushion-insures-against-stress-cash-flow-deficits
+- 3 trang cập nhật: liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans, hqla-eligibility-and-unwinding-haircut-mechanics-calibrate-liquidity-buffers, senior-management-oversight-and-conflict-of-interest-containment-anchor-banking-governance; 0 stub mới
+- Phần còn lại: Chunk 4 (d.540–641); state file + index §Sources đã cập nhật
+
+## [2026-09-26:15-54-00] ingest | bcbs_144 d.540–641
+- 4 trang mới: liquidity-risk-public-disclosure-standards-mandate-qualitative-and-quantitative-market-transcipline, supervisory-liquidity-review-process-evaluates-governance-stress-testing-and-cushion-adequacy, supervisory-early-remedial-actions-mandate-liquidity-gap-reductions-and-capital-add-ons, cross-border-supervisory-cooperation-and-crisis-information-sharing-contain-contagion
+- 3 trang cập nhật: pillar-3-liquidity-disclosure-standards-mandate-qualitative-and-quantitative-market-transparency, icaap-framework-determines-economic-capital-and-target-capital-under-stress, statutory-capital-real-value-and-remedial-mechanisms-govern-bank-solvency; 0 stub mới
+- Nguồn hoàn tất 100% (cả 4/4 chunk, 16 trang concept mới); state file + manifest + index §Sources đã cập nhật
+
+## [2026-09-26:16-05-00] ingest | bcbs_238 d.1–371
+- 6 trang mới: basel-iii-lcr-short-term-liquidity-stress-framework-and-buffer-usability, hqla-fundamental-and-market-characteristics-govern-asset-liquidity-qualification, hqla-operational-requirements-enforce-unencumbered-status-and-treasury-control, hqla-asset-categorisation-and-haircut-parameters-define-liquidity-tiers, hqla-unwinding-mechanics-and-cap-formulas-eliminate-short-term-financing-distortions, alternative-liquidity-approaches-ala-resolve-jurisdictional-hqla-structural-deficits
+- 3 trang cập nhật: hqla-eligibility-and-unwinding-haircut-mechanics-calibrate-liquidity-buffers, basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers, unencumbered-high-quality-liquid-asset-cushion-insures-against-stress-cash-flow-deficits; 0 stub mới
+- Phần còn lại: Chunk 2 (d.372–570), Chunk 3 (d.571–676) & Chunk 4 (d.677–1263); state file + manifest + index §Sources đã cập nhật
+
+## [2026-09-26:16-15-00] ingest | bcbs_238 d.372–570
+- 5 trang mới: basel-iii-retail-deposit-run-off-framework-differentiates-stable-and-less-stable-funds, operational-deposits-framework-evaluates-clearing-custody-and-cash-management-stickiness, unsecured-wholesale-funding-run-off-matrices-calibrate-counterparty-flight-risk, secured-funding-run-off-mechanics-map-collateral-hierarchy-and-counterparty-profiles, contingent-liquidity-outflow-shocks-quantify-downgrades-derivatives-and-facility-drawdowns
+- 2 trang cập nhật: retail-and-wholesale-deposit-run-off-rates-differentiate-short-term-liquidity-outflows, contingent-liquidity-outflows-and-credit-facility-drawdowns-stress-test-off-balance-commitments; 0 stub mới
+- Phần còn lại: Chunk 3 (d.571–676) & Chunk 4 (d.677–1263); state file + manifest + index §Sources đã cập nhật
+
+## [2026-09-26:16-25-00] ingest | bcbs_238 d.571–676
+- 3 trang mới: basel-iii-cash-inflows-and-75-percent-cap-framework-safeguards-minimum-hqla-buffer, secured-lending-and-counterparty-cash-inflow-matrices-calibrate-rehypothecation-risk, consolidated-lcr-cross-border-framework-regulates-home-host-discretion-and-trapped-liquidity
+- 2 trang cập nhật: contractual-cash-inflow-caps-and-counterparty-haircuts-govern-net-lcr-measurement, basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers; 0 stub mới
+- Phần còn lại: Chunk 4 (d.677–1263); state file + manifest + index §Sources đã cập nhật
+
+## [2026-09-26:16-35-00] ingest | bcbs_238 d.677–1263
+- 3 trang mới: basel-iii-liquidity-risk-monitoring-tools-complement-contractual-and-market-oversight, alternative-liquidity-approaches-eligibility-assessment-principles-and-governance, basel-iii-lcr-master-factor-matrix-and-comprehensive-calibration-architecture
+- 2 trang cập nhật: alternative-liquidity-approaches-ala-resolve-jurisdictional-hqla-structural-deficits, early-warning-indicators-and-mismatch-limits-operationalize-proactive-liquidity-monitoring; 0 stub mới
+- Nguồn hoàn tất 100% (cả 4/4 chunk, 17 trang concept mới); state file + manifest + index §Sources đã cập nhật
+
+## [2026-09-26:16-46-00] ingest | bcbs_368 d.1–327
+- 8 trang mới: irrbb-board-and-senior-management-governance-framework-enforces-delegation-and-independence, irrbb-risk-appetite-framework-establishes-multi-tiered-limits-and-escalation-protocols, irrbb-stress-testing-architecture-integrates-multi-tier-scenarios-and-reverse-stress-testing, non-maturity-deposit-behavioural-modelling-governs-core-and-non-core-segmentation-under-irrbb, customer-behavioural-optionalities-govern-loan-prepayments-and-early-deposit-redemptions, irrbb-internal-measurement-systems-mandate-three-pillar-model-risk-validation, irrbb-multi-currency-aggregation-governs-cross-currency-interest-rate-correlations, irrbb-capital-adequacy-and-business-alignment-integrate-into-icaap-framework
+- 7 trang cập nhật: interest-rate-risk-in-the-banking-book-irrbb, credit-spread-risk-in-the-banking-book-csrbb, interest-rate-gap-risk-stems-from-repricing-timing-mismatches, interest-rate-basis-risk-arises-from-imperfect-correlation-between-benchmarks, interest-rate-option-risk-combines-automatic-and-embedded-behavioural-options, economic-value-and-earnings-perspectives-complement-each-other-in-alm, balance-sheet-evolution-assumptions-differentiate-run-off-static-and-dynamic-views; 0 stub mới
+- Phần còn lại: Chunk 2 (d.328–615), Chunk 3 (d.536–800) & Chunk 4 (d.801–1207); state file + manifest + index §Sources đã cập nhật
+
+## [2026-09-26:16-52-00] ingest | bcbs_368 d.328–615
+- 8 trang mới: pillar-3-irrbb-qualitative-disclosure-standards-mandate-table-a-narratives, pillar-3-irrbb-quantitative-disclosure-standards-mandate-table-b-metrics, delta-eve-regulatory-calculation-rules-mandate-run-off-and-equity-exclusion, delta-nii-regulatory-calculation-rules-mandate-constant-balance-sheet-and-rolling-horizon, irrbb-capital-allocation-framework-differentiates-economic-capital-from-earnings-buffers, supervisory-outlier-test-mandates-fifteen-percent-tier-one-capital-threshold, supervisory-remedial-actions-mandate-exposure-reduction-capital-add-ons-and-parameter-constraints, supervisory-review-process-srep-enforces-peer-benchmarking-and-cross-border-cooperation-for-irrbb
+- 4 trang cập nhật: supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital, economic-value-of-equity-eve-measures-net-present-value-of-banking-book-cash-flows, icaap-framework-determines-economic-capital-and-target-capital-under-stress, multitiered-irrbb-regulatory-framework-spans-bcbs-crd-crr-and-eba-technical-standards; 0 stub mới
+- Phần còn lại: Chunk 3 (d.536–800) & Chunk 4 (d.801–1207); state file + manifest + index §Sources đã cập nhật
+
+## [2026-09-26:16-58-00] ingest | bcbs_368 d.536–800
+- 7 trang mới: irrbb-standardised-framework-five-stage-measurement-architecture, standardised-repricing-cash-flow-bucketing-and-nineteen-tenor-schedule, standardised-nmd-categorisation-and-core-deposit-caps-framework, standardised-loan-prepayment-modelling-and-cpr-multipliers, standardised-term-deposit-early-redemption-risk-and-tdrr-scalars, automatic-interest-rate-options-standardised-valuation-and-volatility-shocks, standardised-delta-eve-calculation-and-multi-currency-aggregation-rules
+- 4 trang cập nhật: irrbb-delta-eve-and-nii-standardized-measurement-governs-rate-shock-scenarios, interest-rate-option-risk-combines-automatic-and-embedded-behavioural-options, customer-behavioural-optionalities-govern-loan-prepayments-and-early-deposit-redemptions, non-maturity-deposit-behavioural-modelling-governs-core-and-non-core-segmentation-under-irrbb; 0 stub mới
+- Phần còn lại: Chunk 4 (d.801–1207); state file + manifest + index §Sources đã cập nhật
+
+## [2026-09-26:17-03-00] ingest | bcbs_368 d.801–1207
+- 5 trang mới: interest-rate-theoretical-decomposition-and-csrbb-boundary, equity-endowment-effect-and-replicating-portfolio-in-alm, economic-value-at-risk-evar-framework-and-alm-simulation-techniques, six-standardised-interest-rate-shock-scenarios-and-mathematical-formulations, interest-rate-shock-calibration-methodology-global-scalars-and-caps-floors
+- 3 trang cập nhật: interest-rate-basis-risk-arises-from-imperfect-correlation-between-benchmarks, credit-spread-risk-in-the-banking-book-csrbb, economic-value-and-earnings-perspectives-complement-each-other-in-alm; 0 stub mới
+- Nguồn hoàn tất 100% (cả 4/4 chunk, 28 concept mới, 18 lượt cập nhật); state file + manifest + index §Sources đã cập nhật
+
+## [2026-09-26:17-13-00] ingest | bcbs_368 đợt mở rộng chuyên sâu vi mô (12 concept kỹ thuật định lượng & quản trị vi mô)
+- 12 trang concept chuyên sâu mới: accounting-treatment-of-banking-book-amortised-cost-versus-fair-value-under-irrbb, replicating-portfolio-optimization-methodology-for-nmds-and-equity, pre-acquisition-review-and-hedging-approval-governance-for-irrbb, trapped-capital-and-cross-border-transferability-constraints-under-irrbb, reverse-stress-testing-quantitative-and-qualitative-mechanisms-for-irrbb, yield-curve-interpolation-and-discounting-mechanics-in-alm, effective-duration-and-effective-convexity-for-banking-book-optionalities, balance-sheet-dynamics-assumptions-run-off-constant-and-dynamic-in-alm, funds-transfer-pricing-as-an-irrbb-risk-transfer-and-steering-mechanism, irrbb-model-governance-and-independent-three-tier-validation-framework, macro-hedging-and-micro-hedging-strategies-in-the-banking-book, basis-risk-quantification-and-tenor-basis-swaps-in-alm
+- Tổng cộng nguồn bcbs_368 tạo mới 40 concept và 18 lượt cập nhật trang hiện hữu; tổng số trang concept wiki đạt 930 trang; cập nhật 02_wiki/index.md và 03_state/bcbs_368.md
+
+
 
 

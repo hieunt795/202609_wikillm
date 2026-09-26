@@ -1,8 +1,8 @@
 ---
 title: risk-appetite-framework-and-capital-targets-anchor-multi-year-risk-strategy
 type: concept
-tags: [banking, risk-governance, risk-appetite, capital-targets, raroc, multi-year-strategy, product-approval, regulation]
-sources: [sbv_circular_83_2025]
+tags: [banking, risk-governance, risk-appetite, capital-targets, raroc, multi-year-strategy, product-approval, regulation, basel, principles]
+sources: [sbv_circular_83_2025, bcbs_144]
 status: draft
 last_updated: 2026-09-26
 ---
@@ -19,3 +19,8 @@ Trên cơ sở khẩu vị rủi ro do Hội đồng quản trị phê duyệt, 
 Quy trình quản lý rủi ro đối với sản phẩm mới và hoạt động trên thị trường mới thiết lập hàng rào ngăn ngừa trục lợi và bộc lộ rủi ro bất ngờ (sbv_circular_83_2025, file TT83.md, Điều 21, d.416–427). Trước khi triển khai, Hội đồng quản trị phải phê duyệt chủ trương trên cơ sở đề xuất của Tổng giám đốc; kế hoạch thử nghiệm sản phẩm mới phải được Bộ phận Quản trị Rủi ro (RMD) thẩm định độc lập về quy mô thử nghiệm, thời gian, tác động đến vốn tự có và kịch bản suy giảm thu nhập. Chỉ khi kết quả thử nghiệm đáp ứng toàn bộ các chỉ tiêu an toàn đề ra, ngân hàng mới được chính thức ban hành quy trình và cung cấp sản phẩm trên diện rộng (sbv_circular_83_2025, file TT83.md, Điều 21.2–21.3, d.423–426).
 
 Nền tảng vận hành của khung chiến lược rủi ro là hệ thống quản trị dữ liệu rủi ro tuân thủ các nguyên tắc chuẩn mực quốc tế BCBS 239 (sbv_circular_83_2025, file TT83.md, Điều 24, d.469–477). Cơ sở dữ liệu rủi ro phải bảo đảm tính chính xác (accuracy), tính toàn vẹn (integrity), tính kịp thời và khả năng tổng hợp đa chiều xuyên suốt các danh mục trọng yếu. Toàn bộ cơ chế này được vận hành dưới sự giám sát đa tầng của [[three-lines-of-defense-framework-enforces-banking-internal-control-and-risk-oversight]] và hệ thống ủy ban chuyên trách tại [[senior-management-oversight-and-conflict-of-interest-containment-anchor-banking-governance]].
+
+Dưới góc độ chuẩn mực quốc tế của Ủy ban Basel, Nguyên tắc 2 trong bộ nguyên tắc BCBS 144 đặc biệt nhấn mạnh rằng khẩu vị rủi ro thanh khoản bắt buộc phải do Hội đồng Quản trị trực tiếp phê duyệt độc lập với các chỉ tiêu an toàn vốn theo [[board-approved-liquidity-risk-tolerance-aligns-business-strategy-with-stress-survival-horizons]] (bcbs_144, file bcbs144.md, Principle 2, d.149–154). Khẩu vị rủi ro này làm rõ sự đánh đổi giữa rủi ro và lợi nhuận (*trade-off between risks and profits*) cho toàn bộ các cấp quản lý, đồng thời quy định mức độ rủi ro thanh khoản tài trợ không được phòng hộ mà ngân hàng chấp nhận gánh chịu nhằm bảo đảm khả năng sống sót độc lập qua các giai đoạn căng thẳng kéo dài, kết nối chặt chẽ với các nguyên tắc quản trị nền tảng tại [[bcbs-sound-principles-establish-foundational-liquidity-risk-management-and-supervisory-mandates]].
+
+Xem thêm: [[board-approved-liquidity-risk-tolerance-aligns-business-strategy-with-stress-survival-horizons]], [[bcbs-sound-principles-establish-foundational-liquidity-risk-management-and-supervisory-mandates]], [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]], [[ftp-credit-spread-and-capital-charge-operationalize-deal-level-raroc]], [[three-lines-of-defense-framework-enforces-banking-internal-control-and-risk-oversight]], [[senior-management-oversight-and-conflict-of-interest-containment-anchor-banking-governance]].
+

@@ -43,9 +43,12 @@ function buildVaultGraph(app) {
     const intensity = Math.min(1, Math.pow(degree, 0.75) * 1.8 / 57);
     const opacity = 0.2 + 0.8 * intensity;
     const cache = app.metadataCache.getFileCache?.(file);
-    const hasAlmTag = (cache ? getAllTags(cache) || [] : [])
-      .some((tag) => tag.replace(/^#/, "").toLowerCase() === "alm");
-    const color = hasAlmTag
+    const tags = (cache ? getAllTags(cache) || [] : [])
+      .map((tag) => tag.replace(/^#/, "").toLowerCase());
+    const hasHighlightedTag = tags.some((tag) =>
+      tag === "alm" || tag === "banking" || tag === "basel" || tag.startsWith("basel-")
+    );
+    const color = hasHighlightedTag
       ? `rgba(255, 230, 0, ${opacity})`
       : `rgba(0, 255, 208, ${opacity})`;
     counts.set(communityName, counts.get(communityName) + 1);
@@ -63,7 +66,7 @@ function buildVaultGraph(app) {
       degree,
       inbound: metric.inbound,
       outbound: metric.outbound,
-      hasAlmTag
+      hasHighlightedTag
     };
   });
 
