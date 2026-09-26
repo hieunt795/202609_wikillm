@@ -17,3 +17,13 @@
 - [2026-09-25] quasi-fiscal-losses-hidden-in-monetary-authorities-other-items-net: chú thích "(imf_macro_accounting, Ch.5, cùng mục, d.4772–4780)" gán vào mục The Balance Sheet of Monetary Authorities nhưng d.4772–4780 thuộc The Monetary Survey (đồng nhất thức 5.7–5.8). Định nghĩa OIN gồm lãi, lỗ của ngân hàng trung ương nằm ở The Balance Sheet of Monetary Authorities, d.4616. Đề xuất /review-node.
 - [2026-09-25] currency-substitution-undermines-monetary-control: cụm "thường đi kèm lãi suất thực âm khiến giữ tài sản ngoại tệ hấp dẫn hơn nội tệ" dẫn imf_macro_accounting, Ch.5, Currency substitution, d.5010–5016 nhưng đoạn này không nói lãi suất thực âm (d.5016 chỉ nói giữ ngoại tệ ít rủi ro và sinh lợi hơn). Ý "khuếch đại hệ quả lạm phát của thâm hụt" nằm ở d.5020, không phải d.5022. Đề xuất /review-node.
 - [2026-09-25] Lệch nội tại trong imf_macro_accounting: Ch.1 d.524 nói trượt chủ động giảm lạm phát "không hy sinh sức cạnh tranh", Ch.4 d.4069 nói trượt chủ động "chấp nhận mất một phần sức cạnh tranh". Hai trang polands-exchange-rate-experience-yields-five-policy-lessons và the-rate-of-crawl-… chép đúng từng chỗ nên mâu thuẫn nhau. Cùng một nguồn nên không đánh ⚠️ Conflict; xử lý khi /ingest Ch.1 (đang [ ]).
+- [2026-09-26] funds-transfer-pricing-as-an-irrbb-risk-transfer-and-steering-mechanism: frontmatter thiếu type/sources/status/last_updated. Thân bài vi phạm schema §7 (dùng heading, danh sách dồn link). Cần /review-node toàn diện.
+- [2026-09-26] funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks (d.25): "Xem thêm:" dồn 6 link vi phạm schema §7.
+- [2026-09-26] regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp (d.22): "Xem thêm:" dồn 7 link vi phạm schema §7.
+- [2026-09-26] internal-liquidity-cost-allocation-mandates-deal-level-ftp-for-on-and-off-balance-activities (d.18): "Xem thêm:" dồn 7 link vi phạm schema §7.
+- [2026-09-26] ftp-base-curve-construction-contrasts-vnd-historical-cost-with-usd-market-benchmarks (d.24): "Xem thêm:" dồn 3 link vi phạm schema §7.
+- [2026-09-26] two-tier-ftp-operational-workflows-govern-market-1-and-market-2-cycles (d.20): "Xem thêm:" dồn 4 link vi phạm schema §7.
+- [2026-09-26] regulatory-deposit-insurance-and-statutory-reserves-apportion-into-market-1-cof (d.20): "Xem thêm:" dồn 4 link vi phạm schema §7.
+- [2026-09-26] interbank-tenor-ladder-and-liquidity-spread-curve-construction-for-market-2-ftp (d.20): "Xem thêm:" dồn 4 link vi phạm schema §7.
+- [2026-09-26] non-earning-asset-and-nostro-vostro-ftp-treatment-precludes-double-counting (d.20): "Xem thêm:" dồn 4 link vi phạm schema §7.
+- [2026-09-26] deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-profiles (d.26): "Xem thêm:" dồn 7 link vi phạm schema §7.

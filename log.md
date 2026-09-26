@@ -1185,6 +1185,24 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 12 trang concept chuyên sâu mới: accounting-treatment-of-banking-book-amortised-cost-versus-fair-value-under-irrbb, replicating-portfolio-optimization-methodology-for-nmds-and-equity, pre-acquisition-review-and-hedging-approval-governance-for-irrbb, trapped-capital-and-cross-border-transferability-constraints-under-irrbb, reverse-stress-testing-quantitative-and-qualitative-mechanisms-for-irrbb, yield-curve-interpolation-and-discounting-mechanics-in-alm, effective-duration-and-effective-convexity-for-banking-book-optionalities, balance-sheet-dynamics-assumptions-run-off-constant-and-dynamic-in-alm, funds-transfer-pricing-as-an-irrbb-risk-transfer-and-steering-mechanism, irrbb-model-governance-and-independent-three-tier-validation-framework, macro-hedging-and-micro-hedging-strategies-in-the-banking-book, basis-risk-quantification-and-tenor-basis-swaps-in-alm
 - Tổng cộng nguồn bcbs_368 tạo mới 40 concept và 18 lượt cập nhật trang hiện hữu; tổng số trang concept wiki đạt 930 trang; cập nhật 02_wiki/index.md và 03_state/bcbs_368.md
 
+## [2026-09-26:19-33-55] research | FTP Đợt 1 — nền tảng & phân bổ chi phí thanh khoản
+- Cluster 10 trang; enrich 4 trang
+- 7 claim mới ở 4 trang, 5 liên kết bổ sung, 4 mục ghi _inbox.md; 0 analysis mới
+- Báo cáo: Claude outputs/research-2026-09-26-ftp-batch1.md
+## [2026-09-26:19-41-22] research | FTP Đợt 2 — cấu trúc VOF/COF TT1 & TT2 và tác nghiệp tại VN
+- Cluster 8 trang; enrich 4 trang
+- 6 claim mới ở 3 trang, 4 liên kết bổ sung, 5 mục ghi _inbox.md; 0 analysis mới
+- Báo cáo: Claude outputs/research-2026-09-26-ftp-batch2.md
+
+## [2026-09-26:19-48-29] research | FTP Đợt 3 — sản phẩm phức tạp & rủi ro hành vi
+- Cluster 8 trang; enrich 7 trang
+- 11 claim mới ở 7 trang, 6 liên kết bổ sung, 0 mục ghi _inbox.md (đã dọn dẹp trực tiếp); 0 analysis mới
+- Báo cáo: Claude outputs/research-2026-09-26-ftp-batch3.md
+
+## [2026-09-26:19-55-22] research | FTP Đợt 4 — điều hướng ALCO, tối ưu bảng cân đối, RAROC/Vốn, FVA & rủi ro mới nổi
+- Cluster 8 trang; enrich 8 trang
+- 8 claim mới ở 8 trang, 6 liên kết bổ sung, 0 mục ghi _inbox.md (đã dọn dẹp trực tiếp); 0 analysis mới
+- Báo cáo: Claude outputs/research-2026-09-26-ftp-batch4.md
 
 
 

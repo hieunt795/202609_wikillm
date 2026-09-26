@@ -1,13 +1,10 @@
 ---
-title: "Funds Transfer Pricing as an IRRBB Risk Transfer and Steering Mechanism"
-tags:
-  - concept
-  - alm
-  - irrbb
-  - ftp
-  - maturity-transformation
-  - risk-transfer
-  - bcbs-368
+title: funds-transfer-pricing-as-an-irrbb-risk-transfer-and-steering-mechanism
+type: concept
+tags: [alm, irrbb, ftp, maturity-transformation, risk-transfer, bcbs-368]
+sources: [bcbs_368, tata_bank_alm]
+status: draft
+last_updated: 2026-09-26
 ---
 
 Định giá Chuyển nhượng Vốn Nội bộ (Funds Transfer Pricing - FTP) dưới lăng kính BCBS 368 không chỉ là một công cụ kế toán quản trị phân bổ chi phí mà là cơ chế cốt lõi để cô lập, điều chuyển và tập trung hóa toàn bộ rủi ro lãi suất (Maturity mismatch risk, Basis risk, Option risk) từ các đơn vị kinh doanh tiền tuyến về Treasury/ALM desk, bảo đảm các đơn vị kinh doanh chỉ chịu trách nhiệm về biên thương mại và rủi ro tín dụng trong khi rủi ro thị trường được quản trị và kiểm soát tập trung (bcbs_368, file d368.md, Principle 3, d.153–168; Annex 1.2.6 & 1.3, d.900–925).
@@ -34,7 +31,7 @@ $$\text{FTP}_{\text{Asset}} = R_{\text{Base}}(T) + LP(T) + BS(T) + OC_{\text{Pre
 $$\text{FTP}_{\text{Liability}} = R_{\text{Base}}(T) + LP(T) - OC_{\text{Withdrawal}}$$
 
 Trong đó:
-- $R_{\text{Base}}(T)$: Lãi suất phi rủi ro chuẩn (Benchmark / Risk-Free Rate) tại kỳ hạn khớp dòng tiền $T$.
+- $R_{\text{Base}}(T)$: Lãi suất phi rủi ro chuẩn (Benchmark / Risk-Free Rate) tại kỳ hạn khớp dòng tiền $T$. Việc xây dựng đường cong lãi suất phi rủi ro chuẩn ghi nhận năm phương pháp phổ biến trong thực tiễn: trái phiếu chính phủ có chủ quyền phát hành tiền tệ (như U.S. Treasuries); trái phiếu chính phủ khu vực đồng Euro xếp hạng cao nhất AAA (nhược điểm là quy mô phát hành hạn chế từ một số ít quốc gia); lãi suất qua đêm thả nổi euro-STR cùng các công cụ phái sinh OIS (nhược điểm là tính dồn sau arrears thay vì cấu trúc kỳ hạn hướng về tương lai); lãi suất repo có bù trừ qua CCP (nhược điểm là thanh khoản tập trung dưới 1–2 năm và dễ suy giảm trong khủng hoảng); và đường cong hoán đổi lãi suất EURIBOR Swap (thanh khoản sâu tới 30 năm nhưng vẫn phản ánh rủi ro tín dụng đối tác liên ngân hàng) (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1643–1658).
 - $LP(T)$: Phần bù thanh khoản kỳ hạn (Term Liquidity Premium), bù đắp chi phí huy động nguồn vốn dài hạn phòng ngừa rủi ro tắc nghẽn thanh khoản theo chuẩn Basel III ([[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]]).
 - $BS(T)$: Phần bù rủi ro cơ sở (Basis Spread), định giá phần chênh lệch giữa các chỉ số lãi suất tham chiếu (ví dụ: chênh lệch giữa SOFR và lãi suất liên ngân hàng không bảo đảm).
 - $OC_{\text{Prepayment}}$ và $OC_{\text{Withdrawal}}$: Phí quyền chọn hành vi (Behavioural Option Charges). Đối với các khoản vay cho phép khách hàng trả nợ trước hạn không phạt, Treasury áp thêm một khoản phụ phí $OC_{\text{Prepayment}}$ (ví dụ: $+20 \text{ bps}$) vào giá vốn cấp cho chi nhánh. Chi phí này tạo lập nguồn ngân sách để Treasury mua các hợp đồng Swaption hoặc Cap/Floor trên thị trường phái sinh nhằm triệt tiêu trạng thái độ lồi âm ([[effective-duration-and-effective-convexity-for-banking-book-optionalities]]).
@@ -52,5 +49,7 @@ Treasury khắc phục điều này bằng việc gắn giá FTP của NMDs vớ
 **4. Điều hướng Chiến lược Bảng Cân đối và Thanh tra Giám sát SREP**
 
 Dưới góc độ Principle 3 và Principle 10 của BCBS 368:
-- **Công cụ Điều hướng (Balance Sheet Steering):** ALCO và Ban điều hành sử dụng biểu giá FTP như một công cụ điều tiết hành vi kinh doanh linh hoạt. Khi bài kiểm tra ngoại lai ([[supervisory-outlier-test-mandates-fifteen-percent-tier-one-capital-threshold]]) cảnh báo rủi ro $\Delta EVE$ đang tiệm cận trần $15\%$ Vốn cấp 1 do danh mục tài sản quá dài hạn, Treasury có thể chủ động nâng biểu lãi suất FTP cho vay dài hạn để hạn chế chi nhánh tăng trưởng sản phẩm này, đồng thời giảm giá FTP huy động dài hạn để khuyến khích hút tiền gửi kỳ hạn lớn.
-- **Thanh tra Giám sát SREP:** Cơ quan giám sát thẩm định chặt chẽ tính minh bạch và khách quan của hệ thống FTP. Nghiêm cấm các trường hợp "trợ giá chéo" phi thị trường hoặc các thỏa thuận định giá ưu đãi ngầm nhằm làm đẹp kết quả kinh doanh của các đơn vị chiến lược, bởi sự méo mó trong FTP sẽ phá vỡ toàn bộ kỷ luật định giá rủi ro và làm tê liệt hệ thống cảnh báo sớm IRRBB của ngân hàng.
+- **Công cụ Điều hướng (Balance Sheet Steering):** ALCO và Ban điều hành sử dụng biểu giá FTP như một công cụ điều tiết hành vi kinh doanh linh hoạt. Khi bài kiểm tra ngoại lai ([[supervisory-outlier-test-mandates-fifteen-percent-tier-one-capital-threshold]]) cảnh báo rủi ro $\Delta EVE$ đang tiệm cận trần $15\%$ Vốn cấp 1 do danh mục tài sản quá dài hạn, Treasury có thể chủ động nâng biểu lãi suất FTP cho vay dài hạn để hạn chế chi nhánh tăng trưởng sản phẩm này, đồng thời giảm giá FTP huy động dài hạn để khuyến khích hút tiền gửi kỳ hạn lớn. Ba kênh truyền dẫn này tương tác và tạo vòng phản hồi liên tục theo [[ftp-transmission-channels-steer-bank-balance-sheet-risks]].
+- **Thanh tra Giám sát SREP:** Cơ quan giám sát thẩm định chặt chẽ tính minh bạch và khách quan của hệ thống FTP. Nghiêm cấm các trường hợp "trợ giá chéo" phi thị trường hoặc các thỏa thuận định giá ưu đãi ngầm nhằm làm đẹp kết quả kinh doanh của các đơn vị chiến lược, bởi sự méo mó trong FTP sẽ phá vỡ toàn bộ kỷ luật định giá rủi ro và làm tê liệt hệ thống cảnh báo sớm IRRBB của ngân hàng. Tại Việt Nam, kiến trúc ALCO-CFU triển khai thực thi khung FTP chuẩn mực này theo [[vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu]].
+
+Khung vận hành FTP đòi hỏi sự tuân thủ các nguyên tắc thiết kế chuẩn mực của Farahvash: bảo đảm tính tương xứng giữa độ phức tạp của hệ thống FTP với quy mô bảng cân đối và khẩu vị rủi ro; gán lãi suất chuyển nhượng nhất quán với bản chất kinh tế và rủi ro cố hữu của vị thế; lựa chọn mức độ chi tiết (granularity) phù hợp; cam kết đầy đủ nguồn lực nhân sự và công nghệ thông tin; thiết lập cơ cấu quản trị minh bạch; bảo đảm tính nhất quán giữa các khối kinh doanh và chủng loại sản phẩm; và duy trì việc rà soát định kỳ các giả định mô hình cùng quy trình văn bản hóa chặt chẽ (tata_bank_alm, Ch.2, Conclusion, d.1774–1782).
