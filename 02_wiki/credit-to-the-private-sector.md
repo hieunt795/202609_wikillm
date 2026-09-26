@@ -3,7 +3,7 @@ title: credit-to-the-private-sector
 type: concept
 tags: [monetary, credit]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-24
 reviewed: 2026-09-24
 reviewed_by: model

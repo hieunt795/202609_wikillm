@@ -3,7 +3,7 @@ title: collateral-management-framework-differentiates-encumbered-assets-and-moni
 type: concept
 tags: [banking, alm, liquidity, collateral-management, encumbered-assets, central-bank-eligibility, tied-positions, basel, principles, bcbs-144]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

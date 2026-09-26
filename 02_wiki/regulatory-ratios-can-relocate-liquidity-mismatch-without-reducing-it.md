@@ -3,7 +3,7 @@ title: regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it
 type: concept
 tags: [banking, liquidity-risk, regulation, balance-sheet]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

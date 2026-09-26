@@ -3,7 +3,7 @@ title: the-rate-of-crawl-under-a-crawling-peg-can-be-set-passively-or-actively
 type: concept
 tags: [external-sector, exchange-rate-regime, stabilization]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

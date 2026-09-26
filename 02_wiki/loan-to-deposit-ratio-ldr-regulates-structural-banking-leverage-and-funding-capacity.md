@@ -3,7 +3,7 @@ title: loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-fundi
 type: concept
 tags: [banking, alm, ldr, loan-to-deposit, liquidity, funding-structure, treasury, regulation, basel, principles]
 sources: [sbv_draft_circular_replace_22, bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

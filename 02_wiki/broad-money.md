@@ -3,7 +3,7 @@ title: broad-money
 type: concept
 tags: [money, monetary-accounts, monetary-aggregates]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

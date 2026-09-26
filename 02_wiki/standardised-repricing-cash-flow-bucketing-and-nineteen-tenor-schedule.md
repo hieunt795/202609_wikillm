@@ -3,7 +3,7 @@ title: standardised-repricing-cash-flow-bucketing-and-nineteen-tenor-schedule
 type: concept
 tags: [banking, alm, irrbb, cash-flow-bucketing, repricing-schedule, time-buckets, bcbs-368, eve-discounting]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

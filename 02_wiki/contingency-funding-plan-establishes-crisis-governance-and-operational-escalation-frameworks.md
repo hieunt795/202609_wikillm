@@ -3,7 +3,7 @@ title: contingency-funding-plan-establishes-crisis-governance-and-operational-es
 type: concept
 tags: [banking, alm, liquidity, cfp, contingency-funding, crisis-management, escalation-procedures, basel, principles, bcbs-144]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

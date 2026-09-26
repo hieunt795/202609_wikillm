@@ -3,7 +3,7 @@ title: underground-economy
 type: concept
 tags: [measurement, national-accounts, informal-sector]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

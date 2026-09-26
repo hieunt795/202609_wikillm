@@ -3,7 +3,7 @@ title: two-tier-ftp-operational-workflows-govern-market-1-and-market-2-cycles
 type: concept
 tags: [alm, ftp, operational-workflows, two-tier-ftp, market-1, market-2, cfu, internal-governance]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: perfect-capital-mobility-with-a-fixed-exchange-rate-strips-monetary-polic
 type: concept
 tags: [monetary-policy, exchange-rate-regime, capital-flows]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

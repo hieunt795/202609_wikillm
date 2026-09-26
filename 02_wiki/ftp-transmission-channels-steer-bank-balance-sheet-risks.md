@@ -3,7 +3,7 @@ title: ftp-transmission-channels-steer-bank-balance-sheet-risks
 type: concept
 tags: [alm, ftp, risk-management, liquidity-risk, irrbb, credit-risk, basel-iii]
 sources: [ftp_transmission_analysis]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

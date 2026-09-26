@@ -3,7 +3,7 @@ title: equity-and-corporate-bond-financing-limits-curb-speculative-credit-alloca
 type: concept
 tags: [banking, credit-risk, corporate-bonds, equity-financing, speculative-credit, credit-limits, conflict-of-interest, regulation]
 sources: [sbv_draft_circular_replace_22]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

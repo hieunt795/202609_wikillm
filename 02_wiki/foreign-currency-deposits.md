@@ -3,7 +3,7 @@ title: foreign-currency-deposits
 type: concept
 tags: [monetary, dollarization, money-aggregates]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

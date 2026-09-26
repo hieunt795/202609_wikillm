@@ -3,7 +3,7 @@ title: global-risk-appetite-reallocates-across-sectors-under-surging-sovereign-y
 type: concept
 tags: [risk-appetite, market-rotation, equity-valuations, short-gamma, financial-stability]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-23
 ---
 

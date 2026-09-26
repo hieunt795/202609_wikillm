@@ -1,16 +1,13 @@
 ---
-title: "IRRBB Model Governance and Independent Three-Tier Validation Framework"
-tags:
-  - concept
-  - alm
-  - irrbb
-  - model-governance
-  - model-validation
-  - model-risk
-  - bcbs-368
+title: irrbb-model-governance-and-independent-three-tier-validation-framework
+type: concept
+tags: [alm, irrbb, model-governance, model-validation, model-risk, bcbs-368]
+sources: [bcbs_368]
+status: draft
+last_updated: 2026-09-26
 ---
 
-Khung quản trị mô hình và kiểm định độc lập ba tầng (Three-Tier Model Validation Framework) theo Nguyên tắc 6 của BCBS 368 là cơ chế kiểm soát bắt buộc nhằm triệt tiêu rủi ro mô hình trong việc lượng hóa IRRBB, đòi hỏi quy trình đánh giá toàn diện tách biệt giữa đơn vị phát triển mô hình, đơn vị kiểm định độc lập và kiểm toán nội bộ trên ba trụ cột: Tính đúng đắn về mặt lý thuyết, Kiểm tra quy trình thực thi và Phân tích kết quả thực tế (bcbs_368, file d368.md, Principle 6, d.279–313).
+Khung quản trị mô hình và kiểm định độc lập ba tầng (Three-Tier Model Validation Framework) theo Nguyên tắc 6 của BCBS 368 và [[irrbb-internal-measurement-systems-mandate-three-pillar-model-risk-validation]] là cơ chế kiểm soát bắt buộc nhằm triệt tiêu rủi ro mô hình trong việc lượng hóa IRRBB, đòi hỏi quy trình đánh giá toàn diện tách biệt giữa đơn vị phát triển mô hình, đơn vị kiểm định độc lập và kiểm toán nội bộ trên ba trụ cột: Tính đúng đắn về mặt lý thuyết, Kiểm tra quy trình thực thi và Phân tích kết quả thực tế (bcbs_368, file d368.md, Principle 6, d.279–313).
 
 **1. Bản chất của Rủi ro Mô hình trong Hệ thống Quản trị IRRBB**
 
@@ -19,7 +16,7 @@ Hệ thống đo lường nội bộ IRRBB (Internal Measurement Systems - IMS) 
 - Mô hình xác suất trả nợ trước hạn (CPR) cho các khoản vay thế chấp bán lẻ cố định và mô hình rút tiền gửi tiết kiệm trước hạn (TDRR) ([[customer-behavioural-optionalities-govern-loan-prepayments-and-early-deposit-redemptions]]).
 - Các thuật toán nội suy đường cong lợi suất spline và mô hình định giá quyền chọn tự động ([[automatic-interest-rate-options-standardised-valuation-and-volatility-shocks]]).
 
-Rủi ro mô hình (Model Risk) nảy sinh khi:
+Rủi ro mô hình (Model Risk), tương tự như quy định chung tại [[model-risk-management-framework-governs-lifecycle-and-validation-standards]], nảy sinh khi:
 1. Mô hình có sai sót căn bản trong nền tảng lý thuyết hoặc thuật toán toán học.
 2. Dữ liệu đầu vào bị sai lệch hoặc không đầy đủ.
 3. Ban điều hành lạm dụng mô hình ngoài phạm vi thiết kế, hoặc cố tình hiệu chỉnh các giả định hành vi lạc quan quá mức để "bóp méo" làm giảm nhẹ chỉ số sụt giảm vốn trong bài kiểm tra ngoại lai ([[supervisory-outlier-test-mandates-fifteen-percent-tier-one-capital-threshold]]).
@@ -58,10 +55,10 @@ Principle 6 quy định bất kỳ mô hình IRRBB nào trước khi đưa vào 
 
 **3. Cơ cấu Quản trị Ba Tuyến Phòng thủ (Three Lines of Defence)**
 
-Một khung quản trị mô hình IRRBB hiệu quả đòi hỏi sự phân định trách nhiệm rõ ràng:
+Một khung quản trị mô hình IRRBB hiệu quả đòi hỏi sự phân định trách nhiệm rõ ràng theo [[three-lines-of-defense-framework-enforces-banking-internal-control-and-risk-oversight]] và [[irrbb-board-and-senior-management-governance-framework-enforces-delegation-and-independence]]:
 - **Tuyến 1 (First Line - Đơn vị Phát triển & Vận hành):** Bộ phận ALM / Treasury Analytics chịu trách nhiệm xây dựng mô hình, thu thập dữ liệu, chạy mô phỏng hàng tháng, duy trì Danh mục Mô hình (Model Inventory) và lập Hồ sơ Kỹ thuật Mô hình (Model Technical Documentation) chi tiết.
 - **Tuyến 2 (Second Line - Đơn vị Kiểm định Độc lập):** Bộ phận Quản trị Rủi ro Mô hình (Model Risk Management - MRM) hoặc Quản trị Rủi ro Thị trường. Đơn vị này hoàn toàn độc lập về mặt nhân sự và báo cáo đối với Tuyến 1. MRM có thẩm quyền phê duyệt, từ chối, hoặc áp đặt hạn mức đệm an toàn bổ sung (model overlays / capital add-ons) đối với các mô hình chưa đạt độ tin cậy tuyệt đối.
-- **Tuyến 3 (Third Line - Kiểm toán Nội bộ):** Thực hiện kiểm toán độc lập định kỳ hàng năm toàn bộ quy trình quản trị mô hình, đánh giá tính tuân thủ chính sách thay đổi mô hình (Model Change Policy), và kiểm tra tính khách quan của Tuyến 2.
+- **Tuyến 3 (Third Line - Kiểm toán Nội bộ):** Thực hiện kiểm toán độc lập định kỳ hàng năm toàn bộ quy trình quản trị mô hình theo [[risk-based-internal-audit-framework-enforces-third-line-oversight-and-governance]], đánh giá tính tuân thủ chính sách thay đổi mô hình (Model Change Policy), và kiểm tra tính khách quan của Tuyến 2.
 
 **4. Quản trị Mô hình do Bên Thứ ba Cung cấp (Vendor Models)**
 

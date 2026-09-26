@@ -3,7 +3,7 @@ title: exchange-rate
 type: concept
 tags: [external-sector, prices, stabilization]
 sources: [imf_macro_accounting, clippings]
-status: draft
+status: stable
 last_updated: 2026-09-25
 reviewed: 2026-09-25
 reviewed_by: model

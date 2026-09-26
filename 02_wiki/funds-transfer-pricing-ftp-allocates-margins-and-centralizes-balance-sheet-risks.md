@@ -3,7 +3,7 @@ title: funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-shee
 type: concept
 tags: [alm, ftp, treasury, balance-sheet, nim, risk-management, basel, principles]
 sources: [tata_bank_alm, ftp_transmission_analysis, bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

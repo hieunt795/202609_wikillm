@@ -3,7 +3,7 @@ title: early-warning-indicators-and-mismatch-limits-operationalize-proactive-liq
 type: concept
 tags: [basel, principles, bcbs-144, liquidity-risk, early-warning-indicators, limits, mis, reporting, monitoring, bcbs-238, monitoring-tools]
 sources: [bcbs_144, bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

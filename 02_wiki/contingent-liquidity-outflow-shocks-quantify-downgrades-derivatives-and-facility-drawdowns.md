@@ -3,7 +3,7 @@ title: contingent-liquidity-outflow-shocks-quantify-downgrades-derivatives-and-f
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, contingent-outflows, credit-facilities, liquidity-facilities, downgrade-triggers, lookback-approach, derivatives, basel, basel-iii, bcbs-238]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

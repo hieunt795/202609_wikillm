@@ -3,7 +3,7 @@ title: vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing
 type: concept
 tags: [alm, ftp, vof, cof, pricing, balance-sheet, market-1]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

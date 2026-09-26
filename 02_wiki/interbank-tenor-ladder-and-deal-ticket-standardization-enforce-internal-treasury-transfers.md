@@ -3,7 +3,7 @@ title: interbank-tenor-ladder-and-deal-ticket-standardization-enforce-internal-t
 type: concept
 tags: [alm, ftp, tenor-ladder, deal-tickets, treasury-transfers, profit-center, money-market]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

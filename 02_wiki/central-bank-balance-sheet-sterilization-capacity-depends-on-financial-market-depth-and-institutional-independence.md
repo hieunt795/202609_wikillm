@@ -3,7 +3,7 @@ title: central-bank-balance-sheet-sterilization-capacity-depends-on-financial-ma
 type: analysis
 tags: [monetary-policy, central-banking, liquidity, exchange-rate-regime]
 sources: [imf_macro_accounting, bindseil_monetary_policy, cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-24
 reviewed: 2026-09-24
 reviewed_by: model

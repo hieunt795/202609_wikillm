@@ -3,7 +3,7 @@ title: basel-iii-leverage-ratio-constrains-unweighted-balance-sheet-expansion
 type: concept
 tags: [banking, leverage-ratio, basel-iii, pillar-1, exposure-measure, tier-1-capital, d-sib, regulation]
 sources: [sbv_draft_circular_replace_22]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

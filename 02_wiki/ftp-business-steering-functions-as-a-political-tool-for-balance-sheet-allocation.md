@@ -3,7 +3,7 @@ title: ftp-business-steering-functions-as-a-political-tool-for-balance-sheet-all
 type: concept
 tags: [alm, ftp, business-steering, balance-sheet, nii, organizational-politics]
 sources: [tata_bank_alm, vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

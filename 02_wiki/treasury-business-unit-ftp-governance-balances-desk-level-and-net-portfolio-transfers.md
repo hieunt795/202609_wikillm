@@ -3,7 +3,7 @@ title: treasury-business-unit-ftp-governance-balances-desk-level-and-net-portfol
 type: concept
 tags: [alm, ftp, treasury, desk-level, net-portfolio, liquidity-limits, money-market]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

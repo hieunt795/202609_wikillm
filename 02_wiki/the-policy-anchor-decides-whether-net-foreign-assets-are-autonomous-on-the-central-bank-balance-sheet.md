@@ -3,7 +3,7 @@ title: the-policy-anchor-decides-whether-net-foreign-assets-are-autonomous-on-th
 type: analysis
 tags: [central-banking, monetary-policy, exchange-rate-regime, monetary-accounts]
 sources: [imf_macro_accounting, cargill_central_bank_policy, bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-24
 ---
 

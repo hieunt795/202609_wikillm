@@ -3,7 +3,7 @@ title: basel-iii-cash-inflows-and-75-percent-cap-framework-safeguards-minimum-hq
 type: concept
 tags: [basel, basel-iii, lcr, liquidity, liquidity-risk, cash-inflows, inflow-cap, net-cash-outflows, hqla, bcbs-238, regulation]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

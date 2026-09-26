@@ -3,7 +3,7 @@ title: liquidity-risk
 type: concept
 tags: [banking, risk-management, financial-stability, shadow-banking]
 sources: [cargill_central_bank_policy, bindseil_monetary_policy, clippings, tata_bank_alm]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

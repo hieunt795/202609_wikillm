@@ -3,7 +3,7 @@ title: basel-iii-liquidity-risk-monitoring-tools-complement-contractual-and-mark
 type: concept
 tags: [basel, basel-iii, liquidity, liquidity-risk, monitoring-tools, maturity-mismatch, funding-concentration, unencumbered-assets, significant-currencies, market-indicators, early-warning-indicators, bcbs-238, regulation]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -1,16 +1,13 @@
 ---
-title: "Balance Sheet Dynamics Assumptions: Run-Off, Constant, and Dynamic in ALM"
-tags:
-  - concept
-  - alm
-  - irrbb
-  - balance-sheet
-  - eve
-  - nii
-  - bcbs-368
+title: balance-sheet-dynamics-assumptions-run-off-constant-and-dynamic-in-alm
+type: concept
+tags: [alm, irrbb, balance-sheet, eve, nii, bcbs-368]
+sources: [bcbs_368]
+status: draft
+last_updated: 2026-09-26
 ---
 
-Ba giả định động thái bảng cân đối kế toán — Bảng cân đối thu hồi chạy cạn (Run-off balance sheet), Bảng cân đối quy mô không đổi (Constant balance sheet), và Bảng cân đối biến động động (Dynamic balance sheet) — tạo thành ba hệ quy chiếu phân tích cốt lõi trong ALM, trong đó chuẩn mực BCBS 368 bắt buộc áp dụng Run-off cho phép đo Giá trị Kinh tế của Vốn tự có ($\Delta EVE$) và Constant cho phép đo Thu nhập Lãi thuần ($\Delta NII$), đồng thời hạn chế Dynamic cho mục đích lập kế hoạch kinh doanh nội bộ (bcbs_368, file d368.md, Section I, d.80–90; Section II.1 Principle 4, d.180–210; Annex 1.3, d.920–970).
+Ba giả định động thái bảng cân đối kế toán — Bảng cân đối thu hồi chạy cạn (Run-off balance sheet), Bảng cân đối quy mô không đổi (Constant balance sheet), và Bảng cân đối biến động động (Dynamic balance sheet) — tạo thành ba hệ quy chiếu phân tích cốt lõi trong ALM và [[interest-rate-risk-in-the-banking-book-irrbb]], trong đó chuẩn mực BCBS 368 bắt buộc áp dụng Run-off cho phép đo Giá trị Kinh tế của Vốn tự có ($\Delta EVE$) và Constant cho phép đo Thu nhập Lãi thuần ($\Delta NII$), đồng thời hạn chế Dynamic cho mục đích lập kế hoạch kinh doanh nội bộ (bcbs_368, file d368.md, Section I, d.80–90; Section II.1 Principle 4, d.180–210; Annex 1.3, d.920–970).
 
 **1. Bảng cân đối Thu hồi Chạy cạn (Run-off / Static Balance Sheet)**
 
@@ -20,7 +17,7 @@ Bảng cân đối thu hồi chạy cạn đóng băng toàn bộ vị thế tà
 - Số dư bảng cân đối kế toán suy giảm liên tục theo hàm số thời gian cho đến khi toàn bộ dòng tiền của hợp đồng dài nhất kết thúc.
 
 *Ứng dụng chuẩn mực theo BCBS 368:*
-Theo Principle 8 (Bảng B công bố Trụ cột 3) và Section IV.6, giả định Run-off là yêu cầu pháp lý bắt buộc cho việc tính toán $\Delta EVE$. Cơ sở lý luận giám sát xác định rằng Giá trị Kinh tế của Vốn tự có ([[economic-value-of-equity-eve-measures-net-present-value-of-banking-book-cash-flows]]) là thước đo giá trị thanh lý ròng (run-off liquidation value) của các cam kết hợp đồng hiện tại. Việc cho phép đưa các dòng tiền kinh doanh tương lai hoặc giả định tái đầu tư vào phép đo EVE sẽ tạo ra sự tùy tiện chủ quan, làm sai lệch bản chất đo lường rủi ro cấu trúc bảng cân đối tích lũy từ quá khứ.
+Theo Principle 8 (Bảng B công bố Trụ cột 3), Section IV.6 và [[delta-eve-regulatory-calculation-rules-mandate-run-off-and-equity-exclusion]], giả định Run-off là yêu cầu pháp lý bắt buộc cho việc tính toán $\Delta EVE$. Cơ sở lý luận giám sát xác định rằng Giá trị Kinh tế của Vốn tự có ([[economic-value-of-equity-eve-measures-net-present-value-of-banking-book-cash-flows]]) là thước đo giá trị thanh lý ròng (run-off liquidation value) của các cam kết hợp đồng hiện tại. Việc cho phép đưa các dòng tiền kinh doanh tương lai hoặc giả định tái đầu tư vào phép đo EVE sẽ tạo ra sự tùy tiện chủ quan, làm sai lệch bản chất đo lường rủi ro cấu trúc bảng cân đối tích lũy từ quá khứ, tương tự như đã phân định ở [[balance-sheet-evolution-assumptions-differentiate-run-off-static-and-dynamic-views]].
 
 **2. Bảng cân đối Quy mô Không đổi (Constant Balance Sheet)**
 

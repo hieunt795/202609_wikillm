@@ -3,7 +3,7 @@ title: standardised-loan-prepayment-modelling-and-cpr-multipliers
 type: concept
 tags: [banking, alm, irrbb, prepayment-risk, cpr, fixed-rate-loans, behavioural-modelling, bcbs-368]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

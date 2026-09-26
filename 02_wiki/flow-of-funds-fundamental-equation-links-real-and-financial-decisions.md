@@ -3,7 +3,7 @@ title: flow-of-funds-fundamental-equation-links-real-and-financial-decisions
 type: concept
 tags: [flow-of-funds, accounting, sectoral-analysis, macroeconomics]
 sources: [cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-24
 reviewed: 2026-09-24
 reviewed_by: model

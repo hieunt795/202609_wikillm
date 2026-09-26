@@ -3,7 +3,7 @@ title: lack-of-bank-competition-in-transition-economies-forces-nonprice-credit-r
 type: concept
 tags: [monetary-policy, transition-economies, banking]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-24
 ---
 

@@ -3,7 +3,7 @@ title: exchange-rate-regimes
 type: concept
 tags: [exchange-rate, monetary, external-sector]
 sources: [imf_macro_accounting, cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

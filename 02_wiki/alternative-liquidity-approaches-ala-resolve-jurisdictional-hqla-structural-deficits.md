@@ -3,7 +3,7 @@ title: alternative-liquidity-approaches-ala-resolve-jurisdictional-hqla-structur
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, hqla, ala, central-bank-facilities, fx-haircut, shariah-banking, basel, basel-iii, bcbs-238]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

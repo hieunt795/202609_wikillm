@@ -3,7 +3,7 @@ title: balance-sheet-optimization-models-calibrate-ftp-as-a-control-variable
 type: concept
 tags: [alm, ftp, balance-sheet, optimization, nii, lcr, nsfr, car]
 sources: [ftp_transmission_analysis]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: equity-endowment-effect-and-replicating-portfolio-in-alm
 type: concept
 tags: [banking, alm, irrbb, equity-endowment, replicating-portfolio, nii-vs-eve-tradeoff, structural-hedging, bcbs-368]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

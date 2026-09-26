@@ -3,7 +3,7 @@ title: sterilization
 type: concept
 tags: [monetary-policy, foreign-exchange, central-bank-operations]
 sources: [cargill_central_bank_policy, imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

@@ -3,7 +3,7 @@ title: basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stabi
 type: concept
 tags: [banking, alm, liquidity-risk, nsfr, asf, rsf, basel-iii, funding-stability, derivatives, regulation]
 sources: [sbv_draft_circular_replace_22]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

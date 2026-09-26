@@ -2,7 +2,7 @@
 title: the-typical-monetary-authorities-balance-sheet-itemizes-foreign-assets-and-shows-reserve-money-by-holder
 type: concept
 tags: [monetary-accounts, imf]
-status: draft
+status: stable
 sources: [imf_macro_accounting]
 last_updated: 2026-09-24
 reviewed: 2026-09-24

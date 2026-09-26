@@ -3,7 +3,7 @@ title: icaap-framework-determines-economic-capital-and-target-capital-under-stre
 type: concept
 tags: [banking, icaap, economic-capital, target-capital, stress-testing, pillar-2, raroc, regulation, basel, principles]
 sources: [sbv_circular_83_2025, bcbs_144, bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

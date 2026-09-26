@@ -3,7 +3,7 @@ title: the-flow-of-funds-approach-treats-sectoral-balances-as-constraints-unlike
 type: concept
 tags: [flow-of-funds, methodology]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

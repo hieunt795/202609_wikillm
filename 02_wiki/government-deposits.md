@@ -3,7 +3,7 @@ title: government-deposits
 type: concept
 tags: [monetary, fiscal]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-24
 ---
 

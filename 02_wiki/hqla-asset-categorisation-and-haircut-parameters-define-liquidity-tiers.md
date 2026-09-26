@@ -3,7 +3,7 @@ title: hqla-asset-categorisation-and-haircut-parameters-define-liquidity-tiers
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, hqla, haircut, level-1, level-2a, level-2b, covered-bonds, rmbs, equities, basel, basel-iii, bcbs-238]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

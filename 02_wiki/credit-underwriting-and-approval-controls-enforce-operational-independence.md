@@ -3,7 +3,7 @@ title: credit-underwriting-and-approval-controls-enforce-operational-independenc
 type: concept
 tags: [banking, credit-risk, internal-control, credit-underwriting, credit-approval, digital-lending, conflict-of-interest, regulation]
 sources: [sbv_circular_83_2025, sbv_draft_circular_replace_22]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

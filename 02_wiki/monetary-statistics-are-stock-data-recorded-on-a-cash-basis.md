@@ -2,7 +2,7 @@
 title: monetary-statistics-are-stock-data-recorded-on-a-cash-basis
 type: concept
 tags: [monetary-accounts, imf]
-status: draft
+status: stable
 sources: [imf_macro_accounting]
 last_updated: 2026-09-24
 reviewed: 2026-09-24

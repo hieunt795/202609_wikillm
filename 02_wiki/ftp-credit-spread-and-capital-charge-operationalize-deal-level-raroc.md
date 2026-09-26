@@ -3,7 +3,7 @@ title: ftp-credit-spread-and-capital-charge-operationalize-deal-level-raroc
 type: concept
 tags: [alm, ftp, credit-risk, raroc, capital-charge, expected-loss, rwa]
 sources: [ftp_transmission_analysis, vab_ftp_methodology, sbv_circular_14_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

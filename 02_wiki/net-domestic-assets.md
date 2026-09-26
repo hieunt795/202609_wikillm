@@ -3,7 +3,7 @@ title: net-domestic-assets
 type: concept
 tags: [monetary, identities]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-24
 ---
 

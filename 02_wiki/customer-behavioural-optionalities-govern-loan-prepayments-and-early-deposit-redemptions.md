@@ -3,7 +3,7 @@ title: customer-behavioural-optionalities-govern-loan-prepayments-and-early-depo
 type: concept
 tags: [irrbb, behavioural-options, prepayment-risk, early-redemption, mortgage-commitments, cpr]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

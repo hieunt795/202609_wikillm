@@ -3,7 +3,7 @@ title: nfa-nda-offset-mechanism-under-quasi-fiscal-and-fixed-exchange-rate
 type: concept
 tags: [quasi-fiscal, nfa, nda, exchange-rate-regime]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

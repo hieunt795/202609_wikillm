@@ -3,7 +3,7 @@ title: pillar-3-irrbb-quantitative-disclosure-standards-mandate-table-b-metrics
 type: concept
 tags: [irrbb, pillar-3, disclosure, table-b, quantitative-metrics, shock-scenarios]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

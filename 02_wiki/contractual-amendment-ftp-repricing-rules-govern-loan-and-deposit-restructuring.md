@@ -3,7 +3,7 @@ title: contractual-amendment-ftp-repricing-rules-govern-loan-and-deposit-restruc
 type: concept
 tags: [alm, ftp, contractual-amendments, repricing-rules, loan-restructuring, alco-adjustments, rollover]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

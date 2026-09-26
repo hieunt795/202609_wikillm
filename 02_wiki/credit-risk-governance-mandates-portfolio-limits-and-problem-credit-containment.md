@@ -3,7 +3,7 @@ title: credit-risk-governance-mandates-portfolio-limits-and-problem-credit-conta
 type: concept
 tags: [banking, credit-risk, risk-governance, portfolio-limits, problem-loans, loan-loss-provisions, early-warning, regulation]
 sources: [sbv_circular_83_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

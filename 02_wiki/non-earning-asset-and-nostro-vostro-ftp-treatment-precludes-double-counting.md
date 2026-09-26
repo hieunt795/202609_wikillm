@@ -3,7 +3,7 @@ title: non-earning-asset-and-nostro-vostro-ftp-treatment-precludes-double-counti
 type: concept
 tags: [alm, ftp, cash-management, nostro-vostro, equity-investments, non-earning-assets, double-counting]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

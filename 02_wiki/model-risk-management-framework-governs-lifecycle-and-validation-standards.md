@@ -3,7 +3,7 @@ title: model-risk-management-framework-governs-lifecycle-and-validation-standard
 type: concept
 tags: [banking, model-risk, model-governance, model-validation, irb, three-lines-of-defense, regulation]
 sources: [sbv_circular_83_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: promotional-and-behavioral-loan-ftp-pricing-decomposes-hybrid-cash-flows
 type: concept
 tags: [alm, ftp, cof, promotional-loans, behavioral-models, prepayment, embedded-options, nonterm-credit]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

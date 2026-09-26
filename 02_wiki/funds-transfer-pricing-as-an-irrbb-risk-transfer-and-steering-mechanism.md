@@ -3,7 +3,7 @@ title: funds-transfer-pricing-as-an-irrbb-risk-transfer-and-steering-mechanism
 type: concept
 tags: [alm, irrbb, ftp, maturity-transformation, risk-transfer, bcbs-368]
 sources: [bcbs_368, tata_bank_alm]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

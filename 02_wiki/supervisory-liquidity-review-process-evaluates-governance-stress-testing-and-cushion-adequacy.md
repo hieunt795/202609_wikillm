@@ -3,7 +3,7 @@ title: supervisory-liquidity-review-process-evaluates-governance-stress-testing-
 type: concept
 tags: [banking, alm, liquidity, supervision, supervisory-review, srep, stress-testing-scrutiny, intraday-oversight, basel, principles, bcbs-144]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

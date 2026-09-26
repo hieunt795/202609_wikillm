@@ -3,7 +3,7 @@ title: supervisory-outlier-test-mandates-fifteen-percent-tier-one-capital-thresh
 type: concept
 tags: [irrbb, outlier-test, tier-1-capital, srep, supervisory-benchmark, bcbs-368]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

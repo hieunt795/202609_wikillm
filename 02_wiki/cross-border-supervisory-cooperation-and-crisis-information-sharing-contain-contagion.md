@@ -3,7 +3,7 @@ title: cross-border-supervisory-cooperation-and-crisis-information-sharing-conta
 type: concept
 tags: [banking, alm, liquidity, cross-border-supervision, home-host-cooperation, crisis-communication, contagion-risk, mou, basel, principles, bcbs-144]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

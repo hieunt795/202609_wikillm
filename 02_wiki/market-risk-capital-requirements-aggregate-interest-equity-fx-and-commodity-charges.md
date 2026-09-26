@@ -3,7 +3,7 @@ title: market-risk-capital-requirements-aggregate-interest-equity-fx-and-commodi
 type: concept
 tags: [banking, market-risk, capital-adequacy, fx-risk, interest-rate-risk, trading-book, regulation]
 sources: [sbv_circular_14_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

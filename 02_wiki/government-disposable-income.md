@@ -3,7 +3,7 @@ title: government-disposable-income
 type: concept
 tags: [fiscal, flow-of-funds, national-accounts]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 reviewed: 2026-09-25
 reviewed_by: model

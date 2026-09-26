@@ -3,7 +3,7 @@ title: regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp
 type: concept
 tags: [alm, ftp, lcr, nsfr, basel-iii, regulation, ccp, margining]
 sources: [tata_bank_alm, ftp_transmission_analysis, sbv_circular_14_2025, sbv_draft_circular_replace_22]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

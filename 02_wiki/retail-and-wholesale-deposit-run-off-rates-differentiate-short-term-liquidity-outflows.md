@@ -3,7 +3,7 @@ title: retail-and-wholesale-deposit-run-off-rates-differentiate-short-term-liqui
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, cash-outflows, run-off-rates, retail-deposits, wholesale-funding, operational-deposits, regulation, basel, basel-iii, bcbs-238]
 sources: [sbv_draft_circular_replace_22, bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

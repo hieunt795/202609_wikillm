@@ -3,7 +3,7 @@ title: senior-management-oversight-and-conflict-of-interest-containment-anchor-b
 type: concept
 tags: [banking, governance, internal-control, conflict-of-interest, senior-management, alco, risk-committee, regulation, basel, principles]
 sources: [sbv_circular_83_2025, bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

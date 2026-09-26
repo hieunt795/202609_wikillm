@@ -3,7 +3,7 @@ title: alternative-liquidity-approaches-eligibility-assessment-principles-and-go
 type: concept
 tags: [basel, basel-iii, lcr, liquidity, hqla, ala, clf, foreign-currency-hqla, level-2a-cap-exceedance, peer-review, self-assessment, bcbs-238, regulation]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: bcbs-sound-principles-establish-foundational-liquidity-risk-management-an
 type: concept
 tags: [basel, principles, bcbs-144, liquidity-risk, hqla, governance, moral-hazard, regulation]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

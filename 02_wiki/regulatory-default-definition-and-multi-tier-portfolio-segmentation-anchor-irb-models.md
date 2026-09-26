@@ -3,7 +3,7 @@ title: regulatory-default-definition-and-multi-tier-portfolio-segmentation-ancho
 type: concept
 tags: [banking, credit-risk, default-definition, portfolio-segmentation, irb, basel-iii, regulation]
 sources: [sbv_circular_14_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

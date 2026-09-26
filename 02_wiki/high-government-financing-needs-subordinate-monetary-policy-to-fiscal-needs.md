@@ -3,7 +3,7 @@ title: high-government-financing-needs-subordinate-monetary-policy-to-fiscal-nee
 type: concept
 tags: [monetary-policy, transition-economies, fiscal]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-24
 reviewed: 2026-09-24
 reviewed_by: model

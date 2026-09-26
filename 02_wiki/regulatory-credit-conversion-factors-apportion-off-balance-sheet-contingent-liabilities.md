@@ -3,7 +3,7 @@ title: regulatory-credit-conversion-factors-apportion-off-balance-sheet-continge
 type: concept
 tags: [banking, credit-risk, ccf, off-balance-sheet, basel-iii, regulation]
 sources: [sbv_circular_14_2025, sbv_draft_circular_replace_22]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

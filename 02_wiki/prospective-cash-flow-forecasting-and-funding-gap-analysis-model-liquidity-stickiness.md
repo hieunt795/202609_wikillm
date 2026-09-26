@@ -3,7 +3,7 @@ title: prospective-cash-flow-forecasting-and-funding-gap-analysis-model-liquidit
 type: concept
 tags: [basel, principles, bcbs-144, liquidity-risk, cash-flow-forecasting, funding-gap, deposit-stickiness, alm]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

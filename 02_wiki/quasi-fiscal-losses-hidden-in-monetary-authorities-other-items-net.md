@@ -3,7 +3,7 @@ title: quasi-fiscal-losses-hidden-in-monetary-authorities-other-items-net
 type: concept
 tags: [quasi-fiscal, monetary-accounts, losses]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

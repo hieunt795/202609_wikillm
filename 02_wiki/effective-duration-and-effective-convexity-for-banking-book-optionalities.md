@@ -1,13 +1,10 @@
 ---
-title: "Effective Duration and Effective Convexity for Banking Book Optionalities"
-tags:
-  - concept
-  - alm
-  - irrbb
-  - duration
-  - convexity
-  - embedded-options
-  - bcbs-368
+title: effective-duration-and-effective-convexity-for-banking-book-optionalities
+type: concept
+tags: [alm, irrbb, duration, convexity, embedded-options, bcbs-368]
+sources: [bcbs_368]
+status: draft
+last_updated: 2026-09-26
 ---
 
 Độ thời lượng hiệu dụng (Effective Duration - $ED$) và Độ lồi hiệu dụng (Effective Convexity - $EC$) là các thước đo độ nhạy lãi suất bậc một và bậc hai bắt buộc phải áp dụng cho các vị thế trên sổ ngân hàng có chứa quyền chọn ngầm định hoặc hành vi khách hàng, do các công thức giải tích Macaulay Duration và Modified Duration hoàn toàn mất hiệu lực khi dòng tiền dự kiến biến động phi tuyến tính theo sự dịch chuyển của đường cong lợi suất (bcbs_368, file d368.md, Annex 1.2.2, d.840–880).
@@ -20,9 +17,9 @@ $$D_{\text{Mac}} = \frac{\sum_{t=1}^N t \cdot CF_t \cdot (1+y)^{-t}}{P}$$
 
 $$D_{\text{Mod}} = \frac{D_{\text{Mac}}}{1+y} = -\frac{1}{P} \frac{dP}{dy}$$
 
-Tuy nhiên, hầu hết các cấu phần trọng yếu trên sổ ngân hàng đều gắn liền với quyền chọn ngầm định (embedded options) hoặc hành vi khách hàng (behavioural optionalities):
-- Người vay mua nhà thế chấp có quyền trả nợ trước hạn không bị phạt hoặc chịu phí phạt rất thấp khi lãi suất thị trường giảm (loan prepayment option).
-- Khách hàng cá nhân gửi tiền tiết kiệm có kỳ hạn có quyền rút vốn trước hạn bất cứ lúc nào (early deposit redemption option) khi lãi suất tăng cao để tìm kiếm lợi suất hấp dẫn hơn.
+Tuy nhiên, hầu hết các cấu phần trọng yếu trên sổ ngân hàng đều gắn liền với quyền chọn ngầm định (embedded options) hoặc hành vi khách hàng (behavioural optionalities), như được tổng hợp tại [[interest-rate-option-risk-combines-automatic-and-embedded-behavioural-options]] và [[customer-behavioural-optionalities-govern-loan-prepayments-and-early-deposit-redemptions]]:
+- Người vay mua nhà thế chấp có quyền trả nợ trước hạn không bị phạt hoặc chịu phí phạt rất thấp khi lãi suất thị trường giảm (loan prepayment option, định lượng qua [[standardised-loan-prepayment-modelling-and-cpr-multipliers]]).
+- Khách hàng cá nhân gửi tiền tiết kiệm có kỳ hạn có quyền rút vốn trước hạn bất cứ lúc nào (early deposit redemption option, định lượng qua [[standardised-term-deposit-early-redemption-risk-and-tdrr-scalars]]) khi lãi suất tăng cao để tìm kiếm lợi suất hấp dẫn hơn.
 - Các hợp đồng cho vay thả nổi thường kèm điều khoản trần lãi suất (caps) hoặc sàn lãi suất (floors).
 - Các khoản tiền gửi không kỳ hạn ([[non-maturity-deposit-behavioural-modelling-governs-core-and-non-core-segmentation-under-irrbb]]) có tốc độ phân rã và mức độ điều chỉnh lãi suất (pass-through beta) thay đổi mạnh theo chu kỳ lãi suất.
 
@@ -52,11 +49,11 @@ $$EC = \frac{P_+ + P_- - 2P_0}{P_0 \cdot (\Delta y)^2}$$
 
 Sự biến động giá trị kinh tế tương đối ($\Delta P / P_0$) được xấp xỉ hóa bậc hai theo chuỗi Taylor:
 
-$$\frac{\Delta P}{P_0} \approx -ED \cdot \Delta y + \frac{1}{2} EC \cdot (\Delta y)^2$$
+$$\frac{Delta P}{P_0} \approx -ED \cdot \Delta y + \frac{1}{2} EC \cdot (\Delta y)^2$$
 
 Bản chất độ lồi mang ý nghĩa sống còn trong ALM:
 - **Độ lồi dương ($EC > 0$)**: Điển hình ở các trái phiếu vani không quyền chọn. Khi lãi suất giảm, giá trị tài sản tăng nhanh hơn tốc độ suy giảm khi lãi suất tăng cùng một biên độ. Đây là trạng thái đệm rủi ro tự nhiên có lợi cho ngân hàng.
-- **Độ lồi âm ($EC < 0$ - Negative Convexity)**: Xuất hiện phổ biến ở các danh mục cho vay bán lẻ cố định và trái phiếu có quyền chọn mua lại (callable bonds). Khi lãi suất giảm sâu, làn sóng trả nợ trước hạn tăng đột biến khiến tài sản bị hoàn vốn sớm đúng lúc ngân hàng phải tái đầu tư ở mức lãi suất rất thấp; giá trị tài sản bị chặn cứng bởi giá trị danh nghĩa trả trước ($P_-$ bị khống chế trần). Ngược lại, khi lãi suất tăng cao, khách hàng giữ chặt khoản vay lãi suất thấp, kỳ hạn dòng tiền bị kéo dài ra (extension risk), làm $P_+$ sụt giảm thê thảm. Kết quả là $P_+ + P_- < 2P_0$, dẫn tới $EC < 0$. Khi độ lồi âm, ngân hàng chịu tổn thất giá trị kinh tế kép ở cả hai chiều lãi suất.
+- **Độ lồi âm ($EC < 0$ - Negative Convexity)**: Xuất hiện phổ biến ở các danh mục cho vay bán lẻ cố định và trái phiếu có quyền chọn mua lại (callable bonds). Khi lãi suất giảm sâu, làn sóng trả nợ trước hạn tăng đột biến khiến tài sản bị hoàn vốn sớm đúng lúc ngân hàng phải tái đầu tư ở mức lãi suất rất thấp; giá trị tài sản bị chặn cứng bởi giá trị danh nghĩa trả trước ($P_-$ bị khống chế trần). Ngược lại, khi lãi suất tăng cao, khách hàng giữ chặt khoản vay lãi suất thấp, kỳ hạn dòng tiền bị kéo dài ra (extension risk), làm $P_+$ sụt giảm mạnh. Kết quả là $P_+ + P_- < 2P_0$, dẫn tới $EC < 0$. Khi độ lồi âm, ngân hàng chịu tổn thất giá trị kinh tế kép ở cả hai chiều lãi suất.
 
 **4. Mở rộng Key Rate Effective Duration (KRED)**
 

@@ -3,7 +3,7 @@ title: irrbb-delta-eve-and-nii-standardized-measurement-governs-rate-shock-scena
 type: concept
 tags: [banking, alm, irrbb, delta-eve, delta-nii, interest-rate-shocks, bcbs-d578, cash-flow-discounting, regulation]
 sources: [sbv_circular_83_2025, bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

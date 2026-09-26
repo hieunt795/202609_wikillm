@@ -3,7 +3,7 @@ title: unsecured-wholesale-funding-run-off-matrices-calibrate-counterparty-fligh
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, wholesale-funding, unsecured-funding, run-off-rates, corporate-deposits, financial-institutions, basel, basel-iii, bcbs-238]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: compensation-of-employees
 type: concept
 tags: [national-accounts, sna, income, labour]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

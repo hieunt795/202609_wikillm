@@ -1204,5 +1204,16 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 8 claim mới ở 8 trang, 6 liên kết bổ sung, 0 mục ghi _inbox.md (đã dọn dẹp trực tiếp); 0 analysis mới
 - Báo cáo: Claude outputs/research-2026-09-26-ftp-batch4.md
 
+## [2026-09-26:20-05-08] lint | 930 trang
+- Kiểm bằng máy: 13 trang có vấn đề (1 link chết, 7 outlink=0, 5 lỗi frontmatter/title), 12 mồ côi backlink, 190/190 file nguồn khớp SHA-256 (22 file chưa kê), 27 báo giả OCR, 16 nợ stub, 0 nợ inbox (19 mục tồn).
+- 2 conflict cũ tồn đọng. Triage inbox: đề xuất 3 xoá (đã xử lý 25/9), 5 review-node IMF, 1 mâu thuẫn Ch.1/Ch.4, 1 sửa trang FTP và 9 chuẩn hóa dòng "Xem thêm".
+- 209 trang draft đủ điều kiện lên stable (37 nhóm R đã review, 172 nhóm U gồm 34 node FTP mới và các cụm ALM/Basel/IMF). Báo cáo: Claude outputs/lint-2026-09-26-930.md
 
+## [2026-09-26:20-07-09] promote | 210 trang lên stable
+- Nâng 210 trang draft thỏa mãn điều kiện lên stable (gồm 37 trang nhóm R đã review, 34 node FTP mới hoàn tất và 139 trang Basel III/ALM/SNA/GFS).
+- Không đổi last_updated, không chạm thân bài; 111 draft còn lại (chưa đủ 2 backlink hoặc conflict).
 
+## [2026-09-26:20-23-13] ingest | bcbs_368 & clippings — chuẩn hóa frontmatter, bổ sung wikilink, gỡ mồ côi
+- 1 stub mới: central-bank-liquidity-facilities-provide-contingent-backstops-against-funding-shocks; sửa 1 link chết ở ALA.
+- 15 trang cập nhật: sửa frontmatter chuẩn & title kebab-case cho 5 trang ALM/IRRBB; bổ sung wikilink có ngữ cảnh cho 7 trang outlink=0; kết nối 3 trang clippings gỡ 4 mồ côi term premia/cpi.
+- Cập nhật 02_wiki/index.md; --all sạch hoàn toàn 0 lỗi, 0 mồ côi (931 trang quét).

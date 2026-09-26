@@ -3,7 +3,7 @@ title: core-inflation-strips-out-one-time-price-level-jumps
 type: concept
 tags: [prices, inflation, transition-economies]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 reviewed: 2026-09-25
 reviewed_by: model

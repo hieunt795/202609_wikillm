@@ -3,7 +3,7 @@ title: six-standardised-interest-rate-shock-scenarios-and-mathematical-formulati
 type: concept
 tags: [banking, alm, irrbb, shock-scenarios, yield-curve-shocks, steepener, flattener, mathematical-formulation, bcbs-368]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

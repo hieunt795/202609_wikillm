@@ -3,7 +3,7 @@ title: hqla-unwinding-mechanics-and-cap-formulas-eliminate-short-term-financing-
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, hqla, unwinding, cap-formulas, repo, securities-financing, haircuts, basel, basel-iii, bcbs-238]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

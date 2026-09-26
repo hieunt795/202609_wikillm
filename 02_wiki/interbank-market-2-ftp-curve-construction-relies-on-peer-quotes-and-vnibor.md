@@ -3,7 +3,7 @@ title: interbank-market-2-ftp-curve-construction-relies-on-peer-quotes-and-vnibo
 type: concept
 tags: [alm, ftp, market-2, interbank, vnibor, peer-group, yield-curve]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

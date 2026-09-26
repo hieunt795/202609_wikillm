@@ -3,7 +3,7 @@ title: ftp-cost-of-equity-apportionment-bridges-raroc-and-surplus-capital
 type: concept
 tags: [alm, ftp, cost-of-equity, raroc, capital-allocation, surplus-capital, wat]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

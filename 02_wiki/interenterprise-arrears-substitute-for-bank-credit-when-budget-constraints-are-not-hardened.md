@@ -3,7 +3,7 @@ title: interenterprise-arrears-substitute-for-bank-credit-when-budget-constraint
 type: concept
 tags: [monetary-policy, transition-economies]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-24
 ---
 

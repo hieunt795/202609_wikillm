@@ -3,7 +3,7 @@ title: risk-based-internal-audit-framework-enforces-third-line-oversight-and-gov
 type: concept
 tags: [banking, internal-audit, rbia, third-line-of-defense, governance, it-auditor, supervision, regulation]
 sources: [sbv_circular_83_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

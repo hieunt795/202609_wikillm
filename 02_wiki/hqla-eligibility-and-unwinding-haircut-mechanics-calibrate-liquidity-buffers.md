@@ -3,7 +3,7 @@ title: hqla-eligibility-and-unwinding-haircut-mechanics-calibrate-liquidity-buff
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, hqla, haircut, unwinding, repo, level-1, level-2, regulation, basel, principles, basel-iii, bcbs-238]
 sources: [sbv_draft_circular_replace_22, bcbs_144, bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

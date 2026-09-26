@@ -3,7 +3,7 @@ title: board-approved-liquidity-risk-tolerance-aligns-business-strategy-with-str
 type: concept
 tags: [basel, principles, bcbs-144, liquidity-risk, risk-tolerance, board-oversight, internal-controls, trapped-liquidity, governance]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

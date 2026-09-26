@@ -3,7 +3,7 @@ title: basel-iii-retail-deposit-run-off-framework-differentiates-stable-and-less
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, retail-deposits, run-off-rates, deposit-insurance, stable-deposits, basel, basel-iii, bcbs-238]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

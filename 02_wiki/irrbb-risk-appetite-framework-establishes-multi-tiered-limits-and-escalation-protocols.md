@@ -3,7 +3,7 @@ title: irrbb-risk-appetite-framework-establishes-multi-tiered-limits-and-escalat
 type: concept
 tags: [irrbb, risk-appetite, limits-framework, escalation, alco, governance]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

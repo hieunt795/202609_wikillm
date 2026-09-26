@@ -3,7 +3,7 @@ title: debt-dynamics-equation-links-the-stock-of-external-debt-to-disbursements-
 type: concept
 tags: [external-sector, external-debt, identities]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-24
 reviewed: 2026-09-24
 reviewed_by: model

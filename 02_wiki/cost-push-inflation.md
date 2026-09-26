@@ -3,7 +3,7 @@ title: cost-push-inflation
 type: concept
 tags: [prices, inflation, wages]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

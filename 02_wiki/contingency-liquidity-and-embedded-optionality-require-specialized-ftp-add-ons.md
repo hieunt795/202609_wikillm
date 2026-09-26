@@ -3,7 +3,7 @@ title: contingency-liquidity-and-embedded-optionality-require-specialized-ftp-ad
 type: concept
 tags: [alm, ftp, contingency-liquidity, optionality, governance, add-ons]
 sources: [tata_bank_alm, vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

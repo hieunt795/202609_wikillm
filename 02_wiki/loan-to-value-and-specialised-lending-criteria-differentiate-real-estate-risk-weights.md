@@ -3,7 +3,7 @@ title: loan-to-value-and-specialised-lending-criteria-differentiate-real-estate-
 type: concept
 tags: [banking, credit-risk, real-estate, ltv, specialised-lending, basel-iii]
 sources: [sbv_circular_14_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

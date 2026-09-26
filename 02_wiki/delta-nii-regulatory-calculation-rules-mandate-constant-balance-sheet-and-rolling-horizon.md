@@ -3,7 +3,7 @@ title: delta-nii-regulatory-calculation-rules-mandate-constant-balance-sheet-and
 type: concept
 tags: [irrbb, nii, constant-balance-sheet, rolling-horizon, commercial-margins, earnings-perspective]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

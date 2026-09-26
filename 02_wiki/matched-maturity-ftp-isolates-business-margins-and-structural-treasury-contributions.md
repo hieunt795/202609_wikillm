@@ -3,7 +3,7 @@ title: matched-maturity-ftp-isolates-business-margins-and-structural-treasury-co
 type: concept
 tags: [alm, ftp, nim, matched-maturity, structural-contribution, treasury]
 sources: [tata_bank_alm, ftp_transmission_analysis, vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

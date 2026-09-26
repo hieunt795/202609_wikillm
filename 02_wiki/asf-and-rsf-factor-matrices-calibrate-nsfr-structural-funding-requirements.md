@@ -3,7 +3,7 @@ title: asf-and-rsf-factor-matrices-calibrate-nsfr-structural-funding-requirement
 type: concept
 tags: [banking, nsfr, asf, rsf, liquidity-risk, basel-iii, regulation]
 sources: [sbv_draft_circular_replace_22]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

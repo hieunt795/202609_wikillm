@@ -3,7 +3,7 @@ title: replicating-portfolio-optimization-methodology-for-nmds-and-equity
 type: concept
 tags: [banking, alm, irrbb, replicating-portfolio, nmds, equity-modeling, optimization-algorithm, margin-stability, bcbs-368]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

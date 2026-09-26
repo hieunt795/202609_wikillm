@@ -3,7 +3,7 @@ title: claims-on-deposit-money-banks
 type: concept
 tags: [monetary, central-banking, credit]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-24
 reviewed: 2026-09-24
 reviewed_by: model

@@ -3,7 +3,7 @@ title: contractual-cash-inflow-caps-and-counterparty-haircuts-govern-net-lcr-mea
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, cash-inflows, inflow-cap, reverse-repo, counterparty-haircuts, net-cash-outflows, regulation, basel, basel-iii, bcbs-238]
 sources: [sbv_draft_circular_replace_22, bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

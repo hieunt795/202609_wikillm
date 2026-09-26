@@ -3,7 +3,7 @@ title: regulatory-liquidity-transition-rules-govern-dual-track-migration-from-mt
 type: concept
 tags: [banking, alm, liquidity-risk, regulatory-transition, dual-track, mtll, lcr, nsfr, early-adoption, circular-22, regulation]
 sources: [sbv_draft_circular_replace_22]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

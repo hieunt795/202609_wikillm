@@ -3,7 +3,7 @@ title: deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-pro
 type: concept
 tags: [alm, ftp, vof, deposits, casa, installment-deposits, redemption-curve, circular-22]
 sources: [vab_ftp_methodology, sbv_draft_circular_replace_22]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

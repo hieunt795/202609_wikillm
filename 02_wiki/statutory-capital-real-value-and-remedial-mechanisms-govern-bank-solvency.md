@@ -3,7 +3,7 @@ title: statutory-capital-real-value-and-remedial-mechanisms-govern-bank-solvency
 type: concept
 tags: [banking, statutory-capital, real-capital-value, solvency, prompt-corrective-action, bank-restructuring, license-revocation, regulation, basel, principles]
 sources: [sbv_draft_circular_replace_22, bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

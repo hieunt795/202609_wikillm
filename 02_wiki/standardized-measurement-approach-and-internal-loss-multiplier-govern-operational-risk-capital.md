@@ -3,7 +3,7 @@ title: standardized-measurement-approach-and-internal-loss-multiplier-govern-ope
 type: concept
 tags: [banking, operational-risk, capital-adequacy, standardized-approach, basel-iii, regulation]
 sources: [sbv_circular_14_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

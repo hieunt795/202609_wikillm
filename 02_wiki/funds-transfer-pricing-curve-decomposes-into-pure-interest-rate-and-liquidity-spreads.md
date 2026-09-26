@@ -3,7 +3,7 @@ title: funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liqui
 type: concept
 tags: [alm, ftp, yield-curve, liquidity-premium, risk-free-rate, pricing]
 sources: [tata_bank_alm, vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: sauerbeck-index
 type: concept
 tags: [prices, index-numbers, transition-economies]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

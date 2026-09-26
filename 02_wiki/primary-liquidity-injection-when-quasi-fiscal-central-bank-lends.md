@@ -3,7 +3,7 @@ title: primary-liquidity-injection-when-quasi-fiscal-central-bank-lends
 type: concept
 tags: [quasi-fiscal, liquidity, monetary-operations, central-banking]
 sources: [imf_macro_accounting, bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-25
 reviewed: 2026-09-25
 reviewed_by: model

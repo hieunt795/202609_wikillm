@@ -3,7 +3,7 @@ title: irrbb-capital-allocation-framework-differentiates-economic-capital-from-e
 type: concept
 tags: [irrbb, icaap, economic-capital, capital-buffers, embedded-losses, legal-entities]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

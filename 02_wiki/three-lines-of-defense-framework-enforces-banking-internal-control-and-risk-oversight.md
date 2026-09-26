@@ -3,7 +3,7 @@ title: three-lines-of-defense-framework-enforces-banking-internal-control-and-ri
 type: concept
 tags: [banking, internal-control, risk-governance, three-lines-of-defense, compliance, internal-audit, regulation]
 sources: [sbv_circular_83_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

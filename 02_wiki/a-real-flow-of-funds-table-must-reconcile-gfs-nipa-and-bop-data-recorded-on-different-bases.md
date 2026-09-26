@@ -3,7 +3,7 @@ title: a-real-flow-of-funds-table-must-reconcile-gfs-nipa-and-bop-data-recorded-
 type: concept
 tags: [flow-of-funds, accounting]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

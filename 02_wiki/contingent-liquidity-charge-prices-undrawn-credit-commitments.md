@@ -3,7 +3,7 @@ title: contingent-liquidity-charge-prices-undrawn-credit-commitments
 type: concept
 tags: [alm, ftp, contingent-liquidity, off-balance-sheet, ccf, liquidity-buffer, commitments, basel, principles]
 sources: [vab_ftp_methodology, sbv_circular_14_2025, sbv_draft_circular_replace_22, bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: interest-rate-theoretical-decomposition-and-csrbb-boundary
 type: concept
 tags: [banking, alm, irrbb, csrbb, interest-rate-components, credit-spread, risk-free-rate, bcbs-368]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: automatic-interest-rate-options-standardised-valuation-and-volatility-sho
 type: concept
 tags: [banking, alm, irrbb, automatic-options, full-revaluation, volatility-shock, kao-metric, bcbs-368]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

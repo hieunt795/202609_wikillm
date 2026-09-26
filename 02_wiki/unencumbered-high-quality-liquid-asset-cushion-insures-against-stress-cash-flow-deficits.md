@@ -3,7 +3,7 @@ title: unencumbered-high-quality-liquid-asset-cushion-insures-against-stress-cas
 type: concept
 tags: [banking, alm, liquidity, hqla, liquidity-buffer, unencumbered-assets, backstop, basel, principles, bcbs-144, basel-iii, bcbs-238]
 sources: [bcbs_144, bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

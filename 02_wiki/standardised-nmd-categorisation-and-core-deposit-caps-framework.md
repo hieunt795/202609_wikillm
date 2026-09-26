@@ -3,7 +3,7 @@ title: standardised-nmd-categorisation-and-core-deposit-caps-framework
 type: concept
 tags: [banking, alm, irrbb, nmds, core-deposits, regulatory-caps, standardised-framework, bcbs-368]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: internal-liquidity-cost-allocation-mandates-deal-level-ftp-for-on-and-off
 type: concept
 tags: [basel, principles, bcbs-144, alm, ftp, liquidity-charge, contingent-liquidity, internal-pricing, product-approval]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

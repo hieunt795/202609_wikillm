@@ -3,7 +3,7 @@ title: balance-of-payments-flows-differ-from-international-investment-position-s
 type: concept
 tags: [external-sector, balance-of-payments, international-investment-position]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-24
 reviewed: 2026-09-24
 reviewed_by: model

@@ -3,7 +3,7 @@ title: polands-exchange-rate-path-from-dollar-peg-to-managed-float-balanced-disi
 type: case
 tags: [poland, exchange-rate, stabilization, transition]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

@@ -2,7 +2,7 @@
 title: monetary-accounts-net-claims-on-government-but-keep-claims-on-deposit-money-banks-gross
 type: concept
 tags: [monetary-accounts, imf]
-status: draft
+status: stable
 sources: [imf_macro_accounting]
 last_updated: 2026-09-24
 reviewed: 2026-09-24

@@ -3,7 +3,7 @@ title: private-disposable-income
 type: concept
 tags: [national-accounts, flow-of-funds, sectoral-analysis]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 reviewed: 2026-09-25
 reviewed_by: model

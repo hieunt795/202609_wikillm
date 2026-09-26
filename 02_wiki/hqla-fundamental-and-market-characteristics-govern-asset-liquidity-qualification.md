@@ -3,7 +3,7 @@ title: hqla-fundamental-and-market-characteristics-govern-asset-liquidity-qualif
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, hqla, basel, basel-iii, market-liquidity, central-bank-eligibility, bcbs-238]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

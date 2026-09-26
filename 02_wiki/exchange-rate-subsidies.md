@@ -3,7 +3,7 @@ title: exchange-rate-subsidies
 type: concept
 tags: [fiscal, quasi-fiscal, exchange-rate]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

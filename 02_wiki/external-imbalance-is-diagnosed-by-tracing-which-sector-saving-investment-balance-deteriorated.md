@@ -3,7 +3,7 @@ title: external-imbalance-is-diagnosed-by-tracing-which-sector-saving-investment
 type: concept
 tags: [external-sector, sectoral-analysis, flow-of-funds]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 reviewed: 2026-09-25
 reviewed_by: model

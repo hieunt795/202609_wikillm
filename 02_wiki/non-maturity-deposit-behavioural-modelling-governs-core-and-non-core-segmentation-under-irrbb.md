@@ -3,7 +3,7 @@ title: non-maturity-deposit-behavioural-modelling-governs-core-and-non-core-segm
 type: concept
 tags: [nmd, irrbb, behavioural-modelling, core-deposits, pass-through-beta, alm]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

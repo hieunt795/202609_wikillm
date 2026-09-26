@@ -3,7 +3,7 @@ title: planned-nim-allocation-determines-ftp-deposit-mobilization-margins
 type: concept
 tags: [alm, ftp, margin, nim, planned-nii, alco, budget]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

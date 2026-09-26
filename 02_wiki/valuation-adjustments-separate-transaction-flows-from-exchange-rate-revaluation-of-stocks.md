@@ -3,7 +3,7 @@ title: valuation-adjustments-separate-transaction-flows-from-exchange-rate-reval
 type: concept
 tags: [monetary-policy, exchange-rate, identities]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-24
 reviewed: 2026-09-24
 reviewed_by: model

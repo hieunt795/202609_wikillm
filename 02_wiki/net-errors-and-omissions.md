@@ -3,7 +3,7 @@ title: net-errors-and-omissions
 type: concept
 tags: [external-sector, balance-of-payments, statistics]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-16
 ---
 

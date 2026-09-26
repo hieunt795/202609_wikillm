@@ -3,7 +3,7 @@ title: contingent-liquidity-outflows-and-credit-facility-drawdowns-stress-test-o
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, off-balance-sheet, committed-facilities, derivatives, lookback-approach, credit-rating-downgrade, trade-finance, regulation, basel, basel-iii, bcbs-238]
 sources: [sbv_draft_circular_replace_22, bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

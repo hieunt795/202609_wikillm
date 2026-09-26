@@ -3,7 +3,7 @@ title: quasi-fiscal-spending-increases-imports-and-deteriorates-current-account
 type: concept
 tags: [quasi-fiscal, transmission, current-account, absorption]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

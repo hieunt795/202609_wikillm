@@ -3,7 +3,7 @@ title: ftp-base-curve-construction-contrasts-vnd-historical-cost-with-usd-market
 type: concept
 tags: [alm, ftp, base-curve, yield-curve, sofr, irs, vnd, usd]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

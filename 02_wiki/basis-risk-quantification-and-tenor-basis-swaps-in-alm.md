@@ -1,26 +1,23 @@
 ---
-title: "Basis Risk Quantification and Tenor Basis Swaps in ALM"
-tags:
-  - concept
-  - alm
-  - irrbb
-  - basis-risk
-  - basis-swap
-  - tenor-basis
-  - bcbs-368
+title: basis-risk-quantification-and-tenor-basis-swaps-in-alm
+type: concept
+tags: [alm, irrbb, basis-risk, basis-swap, tenor-basis, bcbs-368]
+sources: [bcbs_368]
+status: draft
+last_updated: 2026-09-26
 ---
 
-Rủi ro cơ sở (Basis Risk) trong IRRBB nảy sinh khi các tài sản và khoản nợ có cùng tần suất định giá lại nhưng được neo vào các chỉ số lãi suất tham chiếu khác nhau hoặc các dải kỳ hạn lãi suất khác nhau của cùng một chỉ số, đòi hỏi các kỹ thuật lượng hóa ma trận độ nhạy Basis DV01 và chiến lược trung hòa rủi ro thông qua các hợp đồng hoán đổi cơ sở (Tenor and Benchmark Basis Swaps) (bcbs_368, file d368.md, Section I, d.75–78; Principle 1, d.91–105; Annex 1.1.3 & 1.2.7, d.820–835, d.915–925).
+Rủi ro cơ sở (Basis Risk) trong [[interest-rate-risk-in-the-banking-book-irrbb]] nảy sinh khi các tài sản và khoản nợ có cùng tần suất định giá lại nhưng được neo vào các chỉ số lãi suất tham chiếu khác nhau hoặc các dải kỳ hạn lãi suất khác nhau của cùng một chỉ số, đòi hỏi các kỹ thuật lượng hóa ma trận độ nhạy Basis DV01 và chiến lược trung hòa rủi ro thông qua các hợp đồng hoán đổi cơ sở (Tenor and Benchmark Basis Swaps) (bcbs_368, file d368.md, Section I, d.75–78; Principle 1, d.91–105; Annex 1.1.3 & 1.2.7, d.820–835, d.915–925).
 
 **1. Phân loại và Bản chất Kinh tế của Rủi ro Cơ sở trong Sổ Ngân hàng**
 
-Một sai lầm phổ biến trong ALM truyền thống là giả định rằng nếu ngân hàng duy trì trạng thái "khe hở kỳ hạn bằng không" (Zero Repricing Gap — tài sản và nợ cùng định giá lại sau $3$ tháng) thì rủi ro lãi suất đã được triệt tiêu hoàn toàn. Chuẩn mực BCBS 368 xác định rõ: Ngay cả khi kỳ hạn định giá lại khớp nhau hoàn hảo, ngân hàng vẫn đối mặt với rủi ro sụt giảm nghiêm trọng giá trị kinh tế và thu nhập lãi thuần do hai hình thái rủi ro cơ sở:
+Một sai lầm phổ biến trong ALM truyền thống là giả định rằng nếu ngân hàng duy trì trạng thái "khe hở kỳ hạn bằng không" (Zero Repricing Gap — tài sản và nợ cùng định giá lại sau $3$ tháng) thì rủi ro lãi suất đã được triệt tiêu hoàn toàn. Chuẩn mực BCBS 368 và [[interest-rate-basis-risk-arises-from-imperfect-correlation-between-benchmarks]] xác định rõ: Ngay cả khi kỳ hạn định giá lại khớp nhau hoàn hảo, ngân hàng vẫn đối mặt với rủi ro sụt giảm nghiêm trọng giá trị kinh tế và thu nhập lãi thuần do hai hình thái rủi ro cơ sở:
 
 - **Benchmark Basis Risk (Rủi ro cơ sở giữa các chỉ số tham chiếu khác nhau):** Xảy ra khi tài sản và nợ neo vào các thị trường hoặc phân khúc thanh khoản khác nhau. Điển hình:
   - Các khoản cho vay thả nổi neo theo Lãi suất Cơ sở Khách hàng (Prime Rate / Base Lending Rate), trong khi nguồn vốn tài trợ liên ngân hàng neo theo Lãi suất phi rủi ro qua đêm (SOFR, SONIA, VNIBOR).
   - Tài sản neo theo lợi suất Trái phiếu Chính phủ ngắn hạn, trong khi chi phí huy động neo theo lãi suất chứng chỉ tiền gửi (CDs) hoặc lãi suất tiền gửi tiết kiệm dân cư.
-  - Khi căng thẳng thị trường, chênh lệch (spread) giữa các chỉ số này mở rộng hoặc phân kỳ đột ngột, làm bốc hơi toàn bộ biên lãi của ngân hàng.
-- **Tenor Basis Risk (Rủi ro cơ sở kỳ hạn tham chiếu):** Xảy ra khi tài sản và nợ cùng neo vào một họ chỉ số lãi suất thả nổi, nhưng với kỳ hạn thanh toán khác nhau. Ví dụ: Ngân hàng tài trợ cho khoản vay thả nổi neo theo lãi suất $3\text{M}$ (định giá lại mỗi quý) bằng nguồn vốn phát hành giấy tờ có giá neo theo lãi suất $1\text{M}$ (định giá lại mỗi tháng). Phần bù kỳ hạn ($3\text{M}-1\text{M}$ Basis Spread) không phải là một hằng số cố định mà biến động liên tục theo mức độ thắt chặt thanh khoản của hệ thống liên ngân hàng.
+  - Khi căng thẳng thị trường, chênh lệch (spread) giữa các chỉ số này mở rộng hoặc phân kỳ đột ngột, làm suy giảm nghiêm trọng biên lãi của ngân hàng.
+- **Tenor Basis Risk (Rủi ro cơ sở kỳ hạn tham chiếu):** Xảy ra khi tài sản và nợ cùng neo vào một họ chỉ số lãi suất thả nổi, nhưng với kỳ hạn thanh toán khác nhau. Ví dụ: Ngân hàng tài trợ cho khoản vay thả nổi neo theo lãi suất $3\text{M}$ (định giá lại mỗi quý) bằng nguồn vốn phát hành giấy tờ có giá neo theo lãi suất $1\text{M}$ (định giá lại mỗi tháng). Phần bù kỳ hạn ($3\text{M}-1\text{M}$ Basis Spread) không phải là một hằng số cố định mà biến động liên tục theo mức độ thắt chặt thanh khoản của hệ thống liên ngân hàng, tương tự như phân tích tại [[matched-maturity-term-liquidity-spread-isolates-repricing-tenor-mismatch]].
 
 **2. Phương pháp Lượng hóa Ma trận Rủi ro Cơ sở**
 
@@ -47,16 +44,7 @@ Principle 4 bắt buộc ngân hàng không chỉ dựa vào các kịch bản s
 
 **3. Kỹ thuật Phòng hộ thông qua Tenor và Benchmark Basis Swaps**
 
-Để triệt tiêu rủi ro cơ sở tích lũy trên bảng cân đối, Treasury sử dụng các hợp đồng hoán đổi cơ sở chuyên biệt (Basis Swaps) trên thị trường phái sinh:
-
-```
-[BẢNG CÂN ĐỐI NỘI BẢNG]                 [HỢP ĐỒNG PHÁI SINH TENOR BASIS SWAP]
-+-----------------------------+         +-------------------------------------+
-| Tài sản: Nhận lãi suất 3M  |<------->| Trả lãi suất 3M                     |
-| Nợ:     Trả lãi suất 1M     |<------->| Nhận lãi suất 1M + Tenor Spread     |
-+-----------------------------+         +-------------------------------------+
-                  ==> RỦI RO CƠ SỞ ĐƯỢC KHÓA CHẶT VÀ TRIỆT TIÊU
-```
+Để triệt tiêu rủi ro cơ sở tích lũy trên bảng cân đối, Treasury sử dụng các hợp đồng hoán đổi cơ sở chuyên biệt (Basis Swaps) trên thị trường phái sinh, gắn liền với các công cụ phòng hộ tại [[macro-hedging-and-micro-hedging-strategies-in-the-banking-book]]:
 
 - **Tenor Basis Swap ($3\text{M} \text{ vs } 1\text{M}$):** Hai đối tác thỏa thuận định kỳ hoán đổi hai dòng tiền thả nổi trên cùng một mệnh giá danh nghĩa. Một bên trả lãi suất kỳ hạn $3\text{M}$, bên kia trả lãi suất kỳ hạn $1\text{M}$ cộng thêm một mức biên độ thỏa thuận (Quoted Basis Spread). Khi ký kết hợp đồng này song song với các vị thế nội bảng, Treasury khóa cứng phần chênh lệch chi phí vốn, loại bỏ hoàn toàn sự bất định của biến động spread giữa hai kỳ hạn.
 - **Benchmark Basis Swap ($OIS \text{ vs } Benchmark$):** Hoán đổi giữa lãi suất phi rủi ro qua đêm dồn tích (Compounded OIS) và lãi suất huy động kỳ hạn ngắn. Giao dịch này giúp chuyển hóa toàn bộ các tài sản thả nổi phức tạp về một hệ quy chiếu chi phí vốn duy nhất là lãi suất phi rủi ro.

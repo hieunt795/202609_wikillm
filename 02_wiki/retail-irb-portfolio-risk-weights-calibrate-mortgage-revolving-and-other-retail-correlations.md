@@ -3,7 +3,7 @@ title: retail-irb-portfolio-risk-weights-calibrate-mortgage-revolving-and-other-
 type: concept
 tags: [banking, credit-risk, retail-irb, mortgages, qrre, correlations, basel-iii]
 sources: [sbv_circular_14_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

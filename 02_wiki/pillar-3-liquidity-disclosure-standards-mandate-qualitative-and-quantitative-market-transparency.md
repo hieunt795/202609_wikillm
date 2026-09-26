@@ -3,7 +3,7 @@ title: pillar-3-liquidity-disclosure-standards-mandate-qualitative-and-quantitat
 type: concept
 tags: [banking, pillar-3, disclosure, liquidity-risk, lcr, nsfr, transparency, regulation, basel, principles]
 sources: [sbv_draft_circular_replace_22, bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

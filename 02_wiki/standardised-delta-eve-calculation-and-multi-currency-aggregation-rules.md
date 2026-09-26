@@ -3,7 +3,7 @@ title: standardised-delta-eve-calculation-and-multi-currency-aggregation-rules
 type: concept
 tags: [banking, alm, irrbb, delta-eve, discount-factors, multi-currency-aggregation, standardised-framework, bcbs-368]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: how-quasi-fiscal-operations-distort-ma-accounts-through-eight-mechanic-ch
 type: analysis
 tags: [quasi-fiscal, mechanical-analysis, macro-distortion]
 sources: [imf_macro_accounting, bindseil_monetary_policy]
-status: draft
+status: stable
 last_updated: 2026-09-25
 reviewed: 2026-09-25
 reviewed_by: model

@@ -3,7 +3,7 @@ title: sovereign-bond-holding-ceilings-and-interbank-equity-limits-contain-conce
 type: concept
 tags: [banking, sovereign-bonds, treasury, concentration-risk, cross-ownership, equity-investment, governance, alm, regulation]
 sources: [sbv_draft_circular_replace_22]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

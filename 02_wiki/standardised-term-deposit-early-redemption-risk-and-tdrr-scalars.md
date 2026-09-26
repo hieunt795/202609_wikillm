@@ -3,7 +3,7 @@ title: standardised-term-deposit-early-redemption-risk-and-tdrr-scalars
 type: concept
 tags: [banking, alm, irrbb, early-redemption-risk, tdrr, term-deposits, behavioural-modelling, bcbs-368]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

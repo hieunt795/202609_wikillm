@@ -3,7 +3,7 @@ title: supervisory-early-remedial-actions-mandate-liquidity-gap-reductions-and-c
 type: concept
 tags: [banking, alm, liquidity, supervisory-intervention, remedial-actions, early-intervention, capital-add-on, funding-gap-limits, basel, principles, bcbs-144]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

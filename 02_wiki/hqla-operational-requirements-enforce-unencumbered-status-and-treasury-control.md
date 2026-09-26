@@ -3,7 +3,7 @@ title: hqla-operational-requirements-enforce-unencumbered-status-and-treasury-co
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, hqla, operational-requirements, unencumbered-assets, treasury, collateral-pool, bcbs-238]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

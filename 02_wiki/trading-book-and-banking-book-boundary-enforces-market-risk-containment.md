@@ -3,7 +3,7 @@ title: trading-book-and-banking-book-boundary-enforces-market-risk-containment
 type: concept
 tags: [banking, market-risk, trading-book, banking-book, treasury, regulatory-arbitrage, regulation]
 sources: [sbv_circular_14_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu
 type: concept
 tags: [alm, ftp, cfu, alco, vietnam-banking, governance, tt13]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

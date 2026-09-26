@@ -3,7 +3,7 @@ title: expected-loss-and-provisioning-shortfall-mechanics-adjust-regulatory-capi
 type: concept
 tags: [banking, credit-risk, expected-loss, provisions, capital-deduction, tier-2, basel-iii]
 sources: [sbv_circular_14_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

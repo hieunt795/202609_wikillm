@@ -3,7 +3,7 @@ title: reading-the-flow-of-funds-by-rows-shows-which-sectors-face-financing-diff
 type: concept
 tags: [flow-of-funds, sectoral-analysis, financing]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 reviewed: 2026-09-25
 reviewed_by: model

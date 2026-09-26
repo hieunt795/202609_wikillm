@@ -3,7 +3,7 @@ title: unit-of-account-in-the-balance-of-payments
 type: concept
 tags: [external-sector, balance-of-payments, exchange-rate]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 reviewed: 2026-09-25
 reviewed_by: model

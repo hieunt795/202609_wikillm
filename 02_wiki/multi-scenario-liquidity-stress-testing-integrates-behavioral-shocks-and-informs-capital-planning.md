@@ -3,7 +3,7 @@ title: multi-scenario-liquidity-stress-testing-integrates-behavioral-shocks-and-
 type: concept
 tags: [banking, alm, liquidity, stress-testing, scenario-analysis, funding-shocks, market-liquidity, basel, principles, bcbs-144]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

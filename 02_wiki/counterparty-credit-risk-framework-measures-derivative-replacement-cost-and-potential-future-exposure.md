@@ -3,7 +3,7 @@ title: counterparty-credit-risk-framework-measures-derivative-replacement-cost-a
 type: concept
 tags: [banking, ccr, counterparty-credit-risk, derivatives, pfe, replacement-cost, regulation]
 sources: [sbv_circular_14_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

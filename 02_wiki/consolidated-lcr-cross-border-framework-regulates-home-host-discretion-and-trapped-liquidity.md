@@ -3,7 +3,7 @@ title: consolidated-lcr-cross-border-framework-regulates-home-host-discretion-an
 type: concept
 tags: [basel, basel-iii, lcr, liquidity, liquidity-risk, cross-border, consolidated-lcr, home-host, trapped-liquidity, transfer-restrictions, significant-currencies, bcbs-238, regulation]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

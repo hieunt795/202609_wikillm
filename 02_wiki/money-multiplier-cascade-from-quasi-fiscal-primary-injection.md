@@ -3,7 +3,7 @@ title: money-multiplier-cascade-from-quasi-fiscal-primary-injection
 type: concept
 tags: [quasi-fiscal, money-multiplier, monetary-expansion]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

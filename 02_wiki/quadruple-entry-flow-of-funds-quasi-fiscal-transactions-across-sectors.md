@@ -3,7 +3,7 @@ title: quadruple-entry-flow-of-funds-quasi-fiscal-transactions-across-sectors
 type: concept
 tags: [quasi-fiscal, flow-of-funds, sectoral-analysis]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

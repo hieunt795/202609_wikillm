@@ -3,7 +3,7 @@ title: pillar-3-irrbb-qualitative-disclosure-standards-mandate-table-a-narrative
 type: concept
 tags: [irrbb, pillar-3, disclosure, table-a, qualitative-disclosure, alm]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

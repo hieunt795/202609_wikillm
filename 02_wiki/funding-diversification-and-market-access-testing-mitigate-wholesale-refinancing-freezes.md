@@ -3,7 +3,7 @@ title: funding-diversification-and-market-access-testing-mitigate-wholesale-refi
 type: concept
 tags: [basel, principles, bcbs-144, liquidity-risk, funding-diversification, wholesale-funding, market-access, securitization, refinancing-risk]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

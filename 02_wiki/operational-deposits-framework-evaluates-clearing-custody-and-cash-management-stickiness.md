@@ -3,7 +3,7 @@ title: operational-deposits-framework-evaluates-clearing-custody-and-cash-manage
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, operational-deposits, clearing, custody, cash-management, excess-balances, basel, basel-iii, bcbs-238]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: credit-to-deposit-ratio
 type: concept
 tags: [banking, liquidity-risk, regulation, alm]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

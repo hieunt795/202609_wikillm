@@ -3,7 +3,7 @@ title: liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingen
 type: concept
 tags: [banking, alm, liquidity-risk, hqla, cash-flow-gaps, stress-testing, contingency-funding-plan, regulation, basel, principles]
 sources: [sbv_circular_83_2025, sbv_draft_circular_replace_22, bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

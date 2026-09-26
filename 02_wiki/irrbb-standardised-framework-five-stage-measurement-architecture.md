@@ -3,7 +3,7 @@ title: irrbb-standardised-framework-five-stage-measurement-architecture
 type: concept
 tags: [banking, alm, irrbb, standardised-framework, eve, bcbs-368, regulatory-capital, interest-rate-shocks]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

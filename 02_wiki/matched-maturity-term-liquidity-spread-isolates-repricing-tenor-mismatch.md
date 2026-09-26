@@ -3,7 +3,7 @@ title: matched-maturity-term-liquidity-spread-isolates-repricing-tenor-mismatch
 type: concept
 tags: [alm, ftp, matched-maturity, term-liquidity-spread, floating-rate, repricing-mismatch, wat]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-th
 type: concept
 tags: [banking, regulation, capital-adequacy, car, basel-iii, alm]
 sources: [sbv_circular_14_2025, sbv_draft_circular_replace_22]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: gross-material-product
 type: concept
 tags: [national-accounts, transition-economies, aggregates]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

@@ -3,7 +3,7 @@ title: securities-financing-transactions-and-bilateral-netting-govern-counterpar
 type: concept
 tags: [banking, ccr, repo, sfts, settlement-risk, bilateral-netting, isda, regulation]
 sources: [sbv_circular_14_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

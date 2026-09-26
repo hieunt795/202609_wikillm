@@ -3,7 +3,7 @@ title: autonomous-factors-of-central-bank-balance-sheet
 type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, liquidity]
 sources: [bindseil_monetary_policy, cargill_central_bank_policy]
-status: draft
+status: stable
 last_updated: 2026-09-24
 ---
 

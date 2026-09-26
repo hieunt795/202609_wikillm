@@ -3,7 +3,7 @@ title: exchange-rate-appropriateness-is-judged-by-four-indicator-groups-none-suf
 type: concept
 tags: [external-sector, exchange-rate, analysis]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

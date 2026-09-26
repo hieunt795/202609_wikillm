@@ -3,7 +3,7 @@ title: multiple-balance-sheet-mismatches-compound-banking-systemic-risk
 type: concept
 tags: [alm, liquidity-risk, financial-stability]
 sources: [clippings]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

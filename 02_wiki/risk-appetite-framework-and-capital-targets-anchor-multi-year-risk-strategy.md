@@ -3,7 +3,7 @@ title: risk-appetite-framework-and-capital-targets-anchor-multi-year-risk-strate
 type: concept
 tags: [banking, risk-governance, risk-appetite, capital-targets, raroc, multi-year-strategy, product-approval, regulation, basel, principles]
 sources: [sbv_circular_83_2025, bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

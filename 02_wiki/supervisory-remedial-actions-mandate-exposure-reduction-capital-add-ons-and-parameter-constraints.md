@@ -3,7 +3,7 @@ title: supervisory-remedial-actions-mandate-exposure-reduction-capital-add-ons-a
 type: concept
 tags: [irrbb, supervisory-actions, capital-add-on, remedial-actions, srep, standardised-framework]
 sources: [bcbs_368]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

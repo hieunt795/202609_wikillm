@@ -3,7 +3,7 @@ title: term-liquidity-premium-matrix-calibrates-two-dimensional-floating-rate-sp
 type: concept
 tags: [alm, ftp, term-liquidity-premium, matrix, floating-rate, repricing-tenor, maturity-tenor]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

@@ -3,7 +3,7 @@ title: basel-iii-lcr-short-term-liquidity-stress-framework-and-buffer-usability
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, hqla, basel, basel-iii, stress-testing, buffer-usability, banking-supervision, bcbs-238]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

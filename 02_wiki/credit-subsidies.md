@@ -3,7 +3,7 @@ title: credit-subsidies
 type: concept
 tags: [fiscal, quasi-fiscal, credit]
 sources: [imf_macro_accounting]
-status: draft
+status: stable
 last_updated: 2026-09-25
 ---
 

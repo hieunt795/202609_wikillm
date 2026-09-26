@@ -3,7 +3,7 @@ title: proprietary-trading-internal-controls-mandate-front-middle-back-office-se
 type: concept
 tags: [banking, proprietary-trading, market-risk, trading-book, internal-control, front-office, middle-office, back-office, regulation]
 sources: [sbv_circular_83_2025]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

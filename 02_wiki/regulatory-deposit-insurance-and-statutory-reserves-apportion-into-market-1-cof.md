@@ -3,7 +3,7 @@ title: regulatory-deposit-insurance-and-statutory-reserves-apportion-into-market
 type: concept
 tags: [alm, ftp, cof, deposit-insurance, statutory-reserves, tt22, tt30]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

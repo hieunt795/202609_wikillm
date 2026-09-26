@@ -3,7 +3,7 @@ title: central-bank
 type: concept
 tags: [monetary-policy, financial-system]
 sources: [imf_macro_accounting, cargill_central_bank_policy, fixed_income_during]
-status: draft
+status: stable
 last_updated: 2026-09-24
 reviewed: 2026-09-24
 reviewed_by: model

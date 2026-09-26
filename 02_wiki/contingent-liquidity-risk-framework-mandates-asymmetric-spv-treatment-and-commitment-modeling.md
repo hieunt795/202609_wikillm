@@ -3,7 +3,7 @@ title: contingent-liquidity-risk-framework-mandates-asymmetric-spv-treatment-and
 type: concept
 tags: [basel, principles, bcbs-144, liquidity-risk, off-balance-sheet, spv, conduit, contingent-liquidity, derivatives]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

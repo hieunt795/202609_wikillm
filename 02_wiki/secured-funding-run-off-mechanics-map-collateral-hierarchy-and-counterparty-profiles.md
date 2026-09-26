@@ -3,7 +3,7 @@ title: secured-funding-run-off-mechanics-map-collateral-hierarchy-and-counterpar
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, secured-funding, repo, run-off-rates, collateral-hierarchy, haircuts, basel, basel-iii, bcbs-238]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

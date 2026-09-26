@@ -3,7 +3,7 @@ title: secured-lending-and-counterparty-cash-inflow-matrices-calibrate-rehypothe
 type: concept
 tags: [basel, basel-iii, lcr, liquidity, liquidity-risk, cash-inflows, reverse-repo, secured-lending, rehypothecation, short-positions, committed-facilities, operational-deposits, bcbs-238, regulation]
 sources: [bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

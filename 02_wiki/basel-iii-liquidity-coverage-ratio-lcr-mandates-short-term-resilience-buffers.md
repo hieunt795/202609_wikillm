@@ -3,7 +3,7 @@ title: basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buf
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, hqla, basel, basel-iii, cash-outflows, run-off-rates, regulation, bcbs-238]
 sources: [sbv_draft_circular_replace_22, bcbs_238]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 

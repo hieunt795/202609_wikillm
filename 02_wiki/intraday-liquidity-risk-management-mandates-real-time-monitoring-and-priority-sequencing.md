@@ -3,7 +3,7 @@ title: intraday-liquidity-risk-management-mandates-real-time-monitoring-and-prio
 type: concept
 tags: [banking, alm, liquidity, intraday-liquidity, payment-systems, rtgs, settlements, basel, principles, bcbs-144]
 sources: [bcbs_144]
-status: draft
+status: stable
 last_updated: 2026-09-26
 ---
 
