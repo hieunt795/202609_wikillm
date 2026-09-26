@@ -1,0 +1,17 @@
+.llm-graphify-original-view { display: flex; padding: 0 !important; overflow: hidden; }
+.llm-graphify-node-info { box-sizing: border-box; width: 25%; min-width: 0; flex: 0 0 25%; height: 100%; padding: 20px; overflow-y: auto; background: #1a1a2e; color: #d7dbe5; border-right: 1px solid #2a2a4e; opacity: 1; transform: translateX(0); transition: width .22s ease, flex-basis .22s ease, padding .22s ease, opacity .16s ease, transform .22s ease; }
+.llm-graphify-node-info.is-collapsed { width: 0; flex-basis: 0; padding-left: 0; padding-right: 0; overflow: hidden; border-right-width: 0; opacity: 0; transform: translateX(-16px); pointer-events: none; }
+.llm-graphify-node-info > h3 { margin: 0 0 12px; color: #aaa; font-size: 13px; letter-spacing: .05em; text-transform: uppercase; }
+.llm-graphify-node-info-content { overflow-wrap: anywhere; font-size: 14px; }
+.llm-graphify-node-info-content > h2 { margin: 0 0 8px; color: #f0f3f8; }
+.llm-graphify-empty { color: #777; font-style: italic; }
+.llm-graphify-node-meta { margin-bottom: 14px; color: #aeb7c8; font-size: 12px; line-height: 1.6; }
+.llm-graphify-note-body { padding-top: 12px; border-top: 1px solid #2a2a4e; }
+.llm-graphify-note-body a.internal-link:not(.is-unresolved) { color: #ffe600 !important; text-decoration-color: rgba(255, 230, 0, .65); }
+.llm-graphify-note-body a.internal-link:not(.is-unresolved):hover { color: #fff36a !important; text-shadow: 0 0 6px rgba(255, 230, 0, .7); }
+.llm-graphify-note-body .math-block, .llm-graphify-note-body mjx-container[display="true"] { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+.llm-graphify-related { padding-top: 12px; border-top: 1px solid #2a2a4e; }
+.llm-graphify-related button { display: block; width: 100%; margin: 4px 0; padding: 6px 8px; overflow-wrap: anywhere; color: #ccd3df; background: transparent; border: 0; border-left: 3px solid #00ffd0; text-align: left; cursor: pointer; }
+.llm-graphify-related button:hover { background: #2a2a4e; }
+.llm-graphify-original-frame { display: block; flex: 1; min-width: 0; height: 100%; min-height: 320px; border: 0; background: #0f0f1a; }
+@media (max-width: 900px) { .llm-graphify-node-info { padding: 12px; } }

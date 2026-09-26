@@ -1,6 +1,6 @@
 ---
 type: sources-manifest
-last_updated: 2026-09-23
+last_updated: 2026-09-26
 ---
 
 Xuất xứ và checksum của các nguồn trong `01_sources/`.
@@ -30,6 +30,12 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `fixed_income_during` | `fixed_income_during/` | Nguồn dài | `03_state/fixed_income_during.md` |
 | `tata_bank_alm` | `tata_bank_alm/` | Nguồn dài | `03_state/tata_bank_alm.md` |
 | `clippings` | `Clippings/` | Nguồn dài | `03_state/clippings.md` |
+| `ftp_transmission_analysis` | `vietnam-regulator/alm/` | Nguồn ngắn | — |
+| `vab_ftp_methodology` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/vab_ftp_methodology.md` |
+| `sbv_circular_14_2025` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_circular_14_2025.md` |
+| `sbv_circular_83_2025` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_circular_83_2025.md` |
+| `sbv_draft_circular_replace_22` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_draft_circular_replace_22.md` |
+
 
 ## imf_macro_accounting
 
@@ -447,3 +453,76 @@ File `.md` do docling chuyển đổi từ PDF (frontmatter `extractor: docling`
 | `01_sources/Clippings/Ý nghĩa của việc can thiệp chủ động Buy Spot trong điều hành.md` | 9.060 | 87 | `306a6087243f3d2a948cc90d294af54a64c5391153dcae4a3376d5e588fe5517` |
 | `01_sources/Clippings/Điểm yếu trong phân tích Top-down – Phần 1.md` | 12.251 | 187 | `4de132826ec4ee4802a4e9dd8a13199751bc26b5365d98a72f0f8534490597c0` |
 | `01_sources/Clippings/Điểm yếu trong phân tích Topdown-P2- Không thể thiếu BottomUp.md` | 4.244 | 36 | `5285bed6bdc62bacd44e14d45542894672d491ef99279fd0b2b824c974ffd47d` |
+
+## ftp_transmission_analysis
+
+| | |
+|---|---|
+| Nhan đề | *Cơ chế truyền dẫn FTP đến các risk factors: Nghiên cứu chi tiết về vai trò của Funds Transfer Pricing trong Quản trị Rủi ro Ngân hàng* |
+| Tác giả | Nhóm nghiên cứu ALM / Quản trị rủi ro (dựa trên framework của Beata Lubinska 2020 kết hợp bối cảnh ngân hàng Việt Nam) |
+| Xuất bản | 2026 |
+| Phân loại | Nguồn ngắn (`00_schema.md` §10) — 15.896 bytes / 189 dòng. Không cần file trạng thái |
+| Tiến độ ingest | Đang ingest (`02_wiki/index.md` §Sources) |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/vietnam-regulator/alm/ftp_transmission_analysis.md.md` | 15.896 | 189 | `362369878d692b067334dd03d5ffc857c3ed3b4758523f7d83618aea169e8ffb` |
+
+## vab_ftp_methodology
+
+| | |
+|---|---|
+| Nhan đề | *Tài liệu tư vấn về Phương pháp luận định giá điều chuyển vốn nội bộ (FTP)* |
+| Tác giả | Công ty Cổ phần Tư vấn EY Việt Nam và Ngân hàng TMCP Việt Á (VietABank) |
+| Xuất bản | Tháng 10/2021 |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 242.771 bytes / 2.118 dòng |
+| Tiến độ ingest | Chưa ingest — state file `03_state/vab_ftp_methodology.md` |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/vietnam-regulator/alm/VAB - Phương pháp luận FTP.md` | 242.771 | 2.118 | `362178f9eefad50f3aea3e54a8ec0b21a7762f26ff45656cae80d6c9d9b5acc6` |
+
+## sbv_circular_14_2025
+
+| | |
+|---|---|
+| Nhan đề | *Thông tư số 14/2025/TT-NHNN ngày 30 tháng 6 năm 2025 quy định tỷ lệ an toàn vốn đối với ngân hàng thương mại, chi nhánh ngân hàng nước ngoài* |
+| Tác giả | Thống đốc Ngân hàng Nhà nước Việt Nam |
+| Xuất bản | Ngân hàng Nhà nước Việt Nam (Hà Nội, 30/06/2025) |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 545.879 bytes / 3.371 dòng trên 2 file `.md` |
+| Tiến độ ingest | Hoàn tất 100% — `03_state/sbv_circular_14_2025.md` |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/vietnam-regulator/alm/TT14_1.md` | 227.791 | 1.583 | `63bcc14ba27d7cd49af03aeda61a5923244a885df385bf26f05e26f8ce7c6777` |
+| `01_sources/vietnam-regulator/alm/TT14_2.md` | 318.088 | 1.788 | `95ae25b1228ec852a4ffb504fa1b28731c774686020455e4f1916b0bc58925f` |
+
+## sbv_circular_83_2025
+
+| | |
+|---|---|
+| Nhan đề | *Thông tư số 83/2025/TT-NHNN ngày 31 tháng 12 năm 2025 quy định về hệ thống kiểm soát nội bộ của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài* |
+| Tác giả | Thống đốc Ngân hàng Nhà nước Việt Nam |
+| Xuất bản | Ngân hàng Nhà nước Việt Nam (Hà Nội, 31/12/2025) |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 240.089 bytes / 1.928 dòng |
+| Tiến độ ingest | Hoàn tất 100% — `03_state/sbv_circular_83_2025.md` |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/vietnam-regulator/alm/TT83.md` | 240.089 | 1.928 | `c4a3900dd9b0be241261ca5264bcafca53d594e96ee12a2a8a741724b6d789be` |
+
+## sbv_draft_circular_replace_22
+
+| | |
+|---|---|
+| Nhan đề | *Dự thảo Thông tư quy định về các giới hạn, tỷ lệ bảo đảm an toàn trong hoạt động của ngân hàng, chi nhánh ngân hàng nước ngoài (thay thế Thông tư số 22/2019/TT-NHNN)* |
+| Tác giả | Thống đốc Ngân hàng Nhà nước Việt Nam |
+| Xuất bản | Ngân hàng Nhà nước Việt Nam (Hà Nội, dự thảo ngày 21/04/2026) |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 358.720 bytes / 2.009 dòng |
+| Tiến độ ingest | Đang ingest — `03_state/sbv_draft_circular_replace_22.md` |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/vietnam-regulator/alm/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md` | 358.720 | 2.009 | `d6dc151f84323f65854de7144cd35c4a774189dfe934df7aab9610f13783c224` |
+
+

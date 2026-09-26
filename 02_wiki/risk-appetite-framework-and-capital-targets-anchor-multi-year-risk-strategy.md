@@ -1,0 +1,21 @@
+---
+title: risk-appetite-framework-and-capital-targets-anchor-multi-year-risk-strategy
+type: concept
+tags: [banking, risk-governance, risk-appetite, capital-targets, raroc, multi-year-strategy, product-approval, regulation]
+sources: [sbv_circular_83_2025]
+status: draft
+last_updated: 2026-09-26
+---
+
+Khung khẩu vị rủi ro và chiến lược quản lý rủi ro đa năm theo Thông tư 83/2025/TT-NHNN đóng vai trò kim chỉ nam định hướng toàn bộ hoạt động kinh doanh và phân bổ nguồn lực vốn tại các ngân hàng thương mại Việt Nam (sbv_circular_83_2025, file TT83.md, Điều 17–20, d.360–414). Chính sách quản lý rủi ro bắt buộc phải do Hội đồng quản trị hoặc Hội đồng thành viên trực tiếp ban hành, có hiệu lực trong chu kỳ trung hạn từ 03 đến 05 năm tiếp theo nhằm bảo đảm tính liên tục và khả thi qua các chu kỳ kinh tế, thay vì chạy theo mục tiêu lợi nhuận ngắn hạn (sbv_circular_83_2025, file TT83.md, Điều 19.1–19.3, d.389–402). Định kỳ tối thiểu hàng năm hoặc khi thị trường có biến động kinh tế vĩ mô đột biến, cơ quan quản trị tối cao phải rà soát và đánh giá lại chính sách này để kịp thời hiệu chỉnh.
+
+Khẩu vị rủi ro (Risk Appetite) được cụ thể hóa bằng bộ chỉ tiêu định lượng bắt buộc gắn kết chặt chẽ giữa mức độ an toàn vốn và hiệu quả sinh lời trên tài sản rủi ro (sbv_circular_83_2025, file TT83.md, Điều 19.2.a, d.391–394):
+1. Tỷ lệ an toàn vốn mục tiêu: Thiết lập mức đệm an toàn cao hơn ngưỡng tối thiểu luật định theo quy chuẩn [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]];
+2. Chỉ tiêu về thu nhập và lợi nhuận có điều chỉnh rủi ro: Bao gồm Tỷ suất sinh lời trên vốn chủ sở hữu (ROE) và Tỷ suất sinh lời có điều chỉnh rủi ro trên vốn tự có (Risk-Adjusted Return on Capital - RAROC), gắn kết trực tiếp với cơ chế định giá sản phẩm và phân bổ vốn tại [[ftp-credit-spread-and-capital-charge-operationalize-deal-level-raroc]];
+3. Các mức giới hạn chấp nhận rủi ro định tính và định lượng cho danh mục các rủi ro trọng yếu (tín dụng, thị trường, hoạt động, thanh khoản, tập trung và rủi ro lãi suất trên sổ ngân hàng).
+
+Trên cơ sở khẩu vị rủi ro do Hội đồng quản trị phê duyệt, Tổng giám đốc chịu trách nhiệm ban hành và phân bổ hệ thống hạn mức rủi ro chi tiết (Risk Limits) đến từng khối nghiệp vụ, đơn vị kinh doanh và danh mục sản phẩm (sbv_circular_83_2025, file TT83.md, Điều 20.1, d.406). Hạn mức rủi ro phải được rà soát định kỳ hàng năm; trường hợp Tổng giám đốc điều chỉnh hạn mức theo hướng nới lỏng hơn, quyết định này bắt buộc phải báo cáo chính thức lên Hội đồng quản trị ngay sau khi ban hành (sbv_circular_83_2025, file TT83.md, Điều 20.2.d, d.411). Đặc biệt, khi một giao dịch hoặc sản phẩm đồng thời chịu sự điều chỉnh của nhiều hạn mức rủi ro khác nhau, ngân hàng có nghĩa vụ pháp lý phải áp dụng hạn mức rủi ro thận trọng nhất (sbv_circular_83_2025, file TT83.md, Điều 20.3, d.413).
+
+Quy trình quản lý rủi ro đối với sản phẩm mới và hoạt động trên thị trường mới thiết lập hàng rào ngăn ngừa trục lợi và bộc lộ rủi ro bất ngờ (sbv_circular_83_2025, file TT83.md, Điều 21, d.416–427). Trước khi triển khai, Hội đồng quản trị phải phê duyệt chủ trương trên cơ sở đề xuất của Tổng giám đốc; kế hoạch thử nghiệm sản phẩm mới phải được Bộ phận Quản trị Rủi ro (RMD) thẩm định độc lập về quy mô thử nghiệm, thời gian, tác động đến vốn tự có và kịch bản suy giảm thu nhập. Chỉ khi kết quả thử nghiệm đáp ứng toàn bộ các chỉ tiêu an toàn đề ra, ngân hàng mới được chính thức ban hành quy trình và cung cấp sản phẩm trên diện rộng (sbv_circular_83_2025, file TT83.md, Điều 21.2–21.3, d.423–426).
+
+Nền tảng vận hành của khung chiến lược rủi ro là hệ thống quản trị dữ liệu rủi ro tuân thủ các nguyên tắc chuẩn mực quốc tế BCBS 239 (sbv_circular_83_2025, file TT83.md, Điều 24, d.469–477). Cơ sở dữ liệu rủi ro phải bảo đảm tính chính xác (accuracy), tính toàn vẹn (integrity), tính kịp thời và khả năng tổng hợp đa chiều xuyên suốt các danh mục trọng yếu. Toàn bộ cơ chế này được vận hành dưới sự giám sát đa tầng của [[three-lines-of-defense-framework-enforces-banking-internal-control-and-risk-oversight]] và hệ thống ủy ban chuyên trách tại [[senior-management-oversight-and-conflict-of-interest-containment-anchor-banking-governance]].

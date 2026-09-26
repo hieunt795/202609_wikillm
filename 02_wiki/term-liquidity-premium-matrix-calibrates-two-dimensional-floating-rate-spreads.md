@@ -1,0 +1,22 @@
+---
+title: term-liquidity-premium-matrix-calibrates-two-dimensional-floating-rate-spreads
+type: concept
+tags: [alm, ftp, term-liquidity-premium, matrix, floating-rate, repricing-tenor, maturity-tenor]
+sources: [vab_ftp_methodology]
+status: draft
+last_updated: 2026-09-26
+---
+
+Trong hạ tầng định giá chuyển nhượng nội bộ của các ngân hàng thương mại, việc tính toán giá bán vốn (COF) cho các danh mục tín dụng lãi suất thả nổi quy mô hàng chục nghìn hợp đồng đòi hỏi một công cụ tra cứu tự động hóa có tính chuẩn hóa cao theo [[matched-maturity-term-liquidity-spread-isolates-repricing-tenor-mismatch]] (vab_ftp_methodology, Phụ lục 02.6.a, d.1592–1598). Để hiện thực hóa nguyên lý bóc tách phần bù thanh khoản kỳ hạn giữa kỳ hạn tái định giá và kỳ hạn gốc theo [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]], phương pháp luận FTP thiết lập một Ma trận Phần bù Thanh khoản Kỳ hạn hai chiều (Term Liquidity Premium Matrix) kết nối toàn diện giữa chu kỳ lãi suất và chu kỳ cam kết vốn (vab_ftp_methodology, Phụ lục 02.6.b, d.1599–1655; Mẫu biểu 01.2, d.1876–1916).
+
+Cấu trúc ma trận được xây dựng qua quy trình hai bước tuần tự dưới sự chủ trì của Đơn vị Quản lý Vốn tập trung (CFU) và Khối Công nghệ Thông tin:
+- **Bước 1: Thiết lập đường lãi suất giả định cho các chu kỳ tái định giá**: Căn cứ vào đường cong lãi suất FTP cơ sở ban hành, hệ thống trải phẳng mức lãi suất của từng kỳ hạn tái định giá sang tất cả các kỳ đáo hạn tương ứng (vab_ftp_methodology, Phụ lục 02.6.b, d.1601–1625). Bảng lãi suất giả định có trục dọc biểu diễn Kỳ tái định giá (từ không kỳ hạn, 7 ngày, 14 ngày, 21 ngày, 1 tháng, 2 tháng, 3 tháng... đến 60 tháng) và trục ngang biểu diễn Kỳ đáo hạn hoặc kỳ hạn hiệu lực $WAT$ của hợp đồng tín dụng (vab_ftp_methodology, Phụ lục 02.6.b, d.1603–1614). Tại mỗi giao điểm, nếu kỳ tái định giá lớn hơn kỳ đáo hạn, ô ma trận sẽ bị để trống do không tồn tại trạng thái hợp đồng lãi suất thả nổi có chu kỳ định giá dài hơn thời hạn vay (vab_ftp_methodology, Phụ lục 02.6.b, d.1608–1625).
+- **Bước 2: Xác định ma trận phần bù chênh lệch**: CFU tính toán giá trị tại từng tọa độ $(i, j)$ của ma trận theo công thức chênh lệch kỳ hạn:
+  $$\text{Term Liquidity Premium}_{(i, j)} = COF_{\text{kỳ đáo hạn } j} - COF_{\text{kỳ tái định giá } i}$$
+  (vab_ftp_methodology, Phụ lục 02.6.a, d.1597; Phụ lục 02.6.b, d.1629).
+
+Đặc tính toán học của ma trận phần bù thanh khoản phản ánh trung thực cấu trúc kỳ hạn của chi phí vốn:
+1. Mọi phần tử trên đường chéo chính nơi kỳ tái định giá trùng khớp với kỳ đáo hạn ($i = j$) đều có giá trị bằng 0 (ví dụ hợp đồng vay 3 tháng định giá lại 3 tháng/lần thì phần bù bằng 0,00%), do rủi ro thanh khoản kỳ hạn đã được hấp thụ trọn vẹn trong lãi suất COF cơ sở ngắn hạn (vab_ftp_methodology, Phụ lục 02.6.b, d.1635, d.1648);
+2. Các phần tử nằm ở tam giác phía trên đường chéo chính ($j > i$) luôn mang giá trị dương trên một đường cong lợi suất dốc lên chuẩn tắc, lượng hóa mức phụ phí mà đơn vị kinh doanh phải trả thêm khi giải ngân khoản vay dài hạn nhưng áp dụng lãi suất thả nổi ngắn hạn (vab_ftp_methodology, Phụ lục 02.6.b, d.1635–1653). Ví dụ trong bảng số liệu thực nghiệm của VietABank, một khoản vay kỳ hạn 60 tháng có chu kỳ tái định giá 1 tháng chịu phần bù thanh khoản kỳ hạn là 2,40%; nếu chu kỳ tái định giá là 3 tháng thì phần bù giảm xuống 1,88%; và nếu chu kỳ tái định giá kéo dài đến 24 tháng thì phần bù chỉ còn 0,29% (vab_ftp_methodology, Phụ lục 02.6.b, d.1639, d.1648, d.1650).
+
+Ma trận hai chiều này được nhúng trực tiếp vào phần mềm quản lý vốn nội bộ của ngân hàng, cho phép hệ thống tự động xác định giá COF tổng thể tại mỗi kỳ tính toán mà không cần sự can thiệp thủ công theo [[vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing]]. Khi đến ngày tái định giá hợp đồng tín dụng, phần mềm giữ nguyên phần bù thanh khoản kỳ hạn ban đầu (hoặc tính lại theo kỳ hạn hiệu lực $WAT$ còn lại) và chỉ cập nhật mức lãi suất COF cơ sở mới tại kỳ tái định giá, bảo đảm sự nhất quán trong công tác quản trị rủi ro thanh khoản toàn hàng của [[vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu]].

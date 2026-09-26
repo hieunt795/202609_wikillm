@@ -19,6 +19,12 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–39 xong (chi tiết ở state file) | `03_state/fixed_income_during.md` |
 | `tata_bank_alm` | Nguồn dài (450 KB / 3.345 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–6 xong (chi tiết ở state file) | `03_state/tata_bank_alm.md` |
 | `clippings` | Nguồn dài (82 file, 882 KB / 6.684 dòng) | **Hoàn tất 100%** | Toàn bộ 6 cụm (82 file) xong (chi tiết ở state file) | `03_state/clippings.md` |
+| `ftp_transmission_analysis` | Nguồn ngắn (16 KB / 189 dòng) | **Hoàn tất 100%** | Toàn bộ, ingest trọn 1 lượt | — |
+| `vab_ftp_methodology` | Nguồn dài (243 KB / 2.118 dòng) | **Hoàn tất 100%** | Toàn bộ Phần A, B & Phụ lục 01–06 (d.1–2118) xong (chi tiết ở state file) | `03_state/vab_ftp_methodology.md` |
+| `sbv_circular_14_2025` | Nguồn dài (2 file, 546 KB / 3.371 dòng) | **Hoàn tất 100%** | Toàn bộ 4 chunk (TT14_1 & TT14_2, d.1–3371) xong (chi tiết ở state file) | `03_state/sbv_circular_14_2025.md` |
+| `sbv_circular_83_2025` | Nguồn dài (240 KB / 1.928 dòng) | **Hoàn tất 100%** | Toàn bộ 3 chunk (d.1–1928) xong (chi tiết ở state file) | `03_state/sbv_circular_83_2025.md` |
+| `sbv_draft_circular_replace_22` | Nguồn dài (358 KB / 2.009 dòng) | **Hoàn tất 100%** | Toàn bộ 4 chunk (d.1–2009) xong (chi tiết ở state file) | `03_state/sbv_draft_circular_replace_22.md` |
+
 
 Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *Phần còn lại* chỉ ghi một câu; diễn biến từng lượt nằm ở `log.md`, tiến độ theo chunk nằm ở state file.
 
@@ -889,7 +895,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[receiver-interest-rate-swaps-stabilize-falling-rate-nii-while-magnifying-eve-duration-risk]] — phòng hộ NII bằng Receiver Swap: ổn định thu nhập khi lãi suất giảm, bẫy "too good to be true" khi giữ nguyên lãi suất và nghịch lý khuếch đại rủi ro EVE
 - [[monitoring-market-value-changes-outside-nii-horizon-prevents-deferred-interest-rate-losses]] — giám sát biến động giá trị thị trường ngoài chân trời NII: đo lường Delta MV cho các vị thế Fair Value theo CDR (EU) 2024/857 chống che giấu tổn thất dài hạn
 
-**Định giá Chuyển nhượng Vốn Nội bộ — FTP (Tata 2025 — Ch.2 cụm B)**
+**Định giá Chuyển nhượng Vốn Nội bộ — FTP (Tata 2025 — Ch.2 cụm B & Cơ chế Truyền dẫn FTP)**
 - [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]] — định giá chuyển nhượng vốn nội bộ FTP: phân bổ biên lãi thuần NIM, tập trung hóa rủi ro về Treasury và nguyên lý chi phí cơ hội
 - [[matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions]] — phương pháp cân khớp kỳ hạn: bóc tách NIM thành biên kinh doanh và đóng góp cấu trúc bù đắp rủi ro tái tài trợ và rủi ro lãi suất cho Treasury
 - [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]] — bóc tách đường cong FTP: lãi suất phi rủi ro thuần túy cộng phần bù thanh khoản, 5 cách tiếp cận RFR và định giá sản phẩm lệch tenor reset
@@ -897,6 +903,14 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]] — tích hợp ràng buộc LCR và NSFR vào FTP: chi phí cận biên nắm giữ HQLA 30 ngày, hình phạt vốn dài hạn NSFR và chi phí ký quỹ bù trừ trung tâm CCP
 - [[funds-transfer-pricing-contrasts-with-derivatives-funding-value-adjustments]] — so sánh FTP với FVA/XVA phái sinh: tài trợ 100% mệnh giá sổ ngân hàng vs chi phí ký quỹ tự tài trợ, và nguyên tắc loại trừ rủi ro tín dụng khỏi FTP
 - [[contingency-liquidity-and-embedded-optionality-require-specialized-ftp-add-ons]] — phụ phí thanh khoản dự phòng và quyền chọn ngầm định: phụ phí hạn mức cam kết tín dụng, điều chỉnh short/long optionality và 10 nguyên tắc vàng Farahvash
+- [[ftp-transmission-channels-steer-bank-balance-sheet-risks]] — cơ chế truyền dẫn FTP đến các risk factors: hệ thống điều khiển trung tâm tác động đồng thời rủi ro thanh khoản, rủi ro lãi suất và rủi ro tín dụng qua vòng phản hồi tích hợp
+- [[ftp-credit-spread-and-capital-charge-operationalize-deal-level-raroc]] — cấu phần phần bù tín dụng và chi phí vốn trong FTP: lượng hóa tổn thất kỳ vọng EL, chi phí vốn kinh tế và chuẩn hóa khung RAROC tại cấp độ từng hợp đồng
+- [[balance-sheet-optimization-models-calibrate-ftp-as-a-control-variable]] — mô hình tối ưu hóa bảng cân đối sử dụng FTP làm biến số điều khiển: tối đa hóa thu nhập lãi thuần NII dưới các ràng buộc đồng thời LCR, NSFR, Delta NII và CAR
+- [[vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu]] — kiến trúc quản trị FTP tại NHTM Việt Nam: mô hình CFU và ALCO quản trị rủi ro thanh khoản và lãi suất tập trung theo Thông tư 13/2018/TT-NHNN, phân định Thị trường 1 và Thị trường 2
+- [[vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing]] — cấu trúc hai vế đường cong FTP Thị trường 1: giá mua vốn VOF cho tài sản nợ và giá bán vốn COF cho tài sản có, phân bổ NIM kế hoạch và chuyển giao chi phí tuân thủ quy chuẩn
+- [[ftp-base-curve-construction-contrasts-vnd-historical-cost-with-usd-market-benchmarks]] — phương pháp xây dựng đường cong FTP cơ sở: chi phí huy động bình quân thực tế 3 tháng đối với VND đối lập với tham chiếu thị trường SOFR và IRS đối với USD
+- [[regulatory-deposit-insurance-and-statutory-reserves-apportion-into-market-1-cof]] — phân bổ chi phí bảo hiểm tiền gửi và dự trữ bắt buộc vào giá bán vốn COF: lượng hóa tổn thất cơ hội vốn trên quy mô tổng tài sản bị tính FTP loại trừ đệm thanh khoản
+- [[planned-nim-allocation-determines-ftp-deposit-mobilization-margins]] — hỗ trợ huy động Margin trong FTP từ kế hoạch NIM toàn hàng: phân rã NII mục tiêu sau khi trừ chi phí quản lý trực tiếp và trích lập dự phòng rủi ro tín dụng kế hoạch
 
 **Sản phẩm Không Kỳ hạn & Mô hình Danh mục Tái tạo (Tata 2025 — Ch.2 cụm C)**
 - [[non-maturity-products-decouple-liquidity-profiles-from-interest-rate-profiles]] — sản phẩm không kỳ hạn NMP: sự phân kỳ giữa hồ sơ thanh khoản và hồ sơ lãi suất, cơ chế lãi suất chỉ định administered rate và 4 khung mô hình hóa
@@ -1016,3 +1030,83 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[ancillary-yield-curves-expand-benchmark-definitions-via-strict-irr-admissibility]] — đường cong phụ trợ Ancillary Curve: mở rộng định nghĩa trái phiếu chuẩn qua tiêu chuẩn sàng lọc sai số IRR dưới 1 điểm cơ bản, độ chính xác MAPE vượt trội và sự hòa nhập đồng quy với Benchmark Curve
 - [[geometric-programming-optimizes-continuous-discount-curves-under-bounded-uncertainty]] — quy hoạch hình học GP và bất định phi ngẫu nhiên: đổi biến hàm mũ $x_i = e^{y_i}$, tối ưu hóa posynomials, tiếp cận sai số bị chặn set-membership và điều kiện đối ngẫu hoàn hảo khi phân tách T-bills
 - [[ancillary-anchored-butterfly-trades-isolate-relative-value-in-hyper-liquid-treasury-markets]] — giao dịch Butterfly neo theo trái phiếu Ancillary: khai thác giá trị tương đối trong thị trường Kho bạc siêu thanh khoản, bán khống mã Ancillary định giá đắt và phòng hộ hai cánh qua bài toán quy hoạch tuyến tính LP trung hòa vốn và thời lượng
+
+**Quản trị Tài sản - Nợ (ALM) & Định giá Điều chuyển Vốn Nội bộ (FTP)**
+- [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]] — FTP phân bổ biên độ thương mại, tập trung hóa rủi ro thanh khoản và rủi ro lãi suất về Treasury
+- [[matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions]] — phương pháp cân khớp kỳ hạn bóc tách NIM thành biên độ đơn vị kinh doanh và đóng góp cấu trúc Treasury
+- [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]] — phân rã đường cong FTP thành lãi suất phi rủi ro thuần túy và phần bù thanh khoản tài trợ
+- [[ftp-business-steering-functions-as-a-political-tool-for-balance-sheet-allocation]] — FTP đóng vai trò công cụ điều phối chính sách và phân bổ nguồn lực bảng cân đối
+- [[ftp-transmission-channels-steer-bank-balance-sheet-risks]] — ba kênh truyền dẫn FTP điều phối rủi ro thanh khoản, rủi ro lãi suất và rủi ro tín dụng
+- [[ftp-credit-spread-and-capital-charge-operationalize-deal-level-raroc]] — tích hợp tổn thất kỳ vọng EL và chi phí phân bổ vốn vào hợp đồng tín dụng theo RAROC
+- [[balance-sheet-optimization-models-calibrate-ftp-as-a-control-variable]] — mô hình tối ưu hóa bảng cân đối hiệu chuẩn FTP làm biến điều khiển
+- [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]] — ràng buộc thanh khoản LCR và NSFR áp đặt chi phí huy động biên lên biểu giá FTP
+- [[contingency-liquidity-and-embedded-optionality-require-specialized-ftp-add-ons]] — các cấu phần phụ phí thanh khoản dự phòng và quyền chọn ngầm định
+- [[climate-risk-transmission-channels-impact-bank-balance-sheets-and-ftp-pricing]] — kênh truyền dẫn rủi ro khí hậu tác động lên bảng cân đối và phụ phí FTP
+- [[vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu]] — mô hình quản trị FTP ngân hàng Việt Nam tập trung rủi ro qua Trung tâm CFU và Hội đồng ALCO
+- [[vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing]] — cấu trúc hai vế đối xứng Giá mua vốn (VOF) và Giá bán vốn (COF) trên Thị trường 1
+- [[ftp-base-curve-construction-contrasts-vnd-historical-cost-with-usd-market-benchmarks]] — đối lập phương pháp xây dựng đường cong cơ sở VND từ chi phí huy động thực tế và USD từ SOFR/IRS
+- [[regulatory-deposit-insurance-and-statutory-reserves-apportion-into-market-1-cof]] — phân bổ chi phí dự trữ bắt buộc và bảo hiểm tiền gửi vào giá bán vốn COF
+- [[planned-nim-allocation-determines-ftp-deposit-mobilization-margins]] — phân bổ chỉ tiêu NIM kế hoạch quyết định biên độ hỗ trợ huy động tiền gửi
+- [[ftp-cost-of-equity-apportionment-bridges-raroc-and-surplus-capital]] — phân bổ chi phí vốn chủ sở hữu CoE qua thặng dư vốn tự có và mô hình RAROC dựa trên WAT danh mục
+- [[contingent-liquidity-charge-prices-undrawn-credit-commitments]] — định giá phần bù rủi ro thanh khoản tiềm tàng cho hạn mức cam kết chưa sử dụng theo BIS 2011 và CCF Thông tư 41
+- [[deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-profiles]] — quy tắc định giá VOF cho tiền gửi trả cuối kỳ, gửi góp bù spread, CASA theo Redemption Curve và sàn 15% TT22, ký quỹ và GTCG
+- [[matched-maturity-term-liquidity-spread-isolates-repricing-tenor-mismatch]] — kỹ thuật bóc tách phần bù thanh khoản kỳ hạn trong định giá COF cho khoản vay thả nổi và trả góp WAT
+- [[promotional-and-behavioral-loan-ftp-pricing-decomposes-hybrid-cash-flows]] — định giá COF cho gói vay ưu đãi bóc tách cấu phần và mô hình hành vi xử lý quyền chọn tất toán trước hạn
+- [[interbank-market-2-ftp-curve-construction-relies-on-peer-quotes-and-vnibor]] — đường cong FTP Thị trường 2 qua bình quân mid-rate nhóm NHTMCP cùng Peer (lọc ngoại lai $\pm 15\%$) và tham chiếu VNIBOR 1 tuần
+- [[treasury-business-unit-ftp-governance-balances-desk-level-and-net-portfolio-transfers]] — cơ chế điều chuyển vốn cho Khối QL&KDV giữa mô hình từng Desk kinh doanh và bù trừ trạng thái ròng toàn khối gắn với hạn mức 30 ngày
+- [[contractual-amendment-ftp-repricing-rules-govern-loan-and-deposit-restructuring]] — quy tắc tái định giá FTP khi thay đổi điều kiện hợp đồng tín dụng/tiền gửi, lịch nợ WAT và ngưỡng can thiệp ALCO $\pm 0{,}2\%$
+- [[non-earning-asset-and-nostro-vostro-ftp-treatment-precludes-double-counting]] — nguyên tắc xử lý FTP cho tiền mặt, Nostro/Vostro, cổ phiếu đầu tư dài hạn và tài sản khác, ngăn ngừa tính trùng chi phí
+- [[ftp-reporting-architecture-synthesizes-multi-dimensional-nii-and-nim-performance]] — khung kiến trúc báo cáo FTP đo lường hiệu quả NII/NIM đa chiều và quy trình vận hành chu kỳ điều chuyển vốn nội bộ
+- [[term-liquidity-premium-matrix-calibrates-two-dimensional-floating-rate-spreads]] — ma trận phần bù thanh khoản kỳ hạn 2 chiều (kỳ tái định giá x kỳ đáo hạn) lượng hóa spread cho hợp đồng thả nổi
+- [[two-tier-ftp-operational-workflows-govern-market-1-and-market-2-cycles]] — quy trình vận hành FTP 9 bước Thị trường 1 chu kỳ quý/tháng và 9 bước Thị trường 2 tác nghiệp hàng ngày từ 9h-10h sáng
+- [[interbank-tenor-ladder-and-deal-ticket-standardization-enforce-internal-treasury-transfers]] — chuẩn hóa 21 thang kỳ hạn từ Overnight đến 120M, phiếu giao dịch vốn MB06 và báo cáo Desk MM/FX/Bond MB07
+- [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]] — khung tỷ lệ an toàn vốn 3 tầng (CAR $\ge 8\%$, Tier 1 $\ge 6\%$, CET1 $\ge 4{,}5\%$) theo Thông tư 14/2025/TT-NHNN và cơ chế đệm vốn D-SIB
+- [[standardized-approach-credit-risk-weights-and-exposure-measurement-govern-regulatory-rwa]] — phương pháp tiêu chuẩn đo lường RWA tín dụng khách hàng và rủi ro đối tác từ phơi nhiễm nội/ngoại bảng gộp
+- [[regulatory-credit-conversion-factors-apportion-off-balance-sheet-contingent-liabilities]] — hệ số chuyển đổi CCF phân tầng 4 bậc (10%, 20%, 50%, 100%) lượng hóa rủi ro cam kết ngoại bảng theo chuẩn Basel III
+- [[loan-to-value-and-specialised-lending-criteria-differentiate-real-estate-risk-weights]] — phân tầng hệ số rủi ro CRW bất động sản theo tỷ số bảo đảm LTV, ưu đãi nhà ở xã hội và danh mục tín dụng chuyên biệt
+- [[credit-risk-mitigation-framework-recognizes-collateral-netting-guarantees-and-derivatives]] — khung giảm thiểu rủi ro tín dụng CRM qua tài sản bảo đảm, bù trừ nội bảng, bảo lãnh bên thứ ba và phái sinh CDS
+- [[basel-output-floor-and-coverage-ratios-constrain-irb-capital-reductions]] — tỷ lệ sàn đầu ra Output Floor 72.5% và tỷ lệ bao phủ danh mục 70% khống chế mức giảm vốn của phương pháp IRB theo Thông tư 14/2025
+- [[regulatory-default-definition-and-multi-tier-portfolio-segmentation-anchor-irb-models]] — tiêu chuẩn nhận diện khách hàng vỡ nợ (quá hạn 90 ngày / suy giảm khả năng trả nợ) và phân đoạn danh mục Doanh nghiệp, Bán lẻ, Khoản phải thu
+- [[asymptotic-single-risk-factor-model-derives-corporate-irb-risk-weighted-assets]] — hàm tính RWA danh mục Doanh nghiệp theo mô hình ASRF, sàn tham số PD 0.05%, LGD quy chuẩn 40%–75% và điều chỉnh quy mô SME
+- [[retail-irb-portfolio-risk-weights-calibrate-mortgage-revolving-and-other-retail-correlations]] — phân tầng RWA bán lẻ qua 3 nhóm tương quan (thế chấp nhà ở $R=0{,}15$, thẻ quay vòng $R=0{,}04$, bán lẻ khác) và hệ thống sàn tham số PD/LGD
+- [[expected-loss-and-provisioning-shortfall-mechanics-adjust-regulatory-capital]] — cơ chế đối ứng tổn thất dự kiến EL và dự phòng rủi ro: khấu trừ thiếu hụt vào vốn lõi CET1 và giới hạn cộng thặng dư 0.6% RWA vào Vốn cấp 2
+- [[irb-governance-use-test-and-validation-standards-anchor-internal-ratings-credibility]] — khuôn khổ quản trị ba tuyến bảo vệ, thử nghiệm sử dụng (Use Test) 2 năm và chuẩn mực kiểm định mô hình định kỳ hàng năm
+- [[standardized-measurement-approach-and-internal-loss-multiplier-govern-operational-risk-capital]] — phương pháp đo lường chuẩn hóa SMA xác định vốn rủi ro hoạt động từ BIC (3 bậc lũy tiến) và hệ số tổn thất nội bộ ILM
+- [[trading-book-and-banking-book-boundary-enforces-market-risk-containment]] — ranh giới pháp lý phân định Sổ kinh doanh và Sổ ngân hàng, nguyên tắc chuyển dịch một chiều và cấm tuyệt đối chuyển tài sản từ Banking Book sang Trading Book
+- [[market-risk-capital-requirements-aggregate-interest-equity-fx-and-commodity-charges]] — tổng hợp vốn yêu cầu cho 5 trạng thái rủi ro thị trường (lãi suất, cổ phiếu, ngoại hối, hàng hóa, quyền chọn) và ngưỡng miễn trừ 2% vốn tự có
+- [[subordinated-debt-amortization-and-eligibility-criteria-govern-tier-2-capital]] — tiêu chuẩn nợ thứ cấp Vốn cấp 2, cơ chế khấu hao điều tiết 20%/năm trong 5 năm cuối, trần dự phòng 1.25% SA / 0.6% IRB và lộ trình bãi bỏ Thông tư 41/2016
+- [[counterparty-credit-risk-framework-measures-derivative-replacement-cost-and-potential-future-exposure]] — đo lường RWA rủi ro tín dụng đối tác cho phái sinh qua chi phí thay thế RC, PFE ma trận Add-on và chiết khấu TSBĐ
+- [[securities-financing-transactions-and-bilateral-netting-govern-counterparty-exposures]] — cơ chế phơi nhiễm giao dịch Repo/Reverse Repo (SFTs), chế tài rủi ro thanh toán leo thang đến trừ vốn tự có và bù trừ song phương Netting
+- [[supervisory-approval-and-technical-documentation-standards-govern-irb-rollout]] — quy trình thẩm định phê chuẩn giám sát của NHNN và hồ sơ kỹ thuật vận hành song song (Parallel Run) triển khai phương pháp IRB
+
+**Hệ thống Kiểm soát Nội bộ & Quản trị Rủi ro Ngân hàng (Thông tư 83/2025/TT-NHNN)**
+- [[three-lines-of-defense-framework-enforces-banking-internal-control-and-risk-oversight]] — mô hình Ba tuyến bảo vệ độc lập: Tuyến 1 nhận diện kiểm soát tại nguồn, Tuyến 2 Quản trị rủi ro & Tuân thủ độc lập, Tuyến 3 Kiểm toán nội bộ trực thuộc Ban kiểm soát
+- [[senior-management-oversight-and-conflict-of-interest-containment-anchor-banking-governance]] — cơ chế giám sát của quản lý cấp cao, phân định thẩm quyền HĐQT - TGĐ, hệ thống Hội đồng ALCO, Hội đồng Rủi ro, Hội đồng Quản lý Vốn và kiểm soát xung đột lợi ích
+- [[credit-underwriting-and-approval-controls-enforce-operational-independence]] — kiểm soát nội bộ hoạt động cấp tín dụng: phân lập độc lập thẩm định, phê duyệt, quản lý nợ có vấn đề / dự phòng và quan hệ khách hàng; kiểm soát tín dụng điện tử
+- [[proprietary-trading-internal-controls-mandate-front-middle-back-office-segregation]] — kiểm soát nội bộ giao dịch tự doanh: phân định ba khối Front - Middle - Back Office, kiểm tra giá độc lập IPV, ghi âm đàm thoại 2 tháng và khóa tem thời gian hệ thống
+- [[risk-appetite-framework-and-capital-targets-anchor-multi-year-risk-strategy]] — khung khẩu vị rủi ro và chiến lược đa năm (3–5 năm), chỉ tiêu CAR mục tiêu, ROE, RAROC và quy trình kiểm soát sản phẩm mới
+- [[credit-risk-governance-mandates-portfolio-limits-and-problem-credit-containment]] — quản trị rủi ro tín dụng: trần hạn mức danh mục, định giá bù đắp rủi ro tín dụng và cơ chế xử lý nợ có vấn đề (từ nhóm 2 trở lên)
+- [[liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans]] — quản trị rủi ro thanh khoản: chênh lệch dòng tiền ròng, đệm tài sản thanh khoản cao HQLA, stress test 3 kịch bản và kế hoạch dự phòng thanh khoản CFP
+- [[operational-risk-management-framework-mandates-rcsa-kri-and-loss-event-databases]] — quản trị rủi ro hoạt động: công cụ RCSA, chỉ số KRI, cơ sở dữ liệu sự kiện tổn thất, quản lý rủi ro thuê ngoài bên thứ ba và kế hoạch duy trì hoạt động liên tục BCP
+- [[irrbb-supervisory-framework-measures-eve-and-nii-sensitivity-across-interest-rate-shocks]] — khung giám sát rủi ro lãi suất sổ ngân hàng IRRBB: nhận dạng 3 cấu phần (Gap, Basis, Option risk), mô hình chênh lệch kỳ định lại và đo lường độ nhạy $\Delta EVE$ và $\Delta NII$
+- [[model-risk-management-framework-governs-lifecycle-and-validation-standards]] — khung quản lý rủi ro mô hình: phân loại rủi ro (IRB rủi ro cao), vòng đời mô hình 5 giai đoạn, kiểm soát ghi đè (override) và cơ chế 3 tuyến bảo vệ riêng biệt
+- [[icaap-framework-determines-economic-capital-and-target-capital-under-stress]] — quy trình đánh giá nội bộ mức đủ vốn ICAAP: xác định vốn kinh tế $C_E$, vốn mục tiêu $C_{Target}$, kiểm tra sức chịu đựng và lập kế hoạch vốn 3–5 năm đối chiếu $C_A$
+- [[irrbb-delta-eve-and-nii-standardized-measurement-governs-rate-shock-scenarios]] — phương pháp đo lường chuẩn hóa IRRBB: 19 thang kỳ hạn, mô hình hóa NMDs lõi (trần tỷ trọng/kỳ hạn), rủi ro hành vi CPR/TDRR và 6 kịch bản sốc lãi suất BCBS D578 chiết khấu $\Delta EVE$
+- [[risk-based-internal-audit-framework-enforces-third-line-oversight-and-governance]] — khung kiểm toán nội bộ định hướng theo rủi ro (RBIA): Tuyến 3 độc lập trực thuộc Ban kiểm soát, nguyên tắc cách ly 3 năm, bắt buộc kiểm toán viên công nghệ và lập kế hoạch rủi ro trước 15/12
+
+**Các Giới hạn, Tỷ lệ Bảo đảm An toàn Ngân hàng (Dự thảo thay thế Thông tư 22/2019/TT-NHNN)**
+- [[basel-iii-leverage-ratio-constrains-unweighted-balance-sheet-expansion]] — tỷ lệ đòn bẩy LEV tối thiểu 3%: chốt chặn không trọng số rủi ro Basel III ($T_1/EM$), ràng buộc chia cổ tức tiền mặt D-SIB
+- [[loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity]] — tỷ lệ dư nợ cấp tín dụng so với huy động vốn LDR tối đa 85%: công thức $C/D$, các khoản khấu trừ vốn CSH/vay nước ngoài và xử lý tiền gửi KBNN
+- [[equity-and-corporate-bond-financing-limits-curb-speculative-credit-allocation]] — giới hạn cấp tín dụng đầu tư TPDN và cổ phiếu: trần 5% vốn điều lệ, thời hạn dưới 1 năm, nợ xấu dưới 3%, vùng cấm sở hữu chéo và kiểm soát xung đột lợi ích
+- [[statutory-capital-real-value-and-remedial-mechanisms-govern-bank-solvency]] — giá trị thực của vốn điều lệ sau trích lập dự phòng/kết quả kinh doanh, chế tài can thiệp sớm dưới 80% vốn pháp định và ngưỡng thu hồi giấy phép dưới 50% hoặc kéo dài 6 tháng
+- [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]] — tỷ lệ khả năng chi trả LCR tối thiểu 100%: bộ đệm HQLA unencumbered, dòng tiền ra ròng 30 ngày (trần thu hồi 75%), cảnh báo nguy cơ mất chi trả và lộ trình 2028–2031
+- [[basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stability]] — tỷ lệ nguồn vốn ổn định ròng NSFR tối thiểu 100%: cân đối ASF/RSF 1 năm, xử lý phái sinh CVM, cặp tài sản - nợ phụ thuộc (0%/0%), điều chỉnh CSTT và lộ trình 2028–2030
+- [[sovereign-bond-holding-ceilings-and-interbank-equity-limits-contain-concentration-risk]] — trần mua TPCP tối đa 30% Tổng nợ phải trả bình quân và vành đai kiểm soát sở hữu chéo TCTD khác (tối đa 2 TCTD, trần 5%, cấm người liên quan/HĐQT)
+- [[regulatory-liquidity-transition-rules-govern-dual-track-migration-from-mtll-to-lcr-nsfr]] — cơ chế chuyển tiếp song trùng (dual-track) từ tỷ lệ vốn ngắn hạn cho vay trung dài hạn MTLL sang LCR/NSFR, quyền lợi miễn trừ MTLL khi đạt chuẩn sớm và chế tài sau 2028
+- [[hqla-eligibility-and-unwinding-haircut-mechanics-calibrate-liquidity-buffers]] — phân tầng tài sản thanh khoản cao HQLA (Cấp 1 haircut 0%, Cấp 2A haircut 15%, Cấp 2B haircut 25%–50%), cơ chế đảo ngược kỳ hạn unwinding 30 ngày và trần điều chỉnh tối đa 40% Cấp 2, 15% Cấp 2B
+- [[retail-and-wholesale-deposit-run-off-rates-differentiate-short-term-liquidity-outflows]] — ma trận hệ số rút tiền thanh khoản 30 ngày: bán lẻ/SME ổn định (5%), kém ổn định (10%–40%), bán buôn hoạt động clearing/custody (25%), bán buôn không bảo đảm (40%–100%) và Repo có bảo đảm (0%–100%)
+- [[contingent-liquidity-outflows-and-credit-facility-drawdowns-stress-test-off-balance-commitments]] — đo lường dòng tiền ra từ cam kết ngoại bảng và rủi ro gia tăng: sốc hạ 3 bậc tín nhiệm (100%), Lookback 24 tháng cho phái sinh Netting, biến động TSBĐ phi Cấp 1 (20%), phân tầng hạn mức tín dụng/thanh khoản (5%–100%) và tài trợ thương mại L/C (3%)
+- [[contractual-cash-inflow-caps-and-counterparty-haircuts-govern-net-lcr-measurement]] — đo lường dòng tiền vào hợp đồng 30 ngày: thu nợ bán lẻ/SME (50%), doanh nghiệp (50%), định chế tài chính (100%), Reverse Repo (0%–100%), loại trừ hạn mức cam kết nhận được (0%) và trần khống chế dòng tiền vào tối đa 75% tổng dòng tiền ra
+- [[asf-and-rsf-factor-matrices-calibrate-nsfr-structural-funding-requirements]] — ma trận hệ số nguồn vốn ổn định sẵn có ASF (5 bậc: 100%–0%) và nguồn vốn ổn định yêu cầu RSF (8 bậc: 0%–100%) lượng hóa tỷ lệ cân đối cấu trúc 1 năm
+- [[leverage-ratio-exposure-measure-aggregates-on-balance-derivatives-and-off-balance-commitments]] — phương pháp xác định tổng trạng thái rủi ro EM: trừ 80% dự phòng chung nội bảng, 4 điều kiện hạch toán gộp tiền mặt cash pooling, phái sinh SA-CCR $1{,}4 \times (RC + PFE)$ và CCF ngoại bảng
+- [[pillar-3-liquidity-disclosure-standards-mandate-qualitative-and-quantitative-market-transparency]] — chuẩn mực công bố thông tin thanh khoản định kỳ 6 tháng Trụ cột 3: minh bạch hóa định tính (mô hình ALM tập trung, độc lập với kinh doanh) và định lượng (LCR, NSFR, LDR, đa dạng hóa nguồn tài trợ)

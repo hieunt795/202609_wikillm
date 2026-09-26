@@ -1,0 +1,26 @@
+---
+title: standardized-measurement-approach-and-internal-loss-multiplier-govern-operational-risk-capital
+type: concept
+tags: [banking, operational-risk, capital-adequacy, standardized-approach, basel-iii, regulation]
+sources: [sbv_circular_14_2025]
+status: draft
+last_updated: 2026-09-26
+---
+
+Phương pháp đo lường chuẩn hóa (Standardized Measurement Approach - SMA) theo Thông tư 14/2025/TT-NHNN xác lập chuẩn mực tính toán vốn yêu cầu cho rủi ro hoạt động dựa trên sự kết hợp giữa quy mô hoạt động kinh doanh và lịch sử tổn thất nội bộ thực tế của ngân hàng (sbv_circular_14_2025, file TT14_2.md, Điều 70–72, d.116–207). Đây là bước chuyển đổi mang tính nền tảng, thay thế phương pháp chỉ số cơ bản (Basic Indicator Approach - BIA) giản đơn của Thông tư 41/2016/TT-NHNN cũ bằng khung cải cách Basel III hoàn thiện (Basel III Post-Crisis Reforms). Mục tiêu của phương pháp là gắn kết trực tiếp vốn yêu cầu rủi ro hoạt động với quy mô thu nhập tài chính đồng thời tạo động lực tài chính rõ ràng để các ngân hàng nâng cao hiệu quả quản trị kiểm soát nội bộ.
+
+Vốn yêu cầu cho rủi ro hoạt động ($K_{OR}$) được định lượng qua tích số giữa Cấu phần chỉ số kinh doanh ($BIC$) và Hệ số tổn thất nội bộ ($ILM$) (sbv_circular_14_2025, file TT14_2.md, Điều 70.1, d.120–126):
+
+$$K_{OR} = BIC \times ILM$$
+
+Cấu phần chỉ số kinh doanh ($BIC$) đóng vai trò đại diện cho quy mô phơi nhiễm rủi ro vận hành xuất phát từ khối lượng hoạt động của ngân hàng. Chỉ số kinh doanh ($BI$) được tổng hợp từ ba cấu phần bình quân 03 năm liên tiếp: Cấu phần lãi, cho thuê và cổ tức ($ILDC$), Cấu phần dịch vụ và phí ($SC$), và Cấu phần tài chính từ hoạt động tự doanh, mua bán chứng khoán ($FC$) (sbv_circular_14_2025, file TT14_2.md, Điều 70.2.b, d.141–150). Nhằm phản ánh quy luật chi phí biên của rủi ro hoạt động gia tăng phi tuyến tính theo quy mô tổ chức, Thông tư áp dụng cơ chế tính lũy tiến từng phần theo 03 nhóm giá trị với hệ số biên $\alpha_i$ tăng dần:
+
+$$BIC = \sum_{i=1}^3 \alpha_i \times BI_i$$
+
+Cụ thể, Nhóm 1 áp dụng mức $\alpha_1 = 12\%$ cho phần $BI \le 600$ tỷ đồng; Nhóm 2 áp dụng mức $\alpha_2 = 15\%$ cho phần $BI$ từ trên 600 đến 18.000 tỷ đồng; và Nhóm 3 áp dụng mức biên cao nhất $\alpha_3 = 18\%$ cho phần $BI$ vượt trên 18.000 tỷ đồng (sbv_circular_14_2025, file TT14_2.md, Điều 70.2.a, d.131–139). Cơ chế phân tầng lũy tiến này đặt gánh nặng vốn tỷ lệ thuận cao hơn lên các ngân hàng thương mại có quy mô bảng cân đối và mạng lưới giao dịch lớn, nơi rủi ro công nghệ, gian lận và sai sót quy trình có tính chất phức tạp hơn.
+
+Hệ số tổn thất nội bộ ($ILM$) điều chỉnh mức vốn yêu cầu căn cứ trên kinh nghiệm tổn thất thực tế của chính ngân hàng. Cấu phần tổn thất ($LC$) được xác định bằng 15 lần giá trị tổn thất hoạt động ròng trung bình năm trên chuỗi dữ liệu lịch sử từ 05 đến 10 năm (sbv_circular_14_2025, file TT14_2.md, Điều 70.3.c, d.159–171). Thông tư quy định quy tắc an toàn bắt buộc: các ngân hàng có quy mô nhỏ với $BI \le 600$ tỷ đồng hoặc các ngân hàng có $BI > 600$ tỷ đồng nhưng chưa tích lũy đủ chuỗi dữ liệu tổn thất lịch sử tối thiểu 05 năm đều bắt buộc phải áp dụng $ILM = 1$ (sbv_circular_14_2025, file TT14_2.md, Điều 70.3.b, d.156–158). Điều này hàm ý ngân hàng không thể tự ý hạ thấp vốn rủi ro hoạt động nếu thiếu một cơ sở dữ liệu tổn thất đáng tin cậy đã qua kiểm định.
+
+Tiêu chuẩn thu thập dữ liệu tổn thất hoạt động được chuẩn hóa với ngưỡng vật chất bắt buộc: ngân hàng phải theo dõi và ghi nhận toàn bộ các sự kiện có giá trị tổn thất hoạt động ròng từ 12 triệu đồng trở lên (sbv_circular_14_2025, file TT14_2.md, Điều 71.1, d.175). Giá trị tổn thất ròng bao gồm chi phí tổn thất trực tiếp, phần giá trị ghi giảm tài sản (write-downs), chi phí tư vấn pháp lý và bồi thường, sau khi đã bù trừ các khoản thu hồi và số tiền bảo hiểm chi trả (sbv_circular_14_2025, file TT14_2.md, Điều 71.2–71.3, d.176–182). Các chi phí bảo dưỡng thông thường và phí bảo hiểm phòng ngừa được loại trừ (sbv_circular_14_2025, file TT14_2.md, Điều 71.4, d.183–187). Nhằm phân định ranh giới giữa các loại rủi ro và ngăn chặn tính trùng (double-counting), Thông tư quy định biến cố phát sinh đồng thời rủi ro tín dụng và rủi ro hoạt động (chẳng hạn gian lận hồ sơ vay vốn dẫn đến nợ xấu) sẽ được hạch toán hoàn toàn vào rủi ro tín dụng; ngược lại, các tổn thất phát sinh đồng thời rủi ro thị trường và rủi ro hoạt động (như gian lận giao dịch tự doanh giả mạo) bắt buộc phải thu thập vào cơ sở dữ liệu rủi ro hoạt động theo quy chuẩn tại [[operational-risk-management-framework-mandates-rcsa-kri-and-loss-event-databases]] (sbv_circular_14_2025, file TT14_2.md, Điều 72.3–72.4, d.192–194).
+
+Toàn bộ mức vốn yêu cầu $K_{OR}$ được quy đổi ngược thành tài sản có rủi ro hoạt động theo hệ số chuẩn hóa $RWA_{OR} = K_{OR} \times 12{,}5$ để tích hợp vào mẫu số tỷ lệ an toàn vốn quy định tại [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]]. Cơ chế định lượng này cung cấp cơ sở phân bổ chi phí vốn công bằng cho công tác quản trị cân đối tài sản nợ - tài sản có [[ftp-cost-of-equity-apportionment-bridges-raroc-and-surplus-capital]], ngăn ngừa tình trạng các đơn vị kinh doanh tăng trưởng doanh thu dịch vụ bất chấp rủi ro tuân thủ theo [[ftp-business-steering-functions-as-a-political-tool-for-balance-sheet-allocation]].

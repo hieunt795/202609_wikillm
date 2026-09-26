@@ -1,0 +1,21 @@
+---
+title: credit-risk-governance-mandates-portfolio-limits-and-problem-credit-containment
+type: concept
+tags: [banking, credit-risk, risk-governance, portfolio-limits, problem-loans, loan-loss-provisions, early-warning, regulation]
+sources: [sbv_circular_83_2025]
+status: draft
+last_updated: 2026-09-26
+---
+
+Khung quản trị rủi ro tín dụng theo Thông tư 83/2025/TT-NHNN thiết lập kỷ luật kiểm soát xuyên suốt vòng đời khoản cấp tín dụng, tích hợp cơ chế trần hạn mức danh mục, đo lường tổn thất định lượng và quản lý tập trung đối với các khoản nợ có vấn đề (sbv_circular_83_2025, file TT83.md, Điều 26–34 & Điều 50, d.517–614, 871–890). Chiến lược quản lý rủi ro tín dụng bắt buộc phải tính đến các yếu tố chu kỳ kinh tế vĩ mô và đặt ra các mục tiêu rõ ràng về chất lượng tài sản (tỷ lệ nợ xấu mục tiêu, tỷ lệ nợ có vấn đề mục tiêu) phân rã theo ngành kinh tế, phân khúc khách hàng và loại hình sản phẩm (sbv_circular_83_2025, file TT83.md, Điều 26.2.a–b, d.522–523). Đặc biệt, Thông tư chuẩn hóa nguyên tắc định giá khoản vay (loan pricing): lãi suất cho vay phải kết cấu đầy đủ chi phí bù đắp rủi ro tín dụng tương ứng với mức độ xếp hạng tín nhiệm của từng khách hàng, tương thích với chuẩn mực định lượng RWA tại [[standardized-approach-credit-risk-weights-and-exposure-measurement-govern-regulatory-rwa]].
+
+Hệ thống hạn mức rủi ro tín dụng vận hành như mạng lưới kiểm soát đa chiều nhằm ngăn ngừa rủi ro tập trung (Concentration Risk) (sbv_circular_83_2025, file TT83.md, Điều 26.3 & Điều 50.3.a, d.527, 885–889):
+- Hạn mức cấp tín dụng đối với một khách hàng đơn lẻ và nhóm khách hàng có liên quan so với vốn tự có và tổng dư nợ toàn hàng;
+- Hạn mức dư nợ theo từng ngành kinh tế, lĩnh vực kinh doanh tiềm ẩn rủi ro cao (như bất động sản, năng lượng tái tạo, dự án BOT/BT);
+- Hạn mức theo sản phẩm tín dụng và theo các hình thức tài sản bảo đảm (TSBĐ).
+
+Công tác giám sát danh mục đòi hỏi sự kết hợp chặt chẽ giữa giám sát từ xa qua hệ thống chỉ báo cảnh báo sớm (Early Warning Systems - EWS) và kiểm tra tại chỗ đối với tình hình hoạt động của bên vay (sbv_circular_83_2025, file TT83.md, Điều 28.2.d–đ, d.546–547). Ngân hàng phải vận hành hệ thống xếp hạng tín dụng nội bộ đa tiêu chí, định kỳ tối thiểu hàng năm phải được một bộ phận độc lập kiểm định lại để làm căn cứ phân loại nợ và trích lập dự phòng tổn thất (sbv_circular_83_2025, file TT83.md, Điều 27, d.529–537). Mọi quyết định có rủi ro tín dụng theo cơ chế hội đồng bắt buộc phải lập biên bản, ghi nhận đầy đủ ý kiến phản biện và gắn trách nhiệm cá nhân giải trình của từng thành viên bỏ phiếu (sbv_circular_83_2025, file TT83.md, Điều 30.2, d.564).
+
+Khâu kiểm soát trọng yếu là quản lý các khoản cấp tín dụng có vấn đề — được định nghĩa tại Điều 3.28 là các khoản nợ được phân loại từ nhóm 2 (nợ cần chú ý) trở lên hoặc các khoản vay có dấu hiệu suy giảm khả năng trả nợ (sbv_circular_83_2025, file TT83.md, Điều 32, d.579–589). Khi một khoản vay rơi vào danh mục nợ có vấn đề, ngân hàng phải kích hoạt quy trình xử lý tăng cường: tái đánh giá khả năng thu hồi dòng tiền, thẩm định lại năng lực bảo lãnh của bên thứ ba, rà soát tính thanh khoản của tài sản bảo đảm theo [[credit-risk-mitigation-framework-recognizes-collateral-netting-guarantees-and-derivatives]], lập kế hoạch thu hồi nợ chi tiết và tiến hành xử lý trách nhiệm cá nhân, bộ phận liên quan nếu có sai phạm tác nghiệp (sbv_circular_83_2025, file TT83.md, Điều 32.2, d.582–588).
+
+Đối với công tác quản lý tài sản bảo đảm, ngân hàng phải ban hành quy chế định giá độc lập, trong đó các tài sản có mức độ biến động giá trị thị trường lớn (như cổ phiếu niêm yết, kim loại quý, bất động sản nghỉ dưỡng) bắt buộc phải được đánh giá lại với tần suất dày hơn (sbv_circular_83_2025, file TT83.md, Điều 33.1.c, d.595). Tính đầy đủ của dự phòng rủi ro và các thiếu hụt tổn thất dự kiến phải được đối chiếu định kỳ theo cơ chế của [[expected-loss-and-provisioning-shortfall-mechanics-adjust-regulatory-capital]], dưới sự phân lập nghiêm ngặt giữa bộ phận thẩm định, phê duyệt và thu hồi nợ theo [[credit-underwriting-and-approval-controls-enforce-operational-independence]].

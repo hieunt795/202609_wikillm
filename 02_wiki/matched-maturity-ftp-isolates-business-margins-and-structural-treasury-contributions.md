@@ -2,9 +2,9 @@
 title: matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions
 type: concept
 tags: [alm, ftp, nim, matched-maturity, structural-contribution, treasury]
-sources: [tata_bank_alm]
-status: stable
-last_updated: 2026-09-23
+sources: [tata_bank_alm, ftp_transmission_analysis, vab_ftp_methodology]
+status: draft
+last_updated: 2026-09-26
 ---
 
 Phương pháp cân khớp kỳ hạn (Matched Maturity Method) là kỹ thuật triển khai chuẩn mực trong hệ thống [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]], cho phép bóc tách biên thu nhập lãi thuần (Net Interest Margin — NIM) tổng thể của ngân hàng thành các phần biên đóng góp độc lập của từng bộ phận kinh doanh và phần đóng góp cấu trúc thuộc về khối Nguồn vốn (Treasury) (tata_bank_alm, Ch.2, Net Interest Margin, d.1591; tata_bank_alm, Ch.2, Transfer Price Curve, d.1617). NIM là chênh lệch giữa doanh thu lãi ($II$) và chi phí lãi ($IE$); tuy nhiên một phép tính NIM thuần túy không thể trả lời câu hỏi: phần lợi nhuận tạo ra thuộc về công lao của bộ phận huy động tiền gửi hay bộ phận cho vay khách hàng (tata_bank_alm, Ch.2, Net Interest Margin, d.1599).
@@ -18,4 +18,7 @@ Khoản đóng góp cấu trúc 1% chính là thù lao kinh tế bù đắp cho 
 1. **Rủi ro tái tài trợ ([[liquidity-risk]])**: Tại thời điểm kết thúc năm thứ nhất, tiền gửi khách hàng đáo hạn trong khi vốn vẫn bị giam chặt ở khoản vay 2 năm; nếu không thể huy động được nguồn tiền gửi thay thế hoặc thị trường đóng băng, ngân hàng sẽ đối mặt với khủng hoảng thiếu hụt thanh khoản (tata_bank_alm, Ch.2, Structural Contribution, d.1633);
 2. **Rủi ro lãi suất ([[interest-rate-gap-risk-stems-from-repricing-timing-mismatches]])**: Do lãi suất tiền gửi chỉ cố định trong 1 năm, nếu lãi suất thị trường tăng vọt trong năm thứ hai, Treasury sẽ buộc phải đảo nợ nguồn vốn mới với chi phí lãi cao hơn, dẫn tới nguy cơ xói mòn hoặc đảo chiều âm toàn bộ biên thu nhập lãi thuần (tata_bank_alm, Ch.2, Structural Contribution, d.1633).
 
-Nhờ kỹ thuật Matched Maturity kết hợp bóc tách rủi ro theo [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]], khối kinh doanh được bảo vệ hoàn toàn trước các biến động thị trường để tập trung tối ưu hóa biên độ thương mại, trong khi rủi ro cấu trúc được tập trung quản trị tại một đầu mối duy nhất.
+Bên cạnh việc chuyển giao rủi ro thụ động, khối ALM sử dụng phương pháp cân khớp kỳ hạn để chủ động điều hòa khe hở định giá lại (repricing gap) và quản trị rủi ro cơ sở (basis risk) (ftp_transmission_analysis, d.75–92). Khi độ nhạy thu nhập lãi thuần ($\Delta NII$) hoặc độ nhạy giá trị kinh tế của vốn chủ sở hữu ($\Delta EVE$) tiếp cận hạn mức quy định, khối ALM điều chỉnh đường cong FTP để phạt các kỳ hạn có khe hở định giá lớn hoặc thưởng lãi suất cho các hợp đồng khớp kỳ hạn theo [[ftp-transmission-channels-steer-bank-balance-sheet-risks]]. Đồng thời, đối với các giao dịch mà tài sản và nợ tham chiếu theo các chỉ số lãi suất khác nhau (như VNIBOR so với lãi suất điều hành), phòng Nguồn vốn thiết lập đường cong FTP riêng biệt cho từng chỉ số tham chiếu nhằm đo lường và phòng hộ tập trung chi phí rủi ro cơ sở theo [[balance-sheet-optimization-models-calibrate-ftp-as-a-control-variable]] (ftp_transmission_analysis, d.87–92).
+
+Nhờ kỹ thuật Matched Maturity kết hợp bóc tách rủi ro theo [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]], khối kinh doanh được bảo vệ hoàn toàn trước các biến động thị trường để tập trung tối ưu hóa biên độ thương mại, trong khi rủi ro cấu trúc được tập trung quản trị tại một đầu mối duy nhất thông qua cơ chế điều hòa vốn của [[treasury-business-unit-ftp-governance-balances-desk-level-and-net-portfolio-transfers]] (vab_ftp_methodology, Điều 10, d.1143–1160).
+

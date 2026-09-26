@@ -1,0 +1,30 @@
+---
+title: securities-financing-transactions-and-bilateral-netting-govern-counterparty-exposures
+type: concept
+tags: [banking, ccr, repo, sfts, settlement-risk, bilateral-netting, isda, regulation]
+sources: [sbv_circular_14_2025]
+status: draft
+last_updated: 2026-09-26
+---
+
+Cơ chế quản lý rủi ro đối với các giao dịch tài trợ chứng khoán (Securities Financing Transactions - SFTs), rủi ro thanh toán và bù trừ song phương theo Thông tư 14/2025/TT-NHNN thiết lập các nguyên tắc định lượng phơi nhiễm ròng và phòng ngừa rủi ro đứt gãy thanh toán trên thị trường tiền tệ và thị trường vốn (sbv_circular_14_2025, file TT14_2.md, Phụ lục II Mục 5–10, d.783–850). Các giao dịch mua bán có kỳ hạn (Repo và Reverse Repo) cùng các hợp đồng bù trừ phái sinh song phương là huyết mạch luân chuyển thanh khoản liên ngân hàng, nhưng cũng tiềm ẩn rủi ro lây lan hệ thống khi các bên đối tác gặp trục trặc thanh khoản hoặc xảy ra tranh chấp pháp lý trong thanh toán bù trừ.
+
+Đối với các giao dịch mua bán có kỳ hạn (Repo và Reverse Repo), tài sản tính theo rủi ro tín dụng đối tác ($RWA_{CCR}$) được đo lường dựa trên sự chênh lệch giá trị giữa nghĩa vụ tiền mặt và tài sản cơ sở đã điều chỉnh mức chiết khấu an toàn (sbv_circular_14_2025, file TT14_2.md, Phụ lục II Mục 5, d.783–797). Đối với bên bán có kỳ hạn (Repo, tức bên vay tiền và chuyển giao chứng khoán cơ sở), phơi nhiễm phát sinh khi giá trị thị trường của tài sản cơ sở vượt quá số tiền vay mượn đã chiết khấu; ngược lại, đối với bên mua có kỳ hạn (Reverse Repo, tức bên cho vay tiền và nhận chứng khoán bảo đảm), phơi nhiễm phát sinh khi số tiền cam kết mua lại của đối tác lớn hơn giá trị thanh lý của tài sản cơ sở:
+
+$$RWA_{CCR} = \max\Big(E_j - C_j \times (1 - H_c - H_{fx}), 0\Big) \times CRW$$
+
+Trong đó $E_j$ và $C_j$ lần lượt là giá trị phơi nhiễm danh nghĩa và tài sản đối ứng tùy theo vị thế bên mua hay bên bán, $H_c$ là hệ số chiết khấu biến động giá của chứng khoán cơ sở theo Điều 26, $H_{fx} = 8\%$ là hệ số chiết khấu phòng ngừa rủi ro tỷ giá khi đồng tiền giao dịch tiền mặt khác với đồng tiền định giá của tài sản cơ sở, và $CRW$ là hệ số rủi ro tín dụng của đối tác (sbv_circular_14_2025, file TT14_2.md, Phụ lục II Mục 5, d.787–791). Cơ chế này buộc các bên tham gia giao dịch Repo phải duy trì tỷ lệ ký quỹ bảo đảm (haircut) đầy đủ nhằm triệt tiêu hoàn toàn phơi nhiễm tín dụng đối tác.
+
+Rủi ro thanh toán (Settlement Risk) phát sinh khi một giao dịch tài chính đã đến hạn nhưng đối tác không thực hiện nghĩa vụ giao tiền hoặc giao chứng khoán theo đúng cam kết được Thông tư phân hóa theo hai cơ chế xử lý nghiêm ngặt (sbv_circular_14_2025, file TT14_2.md, Phụ lục II Mục 7–8, d.806–834):
+- **Giao dịch thanh toán đồng thời (Delivery-versus-Payment / Payment-versus-Payment - DVP/PVP)**: Nếu sau 05 ngày làm việc kể từ ngày cam kết mà giao dịch chưa được đối tác quyết toán, ngân hàng phải tính $RWA_{CCR}$ trên số dư chưa thanh toán ($GD$) với hệ số rủi ro $r$ leo thang phi tuyến tính theo số ngày chậm trả: $8\%$ (chậm từ 5 đến 15 ngày), $50\%$ (chậm từ 16 đến 30 ngày), $75\%$ (chậm từ 31 đến 45 ngày), và $100\%$ (chậm từ 46 ngày trở lên) (sbv_circular_14_2025, file TT14_2.md, Phụ lục II Mục 7, d.806–822).
+- **Giao dịch không thanh toán đồng thời (Non-DVP)**: Đây là trạng thái rủi ro nghiêm trọng nhất, xảy ra khi ngân hàng đã chuyển giao tiền hoặc tài sản cho đối tác nhưng đối tác chưa chuyển giao nghĩa vụ đối ứng. Trong vòng 05 ngày làm việc đầu tiên, ngân hàng tính $RWA_{CCR} = E_j \times CRW$. Tuy nhiên, nếu sau 05 ngày làm việc mà đối tác vẫn không thực hiện nghĩa vụ, Thông tư áp đặt chế tài giám sát cao nhất: ngân hàng bắt buộc phải **khấu trừ trực tiếp 100% giá trị giao dịch và toàn bộ chi phí thay thế phát sinh vào vốn tự có** cho đến khi đối tác hoàn tất nghĩa vụ thanh toán (sbv_circular_14_2025, file TT14_2.md, Phụ lục II Mục 8, d.814, 832–834). Răn đe này buộc các tổ chức tín dụng phải tối đa hóa việc thanh toán qua các hệ thống thanh toán bù trừ chứng khoán tập trung đạt chuẩn DVP.
+
+Khuôn khổ bù trừ song phương (Bilateral Netting) cho phép các tổ chức tín dụng có ký kết thỏa thuận bù trừ khung có hiệu lực pháp lý (như hợp đồng mẫu ISDA Master Agreement) được bù trừ dòng tiền và phơi nhiễm rủi ro giữa các hợp đồng phái sinh riêng lẻ (sbv_circular_14_2025, file TT14_2.md, Phụ lục II Mục 9–10, d.836–848). Để được công nhận hiệu lực giảm thiểu vốn, thỏa thuận bù trừ phải có tính cưỡng chế thi hành ngay cả khi đối tác rơi vào tình trạng mất khả năng thanh toán, phá sản hoặc thanh lý, đồng thời không chứa điều khoản hạn chế thanh toán bất đối xứng (walkaway clause).
+
+Khi thỏa thuận bù trừ song phương đủ điều kiện pháp lý, chỉ số phơi nhiễm tương lai trạng thái rủi ro sau bù trừ ($A_{Net}$) được xác định dựa trên tỷ lệ chi phí thay thế ròng trên chi phí thay thế gộp ($NGR$ - Net-to-Gross Ratio) (sbv_circular_14_2025, file TT14_2.md, Phụ lục II Mục 10, d.840–848):
+
+$$A_{Net} = (0{,}4 + 0{,}6 \times NGR) \times A_{Gross}$$
+
+Trong đó $A_{Gross}$ là tổng giá trị phơi nhiễm tương lai gộp của tất cả các giao dịch thành phần tính theo quy tắc của [[counterparty-credit-risk-framework-measures-derivative-replacement-cost-and-potential-future-exposure]], và $NGR = \max(\sum V_i, 0) / \sum \max(V_i, 0)$ là tỷ số giữa giá trị thay thế thị trường ròng trên tổng giá trị thay thế thị trường gộp. Công thức hiệu chỉnh $0{,}4 + 0{,}6 \times NGR$ thể hiện tính thận trọng sâu sắc của Basel: ngay cả khi danh mục phái sinh được đối ứng hoàn hảo khiến giá trị ròng bằng 0 ($NGR = 0$), ngân hàng vẫn phải duy trì tối thiểu $40\%$ giá trị phơi nhiễm $A_{Gross}$ làm đệm phòng ngừa rủi ro tương quan, rủi ro mô hình và rủi ro thời gian xử lý thanh lý vị thế (Close-out risk).
+
+Khuôn khổ quản trị SFTs và bù trừ song phương này bổ trợ trực tiếp cho các công cụ giảm thiểu rủi ro tại [[credit-risk-mitigation-framework-recognizes-collateral-netting-guarantees-and-derivatives]], kiểm soát rủi ro thị trường phát sinh trên sổ kinh doanh theo [[trading-book-and-banking-book-boundary-enforces-market-risk-containment]], và nâng cao kỷ luật an toàn vốn toàn diện cho hệ thống ngân hàng.

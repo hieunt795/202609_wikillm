@@ -1041,3 +1041,85 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - sterilization stub → draft (IMF d.3969, d.5060–5062, d.5082; Cargill d.3979); 2 stub mới: managed-float, parallel-foreign-exchange-market
 - 13 link chèn vào câu có sẵn (7 managed-float, 6 parallel-…; bỏ underground-economy vì "chợ đen" ở đó là kinh tế ngầm)
 - Không đổi phần nguồn còn lại; state 2 nguồn + index §Sources đã cập nhật
+
+## [2026-09-26:09-53-45] ingest | ftp_transmission_analysis
+- 3 trang mới: ftp-transmission-channels-steer-bank-balance-sheet-risks, ftp-credit-spread-and-capital-charge-operationalize-deal-level-raroc, balance-sheet-optimization-models-calibrate-ftp-as-a-control-variable
+- 3 trang cập nhật (stable → draft): funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks, regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp, matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions; 0 stub mới
+- Nguồn hoàn tất 100%; kê thêm nguồn dài vab_ftp_methodology (chưa ingest, state file đã dựng); index §Sources + bản kê đã cập nhật
+
+## [2026-09-26:09-58-27] ingest | vab_ftp_methodology d.1–530
+- 5 trang mới: vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu, vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing, ftp-base-curve-construction-contrasts-vnd-historical-cost-with-usd-market-benchmarks, regulatory-deposit-insurance-and-statutory-reserves-apportion-into-market-1-cof, planned-nim-allocation-determines-ftp-deposit-mobilization-margins
+- 2 trang cập nhật (stable → draft): funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads, ftp-business-steering-functions-as-a-political-tool-for-balance-sheet-allocation; 0 stub mới
+- Phần còn lại: Điều 5–15 & Phụ lục (d.531–2118); state file + index §Sources đã cập nhật
+## [2026-09-26:10-04-30] ingest | vab_ftp_methodology d.531–983
+- 5 trang mới: ftp-cost-of-equity-apportionment-bridges-raroc-and-surplus-capital, contingent-liquidity-charge-prices-undrawn-credit-commitments, deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-profiles, matched-maturity-term-liquidity-spread-isolates-repricing-tenor-mismatch, promotional-and-behavioral-loan-ftp-pricing-decomposes-hybrid-cash-flows
+- 4 trang cập nhật: contingency-liquidity-and-embedded-optionality-require-specialized-ftp-add-ons (stable → draft), ftp-credit-spread-and-capital-charge-operationalize-deal-level-raroc, funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads, vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing; 0 stub mới
+- Phần còn lại: Điều 7–15 & Phụ lục (d.984–2118); state file + index §Sources đã cập nhật
+
+## [2026-09-26:10-09-24] ingest | vab_ftp_methodology d.984–1255
+- 5 trang mới: interbank-market-2-ftp-curve-construction-relies-on-peer-quotes-and-vnibor, treasury-business-unit-ftp-governance-balances-desk-level-and-net-portfolio-transfers, contractual-amendment-ftp-repricing-rules-govern-loan-and-deposit-restructuring, non-earning-asset-and-nostro-vostro-ftp-treatment-precludes-double-counting, ftp-reporting-architecture-synthesizes-multi-dimensional-nii-and-nim-performance
+- 3 trang cập nhật: vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu, matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions, vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing; 0 stub mới
+- Phần còn lại: Phụ lục 01–06 & Mẫu biểu (d.1256–2118); state file + index §Sources đã cập nhật
+
+## [2026-09-26:10-14-43] ingest | vab_ftp_methodology d.1256–2118
+- 3 trang mới: term-liquidity-premium-matrix-calibrates-two-dimensional-floating-rate-spreads, two-tier-ftp-operational-workflows-govern-market-1-and-market-2-cycles, interbank-tenor-ladder-and-deal-ticket-standardization-enforce-internal-treasury-transfers
+- 2 trang cập nhật: matched-maturity-term-liquidity-spread-isolates-repricing-tenor-mismatch, treasury-business-unit-ftp-governance-balances-desk-level-and-net-portfolio-transfers; 0 stub mới
+- Nguồn hoàn tất 100%; state file + index §Sources đã cập nhật
+
+## [2026-09-26:10-23-44] ingest | sbv_circular_14_2025 TT14_1 d.1–798
+- 5 trang mới: three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds, standardized-approach-credit-risk-weights-and-exposure-measurement-govern-regulatory-rwa, regulatory-credit-conversion-factors-apportion-off-balance-sheet-contingent-liabilities, loan-to-value-and-specialised-lending-criteria-differentiate-real-estate-risk-weights, credit-risk-mitigation-framework-recognizes-collateral-netting-guarantees-and-derivatives
+- 3 trang cập nhật: contingent-liquidity-charge-prices-undrawn-credit-commitments, ftp-credit-spread-and-capital-charge-operationalize-deal-level-raroc, regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp; 0 stub mới
+- Phần còn lại: TT14_1 d.799–1583 (Chương III IRB) và TT14_2; state file + index §Sources đã cập nhật
+
+## [2026-09-26:10-29-33] ingest | sbv_circular_14_2025 TT14_1 d.799–1583
+- 5 trang mới: basel-output-floor-and-coverage-ratios-constrain-irb-capital-reductions, regulatory-default-definition-and-multi-tier-portfolio-segmentation-anchor-irb-models, asymptotic-single-risk-factor-model-derives-corporate-irb-risk-weighted-assets, retail-irb-portfolio-risk-weights-calibrate-mortgage-revolving-and-other-retail-correlations, expected-loss-and-provisioning-shortfall-mechanics-adjust-regulatory-capital
+- 3 trang cập nhật: three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds, standardized-approach-credit-risk-weights-and-exposure-measurement-govern-regulatory-rwa, ftp-credit-spread-and-capital-charge-operationalize-deal-level-raroc; 0 stub mới
+- Hoàn tất 100% file TT14_1.md; phần còn lại: TT14_2 (d.1–1788); state file + index §Sources đã cập nhật
+
+## [2026-09-26:10-35-30] ingest | sbv_circular_14_2025 TT14_2 d.1–750
+- 5 trang mới: irb-governance-use-test-and-validation-standards-anchor-internal-ratings-credibility, standardized-measurement-approach-and-internal-loss-multiplier-govern-operational-risk-capital, trading-book-and-banking-book-boundary-enforces-market-risk-containment, market-risk-capital-requirements-aggregate-interest-equity-fx-and-commodity-charges, subordinated-debt-amortization-and-eligibility-criteria-govern-tier-2-capital
+- 3 trang cập nhật: three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds, regulatory-default-definition-and-multi-tier-portfolio-segmentation-anchor-irb-models, treasury-business-unit-ftp-governance-balances-desk-level-and-net-portfolio-transfers; 0 stub mới
+- Phần còn lại: TT14_2 d.751–1788 (Chunk 4: Phụ lục II–VIII); state file + index §Sources đã cập nhật
+
+## [2026-09-26:10-39-30] ingest | sbv_circular_14_2025 TT14_2 d.751–1788
+- 3 trang mới: counterparty-credit-risk-framework-measures-derivative-replacement-cost-and-potential-future-exposure, securities-financing-transactions-and-bilateral-netting-govern-counterparty-exposures, supervisory-approval-and-technical-documentation-standards-govern-irb-rollout
+- 3 trang cập nhật: standardized-approach-credit-risk-weights-and-exposure-measurement-govern-regulatory-rwa, credit-risk-mitigation-framework-recognizes-collateral-netting-guarantees-and-derivatives, irb-governance-use-test-and-validation-standards-anchor-internal-ratings-credibility; 0 stub mới
+- Nguồn hoàn tất 100% (cả 4/4 chunk); state file + index §Sources đã cập nhật
+
+## [2026-09-26:10-50-45] ingest | sbv_circular_83_2025 TT83 d.1–352
+- 4 trang mới: three-lines-of-defense-framework-enforces-banking-internal-control-and-risk-oversight, senior-management-oversight-and-conflict-of-interest-containment-anchor-banking-governance, credit-underwriting-and-approval-controls-enforce-operational-independence, proprietary-trading-internal-controls-mandate-front-middle-back-office-segregation
+- 3 trang cập nhật: irb-governance-use-test-and-validation-standards-anchor-internal-ratings-credibility, trading-book-and-banking-book-boundary-enforces-market-risk-containment, treasury-business-unit-ftp-governance-balances-desk-level-and-net-portfolio-transfers; 0 stub mới
+- Phần còn lại: Chunk 2 (d.353–955) & Chunk 3 (d.956–1928); state file + index §Sources đã cập nhật
+
+## [2026-09-26:10-56-15] ingest | sbv_circular_83_2025 TT83 d.353–955
+- 5 trang mới: risk-appetite-framework-and-capital-targets-anchor-multi-year-risk-strategy, credit-risk-governance-mandates-portfolio-limits-and-problem-credit-containment, liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans, operational-risk-management-framework-mandates-rcsa-kri-and-loss-event-databases, irrbb-supervisory-framework-measures-eve-and-nii-sensitivity-across-interest-rate-shocks
+- 5 trang cập nhật: interest-rate-risk-in-the-banking-book-irrbb, contingent-liquidity-charge-prices-undrawn-credit-commitments, standardized-measurement-approach-and-internal-loss-multiplier-govern-operational-risk-capital, three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds, credit-underwriting-and-approval-controls-enforce-operational-independence; 0 stub mới
+- Phần còn lại: Chunk 3 (d.956–1928); state file + index §Sources đã cập nhật
+
+## [2026-09-26:11-04-00] ingest | sbv_circular_83_2025 TT83 d.956–1928
+- 4 trang mới: model-risk-management-framework-governs-lifecycle-and-validation-standards, icaap-framework-determines-economic-capital-and-target-capital-under-stress, irrbb-delta-eve-and-nii-standardized-measurement-governs-rate-shock-scenarios, risk-based-internal-audit-framework-enforces-third-line-oversight-and-governance
+- 5 trang cập nhật: model-governance-for-ai-in-alm-balances-predictive-power-against-black-box-opacity, ftp-cost-of-equity-apportionment-bridges-raroc-and-surplus-capital, multitiered-irrbb-regulatory-framework-spans-bcbs-crd-crr-and-eba-technical-standards, three-lines-of-defense-framework-enforces-banking-internal-control-and-risk-oversight, irrbb-supervisory-framework-measures-eve-and-nii-sensitivity-across-interest-rate-shocks; 0 stub mới
+- Nguồn hoàn tất 100% (cả 3/3 chunk, 13 trang concept mới); state file + manifest + index §Sources đã cập nhật
+
+## [2026-09-26:11-20-00] ingest | sbv_draft_circular_replace_22 d.1–406
+- 4 trang mới: basel-iii-leverage-ratio-constrains-unweighted-balance-sheet-expansion, loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity, equity-and-corporate-bond-financing-limits-curb-speculative-credit-allocation, statutory-capital-real-value-and-remedial-mechanisms-govern-bank-solvency
+- 3 trang cập nhật: credit-underwriting-and-approval-controls-enforce-operational-independence, deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-profiles, three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds; 0 stub mới
+- Phần còn lại: Chunk 2 (d.407–872), Chunk 3 (d.873–1713) & Chunk 4 (d.1714–2009); state file + index §Sources đã cập nhật
+
+## [2026-09-26:11-25-00] ingest | sbv_draft_circular_replace_22 d.407–872
+- 4 trang mới: basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers, basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stability, sovereign-bond-holding-ceilings-and-interbank-equity-limits-contain-concentration-risk, regulatory-liquidity-transition-rules-govern-dual-track-migration-from-mtll-to-lcr-nsfr
+- 3 trang cập nhật: regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp, liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans, deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-profiles; 0 stub mới
+- Phần còn lại: Chunk 3 (d.873–1713) & Chunk 4 (d.1714–2009); state file + index §Sources đã cập nhật
+
+## [2026-09-26:11-30-00] ingest | sbv_draft_circular_replace_22 d.873–1713
+- 4 trang mới: hqla-eligibility-and-unwinding-haircut-mechanics-calibrate-liquidity-buffers, retail-and-wholesale-deposit-run-off-rates-differentiate-short-term-liquidity-outflows, contingent-liquidity-outflows-and-credit-facility-drawdowns-stress-test-off-balance-commitments, contractual-cash-inflow-caps-and-counterparty-haircuts-govern-net-lcr-measurement
+- 3 trang cập nhật: basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers, contingent-liquidity-charge-prices-undrawn-credit-commitments, regulatory-credit-conversion-factors-apportion-off-balance-sheet-contingent-liabilities; 0 stub mới
+- Phần còn lại: Chunk 4 (d.1714–2009); state file + index §Sources đã cập nhật
+
+## [2026-09-26:11-35-00] ingest | sbv_draft_circular_replace_22 d.1714–2009
+- 3 trang mới: asf-and-rsf-factor-matrices-calibrate-nsfr-structural-funding-requirements, leverage-ratio-exposure-measure-aggregates-on-balance-derivatives-and-off-balance-commitments, pillar-3-liquidity-disclosure-standards-mandate-qualitative-and-quantitative-market-transparency
+- 3 trang cập nhật: basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stability, basel-iii-leverage-ratio-constrains-unweighted-balance-sheet-expansion, liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans; 0 stub mới
+- Nguồn hoàn tất 100% (cả 4/4 chunk, 15 trang concept mới); state file + manifest + index §Sources đã cập nhật
+
+
+

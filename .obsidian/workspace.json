@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "185693c794e8d659",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e4ba9489c082a98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ce110929fd4881c9",
+            "type": "leaf",
+            "state": {
+              "type": "llm-wiki-graphify-view",
+              "state": {},
+              "icon": "git-fork",
+              "title": "Graphify View"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9a0c18b0cea5a82a",
+    "type": "split",
+    "children": [
+      {
+        "id": "35eacad524fdae37",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d423a7153b8c9967",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "7d14b5a1b0700dbf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "bbe56c5415d482fc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 284.5
+  },
+  "right": {
+    "id": "82a18120639685fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "57866ac0bdba539b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c05f2455fab32633",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "fb5b8f0890c99644",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "cc32458711025642",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "96cec01138cf383b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "9e710d1d19272d26",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "62522ba95674622e",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {},
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "llm-wiki-graphify-view:Open Graphify View": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "ce110929fd4881c9",
+  "lastOpenFiles": [
+    "02_wiki/risk-based-internal-audit-framework-enforces-third-line-oversight-and-governance.md",
+    "02_wiki/irrbb-delta-eve-and-nii-standardized-measurement-governs-rate-shock-scenarios.md",
+    "02_wiki/icaap-framework-determines-economic-capital-and-target-capital-under-stress.md",
+    "02_wiki/model-risk-management-framework-governs-lifecycle-and-validation-standards.md",
+    "02_wiki/supervisory-approval-and-technical-documentation-standards-govern-irb-rollout.md",
+    "01_sources/Clippings/Dấu ấn “Pháp chế” trong điều hành- CDR một tỷ lệ kệch cỡm.md",
+    "02_wiki/supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital.md",
+    "02_wiki/liquidity-risk.md",
+    "Claude outputs/autolearn-blind-2026-09-25.md",
+    "Claude outputs/autolearn-eval-compare-2026-09-25-2.md",
+    "01_sources/vietnam-regulator/TT83.md",
+    "01_sources/vietnam-regulator/TT14_2.md",
+    "01_sources/vietnam-regulator/TT14_1.md",
+    "01_sources/vietnam-regulator/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md",
+    "01_sources/vietnam-regulator/VAB - Phương pháp luận FTP_sent to client_FORMATTED_011122 ALM_EY rep 21.06 ALM cmt.md",
+    "01_sources/vietnam-regulator",
+    "01_sources/New folder",
+    "01_sources/basel/ssm.ilaap_guide_201811.en.md",
+    "01_sources/basel/insights59.md",
+    "01_sources/basel/Guidelines on IRRBB and CSRBB.md",
+    "01_sources/basel/Guidelines on institutions stress testing (EBA-GL-2018-04).md",
+    "01_sources/basel/Guidelines on ICAAP ILAAP (EBA-GL-2016-10)_EN.md",
+    "01_sources/basel/Final report on Guidelines on ICAAP ILAAP (EBA-GL-2016-10).md",
+    "01_sources/basel/d368.md",
+    "01_sources/basel/bcbs238.md",
+    "01_sources/basel/bcbs155.md",
+    "01_sources/basel/bcbs144.md",
+    "01_sources/basel/BaselFramework.md",
+    "01_sources/basel",
+    "log.md.tmp.17576.2ceb29d70502",
+    "02_wiki/quasi-fiscal-operations.md.tmp.17576.52c9ef42804f",
+    "02_wiki/sed5hdka7",
+    "02_wiki/sedH53pLM",
+    "decisions.md.tmp.15376.8b536048cda1",
+    "Claude outputs/eval-review-research-iter1.html",
+    "Claude outputs/research-workspace/iteration-1/eval-3-lolr-frame-consistency/old_skill/run-1/outputs/writes"
+  ]
+}

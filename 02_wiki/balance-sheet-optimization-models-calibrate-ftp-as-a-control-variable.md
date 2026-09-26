@@ -1,0 +1,14 @@
+---
+title: balance-sheet-optimization-models-calibrate-ftp-as-a-control-variable
+type: concept
+tags: [alm, ftp, balance-sheet, optimization, nii, lcr, nsfr, car]
+sources: [ftp_transmission_analysis]
+status: draft
+last_updated: 2026-09-26
+---
+
+Mô hình tối ưu hóa bảng cân đối ngân hàng sử dụng đường cong lãi suất điều chuyển vốn nội bộ (FTP) làm biến số điều khiển trung tâm để định hình danh mục tài sản và nguồn vốn theo các mục tiêu chiến lược của ban điều hành (ftp_transmission_analysis, d.145–158). Thay vì áp đặt các hạn mức hành chính cứng nhắc cho từng chi nhánh, khối Quản trị Tài sản - Nợ (ALM) thiết lập biểu giá vốn nội bộ để tác động vào cơ chế khuyến khích lợi ích kinh tế của các khối nghiệp vụ, dẫn dắt hành vi của các bên tham gia theo hướng tối ưu hóa toàn cục (ftp_transmission_analysis, d.147–157).
+
+Bài toán tối ưu hóa thiết lập hàm mục tiêu tối đa hóa thu nhập lãi thuần tổng thể: $\max [NII] = \sum (Asset_i \times Rate_i) - \sum (Liability_j \times Cost_j)$ (ftp_transmission_analysis, d.151). Quá trình tối đa hóa này chịu sự chi phối đồng thời của năm nhóm ràng buộc an toàn vĩ mô và nội bộ: tỷ lệ đảm bảo thanh khoản $LCR \ge 100\%$, tỷ lệ nguồn vốn ổn định ròng $NSFR \ge 100\%$, độ nhạy thu nhập lãi thuần dưới các kịch bản sốc lãi suất $|\Delta NII| \le NII_{Limit}$, tỷ lệ an toàn vốn $CAR \ge 8\%$, cùng giới hạn tập trung nguồn vốn $Funding\_Concentration \le Max\%$ (ftp_transmission_analysis, d.151–155). 
+
+Để điều hướng bảng cân đối thỏa mãn đồng thời các ràng buộc trên, khối ALM hiệu chỉnh các hệ số điều chỉnh định lượng trên đường cong FTP khi các chỉ số thực tế tiếp cận ngưỡng cảnh báo (ftp_transmission_analysis, d.151). Khi tỷ lệ thanh khoản thiếu hụt, hệ thống tự động tăng phần bù thanh khoản ngắn hạn hoặc dài hạn theo các công thức quy định tại [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]]. Đối với rủi ro lãi suất, khối ALM áp dụng phụ phí chênh lệch kỳ hạn định giá $\Delta Spread_{mismatch} = \gamma \times |Gap| / Limit$ và chiết khấu lãi suất cho các giao dịch cân khớp kỳ hạn $Reward_{match} = -\delta \times (matched\_funding / total\_funding)$ thông qua [[matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions]]. Đối với rủi ro tín dụng và vốn, chi phí phân bổ vốn tăng lên khi hệ số CAR suy giảm theo kỹ thuật của [[ftp-credit-spread-and-capital-charge-operationalize-deal-level-raroc]]. Cơ chế điều khiển đa biến này hoàn thiện mạng lưới liên kết của [[ftp-transmission-channels-steer-bank-balance-sheet-risks]] và duy trì sự cân bằng bền vững cho [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]].

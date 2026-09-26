@@ -1,0 +1,18 @@
+---
+title: interbank-market-2-ftp-curve-construction-relies-on-peer-quotes-and-vnibor
+type: concept
+tags: [alm, ftp, market-2, interbank, vnibor, peer-group, yield-curve]
+sources: [vab_ftp_methodology]
+status: draft
+last_updated: 2026-09-26
+---
+
+Trong hệ thống định giá chuyển nhượng nội bộ của ngân hàng thương mại Việt Nam, đường cong lãi suất Thị trường 2 điều tiết các giao dịch mua bán vốn giữa Đơn vị Quản lý Vốn tập trung (CFU) và các bàn giao dịch thuộc Khối Quản lý & Kinh doanh Vốn (Treasury) cũng như các giao dịch liên ngân hàng (vab_ftp_methodology, Điều 9.1, d.1113–1115). Khác với đường cong cơ sở Thị trường 1 vốn được neo vào chi phí huy động bình quân thực tế của mạng lưới bán lẻ theo [[ftp-base-curve-construction-contrasts-vnd-historical-cost-with-usd-market-benchmarks]], đường cong FTP Thị trường 2 bắt buộc phải phản ánh sát chi phí cơ hội tài trợ vốn biên trên thị trường tiền tệ bán buôn và được thiết lập theo hai phương án phương pháp luận (vab_ftp_methodology, Điều 9.1, d.1115–1128).
+
+Phương án thứ nhất vận hành dựa trên lãi suất bình quân của nhóm ngân hàng thương mại cổ phần tham chiếu cùng thứ hạng tín nhiệm (Peer Group) trên thị trường liên ngân hàng (vab_ftp_methodology, Điều 9.1.a, d.1117). Để bảo đảm tính đại diện kinh tế, Hội đồng ALCO rà soát và phê duyệt danh sách định kỳ tối thiểu một năm một lần từ đề xuất của Khối Treasury và tham mưu của Phòng ALM, lựa chọn tối thiểu từ 3 đến 6 ngân hàng dựa trên bốn tiêu chí ưu tiên khắt khe: quy mô tổng tài sản tương đương; mức độ xếp hạng tín nhiệm tương đồng từ các tổ chức quốc tế uy tín như Moody's, Standard & Poor's hoặc Fitch Ratings; tần suất giao dịch thực tế thường xuyên (active) với ngân hàng; và sự tương đồng về chiến lược mô hình kinh doanh bán buôn hoặc bán lẻ (vab_ftp_methodology, Điều 9.1.a.i–iv, d.1118–1126). Lãi suất mua bán vốn TT2 được tính bằng trung bình cộng giữa lãi suất chào gửi và chào nhận (mid-rate) của nhóm Peer này (vab_ftp_methodology, Điều 9.2.a, d.1134). 
+
+Để triệt tiêu các biến dạng giá do thiếu thanh khoản cục bộ, quy trình xử lý dữ liệu của CFU tích hợp cơ chế lọc ngoại lai (outlier filter): nếu lãi suất chào của bất kỳ ngân hàng nào trong nhóm Peer vượt ngưỡng sai lệch $\pm 15\%$ so với mức giá bình quân của các ngân hàng còn lại, điểm dữ liệu đó sẽ lập tức bị loại bỏ khỏi mẫu tính toán (vab_ftp_methodology, Điều 9.2.a, d.1138). Đối với các kỳ hạn thiếu báo giá giao dịch trên thị trường, hệ thống tiến hành nội suy hoặc ngoại suy tuyến tính dựa trên biên độ chênh lệch lãi suất giữa các kỳ hạn chuẩn có sẵn, đồng thời CFU được quyền cộng hoặc trừ thêm một biên độ điều chỉnh do ALCO phê duyệt nhằm chuẩn hóa độ dốc đường cong và phòng ngừa biến động bất thường (vab_ftp_methodology, Điều 9.2.a, d.1137–1139).
+
+Phương án thứ hai đơn giản hóa đường cong Thị trường 2 bằng cách neo trực tiếp vào lãi suất liên ngân hàng chuẩn VNIBOR (Vietnam Interbank Offered Rate) kỳ hạn 1 tuần (vab_ftp_methodology, Điều 9.1.b, d.1127; Điều 9.2.b, d.1141). Phương án này loại bỏ sự phụ thuộc vào dữ liệu khảo sát báo giá phân tán, mang lại sự minh bạch tuyệt đối và tạo cơ sở xác lập cơ chế điều chuyển vốn cho toàn bộ trạng thái ròng của Khối Treasury theo [[treasury-business-unit-ftp-governance-balances-desk-level-and-net-portfolio-transfers]].
+
+Sự kết hợp giữa đường cong bán lẻ Thị trường 1 theo [[vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing]] và đường cong liên ngân hàng Thị trường 2 hoàn thiện mô hình cân đối vốn hai tầng của ngân hàng theo [[vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu]]. Qua đó, ngân hàng đo lường chính xác hiệu quả tạo lập giá trị gia tăng của bàn Treasury thông qua chênh lệch kinh doanh giữa thị trường bán buôn và thị trường khách hàng truyền thống.

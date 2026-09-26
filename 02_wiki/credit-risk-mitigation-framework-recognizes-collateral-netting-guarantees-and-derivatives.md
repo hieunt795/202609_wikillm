@@ -1,0 +1,18 @@
+---
+title: credit-risk-mitigation-framework-recognizes-collateral-netting-guarantees-and-derivatives
+type: concept
+tags: [banking, credit-risk, crm, collateral, netting, guarantees, credit-derivatives, basel-iii]
+sources: [sbv_circular_14_2025]
+status: draft
+last_updated: 2026-09-26
+---
+
+Khung kỹ thuật giảm thiểu rủi ro tín dụng (Credit Risk Mitigation — CRM) quy định tại Điều 25–29 Thông tư 14/2025/TT-NHNN cung cấp cơ chế chuẩn mực để ngân hàng thương mại điều chỉnh giảm giá trị số dư phơi nhiễm $E_i^*$ khi xác định [[standardized-approach-credit-risk-weights-and-exposure-measurement-govern-regulatory-rwa]] (sbv_circular_14_2025, file TT14_1.md, Điều 25, d.638–686). Ngân hàng Nhà nước Việt Nam công nhận bốn biện pháp kỹ thuật giảm thiểu rủi ro độc lập hoặc kết hợp:
+
+Biện pháp thứ nhất là tài sản bảo đảm tài chính đủ điều kiện (Eligible Collateral) bao gồm tiền mặt, tiền gửi tiết kiệm tại chính ngân hàng, vàng, trái phiếu chính phủ, giấy tờ có giá do Ngân hàng Nhà nước và chính quyền địa phương phát hành, chứng khoán nợ doanh nghiệp được xếp hạng tín nhiệm từ BBB- trở lên, và cổ phiếu niêm yết trên Sở giao dịch Chứng khoán Việt Nam có giao dịch khớp lệnh trong 10 ngày làm việc liền kề (sbv_circular_14_2025, file TT14_1.md, Điều 26, d.687–738). Giá trị tài sản bảo đảm phải được khấu trừ hệ số chiết khấu (Haircut) $H_c$ để phòng ngừa biến động giá thị trường.
+
+Biện pháp thứ hai là bù trừ số dư nội bảng (On-balance sheet netting) áp dụng giữa các khoản cho vay và số dư tiền gửi của cùng một khách hàng, bổ trợ cho cơ chế bù trừ song phương trên thị trường phái sinh và giao dịch tài trợ chứng khoán quy định tại [[securities-financing-transactions-and-bilateral-netting-govern-counterparty-exposures]] (sbv_circular_14_2025, file TT14_1.md, Điều 27, d.739–757; file TT14_2.md, Phụ lục II, d.836–848). Điều kiện bắt buộc là ngân hàng phải có thỏa thuận bù trừ bằng văn bản có hiệu lực pháp lý ràng buộc liên tục, đảm bảo quyền khấu trừ tự động ngay cả khi khách hàng rơi vào trạng thái phá sản, giải thể hoặc mất khả năng thanh toán.
+
+Biện pháp thứ ba là bảo lãnh của bên thứ ba (Third-party guarantees) và biện pháp thứ tư là sản phẩm phái sinh tín dụng (Credit Derivatives như hợp đồng CDS) (sbv_circular_14_2025, file TT14_1.md, Điều 28–29, d.758–798). Cả hai biện pháp này vận hành theo nguyên tắc thế quyền rủi ro (Risk Substitution Principle): ngân hàng được phép thay thế hệ số rủi ro của bên vay ban đầu ($CRW_l$) bằng hệ số rủi ro tín dụng của bên bảo lãnh hoặc bên bán phái sinh tín dụng ($CRW_{gtor}$) đối với phần giá trị phơi nhiễm được bảo đảm, với điều kiện bên bảo lãnh có mức xếp hạng tín nhiệm cao hơn khách hàng vay.
+
+Khi áp dụng các biện pháp CRM, ngân hàng phải thực hiện hiệu chỉnh bắt buộc đối với hai loại sai lệch trọng yếu (sbv_circular_14_2025, file TT14_1.md, Điều 25.3, d.647–660). Khi phát sinh độ lệch tiền tệ giữa biện pháp bảo đảm và khoản vay nợ gốc, giá trị bảo đảm bị chiết khấu thêm hệ số biến động tỷ giá $H_{fx}$ (thường là 8%). Khi phát sinh độ lệch thời hạn (thời hạn còn lại của biện pháp bảo đảm $t$ ngắn hơn thời hạn khoản nợ $T$), ngân hàng chỉ được công nhận giảm thiểu nếu thời hạn gốc đạt tối thiểu 01 năm và thời hạn còn lại từ 03 tháng trở lên, kèm công thức chiết khấu tuyến tính theo thời gian. Cơ chế CRM trực tiếp hỗ trợ tối ưu hóa vốn tự có cho [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]] và định giá chuẩn xác chi phí vốn hợp đồng tại [[ftp-credit-spread-and-capital-charge-operationalize-deal-level-raroc]].

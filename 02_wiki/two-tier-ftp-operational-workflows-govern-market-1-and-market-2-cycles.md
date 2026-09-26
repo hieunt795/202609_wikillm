@@ -1,0 +1,27 @@
+---
+title: two-tier-ftp-operational-workflows-govern-market-1-and-market-2-cycles
+type: concept
+tags: [alm, ftp, operational-workflows, two-tier-ftp, market-1, market-2, cfu, internal-governance]
+sources: [vab_ftp_methodology]
+status: draft
+last_updated: 2026-09-26
+---
+
+Hệ thống định giá điều chuyển vốn nội bộ của ngân hàng thương mại vận hành thông qua cơ chế hai tầng độc lập nhưng gắn kết chặt chẽ: quy trình quản trị Thị trường 1 điều tiết mạng lưới kinh doanh bán lẻ và quy trình tác nghiệp Thị trường 2 điều tiết các bàn giao dịch bán buôn của Khối Quản lý & Kinh doanh Vốn (Treasury) theo [[vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu]] (vab_ftp_methodology, Phụ lục 05 & 06, d.1743–1831). Sự phân tách thành hai chu kỳ vận hành với tần suất và quy chuẩn chứng từ khác nhau bảo đảm tính linh hoạt của các giao dịch tiền tệ thị trường mở đồng thời duy trì sự ổn định chiến lược cho mạng lưới chi nhánh (vab_ftp_methodology, Phụ lục 05, d.1765; Phụ lục 06, d.1809).
+
+Quy trình vận hành cơ chế FTP Thị trường 1 được chuẩn hóa thành chuỗi 9 bước tác nghiệp liên phòng ban, thực hiện định kỳ hàng quý hoặc khi thị trường phát sinh biến động lớn (vab_ftp_methodology, Phụ lục 05.I–II, d.1747–1785):
+1. **Đề xuất cập nhật biểu lãi suất**: Đơn vị Quản lý Vốn tập trung (CFU) lập đề xuất cập nhật biểu lãi suất FTP và gửi danh mục yêu cầu dữ liệu đầu vào theo Mẫu biểu MB02 tới các đơn vị phối hợp (vab_ftp_methodology, Phụ lục 05.II, d.1765);
+2. **Cung cấp dữ liệu đầu vào**: Khối Công nghệ Thông tin chiết xuất dữ liệu giao dịch thực tế phục vụ tính toán Base curve; đồng thời các khối kinh doanh lập tờ trình đề xuất áp dụng chính sách FTP đặc thù hoặc ngoại lệ (vab_ftp_methodology, Phụ lục 05.II, d.1766);
+3. **Tính toán biểu lãi suất**: CFU tiếp nhận dữ liệu, tính toán các cấu phần VOF, COF và các hệ số điều chỉnh theo [[vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing]], lập tờ trình ALCO tham mưu Tổng Giám đốc (vab_ftp_methodology, Phụ lục 05.II, d.1767–1773);
+4. **Kiểm soát và rà soát**: Cấp Trưởng bộ phận quản lý FTP kiểm tra, ký xác nhận tính chính xác của biểu lãi suất đề xuất trước khi trình phê duyệt (vab_ftp_methodology, Phụ lục 05.II, d.1774);
+5. **Phê duyệt ban hành**: Tổng Giám đốc hoặc người được ủy quyền xem xét và ký quyết định ban hành biểu lãi suất FTP Thị trường 1 chính thức (vab_ftp_methodology, Phụ lục 05.II, d.1775);
+6. **Cập nhật hệ thống phần mềm**: Khối CNTT phối hợp với CFU cấu hình biểu lãi suất mới lên phần mềm quản lý vốn nội bộ (vab_ftp_methodology, Phụ lục 05.II, d.1776);
+7. **Thực hiện giao dịch mua bán vốn**: Các đơn vị kinh doanh thực hiện giải ngân cho vay hoặc huy động tiền gửi, hệ thống tự động gắn mã định giá FTP tương ứng (vab_ftp_methodology, Phụ lục 05.II, d.1783);
+8. **Kiểm soát giao dịch nội bộ**: Cấp kiểm soát của CFU đối soát số tiền, loại tiền, kỳ hạn và mức lãi suất chuyển nhượng thực tế (vab_ftp_methodology, Phụ lục 05.II, d.1784);
+9. **Kiểm tra hạch toán và lưu trữ hồ sơ**: Trung tâm Kế toán kiểm tra việc hạch toán thu nhập/chi phí điều chuyển vốn giữa CFU và mạng lưới chi nhánh, hoàn thiện hồ sơ kế toán quản trị (vab_ftp_methodology, Phụ lục 05.II, d.1785).
+
+Trái ngược với chu kỳ quý của Thị trường 1, quy trình vận hành điều chuyển vốn nội bộ trên Thị trường 2 diễn ra với nhịp độ hàng ngày nhằm bám sát từng biến động của thị trường tiền tệ liên ngân hàng theo [[interbank-market-2-ftp-curve-construction-relies-on-peer-quotes-and-vnibor]] (vab_ftp_methodology, Phụ lục 06.I–II, d.1791–1830). Chuỗi 9 bước của Thị trường 2 được cô kết trong khung thời gian tác nghiệp nghiêm ngặt:
+- **Khung giờ đầu ngày (9 giờ đến 10 giờ sáng)**: Khối QL&KDV thu thập thông tin lãi suất thị trường chuyển cho CFU (Bước 1); CFU tính toán biểu lãi suất Thị trường 2 theo phương án mid-rate nhóm Peer qua mẫu MB04/MB05 hoặc xác nhận mức lãi suất VNIBOR 1 tuần (Bước 2); Trưởng bộ phận CFU rà soát (Bước 3); và Tổng Giám đốc phê duyệt ban hành Biểu lãi suất FTP Thị trường 2 hàng ngày (Bước 4) (vab_ftp_methodology, Phụ lục 06.II, d.1809–1818);
+- **Khung giờ giao dịch trong ngày**: Các bàn giao dịch thuộc Khối QL&KDV thực hiện mua bán vốn với CFU, lập Phiếu mua bán vốn nội bộ theo mẫu MB06 (Bước 5); CFU kiểm soát chi tiết tham số giao dịch (Bước 6); Trưởng bộ phận CFU phê duyệt phiếu giao dịch (Bước 7); CFU xác nhận và xử lý giao dịch trên hệ thống Điều hòa vốn nội bộ (Bước 8); và cuối cùng tổng hợp báo cáo kết quả kinh doanh NII/NIM theo mẫu MB07 và lưu trữ hồ sơ (Bước 9) (vab_ftp_methodology, Phụ lục 06.II, d.1819–1829).
+
+Quy trình hai tầng này tạo ra một vòng lặp quản trị khép kín giữa các đơn vị kinh doanh tuyến đầu và trung tâm điều phối rủi ro theo [[treasury-business-unit-ftp-governance-balances-desk-level-and-net-portfolio-transfers]]. Mọi trạng thái thặng dư hay thiếu hụt thanh khoản từ bán lẻ đều được kết chuyển nhịp nhàng sang bàn Treasury để xử lý kịp thời trên thị trường bán buôn, triệt tiêu mọi rủi ro thanh khoản tồn đọng trên bảng cân đối kế toán.

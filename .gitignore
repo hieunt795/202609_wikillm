@@ -13,8 +13,5 @@ desktop.ini
 # Báo cáo lint/audit do Claude xuất ra, không thuộc wiki (00_schema.md §3)
 /Claude outputs/
 
-# Cấu hình Obsidian cục bộ
-/.obsidian/
-
 # Python
 __pycache__/
