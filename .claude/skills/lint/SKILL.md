@@ -20,6 +20,7 @@ python $H --verify-sources   # 01_sources/ khớp bản kê (luật cứng 1)
 python $H --ocr              # ứng viên nhiễu OCR
 python $H --stub-debt        # nợ stub
 python $H --inbox-debt       # nợ inbox
+python $H --coverage         # chunk [x] còn mục nguồn chưa trang nào trích (§10)
 ```
 
 Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi vòng qua nó, nên `--all` quét lại tất cả. Số trang của lượt lint lấy từ dòng cuối của `--all`. `--verify-sources` báo lệch thì ghi lên đầu báo cáo: đó là vi phạm luật cứng, không phải lỗi trang, và lint không sửa lại nguồn.
@@ -30,7 +31,7 @@ Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi v
 
 **1. Lượt rẻ — quét frontmatter toàn bộ `02_wiki/`.** Không đọc full content. Với khoảng 300 trang, frontmatter chỉ khoảng 3.000 dòng nên vẫn làm trong context chính; giao subagent `Explore` khi wiki vượt khoảng 600 trang hoặc khi người dùng yêu cầu.
 
-**2. Đối chiếu 11 tiêu chí:**
+**2. Đối chiếu 12 tiêu chí:**
 
 | Lỗi | Cách phát hiện |
 |---|---|
@@ -45,6 +46,7 @@ Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi v
 | Nợ stub | dòng `NO` của `--stub-debt` (≥ 3 lượt ingest kể từ khi tạo, §9) |
 | Nhiễu OCR còn sót | ứng viên của `--ocr`, đã mở trang xác nhận |
 | Nợ inbox | dòng `NO` của `--inbox-debt` (≥ 3 lượt lint, §11) |
+| Nguồn chưa phủ hết | dòng `NO` của `--coverage`: chunk `[x]` còn mục chưa trích mà không ghi `bỏ qua:` (§10). Đề xuất hạ `[~]` rồi `/ingest` phần đó |
 
 **Khái niệm chưa có trang** không có lệnh tự động: đọc lướt thân bài các trang ở lượt 3, ghi lại thuật ngữ lặp lại chưa có `[[link]]`, rồi đếm bằng `grep -li "<thuật ngữ>" 02_wiki/*.md --exclude=index.md`. Đếm theo khái niệm, không theo chuỗi: "thâm hụt" có thể là thâm hụt vãng lai hoặc thâm hụt ngân sách.
 

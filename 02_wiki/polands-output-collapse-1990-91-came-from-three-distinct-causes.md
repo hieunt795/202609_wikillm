@@ -3,8 +3,8 @@ title: polands-output-collapse-1990-91-came-from-three-distinct-causes
 type: case
 tags: [poland, transition-economies, 1990-1991]
 sources: [imf_macro_accounting]
-status: stable
-last_updated: 2026-09-15
+status: draft
+last_updated: 2026-09-26
 ---
 
 Sản lượng thực của Ba Lan sụt mạnh trong 1990–91 khi nền kinh tế rơi vào suy thoái sâu; đợt suy thoái khiến giới phân tích bất ngờ, và quy về ba nhóm nguyên nhân: vĩ mô, thể chế và đo lường (imf_macro_accounting, Ch.2, Real Sector Developments, Output and Demand, d.1189).
@@ -14,3 +14,5 @@ Bối cảnh là nền kinh tế đã yếu đi nhiều trong thập niên 1980 
 Nhóm vĩ mô gồm: hệ thống thương mại của khối CMEA tan rã năm 1991 cùng điều kiện thương mại xấu đi; cầu với sản phẩm của công nghiệp quốc doanh co lại mạnh; tồn kho giảm khi tự do hóa và [[soft-budget-constraint|ràng buộc ngân sách cứng]] xóa động cơ tích trữ; tái cơ cấu tài khóa; và một đợt thắt tín dụng do chính sách (imf_macro_accounting, Ch.2, cùng mục, d.1191). Tái cơ cấu tài khóa gây bất ổn đặc biệt: nguồn thu truyền thống là khoản nộp của [[state-owned-enterprises|doanh nghiệp nhà nước]] biến mất khi tình hình tài chính của chúng xấu đi, còn bên chi thì [[subsidies|trợ cấp]] giảm nhanh nhưng chuyển nhượng tăng nhanh vì phải dựng [[social-safety-nets-trade-targeting-against-work-incentives|lưới an sinh]] (imf_macro_accounting, Ch.2, cùng mục, d.1197).
 
 Nhóm thể chế là việc thay hệ thống kiểm soát cũ bằng thể chế thị trường mất nhiều thời gian hơn dự kiến và làm chậm cải cách luật sở hữu; cộng với thiếu động cơ, các yếu tố này ngăn một phản ứng cung bình thường (imf_macro_accounting, Ch.2, cùng mục, d.1199). Nhóm đo lường là khả năng sản lượng bị đo sai khiến mức sụt bị phóng đại, và ngược lại phục hồi bị ghi thiếu vì số liệu khu vực tư kém và chỉ số giá không tin cậy — độ lớn của sai số này là câu hỏi ở [[to-what-extent-was-polands-early-transition-output-decline-overstated]] (imf_macro_accounting, Ch.2, cùng mục, d.1200). Sụt giảm chạm đáy năm 1991, rồi đến [[polands-recovery-from-1992-was-led-by-consumption-then-exports]] (imf_macro_accounting, Ch.2, cùng mục, d.1202).
+
+Sản lượng công nghiệp giảm ở mọi nền kinh tế từng kế hoạch hóa tập trung ở Trung, Đông Âu và Liên Xô cũ, bất kể tốc độ cải cách nhanh hay chậm; mức giảm của Ba Lan thuộc nhóm nhỏ nhất nhưng vẫn đáng kể (imf_macro_accounting, Ch.1, Industrial Output, d.474). Năm 1990 sản lượng công nghiệp giảm hơn 11%. Bốn nguyên nhân là cán cân tài khóa chuyển mạnh sang thặng dư làm co cầu nội địa, xáo trộn từ giai đoạn siêu lạm phát 1989, bộ máy kế hoạch hóa sụp đổ, và các ngành công nghiệp nặng mất khách hàng nên cắt sản xuất (imf_macro_accounting, Ch.1, Industrial Output, d.476). Mức giảm thêm 8% năm 1991 chủ yếu do cú sốc bên ngoài khi khối CMEA tan rã và điều kiện thương mại xấu đi. Tăng trưởng quay lại năm 1992 và đạt 4% năm 1993, nhờ khu vực tư nhân sôi động và xuất khẩu mở rộng (imf_macro_accounting, Ch.1, Industrial Output, d.476). Chương tổng quan của IMF đặt đợt sụt này trong đánh giá chung về chương trình ổn định ở [[polands-big-bang-averted-hyperinflation-but-underestimated-the-output-cost-of-dismantling-institutions]].

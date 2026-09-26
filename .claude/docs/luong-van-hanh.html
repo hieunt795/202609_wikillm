@@ -1,0 +1,488 @@
+<title>Luồng vận hành LLM Wiki</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F5F7F6; --surface:#FFFFFF; --sunk:#EAEFED; --ink:#18211E; --muted:#56645F; --line:#D3DCD8;
+  --accent:#1D5C85; --accent-soft:#E1ECF4;
+  --human:#A15C07; --human-soft:#FBEEDB;
+  --new:#6B3FA0; --new-soft:#EFE7F8;
+  --ok:#2F7A4B; --warn:#B4452F;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111615; --surface:#182020; --sunk:#1F2927; --ink:#E4EBE8; --muted:#9AA9A3; --line:#2E3A37;
+    --accent:#7DB6DE; --accent-soft:#1B3040;
+    --human:#E8A857; --human-soft:#3A2A14;
+    --new:#B89AE0; --new-soft:#2C2240;
+    --ok:#7FC79B; --warn:#EE8F7B;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111615; --surface:#182020; --sunk:#1F2927; --ink:#E4EBE8; --muted:#9AA9A3; --line:#2E3A37;
+  --accent:#7DB6DE; --accent-soft:#1B3040;
+  --human:#E8A857; --human-soft:#3A2A14;
+  --new:#B89AE0; --new-soft:#2C2240;
+  --ok:#7FC79B; --warn:#EE8F7B;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.65;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:40px 80px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px}
+@media (max-width:900px){.wrap{grid-template-columns:minmax(0,1fr);gap:24px;padding-inline:16px}}
+nav.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 24px);align-self:start;font-size:13.5px}
+@media (max-width:900px){nav.toc{position:static}}
+nav.toc p{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:2px;counter-reset:t}
+nav.toc a{display:block;color:var(--muted);text-decoration:none;padding:4px 10px;border-left:2px solid var(--line)}
+nav.toc a:hover,nav.toc a:focus-visible{color:var(--ink);border-left-color:var(--accent);outline:none}
+main{min-width:0}
+header.top{border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:8px}
+.eyebrow{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+h1{font-family:var(--serif);font-size:clamp(30px,4.2vw,42px);line-height:1.15;margin:0 0 12px;text-wrap:balance}
+h2{font-family:var(--serif);font-size:26px;line-height:1.25;margin:56px 0 12px;text-wrap:balance;scroll-margin-top:24px}
+h3{font-size:17px;margin:28px 0 8px;font-weight:600}
+p{margin:0 0 12px;max-width:72ch}
+.lede{font-size:17px;color:var(--muted);max-width:68ch}
+code,kbd{font-family:var(--mono);font-size:.86em;background:var(--sunk);padding:1px 5px;border-radius:4px}
+pre.cmd{font-family:var(--mono);font-size:13px;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow-x:auto;margin:8px 0 16px;line-height:1.55}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:16px;font-size:13px;color:var(--muted)}
+.tag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;letter-spacing:.03em;padding:2px 8px;border-radius:999px;white-space:nowrap;vertical-align:1px}
+.tag.h{background:var(--human-soft);color:var(--human)}
+.tag.n{background:var(--new-soft);color:var(--new)}
+.tag.m{background:var(--accent-soft);color:var(--accent)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0 0}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.fact b{display:block;font-family:var(--serif);font-size:26px;font-variant-numeric:tabular-nums;line-height:1.2}
+.fact span{font-size:12.5px;color:var(--muted)}
+.layers{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:12px 0}
+.layer{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.layer h4{margin:0 0 4px;font-family:var(--mono);font-size:14px;color:var(--accent)}
+.layer p{font-size:14px;margin:0;color:var(--muted)}
+.layer .perm{font-size:12px;font-weight:600;color:var(--ink);margin-bottom:6px;display:block}
+.diagram{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;margin:12px 0 20px;overflow-x:auto}
+.diagram pre.mermaid{margin:0;background:transparent;font-family:var(--mono);font-size:12.5px;color:var(--muted);min-width:560px}
+.diagram figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.op{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:18px 0}
+.op-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;margin-bottom:6px}
+.op-head h3{margin:0;font-family:var(--mono);font-size:18px;color:var(--accent)}
+.op-head .io{font-size:13.5px;color:var(--muted)}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px 20px;font-size:13.5px;margin:10px 0 14px;padding:10px 0;border-block:1px dashed var(--line)}
+.meta div b{display:block;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+ol.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:0}
+ol.steps>li{counter-increment:s;position:relative;padding:8px 0 10px 44px;border-left:2px solid var(--line);margin-left:14px}
+ol.steps>li:last-child{border-left-color:transparent}
+ol.steps>li::before{content:attr(data-n);position:absolute;left:-15px;top:6px;width:28px;height:28px;border-radius:50%;background:var(--surface);border:2px solid var(--line);font:600 12px/24px var(--mono);text-align:center;color:var(--muted)}
+ol.steps>li.gate::before{border-color:var(--human);color:var(--human);background:var(--human-soft)}
+ol.steps>li.new::before{border-color:var(--new);color:var(--new);background:var(--new-soft)}
+ol.steps>li.check::before{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+ol.steps>li b.t{display:block;font-weight:600}
+ol.steps>li p,ol.steps>li ul{font-size:14.5px;margin:2px 0 0;max-width:70ch}
+ol.steps ul{padding-left:18px}
+.table-wrap{overflow-x:auto;margin:10px 0 20px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--sunk)}
+tr:last-child td{border-bottom:none}
+td.num{font-variant-numeric:tabular-nums;text-align:right}
+.rules{counter-reset:r;list-style:none;padding:0;margin:10px 0;display:grid;gap:8px}
+.rules li{counter-increment:r;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:8px;padding:10px 14px 10px 44px;position:relative;font-size:14.5px}
+.rules li::before{content:counter(r);position:absolute;left:14px;top:10px;font:700 14px/1.6 var(--mono);color:var(--warn)}
+.note{background:var(--new-soft);border-radius:10px;padding:14px 16px;margin:14px 0;font-size:14.5px}
+.note b{color:var(--new)}
+footer{margin-top:64px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+a{color:var(--accent)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+
+<div class="wrap">
+<nav class="toc" aria-label="Mục lục">
+  <p>Mục lục</p>
+  <ol>
+    <li><a href="#lop">Ba lớp dữ liệu</a></li>
+    <li><a href="#toan-canh">Toàn cảnh</a></li>
+    <li><a href="#ingest">/ingest</a></li>
+    <li><a href="#coverage">Cổng độ phủ</a></li>
+    <li><a href="#query">/query</a></li>
+    <li><a href="#lint">/lint</a></li>
+    <li><a href="#promote">/promote</a></li>
+    <li><a href="#review">/review-node</a></li>
+    <li><a href="#research">/research</a></li>
+    <li><a href="#vong-doi">Vòng đời</a></li>
+    <li><a href="#phan-hoi">Vòng phản hồi</a></li>
+    <li><a href="#duyet">Điểm duyệt</a></li>
+    <li><a href="#lenh">Lệnh kiểm</a></li>
+    <li><a href="#luat">Luật cứng</a></li>
+    <li><a href="#ho-so">Hồ sơ vận hành</a></li>
+    <li><a href="#hien-tai">Trạng thái 2026-09-26</a></li>
+  </ol>
+</nav>
+
+<main>
+<header class="top">
+  <p class="eyebrow">LLM Wiki · Kinh tế vĩ mô · mô hình Karpathy</p>
+  <h1>Luồng vận hành LLM Wiki</h1>
+  <p class="lede">Sáu operation biến sách và văn bản trong <code>01_sources/</code> thành các trang tri thức atomic trong <code>02_wiki/</code>. Mỗi operation có điểm dừng chờ người duyệt, lệnh máy kiểm và đúng một dòng log. Bản này cập nhật sau lượt thêm cổng độ phủ <code>--coverage</code> ngày 2026-09-26.</p>
+  <div class="legend">
+    <span><span class="tag h">Người duyệt</span> agent dừng, chờ xác nhận</span>
+    <span><span class="tag m">Máy kiểm</span> lệnh trong <code>validate_wiki_page.py</code></span>
+    <span><span class="tag n">Mới 2026-09-26</span> thay đổi của lượt điều chỉnh gần nhất</span>
+  </div>
+  <div class="facts">
+    <div class="fact"><b>954</b><span>trang trong 02_wiki</span></div>
+    <div class="fact"><b>6</b><span>operation, mỗi cái một skill</span></div>
+    <div class="fact"><b>12</b><span>tiêu chí lint</span></div>
+    <div class="fact"><b>99</b><span>chunk hạ về [~] do còn mục chưa phủ</span></div>
+  </div>
+</header>
+
+<h2 id="lop">Ba lớp dữ liệu và vùng trạng thái</h2>
+<p>Wiki tách nguồn thô khỏi tri thức đã viết lại. Agent không bao giờ ghi vào lớp nguồn; mọi thứ cần ghi về một nguồn (tiến độ, bản đồ chunk, checksum) đi ra <code>03_state/</code>.</p>
+<div class="layers">
+  <div class="layer"><h4>01_sources/</h4><span class="perm">Chỉ đọc, bất biến</span><p>Sách, văn bản pháp quy, bài clippings dạng .md/.pdf. Gitignore; checksum ghi ở bản kê.</p></div>
+  <div class="layer"><h4>02_wiki/</h4><span class="perm">Agent sở hữu, cấu trúc phẳng</span><p>Trang atomic (entity, concept, case, analysis), không heading trong thân bài, link nằm trong câu kèm lý do. <code>index.md</code> điều hướng.</p></div>
+  <div class="layer"><h4>03_state/</h4><span class="perm">Agent sở hữu, máy đọc được</span><p><code>_sources_manifest.md</code> (source id, đường dẫn, bytes, SHA-256) và <code>&lt;sid&gt;.md</code> — bản đồ chunk <code>[ ] / [~] / [x]</code> của từng nguồn dài.</p></div>
+  <div class="layer"><h4>00_schema.md</h4><span class="perm">Người + agent đồng tiến hoá</span><p>§1–§12: frontmatter, taxonomy, ngưỡng, atomic, liên kết, thân bài, title, vòng đời, nguồn, inbox, log.</p></div>
+</div>
+<p>Nguồn <b>dài</b> là nguồn vượt 120 KB hoặc 1.200 dòng (tổng các file). Nguồn dài có state file và mọi claim phải kèm chú thích vị trí <code>(&lt;sid&gt;, &lt;chương&gt;, &lt;mục&gt;, d.&lt;từ&gt;–&lt;đến&gt;)</code>; nguồn nhiều file thêm <code>file &lt;tên&gt;</code>. Chú thích này vừa phục vụ người đọc, vừa là dữ liệu cho cổng độ phủ.</p>
+
+<h2 id="toan-canh">Toàn cảnh</h2>
+<figure class="diagram">
+<pre class="mermaid">
+flowchart TD
+  SRC["01_sources/ · chỉ đọc"]
+  MAN["03_state/_sources_manifest.md<br/>source id · SHA-256"]
+  ST["03_state/&lt;sid&gt;.md<br/>chunk [ ] → [~] → [x]"]
+  WIKI["02_wiki/ · trang atomic<br/>stub · draft · stable · stale"]
+  IDX["02_wiki/index.md §Sources"]
+  ING["/ingest"]
+  COV{"--coverage sạch?"}
+  QRY["/query"]
+  LNT["/lint · chỉ báo cáo"]
+  PRO["/promote"]
+  REV["/review-node"]
+  RES["/research"]
+  LOG["log.md · 1 mục / operation"]
+
+  SRC -->|đọc đúng dải dòng chunk| ING
+  MAN --> ING
+  ST -->|chunk kế tiếp| ING
+  ING -->|trang mới / merge| WIKI
+  ING --> COV
+  COV -->|có| ST
+  COV -->|"không: giữ [~]"| ST
+  ING --> IDX
+  WIKI --> QRY
+  QRY -->|tuỳ chọn, cần duyệt| WIKI
+  WIKI --> LNT
+  LNT -->|danh sách đủ điều kiện stable| PRO
+  PRO -->|draft → stable| WIKI
+  WIKI --> REV
+  REV -->|sửa claim sai, reviewed_by: model| WIKI
+  WIKI --> RES
+  ST -->|"chỉ chunk [x]"| RES
+  RES -->|claim mới đã duyệt| WIKI
+  LNT -->|"chunk [x] còn mục chưa phủ"| ING
+  RES -->|"chunk [~]/[ ] → đề xuất"| ING
+  ING & QRY & LNT & PRO & REV & RES --> LOG
+</pre>
+<figcaption>Mũi tên về <code>/ingest</code> là hai đường phản hồi: lint phát hiện chunk báo xong nhưng còn mục chưa phủ, và research gặp chunk chưa ingest xong.</figcaption>
+</figure>
+<p>Mọi operation dùng mẫu <b>hai lượt</b> để kiểm soát token: lượt rẻ quét tên file và frontmatter bằng <code>ls</code>/<code>grep</code>; lượt đắt chỉ mở full content trang đã xác định là cần. Mọi operation có ghi wiki đều kết thúc bằng <code>--all</code> sạch rồi mới ghi đúng một mục vào cuối <code>log.md</code>.</p>
+
+<h2 id="ingest">/ingest — nạp nguồn vào wiki</h2>
+<div class="op">
+  <div class="op-head"><h3>/ingest</h3><span class="io">chunk nguồn → 5–10 ý chính chờ duyệt → tối đa 15 trang + stub + index + state</span></div>
+  <div class="meta">
+    <div><b>Đọc schema</b>Toàn bộ 00_schema.md</div>
+    <div><b>Ngưỡng</b>Tối đa 15 trang/lượt, stub không tính <span class="tag n">Mới</span></div>
+    <div><b>Log</b><code>ingest | &lt;sid&gt; &lt;chunk&gt;</code></div>
+  </div>
+  <ol class="steps">
+    <li data-n="1"><b class="t">Xác định nguồn và chunk</b>
+      <p>Tra bảng Source id trong <code>_sources_manifest.md</code>. Nguồn chưa có thì thêm ngay lượt này: đo <code>wc -c -l</code>, <code>sha256sum</code>, ghi nhan đề/tác giả/năm, thêm dòng vào <code>index.md</code> §Sources. Nguồn dài: mở <code>03_state/&lt;sid&gt;.md</code>, chọn dòng <code>[ ]</code> hoặc <code>[~]</code> kế tiếp, chỉ đọc đúng dải <code>d.&lt;từ&gt;–&lt;đến&gt;</code>. Chưa có state file thì dựng bản đồ chunk đầy đủ từ <code>grep -n "^#"</code> trước. Không đọc <code>log.md</code> để đoán phần còn lại. Nguồn ngắn đọc trọn một lượt, không qua cổng <code>--coverage</code>.</p></li>
+    <li data-n="2" class="gate"><b class="t">Bàn ý chính và danh sách mục <span class="tag h">Người duyệt</span></b>
+      <p>Không ghi gì trước khi được duyệt. Trình hai thứ:</p>
+      <ul>
+        <li>5–10 ý chính kèm danh sách trang dự kiến tạo/cập nhật (và trang <code>stable</code> sẽ về <code>draft</code>).</li>
+        <li><span class="tag n">Mới</span> Danh sách mục của chunk, mỗi mục một hướng: viết trang, merge, hoặc đề xuất <code>bỏ qua:</code> kèm lý do. Chunk <code>[ ]</code> lấy mục bằng <code>grep -n "^#"</code> trong dải dòng; chunk <code>[~]</code> lấy mục chưa phủ và % phủ bằng <code>--coverage &lt;sid&gt;</code>.</li>
+      </ul>
+      <p>Ý chính để bàn, không khoanh phạm vi; phạm vi là mọi mục, kiểm ở bước 7. Lượt chạy không có người thì ghi ý chính vào <code>_inbox.md</code> và dừng.</p></li>
+    <li data-n="3"><b class="t">Cụm hoá, dò trùng</b>
+      <p>Cụm hoá kết quả đọc, không đọc lại nguồn. Đối chiếu với toàn bộ <code>02_wiki/</code> bằng tên file và frontmatter (từ khoá tiếng Anh và biến thể); chỉ mở thân bài trang trúng để quyết định merge hay tạo mới.</p></li>
+    <li data-n="4"><b class="t">Viết trang</b>
+      <ul>
+        <li>Đã có trang → merge, thêm source id, nâng <code>last_updated</code>; trang <code>stable</code>/<code>stale</code> về <code>draft</code>.</li>
+        <li>Mâu thuẫn, kể cả giữa hai chương của cùng nguồn → không tự sửa, đánh <code>⚠️ Conflict</code> kèm cả hai claim.</li>
+        <li>Trang <code>stable</code> liên quan mà lượt này không merge → <code>stale</code>.</li>
+        <li>Chưa có → tạo trang mới theo §5 (atomic), §7 (thân bài), §8 (title). Gọi skill <code>writing-style</code> profile wiki; mỗi claim nguồn dài kèm chú thích §7.5.</li>
+        <li><span class="tag n">Mới</span> Nguồn nhiều file ghi <code>file &lt;tên file&gt;</code> trong mọi chú thích, không viết "cùng file", mỗi ngoặc một nguồn, để <code>--coverage</code> đọc đúng.</li>
+      </ul></li>
+    <li data-n="5"><b class="t">Liên kết ngay, không hoãn</b>
+      <p>Mỗi trang tìm 1–3 trang liên quan theo câu hỏi "trang này sẽ xuất hiện lại trong ngữ cảnh nào?". Link nằm trong câu kèm lý do, cập nhật backlink hai chiều (<code>index.md</code> không tính là backlink). Khái niệm chưa có trang → tạo <code>stub</code> ngay. Chỉ chèn link vào câu cũ thì không nâng <code>last_updated</code>.</p></li>
+    <li data-n="6" class="new"><b class="t">Nhịp độ <span class="tag n">Mới</span></b>
+      <p>Tối đa 15 trang mỗi lượt. Đây là nhịp độ, không phải phạm vi: chunk chưa hết thì dừng ở <code>[~]</code>, lượt sau làm tiếp. Bỏ ngưỡng dưới 5 trang vì nó ép tách trang cho đủ số (Bindseil: mỗi lượt thực tế 1–4 trang).</p></li>
+    <li data-n="7" class="new"><b class="t">Cổng độ phủ, rồi cập nhật state <span class="tag n">Mới</span> <span class="tag m">Máy kiểm</span></b>
+      <pre class="cmd">python .claude/hooks/validate_wiki_page.py --coverage &lt;sid&gt;</pre>
+      <p>Đọc danh sách mục của chunk đang xử lý; không dựa vào exit code, vì lệnh chỉ trả lỗi cho chunk đã <code>[x]</code>. Mỗi mục chưa phủ phải được viết vào trang, hoặc ghi <code>bỏ qua: &lt;heading&gt; — &lt;lý do&gt;</code> ở cột Ghi chú, chỉ cho mục người dùng đã duyệt ở bước 2. Hết mục → <code>[x]</code>; còn mục → <code>[~]</code>. Cổng đo ở cấp mục; claim thiếu bên trong một mục đã có trang trích là việc của <code>/research</code> B.</p></li>
+    <li data-n="8"><b class="t">Cập nhật index.md §Sources</b>
+      <p>Bắt buộc mỗi lượt, làm sau bước 7 để khớp trạng thái vừa chốt. Ô <i>Phần còn lại</i> chỉ một câu; mục lục chủ đề chỉ cập nhật khi có trang mới.</p></li>
+    <li data-n="9" class="check"><b class="t">Kiểm toàn wiki <span class="tag m">Máy kiểm</span></b>
+      <pre class="cmd">python .claude/hooks/validate_wiki_page.py --all</pre>
+      <p>Hook PostToolUse chỉ bắt Write/Edit; file ghi bằng shell và trang mồ côi chỉ <code>--all</code> tính được. Lỗi không sửa được thì dừng, không commit, không ghi log, báo người dùng. <span class="tag n">Mới</span> Không tự <code>git checkout</code> để làm lại vì lệnh đó huỷ cả thay đổi chưa commit của phiên khác.</p></li>
+    <li data-n="10"><b class="t">Ghi log</b>
+      <p><code>## [&lt;--now&gt;] ingest | &lt;sid&gt; &lt;chunk&gt;</code>, tối đa 3 dòng: trang tạo/cập nhật, stub mới, phần còn lại.</p></li>
+  </ol>
+</div>
+
+<h2 id="coverage">Cổng độ phủ <code>--coverage</code> <span class="tag n">Mới 2026-09-26</span></h2>
+<p>Trước lượt điều chỉnh, một chunk được đánh <code>[x]</code> khi agent thấy mình đã xong. Đo trên Bindseil (100% <code>[x]</code>) cho thấy Ch.15 chỉ 15% dòng có nội dung được trang nào trích, Ch.1–2 là 26%. Research không bù được vì nó đi từ trang đã có; review-node chỉ kiểm claim đã có. Cổng độ phủ làm cho "xong" kiểm được bằng máy.</p>
+<h3>Cách lệnh tính</h3>
+<ol class="steps">
+  <li data-n="a"><b class="t">Đọc state file</b><p>Lấy danh sách file từ <code>file:</code> (giá trị đơn, YAML list, hoặc mẫu tên). Mỗi dòng chunk: trạng thái, dải <code>d.a–b</code> đầu tiên trong dòng, file của chunk (token <code>`*.md`</code> trong dòng).</p></li>
+  <li data-n="b"><b class="t">Chia mục</b><p>Mục là đoạn từ một heading <code>#</code> đến trước heading kế tiếp, cắt trong dải chunk.</p></li>
+  <li data-n="c"><b class="t">Gom chú thích</b><p>Quét <code>02_wiki/*.md</code> tìm <code>(&lt;sid&gt; …)</code>, parse mọi dạng dải dòng: <code>d.10, d.22</code>, <code>d.933–950, 996–1048</code>. Nguồn nhiều file khớp theo <code>file &lt;tên&gt;</code> (có hoặc không có <code>.md</code>), "cùng file" lấy file của chú thích trước trong trang, ngoặc gộp nhiều nguồn được tách theo dấu <code>;</code>; riêng <code>fixed_income_during</code> map <code>Ch.n</code> → file <code>-(n+1).md</code>.</p></li>
+  <li data-n="d"><b class="t">Kết luận</b><p>Mục được phủ khi ít nhất một dòng của nó được trích. Chunk <code>[x]</code> còn mục chưa phủ → exit 2 (lint dùng). Chunk không có chú thích nào → "không đo được", không tính lỗi (thường là trang ingest trước 2026-09-14).</p></li>
+</ol>
+<h3>Những gì được miễn</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Loại</th><th>Lý do</th></tr></thead>
+<tbody>
+<tr><td>Mục &lt; 3 dòng không trống</td><td>Tiêu đề phụ rỗng như <code>## Period 1:</code></td></tr>
+<tr><td>Frontmatter YAML của file chuyển đổi</td><td>Siêu dữ liệu docling, không phải nội dung sách</td></tr>
+<tr><td>References, Bibliography, Index, Table of Contents, Exercises, Questions, Acknowledgements</td><td>Bộ máy tra cứu và bài tập, §2 đã loại</td></tr>
+<tr><td>Introduction, Overview, Summary, Conclusion</td><td>Lộ trình chương hoặc tóm tắt lặp lại nội dung đã có</td></tr>
+<tr><td>Chunk ghi "bỏ qua, không tạo trang"</td><td>Front matter, phụ lục số liệu thô</td></tr>
+<tr><td>Mục ghi <code>bỏ qua: &lt;heading&gt; — &lt;lý do&gt;</code></td><td>Quyết định có ghi lại của lượt ingest</td></tr>
+</tbody></table></div>
+<p>Giới hạn: nguồn ít heading (bài clippings) cho % phủ thấp nhưng ít mục bị báo, con số chỉ để tham khảo. Văn bản pháp quy <code>sbv_*</code> báo theo từng Điều nên số mục chưa phủ cao; có thể ghi <code>bỏ qua:</code> cho các Điều thủ tục.</p>
+
+<h2 id="query">/query — hỏi đáp trên wiki</h2>
+<div class="op">
+  <div class="op-head"><h3>/query</h3><span class="io">câu hỏi → câu trả lời có trích dẫn; tuỳ chọn 1 trang analysis</span></div>
+  <div class="meta">
+    <div><b>Đọc schema</b>Không; chỉ §1 §7 §8 §12 khi tạo trang</div>
+    <div><b>Giới hạn</b>Mở rộng đúng 1 vòng link</div>
+    <div><b>Log</b>Chỉ khi tạo trang: <code>query | &lt;câu hỏi&gt;</code></div>
+  </div>
+  <ol class="steps">
+    <li data-n="1"><b class="t">Định hướng</b><p>Chỉ đọc mục <code>## Sources</code> của <code>index.md</code> để biết nguồn nào đã nạp tới đâu.</p></li>
+    <li data-n="2"><b class="t">Lượt rẻ</b><p>Đổi thuật ngữ Việt sang tiếng Anh, grep tên file, <code>title</code>, <code>tags</code> (cả dạng YAML nhiều dòng). Thuật ngữ có nhiều cách dịch khác nghĩa thì hỏi lại trước khi grep.</p></li>
+    <li data-n="3"><b class="t">Lượt đắt</b><p>Mở full content trang liên quan, đi theo <code>[[link]]</code>, gọi <code>--backlinks</code> cho trang cốt lõi. Chỉ 1 vòng mở rộng; thiếu thì nói rõ phạm vi đã tra.</p></li>
+    <li data-n="4"><b class="t">Tổng hợp</b><p>Trả lời kèm <code>[[trang]]</code> và chú thích nguồn đã có trên trang; không tự dựng chú thích. Wiki không đủ thì nói thẳng và chỉ ra nguồn/chương cần ingest.</p></li>
+    <li data-n="5" class="gate"><b class="t">Kết tinh thành analysis <span class="tag h">Người duyệt</span></b><p>Chỉ khi tổng hợp có giá trị tái sử dụng. Kiểm trùng các trang <code>type: analysis</code>, viết theo đủ luật trang wiki, thêm vào <code>index.md</code>, <code>--all</code> sạch rồi ghi log.</p></li>
+  </ol>
+</div>
+
+<h2 id="lint">/lint — kiểm tra sức khoẻ</h2>
+<div class="op">
+  <div class="op-head"><h3>/lint</h3><span class="io">toàn bộ 02_wiki + _inbox.md → báo cáo, triage inbox, danh sách đủ điều kiện stable</span></div>
+  <div class="meta">
+    <div><b>Khi nào</b>Sau mỗi 10 lượt ingest hoặc theo lịch</div>
+    <div><b>Quyền</b>Chỉ báo cáo, không tự sửa</div>
+    <div><b>Log</b><code>lint | &lt;số trang&gt; trang</code></div>
+  </div>
+  <ol class="steps">
+    <li data-n="0" class="check"><b class="t">Lệnh máy <span class="tag m">Máy kiểm</span></b>
+<pre class="cmd">H=.claude/hooks/validate_wiki_page.py
+python $H --all              # frontmatter, heading, link chết, §7.5, title, mồ côi
+python $H --verify-sources   # 01_sources khớp bản kê (luật cứng 1)
+python $H --ocr              # ứng viên nhiễu OCR
+python $H --stub-debt        # nợ stub
+python $H --inbox-debt       # nợ inbox
+python $H --coverage         # chunk [x] còn mục chưa phủ  ← mới</pre></li>
+    <li data-n="1"><b class="t">Lượt rẻ</b><p>Quét frontmatter toàn bộ <code>02_wiki/</code>, không đọc thân bài.</p></li>
+    <li data-n="2"><b class="t">Đối chiếu 12 tiêu chí</b><p>Mồ côi · link chết · khái niệm nhắc ≥ 3 trang chưa có trang · <code>⚠️ Conflict</code> tồn đọng · stale chưa đánh dấu · trùng entity · vi phạm Atomic · vi phạm title · nợ stub · nhiễu OCR · nợ inbox · <span class="tag n">Mới</span> nguồn chưa phủ hết.</p></li>
+    <li data-n="3"><b class="t">Lượt đắt</b><p>Chỉ mở trang bị flag.</p></li>
+    <li data-n="4" class="gate"><b class="t">Báo cáo <span class="tag h">Người duyệt</span></b><p><code>Claude outputs/lint-&lt;ngày&gt;-&lt;số trang&gt;.md</code>, kèm danh sách <i>Đủ điều kiện stable</i> và đề xuất triage từng mục inbox (nâng thành trang, gộp, xoá). Người dùng quyết định.</p></li>
+  </ol>
+</div>
+
+<h2 id="promote">/promote — nâng draft lên stable</h2>
+<div class="op">
+  <div class="op-head"><h3>/promote</h3><span class="io">danh sách người dùng đã duyệt → đổi status</span></div>
+  <div class="meta">
+    <div><b>Đầu vào</b>Mục <i>Đủ điều kiện stable</i> của lint gần nhất</div>
+    <div><b>Không đổi</b><code>last_updated</code>, <code>reviewed</code>, thân bài</div>
+    <div><b>Log</b><code>promote | &lt;N&gt; trang lên stable</code></div>
+  </div>
+  <ol class="steps">
+    <li data-n="1" class="check"><b class="t">Kiểm lại ngay trước khi ghi</b><p>Mỗi trang: <code>status: draft</code>, <code>--all</code> không báo gì, outlink ≥ 1, backlink ≥ 2, không còn <code>⚠️ Conflict</code>. Trang trượt → bỏ khỏi lượt, báo lý do; không sửa trang để nó qua.</p></li>
+    <li data-n="2"><b class="t">Ghi</b><p>Chỉ đổi dòng <code>status: draft</code> → <code>status: stable</code>. Agent không tự thêm trang ngoài danh sách đã duyệt.</p></li>
+    <li data-n="3"><b class="t">--all sạch, ghi log</b><p>Liệt kê trang đã nâng và trang bị loại kèm lý do.</p></li>
+  </ol>
+</div>
+
+<h2 id="review">/review-node — đối chiếu trang với nguồn</h2>
+<div class="op">
+  <div class="op-head"><h3>/review-node</h3><span class="io">trang chỉ định hoặc hàng đợi (≤ 5 trang) → reviewed_by: model, sửa claim sai</span></div>
+  <div class="meta">
+    <div><b>Hàng đợi mặc định</b>Chưa review hoặc <code>reviewed</code> cũ hơn <code>last_updated</code>, xếp theo backlink</div>
+    <div><b>Không bao giờ</b>Ghi đè <code>reviewed_by: user</code></div>
+    <div><b>Log</b><code>review | &lt;N&gt; trang</code></div>
+  </div>
+  <ol class="steps">
+    <li data-n="1"><b class="t">Chọn trang</b><p>Tối đa 5 trang mỗi lượt.</p></li>
+    <li data-n="2"><b class="t">Tách claim</b><p>Đọc trọn trang, tách thân bài thành danh sách claim.</p></li>
+    <li data-n="3"><b class="t">Tìm đúng đoạn nguồn</b><p>Có chú thích §7.5 → đọc đúng dải dòng. Chưa có → thu hẹp bằng chunk trong state file và <code>grep -n</code>. Không tìm thấy nguồn → claim không đạt.</p></li>
+    <li data-n="4"><b class="t">Kiểm 5 mục</b><p>Đúng nguồn · diễn đạt lại (không chép nguyên văn, không token OCR) · link đúng đích · title phủ toàn bộ trang · nhất quán với trang được link.</p></li>
+    <li data-n="5"><b class="t">Ghi kết quả</b>
+      <ul>
+        <li>Đạt → thêm chú thích, đặt <code>reviewed</code> + <code>reviewed_by: model</code>; không nâng <code>last_updated</code>.</li>
+        <li>Claim sai → sửa đúng claim đó, nâng <code>last_updated</code>, <code>stable</code> về <code>draft</code>.</li>
+        <li>Hai nguồn nói khác → <code>⚠️ Conflict</code>, không đặt <code>reviewed</code>.</li>
+        <li>Vấn đề cấu trúc hoặc trang khác mắc cùng lỗi → ghi <code>_inbox.md</code>.</li>
+      </ul></li>
+    <li data-n="6" class="check"><b class="t">--all sạch, ghi log</b></li>
+  </ol>
+</div>
+
+<h2 id="research">/research — đào sâu một cụm trang</h2>
+<div class="op">
+  <div class="op-head"><h3>/research</h3><span class="io">chủ đề hoặc danh sách trang (≤ 10 đọc, ≤ 5 enrich) → 1 bản đề xuất gộp → claim mới từ chunk [x]</span></div>
+  <div class="meta">
+    <div><b>Phạm vi</b>Chỉ wiki nội bộ và chunk <code>[x]</code>; không web</div>
+    <div><b>Không làm</b>Sửa claim cũ, tạo stub</div>
+    <div><b>Log</b>Luôn ghi: <code>research | &lt;chủ đề&gt;</code></div>
+  </div>
+  <ol class="steps">
+    <li data-n="0" class="gate"><b class="t">Xác định cụm trang <span class="tag h">Người duyệt</span></b><p>Gom trang bằng lượt rẻ (title, tags), mở rộng đúng 1 vòng qua outlink và <code>--backlinks</code>. Cụm &gt; 10 trang thì cắt và đề xuất chia lượt.</p></li>
+    <li data-n="1"><b class="t">Đọc cụm và nguồn</b>
+      <ul>
+        <li><b>A — đối chiếu nội bộ:</b> khoảng trống, mâu thuẫn khung hiểu giữa hai trang, link còn thiếu, ý lặp đáng thành trang analysis.</li>
+        <li><b>B — enrich:</b> với tối đa 5 trang, đọc trọn <i>mục</i> nguồn phủ chủ đề trong chunk <code>[x]</code>, tìm claim trang chưa có. Chunk <code>[~]</code>/<code>[ ]</code> → dừng, đề xuất <code>/ingest</code>. Claim sai theo chính nguồn → <code>_inbox.md</code>, đề xuất <code>/review-node</code>.</li>
+        <li><b>C — gap:</b> độ đầy đủ, độ sâu, độ liên kết của cụm, khái niệm thiếu trang.</li>
+      </ul></li>
+    <li data-n="2" class="gate"><b class="t">Một bản đề xuất gộp <span class="tag h">Người duyệt</span></b><p>Claim mới kèm chú thích, Conflict đề xuất, link bổ sung, trang analysis (nếu có), và hệ quả status: trang <code>stable</code> nào sẽ về <code>draft</code>.</p></li>
+    <li data-n="3"><b class="t">Ghi đúng phần đã duyệt</b><p>Không đụng <code>reviewed</code>; không backfill chú thích cho claim cũ.</p></li>
+    <li data-n="4"><b class="t">Báo cáo</b><p><code>Claude outputs/research-&lt;ngày&gt;-&lt;chủ đề&gt;.md</code>, kể cả khi người dùng từ chối hết.</p></li>
+    <li data-n="5" class="check"><b class="t">--all sạch (nếu có ghi), ghi log</b></li>
+  </ol>
+</div>
+
+<h2 id="vong-doi">Hai vòng đời: chunk nguồn và trang wiki</h2>
+<figure class="diagram">
+<pre class="mermaid">
+stateDiagram-v2
+  direction LR
+  state "[ ] chưa ingest" as N
+  state "[~] đang dở / còn mục chưa phủ" as P
+  state "[x] mọi mục đã trích hoặc bỏ qua có lý do" as X
+  [*] --> N
+  N --> P: /ingest lượt đầu
+  N --> X: /ingest + --coverage sạch
+  P --> X: /ingest tiếp + --coverage sạch
+  X --> P: --coverage phát hiện mục chưa phủ (lint / migration)
+</pre>
+<figcaption>Chunk trong <code>03_state/&lt;sid&gt;.md</code>. Research chỉ đọc chunk <code>[x]</code>.</figcaption>
+</figure>
+<figure class="diagram">
+<pre class="mermaid">
+stateDiagram-v2
+  direction LR
+  [*] --> stub: trang khác cần link tới
+  [*] --> draft: /ingest tạo trang
+  stub --> draft: /ingest nạp nội dung
+  draft --> stable: /promote (người duyệt)
+  stable --> stale: nguồn liên quan ingest mà không merge
+  stable --> draft: merge / sửa claim / enrich
+  stale --> draft: merge nội dung mới
+</pre>
+<figcaption>Trường <code>status</code> của trang. Trục <code>reviewed</code>/<code>reviewed_by</code> độc lập: đo việc đã đối chiếu nguồn, không đo vòng đời.</figcaption>
+</figure>
+<div class="table-wrap"><table>
+<thead><tr><th>Chuyển</th><th>Điều kiện</th><th>Ai làm</th></tr></thead>
+<tbody>
+<tr><td><code>stub → draft</code></td><td>Được ingest nội dung thật. Stub tồn quá 3 lượt ingest là nợ (<code>--stub-debt</code>)</td><td>/ingest</td></tr>
+<tr><td><code>draft → stable</code></td><td><code>--all</code> sạch cho trang; outlink ≥ 1; backlink ≥ 2; không Conflict; không bị flag ở lint gần nhất; người dùng duyệt</td><td>/promote</td></tr>
+<tr><td><code>stable → stale</code></td><td>Nguồn liên quan được ingest mà lượt đó không merge vào trang</td><td>/ingest</td></tr>
+<tr><td><code>stable/stale → draft</code></td><td>Nội dung trang đổi: merge, sửa claim sai, enrich</td><td>/ingest · /review-node · /research</td></tr>
+</tbody></table></div>
+
+<h2 id="phan-hoi">Vòng phản hồi: lỗ hổng nào do ai bắt</h2>
+<p>Mỗi loại lỗ hổng có một operation phát hiện và một operation sửa. Không operation nào làm việc của operation khác: research không sửa claim cũ, review không thêm kiến thức mới, lint không sửa gì.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Lỗ hổng</th><th>Ai phát hiện</th><th>Ai sửa</th></tr></thead>
+<tbody>
+<tr><td>Mục nguồn chưa trang nào trích <span class="tag n">Mới</span></td><td><code>--coverage</code> ở ingest bước 7 và lint bước 0</td><td>/ingest phần còn lại, hoặc ghi <code>bỏ qua:</code></td></tr>
+<tr><td>Claim còn thiếu ngay cạnh đoạn đã trích</td><td>/research B (đọc trọn mục)</td><td>/research bước 3, sau khi duyệt</td></tr>
+<tr><td>Claim sai so với nguồn nó dẫn</td><td>/review-node; /research ghi inbox</td><td>/review-node</td></tr>
+<tr><td>Hai nguồn nói khác nhau</td><td>/ingest, /research, /review-node</td><td>Người dùng, qua <code>⚠️ Conflict</code></td></tr>
+<tr><td>Hai trang diễn giải lệch nhau</td><td>/research A</td><td>Báo cáo; người dùng quyết</td></tr>
+<tr><td>Mồ côi, link chết, OCR, nợ stub, nợ inbox, title, trùng lặp</td><td>/lint</td><td>Người dùng duyệt → operation tương ứng</td></tr>
+<tr><td>File nguồn bị đổi</td><td><code>--verify-sources</code></td><td>Người dùng; agent không sửa nguồn</td></tr>
+</tbody></table></div>
+
+<h2 id="duyet">Điểm dừng chờ người duyệt</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Operation</th><th>Điểm dừng</th><th>Vì sao</th></tr></thead>
+<tbody>
+<tr><td>/ingest</td><td>Bước 2: 5–10 ý chính, danh sách trang, danh sách mục kèm đề xuất bỏ qua</td><td>Người viết phải tham gia thì wiki mới tạo ra hiểu biết, không chỉ là ghi chép</td></tr>
+<tr><td>/research</td><td>Bước 0: cụm trang · Bước 2: bản đề xuất gộp</td><td>Thấy toàn cảnh một lần thay vì bị hỏi rải rác</td></tr>
+<tr><td>/query</td><td>Trước khi tạo trang analysis</td><td>Luật cứng 4</td></tr>
+<tr><td>/lint</td><td>Báo cáo, triage inbox, danh sách stable</td><td>Lint nhìn cả wiki nên dễ sửa hàng loạt theo một phán đoán sai</td></tr>
+<tr><td>/promote</td><td>Danh sách trang đã duyệt</td><td><code>stable</code> chỉ có nghĩa khi người dùng đã chọn</td></tr>
+<tr><td>Mọi operation</td><td>Xoá, ghi đè, git discard, force push</td><td>Quy tắc bảo vệ dữ liệu trong CLAUDE.md global</td></tr>
+</tbody></table></div>
+
+<h2 id="lenh">Lệnh kiểm theo thời điểm</h2>
+<p>Tất cả nằm trong <code>.claude/hooks/validate_wiki_page.py</code>. Exit 0 là đạt, exit 2 là có vấn đề.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Lệnh</th><th>Khi nào</th><th>Kiểm gì</th></tr></thead>
+<tbody>
+<tr><td><i>(hook tự chạy)</i></td><td>Mỗi Write/Edit trong <code>02_wiki/</code></td><td>Frontmatter, heading, link chết, source id, chú thích §7.5</td></tr>
+<tr><td><code>--all</code></td><td>Trước log của ingest, query (khi tạo trang), promote, review, research (khi ghi); bước 0 lint</td><td>Như hook + trang mồ côi; bắt file ghi bằng shell</td></tr>
+<tr><td><code>--coverage [&lt;sid&gt;]</code> <span class="tag n">Mới</span></td><td>Trước khi đánh chunk <code>[x]</code>; bước 0 lint</td><td>Mục nguồn chưa trang nào trích</td></tr>
+<tr><td><code>--verify-sources</code></td><td>Bước 0 lint; khi nghi nguồn bị đổi</td><td>Bytes, số dòng, SHA-256 so với bản kê</td></tr>
+<tr><td><code>--backlinks [&lt;trang&gt;]</code></td><td>query, research, promote, review</td><td>Đếm/liệt kê backlink, kể cả <code>[[trang|nhãn]]</code></td></tr>
+<tr><td><code>--ocr</code> · <code>--stub-debt</code> · <code>--inbox-debt</code></td><td>Bước 0 lint</td><td>Ứng viên OCR, stub quá 3 lượt ingest, inbox quá 3 lượt lint</td></tr>
+<tr><td><code>--now</code></td><td>Mỗi lần ghi log</td><td>Giờ Việt Nam <code>YYYY-MM-DD:hh-MM-ss</code></td></tr>
+</tbody></table></div>
+
+<h2 id="luat">Luật cứng</h2>
+<ol class="rules">
+  <li>Không bao giờ sửa, thêm, đổi tên, xoá hay đổi ký tự xuống dòng trong <code>01_sources/</code>.</li>
+  <li>Không tự sửa mâu thuẫn giữa hai nguồn: đánh <code>⚠️ Conflict</code> kèm cả hai claim và vị trí, chờ người xử lý.</li>
+  <li>Lint chỉ báo cáo, không tự sửa.</li>
+  <li>Cần người dùng xác nhận trước khi: tạo trang analysis; ghi trang ở ingest (sau bước 2); ghi trang ở research (sau bước 2); nâng <code>draft → stable</code>.</li>
+  <li>Mỗi operation ghi đúng 1 mục vào cuối <code>log.md</code>, tối đa 3 dòng; lập luận không nằm trong log.</li>
+  <li>Mỗi lượt ingest cập nhật <code>index.md</code> §Sources và <code>03_state/&lt;sid&gt;.md</code>, kể cả lượt không tạo trang mới.</li>
+</ol>
+
+<h2 id="ho-so">Hồ sơ vận hành: cái gì ghi ở đâu</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>File</th><th>Chứa</th><th>Không chứa</th></tr></thead>
+<tbody>
+<tr><td><code>log.md</code></td><td>Kết quả từng operation, append-only, <code>## [giờ] &lt;op&gt; | tiêu đề</code>. 8 giá trị op: ingest, query, lint, promote, review, research, schema, repo</td><td>Lập luận, trạng thái "còn lại phần nào"</td></tr>
+<tr><td><code>decisions.md</code></td><td>Quyết định và lý do (sửa schema, skill, hook)</td><td>Nhật ký thao tác</td></tr>
+<tr><td><code>03_state/</code></td><td>Tiến độ ingest hiện tại; nguồn sự thật cho "còn lại phần nào"</td><td>Lịch sử xử lý</td></tr>
+<tr><td><code>_inbox.md</code></td><td>Ý tưởng chưa chín, concept cô lập, claim nghi sai chờ review</td><td>Nội dung trang wiki</td></tr>
+<tr><td><code>Claude outputs/</code></td><td>Báo cáo lint, research, coverage (gitignore)</td><td>Tri thức đã chấp nhận</td></tr>
+<tr><td><code>.claude/session_handoffs/</code></td><td>Một file mới cho mỗi phiên có thay đổi: kết quả, kiểm, việc còn lại</td><td>Transcript, diff</td></tr>
+</tbody></table></div>
+
+<h2 id="hien-tai">Trạng thái ngày 2026-09-26</h2>
+<p>Sau khi thêm cổng độ phủ, 99 chunk trên 15 nguồn được hạ từ <code>[x]</code> về <code>[~]</code>. Nguồn IMF đã xử lý xong ngay sau đó và trở lại 100% <code>[x]</code>; còn 94 chunk trên 14 nguồn. Việc tiếp theo là <code>/ingest</code> các mục chưa phủ của từng nguồn; danh sách mới nhất lấy bằng <code>--coverage &lt;sid&gt;</code>.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Nguồn</th><th class="num">Chunk hạ [~]</th><th>Ghi chú</th></tr></thead>
+<tbody>
+<tr><td><code>fixed_income_during</code></td><td class="num">23</td><td>42 file theo chương, nhiều mục con chưa trích</td></tr>
+<tr><td><code>choudhry_analysing_yield_curve</code></td><td class="num">13</td><td></td></tr>
+<tr><td><code>cargill_central_bank_policy</code></td><td class="num">12</td><td></td></tr>
+<tr><td><code>clippings</code></td><td class="num">11</td><td>Bài ít heading, % phủ chỉ tham khảo</td></tr>
+<tr><td><code>tata_bank_alm</code></td><td class="num">7</td><td></td></tr>
+<tr><td><code>bindseil_monetary_policy</code></td><td class="num">6</td><td>Ch.15 phủ 15% là ca phát hiện ban đầu</td></tr>
+<tr><td><code>vab_ftp_methodology</code></td><td class="num">4</td><td></td></tr>
+<tr><td><code>imf_macro_accounting</code></td><td class="num">0</td><td>Xử lý xong 2026-09-26: 4 trang mới, merge 4 trang, 4 mục bỏ qua đã duyệt, 2 Conflict số liệu giữa Ch.1 và Ch.2</td></tr>
+<tr><td><code>bcbs_144</code> · <code>insights_59</code> · <code>sbv_circular_14_2025</code> · <code>sbv_circular_83_2025</code> · <code>sbv_draft_circular_replace_22</code></td><td class="num">3 mỗi nguồn</td><td>sbv_* báo theo từng Điều</td></tr>
+<tr><td><code>bcbs_238</code> · <code>bcbs_368</code></td><td class="num">2 · 2</td><td></td></tr>
+</tbody></table></div>
+
+<footer>Nguồn của trang này: <code>CLAUDE.md</code>, <code>00_schema.md</code>, <code>.claude/skills/*/SKILL.md</code>, <code>decisions.md</code> mục 2026-09-26. Khi skill hoặc schema đổi, cập nhật file <code>.claude/docs/luong-van-hanh.html</code> rồi publish lại.</footer>
+</main>
+</div>

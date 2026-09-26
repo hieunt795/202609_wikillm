@@ -3,7 +3,7 @@ title: sovereign-bond-holding-ceilings-and-interbank-equity-limits-contain-conce
 type: concept
 tags: [banking, sovereign-bonds, treasury, concentration-risk, cross-ownership, equity-investment, governance, alm, regulation]
 sources: [sbv_draft_circular_replace_22]
-status: stable
+status: draft
 last_updated: 2026-09-26
 ---
 
@@ -22,7 +22,8 @@ Dự thảo quy định trần khống chế định lượng nghiêm ngặt (sb
 - **Các khoản loại trừ khỏi hạn mức 30%**:
   1. Các khoản mua, đầu tư trái phiếu bằng nguồn vốn ủy thác của bên thứ ba mà ngân hàng hoàn toàn không chịu rủi ro tín dụng và rủi ro thị trường;
   2. Các khoản trái phiếu Chính phủ nhận làm tài sản bảo đảm, hoặc nhận thông qua các nghiệp vụ chiết khấu, tái chiết khấu và giao dịch Reverse Repo;
-- **Cơ chế dành cho ngân hàng mới thành lập**: Đối với tổ chức tín dụng mới hoạt động dưới 2 năm kể từ ngày khai trương và có quy mô Tổng Nợ phải trả nhỏ hơn vốn điều lệ hoặc vốn được cấp, trần 30% sẽ được tính trên quy mô **vốn điều lệ, vốn được cấp** thay vì Tổng Nợ phải trả bình quân.
+- **Cơ chế dành cho ngân hàng mới thành lập**: Đối với tổ chức tín dụng mới hoạt động dưới 2 năm kể từ ngày khai trương và có quy mô Tổng Nợ phải trả nhỏ hơn vốn điều lệ hoặc vốn được cấp, trần 30% sẽ được tính trên quy mô **vốn điều lệ, vốn được cấp** thay vì Tổng Nợ phải trả bình quân;
+- **Miễn trừ theo Điều 1.4 cho ngân hàng tham gia tái cơ cấu bắt buộc**: Ngân hàng hỗ trợ hoặc ngân hàng là bên nhận chuyển giao bắt buộc tổ chức tín dụng yếu kém được miễn trừ hoàn toàn, không bị áp dụng trần hạn chế tỷ lệ mua, nắm giữ, đầu tư trái phiếu Chính phủ và trái phiếu được Chính phủ bảo lãnh (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Điều 1.4, d.46). Đối với các tổ chức tài chính quốc tế (MDBs) phát hành hoặc bảo lãnh trái phiếu, Điều 3.3 chuẩn hóa danh mục gồm Nhóm Ngân hàng Thế giới (IBRD, IFC, IDA, MIGA), ADB, AfDB, EBRD và IADB (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Điều 3.3, d.69–76).
 
 **2. Rào cản sở hữu chéo và giới hạn mua cổ phần của Tổ chức tín dụng khác (Điều 28)**
 

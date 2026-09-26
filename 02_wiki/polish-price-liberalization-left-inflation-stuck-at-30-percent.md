@@ -3,7 +3,7 @@ title: polish-price-liberalization-left-inflation-stuck-at-30-percent
 type: case
 tags: [poland, transition-economies, prices, inflation]
 sources: [imf_macro_accounting]
-status: stable
+status: stale
 last_updated: 2026-09-15
 ---
 

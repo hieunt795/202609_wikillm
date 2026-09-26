@@ -1,0 +1,14 @@
+---
+title: accounting-classification-of-securities-portfolios-distorts-hqla-monetization-feasibility
+type: concept
+tags: [liquidity-risk, stress-testing, hqla, accounting, htm, afs, basel-iii]
+sources: [insights_59]
+status: draft
+last_updated: 2026-09-26
+---
+
+Việc phân loại kế toán đối với danh mục chứng khoán đầu tư (accounting classification of securities portfolios) làm biến dạng sâu sắc tính khả thi của việc tiền mặt hóa vùng đệm tài sản thanh khoản cao (HQLA monetization feasibility) trong điều kiện thị trường chịu áp lực thực tế, tạo ra sự sai lệch lớn giữa số liệu đệm thanh khoản danh nghĩa trên sổ sách và năng lực đáp ứng thanh toán thực tế (insights_59, Section 6, Challenges and areas for future development, d.387–402).
+
+Theo các chuẩn mực quản lý thanh khoản hiện hành như Basel III LCR, các chứng khoán chính phủ thỏa mãn tiêu chuẩn được tính trọn vẹn vào đệm [[unencumbered-high-quality-liquid-asset-cushion-insures-against-stress-cash-flow-deficits]] dựa trên đặc tính rủi ro tín dụng và độ thanh khoản lý thuyết, bất kể chúng được hạch toán trong danh mục nắm giữ đến ngày đáo hạn (Held-to-Maturity — HTM, theo giá trị phân bổ) hay danh mục sẵn sàng để bán (Available-for-Sale — AFS, theo giá trị hợp lý) [[hqla-eligibility-and-unwinding-haircut-mechanics-calibrate-liquidity-buffers]] (insights_59, Section 6, Challenges and areas for future development, d.387–390). Tuy nhiên, khi một đợt khủng hoảng thanh khoản bùng phát trong bối cảnh lãi suất thị trường tăng cao, các tài sản trong danh mục HTM thường tích lũy các khoản lỗ chưa thực hiện (unrealised losses) rất lớn (insights_59, Section 6, Challenges and areas for future development, d.391–398).
+
+Nếu ngân hàng buộc phải bán đứt trên thị trường (outright sales) các chứng khoán HTM này để giải quyết thiếu hụt thanh khoản, các chuẩn mực kế toán quốc tế (như IFRS 9 và US GAAP) sẽ kích hoạt quy tắc "vết nhơ danh mục" (tainting rule): ngân hàng bị bắt buộc phải tái phân loại toàn bộ danh mục HTM còn lại sang giá trị thị trường và ghi nhận toàn bộ các khoản lỗ tích lũy vào báo cáo kết quả kinh doanh hoặc vốn chủ sở hữu (insights_59, Section 6, Challenges and areas for future development, d.397–402). Động thái này sẽ lập tức xóa sổ bộ đệm an toàn vốn và đẩy ngân hàng vào tình trạng mất khả năng thanh toán (insolvency), như minh chứng thực tế từ vụ sụp đổ của Silicon Valley Bank năm 2023. Do đó, các kịch bản kiểm tra sức chịu đựng thanh khoản hiện đại không thể coi mọi tài sản HQLA đều có khả năng chuyển hóa thành tiền tệ như nhau theo [[basel-iii-lcr-short-term-liquidity-stress-framework-and-buffer-usability]], mà phải phân tách rành mạch cơ chế tiền mặt hóa: chứng khoán HTM chỉ được xem là khả dụng nếu có thể huy động vốn thông qua các giao dịch mua lại (repo) hoặc thế chấp tại cửa sổ chiết khấu của ngân hàng trung ương, đồng thời phải áp mức chiết khấu định giá áp lực [[simultaneous-funding-and-market-liquidity-stress-drives-exposure-valuation-haircuts]].

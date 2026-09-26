@@ -242,3 +242,26 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 - **Quyết định:** chuẩn hoá 29 trang có `title` dạng Title Case (có dấu cách, có ngoặc kép) về đúng chuỗi kebab-case của tên file, theo quy ước 742/766 trang đang dùng. 5 trang Ch.5 gắn `type: analysis` dù chỉ một nguồn và nội dung là concept được đổi về `concept`.
 - **Lý do:** hook so `kebab(title)` với tên file nên Title Case lọt qua `--all`, trong khi `00_schema.md` §3 yêu cầu tên file khớp `title`. Hai cách viết song song làm lệch grep `^title:` ở lượt rẻ của query/research.
 - **Việc còn mở:** hook chưa bắt lỗi này; nên siết phép so khi sửa hook lần tới (gộp batch). 4 trang `type: analysis` một nguồn của `tata_bank_alm` chưa đổi, vì cần đọc thân bài để chọn `concept` hay `case`.
+
+## [2026-09-26] Chunk `[x]` phải qua `--coverage`; ingest bỏ ngưỡng dưới; hạ `[~]` các chunk cũ còn mục chưa phủ
+
+- **Quyết định:** `[x]` nghĩa là mọi mục (heading) của chunk đã được chú thích §7.5 trích hoặc được ghi `bỏ qua: <heading> — <lý do>`, kiểm bằng lệnh mới `validate_wiki_page.py --coverage`. Ngưỡng ingest đổi từ "5–15 trang" thành "tối đa 15 trang/lượt", chunk chưa hết giữ `[~]`. Bước 0 vẫn giữ 3–5 ý chính, nhưng ý chính chỉ để bàn, không khoanh phạm vi. Lint thêm tiêu chí thứ 12 "Nguồn chưa phủ hết". Người dùng chọn tự hạ `[~]` cho các chunk `[x]` cũ còn mục chưa phủ.
+- **Lý do:** đo `bindseil_monetary_policy` (100% `[x]`): mỗi lượt chỉ tạo 1–4 trang, trần 15 chưa từng bị chạm, còn ngưỡng dưới 5 bị vi phạm nhiều lần. Độ phủ chú thích lệch mạnh: Ch.15 15%, Ch.1–2 26%, Ch.13 53%. Research không bù được lỗ hổng này vì nó đi từ trang đã có; review-node chỉ kiểm claim đã có. Không dùng bản kê khái niệm do agent tự viết: chính agent đã nén nội dung sẽ tự chấm bài mình, và danh sách dài làm bước duyệt vốn đã bị lướt qua càng bị lướt. Heading nguồn là đơn vị cơ học, máy kiểm được.
+- **Luật miễn của `--coverage`:** mục < 3 dòng không trống; frontmatter YAML của file chuyển đổi; References/Index/Contents/Exercises/Questions/Introduction/Overview/Summary/Conclusion; chunk "bỏ qua, không tạo trang". Chunk không có chú thích nào (ingest trước 2026-09-14) là *không đo được*, không tính lỗi. Nguồn ít heading (clippings) cho % thấp nhưng ít mục bị báo, chỉ tham khảo. Văn bản pháp quy (sbv_*) báo theo từng Điều nên số mục chưa phủ cao.
+- **Số liệu lúc chốt:** 96/217 chunk `[x]` đo được còn mục chưa phủ (~44%), chi tiết ở `Claude outputs/coverage-2026-09-26.md`.
+
+## [2026-09-26] `bỏ qua:` chỉ ghi cho mục người dùng đã duyệt ở bước 0 ingest
+
+- **Quyết định:** với chunk `[~]` hoặc đã ingest một phần, ingest bước 0 chạy `--coverage` và trình danh sách mục chưa phủ kèm hướng xử lý (viết / merge / đề xuất bỏ qua). Bước 7 chỉ được ghi `bỏ qua: <heading>` cho mục đã duyệt.
+- **Lý do:** nếu agent tự ghi `bỏ qua:` thì chính agent đã nén nội dung có thể bỏ qua hàng loạt để đạt `[x]`, và cổng độ phủ mất tác dụng. Lượt IMF cùng ngày cho thấy nhiễu có dạng riêng theo nguồn (trang bìa, danh sách thành viên, bảng số liệu, tường thuật bối cảnh): người duyệt phân loại nhanh hơn việc dạy máy nhận diện từng dạng. Danh sách mục không chép vào state file vì nó đổi mỗi khi wiki thêm trang; state chỉ giữ con trỏ tới `--coverage`.
+
+## [2026-09-26] Audit skill ingest: đánh số lại theo thứ tự chạy, danh sách mục ở bước duyệt cho mọi chunk
+
+- **Quyết định:** đánh số lại ingest 1–10 theo thứ tự chạy thật (chọn nguồn → duyệt ý chính và danh sách mục → cụm hoá → viết → liên kết → ngưỡng → state + `--coverage` → index → `--all` → log). Bước duyệt (nay là bước 2, trước là bước 0) trình danh sách mục cho cả chunk `[ ]` (từ heading) lẫn `[~]` (từ `--coverage`). Nguồn nhiều file ghi `file <tên>` trong mọi chú thích, mỗi ngoặc một nguồn.
+- **Lý do:** bản trước để bước 0 dùng kết quả bước 1, và ghi index trước khi chốt `[x]`/`[~]`. Chỉ chunk `[~]` được trình mục, nên chunk mới không thể có mục bỏ qua đã duyệt và gần như luôn kết thúc ở `[~]`. Hook bỏ sót 17 chú thích ("cùng file", ngoặc gộp nguồn), làm bản đo 2026-09-26 báo thiếu độ phủ ở 2 chunk.
+- **Tham chiếu cũ:** các mục `decisions.md`/`log.md` trước ngày này nói "ingest bước 0" là bước duyệt ý chính, nay là bước 2; "bước 2" dò trùng nay là bước 3. Không sửa hồ sơ cũ.
+
+## [2026-09-26] Ingest bước 2 trình 5–10 ý chính thay cho 3–5
+
+- **Quyết định:** người dùng nâng số ý chính ở bước duyệt của ingest lên 5–10.
+- **Lý do:** người dùng chọn. Ý chính là để bàn, không khoanh phạm vi (phạm vi do danh sách mục và `--coverage` giữ), nên số ý lớn hơn giúp chunk dày không bị nén thành vài ý chung mà không làm lỏng cổng độ phủ.

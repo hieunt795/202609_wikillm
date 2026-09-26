@@ -1222,3 +1222,53 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 11 trang concept mới: sound-stress-testing-governance-…, firm-wide-stress-testing-…, forward-looking-stress-scenarios-…, severity-calibration-and-reverse-stress-testing-…, simultaneous-funding-and-market-liquidity-…, risk-mitigation-effectiveness-…, structured-credit-stress-testing-…, pipeline-and-warehousing-risk-…, reputational-risk-and-off-balance-sheet-…, highly-leveraged-counterparty-stress-testing-…, supervisory-stress-testing-framework-…; cập nhật backlink 6 trang (icaap, supervisory-stress-testing, reverse-stress-testing, repo-haircuts, sfts, asset-backed-securitization, funding-diversification, contingent-liquidity, supervisory-liquidity-review).
 - 0 stub mới; --all sạch (942 trang quét, 0 lỗi, 0 mồ côi).
 - bcbs_155 hoàn tất 100% (nguồn ngắn).
+
+## [2026-09-26:21-15-01] schema | kiểm độ phủ nguồn khi ingest (`--coverage`)
+- Hook thêm `--coverage`; sửa ingest SKILL (bước 0/5/7, bỏ Test prompts → evals/evals.json, Xử lý lỗi bỏ `git checkout`), lint SKILL (tiêu chí 12), `00_schema.md` §4 §10, `CLAUDE.md`.
+- 96/217 chunk `[x]` đo được còn mục chưa phủ; báo cáo: Claude outputs/coverage-2026-09-26.md.
+- Chưa hạ `[~]` state file: chờ lượt ingest `insights_59` đang chạy song song xong.
+
+## [2026-09-26:21-17-14] ingest | insights_59 toàn bộ (d.1–481) — Liquidity stress tests for banks (FSI Insights 59)
+- 12 trang concept mới: systemic-liquidity-reallocation-..., static-balance-sheet-assumption-..., cash-flow-survival-period-..., foreign-currency-liquidity-stress-testing-..., clearing-house-and-trade-repository-..., bank-nbfi-liquidity-contagion-..., nbfi-leverage-and-liquidity-mismatches-..., commercial-lender-of-last-resort-..., system-wide-exploratory-scenarios-..., confidentiality-constraints-in-supervisory-..., digital-deposit-velocity-..., accounting-classification-of-securities-...
+- Cập nhật backlink & liên kết ngữ cảnh 6 trang: supervisory-stress-testing-framework-..., simultaneous-funding-and-market-liquidity-..., contingent-liquidity-outflows-..., reputational-risk-and-off-balance-sheet-..., board-approved-liquidity-risk-tolerance-..., central-bank-fx-swap-lines-...
+- 0 stub mới; --all sạch hoàn toàn (954 trang quét, 0 lỗi, 0 mồ côi); insights_59 hoàn tất 100%.
+
+## [2026-09-26:21-20-02] schema | hạ `[x]` → `[~]` các chunk còn mục chưa phủ theo `--coverage`
+- 99 chunk / 15 state file (gồm 3 chunk insights_59 vừa ingest); index.md §Sources 15 nguồn → "Đang ingest dở".
+- `--coverage` exit 0; `--all` sạch (954 trang); `--verify-sources` 0 lệch.
+- Phần còn lại: `/ingest` các mục chưa phủ, danh sách ở Claude outputs/coverage-2026-09-26.md.
+
+## [2026-09-26:21-43-58] ingest | imf_macro_accounting mục chưa phủ (Ch.1, Ch.5 mở đầu; bỏ qua đã duyệt Ch.1–4)
+- 4 trang mới: monetary-accounts-play-a-special-role-…, transition-to-a-market-economy-combines-…, polands-big-bang-averted-hyperinflation-…, polands-trade-liberalization-was-partly-reversed-…; merge 4 trang (output-collapse, transition-statistics, unemployment, velocity-jumps) → draft; price-liberalization Ba Lan → stale; 2 ⚠️ Conflict Ch.1 vs Ch.2 (thất nghiệp 1991, lạm phát 1990–91).
+- 0 stub; 4 mục ghi `bỏ qua:` theo duyệt; --all sạch (958 trang), --coverage imf sạch.
+- imf_macro_accounting 36/36 chunk `[x]`, hoàn tất 100%.
+
+## [2026-09-26:21-44-41] schema | ingest bước 0 trình mục chưa phủ; `bỏ qua:` cần người duyệt
+- ingest SKILL bước 0 + bước 7; hook `cov_norm` bỏ thẻ HTML/link markdown khi so heading.
+- Artifact luồng vận hành cập nhật (version 2).
+
+## [2026-09-26:21-55-37] schema | audit skill ingest: đánh số lại bước, cổng độ phủ đọc đủ chú thích
+- ingest SKILL: bước 2 trình danh sách mục cho cả chunk [ ] và [~]; state (7) trước index (8); luật chú thích nguồn nhiều file; ghi rõ giới hạn cấp mục, nguồn ngắn, exit code. Sửa tham chiếu số bước ở schema §5 §10, CLAUDE.md, query SKILL, artifact (version 3).
+- Hook `--coverage`: tách ngoặc gộp nhiều nguồn theo `;`, nhận `file` không `.md` và "cùng file" → 0 chú thích mất (trước: 17).
+- 2 chunk trả về [x] vì đã phủ đủ (bindseil d.2859–3293, tata d.1784–2176); còn 93 chunk [~].
+
+## [2026-09-26:21-58-54] schema | ingest bước 2: 5–10 ý chính (trước 3–5)
+- Sửa ingest SKILL, CLAUDE.md (kèm "5–15 trang" cũ → "tối đa 15 trang"), evals.json, artifact luồng vận hành.
+
+## [2026-09-26:22-16-10] ingest | sbv_draft_circular_replace_22 Phụ lục I Phần D & Điều 1, 3, 5
+- 1 concept mới: contractual-maturity-ladder-and-cash-flow-reporting-framework-monitors-lcr-mismatches; cập nhật 4 trang (sovereign-bond-holding-..., credit-underwriting-and-approval-..., basel-iii-liquidity-coverage-ratio-..., contractual-cash-inflow-caps-...).
+- 0 stub; 4 mục ghi `bỏ qua:` theo duyệt (căn cứ ban hành, đối tượng áp dụng, giải thích từ ngữ chung, nơi nhận); --all sạch (959 trang), --coverage sbv_draft_circular_replace_22 sạch (0 mục chưa phủ).
+- sbv_draft_circular_replace_22 hoàn tất 100% (4/4 chunk [x]).
+
+## [2026-09-26:22-25-15] ingest | sbv_circular_83_2025 Phụ lục I–V & Điều 7–16, 22–52
+- 2 trang mới: risk-management-and-internal-control-supervisory-reporting-framework-tt83 (Phụ lục I & II: KSNB 3 tuyến, Đ.8, Đ.11–16, báo cáo QTRR 7 rủi ro), icaap-and-internal-audit-supervisory-reporting-templates-govern-capital-planning-tt83 (Phụ lục III & IV: ICAAP 4 năm, stress test vốn, báo cáo KTNB Ban kiểm soát); cập nhật 4 trang (irrbb-delta-eve-..., credit-risk-governance-..., proprietary-trading-internal-controls-..., three-lines-of-defense-...).
+- 0 stub; 10 mục ghi `bỏ qua:` theo duyệt (thể thức văn bản, đối tượng áp dụng, điều khoản thi hành, tiêu ngữ mẫu biểu); --all sạch (961 trang), --coverage sbv_circular_83_2025 sạch (0 mục chưa phủ).
+- sbv_circular_83_2025 hoàn tất 100% (3/3 chunk [x]).
+
+## [2026-09-26:22-39-19] ingest | sbv_circular_14_2025 Điều 9, 11–24, 44–48, 52–59, 63–65, 76 & Điều 3–6
+- 3 trang mới: standardized-credit-risk-weights-and-asset-classification-hierarchy-govern-regulatory-capital (khung phân loại tài sản 7 nhóm, thứ tự ưu tiên nhận diện, CRW chuẩn hóa sovereign, TCTD, BĐS, ma trận đòn bẩy x doanh thu, bán lẻ, ECAI), f-irb-credit-risk-mitigation-framework-and-purchased-receivables-capital-treatment (thuật toán LGD hiệu chỉnh TSBĐ đa dạng, haircut 0/40/50%, thế quyền bảo lãnh/CDS, vốn Purchased Receivables Default Risk + Dilution Risk LGD 100%), irb-system-design-operational-standards-and-pillar-3-disclosures (cơ cấu 7+1 bậc, phân nhóm bán lẻ, quản trị mô hình, stress test, công bố Trụ cột 3 bán niên/năm); cập nhật 4 trang (three-tier-capital-adequacy-..., credit-risk-mitigation-framework-..., irb-governance-use-test-..., standardized-approach-credit-risk-weights-...).
+- 0 stub; 7 mục ghi `bỏ qua:` theo duyệt (tiêu ngữ, tên văn bản, phạm vi áp dụng, giải thích từ ngữ chung, xuất bản công báo, thanh tra NHNN); --all sạch (964 trang), --coverage sbv_circular_14_2025 sạch (0 mục chưa phủ).
+- sbv_circular_14_2025 hoàn tất 100% (4/4 chunk [x]). Hoàn tất 100% nhóm 3 văn bản pháp lý ALM Việt Nam.
+
+
+

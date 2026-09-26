@@ -17,7 +17,7 @@ Quy trình thực thi nằm trong skill, nạp theo nhu cầu. Skill là nguồn
 
 | Operation | Skill | Đầu vào → đầu ra | Đọc `00_schema.md` |
 |---|---|---|---|
-| Nạp nguồn | `/ingest` | nguồn trong `01_sources/` → 3–5 ý chính chờ duyệt → 5–15 trang + stub + `index.md` + `03_state/` | Toàn bộ |
+| Nạp nguồn | `/ingest` | nguồn trong `01_sources/` → 5–10 ý chính chờ duyệt → tối đa 15 trang + stub + `index.md` + `03_state/` | Toàn bộ |
 | Hỏi đáp | `/query` | câu hỏi → câu trả lời; tuỳ chọn 1 trang `analysis` (cần xác nhận) | Không; chỉ §1, §7, §8, §12 khi tạo trang |
 | Kiểm tra sức khoẻ | `/lint` | toàn bộ `02_wiki/` + `_inbox.md` → báo cáo, triage inbox, danh sách *Đủ điều kiện `stable`* | §4–§9, §11, §12 |
 | Nâng `draft → stable` | `/promote` | danh sách người dùng đã duyệt → đổi `status` | §7.5, §9, §12 |
@@ -31,7 +31,7 @@ Ingest, query, lint, research dùng mẫu **hai lượt**: lượt 1 quét front
 1. **Không bao giờ sửa nội dung trong `01_sources/`.** Không ngoại lệ: không sửa, không thêm file, không đổi tên, không xoá, không đổi ký tự xuống dòng. Mọi thứ agent cần ghi về một nguồn đều đi ra `03_state/` (§3, §10).
 2. **Không tự sửa mâu thuẫn.** Phát hiện conflict → đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn, chờ người xử lý.
 3. **Lint chỉ báo cáo, không tự sửa.**
-4. **Cần người dùng xác nhận trước khi:** tạo trang `type: analysis`; ghi trang ở bước ingest (bước 0 — duyệt 3–5 ý chính); ghi trang ở research (bản đề xuất gộp, bước 2); nâng `draft → stable` (Promote).
+4. **Cần người dùng xác nhận trước khi:** tạo trang `type: analysis`; ghi trang ở bước ingest (bước 2 — duyệt 5–10 ý chính và các mục bỏ qua); ghi trang ở research (bản đề xuất gộp, bước 2); nâng `draft → stable` (Promote).
 5. Mỗi operation ghi đúng 1 mục vào **cuối** `log.md`, dạng `## [YYYY-MM-DD:hh-MM-ss] <op> | <tiêu đề>` + tối đa 3 dòng (§12). Lập luận không nằm trong log.
 6. **Mỗi lượt ingest cập nhật `02_wiki/index.md` §Sources và `03_state/<source id>.md`**, kể cả lượt không tạo trang mới. Nguồn mới vào bản kê ngay lượt đầu (§10).
 
@@ -58,6 +58,7 @@ Chi tiết ở `00_schema.md`; những điều dễ sai nhất:
 | `--verify-sources` | Bước 0 lint; bất cứ khi nào nghi `01_sources/` bị đổi |
 | `--backlinks [<trang>]` | Đếm/liệt kê backlink (không grep tay) |
 | `--ocr` · `--stub-debt` · `--inbox-debt` | Tiêu chí lint tương ứng |
+| `--coverage [<source id>]` | Mục nguồn chưa trang nào trích; **bắt buộc** trước khi đánh chunk `[x]` (ingest bước 7) và ở bước 0 lint |
 | `--now` | Giờ Việt Nam cho `log.md` |
 
 Cảnh báo của hook phải xử lý ngay, không để tồn đến lượt lint.

@@ -39,6 +39,7 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `bcbs_238` | `basel/` | Nguồn dài | `03_state/bcbs_238.md` |
 | `bcbs_368` | `basel/` | Nguồn dài | `03_state/bcbs_368.md` |
 | `bcbs_155` | `basel/` | Nguồn ngắn | — |
+| `insights_59` | `basel/` | Nguồn dài | `03_state/insights_59.md` |
 
 
 ## imf_macro_accounting
@@ -584,3 +585,17 @@ File `.md` do docling chuyển đổi từ PDF (frontmatter `extractor: docling`
 | Đường dẫn | Bytes | Dòng | SHA-256 |
 |---|---|---|---|
 | `01_sources/basel/bcbs155.md` | 69.490 | 459 | `d515e2735857f5d5d22e0b3064b5eccb58f8e31ed609531d03e2578f46911fba` |
+ 
+## insights_59
+
+| | |
+|---|---|
+| Nhan đề | *FSI Insights on policy implementation No 59: Liquidity stress tests for banks - range of practices and possible developments* |
+| Tác giả | Patrizia Baudino, Pablo de Carvalho, Jean-Philippe Svoronos |
+| Xuất bản | Financial Stability Institute, Bank for International Settlements (Basel, Thụy Sĩ, tháng 10/2024) — ISSN: 2522-249X (online), ISBN: 978-92-9259-791-7 (online) |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 137.198 bytes / 481 dòng |
+| Tiến độ ingest | Hoàn tất 100% — `03_state/insights_59.md` |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/basel/insights59.md` | 137.198 | 481 | `c5c71cf1efed4ef5a4a97ce0aa030f47523073d17f84dfeff27563aa1672edf0` |

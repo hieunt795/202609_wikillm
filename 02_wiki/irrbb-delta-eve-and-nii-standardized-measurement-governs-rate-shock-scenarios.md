@@ -45,7 +45,7 @@ Hệ số nhân $u_i$: Khi lãi suất thị trường tăng (kịch bản tăng
 
 **4. Sáu kịch bản sốc lãi suất chuẩn Basel (BCBS D578) và thuật toán chiết khấu $\Delta EVE$**
 
-Để lượng hóa $\Delta EVE$, ngân hàng áp dụng 6 kịch bản sốc lãi suất theo chuẩn mực hiệu chỉnh BCBS D578 (sbv_circular_83_2025, file TT83.md, Phụ lục V.A.III, d.1719–1768; Phụ lục V.C, d.1775–1844):
+Để lượng hóa $\Delta EVE$, ngân hàng áp dụng 6 kịch bản sốc lãi suất theo chuẩn mực hiệu chỉnh BCBS D578 (sbv_circular_83_2025, file TT83.md, Phụ lục V.A.III, d.1719–1768) (sbv_circular_83_2025, file TT83.md, Phụ lục V.C, d.1775–1844):
 1. **Tăng song song (Parallel shock up)**: Dịch chuyển lên toàn bộ đường cong lợi suất.
 2. **Giảm song song (Parallel shock down)**: Dịch chuyển xuống toàn bộ đường cong lợi suất.
 3. **Cú sốc dốc (Steepener shock)**: Giảm lãi suất ngắn hạn và tăng lãi suất dài hạn: $\Delta R_{steepener,c}(t_k) = -0{,}65 \cdot |\Delta R_{short,c}(t_k)| + 0{,}9 \cdot |\Delta R_{long,c}(t_k)|$.

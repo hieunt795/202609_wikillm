@@ -3,7 +3,7 @@ title: proprietary-trading-internal-controls-mandate-front-middle-back-office-se
 type: concept
 tags: [banking, proprietary-trading, market-risk, trading-book, internal-control, front-office, middle-office, back-office, regulation]
 sources: [sbv_circular_83_2025]
-status: stable
+status: draft
 last_updated: 2026-09-26
 ---
 
@@ -13,6 +13,8 @@ Khung kiểm soát giao dịch tự doanh bắt buộc phân tách hoàn toàn c
 1. Bộ phận Giao dịch tự doanh (Front Office): Bao gồm các giao dịch viên (traders) chuyên trách thực hiện giao dịch mua, bán, trao đổi các công cụ tài chính. Giao dịch viên chỉ được phép đàm phán và khớp lệnh trong phạm vi loại sản phẩm, danh mục đối tác, phân cấp thẩm quyền và hạn mức rủi ro được Tổng giám đốc phê duyệt trước (sbv_circular_83_2025, file TT83.md, Điều 16.3.a, d.344);
 2. Bộ phận Kiểm soát giao dịch (Middle Office): Độc lập hoàn toàn với Front Office, đóng vai trò giám sát tuân thủ hạn mức giao dịch trong ngày (intraday limits), hạn mức cắt lỗ (stop-loss), hạn mức trạng thái mở (open position limits) và thực hiện kiểm tra định giá thị trường độc lập (Independent Price Verification - IPV) để đối chuẩn giá khớp lệnh với giá thị trường hiện hành (sbv_circular_83_2025, file TT83.md, Điều 16.3.c, d.346);
 3. Bộ phận Thanh toán và Tác nghiệp nguồn vốn (Back Office): Chịu trách nhiệm thực hiện chuyển tiền, chuyển giao chứng khoán, hạch toán kế toán và độc lập gửi - nhận văn bản xác nhận giao dịch (trade confirmation) với đối tác thị trường mà không qua tay giao dịch viên (sbv_circular_83_2025, file TT83.md, Điều 16.4.a, d.348). Mọi sai lệch phát sinh giữa dữ liệu giao dịch và kết quả thanh toán thực tế bắt buộc phải được Back Office lập biên bản và xử lý kịp thời (sbv_circular_83_2025, file TT83.md, Điều 16.4.c, d.351).
+
+Hệ thống hạn mức rủi ro thị trường và kiểm soát danh mục tự doanh được quy định chặt chẽ tại Điều 35 (sbv_circular_83_2025, file TT83.md, Điều 35, d.617–629): ngân hàng phải xây dựng hạn mức quy mô giao dịch, hạn mức giá trị chịu rủi ro (VaR), hạn mức trạng thái mở theo từng đồng tiền, hạn mức cắt lỗ (stop-loss) và hạn mức nắm giữ công cụ tài chính. Công tác đo lường và theo dõi rủi ro thị trường theo Điều 36 (sbv_circular_83_2025, file TT83.md, Điều 36, d.630–645) đòi hỏi bộ phận quản lý rủi ro phải tính toán lại trạng thái rủi ro thị trường hàng ngày theo giá trị hợp lý (Mark-to-Market hoặc Mark-to-Model) và định kỳ thực hiện kiểm tra sức chịu đựng (Stress testing) dưới các kịch bản sốc lãi suất, tỷ giá và giá chứng khoán bất lợi. Định kỳ tối thiểu hàng tháng hoặc đột xuất khi vi phạm hạn mức, bộ phận quản lý rủi ro phải lập báo cáo nội bộ về rủi ro thị trường gửi Tổng giám đốc và Hội đồng Quản trị theo Điều 37 (sbv_circular_83_2025, file TT83.md, Điều 37, d.646–663), đồng thời tích hợp vào báo cáo quản lý rủi ro gửi Ngân hàng Nhà nước theo [[risk-management-and-internal-control-supervisory-reporting-framework-tt83]].
 
 Về kiểm soát công nghệ và lưu vết thông tin chứng từ, Thông tư đặt ra hai yêu cầu kỹ thuật bắt buộc để ngăn chặn rủi ro gian lận giao dịch (sbv_circular_83_2025, file TT83.md, Điều 16.3.b, d.345):
 - Giao dịch qua điện thoại: Toàn bộ các cuộc đàm thoại của giao dịch viên liên quan đến thỏa thuận tự doanh bắt buộc phải được hệ thống ghi âm tự động và lưu trữ dữ liệu âm thanh an toàn trong thời gian tối thiểu 02 tháng kể từ ngày giao dịch phát sinh;

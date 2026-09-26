@@ -1,0 +1,23 @@
+{
+  "skill_name": "ingest",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Nạp ch.5–8 từ sách Choudhry Yield Curve Analysis vào wiki",
+      "expected_output": "Dừng ở bước 2 với 5–10 ý chính + danh sách trang + danh sách mục (đề xuất bỏ qua); sau duyệt: ≤ 15 trang/lượt, chú thích §7.5, --coverage sạch trước khi đánh [x] (hoặc [~] kèm phần còn lại).",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Thêm khái niệm yield curve shift từ IMF Handbook 2024, phần chương 3",
+      "expected_output": "Tra bản kê; nguồn chưa có thì thêm vào _sources_manifest.md và index.md §Sources ngay lượt đầu trước khi tạo trang.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Tiếp tục ingest Tata ALM book — bước 1 là xác định phần còn lại ở state file",
+      "expected_output": "Đọc 03_state/tata_bank_alm.md (không đọc log.md), chọn chunk [~]/[ ] kế tiếp hoặc mục chưa phủ theo --coverage.",
+      "files": []
+    }
+  ]
+}

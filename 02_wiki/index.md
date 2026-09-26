@@ -8,26 +8,27 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 
 | Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
 |---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (849 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1; Ch.2–6 xong; đang đối chiếu lại Ch.2 (B1–B2 xong 2026-09-25, còn B3–B4); 2026-09-25 thêm lượt dọn nợ lint tỷ giá, chi tiết ở state file | `03_state/imf_macro_accounting.md` |
+| `imf_macro_accounting` | Nguồn dài (849 KB / 6.065 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–6 xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (85 KB / 721 dòng) | **Chưa ingest** | Toàn bộ, ingest trọn 1 lượt | — |
 | `capitalism_and_freedom` | Nguồn dài (565 KB / 2.055 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–18 xong (chi tiết ở state file) | `03_state/bindseil_monetary_policy.md` |
-| `cargill_central_bank_policy` | Nguồn dài (1.206 KB / 5.623 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–17 xong (chi tiết ở state file) | `03_state/cargill_central_bank_policy.md` |
+| `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Đang ingest dở** | 5 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/bindseil_monetary_policy.md` |
+| `cargill_central_bank_policy` | Nguồn dài (1.206 KB / 5.623 dòng) | **Đang ingest dở** | 12 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/cargill_central_bank_policy.md` |
 | `choudhry_principles_of_banking` | Nguồn dài (2.664 KB / 14.955 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–13 xong (chi tiết ở state file) | `03_state/choudhry_analysing_yield_curve.md` |
+| `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Đang ingest dở** | 13 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/choudhry_analysing_yield_curve.md` |
 | `choudhry_fixed_income_markets` | Nguồn dài (1.941 KB / 15.414 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–39 xong (chi tiết ở state file) | `03_state/fixed_income_during.md` |
-| `tata_bank_alm` | Nguồn dài (450 KB / 3.345 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–6 xong (chi tiết ở state file) | `03_state/tata_bank_alm.md` |
-| `clippings` | Nguồn dài (82 file, 882 KB / 6.684 dòng) | **Hoàn tất 100%** | Toàn bộ 6 cụm (82 file) xong (chi tiết ở state file) | `03_state/clippings.md` |
+| `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Đang ingest dở** | 23 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/fixed_income_during.md` |
+| `tata_bank_alm` | Nguồn dài (450 KB / 3.345 dòng) | **Đang ingest dở** | 6 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/tata_bank_alm.md` |
+| `clippings` | Nguồn dài (82 file, 882 KB / 6.684 dòng) | **Đang ingest dở** | 11 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/clippings.md` |
 | `ftp_transmission_analysis` | Nguồn ngắn (16 KB / 189 dòng) | **Hoàn tất 100%** | Toàn bộ, ingest trọn 1 lượt | — |
-| `vab_ftp_methodology` | Nguồn dài (243 KB / 2.118 dòng) | **Hoàn tất 100%** | Toàn bộ Phần A, B & Phụ lục 01–06 (d.1–2118) xong (chi tiết ở state file) | `03_state/vab_ftp_methodology.md` |
-| `sbv_circular_14_2025` | Nguồn dài (2 file, 546 KB / 3.371 dòng) | **Hoàn tất 100%** | Toàn bộ 4 chunk (TT14_1 & TT14_2, d.1–3371) xong (chi tiết ở state file) | `03_state/sbv_circular_14_2025.md` |
-| `sbv_circular_83_2025` | Nguồn dài (240 KB / 1.928 dòng) | **Hoàn tất 100%** | Toàn bộ 3 chunk (d.1–1928) xong (chi tiết ở state file) | `03_state/sbv_circular_83_2025.md` |
-| `sbv_draft_circular_replace_22` | Nguồn dài (358 KB / 2.009 dòng) | **Hoàn tất 100%** | Toàn bộ 4 chunk (d.1–2009) xong (chi tiết ở state file) | `03_state/sbv_draft_circular_replace_22.md` |
-| `bcbs_144` | Nguồn dài (138 KB / 641 dòng) | **Hoàn tất 100%** | Toàn bộ 4 chunk (d.1–641) xong (chi tiết ở state file) | `03_state/bcbs_144.md` |
-| `bcbs_238` | Nguồn dài (262 KB / 1.263 dòng) | **Hoàn tất 100%** | Toàn bộ 4 chunk (d.1–1263) xong (chi tiết ở state file) | `03_state/bcbs_238.md` |
-| `bcbs_368` | Nguồn dài (189 KB / 1.207 dòng) | **Hoàn tất 100%** | Toàn bộ 4 chunk (d.1–1207) xong (chi tiết ở state file) | `03_state/bcbs_368.md` |
+| `vab_ftp_methodology` | Nguồn dài (243 KB / 2.118 dòng) | **Đang ingest dở** | 4 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/vab_ftp_methodology.md` |
+| `sbv_circular_14_2025` | Nguồn dài (2 file, 546 KB / 3.371 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_circular_14_2025.md` |
+| `sbv_circular_83_2025` | Nguồn dài (240 KB / 1.928 dòng) | **Hoàn tất 100%** | Toàn bộ 3/3 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_circular_83_2025.md` |
+| `sbv_draft_circular_replace_22` | Nguồn dài (358 KB / 2.009 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_draft_circular_replace_22.md` |
+| `bcbs_144` | Nguồn dài (138 KB / 641 dòng) | **Đang ingest dở** | 3 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/bcbs_144.md` |
+| `bcbs_238` | Nguồn dài (262 KB / 1.263 dòng) | **Đang ingest dở** | 2 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/bcbs_238.md` |
+| `bcbs_368` | Nguồn dài (189 KB / 1.207 dòng) | **Đang ingest dở** | 2 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/bcbs_368.md` |
 | `bcbs_155` | Nguồn ngắn (69 KB / 459 dòng) | **Hoàn tất 100%** | Toàn bộ (d.1–459) xong, 11 trang concept | — |
+| `insights_59` | Nguồn dài (134 KB / 481 dòng) | **Đang ingest dở** | 3 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/insights_59.md` |
 
 
 
@@ -208,6 +209,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[real-wage-growth-is-bounded-by-productivity-growth]] — trần dài hạn của tăng lương
 
 **Chính sách giá và thu nhập**
+- [[transition-to-a-market-economy-combines-stabilization-with-liberalization-privatization-and-a-social-safety-net]] — ổn định vĩ mô + tự do hoá, tư nhân hoá, lưới an sinh
 - [[price-liberalization]] — lợi ích và điều kiện đi kèm
 - [[exchange-rate]] — giá bị méo, neo danh nghĩa, chịu tác động của tài trợ thâm hụt
 - [[real-exchange-rate]] — tỷ giá danh nghĩa điều chỉnh theo chi phí lao động đơn vị/giá tương đối; thước đo sức cạnh tranh
@@ -229,7 +231,9 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[a-real-output-index-needs-prices-that-reflect-relative-scarcity]] — sai lệch ở khâu định giá
 
 **Case: Ba Lan 1989–1994**
+- [[polands-big-bang-averted-hyperinflation-but-underestimated-the-output-cost-of-dismantling-institutions]] — lạm phát >1.000% → ~50%, neo tỷ giá + popiwek, sản lượng giảm
 - [[polands-output-collapse-1990-91-came-from-three-distinct-causes]] — vĩ mô, thể chế, đo lường
+- [[polands-trade-liberalization-was-partly-reversed-in-1991-then-resumed-through-free-trade-agreements]] — tự do hoá 1990, đảo ngược 1991, FTA 1992–93
 - [[to-what-extent-was-polands-early-transition-output-decline-overstated]] — câu hỏi còn để ngỏ
 - [[polands-recovery-from-1992-was-led-by-consumption-then-exports]] — phục hồi 1992–94
 - [[polish-national-saving-fell-sharply-at-the-onset-of-transition]] — tiết kiệm rơi mạnh; ⚠️ nguồn mâu thuẫn về năm 1992
@@ -359,6 +363,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[central-bank]] — nhà chức trách tiền tệ: định nghĩa chức năng, vai trò, người cho vay cuối cùng
 - [[nonbank-financial-institutions]] — bảo hiểm, quỹ tương hỗ, hưu trí, quỹ thị trường tiền tệ; tầng thứ ba của IFS
 - [[deposit-money-banks]] — 4 vai trò, dự trữ phân đoạn, cầu dự trữ
+- [[monetary-accounts-play-a-special-role-among-macroeconomic-accounts]] — bốn lý do: bù trừ dòng tài chính, biến trung tâm, chương trình IMF, sẵn có và tin cậy
 - [[monetary-statistics-are-stock-data-recorded-on-a-cash-basis]] — tồn kho, cơ sở tiền mặt
 - [[foreign-currency-items-in-monetary-statistics-are-converted-at-the-end-period-exchange-rate]] — tỷ giá cuối kỳ cho tồn kho, khác BOP
 - [[consolidation-nets-out-inter-entity-claims-unlike-aggregation]] — hợp nhất triệt tiêu khoản mục liên thực thể
@@ -1065,17 +1070,22 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[term-liquidity-premium-matrix-calibrates-two-dimensional-floating-rate-spreads]] — ma trận phần bù thanh khoản kỳ hạn 2 chiều (kỳ tái định giá x kỳ đáo hạn) lượng hóa spread cho hợp đồng thả nổi
 - [[two-tier-ftp-operational-workflows-govern-market-1-and-market-2-cycles]] — quy trình vận hành FTP 9 bước Thị trường 1 chu kỳ quý/tháng và 9 bước Thị trường 2 tác nghiệp hàng ngày từ 9h-10h sáng
 - [[interbank-tenor-ladder-and-deal-ticket-standardization-enforce-internal-treasury-transfers]] — chuẩn hóa 21 thang kỳ hạn từ Overnight đến 120M, phiếu giao dịch vốn MB06 và báo cáo Desk MM/FX/Bond MB07
+
+**Chuẩn mực An toàn Vốn Ngân hàng theo Chuẩn Basel III (Thông tư 14/2025/TT-NHNN)**
 - [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]] — khung tỷ lệ an toàn vốn 3 tầng (CAR $\ge 8\%$, Tier 1 $\ge 6\%$, CET1 $\ge 4{,}5\%$) theo Thông tư 14/2025/TT-NHNN và cơ chế đệm vốn D-SIB
 - [[standardized-approach-credit-risk-weights-and-exposure-measurement-govern-regulatory-rwa]] — phương pháp tiêu chuẩn đo lường RWA tín dụng khách hàng và rủi ro đối tác từ phơi nhiễm nội/ngoại bảng gộp
+- [[standardized-credit-risk-weights-and-asset-classification-hierarchy-govern-regulatory-capital]] — khung phân loại tài sản 7 nhóm, thứ tự ưu tiên nhận diện, hệ số rủi ro tín dụng chuẩn hóa (sovereign 0%, TCTD 10%–150%, nợ xấu 100%/150%, ma trận doanh nghiệp lớn 50%–160%, phạt 200%, bán lẻ 75%) và 6 tiêu chuẩn xếp hạng ECAI độc lập
 - [[regulatory-credit-conversion-factors-apportion-off-balance-sheet-contingent-liabilities]] — hệ số chuyển đổi CCF phân tầng 4 bậc (10%, 20%, 50%, 100%) lượng hóa rủi ro cam kết ngoại bảng theo chuẩn Basel III
 - [[loan-to-value-and-specialised-lending-criteria-differentiate-real-estate-risk-weights]] — phân tầng hệ số rủi ro CRW bất động sản theo tỷ số bảo đảm LTV, ưu đãi nhà ở xã hội và danh mục tín dụng chuyên biệt
 - [[credit-risk-mitigation-framework-recognizes-collateral-netting-guarantees-and-derivatives]] — khung giảm thiểu rủi ro tín dụng CRM qua tài sản bảo đảm, bù trừ nội bảng, bảo lãnh bên thứ ba và phái sinh CDS
+- [[f-irb-credit-risk-mitigation-framework-and-purchased-receivables-capital-treatment]] — kỹ thuật giảm thiểu rủi ro tín dụng F-IRB và cơ chế tính vốn khoản mua lại khoản phải thu: thuật toán LGD hiệu chỉnh cho TSBĐ đa dạng, haircut tài sản 0%/40%/50%, thế quyền bảo lãnh/CDS và bóc tách hai rủi ro Default Risk + Dilution Risk (LGD = 100%) cho Purchased Receivables
 - [[basel-output-floor-and-coverage-ratios-constrain-irb-capital-reductions]] — tỷ lệ sàn đầu ra Output Floor 72.5% và tỷ lệ bao phủ danh mục 70% khống chế mức giảm vốn của phương pháp IRB theo Thông tư 14/2025
 - [[regulatory-default-definition-and-multi-tier-portfolio-segmentation-anchor-irb-models]] — tiêu chuẩn nhận diện khách hàng vỡ nợ (quá hạn 90 ngày / suy giảm khả năng trả nợ) và phân đoạn danh mục Doanh nghiệp, Bán lẻ, Khoản phải thu
 - [[asymptotic-single-risk-factor-model-derives-corporate-irb-risk-weighted-assets]] — hàm tính RWA danh mục Doanh nghiệp theo mô hình ASRF, sàn tham số PD 0.05%, LGD quy chuẩn 40%–75% và điều chỉnh quy mô SME
 - [[retail-irb-portfolio-risk-weights-calibrate-mortgage-revolving-and-other-retail-correlations]] — phân tầng RWA bán lẻ qua 3 nhóm tương quan (thế chấp nhà ở $R=0{,}15$, thẻ quay vòng $R=0{,}04$, bán lẻ khác) và hệ thống sàn tham số PD/LGD
 - [[expected-loss-and-provisioning-shortfall-mechanics-adjust-regulatory-capital]] — cơ chế đối ứng tổn thất dự kiến EL và dự phòng rủi ro: khấu trừ thiếu hụt vào vốn lõi CET1 và giới hạn cộng thặng dư 0.6% RWA vào Vốn cấp 2
 - [[irb-governance-use-test-and-validation-standards-anchor-internal-ratings-credibility]] — khuôn khổ quản trị ba tuyến bảo vệ, thử nghiệm sử dụng (Use Test) 2 năm và chuẩn mực kiểm định mô hình định kỳ hàng năm
+- [[irb-system-design-operational-standards-and-pillar-3-disclosures]] — chuẩn mực thiết kế, vận hành hệ thống xếp hạng nội bộ IRB và công bố thông tin Trụ cột 3: cơ cấu 7+1 bậc doanh nghiệp, phân nhóm bán lẻ, kiểm soát ghi đè override, stress testing và chu kỳ công bố thông tin bán niên/năm
 - [[standardized-measurement-approach-and-internal-loss-multiplier-govern-operational-risk-capital]] — phương pháp đo lường chuẩn hóa SMA xác định vốn rủi ro hoạt động từ BIC (3 bậc lũy tiến) và hệ số tổn thất nội bộ ILM
 - [[trading-book-and-banking-book-boundary-enforces-market-risk-containment]] — ranh giới pháp lý phân định Sổ kinh doanh và Sổ ngân hàng, nguyên tắc chuyển dịch một chiều và cấm tuyệt đối chuyển tài sản từ Banking Book sang Trading Book
 - [[market-risk-capital-requirements-aggregate-interest-equity-fx-and-commodity-charges]] — tổng hợp vốn yêu cầu cho 5 trạng thái rủi ro thị trường (lãi suất, cổ phiếu, ngoại hối, hàng hóa, quyền chọn) và ngưỡng miễn trừ 2% vốn tự có
@@ -1098,6 +1108,8 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[icaap-framework-determines-economic-capital-and-target-capital-under-stress]] — quy trình đánh giá nội bộ mức đủ vốn ICAAP: xác định vốn kinh tế $C_E$, vốn mục tiêu $C_{Target}$, kiểm tra sức chịu đựng và lập kế hoạch vốn 3–5 năm đối chiếu $C_A$
 - [[irrbb-delta-eve-and-nii-standardized-measurement-governs-rate-shock-scenarios]] — phương pháp đo lường chuẩn hóa IRRBB: 19 thang kỳ hạn, mô hình hóa NMDs lõi (trần tỷ trọng/kỳ hạn), rủi ro hành vi CPR/TDRR và 6 kịch bản sốc lãi suất BCBS D578 chiết khấu $\Delta EVE$
 - [[risk-based-internal-audit-framework-enforces-third-line-oversight-and-governance]] — khung kiểm toán nội bộ định hướng theo rủi ro (RBIA): Tuyến 3 độc lập trực thuộc Ban kiểm soát, nguyên tắc cách ly 3 năm, bắt buộc kiểm toán viên công nghệ và lập kế hoạch rủi ro trước 15/12
+- [[risk-management-and-internal-control-supervisory-reporting-framework-tt83]] — chế độ báo cáo giám sát KSNB & QTRR (Phụ lục I & II): cấu trúc tự đánh giá KSNB 3 tuyến, Đ.8, Đ.11–16 và mẫu biểu báo cáo QTRR định kỳ/đột xuất cho 7 rủi ro trọng yếu
+- [[icaap-and-internal-audit-supervisory-reporting-templates-govern-capital-planning-tt83]] — biểu mẫu báo cáo giám sát ICAAP & KTNB (Phụ lục III & IV): kế hoạch vốn mục tiêu 4 năm, stress test vốn theo kịch bản và báo cáo kết quả kiểm toán nội bộ của Ban kiểm soát
 
 **Các Giới hạn, Tỷ lệ Bảo đảm An toàn Ngân hàng (Dự thảo thay thế Thông tư 22/2019/TT-NHNN)**
 - [[basel-iii-leverage-ratio-constrains-unweighted-balance-sheet-expansion]] — tỷ lệ đòn bẩy LEV tối thiểu 3%: chốt chặn không trọng số rủi ro Basel III ($T_1/EM$), ràng buộc chia cổ tức tiền mặt D-SIB
@@ -1112,6 +1124,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[retail-and-wholesale-deposit-run-off-rates-differentiate-short-term-liquidity-outflows]] — ma trận hệ số rút tiền thanh khoản 30 ngày: bán lẻ/SME ổn định (5%), kém ổn định (10%–40%), bán buôn hoạt động clearing/custody (25%), bán buôn không bảo đảm (40%–100%) và Repo có bảo đảm (0%–100%)
 - [[contingent-liquidity-outflows-and-credit-facility-drawdowns-stress-test-off-balance-commitments]] — đo lường dòng tiền ra từ cam kết ngoại bảng và rủi ro gia tăng: sốc hạ 3 bậc tín nhiệm (100%), Lookback 24 tháng cho phái sinh Netting, biến động TSBĐ phi Cấp 1 (20%), phân tầng hạn mức tín dụng/thanh khoản (5%–100%) và tài trợ thương mại L/C (3%)
 - [[contractual-cash-inflow-caps-and-counterparty-haircuts-govern-net-lcr-measurement]] — đo lường dòng tiền vào hợp đồng 30 ngày: thu nợ bán lẻ/SME (50%), doanh nghiệp (50%), định chế tài chính (100%), Reverse Repo (0%–100%), loại trừ hạn mức cam kết nhận được (0%) và trần khống chế dòng tiền vào tối đa 75% tổng dòng tiền ra
+- [[contractual-maturity-ladder-and-cash-flow-reporting-framework-monitors-lcr-mismatches]] — thang kỳ hạn hợp đồng 7 dải thời gian (1 ngày đến >1 năm) và biểu mẫu báo cáo chi tiết dòng tiền ra (7 nhóm, 22 phân mục) và dòng tiền vào (7 nhóm, 16 phân mục) phục vụ giám sát thanh khoản LCR
 - [[asf-and-rsf-factor-matrices-calibrate-nsfr-structural-funding-requirements]] — ma trận hệ số nguồn vốn ổn định sẵn có ASF (5 bậc: 100%–0%) và nguồn vốn ổn định yêu cầu RSF (8 bậc: 0%–100%) lượng hóa tỷ lệ cân đối cấu trúc 1 năm
 - [[leverage-ratio-exposure-measure-aggregates-on-balance-derivatives-and-off-balance-commitments]] — phương pháp xác định tổng trạng thái rủi ro EM: trừ 80% dự phòng chung nội bảng, 4 điều kiện hạch toán gộp tiền mặt cash pooling, phái sinh SA-CCR $1{,}4 \times (RC + PFE)$ và CCF ngoại bảng
 - [[pillar-3-liquidity-disclosure-standards-mandate-qualitative-and-quantitative-market-transparency]] — chuẩn mực công bố thông tin thanh khoản định kỳ 6 tháng Trụ cột 3: minh bạch hóa định tính (mô hình ALM tập trung, độc lập với kinh doanh) và định lượng (LCR, NSFR, LDR, đa dạng hóa nguồn tài trợ)
@@ -1208,6 +1221,20 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[reputational-risk-and-off-balance-sheet-vehicles-mandate-step-in-risk-stress-testing]] — rủi ro danh tiếng và nghĩa vụ giải cứu ngoại bảng: rủi ro bước vào (step-in risk) đối với SPV, SIV, ABCP Conduits, hỗ trợ ngầm và đánh giá tương quan quy mô ngoại bảng với vốn tự có (Principle 14)
 - [[highly-leveraged-counterparty-stress-testing-captures-specific-wrong-way-risk]] — kiểm tra sức chịu đựng đối tác đòn bẩy cao: vô hiệu hóa cơ chế tái ký quỹ hàng ngày do rủi ro bước nhảy (gap risk), rủi ro sai chiều đặc thù (specific wrong-way risk) với Monoline Insurers và Hedge Funds (Principle 15)
 - [[supervisory-stress-testing-framework-enforces-pillar-2-capital-add-ons-and-common-scenarios]] — khuôn khổ kiểm tra sức chịu đựng giám sát: quyền chất vấn và chế tài can thiệp, yêu cầu vốn bổ sung Trụ cột 2 (capital add-ons), vốn bị mắc kẹt (trapped capital), kịch bản chung (common scenarios) và Hội đồng Giám sát Quốc tế (Principles 16–21)
+ 
+**Kiểm tra Sức chịu đựng Thanh khoản Ngân hàng — Thực tiễn & Hướng phát triển (FSI Insights 59 / BIS)**
+- [[systemic-liquidity-reallocation-dynamics-drive-flight-to-safety-during-crises]] — cơ chế dịch chuyển phân bổ thanh khoản hệ thống: dòng vốn không biến mất mà tháo chạy sang định chế an toàn (flight-to-safety) tạo phân hóa thanh khoản sâu sắc
+- [[static-balance-sheet-assumption-in-liquidity-stress-testing-isolates-first-round-shocks]] — giả định bảng cân đối tĩnh: cố định quy mô tài sản/công nợ và loại trừ hành vi quản trị đối phó để bóc tách tổn thương thanh khoản vòng 1 (mô hình ECB/SSM)
+- [[cash-flow-survival-period-metrics-identify-initial-liquidity-exhaustion-thresholds]] — chỉ số chân trời sinh tồn theo dòng tiền: xác định ngưỡng cạn kiệt thanh khoản tại ngày đầu tiên dòng tiền ròng tích lũy âm ($NCF < 0$) trong chân trời 6 tháng đến 1 năm
+- [[foreign-currency-liquidity-stress-testing-models-fx-swap-market-disruptions]] — kiểm tra áp lực thanh khoản ngoại tệ: mô hình hóa đứt gãy thị trường FX Swaps và ngưỡng sàn 75% LCR cho từng loại tiền tệ (mô hình SCB Riksbank)
+- [[clearing-house-and-trade-repository-transaction-data-enables-real-time-liquidity-stress-testing]] — dữ liệu lưu ký và báo cáo giao dịch: stress test thanh khoản hàng ngày, chỉ số IL, VaR 95% 21 ngày và đo lường rủi ro step-in quỹ liên kết (mô hình BCB Brazil)
+- [[bank-nbfi-liquidity-contagion-transmits-via-counterparty-and-asset-liquidation-channels]] — hai kênh lây truyền rủi ro thanh khoản Ngân hàng - Phi ngân hàng: kênh đối tác trực tiếp và kênh bán tháo thanh lý tài sản gián tiếp
+- [[nbfi-leverage-and-liquidity-mismatches-amplify-system-wide-dash-for-cash]] — đòn bẩy và chênh lệch kỳ hạn NBFIs: khuếch đại hiện tượng tranh mua tiền mặt ("dash for cash"), margin calls và bài học khủng hoảng LDI 2022
+- [[commercial-lender-of-last-resort-role-exposes-banks-to-nbfi-contingent-runs]] — vai trò người cho vay thương mại cuối cùng: ngân hàng đối mặt với rủi ro giải ngân dồn dập các hạn mức cam kết khi NBFIs bị rút vốn
+- [[system-wide-exploratory-scenarios-evaluate-shock-amplifiers-versus-absorbers]] — kịch bản khám phá toàn hệ thống (SWES): mô phỏng hành vi tập thể đa ngành để phân loại định chế hấp thụ sốc vs khuếch đại sốc (BoE & ESMA)
+- [[confidentiality-constraints-in-supervisory-liquidity-stress-tests-prevent-self-fulfilling-runs]] — ràng buộc bảo mật stress test thanh khoản: ngăn ngừa nghịch lý lời tiên tri tự ứng nghiệm kích hoạt tháo chạy tiền gửi thực tế
+- [[digital-deposit-velocity-and-uninsured-deposit-concentration-accelerate-bank-runs]] — tốc độ rút tiền số hóa và tiền gửi không bảo hiểm: gia tốc tháo chạy tiền gửi siêu tốc trong ngày và thách thức đối với giả định LCR (bài học SVB 2023)
+- [[accounting-classification-of-securities-portfolios-distorts-hqla-monetization-feasibility]] — nút thắt phân loại kế toán HTM/AFS: rủi ro quy tắc tainting rule và lỗ chưa thực hiện làm biến dạng năng lực tiền mặt hóa thực tế của đệm HQLA
 
 
 

@@ -46,7 +46,7 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 
 | Hoạt động | Ngưỡng |
 |---|---|
-| Ingest | Tạo/cập nhật 5–15 trang wiki mỗi lần (stub không tính) |
+| Ingest | Tạo/cập nhật tối đa 15 trang wiki mỗi lượt (stub không tính); không có ngưỡng dưới. Chunk chưa xong giữ `[~]` (§10) |
 | Lint | Chạy sau mỗi 10 lần ingest, hoặc theo lịch định kỳ |
 | Review | Tối đa 5 trang mỗi lượt |
 | Research | Cluster đọc trọn tối đa 10 trang/lượt; enrich (ghi claim mới) tối đa 5 trang/lượt |
@@ -63,7 +63,7 @@ Hai dấu hiệu vi phạm:
 - Trang có heading cấp 2+ trong thân bài → cần tách (§7).
 - **Không đặt được title sắc gọn** → tư duy chưa rõ, hoặc trang đang chứa nhiều ý (§8).
 
-Chủ đề (topic) là đơn vị gom nhóm tạm thời khi ingest (`.claude/skills/ingest/SKILL.md` bước 2) — một chủ đề thường chứa nhiều trang atomic. Luật Atomic quyết định ranh giới trang cuối cùng.
+Chủ đề (topic) là đơn vị gom nhóm tạm thời khi ingest (`.claude/skills/ingest/SKILL.md` bước 3) — một chủ đề thường chứa nhiều trang atomic. Luật Atomic quyết định ranh giới trang cuối cùng.
 
 **Thành phần có tên kinh tế riêng phải có trang riêng.** Mọi thành phần trong một đồng nhất thức, bảng cân đối hay box có tên gọi kinh tế/tài chính thật (vd $W$ compensation of employees, $OS$ operating surplus, $CP$/$CG$, Treasury bills, SDR holdings) được tách thành trang `concept` riêng, dù trang có thể rất ngắn. Không có ngoại lệ theo loại box hay bảng (quyết định 2026-09-16).
 
@@ -216,8 +216,8 @@ last_updated: YYYY-MM-DD
 
 | Ký hiệu | Nghĩa |
 |---|---|
-| `[x]` | đã ingest xong |
-| `[~]` | đang ingest dở — cột *Ghi chú* **phải** nêu rõ phần nào còn lại |
+| `[x]` | đã ingest xong: mọi mục (heading) của chunk đã được chú thích §7.5 trích, hoặc được ghi `bỏ qua: <heading> — <lý do>` ở cột *Ghi chú* sau khi người dùng duyệt (ingest bước 2). Kiểm bằng `validate_wiki_page.py --coverage <source id>` |
+| `[~]` | đang ingest dở — cột *Ghi chú* **phải** nêu rõ phần nào còn lại; được phép ghi "còn N mục chưa phủ — xem `--coverage <source id>`" |
 | `[ ]` | chưa ingest |
 
 Đơn vị chunk: **chương** với nguồn có chương; **cụm chủ đề** khi một chương tự nó vượt ngưỡng nguồn dài. Mỗi chunk ghi dải dòng `d.<từ>–<đến>` theo file khai ở `file:`. Chunk cố ý bỏ qua (mục lục, lời tựa, bài tập, phụ lục số liệu thô — §2) vẫn có dòng riêng, đánh `[x]` và ghi "bỏ qua, không tạo trang".

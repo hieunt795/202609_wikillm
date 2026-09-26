@@ -29,7 +29,7 @@ Hạn mức cam kết là các thỏa thuận không thể hủy ngang hoặc c�
 | Khách hàng cá nhân và Doanh nghiệp nhỏ và vừa (SME) | **5%** | **5%** | Tỷ lệ rút hạn mức phân tán, gắn với nhu cầu chi tiêu thực tế |
 | Doanh nghiệp lớn phi tài chính, Chính phủ, NHTW, PSEs | **10%** | **30%** | Doanh nghiệp lớn có xu hướng rút mạnh hạn mức dự phòng khi thị trường vốn tắc nghẽn |
 | TCTD khác thuộc diện can thiệp sớm hoặc kiểm soát đặc biệt | **40%** | **40%** | Rủi ro thanh khoản lan truyền nội bộ ngành ngân hàng |
-| Định chế tài chính khác (công ty chứng khoán, bảo hiểm, quỹ đầu tư) | **40%** | **100%** | Các định chế tài chính phi ngân hàng thường bị rút vốn ồ ạt và lập tức kích hoạt 100% hạn mức thanh khoản dự phòng |
+| Định chế tài chính khác (công ty chứng khoán, bảo hiểm, quỹ đầu tư) | **40%** | **100%** | Các định chế tài chính phi ngân hàng thường bị rút vốn ồ ạt và lập tức kích hoạt 100% hạn mức thanh khoản dự phòng, đẩy ngân hàng vào vị thế [[commercial-lender-of-last-resort-role-exposes-banks-to-nbfi-contingent-runs]] |
 | Quỹ đầu cơ (Hedge Funds), Quỹ thị trường tiền tệ (MMFs), SPEs/SPVs | **100%** | **100%** | Định chế đòn bẩy cao, rủi ro rút cạn hạn mức tức thì |
 
 *Dòng tiền ra bổ sung từ cam kết*: Nếu tổng giá trị cam kết cấp vốn ngoại bảng cho khách hàng bán lẻ và doanh nghiệp trong 30 ngày vượt quá 50% tổng dòng tiền vào từ nhóm này, toàn bộ phần chênh lệch dương vượt trần phải được ghi nhận 100% vào dòng tiền ra (Mục V.2.1, d.1365).
