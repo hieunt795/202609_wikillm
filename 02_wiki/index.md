@@ -27,6 +27,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `bcbs_144` | Nguồn dài (138 KB / 641 dòng) | **Hoàn tất 100%** | Toàn bộ 4 chunk (d.1–641) xong (chi tiết ở state file) | `03_state/bcbs_144.md` |
 | `bcbs_238` | Nguồn dài (262 KB / 1.263 dòng) | **Hoàn tất 100%** | Toàn bộ 4 chunk (d.1–1263) xong (chi tiết ở state file) | `03_state/bcbs_238.md` |
 | `bcbs_368` | Nguồn dài (189 KB / 1.207 dòng) | **Hoàn tất 100%** | Toàn bộ 4 chunk (d.1–1207) xong (chi tiết ở state file) | `03_state/bcbs_368.md` |
+| `bcbs_155` | Nguồn ngắn (69 KB / 459 dòng) | **Hoàn tất 100%** | Toàn bộ (d.1–459) xong, 11 trang concept | — |
 
 
 
@@ -1194,6 +1195,19 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[irrbb-model-governance-and-independent-three-tier-validation-framework]] — khung quản trị mô hình IRRBB và kiểm định độc lập ba tầng theo Nguyên tắc 6: Trụ cột 1 (Tính đúng đắn lý thuyết), Trụ cột 2 (Quy trình thực thi và tính toàn vẹn dữ liệu), Trụ cột 3 (Phân tích kết quả, backtesting và mô hình thách thức), mô hình ba tuyến phòng thủ và quản trị mô hình bên thứ ba (vendor models) (Principle 6)
 - [[macro-hedging-and-micro-hedging-strategies-in-the-banking-book]] — chiến lược phòng hộ vi mô và vĩ mô trên sổ ngân hàng: phòng hộ 1:1 theo công cụ nợ lớn và kế toán phòng hộ IFRS 9 vs phòng hộ vĩ mô danh mục mở theo net repricing gap / DV01, ứng dụng các công cụ hoán đổi IRS, Swaptions, Basis swaps và kiểm soát chi phí tái cân bằng động (Principle 3, 7 & Annex 1.2.7)
 - [[basis-risk-quantification-and-tenor-basis-swaps-in-alm]] — lượng hóa rủi ro cơ sở và kỹ thuật phòng hộ qua Tenor Basis Swaps trong ALM: rủi ro cơ sở giữa các chỉ số tham chiếu (Benchmark) và giữa các kỳ hạn (Tenor), ma trận độ nhạy Basis DV01, mô hình hồi quy beta cơ sở, hợp đồng Tenor Basis Swaps và chế tài cấm bù trừ tự động của giám sát (Principle 1, 4 & Annex 1.1.3)
+
+**Nguyên tắc Thực hành & Giám sát Kiểm tra Sức chịu đựng Lành mạnh (BCBS 155 / Basel)**
+- [[sound-stress-testing-governance-mandates-board-involvement-and-actionable-integration]] — quản trị kiểm tra sức chịu đựng lành mạnh: trách nhiệm HĐQT, tính actionable, kiểm tra tính khả thi của remedial actions, đối thoại đa chiều và kiểm định độc lập (Principle 1, 3, 4, 6)
+- [[firm-wide-stress-testing-integrates-multi-risk-dimensions-and-concentration-risk]] — kiểm tra sức chịu đựng toàn ngân hàng: tích hợp đa rủi ro (thị trường, tín dụng, thanh khoản), hạ tầng CNTT linh hoạt chạy ad-hoc stress test, nhận diện rủi ro tập trung đa chiều và đo lường qua 6 thước đo giá trị (Principle 2, 5, 7)
+- [[forward-looking-stress-scenarios-model-system-wide-feedback-and-contagion-loops]] — kịch bản kiểm tra áp lực hướng về tương lai: khắc phục sự thất bại của dữ liệu chu kỳ êm ả, mô phỏng vòng lặp phản hồi hệ thống (feedback loops), vòng xoáy bán tháo ép buộc (fire-sale spirals) và tích trữ thanh khoản (Principle 8)
+- [[severity-calibration-and-reverse-stress-testing-identify-firm-survival-thresholds]] — hiệu chuẩn độ nghiêm trọng và kiểm tra sức chịu đựng ngược: suy luận ngược từ điểm sụp đổ (breaking point) để tìm kịch bản sốc, lột trần giả định phòng hộ sai lầm và kiểm định sản phẩm mới (Principle 9)
+- [[simultaneous-funding-and-market-liquidity-stress-drives-exposure-valuation-haircuts]] — tương tác kép giữa thanh khoản tài trợ và định giá tài sản: vòng xoáy sụt giá tài sản, cạn kiệt thanh khoản thị trường, margin calls, gia tăng haircut và thắt chặt tiếp cận vốn vay bán buôn (Principle 10)
+- [[risk-mitigation-effectiveness-under-stress-challenges-netting-and-hedging-assumptions]] — thẩm định hiệu lực giảm thiểu rủi ro trong điều kiện căng thẳng: rủi ro cơ sở (basis risk) mở rộng đột biến, hiệu ứng chen lấn giao dịch (crowded trades) và đứt gãy tính khả thi của netting (Principle 11)
+- [[structured-credit-stress-testing-models-underlying-assets-triggers-and-subordination]] — kiểm tra sức chịu đựng tín dụng cấu trúc: bóc tách danh mục tài sản cơ sở (underlying pools), đòn bẩy cấu trúc tầng nợ (tranche subordination) và các điều khoản kích hoạt hợp đồng (embedded triggers) (Principle 12)
+- [[pipeline-and-warehousing-risk-captures-securitisation-market-standstills]] — rủi ro đường ống và lưu kho: mô hình Originate-to-Distribute (OTD), tắc nghẽn đường ống khi thị trường chứng khoán hóa đóng băng và nghĩa vụ tái hấp thu tài sản lưu kho vào nội bảng (Principle 13)
+- [[reputational-risk-and-off-balance-sheet-vehicles-mandate-step-in-risk-stress-testing]] — rủi ro danh tiếng và nghĩa vụ giải cứu ngoại bảng: rủi ro bước vào (step-in risk) đối với SPV, SIV, ABCP Conduits, hỗ trợ ngầm và đánh giá tương quan quy mô ngoại bảng với vốn tự có (Principle 14)
+- [[highly-leveraged-counterparty-stress-testing-captures-specific-wrong-way-risk]] — kiểm tra sức chịu đựng đối tác đòn bẩy cao: vô hiệu hóa cơ chế tái ký quỹ hàng ngày do rủi ro bước nhảy (gap risk), rủi ro sai chiều đặc thù (specific wrong-way risk) với Monoline Insurers và Hedge Funds (Principle 15)
+- [[supervisory-stress-testing-framework-enforces-pillar-2-capital-add-ons-and-common-scenarios]] — khuôn khổ kiểm tra sức chịu đựng giám sát: quyền chất vấn và chế tài can thiệp, yêu cầu vốn bổ sung Trụ cột 2 (capital add-ons), vốn bị mắc kẹt (trapped capital), kịch bản chung (common scenarios) và Hội đồng Giám sát Quốc tế (Principles 16–21)
 
 
 

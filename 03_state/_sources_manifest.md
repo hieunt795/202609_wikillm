@@ -38,6 +38,7 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `bcbs_144` | `basel/` | Nguồn dài | `03_state/bcbs_144.md` |
 | `bcbs_238` | `basel/` | Nguồn dài | `03_state/bcbs_238.md` |
 | `bcbs_368` | `basel/` | Nguồn dài | `03_state/bcbs_368.md` |
+| `bcbs_155` | `basel/` | Nguồn ngắn | — |
 
 
 ## imf_macro_accounting
@@ -570,5 +571,16 @@ File `.md` do docling chuyển đổi từ PDF (frontmatter `extractor: docling`
 |---|---|---|---|
 | `01_sources/basel/d368.md` | 189.433 | 1.207 | `a9d2209cf2cb08b7768d04366a16abadf600019910209477967c8f622d3a3f39` |
 
+## bcbs_155
 
+| | |
+|---|---|
+| Nhan đề | *Principles for sound stress testing practices and supervision* (BCBS 155) |
+| Tác giả | Basel Committee on Banking Supervision (BCBS) |
+| Xuất bản | Bank for International Settlements (Basel, Thụy Sĩ, tháng 5/2009) — ISBN print: 92-9131-784-5, ISBN web: 92-9197-784-5 |
+| Phân loại | Nguồn ngắn (`00_schema.md` §10) — 69.490 bytes / 459 dòng |
+| Tiến độ ingest | Hoàn tất 100% |
 
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/basel/bcbs155.md` | 69.490 | 459 | `d515e2735857f5d5d22e0b3064b5eccb58f8e31ed609531d03e2578f46911fba` |

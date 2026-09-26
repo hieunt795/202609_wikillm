@@ -13,7 +13,7 @@ Quy trình đánh giá nội bộ về mức đủ vốn (Internal Capital Adequ
 
 Ngân hàng phải thực hiện đánh giá nội bộ mức đủ vốn định kỳ tối thiểu hằng năm hoặc đột xuất (khi môi trường vĩ mô hoặc chiến lược kinh doanh có biến động lớn làm suy giảm an toàn vốn) cho chu kỳ tối thiểu 3 năm nhưng không quá 5 năm tiếp theo thông qua 6 bước tuần tự (sbv_circular_83_2025, file TT83.md, Điều 59.2, d.1004–1011):
 - Bước 1: Đo lường rủi ro đối với tất cả các loại rủi ro trọng yếu và xác định tổng tài sản tính theo rủi ro trong kịch bản bình thường ($RWA_E^*$) cùng vốn kinh tế tương ứng theo kế hoạch kinh doanh.
-- Bước 2: Kiểm tra sức chịu đựng về vốn (Capital Stress Testing) để xác định tổng tài sản tính theo rủi ro trong kịch bản có diễn biến bất lợi và lượng hóa mức tăng tài sản rủi ro ($\Delta RWA_B$).
+- Bước 2: Kiểm tra sức chịu đựng về vốn (Capital Stress Testing) theo [[sound-stress-testing-governance-mandates-board-involvement-and-actionable-integration]] và [[firm-wide-stress-testing-integrates-multi-risk-dimensions-and-concentration-risk]] để xác định tổng tài sản tính theo rủi ro trong kịch bản có diễn biến bất lợi và lượng hóa mức tăng tài sản rủi ro ($\Delta RWA_B$).
 - Bước 3: Xác định mức vốn mục tiêu ($C_{Target}$) và dự phóng quy mô vốn tự có dự kiến ($C_A$).
 - Bước 4: Lập kế hoạch vốn (Capital Planning) bao gồm phương án phân bổ vốn, chính sách cổ tức và phương án dự phòng tăng vốn.
 - Bước 5: Giám sát liên tục mức đủ vốn, thiết lập ngưỡng cảnh báo sớm và điều chỉnh kế hoạch vốn khi phát sinh độ lệch.

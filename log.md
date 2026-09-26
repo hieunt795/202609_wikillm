@@ -1217,3 +1217,8 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 1 stub mới: central-bank-liquidity-facilities-provide-contingent-backstops-against-funding-shocks; sửa 1 link chết ở ALA.
 - 15 trang cập nhật: sửa frontmatter chuẩn & title kebab-case cho 5 trang ALM/IRRBB; bổ sung wikilink có ngữ cảnh cho 7 trang outlink=0; kết nối 3 trang clippings gỡ 4 mồ côi term premia/cpi.
 - Cập nhật 02_wiki/index.md; --all sạch hoàn toàn 0 lỗi, 0 mồ côi (931 trang quét).
+
+## [2026-09-26:20-53-38] ingest | bcbs_155 toàn bộ (d.1–459) — Principles for sound stress testing practices and supervision
+- 11 trang concept mới: sound-stress-testing-governance-…, firm-wide-stress-testing-…, forward-looking-stress-scenarios-…, severity-calibration-and-reverse-stress-testing-…, simultaneous-funding-and-market-liquidity-…, risk-mitigation-effectiveness-…, structured-credit-stress-testing-…, pipeline-and-warehousing-risk-…, reputational-risk-and-off-balance-sheet-…, highly-leveraged-counterparty-stress-testing-…, supervisory-stress-testing-framework-…; cập nhật backlink 6 trang (icaap, supervisory-stress-testing, reverse-stress-testing, repo-haircuts, sfts, asset-backed-securitization, funding-diversification, contingent-liquidity, supervisory-liquidity-review).
+- 0 stub mới; --all sạch (942 trang quét, 0 lỗi, 0 mồ côi).
+- bcbs_155 hoàn tất 100% (nguồn ngắn).

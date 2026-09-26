@@ -19,7 +19,7 @@ Cơ quan giám sát kiểm tra xem Hội đồng quản trị và Ban điều h�
 
 Cơ quan giám sát dành sự chú ý đặc biệt để thẩm định tính nghiêm ngặt và phạm vi của các kịch bản stress test:
 - Đánh giá tính xác thực và hợp lý của 17 giả định bảo thủ theo [[multi-scenario-liquidity-stress-testing-integrates-behavioral-shocks-and-informs-capital-planning]], đặc biệt là giả định về tính thanh khoản của thị trường tài sản và tốc độ rút tiền gửi (bcbs_144, file bcbs144.md, Principle 14, d.579);
-- Cơ quan giám sát có thẩm quyền yêu cầu ngân hàng phải bổ sung các kịch bản thử nghiệm sàn tối thiểu (mandatory minimum stress scenarios) nếu nhận thấy các kịch bản nội bộ của ngân hàng còn quá lạc quan (bcbs_144, file bcbs144.md, Principle 14, d.579);
+- Cơ quan giám sát có thẩm quyền yêu cầu ngân hàng phải bổ sung các kịch bản thử nghiệm sàn tối thiểu theo [[supervisory-stress-testing-framework-enforces-pillar-2-capital-add-ons-and-common-scenarios]] nếu nhận thấy các kịch bản nội bộ của ngân hàng còn quá lạc quan (bcbs_144, file bcbs144.md, Principle 14, d.579);
 - Đánh giá hành động thực tế của Ban quản lý: kiểm tra xem ban điều hành có thực sự sử dụng kết quả stress test để ra quyết định điều chỉnh danh mục tài sản - nợ, tăng quy mô đệm tài sản thanh khoản unencumbered theo [[unencumbered-high-quality-liquid-asset-cushion-insures-against-stress-cash-flow-deficits]] và cập nhật kế hoạch dự phòng thanh khoản [[contingency-funding-plan-establishes-crisis-governance-and-operational-escalation-frameworks]] hay không (bcbs_144, file bcbs144.md, Principle 14, d.581).
 
 **3. Giám sát rủi ro thanh toán trong ngày và phối hợp với Ngân hàng Trung ương**

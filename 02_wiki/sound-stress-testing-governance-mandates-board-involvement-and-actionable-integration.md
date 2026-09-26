@@ -1,0 +1,16 @@
+---
+title: sound-stress-testing-governance-mandates-board-involvement-and-actionable-integration
+type: concept
+tags: [stress-testing, risk-governance, board-oversight, icaap, risk-appetite, basel, bcbs-155]
+sources: [bcbs_155]
+status: draft
+last_updated: 2026-09-26
+---
+
+Quản trị kiểm tra sức chịu đựng lành mạnh đòi hỏi sự tham gia trực tiếp của hội đồng quản trị và ban điều hành để tích hợp kết quả phân tích vào các quyết định kinh doanh chiến lược, thiết lập khẩu vị rủi ro và đánh giá tính khả thi thực tế của các kế hoạch hành động khắc phục (bcbs_155, Principle 1, d.163–170).
+
+Theo Ủy ban Basel về Giám sát Ngân hàng (BCBS), hội đồng quản trị chịu trách nhiệm tối thượng đối với chương trình kiểm tra sức chịu đựng toàn diện, trong khi ban điều hành chịu trách nhiệm triển khai, giám sát và vận hành thường nhật (bcbs_155, Principle 1, d.165). Hoạt động kiểm tra sức chịu đựng phải mang tính hành động hóa (actionable) thay vì chỉ vận hành như một thủ tục tuân thủ cơ học của riêng khối quản trị rủi ro. Kết quả phân tích áp lực phải đóng vai trò là đầu vào bắt buộc khi xác lập [[board-approved-liquidity-risk-tolerance-aligns-business-strategy-with-stress-survival-horizons|tuyên bố khẩu vị rủi ro (Risk Appetite Statement)]], phân bổ hạn mức phơi nhiễm theo ngành và danh mục, đồng thời định hình quy trình lập kế hoạch vốn nội bộ tại [[icaap-framework-determines-economic-capital-and-target-capital-under-stress]] và quy trình an toàn thanh khoản tại [[supervisory-liquidity-review-process-evaluates-governance-stress-testing-and-cushion-adequacy]].
+
+Khủng hoảng tài chính 2007–2008 bộc lộ điểm yếu lớn khi ban lãnh đạo nhiều ngân hàng gạt bỏ các kịch bản nghiêm trọng vì cho rằng chúng không thể xảy ra (bcbs_155, d.73–75). Các kịch bản trước khủng hoảng thường bị thu hẹp trong phạm vi điều kiện kinh tế bình lặng, dẫn tới mức dự phóng tổn thất chỉ tương đương một quý lợi nhuận kinh doanh (bcbs_155, d.103–104). Để khắc phục tư duy cô lập (silo thinking), Nguyên tắc 3 yêu cầu ngân hàng thiết lập cơ chế đối thoại xuyên suốt giữa các chuyên gia kinh tế, nhà phân tích rủi ro, giám đốc kinh doanh và các nhà giao dịch (bcbs_155, Principle 3, d.187–192). Điển hình trong khủng hoảng, nhân viên thẩm định cho vay thế chấp bán lẻ đã nhận thấy sự gia tăng của tỷ lệ vỡ nợ dưới chuẩn từ sớm, nhưng góc nhìn thận trọng này bị triệt tiêu do thiếu kênh trao đổi với các nhà giao dịch chứng khoán cấu trúc đang duy trì trạng thái đầu tư lạc quan (bcbs_155, d.99–100).
+
+Quy trình quản trị cũng bắt buộc ngân hàng ban hành văn bản chính sách quy định chi tiết phương pháp luận, tần suất thực hiện, và danh mục các hành động khắc phục dự kiến (bcbs_155, Principle 4, d.201–208). Ban điều hành phải thẩm định tính khả thi thực tế của các hành động khắc phục này trong điều kiện thị trường đóng băng, thay vì duy trì các giả định phi thực tế về tốc độ huy động vốn mới hoặc khả năng thanh lý tài sản nhanh với chi phí thấp (bcbs_155, Principle 4, d.205). Định kỳ, bộ phận quản trị rủi ro độc lập và kiểm toán nội bộ phải tiến hành kiểm định cả định tính và định lượng đối với khung kiểm tra sức chịu đựng, kết hợp đối chuẩn (benchmarking) với các mô hình và kết quả thử nghiệm độc lập bên ngoài nhằm bảo đảm tính khách quan của các tham số đầu vào (bcbs_155, Principle 6, d.215–231).
