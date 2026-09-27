@@ -20,11 +20,11 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `tata_bank_alm` | Nguồn dài (450 KB / 3.345 dòng) | **Đang ingest dở** | 6 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/tata_bank_alm.md` |
 | `clippings` | Nguồn dài (82 file, 882 KB / 6.684 dòng) | **Đang ingest dở** | 11 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/clippings.md` |
 | `ftp_transmission_analysis` | Nguồn ngắn (16 KB / 189 dòng) | **Hoàn tất 100%** | Toàn bộ, ingest trọn 1 lượt | — |
-| `vab_ftp_methodology` | Nguồn dài (243 KB / 2.118 dòng) | **Đang ingest dở** | 4 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/vab_ftp_methodology.md` |
+| `vab_ftp_methodology` | Nguồn dài (243 KB / 2.118 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-27 (chi tiết ở state file) | `03_state/vab_ftp_methodology.md` |
 | `sbv_circular_14_2025` | Nguồn dài (2 file, 546 KB / 3.371 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_circular_14_2025.md` |
 | `sbv_circular_83_2025` | Nguồn dài (240 KB / 1.928 dòng) | **Hoàn tất 100%** | Toàn bộ 3/3 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_circular_83_2025.md` |
 | `sbv_draft_circular_replace_22` | Nguồn dài (358 KB / 2.009 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_draft_circular_replace_22.md` |
-| `bcbs_144` | Nguồn dài (138 KB / 641 dòng) | **Đang ingest dở** | 3 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/bcbs_144.md` |
+| `bcbs_144` | Nguồn dài (138 KB / 641 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, 18 concept, --coverage sạch 2026-09-27 (chi tiết ở state file) | `03_state/bcbs_144.md` |
 | `bcbs_238` | Nguồn dài (262 KB / 1.263 dòng) | **Đang ingest dở** | 2 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/bcbs_238.md` |
 | `bcbs_368` | Nguồn dài (189 KB / 1.207 dòng) | **Đang ingest dở** | 2 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/bcbs_368.md` |
 | `bcbs_155` | Nguồn ngắn (69 KB / 459 dòng) | **Hoàn tất 100%** | Toàn bộ (d.1–459) xong, 11 trang concept | — |
@@ -1070,6 +1070,22 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[term-liquidity-premium-matrix-calibrates-two-dimensional-floating-rate-spreads]] — ma trận phần bù thanh khoản kỳ hạn 2 chiều (kỳ tái định giá x kỳ đáo hạn) lượng hóa spread cho hợp đồng thả nổi
 - [[two-tier-ftp-operational-workflows-govern-market-1-and-market-2-cycles]] — quy trình vận hành FTP 9 bước Thị trường 1 chu kỳ quý/tháng và 9 bước Thị trường 2 tác nghiệp hàng ngày từ 9h-10h sáng
 - [[interbank-tenor-ladder-and-deal-ticket-standardization-enforce-internal-treasury-transfers]] — chuẩn hóa 21 thang kỳ hạn từ Overnight đến 120M, phiếu giao dịch vốn MB06 và báo cáo Desk MM/FX/Bond MB07
+- [[bullet-term-deposit-vof-pricing-locks-fixed-spread-at-origination]] — định giá VOF cho tiền gửi trả gốc một lần khi đáo hạn: khóa biên độ cố định tại ngày phát sinh và miễn trừ phần bù thanh khoản kỳ hạn
+- [[installment-deposit-vof-pricing-preserves-commercial-margin]] — định giá VOF cho tiền gửi tích lũy định kỳ (gửi góp): kỹ thuật bù chênh lệch biên độ bảo toàn NIM đơn vị huy động
+- [[non-maturity-deposit-vof-pricing-combines-redemption-curve-and-regulatory-floor]] — định giá VOF cho tiền gửi không kỳ hạn CASA: kết hợp Đường cong hoàn trả mô hình hành vi và mức sàn thận trọng rút vốn 15% Thông tư 22
+- [[margin-and-escrow-deposit-vof-pricing-evaluates-collateral-lock-up-intensity]] — định giá VOF tiền gửi ký quỹ: đánh giá mức độ ràng buộc phong tỏa tài sản bảo đảm và chi phí trả lãi thực tế
+- [[retail-certificate-of-deposit-vof-pricing-differentiates-planned-and-alco-campaigns]] — định giá VOF chứng chỉ tiền gửi bán lẻ: phân tách phát hành theo kế hoạch năm và các chiến dịch huy động đột xuất của ALCO
+- [[early-deposit-redemption-ftp-penalty-resets-vof-to-demand-rate]] — chế tài chuyển đổi VOF khi tất toán tiền gửi trước hạn: hủy bỏ quyền lợi kỳ hạn và hồi tố áp dụng lãi suất không kỳ hạn
+- [[straight-term-bullet-loan-cof-pricing-decomposes-repricing-and-term-risk]] — định giá COF khoản vay trả gốc một lần: bóc tách rủi ro tái định giá cơ sở và phần bù thanh khoản kỳ hạn gốc
+- [[amortizing-loan-cof-pricing-applies-weighted-average-tenor]] — định giá COF khoản vay trả góp định kỳ: áp dụng kỳ hạn hiệu lực bình quân gia quyền dòng tiền (WAT) tra cứu phần bù thanh khoản
+- [[non-maturity-credit-facility-cof-pricing-applies-behavioral-redemption-curve]] — định giá COF hạn mức tín dụng không kỳ hạn (thấu chi và thẻ tín dụng): bóc tách dư nợ lõi/biến động qua mô hình hành vi 5 năm hoặc kỳ hạn cấp lại hạn mức 12M
+- [[promotional-hybrid-loan-ftp-pricing-evaluates-dual-tenor-and-component-decomposition]] — định giá FTP gói vay ưu đãi hỗn hợp: đánh giá so sánh phương án giữ nguyên kỳ hạn gốc và phương án bóc tách đa cấu phần độc lập
+- [[overdue-loan-ftp-pricing-freezes-original-cof-and-forfeits-promotional-spreads]] — cơ chế FTP đối với nợ quá hạn: đóng băng COF cơ sở ban đầu và hủy bỏ toàn bộ ưu đãi biên độ/hỗ trợ lãi suất
+- [[extended-loan-ftp-pricing-resets-cof-to-cumulative-maturity]] — cơ chế FTP đối với khoản vay gia hạn nợ: tái định giá COF và bổ sung phần bù thanh khoản theo kỳ hạn hiệu lực lũy kế
+- [[corporate-bond-portfolio-ftp-pricing-differentiates-banking-book-and-trading-book]] — định giá FTP danh mục trái phiếu doanh nghiệp: phân định mục đích nắm giữ đến hạn (Banking Book - WAT) và mục đích tự doanh kinh doanh (Trading Book - COF ngắn hạn)
+- [[loan-prepayment-behavioral-option-modelling-adjusts-weighted-average-tenor]] — mô hình hóa quyền chọn ẩn trả nợ trước hạn: dự phóng lại dòng tiền thực tế theo tỷ lệ CPR để điều chỉnh kỳ hạn WAT trong định giá COF
+- [[entrusted-oda-and-foreign-funding-ftp-mechanism-aligns-bilateral-project-cash-flows]] — cơ chế FTP nguồn vốn ủy thác ODA và định chế tài chính nước ngoài: cân khớp kỳ hạn đối ứng song phương hai đầu nhận nguồn và cho vay ra
+- [[ftp-governance-exception-handling-authorizes-ceo-and-alco-interventions]] — khung quản trị xử lý ngoại lệ FTP: thẩm quyền phê duyệt của Tổng Giám đốc và cơ chế can thiệp thủ công biên độ $\pm 0{,}2\%$ của ALCO
 
 **Chuẩn mực An toàn Vốn Ngân hàng theo Chuẩn Basel III (Thông tư 14/2025/TT-NHNN)**
 - [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]] — khung tỷ lệ an toàn vốn 3 tầng (CAR $\ge 8\%$, Tier 1 $\ge 6\%$, CET1 $\ge 4{,}5\%$) theo Thông tư 14/2025/TT-NHNN và cơ chế đệm vốn D-SIB
@@ -1130,14 +1146,16 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[pillar-3-liquidity-disclosure-standards-mandate-qualitative-and-quantitative-market-transparency]] — chuẩn mực công bố thông tin thanh khoản định kỳ 6 tháng Trụ cột 3: minh bạch hóa định tính (mô hình ALM tập trung, độc lập với kinh doanh) và định lượng (LCR, NSFR, LDR, đa dạng hóa nguồn tài trợ)
 
 **Nguyên tắc Quản trị & Giám sát Rủi ro Thanh khoản Lành mạnh (BCBS 144 / Basel)**
-- [[bcbs-sound-principles-establish-foundational-liquidity-risk-management-and-supervisory-mandates]] — nguyên tắc nền tảng quản trị thanh khoản Basel: trách nhiệm tự thân của ngân hàng, đệm HQLA unencumbered, hoán đổi kỳ hạn và bài học khủng hoảng 2007
-- [[board-approved-liquidity-risk-tolerance-aligns-business-strategy-with-stress-survival-horizons]] — khẩu vị rủi ro thanh khoản do HĐQT phê duyệt: đánh đổi rủi ro - lợi nhuận, quản trị rào cản chuyển vốn (trapped liquidity) và quyền lực chất vấn độc lập
-- [[internal-liquidity-cost-allocation-mandates-deal-level-ftp-for-on-and-off-balance-activities]] — phân bổ chi phí thanh khoản nội bộ theo Nguyên tắc 4: tích hợp FTP vào định giá giao dịch, hiệu quả kinh doanh, phê duyệt sản phẩm mới và vị thế ngoại bảng
-- [[prospective-cash-flow-forecasting-and-funding-gap-analysis-model-liquidity-stickiness]] — dự báo dòng tiền tương lai và phân tích funding gap: 4 chân trời thời gian, tính dính nguồn vốn (liability stickiness) và tương tác thanh khoản tài trợ - thị trường (Principle 5)
-- [[contingent-liquidity-risk-framework-mandates-asymmetric-spv-treatment-and-commitment-modeling]] — khuôn khổ rủi ro thanh khoản tiềm tàng: xử lý bất đối xứng SPV (cấm tính thặng dư, dự phòng cam kết), mô hình hóa trigger events và cam kết ngoại bảng (Principle 5)
-- [[early-warning-indicators-and-mismatch-limits-operationalize-proactive-liquidity-monitoring]] — hệ thống chỉ báo cảnh báo sớm (EWI) và hạn mức chênh lệch: 18 tín hiệu cảnh báo sớm, hạn mức nội bộ theo kỳ hạn/tiền tệ/chi nhánh và quản trị rào cản chuyển vốn nội bộ (Principle 5 & 6)
+- [[bcbs-sound-principles-establish-foundational-liquidity-risk-management-and-supervisory-mandates]] — nguyên tắc nền tảng quản trị thanh khoản Basel: trách nhiệm tự thân của ngân hàng, đệm HQLA unencumbered, hoán đổi kỳ hạn và bài học khủng hoảng 2007 (Principle 1 & Khung 4 trụ cột)
+- [[board-approved-liquidity-risk-tolerance-aligns-business-strategy-with-stress-survival-horizons]] — khẩu vị rủi ro thanh khoản do HĐQT phê duyệt: đánh đổi rủi ro - lợi nhuận, quản trị rào cản chuyển vốn (trapped liquidity) và quyền lực chất vấn độc lập (Principle 2)
+- [[internal-liquidity-cost-allocation-mandates-deal-level-ftp-for-on-and-off-balance-activities]] — phân bổ chi phí thanh khoản nội bộ theo Nguyên tắc 4: tích hợp FTP vào định giá giao dịch, hiệu quả kinh doanh, phê duyệt sản phẩm mới và vị thế ngoại bảng (Principle 4)
+- [[prospective-cash-flow-forecasting-and-funding-gap-analysis-model-liquidity-stickiness]] — dự báo dòng tiền tương lai và phân tích funding gap: 4 chân trời thời gian, tính dính nguồn vốn (liability stickiness) và tương tác thanh khoản tài trợ - thị trường (Principle 5.a)
+- [[contingent-liquidity-risk-framework-mandates-asymmetric-spv-treatment-and-commitment-modeling]] — khuôn khổ rủi ro thanh khoản tiềm tàng: xử lý bất đối xứng SPV (cấm tính thặng dư, dự phòng cam kết), mô hình hóa trigger events và cam kết ngoại bảng (Principle 5.b)
+- [[foreign-currency-liquidity-management-and-fx-swap-risk-mitigation-framework]] — quản trị thanh khoản ngoại tệ và rủi ro đứt gãy FX Swap: hạn mức khe hở lệch tiền tệ, bẫy tài trợ chéo và cơ sở hỗ trợ thanh khoản dự phòng back-stop (Principle 5.c)
+- [[early-warning-indicators-and-mismatch-limits-operationalize-proactive-liquidity-monitoring]] — hệ thống chỉ báo cảnh báo sớm (EWI) và hạn mức chênh lệch: 18 tín hiệu cảnh báo sớm, hạn mức nội bộ theo kỳ hạn/tiền tệ/chi nhánh và quản trị rào cản chuyển vốn nội bộ (Principle 5.e–g)
+- [[intragroup-liquidity-governance-and-cross-entity-transfer-constraints-framework]] — quản trị thanh khoản nội bộ nhóm và rào cản chuyển vốn: rào giậu pháp lý (ring-fencing), thanh khoản mắc kẹt (trapped liquidity), rủi ro lây truyền danh tiếng và hạn mức xuyên thực thể (Principle 6)
 - [[funding-diversification-and-market-access-testing-mitigate-wholesale-refinancing-freezes]] — đa dạng hóa nguồn vốn và thử nghiệm tiếp cận thị trường: quy luật tương quan vốn bán buôn - đệm HQLA, loan-sale clauses và đo lường hiệu ứng bậc hai (Principle 7)
-- [[intraday-liquidity-risk-management-mandates-real-time-monitoring-and-priority-sequencing]] — quản trị thanh khoản trong ngày: 6 trụ cột vận hành, ưu tiên giao dịch khẩn cấp có hạn chót (CLS, margin call) và kiểm soát thấu chi trong ngày (Principle 8)
+- [[intraday-liquidity-risk-management-mandates-real-time-monitoring-and-priority-sequencing]] — quản trị thanh khoản trong ngày: 6 trụ cột vận hành, ưu tiên giao dịch khẩn cấp có hạn chót (CLS, margin call), dòng tiền đại lý/lưu ký và rủi ro failure-to-settle (Principle 8 & 5.d)
 - [[collateral-management-framework-differentiates-encumbered-assets-and-monitors-tied-positions]] — quản trị tài sản bảo đảm: phân tách encumbered vs unencumbered, rào cản pháp lý/vận hành, bóc tách vị thế ràng buộc phòng ngừa và dự phòng triggers (Principle 9)
 - [[multi-scenario-liquidity-stress-testing-integrates-behavioral-shocks-and-informs-capital-planning]] — kiểm tra sức chịu đựng thanh khoản đa kịch bản: 17 giả định bảo thủ, tương tác thanh khoản thị trường – tài trợ và định lượng dòng tiền cho CFP/ALM (Principle 10)
 - [[contingency-funding-plan-establishes-crisis-governance-and-operational-escalation-frameworks]] — kế hoạch dự phòng thanh khoản (CFP): Đội xử lý khủng hoảng (Crisis Team), quy trình leo thang, menu giải pháp khả thi và truyền thông khủng hoảng (Principle 11)
@@ -1235,6 +1253,41 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[confidentiality-constraints-in-supervisory-liquidity-stress-tests-prevent-self-fulfilling-runs]] — ràng buộc bảo mật stress test thanh khoản: ngăn ngừa nghịch lý lời tiên tri tự ứng nghiệm kích hoạt tháo chạy tiền gửi thực tế
 - [[digital-deposit-velocity-and-uninsured-deposit-concentration-accelerate-bank-runs]] — tốc độ rút tiền số hóa và tiền gửi không bảo hiểm: gia tốc tháo chạy tiền gửi siêu tốc trong ngày và thách thức đối với giả định LCR (bài học SVB 2023)
 - [[accounting-classification-of-securities-portfolios-distorts-hqla-monetization-feasibility]] — nút thắt phân loại kế toán HTM/AFS: rủi ro quy tắc tainting rule và lỗ chưa thực hiện làm biến dạng năng lực tiền mặt hóa thực tế của đệm HQLA
+
+**Phương pháp luận Định giá Chuyển nhượng Vốn Nội bộ (FTP / VietABank)**
+- [[vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu]] — mô hình quản trị FTP tập trung qua CFU: bóc tách rủi ro thanh khoản và rủi ro lãi suất về hội sở, bảo toàn biên độ thương mại cho mạng lưới
+- [[vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing]] — cấu trúc hệ thống hai đường cong VOF và COF: đường cong giá mua vốn huy động và giá bán vốn tín dụng trên Thị trường 1
+- [[ftp-base-curve-construction-contrasts-vnd-historical-cost-with-usd-market-benchmarks]] — phương pháp xây dựng đường cong FTP cơ sở: tiếp cận chi phí lịch sử cho VND và lãi suất thị trường tham chiếu cho USD, kỹ thuật nội suy tuyến tính Interp
+- [[planned-nim-allocation-determines-ftp-deposit-mobilization-margins]] — cơ chế phân bổ NIM kế hoạch: tính toán biên độ huy động vốn nội bộ nhằm bảo đảm hoàn thành chỉ tiêu thu nhập lãi thuần NII toàn hàng
+- [[regulatory-deposit-insurance-and-statutory-reserves-apportion-into-market-1-cof]] — cơ chế phân bổ chi phí pháp định: phân bổ tập trung chi phí bảo hiểm tiền gửi và dự trữ bắt buộc vào giá bán vốn COF, loại trừ tài sản phi FTP
+- [[matched-maturity-term-liquidity-spread-isolates-repricing-tenor-mismatch]] — bóc tách phần bù thanh khoản kỳ hạn theo nguyên lý khớp kỳ hạn: lượng hóa rủi ro tái định giá và rủi ro hoán đổi kỳ hạn
+- [[term-liquidity-premium-matrix-calibrates-two-dimensional-floating-rate-spreads]] — ma trận phần bù thanh khoản hai chiều: liên kết giữa kỳ tái định giá và kỳ đáo hạn, biểu lãi suất cố định MB01.1 và thả nổi MB01.2
+- [[contingent-liquidity-charge-prices-undrawn-credit-commitments]] — phụ phí rủi ro thanh khoản tiềm tàng: định giá các cam kết ngoại bảng chưa giải ngân (thẻ tín dụng, thấu chi) theo hệ số chuyển đổi tín dụng CCF TT41 và mô hình hành vi
+- [[cost-of-equity-ftp-charge-funds-minimum-regulatory-capital-buffers]] — cấu phần chi phí vốn chủ sở hữu: tính toán phụ phí vốn cấp 1 theo tỷ lệ an toàn vốn CAR và phân bổ chi phí cơ hội vốn
+- [[bullet-term-deposit-vof-pricing-locks-fixed-spread-at-origination]] — định giá VOF tiền gửi trả lãi cuối kỳ: khóa chặt biên độ thương mại cố định tại thời điểm phát sinh giao dịch
+- [[installment-deposit-vof-pricing-preserves-commercial-margin]] — định giá VOF tiền gửi tích lũy và gửi góp: áp dụng kỳ hạn hiệu lực bình quân gia quyền WAT bảo toàn biên độ huy động
+- [[non-maturity-deposit-vof-pricing-combines-redemption-curve-and-regulatory-floor]] — định giá VOF tiền gửi không kỳ hạn CASA: kết hợp đường cong hoàn trả hành vi và mức sàn trần lãi suất pháp định
+- [[margin-and-escrow-deposit-vof-pricing-evaluates-collateral-lock-up-intensity]] — định giá VOF tiền gửi ký quỹ và tài khoản phong tỏa: đánh giá mức độ cam kết gắn kết tài sản bảo đảm
+- [[retail-certificate-of-deposit-vof-pricing-differentiates-planned-and-alco-campaigns]] — định giá VOF chứng chỉ tiền gửi bán lẻ: phân định giữa phát hành kế hoạch thông thường và các chiến dịch huy động đặc biệt của ALCO
+- [[early-deposit-redemption-ftp-penalty-resets-vof-to-demand-rate]] — chế tài phạt rút tiền gửi trước hạn: hồi tố giá mua vốn về mức không kỳ hạn nhằm bù đắp tổn thất chi phí hoán đổi kỳ hạn
+- [[straight-term-bullet-loan-cof-pricing-decomposes-repricing-and-term-risk]] — định giá COF khoản vay trả gốc cuối kỳ: bóc tách rủi ro định giá lại và rủi ro kỳ hạn gốc theo đường cong bán vốn
+- [[amortizing-loan-cof-pricing-applies-weighted-average-tenor]] — định giá COF khoản vay trả góp: áp dụng kỳ hạn bình quân gia quyền dòng tiền WAT để xác định kỳ hạn chuẩn trên đường cong COF
+- [[non-maturity-credit-facility-cof-pricing-applies-behavioral-redemption-curve]] — định giá COF hạn mức tín dụng thấu chi và thẻ tín dụng: phân tách giữa hạn mức cam kết chưa rút và dư nợ giải ngân thực tế
+- [[promotional-hybrid-loan-ftp-pricing-evaluates-dual-tenor-and-component-decomposition]] — định giá COF gói vay ưu đãi hỗn hợp: phân rã kỳ hạn kép giữa giai đoạn ưu đãi lãi suất và giai đoạn thả nổi thông thường
+- [[overdue-loan-ftp-pricing-freezes-original-cof-and-forfeits-promotional-spreads]] — định giá FTP nợ quá hạn: đóng băng chi phí bán vốn gốc và tước bỏ mọi ưu đãi lãi suất chuyển sang trạng thái nợ xấu
+- [[extended-loan-ftp-pricing-resets-cof-to-cumulative-maturity]] — định giá FTP khoản nợ cơ cấu lại thời hạn trả nợ: tái lập giá bán vốn theo tổng kỳ hạn lũy kế sau cơ cấu
+- [[corporate-bond-portfolio-ftp-pricing-differentiates-banking-book-and-trading-book]] — định giá FTP danh mục trái phiếu doanh nghiệp: phân định rõ mục đích nắm giữ giữa Sổ ngân hàng và Sổ kinh doanh
+- [[loan-prepayment-behavioral-option-modelling-adjusts-weighted-average-tenor]] — mô hình hóa quyền chọn trả nợ trước hạn: điều chỉnh kỳ hạn hiệu lực WAT dựa trên xác suất trả trước thực tế của khách hàng
+- [[non-earning-asset-and-nostro-vostro-ftp-treatment-precludes-double-counting]] — cơ chế xử lý tài sản không sinh lời và tài khoản Nostro/Vostro: loại trừ trùng lặp chi phí và phân bổ đúng bản chất nguồn vốn
+- [[contractual-amendment-ftp-repricing-rules-govern-loan-and-deposit-restructuring]] — quy tắc định giá lại khi sửa đổi điều khoản hợp đồng tín dụng và huy động vốn
+- [[interbank-market-2-ftp-curve-incorporates-peer-rates-and-vnibor]] — đường cong FTP Thị trường 2 liên ngân hàng: tích hợp lãi suất chào mid-rate nhóm ngân hàng tham chiếu và lãi suất liên ngân hàng VNIBOR
+- [[treasury-business-unit-ftp-governance-balances-desk-level-and-net-portfolio-transfers]] — quản trị FTP Khối Nguồn vốn: cân bằng giữa cơ chế chuyển nhượng cấp Desk nghiệp vụ (MM, FX, BOND) và quản lý ròng danh mục
+- [[entrusted-oda-and-foreign-funding-ftp-mechanism-aligns-bilateral-project-cash-flows]] — cơ chế FTP nguồn vốn ủy thác đầu tư ODA và tài trợ quốc tế: đồng bộ dòng tiền dự án song phương không tính vào bảng cân đối TT1
+- [[ftp-governance-exception-handling-authorizes-ceo-and-alco-interventions]] — thẩm quyền xử lý ngoại lệ chính sách FTP: cơ chế phê duyệt can thiệp của Tổng Giám đốc và Hội đồng ALCO
+- [[ftp-reporting-architecture-synthesizes-multi-dimensional-nii-and-nim-performance]] — kiến trúc hệ thống báo cáo FTP: tổng hợp hiệu quả thu nhập lãi thuần NII và biên lãi ròng NIM đa chiều phục vụ điều hành
+- [[two-tier-ftp-operational-workflows-govern-market-1-and-market-2-cycles]] — quy trình vận hành hai tầng: phân định chu kỳ điều chuyển vốn định kỳ hàng tháng TT1 và chu kỳ tác nghiệp hàng ngày TT2
+- [[interbank-tenor-ladder-and-deal-ticket-standardization-enforce-internal-treasury-transfers]] — chuẩn hóa bậc thang 21 kỳ hạn liên ngân hàng và phiếu mua bán vốn nội bộ MB06/MB07
+
 
 
 

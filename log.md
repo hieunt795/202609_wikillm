@@ -1269,6 +1269,27 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 3 trang mới: standardized-credit-risk-weights-and-asset-classification-hierarchy-govern-regulatory-capital (khung phân loại tài sản 7 nhóm, thứ tự ưu tiên nhận diện, CRW chuẩn hóa sovereign, TCTD, BĐS, ma trận đòn bẩy x doanh thu, bán lẻ, ECAI), f-irb-credit-risk-mitigation-framework-and-purchased-receivables-capital-treatment (thuật toán LGD hiệu chỉnh TSBĐ đa dạng, haircut 0/40/50%, thế quyền bảo lãnh/CDS, vốn Purchased Receivables Default Risk + Dilution Risk LGD 100%), irb-system-design-operational-standards-and-pillar-3-disclosures (cơ cấu 7+1 bậc, phân nhóm bán lẻ, quản trị mô hình, stress test, công bố Trụ cột 3 bán niên/năm); cập nhật 4 trang (three-tier-capital-adequacy-..., credit-risk-mitigation-framework-..., irb-governance-use-test-..., standardized-approach-credit-risk-weights-...).
 - 0 stub; 7 mục ghi `bỏ qua:` theo duyệt (tiêu ngữ, tên văn bản, phạm vi áp dụng, giải thích từ ngữ chung, xuất bản công báo, thanh tra NHNN); --all sạch (964 trang), --coverage sbv_circular_14_2025 sạch (0 mục chưa phủ).
 - sbv_circular_14_2025 hoàn tất 100% (4/4 chunk [x]). Hoàn tất 100% nhóm 3 văn bản pháp lý ALM Việt Nam.
+## [2026-09-27:21-31-31] ingest | vab_ftp_methodology Chunk 1 (Phần A & B Điều 1–4)
+- Cập nhật: 3 trang (regulatory-deposit-insurance-and-statutory-reserves-apportion-into-market-1-cof, vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing, matched-maturity-term-liquidity-spread-isolates-repricing-tenor-mismatch).
+- 0 stub; 4 mục ghi `bỏ qua:` theo duyệt (trang bìa, phê duyệt dự án, miễn trừ trách nhiệm EY, mục lục); --all sạch (964 trang), --coverage vab_ftp_methodology sạch Chunk 1 (0 mục chưa phủ).
+- vab_ftp_methodology Chunk 1 hoàn tất 100% ([x]); còn lại 3 chunk (Phần B Điều 5–15, Phụ lục).
 
+## [2026-09-27:21-47-25] ingest | vab_ftp_methodology Chunk 2 (Phần B Điều 5–6)
+- 14 concept mới tách độc lập theo sản phẩm (§5 Atomic): 6 node VOF tiền gửi (bullet-term-deposit, installment-deposit, non-maturity-deposit, margin-and-escrow, retail-certificate-of-deposit, early-deposit-redemption) + 8 node COF tín dụng/tài sản (straight-term-bullet, amortizing-loan, non-maturity-credit, promotional-hybrid, overdue-loan, extended-loan, corporate-bond-portfolio, loan-prepayment); cập nhật 3 trang (contractual-amendment-..., deposit-product-vof-..., promotional-and-behavioral-loan-...).
+- 0 stub; 0 mục bỏ qua; --all sạch (978 trang, 0 lỗi, 0 mồ côi), --coverage sạch 100% Chunk 2 (98% dòng, 0 mục chưa phủ).
+- vab_ftp_methodology Chunk 2 hoàn tất 100% ([x]); còn lại 2 chunk (Phần B Điều 7–15, Phụ lục).
 
+## [2026-09-27:21-55-48] ingest | vab_ftp_methodology Chunk 3 (Phần B Điều 7–15)
+- 2 concept mới: entrusted-oda-and-foreign-funding-ftp-mechanism-aligns-bilateral-project-cash-flows, ftp-governance-exception-handling-authorizes-ceo-and-alco-interventions; cập nhật 3 trang (contractual-amendment-..., ftp-reporting-architecture-..., non-earning-asset-...).
+- 0 stub; 0 mục bỏ qua; --all sạch (980 trang, 0 lỗi, 0 mồ côi), --coverage sạch 100% Chunk 3 (88% dòng, 0 mục chưa phủ).
+- vab_ftp_methodology Chunk 3 hoàn tất 100% ([x]); còn lại 1 chunk (Phụ lục 01–06 & Mẫu biểu).
 
+## [2026-09-27:22-07-33] ingest | vab_ftp_methodology Chunk 4 (Phụ lục 01–06 & Mẫu biểu MB01–MB07)
+- Cập nhật 6 trang: ftp-base-curve-construction-..., planned-nim-allocation-..., regulatory-deposit-insurance-..., contingent-liquidity-charge-..., ftp-reporting-architecture-..., term-liquidity-premium-matrix-...; thêm chuyên mục FTP vào index.md.
+- 0 stub; 3 mục ghi 'bỏ qua:' theo duyệt (2 placeholder ảnh báo cáo, 1 dẫn chiếu MB02); --all sạch (980 trang, 0 lỗi, 0 mồ côi), --coverage sạch 100% Chunk 4 (87% dòng, 0 mục chưa phủ).
+- vab_ftp_methodology hoàn tất 100% (toàn bộ 4/4 chunk [x], 0 mục chưa phủ).
+
+## [2026-09-27:22-22-00] ingest | bcbs_144 Rà soát & Chuẩn hóa 17 Nguyên tắc (Tách P5.c, P6 & Merge P5.d, P3, P14–15)
+- 2 concept mới (§5 Atomic): foreign-currency-liquidity-management-and-fx-swap-risk-mitigation-framework (P5.c), intragroup-liquidity-governance-and-cross-entity-transfer-constraints-framework (P6); cập nhật 3 trang: intraday-liquidity-risk-management-... (merge P5.d), funding-diversification-... (refactor P7), bcbs-sound-principles-... (merge khung 4 trụ cột d.91–136).
+- 0 stub; 2 mục ghi 'bỏ qua:' theo duyệt (bìa BIS d.3–24, danh sách thành viên d.632–641); --all sạch (982 trang, 0 lỗi, 0 mồ côi), --coverage sạch 100% cả 4 chunk (0 mục chưa phủ).
+- bcbs_144 hoàn tất 100% (toàn bộ 4/4 chunk [x], 18 concept, cập nhật index.md và 03_state/bcbs_144.md).

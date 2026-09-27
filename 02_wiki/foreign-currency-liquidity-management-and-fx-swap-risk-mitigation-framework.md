@@ -1,0 +1,20 @@
+---
+title: foreign-currency-liquidity-management-and-fx-swap-risk-mitigation-framework
+type: concept
+tags: [basel, principles, bcbs-144, liquidity-risk, foreign-exchange, fx-swap, currency-mismatch, market-risk, cross-currency-funding]
+sources: [bcbs_144]
+status: draft
+last_updated: 2026-09-27
+---
+
+Khuôn khổ quản trị rủi ro thanh khoản ngoại tệ và giảm thiểu rủi ro hoán đổi ngoại hối theo Nguyên tắc 5(c) của BCBS 144 bắt buộc ngân hàng phải đánh giá toàn diện nhu cầu thanh khoản ngoại tệ tổng hợp và xác lập hệ thống hạn mức khe hở lệch tiền tệ có thể chấp nhận được đối với từng đồng tiền có quy mô hoạt động trọng yếu (bcbs_144, file bcbs144.md, Principle 5.c, d.252–255). Do các ngân hàng trung ương quốc gia chỉ có thể đóng vai trò người cứu trợ thanh khoản cuối cùng (Lender of Last Resort) đối với đồng nội tệ mà không thể tự do phát hành ngoại tệ, rủi ro thanh khoản ngoại tệ mang tính tổn thương cấu trúc đặc biệt nghiêm trọng, đòi hỏi một chiến lược quản trị độc lập và thận trọng cho từng loại ngoại tệ thay vì bù trừ cơ học trên bảng cân đối tổng thể (bcbs_144, file bcbs144.md, Principle 5.c, d.254).
+
+Khi xác định quy mô hạn mức lệch tiền tệ chấp nhận được, ngân hàng bắt buộc phải phân tích kỹ lưỡng bốn yếu tố hạn chế trong điều kiện thị trường căng thẳng (bcbs_144, file bcbs144.md, Principle 5.c, d.254):
+- Năng lực thực tế của ngân hàng trong việc huy động vốn trực tiếp trên các thị trường ngoại tệ quốc tế dưới áp lực suy giảm hạn mức tín nhiệm.
+- Quy mô khả dụng của các cơ chế hỗ trợ thanh khoản ngoại tệ dự phòng (foreign currency back-up facilities) hiện hữu tại thị trường nội địa.
+- Khả năng chuyển giao thặng dư thanh khoản từ đồng tiền này sang đồng tiền khác, cũng như vượt qua các rào cản pháp lý giữa các quốc gia và pháp nhân thành viên được quy định trong [[intragroup-liquidity-governance-and-cross-entity-transfer-constraints-framework]].
+- Khả năng chuyển đổi thực tế của các đồng tiền (currency convertibility), đặc biệt là nguy cơ thị trường phái sinh hoán đổi ngoại hối (Foreign Exchange Swap — FX Swap) bị suy giảm thanh khoản nghiêm trọng hoặc đóng băng hoàn toàn đối với từng cặp tiền tệ cụ thể (bcbs_144, file bcbs144.md, Principle 5.c, d.254).
+
+Ủy ban Basel cảnh báo mối nguy hiểm lớn phát sinh từ bẫy tài trợ chéo tiền tệ (cross-currency funding mismatch), bao gồm việc sử dụng tiền gửi ngoại tệ và các hạn mức tín dụng ngắn hạn ngoại tệ để tài trợ cho tài sản nội tệ dài hạn, hoặc ngược lại sử dụng nguồn vốn nội tệ để tài trợ cho tài sản ngoại tệ (bcbs_144, file bcbs144.md, Principle 5.c, d.256). Biến động đột ngột của tỷ giá hối đoái kết hợp với sự sụt giảm thanh khoản thị trường có thể làm giãn rộng nhanh chóng các khe hở thanh khoản ngoại tệ và làm suy giảm hoặc phá vỡ hoàn toàn tính hiệu quả của các hợp đồng phòng ngừa rủi ro tỷ giá hiện hữu (bcbs_144, file bcbs144.md, Principle 5.c, d.256). Khi các thị trường hoán đổi tiền tệ ngừng giao dịch, ngân hàng không thể thực hiện các giao dịch hoán đổi để chuyển hóa nội tệ dư thừa thành ngoại tệ nhằm đáp ứng nghĩa vụ trả nợ đến hạn, kích hoạt nguy cơ vỡ nợ kỹ thuật bằng ngoại tệ.
+
+Để vô hiệu hóa nguy cơ mất khả năng tiếp cận thị trường ngoại hối và tắc nghẽn chuyển đổi tiền tệ, ngân hàng duy trì vị thế rủi ro thanh khoản trọng yếu ở bất kỳ đồng tiền nào phải chủ động đàm phán trước các cơ chế tài trợ dự phòng thanh khoản ngoại tệ (liquidity back-stop facility) có cam kết ràng buộc hoặc thiết lập một chiến lược dự phòng khẩn cấp mở rộng (bcbs_144, file bcbs144.md, Principle 5.c, d.258). Cơ chế quản trị này được tích hợp trực tiếp vào dự báo dòng tiền theo [[prospective-cash-flow-forecasting-and-funding-gap-analysis-model-liquidity-stickiness]], được theo dõi liên tục thông qua hệ thống hạn mức và chỉ báo cảnh báo sớm tại [[early-warning-indicators-and-mismatch-limits-operationalize-proactive-liquidity-monitoring]], được kiểm nghiệm sức chịu đựng qua [[multi-scenario-liquidity-stress-testing-integrates-behavioral-shocks-and-informs-capital-planning]], và trở thành một cấu phần cốt lõi trong kế hoạch dự phòng khẩn cấp được kích hoạt theo [[contingency-funding-plan-establishes-crisis-governance-and-operational-escalation-frameworks]].

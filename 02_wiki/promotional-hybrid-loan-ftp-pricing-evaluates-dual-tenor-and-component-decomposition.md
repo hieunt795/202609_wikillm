@@ -1,0 +1,20 @@
+---
+title: promotional-hybrid-loan-ftp-pricing-evaluates-dual-tenor-and-component-decomposition
+type: concept
+tags: [alm, ftp, cof, promotional-loans, hybrid-loans, component-decomposition, dual-tenor, market-1]
+sources: [vab_ftp_methodology]
+status: draft
+last_updated: 2026-09-27
+---
+
+Trong chiến lược kinh doanh của các ngân hàng thương mại, các gói tín dụng có chương trình ưu đãi lãi suất giai đoạn đầu — ví dụ hợp đồng vay 5 năm được áp dụng lãi suất cố định ưu đãi thấp trong 1 năm đầu, sau đó 4 năm còn lại chuyển sang lãi suất thả nổi điều chỉnh 3 tháng một lần hoặc lãi suất cố định thông thường — tạo ra cấu trúc dòng tiền hỗn hợp (hybrid) làm phức tạp hóa việc xác định chi phí vốn nội bộ (vab_ftp_methodology, Điều 6.2.i–l, d.833–946). Phương pháp luận FTP chuẩn hóa cơ chế định giá bán vốn (COF) cho các khoản vay ưu đãi qua hai phương án tiếp cận độc lập, áp dụng thống nhất cho cả bốn cấu trúc trả nợ gồm trả gốc cuối kỳ (bullet) và trả gốc định kỳ (amortizing) với lãi suất cố định hoặc thả nổi (vab_ftp_methodology, Điều 6.2.i.ii, d.837–844; Điều 6.2.j.ii, d.861–866; Điều 6.2.k.ii, d.885–892; Điều 6.2.l.ii, d.916–924).
+
+**Phương án 1 (Giữ nguyên kỳ hạn gốc và chuyển đổi tần suất định giá lại)**:
+Hệ thống FTP duy trì nguyên vẹn kỳ hạn gốc ban đầu của hợp đồng (ví dụ 5 năm) hoặc kỳ hạn hiệu lực $WAT$ tính trên toàn bộ 5 năm xuyên suốt đời khoản vay (vab_ftp_methodology, Điều 6.2.i.ii, d.837; Điều 6.2.k.ii, d.885). Trong giai đoạn ưu đãi (1 năm đầu), lãi suất COF cơ sở được xác định theo giá của hợp đồng kỳ hạn 5 năm với tần suất điều chỉnh lãi suất tương ứng thời gian ưu đãi (12 tháng); khi bước sang 4 năm tiếp theo, hệ thống tự động chuyển đổi giá COF sang mức giá của hợp đồng kỳ hạn gốc 5 năm với tần suất điều chỉnh lãi suất thực tế của giai đoạn sau (ví dụ 3 tháng đối với lãi suất thả nổi hoặc cố định 5 năm) theo [[matched-maturity-term-liquidity-spread-isolates-repricing-tenor-mismatch]] (vab_ftp_methodology, Điều 6.2.i.ii, d.838–840; Điều 6.2.j.ii, d.861–863; Điều 6.2.k.ii, d.886–888; Điều 6.2.l.ii, d.918–921).
+
+**Phương án 2 (Bóc tách cấu phần thời gian — Component Decomposition)**:
+CFU thực hiện chia nhỏ hợp đồng tín dụng thành hai cấu phần độc lập theo trục thời gian (vab_ftp_methodology, Điều 6.2.i.ii, d.841; Điều 6.2.j.ii, d.864; Điều 6.2.k.ii, d.889; Điều 6.2.l.ii, d.922):
+- *Cấu phần trong kỳ ưu đãi (1 năm đầu)*: Lãi suất COF cơ sở lấy tương ứng với kỳ hạn ưu đãi (1 năm) căn cứ vào biểu COF tại ngày giải ngân ban đầu, áp dụng cố định trong suốt 1 năm và phần bù thanh khoản kỳ hạn bằng 0% (vab_ftp_methodology, Điều 6.2.i.ii, d.843, d.846–847; Điều 6.2.j.ii, d.865, d.868–870; Điều 6.2.k.ii, d.891, d.894–896; Điều 6.2.l.ii, d.923, d.926–928);
+- *Cấu phần ngoài kỳ ưu đãi (4 năm sau)*: Khoản vay được xem xét như một giao dịch mới phát sinh tại ngày kết thúc thời hạn ưu đãi; lãi suất COF cơ sở lấy theo kỳ hạn tái định giá mới căn cứ vào biểu COF có hiệu lực tại ngày sau ngày kết thúc ưu đãi, đồng thời cộng thêm phần bù thanh khoản kỳ hạn đo lường bằng mức chênh lệch giữa lãi suất của kỳ hạn gốc còn lại (hoặc $WAT$ tính riêng trên các dòng tiền sau ưu đãi $P_i$ với khoảng thời gian $T_i$ tính từ ngày hết hạn ưu đãi) và lãi suất của kỳ hạn tái định giá (vab_ftp_methodology, Điều 6.2.i.ii, d.844, d.849–851; Điều 6.2.j.ii, d.866, d.872–876; Điều 6.2.k.ii, d.892, d.898–909; Điều 6.2.l.ii, d.924, d.930–946).
+
+Phương án bóc tách cấu phần phản ánh trung thực chi phí kinh tế của từng giai đoạn giải ngân, giúp chi nhánh không bị phạt chi phí vốn dài hạn trong thời gian kích cầu nhưng buộc khối kinh doanh phải chuẩn bị biên độ bù đắp chi phí thanh khoản cao hơn khi bước vào giai đoạn thả nổi. Mô hình này kết nối trực tiếp với nguyên tắc định giá bullet tại [[straight-term-bullet-loan-cof-pricing-decomposes-repricing-and-term-risk]], phương pháp thời lượng trả góp của [[amortizing-loan-cof-pricing-applies-weighted-average-tenor]], và cấu trúc giá bán vốn tổng thể tại [[vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing]].

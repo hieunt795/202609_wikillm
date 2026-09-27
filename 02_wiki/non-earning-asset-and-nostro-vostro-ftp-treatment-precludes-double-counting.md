@@ -3,8 +3,8 @@ title: non-earning-asset-and-nostro-vostro-ftp-treatment-precludes-double-counti
 type: concept
 tags: [alm, ftp, cash-management, nostro-vostro, equity-investments, non-earning-assets, double-counting]
 sources: [vab_ftp_methodology]
-status: stable
-last_updated: 2026-09-26
+status: draft
+last_updated: 2026-09-27
 ---
 
 Trong cấu trúc bảng cân đối kế toán của ngân hàng, một bộ phận tài sản và công nợ mang tính chất phi thương mại hoặc phục vụ mục tiêu thanh khoản hệ thống như tiền mặt tồn quỹ, tài khoản vãng lai Nostro/Vostro liên ngân hàng, danh mục đầu tư cổ phiếu dài hạn và các tài sản có khác (vab_ftp_methodology, Điều 7, d.984). Nếu hệ thống FTP áp đặt giá chuyển nhượng nội bộ một cách cơ học lên các khoản mục này, ngân hàng sẽ phạm phải sai lầm tính trùng chi phí (double-counting), làm méo mó nghiêm trọng hiệu quả kinh doanh của các đơn vị vận hành (vab_ftp_methodology, Điều 7.1, d.990). Do đó, phương pháp luận FTP thiết lập các nguyên tắc phân loại và loại trừ chuyên biệt nhằm bảo đảm tính nhất quán kinh tế (vab_ftp_methodology, Điều 7.1–7.4, d.986–1025).
@@ -23,4 +23,5 @@ Trong cấu trúc bảng cân đối kế toán của ngân hàng, một bộ ph
 1. **Phương pháp tiếp cận mua bán một phần (Partial Balance Sheet Approach)**: Ngân hàng không tính FTP cho các khoản mục tài sản khác; các tài sản này được coi là tài trợ trực tiếp từ nguồn vốn chủ sở hữu, và phần thặng dư vốn chủ sở hữu còn lại sau khi trừ tài sản khác mới là đối tượng chịu chi phí vốn theo [[ftp-cost-of-equity-apportionment-bridges-raroc-and-surplus-capital]] (vab_ftp_methodology, Điều 7.4, d.1022–1023);
 2. **Phương pháp tiếp cận mua bán toàn bộ (Full Balance Sheet Approach)**: CFU xác định tỷ trọng số dư của khoản mục tài sản khác phân bổ trong từng thang kỳ hạn của báo cáo khe hở thanh khoản (liquidity gap), nhân với lãi suất FTP tương ứng của từng kỳ hạn đó, và cộng dồn tích số để xác lập mức giá FTP bình quân sau cùng của danh mục tài sản khác (vab_ftp_methodology, Điều 7.4, d.1024).
 
-Kỹ thuật phân định và loại trừ này giúp hệ thống quản trị của [[vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu]] giữ vững tính toàn vẹn kinh tế, triệt tiêu mọi khả năng hạch toán hai lần chi phí thanh khoản và vốn tự có trên toàn hệ thống.
+Kỹ thuật phân định và loại trừ này vận hành đồng bộ với cơ chế đối ứng song phương nguồn vốn ủy thác ODA theo [[entrusted-oda-and-foreign-funding-ftp-mechanism-aligns-bilateral-project-cash-flows]] và thẩm quyền xử lý ngoại lệ tại [[ftp-governance-exception-handling-authorizes-ceo-and-alco-interventions]], giúp hệ thống quản trị của [[vietnam-banking-ftp-governance-centralizes-balance-sheet-risks-via-cfu]] giữ vững tính toàn vẹn kinh tế, triệt tiêu mọi khả năng hạch toán hai lần chi phí thanh khoản và vốn tự có trên toàn hệ thống.
+
