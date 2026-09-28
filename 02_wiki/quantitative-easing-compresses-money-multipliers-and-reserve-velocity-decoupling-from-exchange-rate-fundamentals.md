@@ -1,0 +1,27 @@
+---
+title: quantitative-easing-compresses-money-multipliers-and-reserve-velocity-decoupling-from-exchange-rate-fundamentals
+type: concept
+tags: [quantitative-easing, money-multiplier, velocity-of-money, fedwire, foreign-exchange]
+sources: [fixed_income_during]
+status: stable
+last_updated: 2026-09-28
+---
+
+Thực nghiệm từ các chương trình [[quantitative-easing|nới lỏng định lượng (QE)]] quy mô lớn tại Hoa Kỳ, Nhật Bản và Khu vực Đồng Euro cho thấy sự mở rộng bùng nổ của bảng cân đối ngân hàng trung ương không tự động chuyển hóa thành sự gia tăng tương ứng của cung tiền rộng, mà bị triệt tiêu bởi sự sụp đổ đồng thời của hệ số nhân tiền tệ và tốc độ vòng quay của dự trữ (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.156–188).
+
+**Sự sụp đổ của hệ số nhân tiền tệ thực nghiệm:**
+- Trong lý thuyết tiền tệ cổ điển, sự gia tăng của tiền cơ sở ($M_0$) sẽ kích hoạt việc mở rộng tín dụng tư nhân theo [[money-multiplier-mechanics-governs-fractional-reserve-expansion-via-geometric-deposit-lending-series|cơ chế số nhân tiền tệ]]. Tuy nhiên, dữ liệu thực tế tại Hoa Kỳ và Nhật Bản cho thấy hệ số nhân tiền tệ ($M_2 / M_0$) sụt giảm mạnh và tỷ lệ nghịch trực tiếp với quy mô chương trình QE (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.158, Hình 9.3).
+- Tại Khu vực Đồng Euro, hệ số nhân tiền tệ thậm chí đã lao dốc từ trước khi Ngân hàng Trung ương Châu Âu (ECB) chính thức triển khai mua trái phiếu quy mô lớn, xuất phát từ việc áp dụng cơ chế phân bổ toàn bộ theo lãi suất cố định (fixed-rate full allotment) trong các nghiệp vụ tái cấp vốn chính MRO (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.158, chú thích 9). Sự suy giảm này phản ánh thực tế rằng lượng dự trữ dồi dào được bơm vào hệ thống ngân hàng bị ứ đọng lại dưới dạng tiền gửi dự trữ dư thừa do nhu cầu tín dụng thực tế suy yếu hoặc các ngân hàng thương mại thắt chặt chuẩn cho vay theo [[large-scale-asset-purchases-expand-inside-money-and-lengthen-commercial-bank-balance-sheets]].
+
+**Tốc độ vòng quay của dự trữ thanh toán (Liquidity Velocity):**
+- Do tốc độ lưu thông tiền tệ ($V$) trong nền kinh tế thực không thể đo lường trực tiếp, giá trị giao dịch qua các hệ thống thanh toán dự trữ liên ngân hàng được sử dụng làm biến số đại diện (proxy) để đánh giá mức độ luân chuyển thanh khoản (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.162–174):
+  - *Hệ thống Fedwire Funds tại Hoa Kỳ*: Trước khi Cục Dự trữ Liên bang (Fed) triển khai QE vào năm 2008, một đồng dự trữ ngân hàng luân chuyển trung bình khoảng 6.500 lần/năm với độ lệch chuẩn 9,7% (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.184). Sau khi các chương trình LSAP bơm ngập dự trữ vào hệ thống, tốc độ quay vòng của một đồng dự trữ trong giai đoạn 2012–2018 rơi thẳng đứng xuống mức trung bình chỉ còn 28,9 lần/năm (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.184).
+  - *Hệ thống Zengin tại Nhật Bản*: Tách bạch dữ liệu chuyển tiền giá trị nhỏ (dưới 100 triệu JPY, phản ánh thanh toán thương mại và chi trả tiền lương của nền kinh tế thực) với các giao dịch tài chính lớn (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.188). Trong khi số dư tiền gửi thanh toán của các ngân hàng tại Bank of Japan tăng vọt theo cấp số nhân, tổng giá trị thanh toán giao dịch nhỏ trên hệ thống Zengin duy trì tốc độ tăng trưởng cực kỳ ổn định ở mức ~1,7%/năm, hoàn toàn tách rời khỏi quy mô bơm tiền cơ sở của ngân hàng trung ương (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.188).
+  - *Hệ thống TARGET2 tại Châu Âu*: Nghiên cứu của ECB cũng ghi nhận tốc độ vòng quay thanh khoản của tiền ngân hàng trung ương sụt giảm nghiêm trọng khi tiền cơ sở phình to (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.176).
+- Sự gia tăng đột biến của giá trị giao dịch ròng qua hệ thống thanh toán trung ương trong giai đoạn này chủ yếu phản ánh hoạt động giao dịch chứng khoán tài chính gia tăng và tâm lý thận trọng của công chúng, dịch chuyển từ tiền gửi ngân hàng tư nhân sang các tài sản phi ngân hàng đòi hỏi thanh toán trực tiếp bằng tiền ngân hàng trung ương (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.186).
+
+**Sự tách rời giữa nới lỏng định lượng và tỷ giá hối đoái:**
+- Tương quan giữa tỷ lệ số nhân tiền tệ tương đối (như tỷ số giữa $M_2/M_0$ của Nhật Bản so với Hoa Kỳ) và biến động tỷ giá hối đoái JPY/USD chỉ mang tính chất gián đoạn và rời rạc, không hình thành quy luật bền vững (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.196–204, Hình 9.6).
+- Nguyên nhân cốt lõi bắt nguồn từ các nền tảng vĩ mô cơ cấu vượt ra ngoài tầm kiểm soát của chính sách tiền tệ:
+  - Nhật Bản duy trì thặng dư cán cân vãng lai (current account surplus) kéo dài cả về thương mại và thu nhập đầu tư quốc tế ròng; các dòng tiền này khi được hồi hương tạo lực nâng đỡ tự nhiên cho đồng Yên, ngăn cản xu hướng suy yếu tiền tệ dài hạn (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.204).
+  - Sự mất giá mạnh của đồng Yên trong thực tế xuất phát từ các cú sốc thương mại thực hơn là chính sách Abenomics: đồng Yên đã giảm giá tới 23% so với USD trước khi BoJ chính thức khởi động QE năm 2013 do cán cân thương mại thâm hụt sau thảm họa động đất - hạt nhân Fukushima, và sau khi QE bắt đầu, tỷ giá chỉ dịch chuyển thêm khoảng 7% (fixed_income_during, Ch.9, QE, money multipliers and FX, file -10, d.204).

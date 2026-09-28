@@ -3,13 +3,21 @@ title: b-splines-and-regression-splines-transform-piecewise-polynomial-curve-fit
 type: concept
 tags: [yield-curve, term-structure, curve-fitting, b-splines, regression-splines, ols, financial-econometrics]
 sources: [choudhry_analysing_yield_curve]
-status: stable
-last_updated: 2026-09-24
+status: draft
+last_updated: 2026-09-28
 ---
 
-B-splines và hồi quy spline (regression splines) là kỹ thuật kinh tế lượng tài chính chuyển hóa bài toán khớp cấu trúc kỳ hạn lãi suất đa thức từng khúc phức tạp thành một mô hình hồi quy tuyến tính bội giải được trực tiếp bằng phương pháp bình phương tối thiểu thông thường (Ordinary Least Squares - OLS) (choudhry_analysing_yield_curve, Ch.10, Sec. "Spline-Based Methods", d.4137–4188; Appendix 10.2, d.4291–4366). Trong giai đoạn đầu của lý thuyết khớp đường cong, việc áp dụng một hàm đa thức bậc ba toàn cục đơn lẻ $d(t) = 1 + a_1 t + a_2 t^2 + a_3 t^3$ cho toàn bộ dải kỳ hạn đã bộc lộ khiếm khuyết mất ổn định phi cục bộ nghiêm trọng: sự biến động nhỏ của giá một trái phiếu ngắn hạn sẽ làm lệch lạc toàn bộ hình thái đường cong ở kỳ hạn 30 năm (choudhry_analysing_yield_curve, Ch.10, d.4131).
+B-splines và hồi quy spline (regression splines) là kỹ thuật kinh tế lượng tài chính chuyển hóa bài toán khớp cấu trúc kỳ hạn lãi suất đa thức từng khúc phức tạp thành một mô hình hồi quy tuyến tính bội giải được trực tiếp bằng phương pháp bình phương tối thiểu thông thường (Ordinary Least Squares - OLS) (choudhry_analysing_yield_curve, Ch.1, Regression Models, d.962–997; Ch.10, Sec. "Spline-Based Methods", d.4137–4188; Appendix 10.2, d.4291–4366). Trong giai đoạn đầu của lý thuyết khớp đường cong, việc áp dụng một hàm đa thức bậc ba toàn cục đơn lẻ $d(t) = 1 + a_1 t + a_2 t^2 + a_3 t^3$ cho toàn bộ dải kỳ hạn đã bộc lộ khiếm khuyết mất ổn định phi cục bộ nghiêm trọng: sự biến động nhỏ của giá một trái phiếu ngắn hạn sẽ làm lệch lạc toàn bộ hình thái đường cong ở kỳ hạn 30 năm (choudhry_analysing_yield_curve, Ch.10, d.4131).
 
-Để khắc phục hiện tượng mất ổn định này, phương pháp spline chia trục kỳ hạn thành nhiều phân đoạn riêng biệt thông qua các điểm nút (knot points) $X_0, X_1, \dots, X_n$. Trên mỗi khoảng giữa hai điểm nút kế tiếp, đường cong được mô tả bởi một hàm đa thức bậc ba độc lập. Nhằm bảo đảm tính trơn tru kinh tế và ngăn ngừa các cú nhảy gián đoạn trên đường cong lãi suất kỳ hạn ngụ ý, mô hình áp đặt các điều kiện biên liên tục bậc hai ($C^2$ continuity) tại mọi điểm nút nối:
+Phương pháp hồi quy cơ bản thiết lập phương trình giá bẩn thị trường của trái phiếu phụ thuộc vào dòng tiền coupon và nợ gốc (choudhry_analysing_yield_curve, Ch.1, Regression Models, d.964–976):
+$$P_i^d = \sum_{n=1}^N d_n C_{ni} + u_i$$
+Trong đó $P_i^d$ là giá bẩn (dirty price) quan sát được của trái phiếu thứ $i$, $C_{ni}$ là khoản thanh toán tiền mặt (coupon hoặc mệnh giá) của trái phiếu $i$ tại kỳ hạn $n$, $u_i$ là sai số ngẫu nhiên, và hệ số hồi quy $d_n$ thu được chính là ước lượng của hệ số chiết khấu (discount factor), từ đó suy ra đường cong lãi suất giao ngay qua quan hệ $s_n = (1/d_n)^{1/n} - 1$.
+
+Tuy nhiên, phương trình trên không thể hồi quy trực tiếp trên thực tế do ngày chi trả coupon giữa các trái phiếu trong mẫu rất phân tán, dẫn đến số lượng dòng tiền coupon riêng lẻ vượt xa số lượng trái phiếu hiện có (choudhry_analysing_yield_curve, Ch.1, Regression Models, d.980). Để giải quyết tình trạng thiếu xác định này, cấu trúc kỳ hạn được phân chia thành các mốc lưới cố định (grid points) $d_{ni}^*$ dọc theo trục thời gian:
+$$P_i^d = \sum_{n=1}^K d_{ni}^* C_{ni} + u_i$$
+Mọi dòng tiền phát sinh giữa hai mốc lưới kế tiếp được phân bổ tuyến tính giữa hai điểm nút lân cận sao cho tổng giá trị hiện tại của dòng tiền được bảo toàn nguyên vẹn (choudhry_analysing_yield_curve, Ch.1, Regression Models, d.988). Mật độ điểm lưới được bố trí dày đặc ở đầu ngắn (short end) nơi dữ liệu thị trường dồi dào và độ cong lợi suất lớn, trong khi thưa dần về đầu dài (long end) nơi số lượng mã trái phiếu khan hiếm nhằm duy trì số bậc tự do kinh tế lượng và hạn chế sai lệch ước lượng (choudhry_analysing_yield_curve, Ch.1, Regression Models, d.990).
+
+Để khắc phục hiện tượng mất ổn định của đa thức toàn cục, phương pháp spline chia trục kỳ hạn thành nhiều phân đoạn riêng biệt thông qua các điểm nút (knot points) $X_0, X_1, \dots, X_n$. Trên mỗi khoảng giữa hai điểm nút kế tiếp, đường cong được mô tả bởi một hàm đa thức bậc ba độc lập. Nhằm bảo đảm tính trơn tru kinh tế và ngăn ngừa các cú nhảy gián đoạn trên đường cong lãi suất kỳ hạn ngụ ý, mô hình áp đặt các điều kiện biên liên tục bậc hai ($C^2$ continuity) tại mọi điểm nút nối:
 1. Tính liên tục của giá trị hàm số: $d_{i-1}(X_i) = d_i(X_i)$
 2. Tính liên tục của đạo hàm bậc nhất (độ dốc): $d'_{i-1}(X_i) = d'_i(X_i)$
 3. Tính liên tục của đạo hàm bậc hai (độ cong): $d''_{i-1}(X_i) = d''_i(X_i)$

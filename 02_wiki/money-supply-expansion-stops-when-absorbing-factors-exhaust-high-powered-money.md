@@ -28,3 +28,26 @@ Về mặt tổ chức thị trường, có sự khác biệt căn bản giữa 
 - Ngược lại, trong hệ thống đa ngân hàng thực tế, một ngân hàng riêng lẻ không bao giờ dám cho vay vượt quá lượng dự trữ vượt mức hiện có ($\Delta E$), bởi vì khi người vay chi tiêu tiền bằng séc hoặc chuyển khoản, ngân hàng nhận tiền của bên thụ hưởng sẽ đòi thanh toán bù trừ, buộc ngân hàng gốc phải chuyển giao dự trữ tương ứng qua tài khoản tại ngân hàng trung ương (d.3695–3711). Tuy nhiên, số dự trữ chuyển dịch sang ngân hàng thứ hai lại trở thành nguồn dự trữ vượt mức mới cho ngân hàng đó tiếp tục cho vay, tạo ra chuỗi phân phối tín dụng phân tán qua nhiều tầng nấc (d.3712–3769).
 
 Cơ chế hấp thụ này chứng minh rằng [[the-money-multiplier-links-reserve-money-to-the-money-supply|số nhân tiền]] không phải là một hằng số máy móc, mà là sự phản chiếu tổng hòa các hành vi kinh tế của cả ba bên: ngân hàng trung ương (quy định $rr$), công chúng (lựa chọn tỷ lệ nắm giữ tiền mặt) và các ngân hàng thương mại (lựa chọn tỷ lệ đệm an toàn dự trữ vượt mức).
+
+Để thấy rõ phương pháp vận hành bằng số học cụ thể, Cargill xây dựng mô hình minh họa quá trình cung tiền với các tỷ lệ hành vi định sẵn (cargill_central_bank_policy, Ch.12, An mustration of the Money Supply Process, d.3885–3944):
+- Giả định các tỷ lệ hành vi nền tảng:
+  1. Hộ gia đình mong muốn giữ 0,25 USD tiền mặt cho mỗi 1 USD tiền gửi giao dịch: $k = C / T = 0{,}25$.
+  2. Tỷ lệ dự trữ bắt buộc theo luật định đối với tiền gửi giao dịch là 10%: $rr = 0{,}10$.
+  3. Các tổ chức nhận tiền gửi mong muốn giữ 0,05 USD dự trữ vượt mức cho mỗi 1 USD nợ tiền gửi giao dịch: $e = ER / T = 0{,}05$.
+  4. Hộ gia đình mong muốn giữ 0,50 USD trong các quỹ thị trường tiền tệ (MMF) cho mỗi 1 USD tiền gửi giao dịch: $m = MMF / T = 0{,}50$.
+- Các số nhân thành phần được tính toán từ các tỷ lệ trên với mẫu số chung $(rr + k + e) = 0{,}10 + 0{,}25 + 0{,}05 = 0{,}40$:
+  - Số nhân tiền gửi giao dịch: $TM = \frac{1}{rr + k + e} = \frac{1}{0{,}40} = 2{,}5$.
+  - Số nhân tiền mặt: $CM = \frac{k}{rr + k + e} = \frac{0{,}25}{0{,}40} = 0{,}625$.
+  - Số nhân dự trữ vượt mức: $ERM = \frac{e}{rr + k + e} = \frac{0{,}05}{0{,}40} = 0{,}125$.
+  - Số nhân tiền M1: $M1M = \frac{1 + k}{rr + k + e} = \frac{1{,}25}{0{,}40} = 3{,}125$.
+  - Số nhân quỹ thị trường tiền tệ: $MMFM = \frac{m}{rr + k + e} = \frac{0{,}50}{0{,}40} = 1{,}25$.
+  - Số nhân tiền M2: $M2M = \frac{1 + k + m}{rr + k + e} = \frac{1 + 0{,}25 + 0{,}50}{0{,}40} = 4{,}375$.
+- Khi ngân hàng trung ương bơm một lượng tiền cơ sở ban đầu $\Delta H = 1.000\text{ USD}$, các cấu phần tiền tệ và các yếu tố hấp thụ biến đổi chính xác theo các số nhân:
+  - Tiền gửi giao dịch mở rộng: $\Delta T = TM \cdot \Delta H = 2{,}5 \times 1.000 = 2.500\text{ USD}$.
+  - Yếu tố hấp thụ 1 (dự trữ bắt buộc tăng): $\Delta RR = rr \cdot \Delta T = 0{,}10 \times 2.500 = 250\text{ USD}$.
+  - Yếu tố hấp thụ 2 (tiền mặt lưu thông tăng): $\Delta C = k \cdot \Delta T = CM \cdot \Delta H = 0{,}625 \times 1.000 = 625\text{ USD}$.
+  - Yếu tố hấp thụ 3 (dự trữ vượt mức tăng): $\Delta ER = e \cdot \Delta T = ERM \cdot \Delta H = 0{,}125 \times 1.000 = 125\text{ USD}$.
+  - Tổng các yếu tố hấp thụ: $\sum = \Delta RR + \Delta C + \Delta ER = 250 + 625 + 125 = 1.000\text{ USD} = \Delta H$.
+  - Khối tiền mở rộng tương ứng: $\Delta M1 = M1M \cdot \Delta H = 3{,}125 \times 1.000 = 3.125\text{ USD}$ (chính bằng $\Delta T + \Delta C = 2.500 + 625$), tiền quỹ thị trường tiền tệ $\Delta MMF = 1{,}25 \times 1.000 = 1.250\text{ USD}$, và tổng cung tiền $\Delta M2 = 4{,}375 \times 1.000 = 4.375\text{ USD}$.
+
+Minh họa số học này chứng minh định lý căn bản: quá trình tạo tiền dừng lại chính xác tại điểm tổng các yếu tố hấp thụ triệt tiêu toàn bộ lượng tiền cơ sở ban đầu do ngân hàng trung ương bơm vào. Việc mở rộng sang các công cụ không chịu dự trữ bắt buộc như quỹ thị trường tiền tệ làm tăng tổng cung tiền M2 nhưng không làm thay đổi phương trình hấp thụ tiền cơ sở vì MMF không bị trói buộc bởi tỷ lệ dự trữ bắt buộc (cargill_central_bank_policy, Ch.12, An mustration of the Money Supply Process, d.3885–3944).

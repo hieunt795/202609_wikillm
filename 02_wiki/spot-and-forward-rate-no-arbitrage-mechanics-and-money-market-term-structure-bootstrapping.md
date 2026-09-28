@@ -1,0 +1,37 @@
+---
+title: spot-and-forward-rate-no-arbitrage-mechanics-and-money-market-term-structure-bootstrapping
+type: concept
+tags: [fixed-income, money-market, forward-rates, term-structure, bootstrapping]
+sources: [fixed_income_during]
+status: draft
+last_updated: 2026-09-28
+---
+Lãi suất kỳ hạn (forward rates) đóng vai trò là nhịp cầu định giá kinh tế kết nối các kỳ hạn lãi suất khác nhau trên thị trường tiền tệ (fixed_income_during, Ch.15, NO-ARBITRAGE CALCULATIONS, d.12–25). Giả định một nhà đầu tư có thể cho vay vốn từ thời điểm hiện tại $t_0$ đến thời điểm $t_1$ với mức lãi suất giao ngay $r_1(t_0, t_1)$, hoặc cho vay đến kỳ hạn dài hơn $t_2 > t_1$ với lãi suất $r_2(t_0, t_2)$. Lãi suất kỳ hạn $r_f(t_1, t_2)$ là mức lãi suất áp dụng cho khoản vay từ $t_1$ đến $t_2$ được thỏa thuận tại thời điểm $t_0$ sao cho tổng lợi suất thu được từ chiến lược gửi tiền hai giai đoạn liên tiếp từ $t_0$ đến $t_1$ rồi từ $t_1$ đến $t_2$ phải bằng đúng lợi suất của việc đầu tư trực tiếp một giai đoạn từ $t_0$ đến $t_2$ (fixed_income_during, Ch.15, NO-ARBITRAGE CALCULATIONS, d.10–12).
+
+Theo nguyên lý định giá phi kinh doanh chênh lệch giá (no-arbitrage principle), giá trị hiện tại tại $t_0$ của một dòng tiền chiết khấu từ thời điểm $t_2$ là $Df(t_0, t_2)$. Mặt khác, chiết khấu dòng tiền đó từ $t_2$ về thời điểm trung gian $t_1$ mang lại giá trị kỳ hạn $Df(t_1, t_2)$, sau đó chiết khấu tiếp từ $t_1$ về thời điểm gốc $t_0$ thông qua nhân với $Df(t_0, t_1)$ sẽ tạo ra giá trị hiện tại là $Df(t_0, t_1) \cdot Df(t_1, t_2)$ (fixed_income_during, Ch.15, NO-ARBITRAGE CALCULATIONS, d.14). Vì cả hai cách tiếp cận đều định giá cho cùng một dòng tiền tương lai duy nhất, phương trình không trọng tài bắt buộc phải thỏa mãn:
+$$Df(t_0, t_2) = Df(t_0, t_1) \cdot Df(t_1, t_2)$$
+Từ đó suy ra công thức tổng quát xác định hệ số chiết khấu kỳ hạn (forward discount factor):
+$$Df(t_1, t_2) = \frac{Df(t_0, t_2)}{Df(t_0, t_1)}$$
+Mối quan hệ hệ số chiết khấu này có tính phổ quát và độc lập với mọi quy ước yết giá lãi suất (fixed_income_during, Ch.15, NO-ARBITRAGE CALCULATIONS, d.18–20).
+
+Để áp dụng vào thực tế giao dịch, hệ số chiết khấu kỳ hạn phải được chuyển đổi ngược lại thành các loại lãi suất thị trường tương ứng (fixed_income_during, Ch.15, Spot and Forward Rates, d.28–61):
+1. **Lãi suất kỳ hạn theo phương pháp lãi đơn (Simple Yield Forward Rate)**: Khi thị trường áp dụng quy ước lãi đơn (như tiền gửi liên ngân hàng và Euribor), ta có mối quan hệ:
+$$\frac{1}{1 + r_2 \cdot DCF(t_0, t_2)} = \frac{1}{1 + r_1 \cdot DCF(t_0, t_1)} \cdot \frac{1}{1 + r_f(t_1, t_2) \cdot DCF(t_1, t_2)}$$
+Giải phương trình cho mức lãi suất kỳ hạn $r_f(t_1, t_2)$, ta thu được:
+$$r_f(t_1, t_2) = \frac{1}{DCF(t_1, t_2)} \left( \frac{Df(t_0, t_1)}{Df(t_0, t_2)} - 1 \right) = \frac{1}{DCF(t_1, t_2)} \left( \frac{1 + r_2 \cdot DCF(t_0, t_2)}{1 + r_1 \cdot DCF(t_0, t_1)} - 1 \right)$$
+2. **Lãi suất kỳ hạn theo phương pháp chiết khấu thương mại (Discount Margin Forward Rate)**: Đối với các công cụ yết giá theo tỷ suất chiết khấu $d$ như tín phiếu Kho bạc Mỹ, phương trình phi kinh doanh chênh lệch giá có dạng:
+$$1 - d_2 \cdot DCF(t_0, t_2) = (1 - d_1 \cdot DCF(t_0, t_1)) \cdot (1 - d_f(t_1, t_2) \cdot DCF(t_1, t_2))$$
+Dẫn tới công thức xác định tỷ suất chiết khấu kỳ hạn $d_f(t_1, t_2)$:
+$$d_f(t_1, t_2) = \frac{1}{DCF(t_1, t_2)} \left( 1 - \frac{Df(t_0, t_2)}{Df(t_0, t_1)} \right) = \frac{1}{DCF(t_1, t_2)} \left( 1 - \frac{1 - d_2 \cdot DCF(t_0, t_2)}{1 - d_1 \cdot DCF(t_0, t_1)} \right)$$
+Mặc dù hai công thức trông tương đồng, cấu trúc phi tuyến của lãi đơn và cấu trúc tuyến tính của tỷ suất chiết khấu tạo ra sự phân kỳ đáng kể khi thời gian đáo hạn kéo dài (fixed_income_during, Ch.15, Spot and Forward Rates, d.46).
+
+Trong quy trình thực tế dựng đường cong lãi suất thị trường tiền tệ, phương pháp chuẩn tắc là tái cấu trúc đệ quy (bootstrapping) từ chuỗi hợp đồng tương lai thị trường tiền tệ (futures strip) (fixed_income_during, Ch.15, Spot and Forward Rates, d.48–54). Dữ liệu đầu vào duy nhất lấy từ thị trường tiền gửi giao ngay là lãi suất đoạn lẻ ban đầu (cash stub rate - $r_{\text{stub}}$) kéo dài từ thời điểm hiện tại $t_0$ đến ngày đáo hạn IMM đầu tiên $t_1$. Từ mốc $t_1$ trở đi, các mức lãi suất ngụ ý từ chuỗi hợp đồng tương lai (sau khi hiệu chỉnh độ lệch lồi convexity bias) được xử lý trực tiếp như các mức lãi suất tiền gửi kỳ hạn $f_k$. Hệ số chiết khấu giao ngay tại mỗi mốc kỳ hạn $t_n$ được mở rộng đệ quy:
+$$Df(t_0, t_n) = Df(t_0, t_{\text{stub}}) \times \prod_{k=1}^n Df(t_{k-1}, t_k) = Df(t_0, t_1) \times \prod_{k=2}^n \frac{1}{1 + f_k \cdot DCF(t_{k-1}, t_k)}$$
+Từ chuỗi hệ số chiết khấu thu được, toàn bộ cấu trúc kỳ hạn của lãi suất giao ngay được xác định thông qua phương trình:
+$$r(t_0, t_n) = \frac{1}{DCF(t_0, t_n)} \left( \frac{1}{Df(t_0, t_n)} - 1 \right)$$
+Quy trình bootstrapping đệ quy này đảm bảo đường cong lãi suất tái hiện chính xác giá trị thị trường của mọi hợp đồng tương lai giao dịch tích cực (fixed_income_during, Ch.15, Spot and Forward Rates, d.52).
+
+Đường cong lãi suất kỳ hạn ngắn phản ánh kỳ vọng của thị trường về quỹ đạo lãi suất chính sách của ngân hàng trung ương (official policy rates), nhưng mối quan hệ giữa lãi suất chính sách và lãi suất kỳ hạn thị trường (term market rates) chịu sự chi phối bởi cấu trúc thể chế và các ma sát kỹ thuật (fixed_income_during, Ch.15, OFFICIAL RATES VERSUS TERM RATES, d.62–69). Lãi suất chính sách thường là lãi suất cho vay hoặc nhận tiền gửi qua đêm tại ngân hàng trung ương, được điều chỉnh theo lịch họp định kỳ (policy meeting calendar) (fixed_income_during, Ch.15, OFFICIAL RATES VERSUS TERM RATES, d.64–68). Khi chiết xuất kỳ vọng chính sách từ lãi suất thị trường, nhà phân tích phải kiểm soát ba yếu tố can nhiễu trọng yếu:
+1. **Phí bù chuyển giao thời điểm (Turn Premium)**: Các ngân hàng chịu áp lực thu hẹp bảng cân đối kế toán vào các ngày chốt sổ kế toán định kỳ (đặc biệt là ngày cuối năm - year-end turn hoặc ngày 1 tháng 4 tại Nhật Bản) để làm đẹp chỉ số rủi ro báo cáo thanh tra (window dressing) (fixed_income_during, Ch.15, The turn premium, d.72–80). Nhu cầu thanh khoản dồn ứ khiến lãi suất cho vay liên ngân hàng kỳ hạn vắt qua thời điểm chuyển giao năm mới (như tiền gửi 3 tháng vào cuối tháng 9) luôn nhảy vọt tăng mạnh (turn effect), đòi hỏi phải bóc tách phần bù kỹ thuật này ra khỏi kỳ vọng lãi suất chính sách thuần túy (fixed_income_during, Ch.15, The turn premium, d.74–80).
+2. **Cơ sở chênh lệch tín dụng và công cụ (Basis of cash vs policy rates)**: Công cụ chính sách của ngân hàng trung ương có thể là giao dịch repo có bảo đảm (như MRO của ECB), trong khi lãi suất thị trường (Euribor) là lãi suất tín dụng không có bảo đảm, tạo ra khoảng bù rủi ro tín dụng biến thiên theo kỳ hạn (fixed_income_during, Ch.15, Matching policy expectations to market rates, d.100).
+3. **Phần bù rủi ro kỳ hạn (Term Risk Premium)**: Các khoản đầu tư có kỳ hạn dài đòi hỏi phần bù đắp cho việc người cho vay từ bỏ quyền tự do tái đầu tư linh hoạt của tài khoản qua đêm, làm cho đường cong kỳ hạn dốc lên tự nhiên ngay cả khi kỳ vọng lãi suất chính sách đi ngang (fixed_income_during, Ch.15, Matching policy expectations to market rates, d.102–104). Việc mô hình hóa các động lực này là nền tảng để phát triển các mô hình đường cong tham số tại [[parametric-and-spline-yield-curve-models-nelson-siegel-polynomial-exponential-and-vasicek]] và phân tích phần bù rủi ro trong [[term-risk-premium-utility-foundations-and-market-technical-drivers]].

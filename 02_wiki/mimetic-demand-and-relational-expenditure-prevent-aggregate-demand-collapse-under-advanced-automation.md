@@ -1,0 +1,16 @@
+---
+title: mimetic-demand-and-relational-expenditure-prevent-aggregate-demand-collapse-under-advanced-automation
+type: concept
+tags: [structural-change, aggregate-demand, automation, relational-sector, mimetic-desire, nonhomothetic-preferences, baumol-cost-disease]
+sources: [clippings]
+status: draft
+last_updated: 2026-09-28
+---
+
+Sự sụp đổ của tổng cầu dưới tác động của tự động hóa toàn diện được ngăn chặn nhờ cơ chế tái phân bổ chi tiêu từ hàng hóa chuẩn hóa sang khu vực quan hệ, nơi ham muốn bắt chước vị thế xã hội giữ cho sức cầu không bị bão hòa. Khi trí tuệ nhân tạo thay thế phần lớn lao động trong khu vực sản xuất vật chất, tỷ phần thu nhập của người lao động ($s_L$) có nguy cơ suy giảm nhanh chóng, khiến số nhân chi tiêu bị thu hẹp theo phương trình tổng cầu $Y = \frac{\kappa_0(P)}{1 - AMPC(s_L)}$ nếu các chủ sở hữu tư bản đạt ngưỡng bão hòa tiêu dùng vật chất (clippings, Cụm 6, Suy sụp tổng cầu và mô hình Citrini, file What will be scarce.md, d.128–139).
+
+Tuy nhiên, sở thích tiêu dùng phi đồng nhất và ham muốn so sánh vị thế thúc đẩy người tiêu dùng liên tục dịch chuyển chi tiêu sang các dịch vụ mang đậm dấu ấn cá nhân và xuất xứ con người khi thu nhập thực tế gia tăng (clippings, Cụm 6, Bản chất van giải tỏa của ham muốn bắt chước, file What will be scarce.md, d.140–143). Nhu cầu khẳng định sự khác biệt xã hội không có trần bão hòa tuyệt đối; do đó, sự chuyển dịch cơ cấu chi tiêu sang khu vực quan hệ đóng vai trò như một van giải tỏa vĩ mô, cho phép nền kinh tế tiếp tục tăng trưởng mà không đòi hỏi xã hội phải tiêu thụ thêm vô hạn các sản phẩm tự động hóa (clippings, Cụm 6, Tái phân bổ cấu trúc thay vì bão hòa, file What will be scarce.md, d.140–143).
+
+Trong môi trường đó, bệnh chi phí Baumol chuyển hóa từ một gánh nặng ngân sách thành công cụ duy trì việc làm và phân phối thu nhập: khu vực quan hệ khó tự động hóa sẽ có mức giá tương đối ngày càng cao, qua đó hấp thụ tỷ trọng chi tiêu ngày càng lớn của xã hội và giữ chân lực lượng lao động trong các ngành y tế, giáo dục, tâm lý, dịch vụ chăm sóc và thủ công bản địa (clippings, Cụm 6, Bệnh chi phí Baumol như giải pháp việc làm, file What will be scarce.md, d.90–93, d.116–127). Những công việc bền vững của tương lai không tập trung vào việc vận hành hệ thống máy móc mà định vị tại nơi sự tham gia của con người cấu thành giá trị nội tại của sản phẩm, tương thích với quy luật nêu tại [[technological-automation-shifts-scarcity-from-commodity-production-to-relational-sectors]] (clippings, Cụm 6, Bản chất công việc tương lai, file What will be scarce.md, d.144–151).
+
+Khung phân tích này cũng phản ánh các bằng chứng lịch sử từ nghiên cứu của Comin, Lashkari và Mestieri (2021) cùng khảo sát chi tiêu tiêu dùng của Cục Thống kê Lao động Hoa Kỳ (BLS), trong đó các hộ gia đình thuộc nhóm 20% thu nhập cao nhất luôn dành tỷ trọng chi tiêu vượt trội cho các dịch vụ mang tính quan hệ con người (clippings, Cụm 6, Bằng chứng lịch sử và khảo sát BLS, file What will be scarce.md, d.152–163). Sự chuyển dịch này tác động trực tiếp đến cấu trúc tiêu dùng tư nhân tại [[final-consumption]] và đặt ra yêu cầu tái định nghĩa thước đo năng lực sản xuất tối ưu trong [[potential-gdp-measures-productive-capacity-at-full-employment]].

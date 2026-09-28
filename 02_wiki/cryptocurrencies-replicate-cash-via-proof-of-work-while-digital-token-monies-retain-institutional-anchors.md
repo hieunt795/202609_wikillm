@@ -1,0 +1,21 @@
+---
+title: cryptocurrencies-replicate-cash-via-proof-of-work-while-digital-token-monies-retain-institutional-anchors
+type: concept
+tags: [cryptocurrency, digital-money, cbdc, blockchain, payment-systems]
+sources: [fixed_income_during]
+status: stable
+last_updated: 2026-09-28
+---
+
+Sự xuất hiện của tiền mã hóa (cryptocurrencies) và các dạng tiền token kỹ thuật số đại diện cho nỗ lực tái lập các thuộc tính giao dịch vô danh và phân tán của tiền mặt trong kỷ nguyên số hóa, nhưng tiếp cận theo hai triết lý kiến trúc hoàn toàn khác biệt về thể chế và cơ chế đồng thuận (fixed_income_during, Ch.4, Digital Token Monies and Cryptocurrencies, file -5, d.76–84).
+
+**Cơ chế vận hành và tính đánh đổi của tiền mã hóa:**
+- *Thiếu vắng neo danh nghĩa và quyền tài phán*: Tiền mã hóa phi tập trung như Bitcoin hay Ethereum hoàn toàn không có neo giá trị danh nghĩa (nominal anchor), không phụ thuộc vào bất kỳ thẩm quyền tài phán quốc gia hay [[central-bank|ngân hàng trung ương]] nào, và cho phép chuyển giao giá trị gần như vô danh giữa các bên tham gia (fixed_income_during, Ch.4, Digital Token Monies and Cryptocurrencies, file -5, d.78).
+- *Tái lập chức năng cất trữ giá trị qua thuật toán Proof-of-Work*: Để đáp ứng chức năng [[money-serves-as-a-medium-of-exchange-store-of-value-and-unit-of-account|cất trữ giá trị của tiền tệ]], tiền mã hóa neo giữ việc tạo ra các đơn vị tiền tệ mới vào các thuật toán toán học phức tạp đòi hỏi chi phí thực thi vật lý thực tế rất lớn (bài toán bằng chứng công việc - proof-of-work), bảo đảm nguồn cung giới hạn tuyệt đối bằng quy luật toán học (fixed_income_during, Ch.4, Digital Token Monies and Cryptocurrencies, file -5, d.78). Mạng lưới giải quyết bài toán chi tiêu hai lần (double-spending) thông qua cuốn sổ cái giao dịch công khai được mã hóa an toàn và sao chép đồng bộ trên toàn bộ các nút tham gia (blockchain), triệt tiêu sự phụ thuộc vào các tổ chức ghi sổ tập trung như hệ thống tài khoản ngân hàng (fixed_income_during, Ch.4, Digital Token Monies and Cryptocurrencies, file -5, d.78–80).
+- *Độ trễ thanh toán cuối cùng (Settlement finality) và chi phí hao phí tài nguyên*:
+  - Mặc dù việc chuyển giao tiền mã hóa tạo cảm giác tức thời trên giao diện người dùng, tính thanh toán cuối cùng (settlement finality) trong thực tế không diễn ra ngay lập tức mà đòi hỏi độ trễ đáng kể (từ vài chục phút đến nhiều giờ đồng hồ để các khối mới được đào và xác nhận liên tục trên chuỗi), đối lập với tốc độ thanh toán gần như tức thời của hệ thống ngân hàng hiện đại (fixed_income_during, Ch.4, Digital Token Monies and Cryptocurrencies, file -5, d.80, chú thích 6).
+  - Phê phán cốt lõi đối với tiền mã hóa là việc tiêu hao lượng tài nguyên vật lý khổng lồ (điện năng và phần cứng chuyên dụng) để đạt được các mục tiêu thanh toán mà các hệ thống thương mại thông thường có thể giải quyết với chi phí thấp hơn rất nhiều (fixed_income_during, Ch.4, Digital Token Monies and Cryptocurrencies, file -5, d.82). Điển hình là các hệ thống tiền điện tử trả trước như thẻ Suica tại Nhật Bản (từ năm 2001) đã đạt được tính thanh toán cuối cùng tức thì, mức độ ẩn danh hợp lý và phân tán trong môi trường bán lẻ từ trước khi tiền mã hóa xuất hiện mà không cần tới công nghệ blockchain (fixed_income_during, Ch.4, Digital Token Monies and Cryptocurrencies, file -5, d.82).
+
+**Bản chất tiền token kỹ thuật số và CBDC:**
+- Tiền token kỹ thuật số (digital token monies) phân biệt căn bản với tiền mã hóa ở chỗ chúng không tìm cách thay thế toàn bộ hạ tầng thể chế tiền tệ hiện hành mà có thể do chính ngân hàng trung ương phát hành (như tiền kỹ thuật số của ngân hàng trung ương - CBDC) (fixed_income_during, Ch.4, Digital Token Monies and Cryptocurrencies, file -5, d.84).
+- Về mặt khái niệm, tiền token kỹ thuật số chỉ đơn thuần thay thế các token vật chất truyền thống (như các tờ tiền giấy in số sê-ri định danh độc nhất) bằng các mã token kỹ thuật số tương đương (fixed_income_during, Ch.4, Digital Token Monies and Cryptocurrencies, file -5, d.84). Việc chuyển giao các token này có thể được tổ chức linh hoạt qua cơ sở dữ liệu tập trung hoặc sổ cái phân tán tùy thuộc vào hiệu quả sử dụng và chi phí vận hành, bảo toàn đầy đủ tư cách pháp định theo luật định mà vẫn duy trì [[four-key-attributes-distinguish-cash-from-other-payment-assets|bốn thuộc tính cấu trúc của tiền mặt]] trong môi trường số.

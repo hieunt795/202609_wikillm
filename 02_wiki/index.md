@@ -11,14 +11,14 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `imf_macro_accounting` | Nguồn dài (849 KB / 6.065 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–6 xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/imf_macro_accounting.md` |
 | `Modern Money Mechanics` | Nguồn ngắn (85 KB / 721 dòng) | **Chưa ingest** | Toàn bộ, ingest trọn 1 lượt | — |
 | `capitalism_and_freedom` | Nguồn dài (565 KB / 2.055 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Đang ingest dở** | 5 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/bindseil_monetary_policy.md` |
-| `cargill_central_bank_policy` | Nguồn dài (1.206 KB / 5.623 dòng) | **Đang ingest dở** | 12 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/cargill_central_bank_policy.md` |
+| `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Hoàn tất 100%** | Toàn bộ 18 chương xong, --coverage sạch 2026-09-28 (chi tiết ở state file) | `03_state/bindseil_monetary_policy.md` |
+| `cargill_central_bank_policy` | Nguồn dài (1.206 KB / 5.624 dòng) | **Hoàn tất 100%** | Toàn bộ 18 chunk (d.1–5624) xong, --coverage sạch 2026-09-28 (chi tiết ở state file) | `03_state/cargill_central_bank_policy.md` |
 | `choudhry_principles_of_banking` | Nguồn dài (2.664 KB / 14.955 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Đang ingest dở** | 13 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/choudhry_analysing_yield_curve.md` |
+| `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Hoàn tất 100%** | Toàn bộ 13 chương xong, --coverage sạch 2026-09-28 (chi tiết ở state file) | `03_state/choudhry_analysing_yield_curve.md` |
 | `choudhry_fixed_income_markets` | Nguồn dài (1.941 KB / 15.414 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Đang ingest dở** | 23 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/fixed_income_during.md` |
+| `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Hoàn tất 100%** | Toàn bộ 42 file/chunk xong, --coverage sạch 2026-09-28 (chi tiết ở state file) | `03_state/fixed_income_during.md` |
 | `tata_bank_alm` | Nguồn dài (450 KB / 3.345 dòng) | **Hoàn tất 100%** | Toàn bộ 10/10 chunk xong, 51 concept, --coverage sạch 2026-09-28 (chi tiết ở state file) | `03_state/tata_bank_alm.md` |
-| `clippings` | Nguồn dài (82 file, 882 KB / 6.684 dòng) | **Đang ingest dở** | 11 chunk còn mục chưa phủ theo `--coverage` (2026-09-26); chi tiết ở state file | `03_state/clippings.md` |
+| `clippings` | Nguồn dài (82 file, 882 KB / 6.684 dòng) | **Hoàn tất 100%** | Toàn bộ 82 file/chunk xong, --coverage sạch 2026-09-28 (chi tiết ở state file) | `03_state/clippings.md` |
 | `ftp_transmission_analysis` | Nguồn ngắn (16 KB / 189 dòng) | **Hoàn tất 100%** | Toàn bộ, ingest trọn 1 lượt | — |
 | `vab_ftp_methodology` | Nguồn dài (243 KB / 2.118 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-27 (chi tiết ở state file) | `03_state/vab_ftp_methodology.md` |
 | `sbv_circular_14_2025` | Nguồn dài (2 file, 546 KB / 3.371 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_circular_14_2025.md` |
@@ -706,6 +706,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[producer-price-stage-differential-signals-systemic-supply-chain-inflation-cascades]] — chênh lệch lạm phát sản xuất theo tầng $\Delta(t) = S1 - S4 \ge 3\text{ pp}$ kết hợp Stage 3 vượt Stage 4 là tín hiệu xác nhận sóng lạm phát chi phí đã lan tỏa vào khâu chế tạo trung gian
 - [[sovereign-bond-term-premia-rise-from-fiscal-burdens-independently-of-inflation-expectations]] — phần bù kỳ hạn trái phiếu chính phủ gia tăng từ rủi ro gánh nặng tài khóa và dư cung nợ công ngay cả khi kỳ vọng lạm phát dài hạn vẫn neo giữ ổn định
 - [[global-risk-appetite-reallocates-across-sectors-under-surging-sovereign-yields]] — khẩu vị rủi ro toàn cầu thích ứng bất đối xứng khi lợi suất tăng qua việc xoay trục dòng vốn giữa các lĩnh vực và khuếch đại biến động qua đòn bẩy ngắn hạn short gamma
+- [[nordic-covered-bond-swap-spread-trades-concentrate-leverage-and-fx-swap-refinancing-in-mortgage-markets]] — giao dịch swap spread covered bond Bắc Âu tập trung đòn bẩy repo và tái tài trợ ngoại hối chéo qua FX swaps trong thị trường tín dụng thế chấp
 
 **Thị trường ngoại hối châu Á, tỷ giá & Carry Trade (Clippings — Cụm 4)**
 - [[industrial-overcapacity-drives-transition-from-supply-funding-to-productive-buyer-funding]] — dư thừa công suất công nghiệp và sự chuyển dịch từ tài trợ phía cung sang tài trợ người mua hiệu quả
@@ -728,6 +729,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[offshore-foreign-currency-debt-pricing-diverges-from-domestic-benchmarks]] — định giá nợ ngoại tệ offshore phân kỳ hoàn toàn khỏi lãi suất nội tệ nội địa và phản ánh các tầng phần bù rủi ro quốc tế
 - [[endogenous-systemic-liquidity-circulation-distorts-accounting-equations-via-balance-sheet-resonance]] — hiện tượng cộng hưởng bảng cân đối do vận hành thanh khoản nội sinh làm biến dạng các phép cân đối số học và kéo dồn dòng tiền vào tài sản cuối
 - [[technological-automation-shifts-scarcity-from-commodity-production-to-relational-sectors]] — tự động hóa công nghệ đẩy bản chất của sự khan hiếm và tỷ trọng chi tiêu từ sản xuất hàng hóa chuẩn hóa sang khu vực quan hệ
+- [[mimetic-demand-and-relational-expenditure-prevent-aggregate-demand-collapse-under-advanced-automation]] — nhu cầu bắt chước vị thế xã hội và chi tiêu dịch vụ quan hệ ngăn chặn sự sụp đổ của tổng cầu khi tự động hóa thay thế lao động chuẩn hóa
 
 **Thị trường thu nhập cố định, Tiền tệ & Chính sách phi quy ước (Fixed Income Düring — Ch.1–9 / Part One)**
 - [[fixed-income-instruments]] — hợp đồng quy định nghĩa vụ thanh toán xác định độc lập với tình trạng tài chính bên phát hành, phân biệt với vốn cổ phần

@@ -17,7 +17,7 @@ $$i(x) = h(x) i_e + (1 - h(x)) i^*$$
 Nếu hàm haircut có dạng hàm luỹ thừa $h(x) = x^\delta$, chi phí vốn bình quân của toàn nền kinh tế là:
 $$i^\# = \frac{1}{\delta + 1} i_e + \frac{\delta}{\delta + 1} i^*$$
 
-Mô hình này chứng minh điều kiện tiền tệ hiệu lực phụ thuộc đồng thời vào lãi suất chính sách $i^*$ và tham số haircut $\delta$. NHTW có thể đạt cùng một mức chi phí vốn vĩ mô (ví dụ 3%) bằng nhiều cặp tham số $(i^*, \delta)$ khác nhau (chẳng hạn lãi suất thấp kết hợp haircut chặt, hoặc lãi suất cao kết hợp haircut nới lỏng). Tuy nhiên, các lựa chọn này có tác động phân bổ rất khác nhau: chính sách haircut lỏng có lợi hơn cho các dự án và tài sản kém thanh khoản (d.1725–1735).
+Mô hình này chứng minh điều kiện tiền tệ hiệu lực phụ thuộc đồng thời vào lãi suất chính sách $i^*$ và tham số haircut $\delta$. NHTW có thể đạt cùng một mức chi phí vốn vĩ mô (ví dụ 3%) bằng nhiều cặp tham số $(i^*, \delta)$ khác nhau (chẳng hạn lãi suất thấp kết hợp haircut chặt, hoặc lãi suất cao kết hợp haircut nới lỏng). Tuy nhiên, các lựa chọn này có tác động phân bổ rất khác nhau: chính sách haircut lỏng có lợi hơn cho các dự án và tài sản kém thanh khoản (d.1725–1735), và trở thành công cụ phá vỡ bế tắc chính sách khi chạm ZLB (xem [[haircuts-as-effective-leverage-constraints-and-zero-lower-bound-transmission]]).
 
 **Mô hình định giá chênh lệch lợi suất dựa trên xác suất cạn kiệt tài sản thế chấp**: Trong thực tế, các ngân hàng chỉ tái cấp vốn một phần nhỏ tài sản qua NHTW. Bindseil (2014, d.1763–1804) phát triển mô hình vi mô đo lường khoảng trống tài sản thế chấp (collateral gap — $CG$):
 $$CG = \max(0, \text{nhu cầu tài trợ NHTW} - CVPH)$$

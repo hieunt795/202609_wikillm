@@ -7,16 +7,16 @@ status: stable
 last_updated: 2026-09-21
 ---
 
-Mô hình cấu trúc rủi ro nội sinh và bài toán hai loại sai lầm của Bindseil & Jablecki (2013) được trình bày tại Bindseil (2014, Ch.15, §15.2, d.3533–3606) nhằm hình thức hóa mối quan hệ giữa chính sách tỷ lệ chiết khấu (haircut) của NHTW, hiệu quả kinh tế vĩ mô và rủi ro thua lỗ tài chính của chính NHTW qua hai chu kỳ kinh tế.
+Mô hình cấu trúc rủi ro nội sinh và bài toán hai loại sai lầm của Bindseil & Jablecki (2013) được trình bày tại (bindseil_monetary_policy, d.3532–3561) nhằm hình thức hóa mối quan hệ giữa chính sách tỷ lệ chiết khấu (haircut) của NHTW, hiệu quả kinh tế vĩ mô và rủi ro thua lỗ tài chính của chính NHTW qua hai chu kỳ kinh tế.
 
 **Cấu trúc tài khoản tài chính và trình tự thời gian hai kỳ (Hình 15.5)**:
 Hệ thống kinh tế gồm hộ gia đình (tài sản ròng $E = 200$, tiền mặt $B = 40$, tiền gửi $D = 54$, vốn cổ phần doanh nghiệp $P = 4$ và vốn ngân hàng $Q = 2$), hai ngân hàng thương mại và hai doanh nghiệp sản xuất độc lập. Mỗi ngân hàng tài trợ độc quyền cho một doanh nghiệp.
-- *Kỳ 1*:
+- *Kỳ 1* (bindseil_monetary_policy, d.3562–3570):
   1. *Cú sốc khả năng thanh toán (Solvency shock)*: Hai doanh nghiệp chịu cú sốc giá trị tài sản thực tế $\eta_1, \eta_2 \sim \mathcal{N}(0, \sigma_\eta^2)$.
   2. *Cú sốc thanh khoản (Liquidity shock)*: Người gửi tiền dịch chuyển số dư từ ngân hàng 2 sang ngân hàng 1 theo tín hiệu $k = \theta + (\eta_1 - \eta_2)$, trong đó $\theta \sim \mathcal{N}(0, \sigma_\theta^2)$ là yếu tố nhiễu thông tin (noise).
   3. *Ràng buộc tái cấp vốn NHTW*: Ngân hàng cầm cố toàn bộ tài sản cho NHTW; hạn mức vay mượn tối đa sau chiết khấu là $(1-h)(B+D+Q)/2$. Với dữ liệu danh mục, haircut tối đa khả thi là $h \le 60\%$.
   4. *Đổ vỡ do thanh khoản và chi phí vỡ nợ*: Nếu dòng tiền rút $k$ vượt quá hạn mức bảo đảm sau haircut, ngân hàng vỡ nợ $\implies$ doanh nghiệp phụ thuộc không thể đảo nợ và vỡ nợ dây chuyền (tín dụng bị bóp nghẹt) $\implies$ tài sản thực của doanh nghiệp bị phá hủy một lượng $x$ do chi phí thanh lý và gián đoạn tổ chức.
-- *Kỳ 2*:
+- *Kỳ 2* (bindseil_monetary_policy, d.3571–3606):
   5. *Độ trễ và phục hồi kinh tế*: Các doanh nghiệp và ngân hàng sống sót tiếp tục vận hành với cú sốc $\eta$ lặp lại (tính bền vững của hiệu quả kinh doanh). Doanh nghiệp vỡ nợ được tái cấu trúc dưới ban quản trị mới và nhận một cú sốc ngẫu nhiên mới.
   6. *Thước đo phúc lợi*: Tổng giá trị tài sản thực của nền kinh tế tại cuối kỳ 2.
 
