@@ -26,9 +26,15 @@ Giới hạn (§4): **đọc trọn tối đa 10 trang, enrich tối đa 5 trang
   Vế `^  - .*` bắt tag viết dạng YAML nhiều dòng (khoảng 1/10 số trang); thiếu nó, lượt rẻ bỏ sót phần lớn cụm.
 
   Mở rộng **đúng 1 vòng**, vẫn không mở full content: outlink lấy bằng `grep -o "\[\[[^]|]*" 02_wiki/<trang>.md | sort -u`, backlink bằng `python .claude/hooks/validate_wiki_page.py --backlinks <trang>`. Không đệ quy vòng 2.
-- **Cluster > 10 trang:** giữ 10 trang gắn chủ đề nhất (khớp title/tag trực tiếp trước, rồi backlink cao), báo rõ đã cắt những trang nào và đề xuất chia lượt theo sub-chủ đề.
+  
+- **Cluster ≤ 10 trang:** trình danh sách (tên trang · lý do đưa vào · backlink · `status`). Người dùng xác nhận/bớt/thêm, **cộng hỏi luôn:** "Bạn cần chạy cả 3 chức năng (A: liên kết + hiểu lệch, B: enrich, C: gap), hay chỉ một phần?" — mặc định cả ba nếu không nói.
 
-Trình bày danh sách cluster (tên trang · lý do đưa vào · backlink · `status`), **chờ người dùng xác nhận/bớt/thêm**. Người dùng cũng có thể chỉ chọn 1–2 trong 3 chức năng A/B/C; mặc định chạy cả ba.
+- **Cluster > 10 trang:** 
+  1. **Gom trang vượt quá theo sub-chủ đề:** dùng heading/tag clustering tương tự bảng *Decomposition Strategy* của deep-research (ví dụ: "interest-rate" có thể tách thành "interest-rate-modeling" + "interest-rate-policy" + "central-bank-rate", nếu > 10 trang mỗi sub; hoặc "central-banking" → "central-bank-operations" + "reserve-management" + "monetary-transmission"). Liệt rõ từng sub-cluster và số trang dự kiến.
+  2. **Báo người dùng:** "Cluster tìm được N trang (> 10). Để kiểm soát scope, tôi đề xuất 2 sub-chủ đề sau: [sub-1] (M trang), [sub-2] (K trang). Bạn muốn: (A) chạy 10 trang top theo backlink cao + title khớp trực tiếp, (B) chia lượt từng sub (mỗi lượt ~5–8 trang), hay (C) lựa chọn trang riêng?"
+  3. Người dùng chọn phương án, rồi áp dụng quy tắc cluster ≤ 10 ở trên.
+
+Người dùng cũng có thể chỉ chọn 1–2 trong 3 chức năng A/B/C; mặc định chạy cả ba.
 
 ### Bước 1 — Đọc cluster và nguồn (chưa ghi gì)
 
@@ -65,6 +71,7 @@ Không viết gì vào `02_wiki/` trước bước này. Trình trong chat, gom 
 - Link bổ sung A: trang · câu chèn link.
 - Trang `analysis` đề xuất A (title + ý chính), nếu có.
 - **Hệ quả status:** đánh dấu rõ trang nào đang `stable`/`stale` sẽ về `draft` nếu thêm claim (§9), để người dùng cân nhắc — nhiều trang vừa được promote.
+- **Cảnh báo nguồn chặn nhiều trang (D):** nếu ≥ 3 trang B bị dừng enrich từ cùng một `<source id>` + chunk vì chunk đó chưa `[x]`, gộp thành 1 dòng cảnh báo: *"⚠️ Enrich dừng (B): <N> trang chờ `/ingest` phần <source id> chunk [~]: <tên chunk>; lý do: trang <T1>, <T2>, <T3> đều dùng chunk này."* — thay vì báo rải rác từng trang.
 - Tóm tắt A (mâu thuẫn khung hiểu) và C (gap) — phần này không cần duyệt vì không ghi vào wiki.
 
 Người dùng duyệt cả lô, bớt mục, hoặc từ chối hết. Gộp một lần duyệt giúp người dùng thấy toàn cảnh thay vì bị hỏi rải rác qua từng chức năng.
@@ -107,3 +114,47 @@ Mỗi lượt research ghi đúng 1 mục vào **cuối** `log.md`, kể cả l�
 - **Lẫn hai loại mâu thuẫn:** hai *trang* diễn giải lệch nhau → chỉ báo cáo; hai *nguồn* nói khác nhau → `⚠️ Conflict`.
 - **Quên hậu tố file khi trích nguồn nhiều file** → chú thích trỏ sai chỗ còn tệ hơn không có.
 - **Tạo stub cho khái niệm mới:** research không tạo stub; ghi vào gap C.
+
+## Ví dụ — lượt research rút gọn
+
+**Chủ đề:** mâu thuẫn lãi suất trong tổng hợp ALM.
+
+**Cluster (bước 0):** Người dùng chỉ định 4 trang:
+- `asset-liability-management.md` (backlink: 3, stable)
+- `interest-rate-risk.md` (backlink: 8, stable) ← topic focus
+- `interest-rate-hedging.md` (backlink: 2, draft)
+- `central-bank-forward-guidance.md` (backlink: 5, draft)
+
+Người dùng xác nhận, chọn chạy cả A + B + C.
+
+**Quy trình (bước 1):**
+- **A:** Phát hiện `interest-rate-risk.md` và `interest-rate-hedging.md` nói chung về duration nhưng lệch về cách tính — ghi báo cáo (mâu thuẫn khung hiểu, không phải `⚠️ Conflict` vì dùng cùng 1 nguồn). Đề xuất link `[[interest-rate-risk]] ← [[interest-rate-hedging]]`.
+- **B:** Tra `03_state/_sources_manifest.md`, thấy `fixed_income_alm` (chunk `[x]`) có mục "Duration and Convexity" (mục 3.2). Chỉ enrich 2 trang: `interest-rate-risk.md` (mỏng, 2 claim), `asset-liability-management.md` (là trang indeks, backlink cao). Mở chunk đó, tìm "Duration", đọc trọn mục 3.2, phát hiện `fixed_income_alm` nói về "effective duration" nhưng trang wiki chưa có — đề xuất: "Trang `interest-rate-risk.md` nên thêm: 'Effective duration điều chỉnh độ nhạy cảm với yieldcurve thay đổi hình dạng, không chỉ mức chung…' `(fixed_income_alm, Chapter 3, mục 3.2, d.234-240)`".
+- **C:** Tóm tắt: cluster chỉ focus mảng duration/convexity, chưa bao quát full "interest-rate-risk" (ví dụ: basis risk, volatility, model risk). Có thể mở rộng sau.
+
+**Đề xuất (bước 2):**
+```
+Claim mới:
+- interest-rate-risk.md: thêm effective duration [fixed_income_alm]
+
+Link bổ sung:
+- interest-rate-risk.md: thêm link đến interest-rate-hedging trong câu giải thích duration
+
+Mâu thuẫn khung hiểu (báo cáo):
+- interest-rate-risk.md vs interest-rate-hedging.md: cách tính duration khác nhau (keyvalu duration vs modified) — cần xem §7.5 của cả hai claim để quyết định sửa hay giữ
+
+Gap (báo cáo):
+- Cluster chưa cover basis risk, vol risk, model risk
+```
+
+Người dùng xác nhận → ghi claim + link (bước 3) → validate (bước 5) → log (bước 6):
+```markdown
+## [2026-09-28:14-32-15] research | interest-rate ALM focus
+- Cluster 4 trang; enrich 2 trang
+- 1 claim mới ở 1 trang; 1 link; mâu thuẫn khung hiểu ghi báo cáo; gap: 3 mảng chưa cover
+- Báo cáo: Claude outputs/research-2026-09-28-interest-rate-alm.md
+```
+
+---
+
+Skill này thường được chạy **lần lượt** qua nhiều phiên — mỗi lượt 1–2 chủ đề, từng lượt enrich cluster, từng lượt ghi log. Người dùng là bộ lọc duyệt mọi bước 2.
