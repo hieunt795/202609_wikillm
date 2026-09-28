@@ -3,8 +3,8 @@ title: basel-iii-lcr-short-term-liquidity-stress-framework-and-buffer-usability
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, hqla, basel, basel-iii, stress-testing, buffer-usability, banking-supervision, bcbs-238]
 sources: [bcbs_238]
-status: stable
-last_updated: 2026-09-26
+status: draft
+last_updated: 2026-09-28
 ---
 
 Khuôn khổ Tỷ lệ khả năng chi trả (Liquidity Coverage Ratio - LCR) theo chuẩn mực Basel III (BCBS 238) thiết lập tiêu chuẩn an toàn thanh khoản ngắn hạn tối thiểu bắt buộc trên phạm vi toàn cầu, yêu cầu các ngân hàng thương mại hoạt động quốc tế phải nắm giữ một lượng tài sản có tính thanh khoản cao không bị ràng buộc (unencumbered High-Quality Liquid Assets - HQLA) đủ khả năng tự chuyển đổi thành tiền mặt tại thị trường tư nhân nhằm bù đắp toàn bộ dòng tiền rút ròng trong kịch bản căng thẳng thanh khoản kết hợp nghiêm trọng kéo dài 30 ngày dương lịch (bcbs_238, file bcbs238.md, Introduction & Part 1 Section I–II, Paragraphs 1–22, d.71–156).
@@ -55,4 +55,7 @@ Một trong những đóng góp mang tính nguyên lý quan trọng nhất của
   4. *Kế hoạch khôi phục*: Tối thiểu ngân hàng phải trình nộp bản tự đánh giá vị thế thanh khoản, làm rõ các động lực dẫn tới thâm hụt LCR, giải trình các biện pháp đã và sẽ thực hiện, cùng dự báo thời gian cần thiết để tái thiết bộ đệm thanh khoản;
   5. *Lộ trình tái tạo bộ đệm trật tự*: Trong trường hợp căng thẳng diện rộng, cơ quan giám sát và ngân hàng phải thảo luận về lộ trình phục hồi thanh khoản được thực thi dần dần qua một khoảng thời gian thích hợp nhằm tránh gây áp lực dồn nén ngược lại hệ thống tài chính.
 
-Xem thêm: [[hqla-fundamental-and-market-characteristics-govern-asset-liquidity-qualification]], [[hqla-operational-requirements-enforce-unencumbered-status-and-treasury-control]], [[hqla-asset-categorisation-and-haircut-parameters-define-liquidity-tiers]], [[hqla-unwinding-mechanics-and-cap-formulas-eliminate-short-term-financing-distortions]], [[alternative-liquidity-approaches-ala-resolve-jurisdictional-hqla-structural-deficits]], [[bcbs-sound-principles-establish-foundational-liquidity-risk-management-and-supervisory-mandates]], [[multi-scenario-liquidity-stress-testing-integrates-behavioral-shocks-and-informs-capital-planning]], [[contingency-funding-plan-establishes-crisis-governance-and-operational-escalation-frameworks]], [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]], [[basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stability]].
+**5. Hệ thống thuật ngữ và cấu trúc thị trường chuẩn hóa**
+
+Để vận hành thống nhất chuẩn mực LCR, Ủy ban Basel chuẩn hóa hệ thống chữ viết tắt và thuật ngữ chuyên ngành định danh các cấu trúc thị trường cốt lõi (bcbs_238, file bcbs238.md, List of Abbreviations, d.49–70). Các định chế xếp hạng tín nhiệm độc lập theo [[external-credit-assessment-institution-ecai]] cung cấp thước đo khách quan để phân tầng tài sản HQLA theo [[hqla-asset-categorisation-and-haircut-parameters-define-liquidity-tiers]] và kiểm tra điều kiện vận hành theo [[hqla-operational-requirements-enforce-unencumbered-status-and-treasury-control]]. Về mặt cấu trúc nguồn vốn, các chương trình thương phiếu có tài sản bảo đảm theo [[asset-backed-commercial-paper-abcp]] và các công ty đầu tư cấu trúc theo [[structured-investment-vehicle-siv]] được lượng hóa đầy đủ rủi ro ngoại bảng, loại trừ tình trạng tài trợ đòn bẩy ngầm. Đồng thời, các thực thể khu vực công theo [[public-sector-entity-pse-liquidity-treatment]] được hưởng cơ chế dòng tiền và đệm thanh khoản ưu đãi, kết hợp với các giải pháp thanh khoản thay thế theo [[alternative-liquidity-approaches-ala-resolve-jurisdictional-hqla-structural-deficits]] bảo đảm tính toàn vẹn của mô hình đo lường dòng tiền ngắn hạn so với chỉ tiêu cấu trúc dài hạn [[basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stability]].
+

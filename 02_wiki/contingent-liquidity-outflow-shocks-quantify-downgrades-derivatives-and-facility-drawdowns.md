@@ -3,11 +3,11 @@ title: contingent-liquidity-outflow-shocks-quantify-downgrades-derivatives-and-f
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, contingent-outflows, credit-facilities, liquidity-facilities, downgrade-triggers, lookback-approach, derivatives, basel, basel-iii, bcbs-238]
 sources: [bcbs_238]
-status: stable
-last_updated: 2026-09-26
+status: draft
+last_updated: 2026-09-28
 ---
 
-Khuôn khổ lượng hóa các cú sốc dòng tiền tiềm tàng từ cam kết ngoại bảng và rủi ro gia tăng (Contingent Liquidity Outflow Shocks) theo chuẩn mực Basel III (BCBS 238) thiết lập hệ thống tham số định lượng chi tiết nhằm mô phỏng các rò rỉ thanh khoản đột ngột phát sinh từ các điều khoản hạ bậc xếp hạng tín nhiệm độc lập (3-notch downgrade), các nghĩa vụ ký quỹ phái sinh theo phương pháp hồi cứu lịch sử 24 tháng, và sự kích hoạt rút vốn ồ ạt từ các hạn mức tín dụng và thanh khoản đã cam kết chưa sử dụng (bcbs_238, file bcbs238.md, Part 1 Section II.B.1.iv, Paragraphs 116–141, d.507–570).
+Khuôn khổ lượng hóa các cú sốc dòng tiền tiềm tàng từ cam kết ngoại bảng và rủi ro gia tăng (Contingent Liquidity Outflow Shocks) theo chuẩn mực Basel III (BCBS 238) thiết lập hệ thống tham số định lượng chi tiết nhằm mô phỏng các rò rỉ thanh khoản đột ngột phát sinh từ các điều khoản hạ bậc xếp hạng tín nhiệm độc lập (3-notch downgrade), các nghĩa vụ ký quỹ phái sinh theo phương pháp hồi cứu lịch sử 24 tháng, và sự kích hoạt rút vốn ồ ạt từ các hạn mức tín dụng và thanh khoản đã cam kết chưa sử dụng (bcbs_238, file bcbs238.md, Part 1 Section II.B.1.iv, Paragraphs 116–141, d.507–578).
 
 **1. Rủi ro dòng tiền từ các hợp đồng phái sinh và thỏa thuận bù trừ (Derivatives Outflows)**
 
@@ -61,6 +61,14 @@ Các hạn mức tín dụng và thanh khoản đã cam kết ngoại bảng (co
   - Áp dụng tỷ lệ rút vốn ưu đãi thấp từ **3% đến 5%** (hoặc $\le 5\%$ do cơ quan quản lý ấn định) đối với các công cụ ngoại bảng gắn liền trực tiếp với dòng luân chuyển hàng hóa và cung ứng dịch vụ thực tế (Thư tín dụng L/C chứng từ, nhờ thu chứng từ, bộ chứng từ nhập khẩu/xuất khẩu và bảo lãnh nhận hàng shipping guarantees theo Paragraph 138, d.565–567);
   - Các khoản cam kết cho vay tài trợ xuất nhập khẩu trực tiếp không thuộc diện này và phải áp dụng tỷ lệ rút vốn hạn mức tín dụng (10%–100%).
 
+**6. Nghĩa vụ tiềm tàng phi hợp đồng và Dòng tiền ra hợp đồng khác (Paragraphs 140–141)**
+
+Khuôn khổ quản trị thanh khoản mở rộng sang các rủi ro phát sinh ngoài cam kết hợp đồng bằng văn bản nhằm ngăn ngừa nguy cơ ngân hàng che giấu rủi ro danh tiếng theo [[non-contractual-liquidity-obligations-and-reputational-step-in-risks-mandate-contingent-lcr-buffers]] (bcbs_238, file bcbs238.md, Paragraph 140–141, d.569–578):
+- **Sản phẩm cấu trúc và Quỹ giá trị ổn định**: Áp dụng tỷ lệ dòng tiền rút dự phòng do cơ quan giám sát quy định đối với trái phiếu lãi suất điều chỉnh, kỳ phiếu có quyền đòi hoàn trả lãi suất thả nổi (VRDNs) và các quỹ thị trường tiền tệ (MMMFs) cam kết duy trì NAV ổn định ($1/chứng chỉ);
+- **Mua lại nợ tự phát hành và nợ của SPV**: Tính toán dòng tiền dự phòng mua lại nợ của chính ngân hàng hoặc nợ của các Conduit tài trợ thương phiếu theo [[asset-backed-commercial-paper-abcp]] và các công ty đầu tư cấu trúc theo [[structured-investment-vehicle-siv]];
+- **Bù trừ bán khống nội bộ bằng TSBĐ khách hàng khác**: Áp dụng **tỷ lệ dòng tiền ra tối thiểu 50%** nếu TSBĐ bù trừ không thuộc HQLA Cấp 1 hoặc Cấp 2, nhằm dự phòng trường hợp khách hàng rút tài sản;
+- **Dòng tiền ra hợp đồng khác (100%) và loại trừ chi phí hoạt động**: Mọi dòng tiền ra hợp đồng khác trong 30 ngày (vay TSBĐ không bảo đảm, vị thế bán khống chưa bù trừ, cổ tức, lãi vay) chịu hệ số **100%**, trong khi chi phí hoạt động thông thường (tiền lương, chi phí quản lý vận hành) được loại trừ hoàn toàn khỏi LCR theo Paragraph 141 (d.578).
+
 **Bảng tổng hợp tham số dòng tiền ra ngoại bảng và rủi ro gia tăng**
 
 | Danh mục cam kết ngoại bảng / Rủi ro gia tăng | Cơ sở xác định / Tính chất hợp đồng | Tỷ lệ dòng tiền ra |
@@ -75,5 +83,6 @@ Các hạn mức tín dụng và thanh khoản đã cam kết ngoại bảng (co
 | **Hạn mức cam kết Định chế tài chính khác** | Credit facilities: **40%** \| Liquidity facilities: **100%** | **40% / 100%** |
 | **Hạn mức cam kết SPVs, Conduits, SPEs** | Undrawn credit & liquidity facilities | **100%** |
 | **Cam kết tài trợ thương mại (Trade Finance)** | L/C chứng từ, nhờ thu, bảo lãnh nhận hàng | **3%–5%** |
-
-Xem thêm: [[basel-iii-retail-deposit-run-off-framework-differentiates-stable-and-less-stable-funds]], [[operational-deposits-framework-evaluates-clearing-custody-and-cash-management-stickiness]], [[unsecured-wholesale-funding-run-off-matrices-calibrate-counterparty-flight-risk]], [[secured-funding-run-off-mechanics-map-collateral-hierarchy-and-counterparty-profiles]], [[contingent-liquidity-outflows-and-credit-facility-drawdowns-stress-test-off-balance-commitments]], [[contingent-liquidity-risk-framework-mandates-asymmetric-spv-treatment-and-commitment-modeling]], [[contractual-cash-inflow-caps-and-counterparty-haircuts-govern-net-lcr-measurement]], [[basel-iii-lcr-short-term-liquidity-stress-framework-and-buffer-usability]].
+| **Bù trừ bán khống nội bộ bằng TSBĐ non-HQLA** | Vị thế bù trừ nội bộ bằng tài sản khách hàng khác | **Tối thiểu 50%** |
+| **Dòng tiền ra theo hợp đồng khác** | Vay TSBĐ không bảo đảm, bán khống chưa bù trừ, cổ tức, lãi vay | **100%** |
+| **Chi phí hoạt động thông thường** | Tiền lương, quản lý vận hành cơ sở (operating costs) | **0% (Loại trừ hoàn toàn)** |

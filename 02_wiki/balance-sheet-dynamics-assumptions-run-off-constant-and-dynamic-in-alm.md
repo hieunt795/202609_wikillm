@@ -4,10 +4,10 @@ type: concept
 tags: [alm, irrbb, balance-sheet, eve, nii, bcbs-368]
 sources: [bcbs_368]
 status: draft
-last_updated: 2026-09-26
+last_updated: 2026-09-28
 ---
 
-Ba giả định động thái bảng cân đối kế toán — Bảng cân đối thu hồi chạy cạn (Run-off balance sheet), Bảng cân đối quy mô không đổi (Constant balance sheet), và Bảng cân đối biến động động (Dynamic balance sheet) — tạo thành ba hệ quy chiếu phân tích cốt lõi trong ALM và [[interest-rate-risk-in-the-banking-book-irrbb]], trong đó chuẩn mực BCBS 368 bắt buộc áp dụng Run-off cho phép đo Giá trị Kinh tế của Vốn tự có ($\Delta EVE$) và Constant cho phép đo Thu nhập Lãi thuần ($\Delta NII$), đồng thời hạn chế Dynamic cho mục đích lập kế hoạch kinh doanh nội bộ (bcbs_368, file d368.md, Section I, d.80–90; Section II.1 Principle 4, d.180–210; Annex 1.3, d.920–970).
+Ba giả định động thái bảng cân đối kế toán — Bảng cân đối thu hồi chạy cạn (Run-off balance sheet), Bảng cân đối quy mô không đổi (Constant balance sheet), và Bảng cân đối biến động động (Dynamic balance sheet) — tạo thành ba hệ quy chiếu phân tích cốt lõi trong ALM và [[interest-rate-risk-in-the-banking-book-irrbb]], trong đó chuẩn mực BCBS 368 bắt buộc áp dụng Run-off cho phép đo Giá trị Kinh tế của Vốn tự có ($\Delta EVE$) và Constant cho phép đo Thu nhập Lãi thuần ($\Delta NII$), đồng thời hạn chế Dynamic cho mục đích lập kế hoạch kinh doanh nội bộ (bcbs_368, file d368.md, Section I, d.80–90; bcbs_368, file d368.md, Section II.1 Principle 4, d.180–210; bcbs_368, file d368.md, Annex 1 Section 2.2, d.901–925).
 
 **1. Bảng cân đối Thu hồi Chạy cạn (Run-off / Static Balance Sheet)**
 
@@ -27,7 +27,7 @@ Bảng cân đối quy mô không đổi duy trì một trạng thái cân bằn
 - Tổng tài sản, tổng nguồn vốn và tỷ trọng cơ cấu giữa các dải kỳ hạn và sản phẩm được bảo toàn nguyên vẹn ($TotalAssets_t = TotalAssets_0$).
 
 *Ứng dụng chuẩn mực theo BCBS 368:*
-Theo Principle 8 và [[delta-nii-regulatory-calculation-rules-mandate-constant-balance-sheet-and-rolling-horizon]], giả định Constant là tiêu chuẩn giám sát bắt buộc khi tính toán biến thiên thu nhập lãi thuần ($\Delta NII$) dưới 6 kịch bản sốc chuẩn hóa. Phép đo NII đặt trong giả định hoạt động liên tục (going-concern perspective). Việc cố định quy mô bảng cân đối cho phép cơ quan thanh tra bóc tách thuần túy tác động của cú sốc lãi suất thị trường lên thu nhập lãi biên mà không bị pha tạp bởi dự báo tăng trưởng quy mô kinh doanh hoặc sự suy giảm giả tạo do chạy cạn dòng tiền.
+Theo Principle 8 và [[delta-nii-regulatory-calculation-rules-mandate-constant-balance-sheet-and-rolling-horizon]], giả định Constant là tiêu chuẩn giám sát bắt buộc khi tính toán biến thiên thu nhập lãi thuần ($\Delta NII$) dưới 6 kịch bản sốc chuẩn hóa. Phép đo NII đặt trong giả định hoạt động liên tục (going-concern perspective) theo Annex 1 (Mục 2.2) nhằm đo lường khả năng sinh lời và mức độ tổn thương của ngân hàng trong chân trời ngắn và trung hạn 1–3 năm (bcbs_368, file d368.md, Annex 1 Section 2.2, d.901–925). Việc cố định quy mô bảng cân đối cho phép cơ quan thanh tra bóc tách thuần túy tác động của cú sốc lãi suất thị trường lên thu nhập lãi biên mà không bị pha tạp bởi dự báo tăng trưởng quy mô kinh doanh hoặc sự suy giảm giả tạo do chạy cạn dòng tiền.
 
 **3. Bảng cân đối Biến động Động (Dynamic Balance Sheet)**
 

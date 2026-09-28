@@ -1,0 +1,14 @@
+---
+title: net-interest-income-sensitivity-quantifies-earnings-volatility-relative-to-tier-one-capital
+type: concept
+tags: [nii-sensitivity, earnings-perspective, irrbb, tier-1-capital, sot, regulatory-limits]
+sources: [tata_bank_alm]
+status: draft
+last_updated: 2026-09-28
+---
+
+Độ nhạy thu nhập lãi thuần (NII Sensitivity) là thước đo định lượng cốt lõi trong góc nhìn thu nhập (earnings perspective), phản ánh mức độ biến động của thu nhập lãi thuần ($NII$) của ngân hàng khi các kịch bản sốc lãi suất thị trường xảy ra so với kịch bản dự báo cơ sở (tata_bank_alm, Ch.2, 2.2.2 NII Sensitivity, d.1053–1058). Sau khi bộ phận ALM thiết lập dự báo NII cơ sở thông qua [[net-interest-income-forecast-serves-as-baseline-for-prospective-alm-simulations]] dưới các giả định bảng cân đối tĩnh và đường cong lợi suất hiện hành, mức phơi nhiễm ròng đối với biến động lãi suất được xác định bằng hiệu số giữa NII trong kịch bản sốc và NII kịch bản cơ sở: $\Delta NII = NII_{\text{shock}} - NII_{\text{baseline}}$ (d.1055–1057). Dù ALM không thể đảo ngược tình trạng một ngân hàng đang thua lỗ thành một ngân hàng thành công, việc kiểm soát chặt chẽ NII Sensitivity giúp ổn định dòng thu nhập kỳ vọng bằng cách triệt tiêu tối đa các độ lệch bất lợi ngoài dự báo (d.1057).
+
+Nhằm đáp ứng các chuẩn mực an toàn vốn quốc tế và hướng dẫn của EBA theo CRD IV cùng Quy định Ủy quyền (EU) 2024/856, độ nhạy NII trong mọi kịch bản sốc được chuẩn hóa thành tỷ số tương đối so với quy mô vốn tự có cấp 1 (Tier 1 capital) và không được phép vượt quá ngưỡng cảnh báo giám sát: $\frac{|\Delta NII|}{\text{Tier 1 Capital}} \le 15\%$ (tata_bank_alm, Ch.2, 2.2.2 NII Sensitivity, d.1057–1058). Yêu cầu này đồng nghĩa với việc: trong bất kỳ kịch bản sốc định trước nào, mức tổn thất thu nhập lãi thuần lũy kế (so với kịch bản cơ sở) không bao giờ được phép làm xói mòn quá 15% quy mô vốn cấp 1 của ngân hàng, bảo vệ khả năng tích lũy lợi nhuận giữ lại và giữ vững hệ số an toàn vốn tối thiểu.
+
+Để có được cái nhìn toàn diện và sâu sắc về trạng thái phơi nhiễm rủi ro lãi suất, danh mục các kịch bản sốc lãi suất bắt buộc phải bao trùm cả 6 kịch bản chuẩn hóa của Basel và EBA (sốc song song tăng/giảm, dốc đường cong, phẳng đường cong, sốc lãi suất ngắn hạn tăng/giảm) (tata_bank_alm, Ch.2, 2.2.2 NII Sensitivity, d.1059–1062). Khung đo lường này phân định rõ giữa các cú sốc tức thời (instantaneous shifts) và các dịch chuyển dần theo thời gian (gradual shifts), cũng như sự khác biệt giữa dịch chuyển song song phẳng và biến dạng cấu trúc đường cong lợi suất (d.1055–1056). Thước đo này đóng vai trò bản lề để kiểm tra sức chịu đựng trong [[supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital]], hoàn thiện bức tranh cân bằng rủi ro song hành với giá trị kinh tế theo [[economic-value-and-earnings-perspectives-complement-each-other-in-alm]].

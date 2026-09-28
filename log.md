@@ -1293,3 +1293,28 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 2 concept mới (§5 Atomic): foreign-currency-liquidity-management-and-fx-swap-risk-mitigation-framework (P5.c), intragroup-liquidity-governance-and-cross-entity-transfer-constraints-framework (P6); cập nhật 3 trang: intraday-liquidity-risk-management-... (merge P5.d), funding-diversification-... (refactor P7), bcbs-sound-principles-... (merge khung 4 trụ cột d.91–136).
 - 0 stub; 2 mục ghi 'bỏ qua:' theo duyệt (bìa BIS d.3–24, danh sách thành viên d.632–641); --all sạch (982 trang, 0 lỗi, 0 mồ côi), --coverage sạch 100% cả 4 chunk (0 mục chưa phủ).
 - bcbs_144 hoàn tất 100% (toàn bộ 4/4 chunk [x], 18 concept, cập nhật index.md và 03_state/bcbs_144.md).
+
+## [2026-09-28:13-51-12] ingest | bcbs_238 Hoàn tất Chunk 1 & Chunk 3 (Thuật ngữ, Nghĩa vụ phi hợp đồng & 100% Độ phủ)
+- 5 concept mới (§5 Atomic): asset-backed-commercial-paper-abcp, structured-investment-vehicle-siv, external-credit-assessment-institution-ecai, public-sector-entity-pse-liquidity-treatment, non-contractual-liquidity-obligations-and-reputational-step-in-risks-mandate-contingent-lcr-buffers; cập nhật 3 trang: contingent-liquidity-outflow-shocks-... (bổ sung Par 140–141, gỡ 'Xem thêm:'), basel-iii-lcr-short-term-liquidity-stress-... (trích dẫn d.49–70, gỡ 'Xem thêm:'), reputational-risk-and-off-balance-sheet-... (liên kết ABCP/SIV/LCR).
+- 0 stub; 1 mục ghi 'bỏ qua:' theo duyệt (bìa BIS d.5–16); --all sạch (987 trang, 0 lỗi, 0 mồ côi), --coverage bcbs_238 sạch 100% cả 4 chunk (0 mục chưa phủ).
+- bcbs_238 hoàn tất 100% (toàn bộ 4/4 chunk [x], 22 concept mới, cập nhật index.md §Sources + mục lục và 03_state/bcbs_238.md).
+
+## [2026-09-28:14-21-00] ingest | bcbs_368 Hoàn tất Chunk 2 & Chunk 4 (Nguyên tắc tương xứng, 5 giả định mô hình hóa & 100% Độ phủ)
+- 2 concept mới (§5 Atomic): proportionality-principle-and-consolidated-scope-in-irrbb-supervision (Par 96–97), key-modelling-assumptions-and-structural-correlations-in-irrbb-quantification (Annex 1.3); cập nhật 4 trang: economic-value-and-earnings-perspectives-complement-each-other-in-alm (trích dẫn d.807–812, d.926–935), balance-sheet-dynamics-assumptions-run-off-constant-and-dynamic-in-alm (trích dẫn d.901–925), economic-value-of-equity-eve-measures-net-present-value-of-banking-book-cash-flows (trích dẫn d.926–935), supervisory-review-process-srep-enforces-peer-benchmarking-and-cross-border-cooperation-for-irrbb (kết nối proportionality).
+- 0 stub; 0 mục bỏ qua; --all sạch (989 trang, 0 lỗi, 0 mồ côi), --coverage bcbs_368 sạch 100% cả 4 chunk (0 mục chưa phủ: Chunk 1 99%, Chunk 2 97%, Chunk 3 98%, Chunk 4 96%).
+- bcbs_368 hoàn tất 100% (toàn bộ 4/4 chunk [x], 42 concept mới, cập nhật index.md §Sources + mục lục và 03_state/bcbs_368.md).
+
+## [2026-09-28:14-55-00] ingest | tata_bank_alm Bước 1 (Chunk 1 Ch.1 d.430–801 — ALCO, Sổ ngân hàng vs Sổ kinh doanh & Công cụ ALM)
+- 3 concept mới (§5 Atomic): asset-and-liability-management-committee-alco-governance-and-stakeholder-coordination (Mục 1.1.4, d.504–511), banking-book-and-trading-book-regulatory-boundary-and-intent-classification (Mục 1.1.5, d.512–525), alm-financial-instruments-span-customer-positions-wholesale-market-contracts-and-derivatives (Mục 1.1.6, d.526–546); cập nhật 1 trang: interest-rate-risk-in-the-banking-book-irrbb (Mục 1.2, d.589–596, trích dẫn bổ sung và liên kết 3 node mới).
+- 0 stub; 0 mục bỏ qua; --all sạch (992 trang, 0 lỗi, 0 mồ côi), --coverage tata_bank_alm sạch Chunk 1 (0 mục chưa phủ, [x]).
+- tata_bank_alm hoàn tất Chunk 1 ([x]); còn lại 5 chunk (2A, 2B, 3, 5, 6).
+
+## [2026-09-28:15-15-00] ingest | tata_bank_alm Bước 2 (Chunk 2A & 2B Ch.2 d.802–1783 — NII Sensitivity, Model Bank Simulation & Cost of Funds)
+- 3 concept mới (§5 Atomic): net-interest-income-sensitivity-quantifies-earnings-volatility-relative-to-tier-one-capital (Mục 2.2.2, d.1053–1062), model-bank-monthly-nii-simulation-quantifies-rate-shock-transmission-and-swap-hedging (Mục 2.2.4.1–2.2.4.5, d.1103–1384), cost-of-funds-in-alm-establishes-internal-hurdle-rate-for-business-margin-allocation (Mục 2.3.2, d.1601–1612); cập nhật 3 trang: economic-value-and-earnings-perspectives-complement-each-other-in-alm (Mục 2 ALM Techniques, d.804–815), net-interest-income-forecast-serves-as-baseline-for-prospective-alm-simulations (kết nối NII sensitivity & mô phỏng động), funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks (kết nối Cost of Funds, gỡ 'Xem thêm:').
+- 0 stub; 0 mục bỏ qua; --all sạch (995 trang, 0 lỗi, 0 mồ côi), --coverage tata_bank_alm sạch cả Chunk 2A và 2B (0 mục chưa phủ, [x]).
+- tata_bank_alm hoàn tất Chunk 2A và Chunk 2B ([x]); còn lại 3 chunk (3, 5, 6).
+
+## [2026-09-28:15-35-00] ingest | tata_bank_alm Bước 3 (Chunk 3, 5, 6 — Lãi suất âm NIRP, SOT Intro & The Future of ALM)
+- 1 concept mới (§5 Atomic): regulatory-mandates-and-operational-challenges-of-negative-interest-rates-in-alm (Mục 3.5.3–3.5.4, d.2449–2468); cập nhật 4 trang: supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital (Mục 5.3 SOT, d.2905–2910), holistic-alm-elevates-balance-sheet-strategy-from-tactical-compliance-to-technological-advantage (Mục 6 The Future of ALM, d.3109–3124), zero-lower-bound-interest-rate-floors-distort-banking-book-margins-under-nirp (kết nối thách thức NIRP), coupon-floors-and-indicator-floors-induce-asymmetric-nii-exposures-in-negative-rates (kết nối thách thức NIRP).
+- 0 stub; 0 mục bỏ qua; --all sạch (996 trang, 0 lỗi, 0 mồ côi), --coverage tata_bank_alm sạch 100% cả 10/10 chunk (0 mục chưa phủ, [x]).
+- tata_bank_alm hoàn tất 100% (toàn bộ 10/10 chunk [x], 51 concept, cập nhật index.md §Sources + mục lục và 03_state/tata_bank_alm.md).

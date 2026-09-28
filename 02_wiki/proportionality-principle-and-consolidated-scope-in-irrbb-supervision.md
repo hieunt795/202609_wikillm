@@ -1,0 +1,14 @@
+---
+title: proportionality-principle-and-consolidated-scope-in-irrbb-supervision
+type: concept
+tags: [alm, irrbb, supervision, proportionality, consolidated-scope, bcbs-368]
+sources: [bcbs_368]
+status: draft
+last_updated: 2026-09-28
+---
+
+Phạm vi áp dụng hợp nhất và nguyên tắc tương xứng (Principle of Proportionality) tạo thành nền tảng pháp lý định hình phương thức triển khai chuẩn mực [[interest-rate-risk-in-the-banking-book-irrbb]] giữa các cơ quan thanh tra giám sát và các định chế tín dụng theo Chuẩn mực BCBS 368 (bcbs_368, file d368.md, Section III, d.524–531). Về phạm vi áp dụng, khuôn khổ IRRBB được áp dụng trên cơ sở hợp nhất (consolidated basis) đối với toàn bộ các ngân hàng quốc tế lớn (large internationally active banks), đồng thời các cơ quan giám sát quốc gia có quyền mở rộng áp dụng đối với các ngân hàng nội địa khác hoặc bất kỳ tập hợp thực thể thành viên nào của các tập đoàn ngân hàng quốc tế, nhằm đảm bảo tính nhất quán và thiết lập một sân chơi bình đẳng (level playing field) giữa hệ thống ngân hàng nội địa và ngân hàng xuyên biên giới (bcbs_368, file d368.md, Section III, Paragraph 96, d.526).
+
+Nguyên tắc tương xứng quy định rằng việc thực thi toàn bộ 12 nguyên tắc quản trị và giám sát IRRBB phải tương xứng với tính chất, quy mô, mức độ phức tạp, cấu trúc tổ chức, tầm quan trọng kinh tế và hồ sơ rủi ro tổng thể của từng tổ chức tín dụng (bcbs_368, file d368.md, Section III, Paragraph 97, d.530). Cơ chế này đòi hỏi cơ quan thanh tra phải hiệu chỉnh và định lượng biện pháp phản ứng giám sát một cách linh hoạt, phù hợp đối với các ngân hàng có mức độ phơi nhiễm IRRBB thấp; ngược lại, giám sát viên phải tập trung cao độ vào rủi ro mang tính hệ thống tiềm ẩn tại các ngân hàng quy mô lớn, phức tạp hoặc hoạt động xuyên biên giới (bcbs_368, file d368.md, Section III, Paragraph 97, d.530).
+
+Trong quy trình đánh giá giám sát [[supervisory-review-process-srep-enforces-peer-benchmarking-and-cross-border-cooperation-for-irrbb]], nguyên tắc tương xứng cho phép phân tầng mức độ can thiệp: trong khi các ngân hàng lớn phức tạp bắt buộc phải duy trì hệ thống đo lường nội bộ tiên tiến kết hợp mô phỏng động đa kịch bản, các định chế nhỏ có cấu trúc bảng cân đối đơn giản có thể được cơ quan giám sát chấp thuận hoặc yêu cầu áp dụng [[irrbb-standardised-framework-five-stage-measurement-architecture]] để tính toán $\Delta EVE$ và $\Delta NII$. Tuy nhiên, nguyên tắc tương xứng không miễn trừ nghĩa vụ kiểm soát rủi ro cơ bản; mọi định chế, bất kể quy mô, đều phải chịu sự kiểm định ngoại lai nghiêm ngặt theo [[supervisory-outlier-test-mandates-fifteen-percent-tier-one-capital-threshold]] nhằm bảo toàn an toàn vốn tự có trước các cú sốc lãi suất thị trường. Sự kết hợp giữa phạm vi hợp nhất và nguyên tắc tương xứng bảo đảm tính đồng bộ trong toàn bộ [[multitiered-irrbb-regulatory-framework-spans-bcbs-crd-crr-and-eba-technical-standards]].

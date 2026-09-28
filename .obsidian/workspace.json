@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "87551b4764c85edf",
+        "id": "ef2dfa734962ffb3",
         "type": "tabs",
         "children": [
           {
-            "id": "89dc1f7bd0a0293c",
+            "id": "8d9aa773c88b01e8",
             "type": "leaf",
             "state": {
               "type": "llm-wiki-graphify-view",
@@ -193,7 +193,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "89dc1f7bd0a0293c",
+  "active": "8d9aa773c88b01e8",
   "lastOpenFiles": [
     "02_wiki/basis-risk-quantification-and-tenor-basis-swaps-in-alm.md",
     "02_wiki/macro-hedging-and-micro-hedging-strategies-in-the-banking-book.md",

@@ -1,0 +1,18 @@
+---
+title: banking-book-and-trading-book-regulatory-boundary-and-intent-classification
+type: concept
+tags: [banking-book, trading-book, regulatory-boundary, accounting-treatment, ecb-criteria, alm]
+sources: [tata_bank_alm]
+status: draft
+last_updated: 2026-09-28
+---
+
+Việc phân định rạch ròi bảng cân đối của một tổ chức tín dụng thành Sổ ngân hàng (Banking Book) và Sổ kinh doanh (Trading Book) là nguyên tắc pháp lý và kế toán nền tảng nhất định hình toàn bộ phạm vi quản trị rủi ro ngân hàng (tata_bank_alm, Ch.1, 1.1.5 Banking Book vs. Trading Book, d.512–515). Tiêu chí phân định cốt lõi dựa trên ý định giao dịch (trading intent) và chân trời nắm giữ của từng công cụ tài chính:
+- *Sổ ngân hàng (Banking Book / Non-regulatory trading book)*: Bao gồm toàn bộ các giao dịch và vị thế có bản chất dài hạn gắn liền với hoạt động kinh doanh khách hàng cốt lõi và các phương thức tài trợ tương ứng, đồng thời bao gồm cả nguồn vốn chủ sở hữu tự có (equity capital) của ngân hàng (tata_bank_alm, Ch.1, 1.1.5 Banking Book vs. Trading Book, d.520). Về mặt kế toán, các vị thế sổ ngân hàng chủ yếu được hạch toán dồn tích theo giá vốn phân bổ (amortised cost), và đây là đối tượng quản trị độc quyền của khuôn khổ [[interest-rate-risk-in-the-banking-book-irrbb]].
+- *Sổ kinh doanh (Trading Book / Regulatory trading book)*: Điển hình bao gồm các vị thế được nắm giữ với mục đích bán lại trong ngắn hạn, tìm kiếm lợi nhuận từ các biến động giá thị trường ngắn hạn, tạo lập thị trường, kinh doanh chênh lệch giá (arbitrage) hoặc phòng hộ cho các rủi ro kinh doanh (tata_bank_alm, Ch.1, 1.1.5 Banking Book vs. Trading Book, d.522). Các công cụ sổ kinh doanh bắt buộc phải được đánh giá lại hàng ngày theo giá trị thị trường hợp lý (mark-to-market) và chịu sự điều chỉnh của khung yêu cầu vốn rủi ro thị trường.
+
+Nhằm ngăn chặn hiện tượng kinh doanh chênh lệch quy chế (regulatory arbitrage) thông qua việc tùy tiện luân chuyển tài sản giữa hai sổ, Ngân hàng Trung ương Châu Âu (ECB) và Ủy ban Basel ban hành hệ thống tiêu chí định danh phân loại nghiêm ngặt (Table 1.1) (tata_bank_alm, Ch.1, Table 1.1, d.536–546):
+- *Danh mục bắt buộc thuộc Sổ ngân hàng*: Cổ phiếu chưa niêm yết; các công cụ dự kiến chuyển nhượng lưu kho chứng khoán hóa (securitisation warehousing); nắm giữ bất động sản; dư nợ tín dụng bán lẻ và tín dụng doanh nghiệp vừa và nhỏ (SME); các khoản đầu tư cổ phần vào quỹ đầu tư không có báo giá thị trường hàng ngày; các công cụ phái sinh được nắm giữ để phòng hộ cho các vị thế sổ ngân hàng nêu trên.
+- *Danh mục bắt buộc thuộc Sổ kinh doanh*: Các công cụ thuộc danh mục giao dịch tương quan (correlation trading portfolio); công cụ phát sinh từ cam kết bảo lãnh phát hành chứng khoán; tài sản/nợ tài chính ghi nhận phục vụ kinh doanh ('held for trading'); công cụ phát sinh từ hoạt động tạo lập thị trường; cổ phiếu niêm yết; giao dịch mua bán lại repo gắn với kinh doanh; các vị thế rủi ro đoản ròng (net short positions) về vốn cổ phần hoặc rủi ro tín dụng; các hợp đồng quyền chọn bao gồm cả phái sinh ngầm định được tách rời khỏi công cụ nợ sổ ngân hàng.
+
+Sự phân chia này dẫn đến sự khác biệt căn bản trong đo lường giá trị: trong khi rủi ro sổ kinh doanh phản ánh ngay vào kết quả lãi lỗ P&L qua giá thị trường, rủi ro lãi suất sổ ngân hàng tiềm ẩn các khoản lỗ giá trị kinh tế chưa thực hiện không hiển thị trên báo cáo tài chính theo [[accounting-treatment-of-banking-book-amortised-cost-versus-fair-value-under-irrbb]]. Do đó, cơ quan giám sát bắt buộc phải áp dụng thước đo bổ trợ [[economic-value-of-equity-eve-measures-net-present-value-of-banking-book-cash-flows]] kết hợp với quy tắc áp dụng hợp nhất theo [[proportionality-principle-and-consolidated-scope-in-irrbb-supervision]] để bảo đảm an toàn vốn tổng thể cho toàn bộ định chế.
