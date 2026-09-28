@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ef2dfa734962ffb3",
+        "id": "96e41d8dbb93a182",
         "type": "tabs",
         "children": [
           {
-            "id": "8d9aa773c88b01e8",
+            "id": "096b12a65ff6e419",
             "type": "leaf",
             "state": {
               "type": "llm-wiki-graphify-view",
@@ -193,8 +193,15 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "8d9aa773c88b01e8",
+  "active": "096b12a65ff6e419",
   "lastOpenFiles": [
+    "02_wiki/trading-book.md",
+    "02_wiki/banking-book.md",
+    "02_wiki/capital-adequacy-ratio.md",
+    "02_wiki/liquidity-premium.md",
+    "02_wiki/money-multiplier.md",
+    "Claude outputs/lint-2026-09-28-996.md",
+    "Claude outputs/lint_temp_summary.json",
     "02_wiki/basis-risk-quantification-and-tenor-basis-swaps-in-alm.md",
     "02_wiki/macro-hedging-and-micro-hedging-strategies-in-the-banking-book.md",
     "02_wiki/irrbb-model-governance-and-independent-three-tier-validation-framework.md",
@@ -215,12 +222,6 @@
     "02_wiki/standardised-delta-eve-calculation-and-multi-currency-aggregation-rules.md",
     "02_wiki/automatic-interest-rate-options-standardised-valuation-and-volatility-shocks.md",
     "02_wiki/standardised-term-deposit-early-redemption-risk-and-tdrr-scalars.md",
-    "02_wiki/standardised-loan-prepayment-modelling-and-cpr-multipliers.md",
-    "02_wiki/standardised-nmd-categorisation-and-core-deposit-caps-framework.md",
-    "02_wiki/standardised-repricing-cash-flow-bucketing-and-nineteen-tenor-schedule.md",
-    "02_wiki/irrbb-standardised-framework-five-stage-measurement-architecture.md",
-    "02_wiki/supervisory-review-process-srep-enforces-peer-benchmarking-and-cross-border-cooperation-for-irrbb.md",
-    "02_wiki/supervisory-remedial-actions-mandate-exposure-reduction-capital-add-ons-and-parameter-constraints.md",
     "01_sources/vietnam-regulator",
     "01_sources/New folder",
     "01_sources/basel",
@@ -229,7 +230,6 @@
     "02_wiki/sed5hdka7",
     "02_wiki/sedH53pLM",
     "decisions.md.tmp.15376.8b536048cda1",
-    "Claude outputs/eval-review-research-iter1.html",
-    "Claude outputs/research-workspace/iteration-1/eval-3-lolr-frame-consistency/old_skill/run-1/outputs/writes"
+    "Claude outputs/eval-review-research-iter1.html"
   ]
 }

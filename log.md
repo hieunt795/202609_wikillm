@@ -1318,3 +1318,13 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 1 concept mới (§5 Atomic): regulatory-mandates-and-operational-challenges-of-negative-interest-rates-in-alm (Mục 3.5.3–3.5.4, d.2449–2468); cập nhật 4 trang: supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital (Mục 5.3 SOT, d.2905–2910), holistic-alm-elevates-balance-sheet-strategy-from-tactical-compliance-to-technological-advantage (Mục 6 The Future of ALM, d.3109–3124), zero-lower-bound-interest-rate-floors-distort-banking-book-margins-under-nirp (kết nối thách thức NIRP), coupon-floors-and-indicator-floors-induce-asymmetric-nii-exposures-in-negative-rates (kết nối thách thức NIRP).
 - 0 stub; 0 mục bỏ qua; --all sạch (996 trang, 0 lỗi, 0 mồ côi), --coverage tata_bank_alm sạch 100% cả 10/10 chunk (0 mục chưa phủ, [x]).
 - tata_bank_alm hoàn tất 100% (toàn bộ 10/10 chunk [x], 51 concept, cập nhật index.md §Sources + mục lục và 03_state/tata_bank_alm.md).
+
+## [2026-09-28:16-44-01] lint | 996 trang
+- --all sạch (996 trang, 0 lỗi, 0 mồ côi); --verify-sources: 192 file toàn vẹn, 20 file chưa kê; 17 nợ stub; 4 conflict cũ; 72 trang dồn link; 1 trang in đậm chia mục
+- 68 trang draft đủ điều kiện stable (outlink >= 1, backlink >= 2, không lỗi, không conflict); triage 19 mục inbox (3 xoá, 5 review-node, 11 chuẩn hóa/giữ)
+- Báo cáo: Claude outputs/lint-2026-09-28-996.md
+
+## [2026-09-28:16-51-43] lint | xử lý 5 khái niệm chưa có trang riêng
+- 5 concept mới (§5 Atomic): money-multiplier, liquidity-premium, capital-adequacy-ratio, banking-book, trading-book
+- Kết nối tự nhiên 2 chiều: cập nhật 7 trang liên quan, không đổi last_updated; cập nhật index.md
+- --all sạch 100% (1001 trang quét, 0 lỗi, 0 mồ côi); mọi trang mới đều đạt backlink >= 2

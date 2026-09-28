@@ -384,6 +384,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[consolidation-of-monetary-authorities-and-dmb-accounts-eliminates-internal-claims-to-determine-broad-money]] — *(analysis)* hợp nhất MA và DMB loại trừ trái quyền nội bộ, chuyển RM thành M2 qua số nhân và đối ứng NFA/NDA
 - [[change-in-net-foreign-assets-links-the-monetary-survey-to-the-balance-of-payments]] — ΔNFA = CAB + ΔFI = -ΔRES, cách tiếp cận tiền tệ với BOP
 - [[the-money-multiplier-links-reserve-money-to-the-money-supply]] — mm = (c+1)/(c+r)
+- [[money-multiplier]] — hệ số khuếch đại tiền cơ sở thành tiền rộng, mm = (c+1+b)/(c+rd+brt+re)
 - [[the-quantity-theory-links-money-velocity-prices-and-output]] — MV = PY
 - [[velocity-of-money]] — V = PY/M, vòng quay thu nhập của tiền (stub)
 - [[demand-for-money-is-a-demand-for-real-balances-driven-by-income-and-opportunity-cost]] — cầu số dư tiền thực
@@ -581,6 +582,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[interest-rate-structure-is-determined-by-default-risk-liquidity-taxes-and-maturity]] — khung 4 yếu tố xác định cấu trúc lãi suất, chuẩn mực kho bạc và phương trình Fisher mở rộng
 - [[default-risk-premium-widens-during-recessions-and-narrows-during-expansions]] — phần bù rủi ro vỡ nợ đo lường qua credit spread và quy luật vận động ngược chu kỳ
 - [[liquidity-premium-compensates-for-secondary-market-depth-and-transaction-costs]] — phần bù thanh khoản bù đắp độ sâu thị trường thứ cấp và chi phí giao dịch; sự hòa trộn với rủi ro vỡ nợ
+- [[liquidity-premium]] — phần bù thanh khoản: mức lợi suất thặng dư bù đắp cho rủi ro thanh khoản của công cụ tài chính kỳ hạn dài
 - [[tax-exemption-lowers-municipal-bond-yields-and-reveals-implicit-marginal-tax-rates]] — miễn thuế trái phiếu chính quyền địa phương tạo trợ cấp ngầm và phản ánh thuế suất biên ngầm qua arbitrage
 - [[pure-expectations-hypothesis-equates-long-term-rates-to-the-average-of-expected-short-rates]] — giả thuyết kỳ vọng thuần túy: lãi suất dài hạn bằng trung bình cộng không thiên lệch của lãi suất ngắn hạn kỳ vọng
 - [[liquidity-premium-hypothesis-explains-the-prevalence-of-upward-sloping-yield-curves]] — giả thuyết phần bù thanh khoản gia tăng theo kỳ hạn giải thích toàn diện tính đồng biến và ưu thế áp đảo của đường cong dốc lên
@@ -1095,6 +1097,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[ftp-governance-exception-handling-authorizes-ceo-and-alco-interventions]] — khung quản trị xử lý ngoại lệ FTP: thẩm quyền phê duyệt của Tổng Giám đốc và cơ chế can thiệp thủ công biên độ $\pm 0{,}2\%$ của ALCO
 
 **Chuẩn mực An toàn Vốn Ngân hàng theo Chuẩn Basel III (Thông tư 14/2025/TT-NHNN)**
+- [[capital-adequacy-ratio]] — tỷ lệ an toàn vốn: thước đo tỷ lệ vốn tự có trên tổng tài sản có rủi ro (CAR $\ge 8\%$) bảo đảm an toàn hệ thống
 - [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]] — khung tỷ lệ an toàn vốn 3 tầng (CAR $\ge 8\%$, Tier 1 $\ge 6\%$, CET1 $\ge 4{,}5\%$) theo Thông tư 14/2025/TT-NHNN và cơ chế đệm vốn D-SIB
 - [[standardized-approach-credit-risk-weights-and-exposure-measurement-govern-regulatory-rwa]] — phương pháp tiêu chuẩn đo lường RWA tín dụng khách hàng và rủi ro đối tác từ phơi nhiễm nội/ngoại bảng gộp
 - [[standardized-credit-risk-weights-and-asset-classification-hierarchy-govern-regulatory-capital]] — khung phân loại tài sản 7 nhóm, thứ tự ưu tiên nhận diện, hệ số rủi ro tín dụng chuẩn hóa (sovereign 0%, TCTD 10%–150%, nợ xấu 100%/150%, ma trận doanh nghiệp lớn 50%–160%, phạt 200%, bán lẻ 75%) và 6 tiêu chuẩn xếp hạng ECAI độc lập
@@ -1110,6 +1113,8 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[irb-governance-use-test-and-validation-standards-anchor-internal-ratings-credibility]] — khuôn khổ quản trị ba tuyến bảo vệ, thử nghiệm sử dụng (Use Test) 2 năm và chuẩn mực kiểm định mô hình định kỳ hàng năm
 - [[irb-system-design-operational-standards-and-pillar-3-disclosures]] — chuẩn mực thiết kế, vận hành hệ thống xếp hạng nội bộ IRB và công bố thông tin Trụ cột 3: cơ cấu 7+1 bậc doanh nghiệp, phân nhóm bán lẻ, kiểm soát ghi đè override, stress testing và chu kỳ công bố thông tin bán niên/năm
 - [[standardized-measurement-approach-and-internal-loss-multiplier-govern-operational-risk-capital]] — phương pháp đo lường chuẩn hóa SMA xác định vốn rủi ro hoạt động từ BIC (3 bậc lũy tiến) và hệ số tổn thất nội bộ ILM
+- [[banking-book]] — sổ ngân hàng: danh mục các vị thế tài sản, công nợ gắn với hoạt động kinh doanh cốt lõi hoặc nắm giữ đến hạn, chịu rủi ro IRRBB
+- [[trading-book]] — sổ kinh doanh: danh mục các vị thế tài sản, phái sinh nắm giữ với mục đích giao dịch ngắn hạn, chịu yêu cầu vốn rủi ro thị trường
 - [[trading-book-and-banking-book-boundary-enforces-market-risk-containment]] — ranh giới pháp lý phân định Sổ kinh doanh và Sổ ngân hàng, nguyên tắc chuyển dịch một chiều và cấm tuyệt đối chuyển tài sản từ Banking Book sang Trading Book
 - [[market-risk-capital-requirements-aggregate-interest-equity-fx-and-commodity-charges]] — tổng hợp vốn yêu cầu cho 5 trạng thái rủi ro thị trường (lãi suất, cổ phiếu, ngoại hối, hàng hóa, quyền chọn) và ngưỡng miễn trừ 2% vốn tự có
 - [[subordinated-debt-amortization-and-eligibility-criteria-govern-tier-2-capital]] — tiêu chuẩn nợ thứ cấp Vốn cấp 2, cơ chế khấu hao điều tiết 20%/năm trong 5 năm cuối, trần dự phòng 1.25% SA / 0.6% IRB và lộ trình bãi bỏ Thông tư 41/2016

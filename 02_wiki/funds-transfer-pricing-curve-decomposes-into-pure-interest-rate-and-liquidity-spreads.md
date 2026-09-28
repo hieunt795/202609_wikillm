@@ -7,7 +7,7 @@ status: stable
 last_updated: 2026-09-26
 ---
 
-Trong thiết kế hệ thống [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]], việc gộp chung rủi ro lãi suất và rủi ro thanh khoản vào một đường cong đơn lẻ sẽ gây ra các sai lệch nghiêm trọng khi định giá các cấu trúc sản phẩm phức tạp (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1641). Để khắc phục hạn chế này, đường cong giá chuyển nhượng vốn chuẩn mực được bóc tách một cách tường minh thành hai cấu phần độc lập: đường cong lãi suất phi rủi ro thuần túy (*pure interest rate risk curve*) và phần bù thanh khoản tài trợ vốn (*funding spread / liquidity premium*):
+Trong thiết kế hệ thống [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]], việc gộp chung rủi ro lãi suất và rủi ro thanh khoản vào một đường cong đơn lẻ sẽ gây ra các sai lệch nghiêm trọng khi định giá các cấu trúc sản phẩm phức tạp (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1641). Để khắc phục hạn chế này, đường cong giá chuyển nhượng vốn chuẩn mực được bóc tách một cách tường minh thành hai cấu phần độc lập: đường cong lãi suất phi rủi ro thuần túy (*pure interest rate risk curve*) và [[liquidity-premium|phần bù thanh khoản]] tài trợ vốn (*funding spread / liquidity premium*):
 $$FTP\ Rate = Risk\ Free\ Rate + Liquidity\ Premium$$
 (tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1641; tata_bank_alm, Ch.2, Interest Rate vs. Liquidity Risk, d.1661).
 

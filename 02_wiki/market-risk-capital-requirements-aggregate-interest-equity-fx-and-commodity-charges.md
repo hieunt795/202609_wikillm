@@ -7,7 +7,7 @@ status: stable
 last_updated: 2026-09-26
 ---
 
-Khuôn khổ xác định vốn yêu cầu cho rủi ro thị trường theo Thông tư 14/2025/TT-NHNN lượng hóa tổng tổn thất tiềm tàng phát sinh từ các biến động bất lợi của giá thị trường trên sổ kinh doanh và trạng thái ngoại hối của ngân hàng thương mại (sbv_circular_14_2025, file TT14_2.md, Điều 74, d.241–267). Rủi ro thị trường được phân rã thành năm cấu phần độc lập tương ứng với các nhóm tài sản tài chính cơ sở: lãi suất, cổ phiếu, ngoại hối và vàng, hàng hóa, cùng với các hợp đồng quyền chọn. Cơ chế cộng gộp trực tiếp này đảm bảo tính thận trọng tối đa của khung pháp lý tiêu chuẩn khi không giả định bất kỳ hiệu ứng đa dạng hóa hay tương quan giảm trừ rủi ro nào giữa các nhóm tài sản khác nhau.
+Khuôn khổ xác định vốn yêu cầu cho rủi ro thị trường theo Thông tư 14/2025/TT-NHNN lượng hóa tổng tổn thất tiềm tàng phát sinh từ các biến động bất lợi của giá thị trường trên [[trading-book|sổ kinh doanh]] và trạng thái ngoại hối của ngân hàng thương mại (sbv_circular_14_2025, file TT14_2.md, Điều 74, d.241–267). Rủi ro thị trường được phân rã thành năm cấu phần độc lập tương ứng với các nhóm tài sản tài chính cơ sở: lãi suất, cổ phiếu, ngoại hối và vàng, hàng hóa, cùng với các hợp đồng quyền chọn. Cơ chế cộng gộp trực tiếp này đảm bảo tính thận trọng tối đa của khung pháp lý tiêu chuẩn khi không giả định bất kỳ hiệu ứng đa dạng hóa hay tương quan giảm trừ rủi ro nào giữa các nhóm tài sản khác nhau.
 
 Tổng vốn yêu cầu cho rủi ro thị trường ($K_{MR}$) được tổng hợp theo công thức tuyến tính (sbv_circular_14_2025, file TT14_2.md, Điều 74.1, d.243–256):
 
