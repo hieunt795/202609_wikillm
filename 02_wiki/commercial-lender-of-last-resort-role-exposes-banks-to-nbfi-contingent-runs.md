@@ -3,8 +3,8 @@ title: commercial-lender-of-last-resort-role-exposes-banks-to-nbfi-contingent-ru
 type: concept
 tags: [liquidity-risk, stress-testing, nbfi, contingent-liquidity, off-balance-sheet]
 sources: [insights_59]
-status: draft
-last_updated: 2026-09-26
+status: stable
+last_updated: 2026-09-29
 ---
 
 Vai trò người cho vay thương mại cuối cùng (commercial lender of last resort) phản ánh vị thế bất đắc dĩ của các ngân hàng thương mại lớn khi trở thành nhà cung cấp thanh khoản dự phòng tối hậu cho các tổ chức tài chính phi ngân hàng (NBFIs), do phần lớn NBFIs không có quyền tiếp cận trực tiếp với cửa sổ tái cấp vốn khẩn cấp (discount window) của ngân hàng trung ương (insights_59, Section 5, Exploring interactions between banks and NBFIs, d.280–310).

@@ -3,8 +3,8 @@ title: basel-iii-lcr-master-factor-matrix-and-comprehensive-calibration-architec
 type: concept
 tags: [basel, basel-iii, lcr, liquidity, hqla, factor-matrix, run-off-rates, inflow-rates, haircuts, unwinding-mechanics, cap-formulas, master-calibration, bcbs-238, regulation]
 sources: [bcbs_238]
-status: draft
-last_updated: 2026-09-26
+status: stable
+last_updated: 2026-09-29
 ---
 
 Kiến trúc hiệu chỉnh tổng thể và ma trận tham số chuẩn tắc của Tỷ lệ Khả năng Chi trả theo Basel III (BCBS 238, Annex 1 & Annex 4) thiết lập một hệ thống toán học hoàn chỉnh tích hợp toàn bộ các tỷ lệ chiết khấu tài sản (haircuts), hệ số rút vốn dòng tiền ra (run-off rates), hệ số thu hồi dòng tiền vào (inflow rates), cơ chế hoàn trả giao dịch tài trợ có bảo đảm ngắn hạn (unwinding mechanics) và các chốt chặn trần cơ cấu danh mục nhằm xác định chính xác tỷ lệ đệm thanh khoản phòng vệ trong 30 ngày khủng hoảng gay gắt (bcbs_238, file bcbs238.md, Annex 1 & Annex 4, d.848–876, 1180–1263). Bằng cách tổng hợp toàn diện các tham số định lượng được phân bổ rải rác trong các chương chuyên môn, ma trận chuẩn tắc này đóng vai trò là kim chỉ nam điều tiết vĩ mô cho khối quản trị cân đối tài sản - nợ (ALM) và cơ quan thanh tra giám sát toàn cầu khi đánh giá tính tuân thủ của các tổ chức tín dụng.

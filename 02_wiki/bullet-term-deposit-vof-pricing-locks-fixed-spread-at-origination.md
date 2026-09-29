@@ -3,8 +3,8 @@ title: bullet-term-deposit-vof-pricing-locks-fixed-spread-at-origination
 type: concept
 tags: [alm, ftp, vof, deposits, bullet-deposits, market-1, nim-margin]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Trong cấu trúc điều chuyển vốn nội bộ Thị trường 1, sản phẩm tiền gửi có kỳ hạn thanh toán gốc một lần khi đáo hạn (bullet payment) với lãi suất cố định hoặc thả nổi được định giá mua vốn (VOF) dựa trên nguyên tắc khóa cố định biên độ tại thời điểm phát sinh giao dịch (vab_ftp_methodology, Điều 6.1.b, d.627–641). Trung tâm Điều chuyển Vốn Nội bộ (CFU) xác định lãi suất VOF cơ sở tương ứng trực tiếp với kỳ hạn gốc của khoản tiền gửi căn cứ vào biểu lãi suất VOF Thị trường 1 ban hành có hiệu lực tại ngày khách hàng mở tài khoản gửi tiền (vab_ftp_methodology, Điều 6.1.b.ii, d.630). Mức lãi suất VOF cơ sở này được áp dụng cố định trong suốt thời gian tồn tại của khoản tiền gửi, bất kể lãi suất huy động thực tế trả cho khách hàng biến động theo loại hình cố định hay thả nổi (vab_ftp_methodology, Điều 6.1.b.iii, d.638).

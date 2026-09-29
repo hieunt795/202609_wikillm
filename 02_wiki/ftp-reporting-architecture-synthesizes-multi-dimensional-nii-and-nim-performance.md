@@ -3,8 +3,8 @@ title: ftp-reporting-architecture-synthesizes-multi-dimensional-nii-and-nim-perf
 type: concept
 tags: [alm, ftp, reporting-architecture, nii, nim, performance-measurement, operational-cycle]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Mục tiêu tối hậu của hệ thống định giá chuyển nhượng nội bộ không chỉ dừng lại ở việc áp giá giao dịch mà là cung cấp một cơ sở thông tin đồng nhất, xác thực và kịp thời nhằm hỗ trợ Hội đồng ALCO và Ban Tổng Giám đốc ra quyết định lập kế hoạch, kiểm soát và điều hành bảng cân đối kế toán theo [[ftp-business-steering-functions-as-a-political-tool-for-balance-sheet-allocation]] (vab_ftp_methodology, Điều 14.1, d.1193). Khung kiến trúc báo cáo FTP được thiết kế theo các nguyên tắc chuẩn mực: tuân thủ nghiêm ngặt chính sách FTP; đồng nhất trong đo lường và phân tích hiệu quả thu nhập lãi thuần (Net Interest Income — NII) cùng biên thu nhập lãi thuần (Net Interest Margin — NIM); và tổng hợp đa chiều để nhận diện các sản phẩm hoặc đơn vị kinh doanh hoạt động kém hiệu quả theo [[planned-nim-allocation-determines-ftp-deposit-mobilization-margins]] (vab_ftp_methodology, Điều 14.2, d.1197–1202).

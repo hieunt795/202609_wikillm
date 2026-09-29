@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1268d6704d3585dc",
+        "id": "808aa73876857a7b",
         "type": "tabs",
         "children": [
           {
-            "id": "cd1dd01cae27a0bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01_sources/Clippings/ALM P8 – Từ phân tích vĩ mô đến phân tích ALM một ngân hàng.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ALM P8 – Từ phân tích vĩ mô đến phân tích ALM một ngân hàng"
-            }
-          },
-          {
-            "id": "402eb648baf6f744",
+            "id": "6fad618be46462fb",
             "type": "leaf",
             "state": {
               "type": "llm-wiki-graphify-view",
@@ -31,8 +17,7 @@
               "title": "Graphify View"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,15 +194,32 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "402eb648baf6f744",
+  "active": "6fad618be46462fb",
   "lastOpenFiles": [
-    "log.md.tmp.15564.7e93b9057bf3",
+    "Claude outputs/COMPREHENSIVE-SKILL-GUIDE.md",
+    "Claude outputs/research-2026-09-29-liquidity-risk-S3b.md",
+    "02_wiki/sedAkV0x5",
+    "Claude outputs/research-2026-09-29-liquidity-risk-S3a.md",
+    "02_wiki/sedlbvZfh",
+    "02_wiki/sedHWj5O7",
+    "02_wiki/sednO3gXh",
+    "02_wiki/sedcielBO",
+    "02_wiki/sedNUTUxg",
+    "Claude outputs/research-2026-09-29-liquidity-risk-S2c.md",
+    "Claude outputs/research-2026-09-29-liquidity-risk-S2b.md",
+    "log.md.tmp.14512.ca0ef96c5021",
+    "Claude outputs/research-2026-09-29-liquidity-risk-S2a.md",
+    "log.md.tmp.14512.2a718867d408",
+    "Claude outputs/research-2026-09-29-liquidity-risk-S1.md",
+    "log.md.tmp.14512.d4b03392d483",
+    "Claude outputs/research-2026-09-29-liquidity-risk-S0.md",
+    "Claude outputs/research-map-liquidity-risk.md",
+    "Claude outputs/research-map-liquidity-risk.md.tmp.14512.b6ad455316e3",
+    "01_sources/Clippings/ALM P8 – Từ phân tích vĩ mô đến phân tích ALM một ngân hàng.md",
     "Claude outputs/research-map-ftp.md",
     "Claude outputs/research-2026-09-29-bank-balance-sheet-balancing-sub1.md",
-    "02_wiki/sedKTQAtm",
     "02_wiki/bank-balance-sheet-balancing-reconciles-monetary-accounting-liquidity-gaps-and-economic-value.md",
     "01_sources/Clippings/ALM P7 – Cân đối tỷ lệ Không chỉ là TT22.md",
-    "01_sources/Clippings/ALM P8 – Từ phân tích vĩ mô đến phân tích ALM một ngân hàng.md",
     "01_sources/Clippings/Who’s Borrowing and Lending in Repo Markets.md",
     "02_wiki/trading-book.md",
     "02_wiki/banking-book.md",
@@ -225,27 +227,10 @@
     "02_wiki/liquidity-premium.md",
     "02_wiki/money-multiplier.md",
     "Claude outputs/lint-2026-09-28-996.md",
-    "Claude outputs/lint_temp_summary.json",
     "02_wiki/basis-risk-quantification-and-tenor-basis-swaps-in-alm.md",
     "02_wiki/macro-hedging-and-micro-hedging-strategies-in-the-banking-book.md",
     "02_wiki/irrbb-model-governance-and-independent-three-tier-validation-framework.md",
     "02_wiki/funds-transfer-pricing-as-an-irrbb-risk-transfer-and-steering-mechanism.md",
-    "02_wiki/balance-sheet-dynamics-assumptions-run-off-constant-and-dynamic-in-alm.md",
-    "02_wiki/effective-duration-and-effective-convexity-for-banking-book-optionalities.md",
-    "02_wiki/yield-curve-interpolation-and-discounting-mechanics-in-alm.md",
-    "02_wiki/reverse-stress-testing-quantitative-and-qualitative-mechanisms-for-irrbb.md",
-    "02_wiki/trapped-capital-and-cross-border-transferability-constraints-under-irrbb.md",
-    "02_wiki/pre-acquisition-review-and-hedging-approval-governance-for-irrbb.md",
-    "02_wiki/replicating-portfolio-optimization-methodology-for-nmds-and-equity.md",
-    "02_wiki/accounting-treatment-of-banking-book-amortised-cost-versus-fair-value-under-irrbb.md",
-    "02_wiki/interest-rate-shock-calibration-methodology-global-scalars-and-caps-floors.md",
-    "01_sources/vietnam-regulator",
-    "01_sources/New folder",
-    "01_sources/basel",
-    "log.md.tmp.17576.2ceb29d70502",
-    "02_wiki/quasi-fiscal-operations.md.tmp.17576.52c9ef42804f",
-    "02_wiki/sed5hdka7",
-    "02_wiki/sedH53pLM",
-    "decisions.md.tmp.15376.8b536048cda1"
+    "02_wiki/balance-sheet-dynamics-assumptions-run-off-constant-and-dynamic-in-alm.md"
   ]
 }

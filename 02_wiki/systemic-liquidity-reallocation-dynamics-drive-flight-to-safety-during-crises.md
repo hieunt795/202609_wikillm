@@ -3,8 +3,8 @@ title: systemic-liquidity-reallocation-dynamics-drive-flight-to-safety-during-cr
 type: concept
 tags: [liquidity-risk, stress-testing, systemic-risk, basel-iii, contagion]
 sources: [insights_59]
-status: draft
-last_updated: 2026-09-26
+status: stable
+last_updated: 2026-09-29
 ---
 
 Cơ chế dịch chuyển phân bổ thanh khoản hệ thống (systemic liquidity reallocation dynamics) phản ánh hiện tượng trong các cuộc khủng hoảng thanh khoản quy mô toàn ngành, tổng lượng thanh khoản thường không biến mất hoàn toàn khỏi nền kinh tế mà bị tái phân bổ mạnh mẽ: dòng tiền tháo chạy hàng loạt khỏi các ngân hàng bị nhận diện là yếu kém hoặc dễ tổn thương và tập trung dồn nén vào các định chế lớn có mức độ an toàn cao hơn (flight-to-safety / flight-to-quality) (insights_59, Section 2, Liquidity risk and types of liquidity stress test, d.92–105).

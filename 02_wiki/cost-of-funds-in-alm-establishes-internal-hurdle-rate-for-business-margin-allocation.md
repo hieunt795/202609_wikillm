@@ -3,8 +3,8 @@ title: cost-of-funds-in-alm-establishes-internal-hurdle-rate-for-business-margin
 type: concept
 tags: [cost-of-funds, ftp, hurdle-rate, margin-attribution, treasury, alm]
 sources: [tata_bank_alm]
-status: draft
-last_updated: 2026-09-28
+status: stable
+last_updated: 2026-09-29
 ---
 
 Chi phí vốn (Cost of Funds — CoF) trong quản trị Tài sản – Nợ (ALM) và định giá chuyển nhượng vốn nội bộ (FTP) là mức lãi suất mà Khối Nguồn vốn trung tâm (Treasury) có thể huy động vốn trên thị trường tài chính bán buôn theo các kênh tài trợ đặc thù của ngân hàng, đóng vai trò là mức lãi suất cơ sở (internal hurdle rate) để phân định biên lợi nhuận kinh doanh thương mại và tập trung hóa rủi ro hoán đổi kỳ hạn (tata_bank_alm, Ch.2, 2.3.2 Cost of Funds, d.1601–1610). 

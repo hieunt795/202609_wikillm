@@ -3,8 +3,8 @@ title: cash-flow-survival-period-metrics-identify-initial-liquidity-exhaustion-t
 type: concept
 tags: [liquidity-risk, stress-testing, survival-horizon, ecb-ssm, lcr]
 sources: [insights_59]
-status: draft
-last_updated: 2026-09-26
+status: stable
+last_updated: 2026-09-29
 ---
 
 Chỉ số chân trời sinh tồn theo dòng tiền (cash-flow survival period metric) là thước đo định lượng trong kiểm tra sức chịu đựng thanh khoản giám sát nhằm xác định chính xác số ngày hoặc tuần mà một tổ chức tín dụng có thể duy trì hoạt động thanh toán trước khi vùng đệm thanh khoản khả dụng bị cạn kiệt hoàn toàn dưới một kịch bản áp lực định trước (insights_59, Section 4, Sector-wide stress tests for liquidity risk, d.246–260).

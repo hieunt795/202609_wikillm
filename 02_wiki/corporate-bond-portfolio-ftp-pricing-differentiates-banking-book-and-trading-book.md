@@ -3,8 +3,8 @@ title: corporate-bond-portfolio-ftp-pricing-differentiates-banking-book-and-trad
 type: concept
 tags: [alm, ftp, cof, corporate-bonds, banking-book, trading-book, circular-41, market-1]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Hoạt động đầu tư và nắm giữ trái phiếu doanh nghiệp (TPDN) của ngân hàng thương mại đòi hỏi phương pháp luận FTP phải phân định rạch ròi mục đích kinh tế của danh mục giữa Sổ ngân hàng (Banking Book) và Sổ kinh doanh (Trading Book) theo đúng ranh giới quản trị rủi ro tại [[trading-book-and-banking-book-boundary-enforces-market-risk-containment]] (vab_ftp_methodology, Điều 6.2.m, d.947–953). Sự phân định này phản ánh tính chất thanh khoản và chân trời nắm giữ hoàn toàn khác biệt giữa khoản đầu tư tín dụng dài hạn với vị thế giao dịch ngắn hạn trên thị trường (vab_ftp_methodology, Điều 6.2.m.i–ii, d.949–953).

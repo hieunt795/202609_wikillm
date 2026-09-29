@@ -3,8 +3,8 @@ title: ftp-coordinates-asset-liability-structure-with-risk-adjusted-margin-alloc
 type: analysis
 tags: [alm, ftp, balance-sheet-structure, asset-liability-mismatch, margin-attribution, steering]
 sources: [tata_bank_alm]
-status: draft
-last_updated: 2026-09-28
+status: stable
+last_updated: 2026-09-29
 ---
 
 Cấu trúc tài sản – nợ (asset-liability structure) của một ngân hàng và cơ chế phân bổ biên lợi nhuận thông qua định giá chuyển giao vốn nội bộ (FTP) không thể tách rời: FTP là công cụ không chỉ để **phân bổ lợi nhuận đa mục tiêu** mà còn để **điều hướng cấu trúc cân đối** theo chiến lược của ngân hàng. Hai khía cạnh này tương tác trong một vòng phản hồi liên tục.

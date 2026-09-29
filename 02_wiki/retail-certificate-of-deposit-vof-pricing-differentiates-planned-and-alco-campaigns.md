@@ -3,8 +3,8 @@ title: retail-certificate-of-deposit-vof-pricing-differentiates-planned-and-alco
 type: concept
 tags: [alm, ftp, vof, certificates-of-deposit, retail-funding, alco-adjustments, market-1]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Hoạt động phát hành giấy tờ có giá (GTCG) như chứng chỉ tiền gửi và kỳ phiếu do mạng lưới chi nhánh bán lẻ phân phối cho khách hàng cá nhân và doanh nghiệp trên Thị trường 1 được ghi nhận trực tiếp vào sổ sách kế toán của các đơn vị kinh doanh (vab_ftp_methodology, Điều 6.1.e.i, d.704–706). Để cân bằng giữa mục tiêu kiểm soát chi phí huy động dài hạn và nhu cầu điều tiết khẩn cấp khe hở thanh khoản bảng cân đối, phương pháp luận FTP phân định cơ chế định giá mua vốn (VOF) thành hai trường hợp phát hành riêng biệt (vab_ftp_methodology, Điều 6.1.e.ii, d.707–712).

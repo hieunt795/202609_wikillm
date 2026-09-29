@@ -3,8 +3,8 @@ title: basel-iii-lcr-short-term-liquidity-stress-framework-and-buffer-usability
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, hqla, basel, basel-iii, stress-testing, buffer-usability, banking-supervision, bcbs-238]
 sources: [bcbs_238]
-status: draft
-last_updated: 2026-09-28
+status: stable
+last_updated: 2026-09-29
 ---
 
 Khuôn khổ Tỷ lệ khả năng chi trả (Liquidity Coverage Ratio - LCR) theo chuẩn mực Basel III (BCBS 238) thiết lập tiêu chuẩn an toàn thanh khoản ngắn hạn tối thiểu bắt buộc trên phạm vi toàn cầu, yêu cầu các ngân hàng thương mại hoạt động quốc tế phải nắm giữ một lượng tài sản có tính thanh khoản cao không bị ràng buộc (unencumbered High-Quality Liquid Assets - HQLA) đủ khả năng tự chuyển đổi thành tiền mặt tại thị trường tư nhân nhằm bù đắp toàn bộ dòng tiền rút ròng trong kịch bản căng thẳng thanh khoản kết hợp nghiêm trọng kéo dài 30 ngày dương lịch (bcbs_238, file bcbs238.md, Introduction & Part 1 Section I–II, Paragraphs 1–22, d.71–156).

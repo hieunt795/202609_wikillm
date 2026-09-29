@@ -3,8 +3,8 @@ title: margin-and-escrow-deposit-vof-pricing-evaluates-collateral-lock-up-intens
 type: concept
 tags: [alm, ftp, vof, margin-deposits, escrow, collateral, market-1]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Tiền gửi ký quỹ phát sinh từ các nghĩa vụ ràng buộc pháp lý chặt chẽ giữa khách hàng với ngân hàng nhằm bảo đảm thực hiện các nghĩa vụ liên quan đến tài sản có, bao gồm tiền gửi ký quỹ thực hiện giao dịch phái sinh tiền tệ và ký quỹ duy trì điều kiện kinh doanh trong các ngành nghề đặc thù có điều kiện như kinh doanh bảo hiểm, bán hàng đa cấp hoặc cho thuê lại lao động (vab_ftp_methodology, Điều 6.1.d.ii, d.689–690). Bản chất của số dư ký quỹ là bị phong tỏa tạm thời nhưng có thể giải tỏa khi nghĩa vụ bảo đảm chấm dứt, đặt ra yêu cầu đánh giá mức độ ràng buộc thanh khoản thực tế khi định giá mua vốn (VOF) (vab_ftp_methodology, Điều 6.1.d.ii, d.691–693).

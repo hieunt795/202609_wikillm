@@ -3,8 +3,8 @@ title: contingent-liquidity-outflow-shocks-quantify-downgrades-derivatives-and-f
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, contingent-outflows, credit-facilities, liquidity-facilities, downgrade-triggers, lookback-approach, derivatives, basel, basel-iii, bcbs-238]
 sources: [bcbs_238]
-status: draft
-last_updated: 2026-09-28
+status: stable
+last_updated: 2026-09-29
 ---
 
 Khuôn khổ lượng hóa các cú sốc dòng tiền tiềm tàng từ cam kết ngoại bảng và rủi ro gia tăng (Contingent Liquidity Outflow Shocks) theo chuẩn mực Basel III (BCBS 238) thiết lập hệ thống tham số định lượng chi tiết nhằm mô phỏng các rò rỉ thanh khoản đột ngột phát sinh từ các điều khoản hạ bậc xếp hạng tín nhiệm độc lập (3-notch downgrade), các nghĩa vụ ký quỹ phái sinh theo phương pháp hồi cứu lịch sử 24 tháng, và sự kích hoạt rút vốn ồ ạt từ các hạn mức tín dụng và thanh khoản đã cam kết chưa sử dụng (bcbs_238, file bcbs238.md, Part 1 Section II.B.1.iv, Paragraphs 116–141, d.507–578).

@@ -2,6 +2,46 @@
 
 > Nhật ký append-only, mỗi operation đúng 1 mục. Định dạng và danh sách `<op>`: `00_schema.md` §12. Lấy 5 mục gần nhất: `grep "^## \[" log.md | tail -5`.
 
+## [2026-09-29:22-14-18] research | liquidity-risk — S5a
+- Deep read: S5a 7 trang (LOLR & Emergency Facilities), 2 enrich (stub→draft, draft→stable)
+- Enrich: E1 central-bank-liquidity-facilities (expand from BCBS-238 P58; add facilities types + contingent role), E2 central-bank-risk-taking (add Pareto frontier + crisis reoptimization claim from Bindseil Ch.15)
+- Status: S5a complete (done 2026-09-29); 7/7 trang, 1 draft 6 stable; S5b pending (9 trang)
+- Validate: ✅ --all sạch (1033 page, 0 issue); Map updated: S5 split → S5a done / S5b pending
+
+## [2026-09-29:21-30-18] research | liquidity-risk — S3b
+- Deep read: S3b 10 node (3 draft + 7 stable), liquidity pricing & FX swap
+- Promote: 3 draft → stable (liquidity-premium, fx-liquidity-mgmt, fx-stress-testing; no link dead)
+- Báo cáo: Claude outputs/research-2026-09-29-liquidity-risk-S3b.md; Map: S3 complete (done 2026-09-29)
+
+## [2026-09-29:21-28-32] research | liquidity-risk — S3a
+- Deep read: S3a 10 node (1 draft + 9 stable), repo & funding markets
+- Promote: 1 draft → stable (treasury-repo-market; no link dead)
+- Báo cáo: Claude outputs/research-2026-09-29-liquidity-risk-S3a.md; Map: S3 split → S3a done / S3b pending
+
+## [2026-09-29:21-23-38] research | liquidity-risk — S0
+- Enrich: S0 3 draft (liquidity-premium, yield-curve, fixed-income-liquidity-search-costs): C1 FTP calibration, C2 inverted yield curve recession indicator, C3 dealer inventory management + bid-ask spread dynamics
+- Status: S0 now 100% done; map updated to "done 2026-09-29"
+- Validation: --all sạch (0 issue); all 3 pages last_updated → 2026-09-29
+
+## [2026-09-29:21-20-32] promote | liquidity-risk — S1 + S2a + S2b + S2c
+- Promote: 31 draft → stable (S1 5 + S2a 6 + S2b 14 + S2c 3); all passes validation --all
+- Status: S1/S2a/S2b/S2c now 100% stable; map updated to "done 2026-09-29"
+
+## [2026-09-29:21-15-xx] research | liquidity-risk — S2a
+- Deep read: S2a 12 node (6 draft + 6 stable), core FTP concepts; 1 analysis + 11 concept
+- Promote: 6 draft → stable (sau fix 4 link dead: deposit-money-balance-sheet, alm-balance-sheet, holistic-alm, regulatory-lcr-nsfr)
+- Báo cáo: Claude outputs/research-2026-09-29-liquidity-risk-S2a.md; Handoff: .claude/session_handoffs/2026-09-29-2115-liquidity-risk-S2a-deepread.md
+
+## [2026-09-29:21-03-31] research | liquidity-risk — S1
+- Deep read: S1 (15/15 trang), 5 draft + 10 stable; gần như hoàn chỉnh (chi tiết, không mỏng)
+- Recommend: Promote 5 draft → stable (không enrich claim); 2 link dead (ASF/RSF matrix, consolidated LCR) defer → /lint
+- Báo cáo: Claude outputs/research-2026-09-29-liquidity-risk-S1.md; Handoff: .claude/session_handoffs/2026-09-29-2130-liquidity-risk-S1-deepread.md
+
+## [2026-09-29:20-57-24] research | liquidity-risk — S0+map
+- Map: 137 node, 6 sub (S0–S5, all pending) | Deep: S0 (23/24 trang), enrich 3 draft
+- C1 liquidity-premium (FTP structural contribution), C2 yield-curve (inverted signal), C3 fixed-income-liquidity (bid-ask bounce); L1–L2 yield-curve theory links; struct: yield-curve >1200w (over-integrated, nên split)
+- Báo cáo: Claude outputs/research-2026-09-29-liquidity-risk-S0.md; map: research-map-liquidity-risk.md; status: S0 draft claims ready for write
+
 ## [2026-09-29:20-43-16] research | ftp — s5
 - Deep read S5 (5 trang): lcr-nsfr (4 chi phí pháp lý + ΔSpread formula), climate-risk (4 kênh + add-on), internal-liquidity, contingency-liquidity, entrusted-oda (tất cả đầy đủ)
 - Enrich: 0 — tất cả 5 trang stable+draft đã phủ chủ đề; gap: MTLL, ECB Stress Test, ESG carbon scoring
@@ -1452,3 +1492,13 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - C8 claim + L1 link | Pha 3 proposal approved, chờ ghi
 - Báo cáo: Claude outputs/research-2026-09-29-bank-balance-sheet-balancing-sub1.md
 
+
+## [2026-09-29:22-07-19] promote | liquidity-risk — S4a
+- Deep: S4a crisis dynamics (9 trang), 4 draft → stable
+- P: bank-run-equilibria, systemic-reallocation, bank-nbfi-contagion, digital-deposit-velocity
+- Báo cáo: Claude outputs/research-2026-09-29-liquidity-risk-S4a.md
+
+## [2026-09-29:22-11-42] promote | liquidity-risk — S4b
+- Deep: S4b deposit runoff & contingency (8 trang), 2 draft → stable
+- P: contingent-liquidity-outflow-shocks, commercial-lender-of-last-resort
+- S4 complete: 17/17 trang ✓

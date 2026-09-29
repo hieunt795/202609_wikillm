@@ -3,8 +3,8 @@ title: non-maturity-deposit-vof-pricing-combines-redemption-curve-and-regulatory
 type: concept
 tags: [alm, ftp, vof, casa, non-maturity-deposits, redemption-curve, circular-22]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Sản phẩm tiền gửi không kỳ hạn (CASA) của khách hàng đặt ra thách thức phức tạp nhất trong hệ thống định giá mua vốn (VOF) do khách hàng nắm quyền đơn phương rút tiền bất kỳ lúc nào nhưng một tỷ lệ lớn số dư tổng thể vẫn duy trì bền bỉ trên bảng cân đối qua thời gian (vab_ftp_methodology, Điều 6.1.d.i, d.649–654). Để lượng hóa đúng giá trị kinh tế của nguồn vốn chi phí thấp này, phương pháp luận FTP phân nhánh thành hai cơ chế xác định giá VOF cơ sở tùy thuộc vào mức độ hoàn thiện của hạ tầng mô hình hành vi tại ngân hàng (vab_ftp_methodology, Điều 6.1.d.i, d.655–676).

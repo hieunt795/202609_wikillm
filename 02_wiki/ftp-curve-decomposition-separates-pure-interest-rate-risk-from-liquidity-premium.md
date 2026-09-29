@@ -3,8 +3,8 @@ title: ftp-curve-decomposition-separates-pure-interest-rate-risk-from-liquidity-
 type: concept
 tags: [ftp, curve-construction, risk-decomposition, liquidity-premium, interest-rate-risk, risk-free-rate]
 sources: [tata_bank_alm]
-status: draft
-last_updated: 2026-09-28
+status: stable
+last_updated: 2026-09-29
 ---
 
 Đường cong FTP không phải một tổ hợp đơn chất mà là lớp ghép của hai thành phần rủi ro riêng biệt: (1) **đường cong lãi suất thuần túy** (pure interest rate risk curve) phản ánh chi phí tài trợ không có rủi ro tín dụng, và (2) **liquidity premium/funding spread** bổ sung để bù cho rủi ro thanh khoản và các đặc tính tài sản cụ thể (tata_bank_alm, Ch.2, 2.3.5, d.1639–1661).

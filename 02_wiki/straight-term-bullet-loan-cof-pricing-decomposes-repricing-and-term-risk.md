@@ -3,8 +3,8 @@ title: straight-term-bullet-loan-cof-pricing-decomposes-repricing-and-term-risk
 type: concept
 tags: [alm, ftp, cof, bullet-loans, straight-term, floating-rate, term-liquidity-spread, market-1]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Trong cơ chế định giá bán vốn (COF) Thị trường 1, sản phẩm cho vay thanh toán toàn bộ nợ gốc một lần khi đáo hạn (bullet loan hay straight-term) được phân tách thành hai quy trình định giá riêng biệt tùy thuộc vào cơ chế lãi suất theo hợp đồng tín dụng: cố định hoặc thả nổi (vab_ftp_methodology, Điều 6.2.b–c, d.725–741). Sự phân tách này phản ánh chính xác ranh giới kinh tế giữa rủi ro định giá lại lãi suất ngắn hạn và nghĩa vụ cam kết thanh khoản dài hạn của ngân hàng theo cấu trúc hai vế tại [[vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing]].

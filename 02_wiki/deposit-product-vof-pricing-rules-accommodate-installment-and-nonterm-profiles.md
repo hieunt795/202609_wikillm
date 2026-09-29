@@ -3,8 +3,8 @@ title: deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-pro
 type: concept
 tags: [alm, ftp, vof, deposits, casa, installment-deposits, redemption-curve, circular-22]
 sources: [vab_ftp_methodology, sbv_draft_circular_replace_22]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Trong hệ thống định giá chuyển nhượng nội bộ của ngân hàng thương mại, giá mua vốn (Value of Funds — VOF) áp dụng cho các tài sản nợ Thị trường 1 được thiết lập nhằm bảo đảm mọi đơn vị huy động vốn đều nhận được sự bù đắp công bằng cho thanh khoản cung ứng theo [[vof-and-cof-dual-curve-structure-defines-market-1-ftp-pricing]] (vab_ftp_methodology, Điều 6.1.a, d.618–621). Tuy nhiên, do các sản phẩm tiền gửi của khách hàng sở hữu cấu trúc dòng tiền, kỳ hạn và quyền chọn hành vi rất đa dạng, Hội đồng ALCO ban hành các quy tắc định giá VOF chuyên biệt cho từng cấu trúc sản phẩm thay vì áp dụng một công thức cào bằng (vab_ftp_methodology, Điều 6.1.a, d.621). Khung phân loại sản phẩm huy động vốn Thị trường 1 bao gồm 6 nhóm cấu trúc kỹ thuật: tiền gửi trả gốc một lần khi đáo hạn, tiền gửi tích lũy định kỳ (gửi góp), tiền gửi không kỳ hạn (CASA), tiền gửi ký quỹ, giấy tờ có giá bán lẻ và chế tài chuyển đổi khi khách hàng tất toán trước hạn (vab_ftp_methodology, Điều 6.1, d.627–713; Điều 6.3.a, d.954–961).

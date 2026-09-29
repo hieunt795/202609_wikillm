@@ -3,8 +3,8 @@ title: digital-deposit-velocity-and-uninsured-deposit-concentration-accelerate-b
 type: concept
 tags: [liquidity-risk, stress-testing, bank-run, fintech, uninsured-deposits, basel-iii]
 sources: [insights_59]
-status: draft
-last_updated: 2026-09-26
+status: stable
+last_updated: 2026-09-29
 ---
 
 Sự cộng hưởng giữa công nghệ ngân hàng số và mức độ tập trung cao của tiền gửi không bảo hiểm (digital deposit velocity and uninsured deposit concentration) đã làm biến đổi căn bản động thái tháo chạy tiền gửi, đẩy tốc độ rút tiền (run-off velocity) vượt xa mọi giả định tham số trong các khung quản trị thanh khoản truyền thống (insights_59, Section 6, Challenges and areas for future development, d.384–402).

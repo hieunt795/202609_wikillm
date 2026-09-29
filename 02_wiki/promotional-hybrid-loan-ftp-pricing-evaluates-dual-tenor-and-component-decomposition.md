@@ -3,7 +3,7 @@ title: promotional-hybrid-loan-ftp-pricing-evaluates-dual-tenor-and-component-de
 type: concept
 tags: [alm, ftp, cof, promotional-loans, hybrid-loans, component-decomposition, dual-tenor, market-1]
 sources: [vab_ftp_methodology]
-status: draft
+status: stable
 last_updated: 2026-09-29
 ---
 

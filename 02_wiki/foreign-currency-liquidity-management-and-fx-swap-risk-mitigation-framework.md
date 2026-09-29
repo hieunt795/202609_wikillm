@@ -3,8 +3,8 @@ title: foreign-currency-liquidity-management-and-fx-swap-risk-mitigation-framewo
 type: concept
 tags: [basel, principles, bcbs-144, liquidity-risk, foreign-exchange, fx-swap, currency-mismatch, market-risk, cross-currency-funding]
 sources: [bcbs_144]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Khuôn khổ quản trị rủi ro thanh khoản ngoại tệ và giảm thiểu rủi ro hoán đổi ngoại hối theo Nguyên tắc 5(c) của BCBS 144 bắt buộc ngân hàng phải đánh giá toàn diện nhu cầu thanh khoản ngoại tệ tổng hợp và xác lập hệ thống hạn mức khe hở lệch tiền tệ có thể chấp nhận được đối với từng đồng tiền có quy mô hoạt động trọng yếu (bcbs_144, file bcbs144.md, Principle 5.c, d.252–255). Do các ngân hàng trung ương quốc gia chỉ có thể đóng vai trò người cứu trợ thanh khoản cuối cùng (Lender of Last Resort) đối với đồng nội tệ mà không thể tự do phát hành ngoại tệ, rủi ro thanh khoản ngoại tệ mang tính tổn thương cấu trúc đặc biệt nghiêm trọng, đòi hỏi một chiến lược quản trị độc lập và thận trọng cho từng loại ngoại tệ thay vì bù trừ cơ học trên bảng cân đối tổng thể (bcbs_144, file bcbs144.md, Principle 5.c, d.254).

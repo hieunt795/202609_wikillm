@@ -3,8 +3,8 @@ title: bank-nbfi-liquidity-contagion-transmits-via-counterparty-and-asset-liquid
 type: concept
 tags: [liquidity-risk, stress-testing, nbfi, systemic-risk, contagion, fire-sales]
 sources: [insights_59]
-status: draft
-last_updated: 2026-09-26
+status: stable
+last_updated: 2026-09-29
 ---
 
 Cơ chế lây truyền rủi ro thanh khoản giữa ngân hàng và định chế tài chính phi ngân hàng (bank-NBFI liquidity contagion) vận hành chủ yếu thông qua hai kênh truyền dẫn tương hỗ: kênh đối tác trực tiếp (counterparty channel) và kênh thanh lý tài sản gián tiếp (asset liquidation channel) (insights_59, Section 5, Exploring interactions between banks and NBFIs, d.272–295).

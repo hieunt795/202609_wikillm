@@ -3,8 +3,8 @@ title: treasury-repo-market-operates-through-three-distinct-client-segments
 type: concept
 tags: [repo-market, monetary-policy, financial-plumbing, primary-dealers]
 sources: [clippings]
-status: draft
-last_updated: 2026-09-28
+status: stable
+last_updated: 2026-09-29
 ---
 
 Thị trường hợp đồng mua lại Kho bạc Mỹ ([[repurchase-agreement|repo]]) vận hành theo cấu trúc mạng lưới trục bánh xe và nan hoa (hub-and-spoke network) gồm ba phân khúc khách hàng chuyên biệt, trong đó các nhà tạo lập thị trường sơ cấp (primary dealers) đóng vai trò là những trạm trung chuyển thanh khoản trung tâm kết nối các định chế không thể giao dịch trực tiếp với nhau (clippings, Thị trường Repo Fed, Cấu trúc Hub-and-Spoke, file A Framework for Understanding the U.S. Treasury Repo Market.md, d.16–18).

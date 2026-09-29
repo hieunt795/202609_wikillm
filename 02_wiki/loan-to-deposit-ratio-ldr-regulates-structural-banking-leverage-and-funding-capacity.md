@@ -3,8 +3,8 @@ title: loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-fundi
 type: concept
 tags: [banking, alm, ldr, loan-to-deposit, liquidity, funding-structure, treasury, regulation, basel, principles]
 sources: [sbv_draft_circular_replace_22, bcbs_144, clippings]
-status: draft
-last_updated: 2026-09-28
+status: stable
+last_updated: 2026-09-29
 ---
 
 Tỷ lệ dư nợ cấp tín dụng so với huy động vốn (Loan-to-Deposit Ratio - LDR) là chỉ tiêu điều hành cấu trúc thanh khoản cốt lõi của Ngân hàng Nhà nước Việt Nam, nhằm khống chế mức độ sử dụng đòn bẩy huy động tiền gửi để tài trợ cho tăng trưởng tín dụng, ngăn ngừa nguy cơ mất cân đối thanh khoản cơ cấu và bảo đảm các ngân hàng thương mại duy trì nguồn vốn tự tài trợ bền vững (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Điều 13, d.353–394).

@@ -3,8 +3,8 @@ title: overdue-loan-ftp-pricing-freezes-original-cof-and-forfeits-promotional-sp
 type: concept
 tags: [alm, ftp, cof, overdue-loans, non-performing-loans, loan-restructuring, market-1]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Khi khách hàng vay không thực hiện nghĩa vụ thanh toán nợ gốc đúng hạn theo hợp đồng tín dụng hoặc phát sinh nợ quá hạn đối với từng đợt trả gốc định kỳ, khoản cấp tín dụng lập tức bị chuyển nhóm nợ và kích hoạt cơ chế điều chỉnh định giá bán vốn nội bộ (COF) (vab_ftp_methodology, Điều 6.2.g.i, d.814–816). Cơ chế FTP nợ quá hạn được thiết kế nhằm phản ánh trung thực chi phí nguồn vốn bị chôn chặt mà không cho phép đơn vị kinh doanh hưởng lợi từ các chính sách ưu đãi ban đầu (vab_ftp_methodology, Điều 6.2.g.ii, d.817–819).

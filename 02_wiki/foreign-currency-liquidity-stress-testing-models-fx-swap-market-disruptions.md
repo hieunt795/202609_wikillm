@@ -3,8 +3,8 @@ title: foreign-currency-liquidity-stress-testing-models-fx-swap-market-disruptio
 type: concept
 tags: [liquidity-risk, stress-testing, fx-swap, cross-border, riksbank]
 sources: [insights_59]
-status: draft
-last_updated: 2026-09-26
+status: stable
+last_updated: 2026-09-29
 ---
 
 Kiểm tra sức chịu đựng thanh khoản ngoại tệ (foreign currency liquidity stress testing) là mô hình giám sát chuyên biệt nhằm đánh giá khả năng duy trì thanh khoản bằng các đồng tiền chủ chốt (đặc biệt là USD và EUR) của các ngân hàng thương mại phụ thuộc vào nguồn tài trợ bán buôn xuyên biên giới, tập trung mô phỏng nguy cơ đứt gãy và đóng băng đột ngột của thị trường hoán đổi tiền tệ ngắn hạn (FX swap market disruptions) (insights_59, Section 4, Sector-wide stress tests for liquidity risk, d.227–245).

@@ -3,8 +3,8 @@ title: basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buf
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, hqla, basel, basel-iii, cash-outflows, run-off-rates, regulation, bcbs-238]
 sources: [sbv_draft_circular_replace_22, bcbs_238]
-status: draft
-last_updated: 2026-09-28
+status: stable
+last_updated: 2026-09-29
 ---
 
 Tỷ lệ khả năng chi trả (Liquidity Coverage Ratio - LCR) là chuẩn mực an toàn thanh khoản ngắn hạn cốt lõi thuộc hiệp ước Basel III (BCBS 238), được Ngân hàng Nhà nước Việt Nam chuẩn hóa tại Dự thảo Thông tư thay thế Thông tư 22/2019/TT-NHNN nhằm bảo đảm ngân hàng thương mại và chi nhánh ngân hàng nước ngoài luôn duy trì một bộ đệm tài sản có tính thanh khoản cao không bị ràng buộc (HQLA), đủ năng lực tự hấp thụ và bù đắp các dòng tiền rút ròng đột biến trong kịch bản căng thẳng thanh khoản kết hợp gay gắt kéo dài 30 ngày dương lịch (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Điều 17–21, d.461–580; Phụ lục I, d.873–1713; bcbs_238, file bcbs238.md, Introduction & Part 1 Section I–II, Paragraphs 1–22, d.71–156).

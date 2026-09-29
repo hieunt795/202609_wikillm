@@ -3,8 +3,8 @@ title: non-maturity-credit-facility-cof-pricing-applies-behavioral-redemption-cu
 type: concept
 tags: [alm, ftp, cof, non-maturity-credit, overdraft, credit-cards, behavioral-models, market-1]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Các sản phẩm cấp tín dụng không xác định kỳ hạn cố định như hạn mức thấu chi và thẻ tín dụng có đặc thù vận hành hai lớp rủi ro tách biệt: phần hạn mức cam kết chưa giải ngân tiềm ẩn rủi ro thanh khoản ngoại bảng được kiểm soát qua phụ phí dự phòng theo [[contingent-liquidity-charge-prices-undrawn-credit-commitments]], trong khi phần dư nợ đã giải ngân thực tế phải chịu giá bán vốn (COF) nội bảng theo phương pháp mô hình hóa hành vi (vab_ftp_methodology, Điều 6.2.f, d.782–786).

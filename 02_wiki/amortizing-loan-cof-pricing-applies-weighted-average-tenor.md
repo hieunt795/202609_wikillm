@@ -3,8 +3,8 @@ title: amortizing-loan-cof-pricing-applies-weighted-average-tenor
 type: concept
 tags: [alm, ftp, cof, amortizing-loans, wat, weighted-average-tenor, floating-rate, market-1]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Đối với các sản phẩm cho vay có lịch trình thanh toán nợ gốc chia thành nhiều kỳ định kỳ (amortizing loans) như cho vay mua nhà trả góp, cho vay mua ô tô hoặc cấp tín dụng trung dài hạn tài trợ dự án, dòng tiền hoàn vốn giảm dần theo thời gian làm cho kỳ hạn rủi ro thực tế của khoản vay ngắn hơn đáng kể so với kỳ hạn pháp lý cuối cùng của hợp đồng tín dụng (vab_ftp_methodology, Điều 6.2.d.i, d.744; Điều 6.2.e.i, d.760). Để phản ánh chính xác chi phí cam kết nguồn vốn nội bộ, Trung tâm Điều chuyển Vốn Nội bộ (CFU) áp dụng phương pháp Bình quân gia quyền (Weighted Average) nhằm lượng hóa Kỳ hạn hiệu lực (Weighted Average Tenor — WAT) của khoản vay (vab_ftp_methodology, Điều 6.2.d.iii, d.746–754):

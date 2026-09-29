@@ -3,8 +3,8 @@ title: installment-deposit-vof-pricing-preserves-commercial-margin
 type: concept
 tags: [alm, ftp, vof, installment-deposits, margin-preservation, deposits, market-1]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Đối với các sản phẩm tiền gửi tích lũy định kỳ (gửi góp), dòng tiền huy động phát sinh phân tán thành nhiều đợt nộp tiền định kỳ xuyên suốt kỳ hạn hợp đồng thay vì tập trung một lần tại ngày giải ngân ban đầu (vab_ftp_methodology, Điều 6.1.c.i, d.644). Đặc tính dòng tiền tích lũy dần này khiến chi phí lãi thực tế mà ngân hàng chi trả cho khách hàng gửi góp thường chênh lệch so với tiền gửi truyền thống, đòi hỏi phương pháp luận FTP phải thiết lập một kỹ thuật bù đắp biên độ thương mại (*margin preservation*) nhằm bảo đảm sự công bằng thù lao cho mạng lưới chi nhánh bán lẻ (vab_ftp_methodology, Điều 6.1.c.ii, d.645).

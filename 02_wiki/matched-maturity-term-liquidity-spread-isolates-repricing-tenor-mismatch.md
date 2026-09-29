@@ -3,8 +3,8 @@ title: matched-maturity-term-liquidity-spread-isolates-repricing-tenor-mismatch
 type: concept
 tags: [alm, ftp, matched-maturity, term-liquidity-spread, floating-rate, repricing-mismatch, wat]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Trong cấu trúc định giá bán vốn (Cost of Funds — COF) của hệ thống [[matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions]], các khoản tín dụng lãi suất thả nổi đặt ra một nghịch lý kép về quản trị kỳ hạn: rủi ro lãi suất chỉ tồn tại trong chu kỳ tái định giá ngắn hạn (ví dụ 1 tháng hoặc 3 tháng một lần), nhưng rủi ro thanh khoản — tức nghĩa vụ cam kết tài trợ nguồn vốn của ngân hàng cho khách hàng vay — lại kéo dài suốt toàn bộ kỳ hạn gốc của khoản vay (ví dụ 5 năm hoặc 10 năm) (vab_ftp_methodology, Điều 6.2.c, d.732–739). Nếu ngân hàng chỉ áp giá FTP theo kỳ hạn tái định giá 3 tháng, đơn vị kinh doanh sẽ được hưởng chi phí vốn ngắn hạn rất thấp trong khi đẩy toàn bộ rủi ro thanh khoản dài hạn cho khối Nguồn vốn gánh chịu mà không phải trả phí (vab_ftp_methodology, Điều 6.2.c.iv, d.738–739). Ngược lại, nếu áp giá FTP theo kỳ hạn gốc 5 năm cố định, đơn vị kinh doanh sẽ bị thiệt thòi khi lãi suất thị trường suy giảm và chịu rủi ro lệch pha định giá lại theo [[interest-rate-gap-risk-stems-from-repricing-timing-mismatches]].

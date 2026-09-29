@@ -3,8 +3,8 @@ title: bank-run-equilibria-governed-by-asset-liquidity-tiers-and-central-bank-co
 type: concept
 tags: [monetary, central-banking, bank-runs, multiple-equilibria, collateral-haircuts, liquidity-tiers, lolr]
 sources: [bindseil_monetary_policy]
-status: draft
-last_updated: 2026-09-28
+status: stable
+last_updated: 2026-09-29
 ---
 
 Cân bằng tháo chạy tiền gửi theo các tầng thanh khoản tài sản và tỷ lệ chiết khấu của ngân hàng trung ương (bank run equilibria governed by asset liquidity tiers and central bank collateral haircuts) được Ulrich Bindseil mô hình hóa nhằm nội sinh hóa dòng tiền gửi và làm rõ vai trò giải cứu của chính sách tài sản thế chấp trong khủng hoảng ngân hàng (bindseil_monetary_policy, d.2773–2822). Thay vì đưa ra các giả định ngoại sinh về biến động tiền gửi, mô hình thiết lập mối liên kết toán học giữa cấu trúc thanh khoản tài sản nội bảng của ngân hàng thương mại, tỷ lệ chiết khấu (haircut $h$) của ngân hàng trung ương (NHTW), và sự chuyển dịch giữa trạng thái cân bằng ổn định và cân bằng sụp đổ hoảng loạn.

@@ -3,8 +3,8 @@ title: extended-loan-ftp-pricing-resets-cof-to-cumulative-maturity
 type: concept
 tags: [alm, ftp, cof, loan-extensions, restructuring, cumulative-maturity, market-1]
 sources: [vab_ftp_methodology]
-status: draft
-last_updated: 2026-09-27
+status: stable
+last_updated: 2026-09-29
 ---
 
 Khi khách hàng đề nghị và được ngân hàng chấp thuận cơ cấu lại thời hạn trả nợ dưới hình thức kéo dài thời gian vay ngoài thời hạn thỏa thuận ban đầu, khoản tín dụng chuyển sang trạng thái gia hạn nợ và làm thay đổi căn bản kỳ hạn cam kết nguồn vốn của bảng cân đối kế toán (vab_ftp_methodology, Điều 6.2.h.i, d.823–826). Để phản ánh chính xác chi phí cơ hội của việc nguồn vốn bị chiếm dụng lâu hơn dự kiến, Trung tâm Điều chuyển Vốn Nội bộ (CFU) kích hoạt quy trình tái xác định giá bán vốn (COF) dựa trên kỳ hạn tích lũy mới (vab_ftp_methodology, Điều 6.2.h.ii, d.829).

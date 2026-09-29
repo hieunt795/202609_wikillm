@@ -3,8 +3,8 @@ title: central-bank-risk-taking-and-liquidity-support-trade-off
 type: concept
 tags: [monetary, central-banking, lolr, risk-management, efficient-frontier, collateral-framework]
 sources: [bindseil_monetary_policy]
-status: draft
-last_updated: 2026-09-21
+status: stable
+last_updated: 2026-09-29
 ---
 
 Sự đánh đổi giữa chấp nhận rủi ro của NHTW và hỗ trợ thanh khoản hệ thống (central bank risk-taking and liquidity support trade-off) được Bindseil (2014, Ch.15, §15.1, d.3445–3490) mô hình hóa như bài toán tối ưu hóa phúc lợi xã hội trên đường biên hiệu quả, giải quyết mâu thuẫn giữa nguyên tắc bảo toàn vốn của NHTW và sự ổn định của hệ thống tài chính trong khủng hoảng.
@@ -26,3 +26,5 @@ Khi khủng hoảng nổ ra, các ngân hàng bị siết chặt đồng thời 
 - Tại mỗi cường độ khủng hoảng $\Omega_1 > \Omega_0$, tồn tại một **đường biên hiệu quả (efficient frontier)** biểu diễn mức thanh khoản $L$ tối đa đạt được tương ứng với từng mức rủi ro $R$. Điểm tối ưu chính sách $(R^*, L^*)$ là tiếp điểm giữa đường biên hiệu quả và đường bàng quan phúc lợi (indifference curve).
 
 **Sự bất khả thi của trạng thái quán tính tuyệt đối**: Bindseil chứng minh rằng khi khủng hoảng xảy ra ($\Omega$ chuyển từ $\Omega_0$ sang $\Omega_1$), nếu NHTW giữ nguyên hoàn toàn khuôn khổ cũ $F^*(\Omega_0)$ (trạng thái quán tính), tọa độ rủi ro - thanh khoản $(R(F^*(\Omega_0), \Omega_1), L(F^*(\Omega_0), \Omega_1))$ hầu như không bao giờ nằm trên đường biên hiệu quả mới. NHTW bắt buộc phải tái hiệu chỉnh véc-tơ $F^*(\Omega_1)$ để thích ứng với trạng thái cân bằng mới, phân bổ tối ưu giữa mức độ bảo vệ an toàn bảng cân đối của mình và sự cứu trợ thanh khoản cho nền kinh tế (bindseil_monetary_policy, Ch.15, §15.1, d.3472–3490). Mối quan hệ giữa hai biến số này dẫn trực tiếp tới hiện tượng [[endogenous-risk-and-upward-sloping-haircut-loss-curve|rủi ro nội sinh và đường cong tổn thất dốc lên]].
+
+**Hàm ý chính sách**: Sự phụ thuộc lẫn nhau giữa hàm phúc lợi xã hội $W(R, L)$ và đường biên hiệu quả thay đổi theo trạng thái của thị trường ($\Omega$) có nghĩa là không tồn tại một **khuôn khổ tối ưu duy nhất cho mọi tình huống**. Trong giai đoạn bình thường ($\Omega_0$ thấp), NHTW có thể duy trì một khuôn khổ thắt chặt với haircut cao và danh mục tài sản bảo đảm hạn chế, giảm thiểu rủi ro bảng cân đối. Tuy nhiên, khi khủng hoảng nổ ra và $\Omega$ tăng vọt, cùng một khuôn khổ sẽ làm suy giảm mạnh mẽ thanh khoản của hệ thống — nếu NHTW không sẵn sàng nói lỏng haircut, mở rộng danh mục thế chấp và chấp nhận rủi ro cao hơn, thì nguy cơ sụp đổ hệ thống sẽ tăng cao hơn bất kỳ tổn thất tài chính nào mà NHTW có thể gánh chịu từ chính sách nới lỏng. Do vậy, hành động dũng cảm (Bagehot's brave plan) không phải là lựa chọn tùy tiện mà là **kế hoạch an toàn duy nhất** dưới điều kiện khủng hoảng (bindseil_monetary_policy, Ch.15, §15.1, d.3472–3490).

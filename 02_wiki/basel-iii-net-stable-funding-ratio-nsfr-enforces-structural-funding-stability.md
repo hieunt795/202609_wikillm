@@ -3,8 +3,8 @@ title: basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stabi
 type: concept
 tags: [banking, alm, liquidity-risk, nsfr, asf, rsf, basel-iii, funding-stability, derivatives, regulation]
 sources: [sbv_draft_circular_replace_22, tata_bank_alm]
-status: draft
-last_updated: 2026-09-28
+status: stable
+last_updated: 2026-09-29
 ---
 
 Tỷ lệ nguồn vốn ổn định ròng (Net Stable Funding Ratio - NSFR) là chuẩn mực điều hành cấu trúc thanh khoản trung và dài hạn cốt lõi của hiệp ước Basel III, được Ngân hàng Nhà nước nội luật hóa tại Dự thảo Thông tư thay thế Thông tư 22/2019/TT-NHNN nhằm thiết lập kỷ luật tài trợ bền vững, buộc các ngân hàng thương mại và chi nhánh ngân hàng nước ngoài phải tài trợ các tài sản dài hạn và hoạt động ngoại bảng bằng các nguồn vốn có tính ổn định tương thích trong chân trời một năm (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Điều 22–26, d.580–706; Phụ lục II, d.1714–1908).

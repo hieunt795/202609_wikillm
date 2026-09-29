@@ -3,8 +3,8 @@ title: contractual-maturity-ladder-and-cash-flow-reporting-framework-monitors-lc
 type: concept
 tags: [banking, alm, liquidity-risk, lcr, cash-flow-ladder, contractual-maturity, reporting-template, sbv, regulation]
 sources: [sbv_draft_circular_replace_22]
-status: draft
-last_updated: 2026-09-26
+status: stable
+last_updated: 2026-09-29
 ---
 
 Ngân hàng Nhà nước Việt Nam bắt buộc ngân hàng thương mại và chi nhánh ngân hàng nước ngoài lập biểu mẫu báo cáo chi tiết dòng tiền ra và dòng tiền vào định kỳ theo thời hạn hợp đồng (Contractual Maturity Ladder) nhằm kiểm soát độ lệch pha thanh khoản theo thời gian và theo dõi các dòng tiền phát sinh vượt quá phạm vi 30 ngày của [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]] (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Phụ lục I Phần D, d.1618–1622). Cấu trúc biểu mẫu báo cáo chi tiết yêu cầu phân rã toàn bộ dòng tiền hợp đồng thành 7 dải kỳ hạn độc lập: ngày tiếp theo, từ 2 đến 7 ngày, từ 8 đến 14 ngày, từ 15 đến 30 ngày, từ 31 đến 180 ngày, từ 181 ngày đến 1 năm, và trên 1 năm (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Phụ lục I Phần D, d.1625–1627). Các nguyên tắc phân loại và xác định dòng tiền áp dụng nhất quán với các hệ số chiết khấu chuẩn hóa trong khung đo lường LCR.
