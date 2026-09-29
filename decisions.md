@@ -265,3 +265,11 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 
 - **Quyết định:** người dùng nâng số ý chính ở bước duyệt của ingest lên 5–10.
 - **Lý do:** người dùng chọn. Ý chính là để bàn, không khoanh phạm vi (phạm vi do danh sách mục và `--coverage` giữ), nên số ý lớn hơn giúp chunk dày không bị nén thành vài ý chung mà không làm lỏng cổng độ phủ.
+
+## [2026-09-29] `/research` tổ chức lại theo pha Map → Deep read, không tách `research-node`/`research-topic`
+
+- **Quyết định:** bỏ trục chức năng A/B/C và câu hỏi "chạy A/B/C nào"; skill chia hai pha. **Map** quét metadata + neighborhood 1 vòng, chia chủ đề thành subcluster ≤ 15 node, lưu `Claude outputs/research-map-<chủ đề>.md` có trạng thái từng sub. **Deep read** đọc 1 sub/lượt (≤ 15 trang), enrich ≤ 7 trang (≤ 3 claim/trang, ưu tiên `draft`), trình proposal gộp có mã mục C/L/K/N ≤ 20 mục. Đầu vào là trang/danh sách/sub có sẵn thì vào thẳng Deep read. Schema §4 đổi 10/5 → 15/7.
+- **Lý do không tách skill:** "node research" chỉ là Deep read một sub cỡ 1; tách skill nhân đôi các luật chunk `[x]`/conflict/inbox/status/§7.5 và làm ranh giới với `/review-node` mờ hơn, lại thêm op vào schema §12.
+- **Lý do lưu map:** lượt "bank sources-and-uses" 2026-09-28 chia 3 sub nhưng ranh giới sub chỉ nằm trong chat và handoff; lượt sau phải quét lại.
+- **Chặn scope creep:** các lượt 2026-09-28 tự dọn format "Xem thêm" (việc của lint), tạo 2 trang mới ngoài proposal, và đẩy 5/7 trang `stable → draft` một lượt. Skill mới cấm mọi thay đổi ngoài mục đã duyệt và ưu tiên enrich trang `draft`.
+- **Không dùng:** hai bản phân tích cũ `Claude outputs/research-skill-analysis.md`, `research-dual-approach.md` (thiết kế dạng thư viện Python/flag, lệch bản chất skill).

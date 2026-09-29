@@ -1,6 +1,11 @@
 # Log
 
 > Nhật ký append-only, mỗi operation đúng 1 mục. Định dạng và danh sách `<op>`: `00_schema.md` §12. Lấy 5 mục gần nhất: `grep "^## \[" log.md | tail -5`.
+
+## [2026-09-28:23-21-49] research | alm-efficiency-cluster-analysis-reconciliation
+- Cluster 16 trang ALM/FTP + 3 mới; phân tích A: 1 trùng lặp page, 3 analysis/bridge tạo mới
+- A1 xoá duplicate `regulatory-cost-add-ons...` (giữ `regulatory-lcr-and-nsfr...` stable); A2 thêm link tới 4 analysis + balance-sheet pages; A3 tạo `structural-contribution-measures...` (analysis)
+- Validate pass: 0 errors, 0 orphan
 >
 > Lý do các quyết định: `decisions.md`. Mục có giờ `00-00-00` là mục cũ không lưu giờ. Bản log đầy đủ trước khi rút gọn: `git show e2adb7a:log.md`.
 
@@ -1375,3 +1380,37 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
   5. `bank-run-equilibria-governed-by-asset-liquidity-tiers-and-central-bank-collateral-haircuts` (Ch.12, d.2773–2822: mô hình tháo chạy tiền gửi nội sinh qua 3 tầng thanh khoản $\Lambda, \Pi, 1-\Lambda-\Pi$; ngưỡng vốn tối thiểu $E^* = \frac{1}{1-h+h(\Lambda+\Pi)}-2$; NHTW hạ haircut từ 80% xuống 60% dập tắt đa cân bằng hoảng loạn).
 - Chuẩn hóa trích dẫn và kết nối hai chiều: cập nhật 3 trang hiện có (`endogenous-risk-and-upward-sloping-haircut-loss-curve` d.3493–3531; `bindseil-jablecki-risk-endogeneity-and-two-errors-model` d.3532–3606; `lender-of-last-resort-moral-hazard-and-liquidity-externalities` d.3627–3638); kết nối 2 chiều tới `martingale-property-of-overnight-rates-and-reserve-averaging`, `functions-of-reserve-requirements-in-monetary-policy`, `central-bank-financial-accounts-model`, `mechanics-of-liquidity-crises-and-feedback-loops`, `operational-target-of-monetary-policy`, `money-multiplier`, `collateral-scarcity-and-effective-term-funding-costs`, `market-impact-of-collateral-framework-and-leverage-constraints`, `bank-runs-investor-strikes-and-multiple-equilibria`, `securities-lending-programmes-and-central-bank-collateral-swaps`.
 - --coverage bindseil_monetary_policy đạt 100% (toàn bộ 19/19 chunk [x], 0 mục chưa phủ); --all sạch (1029 trang quét, 0 lỗi, 0 mồ côi); cập nhật 03_state/bindseil_monetary_policy.md và 02_wiki/index.md §Sources.
+
+## [2026-09-28:22-37-09] research | Balance Sheet Structure — Turn 1 chọc sâu cụm 8 trang MA/DMB
+- Cluster 8 trang (autonomus-factors, analytical-MA/DMB, typical-MA/DMB, three-tiers, worked-example, policy-anchor); tất cả `stable`, backlink: 3–11
+- A: Thêm link bổ sung `autonomous-factors → policy-anchor` (ba cách đọc bảng cân đối), `analytical-DMB → reserve-demand mechanics` (mở rộng impact)
+- B: Enrich từ 3 nguồn (imf_macro_accounting Ch.5 [x], bindseil_monetary_policy Ch.2 [x], cargill_central_bank_policy Ch.12 [x]) chưa hoàn thành — cần đọc chi tiết từng trang
+- C: Gap báo cáo: cụm cover cấu trúc tĩnh, chưa cover dynamics (thay đổi qua operations); chưa cover contingent/off-balance items; chưa liên hệ với BOP
+- Báo cáo: Claude outputs/research-2026-09-28-balance-sheet-structure.md
+
+## [2026-09-28:23-04-46] research | Cân đối nguồn - sử dụng nguồn ngân hàng (Sub-cluster 1)
+- Cluster 7 trang; enrich 5 trang (`maturity-balancing`, `the-typical-deposit-money-bank`, `the-analytical-deposit-money-bank`, `alm-balance-sheet-balancing`, `duration-gap-analysis`)
+- 7 claim mới tại 5 trang; 4 link nội bộ; 1 analysis mới (`bank-balance-sheet-balancing-reconciles-...`); dọn dẹp link xem thêm; validate --all sạch (1030 trang, 0 lỗi, 0 mồ côi)
+- Báo cáo: Claude outputs/research-2026-09-28-bank-sources-and-uses-balance-sheet.md
+
+## [2026-09-28:23-11-10] research | Cân đối nguồn - sử dụng nguồn ngân hàng (Sub-cluster 2)
+- Cluster 6 trang FTP; enrich 5 trang (`cost-of-funds-...`, `funds-transfer-pricing-...`, `vietnam-banking-ftp-...`, `balance-sheet-optimization-...`, `ftp-business-steering-...`).
+- 5 claim mới (đóng góp cơ cấu, phân rã kép kỳ hạn, CFU vs Thị trường 2, tối ưu hóa tỷ suất Sharpe nội bộ, thẩm quyền ngoại lệ ALCO/CEO); 2 link chéo tới trang analysis; validate --all sạch (1030 trang, 0 lỗi, 0 mồ côi).
+- Báo cáo: Claude outputs/research-2026-09-28-bank-sources-and-uses-sub2-ftp.md
+
+
+## [2026-09-28:23-11-56] research | alm-efficiency-funding-ftp-decomposition
+- Cluster 16 trang (5 draft mỏng + 2 trang mới); enrich 7 trang tổng cộng
+- 14 claim mới: 2 trang mới (FTP decomposition, regulatory costs), enrich 2 trang mỏng (cost-of-funds, nim-allocation)
+- Báo cáo: Claude outputs/research-2026-09-28-alm-efficiency.md
+
+## [2026-09-28:23-28-14] research | alm-efficiency-complete-ftp-plus-analysis
+- Extend: enrich 1 trang thêm, tạo 1 trang analysis kết nối FTP + Balance Sheet
+- 1 trang enrich: alm-balance-sheet-balancing (+ FTP steering political aspect)
+- 1 trang analysis: ftp-coordinates-asset-liability-structure-with-risk-adjusted-margin-allocation (synthesis)
+- Báo cáo: Claude outputs/research-2026-09-28-alm-efficiency-extended.md
+
+## [2026-09-29:19-31-05] schema | Tổ chức lại `/research` theo pha Map → Deep read
+- SKILL.md viết lại: map subcluster lưu file, deep read ≤ 15 / enrich ≤ 7, proposal mã mục ≤ 20
+- `00_schema.md` §2, §3, §4, §9 và bảng operation trong `CLAUDE.md` cập nhật theo
+- Lý do: decisions.md [2026-09-29]

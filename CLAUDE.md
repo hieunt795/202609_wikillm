@@ -31,7 +31,7 @@ Quy trình thực thi nằm trong skill, nạp theo nhu cầu. Skill là nguồn
 | Kiểm tra sức khoẻ | `/lint` | toàn bộ `02_wiki/` + `_inbox.md` → báo cáo, triage inbox, danh sách *Đủ điều kiện `stable`* | §4–§9, §11, §12 |
 | Nâng `draft → stable` | `/promote` | danh sách người dùng đã duyệt → đổi `status` | §7.5, §9, §12 |
 | Review đối chiếu nguồn | `/review-node` | trang chỉ định hoặc hàng đợi (≤ 5 trang) → `reviewed_by: model`, sửa claim sai | §7–§10, §12 |
-| Đào sâu cụm trang | `/research` | chủ đề/danh sách trang (≤ 10 đọc, ≤ 5 enrich) → 1 bản đề xuất gộp chờ duyệt → claim mới từ chunk `[x]`, link, tuỳ chọn `analysis` + báo cáo gap | Không khi đề xuất; §7, §9, §10 (+ §1, §8 nếu tạo `analysis`) khi ghi |
+| Đào sâu vùng tri thức | `/research` | chủ đề → map subcluster (`research-map-<chủ đề>.md`); trang/sub → deep read 1 sub (≤ 15 đọc, ≤ 7 enrich) → proposal gộp chờ duyệt → claim mới từ chunk `[x]`, link, conflict, tuỳ chọn `analysis` + báo cáo gap | Không khi đề xuất; §7, §9, §10 (+ §1, §8 nếu tạo `analysis`) khi ghi |
 
 Ingest, query, lint, research dùng mẫu **hai lượt**: lượt 1 quét frontmatter (rẻ), lượt 2 chỉ mở full content trang đã xác định là cần. Đây là cơ chế kiểm soát token chính.
 
