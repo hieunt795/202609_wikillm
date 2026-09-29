@@ -1,0 +1,18 @@
+---
+title: ftp-curve-decomposition-separates-pure-interest-rate-risk-from-liquidity-premium
+type: concept
+tags: [ftp, curve-construction, risk-decomposition, liquidity-premium, interest-rate-risk, risk-free-rate]
+sources: [tata_bank_alm]
+status: draft
+last_updated: 2026-09-28
+---
+
+Đường cong FTP không phải một tổ hợp đơn chất mà là lớp ghép của hai thành phần rủi ro riêng biệt: (1) **đường cong lãi suất thuần túy** (pure interest rate risk curve) phản ánh chi phí tài trợ không có rủi ro tín dụng, và (2) **liquidity premium/funding spread** bổ sung để bù cho rủi ro thanh khoản và các đặc tính tài sản cụ thể (tata_bank_alm, Ch.2, 2.3.5, d.1639–1661).
+
+Đường cong lãi suất risk-free có nhiều phương pháp xây dựng tùy vào bối cảnh thị trường và yêu cầu quyền định giá, mỗi phương pháp có ưu nhược điểm riêng (tata_bank_alm, Ch.2, 2.3.5, d.1643–1657): trong thị trường Mỹ, đường cong kho bạc Mỹ (U.S. Treasury curve) từ chứng chỉ nợ phát hành mới được dùng làm risk-free benchmark vì nước Mỹ có quyền in tiền pháp định; ở vùng đồng euro, không nước nào riêng lẻ có quyền in euro, nên phải dùng đường cong từ trái phiếu nợ chủ quyền được xếp hạng AAA hoặc từ lãi suất ngắn hạn rủi ro thấp (eSTR); thị trường repo cho phép xây dựng đường cong gần risk-free từ lãi suất tài trợ có thế chấp (collateralized lending), nhưng nhược điểm là repo thường chỉ thanh khoản tới 1–2 năm và dễ đông cứng thời khủng hoảng tài chính; đường cong lãi suất swap dựa trên EURIBOR mở rộng tới 30 năm và khá thanh khoản, nhưng phản ánh rủi ro tín dụng giữa ngân hàng chứ không thực sự risk-free.
+
+**Liquidity premium** — hay funding spread — được cộng thêm vào đường cong risk-free để tạo thành FTP curve cuối cùng. Mức spread này phụ thuộc đặc tính cụ thể của tài sản: chứng chỉ nợ chất lượng cao và thanh khoản tốt (có thể dùng thế chấp trong thị trường repo) được tài trợ rẻ; tài sản ít thanh khoản, chất lượng thấp phải tài trợ trên cơ sở không có thế chấp (unsecured) → chi phí tài trợ cao hơn (tata_bank_alm, Ch.2, 2.3.5, d.1659). Ngân hàng tính toán mức liquidity premium trung bình bằng cách so sánh chi phí tài trợ hiện tại của mình qua các kênh chính: ví dụ nếu ngân hàng phát hành nợ kỳ hạn 2 năm loại fixed-rate ở mức 3% và loại floating-rate ở mức 2,2%, thì liquidity spread cho kỳ hạn 2 năm là 80 basis points (80bp) cộng thêm lãi suất risk-free (tata_bank_alm, Ch.2, 2.3.5, d.1659). Cách tiếp cận này được gọi là *marginal funding cost method*: ngân hàng xác định liquidity premium từ chi phí biên tế của việc huy động thêm một đơn vị vốn tại thị trường bán buôn hiện tại, phản ánh rủi ko tín dụng của ngân hàng thông qua chênh lệch giữa lãi suất cố định (phản ánh rủi ko tín dụng đầy đủ) và lãi suất nổi (chỉ phản ánh rủi ko lãi suất ngắn hạn) mà các lender sẵn sàng cấp cho ngân hàng — cách này đảm bảo FTP curve luôn phản ánh chi phí cạnh tranh thực tế trên thị trường tài chính mở (tata_bank_alm, Ch.2, 2.3.5, d.1659).
+
+Cách chia tách FTP curve thành hai thành phần này tạo điều kiện để định giá những sản phẩm mà kỳ hạn của chỉ số lãi suất tham chiếu khác với kỳ hạn hợp đồng của công cụ, một tình huống phổ biến trong ngân hàng phái sinh (tata_bank_alm, Ch.2, 2.3.5, d.1661). Ví dụ, một khoản cho vay kỳ hạn 2 năm nhưng lãi suất chỉ cố định 1 năm (lãi suất reset lại sau 1 năm) sẽ được định giá FTP bằng cách kết hợp lãi suất risk-free 1 năm (1,6%) cộng liquidity premium 80bp = 2,4% tổng cộng, chứ không phải so sánh trực tiếp với risk-free 2 năm.
+
+Decomposition này liên quan trực tiếp tới cách [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]] và giúp ngân hàng hiểu rõ hơn các yếu tố tác động tới [[cost-of-funds-in-alm-establishes-internal-hurdle-rate-for-business-margin-allocation]] của từng giao dịch.

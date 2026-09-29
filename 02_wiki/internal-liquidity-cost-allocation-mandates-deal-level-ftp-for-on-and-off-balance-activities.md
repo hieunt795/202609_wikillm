@@ -4,7 +4,7 @@ type: concept
 tags: [basel, principles, bcbs-144, alm, ftp, liquidity-charge, contingent-liquidity, internal-pricing, product-approval]
 sources: [bcbs_144]
 status: stable
-last_updated: 2026-09-26
+last_updated: 2026-09-29
 ---
 
 Nguyên tắc 4 của BCBS 144 đặt ra nghĩa vụ quản trị bắt buộc đối với các ngân hàng thương mại trong việc kết cấu toàn diện chi phí thanh khoản, lợi ích thanh khoản và rủi ro thanh khoản vào cơ chế định giá chuyển nhượng vốn nội bộ (Funds Transfer Pricing — FTP), hệ thống đo lường hiệu quả kinh doanh đã điều chỉnh rủi ro và quy trình thẩm định phê duyệt sản phẩm mới cho mọi hoạt động kinh doanh trọng yếu nội bảng và ngoại bảng, nhằm triệt tiêu hiện tượng lệch pha động cơ kinh doanh và bảo đảm các quyết định nhận lãnh rủi ro của từng đơn vị cơ sở hoàn toàn nhất quán với khẩu vị rủi ro thanh khoản chung của toàn ngân hàng (bcbs_144, file bcbs144.md, Principle 4, d.173–177). Trước cuộc khủng hoảng 2007–2008, các khối kinh doanh thường được hưởng lợi nhuận kế toán danh nghĩa khổng lồ bằng cách tạo lập các tài sản kém thanh khoản hoặc cấp các cam kết tín dụng dự phòng với mức phí rẻ mạt mà không phải chịu bất kỳ khoản phụ phí thanh khoản nội bộ nào, do toàn bộ chi phí tài trợ dự phòng và rủi ro thanh lý tài sản bị đẩy sang khối Nguồn vốn (Treasury) gánh chịu (bcbs_144, file bcbs144.md, Introduction & Principle 4, d.64, 177).

@@ -11,6 +11,8 @@ Autonomous factors là tất cả các mục trên bảng cân đối ngân hàn
 
 Các ví dụ điển hình gồm: (i) tiền giấy lưu hành — có xu hướng và tính mùa vụ rõ ràng; (ii) tiền gửi của chính phủ tại NHTW — dao động khi chính phủ thu thuế hoặc thực hiện thanh toán; (iii) tài sản đối ngoại ròng khi NHTW can thiệp thị trường ngoại hối; (iv) danh mục đầu tư vì mục đích quản lý dự trữ (không phải mục đích chính sách tiền tệ); (v) IMF rút tín dụng từ NHTW (bindseil_monetary_policy, Ch.2, §2.5, d.591). Ở cấp độ từng khoản mục, mọi khoản nợ trên bảng cân đối ngân hàng trung ương (trừ tiền gửi của DMB) đều mang tính chất hút thanh khoản (liquidity-absorbing), trong khi mọi khoản tài sản đều mang tính chất cung ứng thanh khoản (liquidity-providing); do đó, nhân tố tự định ròng được định nghĩa từ phía nợ theo công thức: $\text{Net autonomous factors} = \text{Tiền giấy} + \text{Tiền gửi chính phủ} - \text{Dự trữ ngoại hối} - \text{Danh mục đầu tư}$ (bindseil_monetary_policy, Ch.2, §2.5, d.599–619).
 
+Cách Bindseil đọc bảng cân đối NHTW (gom các khoản mục tự định ròng) là một trong [[the-policy-anchor-decides-whether-net-foreign-assets-are-autonomous-on-the-central-bank-balance-sheet|ba cách đọc khác nhau theo neo chính sách]]: IMF tập trung vào tiền dự trữ, Cargill vào tiền cơ sở, còn Bindseil vào tiền gửi của ngân hàng làm biến cần giải thích.
+
 Đồng nhất thức bảng cân đối NHTW sắp xếp lại thành:
 
 $$\text{Tiền gửi ngân hàng} = \text{Monetary policy operations} - \text{Net autonomous factors}$$

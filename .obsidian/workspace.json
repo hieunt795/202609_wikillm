@@ -4,11 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "96e41d8dbb93a182",
+        "id": "1268d6704d3585dc",
         "type": "tabs",
         "children": [
           {
-            "id": "096b12a65ff6e419",
+            "id": "cd1dd01cae27a0bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01_sources/Clippings/ALM P8 – Từ phân tích vĩ mô đến phân tích ALM một ngân hàng.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ALM P8 – Từ phân tích vĩ mô đến phân tích ALM một ngân hàng"
+            }
+          },
+          {
+            "id": "402eb648baf6f744",
             "type": "leaf",
             "state": {
               "type": "llm-wiki-graphify-view",
@@ -17,7 +31,8 @@
               "title": "Graphify View"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -79,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 284.5
+    "width": 284.5,
+    "collapsed": true
   },
   "right": {
     "id": "82a18120639685fd",
@@ -193,8 +209,16 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "096b12a65ff6e419",
+  "active": "402eb648baf6f744",
   "lastOpenFiles": [
+    "log.md.tmp.15564.7e93b9057bf3",
+    "Claude outputs/research-map-ftp.md",
+    "Claude outputs/research-2026-09-29-bank-balance-sheet-balancing-sub1.md",
+    "02_wiki/sedKTQAtm",
+    "02_wiki/bank-balance-sheet-balancing-reconciles-monetary-accounting-liquidity-gaps-and-economic-value.md",
+    "01_sources/Clippings/ALM P7 – Cân đối tỷ lệ Không chỉ là TT22.md",
+    "01_sources/Clippings/ALM P8 – Từ phân tích vĩ mô đến phân tích ALM một ngân hàng.md",
+    "01_sources/Clippings/Who’s Borrowing and Lending in Repo Markets.md",
     "02_wiki/trading-book.md",
     "02_wiki/banking-book.md",
     "02_wiki/capital-adequacy-ratio.md",
@@ -215,13 +239,6 @@
     "02_wiki/replicating-portfolio-optimization-methodology-for-nmds-and-equity.md",
     "02_wiki/accounting-treatment-of-banking-book-amortised-cost-versus-fair-value-under-irrbb.md",
     "02_wiki/interest-rate-shock-calibration-methodology-global-scalars-and-caps-floors.md",
-    "02_wiki/six-standardised-interest-rate-shock-scenarios-and-mathematical-formulations.md",
-    "02_wiki/economic-value-at-risk-evar-framework-and-alm-simulation-techniques.md",
-    "02_wiki/equity-endowment-effect-and-replicating-portfolio-in-alm.md",
-    "02_wiki/interest-rate-theoretical-decomposition-and-csrbb-boundary.md",
-    "02_wiki/standardised-delta-eve-calculation-and-multi-currency-aggregation-rules.md",
-    "02_wiki/automatic-interest-rate-options-standardised-valuation-and-volatility-shocks.md",
-    "02_wiki/standardised-term-deposit-early-redemption-risk-and-tdrr-scalars.md",
     "01_sources/vietnam-regulator",
     "01_sources/New folder",
     "01_sources/basel",
@@ -229,7 +246,6 @@
     "02_wiki/quasi-fiscal-operations.md.tmp.17576.52c9ef42804f",
     "02_wiki/sed5hdka7",
     "02_wiki/sedH53pLM",
-    "decisions.md.tmp.15376.8b536048cda1",
-    "Claude outputs/eval-review-research-iter1.html"
+    "decisions.md.tmp.15376.8b536048cda1"
   ]
 }

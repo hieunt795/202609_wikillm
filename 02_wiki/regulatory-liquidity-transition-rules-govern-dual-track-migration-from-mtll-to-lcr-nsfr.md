@@ -3,8 +3,8 @@ title: regulatory-liquidity-transition-rules-govern-dual-track-migration-from-mt
 type: concept
 tags: [banking, alm, liquidity-risk, regulatory-transition, dual-track, mtll, lcr, nsfr, early-adoption, circular-22, regulation]
 sources: [sbv_draft_circular_replace_22]
-status: stable
-last_updated: 2026-09-26
+status: draft
+last_updated: 2026-09-28
 ---
 
 Cơ chế chuyển tiếp quy chuẩn thanh khoản (Regulatory Liquidity Transition Rules) theo Dự thảo Thông tư thay thế Thông tư 22/2019/TT-NHNN thiết lập một lộ trình quản lý song trùng (dual-track mechanism) mang tính bước ngoặt trong lịch sử giám sát ngân hàng tại Việt Nam, nhằm chuyển đổi căn bản từ công cụ hành chính tĩnh — tỷ lệ tối đa của nguồn vốn ngắn hạn được sử dụng để cho vay trung hạn và dài hạn (MTLL) — sang bộ đôi chuẩn mực thanh khoản động hiện đại của Basel III là [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]] và [[basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stability]] (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Điều 14, 29, 37–39, d.395–406, 751–763, 807–857).
@@ -21,14 +21,14 @@ Nhằm thúc đẩy các tổ chức tín dụng tiên phong nâng cấp năng l
   2. **Miễn tỷ lệ khả năng chi trả cũ**: Không phải tuân thủ và báo cáo tỷ lệ khả năng chi trả truyền thống của Thông tư 22;
   3. **Miễn tỷ lệ CDR**: Được miễn tuân thủ tỷ lệ dư nợ trên tiền gửi CDR.
 
-Quy định này dỡ bỏ rào cản hạn chế nguồn vốn ngắn hạn cho vay dài hạn đối với các ngân hàng có bộ đệm tài sản thanh khoản cao (HQLA) vững mạnh và cơ cấu nguồn vốn ổn định sẵn có (ASF) dồi dào.
+Quy định này dỡ bỏ rào cản hạn chế nguồn vốn ngắn hạn cho vay dài hạn đối với các ngân hàng có bộ đệm tài sản thanh khoản cao (HQLA) vững mạnh và cơ cấu nguồn vốn ổn định sẵn có (ASF) dồi dào. Tuy nhiên, Dự thảo vẫn giữ nguyên tỷ lệ CDR (dư nợ trên tiền gửi — Credit-to-Deposit Ratio) trong khung pháp lý mới, và ngay cả các ngân hàng đã đạt chuẩn áp dụng sớm vẫn phải tiếp tục nộp báo cáo song song theo chế độ cũ trong thời kỳ quá độ khoảng 2 năm (đến khoảng 01/10/2028) (clippings, Cụm 1, file DTTT thay thế TT22.md, d.15). Tỷ lệ CDR tồn tại song hành với [[loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity]] như hai chỉ tiêu cân đối cơ cấu cùng khống chế đòn bẩy tín dụng trong giai đoạn chuyển tiếp.
 
 **2. Cơ chế quản lý song trùng (Dual-Track) đối với các ngân hàng chưa đạt chuẩn**
 
 Đối với các tổ chức tín dụng chưa đạt ngưỡng $LCR \ge 100\%$ và $NSFR \ge 100\%$, Thông tư duy trì cơ chế chuyển tiếp thận trọng nhằm tránh tạo ra khoảng trống pháp lý hoặc gây sốc thanh khoản (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Điều 14.1, Điều 37.3, d.401, 812–813):
 - **Bắt buộc duy trì tỷ lệ MTLL**: Tiếp tục thực hiện và tuân thủ nghiêm ngặt quy định về tỷ lệ khả năng chi trả và tỷ lệ tối đa nguồn vốn ngắn hạn cho vay trung dài hạn theo Thông tư 22/2019/TT-NHNN cho đến hết ngày 31 tháng 12 năm 2027;
 - **Bắt buộc báo cáo song song**: Vẫn phải nộp báo cáo định kỳ theo chế độ thống kê hiện hành;
-- **Cấm công bố thông tin sai lệch**: Các ngân hàng đang trong quá trình chuyển tiếp chưa đạt chuẩn 100% **tuyệt đối không được công bố thông tin** về việc tuân thủ sớm các tỷ lệ LCR và NSFR ra công chúng, nhằm ngăn chặn hành vi tiếp thị đánh bóng hình ảnh (window dressing) khi chưa được kiểm toán độc lập xác thực.
+- **Cấm công bố thông tin sai lệch**: Các ngân hàng đang trong quá trình chuyển tiếp chưa đạt chuẩn 100% **tuyệt đối không được công bố thông tin** về việc tuân thủ sớm các tỷ lệ LCR và NSFR ra công chúng, nhằm ngăn chặn hành vi tiếp thị đánh bóng hình ảnh (window dressing) khi chưa được kiểm toán độc lập xác thực; TCTD nếu cố tình tự ý truyền thông hoặc công bố tỷ lệ LCR/NSFR đạt chuẩn ra thị trường mà chưa có văn bản chấp thuận của NHNN và ý kiến kiểm toán độc lập không ngoại trừ sẽ bị đình chỉ ngay quyền đăng ký áp dụng sớm và bị thanh tra toàn diện về việc tuân thủ Thông tư 22 (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Điều 14.3 & Điều 37.3, d.405, d.812–815).
 
 **3. Phương án khắc phục và chế tài cưỡng chế sau thời hạn chuyển tiếp (Điều 29–30)**
 
@@ -51,4 +51,5 @@ Kỷ luật thực thi chuyển tiếp được siết chặt bằng hệ thốn
 - **Cục Quản lý, giám sát TCTD**: Tiếp nhận công văn đăng ký áp dụng sớm, giám sát thực hiện phương án xử lý chuyển tiếp, và xử lý vi phạm;
 - **Vụ Chính sách tiền tệ & Sở Giao dịch**: Tham mưu điều chỉnh hệ số RSF trong các nghiệp vụ can thiệp CSTT (OMO, tái cấp vốn) để không xung đột với chỉ tiêu thanh khoản của các ngân hàng.
 
-Xem thêm: [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]], [[basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stability]], [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]], [[deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-profiles]], [[loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity]], [[statutory-capital-real-value-and-remedial-mechanisms-govern-bank-solvency]], [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]].
+Quá trình chuyển tiếp thanh khoản song trùng này phối hợp chặt chẽ với khung an toàn vốn ba tầng [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]], cơ chế bảo toàn giá trị vốn thực có [[statutory-capital-real-value-and-remedial-mechanisms-govern-bank-solvency]], tỷ lệ khống chế đòn bẩy cho vay trên huy động [[loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity]], và biểu giá mua bán vốn nội bộ linh hoạt theo [[deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-profiles]] cùng [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]]. Khi các rào cản chuyển tiếp được hoàn tất, ngân hàng đạt được sự giải phóng cấu trúc quan trọng, tạo tiền đề đồng bộ giữa các chiều kích hạch toán và giá trị thanh khoản ròng theo [[bank-balance-sheet-balancing-reconciles-monetary-accounting-liquidity-gaps-and-economic-value]].
+

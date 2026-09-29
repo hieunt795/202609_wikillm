@@ -2,6 +2,38 @@
 
 > Nhật ký append-only, mỗi operation đúng 1 mục. Định dạng và danh sách `<op>`: `00_schema.md` §12. Lấy 5 mục gần nhất: `grep "^## \[" log.md | tail -5`.
 
+## [2026-09-29:20-43-16] research | ftp — s5
+- Deep read S5 (5 trang): lcr-nsfr (4 chi phí pháp lý + ΔSpread formula), climate-risk (4 kênh + add-on), internal-liquidity, contingency-liquidity, entrusted-oda (tất cả đầy đủ)
+- Enrich: 0 — tất cả 5 trang stable+draft đã phủ chủ đề; gap: MTLL, ECB Stress Test, ESG carbon scoring
+- Validate: ✅ 0 errors; S5 → done 2026-09-29; **FTP MAP COMPLETE** 37/37 node (100%); File map: Claude outputs/research-map-ftp.md
+
+## [2026-09-29:20-42-17] research | ftp — s4b
+- Deep read S4b (6 trang): C2 entrusted-oda bilateral ODA + cross-currency basis mở rộng; L1-L3 link (all exist, pages missing)
+- Enrich: 1 draft (entrusted-oda last_updated 2026-09-27→2026-09-29); 3 stable không đổi; contingent-exposures detail đã có trong internal-liquidity
+- Validate: ✅ 0 errors; S4b → done 2026-09-29; S5 pending; 32/37 node (86%); File map: Claude outputs/research-map-ftp.md
+
+## [2026-09-29:20-35-03] research | ftp — s4a
+- Deep read S4a (6 trang): C1 3 manual adjustment cases + C2 CPR standardization 5–8% + C3 TDRR chuẩn hóa BCBS 368 + L1-L2 product pricing links
+- Validate: ✅ 0 errors; Split S4→S4a (done) + S4b (pending); S5 pending; File map: Claude outputs/research-map-ftp.md
+
+## [2026-09-29:20-30-55] research | ftp — s3
+- Deep read S3 (6 trang): C1 NII allocation dominated by internal assumptions (70%+ per BCG survey) + C2 penalty/reward quantitative mechanism + C3 internalize costs per TT13 spirit + L1-L2 reporting-architecture links
+- Validate: ✅ 0 errors; S4–S5 pending; File map: Claude outputs/research-map-ftp.md
+
+## [2026-09-29:20-13-30] research | ftp — s2
+- Deep read S2 (7 trang): C1 Liquidity Premium tính toán + C2 base curve update định kỳ ALCO + C3 Margin as steering lever + L1 transmission-channels link + L2 vof-and-cof link
+- Validate: ✅ 0 errors; S3–S5 pending; File map: Claude outputs/research-map-ftp.md
+
+## [2026-09-29:20-06-28] research | ftp — s1
+- Deep read S1 (7 trang): C1 liquidity premium method + L1 interest-rate-gap-risk link + L2 fix curve-decompose link + N1 nâng structural-contribution→stable
+- Validate: ✅ 0 errors; S1 kiên kết chặt: cost-of-funds→matched-maturity→structural-contribution→ftp-coordinates
+- S2–S5 pending; File map: Claude outputs/research-map-ftp.md
+
+## [2026-09-29:19-58-32] research | ftp — map
+- Map: 37 FTP node gom 5 sub (S1–S5), 12 node rìa từ backlink ALM/regulatory; 31 trang tên *ftp* + 6 outlink chính
+- S1 Essentials (7), S2 Curve+Ops (7), S3 Steering (6), S4 Products (12), S5 Regulatory (5)
+- File: Claude outputs/research-map-ftp.md
+
 ## [2026-09-28:23-21-49] research | alm-efficiency-cluster-analysis-reconciliation
 - Cluster 16 trang ALM/FTP + 3 mới; phân tích A: 1 trùng lặp page, 3 analysis/bridge tạo mới
 - A1 xoá duplicate `regulatory-cost-add-ons...` (giữ `regulatory-lcr-and-nsfr...` stable); A2 thêm link tới 4 analysis + balance-sheet pages; A3 tạo `structural-contribution-measures...` (analysis)
@@ -1414,3 +1446,9 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - SKILL.md viết lại: map subcluster lưu file, deep read ≤ 15 / enrich ≤ 7, proposal mã mục ≤ 20
 - `00_schema.md` §2, §3, §4, §9 và bảng operation trong `CLAUDE.md` cập nhật theo
 - Lý do: decisions.md [2026-09-29]
+
+## [2026-09-29:19-51-53] research | bank sources-and-uses — sub1-balance-sheet-balancing
+- Map: none (direct subcluster input) | Deep: 11 node, 7 draft + 2 stable + 1 stub; enrich 8
+- C8 claim + L1 link | Pha 3 proposal approved, chờ ghi
+- Báo cáo: Claude outputs/research-2026-09-29-bank-balance-sheet-balancing-sub1.md
+

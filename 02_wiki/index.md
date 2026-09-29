@@ -1046,6 +1046,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[ancillary-anchored-butterfly-trades-isolate-relative-value-in-hyper-liquid-treasury-markets]] — giao dịch Butterfly neo theo trái phiếu Ancillary: khai thác giá trị tương đối trong thị trường Kho bạc siêu thanh khoản, bán khống mã Ancillary định giá đắt và phòng hộ hai cánh qua bài toán quy hoạch tuyến tính LP trung hòa vốn và thời lượng
 
 **Quản trị Tài sản - Nợ (ALM) & Định giá Điều chuyển Vốn Nội bộ (FTP)**
+- [[bank-balance-sheet-balancing-reconciles-monetary-accounting-liquidity-gaps-and-economic-value]] — cân đối bảng cân đối ngân hàng: sự dung hòa giữa hạch toán tiền tệ vĩ mô IMF, khe hở thanh khoản dòng tiền BCBS 144 và giá trị kinh tế/khe hở thời lượng ALM
 - [[asset-and-liability-management-committee-alco-governance-and-stakeholder-coordination]] — Hội đồng ALCO: ủy ban hạt nhân điều hành rủi ro lãi suất, "trái tim của ngân hàng" và phối hợp đa chiều với GCM, Kế toán, Bán hàng, QTRR
 - [[banking-book-and-trading-book-regulatory-boundary-and-intent-classification]] — ranh giới Sổ ngân hàng vs Sổ kinh doanh: tiêu chí ý định giao dịch, phân loại bắt buộc theo ECB/Basel, giá vốn phân bổ vs mark-to-market
 - [[alm-financial-instruments-span-customer-positions-wholesale-market-contracts-and-derivatives]] — hệ thống 3 tầng công cụ ALM: vị thế khách hàng nội bảng, giao dịch bán buôn thị trường bên ngoài và công cụ phái sinh Asset Swaps / IRS

@@ -4,12 +4,12 @@ type: concept
 tags: [alm, ftp, cof, promotional-loans, hybrid-loans, component-decomposition, dual-tenor, market-1]
 sources: [vab_ftp_methodology]
 status: draft
-last_updated: 2026-09-27
+last_updated: 2026-09-29
 ---
 
 Trong chiến lược kinh doanh của các ngân hàng thương mại, các gói tín dụng có chương trình ưu đãi lãi suất giai đoạn đầu — ví dụ hợp đồng vay 5 năm được áp dụng lãi suất cố định ưu đãi thấp trong 1 năm đầu, sau đó 4 năm còn lại chuyển sang lãi suất thả nổi điều chỉnh 3 tháng một lần hoặc lãi suất cố định thông thường — tạo ra cấu trúc dòng tiền hỗn hợp (hybrid) làm phức tạp hóa việc xác định chi phí vốn nội bộ (vab_ftp_methodology, Điều 6.2.i–l, d.833–946). Phương pháp luận FTP chuẩn hóa cơ chế định giá bán vốn (COF) cho các khoản vay ưu đãi qua hai phương án tiếp cận độc lập, áp dụng thống nhất cho cả bốn cấu trúc trả nợ gồm trả gốc cuối kỳ (bullet) và trả gốc định kỳ (amortizing) với lãi suất cố định hoặc thả nổi (vab_ftp_methodology, Điều 6.2.i.ii, d.837–844; Điều 6.2.j.ii, d.861–866; Điều 6.2.k.ii, d.885–892; Điều 6.2.l.ii, d.916–924).
 
-**Phương án 1 (Giữ nguyên kỳ hạn gốc và chuyển đổi tần suất định giá lại)**:
+**Phương án 1 (Giữ nguyên kỳ hạn gốc và chuyển đổi tần suất định giá lại)** — [[straight-term-bullet-loan-cof-pricing-decomposes-repricing-and-term-risk|phương pháp tiêu chuẩn cho vay bullet]]:
 Hệ thống FTP duy trì nguyên vẹn kỳ hạn gốc ban đầu của hợp đồng (ví dụ 5 năm) hoặc kỳ hạn hiệu lực $WAT$ tính trên toàn bộ 5 năm xuyên suốt đời khoản vay (vab_ftp_methodology, Điều 6.2.i.ii, d.837; Điều 6.2.k.ii, d.885). Trong giai đoạn ưu đãi (1 năm đầu), lãi suất COF cơ sở được xác định theo giá của hợp đồng kỳ hạn 5 năm với tần suất điều chỉnh lãi suất tương ứng thời gian ưu đãi (12 tháng); khi bước sang 4 năm tiếp theo, hệ thống tự động chuyển đổi giá COF sang mức giá của hợp đồng kỳ hạn gốc 5 năm với tần suất điều chỉnh lãi suất thực tế của giai đoạn sau (ví dụ 3 tháng đối với lãi suất thả nổi hoặc cố định 5 năm) theo [[matched-maturity-term-liquidity-spread-isolates-repricing-tenor-mismatch]] (vab_ftp_methodology, Điều 6.2.i.ii, d.838–840; Điều 6.2.j.ii, d.861–863; Điều 6.2.k.ii, d.886–888; Điều 6.2.l.ii, d.918–921).
 
 **Phương án 2 (Bóc tách cấu phần thời gian — Component Decomposition)**:

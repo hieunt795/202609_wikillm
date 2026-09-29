@@ -2,9 +2,9 @@
 title: basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stability
 type: concept
 tags: [banking, alm, liquidity-risk, nsfr, asf, rsf, basel-iii, funding-stability, derivatives, regulation]
-sources: [sbv_draft_circular_replace_22]
-status: stable
-last_updated: 2026-09-26
+sources: [sbv_draft_circular_replace_22, tata_bank_alm]
+status: draft
+last_updated: 2026-09-28
 ---
 
 Tỷ lệ nguồn vốn ổn định ròng (Net Stable Funding Ratio - NSFR) là chuẩn mực điều hành cấu trúc thanh khoản trung và dài hạn cốt lõi của hiệp ước Basel III, được Ngân hàng Nhà nước nội luật hóa tại Dự thảo Thông tư thay thế Thông tư 22/2019/TT-NHNN nhằm thiết lập kỷ luật tài trợ bền vững, buộc các ngân hàng thương mại và chi nhánh ngân hàng nước ngoài phải tài trợ các tài sản dài hạn và hoạt động ngoại bảng bằng các nguồn vốn có tính ổn định tương thích trong chân trời một năm (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Điều 22–26, d.580–706; Phụ lục II, d.1714–1908).
@@ -61,7 +61,7 @@ Nguyên tắc xác định hệ số $RSF$:
 
 **4. Quy tắc xử lý giao dịch Phái sinh trong NSFR**
 
-Quy định tại Điều 25 thiết lập chuẩn mực đo lường phái sinh đồng bộ với hiệp ước Basel III (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Điều 25, d.663–695):
+Quy định tại Điều 25 thiết lập chuẩn mực đo lường phái sinh đồng bộ với hiệp ước Basel III và khung đo lường rủi ro đối tác tín dụng [[counterparty-credit-risk-framework-measures-derivative-replacement-cost-and-potential-future-exposure]] (sbv_draft_circular_replace_22, file 10_DTTT_thay_the_Thong_tu_22_260421_37a8.md, Điều 25, d.663–695):
 - **Bù trừ song phương (Netting)**: Giá trị tài sản phái sinh (MTM dương) và nợ phái sinh (MTM âm) được bù trừ ròng nếu đáp ứng đầy đủ điều kiện hợp đồng khung netting hợp pháp;
 - **Ký quỹ biến động bằng tiền mặt (Cash Variation Margin - CVM)**: Chỉ các khoản tiền mặt ký quỹ đáp ứng tiêu chuẩn thanh toán trước hạn (pre-settlement payment) — được thanh toán hàng ngày để triệt tiêu toàn bộ rủi ro MTM và bên nhận được toàn quyền sử dụng tiền — mới được khấu trừ khỏi tài sản phái sinh;
 - **Nguyên tắc so sánh trạng thái ròng**:
@@ -75,8 +75,9 @@ Dự thảo quy định cơ chế miễn trừ đặc thù cho các nghiệp v�
 - **Ưu đãi quy chuẩn**: Cặp tài sản và nợ phụ thuộc đủ điều kiện được áp dụng đồng thời **$ASF = 0\%$** và **$RSF = 0\%$**, hoàn toàn trung hòa tác động lên tỷ lệ NSFR;
 - **Chế tài vi phạm nghiêm khắc**: Nếu NHNN phát hiện ngân hàng lợi dụng cơ chế này khi không thỏa mãn điều kiện thực tế, ngân hàng sẽ bị tước quyền áp dụng $ASF=0\% / RSF=0\%$ cho toàn bộ các cặp nghiệp vụ khác trên toàn hệ thống.
 
+Từ góc nhìn quản trị bảng cân đối, một số vị thế phái sinh (derivatives positions) không đòi hỏi tài trợ dòng tiền định kỳ (tự tài trợ — self-funded positions) nhưng vẫn gây suy giảm tỷ lệ NSFR vì hệ số $RSF = 100\%$ áp lên phần phơi nhiễm ròng dương; điều này buộc ngân hàng phải huy động thêm nguồn vốn dài hạn đắt đỏ hơn, và chi phí khắc phục NSFR phải được phản ánh trực tiếp vào đường cong FTP dưới dạng phạt (penalty) cho các vị thế gây suy giảm (tata_bank_alm, Ch.2, 2.3.8.2 Net Stable Funding Ratio, d.1710).
+
 **6. Mối liên kết với Quản trị Cân đối Bảng tài sản (ALM) và Hệ thống FTP**
 
-Chỉ số NSFR là động lực kỹ thuật trực tiếp định hình đường cong định giá điều chuyển vốn nội bộ (FTP). Khối ALM lượng hóa chi phí tuân thủ NSFR bằng cách áp phụ phí thanh khoản kỳ hạn dài $\Delta Spread_{long}$ đối với các tài sản có hệ số $RSF$ cao (như tín dụng doanh nghiệp dài hạn, phái sinh không bảo đảm) và cấp điểm thưởng cho các nguồn huy động có $ASF \ge 95\%$ theo [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]]. Khi kết hợp cùng [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]] và [[loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity]], NSFR tạo nên bộ khung điều hành cấu trúc thanh khoản toàn diện, bảo vệ bảng cân đối ngân hàng trước các cú sốc rút tiền hoặc đóng băng thị trường vốn.
+Chỉ số NSFR là động lực kỹ thuật trực tiếp định hình đường cong định giá điều chuyển vốn nội bộ (FTP) theo [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]]. Khối ALM lượng hóa chi phí tuân thủ NSFR bằng cách áp phụ phí thanh khoản kỳ hạn dài $\Delta Spread_{long}$ đối với các tài sản có hệ số $RSF$ cao (như tín dụng doanh nghiệp dài hạn, phái sinh không bảo đảm) và cấp điểm thưởng cho các nguồn huy động có $ASF \ge 95\%$ theo [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]]. Trong mô hình tối ưu hóa bảng cân đối ALM hiện đại, chỉ số NSFR không chỉ là một báo cáo tuân thủ tĩnh hàng tháng mà được đưa vào hàm mục tiêu như một ràng buộc bất đẳng thức cơ cấu $ASF(x) - RSF(x) \ge 0$; giá trị nhân tử Lagrange (giá bóng $\lambda_{\text{NSFR}}$) phản ánh trực tiếp chi phí cơ hội biên để kéo dài kỳ hạn của nguồn tài trợ mà Treasury phải phân bổ vào biểu phí FTP (tata_bank_alm, Ch.1, Strategic Balance Sheet Management, d.579–584). Khi kết hợp cùng [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]] và [[loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity]], NSFR tạo nên bộ khung điều hành cấu trúc thanh khoản toàn diện, bảo vệ bảng cân đối ngân hàng trước các cú sốc rút tiền hoặc đóng băng thị trường vốn. Cơ chế giám sát kỷ luật thị trường này được công khai hóa theo [[pillar-3-liquidity-disclosure-standards-mandate-qualitative-and-quantitative-market-transparency]] và đóng góp trực tiếp vào mục tiêu cân đối bền vững giữa dòng tiền, giá trị kinh tế và hạch toán nguồn vốn theo [[bank-balance-sheet-balancing-reconciles-monetary-accounting-liquidity-gaps-and-economic-value]].
 
-Xem thêm: [[asf-and-rsf-factor-matrices-calibrate-nsfr-structural-funding-requirements]], [[pillar-3-liquidity-disclosure-standards-mandate-qualitative-and-quantitative-market-transparency]], [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]], [[regulatory-liquidity-transition-rules-govern-dual-track-migration-from-mtll-to-lcr-nsfr]], [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]], [[deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-profiles]], [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]], [[counterparty-credit-risk-framework-measures-derivative-replacement-cost-and-potential-future-exposure]], [[loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity]], [[three-tier-capital-adequacy-framework-sets-minimum-car-tier-1-and-cet1-thresholds]].
