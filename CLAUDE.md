@@ -11,6 +11,15 @@ Wiki tri thức 3 lớp theo mô hình Karpathy, kèm 1 vùng trạng thái ph�
 
 Điều hướng nội dung: `02_wiki/index.md` (mục `## Sources` cho trạng thái ingest từng nguồn). Nhật ký thao tác: `log.md` (§12). Lý do các quyết định: `decisions.md`. Ý tưởng dang dở: `_inbox.md` (§11). Báo cáo lint/audit/research: `Claude outputs/` (§3).
 
+## Luật cứng — không vi phạm trong mọi trường hợp
+
+1. **Không bao giờ sửa nội dung trong `01_sources/`.** Không ngoại lệ: không sửa, không thêm file, không đổi tên, không xoá, không đổi ký tự xuống dòng. Mọi thứ agent cần ghi về một nguồn đều đi ra `03_state/` (§3, §10).
+2. **Không tự sửa mâu thuẫn.** Phát hiện conflict → đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn, chờ người xử lý.
+3. **Lint chỉ báo cáo, không tự sửa.**
+4. **Cần người dùng xác nhận trước khi:** tạo trang `type: analysis`; ghi trang ở bước ingest (bước 2 — duyệt 5–10 ý chính và các mục bỏ qua); ghi trang ở research (bản đề xuất gộp, bước 2); nâng `draft → stable` (Promote).
+5. Mỗi operation ghi đúng 1 mục vào **cuối** `log.md`, dạng `## [YYYY-MM-DD:hh-MM-ss] <op> | <tiêu đề>` + tối đa 3 dòng (§12). Lập luận không nằm trong log.
+6. **Mỗi lượt ingest cập nhật `02_wiki/index.md` §Sources và `03_state/<source id>.md`**, kể cả lượt không tạo trang mới. Nguồn mới vào bản kê ngay lượt đầu (§10).
+
 ## Sáu operation
 
 Quy trình thực thi nằm trong skill, nạp theo nhu cầu. Skill là nguồn thực thi duy nhất; sửa quy trình thì sửa `SKILL.md` và ghi lý do vào `decisions.md`.
@@ -26,26 +35,16 @@ Quy trình thực thi nằm trong skill, nạp theo nhu cầu. Skill là nguồn
 
 Ingest, query, lint, research dùng mẫu **hai lượt**: lượt 1 quét frontmatter (rẻ), lượt 2 chỉ mở full content trang đã xác định là cần. Đây là cơ chế kiểm soát token chính.
 
-## Luật cứng — không vi phạm trong mọi trường hợp
-
-1. **Không bao giờ sửa nội dung trong `01_sources/`.** Không ngoại lệ: không sửa, không thêm file, không đổi tên, không xoá, không đổi ký tự xuống dòng. Mọi thứ agent cần ghi về một nguồn đều đi ra `03_state/` (§3, §10).
-2. **Không tự sửa mâu thuẫn.** Phát hiện conflict → đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn, chờ người xử lý.
-3. **Lint chỉ báo cáo, không tự sửa.**
-4. **Cần người dùng xác nhận trước khi:** tạo trang `type: analysis`; ghi trang ở bước ingest (bước 2 — duyệt 5–10 ý chính và các mục bỏ qua); ghi trang ở research (bản đề xuất gộp, bước 2); nâng `draft → stable` (Promote).
-5. Mỗi operation ghi đúng 1 mục vào **cuối** `log.md`, dạng `## [YYYY-MM-DD:hh-MM-ss] <op> | <tiêu đề>` + tối đa 3 dòng (§12). Lập luận không nằm trong log.
-6. **Mỗi lượt ingest cập nhật `02_wiki/index.md` §Sources và `03_state/<source id>.md`**, kể cả lượt không tạo trang mới. Nguồn mới vào bản kê ngay lượt đầu (§10).
-
 ## Nhắc nhanh về trang wiki
 
 Chi tiết ở `00_schema.md`; những điều dễ sai nhất:
 
 - Thân bài **không có heading** — cần heading nghĩa là phải tách trang (§5, §7).
-- `[[wikilink]]` nằm **trong câu văn kèm lý do**, không dồn thành danh sách "xem thêm" (§7).
-- **`tags` không phải liên kết** — chỉ là chỉ mục lọc rẻ (§6).
-- **Viết lại bằng lời mình**, không sao chép nguyên văn nguồn (§7); thân bài áp skill `writing-style` profile wiki.
-- `sources:` dùng **source id** của bản kê (§1, §10), bắt buộc dạng inline list `[id1, id2]` — hook đọc theo dòng, không hiểu YAML nhiều dòng.
-- Bullet không được mở đầu bằng `[[wikilink]]` (hook coi là danh sách "xem thêm"); lồng link vào câu diễn giải.
-- Claim từ **nguồn dài** kèm chú thích vị trí `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7.5) — áp cho trang có `last_updated` từ 2026-09-14. Chỉ chèn link hoặc chú thích thì **không** nâng `last_updated`.
+- `[[wikilink]]` nằm **trong câu văn kèm lý do, không dồn thành danh sách; không mở đầu bullet** (§7). Hook coi danh sách đó là "xem thêm", lồng link vào câu diễn giải.
+- **`tags` không phải liên kết** — chỉ là chỉ mục lọc (§6).
+- **Viết lại bằng lời mình**, không sao chép nguyên văn (§7). Áp skill `writing-style` profile wiki.
+- `sources:` dùng **source id**, bắt buộc inline list `[id1, id2]` — hook đọc theo dòng, không hiểu YAML nhiều dòng (§1, §10).
+- Claim từ **nguồn dài** kèm chú thích `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim; áp cho `last_updated ≥ 2026-09-14` (§7.5). Chỉ link/chú thích → không nâng `last_updated`.
 
 ## Công cụ kiểm
 
@@ -65,7 +64,7 @@ Cảnh báo của hook phải xử lý ngay, không để tồn đến lượt l
 
 ## Công cụ ghi câu hỏi theo yêu cầu
 
-`python "Claude outputs/log_questions.py"` chỉ chạy khi được gọi thủ công (local-only, gitignored). Mặc định, công cụ quét toàn bộ Codex session có `cwd` thuộc repo hiện tại; `--input <conversation.json|jsonl>` giới hạn vào một file cụ thể. Công cụ lấy message `role=user`, phân loại bằng rule cục bộ, bỏ bản trùng và append vào `.claude/local/question-logger/questions.jsonl`; không gọi LLM. Dùng `--dry-run` để xem record dự kiến mà không ghi file.
+`python "Claude outputs/log_questions.py"` — chỉ chạy thủ công (local-only, gitignored); quét session `cwd` → phân loại user message → append `.claude/local/question-logger/questions.jsonl`. Tùy chọn: `--input <file.json|jsonl>`, `--dry-run`.
 
 ## Ghi chú vận hành
 
