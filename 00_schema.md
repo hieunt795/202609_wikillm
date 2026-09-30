@@ -46,6 +46,7 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 
 | Hoạt động | Ngưỡng |
 |---|---|
+| Kích thước 1 trang | Ngưỡng mềm: ≤ 1.000 từ/trang, ≤ 250 từ/đoạn dài nhất. Vượt ngưỡng là tín hiệu cần xem xét tách trang theo §5, đo bằng `--size`. |
 | Ingest | Tạo/cập nhật tối đa 15 trang wiki mỗi lượt (stub không tính); không có ngưỡng dưới. Chunk chưa xong giữ `[~]` (§10) |
 | Lint | Chạy sau mỗi 10 lần ingest, hoặc theo lịch định kỳ |
 | Review | Tối đa 5 trang mỗi lượt |

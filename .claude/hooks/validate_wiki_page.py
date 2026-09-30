@@ -21,6 +21,16 @@ Che do:
   - --coverage [sid]  : chunk trong 03_state/ -> % dong duoc chu thich §7.5 trich va
                         cac muc (heading) chua trang nao trich. Exit 2 neu chunk [x]
                         con muc chua phu (§10). Khong doi so -> tong ket moi nguon.
+  - --size [p]        : trang > 1.000 tu hoac co doan > 250 tu (Atomic, §4). Khong doi so
+                        -> tat ca trang. Trang do duoc dung cho ingest/research de chac
+                        merge co nay phai tach trang moi, khong cong them claim vao trang cu.
+  - --tags [kw]       : liong tag + so trang dung cai tag. Doc ca [a, b] lan YAML nhieu
+                        dong. Khong doi tu -> tong ket. Dung khi ingest b.3, research Ph.1
+                        tim tag co san (chung thay tu vung).
+  - --style [p]       : tim cum cam B2 (cuc doan), filler I1-I4 (tit hoi thoai), in dam >=5/
+                        trang (G3), giu heading G4, cong nhom luat 6 (gioitkhuyennghikhom,
+                        nhannhac vai tro khong so, tu quy chieuitung trang/nguon). Khong doi
+                        so -> tat ca trang. Tin hieu tho cho lint doc tay, khong phan quyet.
   - --now             : gio Viet Nam dang YYYY-MM-DD:hh-MM-ss cho log.md (§12).
 
 Exit 0 = dat. Exit 2 = co van de, stderr duoc chuyen lai cho agent.
@@ -751,6 +761,111 @@ def cmd_coverage(root, wiki_dir, sid):
     sys.exit(2 if bad else 0)
 
 
+def cmd_size(wiki_dir, target=None):
+    """Trang hoac doan vu qua 1.000 tu / 250 tu (Atomic). Dau vao: trang.md hoac khong."""
+    words_threshold, para_threshold = 1000, 250
+    rows = []
+    for f in sorted(os.listdir(wiki_dir)):
+        if not f.lower().endswith(".md") or f.lower() == "index.md":
+            continue
+        if target and not f.lower().startswith(target.lower()):
+            continue
+        try:
+            with open(os.path.join(wiki_dir, f), encoding="utf-8-sig") as fh:
+                _, body = split_frontmatter(fh.read())
+            words = len(body.split())
+            paras = [p.split() for p in body.split("\n\n") if p.strip()]
+            max_para = max(len(p) for p in paras) if paras else 0
+            if words > words_threshold or max_para > para_threshold:
+                rows.append((f, words, max_para))
+        except Exception:
+            pass
+    for f, w, mp in rows:
+        sys.stdout.write("%s\t%d tu\t%d tu/doan_max\n" % (f, w, mp))
+    sys.stdout.write("%d trang > %d tu hoac doan > %d tu (§4, Atomic).\n" % (len(rows), words_threshold, para_threshold))
+    sys.exit(0)
+
+
+def cmd_tags(wiki_dir, keyword=None):
+    """Tag + so trang. Tong so va so tag dung 1 lan. Keyword: loc tag."""
+    tag_counts = {}
+    for f in sorted(os.listdir(wiki_dir)):
+        if not f.lower().endswith(".md") or f.lower() == "index.md":
+            continue
+        try:
+            with open(os.path.join(wiki_dir, f), encoding="utf-8-sig") as fh:
+                fields, _ = split_frontmatter(fh.read())
+            if fields:
+                tags = yaml_list(fields.get("tags", ""))
+                for t in tags:
+                    tag_counts[t] = tag_counts.get(t, 0) + 1
+        except Exception:
+            pass
+    items = sorted(tag_counts.items(), key=lambda kv: (-kv[1], kv[0]))
+    if keyword:
+        keyword = keyword.lower()
+        items = [it for it in items if keyword in it[0].lower()]
+    for tag, count in items:
+        sys.stdout.write("%s\t%d\n" % (tag, count))
+    solo = sum(1 for c in tag_counts.values() if c == 1)
+    sys.stdout.write("%d tag tong, %d tag dung 1 lan (%d%%).\n" % (len(tag_counts), solo, 100*solo//max(1, len(tag_counts))))
+    sys.exit(0)
+
+
+def cmd_style(wiki_dir, target=None):
+    """Cum cam B2, filler I1-I4, in dam >= 5, giua heading, luat 6 (khuyennghikhom, nhannhac vai tro, tu quy chieuitung)."""
+    b2_words = ["chết người", "bạo liệt", "ký sinh", "tàn khốc", "khốc liệt", "thiêu rụi", "nghiền nát", "quét sạch", "tàn phá", "đào mồ"]
+    i4_words = ["nhìn chung", "nói chung", "đáng chú ý là", "không thể phủ nhận", "cần nhấn mạnh rằng", "hoàn thiện", "chỉn chu"]
+    rule6_khuyennghikhom = ["khuyến nghị", "cần phải", "nên", "đề xuất rằng"]
+    rule6_nhannhac = ["vai trò then chốt", "vai trò trung tâm", "trụ cột", "nền tảng cốt lõi"]
+    rule6_tuquychieu = ["trang này", "bài viết này", "chương này", "theo tác giả", "từng trang"]
+
+    rows = []
+    for f in sorted(os.listdir(wiki_dir)):
+        if not f.lower().endswith(".md") or f.lower() == "index.md":
+            continue
+        if target and not f.lower().startswith(target.lower()):
+            continue
+        try:
+            with open(os.path.join(wiki_dir, f), encoding="utf-8-sig") as fh:
+                _, body = split_frontmatter(fh.read())
+            issues = []
+            body_lower = body.lower()
+            # B2
+            for w in b2_words:
+                if w in body_lower:
+                    issues.append("B2:" + w[:15])
+            # I4
+            for w in i4_words:
+                if w in body_lower:
+                    issues.append("I4:" + w[:15])
+            # in dam
+            bold_count = len(re.findall(r"\*\*[^*]+\*\*", body))
+            if bold_count >= 5:
+                issues.append("bold:%d" % bold_count)
+            # giua heading
+            if re.search(r"^\s*(\d+\.|[-*])\s+\*\*", body, re.M):
+                issues.append("G4:list-heading")
+            # luat 6
+            for w in rule6_khuyennghikhom:
+                if w in body_lower:
+                    issues.append("rule6:" + w[:12])
+            for w in rule6_nhannhac:
+                if w in body_lower:
+                    issues.append("rule6:" + w[:12])
+            for w in rule6_tuquychieu:
+                if w in body_lower:
+                    issues.append("rule6:" + w[:12])
+            if issues:
+                rows.append((f, issues))
+        except Exception:
+            pass
+    for f, issues in rows:
+        sys.stdout.write("%s\t%s\n" % (f, ", ".join(issues)))
+    sys.stdout.write("%d trang co cum cam / luat 6 (tim signal tho, doc tay chu y).\n" % len(rows))
+    sys.exit(0)
+
+
 def main():
     try:
         sys.stderr.reconfigure(encoding="utf-8", errors="replace")
@@ -786,8 +901,16 @@ def main():
             cmd_verify_sources(here)
         elif cmd == "--coverage":
             cmd_coverage(here, wiki, args[1] if len(args) > 1 else None)
-        sys.stderr.write("Lenh khong hop le: %s. Xem --help.\n" % cmd)
-        sys.exit(2)
+        elif cmd == "--size":
+            cmd_size(wiki, args[1] if len(args) > 1 else None)
+        elif cmd == "--tags":
+            cmd_tags(wiki, args[1] if len(args) > 1 else None)
+        elif cmd == "--style":
+            cmd_style(wiki, args[1] if len(args) > 1 else None)
+        else:
+            sys.stderr.write("Lenh khong hop le: %s. Xem --help.\n" % cmd)
+            sys.exit(2)
+        sys.exit(0)
 
     try:
         path = read_stdin_path()

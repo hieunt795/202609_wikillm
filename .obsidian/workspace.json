@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "808aa73876857a7b",
+        "id": "671a8f76763ce023",
         "type": "tabs",
         "children": [
           {
-            "id": "6fad618be46462fb",
+            "id": "a502015975eaf689",
             "type": "leaf",
             "state": {
-              "type": "llm-wiki-graphify-view",
-              "state": {},
-              "icon": "git-fork",
-              "title": "Graphify View"
+              "type": "markdown",
+              "state": {
+                "file": "02_wiki/pure-expectations-hypothesis-equates-long-term-rates-to-the-average-of-expected-short-rates.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "pure-expectations-hypothesis-equates-long-term-rates-to-the-average-of-expected-short-rates"
             }
           }
         ]
@@ -75,12 +79,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 284.5,
-    "collapsed": true
+    "width": 284.5
   },
   "right": {
     "id": "82a18120639685fd",
@@ -194,43 +198,43 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "6fad618be46462fb",
+  "active": "a502015975eaf689",
   "lastOpenFiles": [
-    "Claude outputs/COMPREHENSIVE-SKILL-GUIDE.md",
-    "Claude outputs/research-2026-09-29-liquidity-risk-S3b.md",
+    "sedJp1n1d",
+    "02_wiki/emerging-market-sovereign-bond-liquidity-relies-on-central-bank-repo-over-outright-market-depth.md",
+    "02_wiki/alm-dual-optimization-reconciles-liquidity-gap-limits-with-eve-sensitivity-under-irrbb.md",
+    "02_wiki/dynamic-liquidity-stress-testing-models-nonlinear-run-off-and-wholesale-market-coupling.md",
+    "Claude outputs/research-2026-09-30-bank-cash-flow-liquidity-risk-S3.md",
+    "Claude outputs/research-2026-09-30-bank-cash-flow-liquidity-risk-S2.md",
+    "Claude outputs/research-2026-09-30-bank-cash-flow-liquidity-risk-S1.md",
+    "Claude outputs/research-map-bank-cash-flow-liquidity-risk.md",
+    "02_wiki/one-factor-term-structure-models-force-perfect-yield-correlation-across-maturities.md",
+    "02_wiki/interest-rate-risk-in-the-banking-book-irrbb.md",
+    "02_wiki/term-structure-modeling-bifurcates-into-short-rate-diffusion-and-forward-rate-hjm-frameworks.md",
+    "02_wiki/yield-curve.md",
+    "Claude outputs/research-2026-09-30-bank-balance-sheet-S5.md",
+    "Claude outputs/research-2026-09-30-bank-balance-sheet-S4.md",
+    "02_wiki/yield-curve-representations-bridge-discount-factors-zero-rates-and-par-yields.md",
+    "02_wiki/implied-forward-rates-function-as-hedge-rates-rather-than-accurate-market-forecasts.md",
+    "02_wiki/bank-capital-absorbs-unexpected-losses-as-a-going-concern-buffer.md",
+    "02_wiki/loan-loss-provisions-fund-the-loan-loss-reserve.md",
+    "02_wiki/risk-adjusted-return-on-capital-raroc.md",
+    "02_wiki/higher-leverage-inflates-roe-so-roa-is-a-necessary-companion-metric.md",
+    "02_wiki/bank-financial-statements-pair-a-balance-sheet-snapshot-with-a-period-income-statement.md",
+    "02_wiki/bank-revenue-mix-of-nii-fees-and-trading-income-varies-by-business-model.md",
+    "02_wiki/nim-reflects-balance-sheet-structure-so-cross-bank-comparisons-mislead.md",
+    "02_wiki/net-interest-margin-nim.md",
+    "02_wiki/net-interest-income-nii.md",
+    "02_wiki/balance-sheet-constraints-not-competition-restrain-reckless-bank-lending.md",
     "02_wiki/sedAkV0x5",
-    "Claude outputs/research-2026-09-29-liquidity-risk-S3a.md",
     "02_wiki/sedlbvZfh",
     "02_wiki/sedHWj5O7",
     "02_wiki/sednO3gXh",
     "02_wiki/sedcielBO",
     "02_wiki/sedNUTUxg",
-    "Claude outputs/research-2026-09-29-liquidity-risk-S2c.md",
-    "Claude outputs/research-2026-09-29-liquidity-risk-S2b.md",
     "log.md.tmp.14512.ca0ef96c5021",
-    "Claude outputs/research-2026-09-29-liquidity-risk-S2a.md",
     "log.md.tmp.14512.2a718867d408",
-    "Claude outputs/research-2026-09-29-liquidity-risk-S1.md",
     "log.md.tmp.14512.d4b03392d483",
-    "Claude outputs/research-2026-09-29-liquidity-risk-S0.md",
-    "Claude outputs/research-map-liquidity-risk.md",
-    "Claude outputs/research-map-liquidity-risk.md.tmp.14512.b6ad455316e3",
-    "01_sources/Clippings/ALM P8 – Từ phân tích vĩ mô đến phân tích ALM một ngân hàng.md",
-    "Claude outputs/research-map-ftp.md",
-    "Claude outputs/research-2026-09-29-bank-balance-sheet-balancing-sub1.md",
-    "02_wiki/bank-balance-sheet-balancing-reconciles-monetary-accounting-liquidity-gaps-and-economic-value.md",
-    "01_sources/Clippings/ALM P7 – Cân đối tỷ lệ Không chỉ là TT22.md",
-    "01_sources/Clippings/Who’s Borrowing and Lending in Repo Markets.md",
-    "02_wiki/trading-book.md",
-    "02_wiki/banking-book.md",
-    "02_wiki/capital-adequacy-ratio.md",
-    "02_wiki/liquidity-premium.md",
-    "02_wiki/money-multiplier.md",
-    "Claude outputs/lint-2026-09-28-996.md",
-    "02_wiki/basis-risk-quantification-and-tenor-basis-swaps-in-alm.md",
-    "02_wiki/macro-hedging-and-micro-hedging-strategies-in-the-banking-book.md",
-    "02_wiki/irrbb-model-governance-and-independent-three-tier-validation-framework.md",
-    "02_wiki/funds-transfer-pricing-as-an-irrbb-risk-transfer-and-steering-mechanism.md",
-    "02_wiki/balance-sheet-dynamics-assumptions-run-off-constant-and-dynamic-in-alm.md"
+    "Claude outputs/research-map-liquidity-risk.md.tmp.14512.b6ad455316e3"
   ]
 }
