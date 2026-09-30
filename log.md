@@ -1557,3 +1557,8 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - New: 6 trang + 4 stub (Cấp 2A, Cấp 2B, Điều chỉnh, Cash outflow rates); mỗi trang tự chứa đủ định nghĩa + công thức + ví dụ
 - Validate: ✅ hook pass tất cả; 2 commit (batch 1: 2 trang + 4 stub; batch 2: 4 trang + 1 bảng tính)
 - Handoff: tạo session_handoffs/ cho batch 3 (Phần B 8 trang + Phần C 7 trang, token dừng ở ~15K)
+
+## [2026-09-30:21-13-52] ingest | sbv_circular_22_final Phụ lục I Phần B
+
+8 trang Part B (Dòng tiền ra): nguyên tắc, tiền bán lẻ, tiền gửi hoạt động, vốn bán buôn, phái sinh, bổ sung, cam kít, bảng tính. 
++ 3 stub HQLA tiers (Tier 1, 2A, 2B) cho link từ Phần A. Part A + B hoàn tát [x], Part C chưa [~] (7 trang cần batch 4).
