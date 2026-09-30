@@ -19,7 +19,7 @@ Trong các tập đoàn ngân hàng quốc tế có mạng lưới chi nhánh v�
 
 Các rào cản ngăn cản dòng vốn luân chuyển nội bộ tập đoàn bao gồm 4 nhóm chính sách phổ biến:
 1. *Rào cản tỷ lệ an toàn vốn độc lập của nước sở tại (Host Regulatory Solo Capital Constraints)*:
-   - Cơ quan giám sát nước sở tại (Host supervisor) bắt buộc công ty con ngân hàng nước ngoài phải duy trì đầy đủ các tỷ lệ an toàn vốn tối thiểu (CAR $\ge 8\%$, Tier 1 $\ge 6\%$, CET1 $\ge 4{,}5\%$) cùng các đệm vốn bảo toàn, đệm nghịch chu kỳ và đệm D-SIB trên cơ sở pháp nhân độc lập (solo basis).
+   - Cơ quan giám sát nước sở tại (Host supervisor) bắt buộc công ty con ngân hàng nước ngoài phải duy trì đầy đủ các tỷ lệ an toàn vốn tối thiểu (CAR $\ge$ 8%, Tier 1 $\ge$ 6%, CET1 $\ge$ 4,5%) cùng các đệm vốn bảo toàn, đệm nghịch chu kỳ và đệm D-SIB trên cơ sở pháp nhân độc lập (solo basis).
    - Mọi kế hoạch giảm vốn điều lệ, hoàn trả vốn cổ phần hoặc chuyển kiều hối cổ tức vượt mức đều bị nghiêm cấm nếu làm tỷ lệ an toàn vốn của công ty con hạ xuống dưới mức pháp định của nước sở tại.
 2. *Kiểm soát ngoại hối và hạn chế dòng tiền biên giới (Exchange Controls & Capital Flight Barriers)*:
    - Trong các giai đoạn bất ổn kinh tế vĩ mô hoặc căng thẳng tỷ giá, ngân hàng trung ương nước sở tại có thể kích hoạt các biện pháp kiểm soát ngoại hối khẩn cấp, giới hạn lượng ngoại tệ được chuyển ra khỏi biên giới, hoặc áp đặt tỷ giá hối đoái hành chính bắt buộc.
