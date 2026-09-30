@@ -60,7 +60,7 @@ Mở full content các node của sub. Mọi kết quả chỉ là đề xuất.
 2. **Gom theo chunk, mỗi chunk mở một lần** cho mọi node dùng nó. `grep -n` heading trong dải dòng để tìm **mục** phủ chủ đề, rồi đọc trọn mục — không chỉ vài dòng đã trích cũ, claim thiếu thường nằm ngay cạnh. Chunk ≲ 400 dòng thì đọc trọn.
 3. Phân loại từng đoạn nguồn:
    - Claim nguồn nói mà trang **chưa có** → đề xuất, kèm `(<source id>, <chương>, <mục>, d.<từ>–<đến>)`; nguồn nhiều file thêm `file <hậu tố>` trước dải dòng.
-   - Đoạn nguồn **nói khác** claim trên trang mà claim đó đến từ **nguồn khác** → đề xuất `⚠️ Conflict` kèm cả hai claim + vị trí (luật cứng 2).
+   - Đoạn nguồn **nói khác** claim trên trang mà claim đó đến từ **nguồn khác** → đề xuất `⚠️ Conflict` kèm cả hai claim + vị trí (quy tắc bắt buộc 2).
    - Claim trên trang **sai so với chính nguồn nó dẫn** → không sửa; ghi `_inbox.md` (`- [YYYY-MM-DD] <trang>: <claim> lệch <vị trí nguồn>`), gợi ý `/review-node`.
    - Claim cần khái niệm **chưa có trang** → vẫn đề xuất claim, không tạo stub; ghi khái niệm vào gap.
 

@@ -13,7 +13,7 @@
   - Xử lý mâu thuẫn nguồn bằng `⚠️ Conflict`; claim sai của chính nguồn trang dẫn thì ghi `_inbox.md`.
   - Enrich liên nguồn có giới hạn; luôn ghi log.
 - Sửa lệnh grep tag cho tag YAML nhiều dòng trong `research` và `query`.
-- Đồng bộ `CLAUDE.md` (bảng 6 operation, luật cứng 4, `--all`), description của `query` và `.claude/rules/project-records.md`.
+- Đồng bộ `CLAUDE.md` (bảng 6 operation, quy tắc bắt buộc 4, `--all`), description của `query` và `.claude/rules/project-records.md`.
 - Ghi `decisions.md`, 1 mục `log.md` op `schema`, và 3 mục `_inbox.md`:
   - Chuẩn chú thích During lệch giữa header state file và schema §7.5.
   - Chú thích Ch.28 lệch số mục và dải dòng.

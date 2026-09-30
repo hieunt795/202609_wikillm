@@ -44,7 +44,7 @@ Outlink một chiều có thể bỏ sót trang trỏ ngược vào (backlink 2 
 
 **4. Tổng hợp.** Trả lời kèm trích dẫn trang wiki (`[[tên-trang]]`) và chú thích nguồn gốc đã có trên trang (source id, chương, dải dòng). Không tự dựng chú thích mà trang không có.
 
-**5. Kết tinh — chỉ khi đáng.** Câu trả lời tạo ra tổng hợp có giá trị tái sử dụng lâu dài → **hỏi người dùng xác nhận** trước khi tạo trang `type: analysis` (luật cứng 4). Không có gì mới đáng lưu thì không đề nghị.
+**5. Kết tinh — chỉ khi đáng.** Câu trả lời tạo ra tổng hợp có giá trị tái sử dụng lâu dài → **hỏi người dùng xác nhận** trước khi tạo trang `type: analysis` (quy tắc bắt buộc 4). Không có gì mới đáng lưu thì không đề nghị.
 
 Trước khi tạo, kiểm trùng như `ingest` bước 3: `grep -l "^type: analysis" 02_wiki/*.md`, đối chiếu title các trang analysis đã có xem đã có trang nào tổng hợp đúng ý này chưa. Có → merge/cập nhật trang đó thay vì tạo trang mới. Không có → tạo mới.
 

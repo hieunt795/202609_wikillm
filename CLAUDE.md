@@ -11,7 +11,7 @@ Wiki tri thức 3 lớp theo mô hình Karpathy, kèm 1 vùng trạng thái ph�
 
 Điều hướng nội dung: `02_wiki/index.md` (mục `## Sources` cho trạng thái ingest từng nguồn). Nhật ký thao tác: `log.md` (§12). Lý do các quyết định: `decisions.md`. Ý tưởng dang dở: `_inbox.md` (§11). Báo cáo lint/audit/research: `Claude outputs/` (§3).
 
-## Luật cứng — không vi phạm trong mọi trường hợp
+## Quy tắc bắt buộc — không vi phạm trong mọi trường hợp
 
 1. **Không bao giờ sửa nội dung trong `01_sources/`.** Không ngoại lệ: không sửa, không thêm file, không đổi tên, không xoá, không đổi ký tự xuống dòng. Mọi thứ agent cần ghi về một nguồn đều đi ra `03_state/` (§3, §10).
 2. **Không tự sửa mâu thuẫn.** Phát hiện conflict → đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn, chờ người xử lý.

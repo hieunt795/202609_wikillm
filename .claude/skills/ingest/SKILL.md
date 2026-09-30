@@ -27,7 +27,7 @@ description: Nạp nguồn từ 01_sources vào wiki 02_wiki theo schema dự á
 - **Nguồn chưa có trong bản kê** → thêm ngay trong lượt này (§10): chọn source id snake_case; đo `wc -c -l` và `sha256sum` cho từng file `.md`/`.pdf`; ghi nhan đề, tác giả, nơi và năm xuất bản (đọc trang bìa/copyright của file); thêm dòng vào bảng Source id và mục riêng; thêm dòng vào `02_wiki/index.md` §Sources. Không bỏ bước này — thiếu nó thì hook không biết nguồn là nguồn dài và không ép chú thích §7.5.
 - **Nguồn ngắn** (≤ 120 KB *và* ≤ 1.200 dòng, tính trên tổng các file): đọc trọn 1 lượt. Không có state file nên không qua cổng `--coverage`; đọc trọn là cách bảo đảm độ phủ.
 - **Nguồn dài**: ingest theo chương/cụm. `03_state/<source id>.md` là **nguồn sự thật duy nhất** cho câu hỏi "còn lại phần nào": chọn dòng `[ ]` hoặc `[~]` kế tiếp, lấy dải dòng `d.<từ>–<đến>` rồi chỉ đọc đúng dải đó.
-  - Chưa có file trạng thái → **tạo trước khi ingest**: quét heading của file nguồn (`grep -n "^#"`), dựng bản đồ chunk đầy đủ (kể cả chunk sẽ bỏ qua), rồi mới bắt đầu. Nguồn nhiều file: mỗi file một dòng, ghi tên file ở cột *Mục trong nguồn* (§10). **Không** ghi file nào vào `01_sources/` (luật cứng 1).
+  - Chưa có file trạng thái → **tạo trước khi ingest**: quét heading của file nguồn (`grep -n "^#"`), dựng bản đồ chunk đầy đủ (kể cả chunk sẽ bỏ qua), rồi mới bắt đầu. Nguồn nhiều file: mỗi file một dòng, ghi tên file ở cột *Mục trong nguồn* (§10). **Không** ghi file nào vào `01_sources/` (quy tắc bắt buộc 1).
   - **Không** đọc `log.md` để suy ra còn lại phần nào (§10).
 
 Đọc theo chương/thứ tự nguồn để giữ ngữ cảnh — ngữ cảnh quyết định phân loại đúng entity/concept/case. Bỏ qua bài tập cuối chương, bảng số liệu thô (§2).
@@ -50,7 +50,7 @@ Dùng vài từ khoá tiếng Anh cho mỗi khái niệm (thuật ngữ gốc v�
 
 **4. Với mỗi entity/concept/case trong cụm:**
 
-- **Đã có trang** → merge thông tin mới, thêm source id vào `sources:`, nâng `last_updated`. Trang `stable`/`stale` được merge → về `draft` (§9). Mâu thuẫn với nội dung cũ → **không tự sửa**, đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn (luật cứng 2) — kể cả khi hai chương của cùng một nguồn cho số khác nhau.
+- **Đã có trang** → merge thông tin mới, thêm source id vào `sources:`, nâng `last_updated`. Trang `stable`/`stale` được merge → về `draft` (§9). Mâu thuẫn với nội dung cũ → **không tự sửa**, đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn (quy tắc bắt buộc 2) — kể cả khi hai chương của cùng một nguồn cho số khác nhau.
 - **Trang `stable` liên quan tới nguồn này nhưng lượt ingest không merge vào** → đổi sang `stale` (§9). Ngoại lệ: lượt ingest lại ở chế độ đối chiếu đã đọc lại trang và thấy đúng thì giữ `stable` (decisions.md 2026-09-25).
 - **Chưa có** → tạo trang mới. Ranh giới trang theo §5, title theo §8, thân bài theo §7.
 
@@ -68,7 +68,7 @@ Viết thân bài bằng lời của mình. Trước khi viết hoặc sửa th�
 
 **7. Cập nhật `03_state/<source id>.md`** (nguồn dài). Chạy `python .claude/hooks/validate_wiki_page.py --coverage <source id>` và đọc danh sách mục của chunk đang xử lý — không dựa vào exit code, vì lệnh chỉ trả lỗi cho chunk đã `[x]`. Mỗi mục chưa phủ phải được viết vào trang, hoặc ghi `bỏ qua: <heading> — <lý do>` ở cột Ghi chú **chỉ cho mục người dùng đã duyệt bỏ qua ở bước 2** — agent tự bỏ qua thì cổng này mất tác dụng. Hết mục → `[x]`; còn mục → `[~]` kèm phần còn lại. Cập nhật `last_updated`. Cổng đo ở cấp mục: claim còn thiếu bên trong một mục đã có trang trích là việc của `/research` (chức năng B).
 
-**8. Cập nhật `02_wiki/index.md`** — **bắt buộc mỗi lượt** (luật cứng 6), sau bước 7 để khớp trạng thái vừa chốt:
+**8. Cập nhật `02_wiki/index.md`** — **bắt buộc mỗi lượt** (quy tắc bắt buộc 6), sau bước 7 để khớp trạng thái vừa chốt:
 
 - Mục `## Sources` — dòng của nguồn vừa xử lý. Ô *Phần còn lại* chỉ một câu (vd "Ch.5–12; chi tiết ở state file"); diễn biến từng lượt thuộc về `log.md`.
 - Mục lục trang theo chủ đề — chỉ khi có trang mới.
@@ -95,7 +95,7 @@ Hook `PostToolUse` chỉ bắt tool `Write|Edit`; file ghi bằng shell đi vòn
 - Đánh `[x]` khi còn mục chưa phủ chưa được duyệt bỏ qua → research không bù được, vì nó chỉ đi từ trang đã có.
 - Ingest xong mà quên `## Sources` + `03_state/<source id>.md` → lượt sau phải dựng lại trạng thái từ văn xuôi `log.md`.
 - Chép nguyên chú thích vị trí từ trang khác mà không kiểm lại dải dòng → chú thích sai còn tệ hơn không có.
-- Ghi bất cứ file nào vào `01_sources/`, hoặc mở file nguồn bằng công cụ tự đổi ký tự xuống dòng → vi phạm luật cứng 1. Chỉ đọc nguồn bằng `sed -n`, `grep`, Read.
+- Ghi bất cứ file nào vào `01_sources/`, hoặc mở file nguồn bằng công cụ tự đổi ký tự xuống dòng → vi phạm quy tắc bắt buộc 1. Chỉ đọc nguồn bằng `sed -n`, `grep`, Read.
 
 ## Xử lý lỗi
 

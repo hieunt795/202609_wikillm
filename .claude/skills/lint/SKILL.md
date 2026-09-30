@@ -7,7 +7,7 @@ description: Kiểm tra sức khoẻ wiki 02_wiki — trang mồ côi, link ch�
 
 Chạy sau mỗi 10 lượt ingest hoặc theo lịch (§4). Đọc `00_schema.md` §4–§9, §11, §12.
 
-**Lint chỉ báo cáo, không tự sửa** (luật cứng 3). Xuất báo cáo, chờ người xác nhận hướng xử lý. Lý do: lint nhìn cả wiki một lượt nên dễ sửa hàng loạt theo một phán đoán sai; người dùng duyệt trước thì lỗi dừng ở báo cáo.
+**Lint chỉ báo cáo, không tự sửa** (quy tắc bắt buộc 3). Xuất báo cáo, chờ người xác nhận hướng xử lý. Lý do: lint nhìn cả wiki một lượt nên dễ sửa hàng loạt theo một phán đoán sai; người dùng duyệt trước thì lỗi dừng ở báo cáo.
 
 ## Quy trình hai lượt
 
@@ -16,14 +16,14 @@ Chạy sau mỗi 10 lượt ingest hoặc theo lịch (§4). Đọc `00_schema.m
 ```bash
 H=.claude/hooks/validate_wiki_page.py
 python $H --all              # trang: frontmatter, heading, link chết, source id, §7.5, title, mồ côi
-python $H --verify-sources   # 01_sources/ khớp bản kê (luật cứng 1)
+python $H --verify-sources   # 01_sources/ khớp bản kê (quy tắc bắt buộc 1)
 python $H --ocr              # ứng viên nhiễu OCR
 python $H --stub-debt        # nợ stub
 python $H --inbox-debt       # nợ inbox
 python $H --coverage         # chunk [x] còn mục nguồn chưa trang nào trích (§10)
 ```
 
-Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi vòng qua nó, nên `--all` quét lại tất cả. Số trang của lượt lint lấy từ dòng cuối của `--all`. `--verify-sources` báo lệch thì ghi lên đầu báo cáo: đó là vi phạm luật cứng, không phải lỗi trang, và lint không sửa lại nguồn.
+Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi vòng qua nó, nên `--all` quét lại tất cả. Số trang của lượt lint lấy từ dòng cuối của `--all`. `--verify-sources` báo lệch thì ghi lên đầu báo cáo: đó là vi phạm quy tắc bắt buộc, không phải lỗi trang, và lint không sửa lại nguồn.
 
 **`--all` phủ:** frontmatter đủ trường, `type`/`status` hợp lệ, tên file khớp title, `sources` không rỗng và là source id có trong bản kê, `last_updated` đúng dạng ngày, heading trong thân bài, link chết (kể cả `[[trang|nhãn]]`), link dồn thành danh sách, chú thích §7.5, title danh từ cho `case`/`analysis`, trang mồ côi theo chiều backlink.
 
