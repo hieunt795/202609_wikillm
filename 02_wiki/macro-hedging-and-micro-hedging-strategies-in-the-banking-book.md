@@ -26,7 +26,7 @@ Thay vì phòng hộ từng tài khoản riêng lẻ, phòng hộ vĩ mô nhìn 
 
 **3. Các Công cụ Phái sinh Cốt lõi và Chiến thuật Phòng hộ**
 
-Theo Annex 1 của BCBS 368, ngân hàng triển khai danh mục công cụ phái sinh đa dạng để quản trị các trạng thái rủi ro:
+Annex 1 của BCBS 368 quy định ngân hàng triển khai danh mục công cụ phái sinh đa dạng để quản trị các trạng thái rủi ro:
 
 | Công cụ Phái sinh | Mục tiêu Phòng hộ trong ALM | Trạng thái Bảng Cân đối được Phòng hộ |
 |---|---|---|

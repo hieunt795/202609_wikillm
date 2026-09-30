@@ -18,7 +18,7 @@ Kiểm tra sức chịu đựng ngược vận hành theo nguyên lý suy luận
 2. Dùng các thuật toán tìm kiếm để xác định kịch bản sốc lãi suất tối thiểu, sự dịch chuyển của cấu trúc kỳ hạn, hoặc sự kết hợp giữa các biến cố thị trường có khả năng đẩy ngân hàng rơi vào trạng thái nguy cấp đó;
 3. Đánh giá tính khả thi và xác suất xảy ra của các kịch bản cực đoan này trong thực tế, từ đó thiết lập các vành đai phòng vệ sớm, rà soát lại hạn mức rủi ro và xây dựng các kế hoạch hành động khắc phục khẩn cấp.
 
-Theo Nguyên tắc 4 của BCBS 368, ngân hàng bắt buộc phải vận hành đồng thời cả hai cơ chế tiếp cận: cơ chế định lượng và cơ chế định tính (Paragraph 32, d.207–211):
+Nguyên tắc 4 của BCBS 368 quy định ngân hàng bắt buộc phải vận hành đồng thời cả hai cơ chế tiếp cận: cơ chế định lượng và cơ chế định tính (Paragraph 32, d.207–211):
 
 **1. Cơ chế tiếp cận định lượng (Quantitative Approach)**
 

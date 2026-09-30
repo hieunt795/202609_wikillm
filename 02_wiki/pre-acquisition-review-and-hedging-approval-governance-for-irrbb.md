@@ -13,7 +13,7 @@ Các cuộc khủng hoảng ngân hàng trong lịch sử đã chứng minh rằ
 
 **1. Quy trình Thẩm định tiền khả thi trước khi ban hành sản phẩm mới (Pre-acquisition Review)**
 
-Theo Nguyên tắc 1 và 3 của BCBS 368, trước khi giới thiệu bất kỳ sản phẩm, dịch vụ hoặc thực hiện các giao dịch kinh doanh mới nào có thể làm thay đổi đáng kể cấu trúc dòng tiền hoặc hồ sơ rủi ro lãi suất của sổ ngân hàng, ngân hàng bắt buộc phải vận hành quy trình thẩm định rủi ro tiền khả thi độc lập (Paragraph 18, d.103; Paragraph 27, d.166). Quy trình này bao gồm 5 nội dung kiểm soát bắt buộc:
+Nguyên tắc 1 và 3 của BCBS 368 quy định: trước khi giới thiệu bất kỳ sản phẩm, dịch vụ hoặc thực hiện các giao dịch kinh doanh mới nào có thể làm thay đổi đáng kể cấu trúc dòng tiền hoặc hồ sơ rủi ro lãi suất của sổ ngân hàng, ngân hàng bắt buộc phải vận hành quy trình thẩm định rủi ro tiền khả thi độc lập (Paragraph 18, d.103; Paragraph 27, d.166). Quy trình này bao gồm 5 nội dung kiểm soát bắt buộc:
 1. *Nhận diện và bóc tách các điều khoản quyền chọn ngầm định (Embedded Options Identification)*:
    - Rà soát toàn diện các điều khoản hợp đồng để nhận diện các quyền chọn tự động ngầm định (như trần lãi suất cap, sàn lãi suất floor, điều khoản mua lại callable, điều khoản bán lại puttable) và các quyền chọn hành vi (quyền trả nợ trước hạn không bồi hoàn, cam kết giải ngân cố định, quyền rút tiền gửi có kỳ hạn sớm).
    - Xác định rõ liệu các quyền chọn này có thể bóc tách để đối xử chuẩn hóa hay phải chuyển sang định giá lại độc lập tại Giai đoạn 4 theo [[automatic-interest-rate-options-standardised-valuation-and-volatility-shocks]].

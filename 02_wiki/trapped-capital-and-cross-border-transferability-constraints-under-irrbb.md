@@ -9,7 +9,7 @@ last_updated: 2026-09-26
 
 Rào cản chuyển giao vốn và vốn bị giam lỏng xuyên biên giới dưới chuẩn mực IRRBB (Trapped Capital and Cross-Border Transferability Constraints under IRRBB) thiết lập các nguyên tắc thận trọng giám sát bắt buộc theo Chuẩn mực BCBS 368 của Ủy ban Basel, ngăn cấm việc các tập đoàn tài chính đa quốc gia tùy tiện bù trừ cơ học thặng dư vốn giữa các pháp nhân thành viên nhằm che giấu tình trạng thâm hụt rủi ro lãi suất tại từng thực thể riêng lẻ (bcbs_368, file d368.md, Principle 9, Paragraph 74, d.416–420; Principle 10, Paragraph 82, d.444–449).
 
-Trong các tập đoàn ngân hàng quốc tế có mạng lưới chi nhánh và công ty con trải rộng tại nhiều khu vực pháp lý, việc đo lường rủi ro lãi suất chỉ dựa trên báo cáo hợp nhất toàn cầu (consolidated balance sheet) tiềm ẩn một sai lầm chết người: giả định ngầm định rằng toàn bộ nguồn vốn tự có của tập đoàn có thể luân chuyển hoàn hảo và tức thời từ nơi thừa sang nơi thiếu để hấp thụ các khoản tổn thất kinh tế do sốc lãi suất gây ra. Thực tế khủng hoảng tài chính chứng minh điều ngược lại: khi một công ty con tại một quốc gia gặp biến cố lãi suất nghiêm trọng, dòng vốn hỗ trợ từ ngân hàng mẹ hoặc từ các công ty con khác thường bị phong tỏa hoàn toàn bởi các hàng rào bảo hộ của nước sở tại.
+Trong các tập đoàn ngân hàng quốc tế có mạng lưới chi nhánh và công ty con trải rộng tại nhiều khu vực pháp lý, việc đo lường rủi ro lãi suất chỉ dựa trên báo cáo hợp nhất toàn cầu (consolidated balance sheet) tiềm ẩn một sai lầm cơ bản: giả định ngầm định rằng toàn bộ nguồn vốn tự có của tập đoàn có thể luân chuyển hoàn hảo và tức thời từ nơi thừa sang nơi thiếu để hấp thụ các khoản tổn thất kinh tế do sốc lãi suất gây ra. Thực tế khủng hoảng tài chính chứng minh điều ngược lại: khi một công ty con tại một quốc gia gặp biến cố lãi suất nghiêm trọng, dòng vốn hỗ trợ từ ngân hàng mẹ hoặc từ các công ty con khác thường bị phong tỏa hoàn toàn bởi các hàng rào bảo hộ của nước sở tại.
 
 **Khái niệm Vốn bị giam lỏng (Trapped Capital)**
 
@@ -38,7 +38,7 @@ Các rào cản ngăn cản dòng vốn luân chuyển nội bộ tập đoàn b
 
 **Cơ chế hợp tác giám sát Home - Host (Principle 10 & 11)**
 
-Theo Nguyên tắc 10 và 11 của BCBS 368, các cơ quan giám sát ngân hàng mẹ (Home supervisors) và cơ quan giám sát nước sở tại (Host supervisors) phải thiết lập cơ chế chia sẻ thông tin định kỳ và đột xuất trong khuôn khổ Hội đồng giám sát trường (Supervisory Colleges) (Paragraph 82, d.444–449):
+Nguyên tắc 10 và 11 của BCBS 368 quy định các cơ quan giám sát ngân hàng mẹ (Home supervisors) và cơ quan giám sát nước sở tại (Host supervisors) phải thiết lập cơ chế chia sẻ thông tin định kỳ và đột xuất trong khuôn khổ Hội đồng giám sát trường (Supervisory Colleges) (Paragraph 82, d.444–449):
 - Home supervisor có trách nhiệm rà soát mô hình ICAAP của ngân hàng mẹ để bảo đảm các giả định về khả năng điều chuyển vốn xuyên biên giới được kiểm chứng bằng thực nghiệm và có tính pháp lý vững chắc;
 - Nếu phát hiện ngân hàng mẹ che giấu rủi ro bằng cách bù trừ vốn với các thực thể bị giam lỏng, cơ quan giám sát có toàn quyền áp đặt yêu cầu vốn bổ sung Trụ cột 2 (Pillar 2 capital add-on) trực tiếp lên ngân hàng mẹ theo [[supervisory-remedial-actions-mandate-exposure-reduction-capital-add-ons-and-parameter-constraints]], hoặc cưỡng chế ngân hàng mẹ phải bơm thêm vốn bảo đảm độc lập cho từng công ty con.
 

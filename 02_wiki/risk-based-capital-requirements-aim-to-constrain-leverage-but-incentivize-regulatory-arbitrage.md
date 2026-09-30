@@ -15,7 +15,7 @@ last_updated: 2026-09-21
 
 Quy định an toàn vốn dựa trên rủi ro (Risk-based capital requirements) là trọng tâm của các hiệp ước quốc tế do Ủy ban Basel về Giám sát Ngân hàng khởi xướng, bắt đầu từ Basel I (1988), tiếp nối bởi Basel II (2004) và Basel III (2010) (cargill_central_bank_policy, Ch.9, Capital-Asset Requirements, d.2858–2889). Vốn tự có của ngân hàng đóng vai trò như "bộ giảm xóc" (shock absorber) trong ô tô: một tỷ lệ vốn trên tài sản nhất định (ví dụ $8\%$ hay $10\%$) cho phép giá trị tài sản có của ngân hàng suy giảm trong phạm vi đó mà định chế vẫn duy trì được giá trị tài sản ròng dương và khả năng thanh toán.
 
-Theo Basel I, thay vì áp dụng một tỷ lệ vốn cào bằng trên tổng tài sản danh nghĩa, các tài sản của ngân hàng được phân bổ trọng số rủi ro tín dụng (risk weights) khác nhau nhằm tính toán tổng tài sản có rủi ro (Risk-Weighted Assets - RWA) (cargill_central_bank_policy, Ch.9, Capital-Asset Requirements, d.2866–2884):
+Theo chuẩn Basel I, thay vì áp dụng một tỷ lệ vốn cào bằng trên tổng tài sản danh nghĩa, các tài sản của ngân hàng được phân bổ trọng số rủi ro tín dụng (risk weights) khác nhau nhằm tính toán tổng tài sản có rủi ro (Risk-Weighted Assets - RWA) (cargill_central_bank_policy, Ch.9, Capital-Asset Requirements, d.2866–2884):
 - Trọng số $0\%$: tiền mặt dự trữ và trái phiếu Kho bạc quốc gia (rủi ro vỡ nợ bằng không).
 - Trọng số $20\%$: chứng khoán bảo đảm bằng thế chấp nhà ở do chính phủ bảo trợ (MBS) hoặc các khoản nợ của ngân hàng thuộc khối OECD.
 - Trọng số $50\%$: các khoản thế chấp nhà ở thông thường có bảo đảm.
