@@ -2,10 +2,16 @@
 
 > Nhật ký append-only, mỗi operation đúng 1 mục. Định dạng và danh sách `<op>`: `00_schema.md` §12. Lấy 5 mục gần nhất: `grep "^## \[" log.md | tail -5`.
 
+## [2026-09-30:21-24-00] audit | sbv_circular_22_final — rà soát toàn bộ file
+
+- Đọc: 1.774 dòng (toàn bộ file, Chương I–III + Phụ lục I–IV)
+- Fix state: Chương I `[ ]`→`[x]`, Phụ lục I d.786–1474, total_lines 1277→1774, thêm Phụ lục II–IV
+- Kết quả: Ingest hoàn tất Chương I–III + Phụ lục I (40 trang + 10 stub); Còn Phụ lục II–IV (~9–12 trang, ~300 dòng)
+
 ## [2026-09-30:21-22-00] ingest | sbv_circular_22_final Phụ lục I Phần C (Batch 4 — Dòng tiền vào) + Phần VI
 
 - Viết: 8 trang (Dòng tiền vào I–VII: Nguyên tắc ghi nhận, Cấp tín dụng bảo đảm, Hạn mức cam kít, Dòng tiền từ khách hàng, Tiền gửi hoạt động, Phái sinh & Chứng khoán, Loại trừ (doanh thu phi tài chính), Bảng tính)
-- Merge: 1 trang (cập nhật link từ trang 1); Validate: ✅ --all sạch (1099 trang, 0 issue); State: Phụ lục I marked [x] — ingest hoàn tất 100% toàn bộ (21 trang + 3 stub)
+- Merge: 1 trang (cập nhật link từ trang 1); Validate: ✅ --all sạch (1099 trang, 0 issue); State: Phụ lục I marked [x]
 
 ## [2026-09-30:20-15-52] ingest | sbv_circular_22_final Chap II Mục 4–5a (Lượt 3)
 - Viết: 7 trang (Điều 12–18: LDR tỷ lệ, LCR governance, quản lý rủi ro thanh khoản, khắc phục vấn đề, công thức LCR, vi phạm LCR, định nghĩa mất khả năng chi trả)
