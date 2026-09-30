@@ -18,6 +18,6 @@ Thông tư TT-50/2026/TT-NHNN quy định về các giới hạn, tỷ lệ bả
 | `[x]` | Chương II Mục 6 — Trái phiếu Chính phủ | d.648–662 | Điều 28, Lượt 5 complete | Hoàn tất Lượt 5 (1 trang) |
 | `[x]` | Chương II Mục 7 — Góp vốn, mua cổ phần | d.663–680 | Điều 29, Lượt 5 complete | Hoàn tất Lượt 5 (1 trang) |
 | `[x]` | Chương III — Tổ chức thực hiện + Hiệu lực | d.681–785 | Điều 30–38, Lượt 5 complete | Hoàn tất Lượt 5 (3 trang) |
-| `[~]` | Phụ lục I — Hướng dẫn cách xác định LCR | d.786–1774 | Phần A (HQLA) ✓, Phần B (Dòng tiền) ✓, Phần C (Dòng tiền vào) chưa | Batch 3: Part B 8 trang xong. Part C 7 trang cần batch 4 |
+| `[x]` | Phụ lục I — Hướng dẫn cách xác định LCR | d.786–1774 | Phần A (HQLA) ✓, Phần B (Dòng tiền ra) ✓, Phần C (Dòng tiền vào) ✓ | Batch 2–4: 21 trang chi tiết + stub ingest hoàn tất |
 
 **Tổng cộng:** 38 Điều + 3 Phần Phụ lục, 1.277 dòng
