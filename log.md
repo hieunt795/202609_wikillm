@@ -2,6 +2,20 @@
 
 > Nhật ký append-only, mỗi operation đúng 1 mục. Định dạng và danh sách `<op>`: `00_schema.md` §12. Lấy 5 mục gần nhất: `grep "^## \[" log.md | tail -5`.
 
+## [2026-09-30:20-15-52] ingest | sbv_circular_22_final Chap II Mục 4–5a (Lượt 3)
+- Viết: 7 trang (Điều 12–18: LDR tỷ lệ, LCR governance, quản lý rủi ro thanh khoản, khắc phục vấn đề, công thức LCR, vi phạm LCR, định nghĩa mất khả năng chi trả)
+- New: 7 trang; Validate: ✅ --all sạch (1057 trang, 0 issue); State: Chương II Mục 4–5a marked [x]
+
+## [2026-09-30:20-09-00] ingest | sbv_circular_22_final Chap II Mục 1–3 (Lượt 2)
+- Viết: 6 trang (Điều 6–11: vốn thực, xử lý vốn, LEV, credit limit, bond investment, equity investment)
+- Merge: 2 stub (Điều 8–9) từ draft; New: 4 trang (Điều 6–7, 10–11)
+- Validate: ✅ --all sạch (1051 trang, 0 issue); State: Chương II Mục 1–3 marked [x]
+
+## [2026-09-30:20-00-00] ingest | sbv_circular_22_final Chap I (Lượt 1)
+- Viết: 6 trang (Điều 1–5: phạm vi, đối tượng, định nghĩa, quy định nội bộ, hệ thống IT); Hub page
+- Stub: 7 trang (Điều 28–29, 5 tỷ lệ) để resolve wikilink; tất cả chú thích vị trí §7.5
+- Validate: ✅ --all sạch (0 issue); State: Chương I marked [x]
+
 ## [2026-09-30:14-35-00] schema | Evergreen audit — Atomic + tag + luật 6
 - Hook: thêm `--size` (trang > 1.000/250 từ), `--tags` (từ vựng), `--style` (luật 6 + văn phong)
 - Schema: §4 ngưỡng mềm; §5 +dấu hiệu vượt ngưỡng; §6 tag vocabulary rule; §7 6 luật + luật 6 "người đọc là chủ wiki"
@@ -1507,3 +1521,15 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Deep: S4b deposit runoff & contingency (8 trang), 2 draft → stable
 - P: contingent-liquidity-outflow-shocks, commercial-lender-of-last-resort
 - S4 complete: 17/17 trang ✓
+
+## [2026-09-30:17-01-00] research | enrich cash-flow-balancing
+- Enrich 1 trang: cash-flow-balancing-resolves-immediate-payment-obligations-against-excess-reserve-opportunity-cost
+- Bổ sung 4 chiều kích tác nghiệp (không gian tài khoản, đa tiền tệ, RRR, intraday) + khung IMF ER + BCBS 144
+- Sources: clippings, bcbs_144, imf_macro_accounting; last_updated: 2026-09-30
+
+## [2026-09-30:18-30-00] research | create cumulative-liquidity-gap
+- Tạo 1 trang concept: cumulative-liquidity-gap-differentiates-funding-deficit-refinancing-from-surplus-opportunity-costs
+- Phân tích ranh giới đánh đổi giữa thâm hụt ròng (rollover risk) và thặng dư ròng (negative carry/reinvestment risk)
+- Cập nhật 02_wiki/index.md §Sources & liên kết 2 chiều với cash-flow-balancing; sources: clippings, bcbs_144, imf_macro_accounting
+
+
