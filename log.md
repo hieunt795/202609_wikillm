@@ -1533,3 +1533,9 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Cập nhật 02_wiki/index.md §Sources & liên kết 2 chiều với cash-flow-balancing; sources: clippings, bcbs_144, imf_macro_accounting
 
 
+
+## [2026-09-30:20-24-11] ingest | sbv_circular_22_final Chap II Mục 5b (Lượt 4)
+
+8 trang (Điều 20–22 + Phụ lục I Phần A–B: HQLA định nghĩa, dòng tiền ra ròng, NSFR, ASF, RSF, phái sinh, tài sản tier, hệ số rút tiền)
+
+✅ --all sạch (1065 trang, 0 issue)
