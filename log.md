@@ -1539,3 +1539,9 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 8 trang (Điều 20–22 + Phụ lục I Phần A–B: HQLA định nghĩa, dòng tiền ra ròng, NSFR, ASF, RSF, phái sinh, tài sản tier, hệ số rút tiền)
 
 ✅ --all sạch (1065 trang, 0 issue)
+
+## [2026-09-30:20-35-25] ingest | sbv_circular_22_final Chap II Mục 5c-7 + Ch.III (Lượt 5)
+
+8 trang (Điều 26–38 + Phụ lục I Phần C: tài sản phụ thuộc, công bố, trái phiếu, cổ phần, chuyển tiếp, trách nhiệm NHNN, hiệu lực, NSFR công thức)
+
+✅ --all sạch (1073 trang, 0 issue)
