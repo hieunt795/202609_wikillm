@@ -2,6 +2,11 @@
 
 > Nhật ký append-only, mỗi operation đúng 1 mục. Định dạng và danh sách `<op>`: `00_schema.md` §12. Lấy 5 mục gần nhất: `grep "^## \[" log.md | tail -5`.
 
+## [2026-09-30:21-28-00] ingest | sbv_circular_22_final Phụ lục II (Batch 5 — NSFR)
+
+- Viết: 5 trang (NSFR định nghĩa, ASF, RSF, ví dụ 247.6%, triển khai 01/10/2026→100% 01/10/2028)
+- Thêm: 2 stub (ASF bảng, RSF bảng); Validate: ✅ --all sạch (1104 trang, 0 issue); State: Phụ lục II marked [x]
+
 ## [2026-09-30:21-24-00] audit | sbv_circular_22_final — rà soát toàn bộ file
 
 - Đọc: 1.774 dòng (toàn bộ file, Chương I–III + Phụ lục I–IV)
