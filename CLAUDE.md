@@ -58,6 +58,9 @@ Chi tiết ở `00_schema.md`; những điều dễ sai nhất:
 | `--backlinks [<trang>]` | Đếm/liệt kê backlink (không grep tay) |
 | `--ocr` · `--stub-debt` · `--inbox-debt` | Tiêu chí lint tương ứng |
 | `--coverage [<source id>]` | Mục nguồn chưa trang nào trích; **bắt buộc** trước khi đánh chunk `[x]` (ingest bước 7) và ở bước 0 lint |
+| `--size [<trang>]` | Trang > 1.000 từ hoặc đoạn > 250 từ; gợi ý tách (§4, §5). Chạy trước khi merge/enrich (ingest bước 4, research Pha 2) |
+| `--tags [<từ khoá>]` | Tag + số trang dùng, tổng tag và số tag dùng 1 lần. Kiểm cơ sở tag khi ingest (ingest bước 3) |
+| `--style [<trang>]` | Cộm cấm B2, filler I4, bold ≥ 5, fake-heading; luật 6: giọng khuyến nghị, nhấn mạnh tầm quan trọng, tự quy chiếu (§7.6, §7). Chạy trước khi ghi trang (ingest bước 9, research Pha 3) |
 | `--now` | Giờ Việt Nam cho `log.md` |
 
 Cảnh báo của hook phải xử lý ngay, không để tồn đến lượt lint.

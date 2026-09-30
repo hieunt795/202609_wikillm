@@ -2,6 +2,11 @@
 
 > Nhật ký append-only, mỗi operation đúng 1 mục. Định dạng và danh sách `<op>`: `00_schema.md` §12. Lấy 5 mục gần nhất: `grep "^## \[" log.md | tail -5`.
 
+## [2026-09-30:14-35-00] schema | Evergreen audit — Atomic + tag + luật 6
+- Hook: thêm `--size` (trang > 1.000/250 từ), `--tags` (từ vựng), `--style` (luật 6 + văn phong)
+- Schema: §4 ngưỡng mềm; §5 +dấu hiệu vượt ngưỡng; §6 tag vocabulary rule; §7 6 luật + luật 6 "người đọc là chủ wiki"
+- Skill & CLAUDE.md: ingest (--tags b3, --size b4+phép thử b4, outlink b5, --size/--style b9), research (Pha 2 loại oversized, Pha 3 luật 6+--style), lint (bước 0 +3 lệnh, 12→15 tiêu chí), writing-style (+F4 profile wiki), CLAUDE.md +3 dòng công cụ
+
 ## [2026-09-29:22-14-18] research | liquidity-risk — S5a
 - Deep read: S5a 7 trang (LOLR & Emergency Facilities), 2 enrich (stub→draft, draft→stable)
 - Enrich: E1 central-bank-liquidity-facilities (expand from BCBS-238 P58; add facilities types + contingent role), E2 central-bank-risk-taking (add Pareto frontier + crisis reoptimization claim from Bindseil Ch.15)

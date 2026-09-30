@@ -60,9 +60,10 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 
 Mỗi trang wiki chỉ chứa 1 ý tưởng/khái niệm duy nhất — **nhưng phải bao quát đầy đủ ý tưởng đó**. Atomic là điểm cân bằng, không phải "càng nhỏ càng tốt". Nội dung trích từ nguồn chứa >1 ý tưởng độc lập có thể đứng riêng → tách thành nhiều trang.
 
-Hai dấu hiệu vi phạm:
+Ba dấu hiệu vi phạm:
 - Trang có heading cấp 2+ trong thân bài → cần tách (§7).
 - **Không đặt được title sắc gọn** → tư duy chưa rõ, hoặc trang đang chứa nhiều ý (§8).
+- Vượt ngưỡng 1.000/250 từ sau merge/enrich (§4) → gợi ý tách trang mới, đo bằng `--size`.
 
 Chủ đề (topic) là đơn vị gom nhóm tạm thời khi ingest (`.claude/skills/ingest/SKILL.md` bước 3) — một chủ đề thường chứa nhiều trang atomic. Luật Atomic quyết định ranh giới trang cuối cùng.
 
@@ -79,11 +80,12 @@ Chủ đề (topic) là đơn vị gom nhóm tạm thời khi ingest (`.claude/s
 - Cách viết `[[wikilink]]` trong câu: §7.
 - **`tags` KHÔNG phải cơ chế liên kết.** Tag chỉ là chỉ mục rẻ để lọc khi quét frontmatter. Quan hệ ý tưởng phải viết thành `[[wikilink]]` có lý do.
 - **Stub link được khuyến khích:** khi cần trỏ tới khái niệm chưa ingest, tạo luôn trang `status: stub` rồi link — không hoãn sang batch sau.
+- **Tag từ vựng kiểm soát.** Dùng tag có sẵn khi có liên hệ ý tưởng; tag mới chỉ khi gom được ≥ 2 trang cùng đặc tính. Kiểm tag hiện tại bằng `validate_wiki_page.py --tags`. Không backfill tập tag cũ; chỉ ghi quy tắc mới và tuân thủ khi ingest tiếp.
 - Heuristic chọn trang để link khi ingest: hỏi **"trang này sẽ cần xuất hiện lại trong ngữ cảnh nào?"** — không hỏi "trang này thuộc category nào".
 
 ## 7. Cấu trúc thân bài trang wiki
 
-Thân bài (phần dưới frontmatter) tuân theo 5 luật:
+Thân bài (phần dưới frontmatter) tuân theo 6 luật:
 
 1. **Không dùng heading (`##`, `###`...) trong thân bài.** Title là heading duy nhất. Cần heading để tách ý = phải tách trang (§5).
 2. **Câu đầu tiên nêu thẳng định nghĩa/ý tưởng cốt lõi**, không dẫn nhập kiểu "Trong chương này...". Không giải thích lại kiến thức phổ quát.
@@ -96,6 +98,8 @@ Thân bài (phần dưới frontmatter) tuân theo 5 luật:
    **Áp dụng cho trang có `last_updated` từ 2026-09-14.** Trang cũ hơn không backfill hàng loạt; nợ trả dần khi trang được sửa nội dung. Hook thực thi theo `last_updated`.
 
    **`last_updated` đo nội dung, không đo liên kết.** Chỉ nâng khi claim thay đổi (thêm, sửa, xoá claim; merge nguồn mới). Chỉ chèn `[[wikilink]]` hoặc thêm chú thích vị trí cho claim có sẵn → **không** nâng.
+
+6. **Người đọc là chủ wiki khi quay lại sau này.** Trang tự đủ nghĩa: đọc riêng trang cùng các link của nó vẫn hiểu ý chính và lý do nối với các trang khác, không cần mở nguồn gốc. Tổ chức theo ý, không theo trình tự chương của nguồn. Không giọng thuyết phục, khuyến nghị hay nhấn mạnh tầm quan trọng bằng từ ngữ (danh từ hành động/tính từ cảm tính); ưu tiên mật độ ý hơn trau chuốt. Áp dụng cách viết `--style` của skill `writing-style`.
 
 Ví dụ:
 

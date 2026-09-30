@@ -51,7 +51,7 @@ Mở full content các node của sub. Mọi kết quả chỉ là đề xuất.
 - **Mâu thuẫn khung hiểu:** hai trang diễn giải cùng một điểm lệch nhau → chỉ báo cáo. Không phải `⚠️ Conflict` (vốn dành cho hai *nguồn* nói khác).
 - Ý lặp ở ≥ 2 trang trong sub, đáng tái sử dụng lâu dài → có thể đề xuất 1 trang `type: analysis`. Dedup trước: `grep -l "^type: analysis" 02_wiki/*.md`, đối chiếu title; đã có trang cùng ý thì đề xuất cập nhật trang đó.
 
-**Enrich ≤ 7 node** — ưu tiên `draft` trước `stable`/`stale` (tránh đảo promote), trang mỏng, backlink cao, có chunk `[x]` phủ chủ đề; nói rõ lý do chọn.
+**Enrich ≤ 7 node** — ưu tiên `draft` trước `stable`/`stale` (tránh đảo promote), trang mỏng, backlink cao, có chunk `[x]` phủ chủ đề; nói rõ lý do chọn. **Loại node vượt 1.000/250 từ khỏi danh sách enrich** (chạy `--size` trước): node sắp tách trang không nên merge thêm claim.
 
 1. Nguồn hợp lệ: nguồn trong `sources:` của node, **và** nguồn mà node khác trong sub đã trích tới đúng chủ đề (chú thích §7.5 chỉ sẵn chunk — không lục toàn bộ nguồn). Tra `03_state/_sources_manifest.md` để biết nguồn ngắn/dài và đường dẫn.
    - **Nguồn dài:** chunk trong `03_state/<source id>.md`. Chỉ dùng `[x]`. Chunk `[~]`/`[ ]` → dừng enrich từ chunk đó, ghi vào mục *chặn ingest*. State file là nguồn sự thật về tiến độ; research đọc trước thì wiki đi trước bản đồ chunk.
@@ -69,7 +69,7 @@ Mở full content các node của sub. Mọi kết quả chỉ là đề xuất.
 ## Pha 3 — Proposal → duyệt → ghi
 
 1. **Trình một proposal gộp** (mục *Output contract*), một lần duyệt. Người dùng duyệt cả lô, bớt theo mã mục, hoặc từ chối hết. Không ghi gì vào `02_wiki/` trước khi duyệt.
-2. **Ghi đúng các mục đã duyệt** — áp skill `writing-style` profile wiki cho mọi câu mới.
+2. **Ghi đúng các mục đã duyệt** — áp skill `writing-style` profile wiki cho mọi câu mới. **Áp luật 6 (§7):** trang tự đủ nghĩa qua link, không giọng thuyết phục/khuyến nghị, ưu tiên mật độ ý. Chạy `python .claude/hooks/validate_wiki_page.py --style` trước khi ghi log kiểm luật này.
    - `C` claim: không heading, viết lại bằng lời mình, link nằm trong câu, chú thích ngay sau claim (§7). Nâng `last_updated`; `stable`/`stale` → `draft` (§9). Source id mới → `sources:` (inline list).
    - `L` link: chèn vào câu kèm lý do; không nâng `last_updated` (§7.5).
    - `K` conflict: chèn cả hai claim + vị trí; không sửa claim nào.

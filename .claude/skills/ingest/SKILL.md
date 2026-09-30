@@ -46,9 +46,11 @@ ls 02_wiki | grep -i "<từ khoá>"
 grep -l -i -E "^(title|tags):.*<từ khoá>" 02_wiki/*.md
 ```
 
-Dùng vài từ khoá tiếng Anh cho mỗi khái niệm (thuật ngữ gốc và biến thể: `reserve`, `reserves`, `required-reserve`). Chỉ mở thân bài các trang trúng để quyết định merge hay tạo mới.
+Dùng vài từ khoá tiếng Anh cho mỗi khái niệm (thuật ngữ gốc và biến thể: `reserve`, `reserves`, `required-reserve`). Chỉ mở thân bài các trang trúng để quyết định merge hay tạo mới. **Dùng `python .claude/hooks/validate_wiki_page.py --tags` để kiểm tag có sẵn trước khi tạo tag mới** (§6): tag mới chỉ khi gom được ≥ 2 trang cùng đặc tính.
 
 **4. Với mỗi entity/concept/case trong cụm:**
+
+**Chạy `--size` trước khi merge/tạo trang.** Trang dự tính sẽ vượt 1.000/250 từ → tách thành nhiều trang nhỏ hơn (§5). Đo lại sau khi viết xong để kiểm.
 
 - **Đã có trang** → merge thông tin mới, thêm source id vào `sources:`, nâng `last_updated`. Trang `stable`/`stale` được merge → về `draft` (§9). Mâu thuẫn với nội dung cũ → **không tự sửa**, đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn (quy tắc bắt buộc 2) — kể cả khi hai chương của cùng một nguồn cho số khác nhau.
 - **Trang `stable` liên quan tới nguồn này nhưng lượt ingest không merge vào** → đổi sang `stale` (§9). Ngoại lệ: lượt ingest lại ở chế độ đối chiếu đã đọc lại trang và thấy đúng thì giữ `stable` (decisions.md 2026-09-25).
@@ -56,13 +58,15 @@ Dùng vài từ khoá tiếng Anh cho mỗi khái niệm (thuật ngữ gốc v�
 
 Viết thân bài bằng lời của mình. Trước khi viết hoặc sửa thân bài trang mới/cập nhật, **gọi Skill tool với `writing-style`** (bản local tại `.claude/skills/writing-style/`, profile wiki) để nạp bộ quy tắc A–I, rồi áp quy tắc đó vào văn bản đang viết. Với **nguồn dài**: mỗi claim kèm chú thích `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7.5). Nguồn nhiều file ghi `file <tên file>` trong **mọi** chú thích, không viết "cùng file", và mỗi ngoặc một nguồn — `--coverage` đọc chú thích theo đúng dạng này để biết dòng nào đã được trích. Dải dòng lấy từ chunk đang đọc.
 
+**Phép thử tự đủ nghĩa (luật 6, §7):** sau khi viết xong thân bài, đọc riêng trang cùng các `[[wikilink]]` có sẵn — không cần mở nguồn, có hiểu ý chính của trang và tại sao nó nối với các trang khác không? Không hiểu → thêm lý do vào câu link hoặc sửa điều khoản.
+
 **5. Liên kết — làm trước khi lưu, không hoãn.** Với mỗi trang mới/cập nhật, tìm 1–3 trang liên quan bằng câu hỏi **"trang này sẽ cần xuất hiện lại trong ngữ cảnh nào?"** (§6) — không dựa vào tag trùng.
 
 - Chèn `[[wikilink]]` từ trang mới → trang liên quan, trong câu văn kèm lý do.
 - Cập nhật ngược trang liên quan để có backlink 2 chiều (`index.md` không tính là backlink).
 - Khái niệm cần link mà chưa có trang → tạo luôn trang `status: stub` rồi link. **Không hoãn sang batch sau** — liên kết bị hoãn thường mất luôn.
 - Chỉ chèn link vào câu có sẵn của trang cũ (không đổi claim) → **không** nâng `last_updated` của trang đó (§7.5).
-- Không tìm được trang liên quan nào → ghi vào `_inbox.md` (concept cô lập, triage ở lượt lint sau).
+- Không tìm được trang liên quan nào để chèn link → ghi vào `_inbox.md` (concept cô lập chưa có bối cảnh, triage ở lượt lint sau).
 
 **6. Ngưỡng:** tối đa 15 trang mỗi lượt (§4), trang `stub` không tính. Đây là nhịp độ, không phải phạm vi: chunk chưa hết thì dừng ở `[~]`, lượt sau làm tiếp. Không có ngưỡng dưới — đừng tách trang cho đủ số.
 
@@ -77,9 +81,11 @@ Viết thân bài bằng lời của mình. Trước khi viết hoặc sửa th�
 
 ```bash
 python .claude/hooks/validate_wiki_page.py --all
+python .claude/hooks/validate_wiki_page.py --size
+python .claude/hooks/validate_wiki_page.py --style
 ```
 
-Hook `PostToolUse` chỉ bắt tool `Write|Edit`; file ghi bằng shell đi vòng qua nó. Trang mồ côi chỉ `--all` tính được. Có trang mồ côi → thêm liên kết **có lý do thật** từ trang liên quan, không vá cho đủ chỉ tiêu.
+Hook `PostToolUse` chỉ bắt tool `Write|Edit`; file ghi bằng shell đi vòng qua nó. Trang mồ côi chỉ `--all` tính được. `--size` kiểm trang vừa tạo/sửa có vượt ngưỡng không (báo cáo, không chặn); `--style` kiểm luật 6 (giọng, nhấn mạnh, tự quy chiếu). Có trang mồ côi → thêm liên kết **có lý do thật** từ trang liên quan, không vá cho đủ chỉ tiêu.
 
 **10. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] ingest | <source id> <chương/cụm>`, tối đa 3 dòng: trang tạo/cập nhật, stub mới, phần nguồn còn lại. Giờ lấy bằng `python .claude/hooks/validate_wiki_page.py --now`.
 
