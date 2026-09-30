@@ -1551,3 +1551,9 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 1 trang stub (comparison dự thảo vs chính thức)
 
 ✅ Project complete: 36 trang (Chương I–III + Phụ lục I A–C + 1 stub)
+
+## [2026-09-30:21-04-52] ingest | phuc-luc-i-batch-2 — Phần A (HQLA) 6 trang chi tiết
+- Viết: 6 trang (LCR tổng quan, Cấp 1/2A/2B tiêu chí & công thức, điều chỉnh ràng buộc & repo, bảng tính ví dụ 7 cột)
+- New: 6 trang + 4 stub (Cấp 2A, Cấp 2B, Điều chỉnh, Cash outflow rates); mỗi trang tự chứa đủ định nghĩa + công thức + ví dụ
+- Validate: ✅ hook pass tất cả; 2 commit (batch 1: 2 trang + 4 stub; batch 2: 4 trang + 1 bảng tính)
+- Handoff: tạo session_handoffs/ cho batch 3 (Phần B 8 trang + Phần C 7 trang, token dừng ở ~15K)
