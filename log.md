@@ -1545,3 +1545,9 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 8 trang (Điều 26–38 + Phụ lục I Phần C: tài sản phụ thuộc, công bố, trái phiếu, cổ phần, chuyển tiếp, trách nhiệm NHNN, hiệu lực, NSFR công thức)
 
 ✅ --all sạch (1073 trang, 0 issue)
+
+## [2026-09-30:20-37-08] ingest | sbv_circular_22_final complete (Lượt 6 stub)
+
+1 trang stub (comparison dự thảo vs chính thức)
+
+✅ Project complete: 36 trang (Chương I–III + Phụ lục I A–C + 1 stub)
