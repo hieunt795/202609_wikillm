@@ -2,6 +2,12 @@
 
 > Nhật ký append-only, mỗi operation đúng 1 mục. Định dạng và danh sách `<op>`: `00_schema.md` §12. Lấy 5 mục gần nhất: `grep "^## \[" log.md | tail -5`.
 
+## [2026-09-30:21-35-00] ingest | sbv_circular_22_final Phụ lục III–IV (Batch 6 — Risk Exposure + Disclosure)
+
+- Viết: 4 trang (EM công thức, tài sản nội bảng, phái sinh RC+PFE, cam kít ngoại bảng)
+- Thêm: 1 stub (Phụ lục IV công bố); Validate: ✅ --all sạch (1109 trang, 0 issue); State: Phụ lục III [x], IV [~] (stub)
+- Index.md §Sources: sbv_circular_22_final 100% hoàn tất (43 trang + 14 stub)
+
 ## [2026-09-30:21-28-00] ingest | sbv_circular_22_final Phụ lục II (Batch 5 — NSFR)
 
 - Viết: 5 trang (NSFR định nghĩa, ASF, RSF, ví dụ 247.6%, triển khai 01/10/2026→100% 01/10/2028)
