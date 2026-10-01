@@ -1,7 +1,7 @@
 ---
 title: available-stable-funding-asf-components-and-maturity-classification
 type: concept
-tags: [tt502026, circular-22-2026, alm, sbv, regulation, banking, nsfr, asf, funding]
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, nsfr, asf, funding]
 sources: [sbv_circular_22_final]
 status: draft
 last_updated: 2026-09-30

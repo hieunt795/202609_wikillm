@@ -1,7 +1,7 @@
 ---
 title: government-bond-holding-limits-support-policy-financing
 type: concept
-tags: [tt502026, circular-22-2026, alm, sbv, regulation, banking, government-bond-holdings]
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, government-bond-holdings]
 sources: [sbv_circular_22_final]
 status: stub
 last_updated: 2026-09-30

@@ -1,13 +1,13 @@
 ---
 title: credit-limits-for-equity-share-investments-institutional-borrowers-only
 type: concept
-tags: [tt502026, circular-22-2026, alm, sbv, regulation, banking, credit-limits, equity-investments]
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, credit-limits, equity-investments]
 sources: [sbv_circular_22_final]
 status: draft
 last_updated: 2026-09-30
 ---
 
-Cấp tín dụng để khách hàng mua hoặc nắm giữ cổ phiếu hạn chế hơn trái phiếu: chỉ được cấp cho [[circular-22-defines-19-core-banking-terms-and-concepts|tổ chức tài chính]] hoặc công ty chứng khoán, không được cấp cho cá nhân hoặc doanh nghiệp thông thường (sbv_circular_22_final, Chương II Mục 3, Điều 11, d.256–273).
+Cấp tín dụng để khách hàng mua hoặc nắm giữ cổ phiếu hạn chế hơn trái phiếu: chỉ được cấp cho [[circular-50-2026-defines-19-core-banking-terms-and-concepts|tổ chức tài chính]] hoặc công ty chứng khoán, không được cấp cho cá nhân hoặc doanh nghiệp thông thường (sbv_circular_22_final, Chương II Mục 3, Điều 11, d.256–273).
 
 **Đối tượng được cấp:** Tổ chức tài chính (ngân hàng, công ty bảo hiểm, quỹ đầu tư) hoặc công ty chứng khoán có giấy phép, được cấp tín dụng để mua/nắm giữ cổ phiếu của các công ty khác phục vụ kinh doanh đầu tư của họ (sbv_circular_22_final, Chương II Mục 3, Điều 11, d.256–273).
 

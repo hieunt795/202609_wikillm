@@ -1,7 +1,7 @@
 ---
 title: liquidity-distress-definitions-and-mandatory-disclosure
 type: concept
-tags: [tt502026, circular-22-2026, alm, sbv, regulation, banking, banking-regulation, vietnam-banking, lcr-ratio, liquidity-stress]
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, banking-regulation, vietnam-banking, lcr-ratio, liquidity-stress]
 sources: [sbv_circular_22_final]
 status: draft
 last_updated: 2026-09-30

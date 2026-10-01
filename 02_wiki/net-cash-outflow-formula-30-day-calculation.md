@@ -1,7 +1,7 @@
 ---
 title: net-cash-outflow-formula-30-day-calculation
 type: concept
-tags: [tt502026, circular-22-2026, alm, sbv, regulation, banking, lcr, cash-flow]
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, lcr, cash-flow]
 sources: [sbv_circular_22_final]
 status: draft
 last_updated: 2026-09-30

@@ -1,7 +1,7 @@
 ---
-title: circular-22-defines-19-core-banking-terms-and-concepts
+title: circular-50-2026-defines-19-core-banking-terms-and-concepts
 type: concept
-tags: [tt502026, circular-22-2026, alm, sbv, regulation, banking, banking-regulation]
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, banking-regulation]
 sources: [sbv_circular_22_final]
 status: draft
 last_updated: 2026-09-30
@@ -29,4 +29,4 @@ last_updated: 2026-09-30
 
 **Khái niệm tài chính phái sinh:** Tổ chức tài chính quốc tế, khoản phải đòi, nợ thứ cấp, repo, reverse repo, công cụ tài chính, tài sản tài chính, công cụ vốn, doanh nghiệp xếp hạng tín nhiệm, phái sinh được định nghĩa trong TT-14/2025 (an toàn vốn) (sbv_circular_22_final, Chương I, Điều 3, d.62–110).
 
-[[circular-22-scope-seven-safety-ratios-and-limits]] sử dụng 19 khái niệm này xuyên suốt.
+[[circular-50-2026-scope-seven-safety-ratios-and-limits]] sử dụng 19 khái niệm này xuyên suốt.

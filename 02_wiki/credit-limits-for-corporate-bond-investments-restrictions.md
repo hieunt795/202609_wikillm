@@ -1,7 +1,7 @@
 ---
 title: credit-limits-for-corporate-bond-investments-restrictions
 type: concept
-tags: [tt502026, circular-22-2026, alm, sbv, regulation, banking, credit-limits, bond-investments]
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, credit-limits, bond-investments]
 sources: [sbv_circular_22_final]
 status: draft
 last_updated: 2026-09-30
@@ -15,4 +15,4 @@ Cấp tín dụng để khách hàng mua hoặc nắm giữ trái phiếu doanh 
 
 **Hạn chế 3: Rủi ro phát hành** — Nếu trái phiếu của công ty A do chính công ty A phát hành (trái phiếu công ty A), khoản tín dụng cấp cho bất kỳ khách hàng nào để mua trái phiếu A cộng với tín dụng công ty A theo Điều 9 không được vượt quá giới hạn tín dụng tổng thể (sbv_circular_22_final, Chương II Mục 3, Điều 10, d.238–255).
 
-Các hạn chế này phản ánh rủi ro tập trung vào một công ty (qua cả vay trực tiếp và mua trái phiếu của công ty đó) và ngăn chặn [[circular-22-defines-19-core-banking-terms-and-concepts|tín dụng đầu tư]] thực chất trở thành cấp tín dụng che mắt.
+Các hạn chế này phản ánh rủi ro tập trung vào một công ty (qua cả vay trực tiếp và mua trái phiếu của công ty đó) và ngăn chặn [[circular-50-2026-defines-19-core-banking-terms-and-concepts|tín dụng đầu tư]] thực chất trở thành cấp tín dụng che mắt.

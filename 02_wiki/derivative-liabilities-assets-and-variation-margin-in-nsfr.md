@@ -1,7 +1,7 @@
 ---
 title: derivative-liabilities-assets-and-variation-margin-in-nsfr
 type: concept
-tags: [tt502026, circular-22-2026, alm, sbv, regulation, banking, nsfr, derivatives, collateral]
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, nsfr, derivatives, collateral]
 sources: [sbv_circular_22_final]
 status: draft
 last_updated: 2026-09-30

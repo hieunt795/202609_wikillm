@@ -1,7 +1,7 @@
 ---
 title: liquidity-coverage-ratio-formula-and-components
 type: concept
-tags: [tt502026, circular-22-2026, alm, sbv, regulation, banking, banking-regulation, vietnam-banking, liquidity-ratios, lcr-ratio]
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, banking-regulation, vietnam-banking, liquidity-ratios, lcr-ratio]
 sources: [sbv_circular_22_final]
 status: draft
 last_updated: 2026-09-30

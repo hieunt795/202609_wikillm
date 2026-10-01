@@ -1,7 +1,7 @@
 ---
 title: circular-tt-50-2026-vs-circular-22-2019-draft-comparison
 type: case
-tags: [tt502026, circular-22-2026, alm, sbv, regulation, banking, draft-vs-final, comparison]
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, draft-vs-final, comparison]
 sources: [sbv_circular_22_final, sbv_draft_circular_replace_22]
 status: stub
 last_updated: 2026-09-30

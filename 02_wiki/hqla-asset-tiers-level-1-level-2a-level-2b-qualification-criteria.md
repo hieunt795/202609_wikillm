@@ -1,7 +1,7 @@
 ---
 title: hqla-asset-tiers-level-1-level-2a-level-2b-qualification-criteria
 type: concept
-tags: [tt502026, circular-22-2026, alm, sbv, regulation, banking, lcr, hqla, assets]
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, lcr, hqla, assets]
 sources: [sbv_circular_22_final]
 status: draft
 last_updated: 2026-09-30

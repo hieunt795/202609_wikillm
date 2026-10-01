@@ -1313,10 +1313,10 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[interbank-tenor-ladder-and-deal-ticket-standardization-enforce-internal-treasury-transfers]] — chuẩn hóa bậc thang 21 kỳ hạn liên ngân hàng và phiếu mua bán vốn nội bộ MB06/MB07
 
 **Vietnamese Banking Regulations (Thông tư TT-50/2026)**
-- [[sbv-circular-22-2026-safety-limits-for-commercial-banks]] — hub kết nối bảy tỷ lệ/giới hạn bảo đảm an toàn cho ngân hàng thương mại Vietnam
-- [[circular-22-scope-seven-safety-ratios-and-limits]] — (Điều 1) bảy tỷ lệ/giới hạn bắt buộc: LEV, LCR, NSFR, LDR, credit limits, government bonds, equity stakes
-- [[circular-22-applies-to-commercial-banks-and-foreign-branches]] — (Điều 2) đối tượng áp dụng, ngoại lệ chính sách
-- [[circular-22-defines-19-core-banking-terms-and-concepts]] — (Điều 3) định nghĩa 19 khái niệm chuyên ngành
+- [[sbv-circular-50-2026-safety-limits-for-commercial-banks]] — hub kết nối bảy tỷ lệ/giới hạn bảo đảm an toàn cho ngân hàng thương mại Vietnam
+- [[circular-50-2026-scope-seven-safety-ratios-and-limits]] — (Điều 1) bảy tỷ lệ/giới hạn bắt buộc: LEV, LCR, NSFR, LDR, credit limits, government bonds, equity stakes
+- [[circular-50-2026-applies-to-commercial-banks-and-foreign-branches]] — (Điều 2) đối tượng áp dụng, ngoại lệ chính sách
+- [[circular-50-2026-defines-19-core-banking-terms-and-concepts]] — (Điều 3) định nghĩa 19 khái niệm chuyên ngành
 - [[banks-must-codify-internal-credit-and-capital-regulations]] — (Điều 4) quy định nội bộ bắt buộc
 - [[information-systems-must-track-all-limits-and-ratios-continuously]] — (Điều 5) hệ thống thông tin theo dõi liên tục
 

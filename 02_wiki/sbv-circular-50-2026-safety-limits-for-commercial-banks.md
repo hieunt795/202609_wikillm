@@ -1,15 +1,15 @@
 ---
-title: sbv-circular-22-2026-safety-limits-for-commercial-banks
+title: sbv-circular-50-2026-safety-limits-for-commercial-banks
 type: entity
-tags: [tt502026, circular-22-2026, alm, sbv, regulation, banking, banking-regulation, vietnam-banking]
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, banking-regulation, vietnam-banking]
 sources: [sbv_circular_22_final]
 status: draft
 last_updated: 2026-09-30
 ---
 
-Thông tư số 50/2026/TT-NHNN (TT-50/2026), phát hành ngày 30/09/2026, quy định các giới hạn và tỷ lệ bảo đảm an toàn mà ngân hàng thương mại và chi nhánh ngân hàng nước ngoài tại Việt Nam phải tuân thủ liên tục (sbv_circular_22_final, Chương I, Điều 1, d.32–56). Thông tư thay thế Thông tư số 22/2019/TT-NHNN và bao gồm bảy tỷ lệ/giới hạn chính: [[circular-22-scope-seven-safety-ratios-and-limits]].
+Thông tư số 50/2026/TT-NHNN (TT-50/2026), phát hành ngày 30/09/2026, quy định các giới hạn và tỷ lệ bảo đảm an toàn mà ngân hàng thương mại và chi nhánh ngân hàng nước ngoài tại Việt Nam phải tuân thủ liên tục (sbv_circular_22_final, Chương I, Điều 1, d.32–56). Thông tư thay thế Thông tư số 22/2019/TT-NHNN và bao gồm bảy tỷ lệ/giới hạn chính: [[circular-50-2026-scope-seven-safety-ratios-and-limits]].
 
-Cơ quan ban hành là Ngân hàng Nhà nước Việt Nam (NHNN), nơi đặt quyền giám sát macroprudential (an toàn toàn hệ thống) và microeconomic (an toàn vi mô từng tổ chức) (sbv_circular_22_final, Chương I, Điều 1, d.30). Thông tư áp dụng cho [[circular-22-applies-to-commercial-banks-and-foreign-branches]] mà hoạt động trong lãnh thổ Việt Nam.
+Cơ quan ban hành là Ngân hàng Nhà nước Việt Nam (NHNN), nơi đặt quyền giám sát macroprudential (an toàn toàn hệ thống) và microeconomic (an toàn vi mô từng tổ chức) (sbv_circular_22_final, Chương I, Điều 1, d.30). Thông tư áp dụng cho [[circular-50-2026-applies-to-commercial-banks-and-foreign-branches]] mà hoạt động trong lãnh thổ Việt Nam.
 
 Nội dung Thông tư gồm ba chương: Chương I (quy định chung: phạm vi, đối tượng, từ ngữ, quy định nội bộ, hệ thống thông tin); Chương II (bảy mục chi tiết từng tỷ lệ và giới hạn); Chương III (tổ chức thực hiện và hiệu lực) (sbv_circular_22_final, Chương I, Điều 1, d.32). Phụ lục I cung cấp hướng dẫn kỹ thuật xác định tỷ lệ khả năng chi trả (LCR) (sbv_circular_22_final, Phụ lục I, d.786–1277).
 
