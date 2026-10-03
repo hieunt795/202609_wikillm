@@ -6,7 +6,7 @@
 
 ```yaml
 title:
-type: entity | concept | case | analysis
+type: entity | concept | case | analysis | provision
 tags: []
 sources: []        # source id trong 03_state/_sources_manifest.md (§10)
 status: stub | draft | stable | stale     # vòng đời: xem §9
@@ -14,6 +14,8 @@ last_updated:
 reviewed:          # TUỲ CHỌN — ngày trang được review đối chiếu nguồn; không có = chưa review (§9)
 reviewed_by:       # user | model — bắt buộc khi có reviewed (§9)
 ```
+
+Trang `type: provision` có thêm 4 trường bắt buộc `address`, `span`, `source_file`, `source_sha256` (§13).
 
 ## 2. Taxonomy (phân loại trang wiki)
 
@@ -23,6 +25,7 @@ reviewed_by:       # user | model — bắt buộc khi có reviewed (§9)
 | concept | Khái niệm, ý tưởng, định nghĩa tổng quát — áp dụng được ngoài 1 bối cảnh cụ thể | Ingest |
 | case | Tường thuật gắn với 1 bối cảnh cụ thể (quốc gia + giai đoạn thời gian), không tổng quát hóa được, dùng làm minh chứng thực tế cho `concept` liên quan | Ingest |
 | analysis | Tổng hợp, so sánh, nhận định agent tự sinh ra từ nhiều nguồn/trang đã có trong wiki | Query, Research (cần xác nhận người dùng trước khi tạo — `.claude/skills/query/SKILL.md` bước 5, `.claude/skills/research/SKILL.md` Pha 2–3) |
+| provision | Một Điều (hoặc một Mục của phụ lục) của văn bản quy phạm pháp luật: nguyên văn + block ID cho từng khoản/điểm/tiết + tham chiếu. Luật riêng ở §13 | Ingest-legal (`.claude/skills/ingest-legal/SKILL.md`) |
 
 Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, bảng số liệu thô. Nếu cần, chỉ trích dẫn số liệu bên trong trang `case` liên quan, không tạo trang riêng cho bảng.
 
@@ -37,7 +40,7 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 - `02_wiki/` là cấu trúc phẳng — không tách thư mục con theo loại; phân loại qua trường `type`.
 - Tên file trang wiki: kebab-case, khớp với `title`.
 - **Ngôn ngữ:** `title` và tên file viết bằng **tiếng Anh**; thân bài viết bằng **tiếng Việt**, theo profile wiki của skill `writing-style`.
-- `01_sources/` là bất biến — **chỉ đọc, không ngoại lệ**: không sửa nội dung, không thêm file, không đổi tên, không xoá. Mọi thứ agent cần *ghi* về một nguồn đều nằm ngoài thư mục đó. Phép thử: mọi file `.md`/`.pdf` trong `01_sources/` đều có trong bản kê và khớp SHA-256 (`validate_wiki_page.py --verify-sources`).
+- `01_sources/` là bất biến — **chỉ đọc, không ngoại lệ**: không sửa nội dung, không thêm file, không đổi tên, không xoá. Mọi thứ agent cần *ghi* về một nguồn đều nằm ngoài thư mục đó. Phép thử: mọi file `.md`/`.pdf`/`.docx` trong `01_sources/` đều có trong bản kê và khớp SHA-256 (`validate_wiki_page.py --verify-sources`).
 - `03_state/` là vùng trạng thái do agent sở hữu, máy đọc được, gồm 1 bản kê xuất xứ chung `03_state/_sources_manifest.md` và 1 bản đồ chunk `03_state/<source id>.md` cho mỗi nguồn dài đã bắt đầu ingest (§10).
 - Vùng capture tạm `_inbox.md` nằm ở gốc dự án, **không** nằm trong `02_wiki/` (§11).
 - Báo cáo lint/audit/research lưu ở `Claude outputs/` (không commit), tên `lint-<YYYY-MM-DD>-<số trang>.md`, `audit-<YYYY-MM-DD>-<chủ đề>.md`, hoặc `research-<YYYY-MM-DD>-<chủ đề>-<sub id>.md`; bản đồ chủ đề của research là `research-map-<chủ đề>.md`, cập nhật qua các lượt.
@@ -49,6 +52,7 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 | Kích thước 1 trang | Ngưỡng mềm: ≤ 1.000 từ/trang, ≤ 250 từ/đoạn dài nhất. Vượt ngưỡng là tín hiệu cần xem xét tách trang theo §5, đo bằng `--size`. |
 | Ingest | Tạo/cập nhật tối đa 15 trang wiki mỗi lượt (stub không tính); không có ngưỡng dưới. Chunk chưa xong giữ `[~]` (§10) |
 | Lint | Chạy sau mỗi 10 lần ingest, hoặc theo lịch định kỳ |
+| Ingest-legal | Nguyên văn: cả văn bản trong một lượt, không giới hạn số trang (script sinh và đối chiếu bằng máy). Chú giải: tối đa 15 node mỗi lượt, ≤ 150 từ/node (§13) |
 | Review | Tối đa 5 trang mỗi lượt |
 | Research | Map: quét metadata không giới hạn, neighborhood 1 vòng. Deep read: 1 subcluster/lượt, đọc trọn tối đa 15 trang; enrich (ghi claim mới) tối đa 7 trang, ≤ 3 claim/trang; proposal ≤ 20 mục |
 | Mâu thuẫn (conflict) | Không tự sửa — đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn, chờ xử lý |
@@ -255,3 +259,20 @@ Dòng ghi chú về nguồn (ghi chú người dùng, đặc điểm bản chuy�
 - **Log không chứa lập luận.** Lý do → `decisions.md`. Ý tưởng dang dở → `_inbox.md`. Trạng thái "còn lại phần nào" → `03_state/`.
 - Mục mới luôn thêm ở **cuối file**; không sửa mục cũ. Mục cũ sai thì mục kế tiếp cùng loại ghi đính chính.
 - Bản log dài trước khi rút gọn (2026-09-15): `git show e2adb7a:log.md`.
+
+## 13. Trang `provision` — văn bản quy phạm pháp luật
+
+Trang `provision` ghi **nguyên văn** một đơn vị của văn bản quy phạm để tra đúng điều/khoản/điểm và đi theo dẫn chiếu. Trang do `.claude/hooks/legal_docx.py` sinh từ file `.docx`; quy trình ở `.claude/skills/ingest-legal/SKILL.md`. Lý do: `decisions.md` mục 2026-10-03.
+
+- **Nguồn tham chiếu là `.docx`.** Không dùng bản `.md` chuyển từ PDF cho văn bản quy phạm (mất công thức, hỏng đánh số). File `.docx` ghi trong bản kê với SHA-256, cột số dòng để `—`.
+- **Đơn vị trang:** 1 Điều; với phụ lục là 1 Mục La Mã (phụ lục không chia mục là 1 trang). Mỗi văn bản có 1 trang mục lục giữ căn cứ, tiêu đề Chương/Mục và link tới mọi trang.
+- **Tên trang** (không theo §8): `<short>-article-<N>`, `<short>-appendix-<n>[-<phần>]-<mục>`, mục lục `<short>` (vd `tt50-2026-article-12`, `tt50-2026-appendix-1-b-iii`, `tt50-2026`).
+- **Frontmatter thêm:** `address` (vd `D12`, `PL1.B.III`, mục lục `H`), `span` (`¶<từ>–<đến>`: chỉ số khối trong `.docx`), `source_file`, `source_sha256`.
+- **Block ID:** mỗi khối nguyên văn kết thúc bằng `^<id>`; id ghép từ địa chỉ: `d12-k4-a-iv` = Điều 12, khoản 4, điểm a, tiết (iv); phụ lục `pl1-b-iii-k2-3-a`; điểm đ viết `dd`. Khối không có nhãn trong văn bản: `p<n>` đoạn, `g<n>` gạch đầu dòng, `f<n>` công thức, `t<n>` bảng, `vd<n>` ví dụ, `q<n>` đoạn trích văn bản khác.
+- **Link trong nguyên văn:** dẫn chiếu nội bộ ("khoản 3 Điều này", "điểm a(ii) khoản này", "Mục II Phần A Phụ lục I") được bọc `[[trang#^id|chữ gốc]]`; chữ hiển thị giữ nguyên văn. Dẫn chiếu sang văn bản khác không link, liệt kê ở *Tham chiếu ra*.
+- **Bố cục:** dòng *Vị trí* → nguyên văn → *Tham chiếu ra* (chỉ phần chưa có link) → *Tham chiếu vào* → *Chú giải*.
+- **Miễn trừ:** §5 (ngưỡng kích thước), §7 luật 3 (danh sách link), luật 4 (viết lại bằng lời mình), luật 5 (chú thích `d.x–y`; locator là `address` + `span` + SHA). Vẫn áp: thân bài không heading, không link chết, không mồ côi.
+- **Không sửa tay** phần trước *Chú giải*. Muốn đổi thì sửa script rồi `--write` lại; `legal_docx.py <docx> --verify 02_wiki` so cả trang với bản sinh từ nguồn.
+- **Chú giải** là phần duy nhất do model viết: ≤ 150 từ, chỉ diễn giải và nêu quan hệ, không thêm quy phạm; mặc định `(chưa viết)`; `--write` giữ nguyên chú giải đã có. `last_updated` chỉ nâng khi nguyên văn đổi.
+- **State file** `03_state/<source id>.md` của văn bản quy phạm: frontmatter `source`, `file`, `sha256`, `short`, `doc_status`; bảng node do `--state` sinh (`[x]` đã ghi trang · địa chỉ · trang · `¶` · số khối · chú giải có/chưa); mục *Điểm nghi vấn* khi `--tree` báo. Không dùng dải `d.x–y`, không qua `--coverage`: độ phủ do `--verify` bảo đảm (mọi khối của `.docx` thuộc đúng một trang).
+- **Văn bản chưa có số hiệu/ngày ban hành:** ghi `doc_status` ở state file và bản kê; không tự điền.

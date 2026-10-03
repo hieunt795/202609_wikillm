@@ -20,13 +20,14 @@ Wiki tri thức 3 lớp theo mô hình Karpathy, kèm 1 vùng trạng thái ph�
 5. Mỗi operation ghi đúng 1 mục vào **cuối** `log.md`, dạng `## [YYYY-MM-DD:hh-MM-ss] <op> | <tiêu đề>` + tối đa 3 dòng (§12). Lập luận không nằm trong log.
 6. **Mỗi lượt ingest cập nhật `02_wiki/index.md` §Sources và `03_state/<source id>.md`**, kể cả lượt không tạo trang mới. Nguồn mới vào bản kê ngay lượt đầu (§10).
 
-## Sáu operation
+## Bảy operation
 
 Quy trình thực thi nằm trong skill, nạp theo nhu cầu. Skill là nguồn thực thi duy nhất; sửa quy trình thì sửa `SKILL.md` và ghi lý do vào `decisions.md`.
 
 | Operation | Skill | Đầu vào → đầu ra | Đọc `00_schema.md` |
 |---|---|---|---|
 | Nạp nguồn | `/ingest` | nguồn trong `01_sources/` → 5–10 ý chính chờ duyệt → tối đa 15 trang + stub + `index.md` + `03_state/` | Toàn bộ |
+| Nạp văn bản quy phạm | `/ingest-legal` | file `.docx` → cây điều khoản + điểm nghi vấn chờ duyệt → mỗi Điều/Mục phụ lục 1 trang `provision` (nguyên văn, block ID, link dẫn chiếu) + mục lục + `index.md` + `03_state/`; chú giải viết lượt riêng (≤ 15 node) | §1, §3, §10, §12, §13 |
 | Hỏi đáp | `/query` | câu hỏi → câu trả lời; tuỳ chọn 1 trang `analysis` (cần xác nhận) | Không; chỉ §1, §7, §8, §12 khi tạo trang |
 | Kiểm tra sức khoẻ | `/lint` | toàn bộ `02_wiki/` + `_inbox.md` → báo cáo, triage inbox, danh sách *Đủ điều kiện `stable`* | §4–§9, §11, §12 |
 | Nâng `draft → stable` | `/promote` | danh sách người dùng đã duyệt → đổi `status` | §7.5, §9, §12 |
@@ -45,6 +46,7 @@ Chi tiết ở `00_schema.md`; những điều dễ sai nhất:
 - **Viết lại bằng lời mình**, không sao chép nguyên văn (§7). Áp skill `writing-style` profile wiki.
 - `sources:` dùng **source id**, bắt buộc inline list `[id1, id2]` — hook đọc theo dòng, không hiểu YAML nhiều dòng (§1, §10).
 - Claim từ **nguồn dài** kèm chú thích `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim; áp cho `last_updated ≥ 2026-09-14` (§7.5). Chỉ link/chú thích → không nâng `last_updated`.
+- Trang **`type: provision`** (điều khoản văn bản quy phạm) do script sinh từ `.docx`: **không sửa tay** phần trước dòng *Chú giải*; các luật viết lại/heading/chú thích `d.x–y` ở trên không áp cho loại này (§13).
 
 ## Công cụ kiểm
 
@@ -64,6 +66,8 @@ Chi tiết ở `00_schema.md`; những điều dễ sai nhất:
 | `--now` | Giờ Việt Nam cho `log.md` |
 
 Cảnh báo của hook phải xử lý ngay, không để tồn đến lượt lint.
+
+`python .claude/hooks/legal_docx.py <docx> <lệnh>` — đọc văn bản quy phạm từ `.docx` cho `/ingest-legal` (§13): `--tree` · `--refs` · `--check-formulas` khảo sát; `--write 02_wiki` ghi trang; `--verify 02_wiki` so từng trang với bản sinh từ nguồn (**bắt buộc** sau mỗi lần ghi hoặc viết chú giải); `--state` sinh bảng node.
 
 ## Công cụ ghi câu hỏi theo yêu cầu
 

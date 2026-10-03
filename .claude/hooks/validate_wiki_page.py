@@ -6,6 +6,11 @@ Ap dung cho file .md trong 02_wiki/ (tru index.md). Kiem cac luat trong
 than bai khong heading + link kem ly do + chu thich vi tri (§7), quy uoc
 title (§8), vong doi status + cap reviewed/reviewed_by (§9).
 
+Trang `type: provision` (dieu khoan van ban quy pham, do legal_docx.py sinh): mien
+luat danh sach link va chu thich d.x-y; thay bang 4 truong address/span/source_file/
+source_sha256. Nguyen van doi chieu bang `legal_docx.py <docx> --verify 02_wiki`.
+Moi loai trang: link [[trang#^id]] phai tro toi block ID co that.
+
 Che do:
   - hook              : doc JSON tu stdin (PostToolUse tren Write|Edit).
   - --all             : quet toan bo 02_wiki/. Dung cho file ghi bang shell, vi
@@ -45,7 +50,9 @@ import subprocess
 import sys
 
 REQUIRED_FIELDS = ["title", "type", "tags", "sources", "status", "last_updated"]
-VALID_TYPES = {"entity", "concept", "case", "analysis"}
+VALID_TYPES = {"entity", "concept", "case", "analysis", "provision"}
+# `provision` (§2): trang dieu khoan do /ingest-legal sinh tu .docx bang legal_docx.py.
+PROVISION_FIELDS = ["address", "span", "source_file", "source_sha256"]
 VALID_STATUS = {"stub", "draft", "stable", "stale"}
 VALID_REVIEWERS = {"user", "model"}
 
@@ -120,8 +127,27 @@ def yaml_list(raw):
 
 
 def link_targets(clean):
-    """[[a]] va [[a|nhan hien thi]] deu tra ve 'a' (§6)."""
-    return [m.group(1).split("|")[0].strip() for m in re.finditer(r"\[\[([^\]]+)\]\]", clean)]
+    """[[a]], [[a|nhan]], [[a#^khoi|nhan]] va [[a\\|nhan]] (trong bang) deu tra ve 'a' (§6).
+    [[#^khoi|nhan]] tro vao chinh trang -> tra ve '' (noi goi bo qua chuoi rong)."""
+    return [
+        m.group(1).split("|")[0].split("#")[0].rstrip("\\").strip()
+        for m in re.finditer(r"\[\[([^\]]+)\]\]", clean)
+    ]
+
+
+BLOCK_LINK = re.compile(r"\[\[([^\]|#\\]*)#\^([A-Za-z0-9-]+)")
+_ANCHOR_CACHE = {}
+
+
+def page_anchors(path):
+    """Tap block ID (`^id` cuoi dong) cua mot trang; co cache cho --all."""
+    if path not in _ANCHOR_CACHE:
+        try:
+            with open(path, encoding="utf-8-sig") as fh:
+                _ANCHOR_CACHE[path] = set(re.findall(r"\^([A-Za-z0-9-]+)[ \t]*$", fh.read(), re.M))
+        except OSError:
+            _ANCHOR_CACHE[path] = None
+    return _ANCHOR_CACHE[path]
 
 
 def wiki_dir_of(path):
@@ -289,6 +315,29 @@ def check(path, pages=None, longsrc=None, known=None):
                     "[[%s]] tro toi trang khong ton tai (§6). Tao trang `status: stub` "
                     "roi link, hoac sua lai ten trang." % t
                 )
+
+    # Link toi block ID: [[trang#^id]] / [[#^id]] phai co `^id` cuoi dong o trang dich.
+    _ANCHOR_CACHE.pop(path, None)  # trang vua ghi: doc lai, khong dung cache
+    for tgt, anc in sorted(set(BLOCK_LINK.findall(clean))):
+        tgt = tgt.strip() or stem
+        ids = page_anchors(os.path.join(os.path.dirname(path), tgt + ".md"))
+        if ids is not None and anc not in ids:
+            problems.append(
+                "[[%s#^%s]] tro toi block ID khong co trong trang dich (§6). "
+                "Trang `provision`: sinh lai bang legal_docx.py --write, khong sua tay." % (tgt, anc)
+            )
+
+    is_provision = ptype == "provision"
+    if is_provision:
+        # §7 mien tru: nguyen van + danh sach tham chieu do script sinh; locator la
+        # dia chi cau truc + span + SHA cua file nguon trong frontmatter.
+        for field in PROVISION_FIELDS:
+            if not fields.get(field):
+                problems.append(
+                    "Trang `provision` thieu truong `%s` (§1). Trang nay phai do "
+                    "legal_docx.py --write sinh ra." % field
+                )
+        return problems
 
     for i, line in enumerate(clean.splitlines(), 1):
         if re.match(r"^\s*[-*+]\s*\[\[", line):
@@ -575,15 +624,15 @@ def cmd_verify_sources(root):
     src_root = os.path.join(root, "01_sources")
     for d, _, files in os.walk(src_root):
         for f in files:
-            if not f.lower().endswith((".md", ".pdf")):
-                continue  # file phu cua OCR (json, anh) khong can ke
+            if f.startswith("~$") or not f.lower().endswith((".md", ".pdf", ".docx")):
+                continue  # file phu cua OCR (json, anh) va file khoa cua Word khong can ke
             rel = os.path.relpath(os.path.join(d, f), root).replace(os.sep, "/")
             if rel not in listed:
                 extra.append("CHUA KE %s" % rel)
     for line in bad + extra:
         sys.stdout.write(line + "\n")
     sys.stdout.write(
-        "%d file trong ban ke, %d lech/thieu, %d file .md/.pdf chua ke.\n"
+        "%d file trong ban ke, %d lech/thieu, %d file .md/.pdf/.docx chua ke.\n"
         % (len(listed), len(bad), len(extra))
     )
     if bad:
@@ -772,7 +821,9 @@ def cmd_size(wiki_dir, target=None):
             continue
         try:
             with open(os.path.join(wiki_dir, f), encoding="utf-8-sig") as fh:
-                _, body = split_frontmatter(fh.read())
+                fm, body = split_frontmatter(fh.read())
+            if (fm or {}).get("type") == "provision":
+                continue  # nguyen van van ban quy pham: khong ap nguong Atomic (§5)
             words = len(body.split())
             paras = [p.split() for p in body.split("\n\n") if p.strip()]
             max_para = max(len(p) for p in paras) if paras else 0
@@ -828,7 +879,9 @@ def cmd_style(wiki_dir, target=None):
             continue
         try:
             with open(os.path.join(wiki_dir, f), encoding="utf-8-sig") as fh:
-                _, body = split_frontmatter(fh.read())
+                fm, body = split_frontmatter(fh.read())
+            if (fm or {}).get("type") == "provision":
+                continue  # nguyen van khong phai loi viet cua wiki: khong kiem giong (§7)
             issues = []
             body_lower = body.lower()
             # B2
