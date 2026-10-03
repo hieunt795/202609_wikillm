@@ -45,4 +45,4 @@ Tham chiếu vào:
 - `PL2.B.II.t1.r4` ([[tt50-2026-appendix-2-b-ii#^pl2-b-ii-t1]] dòng `r4`) → `^d26` — "Điều 26"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 định nghĩa cặp tài sản và nợ phải trả phụ thuộc lẫn nhau bằng ba nhóm điều kiện. Về thỏa thuận (k1.a): nguồn vốn gắn với một tài sản cụ thể, nợ chưa phải trả khi tài sản chưa thu hồi, kỳ hạn và số tiền gốc trùng khớp, không phải phái sinh. Về đối tác (k1.b): hai đối tác khác nhau, không được đổi thỏa thuận. Về vai trò (k1.c): ngân hàng chỉ làm trung gian và không chịu rủi ro. k2.b cho áp hệ số ASF và RSF cùng bằng 0% cho cặp đạt điều kiện. Theo diễn giải, hai hệ số 0% đưa cặp này ra khỏi cả tử số và mẫu số. k3 cho Ngân hàng Nhà nước quyền bãi bỏ cách tính này và buộc áp hệ số riêng cho từng vế. Dòng 2 của [[tt50-2026-appendix-2-a-ii|Bảng hệ số ASF]] dẫn về k2.b.

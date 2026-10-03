@@ -36,4 +36,4 @@ Tham chiếu vào:
 - `D22.k1.a` ([[tt50-2026-article-22#^d22-k1-a]]) → `^d23` — "Điều 23"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 tính ASF bằng tổng giá trị từng thành phần nhân hệ số ASF; danh mục và hệ số nằm ở Phần A Phụ lục II (k2). k3 xếp nguồn vốn vào nhóm kỳ hạn theo thời điểm sớm nhất phải thực hiện nghĩa vụ. Khách hàng có quyền rút trước hạn thì kỳ hạn tính đến ngày sớm nhất được dùng quyền (k3.b). Quyền mua lại của ngân hàng chỉ rút ngắn kỳ hạn khi ngân hàng đã thông báo (k3.c). Quyền gia hạn của cả hai bên bị bỏ qua (k3.đ). k3.e áp hệ số 0% cho số dư phải thanh toán sớm theo kết luận thanh tra khi ngân hàng vi phạm thời hạn. Theo diễn giải, k3 chọn giả định bất lợi cho ngân hàng ở vế nguồn vốn, ngược chiều với [[tt50-2026-article-24#^d24-k3|khoản 3 Điều 24]], nơi tài sản lấy thời điểm muộn nhất.

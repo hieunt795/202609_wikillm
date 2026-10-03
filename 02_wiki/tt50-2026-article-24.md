@@ -47,4 +47,4 @@ Tham chiếu vào:
 - `PL2.B.II.t1.r3` ([[tt50-2026-appendix-2-b-ii#^pl2-b-ii-t1]] dòng `r3`) → `^d24-k4-b-ii` — "điểm b(ii) khoản 4 Điều 24"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 và k2 tính RSF bằng tổng giá trị từng thành phần nhân hệ số RSF ở Phụ lục II. k3 xếp tài sản không bị ràng buộc theo thời điểm muộn nhất: quyền gia hạn của khách hàng kéo dài kỳ hạn (k3.b), quyền thu hồi sớm của ngân hàng bị bỏ qua (k3.đ). k4 gán hệ số cho tài sản bị ràng buộc theo thời gian ràng buộc còn lại: từ một năm là 100%, từ 6 tháng đến dưới một năm là ít nhất 50%, dưới 6 tháng giữ hệ số như khi không bị ràng buộc. Văn bản không dẫn chiếu, nhưng khái niệm bị ràng buộc được định nghĩa tại [[tt50-2026-article-3#^d3-k17|khoản 17 Điều 3]]. k6 ghi nhận theo ngày giao dịch: tài sản đã đặt lệnh mua được tính, đã đặt lệnh bán bị loại, trừ phái sinh, repo và reverse repo.

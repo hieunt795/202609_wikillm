@@ -51,4 +51,4 @@ Tham chiếu vào:
 - `PL1.A.I.k6` ([[tt50-2026-appendix-1-a-i#^pl1-a-i-k6]]) → `^d22-k5-b` — "điểm b khoản 5 Điều 22"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 định nghĩa tỷ lệ NSFR bằng ASF chia RSF; tử số tính theo [[tt50-2026-article-23|Điều 23]], mẫu số theo [[tt50-2026-article-24|Điều 24]], hệ số nằm ở Phụ lục II. k2 đặt lộ trình ngưỡng tối thiểu của NSFR riêng lẻ là 90%, 95% rồi 100% qua ba năm. Nhóm ngân hàng thuộc khoản 1 Điều 13 bắt đầu ngày 01/10/2028; nhóm đăng ký theo điểm a khoản 2 Điều 13 bắt đầu từ tháng sau tháng đăng ký. NSFR hợp nhất không có ngưỡng, k3 giao cho quy định nội bộ. k5 buộc dùng cùng định nghĩa với LCR. k6 không cho bù trừ repo với reverse repo: khoản phải đòi vào RSF, khoản phải trả vào ASF. Mục tiêu của tỷ lệ theo Basel có ở [[basel-iii-net-stable-funding-ratio-nsfr-enforces-structural-funding-stability]]; trang đó viết một phần từ dự thảo ngày 21/04/2026, chưa đối chiếu với k2.

@@ -24,7 +24,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `sbv_circular_14_2025` | Nguồn dài (2 file, 546 KB / 3.371 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_circular_14_2025.md` |
 | `sbv_circular_83_2025` | Nguồn dài (240 KB / 1.928 dòng) | **Hoàn tất 100%** | Toàn bộ 3/3 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_circular_83_2025.md` |
 | `sbv_draft_circular_replace_22` | Nguồn dài (358 KB / 2.009 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_draft_circular_replace_22.md` |
-| `sbv_tt50_2026` | Nguồn dài (văn bản quy phạm, `.docx` 242 KB / 1.014 khối) | **Nguyên văn hoàn tất** | 68 trang `provision` khớp nguồn 2026-10-03; chú giải 0/67 node | `03_state/sbv_tt50_2026.md` |
+| `sbv_tt50_2026` | Nguồn dài (văn bản quy phạm, `.docx` 242 KB / 1.014 khối) | **Nguyên văn hoàn tất** | 68 trang `provision` khớp nguồn 2026-10-03; chú giải 10/67 node (Điều 22–26, Phụ lục II) | `03_state/sbv_tt50_2026.md` |
 | `bcbs_144` | Nguồn dài (138 KB / 641 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, 18 concept, --coverage sạch 2026-09-27 (chi tiết ở state file) | `03_state/bcbs_144.md` |
 | `bcbs_238` | Nguồn dài (262 KB / 1.263 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, 22 concept, --coverage sạch 2026-09-28 (chi tiết ở state file) | `03_state/bcbs_238.md` |
 | `bcbs_368` | Nguồn dài (189 KB / 1.207 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, 42 concept, --coverage sạch 2026-09-28 (chi tiết ở state file) | `03_state/bcbs_368.md` |

@@ -1517,3 +1517,8 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - TT 50/2026/TT-NHNN từ `.docx`: 38 Điều + 29 node phụ lục + mục lục; `--verify` 1.014/1.014 khối khớp, 0 link chết; `--all` 1.101 trang, 0 vấn đề
 - Đăng ký bản kê + `index.md`; state file `03_state/sbv_tt50_2026.md`; sửa `legal_docx.py` phần *Tham chiếu ra* (lý do ở `decisions.md`)
 - Còn lại: chú giải 0/67 node; số hiệu/ngày theo người dùng xác nhận, file để trống
+
+## [2026-10-03:20-19-32] ingest | sbv_tt50_2026 — chú giải 10 node
+- Chú giải cụm NSFR: Điều 22–26 và Phụ lục II (5 trang), mỗi chú giải ≤ 150 từ; còn 57/67 node chưa có chú giải
+- Đính chính mục ingest trước: `legal_docx.py` gắn nhầm link "Phần A.I Phụ lục I Thông tư số 14/2025, 41/2016" về Phụ lục II của TT50 ở 4 trang; đã sửa script và ghi lại, dẫn chiếu nội bộ còn 338 (trước 348)
+- `--verify` 1.014/1.014 khối, 0 link chết; `--all` 1.101 trang, 0 vấn đề

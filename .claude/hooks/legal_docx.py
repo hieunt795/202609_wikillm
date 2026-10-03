@@ -308,6 +308,7 @@ REF = re.compile(
     r"(?=(?P<tail>[^;.]{0,70}))")
 EXT = re.compile(r"^\s*(?:,\s*(?:Điều\s+)?\d+[^;.]*?)?\s*(Luật|Nghị định|Thông tư số|Bộ luật)")
 EXT_PL = re.compile(r"^\s*(?:kèm theo\s+)?(Thông tư số|Thông tư quy định|quy định của|Luật|Nghị định)")
+EXT_PHAN = re.compile(r"\.[IVX]+\s+Phụ lục\s+[IVX]+\s+(?:kèm theo\s+)?Thông tư số")
 LIST_TAIL = re.compile(r"Phần\s+([A-Z])\s+Phụ lục\s+([IVX]+)\b")
 # Ten van ban ngoai: luat da biet ten truoc (ten luat khong co dau ket thuc), mau chung sau.
 LAWS = ["Luật Các tổ chức tín dụng", "Luật Ngân hàng Nhà nước Việt Nam", "Luật Ngân hàng Nhà nước"]
@@ -344,6 +345,8 @@ def resolve(m, b):
     if b.get("amend"):
         return [], "ext"
     if ("Phụ lục" in base and base != "Phụ lục này") and EXT_PL.match(tail):
+        return [], "ext"
+    if m.group("phan") and EXT_PHAN.match(m.string[m.end("base"):]):  # "Phần A.I Phụ lục I Thông tư số ...": phan cua van ban khac
         return [], "ext"
     st = b["stack"]
     upto = lambda lv: ".".join(c for l, c in st if l <= lv)
@@ -436,11 +439,11 @@ def all_refs(blocks, tree):
                     else:
                         rest = txt[m.end("base"):]
                         mi = DOC.search(rest)
-                        if mi and mi.start() <= len(m.group("tail")):
+                        if mi and (mi.start() <= len(m.group("tail")) or EXT_PHAN.match(rest)):
                             tl, cov = ws(rest[: mi.end()]), m.end("base") + mi.end()
                         else:
                             tl = ws(m.group("tail")) + ("…" if len(m.group("tail")) == 70 else "")
-                        cite += ("" if tl.startswith(",") else " ") + tl
+                        cite += ("" if tl[:1] in (",", ".") else " ") + tl
                     cite = cite.rstrip(",:")
                     ext_cites.append(cite)
                 refs.append({"src": src, "cite": cite, "targets": tg, "kind": kind})

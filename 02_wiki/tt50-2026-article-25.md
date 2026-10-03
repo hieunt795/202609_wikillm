@@ -55,4 +55,4 @@ Tham chiếu vào:
 - `PL3.II.k2_5` ([[tt50-2026-appendix-3-ii#^pl3-ii-k2-5]]) → `^d25-k4-b` — "điểm b khoản 4 Điều 25"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 và k3 lấy chi phí thay thế: giá trị âm là nợ phái sinh, giá trị dương là tài sản phái sinh, tính ròng khi có thỏa thuận bù trừ hai bên đủ điều kiện. k2 trừ ký quỹ biến động bằng tài sản tài chính khỏi nợ phái sinh. k4 chỉ cho trừ khỏi tài sản phái sinh phần ký quỹ biến động bằng tiền mặt đạt đủ bốn điều kiện ở k4.b; ký quỹ ban đầu nhận hệ số ASF 0% (k4.c). k5 so hai số: nợ ròng lớn hơn thì phần chênh vào ASF với hệ số 0%, tài sản ròng lớn hơn thì phần chênh vào RSF với hệ số 100%. Dòng B.1 của [[tt50-2026-appendix-2-b-ii|Bảng hệ số RSF]] cộng 10% tổng nợ phái sinh ở k1. Theo diễn giải, phái sinh không tạo nguồn vốn ổn định trong NSFR, chỉ tạo yêu cầu.

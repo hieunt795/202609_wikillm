@@ -26,7 +26,7 @@ II. Bảng hệ số RSF ^pl2-b-ii
 | `r4` | 4 | Tài sản thuộc cặp tài sản và nợ phải trả phụ thuộc quy định tại [[tt50-2026-article-26\|Điều 26]] Thông tư này. | 0% | 0% | 0% | 0% |  |
 | `r5` | 5 | Phần chênh lệch dương giữa Tài sản phái sinh NSFR và Nợ phái sinh NSFR theo quy định tại [[tt50-2026-article-25#^d25-k5-b\|điểm b khoản 5 Điều 25]] Thông tư này. | 100% |  |  |  |  |
 | `r6` | 6 | Khoản phải thu phát sinh tại ngày giao dịch (trade date receivables) việc bán công cụ tài chính, ngoại tệ hoặc hàng hóa (trừ giao dịch sản phẩm phái sinh, giao dịch repo và reverse repo) nhưng chưa được thanh toán và khi đáp ứng các điều kiện sau:<br>- Dự kiến sẽ được thanh toán theo thời hạn thanh toán của pháp luật có liên quan;<br>- Thực hiện không thành công nhưng vẫn dự kiến sẽ được thực hiện. | 0% |  |  |  |  |
-| `r7` | 7 | Khoản giảm trừ khỏi vốn tự có theo quy định của Thống đốc Ngân hàng Nhà nước về tỷ lệ an toàn vốn mà ngân hàng đang áp dụng, bao gồm những tài sản sau:<br>- Đối với ngân hàng áp dụng Thông tư số 14/2025/TT-NHNN: Mục 11, 12, 16, 29 [[tt50-2026-appendix-2#^pl2-a\|Phần A]].I Phụ lục I Thông tư số 14/2025/TT-NHNN;<br>- Đối với ngân hàng áp dụng Thông tư số 41/2016/TT-NHNN: Mục 8, 19, 22, 23 [[tt50-2026-appendix-2#^pl2-a\|Phần A]].I Phụ lục I Thông tư số 41/2016/TT-NHNN. |  | 100% | 100% | 100% | 100% |
+| `r7` | 7 | Khoản giảm trừ khỏi vốn tự có theo quy định của Thống đốc Ngân hàng Nhà nước về tỷ lệ an toàn vốn mà ngân hàng đang áp dụng, bao gồm những tài sản sau:<br>- Đối với ngân hàng áp dụng Thông tư số 14/2025/TT-NHNN: Mục 11, 12, 16, 29 Phần A.I Phụ lục I Thông tư số 14/2025/TT-NHNN;<br>- Đối với ngân hàng áp dụng Thông tư số 41/2016/TT-NHNN: Mục 8, 19, 22, 23 Phần A.I Phụ lục I Thông tư số 41/2016/TT-NHNN. |  | 100% | 100% | 100% | 100% |
 | `r8` | 8 | Tài sản có tính thanh khoản cao theo [[tt50-2026-article-19\|Điều 19]] Thông tư này |  |  |  |  |  |
 | `r8.1` | 8.1. | Tiền mặt | 0% |  |  |  |  |
 | `r8.2` | 8.2. | Tiền gửi dự trữ bắt buộc (bao gồm cả phần tiền gửi vượt dự trữ bắt buộc) tại Ngân hàng Nhà nước | 0% |  |  |  |  |
@@ -78,7 +78,7 @@ II. Bảng hệ số RSF ^pl2-b-ii
 | `r#58` | B | Phần giá trị khác được tính trong RSF |  |  |  |  |  |
 | `r1~59` | 1 | 10% của tổng giá trị nợ phái sinh quy định tại [[tt50-2026-article-25#^d25-k1\|khoản 1 Điều 25]] Thông tư này (tổng giá trị trước khi trừ đi ký quỹ biến động đã nộp). | 100% |  |  |  |  |
 | `r2~60` | 2 | Tài sản dự kiến nhận về phát sinh tại ngày giao dịch từ việc mua công cụ tài chính, ngoại tệ hoặc hàng hóa (trừ giao dịch sản phẩm phái sinh, giao dịch repo và reverse repo) nhưng chưa được thanh toán và khi đáp ứng các điều kiện sau:<br>- Dự kiến sẽ được thanh toán theo thời hạn thanh toán của pháp luật có liên quan;<br>- Thực hiện không thành công nhưng vẫn dự kiến sẽ được thực hiện. | Xác định hệ số RSF như tài sản trên báo cáo tình hình tài chính được phân loại tại Mục A Bảng này. |  |  |  |  |
-| `r3~61` | 3 | Khoản giảm trừ khỏi vốn tự có theo quy định của Thống đốc Ngân hàng Nhà nước về tỷ lệ an toàn vốn mà ngân hàng đang áp dụng, bao gồm những khoản mục sau:<br>- Đối với ngân hàng áp dụng Thông tư số 14/2025/TT-NHNN: Mục 15, 17, 18, 22, 28 [[tt50-2026-appendix-2#^pl2-a\|Phần A]].I Phụ lục I Thông tư số 14/2025/TT-NHNN;<br>- Đối với ngân hàng áp dụng Thông tư số 41/2016/TT-NHNN: Mục 20, 24, 25 [[tt50-2026-appendix-2#^pl2-a\|Phần A]].I Phụ lục I Thông tư số 41/2016/TT-NHNN. | 100% |  |  |  |  |
+| `r3~61` | 3 | Khoản giảm trừ khỏi vốn tự có theo quy định của Thống đốc Ngân hàng Nhà nước về tỷ lệ an toàn vốn mà ngân hàng đang áp dụng, bao gồm những khoản mục sau:<br>- Đối với ngân hàng áp dụng Thông tư số 14/2025/TT-NHNN: Mục 15, 17, 18, 22, 28 Phần A.I Phụ lục I Thông tư số 14/2025/TT-NHNN;<br>- Đối với ngân hàng áp dụng Thông tư số 41/2016/TT-NHNN: Mục 20, 24, 25 Phần A.I Phụ lục I Thông tư số 41/2016/TT-NHNN. | 100% |  |  |  |  |
 | `r#62` | C | Cam kết ngoại bảng |  |  |  |  |  |
 | `r1~63` | 1 | Hạn mức cam kết và nghĩa vụ phải giải ngân, thanh toán theo thỏa thuận quy định tại khoản [[tt50-2026-appendix-1-b-v#^pl1-b-v-k1\|1]], [[tt50-2026-appendix-1-b-v#^pl1-b-v-k2\|2]], [[tt50-2026-appendix-1-b-v#^pl1-b-v-k3-3\|3.3 Mục V Phần B Phụ lục I]] kèm theo Thông tư này. | 5% |  |  |  |  |
 | `r2~64` | 2 | Nghĩa vụ nợ tiềm ẩn khác quy định tại [[tt50-2026-appendix-1-b-v#^pl1-b-v-k3-2\|khoản 3.2 Mục V Phần B Phụ lục I]] kèm theo Thông tư này. | 0% |  |  |  |  |
@@ -87,17 +87,17 @@ II. Bảng hệ số RSF ^pl2-b-ii
 
 
 Tham chiếu ra (ngoài các link đã có trong nguyên văn):
-- `PL2.B.II.t1.r7` → Phụ lục I Thông tư số 14/2025/TT-NHNN (văn bản ngoài — đã ingest dạng khái niệm, nguồn `sbv_circular_14_2025`; chưa có trang điều khoản)
-- `PL2.B.II.t1.r7` → Phụ lục I Thông tư số 41/2016/TT-NHNN (văn bản ngoài, chưa ingest vào wiki)
+- `PL2.B.II.t1.r7` → Phần A.I Phụ lục I Thông tư số 14/2025/TT-NHNN (văn bản ngoài — đã ingest dạng khái niệm, nguồn `sbv_circular_14_2025`; chưa có trang điều khoản)
+- `PL2.B.II.t1.r7` → Phần A.I Phụ lục I Thông tư số 41/2016/TT-NHNN (văn bản ngoài, chưa ingest vào wiki)
 - `PL2.B.II.t1.r16` → Thông tư số 14/2025/TT-NHNN (văn bản ngoài — đã ingest dạng khái niệm, nguồn `sbv_circular_14_2025`; chưa có trang điều khoản)
 - `PL2.B.II.t1.r16.2.1` → Thông tư số 14/2025/TT-NHNN (văn bản ngoài — đã ingest dạng khái niệm, nguồn `sbv_circular_14_2025`; chưa có trang điều khoản)
 - `PL2.B.II.t1.r16.2.2` → Thông tư số 14/2025/TT-NHNN (văn bản ngoài — đã ingest dạng khái niệm, nguồn `sbv_circular_14_2025`; chưa có trang điều khoản)
 - `PL2.B.II.t1.r17` → Thông tư số 41/2016/TT-NHNN (văn bản ngoài, chưa ingest vào wiki)
-- `PL2.B.II.t1.r3~61` → Phụ lục I Thông tư số 14/2025/TT-NHNN (văn bản ngoài — đã ingest dạng khái niệm, nguồn `sbv_circular_14_2025`; chưa có trang điều khoản)
-- `PL2.B.II.t1.r3~61` → Phụ lục I Thông tư số 41/2016/TT-NHNN (văn bản ngoài, chưa ingest vào wiki)
+- `PL2.B.II.t1.r3~61` → Phần A.I Phụ lục I Thông tư số 14/2025/TT-NHNN (văn bản ngoài — đã ingest dạng khái niệm, nguồn `sbv_circular_14_2025`; chưa có trang điều khoản)
+- `PL2.B.II.t1.r3~61` → Phần A.I Phụ lục I Thông tư số 41/2016/TT-NHNN (văn bản ngoài, chưa ingest vào wiki)
 
 Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Bảng gán hệ số RSF cho ba nhóm: tài sản nội bảng (A), phần giá trị tính bổ sung (B) và cam kết ngoại bảng (C). Trong nhóm A, tiền mặt và tiền gửi dự trữ bắt buộc nhận 0%; HQLA cấp 1, 2A, 2B nhận 5%, 15%, 50%. Khoản cấp tín dụng cho khách hàng bán lẻ, doanh nghiệp và khoản phải đòi bất động sản nhận 50% khi còn dưới 1 năm. Từ 1 năm, các khoản này nhận 65% nếu hệ số rủi ro từ 35% trở xuống và 85% nếu cao hơn. Tài sản bị ràng buộc (dòng 3) nhận hệ số theo [[tt50-2026-article-24#^d24-k4|khoản 4 Điều 24]]; các dòng A.4 đến A.20 chỉ áp cho tài sản không bị ràng buộc. Nhóm B cộng 10% tổng nợ phái sinh với hệ số 100%. Nhóm C áp 5% cho hạn mức cam kết chưa sử dụng.

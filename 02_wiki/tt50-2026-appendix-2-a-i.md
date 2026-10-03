@@ -29,4 +29,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 đặt phạm vi của vế ASF: toàn bộ nợ phải trả và vốn chủ sở hữu trên báo cáo tài chính đều được phân loại để nhận hệ số. k2 lấy giá trị ghi sổ làm cơ sở và nêu ba ngoại lệ. Nợ phái sinh NSFR tính theo [[tt50-2026-article-25|Điều 25]] (k2.a). Nợ phải trả thuộc cặp phụ thuộc lẫn nhau tính theo [[tt50-2026-article-26|Điều 26]] (k2.b). Các khoản mục vốn tự có ở dòng 1.1 và 1.2 của Bảng hệ số ASF tính theo thông tư an toàn vốn mà ngân hàng đang áp dụng, Thông tư 41/2016/TT-NHNN hoặc Thông tư 14/2025/TT-NHNN (k2.c). Theo diễn giải, ngoại lệ k2.c làm giá trị vốn trong ASF của hai ngân hàng có cùng sổ sách kế toán vẫn khác nhau nếu họ áp dụng hai thông tư an toàn vốn khác nhau.
