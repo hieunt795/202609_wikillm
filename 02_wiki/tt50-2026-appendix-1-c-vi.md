@@ -25,4 +25,4 @@ Tham chiếu vào:
 - `PL1.C.IV.k1` ([[tt50-2026-appendix-1-c-iv#^pl1-c-iv-k1]]) → `^pl1-c-vi` — "Mục VI Phần này"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 không cho tính doanh thu phi tài chính vào dòng tiền vào. k2 định nghĩa doanh thu phi tài chính là khoản thu không đến từ sản phẩm, dịch vụ của ngân hàng và không thường xuyên, như thanh lý tài sản, chuyển nhượng mảng kinh doanh, cùng các khoản thu khác thuộc khoản mục thu nhập khác theo hệ thống tài khoản kế toán. Tên mục là "Dòng tiền vào khác" nhưng nội dung chỉ có điều cấm; mục này không tạo thêm loại dòng tiền vào nào. Ở [[tt50-2026-appendix-1-b-vi|Mục VI Phần B]], mọi dòng tiền ra còn lại nhận hệ số 100%. Theo diễn giải, hai mục cuối của hai phần xử lý phần dư theo hai hướng ngược nhau.

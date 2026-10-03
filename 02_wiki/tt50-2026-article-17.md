@@ -39,4 +39,4 @@ Tham chiếu vào:
 - `PL1.A.I.k5.a.ii` ([[tt50-2026-appendix-1-a-i#^pl1-a-i-k5-a-ii]]) → `^d17-k3` — "khoản 3 Điều 17"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 yêu cầu một bộ phận tại trụ sở chính theo dõi LCR hằng ngày, do Tổng giám đốc hoặc cấp phó được ủy quyền phụ trách. Khi ngân hàng vi phạm LCR quy VNĐ riêng lẻ, Ngân hàng Nhà nước xử phạt hành chính và giám sát (k2.a). Ngân hàng tự xử lý ngay bằng vay hoặc cam kết không thể hủy ngang với tổ chức tín dụng, tổ chức tài chính nước ngoài (k2.b.i). Khi biện pháp tự xử lý đạt từ 10% giá trị HQLA đủ điều kiện, Ngân hàng Nhà nước giám sát tăng cường (k2.b.ii). Ngân hàng báo cáo hằng ngày trước 12 giờ hôm sau; riêng ngày đầu báo cáo bổ sung trước 17 giờ (k2.b.iii). k3 chặn chiều ngược lại: ngân hàng chỉ được cho ngân hàng khác vay để bù thiếu hụt nếu sau đó vẫn đạt LCR của mình.

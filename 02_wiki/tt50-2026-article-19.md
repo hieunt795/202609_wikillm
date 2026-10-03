@@ -25,4 +25,4 @@ Tham chiếu vào:
 - `PL2.B.II.t1.r8` ([[tt50-2026-appendix-2-b-ii#^pl2-b-ii-t1]] dòng `r8`) → `^d19` — "Điều 19"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 chia HQLA thành tài sản cấp 1 và cấp 2, cấp 2 gồm 2A và 2B; tiêu chí từng cấp nằm ở Mục II, III, IV Phần A Phụ lục I. k2 cho ngân hàng tự đa dạng hóa HQLA theo quy định nội bộ. Điều này chỉ phân loại. Tài sản thuộc ba cấp còn phải đạt yêu cầu vận hành ở [[tt50-2026-article-20|Điều 20]] mới là HQLA đủ tiêu chuẩn. Sau đó giá trị còn qua hạn mức và giảm trừ ở [[tt50-2026-appendix-1-a-i|Mục I Phần A Phụ lục I]] mới thành giá trị HQLA đủ điều kiện ở tử số LCR. Bảng hệ số RSF dẫn về điều này ở dòng 8.

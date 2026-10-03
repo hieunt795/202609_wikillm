@@ -50,4 +50,4 @@ Tham chiếu vào:
 - `D30.k2` ([[tt50-2026-article-30#^d30-k2]]) → `^d9-k3` — "khoản 3 Điều 9"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 lấy vốn tự có cuối ngày làm việc liền kề trước làm cơ sở cho các hạn chế, giới hạn cấp tín dụng ở Điều 135, 136 Luật Các tổ chức tín dụng. k3 định nghĩa tổng mức dư nợ cấp tín dụng gồm bảy cấu phần: dư nợ gốc nội bảng và ngoại bảng (k3.a), hạn mức chưa giải ngân và cam kết ngoại bảng trừ cam kết hủy ngang vô điều kiện (k3.b), dư nợ ủy thác (k3.c), trái phiếu doanh nghiệp (k3.d), tiền bán nợ chưa thu (k3.đ), tiền mua nợ đã trả (k3.e), mua hẳn miễn truy đòi bộ chứng từ (k3.g). Điều 10 và Điều 11 dùng k3 để tính trần 5%; Điều 30 có quy định chuyển tiếp cho k3.đ, k3.e, k3.g. k4 quy định cấp thông qua khoản cấp tín dụng cho đối tượng ở khoản 1 Điều 135.

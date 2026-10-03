@@ -61,4 +61,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Biểu mẫu chuyển công thức ở [[tt50-2026-appendix-1-a-i|Mục I]] thành bảng tính. Mỗi dòng tài sản có hai cột giá trị: cột (1) là số dư theo giá thị trường, cột (2) là giá trị điều chỉnh sau khi đảo ngược giao dịch. Nhân với hệ số thanh khoản ở cột (3), cột (4) cộng thành Level 1, Level 2A, Level 2B, còn cột (5) cộng thành KĐC.L1, KĐC.L2A, KĐC.L2B để tính hai khoản điều chỉnh. Cột cuối dẫn từng dòng về điểm tương ứng ở Mục II, III, IV. Dòng 5 tách hạn mức tại Ngân hàng Nhà nước và hạn mức của ngân hàng mẹ. Giấy tờ có giá giao dịch với Ngân hàng Nhà nước lấy giá trị giao dịch thấp nhất. [[tt50-2026-article-14#^d14-k6-b-i|Điểm b(i) khoản 6 Điều 14]] dùng biểu này làm thông tin cho quản lý thanh khoản trong ngày.

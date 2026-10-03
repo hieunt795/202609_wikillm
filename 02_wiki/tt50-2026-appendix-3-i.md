@@ -38,4 +38,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 cho công thức EM bằng tổng bốn cấu phần: tài sản nội bảng, phái sinh, ngoại bảng và giao dịch chưa tất toán. k3 định nghĩa giao dịch chưa tất toán là giao dịch đã thanh toán nhưng chưa hoàn tất chấm dứt hợp đồng; phần phái sinh tính như phái sinh, phần còn lại tính như tài sản nội bảng. k4 không cho giảm EM bằng tài sản bảo đảm, bảo lãnh hay biện pháp giảm thiểu rủi ro tín dụng, và không cho bù trừ tài sản với nợ phải trả, trừ trường hợp nêu ở Mục II. k5 loại khỏi EM các khoản đã giảm trừ khi tính vốn cấp 1; theo diễn giải, quy định này giữ tử số và mẫu số của LEV nhất quán. k6 không cho trừ phần chênh lệch giảm do đánh giá lại tài sản.

@@ -33,4 +33,4 @@ Tham chiếu vào:
 - `D7.k1.b.i` ([[tt50-2026-article-7#^d7-k1-b-i]]) → `^d6` — "Điều 6"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 lấy cách xác định giá trị thực của vốn điều lệ, vốn được cấp từ khoản 3 Điều 28 Luật Các tổ chức tín dụng. k2 đặt hai điều kiện trước khi tính: trích đủ dự phòng rủi ro và chi phí, ghi nhận đúng lãi, phí phải thu và thu nhập. k3 quy định báo cáo nửa năm một lần. Ngân hàng có năm tài chính kết thúc ngày 31/12 báo cáo chậm nhất ngày 15/7 và 15/01 cho số liệu cuối ngày 30/6 và 31/12 (k3.a). Ngân hàng có năm tài chính khác báo cáo chậm nhất ngày 15 của tháng đầu quý thứ nhất và quý thứ ba (k3.b). Bút toán điều chỉnh của kiểm toán độc lập được bổ sung vào kỳ quý tiếp theo (k3.c). [[tt50-2026-article-7|Điều 7]] dùng giá trị này để xác định lúc ngân hàng phải lập phương án xử lý.

@@ -26,4 +26,4 @@ Tham chiếu vào:
 - `PL1.C.VII.t1.r6` ([[tt50-2026-appendix-1-c-vii#^pl1-c-vii-t1]] dòng `r6`) → `^pl1-c-v` — "Mục V Phần C"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 tính dòng tiền vào ròng từ phái sinh với hệ số thu tiền 100%, theo cùng quy tắc tính ròng ở [[tt50-2026-appendix-1-b-iv|khoản 1 Mục IV Phần B]]. Theo diễn giải từ việc k1 dẫn về Phần B, mỗi đối tác có thỏa thuận bù trừ đủ điều kiện chỉ tạo ra một số ròng, nằm ở dòng tiền ra hoặc ở dòng tiền vào. k2 trừ khỏi dòng tiền vào phần tiền mặt hoặc tài sản tài chính mà ngân hàng phải cung cấp bổ sung khi công cụ phái sinh được bảo đảm bằng HQLA của ngân hàng. Biểu mẫu ở Mục VII ghi mục này ở dòng 6.

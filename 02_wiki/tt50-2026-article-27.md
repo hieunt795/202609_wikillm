@@ -36,4 +36,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 buộc công bố thông tin về các tỷ lệ thanh khoản ít nhất 6 tháng một lần: kỳ bán niên chậm nhất 75 ngày sau khi kết thúc 6 tháng đầu năm tài chính, kỳ năm chậm nhất 120 ngày sau khi kết thúc năm tài chính. k2 yêu cầu quy định nội bộ về quy trình công bố, trong đó số liệu thống nhất với báo cáo tài chính cùng thời điểm (k2.b) và quy trình được rà soát hằng năm (k2.g). k3 yêu cầu gửi quy định này cho Ngân hàng Nhà nước trong 10 ngày. k4 cấm ngân hàng chưa đạt ngưỡng 100% cho LCR và NSFR tuyên bố đã tuân thủ toàn bộ Mục 5. Nội dung phải công bố nằm ở [[tt50-2026-appendix-4|Phụ lục IV]]. Trang [[pillar-3-liquidity-disclosure-standards-mandate-qualitative-and-quantitative-market-transparency]] viết từ dự thảo ngày 21/04/2026, chưa đối chiếu.

@@ -43,4 +43,4 @@ Tham chiếu vào:
 - `D35.k3` ([[tt50-2026-article-35#^d35-k3]]) → `^d7-k2-d` — "điểm d khoản 2 Điều 7"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Khi giá trị thực của vốn điều lệ thấp hơn vốn pháp định, ngân hàng lập phương án xử lý và báo cáo Ngân hàng Nhà nước trong tối đa 30 ngày (k1.b). k2 liệt kê biện pháp của Ngân hàng Nhà nước: kiểm tra hoặc yêu cầu kiểm toán độc lập (k2.a), yêu cầu sửa phương án (k2.b), giám sát thực hiện (k2.c). Dưới 80% vốn pháp định, Ngân hàng Nhà nước áp biện pháp ở khoản 2 Điều 59 Luật Ngân hàng Nhà nước (k2.d.i). Dưới 50%, hoặc thấp hơn vốn pháp định liên tục 6 tháng dù đã có phương án, ngân hàng bị cơ cấu lại hoặc thu hồi giấy phép (k2.d.ii). k3 phân quyền cho Ngân hàng Nhà nước Khu vực đối với chi nhánh ngân hàng nước ngoài. Trang [[statutory-capital-real-value-and-remedial-mechanisms-govern-bank-solvency]] viết từ dự thảo ngày 21/04/2026, chưa đối chiếu với bản này.

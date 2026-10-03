@@ -50,4 +50,4 @@ Tham chiếu vào:
 - `PL1.C.VII.t1.r1.5` ([[tt50-2026-appendix-1-c-vii#^pl1-c-vii-t1]] dòng `r1.5`) → `^pl1-c-ii` — "Mục II Phần C"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Mục này áp cho khoản cấp tín dụng có bảo đảm bằng tài sản tài chính và giao dịch reverse repo còn lại đến 30 ngày (k1.1); giao dịch cho phép hoàn trả sau 30 ngày không được tính (k1.2). Hệ số thu tiền đi theo tài sản bảo đảm: 0% với tài sản cấp 1, 15% với cấp 2A, 25% với RMBS cấp 2B, 50% với tài sản cấp 2B khác và khoản cho vay ký quỹ, 100% với tài sản tài chính ngoài HQLA (k2, k3, k4). Các hệ số này bằng hệ số rút tiền của nguồn vốn bán buôn có bảo đảm cùng loại tài sản ở [[tt50-2026-appendix-1-b-iii|Mục III Phần B]]. Theo diễn giải, tài sản bảo đảm càng thanh khoản thì giao dịch càng được giả định là sẽ được gia hạn, nên phần tiền thu về càng thấp.

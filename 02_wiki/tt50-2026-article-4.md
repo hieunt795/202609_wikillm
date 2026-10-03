@@ -47,4 +47,4 @@ Tham chiếu vào:
 - `PL1.A.I.k5.d` ([[tt50-2026-appendix-1-a-i#^pl1-a-i-k5-d]]) → `^d4-k5` — "khoản 5 Điều 4"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 liệt kê nội dung tối thiểu của quy định nội bộ về cấp tín dụng và vốn: phương pháp theo dõi khách hàng có dư nợ từ 1% vốn tự có (k1.a), tách người quyết định cơ cấu lại nợ khỏi người quyết định cấp tín dụng (k1.c), quản lý cơ cấu vốn tự có và tài sản (k1.đ). k2 buộc quản lý đầu tư trái phiếu doanh nghiệp, mua bán nợ và mua hẳn miễn truy đòi bộ chứng từ như hoạt động cấp tín dụng. k3 dẫn sang Điều 14 cho quy định nội bộ về rủi ro thanh khoản. k4 yêu cầu rà soát ít nhất mỗi năm một lần và gửi Ngân hàng Nhà nước trong 10 ngày sau khi ban hành, sửa đổi. k5 nêu bốn hình thức gửi; Điều 6, 7 và 17 dùng lại k5 cho các báo cáo khác.

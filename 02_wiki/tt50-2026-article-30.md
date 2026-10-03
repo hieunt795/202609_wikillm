@@ -26,4 +26,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 xử lý hệ quả của việc [[tt50-2026-article-9#^d9-k3|khoản 3 Điều 9]] tính tiền bán nợ, tiền mua nợ và mua hẳn miễn truy đòi bộ chứng từ vào tổng mức dư nợ cấp tín dụng. Ngân hàng vượt giới hạn ở Điều 135, 136 Luật Các tổ chức tín dụng chỉ vì các khoản này, phát sinh trước ngày thông tư có hiệu lực, không bị coi là vi phạm. k2 gắn việc cấp tín dụng mới cho các khách hàng đang vượt giới hạn với việc tuân thủ lại Điều 135, 136 và khoản 3 Điều 9. Câu chữ của k2 là "chỉ được cấp tín dụng mới… cho đến khi tuân thủ". Cách hiểu rằng ngân hàng không được cấp mới cho đến khi tuân thủ là diễn giải, văn bản không viết rõ như vậy.

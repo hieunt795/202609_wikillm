@@ -70,4 +70,4 @@ Tham chiếu vào:
 - `PL1.C.V.k1` ([[tt50-2026-appendix-1-c-v#^pl1-c-v-k1]]) → `^pl1-b-iv-k1` — "khoản 1 Mục IV Phần B Phụ lục này"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 tính dòng tiền ra của phái sinh với hệ số 100% (k1.2), trên cơ sở ròng theo đối tác chỉ khi có thỏa thuận bù trừ hai bên đủ điều kiện. k2 cộng năm loại dòng tiền ra bổ sung. Hạ đến 3 bậc tín nhiệm: 100% giá trị phải nộp thêm (k2.1). Tài sản ký quỹ không phải HQLA cấp 1: 20% giá trị (k2.2). Tài sản bảo đảm dư thừa mà đối tác có quyền thu hồi: 100% (k2.3). Tài sản phải ký quỹ nhưng đối tác chưa yêu cầu: 100% (k2.4). Thay đổi định giá thị trường khi có thỏa thuận bù trừ đủ điều kiện: dòng tiền ký quỹ ròng 30 ngày lớn nhất trong 24 tháng liền trước (k2.5). [[tt50-2026-article-20#^d20-k2-i|Điểm i khoản 2 Điều 20]] dẫn về mục này khi cho tính tài sản ký quỹ phái sinh vào HQLA.

@@ -40,4 +40,4 @@ Tham chiếu vào:
 - `PL2.A.II.t1.r10.2.1` ([[tt50-2026-appendix-2-a-ii#^pl2-a-ii-t1]] dòng `r10.2.1`) → `^pl1-b-i-k4-a-iii` — "điểm a(iii) khoản 4 Mục I Phần B Phụ lục I"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 định nghĩa tổng dòng tiền ra là các nghĩa vụ đến hạn, cam kết và nghĩa vụ dự kiến phát sinh trong 30 ngày tới. Nghĩa vụ không xác định được thời hạn (k2) và nghĩa vụ đã quá hạn (k3) được xếp vào cột "Ngày tiếp theo". k4 xử lý nguồn vốn có kỳ hạn còn lại trên 30 ngày. Nguồn vốn này nằm ngoài dòng tiền ra khi khách hàng không có quyền rút trước hạn (k4.a.i), hoặc khi tiền gửi bán lẻ bằng VNĐ rút trước hạn chỉ hưởng lãi suất không kỳ hạn thấp nhất (k4.a.iii). Nguồn vốn này vào dòng tiền ra khi khách hàng có quyền rút trong 30 ngày, hoặc khi ngân hàng không đủ thông tin để phân loại (k4.b.ii). [[tt50-2026-appendix-2-a-ii|Bảng hệ số ASF]] dùng lại k4.a.iii để tách hai mức hệ số của tiền gửi có kỳ hạn.

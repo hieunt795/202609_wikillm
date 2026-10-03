@@ -56,4 +56,4 @@ Tham chiếu vào:
 - `D36.k2` ([[tt50-2026-article-36#^d36-k2]]) → `^d13` — "Điều 13"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Điều này quy định ba đường vào chế độ LCR và NSFR. Bắt buộc: từ ngày 01/10/2028 theo lộ trình ở Điều 16 và Điều 22 (k1). Đăng ký sớm: trước ngày 01/01/2028 theo lộ trình (k2.a), hoặc trước ngày 01/01/2033 với ngưỡng 100% ngay (k2.b), kèm báo cáo của Hội đồng quản trị và kiểm toán độc lập về ba tháng liền trước (k2.c). Theo phương pháp xếp hạng nội bộ: ngân hàng được chấp thuận trước ngày 01/07/2033 phải đạt 100% trong 90 ngày (k3). Trước khi vào, ngân hàng giữ các tỷ lệ thanh khoản của Thông tư 22/2019/TT-NHNN (k4). Sau khi vào, LDR tính theo Điều 12 và các tỷ lệ cũ chỉ còn phải báo cáo (k5.b, k5.c). Ngân hàng ở ngưỡng 100% không phải tuân thủ LDR, chỉ báo cáo (k5.d). Trang [[regulatory-liquidity-transition-rules-govern-dual-track-migration-from-mtll-to-lcr-nsfr]] viết từ dự thảo ngày 21/04/2026, chưa đối chiếu.

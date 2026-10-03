@@ -24,4 +24,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Điều này giao Cục An toàn hệ thống các tổ chức tín dụng một việc: trình Thống đốc Ngân hàng Nhà nước quyết định áp dụng tỷ lệ LEV theo [[tt50-2026-article-8#^d8-k1|khoản 1 Điều 8]]. Khoản 1 Điều 8 không đặt ngưỡng LEV cố định, nên tỷ lệ này chỉ ràng buộc ngân hàng khi có quyết định của Thống đốc. Các đơn vị khác của Ngân hàng Nhà nước được giao trách nhiệm ở Điều 32 đến Điều 35.

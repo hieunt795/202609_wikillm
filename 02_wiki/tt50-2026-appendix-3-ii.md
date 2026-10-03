@@ -64,4 +64,4 @@ Tham chiếu vào:
 - `PL3.I.k4` ([[tt50-2026-appendix-3-i#^pl3-i-k4]]) → `^pl3-ii` — "Mục II Phụ lục này"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 tính mọi tài sản trên báo cáo tình hình tài chính, kể cả tài sản đã chuyển giao để thế chấp cho giao dịch phái sinh (k1.1) và tài sản ủy thác mà ngân hàng chịu rủi ro (k1.2), sau khi trừ dự phòng cụ thể (k1.3). Hạch toán gộp tiền mặt được tính theo số dư tài khoản chung khi đạt đủ bốn điều kiện ở k1.4.a. k2 tính trạng thái phái sinh bằng 1,4 lần tổng chi phí thay thế và giá trị tương lai trạng thái rủi ro (k2.1). Chi phí thay thế được trừ ký quỹ biến động bằng tiền mặt đạt các điều kiện ở [[tt50-2026-article-25#^d25-k4-b|điểm b khoản 4 Điều 25]] (k2.5). k3 tính ngoại bảng bằng số dư cam kết nhân hệ số chuyển đổi CCF của quy định an toàn vốn đang áp dụng.

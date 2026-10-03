@@ -49,4 +49,4 @@ Tham chiếu vào:
 - `D17.k3` ([[tt50-2026-article-17#^d17-k3]]) → `^d16` — "Điều 16"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1.a nêu ba loại LCR: LCR quy VNĐ gộp mọi đồng tiền, LCR VNĐ và LCR ngoại tệ trọng yếu. k1.b cho công thức: giá trị HQLA đủ điều kiện theo Điều 20 và Phần A Phụ lục I, chia cho dòng tiền ra ròng 30 ngày theo Điều 21. k1.c đặt lộ trình sáu năm cho LCR quy VNĐ riêng lẻ, từ 50% tăng mỗi năm 10 điểm phần trăm đến 100%. Nhóm bắt buộc theo khoản 1 Điều 13 bắt đầu ngày 01/10/2028 và đạt 100% ngày 01/10/2033; nhóm đăng ký sớm tính từ tháng sau tháng đăng ký. Chỉ LCR quy VNĐ riêng lẻ có ngưỡng trong thông tư. LCR VNĐ riêng lẻ được quản lý theo quy định nội bộ (k1.đ); LCR hợp nhất và LCR ngoại tệ trọng yếu là tùy chọn (k1.d). k2 yêu cầu báo cáo LCR quy VNĐ và LCR VNĐ.

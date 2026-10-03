@@ -61,4 +61,4 @@ Tham chiếu vào:
 - `PL2.B.II.t1.r8.6` ([[tt50-2026-appendix-2-b-ii#^pl2-b-ii-t1]] dòng `r8.6`) → `^pl1-a-iv` — "Mục IV Phần A Phụ lục I"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 cho tài sản cấp 2B hệ số thanh khoản theo từng loại. Chứng khoán bảo đảm bằng khoản vay thế chấp nhà ở (RMBS) xếp hạng từ AA nhận 75% (k3.a). Chứng khoán nợ doanh nghiệp phi tài chính xếp hạng từ BBB- nhận 50% (k3.b). Chứng khoán chính phủ nước ngoài và tổ chức quốc tế xếp hạng từ BBB-, không đủ điều kiện cấp 1 và 2A, nhận 50% (k3.c). Cổ phiếu phổ thông thuộc chỉ số VN30 hoặc chỉ số quan trọng ở nước sở tại nhận 50% (k3.d). Mức giảm giá tối đa trong 30 ngày căng thẳng là 20%, riêng cổ phiếu là 40%. k2 cho Ngân hàng Nhà nước quyền hạ hệ số hoặc loại hẳn tài sản khỏi cấp 2B. Theo cách đọc công thức ở [[tt50-2026-appendix-1-a-i|Mục I]], tài sản cấp 2B chịu trần 15% tổng HQLA.

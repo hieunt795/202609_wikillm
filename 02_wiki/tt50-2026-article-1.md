@@ -43,4 +43,4 @@ Tham chiếu vào:
 - `D35.k3` ([[tt50-2026-article-35#^d35-k3]]) → `^d1-k5` — "khoản 5 Điều 1"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 liệt kê bảy nhóm giới hạn, tỷ lệ mà ngân hàng phải duy trì, trong đó có LCR, NSFR, LDR và LEV. Ba khoản tiếp theo là miễn trừ. Ngân hàng đang bị kiểm soát đặc biệt không phải tuân thủ Điều 136, 137, 138 và khoản 3 Điều 144 Luật Các tổ chức tín dụng (k2). Ngân hàng hỗ trợ và ngân hàng nhận chuyển giao bắt buộc không bị hạn chế tỷ lệ trái phiếu Chính phủ (k3). Dự án theo quyết định của Chính phủ, Thủ tướng được tính theo quyết định đó (k4). k5 cho Ngân hàng Nhà nước quyền siết riêng từng ngân hàng sau thanh tra, giám sát: hệ số LCR, NSFR chặt hơn (k5.a), buộc tuân thủ lại LDR (k5.b), ngưỡng chặt hơn (k5.c). Điều 32, 33 và 35 dẫn về k5.

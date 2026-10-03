@@ -33,4 +33,4 @@ Tham chiếu vào:
 - `D35.k3` ([[tt50-2026-article-35#^d35-k3]]) → `^d15-k1` — "khoản 1 Điều 15"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 cho Ngân hàng Nhà nước quyền yêu cầu biện pháp khắc phục khi thanh tra, kiểm tra, giám sát nêu ra vấn đề về quản lý rủi ro thanh khoản. Ba đơn vị thực hiện quyền này là Thanh tra Ngân hàng Nhà nước, Cục Quản lý, giám sát tổ chức tín dụng và Ngân hàng Nhà nước Khu vực. k2 liệt kê sáu biện pháp: hoàn thiện chính sách nội bộ và kế hoạch dự phòng thanh khoản (k2.a, k2.b), giảm chênh lệch kỳ hạn hoặc giữ HQLA cao hơn (k2.c), hạn chế cấp tín dụng, góp vốn hoặc mở rộng kinh doanh (k2.d), áp tỷ lệ an toàn vốn cao hơn (k2.đ) và yêu cầu khác (k2.e). Theo diễn giải, điều này xử lý yếu kém về quản lý; việc không đạt tỷ lệ LCR được xử lý riêng ở [[tt50-2026-article-17|Điều 17]].

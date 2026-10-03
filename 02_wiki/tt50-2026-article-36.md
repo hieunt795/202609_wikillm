@@ -26,4 +26,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 buộc ngân hàng chưa tuân thủ các giới hạn của thông tư phải xử lý ngay. k2 đặt trách nhiệm về tính trung thực, chính xác, đầy đủ của báo cáo đăng ký theo Điều 13 lên Hội đồng quản trị, Hội đồng thành viên, hoặc Tổng giám đốc của chi nhánh ngân hàng nước ngoài. k3 áp riêng cho chi nhánh ngân hàng nước ngoài: khi nhận thông tin bất lợi về ngân hàng mẹ, chi nhánh phải chủ động cải thiện thanh khoản, kể cả kiểm soát quy mô cấp tín dụng, và báo cáo Ngân hàng Nhà nước trong ngày làm việc tiếp theo, kèm biện pháp tự xử lý ở [[tt50-2026-article-17#^d17-k2-b-i|điểm b(i) khoản 2 Điều 17]] nếu có. Theo diễn giải, k3 coi tình hình của ngân hàng mẹ là một nguồn rủi ro thanh khoản của chi nhánh.

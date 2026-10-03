@@ -38,4 +38,4 @@ Tham chiếu vào:
 - `PL1.C.VII.t1.h0` ([[tt50-2026-appendix-1-c-vii#^pl1-c-vii-t1]] dòng `h0`) → `^pl1` — "Phụ lục này"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Phụ lục I chứa chi tiết tính LCR theo công thức ở [[tt50-2026-article-16#^d16-k1-b|điểm b khoản 1 Điều 16]], chia ba phần theo ba đại lượng. Phần A xác định tử số: công thức giá trị HQLA đủ điều kiện ở Mục I, tiêu chí tài sản cấp 1, 2A, 2B ở Mục II đến IV, biểu mẫu ở Mục V. Phần B xác định dòng tiền ra với hệ số rút tiền theo loại nguồn vốn và cam kết. Phần C xác định dòng tiền vào với hệ số thu tiền. [[tt50-2026-article-21|Điều 21]] ghép Phần B và Phần C thành dòng tiền ra ròng, với trần 75% cho dòng tiền vào. Khung Basel của tỷ lệ này có ở [[basel-iii-liquidity-coverage-ratio-lcr-mandates-short-term-resilience-buffers]]; trang đó dùng dự thảo ngày 21/04/2026 làm nguồn, chưa đối chiếu với bản này.

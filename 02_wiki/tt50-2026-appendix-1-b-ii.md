@@ -48,4 +48,4 @@ Tham chiếu vào:
 - `PL1.B.VII.t1.r2.1.2` ([[tt50-2026-appendix-1-b-vii#^pl1-b-vii-t1]] dòng `r2.1.2`) → `^pl1-b-ii-k3` — "khoản 3 Mục II Phần B"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1.1 định nghĩa khách hàng bán lẻ là cá nhân, tổ hợp tác và hộ kinh doanh; doanh nghiệp tư nhân không thuộc nhóm này. Tiền gửi bán lẻ ổn định nhận hệ số rút tiền 5% (k2.2). Điều kiện ở k2.1 là được Bảo hiểm tiền gửi Việt Nam bảo hiểm hoàn toàn, cộng một trong hai dấu hiệu: khách hàng có nợ vay trung, dài hạn tại ngân hàng, hoặc có tài khoản thanh toán phát sinh giao dịch trong 6 tháng gần nhất. Phần số dư vượt giới hạn bảo hiểm là kém ổn định. Tiền gửi kém ổn định nhận 10% (k3.2); mọi tiền gửi bán lẻ bằng ngoại tệ thuộc loại này (k1.3). k3.3 yêu cầu chia tiền gửi kém ổn định theo nhóm rủi ro khi kiểm tra sức chịu đựng. Trang [[retail-and-wholesale-deposit-run-off-rates-differentiate-short-term-liquidity-outflows]] viết từ dự thảo ngày 21/04/2026, chưa đối chiếu.

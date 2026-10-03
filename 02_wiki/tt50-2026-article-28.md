@@ -30,4 +30,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 đặt trần 30% cho số dư trái phiếu Chính phủ và trái phiếu được Chính phủ bảo lãnh so với tổng nợ phải trả bình quân của tháng liền trước. Văn bản không dẫn chiếu, nhưng mẫu số này được định nghĩa ở [[tt50-2026-article-3#^d3-k13|khoản 13 Điều 3]]. k2 và k3 xác định phạm vi hai loại trái phiếu. k4 tính số dư theo giá mua, gồm cả khoản ủy thác, và loại trái phiếu mua bằng vốn ủy thác không chịu rủi ro cùng trái phiếu nhận làm tài sản bảo đảm, chiết khấu. k5 cho ngân hàng hoạt động dưới 2 năm, có tổng nợ phải trả nhỏ hơn vốn điều lệ, tính trần 30% trên vốn điều lệ. Khoản 3 Điều 1 miễn trần này cho ngân hàng hỗ trợ và ngân hàng nhận chuyển giao bắt buộc.

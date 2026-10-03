@@ -27,4 +27,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Điều này đặt ba yêu cầu tối thiểu cho hệ thống thông tin kết nối toàn hệ thống của ngân hàng: lưu giữ và truy cập dữ liệu khách hàng, thị trường (k1); thống kê dòng tiền, vốn, tài sản, nợ phải trả và tính các giới hạn, tỷ lệ (k2); lập báo cáo thống kê cho Ngân hàng Nhà nước (k3). Văn bản không dẫn chiếu sang điều khác. Theo diễn giải, k2 là điều kiện kỹ thuật cho quản lý thanh khoản trong ngày ở [[tt50-2026-article-14#^d14-k6|khoản 6 Điều 14]], nơi ngân hàng cần biểu tính HQLA và dòng tiền của cuối ngày làm việc liền kề trước.

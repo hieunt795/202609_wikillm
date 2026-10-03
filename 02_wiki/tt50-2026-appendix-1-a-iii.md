@@ -43,4 +43,4 @@ Tham chiếu vào:
 - `PL2.B.II.t1.r8.5` ([[tt50-2026-appendix-2-b-ii#^pl2-b-ii-t1]] dòng `r8.5`) → `^pl1-a-iii` — "Mục III Phần A Phụ lục I"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 cho tài sản cấp 2A hệ số thanh khoản 85%. k3 gồm ba loại. Chứng khoán của chính phủ, ngân hàng trung ương, tổ chức công lập nước ngoài hoặc tổ chức tài chính quốc tế có hệ số rủi ro tối đa 20% (k3.a). Chứng khoán nợ doanh nghiệp phi tài chính xếp hạng từ AA- trở lên (k3.b). HQLA cấp 2A của chi nhánh ở nước ngoài (k3.c). Hai loại đầu phải niêm yết và có mức giảm giá tối đa 10% trong 30 ngày căng thẳng, so với 5% của tài sản cấp 1. k2 dẫn về quyền hạ hệ số thanh khoản của Ngân hàng Nhà nước ở khoản 2 Mục II. Theo cách đọc công thức ở [[tt50-2026-appendix-1-a-i|Mục I]], tổng tài sản cấp 2A và 2B chịu trần 40% tổng HQLA.

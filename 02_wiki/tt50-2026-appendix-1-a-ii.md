@@ -59,4 +59,4 @@ Tham chiếu vào:
 - `PL2.B.II.t1.r8.4` ([[tt50-2026-appendix-2-b-ii#^pl2-b-ii-t1]] dòng `r8.4`) → `^pl1-a-ii` — "Mục II Phần A Phụ lục I"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 cho tài sản cấp 1 hệ số thanh khoản 100% và không giới hạn tỷ trọng trong HQLA đủ điều kiện. k3 liệt kê tám loại: tiền mặt (k3.a), tiền gửi tại Ngân hàng Nhà nước (k3.b), chứng khoán của chính phủ, ngân hàng trung ương nước ngoài và tổ chức quốc tế có hệ số rủi ro 0% (k3.c), công cụ nợ của Chính phủ Việt Nam và tín phiếu Ngân hàng Nhà nước bằng VNĐ và ngoại tệ (k3.d, k3.đ), trái phiếu được Chính phủ bảo lãnh 100% và trái phiếu chính quyền địa phương dùng trong giao dịch của Ngân hàng Nhà nước (k3.e), HQLA của chi nhánh ở nước ngoài (k3.g, k3.h). Chứng khoán ở k3.c phải có mức giảm giá tối đa 5% trong 30 ngày căng thẳng. k2 cho Ngân hàng Nhà nước quyền hạ hệ số thanh khoản.

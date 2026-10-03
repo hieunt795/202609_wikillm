@@ -38,4 +38,4 @@ Tham chiếu vào:
 - `D27.k1` ([[tt50-2026-article-27#^d27-k1]]) → `^pl4` — "Phụ lục IV"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Phụ lục này liệt kê nội dung tối thiểu phải công bố theo [[tt50-2026-article-27|Điều 27]]. Phần định tính gồm tóm tắt chính sách, chiến lược và khẩu vị rủi ro thanh khoản, khái niệm, cấu trúc nguồn vốn và tài sản, biện pháp kiểm soát (k1), cùng cơ cấu tổ chức và cách quản lý tập trung hay phân tán (k2). Phần định lượng gồm bốn tỷ lệ: LCR riêng lẻ, NSFR riêng lẻ, LDR, và LEV riêng lẻ khi Thống đốc quyết định áp dụng (k3). k4 để mở cho thông tin khác theo hướng dẫn công bố thông tin của Ủy ban Basel. Phụ lục không quy định mẫu biểu công bố; hình thức do quy định nội bộ của ngân hàng quyết định theo điểm a khoản 2 Điều 27.

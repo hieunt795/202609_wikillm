@@ -40,4 +40,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 chỉ cho cấp tín dụng để đầu tư, kinh doanh trái phiếu doanh nghiệp với thời hạn đến 1 năm, khi ngân hàng có tỷ lệ nợ xấu dưới 3% và tuân thủ Thông tư 83/2025/TT-NHNN. k2 nêu tám trường hợp cấm theo ba căn cứ. Căn cứ tài sản bảo đảm: trái phiếu của tổ chức tín dụng hoặc của chính doanh nghiệp phát hành (k2.a, k2.b). Căn cứ khách hàng: đối tượng ở Điều 134, 135 Luật Các tổ chức tín dụng, công ty con và công ty liên kết của tổ chức tín dụng (k2.c, k2.d, k2.đ, k2.h). Căn cứ mục đích: mua trái phiếu chưa niêm yết, trái phiếu của chính ngân hàng hoặc công ty con (k2.e, k2.g). k3 đặt trần 5% vốn điều lệ cho tổng mức dư nợ loại này, tính theo [[tt50-2026-article-9#^d9-k3|khoản 3 Điều 9]].

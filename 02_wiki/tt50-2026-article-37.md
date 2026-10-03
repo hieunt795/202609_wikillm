@@ -57,4 +57,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 để trống ngày hiệu lực trong file nguồn; theo người dùng xác nhận ngày 2026-10-03, thông tư có hiệu lực từ ngày 01/10/2026. k2 là ngoại lệ: ngân hàng thương mại còn trong thời gian thực hiện khoản 3 Điều 23 Thông tư 41/2016/TT-NHNN tiếp tục theo các tỷ lệ của Thông tư 22/2019/TT-NHNN và chưa phải tuân thủ Mục 4 (LDR) và Mục 5 (LCR, NSFR). k3 sửa sáu chỗ của Thông tư 22/2019/TT-NHNN thay vì bãi bỏ. Điều 2 mới thu đối tượng của Thông tư 22 về ngân hàng hợp tác xã và nhóm ngân hàng ở k2 (k3.a). Các điểm còn lại cập nhật nơi nhận báo cáo và thẩm quyền của Ngân hàng Nhà nước Khu vực. Các đoạn trong ngoặc kép là văn bản của Thông tư 22, nên số điều khoản trong đó không trỏ về thông tư này.

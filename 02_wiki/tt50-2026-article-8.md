@@ -30,4 +30,4 @@ Tham chiếu vào:
 - `D31.p1` ([[tt50-2026-article-31#^d31-p1]]) → `^d8-k1` — "khoản 1 Điều 8"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 không đặt ngưỡng LEV cố định. Thống đốc Ngân hàng Nhà nước quyết định ngưỡng tối thiểu, tần suất và phương thức báo cáo trong từng thời kỳ khi cần. k2 cho công thức LEV bằng vốn cấp 1 chia tổng trạng thái rủi ro EM. Vốn cấp 1 lấy theo quy định an toàn vốn mà ngân hàng đang áp dụng (k2.a); EM tính theo [[tt50-2026-appendix-3|Phụ lục III]] (k2.b). Ngoài thời gian Thống đốc quyết định áp dụng, ngân hàng tự quản lý LEV theo quy định nội bộ (k3). Điều 31 dẫn về k1. Mục tiêu của tỷ lệ theo Basel có ở [[basel-iii-leverage-ratio-constrains-unweighted-balance-sheet-expansion]]; trang đó viết một phần từ dự thảo ngày 21/04/2026, chưa đối chiếu với bản này.

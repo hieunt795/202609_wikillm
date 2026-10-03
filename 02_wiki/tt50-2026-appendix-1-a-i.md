@@ -69,4 +69,4 @@ Tham chiếu vào:
 - `PL1.A.V.t1.r5.2.2` ([[tt50-2026-appendix-1-a-v#^pl1-a-v-t1]] dòng `r5.2.2`) → `^pl1-a-i-k5-b` — "Điểm 5b Mục I Phần A"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 cộng giá trị ba cấp tài sản sau hệ số thanh khoản với hạn mức ở k4, k5, rồi trừ hai khoản điều chỉnh. Theo cách đọc các phân số 15/85, 15/60 và 2/3 trong công thức, k2 giới hạn tài sản cấp 2B ở 15% tổng HQLA và k3 giới hạn tổng tài sản cấp 2 ở 40%. Hai khoản điều chỉnh tính trên giá trị sau khi đảo ngược các giao dịch repo, reverse repo đáo hạn trong 30 ngày (k3.b). k4 tính hạn mức chưa sử dụng tại Ngân hàng Nhà nước, bảo đảm bằng HQLA cấp 1, như tài sản cấp 1. k5 cho chi nhánh ngân hàng nước ngoài tính hạn mức cam kết từ ngân hàng mẹ: tối đa 50% mức HQLA phải có nếu được đối ứng bằng HQLA cấp 1 của ngân hàng mẹ, tối đa 40% nếu không (k5.b).

@@ -1522,3 +1522,8 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Chú giải cụm NSFR: Điều 22–26 và Phụ lục II (5 trang), mỗi chú giải ≤ 150 từ; còn 57/67 node chưa có chú giải
 - Đính chính mục ingest trước: `legal_docx.py` gắn nhầm link "Phần A.I Phụ lục I Thông tư số 14/2025, 41/2016" về Phụ lục II của TT50 ở 4 trang; đã sửa script và ghi lại, dẫn chiếu nội bộ còn 338 (trước 348)
 - `--verify` 1.014/1.014 khối, 0 link chết; `--all` 1.101 trang, 0 vấn đề
+
+## [2026-10-03:20-30-53] ingest | sbv_tt50_2026 — chú giải 57 node
+- Chú giải nốt Điều 1–21, 27–38, Phụ lục I, III, IV; đủ 67/67 node, mỗi chú giải ≤ 150 từ
+- Một lượt 57 node theo yêu cầu của người dùng (skill giới hạn 15 node/lượt); viết theo 4 lô, đọc nguyên văn từng trang trước khi viết
+- `--verify` 1.014/1.014 khối, 0 link chết; `--all` 1.101 trang, 0 vấn đề

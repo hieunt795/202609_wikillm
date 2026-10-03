@@ -26,4 +26,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Ngân hàng Nhà nước Khu vực có ba việc, giới hạn ở chi nhánh ngân hàng nước ngoài thuộc đối tượng giám sát an toàn vi mô của mình. k1: thanh tra, kiểm tra, giám sát và xử lý vi phạm. k2: tiếp nhận văn bản đăng ký theo Điều 13. k3: quyết định áp dụng cùng danh sách biện pháp như [[tt50-2026-article-32#^d32-k2|khoản 2 Điều 32]]. Với biện pháp về vốn, [[tt50-2026-article-7#^d7-k3|khoản 3 Điều 7]] đã giới hạn thẩm quyền của đơn vị này: biện pháp ở điểm d(i) khoản 2 Điều 7 chỉ theo thẩm quyền được Thống đốc giao, phần còn lại phải trình Thống đốc quyết định.

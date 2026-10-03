@@ -57,4 +57,4 @@ Tham chiếu vào:
 - `PL1.C.VII.t1.r7` ([[tt50-2026-appendix-1-c-vii#^pl1-c-vii-t1]] dòng `r7`) → `^pl1-c-iv-k7` — "Khoản 7 Mục IV Phần C"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Khoản phải đòi từ khách hàng bán lẻ và doanh nghiệp nhỏ và vừa đủ điều kiện nhận 50% (k5). Khoản phải đòi từ tổ chức tài chính và Ngân hàng Nhà nước nhận 100% (k6.a); từ doanh nghiệp phi tài chính, Chính phủ, tổ chức quốc tế và tổ chức khác nhận 50% (k6.b). Chứng khoán ngoài HQLA đáo hạn trong 30 ngày nhận 100% (k7). Tiền gửi hoạt động và tiền gửi ngân hàng đại lý đặt tại tổ chức khác nhận 0%, trừ phần số dư vượt mức yêu cầu rút được trong 30 ngày nhận 100% (k8, k9). k4 giả định dư nợ trong hạn mức quay vòng không được thu về. Theo diễn giải, hệ số 50% hàm ý ngân hàng cho vay lại một nửa số tiền thu từ khách hàng phi tài chính.

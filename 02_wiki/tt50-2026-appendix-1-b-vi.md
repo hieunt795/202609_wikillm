@@ -25,4 +25,4 @@ Tham chiếu vào:
 - `PL1.B.VII.t1.r7` ([[tt50-2026-appendix-1-b-vii#^pl1-b-vii-t1]] dòng `r7`) → `^pl1-b-vi` — "Mục VI Phần B"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Mục này là điều khoản quét: mọi dòng tiền ra theo thỏa thuận trong 30 ngày tới mà không thuộc Mục II đến Mục V đều phải tính (k1), với hệ số rút tiền 100% (k2). Theo diễn giải, cách viết này đặt mặc định bất lợi cho ngân hàng: nghĩa vụ nào không xếp được vào nhóm có hệ số thấp hơn thì nhận 100%. Cách xử lý này cùng hướng với [[tt50-2026-article-21#^d21-k3-d|điểm d khoản 3 Điều 21]], nơi khoản mục thuộc nhiều nhóm nhận hệ số cao nhất. Biểu mẫu ở Mục VII ghi mục này ở dòng 7.

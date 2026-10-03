@@ -27,4 +27,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Cục Quản lý, giám sát tổ chức tín dụng có bốn việc. k1: giám sát, kiểm tra việc chấp hành thông tư. k2: tiếp nhận văn bản đăng ký áp dụng sớm LCR, NSFR theo Điều 13. k3: quyết định áp dụng cùng danh sách biện pháp như [[tt50-2026-article-32#^d32-k2|khoản 2 Điều 32]] với ngân hàng thuộc đối tượng giám sát an toàn vi mô của Cục. k4: xây dựng mẫu biểu báo cáo các giới hạn, tỷ lệ. Cục cũng là nơi nhận nhiều báo cáo mà thông tư yêu cầu, như quy định nội bộ ở khoản 5 Điều 4, kết quả kiểm tra sức chịu đựng ở khoản 9 Điều 14 và báo cáo thiếu hụt LCR ở khoản 2 Điều 17.

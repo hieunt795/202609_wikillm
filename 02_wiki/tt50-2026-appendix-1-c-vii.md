@@ -57,4 +57,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Biểu mẫu gom các Mục II đến V của Phần C thành bảy dòng chính: cấp tín dụng có bảo đảm và reverse repo, hạn mức được cấp, tiền gửi hoạt động, tiền gửi ngân hàng đại lý, dòng tiền vào theo đối tác, phái sinh, chứng khoán ngoài HQLA đáo hạn. Cấu trúc cột giống biểu mẫu dòng tiền ra ở [[tt50-2026-appendix-1-b-vii|Mục VII Phần B]]: bốn nhóm ngày đến hạn, tổng nhân hệ số thu tiền ở cột (6). Biểu không có dòng cho trần 75%; trần này áp khi ghép hai biểu theo [[tt50-2026-article-21#^d21-k2|khoản 2 Điều 21]]. Mục VI không có dòng riêng vì chỉ chứa điều cấm.

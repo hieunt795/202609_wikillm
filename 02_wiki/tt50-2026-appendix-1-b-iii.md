@@ -134,4 +134,4 @@ Tham chiếu vào:
 - `PL2.B.II.t1.r15.1` ([[tt50-2026-appendix-2-b-ii#^pl2-b-ii-t1]] dòng `r15.1`) → `^pl1-b-iii-k2-3` — "khoản 2.3 Mục III Phần B Phụ lục I"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Nguồn vốn bán buôn không có bảo đảm chia bốn bậc hệ số rút tiền. Tiền gửi của doanh nghiệp nhỏ và vừa đủ điều kiện, có số dư bình quân tháng không quá 30 tỷ đồng, nhận 5% hoặc 10% như tiền gửi bán lẻ (k2.2). Tiền gửi hoạt động nhận 25% cho phần số dư trong mức yêu cầu (k2.3). Nguồn từ doanh nghiệp phi tài chính, Chính phủ, ngân hàng trung ương nhận 40% (k2.4). Phần còn lại nhận 100%; theo cách loại trừ ở k2.5, nguồn từ tổ chức tài chính rơi vào đây. Phần có bảo đảm nhận hệ số theo tài sản bảo đảm: 0% với HQLA cấp 1 hoặc giao dịch với Ngân hàng Nhà nước, 15% với cấp 2A, 25% đến 50% với cấp 2B, 100% với tài sản khác (k3.2.2).

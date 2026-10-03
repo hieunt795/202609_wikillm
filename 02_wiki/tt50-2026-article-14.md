@@ -64,4 +64,4 @@ Tham chiếu vào:
 - `D4.k3` ([[tt50-2026-article-4#^d4-k3]]) → `^d14` — "Điều 14"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 đặt Thông tư 83/2025/TT-NHNN làm khung quản lý rủi ro thanh khoản. k5 yêu cầu quản lý thanh khoản cả nội bảng và ngoại bảng, lập hạn mức cho giai đoạn nhu cầu tăng. k6 quy định quản lý thanh khoản trong ngày: đo dòng tiền vào, ra dự kiến và mức thiếu hụt có thể phát sinh (k6.b.ii), có tài sản bảo đảm sẵn dùng (k6.b.v), có phương án khi bên đại lý hoặc lưu ký không thanh toán (k6.d). k8 gắn quy mô HQLA với kịch bản kiểm tra sức chịu đựng và ngưỡng LCR. k9 đặt hạn báo cáo kiểm tra sức chịu đựng 30 ngày sau quý, dữ liệu lịch sử tối thiểu 10 năm (k9.c.i) và hệ số rút tiền không thấp hơn mức của thông tư (k9.c.iii). Khung của Thông tư 83 có ở [[liquidity-risk-management-framework-mandates-cash-flow-gaps-and-contingency-funding-plans]].

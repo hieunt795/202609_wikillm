@@ -24,4 +24,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Điều này giao trách nhiệm tổ chức thực hiện cho thủ trưởng các đơn vị thuộc Ngân hàng Nhà nước, ngân hàng thương mại và chi nhánh ngân hàng nước ngoài. Trách nhiệm cụ thể của từng đơn vị nằm ở Điều 31 đến Điều 36.

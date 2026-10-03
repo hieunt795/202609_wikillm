@@ -41,4 +41,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k2 nêu tám điều kiện tại thời điểm ngân hàng thương mại mua cổ phần của tổ chức tín dụng khác, trong đó có giá trị thực của vốn điều lệ không thấp hơn vốn đã đăng ký (k2.a), nợ xấu dưới 3% (k2.c), Hội đồng quản trị thông qua từng khoản (k2.đ). k2.g và k2.h cấm người quản lý, cổ đông lớn và người có liên quan cùng nắm cổ phần có quyền biểu quyết của tổ chức tín dụng đó. k3 đặt giới hạn: tối đa hai tổ chức tín dụng (k3.a), dưới 5% vốn cổ phần có quyền biểu quyết (k3.b), không đề cử người vào Hội đồng quản trị (k3.c). Công ty con được loại khỏi k3.a và k3.c. k3.d cho vượt giới hạn khi cơ cấu lại tổ chức tín dụng bị kiểm soát đặc biệt hoặc khi Ngân hàng Nhà nước chỉ định.

@@ -64,4 +64,4 @@ Tham chiếu vào:
 - `D22.k2` ([[tt50-2026-article-22#^d22-k2]]) → `^d3-k14` — "khoản 14 Điều 3"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Điều này định nghĩa 19 thuật ngữ dùng trong toàn thông tư. Nhóm cam kết gồm không thể hủy ngang (k5), hủy ngang có điều kiện (k6) và hủy ngang vô điều kiện (k7); cam kết hủy ngang vô điều kiện bị loại khỏi tổng mức dư nợ cấp tín dụng ở [[tt50-2026-article-9#^d9-k3-b|điểm b khoản 3 Điều 9]]. k13 định nghĩa tổng nợ phải trả bình quân tháng. k14 quy định tỷ giá quy đổi ngoại tệ và giá vàng; Điều 12, 16 và 22 dẫn lại k14 khi tính LDR, LCR và NSFR. k15 định nghĩa quyền thế chấp lại. k17 định nghĩa tài sản bị ràng buộc; văn bản không dẫn chiếu, nhưng [[tt50-2026-article-24#^d24-k4|khoản 4 Điều 24]] dùng khái niệm này để gán hệ số RSF. k18 và k19 không tự định nghĩa mà mượn thuật ngữ từ Thông tư 83/2025/TT-NHNN và Thông tư 14/2025/TT-NHNN.

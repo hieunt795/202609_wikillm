@@ -76,4 +76,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Biểu mẫu gom các Mục II đến VI thành bảy dòng chính: tiền gửi bán lẻ, nguồn vốn bán buôn không bảo đảm, nguồn vốn bán buôn có bảo đảm, yêu cầu bổ sung, cam kết ngoại bảng, phái sinh và dòng tiền ra khác. Mỗi dòng chia số dư theo bốn nhóm ngày đến hạn: ngày tiếp theo, ngày 2 đến 7, ngày 8 đến 14, ngày 15 đến 30. Tổng bốn cột nhân hệ số rút tiền ở cột (6) cho giá trị dòng tiền ra ở cột (7). Cột cuối dẫn từng dòng về khoản tương ứng trong Phần B. Theo cách đọc công thức cột (7), việc chia theo nhóm ngày không đổi kết quả LCR vì hệ số áp trên tổng 30 ngày. [[tt50-2026-article-14#^d14-k6-b-i|Điểm b(i) khoản 6 Điều 14]] dùng biểu này cho quản lý thanh khoản trong ngày.

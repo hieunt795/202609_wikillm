@@ -26,4 +26,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 định nghĩa nguy cơ mất khả năng chi trả bằng một ngưỡng định lượng: giá trị HQLA đủ điều kiện thấp hơn 90% mức phải có để đạt LCR trong 30 ngày liên tục. k2 định nghĩa mất khả năng chi trả là không thanh toán được nghĩa vụ nợ trong 30 ngày kể từ ngày đến hạn. k3 buộc ngân hàng báo cáo Ngân hàng Nhà nước thực trạng, nguyên nhân, biện pháp đã và sẽ áp dụng. Theo diễn giải, điều này đặt thêm một nấc sau [[tt50-2026-article-17|Điều 17]]: vi phạm LCR dẫn tới tự xử lý và báo cáo hằng ngày, còn thiếu hụt dưới mức 90% kéo dài 30 ngày đưa ngân hàng vào trạng thái có nguy cơ mất khả năng chi trả.

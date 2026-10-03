@@ -30,4 +30,4 @@ Tham chiếu vào:
 - `PL1.C.IV.k2` ([[tt50-2026-appendix-1-c-iv#^pl1-c-iv-k2]]) → `^pl1-c-i-k1` — "khoản 1 Mục I Phần này"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 chỉ cho ghi nhận dòng tiền vào từ khoản phải đòi đang ở nợ nhóm 1 và không phải khoản phải đòi vỡ nợ theo Thông tư 14/2025/TT-NHNN. k2 loại dòng tiền vào có điều kiện, kể cả cam kết từ Ngân hàng Nhà nước; quyền thay tài sản bảo đảm HQLA bằng tài sản kém thanh khoản hơn cũng bị coi là có điều kiện. k3 yêu cầu theo dõi mức tập trung dòng tiền vào từ khách hàng không phải bán lẻ. k4 loại khoản tiền mà ngân hàng không đủ căn cứ xác định khả năng thu. k5 tách khoản phải đòi trả nhiều kỳ theo ngày trả từng kỳ. Theo diễn giải, năm nguyên tắc này cùng trần 75% ở [[tt50-2026-article-21#^d21-k2|khoản 2 Điều 21]] hạn chế vế dòng tiền vào chặt hơn vế dòng tiền ra.

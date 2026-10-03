@@ -83,4 +83,4 @@ Tham chiếu vào:
 - `PL2.B.II.t1.r2~64` ([[tt50-2026-appendix-2-b-ii#^pl2-b-ii-t1]] dòng `r2~64`) → `^pl1-b-v-k3-2` — "khoản 3.2 Mục V Phần B Phụ lục I"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 định nghĩa hạn mức cam kết là thỏa thuận không thể hủy ngang hoặc hủy ngang có điều kiện, gồm hạn mức tín dụng và hạn mức thanh khoản; giá trị tính là phần chưa sử dụng (k1.2). Bảng ở k1.5 đặt hệ số rút tiền theo đối tượng: 5% cho cá nhân, doanh nghiệp nhỏ và vừa; 10% tín dụng và 30% thanh khoản cho doanh nghiệp phi tài chính và khu vực công; 40% cho tổ chức tín dụng; 40% và 100% cho tổ chức tài chính khác; 100% cho đối tượng còn lại. k2 tính 100% nghĩa vụ giải ngân cho tổ chức tài chính. k3 xử lý nghĩa vụ nợ tiềm ẩn: 0% cho hạn mức hủy ngang vô điều kiện, 3% cho tài trợ thương mại, 5% cho bảo lãnh (k3.2). Trang [[contingent-liquidity-outflows-and-credit-facility-drawdowns-stress-test-off-balance-commitments]] viết từ dự thảo ngày 21/04/2026, chưa đối chiếu.

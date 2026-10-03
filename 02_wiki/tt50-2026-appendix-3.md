@@ -25,4 +25,4 @@ Tham chiếu vào:
 - `D8.k2.b` ([[tt50-2026-article-8#^d8-k2-b]]) → `^pl3` — "Phụ lục III"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Phụ lục III xác định tổng trạng thái rủi ro EM, mẫu số của tỷ lệ LEV ở [[tt50-2026-article-8#^d8-k2|khoản 2 Điều 8]]. [[tt50-2026-appendix-3-i|Mục I]] nêu công thức bốn cấu phần và nguyên tắc chung. [[tt50-2026-appendix-3-ii|Mục II]] nêu cách tính từng cấu phần. Ngân hàng chỉ phải tuân thủ LEV khi Thống đốc Ngân hàng Nhà nước quyết định áp dụng theo khoản 1 Điều 8. Cách đo EM có ở [[leverage-ratio-exposure-measure-aggregates-on-balance-derivatives-and-off-balance-commitments]]; trang đó viết từ dự thảo ngày 21/04/2026, chưa đối chiếu với bản này.

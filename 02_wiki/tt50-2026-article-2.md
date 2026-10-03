@@ -24,4 +24,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Đối tượng áp dụng là ngân hàng và tổ chức, cá nhân có liên quan. Từ "ngân hàng" là cách gọi tắt đặt tại [[tt50-2026-article-1#^d1-k1|khoản 1 Điều 1]], gồm ngân hàng thương mại và chi nhánh ngân hàng nước ngoài. Ngân hàng hợp tác xã không nằm trong cách gọi tắt này. Theo nội dung sửa đổi tại [[tt50-2026-article-37#^d37-k3-a|điểm a khoản 3 Điều 37]], ngân hàng hợp tác xã thuộc đối tượng của Thông tư 22/2019/TT-NHNN, cùng với ngân hàng thương mại còn trong thời gian thực hiện khoản 3 Điều 23 Thông tư 41/2016/TT-NHNN.

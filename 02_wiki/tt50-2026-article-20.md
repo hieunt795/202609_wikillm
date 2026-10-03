@@ -43,4 +43,4 @@ Tham chiếu vào:
 - `D16.k1.b.i` ([[tt50-2026-article-16#^d16-k1-b-i]]) → `^d20` — "Điều 20"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 định nghĩa HQLA đủ tiêu chuẩn là HQLA đạt đủ yêu cầu vận hành ở k2. Tài sản phải chuyển được thành tiền trong giai đoạn căng thẳng 30 ngày bằng bán, repo hoặc giao dịch với Ngân hàng Nhà nước (k2.a) và không bị ràng buộc (k2.c). HQLA đã bảo đảm tại Ngân hàng Nhà nước là bị ràng buộc, nhưng hạn mức chưa sử dụng dựa trên tài sản đó được tính vào HQLA đủ điều kiện (k2.c.iii). Bộ phận quản lý thanh khoản kiểm soát danh mục và có quyền bán tài sản kể cả khi trái chiến lược kinh doanh (k2.d). Tài sản nhận theo quyền thế chấp lại mà chủ sở hữu có quyền rút trong 30 ngày bị loại (k2.h). Tài sản mất tiêu chuẩn được giữ thêm 30 ngày (k2.k). Trang [[hqla-eligibility-and-unwinding-haircut-mechanics-calibrate-liquidity-buffers]] viết từ dự thảo ngày 21/04/2026, chưa đối chiếu.

@@ -39,4 +39,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+Điều này áp cho cổ phiếu cùng cấu trúc với [[tt50-2026-article-10|Điều 10]]. k1 giới hạn thời hạn đến 1 năm, kể cả khi khách hàng ủy thác cho bên khác mua cổ phiếu, kèm điều kiện nợ xấu dưới 3% và tuân thủ Thông tư 83/2025/TT-NHNN. k2 nêu bảy trường hợp cấm. Khác với Điều 10, k2.c cấm cho vay để mua cổ phiếu của bất kỳ tổ chức tín dụng nào, và điều này không có điều cấm về chứng khoán chưa niêm yết. k3 đặt trần 5% vốn điều lệ, vốn được cấp cho tổng mức dư nợ loại này theo khoản 3 Điều 9. Trần ở đây và trần ở khoản 3 Điều 10 đứng riêng, văn bản không gộp. Trang [[equity-and-corporate-bond-financing-limits-curb-speculative-credit-allocation]] tóm tắt hai điều này theo dự thảo ngày 21/04/2026, chưa đối chiếu với bản này.

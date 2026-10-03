@@ -34,4 +34,4 @@ Tham chiếu vào:
 - `D16.k1.b.ii` ([[tt50-2026-article-16#^d16-k1-b-ii]]) → `^d21` — "Điều 21"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 và k2 tính dòng tiền ra ròng 30 ngày bằng tổng dòng tiền ra trừ dòng tiền vào, với dòng tiền vào bị chặn ở 75% tổng dòng tiền ra. Hệ quả số học của trần này: dòng tiền ra ròng không thấp hơn 25% tổng dòng tiền ra. Dòng tiền ra bằng số dư nghĩa vụ nhân hệ số rút tiền theo Phần B Phụ lục I (k2.a). Dòng tiền vào bằng số dư tài sản nhân hệ số thu tiền theo Phần C (k2.b). k3 đặt bốn nguyên tắc: chỉ tính dòng tiền trong 30 ngày tới, tính cả gốc và lãi, không tính dòng tiền vào từ tài sản đã nằm trong HQLA đủ điều kiện (k3.c), và khoản mục thuộc nhiều nhóm nhận hệ số rút tiền cao nhất (k3.d). Trang [[contractual-cash-inflow-caps-and-counterparty-haircuts-govern-net-lcr-measurement]] viết từ dự thảo ngày 21/04/2026, chưa đối chiếu.

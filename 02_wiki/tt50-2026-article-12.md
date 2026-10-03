@@ -55,4 +55,4 @@ Tham chiếu vào:
 - `D13.k5.b` ([[tt50-2026-article-13#^d13-k5-b]]) → `^d12` — "Điều 12"
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 cho công thức LDR bằng tổng dư nợ cho vay L chia tổng tiền gửi D. L là dư nợ cho vay nội bảng (k2) sau khi trừ cho vay tổ chức tín dụng khác và phần vay tái cấp vốn không nhằm hỗ trợ thanh khoản (k3). D rộng hơn tiền gửi theo nghĩa thường: k4 cộng cả trái phiếu đủ điều kiện vốn cấp 2, vốn ủy thác, vay ròng liên ngân hàng, vay nước ngoài và vốn chủ sở hữu sau khi trừ tài sản cố định, góp vốn. 80% tiền gửi có kỳ hạn của Kho bạc Nhà nước bị loại (k4.a.iv). k5 trừ khỏi D các khoản cấp tín dụng không phải cho vay và trái phiếu doanh nghiệp. k6 đặt trần 95%. k7 nối thời điểm áp dụng với khoản 5 Điều 13. Trang [[loan-to-deposit-ratio-ldr-regulates-structural-banking-leverage-and-funding-capacity]] viết từ dự thảo ngày 21/04/2026.

@@ -25,4 +25,4 @@ Tham chiếu vào:
 - (không có)
 
 Chú giải (diễn giải, không phải quy phạm):
-(chưa viết)
+k1 giao Thanh tra Ngân hàng Nhà nước thanh tra, kiểm tra và xử lý vi phạm. k2 trao cho đơn vị này quyền quyết định áp dụng bốn biện pháp theo từng ngân hàng: yêu cầu chặt hơn ở khoản 5 Điều 1, biện pháp về vốn ở điểm d khoản 2 Điều 7, biện pháp khắc phục về thanh khoản ở khoản 1 Điều 15, và bãi bỏ hệ số 0% của cặp tài sản, nợ phụ thuộc lẫn nhau ở khoản 3 Điều 26. k2 còn dẫn tới bốn quy định về HQLA ở Phần A Phụ lục I: điểm c khoản 5 Mục I và khoản 2 của các Mục II, III, IV. [[tt50-2026-article-33|Điều 33]] và [[tt50-2026-article-35|Điều 35]] trao cùng danh sách quyền này cho Cục Quản lý, giám sát tổ chức tín dụng và Ngân hàng Nhà nước Khu vực.
