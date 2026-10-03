@@ -1,0 +1,16 @@
+---
+title: hqla-high-quality-liquid-assets-definitions-and-operational-requirements
+type: concept
+tags: [tt502026, circular-50-2026, alm, sbv, regulation, banking, lcr, hqla, liquidity]
+sources: [sbv_circular_22_final]
+status: draft
+last_updated: 2026-09-30
+---
+
+Tài sản có tính thanh khoản cao đủ tiêu chuẩn (HQLA đủ tiêu chuẩn) là tài sản đáp ứng đầy đủ các yêu cầu vận hành quy định tại Điều 20 Thông tư TT-50/2026, dùng để tính tỷ lệ [[liquidity-coverage-ratio-formula-and-components]] quy VNĐ, VNĐ riêng, ngoại tệ trọng yếu riêng (sbv_circular_22_final, Chương II Mục 5b, Điều 20, d.453–470). HQLA đủ tiêu chuẩn được sử dụng bằng các hình thức bán trực tiếp (outright sale), giao dịch repo, hoặc giao dịch với Ngân hàng Nhà nước để bù đắp thiếu hụt thanh khoản trong giai đoạn căng thẳng 30 ngày mà không bị hạn chế đối với việc sử dụng số tiền thu được (sbv_circular_22_final, Chương II Mục 5b, Điều 20, d.456–457).
+
+Ngân hàng phải đánh giá khả năng chuyển đổi thành tiền của từng tài sản theo quy định nội bộ, phù hợp với thực trạng thị trường và đặc thù hoạt động riêng, bao gồm cả khả năng chuyển đổi thành tiền khi giao dịch với Ngân hàng Nhà nước (sbv_circular_22_final, Chương II Mục 5b, Điều 20, d.458). Tài sản trong danh mục HQLA đủ tiêu chuẩn phải là tài sản không bị ràng buộc; trường hợp tài sản tài chính bị ràng buộc một phần giá trị cũng được xác định là bị ràng buộc toàn bộ (sbv_circular_22_final, Chương II Mục 5b, Điều 20, d.459–460). Tài sản tài chính nhận được từ các giao dịch mua lại đảo ngược (reverse repo) được tính vào danh mục HQLA đủ tiêu chuẩn khi ngân hàng được chuyển giao quyền sở hữu, chưa được sử dụng làm tài sản bảo đảm cho hoạt động khác, và được quyền sử dụng mà không bị ràng buộc theo quy định pháp luật (sbv_circular_22_final, Chương II Mục 5b, Điều 20, d.464).
+
+Danh mục HQLA phải được kiểm soát bởi bộ phận chịu trách nhiệm quản lý thanh khoản của ngân hàng, có thẩm quyền quyết định chuyển đổi tài sản thành tiền bất kỳ lúc nào trong giai đoạn căng thẳng, kể cả khi mâu thuẫn với chiến lược kinh doanh hoặc quản lý rủi ro đã công bố (sbv_circular_22_final, Chương II Mục 5b, Điều 20, d.465). HQLA đủ tiêu chuẩn được phòng ngừa rủi ro thị trường vẫn tính vào danh mục; giá trị của HQLA đủ tiêu chuẩn sử dụng để tính LCR là giá trị thị trường trừ đi chi phí phát sinh khi hợp đồng phòng ngừa rủi ro bị đóng trước thời hạn (sbv_circular_22_final, Chương II Mục 5b, Điều 20, d.465).
+
+Ngân hạn hàng phải xác định danh mục HQLA hằng ngày để đảm bảo phù hợp với sự thay đổi của quy định pháp luật, thị trường, và các biến động khác (sbv_circular_22_final, Chương II Mục 5b, Điều 20, d.465). Ngân hàng phải loại trừ tài sản khỏi danh mục HQLA đủ tiêu chuẩn khi tài sản chỉ có thể được bán trực tiếp nhưng không thể bán hoặc bán với mức giảm giá vượt quá ngưỡng tối đa quy định tại Phụ lục I, hoặc khi tài sản bảo đảm/ký quỹ cho giao dịch phái sinh mà chủ sở hữu có quyền rút trong giai đoạn căng thẳng 30 ngày (sbv_circular_22_final, Chương II Mục 5b, Điều 20, d.466–468). Trường hợp HQLA đủ tiêu chuẩn trở thành không đủ tiêu chuẩn, ngân hàng được phép tiếp tục giữ tài sản đó trong danh mục HQLA đủ tiêu chuẩn trong 30 ngày kể từ ngày HQLA đó trở thành không đủ tiêu chuẩn (sbv_circular_22_final, Chương II Mục 5b, Điều 20, d.469).

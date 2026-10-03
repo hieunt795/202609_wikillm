@@ -2,6 +2,42 @@
 
 > Nhật ký append-only, mỗi operation đúng 1 mục. Định dạng và danh sách `<op>`: `00_schema.md` §12. Lấy 5 mục gần nhất: `grep "^## \[" log.md | tail -5`.
 
+## [2026-09-30:21-35-00] ingest | sbv_circular_22_final Phụ lục III–IV (Batch 6 — Risk Exposure + Disclosure)
+
+- Viết: 4 trang (EM công thức, tài sản nội bảng, phái sinh RC+PFE, cam kít ngoại bảng)
+- Thêm: 1 stub (Phụ lục IV công bố); Validate: ✅ --all sạch (1109 trang, 0 issue); State: Phụ lục III [x], IV [~] (stub)
+- Index.md §Sources: sbv_circular_22_final 100% hoàn tất (43 trang + 14 stub)
+
+## [2026-09-30:21-28-00] ingest | sbv_circular_22_final Phụ lục II (Batch 5 — NSFR)
+
+- Viết: 5 trang (NSFR định nghĩa, ASF, RSF, ví dụ 247.6%, triển khai 01/10/2026→100% 01/10/2028)
+- Thêm: 2 stub (ASF bảng, RSF bảng); Validate: ✅ --all sạch (1104 trang, 0 issue); State: Phụ lục II marked [x]
+
+## [2026-09-30:21-24-00] audit | sbv_circular_22_final — rà soát toàn bộ file
+
+- Đọc: 1.774 dòng (toàn bộ file, Chương I–III + Phụ lục I–IV)
+- Fix state: Chương I `[ ]`→`[x]`, Phụ lục I d.786–1474, total_lines 1277→1774, thêm Phụ lục II–IV
+- Kết quả: Ingest hoàn tất Chương I–III + Phụ lục I (40 trang + 10 stub); Còn Phụ lục II–IV (~9–12 trang, ~300 dòng)
+
+## [2026-09-30:21-22-00] ingest | sbv_circular_22_final Phụ lục I Phần C (Batch 4 — Dòng tiền vào) + Phần VI
+
+- Viết: 8 trang (Dòng tiền vào I–VII: Nguyên tắc ghi nhận, Cấp tín dụng bảo đảm, Hạn mức cam kít, Dòng tiền từ khách hàng, Tiền gửi hoạt động, Phái sinh & Chứng khoán, Loại trừ (doanh thu phi tài chính), Bảng tính)
+- Merge: 1 trang (cập nhật link từ trang 1); Validate: ✅ --all sạch (1099 trang, 0 issue); State: Phụ lục I marked [x]
+
+## [2026-09-30:20-15-52] ingest | sbv_circular_22_final Chap II Mục 4–5a (Lượt 3)
+- Viết: 7 trang (Điều 12–18: LDR tỷ lệ, LCR governance, quản lý rủi ro thanh khoản, khắc phục vấn đề, công thức LCR, vi phạm LCR, định nghĩa mất khả năng chi trả)
+- New: 7 trang; Validate: ✅ --all sạch (1057 trang, 0 issue); State: Chương II Mục 4–5a marked [x]
+
+## [2026-09-30:20-09-00] ingest | sbv_circular_22_final Chap II Mục 1–3 (Lượt 2)
+- Viết: 6 trang (Điều 6–11: vốn thực, xử lý vốn, LEV, credit limit, bond investment, equity investment)
+- Merge: 2 stub (Điều 8–9) từ draft; New: 4 trang (Điều 6–7, 10–11)
+- Validate: ✅ --all sạch (1051 trang, 0 issue); State: Chương II Mục 1–3 marked [x]
+
+## [2026-09-30:20-00-00] ingest | sbv_circular_22_final Chap I (Lượt 1)
+- Viết: 6 trang (Điều 1–5: phạm vi, đối tượng, định nghĩa, quy định nội bộ, hệ thống IT); Hub page
+- Stub: 7 trang (Điều 28–29, 5 tỷ lệ) để resolve wikilink; tất cả chú thích vị trí §7.5
+- Validate: ✅ --all sạch (0 issue); State: Chương I marked [x]
+
 ## [2026-09-30:14-35-00] schema | Evergreen audit — Atomic + tag + luật 6
 - Hook: thêm `--size` (trang > 1.000/250 từ), `--tags` (từ vựng), `--style` (luật 6 + văn phong)
 - Schema: §4 ngưỡng mềm; §5 +dấu hiệu vượt ngưỡng; §6 tag vocabulary rule; §7 6 luật + luật 6 "người đọc là chủ wiki"
@@ -1508,6 +1544,47 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - P: contingent-liquidity-outflow-shocks, commercial-lender-of-last-resort
 - S4 complete: 17/17 trang ✓
 
+## [2026-09-30:17-01-00] research | enrich cash-flow-balancing
+- Enrich 1 trang: cash-flow-balancing-resolves-immediate-payment-obligations-against-excess-reserve-opportunity-cost
+- Bổ sung 4 chiều kích tác nghiệp (không gian tài khoản, đa tiền tệ, RRR, intraday) + khung IMF ER + BCBS 144
+- Sources: clippings, bcbs_144, imf_macro_accounting; last_updated: 2026-09-30
+
+## [2026-09-30:18-30-00] research | create cumulative-liquidity-gap
+- Tạo 1 trang concept: cumulative-liquidity-gap-differentiates-funding-deficit-refinancing-from-surplus-opportunity-costs
+- Phân tích ranh giới đánh đổi giữa thâm hụt ròng (rollover risk) và thặng dư ròng (negative carry/reinvestment risk)
+- Cập nhật 02_wiki/index.md §Sources & liên kết 2 chiều với cash-flow-balancing; sources: clippings, bcbs_144, imf_macro_accounting
+
+
+
+## [2026-09-30:20-24-11] ingest | sbv_circular_22_final Chap II Mục 5b (Lượt 4)
+
+8 trang (Điều 20–22 + Phụ lục I Phần A–B: HQLA định nghĩa, dòng tiền ra ròng, NSFR, ASF, RSF, phái sinh, tài sản tier, hệ số rút tiền)
+
+✅ --all sạch (1065 trang, 0 issue)
+
+## [2026-09-30:20-35-25] ingest | sbv_circular_22_final Chap II Mục 5c-7 + Ch.III (Lượt 5)
+
+8 trang (Điều 26–38 + Phụ lục I Phần C: tài sản phụ thuộc, công bố, trái phiếu, cổ phần, chuyển tiếp, trách nhiệm NHNN, hiệu lực, NSFR công thức)
+
+✅ --all sạch (1073 trang, 0 issue)
+
+## [2026-09-30:20-37-08] ingest | sbv_circular_22_final complete (Lượt 6 stub)
+
+1 trang stub (comparison dự thảo vs chính thức)
+
+✅ Project complete: 36 trang (Chương I–III + Phụ lục I A–C + 1 stub)
+
+## [2026-09-30:21-04-52] ingest | phuc-luc-i-batch-2 — Phần A (HQLA) 6 trang chi tiết
+- Viết: 6 trang (LCR tổng quan, Cấp 1/2A/2B tiêu chí & công thức, điều chỉnh ràng buộc & repo, bảng tính ví dụ 7 cột)
+- New: 6 trang + 4 stub (Cấp 2A, Cấp 2B, Điều chỉnh, Cash outflow rates); mỗi trang tự chứa đủ định nghĩa + công thức + ví dụ
+- Validate: ✅ hook pass tất cả; 2 commit (batch 1: 2 trang + 4 stub; batch 2: 4 trang + 1 bảng tính)
+- Handoff: tạo session_handoffs/ cho batch 3 (Phần B 8 trang + Phần C 7 trang, token dừng ở ~15K)
+
+## [2026-09-30:21-13-52] ingest | sbv_circular_22_final Phụ lục I Phần B
+
+8 trang Part B (Dòng tiền ra): nguyên tắc, tiền bán lẻ, tiền gửi hoạt động, vốn bán buôn, phái sinh, bổ sung, cam kít, bảng tính. 
++ 3 stub HQLA tiers (Tier 1, 2A, 2B) cho link từ Phần A. Part A + B hoàn tát [x], Part C chưa [~] (7 trang cần batch 4).
+
 ## [2026-10-03:19-27-01] schema | thêm trang `provision` + skill /ingest-legal
 - Mới: `.claude/hooks/legal_docx.py`, `.claude/skills/ingest-legal/SKILL.md`; sửa hook, `00_schema.md` §1–§4 + §13, `CLAUDE.md`
 - Thử trên bản sao wiki với TT50/2026 (.docx): 68 trang, 1.014/1.014 khối khớp nguồn, 0 link chết; `--all` trên repo thật không đổi (1.033 trang, 0 vấn đề)
@@ -1527,3 +1604,8 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Chú giải nốt Điều 1–21, 27–38, Phụ lục I, III, IV; đủ 67/67 node, mỗi chú giải ≤ 150 từ
 - Một lượt 57 node theo yêu cầu của người dùng (skill giới hạn 15 node/lượt); viết theo 4 lô, đọc nguyên văn từng trang trước khi viết
 - `--verify` 1.014/1.014 khối, 0 link chết; `--all` 1.101 trang, 0 vấn đề
+
+## [2026-10-03:20-45-32] repo | merge origin/main vào review/nsfr-tt50-2026-10-02
+- Gộp 21 commit của main (ingest khái niệm TT50 dưới source id `sbv_circular_22_final`, 76 trang) với 4 commit của nhánh (68 trang `provision` + chú giải); gỡ 3 xung đột ở `index.md`, bản kê, `log.md` bằng cách giữ cả hai phía
+- Sau merge: `--verify` 1.014/1.014 khối, `--all` 1.177 trang 0 vấn đề, `--verify-sources` 0 lệch
+- Tồn: TT50 có hai source id cùng nguồn — ghi ở `_inbox.md`

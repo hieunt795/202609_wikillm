@@ -24,6 +24,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `sbv_circular_14_2025` | Nguồn dài (2 file, 546 KB / 3.371 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_circular_14_2025.md` |
 | `sbv_circular_83_2025` | Nguồn dài (240 KB / 1.928 dòng) | **Hoàn tất 100%** | Toàn bộ 3/3 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_circular_83_2025.md` |
 | `sbv_draft_circular_replace_22` | Nguồn dài (358 KB / 2.009 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_draft_circular_replace_22.md` |
+| `sbv_circular_22_final` | Nguồn dài (409 KB / 1.774 dòng) | **Hoàn tất 100%** | Toàn bộ Chương I–III + Phụ lục I–II xong; Phụ lục III (4 trang), IV (1 stub). Tổng 43 trang + 14 stub | `03_state/sbv_circular_22_final.md` |
 | `sbv_tt50_2026` | Nguồn dài (văn bản quy phạm, `.docx` 242 KB / 1.014 khối) | **Nguyên văn hoàn tất** | 68 trang `provision` khớp nguồn 2026-10-03; chú giải 67/67 node | `03_state/sbv_tt50_2026.md` |
 | `bcbs_144` | Nguồn dài (138 KB / 641 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, 18 concept, --coverage sạch 2026-09-27 (chi tiết ở state file) | `03_state/bcbs_144.md` |
 | `bcbs_238` | Nguồn dài (262 KB / 1.263 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, 22 concept, --coverage sạch 2026-09-28 (chi tiết ở state file) | `03_state/bcbs_238.md` |
@@ -680,6 +681,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 **Quản trị bảng cân đối ngân hàng thương mại và ALM (Clippings — Cụm 1)**
 - [[alm-balance-sheet-balancing-progresses-through-four-operational-dimensions]] — quy trình cân đối bảng cân đối ALM tiến triển qua bốn chiều kích: dòng tiền, kỳ hạn, tỷ lệ/cấu trúc và hành vi/định giá FTP
 - [[cash-flow-balancing-resolves-immediate-payment-obligations-against-excess-reserve-opportunity-cost]] — cân dòng tiền là lớp vận hành sơ cấp giải quyết nghĩa vụ thanh toán tức thời và chi phí cơ hội của dự trữ thặng dư
+- [[cumulative-liquidity-gap-differentiates-funding-deficit-refinancing-from-surplus-opportunity-costs]] — khe hở thanh khoản tích lũy phân định ranh giới giữa chi phí tái tài trợ của trạng thái thâm hụt và chi phí cơ hội của trạng thái thặng dư dòng tiền
 - [[maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks]] — cân kỳ hạn xác định thời gian tồn tại của trạng thái thanh khoản để triệt tiêu rủi ro tái tài trợ rollover và rủi ro định giá lại
 - [[behavioral-modeling-of-tt1-liabilities-distorts-when-banks-actively-intervene-on-pricing-and-sales]] — mô hình hóa hành vi nguồn vốn TT1 bị biến dạng khi ngân hàng chủ động can thiệp giá và chính sách giữ chân tại thời điểm đáo hạn
 - [[banks-fundamentally-rely-on-short-term-liabilities-to-finance-long-term-capital-formation]] — ngân hàng luôn dùng nợ phải trả ngắn hạn liên tục tái tục để tài trợ cho tích lũy tư bản dài hạn của nền kinh tế
@@ -1314,8 +1316,13 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[two-tier-ftp-operational-workflows-govern-market-1-and-market-2-cycles]] — quy trình vận hành hai tầng: phân định chu kỳ điều chuyển vốn định kỳ hàng tháng TT1 và chu kỳ tác nghiệp hàng ngày TT2
 - [[interbank-tenor-ladder-and-deal-ticket-standardization-enforce-internal-treasury-transfers]] — chuẩn hóa bậc thang 21 kỳ hạn liên ngân hàng và phiếu mua bán vốn nội bộ MB06/MB07
 
-
-
+**Vietnamese Banking Regulations (Thông tư TT-50/2026)**
+- [[sbv-circular-50-2026-safety-limits-for-commercial-banks]] — hub kết nối bảy tỷ lệ/giới hạn bảo đảm an toàn cho ngân hàng thương mại Vietnam
+- [[circular-50-2026-scope-seven-safety-ratios-and-limits]] — (Điều 1) bảy tỷ lệ/giới hạn bắt buộc: LEV, LCR, NSFR, LDR, credit limits, government bonds, equity stakes
+- [[circular-50-2026-applies-to-commercial-banks-and-foreign-branches]] — (Điều 2) đối tượng áp dụng, ngoại lệ chính sách
+- [[circular-50-2026-defines-19-core-banking-terms-and-concepts]] — (Điều 3) định nghĩa 19 khái niệm chuyên ngành
+- [[banks-must-codify-internal-credit-and-capital-regulations]] — (Điều 4) quy định nội bộ bắt buộc
+- [[information-systems-must-track-all-limits-and-ratios-continuously]] — (Điều 5) hệ thống thông tin theo dõi liên tục
 
 
 

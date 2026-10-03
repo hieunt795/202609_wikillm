@@ -35,6 +35,7 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `sbv_circular_14_2025` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_circular_14_2025.md` |
 | `sbv_circular_83_2025` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_circular_83_2025.md` |
 | `sbv_draft_circular_replace_22` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_draft_circular_replace_22.md` |
+| `sbv_circular_22_final` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_circular_22_final.md` |
 | `sbv_tt50_2026` | `vietnam-regulator/alm/TT50_2026_SBV/` | Nguồn dài | `03_state/sbv_tt50_2026.md` |
 | `bcbs_144` | `basel/` | Nguồn dài | `03_state/bcbs_144.md` |
 | `bcbs_238` | `basel/` | Nguồn dài | `03_state/bcbs_238.md` |
@@ -531,6 +532,22 @@ File `.md` do docling chuyển đổi từ PDF (frontmatter `extractor: docling`
 |---|---|---|---|
 | `01_sources/vietnam-regulator/alm/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md` | 358.720 | 2.009 | `d6dc151f84323f65854de7144cd35c4a774189dfe934df7aab9610f13783c224` |
 
+## sbv_circular_22_final
+
+| | |
+|---|---|
+| Nhan đề | *Thông tư số 50/2026/TT-NHNN quy định về các giới hạn, tỷ lệ bảo đảm an toàn trong hoạt động của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài* |
+| Tác giả | Thống đốc Ngân hàng Nhà nước Việt Nam |
+| Xuất bản | Ngân hàng Nhà nước Việt Nam (Hà Nội, 30/09/2026) — Thay thế Thông tư số 22/2019/TT-NHNN |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 408.980 bytes / 1.277 dòng |
+| Tiến độ ingest | Chưa ingest — state file `03_state/sbv_circular_22_final.md` |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/vietnam-regulator/alm/03_DTTT thay the Thong tu 22 30092026 ban hanh/03_DTTT thay the Thong tu 22 30092026 ban hanh.md` | 408.980 | 1.277 | `C622F7B78DFDF91B5EA530CB4C55E8289D978CC40AE186B06CE08AD7DB3B5AB1` |
+| `01_sources/vietnam-regulator/alm/03_DTTT thay the Thong tu 22 30092026 ban hanh/03_DTTT thay the Thong tu 22 30092026 ban hanh.pdf` | 1.378.635 | — | `A6F09CB195717D830E794C2E38A7074CCB3AAF4134BEFA13780BB83D68E91EA7` |
+
+File `.md` là bản chuyển đổi từ PDF bằng công cụ OCR (ngoài dự án). File PDF là bản gốc phát hành chính thức từ NHNN.
 ## sbv_tt50_2026
 
 | | |

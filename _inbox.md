@@ -27,3 +27,4 @@
 - [2026-09-26] interbank-tenor-ladder-and-liquidity-spread-curve-construction-for-market-2-ftp (d.20): "Xem thêm:" dồn 4 link vi phạm schema §7.
 - [2026-09-26] non-earning-asset-and-nostro-vostro-ftp-treatment-precludes-double-counting (d.20): "Xem thêm:" dồn 4 link vi phạm schema §7.
 - [2026-09-26] deposit-product-vof-pricing-rules-accommodate-installment-and-nonterm-profiles (d.26): "Xem thêm:" dồn 7 link vi phạm schema §7.
+- [2026-10-03] TT 50/2026/TT-NHNN đang có hai source id sau khi merge main: `sbv_tt50_2026` (68 trang `provision` từ `.docx`) và `sbv_circular_22_final` (76 trang khái niệm từ `.md` chuyển từ PDF). Mục bản kê của `sbv_circular_22_final` trỏ tới thư mục `03_DTTT thay the Thong tu 22 30092026 ban hanh/` không có trên đĩa (file cùng SHA nằm ở `TT50_2026_SBV/`), và `--verify-sources` không báo thiếu. Cần quyết: gộp về một source id hay giữ hai; đối chiếu 76 trang khái niệm với nguyên văn (bản `.md` mất công thức, hỏng đánh số).
