@@ -24,6 +24,7 @@ Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi l�
 | `sbv_circular_14_2025` | Nguồn dài (2 file, 546 KB / 3.371 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_circular_14_2025.md` |
 | `sbv_circular_83_2025` | Nguồn dài (240 KB / 1.928 dòng) | **Hoàn tất 100%** | Toàn bộ 3/3 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_circular_83_2025.md` |
 | `sbv_draft_circular_replace_22` | Nguồn dài (358 KB / 2.009 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, --coverage sạch 2026-09-26 (chi tiết ở state file) | `03_state/sbv_draft_circular_replace_22.md` |
+| `sbv_tt50_2026` | Nguồn dài (văn bản quy phạm, `.docx` 242 KB / 1.014 khối) | **Nguyên văn hoàn tất** | 68 trang `provision` khớp nguồn 2026-10-03; chú giải 0/67 node | `03_state/sbv_tt50_2026.md` |
 | `bcbs_144` | Nguồn dài (138 KB / 641 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, 18 concept, --coverage sạch 2026-09-27 (chi tiết ở state file) | `03_state/bcbs_144.md` |
 | `bcbs_238` | Nguồn dài (262 KB / 1.263 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, 22 concept, --coverage sạch 2026-09-28 (chi tiết ở state file) | `03_state/bcbs_238.md` |
 | `bcbs_368` | Nguồn dài (189 KB / 1.207 dòng) | **Hoàn tất 100%** | Toàn bộ 4/4 chunk xong, 42 concept, --coverage sạch 2026-09-28 (chi tiết ở state file) | `03_state/bcbs_368.md` |
@@ -1159,6 +1160,9 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[asf-and-rsf-factor-matrices-calibrate-nsfr-structural-funding-requirements]] — ma trận hệ số nguồn vốn ổn định sẵn có ASF (5 bậc: 100%–0%) và nguồn vốn ổn định yêu cầu RSF (8 bậc: 0%–100%) lượng hóa tỷ lệ cân đối cấu trúc 1 năm
 - [[leverage-ratio-exposure-measure-aggregates-on-balance-derivatives-and-off-balance-commitments]] — phương pháp xác định tổng trạng thái rủi ro EM: trừ 80% dự phòng chung nội bảng, 4 điều kiện hạch toán gộp tiền mặt cash pooling, phái sinh SA-CCR $1{,}4 \times (RC + PFE)$ và CCF ngoại bảng
 - [[pillar-3-liquidity-disclosure-standards-mandate-qualitative-and-quantitative-market-transparency]] — chuẩn mực công bố thông tin thanh khoản định kỳ 6 tháng Trụ cột 3: minh bạch hóa định tính (mô hình ALM tập trung, độc lập với kinh doanh) và định lượng (LCR, NSFR, LDR, đa dạng hóa nguồn tài trợ)
+
+**Thông tư 50/2026/TT-NHNN — nguyên văn theo điều khoản (trang `provision`)**
+- [[tt50-2026]] — mục lục 38 Điều và 4 phụ lục (LCR, NSFR, LEV, công bố thông tin) về giới hạn, tỷ lệ bảo đảm an toàn của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài; mỗi Điều/Mục phụ lục một trang nguyên văn có block ID từng khoản, điểm, tiết
 
 **Nguyên tắc Quản trị & Giám sát Rủi ro Thanh khoản Lành mạnh (BCBS 144 / Basel)**
 - [[bcbs-sound-principles-establish-foundational-liquidity-risk-management-and-supervisory-mandates]] — nguyên tắc nền tảng quản trị thanh khoản Basel: trách nhiệm tự thân của ngân hàng, đệm HQLA unencumbered, hoán đổi kỳ hạn và bài học khủng hoảng 2007 (Principle 1 & Khung 4 trụ cột)

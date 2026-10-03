@@ -1507,3 +1507,13 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Deep: S4b deposit runoff & contingency (8 trang), 2 draft → stable
 - P: contingent-liquidity-outflow-shocks, commercial-lender-of-last-resort
 - S4 complete: 17/17 trang ✓
+
+## [2026-10-03:19-27-01] schema | thêm trang `provision` + skill /ingest-legal
+- Mới: `.claude/hooks/legal_docx.py`, `.claude/skills/ingest-legal/SKILL.md`; sửa hook, `00_schema.md` §1–§4 + §13, `CLAUDE.md`
+- Thử trên bản sao wiki với TT50/2026 (.docx): 68 trang, 1.014/1.014 khối khớp nguồn, 0 link chết; `--all` trên repo thật không đổi (1.033 trang, 0 vấn đề)
+- Chưa ghi trang nào vào `02_wiki/`; TT50 chờ lượt /ingest-legal
+
+## [2026-10-03:19-45-41] ingest | sbv_tt50_2026 — nguyên văn, 68 trang provision
+- TT 50/2026/TT-NHNN từ `.docx`: 38 Điều + 29 node phụ lục + mục lục; `--verify` 1.014/1.014 khối khớp, 0 link chết; `--all` 1.101 trang, 0 vấn đề
+- Đăng ký bản kê + `index.md`; state file `03_state/sbv_tt50_2026.md`; sửa `legal_docx.py` phần *Tham chiếu ra* (lý do ở `decisions.md`)
+- Còn lại: chú giải 0/67 node; số hiệu/ngày theo người dùng xác nhận, file để trống

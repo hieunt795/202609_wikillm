@@ -1,6 +1,6 @@
 ---
 type: sources-manifest
-last_updated: 2026-09-26
+last_updated: 2026-10-03
 ---
 
 Xuất xứ và checksum của các nguồn trong `01_sources/`.
@@ -35,6 +35,7 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `sbv_circular_14_2025` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_circular_14_2025.md` |
 | `sbv_circular_83_2025` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_circular_83_2025.md` |
 | `sbv_draft_circular_replace_22` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_draft_circular_replace_22.md` |
+| `sbv_tt50_2026` | `vietnam-regulator/alm/TT50_2026_SBV/` | Nguồn dài | `03_state/sbv_tt50_2026.md` |
 | `bcbs_144` | `basel/` | Nguồn dài | `03_state/bcbs_144.md` |
 | `bcbs_238` | `basel/` | Nguồn dài | `03_state/bcbs_238.md` |
 | `bcbs_368` | `basel/` | Nguồn dài | `03_state/bcbs_368.md` |
@@ -529,6 +530,26 @@ File `.md` do docling chuyển đổi từ PDF (frontmatter `extractor: docling`
 | Đường dẫn | Bytes | Dòng | SHA-256 |
 |---|---|---|---|
 | `01_sources/vietnam-regulator/alm/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md` | 358.720 | 2.009 | `d6dc151f84323f65854de7144cd35c4a774189dfe934df7aab9610f13783c224` |
+
+## sbv_tt50_2026
+
+| | |
+|---|---|
+| Nhan đề | *Thông tư số 50/2026/TT-NHNN ngày 30 tháng 9 năm 2026 quy định về các giới hạn, tỷ lệ bảo đảm an toàn trong hoạt động của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài* |
+| Tác giả | Thống đốc Ngân hàng Nhà nước Việt Nam |
+| Xuất bản | Ngân hàng Nhà nước Việt Nam (Hà Nội, ký 30/09/2026, hiệu lực 01/10/2026) |
+| Trạng thái văn bản (`doc_status`) | File `.docx` để trống số hiệu, ngày ký và ngày hiệu lực (khoản 1 Điều 37). Số hiệu 50/2026/TT-NHNN, ngày ký 30/09/2026, ngày hiệu lực 01/10/2026 và việc file là bản ký chính thức: theo người dùng xác nhận ngày 2026-10-03. Nguyên văn trên trang wiki giữ đúng như file |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — văn bản quy phạm, nạp bằng `/ingest-legal` (§13); nguồn tham chiếu là file `.docx` |
+| Quan hệ | Khoản 3 Điều 37 sửa đổi, bổ sung Thông tư số 22/2019/TT-NHNN. Nguồn `sbv_draft_circular_replace_22` là dự thảo ngày 21/04/2026 của thông tư cùng tên; các trang khái niệm viết từ dự thảo chưa được đối chiếu với bản này |
+| Tiến độ ingest | Nguyên văn: 68 trang `provision` — `03_state/sbv_tt50_2026.md` |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV.docx` | 242.173 | — | `283b2db99b28176dd5590f3916c746da3cef0148136fe26529b9e09e9ab42ef8` |
+| `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV.pdf` | 1.378.635 | — | `a6f09cb195717d830e794c2e38a7074ccb3aaf4134befa13780bb83d68e91ea7` |
+| `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_2SBV.md` | 408.980 | 1.774 | `c622f7b78dfdf91b5ea530cb4c55e8289d978cc40ae186b06ce08ad7db3b5ab1` |
+
+File `.pdf` và `.md` (bản chuyển từ PDF) kê kèm để `--verify-sources` sạch; **không dùng làm nguồn tham chiếu** (§13).
 
 ## bcbs_144
 
