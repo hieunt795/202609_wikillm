@@ -1,6 +1,6 @@
 ---
 type: sources-manifest
-last_updated: 2026-09-26
+last_updated: 2026-10-05
 ---
 
 Xuất xứ và checksum của các nguồn trong `01_sources/`.
@@ -34,7 +34,6 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `vab_ftp_methodology` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/vab_ftp_methodology.md` |
 | `sbv_circular_14_2025` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_circular_14_2025.md` |
 | `sbv_circular_83_2025` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_circular_83_2025.md` |
-| `sbv_draft_circular_replace_22` | `vietnam-regulator/alm/` | Nguồn dài | `03_state/sbv_draft_circular_replace_22.md` |
 | `bcbs_144` | `basel/` | Nguồn dài | `03_state/bcbs_144.md` |
 | `bcbs_238` | `basel/` | Nguồn dài | `03_state/bcbs_238.md` |
 | `bcbs_368` | `basel/` | Nguồn dài | `03_state/bcbs_368.md` |
@@ -515,20 +514,6 @@ File `.md` do docling chuyển đổi từ PDF (frontmatter `extractor: docling`
 | Đường dẫn | Bytes | Dòng | SHA-256 |
 |---|---|---|---|
 | `01_sources/vietnam-regulator/alm/TT83.md` | 240.089 | 1.928 | `c4a3900dd9b0be241261ca5264bcafca53d594e96ee12a2a8a741724b6d789be` |
-
-## sbv_draft_circular_replace_22
-
-| | |
-|---|---|
-| Nhan đề | *Dự thảo Thông tư quy định về các giới hạn, tỷ lệ bảo đảm an toàn trong hoạt động của ngân hàng, chi nhánh ngân hàng nước ngoài (thay thế Thông tư số 22/2019/TT-NHNN)* |
-| Tác giả | Thống đốc Ngân hàng Nhà nước Việt Nam |
-| Xuất bản | Ngân hàng Nhà nước Việt Nam (Hà Nội, dự thảo ngày 21/04/2026) |
-| Phân loại | Nguồn dài (`00_schema.md` §10) — 358.720 bytes / 2.009 dòng |
-| Tiến độ ingest | Hoàn tất 100% — `03_state/sbv_draft_circular_replace_22.md` |
-
-| Đường dẫn | Bytes | Dòng | SHA-256 |
-|---|---|---|---|
-| `01_sources/vietnam-regulator/alm/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md` | 358.720 | 2.009 | `d6dc151f84323f65854de7144cd35c4a774189dfe934df7aab9610f13783c224` |
 
 ## bcbs_144
 

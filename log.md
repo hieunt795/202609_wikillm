@@ -1507,3 +1507,8 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Deep: S4b deposit runoff & contingency (8 trang), 2 draft → stable
 - P: contingent-liquidity-outflow-shocks, commercial-lender-of-last-resort
 - S4 complete: 17/17 trang ✓
+
+## [2026-10-05:19-52-29] remove-source | sbv_draft_circular_replace_22
+- Gỡ nguồn khỏi wiki theo yêu cầu: xoá 12 trang dựng từ dự thảo + `03_state/sbv_draft_circular_replace_22.md`; gỡ mục manifest và dòng index §Sources.
+- Gỡ claim/chú thích ở 11 trang còn giữ (LCR, NSFR, LDR, HQLA…), sửa link ở 20 trang khác; file trong `01_sources/` giữ nguyên.
+- --all sạch (1021 trang, 0 mồ côi); --verify-sources 0 lệch/thiếu.
