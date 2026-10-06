@@ -15,3 +15,6 @@ desktop.ini
 
 # Python
 __pycache__/
+
+# Thư mục tạm: venv, bản chuẩn hoá/bản đọc của nguồn, file trung gian
+/tmp/
