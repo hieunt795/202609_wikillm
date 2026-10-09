@@ -18,6 +18,19 @@ Che do:
   - --inbox-debt      : moi muc _inbox.md + so luot lint tu ngay ghi.
   - --verify-sources  : so bytes/dong/SHA-256 cua 01_sources/ voi
                         03_state/_sources_manifest.md (luat cung 1).
+  - --coverage [sid]  : chunk trong 03_state/ -> % dong duoc chu thich §7.5 trich va
+                        cac muc (heading) chua trang nao trich. Exit 2 neu chunk [x]
+                        con muc chua phu (§10). Khong doi so -> tong ket moi nguon.
+  - --size [p]        : trang > 1.000 tu hoac co doan > 250 tu (Atomic, §4). Khong doi so
+                        -> tat ca trang. Trang do duoc dung cho ingest/research de chac
+                        merge co nay phai tach trang moi, khong cong them claim vao trang cu.
+  - --tags [kw]       : liong tag + so trang dung cai tag. Doc ca [a, b] lan YAML nhieu
+                        dong. Khong doi tu -> tong ket. Dung khi ingest b.3, research Ph.1
+                        tim tag co san (chung thay tu vung).
+  - --style [p]       : tim cum cam B2 (cuc doan), filler I1-I4 (tit hoi thoai), in dam >=5/
+                        trang (G3), giu heading G4, cong nhom luat 6 (gioitkhuyennghikhom,
+                        nhannhac vai tro khong so, tu quy chieuitung trang/nguon). Khong doi
+                        so -> tat ca trang. Tin hieu tho cho lint doc tay, khong phan quyet.
   - --now             : gio Viet Nam dang YYYY-MM-DD:hh-MM-ss cho log.md (§12).
 
 Exit 0 = dat. Exit 2 = co van de, stderr duoc chuyen lai cho agent.
@@ -581,6 +594,278 @@ def cmd_verify_sources(root):
     sys.exit(2 if (bad or extra) else 0)
 
 
+# --coverage: muc (heading) nao trong chunk chua duoc chu thich §7.5 nao trich.
+COV_SKIP_HEAD = re.compile(
+    r"^(references|bibliography|index|(table of )?contents|exercises?|questions|acknowledg\w*|tài liệu tham khảo"
+    r"|introduction|overview|summary|conclusions?|concluding)\b",  # gioi thieu/tom tat chuong: lo trinh, lap y
+    re.I,
+)
+COV_MIN_LINES = 3  # muc ngan hon (vd "## Period 1:") khong tinh
+
+
+def cov_norm(s):
+    s = re.sub(r"<[^>]+>|\]\([^)]*\)|[\[\]]", "", s)  # bo the HTML va cu phap link markdown cua ban OCR
+    s = re.sub(r"^[#\s]*", "", s)
+    s = re.sub(r"^(chapter\s+)?[\dIVX]+(\.\d+)*[.:)]?\s+", "", s, flags=re.I)  # bo so muc dau heading
+    return re.sub(r"\s+", " ", s).strip().lower()
+
+
+def cov_state(root, sid):
+    """-> (danh sach file nguon, [(trang thai, a, b, file, dong state)])."""
+    with open(os.path.join(root, "03_state", sid + ".md"), encoding="utf-8-sig") as fh:
+        text = fh.read()
+    fm = re.match(r"^---\n(.*?)\n---", text, re.S)
+    raw = []
+    if fm:
+        m = re.search(r"^file:[ \t]*(.*)$((?:\n[ \t]+-[ \t]*.*)*)", fm.group(1), re.M)
+        if m:
+            raw = [m.group(1).strip()] if m.group(1).strip() else []
+            raw += [x.strip()[1:].strip() for x in m.group(2).split("\n") if x.strip()]
+    files = []
+    for r in raw:
+        r = r.split(" (")[0].strip()
+        if "<" in r:  # mau ten file -> moi .md trong thu muc
+            d = os.path.join(root, os.path.dirname(r))
+            if os.path.isdir(d):
+                files += sorted(os.path.join(d, f) for f in os.listdir(d) if f.lower().endswith(".md"))
+        else:
+            files.append(os.path.join(root, *r.split("/")))
+    chunks = []
+    for line in text.splitlines():
+        m = re.match(r"^\|\s*`\[(.)\]`\s*\|", line)
+        r = re.search(r"d\.(\d+)\s*[–-]\s*(\d+)", line)
+        if not m or not r:
+            continue
+        f = files[0] if len(files) == 1 else None
+        if not f:
+            for tok in re.findall(r"`([^`]+\.md)`", line):
+                hit = [p for p in files if os.path.basename(p).endswith(tok)]
+                if hit:
+                    f = hit[0]
+                    break
+        chunks.append((m.group(1), int(r.group(1)), int(r.group(2)), f, line))
+    return files, chunks
+
+
+def cov_cited(wiki_dir, sid, files):
+    """{duong dan file: tap dong duoc trich}, so chu thich khong xac dinh duoc file."""
+    cited, lost = {}, 0
+    head = re.compile(r"^\s*" + re.escape(sid) + r"\b")
+
+    def by_name(name):
+        name = name.strip()
+        hit = [p for p in files if os.path.basename(p).endswith(name)]
+        if not hit and not name.endswith(".md"):  # "file -5", "file TT14_1" (khong .md)
+            hit = [p for p in files if os.path.basename(p).endswith(name + ".md")]
+        return hit[0] if hit else None
+
+    for f in os.listdir(wiki_dir):
+        if not f.lower().endswith(".md") or f.lower() == "index.md":
+            continue
+        with open(os.path.join(wiki_dir, f), encoding="utf-8-sig") as fh:
+            body = fh.read()
+        prev = None  # file cua chu thich truoc cung nguon trong trang -> cho "cung file"/"cung bai"
+        # mot ngoac co the gop nhieu nguon, ngan bang ";" -> xet tung doan bat dau bang source id
+        for grp in re.finditer(r"\(([^()]*)\)", body):
+            for inner in grp.group(1).split(";"):
+                if not head.match(inner):
+                    continue
+                inner = head.sub("", inner, count=1)
+                pos = inner.find("d.")
+                if pos < 0:
+                    continue
+                target = files[0] if len(files) == 1 else None
+                fm = re.search(r"\bfile\s+(.+?\.md)", inner) or re.search(r"\bfile\s+([^\s,]+)", inner)
+                if fm:
+                    target = by_name(fm.group(1))
+                elif re.search(r"\bcùng (file|bài)\b", inner):
+                    target = prev
+                elif not target:
+                    ch = re.search(r"\bCh\.(\d+)", inner)  # fixed_income_during: Ch.n nam o file -(n+1).md
+                    if ch:
+                        target = by_name("-%d.md" % (int(ch.group(1)) + 1))
+                if not target:
+                    lost += 1
+                    continue
+                prev = target
+                tail = re.match(r"[\sd.,–\-0-9]*", inner[pos:]).group(0)
+                lines = cited.setdefault(target, set())
+                for a, b in re.findall(r"(\d+)(?:\s*[–-]\s*(\d+))?", tail):
+                    lines.update(range(int(a), int(b or a) + 1))
+    return cited, lost
+
+
+def cov_source(root, wiki_dir, sid):
+    """-> (lost, [(trang thai, a, b, % phu | None, [(tu, den, heading)])])."""
+    files, chunks = cov_state(root, sid)
+    cited, lost = cov_cited(wiki_dir, sid, files)
+    cache, out = {}, []
+    for st, a, b, f, row in chunks:
+        if "bỏ qua, không tạo trang" in row.lower() or not f or not os.path.isfile(f):
+            out.append((st, a, b, "mien" if f else "?", []))
+            continue
+        if f not in cache:
+            with open(f, "rb") as fh:
+                cache[f] = [x.decode("utf-8", "replace").rstrip("\r") for x in fh.read().split(b"\n")]
+        src, got = cache[f], cited.get(f, set())
+        body = [i for i in range(a, min(b, len(src)) + 1) if src[i - 1].strip()]
+        hit = sum(1 for i in body if i in got)
+        if not hit:
+            out.append((st, a, b, None, []))
+            continue
+        skip = [cov_norm(x) for x in re.findall(r"bỏ qua:\s*([^—;|]+)", row, re.I)]
+        starts = [a] + [i for i in range(a + 1, min(b, len(src)) + 1) if src[i - 1].startswith("#")]
+        miss = []
+        for k, s in enumerate(starts):
+            e = starts[k + 1] - 1 if k + 1 < len(starts) else b
+            head = src[s - 1] if src[s - 1].startswith("#") else "(đầu chunk)"
+            if src[s - 1].strip() == "---":  # frontmatter YAML cua file chuyen doi, khong phai noi dung
+                continue
+            h = cov_norm(head)
+            if COV_SKIP_HEAD.match(h) or any(x and (x in h or h in x) for x in skip):
+                continue
+            rng = [i for i in range(s, e + 1) if i <= len(src) and src[i - 1].strip()]
+            if len(rng) >= COV_MIN_LINES and not any(i in got for i in rng):
+                miss.append((s, e, head.strip()))
+        out.append((st, a, b, round(100.0 * hit / max(1, len(body))), miss))
+    return lost, out
+
+
+def cmd_coverage(root, wiki_dir, sid):
+    state = os.path.join(root, "03_state")
+    sids = [sid] if sid else sorted(
+        os.path.splitext(f)[0] for f in os.listdir(state) if f.endswith(".md") and not f.startswith("_")
+    )
+    bad = 0
+    for s in sids:
+        if not os.path.isfile(os.path.join(state, s + ".md")):
+            sys.stdout.write("Khong co 03_state/%s.md\n" % s)
+            sys.exit(2)
+        lost, rows = cov_source(root, wiki_dir, s)
+        flagged = [r for r in rows if r[0] == "x" and r[4]]
+        bad += len(flagged)
+        if sid:
+            for st, a, b, pct, miss in rows:
+                tag = {"mien": "mien (bo qua)", "?": "khong xac dinh file", None: "khong do duoc (0 chu thich)"}
+                p = tag[pct] if pct in tag else "%d%%" % pct
+                sys.stdout.write("[%s] d.%d–%d\t%s\t%d muc chua phu\n" % (st, a, b, p, len(miss)))
+                for x, y, h in miss:
+                    sys.stdout.write("      d.%d–%d  %s\n" % (x, y, h[:90]))
+        else:
+            meas = [r for r in rows if isinstance(r[3], int)]
+            sys.stdout.write("%s\t%s\t%d/%d chunk do duoc; %d chunk [x] con muc chua phu\n" % (
+                "NO" if flagged else "  ", s, len(meas), len(rows), len(flagged)))
+        if lost:
+            sys.stdout.write("  (%s: %d chu thich khong xac dinh duoc file)\n" % (s, lost))
+    sys.stdout.write("%d chunk [x] con muc chua phu (§10: [x] = moi muc da trich hoac 'bo qua: <heading>').\n" % bad)
+    sys.exit(2 if bad else 0)
+
+
+def cmd_size(wiki_dir, target=None):
+    """Trang hoac doan vu qua 1.000 tu / 250 tu (Atomic). Dau vao: trang.md hoac khong."""
+    words_threshold, para_threshold = 1000, 250
+    rows = []
+    for f in sorted(os.listdir(wiki_dir)):
+        if not f.lower().endswith(".md") or f.lower() == "index.md":
+            continue
+        if target and not f.lower().startswith(target.lower()):
+            continue
+        try:
+            with open(os.path.join(wiki_dir, f), encoding="utf-8-sig") as fh:
+                _, body = split_frontmatter(fh.read())
+            words = len(body.split())
+            paras = [p.split() for p in body.split("\n\n") if p.strip()]
+            max_para = max(len(p) for p in paras) if paras else 0
+            if words > words_threshold or max_para > para_threshold:
+                rows.append((f, words, max_para))
+        except Exception:
+            pass
+    for f, w, mp in rows:
+        sys.stdout.write("%s\t%d tu\t%d tu/doan_max\n" % (f, w, mp))
+    sys.stdout.write("%d trang > %d tu hoac doan > %d tu (§4, Atomic).\n" % (len(rows), words_threshold, para_threshold))
+    sys.exit(0)
+
+
+def cmd_tags(wiki_dir, keyword=None):
+    """Tag + so trang. Tong so va so tag dung 1 lan. Keyword: loc tag."""
+    tag_counts = {}
+    for f in sorted(os.listdir(wiki_dir)):
+        if not f.lower().endswith(".md") or f.lower() == "index.md":
+            continue
+        try:
+            with open(os.path.join(wiki_dir, f), encoding="utf-8-sig") as fh:
+                fields, _ = split_frontmatter(fh.read())
+            if fields:
+                tags = yaml_list(fields.get("tags", ""))
+                for t in tags:
+                    tag_counts[t] = tag_counts.get(t, 0) + 1
+        except Exception:
+            pass
+    items = sorted(tag_counts.items(), key=lambda kv: (-kv[1], kv[0]))
+    if keyword:
+        keyword = keyword.lower()
+        items = [it for it in items if keyword in it[0].lower()]
+    for tag, count in items:
+        sys.stdout.write("%s\t%d\n" % (tag, count))
+    solo = sum(1 for c in tag_counts.values() if c == 1)
+    sys.stdout.write("%d tag tong, %d tag dung 1 lan (%d%%).\n" % (len(tag_counts), solo, 100*solo//max(1, len(tag_counts))))
+    sys.exit(0)
+
+
+def cmd_style(wiki_dir, target=None):
+    """Cum cam B2, filler I1-I4, in dam >= 5, giua heading, luat 6 (khuyennghikhom, nhannhac vai tro, tu quy chieuitung)."""
+    b2_words = ["chết người", "bạo liệt", "ký sinh", "tàn khốc", "khốc liệt", "thiêu rụi", "nghiền nát", "quét sạch", "tàn phá", "đào mồ"]
+    i4_words = ["nhìn chung", "nói chung", "đáng chú ý là", "không thể phủ nhận", "cần nhấn mạnh rằng", "hoàn thiện", "chỉn chu"]
+    rule6_khuyennghikhom = ["khuyến nghị", "cần phải", "nên", "đề xuất rằng"]
+    rule6_nhannhac = ["vai trò then chốt", "vai trò trung tâm", "trụ cột", "nền tảng cốt lõi"]
+    rule6_tuquychieu = ["trang này", "bài viết này", "chương này", "theo tác giả", "từng trang"]
+
+    rows = []
+    for f in sorted(os.listdir(wiki_dir)):
+        if not f.lower().endswith(".md") or f.lower() == "index.md":
+            continue
+        if target and not f.lower().startswith(target.lower()):
+            continue
+        try:
+            with open(os.path.join(wiki_dir, f), encoding="utf-8-sig") as fh:
+                _, body = split_frontmatter(fh.read())
+            issues = []
+            body_lower = body.lower()
+            # B2
+            for w in b2_words:
+                if w in body_lower:
+                    issues.append("B2:" + w[:15])
+            # I4
+            for w in i4_words:
+                if w in body_lower:
+                    issues.append("I4:" + w[:15])
+            # in dam
+            bold_count = len(re.findall(r"\*\*[^*]+\*\*", body))
+            if bold_count >= 5:
+                issues.append("bold:%d" % bold_count)
+            # giua heading
+            if re.search(r"^\s*(\d+\.|[-*])\s+\*\*", body, re.M):
+                issues.append("G4:list-heading")
+            # luat 6
+            for w in rule6_khuyennghikhom:
+                if w in body_lower:
+                    issues.append("rule6:" + w[:12])
+            for w in rule6_nhannhac:
+                if w in body_lower:
+                    issues.append("rule6:" + w[:12])
+            for w in rule6_tuquychieu:
+                if w in body_lower:
+                    issues.append("rule6:" + w[:12])
+            if issues:
+                rows.append((f, issues))
+        except Exception:
+            pass
+    for f, issues in rows:
+        sys.stdout.write("%s\t%s\n" % (f, ", ".join(issues)))
+    sys.stdout.write("%d trang co cum cam / luat 6 (tim signal tho, doc tay chu y).\n" % len(rows))
+    sys.exit(0)
+
+
 def main():
     try:
         sys.stderr.reconfigure(encoding="utf-8", errors="replace")
@@ -614,8 +899,18 @@ def main():
             cmd_inbox_debt(here)
         elif cmd == "--verify-sources":
             cmd_verify_sources(here)
-        sys.stderr.write("Lenh khong hop le: %s. Xem --help.\n" % cmd)
-        sys.exit(2)
+        elif cmd == "--coverage":
+            cmd_coverage(here, wiki, args[1] if len(args) > 1 else None)
+        elif cmd == "--size":
+            cmd_size(wiki, args[1] if len(args) > 1 else None)
+        elif cmd == "--tags":
+            cmd_tags(wiki, args[1] if len(args) > 1 else None)
+        elif cmd == "--style":
+            cmd_style(wiki, args[1] if len(args) > 1 else None)
+        else:
+            sys.stderr.write("Lenh khong hop le: %s. Xem --help.\n" % cmd)
+            sys.exit(2)
+        sys.exit(0)
 
     try:
         path = read_stdin_path()

@@ -22,7 +22,7 @@ reviewed_by:       # user | model — bắt buộc khi có reviewed (§9)
 | entity | Người, tổ chức, công cụ, khung/hệ thống có danh tính riêng (vd: SNA, GFS) | Ingest |
 | concept | Khái niệm, ý tưởng, định nghĩa tổng quát — áp dụng được ngoài 1 bối cảnh cụ thể | Ingest |
 | case | Tường thuật gắn với 1 bối cảnh cụ thể (quốc gia + giai đoạn thời gian), không tổng quát hóa được, dùng làm minh chứng thực tế cho `concept` liên quan | Ingest |
-| analysis | Tổng hợp, so sánh, nhận định agent tự sinh ra từ nhiều nguồn/trang đã có trong wiki | Query, Research (cần xác nhận người dùng trước khi tạo — `.claude/skills/query/SKILL.md` bước 5, `.claude/skills/research/SKILL.md` chức năng A) |
+| analysis | Tổng hợp, so sánh, nhận định agent tự sinh ra từ nhiều nguồn/trang đã có trong wiki | Query, Research (cần xác nhận người dùng trước khi tạo — `.claude/skills/query/SKILL.md` bước 5, `.claude/skills/research/SKILL.md` Pha 2–3) |
 
 Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, bảng số liệu thô. Nếu cần, chỉ trích dẫn số liệu bên trong trang `case` liên quan, không tạo trang riêng cho bảng.
 
@@ -40,16 +40,17 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 - `01_sources/` là bất biến — **chỉ đọc, không ngoại lệ**: không sửa nội dung, không thêm file, không đổi tên, không xoá. Mọi thứ agent cần *ghi* về một nguồn đều nằm ngoài thư mục đó. Phép thử: mọi file `.md`/`.pdf` trong `01_sources/` đều có trong bản kê và khớp SHA-256 (`validate_wiki_page.py --verify-sources`).
 - `03_state/` là vùng trạng thái do agent sở hữu, máy đọc được, gồm 1 bản kê xuất xứ chung `03_state/_sources_manifest.md` và 1 bản đồ chunk `03_state/<source id>.md` cho mỗi nguồn dài đã bắt đầu ingest (§10).
 - Vùng capture tạm `_inbox.md` nằm ở gốc dự án, **không** nằm trong `02_wiki/` (§11).
-- Báo cáo lint/audit/research lưu ở `Claude outputs/` (không commit), tên `lint-<YYYY-MM-DD>-<số trang>.md`, `audit-<YYYY-MM-DD>-<chủ đề>.md`, hoặc `research-<YYYY-MM-DD>-<chủ đề>.md`.
+- Báo cáo lint/audit/research lưu ở `Claude outputs/` (không commit), tên `lint-<YYYY-MM-DD>-<số trang>.md`, `audit-<YYYY-MM-DD>-<chủ đề>.md`, hoặc `research-<YYYY-MM-DD>-<chủ đề>-<sub id>.md`; bản đồ chủ đề của research là `research-map-<chủ đề>.md`, cập nhật qua các lượt.
 
 ## 4. Ngưỡng vận hành
 
 | Hoạt động | Ngưỡng |
 |---|---|
-| Ingest | Tạo/cập nhật 5–15 trang wiki mỗi lần (stub không tính) |
+| Kích thước 1 trang | Ngưỡng mềm: ≤ 1.000 từ/trang, ≤ 250 từ/đoạn dài nhất. Vượt ngưỡng là tín hiệu cần xem xét tách trang theo §5, đo bằng `--size`. |
+| Ingest | Tạo/cập nhật tối đa 15 trang wiki mỗi lượt (stub không tính); không có ngưỡng dưới. Chunk chưa xong giữ `[~]` (§10) |
 | Lint | Chạy sau mỗi 10 lần ingest, hoặc theo lịch định kỳ |
 | Review | Tối đa 5 trang mỗi lượt |
-| Research | Cluster đọc trọn tối đa 10 trang/lượt; enrich (ghi claim mới) tối đa 5 trang/lượt |
+| Research | Map: quét metadata không giới hạn, neighborhood 1 vòng. Deep read: 1 subcluster/lượt, đọc trọn tối đa 15 trang; enrich (ghi claim mới) tối đa 7 trang, ≤ 3 claim/trang; proposal ≤ 20 mục |
 | Mâu thuẫn (conflict) | Không tự sửa — đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn, chờ xử lý |
 | Kích thước 1 trang | Đủ nhỏ để viết trọn trong 1 lượt. Không viết hết được trong 1 lượt → trang đang gộp nhiều ý, phải tách (§5) |
 | Phân loại nguồn ngắn / nguồn dài | Ngưỡng ở §10. Nguồn dài có file trạng thái trong `03_state/` từ lượt ingest đầu |
@@ -59,11 +60,12 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 
 Mỗi trang wiki chỉ chứa 1 ý tưởng/khái niệm duy nhất — **nhưng phải bao quát đầy đủ ý tưởng đó**. Atomic là điểm cân bằng, không phải "càng nhỏ càng tốt". Nội dung trích từ nguồn chứa >1 ý tưởng độc lập có thể đứng riêng → tách thành nhiều trang.
 
-Hai dấu hiệu vi phạm:
+Ba dấu hiệu vi phạm:
 - Trang có heading cấp 2+ trong thân bài → cần tách (§7).
 - **Không đặt được title sắc gọn** → tư duy chưa rõ, hoặc trang đang chứa nhiều ý (§8).
+- Vượt ngưỡng 1.000/250 từ sau merge/enrich (§4) → gợi ý tách trang mới, đo bằng `--size`.
 
-Chủ đề (topic) là đơn vị gom nhóm tạm thời khi ingest (`.claude/skills/ingest/SKILL.md` bước 2) — một chủ đề thường chứa nhiều trang atomic. Luật Atomic quyết định ranh giới trang cuối cùng.
+Chủ đề (topic) là đơn vị gom nhóm tạm thời khi ingest (`.claude/skills/ingest/SKILL.md` bước 3) — một chủ đề thường chứa nhiều trang atomic. Luật Atomic quyết định ranh giới trang cuối cùng.
 
 **Thành phần có tên kinh tế riêng phải có trang riêng.** Mọi thành phần trong một đồng nhất thức, bảng cân đối hay box có tên gọi kinh tế/tài chính thật (vd $W$ compensation of employees, $OS$ operating surplus, $CP$/$CG$, Treasury bills, SDR holdings) được tách thành trang `concept` riêng, dù trang có thể rất ngắn. Không có ngoại lệ theo loại box hay bảng (quyết định 2026-09-16).
 
@@ -78,11 +80,12 @@ Chủ đề (topic) là đơn vị gom nhóm tạm thời khi ingest (`.claude/s
 - Cách viết `[[wikilink]]` trong câu: §7.
 - **`tags` KHÔNG phải cơ chế liên kết.** Tag chỉ là chỉ mục rẻ để lọc khi quét frontmatter. Quan hệ ý tưởng phải viết thành `[[wikilink]]` có lý do.
 - **Stub link được khuyến khích:** khi cần trỏ tới khái niệm chưa ingest, tạo luôn trang `status: stub` rồi link — không hoãn sang batch sau.
+- **Tag từ vựng kiểm soát.** Dùng tag có sẵn khi có liên hệ ý tưởng; tag mới chỉ khi gom được ≥ 2 trang cùng đặc tính. Kiểm tag hiện tại bằng `validate_wiki_page.py --tags`. Không backfill tập tag cũ; chỉ ghi quy tắc mới và tuân thủ khi ingest tiếp.
 - Heuristic chọn trang để link khi ingest: hỏi **"trang này sẽ cần xuất hiện lại trong ngữ cảnh nào?"** — không hỏi "trang này thuộc category nào".
 
 ## 7. Cấu trúc thân bài trang wiki
 
-Thân bài (phần dưới frontmatter) tuân theo 5 luật:
+Thân bài (phần dưới frontmatter) tuân theo 6 luật:
 
 1. **Không dùng heading (`##`, `###`...) trong thân bài.** Title là heading duy nhất. Cần heading để tách ý = phải tách trang (§5).
 2. **Câu đầu tiên nêu thẳng định nghĩa/ý tưởng cốt lõi**, không dẫn nhập kiểu "Trong chương này...". Không giải thích lại kiến thức phổ quát.
@@ -95,6 +98,8 @@ Thân bài (phần dưới frontmatter) tuân theo 5 luật:
    **Áp dụng cho trang có `last_updated` từ 2026-09-14.** Trang cũ hơn không backfill hàng loạt; nợ trả dần khi trang được sửa nội dung. Hook thực thi theo `last_updated`.
 
    **`last_updated` đo nội dung, không đo liên kết.** Chỉ nâng khi claim thay đổi (thêm, sửa, xoá claim; merge nguồn mới). Chỉ chèn `[[wikilink]]` hoặc thêm chú thích vị trí cho claim có sẵn → **không** nâng.
+
+6. **Người đọc là chủ wiki khi quay lại sau này.** Trang tự đủ nghĩa: đọc riêng trang cùng các link của nó vẫn hiểu ý chính và lý do nối với các trang khác, không cần mở nguồn gốc. Tổ chức theo ý, không theo trình tự chương của nguồn. Không giọng thuyết phục, khuyến nghị hay nhấn mạnh tầm quan trọng bằng từ ngữ (danh từ hành động/tính từ cảm tính); ưu tiên mật độ ý hơn trau chuốt. Áp dụng cách viết `--style` của skill `writing-style`.
 
 Ví dụ:
 
@@ -151,7 +156,7 @@ Tên file luôn là kebab-case của title (§3).
 | `stable` | Nội dung đủ, liên kết đủ, không mâu thuẫn tồn đọng | → `stale` khi nguồn mới liên quan được ingest mà lượt đó không merge vào trang | Ingest |
 | `stale` | Có nguồn mới liên quan nhưng trang chưa cập nhật | → `draft` sau khi merge nội dung mới, rồi lại qua Promote | Ingest |
 
-`stable`/`stale` được merge nội dung mới → về `draft` (Ingest; Review khi sửa claim sai; Research khi enrich thêm claim mới sau khi người dùng duyệt danh sách đề xuất — `.claude/skills/research/SKILL.md` chức năng B).
+`stable`/`stale` được merge nội dung mới → về `draft` (Ingest; Review khi sửa claim sai; Research khi enrich thêm claim mới sau khi người dùng duyệt danh sách đề xuất — `.claude/skills/research/SKILL.md` Pha 2–3).
 
 **Điều kiện lên `stable`:** hook `--all` không báo gì cho trang; outlink ≥ 1; backlink ≥ 2; không còn `⚠️ Conflict`; không bị flag ở tiêu chí nào của lượt lint gần nhất.
 
@@ -216,8 +221,8 @@ last_updated: YYYY-MM-DD
 
 | Ký hiệu | Nghĩa |
 |---|---|
-| `[x]` | đã ingest xong |
-| `[~]` | đang ingest dở — cột *Ghi chú* **phải** nêu rõ phần nào còn lại |
+| `[x]` | đã ingest xong: mọi mục (heading) của chunk đã được chú thích §7.5 trích, hoặc được ghi `bỏ qua: <heading> — <lý do>` ở cột *Ghi chú* sau khi người dùng duyệt (ingest bước 2). Kiểm bằng `validate_wiki_page.py --coverage <source id>` |
+| `[~]` | đang ingest dở — cột *Ghi chú* **phải** nêu rõ phần nào còn lại; được phép ghi "còn N mục chưa phủ — xem `--coverage <source id>`" |
 | `[ ]` | chưa ingest |
 
 Đơn vị chunk: **chương** với nguồn có chương; **cụm chủ đề** khi một chương tự nó vượt ngưỡng nguồn dài. Mỗi chunk ghi dải dòng `d.<từ>–<đến>` theo file khai ở `file:`. Chunk cố ý bỏ qua (mục lục, lời tựa, bài tập, phụ lục số liệu thô — §2) vẫn có dòng riêng, đánh `[x]` và ghi "bỏ qua, không tạo trang".

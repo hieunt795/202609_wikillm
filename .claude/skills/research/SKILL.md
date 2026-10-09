@@ -1,109 +1,130 @@
 ---
 name: research
-description: 'Đào sâu một cụm trang wiki đã có trong 02_wiki theo chủ đề/tag — chỉ trên wiki nội bộ và nguồn đã ingest trong 01_sources, không tìm kiếm web: tổng hợp mâu thuẫn khung hiểu và khoảng trống liên kết giữa nhiều trang, bổ sung claim mới từ đúng đoạn nguồn đã ingest xong (chunk `[x]`) mà các trang đó còn thiếu, và đánh giá độ đầy đủ/độ sâu tri thức của cả cụm. Dùng khi người dùng muốn research, đào sâu, nghiên cứu kỹ hơn, tổng hợp lại toàn bộ mảng X trong wiki, bổ sung claim còn thiếu cho các trang về Y, đánh giá wiki đã đủ sâu về Z chưa, so sánh các trang trong chủ đề W có nhất quán không, hoặc chỉ định rõ một nhóm trang cần rà lại cùng nhau. Không dùng cho: trả lời 1 câu hỏi tức thời không cần ghi gì mới (query); nạp nguồn mới hoặc phần nguồn còn `[~]`/`[ ]` trong chunk map (ingest); xác minh hoặc sửa claim SAI so với nguồn trên 1 trang cụ thể (review-node — research chỉ thêm claim mới, không sửa claim cũ); kiểm sức khoẻ/cấu trúc toàn wiki như link chết, trang mồ côi, OCR (lint); nâng draft lên stable (promote); nghiên cứu chủ đề trên web hoặc tài liệu ngoài wiki.'
+description: 'Đọc lại một vùng tri thức đã có trong 02_wiki theo chủ đề, chỉ dựa trên wiki và nguồn đã ingest xong (chunk `[x]`), không tìm web. Hai pha: Map quét rộng metadata + neighborhood 1 vòng, chia chủ đề thành subcluster ≤ 15 node và lưu bản đồ vào Claude outputs; Deep read đọc trọn một subcluster, enrich ≤ 7 node từ chunk `[x]`, tìm link thiếu, ⚠️ Conflict giữa nguồn, mâu thuẫn khung hiểu và gap, rồi trình một proposal gộp chờ duyệt. Dùng khi người dùng muốn research, đào sâu, rà lại, tổng hợp toàn bộ mảng X trong wiki, bổ sung claim còn thiếu cho các trang về Y, đánh giá wiki đã đủ sâu về Z chưa, kiểm các trang cùng chủ đề có nhất quán không, làm tiếp subcluster của một map có sẵn, hoặc enrich một/vài trang chỉ định từ nguồn đã ingest. Không dùng cho: trả lời 1 câu hỏi tức thời (query); nạp nguồn mới hoặc chunk `[~]`/`[ ]` (ingest); sửa claim sai so với nguồn, backfill chú thích, đặt reviewed (review-node); sửa cấu trúc/format, link chết, mồ côi (lint); nâng draft lên stable (promote); nghiên cứu trên web.'
 ---
 
-# Research — đào sâu một cụm trang wiki theo chủ đề
+# Research — đọc lại một vùng tri thức theo chủ đề
 
-Research **không phải** ingest (không đọc nguồn ngoài phần đã `[x]`), **không phải** review-node (không sửa claim sai, chỉ thêm claim mới), **không phải** query (không trả lời 1 câu hỏi tức thời, mà chủ động đào sâu cả cụm), **không phải** lint (không quét cấu trúc toàn wiki, chỉ đánh giá nội dung trong cluster đã duyệt). Op ghi vào `log.md` là `research`.
+Research đọc lại cái wiki **đã có**, đối chiếu với nguồn **đã ingest xong**, và đề xuất bổ sung. Nó không nạp nguồn mới (ingest), không sửa claim sai (review-node), không sửa cấu trúc (lint). Op ghi `log.md` là `research`.
 
-**Đọc `00_schema.md` theo nhánh, không đọc trước.** Bước 0–2 không cần schema: giới hạn và luật cần thiết đã ghi trong skill này. Chỉ khi người dùng đã duyệt đề xuất và sắp ghi trang (bước 3) mới đọc §7 (thân bài, chú thích §7.5), §9 (vòng đời), §10 mục *nguồn nhiều file* nếu có; thêm §1, §8 nếu tạo trang `analysis`. Schema khoảng 21 KB — đọc sớm cho một lượt có thể kết thúc ở báo cáo là tốn token vô ích.
+**Điểm vào:**
 
-Giới hạn (§4): **đọc trọn tối đa 10 trang, enrich tối đa 5 trang mỗi lượt.**
+- Đầu vào là **chủ đề/tag** → Pha 1 Map, dừng ở câu hỏi chọn subcluster.
+- Đầu vào là **tên trang, danh sách trang, hoặc subcluster của map có sẵn** → vào thẳng Pha 2 Deep read. Trang đơn lẻ = subcluster gồm trang đó; người dùng có thể thêm láng giềng.
 
-## Quy trình
+**Giới hạn (§4):**
 
-### Bước 0 — Xác định cluster, xin duyệt trước khi mở full content
+| Phạm vi | Giới hạn |
+|---|---|
+| Map | không giới hạn node quét (chỉ metadata); neighborhood đúng 1 vòng |
+| Subcluster / Deep read | ≤ 15 node full content, 1 subcluster mỗi lượt |
+| Enrich | ≤ 7 node mỗi lượt (mục tiêu 5); ≤ 3 claim mỗi node |
+| Proposal | ≤ 20 mục cần duyệt; ≤ 1 trang `analysis` |
+| Nguồn | chunk `[x]` hoặc nguồn ngắn; không web |
 
-- **Người dùng chỉ định thẳng danh sách trang:** dùng đúng danh sách đó, bỏ qua bước gom.
-- **Người dùng nêu chủ đề/tag:** title và tag là tiếng Anh, nên đổi thuật ngữ Việt sang Anh trước (vd "dự trữ bắt buộc" → `required-reserve`); thuật ngữ có ≥ 2 cách dịch không tương đương nghĩa thì hỏi lại như `query` bước 2. Gom trang bằng lượt rẻ:
+**Đọc `00_schema.md` theo nhánh, không đọc trước.** Pha 1–2 không cần schema. Chỉ khi sắp ghi (Pha 3) mới đọc §7, §9, §10 mục *nguồn nhiều file*; thêm §1, §8 nếu tạo `analysis`.
 
-  ```bash
-  ls 02_wiki | grep -i "<từ khoá>"
-  grep -l -i -E "^(title|tags):.*<từ khoá>|^  - .*<từ khoá>" 02_wiki/*.md
-  ```
+## Pha 1 — Map (rẻ, không mở full content)
 
-  Vế `^  - .*` bắt tag viết dạng YAML nhiều dòng (khoảng 1/10 số trang); thiếu nó, lượt rẻ bỏ sót phần lớn cụm.
+1. Đổi thuật ngữ Việt sang Anh (title/tag là tiếng Anh, vd "dự trữ bắt buộc" → `required-reserve`). Thuật ngữ có ≥ 2 cách dịch không tương đương nghĩa → hỏi lại.
+2. **Map có sẵn:** nếu đã có `Claude outputs/research-map-<chủ đề>.md`, dùng lại; chỉ quét thêm node mới (so `last_updated`/tên file) và báo phần thay đổi.
+3. Gom node:
 
-  Mở rộng **đúng 1 vòng**, vẫn không mở full content: outlink lấy bằng `grep -o "\[\[[^]|]*" 02_wiki/<trang>.md | sort -u`, backlink bằng `python .claude/hooks/validate_wiki_page.py --backlinks <trang>`. Không đệ quy vòng 2.
-- **Cluster > 10 trang:** giữ 10 trang gắn chủ đề nhất (khớp title/tag trực tiếp trước, rồi backlink cao), báo rõ đã cắt những trang nào và đề xuất chia lượt theo sub-chủ đề.
+   ```bash
+   ls 02_wiki | grep -i "<từ khoá>"
+   grep -l -i -E "^(title|tags):.*<từ khoá>|^  - .*<từ khoá>" 02_wiki/*.md
+   ```
 
-Trình bày danh sách cluster (tên trang · lý do đưa vào · backlink · `status`), **chờ người dùng xác nhận/bớt/thêm**. Người dùng cũng có thể chỉ chọn 1–2 trong 3 chức năng A/B/C; mặc định chạy cả ba.
+   Vế `^  - .*` bắt tag YAML nhiều dòng; thiếu nó sẽ sót phần lớn cụm. Mở rộng **đúng 1 vòng**: outlink `grep -o "\[\[[^]|]*" 02_wiki/<trang>.md | sort -u`, backlink `python .claude/hooks/validate_wiki_page.py --backlinks <trang>`. Không đệ quy.
+4. Chia **subcluster ≤ 15 node** theo tag/title đồng xuất hiện và mật độ link giữa node. Mỗi sub có tên ngắn và lý do. Node chỉ vào qua neighborhood mà không khớp sub nào → *node rìa*.
+5. Ghi map (mục *Output contract*), trình tóm tắt, hỏi chọn sub. Cả chủ đề ≤ 15 node → một sub duy nhất, hỏi luôn "deep read ngay?" để gộp Pha 1–3 trong một lượt.
 
-### Bước 1 — Đọc cluster và nguồn (chưa ghi gì)
+Lượt dừng ở Map vẫn ghi log (Pha 3 bước 5).
 
-Mở full content các trang đã duyệt, rồi làm ba việc sau. Kết quả của cả ba chỉ là **đề xuất**, gom lại ở bước 2.
+## Pha 2 — Deep read (một subcluster, chưa ghi wiki)
 
-**A. Đối chiếu nội bộ giữa các trang** (không cần nguồn):
+Mở full content các node của sub. Mọi kết quả chỉ là đề xuất.
 
-- Khoảng trống nội dung: khía cạnh được nhắc nhưng chưa có trang riêng.
-- **Mâu thuẫn khung hiểu:** hai trang diễn giải cùng một điểm lệch nhau. Đây không phải `⚠️ Conflict` (vốn dành cho hai *nguồn* nói khác nhau) — chỉ ghi vào báo cáo.
-- Liên kết còn thiếu giữa các trang cùng cluster → đề xuất câu chèn `[[link]]` kèm lý do.
-- Ý lặp lại ở ≥ 2 trang chưa có bridge note hoặc trang tổng hợp → nếu đáng tái sử dụng lâu dài, đề xuất 1 trang `type: analysis`. Dedup trước: `grep -l "^type: analysis" 02_wiki/*.md`, đối chiếu title; đã có trang cùng ý thì đề xuất cập nhật trang đó. Không có gì đáng lưu thì không đề xuất.
+**Đối chiếu nội bộ:**
 
-**B. Tìm claim mới từ nguồn đã ingest (enrich)** — chọn tối đa 5 trang, ưu tiên trang mỏng (ít claim) có backlink cao và có chunk `[x]` phủ chủ đề; nói rõ lý do chọn.
+- Link còn thiếu giữa node cùng sub → câu chèn `[[link]]` kèm lý do.
+- **Mâu thuẫn khung hiểu:** hai trang diễn giải cùng một điểm lệch nhau → chỉ báo cáo. Không phải `⚠️ Conflict` (vốn dành cho hai *nguồn* nói khác).
+- Ý lặp ở ≥ 2 trang trong sub, đáng tái sử dụng lâu dài → có thể đề xuất 1 trang `type: analysis`. Dedup trước: `grep -l "^type: analysis" 02_wiki/*.md`, đối chiếu title; đã có trang cùng ý thì đề xuất cập nhật trang đó.
 
-1. Xác định chunk cần đọc cho mỗi trang. Nguồn hợp lệ gồm: nguồn trong `sources:` của trang, **và** nguồn mà các trang khác trong cluster đã trích dẫn tới đúng chủ đề này (chú thích §7.5 của chúng chỉ sẵn chunk — không lục toàn bộ nguồn để tìm). Tra `03_state/_sources_manifest.md` để biết nguồn ngắn hay dài và đường dẫn file.
-   - **Nguồn dài:** tìm chunk trong `03_state/<source id>.md` phủ chủ đề của trang. Chỉ dùng chunk `[x]`. Chunk `[~]`/`[ ]` → **dừng enrich trang đó từ chunk này**, ghi vào báo cáo và đề xuất `/ingest` phần đó trước: state file là nguồn sự thật về tiến độ ingest, nếu research đọc trước thì wiki sẽ đi trước bản đồ chunk.
-   - **Nguồn nhiều file** (vd `fixed_income_during`): cột *Mục trong nguồn* của dòng chunk ghi file (vd `File -5.md: Chapter 4`); dải dòng tính trong file đó.
-   - **Nguồn ngắn** (không có state file): coi như đã ingest trọn; `grep -n` từ khoá trên file, đọc đoạn quanh kết quả.
-2. **Gom trang theo chunk, mỗi chunk chỉ mở một lần** cho mọi trang dùng nó. Chunk thường là cả chương (có thể hàng nghìn dòng), nên đừng đọc trọn chương: `grep -n` heading trong dải dòng của chunk để tìm **mục** phủ chủ đề của trang, rồi đọc trọn mục đó. Đọc trọn mục, không chỉ vài dòng đã trích ở chú thích cũ — claim còn thiếu thường nằm ngay cạnh đoạn đã trích. Chunk ngắn (≲ 400 dòng) thì đọc trọn.
-3. Với mỗi đoạn nguồn, phân loại:
-   - Claim nguồn nói mà trang **chưa có** → đề xuất thêm, kèm chú thích vị trí `(<source id>, <chương>, <mục>, d.<từ>–<đến>)`; nguồn nhiều file thêm file: `(<source id>, <chương>, <mục>, file <hậu tố>, d.<từ>–<đến>)`.
-   - Đoạn nguồn **nói khác** một claim trên trang mà claim đó đến từ **nguồn khác** → đây là mâu thuẫn nguồn (luật cứng 2): đề xuất đánh `⚠️ Conflict` kèm cả hai claim + vị trí, không tự chọn bên nào đúng.
-   - Claim trên trang **sai so với chính nguồn nó dẫn** → không sửa; ghi `_inbox.md` (`- [YYYY-MM-DD] <trang>: <claim> lệch <vị trí nguồn>`) và đề xuất `/review-node`.
-   - Claim mới cần một khái niệm **chưa có trang** → vẫn đề xuất claim, không tạo stub (stub là việc của ingest, §9); ghi khái niệm đó vào phần gap C.
+**Enrich ≤ 7 node** — ưu tiên `draft` trước `stable`/`stale` (tránh đảo promote), trang mỏng, backlink cao, có chunk `[x]` phủ chủ đề; nói rõ lý do chọn. **Loại node vượt 1.000/250 từ khỏi danh sách enrich** (chạy `--size` trước): node sắp tách trang không nên merge thêm claim.
 
-**C. Đánh giá gap của cluster** (chỉ báo cáo): độ đầy đủ (thiếu góc nào so với logic chủ đề), độ sâu (trang nào chỉ có 1 claim mỏng), độ liên kết nội cluster (outlink/backlink thưa), khái niệm còn thiếu trang từ B.3.
+1. Nguồn hợp lệ: nguồn trong `sources:` của node, **và** nguồn mà node khác trong sub đã trích tới đúng chủ đề (chú thích §7.5 chỉ sẵn chunk — không lục toàn bộ nguồn). Tra `03_state/_sources_manifest.md` để biết nguồn ngắn/dài và đường dẫn.
+   - **Nguồn dài:** chunk trong `03_state/<source id>.md`. Chỉ dùng `[x]`. Chunk `[~]`/`[ ]` → dừng enrich từ chunk đó, ghi vào mục *chặn ingest*. State file là nguồn sự thật về tiến độ; research đọc trước thì wiki đi trước bản đồ chunk.
+   - **Nguồn nhiều file** (vd `fixed_income_during`): cột *Mục trong nguồn* ghi file; dải dòng tính trong file đó.
+   - **Nguồn ngắn** (không có state file): coi như đã ingest trọn; `grep -n` từ khoá, đọc đoạn quanh kết quả.
+2. **Gom theo chunk, mỗi chunk mở một lần** cho mọi node dùng nó. `grep -n` heading trong dải dòng để tìm **mục** phủ chủ đề, rồi đọc trọn mục — không chỉ vài dòng đã trích cũ, claim thiếu thường nằm ngay cạnh. Chunk ≲ 400 dòng thì đọc trọn.
+3. Phân loại từng đoạn nguồn:
+   - Claim nguồn nói mà trang **chưa có** → đề xuất, kèm `(<source id>, <chương>, <mục>, d.<từ>–<đến>)`; nguồn nhiều file thêm `file <hậu tố>` trước dải dòng.
+   - Đoạn nguồn **nói khác** claim trên trang mà claim đó đến từ **nguồn khác** → đề xuất `⚠️ Conflict` kèm cả hai claim + vị trí (quy tắc bắt buộc 2).
+   - Claim trên trang **sai so với chính nguồn nó dẫn** → không sửa; ghi `_inbox.md` (`- [YYYY-MM-DD] <trang>: <claim> lệch <vị trí nguồn>`), gợi ý `/review-node`.
+   - Claim cần khái niệm **chưa có trang** → vẫn đề xuất claim, không tạo stub; ghi khái niệm vào gap.
 
-### Bước 2 — Trình một bản đề xuất gộp, chờ duyệt một lần
+**Gap** (chỉ báo cáo): góc chủ đề còn thiếu, node chỉ có 1–2 claim mỏng, liên kết nội sub thưa, khái niệm chưa có trang.
 
-Không viết gì vào `02_wiki/` trước bước này. Trình trong chat, gom theo trang:
+## Pha 3 — Proposal → duyệt → ghi
 
-- Claim mới B: trang · claim rút gọn · chú thích vị trí · nguồn mới cần thêm vào `sources:` (nếu có).
-- `⚠️ Conflict` đề xuất đánh dấu (B.3).
-- Link bổ sung A: trang · câu chèn link.
-- Trang `analysis` đề xuất A (title + ý chính), nếu có.
-- **Hệ quả status:** đánh dấu rõ trang nào đang `stable`/`stale` sẽ về `draft` nếu thêm claim (§9), để người dùng cân nhắc — nhiều trang vừa được promote.
-- Tóm tắt A (mâu thuẫn khung hiểu) và C (gap) — phần này không cần duyệt vì không ghi vào wiki.
+1. **Trình một proposal gộp** (mục *Output contract*), một lần duyệt. Người dùng duyệt cả lô, bớt theo mã mục, hoặc từ chối hết. Không ghi gì vào `02_wiki/` trước khi duyệt.
+2. **Ghi đúng các mục đã duyệt** — áp skill `writing-style` profile wiki cho mọi câu mới. **Áp luật 6 (§7):** trang tự đủ nghĩa qua link, không giọng thuyết phục/khuyến nghị, ưu tiên mật độ ý. Chạy `python .claude/hooks/validate_wiki_page.py --style` trước khi ghi log kiểm luật này.
+   - `C` claim: không heading, viết lại bằng lời mình, link nằm trong câu, chú thích ngay sau claim (§7). Nâng `last_updated`; `stable`/`stale` → `draft` (§9). Source id mới → `sources:` (inline list).
+   - `L` link: chèn vào câu kèm lý do; không nâng `last_updated` (§7.5).
+   - `K` conflict: chèn cả hai claim + vị trí; không sửa claim nào.
+   - `N` analysis: title câu trần thuật (§8); `sources:` = source id của các trang đã tổng hợp; chú thích §7.5 lấy từ chính các trang đó, thiếu thì nói rõ chưa truy được tới dòng; thêm vào `02_wiki/index.md`.
+   - **Không làm ngoài proposal:** không dọn format ("Xem thêm", heading…), không backfill chú thích claim cũ, không đụng `reviewed`/`reviewed_by`, không đổi `status` sang `stable`. Gặp lỗi cấu trúc → nêu trong báo cáo cho `/lint`.
+3. Có ghi file trong `02_wiki/` → `python .claude/hooks/validate_wiki_page.py --all`, phải sạch trước khi log (cách duy nhất bắt `analysis` mồ côi).
+4. Xuất báo cáo, cập nhật trạng thái sub trong map (`done <ngày>` / `partial`).
+5. Ghi đúng 1 mục vào **cuối** `log.md`, kể cả lượt chỉ Map hoặc từ chối hết. Giờ lấy bằng `python .claude/hooks/validate_wiki_page.py --now`.
 
-Người dùng duyệt cả lô, bớt mục, hoặc từ chối hết. Gộp một lần duyệt giúp người dùng thấy toàn cảnh thay vì bị hỏi rải rác qua từng chức năng.
+## Output contract
 
-### Bước 3 — Ghi đúng phần đã duyệt
+**Map** — `Claude outputs/research-map-<chủ đề>.md`
 
-Đọc schema theo nhánh (xem đầu skill), áp skill `writing-style` profile wiki cho mọi câu mới.
+- Đầu file: chủ đề, từ khoá EN, ngày quét, tổng node.
+- Bảng subcluster: `id · tên · số node · trạng thái` (`pending` / `done <ngày>` / `partial`).
+- Mỗi sub: bảng `trang · lý do vào · backlink · status · nguồn chính`.
+- Danh sách node rìa.
 
-- **Claim mới:** viết vào đúng trang, theo §7 (không heading, viết lại bằng lời mình, link trong câu, chú thích ngay sau claim). Nâng `last_updated`; trang `stable`/`stale` về `draft`. Nguồn mới → thêm source id vào `sources:` (inline list). Không backfill chú thích cho claim cũ — việc đó thuộc `/review-node` khi đối chiếu.
-- **`⚠️ Conflict`:** chèn cả hai claim + vị trí; không sửa claim nào.
-- **Link bổ sung:** chèn vào câu kèm lý do; không nâng `last_updated` (§7.5).
-- **Trang `analysis`:** title câu trần thuật (§8); `sources:` không rỗng — ghi source id của các trang đã tổng hợp; chú thích §7.5 lấy lại từ chính các trang đó, trang nào chưa có chú thích thì nói rõ là chưa truy được tới dòng; thêm trang vào `02_wiki/index.md`.
-- **Không đụng `reviewed`/`reviewed_by`** — quyền đó thuộc `/review-node`.
+**Proposal** (trong chat, mã mục để duyệt từng phần)
 
-### Bước 4 — Xuất báo cáo
+- `C1…` claim mới: trang · claim rút gọn · chú thích vị trí · source id mới (nếu có).
+- `L1…` link: trang · câu chèn link.
+- `K1…` `⚠️ Conflict`: hai claim + hai vị trí.
+- `N1` `analysis` (nếu có): title + ý chính + trang nguồn.
+- **Hệ quả status:** trang nào `stable`/`stale` → `draft` nếu duyệt.
+- **Chặn ingest:** mỗi chunk `[~]`/`[ ]` một dòng — `⚠️ <source id> chunk <tên> chưa [x]: chặn enrich <T1>, <T2>; cần /ingest trước.`
+- Không cần duyệt (không ghi wiki): mâu thuẫn khung hiểu, gap, mục đã ghi `_inbox.md`.
 
-Luôn xuất, kể cả khi người dùng từ chối hết: `Claude outputs/research-<YYYY-MM-DD>-<chủ đề>.md`, gồm cluster đã duyệt (trang · backlink · tag), kết quả A, danh sách B (đã ghi / bị từ chối / bị dừng vì chunk chưa `[x]`), gap C, các mục đã ghi `_inbox.md`.
+**Báo cáo** — `Claude outputs/research-<YYYY-MM-DD>-<chủ đề>-<sub id>.md`: sub đã đọc (trang · backlink · status), mục đã ghi / bị từ chối / bị chặn, mâu thuẫn khung hiểu, gap, mục `_inbox.md`, lỗi cấu trúc chuyển `/lint`. Lượt chỉ Map thì map là báo cáo.
 
-### Bước 5 — Kiểm
-
-Có ghi bất kỳ file nào trong `02_wiki/` (claim, link, conflict, analysis, `index.md`) → chạy `python .claude/hooks/validate_wiki_page.py --all`, phải sạch trước khi ghi log. Đây là cách duy nhất bắt trang `analysis` mồ côi.
-
-### Bước 6 — Ghi log
-
-Mỗi lượt research ghi đúng 1 mục vào **cuối** `log.md`, kể cả lượt chỉ ra báo cáo — như lint, vì báo cáo là sản phẩm cần truy vết. Giờ lấy bằng `python .claude/hooks/validate_wiki_page.py --now`:
+**Log**
 
 ```markdown
-## [<giờ>] research | <chủ đề>
-- Cluster N trang; enrich M trang
-- <kết quả, vd "5 claim mới ở 3 trang, 2 link, 1 analysis; 1 trang dừng vì chunk [~]">
+## [<giờ>] research | <chủ đề> — <map | sub id>
+- Map: N node, K sub | Deep: sub X, đọc N, enrich M
+- <C claim, L link, K conflict, N analysis; P trang → draft; chặn: <chunk>>
 - Báo cáo: Claude outputs/research-<...>.md
 ```
 
 ## Sai lầm thường gặp
 
-- **Viết trước rồi mới báo:** mọi thay đổi trong `02_wiki/` đi qua bản đề xuất gộp ở bước 2.
-- **Đọc trọn cả chương cho mỗi trang:** gom theo chunk, thu hẹp tới mục bằng heading — nhưng cũng đừng chỉ đọc lại đúng vài dòng đã trích cũ.
-- **Đào vào chunk `[~]`/`[ ]`:** đó là việc của `/ingest`.
-- **Sửa claim sai của chính nguồn trang dẫn:** ghi `_inbox.md`, đề xuất `/review-node`.
-- **Lẫn hai loại mâu thuẫn:** hai *trang* diễn giải lệch nhau → chỉ báo cáo; hai *nguồn* nói khác nhau → `⚠️ Conflict`.
-- **Quên hậu tố file khi trích nguồn nhiều file** → chú thích trỏ sai chỗ còn tệ hơn không có.
-- **Tạo stub cho khái niệm mới:** research không tạo stub; ghi vào gap C.
+- **Viết trước rồi mới báo:** mọi thay đổi `02_wiki/` đi qua proposal.
+- **Deep read nhiều sub trong một lượt:** một lượt một sub; sub còn lại để `pending` trong map.
+- **Quên cập nhật map:** lượt sau sẽ quét lại hoặc làm lại sub đã xong.
+- **Dọn format tiện tay khi ghi:** việc của lint; diff research chỉ chứa mục đã duyệt.
+- **Enrich trang `stable` khi có trang `draft` tương đương:** mỗi trang về `draft` là một lượt promote phải làm lại.
+- **Đọc trọn cả chương cho mỗi trang** hoặc **chỉ đọc lại đúng vài dòng đã trích:** gom theo chunk, thu hẹp tới mục, đọc trọn mục.
+- **Đào vào chunk `[~]`/`[ ]`, sửa claim sai, tạo stub:** lần lượt là việc của ingest, review-node, ingest.
+- **Lẫn hai loại mâu thuẫn:** hai *trang* lệch nhau → báo cáo; hai *nguồn* nói khác → `⚠️ Conflict`.
+- **Quên hậu tố file khi trích nguồn nhiều file** → chú thích trỏ sai còn tệ hơn không có.
+
+## Ví dụ rút gọn
+
+**Lượt 1 — Map.** "Research cân đối nguồn – sử dụng nguồn ngân hàng." Từ khoá `balance-sheet`, `ftp`, `alm`, `ldr`, `nsfr`, `lcr`. Gom 18 node + 4 node rìa → 3 sub: S1 cấu trúc bảng cân đối & gap (7), S2 FTP điều phối nguồn vốn (6), S3 giới hạn quy định LDR/NSFR/LCR (5). Ghi `research-map-bank-sources-and-uses.md`, hỏi chọn sub. Log: `research | bank sources-and-uses — map`.
+
+**Lượt 2 — Deep read S3.** Đọc 5 node; enrich 3 (2 `draft`, 1 `stable`). Proposal: C1–C4 claim từ `bcbs_238` và `bcbs_368` chunk `[x]`, L1–L2 link LCR ↔ NSFR, gap "chưa có trang về HQLA haircut". Hệ quả: 1 trang `stable → draft`. Người dùng bỏ C3 → ghi C1, C2, C4, L1, L2 → `--all` sạch → báo cáo → map S3 `done` → log.
+
+Lượt 3 có thể gọi thẳng "research S2 của map bank-sources-and-uses" để vào Deep read.

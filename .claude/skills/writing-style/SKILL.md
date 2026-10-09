@@ -84,6 +84,13 @@ Rule số là ID ổn định — skill khác trích dẫn qua số ("áp A1, C1
 
 **Profile wiki (trang phẳng):** không heading trong thân bài. Nếu một trang cần đổi giọng — ví dụ từ phân tích sang giải thích phổ thông — đó là dấu hiệu phải tách trang, không phải chèn heading hay hộp.
 
+**F4.** Trang wiki là ghi chép cho người đọc là chủ wiki sau này — người dùng wiki lâu dài (không phải bạn đọc bên ngoài). Áp dụng 3 ràng buộc:
+- *Giọng:* phân tích kỹ thuật (E1 phân tích), không giải thích phổ thông hoặc khuyến nghị. Trang `type: analysis` có thể mix A2–A4 (phân tích) + giải thích, nhưng vẫn là ghi chép nội bộ, không mở bằng kết luận kiểu báo cáo.
+- *Mẫu BIS:* chỉ dùng để hiệu chuẩn C2 (số liệu gắn nguồn) và C3 (định nghĩa lần đầu). Không dùng mẫu "mở đầu BIS" (Executive Summary kèm kết luận), không viết phần "giới thiệu báo cáo" từng dòng, không lặp lại ý chính ở kết.
+- *Không khuyến nghị:* không giọng "cần, nên, phải" (H3/I4). Nếu có policy implication → để người đọc suy ra từ sự kiện/số liệu, không nêu "nên làm".
+
+Quy trình bước 5 của skill: sau khi áp A–I, chạy `python .claude/hooks/validate_wiki_page.py --style` để kiểm luật 6 (giọng, nhấn mạnh, tự quy chiếu).
+
 **Profile báo cáo/tài liệu khác:**
 - **F1.** Phần mở đầu/Executive Summary dẫn bằng kết luận, không mô tả quy trình ("Báo cáo phân tích..."). Câu mở trả lời: người đọc nên biết/tin gì sau khi đọc xong.
 - **F2.** Đoạn giải thích phổ thông xen giữa phần phân tích kỹ thuật phải tách thành hộp riêng có tiêu đề phân biệt (kiểu "Box A: ...", có thể kèm tên người viết) — không nhúng thẳng không phân cách.

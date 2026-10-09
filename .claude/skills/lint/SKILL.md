@@ -7,7 +7,7 @@ description: Kiểm tra sức khoẻ wiki 02_wiki — trang mồ côi, link ch�
 
 Chạy sau mỗi 10 lượt ingest hoặc theo lịch (§4). Đọc `00_schema.md` §4–§9, §11, §12.
 
-**Lint chỉ báo cáo, không tự sửa** (luật cứng 3). Xuất báo cáo, chờ người xác nhận hướng xử lý. Lý do: lint nhìn cả wiki một lượt nên dễ sửa hàng loạt theo một phán đoán sai; người dùng duyệt trước thì lỗi dừng ở báo cáo.
+**Lint chỉ báo cáo, không tự sửa** (quy tắc bắt buộc 3). Xuất báo cáo, chờ người xác nhận hướng xử lý. Lý do: lint nhìn cả wiki một lượt nên dễ sửa hàng loạt theo một phán đoán sai; người dùng duyệt trước thì lỗi dừng ở báo cáo.
 
 ## Quy trình hai lượt
 
@@ -16,13 +16,17 @@ Chạy sau mỗi 10 lượt ingest hoặc theo lịch (§4). Đọc `00_schema.m
 ```bash
 H=.claude/hooks/validate_wiki_page.py
 python $H --all              # trang: frontmatter, heading, link chết, source id, §7.5, title, mồ côi
-python $H --verify-sources   # 01_sources/ khớp bản kê (luật cứng 1)
+python $H --verify-sources   # 01_sources/ khớp bản kê (quy tắc bắt buộc 1)
 python $H --ocr              # ứng viên nhiễu OCR
 python $H --stub-debt        # nợ stub
 python $H --inbox-debt       # nợ inbox
+python $H --coverage         # chunk [x] còn mục nguồn chưa trang nào trích (§10)
+python $H --size             # trang > 1.000 từ, đoạn > 250 từ (§4, §5)
+python $H --tags             # tag dùng 1 lần / từ vựng kiểm soát (§6)
+python $H --style            # cụm cấm, filler, bold, luật 6 (§7)
 ```
 
-Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi vòng qua nó, nên `--all` quét lại tất cả. Số trang của lượt lint lấy từ dòng cuối của `--all`. `--verify-sources` báo lệch thì ghi lên đầu báo cáo: đó là vi phạm luật cứng, không phải lỗi trang, và lint không sửa lại nguồn.
+Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi vòng qua nó, nên `--all` quét lại tất cả. Số trang của lượt lint lấy từ dòng cuối của `--all`. `--verify-sources` báo lệch thì ghi lên đầu báo cáo: đó là vi phạm quy tắc bắt buộc, không phải lỗi trang, và lint không sửa lại nguồn.
 
 **`--all` phủ:** frontmatter đủ trường, `type`/`status` hợp lệ, tên file khớp title, `sources` không rỗng và là source id có trong bản kê, `last_updated` đúng dạng ngày, heading trong thân bài, link chết (kể cả `[[trang|nhãn]]`), link dồn thành danh sách, chú thích §7.5, title danh từ cho `case`/`analysis`, trang mồ côi theo chiều backlink.
 
@@ -30,7 +34,7 @@ Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi v
 
 **1. Lượt rẻ — quét frontmatter toàn bộ `02_wiki/`.** Không đọc full content. Với khoảng 300 trang, frontmatter chỉ khoảng 3.000 dòng nên vẫn làm trong context chính; giao subagent `Explore` khi wiki vượt khoảng 600 trang hoặc khi người dùng yêu cầu.
 
-**2. Đối chiếu 11 tiêu chí:**
+**2. Đối chiếu 15 tiêu chí:**
 
 | Lỗi | Cách phát hiện |
 |---|---|
@@ -45,6 +49,10 @@ Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi v
 | Nợ stub | dòng `NO` của `--stub-debt` (≥ 3 lượt ingest kể từ khi tạo, §9) |
 | Nhiễu OCR còn sót | ứng viên của `--ocr`, đã mở trang xác nhận |
 | Nợ inbox | dòng `NO` của `--inbox-debt` (≥ 3 lượt lint, §11) |
+| Nguồn chưa phủ hết | dòng `NO` của `--coverage`: chunk `[x]` còn mục chưa trích mà không ghi `bỏ qua:` (§10). Đề xuất hạ `[~]` rồi `/ingest` phần đó |
+| Vượt ngưỡng kích thước | dòng `YES` của `--size`: trang > 1.000 từ hoặc đoạn > 250 từ (§4, §5). Gợi ý tách trang |
+| Vi phạm luật 6 | dòng `YES` của `--style`: giọng khuyến nghị, nhấn mạnh tầm quan trọng, tự quy chiếu (§7 luật 6). Báo cáo, người dùng đọc tay |
+| Nợ tag | dòng `SINGLE` của `--tags`: tag dùng 1 lần (§6). Không bắt buộc sửa; gợi ý quản lý từ vựng |
 
 **Khái niệm chưa có trang** không có lệnh tự động: đọc lướt thân bài các trang ở lượt 3, ghi lại thuật ngữ lặp lại chưa có `[[link]]`, rồi đếm bằng `grep -li "<thuật ngữ>" 02_wiki/*.md --exclude=index.md`. Đếm theo khái niệm, không theo chuỗi: "thâm hụt" có thể là thâm hụt vãng lai hoặc thâm hụt ngân sách.
 

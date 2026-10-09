@@ -1041,3 +1041,13 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - sterilization stub → draft (IMF d.3969, d.5060–5062, d.5082; Cargill d.3979); 2 stub mới: managed-float, parallel-foreign-exchange-market
 - 13 link chèn vào câu có sẵn (7 managed-float, 6 parallel-…; bỏ underground-economy vì "chợ đen" ở đó là kinh tế ngầm)
 - Không đổi phần nguồn còn lại; state 2 nguồn + index §Sources đã cập nhật
+
+## [2026-09-29:19-31-05] schema | Tổ chức lại `/research` theo pha Map → Deep read
+- SKILL.md viết lại: map subcluster lưu file, deep read ≤ 15 / enrich ≤ 7, proposal mã mục ≤ 20
+- `00_schema.md` §2, §3, §4, §9 và bảng operation trong `CLAUDE.md` cập nhật theo
+- Lý do: decisions.md [2026-09-29]
+
+## [2026-09-30:14-35-00] schema | Evergreen audit — Atomic + tag + luật 6
+- Hook: thêm `--size` (trang > 1.000/250 từ), `--tags` (từ vựng), `--style` (luật 6 + văn phong)
+- Schema: §4 ngưỡng mềm; §5 +dấu hiệu vượt ngưỡng; §6 tag vocabulary rule; §7 6 luật + luật 6 "người đọc là chủ wiki"
+- Skill & CLAUDE.md: ingest (--tags b3, --size b4+phép thử b4, outlink b5, --size/--style b9), research (Pha 2 loại oversized, Pha 3 luật 6+--style), lint (bước 0 +3 lệnh, 12→15 tiêu chí), writing-style (+F4 profile wiki), CLAUDE.md +3 dòng công cụ

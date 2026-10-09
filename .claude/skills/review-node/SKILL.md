@@ -34,7 +34,7 @@ Review là **kiểm chứng nội dung khớp nguồn**. Không phải lint (lin
 **5. Ghi kết quả.**
 - **Đạt** → thêm chú thích §7.5 cho các claim đã đối chiếu (ngay sau claim), rồi thêm `reviewed: <ngày>` và `reviewed_by: model` ngay dưới `last_updated`. Thêm chú thích không đổi claim nên **không** nâng `last_updated` (§7.5).
 - **Claim sai so với nguồn** → sửa đúng claim đó theo nguồn, kèm chú thích, nâng `last_updated`; trang `stable` thì về `draft` (§9). Câu sửa áp skill `writing-style` profile wiki. Sau khi sửa và kiểm lại cả trang mới được đặt `reviewed`.
-- **Hai đoạn nguồn nói khác nhau** → **không sửa**: đánh `⚠️ Conflict` kèm cả hai claim + vị trí (luật cứng 2); không đặt `reviewed`.
+- **Hai đoạn nguồn nói khác nhau** → **không sửa**: đánh `⚠️ Conflict` kèm cả hai claim + vị trí (quy tắc bắt buộc 2); không đặt `reviewed`.
 - **Vấn đề cấu trúc** (title sai, cần tách trang, link sai đích) → không tự tách/đổi tên; ghi `_inbox.md`; không đặt `reviewed`.
 - **Trang khác mắc cùng lỗi** (chép cùng claim sai hoặc cùng dải dòng sai, phát hiện khi đối chiếu) → không sửa trang đó trong lượt này, vì nó chưa được đọc trọn; ghi `_inbox.md` một mục nêu tên trang, chú thích sai và vị trí đúng, để lượt review sau nhặt lên.
 - Không bao giờ ghi đè `reviewed_by: user`.
