@@ -9,7 +9,7 @@ reviewed: 2026-09-24
 reviewed_by: model
 ---
 
-Hiện tượng rút tiền hàng loạt (bank runs) và đình công của nhà đầu tư (investor strikes) được Bindseil (2014, Ch.11, §11.3–§11.5, d.2060–2250) mô hình hóa như các trạng thái thất bại phối hợp (coordination failure) và đa cân bằng (multiple equilibria), xảy ra ở ba cấp độ: tiền gửi bán lẻ, thị trường tài trợ bán buôn ngắn hạn, và nợ công chính phủ.
+Hiện tượng rút tiền hàng loạt (bank runs) và đình công của nhà đầu tư (investor strikes) được mô hình hóa như các trạng thái thất bại phối hợp (coordination failure) và đa cân bằng (multiple equilibria), xảy ra ở ba cấp độ: tiền gửi bán lẻ, thị trường tài trợ bán buôn ngắn hạn, và nợ công chính phủ (bindseil_monetary_policy, Ch.11, §11.3–§11.5, d.2060–2250).
 
 **Mô hình rút tiền bán lẻ Diamond-Dybvig và ba trạng thái cân bằng**: Mở rộng từ khung phân tích kinh điển Diamond & Dybvig (1983), xét ngân hàng nhận tiền gửi từ hai người gửi tiền với số dư 1 đơn vị mỗi người, vốn chủ sở hữu $E$. Nếu tài sản ngân hàng bị buộc thanh lý non trước hạn để hoàn trả, giá trị thu hồi chỉ là $\Lambda(2+E)$, trong khi chi phí vỡ nợ là $C > E$. Cấu trúc tương tác chiến lược dẫn tới ba trường hợp:
 - *Trường hợp A ($E > 0$ và $\Lambda(2+E) \ge 1$)*: Ngân hàng lành mạnh và tài sản có tính thanh khoản cao. Ngay cả khi một người gửi tiền rút trước, người còn lại vẫn nhận đủ tiền gốc và lãi. Cân bằng duy nhất (unique equilibrium) là không ai rút tiền (No Run, No Run).
