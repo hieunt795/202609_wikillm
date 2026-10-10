@@ -281,3 +281,30 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 - **File thay đổi:** `.claude/hooks/validate_wiki_page.py` (đã commit 1adb5d7, thêm 3 lệnh), `00_schema.md` (§4 ngưỡng mềm; §5 thêm dấu hiệu; §6 tag rule; §7 luật 6), `CLAUDE.md` (3 dòng công cụ), `ingest/SKILL.md` (bước 3 `--tags`; bước 4 `--size` + phép thử luật 6; bước 5 sửa outlink logic; bước 9 `--size/--style`), `research/SKILL.md` (Pha 2 loại node vượt ngưỡng; Pha 3 luật 6 + `--style`), `lint/SKILL.md` (bước 0 thêm 3 lệnh; 12 → 15 tiêu chí; thêm 3 tiêu chí mới), `writing-style/SKILL.md` (thêm F4 profile wiki).
 - **Phạm vi:** không sửa trang `02_wiki/`, không dọn tag cũ, không đổi promotion policy hay promote hàng loạt. Quy tắc mới áp từ lượt ingest/research/lint/review tiếp. Hook `--size/--tags/--style` là lệnh báo cáo chỉ (exit 0), không chặn ghi file — sau này có thể siết thành cảnh báo/lỗi khi chốt thay đổi chiến lược.
 - **Áp lại 2026-10-09:** các mục từ [2026-09-26] (`--coverage`) đến [2026-09-30] được áp lại lên nền `6adf39e` sau khi `main` lùi về trước loạt ingest 26–28/09; chỉ lấy phần quy trình (hook, skill, schema, `CLAUDE.md`), không lấy trang wiki và `03_state/`. Hệ quả: các chunk `[x]` cũ chưa được hạ `[~]` như mục [2026-09-26] mô tả, nên `--coverage` báo `NO` cho tới khi xử lý. Số liệu audit ở dòng *Lý do* đo trên wiki 1.033 trang, không phải 790 trang hiện tại.
+
+## [2026-10-10] Luồng vận hành vào `00_schema.md` §13; `CLAUDE.md` chỉ giữ phần nạp mọi lượt
+
+- **Quyết định:** thêm `00_schema.md` §13 "Luồng vận hành" gồm trình tự 8 bước của một phiên và bảng operation 5 cột (Skill · Đọc thêm · Dừng chờ duyệt · Ghi log), nêu thứ tự ràng buộc `CLAUDE.md` → `00_schema.md` → skill. `CLAUDE.md` bỏ mục "Sáu operation" và "Trạng thái phiên làm việc", thay bằng mục "Khởi động" 2 bước (đọc handoff; đọc §13 trước mọi operation). Bảng công cụ trong `CLAUDE.md` chia nhóm bắt buộc / theo nhu cầu, bỏ số bước của skill, chi tiết trỏ `--help`. Thêm tiền tố `/init`. Số thứ tự quy tắc bắt buộc 1–6 và §1–§12 giữ nguyên.
+- **Lý do:** theo gist Karpathy, lớp schema là một tài liệu chứa cả cấu trúc, quy ước và workflow. Dự án đã tách lớp đó thành `CLAUDE.md` + `00_schema.md` + skill, nhưng chưa nơi nào nói thứ tự giữa ba thứ, và các nghĩa vụ theo trình tự (đọc handoff, đọc schema, `--all` trước log, `--now`, handoff cuối phiên) nằm ở bốn chỗ. Người dùng chốt đặt luồng ở schema để schema đủ cả quy ước lẫn workflow.
+- **Vì sao `CLAUDE.md` vẫn giữ 2 bước:** schema không tự nạp; không có bước mồi thì §13 không bao giờ được đọc.
+- **Bảng operation chỉ ở một nơi:** tiền lệ [2026-09-17] — `agents.md` bị gộp vì ba file chép bảng operation rồi lệch nhau. `CLAUDE.md` không giữ bản sao; ngưỡng mỗi lượt chỉ ghi ở §4.
+- **Ngoại lệ đọc schema:** `/query` và `/research` là tác vụ thủ công do người dùng dẫn hướng trên tri thức đã có — đọc riêng §13, chỉ đọc data model §1–§12 khi sắp ghi trang. Sửa 1 dòng ở `query/SKILL.md` và `research/SKILL.md` cho khớp.
+- **Sửa lệch:** quy tắc 4 ghi research chờ duyệt ở "bước 2" (đúng là Pha 3); bảng công cụ cũ ghi `--style` "ingest bước 9" và `--coverage` thiếu bước 2.
+- **Phạm vi:** `00_schema.md`, `CLAUDE.md`, `query/SKILL.md`, `research/SKILL.md`, `README.md` (bảng "Đọc từ đâu"). Không sửa hook, bốn skill còn lại, `.claude/docs/luong-van-hanh.html`.
+
+## [2026-10-10] Chặn ghi `01_sources/` ở tầng permission; skill `/handoff` chép lại việc tồn
+
+- **Quyết định:** `.claude/settings.json` thêm `permissions.deny` cho `Edit(/01_sources/**)` và `Write(/01_sources/**)`. Thêm skill `handoff` với `disable-model-invocation: true`.
+- **Lý do chặn:** quy tắc bắt buộc 1 trước đây chỉ được kiểm sau khi vi phạm (`--verify-sources`), mà `01_sources/` nằm ngoài git nên sửa nhầm không khôi phục được. Chọn `deny` thay cho hook `PreToolUse` vì là cách đơn giản nhất và không chặn nhầm lệnh đọc.
+- **Giới hạn đã biết:** lệnh shell (`mv`, `Set-Content`, chuyển hướng `>`) không bị chặn. Chưa thêm hook dò lệnh shell vì dễ chặn nhầm lệnh đọc nguồn; `--verify-sources` giữ vai lưới sau.
+- **Lý do skill handoff:** handoff 2026-10-10-1446 trỏ sang 2026-10-10-1427, rồi sang 2026-10-09 bằng câu "việc tồn không đổi", nên phải đọc ngược ba file mới biết còn nợ gì. Skill buộc chép lại nguyên các mục còn mở để handoff mới nhất tự đủ.
+- **Phạm vi:** không sửa `CLAUDE.md`, `00_schema.md`, sáu skill còn lại, `02_wiki/`, `03_state/`.
+
+## [2026-10-10] Hook `SessionStart`, subagent `source-verifier`, evals `research`, tắt plugin theo project
+
+- **Quyết định:** người dùng duyệt cả bốn mục sau khi đã nghe chi phí context. (1) Hook thêm lệnh `--session-start` in handoff mới nhất; `.claude/settings.json` gọi nó ở `SessionStart` với matcher `startup|clear`. (2) Subagent `.claude/agents/source-verifier.md`, tool `Read, Grep, Glob`, model `sonnet`. (3) `research/evals/evals.json` với 3 eval: Map chủ đề mới, Deep read từ tên trang, enrich bị chặn bởi chunk `[ ]`. (4) `.claude/settings.local.json` tắt `github`, `harness`, `engineering`, `design`, `cowork-plugin-management` cho riêng project này.
+- **Hook chỉ in handoff, không in mục `## Sources`:** handoff khoảng 30–50 dòng; bảng Sources dài hơn và phiên hỏi đáp không cần. Dòng đầu output báo agent không đọc lại file, để bước "Đầu phiên" trong `CLAUDE.md` không nạp hai lần mà không phải sửa `CLAUDE.md`.
+- **Matcher `startup|clear`:** phiên `resume` đã có handoff trong context; `compact` giữ lại bản tóm tắt.
+- **Subagent không được skill gọi tự động:** quy tắc global của người dùng cấm tự spawn agent, nên `review-node/SKILL.md` không đổi; agent chỉ chạy khi người dùng gọi tên. Agent chỉ trả bảng khớp / lệch / không tìm thấy / sai vị trí; việc sửa trang, đặt `reviewed`, ghi `_inbox.md` vẫn ở phiên chính theo bước 5 của review-node (quy tắc bắt buộc 2).
+- **Tắt plugin ở `settings.local.json` thay vì cấp user:** các plugin này có thể còn dùng ở project khác; file local không vào git vì danh sách plugin là chuyện của từng máy.
+- **Phạm vi:** không sửa `CLAUDE.md`, `00_schema.md`, bảy skill, `02_wiki/`, `03_state/`.

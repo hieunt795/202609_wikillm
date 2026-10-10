@@ -1,6 +1,6 @@
 # Schema — Quy tắc dự án LLM Wiki
 
-> File này định nghĩa mô hình dữ liệu (data model) của wiki. `CLAUDE.md` và các skill trong `.claude/skills/` tham chiếu tới các mục dưới đây, không lặp lại nội dung. Lý do đứng sau từng luật nằm ở `decisions.md` (mục *[2026-09-17] Lý do dời từ `00_schema.md`* và các mục trước đó); schema chỉ giữ luật.
+> File này định nghĩa mô hình dữ liệu của wiki (§1–§12) và luồng vận hành (§13). `CLAUDE.md` và các skill trong `.claude/skills/` tham chiếu tới các mục dưới đây, không lặp lại nội dung. Lý do đứng sau từng luật nằm ở `decisions.md` (mục *[2026-09-17] Lý do dời từ `00_schema.md`* và các mục trước đó); schema chỉ giữ luật.
 
 ## 1. Frontmatter chuẩn cho trang wiki (`02_wiki/*.md`)
 
@@ -255,3 +255,29 @@ Dòng ghi chú về nguồn (ghi chú người dùng, đặc điểm bản chuy�
 - **Log không chứa lập luận.** Lý do → `decisions.md`. Ý tưởng dang dở → `_inbox.md`. Trạng thái "còn lại phần nào" → `03_state/`.
 - Mục mới luôn thêm ở **cuối file**; không sửa mục cũ. Mục cũ sai thì mục kế tiếp cùng loại ghi đính chính.
 - Bản log dài trước khi rút gọn (2026-09-15): `git show e2adb7a:log.md`.
+
+## 13. Luồng vận hành
+
+`CLAUDE.md` và file này cùng là lớp schema của dự án: `CLAUDE.md` giữ phần nạp sẵn mọi lượt (quy tắc bắt buộc, bước khởi động), file này giữ quy ước và luồng. Skill trong `.claude/skills/` là quy trình thực thi từng bước và là nguồn thực thi duy nhất; sửa quy trình thì sửa `SKILL.md` và ghi lý do vào `decisions.md`. Khi lệch nhau: `CLAUDE.md` → file này → skill, và báo người dùng chỗ lệch.
+
+Trình tự một phiên:
+
+1. **Đầu phiên** — đọc handoff mới nhất trong `.claude/session_handoffs/` và mục `## Sources` của `02_wiki/index.md`.
+2. **Trước operation** — đọc mục này, rồi các mục ở cột *Đọc thêm* của bảng dưới, rồi mới chạy skill. `/query` và `/research` là tác vụ do người dùng dẫn hướng trên tri thức đã có: chỉ đọc các mục *Đọc thêm* khi sắp ghi trang.
+3. **Chạy skill** — dừng ở điểm chờ duyệt, không ghi gì trước khi người dùng đồng ý (quy tắc bắt buộc 4 của `CLAUDE.md`).
+4. **Khi ghi trang** — hook tự kiểm mỗi lần Write/Edit trong `02_wiki/`; cảnh báo xử lý ngay, không để tồn đến lượt lint. Ghi bằng shell thì hook không chạy.
+5. **Riêng ingest** — cập nhật `03_state/<source id>.md` và `index.md` §Sources mỗi lượt (quy tắc bắt buộc 6); chạy `--coverage <source id>` trước khi đánh chunk `[x]` (§10).
+6. **Trước khi ghi log** — `validate_wiki_page.py --all` phải sạch.
+7. **Ghi log** — đúng 1 mục ở cuối `log.md` (§12).
+8. **Cuối phiên có thay đổi repo** — tạo 1 handoff mới, không sửa handoff cũ (`.claude/rules/session-handoff.md`).
+
+| Operation | Skill | Đọc thêm | Dừng chờ duyệt | Ghi log |
+|---|---|---|---|---|
+| Nạp nguồn | `/ingest` | Toàn bộ | Bước 2: 5–10 ý chính + mục bỏ qua | Luôn |
+| Hỏi đáp | `/query` | §1, §7, §8, §12 khi tạo trang | Trước khi tạo trang `analysis` | Chỉ khi tạo trang |
+| Kiểm tra sức khoẻ | `/lint` | §4–§9, §11, §12 | Không ghi wiki — chỉ báo cáo | Luôn |
+| Nâng `draft → stable` | `/promote` | §7 luật 5, §9, §12 | Danh sách người dùng đã duyệt | Luôn |
+| Review đối chiếu nguồn | `/review-node` | §7–§10, §12 | — | Luôn |
+| Đào sâu vùng tri thức | `/research` | §7, §9, §10 (+ §1, §8 nếu tạo `analysis`) khi ghi | Pha 3: proposal gộp | Luôn, kể cả lượt chỉ Map |
+
+Ngưỡng mỗi lượt của từng operation: §4. Ingest, query, lint, research dùng mẫu **hai lượt**: lượt 1 quét frontmatter (rẻ), lượt 2 chỉ mở full content trang đã xác định là cần. Đây là cơ chế kiểm soát token chính.

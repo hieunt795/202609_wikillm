@@ -1,5 +1,23 @@
 {
+  "permissions": {
+    "deny": [
+      "Edit(/01_sources/**)",
+      "Write(/01_sources/**)"
+    ]
+  },
   "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/validate_wiki_page.py\" --session-start",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
     "PostToolUse": [
       {
         "matcher": "Write|Edit",

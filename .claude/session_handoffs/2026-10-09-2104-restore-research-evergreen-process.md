@@ -23,12 +23,11 @@
 
 ## Cập nhật cuối phiên
 
-- Đã commit phần quy trình: `944cbe5`. `git push origin main` bị từ chối (local lùi 26 commit so với `origin/main`); chưa force push, chờ người dùng xác nhận.
-- Sửa văn phong tay 4 trang, chưa commit: bỏ tác giả làm chủ ngữ ở `autonomous-factors-of-central-bank-balance-sheet`, `central-bank-balance-sheet-sterilization-capacity-…`, `sterilization`; `bank-runs-investor-strikes-and-multiple-equilibria` chuyển trích dẫn về dạng §7.5. Không nâng `last_updated`. `--all` sau sửa: 790 trang, 0 lỗi.
+- Đã commit phần quy trình: `944cbe5`. Người dùng tự force push `main`; `origin/main` = `f966870`. Đầu cũ `8e2ba2a` (26 commit) giữ trên remote ở nhánh `backup/8e2ba2a-before-reset-6adf39e`.
+- Sửa văn phong tay 4 trang, đã commit `f966870`: bỏ tác giả làm chủ ngữ ở `autonomous-factors-of-central-bank-balance-sheet`, `central-bank-balance-sheet-sterilization-capacity-…`, `sterilization`; `bank-runs-investor-strikes-and-multiple-equilibria` chuyển trích dẫn về dạng §7.5. Không nâng `last_updated`. `--all` sau sửa: 790 trang, 0 lỗi.
 - Cố ý không sửa: trang `the-policy-anchor-…` (so sánh khung Cargill và Bindseil, tên tác giả là nội dung), Friedman–Schwartz và Bernanke ở trang Great Depression, "Theo BPM5", "Theo Basel I".
 - 74 chunk = 247 mục chưa phủ: during 74, choudhry 74, cargill 37, clippings 31, tata 15, bindseil 12, imf 4. Chưa ingest, chưa đổi `03_state/`.
 
 ## Bước tiếp theo
 
-- Người dùng chọn cách push (force `main`, hay nhánh riêng).
 - Ingest bù theo lô, mỗi lô qua bước duyệt (quy tắc bắt buộc 4); đề xuất bắt đầu `imf_macro_accounting` + `bindseil_monetary_policy` (16 mục).

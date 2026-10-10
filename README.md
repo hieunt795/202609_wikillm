@@ -22,8 +22,8 @@ Chủ đề: kinh tế vĩ mô, tiền tệ, ngân hàng và thị trường thu
 
 | Muốn biết | Đọc |
 |---|---|
-| Luật cứng, bảng operation, công cụ kiểm | `CLAUDE.md` |
-| Quy tắc trang wiki, taxonomy, ngưỡng, vòng đời | `00_schema.md` |
+| Quy tắc bắt buộc, bước khởi động, công cụ kiểm | `CLAUDE.md` |
+| Quy tắc trang wiki, taxonomy, ngưỡng, vòng đời, luồng vận hành, bảng operation | `00_schema.md` |
 | Quy trình thực thi từng operation | `.claude/skills/{ingest,query,lint,promote,review-node}/SKILL.md` |
 | Vì sao một luật tồn tại | `decisions.md` |
 

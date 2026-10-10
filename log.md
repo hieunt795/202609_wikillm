@@ -1051,3 +1051,27 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Hook: thêm `--size` (trang > 1.000/250 từ), `--tags` (từ vựng), `--style` (luật 6 + văn phong)
 - Schema: §4 ngưỡng mềm; §5 +dấu hiệu vượt ngưỡng; §6 tag vocabulary rule; §7 6 luật + luật 6 "người đọc là chủ wiki"
 - Skill & CLAUDE.md: ingest (--tags b3, --size b4+phép thử b4, outlink b5, --size/--style b9), research (Pha 2 loại oversized, Pha 3 luật 6+--style), lint (bước 0 +3 lệnh, 12→15 tiêu chí), writing-style (+F4 profile wiki), CLAUDE.md +3 dòng công cụ
+
+## [2026-10-10:14-27-16] schema | Viết lại `CLAUDE.md` quanh mục "Luồng vận hành"
+- Gộp "Sáu operation" + "Trạng thái phiên" thành trình tự 8 bước + bảng 5 cột; bảng công cụ chia bắt buộc / theo nhu cầu
+- Sửa quy tắc 4: research chờ duyệt ở Pha 3; quy tắc 1–6 giữ số. `--all`: 790 trang, 0 lỗi
+- Lý do: decisions.md [2026-10-10]
+
+## [2026-10-10:14-37-36] schema | Chuyển "Luồng vận hành" sang `00_schema.md` §13
+- Đính chính mục 14-27-16: trình tự 8 bước + bảng operation nằm ở schema §13; `CLAUDE.md` chỉ còn mục "Khởi động" 2 bước
+- `query/SKILL.md`, `research/SKILL.md`: đọc riêng §13 khi chưa ghi trang; `README.md` bảng "Đọc từ đâu" sửa theo. `--all`: 790 trang, 0 lỗi
+- Lý do: decisions.md [2026-10-10]
+
+## [2026-10-10:14-46-45] schema | Đơn giản hoá ký hiệu trong `CLAUDE.md`
+- Chỉ còn `§N`; luật con viết "§7 luật 5"; bỏ `§7.5`, `§Sources`, mũi tên và ký hiệu toán trong câu; con trỏ file thành bảng
+- Thêm: `01_sources/` + `Claude outputs/` ngoài git, exit 2 của hook, không có lệnh kiểm một trang. Không đổi luật; quy tắc 1–6 giữ số. `--all`: 790 trang, 0 lỗi
+
+## [2026-10-10:14-51-56] schema | Chặn ghi `01_sources/` bằng permission; thêm skill `/handoff`
+- `.claude/settings.json`: `permissions.deny` cho `Edit` và `Write` trên `/01_sources/**`; không chặn được lệnh shell, `--verify-sources` vẫn là lưới sau
+- `.claude/skills/handoff/SKILL.md` (chỉ người dùng gọi): gom dữ kiện phiên, chép lại việc tồn còn mở thay vì trỏ handoff cũ. `--all`: 790 trang, 0 lỗi
+- Lý do: decisions.md [2026-10-10]
+
+## [2026-10-10:14-55-07] schema | Hook `SessionStart`, subagent `source-verifier`, evals `research`, tắt plugin
+- Hook: `--session-start` in handoff mới nhất, khai báo `SessionStart` (`startup|clear`) trong `.claude/settings.json`
+- Thêm `.claude/agents/source-verifier.md` (chỉ đọc, chỉ khi người dùng gọi) và `research/evals/evals.json` (3 eval); `.claude/settings.local.json` tắt 5 plugin cho project. `--all`: 790 trang, 0 lỗi
+- Lý do: decisions.md [2026-10-10]

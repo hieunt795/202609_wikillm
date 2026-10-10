@@ -32,6 +32,8 @@ Che do:
                         nhannhac vai tro khong so, tu quy chieuitung trang/nguon). Khong doi
                         so -> tat ca trang. Tin hieu tho cho lint doc tay, khong phan quyet.
   - --now             : gio Viet Nam dang YYYY-MM-DD:hh-MM-ss cho log.md (§12).
+  - --session-start   : in handoff moi nhat trong .claude/session_handoffs/ (hook
+                        SessionStart). Luon exit 0.
 
 Exit 0 = dat. Exit 2 = co van de, stderr duoc chuyen lai cho agent.
 Moi loi khong luong truoc deu exit 0 de khong chan luong lam viec.
@@ -866,6 +868,20 @@ def cmd_style(wiki_dir, target=None):
     sys.exit(0)
 
 
+def cmd_session_start(root):
+    """Hook SessionStart: in handoff moi nhat (ten file YYYY-MM-DD-HHmm-... xep theo thoi gian)."""
+    d = os.path.join(root, ".claude", "session_handoffs")
+    files = sorted(f for f in os.listdir(d) if f.endswith(".md") and f[:4].isdigit())
+    if not files:
+        return
+    with open(os.path.join(d, files[-1]), encoding="utf-8-sig") as fh:
+        body = fh.read().strip()
+    sys.stdout.write(
+        "Handoff moi nhat (.claude/session_handoffs/%s), hook SessionStart da nap san; "
+        "khong can doc lai file nay o buoc Dau phien.\n\n%s\n" % (files[-1], body)
+    )
+
+
 def main():
     try:
         sys.stderr.reconfigure(encoding="utf-8", errors="replace")
@@ -879,6 +895,12 @@ def main():
         sys.exit(0)
     if args and args[0] == "--now":
         sys.stdout.write(now_vn() + "\n")
+        sys.exit(0)
+    if args and args[0] == "--session-start":
+        try:
+            cmd_session_start(os.environ.get("CLAUDE_PROJECT_DIR") or os.getcwd())
+        except Exception:
+            pass
         sys.exit(0)
     if args and args[0].startswith("--"):
         here = os.environ.get("CLAUDE_PROJECT_DIR") or os.getcwd()

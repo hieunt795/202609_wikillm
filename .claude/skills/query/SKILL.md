@@ -5,7 +5,7 @@ description: 'Trả lời câu hỏi bằng cách tổng hợp từ các trang t
 
 # Query — tổng hợp câu trả lời từ wiki
 
-**Không đọc `00_schema.md` khi chỉ trả lời.** Query không cần data model; schema dài khoảng 21 KB, đọc ở đây là tốn token vô ích. Nhánh tạo trang `analysis` (bước 5) mới đọc §1, §7, §8, §12.
+**Khi chỉ trả lời, chỉ đọc `00_schema.md` §13 (luồng vận hành).** Query không cần data model §1–§12; schema dài khoảng 26 KB, đọc trọn ở đây là tốn token vô ích. Nhánh tạo trang `analysis` (bước 5) mới đọc §1, §7, §8, §12.
 
 ## Quy trình hai lượt
 

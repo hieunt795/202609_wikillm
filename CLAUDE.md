@@ -1,80 +1,85 @@
-# LLM Wiki — Macroeconomics
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## LLM Wiki — Macroeconomics
+
+Ký hiệu `§N` trong file này trỏ tới mục N của `00_schema.md`.
 
 Wiki tri thức 3 lớp theo mô hình Karpathy, kèm 1 vùng trạng thái phụ trợ:
 
 | Lớp | Thư mục | Quyền |
-|---|---|---|
+| --- | --- | --- |
 | Nguồn thô | `01_sources/` | **Chỉ đọc — bất biến** |
 | Wiki | `02_wiki/` | Agent sở hữu, cấu trúc phẳng |
 | *(phụ trợ)* Trạng thái nguồn | `03_state/` | Agent sở hữu, máy đọc được: bản kê `_sources_manifest.md` + bản đồ chunk từng nguồn dài |
 | Schema | `00_schema.md` | Người + agent đồng tiến hoá |
 
-Điều hướng nội dung: `02_wiki/index.md` (mục `## Sources` cho trạng thái ingest từng nguồn). Nhật ký thao tác: `log.md` (§12). Lý do các quyết định: `decisions.md`. Ý tưởng dang dở: `_inbox.md` (§11). Báo cáo lint/audit/research: `Claude outputs/` (§3).
+`01_sources/` và `Claude outputs/` không nằm trong git. Thiếu `01_sources/` thì ingest, review-node và `--verify-sources` không chạy được.
+
+| Cần gì | File |
+| --- | --- |
+| Điều hướng nội dung, trạng thái ingest từng nguồn | `02_wiki/index.md` (trạng thái ở mục `## Sources`) |
+| Nhật ký thao tác | `log.md` (§12) |
+| Lý do các quyết định | `decisions.md` |
+| Ý tưởng dang dở | `_inbox.md` (§11) |
+| Báo cáo lint, audit, research | `Claude outputs/` (§3) |
 
 ## Quy tắc bắt buộc — không vi phạm trong mọi trường hợp
 
 1. **Không bao giờ sửa nội dung trong `01_sources/`.** Không ngoại lệ: không sửa, không thêm file, không đổi tên, không xoá, không đổi ký tự xuống dòng. Mọi thứ agent cần ghi về một nguồn đều đi ra `03_state/` (§3, §10).
-2. **Không tự sửa mâu thuẫn.** Phát hiện conflict → đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn, chờ người xử lý.
+2. **Không tự sửa mâu thuẫn.** Khi phát hiện conflict, đánh dấu `⚠️ Conflict` kèm cả hai claim và nguồn, rồi chờ người xử lý.
 3. **Lint chỉ báo cáo, không tự sửa.**
-4. **Cần người dùng xác nhận trước khi:** tạo trang `type: analysis`; ghi trang ở bước ingest (bước 2 — duyệt 5–10 ý chính và các mục bỏ qua); ghi trang ở research (bản đề xuất gộp, bước 2); nâng `draft → stable` (Promote).
+4. **Cần người dùng xác nhận trước khi:**
+   - tạo trang `type: analysis`;
+   - ghi trang ở ingest (bước 2 — duyệt 5–10 ý chính và các mục bỏ qua);
+   - ghi trang ở research (Pha 3 — bản đề xuất gộp);
+   - nâng `draft → stable` (promote).
 5. Mỗi operation ghi đúng 1 mục vào **cuối** `log.md`, dạng `## [YYYY-MM-DD:hh-MM-ss] <op> | <tiêu đề>` + tối đa 3 dòng (§12). Lập luận không nằm trong log.
-6. **Mỗi lượt ingest cập nhật `02_wiki/index.md` §Sources và `03_state/<source id>.md`**, kể cả lượt không tạo trang mới. Nguồn mới vào bản kê ngay lượt đầu (§10).
+6. **Mỗi lượt ingest cập nhật mục `## Sources` của `02_wiki/index.md` và `03_state/<source id>.md`**, kể cả lượt không tạo trang mới. Nguồn mới vào bản kê ngay lượt đầu (§10).
 
-## Sáu operation
+## Khởi động
 
-Quy trình thực thi nằm trong skill, nạp theo nhu cầu. Skill là nguồn thực thi duy nhất; sửa quy trình thì sửa `SKILL.md` và ghi lý do vào `decisions.md`.
+File này và `00_schema.md` cùng là lớp schema của dự án (mô hình Karpathy). File này chỉ giữ phần phải thấy mọi lượt; quy ước và luồng vận hành nằm ở `00_schema.md`.
 
-| Operation | Skill | Đầu vào → đầu ra | Đọc `00_schema.md` |
-|---|---|---|---|
-| Nạp nguồn | `/ingest` | nguồn trong `01_sources/` → 5–10 ý chính chờ duyệt → tối đa 15 trang + stub + `index.md` + `03_state/` | Toàn bộ |
-| Hỏi đáp | `/query` | câu hỏi → câu trả lời; tuỳ chọn 1 trang `analysis` (cần xác nhận) | Không; chỉ §1, §7, §8, §12 khi tạo trang |
-| Kiểm tra sức khoẻ | `/lint` | toàn bộ `02_wiki/` + `_inbox.md` → báo cáo, triage inbox, danh sách *Đủ điều kiện `stable`* | §4–§9, §11, §12 |
-| Nâng `draft → stable` | `/promote` | danh sách người dùng đã duyệt → đổi `status` | §7.5, §9, §12 |
-| Review đối chiếu nguồn | `/review-node` | trang chỉ định hoặc hàng đợi (≤ 5 trang) → `reviewed_by: model`, sửa claim sai | §7–§10, §12 |
-| Đào sâu vùng tri thức | `/research` | chủ đề → map subcluster (`research-map-<chủ đề>.md`); trang/sub → deep read 1 sub (≤ 15 đọc, ≤ 7 enrich) → proposal gộp chờ duyệt → claim mới từ chunk `[x]`, link, conflict, tuỳ chọn `analysis` + báo cáo gap | Không khi đề xuất; §7, §9, §10 (+ §1, §8 nếu tạo `analysis`) khi ghi |
-
-Ingest, query, lint, research dùng mẫu **hai lượt**: lượt 1 quét frontmatter (rẻ), lượt 2 chỉ mở full content trang đã xác định là cần. Đây là cơ chế kiểm soát token chính.
+1. **Đầu phiên** — đọc handoff mới nhất trong `.claude/session_handoffs/` và mục `## Sources` của `02_wiki/index.md`. Không ghi trạng thái phiên vào file này.
+2. **Trước mọi operation** (`/ingest`, `/query`, `/lint`, `/promote`, `/review-node`, `/research`) — đọc `00_schema.md` §13: trình tự một phiên, bảng operation, mục schema cần đọc thêm, điểm dừng chờ duyệt. Sau đó mới chạy skill.
 
 ## Nhắc nhanh về trang wiki
 
 Chi tiết ở `00_schema.md`; những điều dễ sai nhất:
 
 - Thân bài **không có heading** — cần heading nghĩa là phải tách trang (§5, §7).
-- `[[wikilink]]` nằm **trong câu văn kèm lý do, không dồn thành danh sách; không mở đầu bullet** (§7). Hook coi danh sách đó là "xem thêm", lồng link vào câu diễn giải.
+- `[[wikilink]]` nằm **trong câu văn kèm lý do, không dồn thành danh sách; không mở đầu bullet** (§7). Hook báo lỗi danh sách link kiểu "xem thêm"; cách sửa là lồng từng link vào câu diễn giải.
 - **`tags` không phải liên kết** — chỉ là chỉ mục lọc (§6).
 - **Viết lại bằng lời mình**, không sao chép nguyên văn (§7). Áp skill `writing-style` profile wiki.
 - `sources:` dùng **source id**, bắt buộc inline list `[id1, id2]` — hook đọc theo dòng, không hiểu YAML nhiều dòng (§1, §10).
-- Claim từ **nguồn dài** kèm chú thích `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim; áp cho `last_updated ≥ 2026-09-14` (§7.5). Chỉ link/chú thích → không nâng `last_updated`.
+- Claim từ **nguồn dài** kèm chú thích `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7 luật 5). Luật áp cho trang có `last_updated` từ 2026-09-14 trở đi.
+- Lượt sửa chỉ thêm link hoặc chú thích thì không nâng `last_updated`.
 
 ## Công cụ kiểm
 
-`python .claude/hooks/validate_wiki_page.py <lệnh>`:
+`python .claude/hooks/validate_wiki_page.py <lệnh>` — chi tiết từng lệnh: `--help`. Hook cũng tự chạy sau mỗi Write/Edit trong `02_wiki/` (frontmatter, heading, link chết, source id, chú thích theo §7 luật 5). Exit 2 nghĩa là có vấn đề: xử lý ngay, không để tồn đến lượt lint. Không có lệnh kiểm riêng một trang; kiểm bằng tay thì dùng `--all`.
 
-| Lệnh | Dùng khi |
-|---|---|
-| *(hook tự chạy)* | Mỗi lần Write/Edit file trong `02_wiki/`: frontmatter, heading, link chết, source id, chú thích §7.5 |
-| `--all` | Ghi bằng shell (hook không chạy); cách duy nhất bắt trang mồ côi. **Bắt buộc** trước khi ghi log ở ingest, query (khi tạo trang), promote, review-node, research (khi ghi trang), và ở bước 0 của lint |
+Bắt buộc:
+
+| Lệnh | Khi nào |
+| --- | --- |
+| `--all` | Trước khi ghi log ở ingest, query (khi tạo trang), promote, review-node, research (khi ghi trang); bước 0 lint. Cách duy nhất bắt trang mồ côi và file ghi bằng shell |
+| `--coverage [<source id>]` | Trước khi đánh chunk `[x]` ở ingest; bước 0 lint |
 | `--verify-sources` | Bước 0 lint; bất cứ khi nào nghi `01_sources/` bị đổi |
-| `--backlinks [<trang>]` | Đếm/liệt kê backlink (không grep tay) |
-| `--ocr` · `--stub-debt` · `--inbox-debt` | Tiêu chí lint tương ứng |
-| `--coverage [<source id>]` | Mục nguồn chưa trang nào trích; **bắt buộc** trước khi đánh chunk `[x]` (ingest bước 7) và ở bước 0 lint |
-| `--size [<trang>]` | Trang > 1.000 từ hoặc đoạn > 250 từ; gợi ý tách (§4, §5). Chạy trước khi merge/enrich (ingest bước 4, research Pha 2) |
-| `--tags [<từ khoá>]` | Tag + số trang dùng, tổng tag và số tag dùng 1 lần. Kiểm cơ sở tag khi ingest (ingest bước 3) |
-| `--style [<trang>]` | Cộm cấm B2, filler I4, bold ≥ 5, fake-heading; luật 6: giọng khuyến nghị, nhấn mạnh tầm quan trọng, tự quy chiếu (§7.6, §7). Chạy trước khi ghi trang (ingest bước 9, research Pha 3) |
-| `--now` | Giờ Việt Nam cho `log.md` |
+| `--now` | Lấy giờ Việt Nam cho `log.md` |
 
-Cảnh báo của hook phải xử lý ngay, không để tồn đến lượt lint.
+Theo nhu cầu:
 
-## Công cụ ghi câu hỏi theo yêu cầu
-
-`python "Claude outputs/log_questions.py"` — chỉ chạy thủ công (local-only, gitignored); quét session `cwd` → phân loại user message → append `.claude/local/question-logger/questions.jsonl`. Tùy chọn: `--input <file.json|jsonl>`, `--dry-run`.
+- `--backlinks [<trang>]` — đếm/liệt kê backlink (không grep tay).
+- `--size [<trang>]` — trang trên 1.000 từ hoặc đoạn trên 250 từ; chạy trước khi merge/enrich (§4, §5).
+- `--tags [<từ khoá>]` — tag đang có + số trang dùng; kiểm trước khi đặt tag mới ở ingest (§6).
+- `--style [<trang>]` — tín hiệu thô về văn phong và §7 luật 6; chạy trên trang vừa viết ở ingest và research.
+- `--ocr`, `--stub-debt`, `--inbox-debt` — tiêu chí lint tương ứng.
 
 ## Ghi chú vận hành
 
 - Không sửa `00_schema.md` / `CLAUDE.md` / skill vụn vặt từng lần — gộp theo batch để giữ prompt cache ổn định.
-- Ý tưởng chưa đủ chín → `_inbox.md`, **không** nhét vào một trang `02_wiki/` cho tiện (§11). Triage mỗi lượt lint.
-
-## Trạng thái phiên làm việc
-
-Không ghi trạng thái vào file này (nạp mọi lượt → tốn token). Đầu session: đọc handoff mới nhất trong `.claude/session_handoffs/` + `02_wiki/index.md` §Sources.
-
+- Ý tưởng chưa đủ chín thì ghi vào `_inbox.md`, **không** nhét vào một trang `02_wiki/` cho tiện (§11). Triage mỗi lượt lint.
+- `python "Claude outputs/log_questions.py"` — ghi câu hỏi của người dùng vào `.claude/local/question-logger/questions.jsonl`; chỉ chạy khi người dùng yêu cầu (local-only). Tuỳ chọn: `--input <file.json|jsonl>`, `--dry-run`.

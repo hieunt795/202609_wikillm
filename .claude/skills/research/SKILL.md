@@ -22,7 +22,7 @@ Research đọc lại cái wiki **đã có**, đối chiếu với nguồn **đ�
 | Proposal | ≤ 20 mục cần duyệt; ≤ 1 trang `analysis` |
 | Nguồn | chunk `[x]` hoặc nguồn ngắn; không web |
 
-**Đọc `00_schema.md` theo nhánh, không đọc trước.** Pha 1–2 không cần schema. Chỉ khi sắp ghi (Pha 3) mới đọc §7, §9, §10 mục *nguồn nhiều file*; thêm §1, §8 nếu tạo `analysis`.
+**Đọc `00_schema.md` theo nhánh, không đọc trước.** Pha 1–2 chỉ cần §13 (luồng vận hành). Chỉ khi sắp ghi (Pha 3) mới đọc §7, §9, §10 mục *nguồn nhiều file*; thêm §1, §8 nếu tạo `analysis`.
 
 ## Pha 1 — Map (rẻ, không mở full content)
 
