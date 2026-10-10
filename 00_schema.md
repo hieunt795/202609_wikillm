@@ -1,6 +1,6 @@
 # Schema — Quy tắc dự án LLM Wiki
 
-> File này định nghĩa mô hình dữ liệu của wiki (§1–§12) và luồng vận hành (§13). `CLAUDE.md` và các skill trong `.claude/skills/` tham chiếu tới các mục dưới đây, không lặp lại nội dung. Lý do đứng sau từng luật nằm ở `decisions.md` (mục *[2026-09-17] Lý do dời từ `00_schema.md`* và các mục trước đó); schema chỉ giữ luật.
+> File này định nghĩa mô hình dữ liệu của wiki (§1–§12): wiki trông như thế nào. Quy trình từng bước của mỗi operation nằm ở `SKILL.md` trong `.claude/skills/` và đó là nguồn thực thi duy nhất; sửa quy trình thì sửa `SKILL.md` và ghi lý do vào `decisions.md`. `CLAUDE.md` và các skill tham chiếu tới các mục dưới đây, không lặp lại nội dung. Lý do đứng sau từng luật nằm ở `decisions.md` (mục *[2026-09-17] Lý do dời từ `00_schema.md`* và các mục trước đó); schema chỉ giữ luật.
 
 ## 1. Frontmatter chuẩn cho trang wiki (`02_wiki/*.md`)
 
@@ -30,31 +30,28 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 
 **Ưu tiên lý luận trước tường thuật.** Khi một nguồn tách rõ phần khung khái niệm với phần tường thuật bối cảnh, ingest phần khung khái niệm trước; ingest phần bối cảnh **chỉ khi** wiki còn thiếu minh chứng cho một `concept` đã có. Phần bối cảnh bị bỏ qua vẫn có dòng riêng trong bản đồ chunk kèm lý do (§10).
 
-**Không có trang tóm tắt nguồn.** Vai trò đó chia cho `index.md` §Sources, `03_state/` và trường `sources:` cộng chú thích §7.5 trên từng trang. Đây là lựa chọn có chủ đích, không phải thiếu sót.
+**Không có trang tóm tắt nguồn.** Vai trò đó chia cho `index.md` §Sources, `03_state/` và trường `sources:` cộng chú thích §7 luật 5 trên từng trang. Đây là lựa chọn có chủ đích, không phải thiếu sót.
 
 ## 3. Quy ước cấu trúc & đặt tên
 
 - `02_wiki/` là cấu trúc phẳng — không tách thư mục con theo loại; phân loại qua trường `type`.
 - Tên file trang wiki: kebab-case, khớp với `title`.
 - **Ngôn ngữ:** `title` và tên file viết bằng **tiếng Anh**; thân bài viết bằng **tiếng Việt**, theo profile wiki của skill `writing-style`.
-- `01_sources/` là bất biến — **chỉ đọc, không ngoại lệ**: không sửa nội dung, không thêm file, không đổi tên, không xoá. Mọi thứ agent cần *ghi* về một nguồn đều nằm ngoài thư mục đó. Phép thử: mọi file `.md`/`.pdf` trong `01_sources/` đều có trong bản kê và khớp SHA-256 (`validate_wiki_page.py --verify-sources`).
+- `01_sources/` chỉ đọc theo quy tắc bắt buộc 1 của `CLAUDE.md`. Phép thử: mọi file `.md`/`.pdf` trong `01_sources/` đều có trong bản kê và khớp SHA-256 (`validate_wiki_page.py --verify-sources`).
 - `03_state/` là vùng trạng thái do agent sở hữu, máy đọc được, gồm 1 bản kê xuất xứ chung `03_state/_sources_manifest.md` và 1 bản đồ chunk `03_state/<source id>.md` cho mỗi nguồn dài đã bắt đầu ingest (§10).
 - Vùng capture tạm `_inbox.md` nằm ở gốc dự án, **không** nằm trong `02_wiki/` (§11).
-- Báo cáo lint/audit/research lưu ở `Claude outputs/` (không commit), tên `lint-<YYYY-MM-DD>-<số trang>.md`, `audit-<YYYY-MM-DD>-<chủ đề>.md`, hoặc `research-<YYYY-MM-DD>-<chủ đề>-<sub id>.md`; bản đồ chủ đề của research là `research-map-<chủ đề>.md`, cập nhật qua các lượt.
+- Báo cáo lint/audit/research lưu ở `Claude outputs/` (không commit), tên `lint-<YYYY-MM-DD>-<số trang>.md`, `audit-<YYYY-MM-DD>-<chủ đề>.md`, hoặc `research-<YYYY-MM-DD>-<chủ đề>-<sub id>.md`; bản đồ chủ đề của research là `research-map-<chủ đề>.md`, cập nhật qua các lượt. Research, audit, draft, log và transcript không phải tri thức đã được chấp nhận; chỉ trang trong `02_wiki/` mới là.
 
 ## 4. Ngưỡng vận hành
 
 | Hoạt động | Ngưỡng |
 |---|---|
-| Kích thước 1 trang | Ngưỡng mềm: ≤ 1.000 từ/trang, ≤ 250 từ/đoạn dài nhất. Vượt ngưỡng là tín hiệu cần xem xét tách trang theo §5, đo bằng `--size`. |
+| Kích thước 1 trang | Ngưỡng mềm: ≤ 1.000 từ/trang, ≤ 250 từ/đoạn dài nhất. Vượt ngưỡng là tín hiệu cần xem xét tách trang theo §5, đo bằng `--size`. Trang cũng phải đủ nhỏ để viết trọn trong 1 lượt; không viết hết được nghĩa là trang đang gộp nhiều ý, phải tách (§5) |
+| Đọc wiki | Ingest, query, lint, research dùng mẫu hai lượt: lượt 1 quét frontmatter (rẻ), lượt 2 chỉ mở full content trang đã xác định là cần. Đây là cơ chế kiểm soát token chính |
 | Ingest | Tạo/cập nhật tối đa 15 trang wiki mỗi lượt (stub không tính); không có ngưỡng dưới. Chunk chưa xong giữ `[~]` (§10) |
 | Lint | Chạy sau mỗi 10 lần ingest, hoặc theo lịch định kỳ |
 | Review | Tối đa 5 trang mỗi lượt |
 | Research | Map: quét metadata không giới hạn, neighborhood 1 vòng. Deep read: 1 subcluster/lượt, đọc trọn tối đa 15 trang; enrich (ghi claim mới) tối đa 7 trang, ≤ 3 claim/trang; proposal ≤ 20 mục |
-| Mâu thuẫn (conflict) | Không tự sửa — đánh dấu `⚠️ Conflict` kèm cả hai claim + nguồn, chờ xử lý |
-| Kích thước 1 trang | Đủ nhỏ để viết trọn trong 1 lượt. Không viết hết được trong 1 lượt → trang đang gộp nhiều ý, phải tách (§5) |
-| Phân loại nguồn ngắn / nguồn dài | Ngưỡng ở §10. Nguồn dài có file trạng thái trong `03_state/` từ lượt ingest đầu |
-| Triage `_inbox.md` | Mỗi lượt lint (§11) |
 
 ## 5. Nguyên tắc Atomic
 
@@ -191,7 +188,7 @@ Phân loại của từng nguồn ghi ở bản kê (dưới), không ghi ở đ
 
 `03_state/_sources_manifest.md` là nơi duy nhất liệt kê nguồn. Gồm:
 
-- **Bảng Source id**: `source id` · thư mục trong `01_sources/` · phân loại · state file. `source id` là khoá dùng trong `sources:` (§1), trong chú thích §7.5 và làm tên `03_state/<source id>.md`. Nguồn mới dùng snake_case. Hook đọc bảng này để biết nguồn nào là nguồn dài và để báo `sources:` trỏ tới id lạ.
+- **Bảng Source id**: `source id` · thư mục trong `01_sources/` · phân loại · state file. `source id` là khoá dùng trong `sources:` (§1), trong chú thích §7 luật 5 và làm tên `03_state/<source id>.md`. Nguồn mới dùng snake_case. Hook đọc bảng này để biết nguồn nào là nguồn dài và để báo `sources:` trỏ tới id lạ.
 - **Mỗi nguồn một mục**: nhan đề, tác giả, nơi và năm xuất bản, cách có file, và bảng đường dẫn · bytes · số dòng · SHA-256 cho từng file `.md`/`.pdf`.
 
 Thêm nguồn mới vào bản kê và `index.md` §Sources **ngay trong lượt ingest đầu tiên** của nguồn đó. `validate_wiki_page.py --verify-sources` so bản kê với đĩa; chạy ở bước 0 của lint.
@@ -221,13 +218,13 @@ last_updated: YYYY-MM-DD
 
 | Ký hiệu | Nghĩa |
 |---|---|
-| `[x]` | đã ingest xong: mọi mục (heading) của chunk đã được chú thích §7.5 trích, hoặc được ghi `bỏ qua: <heading> — <lý do>` ở cột *Ghi chú* sau khi người dùng duyệt (ingest bước 2). Kiểm bằng `validate_wiki_page.py --coverage <source id>` |
+| `[x]` | đã ingest xong: mọi mục (heading) của chunk đã được chú thích §7 luật 5 trích, hoặc được ghi `bỏ qua: <heading> — <lý do>` ở cột *Ghi chú* sau khi người dùng duyệt (ingest bước 2). Kiểm bằng `validate_wiki_page.py --coverage <source id>` |
 | `[~]` | đang ingest dở — cột *Ghi chú* **phải** nêu rõ phần nào còn lại; được phép ghi "còn N mục chưa phủ — xem `--coverage <source id>`" |
 | `[ ]` | chưa ingest |
 
 Đơn vị chunk: **chương** với nguồn có chương; **cụm chủ đề** khi một chương tự nó vượt ngưỡng nguồn dài. Mỗi chunk ghi dải dòng `d.<từ>–<đến>` theo file khai ở `file:`. Chunk cố ý bỏ qua (mục lục, lời tựa, bài tập, phụ lục số liệu thô — §2) vẫn có dòng riêng, đánh `[x]` và ghi "bỏ qua, không tạo trang".
 
-**Nguồn nhiều file** (một cuốn sách tách thành nhiều file, vd `fixed_income_during` có 42 file theo chương): một source id, một mục bản kê liệt kê mọi file, một state file. `file:` khai mẫu tên file; mỗi dòng chunk ghi file ở cột *Mục trong nguồn* (vd `File -5.md: Chapter 4`); dải dòng tính trong file đó. Chú thích §7.5 thêm hậu tố file.
+**Nguồn nhiều file** (một cuốn sách tách thành nhiều file, vd `fixed_income_during` có 42 file theo chương): một source id, một mục bản kê liệt kê mọi file, một state file. `file:` khai mẫu tên file; mỗi dòng chunk ghi file ở cột *Mục trong nguồn* (vd `File -5.md: Chapter 4`); dải dòng tính trong file đó. Chú thích §7 luật 5 thêm hậu tố file.
 
 Dòng ghi chú về nguồn (ghi chú người dùng, đặc điểm bản chuyển đổi) được phép đặt giữa frontmatter và bảng; lịch sử xử lý không đặt ở đây.
 
@@ -255,29 +252,3 @@ Dòng ghi chú về nguồn (ghi chú người dùng, đặc điểm bản chuy�
 - **Log không chứa lập luận.** Lý do → `decisions.md`. Ý tưởng dang dở → `_inbox.md`. Trạng thái "còn lại phần nào" → `03_state/`.
 - Mục mới luôn thêm ở **cuối file**; không sửa mục cũ. Mục cũ sai thì mục kế tiếp cùng loại ghi đính chính.
 - Bản log dài trước khi rút gọn (2026-09-15): `git show e2adb7a:log.md`.
-
-## 13. Luồng vận hành
-
-`CLAUDE.md` và file này cùng là lớp schema của dự án: `CLAUDE.md` giữ phần nạp sẵn mọi lượt (quy tắc bắt buộc, bước khởi động), file này giữ quy ước và luồng. Skill trong `.claude/skills/` là quy trình thực thi từng bước và là nguồn thực thi duy nhất; sửa quy trình thì sửa `SKILL.md` và ghi lý do vào `decisions.md`. Khi lệch nhau: `CLAUDE.md` → file này → skill, và báo người dùng chỗ lệch.
-
-Trình tự một phiên:
-
-1. **Đầu phiên** — đọc handoff mới nhất trong `.claude/session_handoffs/` và mục `## Sources` của `02_wiki/index.md`.
-2. **Trước operation** — đọc mục này, rồi các mục ở cột *Đọc thêm* của bảng dưới, rồi mới chạy skill. `/query` và `/research` là tác vụ do người dùng dẫn hướng trên tri thức đã có: chỉ đọc các mục *Đọc thêm* khi sắp ghi trang.
-3. **Chạy skill** — dừng ở điểm chờ duyệt, không ghi gì trước khi người dùng đồng ý (quy tắc bắt buộc 4 của `CLAUDE.md`).
-4. **Khi ghi trang** — hook tự kiểm mỗi lần Write/Edit trong `02_wiki/`; cảnh báo xử lý ngay, không để tồn đến lượt lint. Ghi bằng shell thì hook không chạy.
-5. **Riêng ingest** — cập nhật `03_state/<source id>.md` và `index.md` §Sources mỗi lượt (quy tắc bắt buộc 6); chạy `--coverage <source id>` trước khi đánh chunk `[x]` (§10).
-6. **Trước khi ghi log** — `validate_wiki_page.py --all` phải sạch.
-7. **Ghi log** — đúng 1 mục ở cuối `log.md` (§12).
-8. **Cuối phiên có thay đổi repo** — tạo 1 handoff mới, không sửa handoff cũ (`.claude/rules/session-handoff.md`).
-
-| Operation | Skill | Đọc thêm | Dừng chờ duyệt | Ghi log |
-|---|---|---|---|---|
-| Nạp nguồn | `/ingest` | Toàn bộ | Bước 2: 5–10 ý chính + mục bỏ qua | Luôn |
-| Hỏi đáp | `/query` | §1, §7, §8, §12 khi tạo trang | Trước khi tạo trang `analysis` | Chỉ khi tạo trang |
-| Kiểm tra sức khoẻ | `/lint` | §4–§9, §11, §12 | Không ghi wiki — chỉ báo cáo | Luôn |
-| Nâng `draft → stable` | `/promote` | §7 luật 5, §9, §12 | Danh sách người dùng đã duyệt | Luôn |
-| Review đối chiếu nguồn | `/review-node` | §7–§10, §12 | — | Luôn |
-| Đào sâu vùng tri thức | `/research` | §7, §9, §10 (+ §1, §8 nếu tạo `analysis`) khi ghi | Pha 3: proposal gộp | Luôn, kể cả lượt chỉ Map |
-
-Ngưỡng mỗi lượt của từng operation: §4. Ingest, query, lint, research dùng mẫu **hai lượt**: lượt 1 quét frontmatter (rẻ), lượt 2 chỉ mở full content trang đã xác định là cần. Đây là cơ chế kiểm soát token chính.

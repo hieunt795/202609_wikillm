@@ -5,7 +5,9 @@ description: Nâng trạng thái trang wiki từ draft lên stable sau khi ngư�
 
 # Promote — nâng `draft` → `stable`
 
-Đọc `00_schema.md` §7.5 (`last_updated` đo nội dung), §9 (vòng đời, điều kiện lên `stable`), §12 (log) trước khi ghi.
+**Đọc `00_schema.md`:** §7 luật 5 (`last_updated` đo nội dung), §9 (vòng đời, điều kiện lên `stable`), §12 (log), trước khi ghi.
+**Dừng chờ duyệt:** chỉ ghi trên danh sách người dùng đã duyệt.
+**Ghi log:** luôn, op `promote`.
 
 **Chỉ chạy trên danh sách người dùng đã duyệt.** Danh sách gốc là mục *Đủ điều kiện `stable`* trong báo cáo lint gần nhất (`Claude outputs/lint-*.md`). Người dùng có thể bỏ bớt trang; agent **không** tự thêm trang ngoài danh sách, vì `stable` chỉ có nghĩa khi người dùng đã chọn.
 
@@ -29,5 +31,5 @@ Với từng trang trong danh sách, xác nhận đồng thời: `status: draft`
 ## Sai lầm thường gặp
 
 - Tự promote vì "lint đã sạch" mà chưa có người duyệt → `stable` mất nghĩa.
-- Nâng `last_updated` khi promote → hook đòi chú thích §7.5 dù nội dung không đổi, và tiêu chí stale bị lệch.
+- Nâng `last_updated` khi promote → hook đòi chú thích §7 luật 5 dù nội dung không đổi, và tiêu chí stale bị lệch.
 - Thêm link cho trang thiếu backlink ngay trong lượt promote → đó là sửa nội dung, phải là lượt riêng và qua lint lại.

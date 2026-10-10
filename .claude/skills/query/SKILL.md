@@ -5,7 +5,9 @@ description: 'Trả lời câu hỏi bằng cách tổng hợp từ các trang t
 
 # Query — tổng hợp câu trả lời từ wiki
 
-**Khi chỉ trả lời, chỉ đọc `00_schema.md` §13 (luồng vận hành).** Query không cần data model §1–§12; schema dài khoảng 26 KB, đọc trọn ở đây là tốn token vô ích. Nhánh tạo trang `analysis` (bước 5) mới đọc §1, §7, §8, §12.
+**Đọc `00_schema.md`:** không đọc khi chỉ trả lời (query không cần data model, đọc ở đây là tốn token vô ích). Nhánh tạo trang `analysis` (bước 5) mới đọc §1, §7, §8, §12.
+**Dừng chờ duyệt:** trước khi tạo trang `analysis`.
+**Ghi log:** chỉ khi tạo trang, op `query`.
 
 ## Quy trình hai lượt
 
@@ -48,7 +50,7 @@ Outlink một chiều có thể bỏ sót trang trỏ ngược vào (backlink 2 
 
 Trước khi tạo, kiểm trùng như `ingest` bước 3: `grep -l "^type: analysis" 02_wiki/*.md`, đối chiếu title các trang analysis đã có xem đã có trang nào tổng hợp đúng ý này chưa. Có → merge/cập nhật trang đó thay vì tạo trang mới. Không có → tạo mới.
 
-Người dùng đồng ý → đọc `00_schema.md` §1, §7, §8, §12, rồi viết trang theo đủ luật trang wiki: title câu trần thuật, không heading, link kèm lý do, thân bài áp skill `writing-style` (profile wiki). Hai điều kiện hook dễ vướng: `sources:` không rỗng — ghi source id của các trang đã tổng hợp; nếu có nguồn dài thì §7.5 áp dụng — chú thích lấy lại từ chính các trang đã tổng hợp, trang nguồn chưa có chú thích thì nói rõ là chưa truy được tới dòng. Thêm trang vào `index.md`, chạy `python .claude/hooks/validate_wiki_page.py --all`, rồi ghi 1 mục vào cuối `log.md`: `## [<giờ từ --now>] query | <câu hỏi rút gọn>`.
+Người dùng đồng ý → đọc `00_schema.md` §1, §7, §8, §12, rồi viết trang theo đủ luật trang wiki: title câu trần thuật, không heading, link kèm lý do, thân bài áp skill `writing-style` (profile wiki). Hai điều kiện hook dễ vướng: `sources:` không rỗng — ghi source id của các trang đã tổng hợp; nếu có nguồn dài thì §7 luật 5 áp dụng — chú thích lấy lại từ chính các trang đã tổng hợp, trang nguồn chưa có chú thích thì nói rõ là chưa truy được tới dòng. Thêm trang vào `index.md`, chạy `python .claude/hooks/validate_wiki_page.py --all`, rồi ghi 1 mục vào cuối `log.md`: `## [<giờ từ --now>] query | <câu hỏi rút gọn>`.
 
 Câu trả lời không tạo trang thì **không** ghi log — log chỉ ghi operation làm thay đổi wiki.
 

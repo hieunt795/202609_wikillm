@@ -24,7 +24,7 @@ Chủ đề: kinh tế vĩ mô, tiền tệ, ngân hàng và thị trường thu
 |---|---|
 | Quy tắc bắt buộc, bước khởi động, công cụ kiểm | `CLAUDE.md` |
 | Quy tắc trang wiki, taxonomy, ngưỡng, vòng đời, luồng vận hành, bảng operation | `00_schema.md` |
-| Quy trình thực thi từng operation | `.claude/skills/{ingest,query,lint,promote,review-node}/SKILL.md` |
+| Quy trình thực thi từng operation | `.claude/skills/{ingest,query,lint,promote,review-node,research}/SKILL.md` |
 | Vì sao một luật tồn tại | `decisions.md` |
 
 Hook `.claude/hooks/validate_wiki_page.py` tự kiểm mỗi lần ghi file trong `02_wiki/`; `--help` liệt kê các lệnh quét toàn bộ.

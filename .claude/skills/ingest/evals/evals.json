@@ -4,7 +4,7 @@
     {
       "id": 1,
       "prompt": "Nạp ch.5–8 từ sách Choudhry Yield Curve Analysis vào wiki",
-      "expected_output": "Dừng ở bước 2 với 5–10 ý chính + danh sách trang + danh sách mục (đề xuất bỏ qua); sau duyệt: ≤ 15 trang/lượt, chú thích §7.5, --coverage sạch trước khi đánh [x] (hoặc [~] kèm phần còn lại).",
+      "expected_output": "Dừng ở bước 2 với 5–10 ý chính + danh sách trang + danh sách mục (đề xuất bỏ qua); sau duyệt: ≤ 15 trang/lượt, chú thích §7 luật 5, --coverage sạch trước khi đánh [x] (hoặc [~] kèm phần còn lại).",
       "files": []
     },
     {

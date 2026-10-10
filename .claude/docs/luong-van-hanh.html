@@ -117,7 +117,7 @@ a{color:var(--accent)}
     <li><a href="#phan-hoi">Vòng phản hồi</a></li>
     <li><a href="#duyet">Điểm duyệt</a></li>
     <li><a href="#lenh">Lệnh kiểm</a></li>
-    <li><a href="#luat">Luật cứng</a></li>
+    <li><a href="#luat">Quy tắc bắt buộc</a></li>
     <li><a href="#ho-so">Hồ sơ vận hành</a></li>
     <li><a href="#hien-tai">Trạng thái 2026-09-26</a></li>
   </ol>
@@ -220,7 +220,7 @@ flowchart TD
         <li>Đã có trang → merge, thêm source id, nâng <code>last_updated</code>; trang <code>stable</code>/<code>stale</code> về <code>draft</code>.</li>
         <li>Mâu thuẫn, kể cả giữa hai chương của cùng nguồn → không tự sửa, đánh <code>⚠️ Conflict</code> kèm cả hai claim.</li>
         <li>Trang <code>stable</code> liên quan mà lượt này không merge → <code>stale</code>.</li>
-        <li>Chưa có → tạo trang mới theo §5 (atomic), §7 (thân bài), §8 (title). Gọi skill <code>writing-style</code> profile wiki; mỗi claim nguồn dài kèm chú thích §7.5.</li>
+        <li>Chưa có → tạo trang mới theo §5 (atomic), §7 (thân bài), §8 (title). Gọi skill <code>writing-style</code> profile wiki; mỗi claim nguồn dài kèm chú thích §7 luật 5.</li>
         <li><span class="tag n">Mới</span> Nguồn nhiều file ghi <code>file &lt;tên file&gt;</code> trong mọi chú thích, không viết "cùng file", mỗi ngoặc một nguồn, để <code>--coverage</code> đọc đúng.</li>
       </ul></li>
     <li data-n="5"><b class="t">Liên kết ngay, không hoãn</b>
@@ -290,7 +290,7 @@ flowchart TD
   <ol class="steps">
     <li data-n="0" class="check"><b class="t">Lệnh máy <span class="tag m">Máy kiểm</span></b>
 <pre class="cmd">H=.claude/hooks/validate_wiki_page.py
-python $H --all              # frontmatter, heading, link chết, §7.5, title, mồ côi
+python $H --all              # frontmatter, heading, link chết, §7 luật 5, title, mồ côi
 python $H --verify-sources   # 01_sources khớp bản kê (quy tắc bắt buộc 1)
 python $H --ocr              # ứng viên nhiễu OCR
 python $H --stub-debt        # nợ stub
@@ -329,7 +329,7 @@ python $H --coverage         # chunk [x] còn mục chưa phủ  ← mới</pre>
   <ol class="steps">
     <li data-n="1"><b class="t">Chọn trang</b><p>Tối đa 5 trang mỗi lượt.</p></li>
     <li data-n="2"><b class="t">Tách claim</b><p>Đọc trọn trang, tách thân bài thành danh sách claim.</p></li>
-    <li data-n="3"><b class="t">Tìm đúng đoạn nguồn</b><p>Có chú thích §7.5 → đọc đúng dải dòng. Chưa có → thu hẹp bằng chunk trong state file và <code>grep -n</code>. Không tìm thấy nguồn → claim không đạt.</p></li>
+    <li data-n="3"><b class="t">Tìm đúng đoạn nguồn</b><p>Có chú thích §7 luật 5 → đọc đúng dải dòng. Chưa có → thu hẹp bằng chunk trong state file và <code>grep -n</code>. Không tìm thấy nguồn → claim không đạt.</p></li>
     <li data-n="4"><b class="t">Kiểm 5 mục</b><p>Đúng nguồn · diễn đạt lại (không chép nguyên văn, không token OCR) · link đúng đích · title phủ toàn bộ trang · nhất quán với trang được link.</p></li>
     <li data-n="5"><b class="t">Ghi kết quả</b>
       <ul>
@@ -424,7 +424,7 @@ stateDiagram-v2
 <tbody>
 <tr><td>/ingest</td><td>Bước 2: 5–10 ý chính, danh sách trang, danh sách mục kèm đề xuất bỏ qua</td><td>Người viết phải tham gia thì wiki mới tạo ra hiểu biết, không chỉ là ghi chép</td></tr>
 <tr><td>/research</td><td>Bước 0: cụm trang · Bước 2: bản đề xuất gộp</td><td>Thấy toàn cảnh một lần thay vì bị hỏi rải rác</td></tr>
-<tr><td>/query</td><td>Trước khi tạo trang analysis</td><td>Luật cứng 4</td></tr>
+<tr><td>/query</td><td>Trước khi tạo trang analysis</td><td>Quy tắc bắt buộc 4</td></tr>
 <tr><td>/lint</td><td>Báo cáo, triage inbox, danh sách stable</td><td>Lint nhìn cả wiki nên dễ sửa hàng loạt theo một phán đoán sai</td></tr>
 <tr><td>/promote</td><td>Danh sách trang đã duyệt</td><td><code>stable</code> chỉ có nghĩa khi người dùng đã chọn</td></tr>
 <tr><td>Mọi operation</td><td>Xoá, ghi đè, git discard, force push</td><td>Quy tắc bảo vệ dữ liệu trong CLAUDE.md global</td></tr>
@@ -435,7 +435,7 @@ stateDiagram-v2
 <div class="table-wrap"><table>
 <thead><tr><th>Lệnh</th><th>Khi nào</th><th>Kiểm gì</th></tr></thead>
 <tbody>
-<tr><td><i>(hook tự chạy)</i></td><td>Mỗi Write/Edit trong <code>02_wiki/</code></td><td>Frontmatter, heading, link chết, source id, chú thích §7.5</td></tr>
+<tr><td><i>(hook tự chạy)</i></td><td>Mỗi Write/Edit trong <code>02_wiki/</code></td><td>Frontmatter, heading, link chết, source id, chú thích §7 luật 5</td></tr>
 <tr><td><code>--all</code></td><td>Trước log của ingest, query (khi tạo trang), promote, review, research (khi ghi); bước 0 lint</td><td>Như hook + trang mồ côi; bắt file ghi bằng shell</td></tr>
 <tr><td><code>--coverage [&lt;sid&gt;]</code> <span class="tag n">Mới</span></td><td>Trước khi đánh chunk <code>[x]</code>; bước 0 lint</td><td>Mục nguồn chưa trang nào trích</td></tr>
 <tr><td><code>--verify-sources</code></td><td>Bước 0 lint; khi nghi nguồn bị đổi</td><td>Bytes, số dòng, SHA-256 so với bản kê</td></tr>
@@ -444,7 +444,7 @@ stateDiagram-v2
 <tr><td><code>--now</code></td><td>Mỗi lần ghi log</td><td>Giờ Việt Nam <code>YYYY-MM-DD:hh-MM-ss</code></td></tr>
 </tbody></table></div>
 
-<h2 id="luat">Luật cứng</h2>
+<h2 id="luat">Quy tắc bắt buộc</h2>
 <ol class="rules">
   <li>Không bao giờ sửa, thêm, đổi tên, xoá hay đổi ký tự xuống dòng trong <code>01_sources/</code>.</li>
   <li>Không tự sửa mâu thuẫn giữa hai nguồn: đánh <code>⚠️ Conflict</code> kèm cả hai claim và vị trí, chờ người xử lý.</li>

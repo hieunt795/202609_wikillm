@@ -5,7 +5,9 @@ description: 'Dùng skill này khi người dùng muốn xác minh một trang w
 
 # Review-node — đối chiếu trang với nguồn
 
-Đọc `00_schema.md` §7 (thân bài, chú thích §7.5), §8 (title), §9 (`reviewed` / `reviewed_by`), §10 (bản kê, bản đồ chunk, nguồn nhiều file), §12 (log) trước khi bắt đầu.
+**Đọc `00_schema.md`:** §7 (thân bài, chú thích theo luật 5), §8 (title), §9 (`reviewed` / `reviewed_by`), §10 (bản kê, bản đồ chunk, nguồn nhiều file), §12 (log), trước khi bắt đầu.
+**Dừng chờ duyệt:** không có điểm dừng riêng; các trường hợp không được tự sửa nêu ở bước xử lý kết quả.
+**Ghi log:** luôn, op `review`.
 
 Review là **kiểm chứng nội dung khớp nguồn**. Không phải lint (lint soát cấu trúc cả wiki), không phải ingest (không thêm kiến thức mới). Op ghi vào `log.md` là `review`.
 
@@ -16,7 +18,7 @@ Review là **kiểm chứng nội dung khớp nguồn**. Không phải lint (lin
 **2. Đọc trọn trang**, tách thân bài thành danh sách claim.
 
 **3. Tìm đúng đoạn nguồn cho từng claim.** Lấy đường dẫn file từ `sources:` qua bảng Source id trong `03_state/_sources_manifest.md`.
-- Trang đã có chú thích §7.5 → đọc đúng dải dòng đó (nguồn nhiều file: đúng file ghi trong chú thích).
+- Trang đã có chú thích §7 luật 5 → đọc đúng dải dòng đó (nguồn nhiều file: đúng file ghi trong chú thích).
 - Nguồn dài, chưa có chú thích → lấy dải dòng của chunk trong `03_state/<source id>.md`, `grep -n` heading và từ khoá trong dải đó để thu hẹp, rồi chỉ đọc đoạn tìm được.
 - Nguồn ngắn (không có state file) → `grep -n` từ khoá trên cả file nguồn, đọc đoạn quanh kết quả. File ngắn đọc trọn được nếu grep không thu hẹp nổi.
 - Không tìm thấy đoạn nguồn cho một claim → claim đó **không đạt** (có thể là kiến thức agent tự thêm).
@@ -26,13 +28,13 @@ Review là **kiểm chứng nội dung khớp nguồn**. Không phải lint (lin
 | Mục | Đạt khi |
 |---|---|
 | Đúng nguồn | mỗi claim khớp nghĩa đoạn nguồn; không thêm điều nguồn không nói; không bỏ điều kiện/giới hạn làm đổi nghĩa; số liệu khớp |
-| Diễn đạt lại | không chép nguyên văn (§7.4); không có token OCR |
+| Diễn đạt lại | không chép nguyên văn (§7 luật 4); không có token OCR |
 | Liên kết | mỗi `[[link]]` có lý do đúng — trang đích thật sự nói điều câu văn gán cho nó |
 | Title | mô tả đúng **toàn bộ** nội dung trang (§8, §5) |
 | Nhất quán | không mâu thuẫn với trang được link về cùng một điểm |
 
 **5. Ghi kết quả.**
-- **Đạt** → thêm chú thích §7.5 cho các claim đã đối chiếu (ngay sau claim), rồi thêm `reviewed: <ngày>` và `reviewed_by: model` ngay dưới `last_updated`. Thêm chú thích không đổi claim nên **không** nâng `last_updated` (§7.5).
+- **Đạt** → thêm chú thích §7 luật 5 cho các claim đã đối chiếu (ngay sau claim), rồi thêm `reviewed: <ngày>` và `reviewed_by: model` ngay dưới `last_updated`. Thêm chú thích không đổi claim nên **không** nâng `last_updated` (§7 luật 5).
 - **Claim sai so với nguồn** → sửa đúng claim đó theo nguồn, kèm chú thích, nâng `last_updated`; trang `stable` thì về `draft` (§9). Câu sửa áp skill `writing-style` profile wiki. Sau khi sửa và kiểm lại cả trang mới được đặt `reviewed`.
 - **Hai đoạn nguồn nói khác nhau** → **không sửa**: đánh `⚠️ Conflict` kèm cả hai claim + vị trí (quy tắc bắt buộc 2); không đặt `reviewed`.
 - **Vấn đề cấu trúc** (title sai, cần tách trang, link sai đích) → không tự tách/đổi tên; ghi `_inbox.md`; không đặt `reviewed`.
@@ -48,4 +50,4 @@ Review là **kiểm chứng nội dung khớp nguồn**. Không phải lint (lin
 - Đối chiếu với trí nhớ thay vì đọc lại đoạn nguồn → mất toàn bộ giá trị của review. Model đã viết trang này; đọc lại chính trang mà không mở nguồn chỉ xác nhận lại điều mình đã tin.
 - Đặt `reviewed` cho trang còn claim chưa tìm được nguồn → "đạt" giả.
 - Viết lại cả trang cho "hay hơn" → review không phải ingest; chỉ sửa claim sai.
-- Chép dải dòng từ trang khác mà không kiểm → chú thích sai còn tệ hơn không có (§7.5).
+- Chép dải dòng từ trang khác mà không kiểm → chú thích sai còn tệ hơn không có (§7 luật 5).

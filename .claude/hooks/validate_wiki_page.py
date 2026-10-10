@@ -17,20 +17,20 @@ Che do:
   - --stub-debt       : moi trang stub + so luot ingest trong log.md tu khi tao.
   - --inbox-debt      : moi muc _inbox.md + so luot lint tu ngay ghi.
   - --verify-sources  : so bytes/dong/SHA-256 cua 01_sources/ voi
-                        03_state/_sources_manifest.md (luat cung 1).
-  - --coverage [sid]  : chunk trong 03_state/ -> % dong duoc chu thich §7.5 trich va
+                        03_state/_sources_manifest.md (quy tac bat buoc 1).
+  - --coverage [sid]  : chunk trong 03_state/ -> % dong duoc chu thich §7 luat 5 trich va
                         cac muc (heading) chua trang nao trich. Exit 2 neu chunk [x]
                         con muc chua phu (§10). Khong doi so -> tong ket moi nguon.
   - --size [p]        : trang > 1.000 tu hoac co doan > 250 tu (Atomic, §4). Khong doi so
                         -> tat ca trang. Trang do duoc dung cho ingest/research de chac
                         merge co nay phai tach trang moi, khong cong them claim vao trang cu.
-  - --tags [kw]       : liong tag + so trang dung cai tag. Doc ca [a, b] lan YAML nhieu
-                        dong. Khong doi tu -> tong ket. Dung khi ingest b.3, research Ph.1
-                        tim tag co san (chung thay tu vung).
-  - --style [p]       : tim cum cam B2 (cuc doan), filler I1-I4 (tit hoi thoai), in dam >=5/
-                        trang (G3), giu heading G4, cong nhom luat 6 (gioitkhuyennghikhom,
-                        nhannhac vai tro khong so, tu quy chieuitung trang/nguon). Khong doi
-                        so -> tat ca trang. Tin hieu tho cho lint doc tay, khong phan quyet.
+  - --tags [kw]       : liet ke tag + so trang dung moi tag. Doc ca [a, b] lan YAML nhieu
+                        dong. Khong doi so -> tong ket. Dung khi ingest b.3, research Pha 1
+                        de tim tag co san (tu vung kiem soat, §6).
+  - --style [p]       : tim cum cam B2, filler I1-I4, in dam >= 5/trang (G3), heading con
+                        sot (G4) va nhom §7 luat 6 (giong khuyen nghi, nhan manh vai tro
+                        khong kem so, tu quy chieu toi trang/nguon). Khong doi so -> tat ca
+                        trang. Tin hieu tho cho lint doc tay, khong phan quyet.
   - --now             : gio Viet Nam dang YYYY-MM-DD:hh-MM-ss cho log.md (§12).
   - --session-start   : in handoff moi nhat trong .claude/session_handoffs/ (hook
                         SessionStart). Luon exit 0.
@@ -51,7 +51,7 @@ VALID_TYPES = {"entity", "concept", "case", "analysis"}
 VALID_STATUS = {"stub", "draft", "stable", "stale"}
 VALID_REVIEWERS = {"user", "model"}
 
-# §7.5 chi ap cho trang duoc ghi TU ngay luat co hieu luc tro di.
+# §7 luat 5 chi ap cho trang duoc ghi TU ngay luat co hieu luc tro di.
 # 51 trang cu giu nguyen, khong backfill hang loat -- nhung trang nao
 # duoc cham vao (last_updated duoc nang len) thi phai co chu thich.
 CITATION_RULE_FROM = datetime.date(2026, 9, 14)
@@ -158,7 +158,7 @@ def manifest_sources(root):
 
 def long_sources(wiki_dir):
     """Nguon dai (§10) = nguon ban ke xep 'Nguon dai' HOAC co file trang thai
-    trong 03_state/. Doc ban ke de nguon dai chua dung state file van bi ep §7.5."""
+    trong 03_state/. Doc ban ke de nguon dai chua dung state file van bi ep §7 luat 5."""
     if not wiki_dir:
         return set()
     root = os.path.dirname(wiki_dir)
@@ -269,7 +269,7 @@ def check(path, pages=None, longsrc=None, known=None):
     for i, line in enumerate(clean.splitlines(), 1):
         if re.match(r"^#{1,6}\s+\S", line):
             problems.append(
-                "Dong %d co heading trong than bai (§7.1): %s\n"
+                "Dong %d co heading trong than bai (§7 luat 1): %s\n"
                 "  -> Can heading de tach y = dau hieu phai TACH TRANG (§5), "
                 "khong them heading." % (i, line.strip()[:60])
             )
@@ -295,12 +295,12 @@ def check(path, pages=None, longsrc=None, known=None):
     for i, line in enumerate(clean.splitlines(), 1):
         if re.match(r"^\s*[-*+]\s*\[\[", line):
             problems.append(
-                "Dong %d don link thanh danh sach kieu \"xem them\" (§7.3). "
+                "Dong %d don link thanh danh sach kieu \"xem them\" (§7 luat 3). "
                 "[[wikilink]] phai nam TRONG cau van kem ly do lien ket." % i
             )
             break
 
-    # §7.5: claim tu nguon dai phai kem chu thich vi tri.
+    # §7 luat 5: claim tu nguon dai phai kem chu thich vi tri.
     if longsrc and status != "stub" and updated and updated >= CITATION_RULE_FROM:
         from_long = [s for s in srcs if s in longsrc]
         if from_long:
@@ -309,7 +309,7 @@ def check(path, pages=None, longsrc=None, known=None):
             )
             if not has_cite:
                 problems.append(
-                    "Claim lay tu nguon dai (%s) ma than bai khong co chu thich vi tri (§7.5).\n"
+                    "Claim lay tu nguon dai (%s) ma than bai khong co chu thich vi tri (§7 luat 5).\n"
                     "  -> Moi claim ghi `(<nguon>, <chuong>, <muc>, d.<tu>-<den>)` ngay sau claim.\n"
                     "  -> Dai dong lay tu chunk dang doc trong 03_state/<nguon>.md."
                     % ", ".join(from_long)
@@ -452,7 +452,7 @@ def ocr_clean(line):
     line = re.sub(r"\[\[[^\]]*\]\]", " ", line)
     line = re.sub(r"\$[^$]*\$", " ", line)
     line = re.sub(r"`[^`]*`", " ", line)
-    line = re.sub(r"\([^()]*d\.\d+[^()]*\)", " ", line)  # chu thich §7.5 chua ten muc tieng Anh
+    line = re.sub(r"\([^()]*d\.\d+[^()]*\)", " ", line)  # chu thich §7 luat 5 chua ten muc tieng Anh
     return line
 
 
@@ -590,13 +590,13 @@ def cmd_verify_sources(root):
     )
     if bad:
         sys.stdout.write(
-            "  -> Luat cung 1: khong sua lai nguon cho khop. Bao nguoi dung; "
+            "  -> Quy tac bat buoc 1: khong sua lai nguon cho khop. Bao nguoi dung; "
             "lech CRLF/LF thi noi dung va so dong co the van dung.\n"
         )
     sys.exit(2 if (bad or extra) else 0)
 
 
-# --coverage: muc (heading) nao trong chunk chua duoc chu thich §7.5 nao trich.
+# --coverage: muc (heading) nao trong chunk chua duoc chu thich §7 luat 5 nao trich.
 COV_SKIP_HEAD = re.compile(
     r"^(references|bibliography|index|(table of )?contents|exercises?|questions|acknowledg\w*|tài liệu tham khảo"
     r"|introduction|overview|summary|conclusions?|concluding)\b",  # gioi thieu/tom tat chuong: lo trinh, lap y

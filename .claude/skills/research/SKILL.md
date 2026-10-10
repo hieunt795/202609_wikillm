@@ -22,7 +22,9 @@ Research đọc lại cái wiki **đã có**, đối chiếu với nguồn **đ�
 | Proposal | ≤ 20 mục cần duyệt; ≤ 1 trang `analysis` |
 | Nguồn | chunk `[x]` hoặc nguồn ngắn; không web |
 
-**Đọc `00_schema.md` theo nhánh, không đọc trước.** Pha 1–2 chỉ cần §13 (luồng vận hành). Chỉ khi sắp ghi (Pha 3) mới đọc §7, §9, §10 mục *nguồn nhiều file*; thêm §1, §8 nếu tạo `analysis`.
+**Đọc `00_schema.md`:** theo nhánh, không đọc trước. Pha 1–2 không cần schema. Chỉ khi sắp ghi (Pha 3) mới đọc §7, §9, §10 mục *nguồn nhiều file*; thêm §1, §8 nếu tạo `analysis`.
+**Dừng chờ duyệt:** Pha 3, sau khi trình proposal gộp; không ghi wiki trước khi người dùng đồng ý.
+**Ghi log:** luôn, kể cả lượt chỉ Map, op `research`.
 
 ## Pha 1 — Map (rẻ, không mở full content)
 
@@ -53,7 +55,7 @@ Mở full content các node của sub. Mọi kết quả chỉ là đề xuất.
 
 **Enrich ≤ 7 node** — ưu tiên `draft` trước `stable`/`stale` (tránh đảo promote), trang mỏng, backlink cao, có chunk `[x]` phủ chủ đề; nói rõ lý do chọn. **Loại node vượt 1.000/250 từ khỏi danh sách enrich** (chạy `--size` trước): node sắp tách trang không nên merge thêm claim.
 
-1. Nguồn hợp lệ: nguồn trong `sources:` của node, **và** nguồn mà node khác trong sub đã trích tới đúng chủ đề (chú thích §7.5 chỉ sẵn chunk — không lục toàn bộ nguồn). Tra `03_state/_sources_manifest.md` để biết nguồn ngắn/dài và đường dẫn.
+1. Nguồn hợp lệ: nguồn trong `sources:` của node, **và** nguồn mà node khác trong sub đã trích tới đúng chủ đề (chú thích §7 luật 5 chỉ sẵn chunk — không lục toàn bộ nguồn). Tra `03_state/_sources_manifest.md` để biết nguồn ngắn/dài và đường dẫn.
    - **Nguồn dài:** chunk trong `03_state/<source id>.md`. Chỉ dùng `[x]`. Chunk `[~]`/`[ ]` → dừng enrich từ chunk đó, ghi vào mục *chặn ingest*. State file là nguồn sự thật về tiến độ; research đọc trước thì wiki đi trước bản đồ chunk.
    - **Nguồn nhiều file** (vd `fixed_income_during`): cột *Mục trong nguồn* ghi file; dải dòng tính trong file đó.
    - **Nguồn ngắn** (không có state file): coi như đã ingest trọn; `grep -n` từ khoá, đọc đoạn quanh kết quả.
@@ -71,9 +73,9 @@ Mở full content các node của sub. Mọi kết quả chỉ là đề xuất.
 1. **Trình một proposal gộp** (mục *Output contract*), một lần duyệt. Người dùng duyệt cả lô, bớt theo mã mục, hoặc từ chối hết. Không ghi gì vào `02_wiki/` trước khi duyệt.
 2. **Ghi đúng các mục đã duyệt** — áp skill `writing-style` profile wiki cho mọi câu mới. **Áp luật 6 (§7):** trang tự đủ nghĩa qua link, không giọng thuyết phục/khuyến nghị, ưu tiên mật độ ý. Chạy `python .claude/hooks/validate_wiki_page.py --style` trước khi ghi log kiểm luật này.
    - `C` claim: không heading, viết lại bằng lời mình, link nằm trong câu, chú thích ngay sau claim (§7). Nâng `last_updated`; `stable`/`stale` → `draft` (§9). Source id mới → `sources:` (inline list).
-   - `L` link: chèn vào câu kèm lý do; không nâng `last_updated` (§7.5).
+   - `L` link: chèn vào câu kèm lý do; không nâng `last_updated` (§7 luật 5).
    - `K` conflict: chèn cả hai claim + vị trí; không sửa claim nào.
-   - `N` analysis: title câu trần thuật (§8); `sources:` = source id của các trang đã tổng hợp; chú thích §7.5 lấy từ chính các trang đó, thiếu thì nói rõ chưa truy được tới dòng; thêm vào `02_wiki/index.md`.
+   - `N` analysis: title câu trần thuật (§8); `sources:` = source id của các trang đã tổng hợp; chú thích §7 luật 5 lấy từ chính các trang đó, thiếu thì nói rõ chưa truy được tới dòng; thêm vào `02_wiki/index.md`.
    - **Không làm ngoài proposal:** không dọn format ("Xem thêm", heading…), không backfill chú thích claim cũ, không đụng `reviewed`/`reviewed_by`, không đổi `status` sang `stable`. Gặp lỗi cấu trúc → nêu trong báo cáo cho `/lint`.
 3. Có ghi file trong `02_wiki/` → `python .claude/hooks/validate_wiki_page.py --all`, phải sạch trước khi log (cách duy nhất bắt `analysis` mồ côi).
 4. Xuất báo cáo, cập nhật trạng thái sub trong map (`done <ngày>` / `partial`).

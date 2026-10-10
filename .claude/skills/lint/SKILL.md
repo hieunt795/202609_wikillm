@@ -5,7 +5,11 @@ description: Kiểm tra sức khoẻ wiki 02_wiki — trang mồ côi, link ch�
 
 # Lint — kiểm tra sức khoẻ wiki
 
-Chạy sau mỗi 10 lượt ingest hoặc theo lịch (§4). Đọc `00_schema.md` §4–§9, §11, §12.
+Chạy sau mỗi 10 lượt ingest hoặc theo lịch (§4).
+
+**Đọc `00_schema.md`:** §4–§9, §11, §12.
+**Dừng chờ duyệt:** không ghi wiki; xuất báo cáo rồi chờ người dùng chọn hướng xử lý.
+**Ghi log:** luôn, op `lint`.
 
 **Lint chỉ báo cáo, không tự sửa** (quy tắc bắt buộc 3). Xuất báo cáo, chờ người xác nhận hướng xử lý. Lý do: lint nhìn cả wiki một lượt nên dễ sửa hàng loạt theo một phán đoán sai; người dùng duyệt trước thì lỗi dừng ở báo cáo.
 
@@ -15,7 +19,7 @@ Chạy sau mỗi 10 lượt ingest hoặc theo lịch (§4). Đọc `00_schema.m
 
 ```bash
 H=.claude/hooks/validate_wiki_page.py
-python $H --all              # trang: frontmatter, heading, link chết, source id, §7.5, title, mồ côi
+python $H --all              # trang: frontmatter, heading, link chết, source id, §7 luật 5, title, mồ côi
 python $H --verify-sources   # 01_sources/ khớp bản kê (quy tắc bắt buộc 1)
 python $H --ocr              # ứng viên nhiễu OCR
 python $H --stub-debt        # nợ stub
@@ -28,7 +32,7 @@ python $H --style            # cụm cấm, filler, bold, luật 6 (§7)
 
 Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi vòng qua nó, nên `--all` quét lại tất cả. Số trang của lượt lint lấy từ dòng cuối của `--all`. `--verify-sources` báo lệch thì ghi lên đầu báo cáo: đó là vi phạm quy tắc bắt buộc, không phải lỗi trang, và lint không sửa lại nguồn.
 
-**`--all` phủ:** frontmatter đủ trường, `type`/`status` hợp lệ, tên file khớp title, `sources` không rỗng và là source id có trong bản kê, `last_updated` đúng dạng ngày, heading trong thân bài, link chết (kể cả `[[trang|nhãn]]`), link dồn thành danh sách, chú thích §7.5, title danh từ cho `case`/`analysis`, trang mồ côi theo chiều backlink.
+**`--all` phủ:** frontmatter đủ trường, `type`/`status` hợp lệ, tên file khớp title, `sources` không rỗng và là source id có trong bản kê, `last_updated` đúng dạng ngày, heading trong thân bài, link chết (kể cả `[[trang|nhãn]]`), link dồn thành danh sách, chú thích §7 luật 5, title danh từ cho `case`/`analysis`, trang mồ côi theo chiều backlink.
 
 **Phải kiểm tay ở bước 2:** mâu thuẫn tồn đọng, stale chưa đánh dấu, trùng lặp, khái niệm chưa có trang, vi phạm title ngoài phần máy bắt được, xác nhận ứng viên OCR, danh sách đủ điều kiện `stable`.
 
@@ -56,7 +60,7 @@ Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi v
 
 **Khái niệm chưa có trang** không có lệnh tự động: đọc lướt thân bài các trang ở lượt 3, ghi lại thuật ngữ lặp lại chưa có `[[link]]`, rồi đếm bằng `grep -li "<thuật ngữ>" 02_wiki/*.md --exclude=index.md`. Đếm theo khái niệm, không theo chuỗi: "thâm hụt" có thể là thâm hụt vãng lai hoặc thâm hụt ngân sách.
 
-**Nhiễu OCR:** `--ocr` quét thân bài sau khi bỏ `[[link]]`, `$công thức$`, `` `code` `` và chú thích §7.5, theo sáu họ mẫu: `l`/`O` thay chữ số hoặc `I` hoa (`lmbalance`, `tO`); số chú thích dính vào từ (`Economiesl3`); chữ số bị tách (`1 993`); HOA–thường lẫn (`COLmtries`); nguyên âm nhân đôi (`Waaes`); rác markdown (`<sup>`, `<span id=`, `[#page-`, `�`). Ứng viên chỉ là lưới lọc thô: tên riêng như `Paasche` là báo giả, và lỗi OCR tạo ra từ có thật (`set our` thay `set out`) chỉ lộ ra khi đọc. Token OCR lọt vào trang gần như chắc chắn nằm trong câu chép nguyên văn (§7.4), nên báo cáo kèm cả hai lỗi.
+**Nhiễu OCR:** `--ocr` quét thân bài sau khi bỏ `[[link]]`, `$công thức$`, `` `code` `` và chú thích §7 luật 5, theo sáu họ mẫu: `l`/`O` thay chữ số hoặc `I` hoa (`lmbalance`, `tO`); số chú thích dính vào từ (`Economiesl3`); chữ số bị tách (`1 993`); HOA–thường lẫn (`COLmtries`); nguyên âm nhân đôi (`Waaes`); rác markdown (`<sup>`, `<span id=`, `[#page-`, `�`). Ứng viên chỉ là lưới lọc thô: tên riêng như `Paasche` là báo giả, và lỗi OCR tạo ra từ có thật (`set our` thay `set out`) chỉ lộ ra khi đọc. Token OCR lọt vào trang gần như chắc chắn nằm trong câu chép nguyên văn (§7 luật 4), nên báo cáo kèm cả hai lỗi.
 
 **3. Lượt đắt — chỉ mở full content các trang bị flag ở lượt 2.**
 

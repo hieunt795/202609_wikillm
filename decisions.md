@@ -308,3 +308,15 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 - **Subagent không được skill gọi tự động:** quy tắc global của người dùng cấm tự spawn agent, nên `review-node/SKILL.md` không đổi; agent chỉ chạy khi người dùng gọi tên. Agent chỉ trả bảng khớp / lệch / không tìm thấy / sai vị trí; việc sửa trang, đặt `reviewed`, ghi `_inbox.md` vẫn ở phiên chính theo bước 5 của review-node (quy tắc bắt buộc 2).
 - **Tắt plugin ở `settings.local.json` thay vì cấp user:** các plugin này có thể còn dùng ở project khác; file local không vào git vì danh sách plugin là chuyện của từng máy.
 - **Phạm vi:** không sửa `CLAUDE.md`, `00_schema.md`, bảy skill, `02_wiki/`, `03_state/`.
+
+## [2026-10-10] Mỗi quy tắc một chỗ ở; xoá `00_schema.md` §13, quy trình về skill
+
+- **Quyết định:** tách lớp chỉ dẫn theo thời điểm file được nạp. `CLAUDE.md` (nạp mọi lượt) giữ quy tắc bắt buộc, khởi động, lệnh kiểm bắt buộc. `.claude/rules/` có `paths:` giữ lời nhắc cho đúng loại file đang chạm. `00_schema.md` §1–§12 mô tả wiki trông như thế nào. `SKILL.md` giữ trình tự của từng operation, mở đầu bằng ba dòng *Đọc schema · Dừng chờ duyệt · Ghi log*.
+- **Tiêu chí đặt chỗ:** thứ gì cần thấy trước khi quyết định đọc gì thì phải ở file nạp sẵn; thứ gì chỉ thuộc một operation thì ở skill của operation đó. Áp tiêu chí này cho các lần sau, không hỏi lại "schema hay `CLAUDE.md`".
+- **Vì sao xoá §13 (đảo quyết định cùng ngày):** §13 đặt chỉ dẫn "đọc gì trước" vào file không được nạp sẵn, nên phụ thuộc việc model tự mở schema. Bước 3–8 của nó chép quy tắc bắt buộc 4, 5, 6 và bảng công cụ. Phần duy nhất chỉ có ở §13 là bảng operation, mà từng hàng thuộc đúng một skill. Mẫu đọc hai lượt chuyển về §4.
+- **Mô hình Karpathy không quy định cách tách file:** gist chỉ có một file schema. Việc tách này giảm token và chỗ lệch, không tự nó làm dự án sát mô hình hơn.
+- **Handoff thủ công:** rule `session-handoff.md` trước đây bắt mọi phiên có thay đổi phải tạo handoff, trong khi skill `/handoff` khoá chỉ người dùng gọi. Người dùng chọn thủ công; agent chỉ nhắc một câu cuối phiên.
+- **Xoá `rules/project-records.md`:** mọi dòng đã có ở quy tắc bắt buộc 3, 5 và §11, §12; câu "research, audit, draft không phải tri thức đã chấp nhận" chuyển về §3.
+- **Ký hiệu:** `§7.x` đổi thành `§7 luật x` ở schema, skill, hook, tài liệu để khớp `CLAUDE.md`.
+- **Hoãn:** ngoại lệ cho văn bản pháp luật ghi `_inbox.md`, quyết khi ingest lại TT50/2026.
+- **Đóng băng:** sau batch này không sửa `CLAUDE.md`, schema, skill, rule, hook cho tới khi ingest bù xong 247 mục chưa phủ. Phát hiện mới ghi `_inbox.md`.

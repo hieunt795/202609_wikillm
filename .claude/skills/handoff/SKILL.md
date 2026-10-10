@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Handoff — ghi trạng thái cuối phiên
 
-Luật gốc: `.claude/rules/session-handoff.md` và `00_schema.md` §13 bước 8. Skill này chỉ là quy trình thực thi; không thay `log.md`, state, manifest hay `decisions.md`.
+Luật gốc: `.claude/rules/session-handoff.md`. Skill này chỉ là quy trình thực thi; handoff không thay `log.md`, state, manifest hay `decisions.md`.
 
 **Phiên không đổi repo hoặc trạng thái vận hành thì không tạo handoff.** Báo lại người dùng và dừng.
 

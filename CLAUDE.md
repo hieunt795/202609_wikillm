@@ -40,22 +40,13 @@ Wiki tri thức 3 lớp theo mô hình Karpathy, kèm 1 vùng trạng thái ph�
 
 ## Khởi động
 
-File này và `00_schema.md` cùng là lớp schema của dự án (mô hình Karpathy). File này chỉ giữ phần phải thấy mọi lượt; quy ước và luồng vận hành nằm ở `00_schema.md`.
+Ba lớp chỉ dẫn, mỗi quy tắc chỉ nằm ở một nơi: file này giữ phần phải thấy mọi lượt; `00_schema.md` §1–§12 mô tả wiki trông như thế nào; mỗi `SKILL.md` trong `.claude/skills/` là quy trình từng bước của một operation. Khi lệch nhau, ưu tiên theo thứ tự file này, `00_schema.md`, skill, và báo người dùng chỗ lệch.
 
-1. **Đầu phiên** — đọc handoff mới nhất trong `.claude/session_handoffs/` và mục `## Sources` của `02_wiki/index.md`. Không ghi trạng thái phiên vào file này.
-2. **Trước mọi operation** (`/ingest`, `/query`, `/lint`, `/promote`, `/review-node`, `/research`) — đọc `00_schema.md` §13: trình tự một phiên, bảng operation, mục schema cần đọc thêm, điểm dừng chờ duyệt. Sau đó mới chạy skill.
+1. **Đầu phiên** — hook `SessionStart` đã nạp handoff mới nhất; đọc thêm mục `## Sources` của `02_wiki/index.md`. Không ghi trạng thái phiên vào file này.
+2. **Mỗi operation** (`/ingest`, `/query`, `/lint`, `/promote`, `/review-node`, `/research`) — chạy skill tương ứng. Đầu mỗi skill nêu mục schema cần đọc, điểm dừng chờ duyệt và việc ghi log; không đọc `00_schema.md` trước khi skill yêu cầu.
+3. **Cuối phiên có thay đổi repo** — nhắc người dùng gọi `/handoff`; không tự tạo handoff.
 
-## Nhắc nhanh về trang wiki
-
-Chi tiết ở `00_schema.md`; những điều dễ sai nhất:
-
-- Thân bài **không có heading** — cần heading nghĩa là phải tách trang (§5, §7).
-- `[[wikilink]]` nằm **trong câu văn kèm lý do, không dồn thành danh sách; không mở đầu bullet** (§7). Hook báo lỗi danh sách link kiểu "xem thêm"; cách sửa là lồng từng link vào câu diễn giải.
-- **`tags` không phải liên kết** — chỉ là chỉ mục lọc (§6).
-- **Viết lại bằng lời mình**, không sao chép nguyên văn (§7). Áp skill `writing-style` profile wiki.
-- `sources:` dùng **source id**, bắt buộc inline list `[id1, id2]` — hook đọc theo dòng, không hiểu YAML nhiều dòng (§1, §10).
-- Claim từ **nguồn dài** kèm chú thích `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7 luật 5). Luật áp cho trang có `last_updated` từ 2026-09-14 trở đi.
-- Lượt sửa chỉ thêm link hoặc chú thích thì không nâng `last_updated`.
+Quy ước viết trang wiki được nạp từ `.claude/rules/wiki-pages.md` khi chạm file trong `02_wiki/`.
 
 ## Công cụ kiểm
 
@@ -70,16 +61,9 @@ Bắt buộc:
 | `--verify-sources` | Bước 0 lint; bất cứ khi nào nghi `01_sources/` bị đổi |
 | `--now` | Lấy giờ Việt Nam cho `log.md` |
 
-Theo nhu cầu:
-
-- `--backlinks [<trang>]` — đếm/liệt kê backlink (không grep tay).
-- `--size [<trang>]` — trang trên 1.000 từ hoặc đoạn trên 250 từ; chạy trước khi merge/enrich (§4, §5).
-- `--tags [<từ khoá>]` — tag đang có + số trang dùng; kiểm trước khi đặt tag mới ở ingest (§6).
-- `--style [<trang>]` — tín hiệu thô về văn phong và §7 luật 6; chạy trên trang vừa viết ở ingest và research.
-- `--ocr`, `--stub-debt`, `--inbox-debt` — tiêu chí lint tương ứng.
+Các lệnh theo nhu cầu (`--backlinks`, `--size`, `--tags`, `--style`, `--ocr`, `--stub-debt`, `--inbox-debt`): xem `--help`; skill nêu lúc nào cần chạy.
 
 ## Ghi chú vận hành
 
 - Không sửa `00_schema.md` / `CLAUDE.md` / skill vụn vặt từng lần — gộp theo batch để giữ prompt cache ổn định.
-- Ý tưởng chưa đủ chín thì ghi vào `_inbox.md`, **không** nhét vào một trang `02_wiki/` cho tiện (§11). Triage mỗi lượt lint.
 - `python "Claude outputs/log_questions.py"` — ghi câu hỏi của người dùng vào `.claude/local/question-logger/questions.jsonl`; chỉ chạy khi người dùng yêu cầu (local-only). Tuỳ chọn: `--input <file.json|jsonl>`, `--dry-run`.

@@ -1075,3 +1075,8 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Hook: `--session-start` in handoff mới nhất, khai báo `SessionStart` (`startup|clear`) trong `.claude/settings.json`
 - Thêm `.claude/agents/source-verifier.md` (chỉ đọc, chỉ khi người dùng gọi) và `research/evals/evals.json` (3 eval); `.claude/settings.local.json` tắt 5 plugin cho project. `--all`: 790 trang, 0 lỗi
 - Lý do: decisions.md [2026-10-10]
+
+## [2026-10-10:15-18-11] schema | Mỗi quy tắc một chỗ ở; xoá §13, quy trình về skill
+- `00_schema.md` còn §1–§12; bảng operation của §13 thành 3 dòng mở đầu ở 6 `SKILL.md`; `CLAUDE.md` 980 → 805 từ, bỏ "Nhắc nhanh" (chuyển `rules/wiki-pages.md`)
+- Xoá `rules/project-records.md`; handoff thủ công; `§7.x` → `§7 luật x`; sửa docstring hook. `--all`: 790 trang, 0 lỗi
+- Lý do: decisions.md [2026-10-10]

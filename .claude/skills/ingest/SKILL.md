@@ -5,7 +5,9 @@ description: Nạp nguồn từ 01_sources vào wiki 02_wiki theo schema dự á
 
 # Ingest — nạp nguồn vào wiki
 
-Đọc toàn bộ `00_schema.md` trước khi tạo trang đầu tiên: ingest dùng gần như mọi mục (§1 frontmatter, §2 taxonomy, §3 đặt tên, §4 ngưỡng, §5 atomic, §6 liên kết, §7 thân bài, §8 title, §9 status, §10 nguồn, §11 inbox, §12 log).
+**Đọc `00_schema.md`:** toàn bộ §1–§12, trước khi tạo trang đầu tiên (§1 frontmatter, §2 taxonomy, §3 đặt tên, §4 ngưỡng, §5 atomic, §6 liên kết, §7 thân bài, §8 title, §9 status, §10 nguồn, §11 inbox, §12 log).
+**Dừng chờ duyệt:** bước 2, sau khi trình 5–10 ý chính và các mục bỏ qua; không ghi gì trước khi người dùng đồng ý.
+**Ghi log:** luôn, op `ingest`.
 
 ## Tham chiếu (Bundled resources)
 
@@ -24,7 +26,7 @@ description: Nạp nguồn từ 01_sources vào wiki 02_wiki theo schema dự á
 
 **1. Xác định nguồn và phần sẽ đọc.** Tra bảng Source id trong `03_state/_sources_manifest.md` để lấy source id, đường dẫn file và phân loại.
 
-- **Nguồn chưa có trong bản kê** → thêm ngay trong lượt này (§10): chọn source id snake_case; đo `wc -c -l` và `sha256sum` cho từng file `.md`/`.pdf`; ghi nhan đề, tác giả, nơi và năm xuất bản (đọc trang bìa/copyright của file); thêm dòng vào bảng Source id và mục riêng; thêm dòng vào `02_wiki/index.md` §Sources. Không bỏ bước này — thiếu nó thì hook không biết nguồn là nguồn dài và không ép chú thích §7.5.
+- **Nguồn chưa có trong bản kê** → thêm ngay trong lượt này (§10): chọn source id snake_case; đo `wc -c -l` và `sha256sum` cho từng file `.md`/`.pdf`; ghi nhan đề, tác giả, nơi và năm xuất bản (đọc trang bìa/copyright của file); thêm dòng vào bảng Source id và mục riêng; thêm dòng vào `02_wiki/index.md` §Sources. Không bỏ bước này — thiếu nó thì hook không biết nguồn là nguồn dài và không ép chú thích §7 luật 5.
 - **Nguồn ngắn** (≤ 120 KB *và* ≤ 1.200 dòng, tính trên tổng các file): đọc trọn 1 lượt. Không có state file nên không qua cổng `--coverage`; đọc trọn là cách bảo đảm độ phủ.
 - **Nguồn dài**: ingest theo chương/cụm. `03_state/<source id>.md` là **nguồn sự thật duy nhất** cho câu hỏi "còn lại phần nào": chọn dòng `[ ]` hoặc `[~]` kế tiếp, lấy dải dòng `d.<từ>–<đến>` rồi chỉ đọc đúng dải đó.
   - Chưa có file trạng thái → **tạo trước khi ingest**: quét heading của file nguồn (`grep -n "^#"`), dựng bản đồ chunk đầy đủ (kể cả chunk sẽ bỏ qua), rồi mới bắt đầu. Nguồn nhiều file: mỗi file một dòng, ghi tên file ở cột *Mục trong nguồn* (§10). **Không** ghi file nào vào `01_sources/` (quy tắc bắt buộc 1).
@@ -56,7 +58,7 @@ Dùng vài từ khoá tiếng Anh cho mỗi khái niệm (thuật ngữ gốc v�
 - **Trang `stable` liên quan tới nguồn này nhưng lượt ingest không merge vào** → đổi sang `stale` (§9). Ngoại lệ: lượt ingest lại ở chế độ đối chiếu đã đọc lại trang và thấy đúng thì giữ `stable` (decisions.md 2026-09-25).
 - **Chưa có** → tạo trang mới. Ranh giới trang theo §5, title theo §8, thân bài theo §7.
 
-Viết thân bài bằng lời của mình. Trước khi viết hoặc sửa thân bài trang mới/cập nhật, **gọi Skill tool với `writing-style`** (bản local tại `.claude/skills/writing-style/`, profile wiki) để nạp bộ quy tắc A–I, rồi áp quy tắc đó vào văn bản đang viết. Với **nguồn dài**: mỗi claim kèm chú thích `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7.5). Nguồn nhiều file ghi `file <tên file>` trong **mọi** chú thích, không viết "cùng file", và mỗi ngoặc một nguồn — `--coverage` đọc chú thích theo đúng dạng này để biết dòng nào đã được trích. Dải dòng lấy từ chunk đang đọc.
+Viết thân bài bằng lời của mình. Trước khi viết hoặc sửa thân bài trang mới/cập nhật, **gọi Skill tool với `writing-style`** (bản local tại `.claude/skills/writing-style/`, profile wiki) để nạp bộ quy tắc A–I, rồi áp quy tắc đó vào văn bản đang viết. Với **nguồn dài**: mỗi claim kèm chú thích `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7 luật 5). Nguồn nhiều file ghi `file <tên file>` trong **mọi** chú thích, không viết "cùng file", và mỗi ngoặc một nguồn — `--coverage` đọc chú thích theo đúng dạng này để biết dòng nào đã được trích. Dải dòng lấy từ chunk đang đọc.
 
 **Phép thử tự đủ nghĩa (luật 6, §7):** sau khi viết xong thân bài, đọc riêng trang cùng các `[[wikilink]]` có sẵn — không cần mở nguồn, có hiểu ý chính của trang và tại sao nó nối với các trang khác không? Không hiểu → thêm lý do vào câu link hoặc sửa điều khoản.
 
@@ -65,7 +67,7 @@ Viết thân bài bằng lời của mình. Trước khi viết hoặc sửa th�
 - Chèn `[[wikilink]]` từ trang mới → trang liên quan, trong câu văn kèm lý do.
 - Cập nhật ngược trang liên quan để có backlink 2 chiều (`index.md` không tính là backlink).
 - Khái niệm cần link mà chưa có trang → tạo luôn trang `status: stub` rồi link. **Không hoãn sang batch sau** — liên kết bị hoãn thường mất luôn.
-- Chỉ chèn link vào câu có sẵn của trang cũ (không đổi claim) → **không** nâng `last_updated` của trang đó (§7.5).
+- Chỉ chèn link vào câu có sẵn của trang cũ (không đổi claim) → **không** nâng `last_updated` của trang đó (§7 luật 5).
 - Không tìm được trang liên quan nào để chèn link → ghi vào `_inbox.md` (concept cô lập chưa có bối cảnh, triage ở lượt lint sau).
 
 **6. Ngưỡng:** tối đa 15 trang mỗi lượt (§4), trang `stub` không tính. Đây là nhịp độ, không phải phạm vi: chunk chưa hết thì dừng ở `[~]`, lượt sau làm tiếp. Không có ngưỡng dưới — đừng tách trang cho đủ số.
@@ -96,7 +98,7 @@ Hook `PostToolUse` chỉ bắt tool `Write|Edit`; file ghi bằng shell đi vòn
 - Dồn link thành mục "xem thêm" cuối trang → link không lý do không tạo giá trị mạng.
 - Đặt title danh từ cho trang `case` → `case`/`analysis` dùng câu trần thuật hoàn chỉnh (§8).
 - Bỏ qua bước 2 vì "nguồn đơn giản" → người dùng mất vai trò trong vòng lặp.
-- Nguồn mới mà không thêm vào bản kê → hook bỏ qua kiểm §7.5 và báo `sources:` lạ cho mọi trang của nguồn đó.
+- Nguồn mới mà không thêm vào bản kê → hook bỏ qua kiểm §7 luật 5 và báo `sources:` lạ cho mọi trang của nguồn đó.
 - Đọc `log.md` để suy ra "còn lại phần nào" → sai nguồn sự thật (§10).
 - Đánh `[x]` khi còn mục chưa phủ chưa được duyệt bỏ qua → research không bù được, vì nó chỉ đi từ trang đã có.
 - Ingest xong mà quên `## Sources` + `03_state/<source id>.md` → lượt sau phải dựng lại trạng thái từ văn xuôi `log.md`.
