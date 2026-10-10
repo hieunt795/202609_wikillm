@@ -1128,3 +1128,13 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - repo-specialness-and-financing-costs-dictate-the-break-even-hurdle-of-curve-spread-trades: đã sửa, không đặt `reviewed`
 - Bỏ các claim không có trong nguồn (lãi suất repo âm, "biến lãi thành lỗ ròng", rủi ro đối tác của T-bill, quy ước 360 ngày, tập Ancillary "chuẩn hóa chi phí repo"); giữ phần Choudhry Ch.12 d.4922–4926, d.4824–4832 và Ch.13 d.5126, d.5349–5353; cơ chế special dẫn Düring Ch.14 d.24
 - Giữ lại: trang chứa ba ý, title chỉ phủ ý đầu; cần tách, ghi `_inbox.md`
+
+## [2026-10-10:21-09-21] ingest | basel_lcr LCR10 + LCR20
+- Đăng ký nguồn `basel_lcr` (bản kê + `03_state/basel_lcr.md`, 9 chunk); 15 trang mới: liquidity-coverage-ratio-lcr, high-quality-liquid-assets-hqla, total-net-cash-outflows, kịch bản căng thẳng, stress test nội bộ, dùng HQLA khi căng thẳng, phản ứng giám sát, contingency-funding-plan, báo cáo, phạm vi hợp nhất, đầu tư không hợp nhất, theo dõi từng pháp nhân, home/host, hạn chế chuyển thanh khoản, đồng tiền
+- Stub mới: principles-for-sound-liquidity-risk-management-and-supervision; backlink chèn vào liquidity-risk, liquidity-regulation-and-central-bank-operations-arbitrage, regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp
+- Còn lại: LCR30, LCR31, LCR40 cụm A và B, LCR90, LCR99 (`chua`); `--verify-sources` còn 18 lệch/thiếu và 10 file chưa kê ở `basel/` và `vietnam-regulator/`
+
+## [2026-10-10:21-17-05] ingest | basel_lcr LCR30 + LCR40 mục định nghĩa
+- 11 trang mới: level-1-assets, level-2a-assets, level-2b-assets, trần 40%/15% và công thức kho HQLA, số điều chỉnh, đặc tính HQLA, hqla-operational-requirements, unencumbered-assets, RCLF, total-expected-cash-outflows, total-expected-cash-inflows; merge vào high-quality-liquid-assets-hqla, total-net-cash-outflows, trang hạn chế chuyển thanh khoản, trang đồng tiền
+- Stub mới: alternative-liquidity-approaches; ⚠️ Conflict trên level-2a-assets (Basel AA− và Bindseil AA); công thức 30.38 mất trong nguồn, dựng lại từ 30.35–30.39 và ghi rõ trên trang
+- Còn lại: LCR30 các mục 30.26, 30.28, 30.29, 30.47 (chunk `do`); LCR40 cụm A còn 9 mục; LCR31, LCR40 cụm B, LCR90, LCR99 `chua`

@@ -32,6 +32,7 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `clippings` | `Clippings/` | Nguồn dài | `03_state/clippings.md` |
 | `alm_book` | `alm book/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 | `basel` | `basel/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
+| `basel_lcr` | `basel/LCR/` | Nguồn dài | `03_state/basel_lcr.md` |
 | `vietnam_regulator` | `vietnam-regulator/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 
 ## imf_macro_accounting
@@ -495,6 +496,23 @@ File `.md` do docling chuyển đổi từ PDF (frontmatter `extractor: docling`
 | `01_sources/basel/d368.md` | 189.433 | 1.206 | `a9d2209cf2cb08b7768d04366a16abadf600019910209477967c8f622d3a3f39` |
 | `01_sources/basel/insights59.md` | 137.198 | 480 | `c5c71cf1efed4ef5a4a97ce0aa030f47523073d17f84dfeff27563aa1672edf0` |
 | `01_sources/basel/ssm.ilaap_guide_201811.en.md` | 86.169 | 614 | `279e637fb261e9c249a2f47fbeb218495433052ed76149d7f0aea3474c61269d` |
+
+## basel_lcr
+
+| | |
+|---|---|
+| Nhan đề | *LCR — Liquidity Coverage Ratio* (chuẩn mực LCR trong Basel Framework, gồm LCR10, LCR20, LCR30, LCR31, LCR40, LCR90, LCR99) |
+| Tác giả | Basel Committee on Banking Supervision (BCBS) |
+| Xuất bản | Bank for International Settlements; bản xuất từ Basel Framework trên www.bis.org ngày 17/12/2025 — © Bank for International Settlements 2025 |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 268 KB / 1.421 dòng, 1 file `.md` |
+| Nguồn file | File `.md` chuyển đổi ngoài dự án, đặt trong `01_sources/basel/LCR/`; cùng thư mục có `LCR_meta.json` và 2 ảnh `.jpeg` không kê |
+| Tiến độ ingest | `03_state/basel_lcr.md` |
+
+Chương LCR cũng nằm trong `01_sources/basel/BaselFramework/BaselFramework.md` (d.14570 trở đi). Chú thích của wiki trỏ tới `LCR.md`.
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/basel/LCR/LCR.md` | 274.583 | 1.421 | `5ce7314e121d84c291b0bb10f7cbdbd718c025e0cd1624fc8a4976935c634f84` |
 
 ## vietnam_regulator
 

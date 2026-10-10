@@ -1023,3 +1023,35 @@
 **Tỷ lệ tín dụng trên tiền gửi và giới hạn của tỷ lệ quản lý (Clippings — CDR)**
 - [[credit-to-deposit-ratio]] — CDR, tỷ lệ tín dụng trên tiền gửi; không mô tả đủ cấu trúc tài trợ khi ngân hàng dùng vốn bán buôn, liên ngân hàng, repo
 - [[regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it]] — tỷ lệ quản lý chuyển bất cân xứng thanh khoản sang khoản mục khác, tỷ lệ báo cáo đẹp hơn mà rủi ro còn nguyên
+
+**Tỷ lệ bao phủ thanh khoản LCR: định nghĩa, cách tính và phạm vi áp dụng (Basel LCR — LCR10, LCR20)**
+- [[liquidity-coverage-ratio-lcr]] — LCR: kho HQLA chia tổng dòng tiền ra ròng 30 ngày lịch, tối thiểu 100% ngoài thời kỳ căng thẳng
+- [[high-quality-liquid-assets-hqla]] — HQLA, tử số của LCR: kho tài sản không bị ràng buộc, định giá trong điều kiện căng thẳng
+- [[total-net-cash-outflows]] — tổng dòng tiền ra ròng, mẫu số của LCR: tính theo tham số kịch bản chuẩn cho 30 ngày lịch
+- [[lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days]] — kịch bản căng thẳng LCR: 7 hệ quả của cú sốc riêng cộng cú sốc toàn thị trường
+- [[lcr-is-a-minimum-that-banks-supplement-with-longer-horizon-internal-liquidity-stress-tests]] — LCR là mức tối thiểu; ngân hàng tự làm stress test thanh khoản chân trời dài hơn, gồm rủi ro khí hậu
+- [[banks-may-use-hqla-and-fall-below-the-lcr-minimum-during-stress]] — ngân hàng được dùng HQLA và rơi dưới 100% khi căng thẳng
+- [[supervisory-response-to-an-lcr-below-100-percent-is-proportionate-to-the-shortfall]] — phản ứng giám sát khi LCR dưới 100%: 6 yếu tố cân nhắc, công cụ, tránh thuận chu kỳ
+- [[contingency-funding-plan]] — kế hoạch tài trợ dự phòng (CFP): chiến lược xử lý thiếu hụt thanh khoản, gồm vốn vay ngân hàng trung ương
+- [[lcr-is-reported-at-least-monthly-and-a-breach-is-notified-immediately]] — báo cáo LCR hằng tháng, năng lực hằng tuần hoặc hằng ngày, độ trễ không quá 2 tuần
+- [[lcr-applies-to-internationally-active-banks-on-a-consolidated-basis]] — phạm vi: ngân hàng hoạt động quốc tế, cơ sở hợp nhất
+- [[significant-unconsolidated-investments-enter-the-lcr-when-the-group-is-their-main-liquidity-provider]] — khoản đầu tư không hợp nhất đáng kể tạo dòng tiền ra tiềm tàng trong LCR
+- [[liquidity-risk-is-monitored-at-entity-branch-and-group-level-regardless-of-lcr-scope]] — theo dõi thanh khoản ở từng pháp nhân, chi nhánh và tập đoàn theo Principle 6
+- [[consolidated-lcr-applies-home-parameters-except-host-rules-for-retail-and-small-business-deposits]] — tham số nước nhà, trừ tiền gửi bán lẻ và doanh nghiệp nhỏ theo nước sở tại; 3 trường hợp quay lại nước nhà
+- [[liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]] — HQLA dư không chuyển được bị loại khỏi LCR hợp nhất
+- [[lcr-is-met-in-one-currency-while-liquidity-needs-are-monitored-by-significant-currency]] — LCR báo cáo một đồng tiền, nhu cầu theo dõi theo từng đồng tiền trọng yếu
+- [[principles-for-sound-liquidity-risk-management-and-supervision]] — stub: bộ Sound Principles của Ủy ban Basel
+
+**Thành phần công thức LCR: cấu trúc kho HQLA và hai vế của mẫu số (Basel LCR — LCR30, LCR40 mục định nghĩa)**
+- [[hqla-eligibility-rests-on-four-fundamental-and-three-market-related-characteristics]] — 4 đặc tính cơ bản và 3 đặc tính thị trường của HQLA
+- [[hqla-operational-requirements]] — yêu cầu vận hành: kiểm soát của treasury, năng lực bán, bán thử định kỳ, phòng hộ
+- [[unencumbered-assets]] — tài sản không bị ràng buộc: định nghĩa, rổ bảo đảm, tái thế chấp
+- [[level-1-assets]] — Level 1: không trần, haircut 0%; tiền mặt, dự trữ ngân hàng trung ương, chứng khoán chính phủ trọng số 0%
+- [[level-2a-assets]] — Level 2A: haircut 15%; chứng khoán trọng số 20%, trái phiếu doanh nghiệp và covered bond từ AA−; có ⚠️ Conflict với Bindseil
+- [[level-2b-assets]] — Level 2B: quyền quyết định quốc gia; RMBS haircut 25%, trái phiếu doanh nghiệp và cổ phiếu haircut 50%
+- [[level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]] — trần 40% và 15%, công thức kho HQLA và hai khoản điều chỉnh trần
+- [[adjusted-hqla-amounts-unwind-secured-transactions-maturing-within-30-days]] — số điều chỉnh: tháo ngược repo, cho vay có bảo đảm và hoán đổi tài sản bảo đảm trong 30 ngày
+- [[restricted-use-committed-liquidity-facility-rclf]] — RCLF của ngân hàng trung ương tính vào Level 2B; phí cam kết tối thiểu 75 điểm cơ bản
+- [[total-expected-cash-outflows]] — tổng dòng ra dự kiến: số dư nhân tỷ lệ run-off hoặc drawdown
+- [[total-expected-cash-inflows]] — tổng dòng vào dự kiến: khoản phải thu nhân tỷ lệ dòng vào, trần 75% dòng ra
+- [[alternative-liquidity-approaches]] — stub: phương án thay thế cho đồng tiền thiếu HQLA (LCR31)
