@@ -4,13 +4,13 @@ type: concept
 tags: [quasi-fiscal, money-multiplier, monetary-expansion]
 sources: [imf_macro_accounting]
 status: draft
-last_updated: 2026-09-25
+last_updated: 2026-10-10
 ---
 
-Khi [[primary-liquidity-injection-when-quasi-fiscal-central-bank-lends|MA phát hành tiền cơ sở]] để cấp tín dụng quasi-fiscal, tiền cơ sở này bơm vào hệ thống [[deposit-money-banks|ngân hàng thương mại]]. DMB nhận tiền từ MA rồi ghi thành tiền gửi của khách hàng (nhân tố nhận được khoản vay là khu vực công hoặc tư). Dựa trên [[the-money-multiplier-links-reserve-money-to-the-money-supply|hệ số nhân tiền tệ]] $m = 1/r$ (với $r$ là tỷ lệ dự trữ bắt buộc), sơ cấp thanh khoản từ MA được phóng đại:
+Khi [[primary-liquidity-injection-when-quasi-fiscal-central-bank-lends|MA phát hành tiền cơ sở]] để cấp tín dụng quasi-fiscal, tiền cơ sở này bơm vào hệ thống [[deposit-money-banks|ngân hàng thương mại]]. DMB nhận tiền từ MA rồi ghi thành tiền gửi của khách hàng (nhân tố nhận được khoản vay là khu vực công hoặc tư). Mức tăng tiền dự trữ ban đầu là nền để hệ thống ngân hàng mở rộng tiền tiếp theo (imf_macro_accounting, Ch.5, The Concept of the Money Multiplier, d.4938). Bội số của quá trình này là [[the-money-multiplier-links-reserve-money-to-the-money-supply|số nhân tiền]]:
 
-$$\Delta M2 = m \times \Delta RM$$
+$$M = \frac{c+1}{c+r} \cdot RM$$
 
-Ví dụ: nếu MA cho vay quasi-fiscal 100 (RM↑ 100) và tỷ lệ dự trữ bắt buộc là 10% (m=10), thì tiền gửi tăng gấp 10 lần — tức M2 tăng 1.000 (imf_macro_accounting, Ch.5, The Monetary Survey, d.4777–4780). Hiệu ứng này là **tự động**, không cần MA can thiệp thêm — nó phát sinh từ hoạt động bình thường của DMB khi có tiền mặt thêm (dự trữ thặng dư).
+Trong công thức, $c$ là tỷ lệ tiền mặt trên tiền gửi và $r$ là tỷ lệ dự trữ trên tiền gửi (imf_macro_accounting, Ch.5, cùng mục, d.4945–4951). Số nhân không cố định theo thời gian vì nó phụ thuộc tỷ lệ dự trữ bắt buộc, lượng dự trữ vượt mức ngân hàng chọn giữ và lượng tiền mặt công chúng muốn giữ; nhà chức trách tiền tệ vì vậy không kiểm soát hết lượng tiền (imf_macro_accounting, Ch.5, cùng mục, d.4990).
 
-Tuy nhiên, dưới điều kiện tỷ giá cố định hoặc mục tiêu ổn định dự trữ, lạm phát tiền tệ từ quasi-fiscal khiến chi tiêu tăng, nhập khẩu tăng, và dự trữ ngoại hối bị bán — tạo [[nfa-nda-offset-mechanism-under-quasi-fiscal-and-fixed-exchange-rate|cơ chế bù trừ NFA-NDA]] (imf_macro_accounting, Ch.5, Monetary Analysis, d.4831–4834).
+Phần tài sản trong nước ròng tăng vượt mức tăng tiền mà công chúng muốn giữ được bù bằng sụt giảm tài sản đối ngoại ròng theo tỷ lệ một đổi một, tức [[nfa-nda-offset-mechanism-under-quasi-fiscal-and-fixed-exchange-rate|bù trừ NFA–NDA]] (imf_macro_accounting, Ch.5, Monetary Analysis, d.4827–4833).

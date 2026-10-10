@@ -11,7 +11,7 @@ Mặc dù mô hình danh mục tái tạo theo [[replicating-portfolios-model-no
 
 Nghiên cứu thực nghiệm toàn diện của Hoffmann, Frontczak và Pierobon (2023) chỉ ra rằng tốc độ truyền dẫn (*pass-through*) từ lãi suất thị trường sang lãi suất tiền gửi thanh toán diễn ra hết sức chậm chạp và không hoàn hảo: trong ngắn hạn, chỉ có **9%** mức thay đổi của lãi suất thị trường được phản ánh vào lãi suất tiền gửi; và ngay cả trong dài hạn, tỷ lệ này cũng chỉ đạt mức **29%** (tata_bank_alm, Ch.2, Criticism, d.2045; tata_bank_alm, Ch.2, Notes, d.2134). Tính chất này làm cho lãi suất tiền gửi mang đặc tính "dính" (*sticky deposit rates*), phản ánh sự phân mảnh thị trường (*market segmentation*) mà Jarrow và Van Deventer (1998) từng lý giải: chỉ có các tổ chức tín dụng mới được phép phát hành tiền gửi thanh toán, khiến công cụ này tương đương với một hợp đồng hoán đổi lãi suất kỳ dị (exotic swap) có mệnh giá phụ thuộc vào toàn bộ lịch sử lãi suất trong quá khứ (tata_bank_alm, Ch.2, Criticism, d.2045–2047).
 
-Thước đo trung tâm phản ánh mức độ nhạy cảm của lãi suất tiền gửi trước biến động của lãi suất thị trường phi rủi ro ngắn hạn là **Hệ số Beta Tiền gửi (Deposit Beta)**, được xác định bằng công thức:
+Thước đo trung tâm phản ánh mức độ nhạy cảm của lãi suất tiền gửi trước biến động của lãi suất thị trường phi rủi ro ngắn hạn là **Hệ số Beta Tiền gửi ([[deposit-beta|Deposit Beta]])**, được xác định bằng công thức:
 $$\beta_{deposit} = \frac{\Delta r_{deposit}}{\Delta r_{market}}$$
 Trong đó $\Delta r_{deposit}$ là mức biến động của lãi suất tiền gửi khách hàng và $\Delta r_{market}$ là mức biến động tương ứng của lãi suất thị trường chuẩn mực (như lợi suất trái phiếu chính phủ ngắn hạn AAA kỳ hạn 3 tháng) (tata_bank_alm, Ch.2, Criticism, d.2055–2057).
 

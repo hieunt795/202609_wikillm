@@ -733,6 +733,7 @@
 - [[lagged-compounded-overnight-rates-lack-term-risk-premia-and-delay-policy-transmission]] — lãi suất qua đêm dồn lãi có độ trễ thiếu phần bù rủi ro kỳ hạn và gây trễ hạn truyền dẫn chính sách tiền tệ
 - [[futures-convexity-adjustment-arises-from-daily-variation-margining-cash-flows]] — khoản điều chỉnh lồi của hợp đồng tương lai phát sinh từ luồng tiền ký quỹ biến đổi (VM) hàng ngày
 - [[general-collateral-and-specials-repo-separate-cash-driven-from-collateral-driven-financing]] — phân định giữa repo tài sản chung GC (định hướng tiền mặt) và repo specials (định hướng chứng khoán)
+- [[haircut]] — haircut: tỷ lệ khấu trừ trên giá trị thị trường của tài sản bảo đảm
 - [[repo-haircuts-manage-liquidation-volatility-but-generate-asymmetric-wrong-way-risk]] — tỷ lệ khấu trừ haircut quản trị biến động thanh lý nhưng tạo rủi ro sai chiều bất đối xứng cho bên cung cấp tài sản
 - [[collateral-rehypothecation-chains-amplify-cascading-settlement-delays-across-counterparties]] — chuỗi tái thế chấp tài sản bảo đảm khuếch đại tình trạng chậm trễ thanh toán dây chuyền giữa các đối tác
 - [[tri-party-repo-centralizes-collateral-administration-and-economizes-on-cash-transfers]] — repo ba bên tập trung hóa quản trị tài sản bảo đảm và tiết giảm chi phí luân chuyển tiền mặt
@@ -743,7 +744,9 @@
 - [[dutch-and-american-auctions-differentiate-dealer-bidding-incentives-through-the-winners-curse]] — đấu thầu sơ cấp kiểu Mỹ và Hà Lan phân hóa động lực đặt lệnh của đại lý qua tác động bẫy kẻ thắng cuộc
 - [[clean-and-dirty-bond-prices-separate-market-valuation-from-accrued-interest-settlement]] — giá sạch loại bỏ biến động răng cưa của lãi dồn tích để định giá thị trường, giá bẩn xác định dòng tiền thanh toán
 - [[yield-to-maturity-assumes-a-flat-term-structure-and-uniform-reinvestment-rates]] — lợi suất đáo hạn giả định cấu trúc kỳ hạn phẳng và tái đầu tư đồng nhất, làm sai lệch tỷ suất sinh lời thực tế
+- [[modified-duration]] — modified duration: phần trăm thay đổi giá trái phiếu khi lợi suất đổi một điểm phần trăm
 - [[modified-duration-and-pvbp-measure-investor-interest-rate-risk-across-differing-capital-bases]] — modified duration đo rủi ro tương đối theo tài sản quản lý (AUM), PVBP đo rủi ro tiền mặt tuyệt đối theo sổ giao dịch danh nghĩa
+- [[convexity]] — độ lồi: mức cong của quan hệ giá – lợi suất, phần thay đổi giá mà duration không giải thích
 - [[bond-convexity-exhibits-non-monotonic-maturity-scaling-at-ultra-long-horizons]] — độ lồi nợ gốc đạt cực đại ở trung hạn rồi giảm ở kỳ hạn siêu dài do hiện giá suy giảm theo hàm mũ
 - [[bond-carry-measures-net-income-after-repo-financing-and-defines-forward-pricing]] — carry trái phiếu đo lường thu nhập ròng sau chi phí tài trợ repo và xác định mức giá kỳ hạn phi kinh doanh chênh lệch giá
 - [[floating-rate-notes-reset-to-par-at-coupon-dates-when-quoted-margin-equals-credit-spread]] — trái phiếu thả nổi tự động hồi quy về mệnh giá tại ngày chốt coupon khi biên độ chào bán bằng phần bù rủi ro tín dụng
@@ -757,6 +760,7 @@
 - [[spline-spread-dispersion-measures-indirect-arbitrage-capacity-without-trading-bias]] — độ phân tán sai số khớp đường cong spline đo lường gián tiếp sức chịu tải chênh lệch giá và sự thu hẹp bảng cân đối dealer
 - [[on-the-run-liquidity-premium-diminishes-when-price-discovery-concentrates-in-bond-futures]] — phần bù thanh khoản on-the-run biến mất khi chức năng khám phá giá và phòng hộ tập trung vào hợp đồng tương lai
 - [[yield-curve-representations-bridge-discount-factors-zero-rates-and-par-yields]] — liên kết chuyển đổi toán học giữa bốn biểu diễn cấu trúc kỳ hạn: hệ số chiết khấu, lãi suất zero, forward rate và par curve
+- [[zero-coupon-bond]] — trái phiếu zero-coupon: không trả lãi định kỳ, bán dưới mệnh giá, hoàn trả một lần khi đáo hạn
 - [[bootstrapping-and-reverse-bootstrapping-isolate-zero-rates-and-replicate-cash-flow-profiles]] — bóc tách bootstrapping trích xuất zero rates từ giá thị trường và reverse bootstrapping tái lập cấu trúc dòng tiền nghĩa vụ
 - [[parametric-spline-models-trade-off-exact-repricing-against-forward-rate-smoothness]] — mô hình spline tham số hóa đánh đổi giữa độ chính xác định giá lại trái phiếu và độ trơn nhẵn của đường cong lãi suất kỳ hạn
 - [[composite-spline-models-prevent-sub-sovereign-curve-crossings-through-spread-decomposition]] — mô hình spline phức hợp phân tách đường cong chênh lệch để triệt tiêu hiện tượng giao cắt phi lý giữa đường cong cận quốc gia và chính phủ
@@ -888,6 +892,7 @@
 - [[rolling-portfolios-smooth-deposit-margins-through-moving-average-market-rates]] — danh mục cuốn chiếu rolling portfolio: cơ chế tái đầu tư dòng tiền bù đắp, tỷ suất cơ hội bình quân trượt MA làm mượt biên lợi nhuận và kết nối FTP
 - [[replicating-portfolio-calibration-optimizes-margin-sharpe-ratios-across-key-rates]] — hiệu chuẩn danh mục tái tạo: tối ưu hóa tỷ số Sharpe của biên lợi nhuận, dung hòa đánh đổi giữa các lãi suất then chốt key rates 5Y vs 10Y và phân định ranh giới trách nhiệm ALM Desk
 - [[dynamic-replication-hedges-deposit-volume-fluctuations-at-prevailing-market-rates]] — tái tạo động: phòng hộ biến động quy mô tiền gửi ở lãi suất thị trường giao ngay hiện hành, nguy cơ thua lỗ mark-to-market khi rút vốn lúc lãi suất tăng và các phân rã cấu trúc nâng cao
+- [[deposit-beta]] — deposit beta: tỷ lệ thay đổi lãi suất tiền gửi so với thay đổi lãi suất thị trường
 - [[sticky-deposit-rates-and-unstable-deposit-betas-challenge-replication-models]] — phê phán thực nghiệm mô hình tái tạo: lãi suất dính sluggish pass-through 9% ngắn hạn, sự bất ổn của deposit beta qua các chu kỳ và hiện tượng sụp đổ duration thực nghiệm khi lãi suất đảo chiều
 
 **Thực tiễn Quản trị ALM Ngân hàng (Tata 2025 — Ch.3)**
@@ -927,6 +932,7 @@
 - [[yield-curve]] — đường cong lợi suất: đồ thị thể hiện cấu trúc kỳ hạn, 4 chức năng thị trường, phân biệt lợi suất YTM và lãi suất zero-coupon thực sự
 - [[coupon-bias-induces-relative-yield-distortions-along-ytm-curves]] — hiệu ứng coupon: rủi ro tái đầu tư và chính sách thuế khiến trái phiếu coupon cao giao dịch rẻ hơn so với đường cong
 - [[par-yield-curve-derives-required-coupons-for-at-par-debt-issuance]] — đường cong lợi suất ngang mệnh giá: phương pháp bóc tách từ hệ số chiết khấu zero và vai trò ấn định coupon phát hành nợ sơ cấp
+- [[forward-rate]] — lãi suất kỳ hạn (forward rate): lãi suất cho khoản vay bắt đầu trong tương lai, suy ra từ hai lãi suất giao ngay
 - [[implied-forward-rates-function-as-hedge-rates-rather-than-accurate-market-forecasts]] — lãi suất kỳ hạn ngụ ý: vận hành như mức lãi suất phòng hộ không chênh lệch giá thay vì công cụ dự báo chuẩn xác điểm rơi thị trường
 - [[local-expectations-hypothesis-resolves-jensens-inequality-under-risk-neutrality]] — giả thuyết kỳ vọng cục bộ: biến thể duy nhất đảm bảo điều kiện phi kinh doanh chênh lệch giá và giải quyết bất đẳng thức Jensen
 - [[humped-yield-curves-reflect-peaked-interest-rate-expectations-or-maturity-habitat-imbalances]] — đường cong lợi suất hình bướu: phản ánh kỳ vọng lãi suất tạo đỉnh hoặc sự bất đối xứng cung cầu giữa ngân hàng (đầu ngắn) và quỹ hưu trí (đầu dài)
@@ -1001,6 +1007,7 @@
 - [[ancillary-anchored-butterfly-trades-isolate-relative-value-in-hyper-liquid-treasury-markets]] — giao dịch Butterfly neo theo trái phiếu Ancillary: khai thác giá trị tương đối trong thị trường Kho bạc siêu thanh khoản, bán khống mã Ancillary định giá đắt và phòng hộ hai cánh qua bài toán quy hoạch tuyến tính LP trung hòa vốn và thời lượng
 
 **Phần bù kỳ hạn: mô hình ước lượng và động lực (Clippings — BIS term premia)**
+- [[term-premium]] — phần bù kỳ hạn (term premium): phần lợi suất dài hạn vượt trên bình quân kỳ vọng lãi suất ngắn hạn
 - [[term-premium-estimates-are-model-dependent-but-their-dynamics-are-more-robust]] — mức phần bù kỳ hạn lệch tới 200 điểm cơ bản giữa ACM, KW, HT; xu hướng và biến động thì các mô hình khớp nhau
 - [[yield-only-term-structure-models-overreact-to-persistent-rate-changes]] — mô hình chỉ dùng lợi suất diễn giải thay đổi lãi suất hiện tại thành thay đổi lâu dài; KW và HT thêm khảo sát và biến vĩ mô
 - [[term-premia-are-countercyclical-but-safe-haven-demand-can-reverse-the-pattern]] — phần bù kỳ hạn tăng khi suy thoái; nhu cầu trú ẩn sau khủng hoảng làm quan hệ này đảo chiều

@@ -14,8 +14,8 @@ $$(1 + rs_N)^N = (1 + rs_1)(1 + E[_1rf_2])(1 + E[_2rf_3]) \dots (1 + E[_{N-1}rf_
 Nếu lãi suất dài hạn cao hơn mức trung bình kỳ vọng này, dòng tiền sẽ đổ xô mua trái phiếu dài hạn, đẩy giá tăng và kéo lợi suất xuống; ngược lại nếu lãi suất dài hạn thấp hơn, nhà đầu tư sẽ chuyển sang mua chuỗi trái phiếu ngắn hạn, đẩy lợi suất dài hạn tăng lên mức cân bằng (cargill_central_bank_policy, Ch.6, d.1957; choudhry_analysing_yield_curve, Ch.1, d.673).
 
 Theo tổng hợp toán học của Choudhry và Ingersoll (1987), giả thuyết kỳ vọng thực chất tồn tại dưới 4 biến thể phân kỳ (choudhry_analysing_yield_curve, Ch.1, Mathematical Description of Expectations Hypothesis, d.707–738):
-1. Giả thuyết kỳ vọng không thiên lệch (Unbiased expectations): Lãi suất kỳ hạn $f_{t,T,T+1}$ là ước lượng không thiên lệch của lãi suất giao ngay tương lai $E_t[r_T]$;
-2. Giả thuyết tỷ suất sinh lời đáo hạn (Return to maturity): Lợi nhuận nắm giữ trái phiếu zero-coupon đến đáo hạn bằng kỳ vọng lợi nhuận từ việc liên tục tái đầu tư chuỗi trái phiếu 1 kỳ;
+1. Giả thuyết kỳ vọng không thiên lệch (Unbiased expectations): [[forward-rate|Lãi suất kỳ hạn]] $f_{t,T,T+1}$ là ước lượng không thiên lệch của lãi suất giao ngay tương lai $E_t[r_T]$;
+2. Giả thuyết tỷ suất sinh lời đáo hạn (Return to maturity): Lợi nhuận nắm giữ [[zero-coupon-bond|trái phiếu zero-coupon]] đến đáo hạn bằng kỳ vọng lợi nhuận từ việc liên tục tái đầu tư chuỗi trái phiếu 1 kỳ;
 3. Giả thuyết lợi suất đáo hạn (Yield to maturity): Lợi suất hàng năm của trái phiếu dài hạn bằng trung bình lợi suất chuỗi tái đầu tư;
 4. Giả thuyết kỳ vọng cục bộ (Local expectations): Mọi trái phiếu mang lại cùng một tỷ suất sinh lời kỳ vọng phi rủi ro trong khoảng thời gian cực ngắn [[local-expectations-hypothesis-resolves-jensens-inequality-under-risk-neutrality]].
 

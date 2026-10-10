@@ -7,7 +7,7 @@ status: stable
 last_updated: 2026-09-24
 ---
 
-Cấu trúc độ biến động giá của trái phiếu theo thời gian đáo hạn phản ánh hiện tượng kéo về mệnh giá (pull-to-par effect) — một thuộc tính cấu trúc phân biệt căn bản giữa chứng khoán nợ có thời hạn cố định và các tài sản vốn vô hạn hạn (choudhry_analysing_yield_curve, Ch.4, Uncertainty of Interest Rates, d.2487–2498). Dưới độ đo xác suất trung lập rủi ro $Q$, trong các mô hình cấu trúc kỳ hạn Gaussian với độ biến động lãi suất ngắn hạn $\sigma$ và tốc độ hoàn lương $a$ cố định (theo Merton 1973, Vasicek 1977, Jamshidian 1991), tỷ suất sinh lời của trái phiếu zero-coupon $P(t,T)$ tuân theo phương trình vi phân ngẫu nhiên:
+Cấu trúc độ biến động giá của trái phiếu theo thời gian đáo hạn phản ánh hiện tượng kéo về mệnh giá (pull-to-par effect) — một thuộc tính cấu trúc phân biệt căn bản giữa chứng khoán nợ có thời hạn cố định và các tài sản vốn vô hạn hạn (choudhry_analysing_yield_curve, Ch.4, Uncertainty of Interest Rates, d.2487–2498). Dưới độ đo xác suất trung lập rủi ro $Q$, trong các mô hình cấu trúc kỳ hạn Gaussian với độ biến động lãi suất ngắn hạn $\sigma$ và tốc độ hoàn lương $a$ cố định (theo Merton 1973, Vasicek 1977, Jamshidian 1991), tỷ suất sinh lời của [[zero-coupon-bond|trái phiếu zero-coupon]] $P(t,T)$ tuân theo phương trình vi phân ngẫu nhiên:
 $$\frac{dP(t,T)}{P(t,T)} = r(t)dt + \sigma_P(t,T) dW_t^Q$$
 trong đó hàm độ biến động giá của trái phiếu $\sigma_P(t,T)$ được xác định tường minh bằng biểu thức tất định: $\sigma_P(t,T) = \sigma \frac{1 - e^{-a(T-t)}}{a}$ (choudhry_analysing_yield_curve, Ch.4, Uncertainty of Interest Rates, d.2491–2498).
 

@@ -7,7 +7,7 @@ status: stable
 last_updated: 2026-09-24
 ---
 
-Lãi suất kỳ hạn ngụ ý (implied forward rate) là mức lãi suất giao dịch trong tương lai được chiết khấu và khóa cứng tại thời điểm hiện tại dựa trên nguyên lý không kinh doanh chênh lệch giá (no-arbitrage), giữ vai trò thực chất là một mức lãi suất phòng hộ (hedge rate) thay vì một công cụ dự báo chuẩn xác điểm rơi của thị trường (choudhry_analysing_yield_curve, Ch.1, Using Forward Rates, d.1008–1018).
+[[forward-rate|Lãi suất kỳ hạn]] ngụ ý (implied forward rate) là mức lãi suất giao dịch trong tương lai được chiết khấu và khóa cứng tại thời điểm hiện tại dựa trên nguyên lý không kinh doanh chênh lệch giá (no-arbitrage), giữ vai trò thực chất là một mức lãi suất phòng hộ (hedge rate) thay vì một công cụ dự báo chuẩn xác điểm rơi của thị trường (choudhry_analysing_yield_curve, Ch.1, Using Forward Rates, d.1008–1018).
 
 Nhiều bằng chứng thực nghiệm tài chính (điển hình như Fama 1976) chứng minh rằng các mức lãi suất kỳ hạn ngụ ý liên tục dự báo chệch và phóng đại đáng kể mức lãi suất giao ngay thực tế trong tương lai (choudhry_analysing_yield_curve, Ch.1, d.699, d.1008–1012). Sự thất bại về mặt dự báo này bắt nguồn từ bản chất thông tin: đường cong kỳ hạn hiện hành chỉ tổng hợp toàn bộ các dữ kiện kinh tế và chính trị đã biết tại ngày giao dịch hôm nay; khi thời gian trôi qua, các thông tin mới bất định xuất hiện sẽ định hình lại toàn bộ cấu trúc kỳ hạn mới (choudhry_analysing_yield_curve, Ch.1, Understanding forward rates, d.1018).
 

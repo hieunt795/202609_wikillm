@@ -7,7 +7,7 @@ status: stable
 last_updated: 2026-09-23
 ---
 
-Tỷ lệ khấu trừ tài sản bảo đảm (haircut) trong giao dịch repo là tỷ lệ phần trăm bị khấu trừ khỏi giá trị thị trường của chứng khoán nhằm bảo vệ bên cho vay tiền mặt trước rủi ro sụt giảm giá trị tài sản trong thời gian xử lý thanh lý khi đối tác vỡ nợ (fixed_income_during, Ch.14, Haircut, d.30). Mức haircut biến thiên theo chất lượng tín nhiệm và biên độ biến động giá của tài sản thế chấp, dao động từ 0% đến 1% đối với trái phiếu chính phủ ngắn hạn và có thể lên tới 50% đối với cổ phiếu (fixed_income_during, Ch.14, Haircut, d.30).
+Tỷ lệ khấu trừ tài sản bảo đảm ([[haircut|haircut]]) trong giao dịch repo là tỷ lệ phần trăm bị khấu trừ khỏi giá trị thị trường của chứng khoán nhằm bảo vệ bên cho vay tiền mặt trước rủi ro sụt giảm giá trị tài sản trong thời gian xử lý thanh lý khi đối tác vỡ nợ (fixed_income_during, Ch.14, Haircut, d.30). Mức haircut biến thiên theo chất lượng tín nhiệm và biên độ biến động giá của tài sản thế chấp, dao động từ 0% đến 1% đối với trái phiếu chính phủ ngắn hạn và có thể lên tới 50% đối với cổ phiếu (fixed_income_during, Ch.14, Haircut, d.30).
 
 Tuy nhiên, việc áp đặt haircut tạo ra sự bất đối xứng về rủi ro tín dụng đối tác (fixed_income_during, Ch.14, Haircut, d.32). Một mức haircut cao đồng nghĩa với việc bên vay tiền phải chuyển giao một lượng giá trị chứng khoán lớn hơn nhiều so với khoản tiền mặt nhận về (fixed_income_during, Ch.14, Haircut, d.32). Cấu trúc này đẩy bên cung cấp chứng khoán vào tình thế chịu rủi ro mất mát phần giá trị tài sản vượt mức nếu bên cho vay tiền mặt mất khả năng thanh toán (fixed_income_during, Ch.14, Haircut, d.32).
 

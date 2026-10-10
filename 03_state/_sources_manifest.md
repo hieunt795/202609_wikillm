@@ -1,6 +1,6 @@
 ---
 type: sources-manifest
-last_updated: 2026-09-23
+last_updated: 2026-10-10
 ---
 
 Xuất xứ và checksum của các nguồn trong `01_sources/`.
@@ -30,6 +30,9 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `fixed_income_during` | `fixed_income_during/` | Nguồn dài | `03_state/fixed_income_during.md` |
 | `tata_bank_alm` | `tata_bank_alm/` | Nguồn dài | `03_state/tata_bank_alm.md` |
 | `clippings` | `Clippings/` | Nguồn dài | `03_state/clippings.md` |
+| `alm_book` | `alm book/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
+| `basel` | `basel/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
+| `vietnam_regulator` | `vietnam-regulator/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 
 ## imf_macro_accounting
 
@@ -447,3 +450,76 @@ File `.md` do docling chuyển đổi từ PDF (frontmatter `extractor: docling`
 | `01_sources/Clippings/Ý nghĩa của việc can thiệp chủ động Buy Spot trong điều hành.md` | 9.060 | 87 | `306a6087243f3d2a948cc90d294af54a64c5391153dcae4a3376d5e588fe5517` |
 | `01_sources/Clippings/Điểm yếu trong phân tích Top-down – Phần 1.md` | 12.251 | 187 | `4de132826ec4ee4802a4e9dd8a13199751bc26b5365d98a72f0f8534490597c0` |
 | `01_sources/Clippings/Điểm yếu trong phân tích Topdown-P2- Không thể thiếu BottomUp.md` | 4.244 | 36 | `5285bed6bdc62bacd44e14d45542894672d491ef99279fd0b2b824c974ffd47d` |
+| `01_sources/Clippings/ALM P10  UpdateTT50 (P3) Khổ tận chưa thấy cam lai.md` | 6.219 | 26 | `73a193540d494941480ca8eded6d91340b229f75ef3182a82437e75108055598` |
+| `01_sources/Clippings/ALM P7 – Cân đối tỷ lệ Không chỉ là TT22.md` | 7.015 | 34 | `427179cb4d16ad595f43f34083e87217933ef30186895d08c9bfff1388cb679e` |
+| `01_sources/Clippings/ALM P8 – Từ phân tích vĩ mô đến phân tích ALM một ngân hàng.md` | 6.171 | 37 | `2dc36d315f45476d30f45a80fd5d372ea6c3aa92ffa1f90793ffd3e3d044c4c1` |
+| `01_sources/Clippings/COF đang phá hủy thị dần thị trường- ECB cũng đang đối mặt với rate long end hike cực mạnh.md` | 3.423 | 34 | `e2153f4ac9b6a383c029dba7d58aab24920473315e2e870041e9311c66405832` |
+| `01_sources/Clippings/Dấu ấn “Pháp chế” trong điều hành- CDR một tỷ lệ kệch cỡm.md` | 5.441 | 26 | `3790f2b8c572f968f6339cef0159ba9d5bddf5692293669a0e321ce5b7c76907` |
+| `01_sources/Clippings/Term premia models and some stylised facts.md` | 64.082 | 353 | `39b394df69b045e88918a63f06215d86cf2d10d76ae0c5aad4b4b42f9976008b` |
+| `01_sources/Clippings/Who’s Borrowing and Lending in Repo Markets.md` | 38.572 | 85 | `377eafebb7a51706aada8d0c75e5190303925755b00a8b00921cac6aa140dee3` |
+
+## alm_book
+
+| | |
+|---|---|
+| Nhan đề | Sách về quản lý tài sản – nợ ngân hàng (ALM): Bardaeva, *Bank Asset Liability Management Best Practice: Yesterday, Today and Tomorrow* (De Gruyter, 2021) và *Asset liability optimization* |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 1.408 KB / 8.850 dòng trên 3 file `.md` |
+| Nguồn file | File `.md` chuyển đổi ngoài dự án, đặt trong `01_sources/alm book/` |
+| Tiến độ ingest | Chưa ingest — đăng ký ở lượt lint 2026-10-10; tác giả, năm xuất bản và việc tách source id theo từng tài liệu bổ sung ở lượt ingest đầu |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/alm book/(The Moorad Choudhry Global Banking Series) Polina Bardaeva - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md` | 401.457 | 1.898 | `672bc8037068f863a1be75e40e5d48506d3a98ca50522602911e326efc1cda30` |
+| `01_sources/alm book/A - Asset liability optimization.md` | 639.618 | 5.054 | `9a2a969a084ee060ecd27579b1eb4992cd744aa643b7977a73c8320a2f956629` |
+| `01_sources/alm book/A - Bank Asset Liability Management Best Practice_ Yesterday, Today and Tomorrow-De Gruyter (2021).md` | 401.454 | 1.898 | `c4c35b5475dc53b6aba2b247343ee9859b665c96981ebdcd5f61e11c2d9508b3` |
+
+## basel
+
+| | |
+|---|---|
+| Nhan đề | Văn bản của Basel Committee (Basel Framework, bcbs144, bcbs155, bcbs238, d368, insights59) và hướng dẫn của EBA, ECB về ICAAP, ILAAP, IRRBB, CSRBB và stress test |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 5.992 KB / 34.870 dòng trên 11 file `.md` |
+| Nguồn file | File `.md` chuyển đổi ngoài dự án, đặt trong `01_sources/basel/` |
+| Tiến độ ingest | Chưa ingest — đăng ký ở lượt lint 2026-10-10; tác giả, năm xuất bản và việc tách source id theo từng tài liệu bổ sung ở lượt ingest đầu |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/basel/BaselFramework.md` | 3.931.424 | 25.952 | `606ea84376a272803995c2eac7623440d0b64ba72d11105bf61a26b4b56333d7` |
+| `01_sources/basel/Final report on Guidelines on ICAAP ILAAP (EBA-GL-2016-10).md` | 276.814 | 923 | `82b726781c716397b1229ee9fa30fb3a33c8d3eb020320c0785b814cdca8263b` |
+| `01_sources/basel/Guidelines on ICAAP ILAAP (EBA-GL-2016-10)_EN.md` | 51.435 | 439 | `83009a41965136d6e50fcc2f065abe59a5b42925a52508880607bef949572e62` |
+| `01_sources/basel/Guidelines on IRRBB and CSRBB.md` | 337.159 | 1.349 | `7e1aef454d72ed22d46fe32038e0a544ca96946f459cfa317a30317f1386cd10` |
+| `01_sources/basel/Guidelines on institutions stress testing (EBA-GL-2018-04).md` | 655.410 | 1.547 | `e3a8374704bb274ec06b8d7be69e963d506c94833c12e28ddb64c9c14ec0a6e7` |
+| `01_sources/basel/bcbs144.md` | 138.489 | 640 | `e80256beeb5632ed2491a1e0a004ac52612e937a05e599b695531982680abbb3` |
+| `01_sources/basel/bcbs155.md` | 69.490 | 458 | `d515e2735857f5d5d22e0b3064b5eccb58f8e31ed609531d03e2578f46911fba` |
+| `01_sources/basel/bcbs238.md` | 262.852 | 1.262 | `ccc9c5041e378a6496fa2563fb2f397a12eabc85fb49cf23d29a65803b6ff08c` |
+| `01_sources/basel/d368.md` | 189.433 | 1.206 | `a9d2209cf2cb08b7768d04366a16abadf600019910209477967c8f622d3a3f39` |
+| `01_sources/basel/insights59.md` | 137.198 | 480 | `c5c71cf1efed4ef5a4a97ce0aa030f47523073d17f84dfeff27563aa1672edf0` |
+| `01_sources/basel/ssm.ilaap_guide_201811.en.md` | 86.169 | 614 | `279e637fb261e9c249a2f47fbeb218495433052ed76149d7f0aea3474c61269d` |
+
+## vietnam_regulator
+
+| | |
+|---|---|
+| Nhan đề | Văn bản quy phạm và tài liệu phương pháp của Việt Nam: thông tư Ngân hàng Nhà nước (TT14, TT83, TT50/2026, dự thảo thay TT22), phương pháp luận FTP, tài liệu mô hình hành vi tiền gửi có kỳ hạn và thấu chi |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 2.053 KB / 16.985 dòng trên 15 file `.md` |
+| Nguồn file | File `.md` chuyển đổi ngoài dự án, đặt trong `01_sources/vietnam-regulator/` |
+| Tiến độ ingest | Chưa ingest — đăng ký ở lượt lint 2026-10-10; tác giả, năm xuất bản và việc tách source id theo từng tài liệu bổ sung ở lượt ingest đầu |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/vietnam-regulator/alm/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md` | 358.720 | 2.008 | `d6dc151f84323f65854de7144cd35c4a774189dfe934df7aab9610f13783c224` |
+| `01_sources/vietnam-regulator/alm/TT14_1.md` | 227.791 | 1.582 | `63bcc14ba27d7cd49af03aeda61a5923244a885df385bf26f05e26f8ce7c6777` |
+| `01_sources/vietnam-regulator/alm/TT14_2.md` | 318.088 | 1.787 | `95ae25b1228ec852a4ffb504fa1b28731c774686020455e4f1916b0bcb58925f` |
+| `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV.md` | 255.335 | 2.310 | `79b2f82ad09978993bca56fcf0836b79e2c533a1c996a694b6119302dbf22c6f` |
+| `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV.pdf` | 1.406.658 | — | `b2afb2984af8576bf723850e954feb66e3d84c3fa7ac1f6c2d6273cc581bbfdf` |
+| `01_sources/vietnam-regulator/alm/TT83.md` | 240.089 | 1.927 | `c4a3900dd9b0be241261ca5264bcafca53d594e96ee12a2a8a741724b6d789be` |
+| `01_sources/vietnam-regulator/alm/VAB - Phương pháp luận FTP.md` | 242.771 | 2.117 | `362178f9eefad50f3aea3e54a8ec0b21a7762f26ff45656cae80d6c9d9b5acc6` |
+| `01_sources/vietnam-regulator/alm/ftp_transmission_analysis.md.md` | 15.896 | 188 | `362369878d692b067334dd03d5ffc857c3ed3b4758523f7d83618aea169e8ffb` |
+| `01_sources/vietnam-regulator/model/BC030304_Term_Deposit_HDSD_arm_FINAL (1).md` | 60.371 | 633 | `258b0ebfb5314ff2a27f930b1b576f3d8cd584c82a45883ef2f7442618db5ec8` |
+| `01_sources/vietnam-regulator/model/BC030304_Term_Deposit_HDSD_pts_FINAL (1).md` | 55.555 | 483 | `cbfabe62a5c9ad653e860b38a51106624dae1f67fa21a8cb1faa3623a941ce4d` |
+| `01_sources/vietnam-regulator/model/BC030304_Term_Deposit_PPL_arm_FINAL (1).md` | 44.737 | 780 | `8a1b20b5f9ecfb20926e4299b8ee319edc9be22f0574efe8f78c15bb22cb6cc6` |
+| `01_sources/vietnam-regulator/model/BC030304_Term_Deposit_PPL_pts_FINAL (1).md` | 57.418 | 696 | `a049aabe6405ed3b363ed1a502314a0946c4c8d8c463b4285026b56b4b159cdd` |
+| `01_sources/vietnam-regulator/model/BC030306_OD_HDSD_arm_FINAL (1).md` | 75.848 | 616 | `70e27f929ad87bd601feef9cd9a2cd8a21d900dbd25c57205f9e40bee8fc105d` |
+| `01_sources/vietnam-regulator/model/BC030306_OD_HDSD_pts_FINAL (1).md` | 57.358 | 488 | `ddaf077e47fa162e7b211ca8870da5491899737f10c39d0a73d1468d6b48a3d6` |
+| `01_sources/vietnam-regulator/model/BC030306_OD_PPL_arm_FINAL (1).md` | 48.037 | 790 | `5bb7cbe73cdac0f07b86afb661e38c18711a29078d308499f2ad354def91a8f8` |
+| `01_sources/vietnam-regulator/model/BC030306_OD_PPL_pts_FINAL (1).md` | 44.525 | 580 | `a9a380e57ed23fe293cc1fc201ea5d1136075d283b58d7f9bce217cd47e18247` |

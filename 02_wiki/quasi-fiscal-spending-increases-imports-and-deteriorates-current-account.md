@@ -4,11 +4,11 @@ type: concept
 tags: [quasi-fiscal, transmission, current-account, absorption]
 sources: [imf_macro_accounting]
 status: draft
-last_updated: 2026-09-25
+last_updated: 2026-10-10
 ---
 
-[[money-multiplier-cascade-from-quasi-fiscal-primary-injection|Nhân từ tiền rộng]] sinh ra từ quasi-fiscal khiến lượng tiền gửi tăng ở hệ thống ngân hàng. Khách hàng (hộ gia đình, doanh nghiệp) dùng tiền gửi tăng này để tăng chi tiêu (consumption), đầu tư (investment), hay tích trữ tài sản (asset holdings) (imf_macro_accounting, Ch.5, Monetary Analysis, d.4831).
+[[money-multiplier-cascade-from-quasi-fiscal-primary-injection|Nhân từ tiền rộng]] sinh ra từ quasi-fiscal khiến lượng tiền gửi tăng ở hệ thống ngân hàng. Khách hàng (hộ gia đình, doanh nghiệp) dùng tiền gửi tăng này để tăng chi tiêu (consumption), đầu tư (investment), hay tích trữ tài sản (asset holdings).
 
-Phần dùng cho tiêu dùng hàng hóa và dịch vụ tạo áp lực lên [[absorption|tổng cầu nội địa]]. Dưới giả định cung hàng trong nước có giới hạn (sản xuất không thể tăng ngay), áp lực cầu thêm phải được tiêu thụ bằng nhập khẩu (imports) — khác với xuất khẩu (exports) không đổi do là quyết định bên ngoài (imf_macro_accounting, Ch.2, Alternative Approaches to Determining GDP, d.684–750). Kết quả: nhập khẩu tăng, xuất khẩu không đổi, [[trade-balance|cán cân thương mại]] xấu đi.
+Phần dùng cho tiêu dùng hàng hóa và dịch vụ làm tăng [[absorption|hấp thụ trong nước]]. Tăng sản lượng trong ngắn hạn đòi hỏi năng lực sản xuất còn dư, nên khi hấp thụ vượt thu nhập, phần vượt hiện ra thành thâm hụt vãng lai (imf_macro_accounting, Ch.2, Aggregate Income and Absorption and the External Current Account Balance, d.803–807). Quan hệ này là một đồng nhất thức kế toán, không phải lý thuyết về hành vi cán cân vãng lai (imf_macro_accounting, Ch.2, cùng mục, d.807–809).
 
-[[current-account-balance|Cán cân vãng lai]] = cán cân thương mại + thu nhập ròng + chuyển nhượng ròng. Khi cán cân thương mại xấu đi, CAB giảm (trở nên thâm hụt nếu trước đó là thặng dư) (imf_macro_accounting, Ch.4, Current Account Balance and Alternative Measures of the External Position, d.3105–3125). Đây là kênh truyền chính từ quasi-fiscal tới [[external-imbalance-is-diagnosed-by-tracing-which-sector-saving-investment-balance-deteriorated|mất cân đối đối ngoại]].
+Tài khoản vãng lai gồm hàng hóa, dịch vụ, thu nhập và chuyển nhượng vãng lai (imf_macro_accounting, Ch.4, (i) Current account, d.3566). Nhập khẩu tăng trong khi các hạng mục khác không đổi thì [[trade-balance|cán cân thương mại]] và [[current-account-balance|cán cân vãng lai]] cùng xấu đi. Đây là một kênh truyền từ quasi-fiscal tới [[external-imbalance-is-diagnosed-by-tracing-which-sector-saving-investment-balance-deteriorated|mất cân đối đối ngoại]].

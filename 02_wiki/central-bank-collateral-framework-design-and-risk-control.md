@@ -13,7 +13,7 @@ Khuôn khổ tài sản bảo đảm (collateral framework) và các biện phá
 
 **Quy trình thiết kế 5 bước và điểm cắt tối ưu xã hội**: Bindseil (2014) đề xuất quy trình xây dựng danh mục tài sản đủ điều kiện:
 1. *Liệt kê danh mục tài sản tiềm năng* thỏa mãn các điều kiện tiên quyết về pháp lý.
-2. *Áp dụng nguyên tắc tương đương rủi ro (risk equivalence principle)*: sử dụng các biện pháp giảm thiểu rủi ro (đặc biệt là haircut) để đưa rủi ro thặng dư sau haircut của mọi tài sản về cùng một mức dung nạp mà NHTW chấp nhận.
+2. *Áp dụng nguyên tắc tương đương rủi ro (risk equivalence principle)*: sử dụng các biện pháp giảm thiểu rủi ro (đặc biệt là [[haircut|haircut]]) để đưa rủi ro thặng dư sau haircut của mọi tài sản về cùng một mức dung nạp mà NHTW chấp nhận.
 3. *Xếp hạng tài sản theo chi phí tăng dần* trên mỗi đơn vị tín dụng NHTW tiềm năng (chi phí phân tích, quản lý rủi ro, thanh toán).
 4. *Xác định điểm cắt tối ưu (cut-off line)* dựa trên phân tích chi phí - lợi ích xã hội: lợi ích biên của việc mở rộng đệm thanh khoản giảm dần (giảm xác suất cạn kiệt tài sản thế chấp khi gặp sốc), trong khi chi phí biên tăng dần do phải quản lý các tài sản ngày càng kém thanh khoản. Giao điểm giữa hai đường xác định quy mô danh mục tối ưu duy nhất.
 5. *Giám sát việc sử dụng thực tế của đối tác* để kiểm soát rủi ro tập trung (d.1661–1672).

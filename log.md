@@ -1089,3 +1089,18 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 ## [2026-10-10:16-03-24] schema | Dọn index theo cơ chế mới; viết lại sơ đồ luồng vận hành
 - `02_wiki/index.md`: thay bảng Sources ghi tay bằng dòng trỏ tới `--coverage` và bản kê; thêm 11 trang sót (1 dòng cạnh trang đô la hoá, 3 nhóm Clippings mới)
 - `.claude/docs/luong-van-hanh.html`: 5 operation, 4 quy tắc, sơ đồ hệ thống và luồng vận hành mới. `--all`: 790 trang, 0 lỗi, 4 mồ côi, 0 sót index
+
+## [2026-10-10:16-12-31] lint | 790 trang
+- K 2, C 0, O 4, S 16 stub + 16 thuật ngữ thiếu trang, L 3, G 37 file chưa kê + 94 chunk chưa phủ hết, I 10; `01_sources/` 0 file lệch
+- Chưa sửa mã nào, chờ duyệt
+- Báo cáo: `Claude outputs/lint-2026-10-10-790.md`
+
+## [2026-10-10:16-20-53] lint | 797 trang — sửa các mã đã duyệt
+- Đã sửa O1–O4, L1–L3, S2a–S2g (7 stub mới), G1 (37 file vào bản kê, 3 source id mới), I1–I3; mục lint liền trước ghi lượt báo cáo
+- `--all`: 797 trang, 0 lỗi, 0 mồ côi, 0 sót index; `--verify-sources`: 219 file, 0 lệch, 0 chưa kê
+- Còn chờ K1, K2, I4–I10, S1, S2h–S2n; báo cáo: `Claude outputs/lint-2026-10-10-790.md`
+
+## [2026-10-10:16-26-13] review | 5 trang
+- Đạt sau khi sửa (2): current-account-monitoring-depends-on-the-exchange-rate-regime (bỏ câu về quy đổi nội tệ, d.3508 không nói), currency-substitution-undermines-monetary-control (bỏ "lãi suất thực âm"; chú thích về d.5018, d.5020, d.5020–5022)
+- Đã sửa, không đặt reviewed (3 trang quasi-fiscal): số nhân $m=1/r$ và ví dụ 100 → 1.000 thay bằng công thức 5.14 (d.4945–4951); OIN theo d.4616, $ theo d.4772–4780; hấp thụ theo d.803–809; cấu phần vãng lai theo d.3566
+- Giữ lại: chuỗi quasi-fiscal → nhập khẩu → vãng lai và ý lỗ bị che trong OIN không có đoạn nguồn; ghi `_inbox.md`
