@@ -1,6 +1,6 @@
 ---
 title: money-multiplier-cascade-from-quasi-fiscal-primary-injection
-type: concept
+type: analysis
 tags: [quasi-fiscal, money-multiplier, monetary-expansion]
 sources: [imf_macro_accounting]
 status: draft
@@ -14,3 +14,5 @@ $$M = \frac{c+1}{c+r} \cdot RM$$
 Trong công thức, $c$ là tỷ lệ tiền mặt trên tiền gửi và $r$ là tỷ lệ dự trữ trên tiền gửi (imf_macro_accounting, Ch.5, cùng mục, d.4945–4951). Số nhân không cố định theo thời gian vì nó phụ thuộc tỷ lệ dự trữ bắt buộc, lượng dự trữ vượt mức ngân hàng chọn giữ và lượng tiền mặt công chúng muốn giữ; nhà chức trách tiền tệ vì vậy không kiểm soát hết lượng tiền (imf_macro_accounting, Ch.5, cùng mục, d.4990).
 
 Phần tài sản trong nước ròng tăng vượt mức tăng tiền mà công chúng muốn giữ được bù bằng sụt giảm tài sản đối ngoại ròng theo tỷ lệ một đổi một, tức [[nfa-nda-offset-mechanism-under-quasi-fiscal-and-fixed-exchange-rate|bù trừ NFA–NDA]] (imf_macro_accounting, Ch.5, Monetary Analysis, d.4827–4833).
+
+Nguồn chỉ bàn trực tiếp về hoạt động bán tài khoá ở Box 3.7 (imf_macro_accounting, Ch.3, Box 3.7, d.2491–2505). Các bước gắn với quasi-fiscal ở trên được ghép từ các quan hệ kế toán của Ch.5, nguồn không nêu chuỗi này.

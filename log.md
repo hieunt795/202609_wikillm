@@ -1104,3 +1104,17 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Đạt sau khi sửa (2): current-account-monitoring-depends-on-the-exchange-rate-regime (bỏ câu về quy đổi nội tệ, d.3508 không nói), currency-substitution-undermines-monetary-control (bỏ "lãi suất thực âm"; chú thích về d.5018, d.5020, d.5020–5022)
 - Đã sửa, không đặt reviewed (3 trang quasi-fiscal): số nhân $m=1/r$ và ví dụ 100 → 1.000 thay bằng công thức 5.14 (d.4945–4951); OIN theo d.4616, $ theo d.4772–4780; hấp thụ theo d.803–809; cấu phần vãng lai theo d.3566
 - Giữ lại: chuỗi quasi-fiscal → nhập khẩu → vãng lai và ý lỗ bị che trong OIN không có đoạn nguồn; ghi `_inbox.md`
+
+## [2026-10-10:16-28-50] review | đổi type 3 trang quasi-fiscal sang analysis
+- Người dùng duyệt: quasi-fiscal-spending-increases-imports-…, money-multiplier-cascade-…, quasi-fiscal-losses-hidden-… từ `concept` sang `analysis`; mỗi trang thêm một câu nêu nguồn chỉ bàn quasi-fiscal ở Box 3.7 (d.2491–2505)
+- Chưa đặt `reviewed`; 5 trang cùng cụm chưa review, ghi `_inbox.md`
+
+## [2026-10-10:16-32-06] review | 5 trang
+- Đạt, giữ `reviewed` cũ (1): primary-liquidity-injection-when-quasi-fiscal-central-bank-lends
+- Đã sửa, không đặt `reviewed` (4): leanness (bỏ ngưỡng ≥2 và câu "đi kèm thâm hụt thanh khoản", nguồn d.666, d.682 nói ngược); nfa-nda-offset (bù trừ một đổi một chỉ cho phần NDA vượt cầu tiền, d.4827–4833); quadruple-entry (bảng ví dụ sai quy ước dấu d.5673); monetary-survey-consolidation (chú thích về Box 5.5)
+- Giữ lại: nhận định gắn quasi-fiscal ở 4 trang không có đoạn nguồn, một link sai đích; ghi `_inbox.md`
+
+## [2026-10-10:16-33-57] review | đổi type 5 trang quasi-fiscal sang analysis, tách trang leanness
+- Người dùng duyệt: 5 trang còn lại của cụm quasi-fiscal từ `concept` sang `analysis`; 3 trang dẫn IMF thêm câu nêu nguồn chỉ bàn quasi-fiscal ở Box 3.7
+- Tách định nghĩa chỉ số khỏi balance-sheet-expansion-leanness-… thành trang concept leanness-indicator-of-the-central-bank-balance-sheet (claim và chú thích giữ nguyên, chỉ chuyển chỗ); thêm vào index
+- Còn trong `_inbox.md`: link "trần NDA" sai đích

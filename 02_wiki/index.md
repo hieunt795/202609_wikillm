@@ -323,6 +323,7 @@
 - [[quasi-fiscal-spending-increases-imports-and-deteriorates-current-account]] — Kênh 5: Tiền rộng tăng → chi tiêu → nhập khẩu ↑ → CAB ↓
 - [[nfa-nda-offset-mechanism-under-quasi-fiscal-and-fixed-exchange-rate]] — Kênh 6: Dưới tỷ giá cố định, NFA↓ bù NDC↑; bù trừ 1:1
 - [[balance-sheet-expansion-leanness-when-quasi-fiscal-loans-issued]] — Kênh 7: Bảng cân đối MA nở (leanness tăng)
+- [[leanness-indicator-of-the-central-bank-balance-sheet]] — chỉ số leanness: tổng độ dài bảng cân đối ngân hàng trung ương chia cho tiền giấy lưu thông; bằng 1 là thon gọn tuyệt đối
 - [[quadruple-entry-flow-of-funds-quasi-fiscal-transactions-across-sectors]] — Kênh 8: Ghi 4 bút toán trong ma trận flow-of-funds để phát hiện dòng tiền ẩn
 
 **Ch.5 — cấu trúc hệ thống tiền tệ và nhà chức trách tiền tệ (batch W1)**
