@@ -15,4 +15,4 @@ Lời nhắc những điều dễ sai nhất khi ghi trang; luật đầy đủ 
 - `sources:` dùng source id, bắt buộc inline list `[id1, id2]`; hook đọc theo dòng, không hiểu YAML nhiều dòng (§1, §10).
 - Claim từ nguồn dài kèm chú thích `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim (§7 luật 5). Luật áp cho trang có `last_updated` từ 2026-09-14 trở đi.
 - Chỉ nâng `last_updated` khi claim thay đổi; chỉ thêm link, chú thích hoặc metadata thì không nâng (§7 luật 5).
-- Không tự promote trang hoặc ghi đè `reviewed_by: user` (§9).
+- Không ghi `status: stable`/`stale` và không ghi đè `reviewed_by: user` (§9).

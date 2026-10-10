@@ -19,7 +19,8 @@ Wiki tri thức 3 lớp theo mô hình Karpathy, kèm 1 vùng trạng thái ph�
 
 | Cần gì | File |
 | --- | --- |
-| Điều hướng nội dung, trạng thái ingest từng nguồn | `02_wiki/index.md` (trạng thái ở mục `## Sources`) |
+| Điều hướng nội dung | `02_wiki/index.md` |
+| Nguồn nào nạp tới đâu | `--coverage` (tính từ chú thích trên trang và `03_state/`, §10) |
 | Nhật ký thao tác | `log.md` (§12) |
 | Lý do các quyết định | `decisions.md` |
 | Ý tưởng dang dở | `_inbox.md` (§11) |
@@ -28,22 +29,16 @@ Wiki tri thức 3 lớp theo mô hình Karpathy, kèm 1 vùng trạng thái ph�
 ## Quy tắc bắt buộc — không vi phạm trong mọi trường hợp
 
 1. **Không bao giờ sửa nội dung trong `01_sources/`.** Không ngoại lệ: không sửa, không thêm file, không đổi tên, không xoá, không đổi ký tự xuống dòng. Mọi thứ agent cần ghi về một nguồn đều đi ra `03_state/` (§3, §10).
-2. **Không tự sửa mâu thuẫn.** Khi phát hiện conflict, đánh dấu `⚠️ Conflict` kèm cả hai claim và nguồn, rồi chờ người xử lý.
-3. **Lint chỉ báo cáo, không tự sửa.**
-4. **Cần người dùng xác nhận trước khi:**
-   - tạo trang `type: analysis`;
-   - ghi trang ở ingest (bước 2 — duyệt 5–10 ý chính và các mục bỏ qua);
-   - ghi trang ở research (Pha 3 — bản đề xuất gộp);
-   - nâng `draft → stable` (promote).
-5. Mỗi operation ghi đúng 1 mục vào **cuối** `log.md`, dạng `## [YYYY-MM-DD:hh-MM-ss] <op> | <tiêu đề>` + tối đa 3 dòng (§12). Lập luận không nằm trong log.
-6. **Mỗi lượt ingest cập nhật mục `## Sources` của `02_wiki/index.md` và `03_state/<source id>.md`**, kể cả lượt không tạo trang mới. Nguồn mới vào bản kê ngay lượt đầu (§10).
+2. **Không tự xử lý mâu thuẫn giữa hai nguồn.** Đánh dấu `⚠️ Conflict` kèm cả hai claim và nguồn, rồi chờ người xử lý.
+3. **Mọi thay đổi claim trong `02_wiki/` đi qua một lần duyệt danh sách thay đổi**: ý chính và bảng merge ở ingest, proposal ở research, mã mục ở lint, trang `type: analysis` ở query. Ngoại lệ duy nhất: `/review-node` sửa claim cho khớp chính nguồn nó dẫn. Sổ sách agent tự làm, không hỏi: `index.md`, backlink, stub, bản kê, state file.
+4. Mỗi operation ghi đúng 1 mục vào **cuối** `log.md`, dạng `## [YYYY-MM-DD:hh-MM-ss] <op> | <tiêu đề>` + tối đa 3 dòng (§12). Lập luận không nằm trong log.
 
 ## Khởi động
 
 Ba lớp chỉ dẫn, mỗi quy tắc chỉ nằm ở một nơi: file này giữ phần phải thấy mọi lượt; `00_schema.md` §1–§12 mô tả wiki trông như thế nào; mỗi `SKILL.md` trong `.claude/skills/` là quy trình từng bước của một operation. Khi lệch nhau, ưu tiên theo thứ tự file này, `00_schema.md`, skill, và báo người dùng chỗ lệch.
 
-1. **Đầu phiên** — hook `SessionStart` đã nạp handoff mới nhất; đọc thêm mục `## Sources` của `02_wiki/index.md`. Không ghi trạng thái phiên vào file này.
-2. **Mỗi operation** (`/ingest`, `/query`, `/lint`, `/promote`, `/review-node`, `/research`) — chạy skill tương ứng. Đầu mỗi skill nêu mục schema cần đọc, điểm dừng chờ duyệt và việc ghi log; không đọc `00_schema.md` trước khi skill yêu cầu.
+1. **Đầu phiên** — hook `SessionStart` đã nạp handoff mới nhất và bảng nợ. Không ghi trạng thái phiên vào file này.
+2. **Mỗi operation** (`/ingest`, `/query`, `/lint`, `/review-node`, `/research`) — chạy skill tương ứng. Đầu mỗi skill nêu mục schema cần đọc, điểm dừng chờ duyệt và việc ghi log; không đọc `00_schema.md` trước khi skill yêu cầu. Skill `writing-style` được tự gọi mỗi khi viết hoặc sửa thân bài trong `02_wiki/`, không cần hỏi.
 3. **Cuối phiên có thay đổi repo** — nhắc người dùng gọi `/handoff`; không tự tạo handoff.
 
 Quy ước viết trang wiki được nạp từ `.claude/rules/wiki-pages.md` khi chạm file trong `02_wiki/`.
@@ -56,12 +51,13 @@ Bắt buộc:
 
 | Lệnh | Khi nào |
 | --- | --- |
-| `--all` | Trước khi ghi log ở ingest, query (khi tạo trang), promote, review-node, research (khi ghi trang); bước 0 lint. Cách duy nhất bắt trang mồ côi và file ghi bằng shell |
-| `--coverage [<source id>]` | Trước khi đánh chunk `[x]` ở ingest; bước 0 lint |
-| `--verify-sources` | Bước 0 lint; bất cứ khi nào nghi `01_sources/` bị đổi |
+| `--all` | Trước khi ghi log ở mọi operation có ghi trang. Cách duy nhất bắt trang mồ côi, trang sót trong `index.md` và file ghi bằng shell |
+| `--coverage [<source id>]` | Chọn chunk và chốt lượt ở ingest; kiểm chunk đã phủ ở research |
+| `--lint` | Bước 1 của lint: chạy gộp mọi lệnh quét, in một bảng tổng |
+| `--verify-sources` | Bất cứ khi nào nghi `01_sources/` bị đổi (`--lint` đã gồm) |
 | `--now` | Lấy giờ Việt Nam cho `log.md` |
 
-Các lệnh theo nhu cầu (`--backlinks`, `--size`, `--tags`, `--style`, `--ocr`, `--stub-debt`, `--inbox-debt`): xem `--help`; skill nêu lúc nào cần chạy.
+Các lệnh theo nhu cầu (`--backlinks`, `--size`, `--style`, `--ocr`): xem `--help`; skill nêu lúc nào cần chạy.
 
 ## Ghi chú vận hành
 

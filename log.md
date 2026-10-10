@@ -1080,3 +1080,12 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - `00_schema.md` còn §1–§12; bảng operation của §13 thành 3 dòng mở đầu ở 6 `SKILL.md`; `CLAUDE.md` 980 → 805 từ, bỏ "Nhắc nhanh" (chuyển `rules/wiki-pages.md`)
 - Xoá `rules/project-records.md`; handoff thủ công; `§7.x` → `§7 luật x`; sửa docstring hook. `--all`: 790 trang, 0 lỗi
 - Lý do: decisions.md [2026-10-10]
+
+## [2026-10-10:15-58-56] schema | Tối giản vận hành: bỏ promote, lint sửa mã đã duyệt, coverage tính trạng thái chunk
+- `CLAUDE.md` 6 → 4 quy tắc; schema §9 còn `stub`/`draft`, §10 bỏ đánh dấu chunk bằng tay; viết lại skill `ingest` (5 bước, bảng merge) và `lint` (6 tiêu chí); xoá skill `promote`
+- Hook: thêm `--lint`, `--guard-sources` (PreToolUse), bảng nợ đầu phiên, kiểm trang sót index; bỏ `--tags`, `--stub-debt`, `--inbox-debt`. `--all`: 790 trang, 0 lỗi, 4 mồ côi, 11 sót index; `--coverage`: 223 chunk (phu 112, do 75, chua 19, mien 17)
+- Lý do: decisions.md [2026-10-10]
+
+## [2026-10-10:16-03-24] schema | Dọn index theo cơ chế mới; viết lại sơ đồ luồng vận hành
+- `02_wiki/index.md`: thay bảng Sources ghi tay bằng dòng trỏ tới `--coverage` và bản kê; thêm 11 trang sót (1 dòng cạnh trang đô la hoá, 3 nhóm Clippings mới)
+- `.claude/docs/luong-van-hanh.html`: 5 operation, 4 quy tắc, sơ đồ hệ thống và luồng vận hành mới. `--all`: 790 trang, 0 lỗi, 4 mồ côi, 0 sót index

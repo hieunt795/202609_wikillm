@@ -6,7 +6,7 @@ Gói chỉ dẫn đang hoạt động cho dự án LLM Wiki — Macroeconomics.
 
 - `CLAUDE.md` — bối cảnh dự án, guardrail và quy tắc áp dụng chéo (ở root level).
 - `rules/` — rule chuyên biệt theo chủ đề; không dùng `@import`.
-- `skills/` — workflow chi tiết cho từng operation (`/ingest`, `/query`, `/lint`, `/promote`, `/review-node`, `/research`), kèm `/handoff` và `writing-style`.
+- `skills/` — workflow chi tiết cho từng operation (`/ingest`, `/query`, `/lint`, `/review-node`, `/research`), kèm `/handoff` và `writing-style`.
 - `agents/` — subagent chỉ chạy khi người dùng gọi (`source-verifier`).
 - `hooks/` — script kiểm tra xác định được bằng máy (validator).
 - `settings.json` — cấu hình guardrail thực thi tự động.

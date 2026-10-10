@@ -1,26 +1,8 @@
 # Index
 
-> Mục lục trang wiki theo chủ đề. Cập nhật mỗi khi có trang mới (xem `.claude/skills/ingest/SKILL.md` bước 6).
-
-## Sources
-
-Trạng thái ingest từng nguồn trong `01_sources/`. **Cập nhật mỗi lượt ingest**, kể cả lượt không tạo trang mới (`ingest/SKILL.md` bước 6). Bảng này chỉ tóm tắt ở cấp nguồn — tiến độ theo chunk của nguồn dài nằm trong `03_state/<tên_nguồn>.md` (`00_schema.md` §10), và đó mới là nguồn sự thật khi cần biết chi tiết "còn lại phần nào".
-
-| Nguồn | Phân loại | Trạng thái | Phần còn lại | State file |
-|---|---|---|---|---|
-| `imf_macro_accounting` | Nguồn dài (849 KB / 6.065 dòng) | **Đang ingest dở** | Ch.1; Ch.2–6 xong; đang đối chiếu lại Ch.2 (B1–B2 xong 2026-09-25, còn B3–B4); 2026-09-25 thêm lượt dọn nợ lint tỷ giá, chi tiết ở state file | `03_state/imf_macro_accounting.md` |
-| `Modern Money Mechanics` | Nguồn ngắn (85 KB / 721 dòng) | **Chưa ingest** | Toàn bộ, ingest trọn 1 lượt | — |
-| `capitalism_and_freedom` | Nguồn dài (565 KB / 2.055 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `bindseil_monetary_policy` | Nguồn dài (1.155 KB / 4.473 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–18 xong (chi tiết ở state file) | `03_state/bindseil_monetary_policy.md` |
-| `cargill_central_bank_policy` | Nguồn dài (1.206 KB / 5.623 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–17 xong (chi tiết ở state file) | `03_state/cargill_central_bank_policy.md` |
-| `choudhry_principles_of_banking` | Nguồn dài (2.664 KB / 14.955 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `choudhry_analysing_yield_curve` | Nguồn dài (703 KB / 6.177 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–13 xong (chi tiết ở state file) | `03_state/choudhry_analysing_yield_curve.md` |
-| `choudhry_fixed_income_markets` | Nguồn dài (1.941 KB / 15.414 dòng) | **Chưa ingest** | Toàn bộ | chưa dựng |
-| `fixed_income_during` | Nguồn dài (42 file, 1.112 KB / 7.300 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–39 xong (chi tiết ở state file) | `03_state/fixed_income_during.md` |
-| `tata_bank_alm` | Nguồn dài (450 KB / 3.345 dòng) | **Hoàn tất 100%** | Toàn bộ Ch.1–6 xong (chi tiết ở state file) | `03_state/tata_bank_alm.md` |
-| `clippings` | Nguồn dài (82 file, 882 KB / 6.684 dòng) | **Hoàn tất 100%** | Toàn bộ 6 cụm (82 file) xong (chi tiết ở state file) | `03_state/clippings.md` |
-
-Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *Phần còn lại* chỉ ghi một câu; diễn biến từng lượt nằm ở `log.md`, tiến độ theo chunk nằm ở state file.
+> Mục lục trang wiki theo chủ đề, mỗi trang một dòng tóm tắt. Cập nhật mỗi khi có trang mới (`.claude/skills/ingest/SKILL.md` bước 4).
+>
+> Nguồn nào nạp tới đâu: `python .claude/hooks/validate_wiki_page.py --coverage [<source id>]`. Danh sách nguồn: `03_state/_sources_manifest.md`.
 
 ## Trang wiki theo chủ đề
 
@@ -397,6 +379,7 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[the-policy-anchor-decides-whether-net-foreign-assets-are-autonomous-on-the-central-bank-balance-sheet]] — *(analysis)* IMF (neo tỷ giá), Cargill (Mỹ, thả nổi), Bindseil (Eurosystem, mục tiêu lãi suất) đọc cùng bảng cân đối NHTW theo ba cách
 - [[perfect-capital-mobility-with-a-fixed-exchange-rate-strips-monetary-policy-of-independence]] — lãi suất trong nước bị ép về mức thế giới
 - [[currency-substitution-undermines-monetary-control]] — đô la hoá
+- [[dollarization]] — ngoại tệ thay nội tệ trong các chức năng của tiền; phần cung tiền ngoại tệ nằm ngoài kiểm soát của nhà chức trách tiền tệ
 - [[financial-innovation-blurs-the-boundary-of-money]] — đổi mới tài chính, đánh đổi liên quan/kiểm soát
 - [[foreign-exchange-intervention]] — mua bán ngoại tệ làm tài sản đối ngoại và tiền dự trữ đổi cùng chiều
 - [[open-market-operations]] — mua bán giấy tờ có giá của chính phủ; công cụ trung hoà can thiệp ngoại hối
@@ -1016,3 +999,19 @@ Khoá ở cột *Nguồn* là source id (`03_state/_sources_manifest.md`). Ô *P
 - [[ancillary-yield-curves-expand-benchmark-definitions-via-strict-irr-admissibility]] — đường cong phụ trợ Ancillary Curve: mở rộng định nghĩa trái phiếu chuẩn qua tiêu chuẩn sàng lọc sai số IRR dưới 1 điểm cơ bản, độ chính xác MAPE vượt trội và sự hòa nhập đồng quy với Benchmark Curve
 - [[geometric-programming-optimizes-continuous-discount-curves-under-bounded-uncertainty]] — quy hoạch hình học GP và bất định phi ngẫu nhiên: đổi biến hàm mũ $x_i = e^{y_i}$, tối ưu hóa posynomials, tiếp cận sai số bị chặn set-membership và điều kiện đối ngẫu hoàn hảo khi phân tách T-bills
 - [[ancillary-anchored-butterfly-trades-isolate-relative-value-in-hyper-liquid-treasury-markets]] — giao dịch Butterfly neo theo trái phiếu Ancillary: khai thác giá trị tương đối trong thị trường Kho bạc siêu thanh khoản, bán khống mã Ancillary định giá đắt và phòng hộ hai cánh qua bài toán quy hoạch tuyến tính LP trung hòa vốn và thời lượng
+
+**Phần bù kỳ hạn: mô hình ước lượng và động lực (Clippings — BIS term premia)**
+- [[term-premium-estimates-are-model-dependent-but-their-dynamics-are-more-robust]] — mức phần bù kỳ hạn lệch tới 200 điểm cơ bản giữa ACM, KW, HT; xu hướng và biến động thì các mô hình khớp nhau
+- [[yield-only-term-structure-models-overreact-to-persistent-rate-changes]] — mô hình chỉ dùng lợi suất diễn giải thay đổi lãi suất hiện tại thành thay đổi lâu dài; KW và HT thêm khảo sát và biến vĩ mô
+- [[term-premia-are-countercyclical-but-safe-haven-demand-can-reverse-the-pattern]] — phần bù kỳ hạn tăng khi suy thoái; nhu cầu trú ẩn sau khủng hoảng làm quan hệ này đảo chiều
+- [[official-asset-purchases-and-preferred-habitat-demand-compress-term-premia]] — mua trái phiếu của khu vực chính thức và cầu theo kỳ hạn ưa thích kéo phần bù kỳ hạn xuống
+- [[real-term-premia-drive-cross-country-sovereign-yield-comovement]] — lợi suất chính phủ các nước đồng biến chủ yếu qua phần bù kỳ hạn thực, tương quan Hoa Kỳ–euro 0,6–0,9
+
+**Đọc số liệu lạm phát: độ rộng, cấu phần đơn lẻ, chuỗi cung ứng (Clippings — FOMC)**
+- [[inflation-breadth-distinguishes-generalized-price-pressure-from-relative-price-shocks]] — độ rộng lạm phát: tỷ trọng cấu phần tăng vượt ngưỡng, tách áp lực giá lan rộng khỏi sốc giá tương đối
+- [[single-component-cpi-surprises-can-trigger-disproportionate-market-repricing]] — CPI lõi Hoa Kỳ tháng 8/2026: một cấu phần (cước điện thoại không dây) đẩy xác suất tăng lãi suất từ 72% lên 93,5%
+- [[supply-chain-rerouting-can-reduce-aggregate-pressure-before-chokepoints-reopen]] — đổi tuyến vận tải làm chỉ số áp lực chuỗi cung ứng tổng hợp giảm khi điểm nghẽn vẫn đóng
+
+**Tỷ lệ tín dụng trên tiền gửi và giới hạn của tỷ lệ quản lý (Clippings — CDR)**
+- [[credit-to-deposit-ratio]] — CDR, tỷ lệ tín dụng trên tiền gửi; không mô tả đủ cấu trúc tài trợ khi ngân hàng dùng vốn bán buôn, liên ngân hàng, repo
+- [[regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it]] — tỷ lệ quản lý chuyển bất cân xứng thanh khoản sang khoản mục khác, tỷ lệ báo cáo đẹp hơn mà rủi ro còn nguyên

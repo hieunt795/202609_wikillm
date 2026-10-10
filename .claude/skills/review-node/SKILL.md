@@ -6,7 +6,7 @@ description: 'Dùng skill này khi người dùng muốn xác minh một trang w
 # Review-node — đối chiếu trang với nguồn
 
 **Đọc `00_schema.md`:** §7 (thân bài, chú thích theo luật 5), §8 (title), §9 (`reviewed` / `reviewed_by`), §10 (bản kê, bản đồ chunk, nguồn nhiều file), §12 (log), trước khi bắt đầu.
-**Dừng chờ duyệt:** không có điểm dừng riêng; các trường hợp không được tự sửa nêu ở bước xử lý kết quả.
+**Dừng chờ duyệt:** không có điểm dừng riêng (ngoại lệ của quy tắc bắt buộc 3: sửa claim cho khớp chính nguồn nó dẫn); các trường hợp không được tự sửa nêu ở bước 5.
 **Ghi log:** luôn, op `review`.
 
 Review là **kiểm chứng nội dung khớp nguồn**. Không phải lint (lint soát cấu trúc cả wiki), không phải ingest (không thêm kiến thức mới). Op ghi vào `log.md` là `review`.
@@ -35,7 +35,7 @@ Review là **kiểm chứng nội dung khớp nguồn**. Không phải lint (lin
 
 **5. Ghi kết quả.**
 - **Đạt** → thêm chú thích §7 luật 5 cho các claim đã đối chiếu (ngay sau claim), rồi thêm `reviewed: <ngày>` và `reviewed_by: model` ngay dưới `last_updated`. Thêm chú thích không đổi claim nên **không** nâng `last_updated` (§7 luật 5).
-- **Claim sai so với nguồn** → sửa đúng claim đó theo nguồn, kèm chú thích, nâng `last_updated`; trang `stable` thì về `draft` (§9). Câu sửa áp skill `writing-style` profile wiki. Sau khi sửa và kiểm lại cả trang mới được đặt `reviewed`.
+- **Claim sai so với nguồn** → sửa đúng claim đó theo nguồn, kèm chú thích, nâng `last_updated`. Câu sửa áp skill `writing-style` profile wiki. Sau khi sửa và kiểm lại cả trang mới được đặt `reviewed`.
 - **Hai đoạn nguồn nói khác nhau** → **không sửa**: đánh `⚠️ Conflict` kèm cả hai claim + vị trí (quy tắc bắt buộc 2); không đặt `reviewed`.
 - **Vấn đề cấu trúc** (title sai, cần tách trang, link sai đích) → không tự tách/đổi tên; ghi `_inbox.md`; không đặt `reviewed`.
 - **Trang khác mắc cùng lỗi** (chép cùng claim sai hoặc cùng dải dòng sai, phát hiện khi đối chiếu) → không sửa trang đó trong lượt này, vì nó chưa được đọc trọn; ghi `_inbox.md` một mục nêu tên trang, chú thích sai và vị trí đúng, để lượt review sau nhặt lên.

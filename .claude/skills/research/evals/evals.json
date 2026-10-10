@@ -21,16 +21,15 @@
       "id": 1,
       "name": "research-deep-read-required-reserves",
       "prompt": "đào sâu trang required-reserves, bổ sung claim còn thiếu từ sách Bindseil",
-      "expected_output": "Vào thẳng Pha 2 Deep read (đầu vào là tên trang, không Map). Chạy `--size` trước khi enrich; mở chunk Ch.8 `[x]` của bindseil_monetary_policy một lần, đọc trọn mục phủ chủ đề; trình proposal gộp có mã mục C/L và chú thích vị trí; nêu hệ quả status. Dừng chờ duyệt, chưa ghi 02_wiki.",
+      "expected_output": "Vào thẳng Pha 2 Deep read (đầu vào là tên trang, không Map). Chạy `--size` trước khi enrich; mở chunk Ch.8 của bindseil_monetary_policy một lần, chỉ đọc mục `--coverage` báo đã phủ, đọc trọn mục phủ chủ đề; trình proposal gộp có mã mục C/L và chú thích vị trí. Dừng chờ duyệt, chưa ghi 02_wiki.",
       "files": [],
       "assertions": [
         "01_sources không đổi (SHA-256 khớp bản kê)",
         "02_wiki không đổi trước khi người dùng duyệt",
         "Không chạy Pha 1 Map, không tạo file map",
-        "Chỉ đọc chunk `[x]`; đọc theo dải dòng của chunk, không đọc trọn file nguồn",
+        "Chỉ đọc mục nguồn đã phủ theo `--coverage`; đọc theo dải dòng của chunk, không đọc trọn file nguồn",
         "Mỗi claim đề xuất có mã `C<n>` và chú thích `(bindseil_monetary_policy, <chương>, <mục>, d.<từ>–<đến>)`",
         "≤ 3 claim cho trang; proposal ≤ 20 mục",
-        "Proposal nêu hệ quả status nếu trang đang `stable`/`stale`",
         "Không sửa claim cũ, không dọn format, không đụng `reviewed`"
       ]
     },
@@ -38,7 +37,7 @@
       "id": 2,
       "name": "research-blocked-by-unfinished-chunk",
       "prompt": "research trang cpi: bổ sung thêm claim từ chương 1 sách IMF về Ba Lan",
-      "expected_output": "Tra 03_state/imf_macro_accounting.md, thấy chunk Ch.1 đang `[ ]`; không enrich từ chunk đó. Báo dòng chặn ingest `⚠️ imf_macro_accounting chunk Ch.1 chưa [x]: chặn enrich cpi; cần /ingest trước.` Có thể đề xuất claim từ chunk `[x]` khác nếu có. Không ghi 02_wiki, không đổi 03_state.",
+      "expected_output": "Chạy --coverage imf_macro_accounting, thấy chunk Ch.1 ở trạng thái `chua`; không enrich từ chunk đó. Báo dòng chặn ingest `⚠️ imf_macro_accounting Ch.1 chưa phủ: chặn enrich cpi; cần /ingest trước.` Có thể đề xuất claim từ mục đã phủ khác nếu có. Không ghi 02_wiki, không đổi 03_state.",
       "files": [],
       "assertions": [
         "01_sources không đổi (SHA-256 khớp bản kê)",
@@ -46,7 +45,7 @@
         "Không đề xuất claim nào dẫn dải dòng thuộc chunk Ch.1 (d.377–606)",
         "Có dòng chặn ingest nêu source id, tên chunk và trang bị chặn",
         "Gợi ý chạy `/ingest`, không tự ingest chunk",
-        "Không đánh dấu chunk `[x]` hay `[~]`"
+        "Không sửa state file"
       ]
     }
   ]

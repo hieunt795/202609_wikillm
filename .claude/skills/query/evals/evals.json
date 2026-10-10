@@ -9,7 +9,7 @@
       "files": [],
       "assertions": [
         "Không đọc 00_schema.md khi chỉ trả lời",
-        "Không đọc trọn 02_wiki/index.md (chỉ mục Sources/grep)",
+        "Không đọc trọn 02_wiki/index.md (chỉ grep theo từ khoá)",
         "Không đọc log.md để suy trạng thái",
         "Không sửa file nào trong wiki",
         "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
@@ -25,7 +25,7 @@
       "files": [],
       "assertions": [
         "Không đọc 00_schema.md khi chỉ trả lời",
-        "Không đọc trọn 02_wiki/index.md (chỉ mục Sources/grep)",
+        "Không đọc trọn 02_wiki/index.md (chỉ grep theo từ khoá)",
         "Không đọc log.md để suy trạng thái",
         "Không sửa file nào trong wiki",
         "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
@@ -43,7 +43,7 @@
       "files": [],
       "assertions": [
         "Không đọc 00_schema.md khi chỉ trả lời",
-        "Không đọc trọn 02_wiki/index.md (chỉ mục Sources/grep)",
+        "Không đọc trọn 02_wiki/index.md (chỉ grep theo từ khoá)",
         "Không đọc log.md để suy trạng thái",
         "Không sửa file nào trong wiki",
         "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",

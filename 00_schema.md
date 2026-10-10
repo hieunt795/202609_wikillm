@@ -9,7 +9,7 @@ title:
 type: entity | concept | case | analysis
 tags: []
 sources: []        # source id trong 03_state/_sources_manifest.md (§10)
-status: stub | draft | stable | stale     # vòng đời: xem §9
+status: stub | draft     # §9; trang cũ còn stable/stale được giữ nguyên
 last_updated:
 reviewed:          # TUỲ CHỌN — ngày trang được review đối chiếu nguồn; không có = chưa review (§9)
 reviewed_by:       # user | model — bắt buộc khi có reviewed (§9)
@@ -30,7 +30,7 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 
 **Ưu tiên lý luận trước tường thuật.** Khi một nguồn tách rõ phần khung khái niệm với phần tường thuật bối cảnh, ingest phần khung khái niệm trước; ingest phần bối cảnh **chỉ khi** wiki còn thiếu minh chứng cho một `concept` đã có. Phần bối cảnh bị bỏ qua vẫn có dòng riêng trong bản đồ chunk kèm lý do (§10).
 
-**Không có trang tóm tắt nguồn.** Vai trò đó chia cho `index.md` §Sources, `03_state/` và trường `sources:` cộng chú thích §7 luật 5 trên từng trang. Đây là lựa chọn có chủ đích, không phải thiếu sót.
+**Không có trang tóm tắt nguồn.** Vai trò đó chia cho `03_state/` (bản kê và bản đồ chunk) và trường `sources:` cộng chú thích §7 luật 5 trên từng trang. Đây là lựa chọn có chủ đích, không phải thiếu sót.
 
 ## 3. Quy ước cấu trúc & đặt tên
 
@@ -48,8 +48,8 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 |---|---|
 | Kích thước 1 trang | Ngưỡng mềm: ≤ 1.000 từ/trang, ≤ 250 từ/đoạn dài nhất. Vượt ngưỡng là tín hiệu cần xem xét tách trang theo §5, đo bằng `--size`. Trang cũng phải đủ nhỏ để viết trọn trong 1 lượt; không viết hết được nghĩa là trang đang gộp nhiều ý, phải tách (§5) |
 | Đọc wiki | Ingest, query, lint, research dùng mẫu hai lượt: lượt 1 quét frontmatter (rẻ), lượt 2 chỉ mở full content trang đã xác định là cần. Đây là cơ chế kiểm soát token chính |
-| Ingest | Tạo/cập nhật tối đa 15 trang wiki mỗi lượt (stub không tính); không có ngưỡng dưới. Chunk chưa xong giữ `[~]` (§10) |
-| Lint | Chạy sau mỗi 10 lần ingest, hoặc theo lịch định kỳ |
+| Ingest | Tạo/cập nhật tối đa 15 trang wiki mỗi lượt (stub không tính); không có ngưỡng dưới. Chunk chưa phủ hết thì lượt sau làm tiếp (§10) |
+| Lint | Chạy khi người dùng gọi; bảng nợ in đầu phiên cho biết lúc nào nên chạy |
 | Review | Tối đa 5 trang mỗi lượt |
 | Research | Map: quét metadata không giới hạn, neighborhood 1 vòng. Deep read: 1 subcluster/lượt, đọc trọn tối đa 15 trang; enrich (ghi claim mới) tối đa 7 trang, ≤ 3 claim/trang; proposal ≤ 20 mục |
 
@@ -77,7 +77,6 @@ Chủ đề (topic) là đơn vị gom nhóm tạm thời khi ingest (`.claude/s
 - Cách viết `[[wikilink]]` trong câu: §7.
 - **`tags` KHÔNG phải cơ chế liên kết.** Tag chỉ là chỉ mục rẻ để lọc khi quét frontmatter. Quan hệ ý tưởng phải viết thành `[[wikilink]]` có lý do.
 - **Stub link được khuyến khích:** khi cần trỏ tới khái niệm chưa ingest, tạo luôn trang `status: stub` rồi link — không hoãn sang batch sau.
-- **Tag từ vựng kiểm soát.** Dùng tag có sẵn khi có liên hệ ý tưởng; tag mới chỉ khi gom được ≥ 2 trang cùng đặc tính. Kiểm tag hiện tại bằng `validate_wiki_page.py --tags`. Không backfill tập tag cũ; chỉ ghi quy tắc mới và tuân thủ khi ingest tiếp.
 - Heuristic chọn trang để link khi ingest: hỏi **"trang này sẽ cần xuất hiện lại trong ngữ cảnh nào?"** — không hỏi "trang này thuộc category nào".
 
 ## 7. Cấu trúc thân bài trang wiki
@@ -144,29 +143,23 @@ Ba luật kèm theo:
 
 Tên file luôn là kebab-case của title (§3).
 
-## 9. Vòng đời `status`
+## 9. `status` và `reviewed`
 
-| status | Nghĩa | Chuyển tiếp | Ai làm |
-|---|---|---|---|
-| `stub` | Chỉ có title + frontmatter, thân bài rỗng hoặc 1 câu. Sinh ra khi trang khác cần link tới khái niệm chưa ingest (§6) | → `draft` khi được ingest nội dung thật | Ingest (tạo và nâng) |
-| `draft` | Đã có nội dung từ ít nhất 1 nguồn | → `stable` khi người dùng duyệt danh sách *Đủ điều kiện `stable`* của lint | **Promote** (`.claude/skills/promote/SKILL.md`) |
-| `stable` | Nội dung đủ, liên kết đủ, không mâu thuẫn tồn đọng | → `stale` khi nguồn mới liên quan được ingest mà lượt đó không merge vào trang | Ingest |
-| `stale` | Có nguồn mới liên quan nhưng trang chưa cập nhật | → `draft` sau khi merge nội dung mới, rồi lại qua Promote | Ingest |
+| status | Nghĩa | Chuyển tiếp |
+|---|---|---|
+| `stub` | Chỉ có title + frontmatter, thân bài rỗng hoặc 1 câu. Sinh ra khi trang khác cần link tới khái niệm chưa ingest (§6) | → `draft` khi ingest ghi nội dung thật |
+| `draft` | Đã có nội dung từ ít nhất 1 nguồn | Không có bước tiếp; độ tin cậy đo bằng `reviewed` |
 
-`stable`/`stale` được merge nội dung mới → về `draft` (Ingest; Review khi sửa claim sai; Research khi enrich thêm claim mới sau khi người dùng duyệt danh sách đề xuất — `.claude/skills/research/SKILL.md` Pha 2–3).
-
-**Điều kiện lên `stable`:** hook `--all` không báo gì cho trang; outlink ≥ 1; backlink ≥ 2; không còn `⚠️ Conflict`; không bị flag ở tiêu chí nào của lượt lint gần nhất.
-
-**Nợ stub:** stub chưa được ingest nội dung sau 3 lượt ingest kể từ khi tạo. Đếm bằng `validate_wiki_page.py --stub-debt`.
+Trang ghi trước 2026-10-10 còn mang `stable` hoặc `stale`. Hook vẫn chấp nhận hai giá trị này; không operation nào đọc hay ghi chúng nữa, và không sửa hàng loạt.
 
 ### Trường `reviewed` / `reviewed_by`
 
-`status` chỉ đo vòng đời nội dung, không đo việc trang đã được đối chiếu hay đã được người đọc. Trục đó dùng cặp trường tuỳ chọn **`reviewed:` + `reviewed_by:`** (§1). Không có cặp này = chưa review.
+`status` chỉ phân biệt trang giữ chỗ với trang có nội dung. Việc trang đã được đối chiếu nguồn dùng cặp trường tuỳ chọn **`reviewed:` + `reviewed_by:`** (§1). Không có cặp này = chưa review.
 
 - Hook chỉ kiểm khi trường có mặt: `reviewed:` là ngày `YYYY-MM-DD` và đi kèm `reviewed_by: user` hoặc `reviewed_by: model`.
 - **`reviewed_by: model`** — agent đặt qua `/review-node` (`.claude/skills/review-node/SKILL.md`) sau khi đối chiếu từng claim với đúng đoạn nguồn. Đây là kiểm chứng nội dung khớp nguồn, không phải *người đã đọc*.
 - **`reviewed_by: user`** — chỉ người dùng ghi. Agent không ghi đè `user`; người dùng được ghi đè `model` bằng `user`.
-- `reviewed:` cũ hơn `last_updated:` = trang đã đổi sau lần duyệt. Đây là thông tin tham khảo, **không** phải lỗi lint; hàng đợi mặc định của `/review-node` nhặt lại các trang này.
+- `reviewed:` cũ hơn `last_updated:` = trang đã đổi sau lần duyệt. Lint liệt kê các trang này ở tiêu chí *claim cũ*; hàng đợi mặc định của `/review-node` nhặt lại chúng.
 
 ## 10. Nguồn: phân loại, bản kê và file trạng thái
 
@@ -191,15 +184,15 @@ Phân loại của từng nguồn ghi ở bản kê (dưới), không ghi ở đ
 - **Bảng Source id**: `source id` · thư mục trong `01_sources/` · phân loại · state file. `source id` là khoá dùng trong `sources:` (§1), trong chú thích §7 luật 5 và làm tên `03_state/<source id>.md`. Nguồn mới dùng snake_case. Hook đọc bảng này để biết nguồn nào là nguồn dài và để báo `sources:` trỏ tới id lạ.
 - **Mỗi nguồn một mục**: nhan đề, tác giả, nơi và năm xuất bản, cách có file, và bảng đường dẫn · bytes · số dòng · SHA-256 cho từng file `.md`/`.pdf`.
 
-Thêm nguồn mới vào bản kê và `index.md` §Sources **ngay trong lượt ingest đầu tiên** của nguồn đó. `validate_wiki_page.py --verify-sources` so bản kê với đĩa; chạy ở bước 0 của lint.
+Thêm nguồn mới vào bản kê **ngay trong lượt ingest đầu tiên** của nguồn đó. `validate_wiki_page.py --verify-sources` so bản kê với đĩa; `--lint` đã gồm lệnh này.
 
 ### File trạng thái ingest
 
-Mỗi **nguồn dài** có đúng 1 file `03_state/<source id>.md`, tạo ở lượt ingest đầu. Đây là **nguồn sự thật duy nhất** cho câu hỏi "còn lại phần nào". `log.md` kể *chuyện gì đã xảy ra*; file trạng thái nói *hiện đang ở đâu*. Hai file không mâu thuẫn nhau.
+Mỗi **nguồn dài** có đúng 1 file `03_state/<source id>.md`, tạo ở lượt ingest đầu. File này chỉ giữ hai thứ ghi tay: bản đồ chunk và các mục người dùng đã duyệt bỏ qua. Câu hỏi "còn lại phần nào" do `validate_wiki_page.py --coverage <source id>` trả lời, tính từ chú thích §7 luật 5 trên các trang; không ai đánh dấu chunk xong bằng tay. `log.md` kể *chuyện gì đã xảy ra*, không dùng để suy ra tiến độ.
 
 Không đặt file trạng thái cạnh nguồn trong `01_sources/` (luật bất biến §3). Lượt audit sau đừng đề xuất chuyển ngược lại.
 
-Cấu trúc: frontmatter tối thiểu + một bảng bản đồ chunk dạng checkbox.
+Cấu trúc: frontmatter tối thiểu + một bảng bản đồ chunk.
 
 ```markdown
 ---
@@ -209,20 +202,25 @@ total_lines: <số dòng>
 last_updated: YYYY-MM-DD
 ---
 
-| Xong | Chunk | Dòng | Mục trong nguồn | Ghi chú |
-|---|---|---|---|---|
-| `[x]` | Ch.2 · cụm A — đại lượng hạch toán | d.607–934 | The System of National Accounts → Problems of GDP Measurement | 14 trang + 6 stub |
-| `[~]` | Ch.3 — Fiscal Accounting | d.1954–3425 | ... | còn phần Tax Effort Analysis trở đi |
-| `[ ]` | Ch.4 — Balance of Payments | d.3426–4529 | ... | |
+| Chunk | Dòng | Mục trong nguồn | Ghi chú |
+|---|---|---|---|
+| Ch.2 · cụm A — đại lượng hạch toán | d.607–934 | The System of National Accounts → Problems of GDP Measurement | bỏ qua: Exercises — bài tập |
+| Ch.3 — Fiscal Accounting | d.1954–3425 | ... | |
+| Mục lục | d.1–120 | Contents | bỏ qua, không tạo trang |
 ```
 
-| Ký hiệu | Nghĩa |
-|---|---|
-| `[x]` | đã ingest xong: mọi mục (heading) của chunk đã được chú thích §7 luật 5 trích, hoặc được ghi `bỏ qua: <heading> — <lý do>` ở cột *Ghi chú* sau khi người dùng duyệt (ingest bước 2). Kiểm bằng `validate_wiki_page.py --coverage <source id>` |
-| `[~]` | đang ingest dở — cột *Ghi chú* **phải** nêu rõ phần nào còn lại; được phép ghi "còn N mục chưa phủ — xem `--coverage <source id>`" |
-| `[ ]` | chưa ingest |
+`--coverage` xếp mỗi chunk vào một trong bốn trạng thái:
 
-Đơn vị chunk: **chương** với nguồn có chương; **cụm chủ đề** khi một chương tự nó vượt ngưỡng nguồn dài. Mỗi chunk ghi dải dòng `d.<từ>–<đến>` theo file khai ở `file:`. Chunk cố ý bỏ qua (mục lục, lời tựa, bài tập, phụ lục số liệu thô — §2) vẫn có dòng riêng, đánh `[x]` và ghi "bỏ qua, không tạo trang".
+| Trạng thái | Nghĩa |
+|---|---|
+| `phu` | mọi mục (heading) của chunk đã được chú thích §7 luật 5 trích, hoặc được ghi `bỏ qua: <heading> — <lý do>` ở cột *Ghi chú* |
+| `do` | đã có chú thích trích tới chunk nhưng còn mục chưa phủ; lệnh liệt kê từng mục |
+| `chua` | chưa trang nào trích tới chunk |
+| `mien` | cả chunk được ghi "bỏ qua, không tạo trang" |
+
+Dòng `bỏ qua:` chỉ ghi cho mục người dùng đã duyệt ở ingest bước 2. State file tạo trước 2026-10-10 còn cột `Xong` với `[x]`/`[~]`/`[ ]`; lệnh không đọc cột này nữa và không cần xoá.
+
+Đơn vị chunk: **chương** với nguồn có chương; **cụm chủ đề** khi một chương tự nó vượt ngưỡng nguồn dài. Mỗi chunk ghi dải dòng `d.<từ>–<đến>` theo file khai ở `file:`. Chunk cố ý bỏ qua (mục lục, lời tựa, bài tập, phụ lục số liệu thô — §2) vẫn có dòng riêng và ghi "bỏ qua, không tạo trang".
 
 **Nguồn nhiều file** (một cuốn sách tách thành nhiều file, vd `fixed_income_during` có 42 file theo chương): một source id, một mục bản kê liệt kê mọi file, một state file. `file:` khai mẫu tên file; mỗi dòng chunk ghi file ở cột *Mục trong nguồn* (vd `File -5.md: Chapter 4`); dải dòng tính trong file đó. Chú thích §7 luật 5 thêm hậu tố file.
 
@@ -234,8 +232,8 @@ Dòng ghi chú về nguồn (ghi chú người dùng, đặc điểm bản chuy�
 
 - Định dạng phẳng, mỗi ý 1 gạch đầu dòng kèm ngày: `- [YYYY-MM-DD] <ý tưởng>`. Không frontmatter, không luật trang wiki.
 - `_inbox.md` nằm **ngoài mạng liên kết**: không `[[wikilink]]` nào trỏ vào, không xuất hiện trong `index.md`.
+- **Hàng chờ chung của mọi operation.** Việc phát hiện ngoài phạm vi của lượt đang chạy (lỗi cấu trúc, claim nghi sai, câu hỏi wiki chưa trả lời được) ghi một dòng vào đây thay vì sửa tiện tay.
 - **Triage mỗi lượt lint.** Mỗi mục có đúng 3 kết cục: nâng thành trang wiki, gộp vào trang đã có, hoặc xoá.
-- Mục tồn quá 3 lượt lint là nợ kỹ thuật — lint báo cáo (tiêu chí *Nợ inbox*, đếm bằng `validate_wiki_page.py --inbox-debt`).
 
 ## 12. Định dạng `log.md`
 
@@ -247,8 +245,9 @@ Dòng ghi chú về nguồn (ghi chú người dùng, đặc điểm bản chuy�
 ```
 
 - **Dấu thời gian:** giờ Việt Nam (UTC+7), 24 giờ. Lấy bằng `python .claude/hooks/validate_wiki_page.py --now` — không ước lượng, không dùng giờ UTC của máy. Mục ghi trước 2026-09-15 để `00-00-00` = *không rõ giờ*.
-- **`<op>` chỉ nhận 8 giá trị:** `ingest` · `query` · `lint` · `promote` · `review` (skill `/review-node`) · `research` (skill `/research`) · `schema` (sửa schema/skill/hook/tài liệu vận hành) · `repo` (git: publish, rollback, tag).
+- **`<op>` chỉ nhận 7 giá trị:** `ingest` · `query` · `lint` · `review` (skill `/review-node`) · `research` (skill `/research`) · `schema` (sửa schema/skill/hook/tài liệu vận hành) · `repo` (git: publish, rollback, tag).
 - **Tiền tố `## [` là giao diện máy đọc** — `grep "^## \[" log.md | tail -5` lấy 5 mục gần nhất. Không viết `## [` ở đầu dòng cho mục đích khác.
+- Mục `promote` ghi trước 2026-10-10 giữ nguyên; operation này đã bỏ.
 - **Log không chứa lập luận.** Lý do → `decisions.md`. Ý tưởng dang dở → `_inbox.md`. Trạng thái "còn lại phần nào" → `03_state/`.
 - Mục mới luôn thêm ở **cuối file**; không sửa mục cũ. Mục cũ sai thì mục kế tiếp cùng loại ghi đính chính.
 - Bản log dài trước khi rút gọn (2026-09-15): `git show e2adb7a:log.md`.

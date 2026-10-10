@@ -31,7 +31,7 @@
         "Trang được đặt reviewed + reviewed_by: model",
         "Có mở đúng đoạn nguồn (partial/grep), không đọc trọn file nguồn 849 KB",
         "Chọn đúng trang đầu hàng đợi (reserve-money, 26 backlink)",
-        "Sửa claim thì nâng last_updated và stable → draft"
+        "Sửa claim thì nâng last_updated, không đổi status"
       ]
     }
   ]

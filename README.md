@@ -2,7 +2,7 @@
 
 Một wiki tri thức do LLM biên soạn và bảo trì, xây trên hai kiến trúc tham chiếu:
 
-- **[LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)** (Andrej Karpathy) — mô hình 3 lớp nguồn/wiki/schema, ba operation ingest · query · lint. Dự án thêm promote để quản vòng đời trang và review-node để đối chiếu trang với nguồn. LLM là người biên tập giữ một cơ sở tri thức tích luỹ, thay cho việc RAG lại từ đầu mỗi lần hỏi.
+- **[LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)** (Andrej Karpathy) — mô hình 3 lớp nguồn/wiki/schema, ba operation ingest · query · lint. Dự án thêm review-node để đối chiếu trang với nguồn và research để đọc lại một vùng tri thức theo chủ đề. LLM là người biên tập giữ một cơ sở tri thức tích luỹ, thay cho việc RAG lại từ đầu mỗi lần hỏi.
 - **[Evergreen notes](https://notes.andymatuschak.org/z5E5QawiXCMbtNtupvxeoEX)** (Andy Matuschak) — nguyên tắc thiết kế từng trang: atomic, hướng khái niệm, liên kết dày, ontology liên tưởng, viết cho chính mình.
 
 Chủ đề: kinh tế vĩ mô, tiền tệ, ngân hàng và thị trường thu nhập cố định.
@@ -23,8 +23,8 @@ Chủ đề: kinh tế vĩ mô, tiền tệ, ngân hàng và thị trường thu
 | Muốn biết | Đọc |
 |---|---|
 | Quy tắc bắt buộc, bước khởi động, công cụ kiểm | `CLAUDE.md` |
-| Quy tắc trang wiki, taxonomy, ngưỡng, vòng đời, luồng vận hành, bảng operation | `00_schema.md` |
-| Quy trình thực thi từng operation | `.claude/skills/{ingest,query,lint,promote,review-node,research}/SKILL.md` |
+| Quy tắc trang wiki, taxonomy, ngưỡng, trạng thái trang và nguồn | `00_schema.md` |
+| Quy trình thực thi từng operation | `.claude/skills/{ingest,query,lint,review-node,research}/SKILL.md` |
 | Vì sao một luật tồn tại | `decisions.md` |
 
 Hook `.claude/hooks/validate_wiki_page.py` tự kiểm mỗi lần ghi file trong `02_wiki/`; `--help` liệt kê các lệnh quét toàn bộ.
@@ -37,6 +37,6 @@ Nguồn là tài liệu của bên thứ ba có bản quyền (IMF, Oxford UP, C
 
 ## Trạng thái
 
-Số trang và tiến độ từng nguồn: `02_wiki/index.md` (mục `## Sources`). Lịch sử lint: `grep "^## \[.*\] lint" log.md`. Khoản nợ kỹ thuật đang mở: `_inbox.md`.
+Tiến độ từng nguồn: `python .claude/hooks/validate_wiki_page.py --coverage`. Lịch sử lint: `grep "^## \[.*\] lint" log.md`. Khoản nợ kỹ thuật đang mở: `_inbox.md`.
 
 Tag `ch3-snapshot` giữ bản ingest Chương 1 + 3 (117 trang) đã rollback ngày 2026-09-15.

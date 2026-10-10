@@ -8,32 +8,33 @@ title (§8), vong doi status + cap reviewed/reviewed_by (§9).
 
 Che do:
   - hook              : doc JSON tu stdin (PostToolUse tren Write|Edit).
-  - --all             : quet toan bo 02_wiki/. Dung cho file ghi bang shell, vi
-                        hook chi bat duoc tool Write|Edit. Lint phai chay che do nay.
+  - --all             : quet toan bo 02_wiki/, ke ca trang mo coi va trang chua co
+                        trong index.md. Dung cho file ghi bang shell, vi hook chi bat
+                        duoc tool Write|Edit.
   - --backlinks [p]   : khong co p -> bang so backlink moi trang (giam dan);
                         co p -> liet ke trang tro toi p (ca dang [[p|nhan]]).
   - --ocr             : quet than bai (bo [[link]], $cong thuc$, `code`) tim 6 ho
                         mau loi OCR (lint). Ket qua la ung vien, can doc xac nhan.
-  - --stub-debt       : moi trang stub + so luot ingest trong log.md tu khi tao.
-  - --inbox-debt      : moi muc _inbox.md + so luot lint tu ngay ghi.
   - --verify-sources  : so bytes/dong/SHA-256 cua 01_sources/ voi
                         03_state/_sources_manifest.md (quy tac bat buoc 1).
-  - --coverage [sid]  : chunk trong 03_state/ -> % dong duoc chu thich §7 luat 5 trich va
-                        cac muc (heading) chua trang nao trich. Exit 2 neu chunk [x]
-                        con muc chua phu (§10). Khong doi so -> tong ket moi nguon.
+  - --coverage [sid]  : chunk trong 03_state/ -> trang thai tinh tu chu thich §7 luat 5
+                        (phu / do / chua / mien, §10), % dong duoc trich va cac muc
+                        (heading) chua trang nao trich. Khong doc cot Xong ghi tay.
+                        Khong doi so -> tong ket moi nguon.
   - --size [p]        : trang > 1.000 tu hoac co doan > 250 tu (Atomic, §4). Khong doi so
                         -> tat ca trang. Trang do duoc dung cho ingest/research de chac
                         merge co nay phai tach trang moi, khong cong them claim vao trang cu.
-  - --tags [kw]       : liet ke tag + so trang dung moi tag. Doc ca [a, b] lan YAML nhieu
-                        dong. Khong doi so -> tong ket. Dung khi ingest b.3, research Pha 1
-                        de tim tag co san (tu vung kiem soat, §6).
   - --style [p]       : tim cum cam B2, filler I1-I4, in dam >= 5/trang (G3), heading con
                         sot (G4) va nhom §7 luat 6 (giong khuyen nghi, nhan manh vai tro
                         khong kem so, tu quy chieu toi trang/nguon). Khong doi so -> tat ca
                         trang. Tin hieu tho cho lint doc tay, khong phan quyet.
   - --now             : gio Viet Nam dang YYYY-MM-DD:hh-MM-ss cho log.md (§12).
-  - --session-start   : in handoff moi nhat trong .claude/session_handoffs/ (hook
-                        SessionStart). Luon exit 0.
+  - --lint            : chay gop --all, --verify-sources, --coverage, --size, --style,
+                        --ocr va in mot bang tong (buoc 1 cua lint).
+  - --session-start   : in bang no va handoff moi nhat trong .claude/session_handoffs/
+                        (hook SessionStart). Luon exit 0.
+  - --guard-sources   : hook PreToolUse tren Bash|PowerShell: chan lenh shell ghi vao
+                        01_sources/ (quy tac bat buoc 1). Loc theo mau, khong phai sandbox.
 
 Exit 0 = dat. Exit 2 = co van de, stderr duoc chuyen lai cho agent.
 Moi loi khong luong truoc deu exit 0 de khong chan luong lam viec.
@@ -375,11 +376,25 @@ def run_all(wiki_dir):
             "  -> Them lien ket co ly do that tu trang lien quan; khong va cho du chi tieu.\n"
         )
 
+    # Trang chua co dong nao trong index.md: query dinh huong qua index nen
+    # trang sot index la trang khong tim thay duoc.
+    unindexed = []
+    try:
+        with open(os.path.join(wiki_dir, "index.md"), encoding="utf-8-sig") as fh:
+            listed = set(link_targets(fh.read()))
+        unindexed = sorted(n for n in pages if n not in listed)
+    except OSError:
+        pass
+    if unindexed:
+        sys.stdout.write("\n%d trang SOT INDEX — chua co dong nao trong index.md:\n" % len(unindexed))
+        for n in unindexed:
+            sys.stdout.write("  - %s\n" % n)
+
     sys.stdout.write(
-        "\n%d trang quet, %d trang co van de, %d trang mo coi.\n"
-        % (total, bad, len(orphans))
+        "\n%d trang quet, %d trang co van de, %d trang mo coi, %d trang sot index.\n"
+        % (total, bad, len(orphans), len(unindexed))
     )
-    sys.exit(2 if (bad or orphans) else 0)
+    sys.exit(2 if (bad or orphans or unindexed) else 0)
 
 
 # ---------------------------------------------------------------------------
@@ -475,77 +490,6 @@ def cmd_ocr(wiki_dir):
     sys.exit(0)
 
 
-def page_created(root):
-    """{stem: datetime tao} theo commit dau tien them file; fallback mtime."""
-    created = {}
-    try:
-        out = subprocess.run(
-            ["git", "-c", "core.quotepath=off", "--no-optional-locks", "log",
-             "--diff-filter=A", "--name-only", "--format=@%cI", "--", "02_wiki"],
-            cwd=root, capture_output=True, text=True, encoding="utf-8", timeout=30,
-        ).stdout
-        when = None
-        for line in out.splitlines():
-            if line.startswith("@"):
-                when = datetime.datetime.fromisoformat(line[1:])
-            elif line.strip() and when:
-                stem = os.path.splitext(os.path.basename(line.strip()))[0]
-                created[stem] = when  # git log moi -> cu: gia tri cuoi = lan them dau tien
-    except Exception:
-        pass
-    return created
-
-
-def cmd_stub_debt(wiki_dir):
-    root = os.path.dirname(wiki_dir)
-    created = page_created(root)
-    ingests = [e for e in log_entries(root) if e[2] == "ingest"]
-    rows = []
-    for f in sorted(os.listdir(wiki_dir)):
-        if not f.lower().endswith(".md") or f.lower() == "index.md":
-            continue
-        p = os.path.join(wiki_dir, f)
-        with open(p, encoding="utf-8-sig") as fh:
-            fields, _ = split_frontmatter(fh.read())
-        if not fields or fields.get("status") != "stub":
-            continue
-        stem = os.path.splitext(f)[0]
-        when = created.get(stem) or datetime.datetime.fromtimestamp(os.path.getmtime(p), VN_TZ)
-        when = when.astimezone(VN_TZ)
-        n = sum(1 for w, d, _ in ingests if (w > when if w else d > when.date()))
-        rows.append((n, stem, when))
-    for n, stem, when in sorted(rows, key=lambda r: (-r[0], r[1])):
-        flag = "NO" if n >= 3 else "  "
-        sys.stdout.write("%s\t%d\t%s\t%s\n" % (flag, n, when.strftime("%Y-%m-%d:%H-%M"), stem))
-    sys.stdout.write(
-        "%d stub, %d no stub (>= 3 luot ingest tu khi tao, §9).\n"
-        % (len(rows), sum(1 for r in rows if r[0] >= 3))
-    )
-    sys.exit(0)
-
-
-def cmd_inbox_debt(root):
-    lints = [d for _, d, op in log_entries(root) if op == "lint"]
-    rows = []
-    try:
-        with open(os.path.join(root, "_inbox.md"), encoding="utf-8-sig") as fh:
-            for line in fh:
-                m = re.match(r"^- \[(\d{4}-\d{2}-\d{2})\]\s*(.*)", line)
-                if m:
-                    d = datetime.date.fromisoformat(m.group(1))
-                    rows.append((sum(1 for x in lints if x > d), m.group(1), m.group(2)[:90]))
-    except OSError:
-        pass
-    for n, d, text in rows:
-        sys.stdout.write("%s\t%d\t%s\t%s\n" % ("NO" if n >= 3 else "  ", n, d, text))
-    sys.stdout.write(
-        "%d muc inbox, %d no (>= 3 luot lint sau ngay ghi, §11). "
-        "Dem theo ngay nen luot lint cung ngay voi muc khong duoc tinh.\n"
-        % (len(rows), sum(1 for r in rows if r[0] >= 3))
-    )
-    sys.exit(0)
-
-
 def cmd_verify_sources(root):
     manifest = os.path.join(root, "03_state", "_sources_manifest.md")
     rx = re.compile(r"^\|\s*`(01_sources/[^`]+)`\s*\|\s*([\d.]+)\s*\|\s*([\d.]+|—)\s*\|\s*`([0-9a-f]{64})`\s*\|")
@@ -613,7 +557,7 @@ def cov_norm(s):
 
 
 def cov_state(root, sid):
-    """-> (danh sach file nguon, [(trang thai, a, b, file, dong state)])."""
+    """-> (danh sach file nguon, [(ten chunk, a, b, file, dong state)])."""
     with open(os.path.join(root, "03_state", sid + ".md"), encoding="utf-8-sig") as fh:
         text = fh.read()
     fm = re.match(r"^---\n(.*?)\n---", text, re.S)
@@ -634,10 +578,16 @@ def cov_state(root, sid):
             files.append(os.path.join(root, *r.split("/")))
     chunks = []
     for line in text.splitlines():
-        m = re.match(r"^\|\s*`\[(.)\]`\s*\|", line)
         r = re.search(r"d\.(\d+)\s*[–-]\s*(\d+)", line)
-        if not m or not r:
+        if not line.startswith("|") or not r:
             continue
+        # cot Xong ([x]/[~]/[ ]) cua state file cu khong con duoc doc (§10)
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        cells = [c for c in cells if not re.match(r"^`\[.\]`$", c)]
+        # dong chunk co mot o mo dau bang dai dong; bang phu trong state file thi khong
+        if not any(re.match(r"^`?d\.\d+", c) for c in cells):
+            continue
+        name = cells[0] if cells else ""
         f = files[0] if len(files) == 1 else None
         if not f:
             for tok in re.findall(r"`([^`]+\.md)`", line):
@@ -645,7 +595,7 @@ def cov_state(root, sid):
                 if hit:
                     f = hit[0]
                     break
-        chunks.append((m.group(1), int(r.group(1)), int(r.group(2)), f, line))
+        chunks.append((name, int(r.group(1)), int(r.group(2)), f, line))
     return files, chunks
 
 
@@ -698,7 +648,7 @@ def cov_cited(wiki_dir, sid, files):
 
 
 def cov_source(root, wiki_dir, sid):
-    """-> (lost, [(trang thai, a, b, % phu | None, [(tu, den, heading)])])."""
+    """-> (lost, [(ten chunk, a, b, % phu | None | "mien" | "?", [(tu, den, heading)])])."""
     files, chunks = cov_state(root, sid)
     cited, lost = cov_cited(wiki_dir, sid, files)
     cache, out = {}, []
@@ -733,34 +683,64 @@ def cov_source(root, wiki_dir, sid):
     return lost, out
 
 
-def cmd_coverage(root, wiki_dir, sid):
+def cov_status(pct, miss):
+    """Trang thai chunk tinh tu chu thich (§10): phu / do / chua / mien / ?."""
+    if pct in ("mien", "?"):
+        return pct
+    if pct is None:
+        return "chua"
+    return "do" if miss else "phu"
+
+
+COV_ORDER = ("phu", "do", "chua", "mien", "?")
+
+
+def cov_fmt(n):
+    return ", ".join("%s %d" % (k, n[k]) for k in COV_ORDER if n.get(k))
+
+
+def cov_sids(root):
     state = os.path.join(root, "03_state")
-    sids = [sid] if sid else sorted(
-        os.path.splitext(f)[0] for f in os.listdir(state) if f.endswith(".md") and not f.startswith("_")
-    )
-    bad = 0
+    return sorted(os.path.splitext(f)[0] for f in os.listdir(state) if f.endswith(".md") and not f.startswith("_"))
+
+
+def cov_totals(root, wiki_dir, sids):
+    """-> {sid: (lost, rows, {trang thai: so chunk})}."""
+    out = {}
     for s in sids:
-        if not os.path.isfile(os.path.join(state, s + ".md")):
+        lost, rows = cov_source(root, wiki_dir, s)
+        n = {}
+        for r in rows:
+            st = cov_status(r[3], r[4])
+            n[st] = n.get(st, 0) + 1
+        out[s] = (lost, rows, n)
+    return out
+
+
+def cmd_coverage(root, wiki_dir, sid):
+    sids = [sid] if sid else cov_sids(root)
+    for s in sids:
+        if not os.path.isfile(os.path.join(root, "03_state", s + ".md")):
             sys.stdout.write("Khong co 03_state/%s.md\n" % s)
             sys.exit(2)
-        lost, rows = cov_source(root, wiki_dir, s)
-        flagged = [r for r in rows if r[0] == "x" and r[4]]
-        bad += len(flagged)
+    tot = {}
+    for s, (lost, rows, n) in cov_totals(root, wiki_dir, sids).items():
         if sid:
-            for st, a, b, pct, miss in rows:
-                tag = {"mien": "mien (bo qua)", "?": "khong xac dinh file", None: "khong do duoc (0 chu thich)"}
-                p = tag[pct] if pct in tag else "%d%%" % pct
-                sys.stdout.write("[%s] d.%d–%d\t%s\t%d muc chua phu\n" % (st, a, b, p, len(miss)))
+            for name, a, b, pct, miss in rows:
+                p = "%d%%" % pct if isinstance(pct, int) else "-"
+                sys.stdout.write("%-5s d.%d–%d\t%s\t%d muc chua phu\t%s\n" % (
+                    cov_status(pct, miss), a, b, p, len(miss), name[:70]))
                 for x, y, h in miss:
                     sys.stdout.write("      d.%d–%d  %s\n" % (x, y, h[:90]))
         else:
-            meas = [r for r in rows if isinstance(r[3], int)]
-            sys.stdout.write("%s\t%s\t%d/%d chunk do duoc; %d chunk [x] con muc chua phu\n" % (
-                "NO" if flagged else "  ", s, len(meas), len(rows), len(flagged)))
+            sys.stdout.write("%s\t%s\n" % (s, cov_fmt(n)))
         if lost:
             sys.stdout.write("  (%s: %d chu thich khong xac dinh duoc file)\n" % (s, lost))
-    sys.stdout.write("%d chunk [x] con muc chua phu (§10: [x] = moi muc da trich hoac 'bo qua: <heading>').\n" % bad)
-    sys.exit(2 if bad else 0)
+        for k, v in n.items():
+            tot[k] = tot.get(k, 0) + v
+    sys.stdout.write("%d chunk: %s (§10: trang thai tinh tu chu thich, khong ghi tay).\n" % (
+        sum(tot.values()), cov_fmt(tot)))
+    sys.exit(0)
 
 
 def cmd_size(wiki_dir, target=None):
@@ -785,32 +765,6 @@ def cmd_size(wiki_dir, target=None):
     for f, w, mp in rows:
         sys.stdout.write("%s\t%d tu\t%d tu/doan_max\n" % (f, w, mp))
     sys.stdout.write("%d trang > %d tu hoac doan > %d tu (§4, Atomic).\n" % (len(rows), words_threshold, para_threshold))
-    sys.exit(0)
-
-
-def cmd_tags(wiki_dir, keyword=None):
-    """Tag + so trang. Tong so va so tag dung 1 lan. Keyword: loc tag."""
-    tag_counts = {}
-    for f in sorted(os.listdir(wiki_dir)):
-        if not f.lower().endswith(".md") or f.lower() == "index.md":
-            continue
-        try:
-            with open(os.path.join(wiki_dir, f), encoding="utf-8-sig") as fh:
-                fields, _ = split_frontmatter(fh.read())
-            if fields:
-                tags = yaml_list(fields.get("tags", ""))
-                for t in tags:
-                    tag_counts[t] = tag_counts.get(t, 0) + 1
-        except Exception:
-            pass
-    items = sorted(tag_counts.items(), key=lambda kv: (-kv[1], kv[0]))
-    if keyword:
-        keyword = keyword.lower()
-        items = [it for it in items if keyword in it[0].lower()]
-    for tag, count in items:
-        sys.stdout.write("%s\t%d\n" % (tag, count))
-    solo = sum(1 for c in tag_counts.values() if c == 1)
-    sys.stdout.write("%d tag tong, %d tag dung 1 lan (%d%%).\n" % (len(tag_counts), solo, 100*solo//max(1, len(tag_counts))))
     sys.exit(0)
 
 
@@ -868,8 +822,64 @@ def cmd_style(wiki_dir, target=None):
     sys.exit(0)
 
 
+def cmd_lint():
+    """Chay gop cac lenh quet, moi lenh mot dong tong. Chi tiet: chay rieng lenh do."""
+    worst = 0
+    sys.stdout.write("Lenh\tExit\tDong tong\n")
+    for c in ("--all", "--verify-sources", "--coverage", "--size", "--style", "--ocr"):
+        try:
+            r = subprocess.run(
+                [sys.executable, os.path.abspath(__file__), c],
+                capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=300,
+            )
+            lines = [x for x in (r.stdout + r.stderr).splitlines() if x.strip()]
+            last, code = (lines[-1].strip() if lines else ""), r.returncode
+        except Exception as exc:
+            last, code = "khong chay duoc: %s" % exc, 2
+        worst = max(worst, code)
+        sys.stdout.write("%s\t%d\t%s\n" % (c, code, last))
+    sys.exit(2 if worst else 0)
+
+
+def debt_lines(root):
+    """Bang no ngan cho dau phien; moi dong tu lo loi cua minh."""
+    out = []
+    try:
+        since = 0
+        for _, _, op in reversed(log_entries(root)):
+            if op == "lint":
+                break
+            since += op == "ingest"
+        out.append("%d luot ingest tu lan lint gan nhat" % since)
+    except Exception:
+        pass
+    try:
+        wiki, stubs = os.path.join(root, "02_wiki"), 0
+        for f in os.listdir(wiki):
+            if f.lower().endswith(".md") and f.lower() != "index.md":
+                with open(os.path.join(wiki, f), encoding="utf-8-sig") as fh:
+                    stubs += bool(re.search(r"^status:\s*stub\s*$", fh.read(600), re.M))
+        out.append("%d trang stub chua co noi dung" % stubs)
+        tot = {}
+        for _, _, n in cov_totals(root, wiki, cov_sids(root)).values():
+            for k, v in n.items():
+                tot[k] = tot.get(k, 0) + v
+        out.append("chunk nguon: %s" % cov_fmt(tot))
+    except Exception:
+        pass
+    try:
+        with open(os.path.join(root, "_inbox.md"), encoding="utf-8-sig") as fh:
+            out.append("%d muc trong _inbox.md" % sum(1 for x in fh if x.startswith("- [")))
+    except OSError:
+        pass
+    return out
+
+
 def cmd_session_start(root):
-    """Hook SessionStart: in handoff moi nhat (ten file YYYY-MM-DD-HHmm-... xep theo thoi gian)."""
+    """Hook SessionStart: in bang no va handoff moi nhat (ten file YYYY-MM-DD-HHmm-... xep theo thoi gian)."""
+    debt = debt_lines(root)
+    if debt:
+        sys.stdout.write("Bang no: %s. Chi tiet: --lint.\n\n" % "; ".join(debt))
     d = os.path.join(root, ".claude", "session_handoffs")
     files = sorted(f for f in os.listdir(d) if f.endswith(".md") and f[:4].isdigit())
     if not files:
@@ -880,6 +890,46 @@ def cmd_session_start(root):
         "Handoff moi nhat (.claude/session_handoffs/%s), hook SessionStart da nap san; "
         "khong can doc lai file nay o buoc Dau phien.\n\n%s\n" % (files[-1], body)
     )
+
+
+# Hook PreToolUse tren Bash|PowerShell (quy tac bat buoc 1). permissions.deny chi chan
+# tool Edit/Write; lenh shell di vong qua no. Day la luoi loc theo mau, khong phai sandbox:
+# script tu viet (python -c ...) van ghi duoc.
+GUARD_VERB = re.compile(
+    r"(?i)(^|[\s;&|(])(rm|rmdir|mv|del|erase|ren|rename|touch|mkdir|truncate|tee|dos2unix|unix2dos|"
+    r"remove-item|move-item|rename-item|new-item|set-content|add-content|clear-content|out-file)(\s|$)"
+    r"|\bsed\s+(-[a-z]*i|--in-place)|\bgit\s+(rm|mv|checkout|restore)\b"
+)
+GUARD_COPY = re.compile(r"(?i)(^|[\s;&|(])(cp|copy|xcopy|robocopy|copy-item)\s")
+GUARD_REDIR = re.compile(r"""(?i)>>?\s*("[^"]*01_sources|'[^']*01_sources|[^\s"']*01_sources)""")
+GUARD_CLEAN = re.compile(r"\bgit\s+clean\b.*\s-[a-zA-Z]*[xX]")
+
+
+def guard_reason(command):
+    for seg in re.split(r"\|\||&&|[;|\n]", command):
+        if GUARD_CLEAN.search(seg):
+            return "git clean -x xoa ca thu muc bi ignore, trong do co 01_sources/"
+        if "01_sources" not in seg.lower():
+            continue
+        if GUARD_VERB.search(seg):
+            return "lenh ghi/xoa/doi ten nham vao 01_sources/"
+        if GUARD_REDIR.search(seg):
+            return "chuyen huong output vao 01_sources/"
+        toks = seg.strip().split()
+        if GUARD_COPY.search(seg) and toks and "01_sources" in toks[-1].lower():
+            return "sao chep vao 01_sources/"
+    return None
+
+
+def cmd_guard_sources():
+    data = json.load(sys.stdin)
+    why = guard_reason((data.get("tool_input") or {}).get("command") or "")
+    if why:
+        sys.stderr.write(
+            "CHAN (quy tac bat buoc 1): %s. 01_sources/ chi doc; ghi ve nguon thi ghi ra 03_state/. "
+            "Neu day la lenh chi doc bi bat nham, viet lai lenh cho khong chua dong tu ghi.\n" % why
+        )
+        sys.exit(2)
 
 
 def main():
@@ -902,6 +952,12 @@ def main():
         except Exception:
             pass
         sys.exit(0)
+    if args and args[0] == "--guard-sources":
+        try:
+            cmd_guard_sources()
+        except Exception:
+            pass
+        sys.exit(0)
     if args and args[0].startswith("--"):
         here = os.environ.get("CLAUDE_PROJECT_DIR") or os.getcwd()
         wiki = os.path.join(here, "02_wiki")
@@ -915,18 +971,14 @@ def main():
             cmd_backlinks(wiki, args[1] if len(args) > 1 else None)
         elif cmd == "--ocr":
             cmd_ocr(wiki)
-        elif cmd == "--stub-debt":
-            cmd_stub_debt(wiki)
-        elif cmd == "--inbox-debt":
-            cmd_inbox_debt(here)
         elif cmd == "--verify-sources":
             cmd_verify_sources(here)
         elif cmd == "--coverage":
             cmd_coverage(here, wiki, args[1] if len(args) > 1 else None)
         elif cmd == "--size":
             cmd_size(wiki, args[1] if len(args) > 1 else None)
-        elif cmd == "--tags":
-            cmd_tags(wiki, args[1] if len(args) > 1 else None)
+        elif cmd == "--lint":
+            cmd_lint()
         elif cmd == "--style":
             cmd_style(wiki, args[1] if len(args) > 1 else None)
         else:

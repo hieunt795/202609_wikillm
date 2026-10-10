@@ -1,77 +1,63 @@
 ---
 name: lint
-description: Kiểm tra sức khoẻ wiki 02_wiki — trang mồ côi, link chết, khái niệm chưa có trang, trang đủ điều kiện stable, mâu thuẫn tồn đọng, trang stale, trùng lặp, vi phạm Atomic, vi phạm quy ước title, nợ stub, nhiễu OCR còn sót, nợ inbox chưa triage, nguồn trong 01_sources bị thay đổi. Dùng khi người dùng muốn lint, chạy lint, kiểm tra wiki, rà soát wiki, health check, tìm trang mồ côi, kiểm tra liên kết, audit wiki, dọn dẹp wiki, hoặc sau khoảng 10 lượt ingest.
+description: Kiểm tra sức khoẻ wiki 02_wiki và sửa các mục người dùng duyệt — mâu thuẫn tồn đọng, claim cũ, trang mồ côi, link chết, khái niệm chưa có trang, link còn thiếu, trang trùng, khoảng trống tri thức, nguồn trong 01_sources bị thay đổi hoặc chưa kê, triage _inbox. Dùng khi người dùng muốn lint, chạy lint, kiểm tra wiki, rà soát wiki, health check, tìm trang mồ côi, kiểm tra liên kết, audit wiki, dọn dẹp wiki, xử lý báo cáo lint, hoặc khi bảng nợ đầu phiên cho thấy đã nhiều lượt ingest chưa lint.
 ---
 
 # Lint — kiểm tra sức khoẻ wiki
 
-Chạy sau mỗi 10 lượt ingest hoặc theo lịch (§4).
-
-**Đọc `00_schema.md`:** §4–§9, §11, §12.
-**Dừng chờ duyệt:** không ghi wiki; xuất báo cáo rồi chờ người dùng chọn hướng xử lý.
+**Đọc `00_schema.md`:** §5–§9, §11, §12.
+**Dừng chờ duyệt:** bước 3, sau khi xuất báo cáo có mã mục; chỉ sửa đúng các mã người dùng duyệt.
 **Ghi log:** luôn, op `lint`.
 
-**Lint chỉ báo cáo, không tự sửa** (quy tắc bắt buộc 3). Xuất báo cáo, chờ người xác nhận hướng xử lý. Lý do: lint nhìn cả wiki một lượt nên dễ sửa hàng loạt theo một phán đoán sai; người dùng duyệt trước thì lỗi dừng ở báo cáo.
+Lint nhìn cả wiki một lượt nên dễ sửa hàng loạt theo một phán đoán sai. Vì vậy mọi thay đổi đi qua báo cáo có mã mục: người dùng duyệt mã nào, lint sửa mã đó, không hơn.
 
-## Quy trình hai lượt
+## Quy trình
 
-**0. Chạy các lệnh máy trước mọi thứ khác:**
+**1. Chạy lệnh máy.**
 
 ```bash
-H=.claude/hooks/validate_wiki_page.py
-python $H --all              # trang: frontmatter, heading, link chết, source id, §7 luật 5, title, mồ côi
-python $H --verify-sources   # 01_sources/ khớp bản kê (quy tắc bắt buộc 1)
-python $H --ocr              # ứng viên nhiễu OCR
-python $H --stub-debt        # nợ stub
-python $H --inbox-debt       # nợ inbox
-python $H --coverage         # chunk [x] còn mục nguồn chưa trang nào trích (§10)
-python $H --size             # trang > 1.000 từ, đoạn > 250 từ (§4, §5)
-python $H --tags             # tag dùng 1 lần / từ vựng kiểm soát (§6)
-python $H --style            # cụm cấm, filler, bold, luật 6 (§7)
+python .claude/hooks/validate_wiki_page.py --lint
 ```
 
-Hook `PostToolUse` chỉ bắt tool `Write|Edit` — file ghi bằng shell đi vòng qua nó, nên `--all` quét lại tất cả. Số trang của lượt lint lấy từ dòng cuối của `--all`. `--verify-sources` báo lệch thì ghi lên đầu báo cáo: đó là vi phạm quy tắc bắt buộc, không phải lỗi trang, và lint không sửa lại nguồn.
+Lệnh gộp `--all`, `--verify-sources`, `--coverage`, `--size`, `--style`, `--ocr` và in một bảng tổng. Cần chi tiết của dòng nào thì chạy riêng lệnh đó. `--verify-sources` báo lệch nội dung thì ghi lên đầu báo cáo: đó là vi phạm quy tắc bắt buộc 1 và lint không sửa lại nguồn.
 
-**`--all` phủ:** frontmatter đủ trường, `type`/`status` hợp lệ, tên file khớp title, `sources` không rỗng và là source id có trong bản kê, `last_updated` đúng dạng ngày, heading trong thân bài, link chết (kể cả `[[trang|nhãn]]`), link dồn thành danh sách, chú thích §7 luật 5, title danh từ cho `case`/`analysis`, trang mồ côi theo chiều backlink.
+**2. Đối chiếu 6 tiêu chí.** Quét frontmatter trước, chỉ mở thân bài trang bị flag.
 
-**Phải kiểm tay ở bước 2:** mâu thuẫn tồn đọng, stale chưa đánh dấu, trùng lặp, khái niệm chưa có trang, vi phạm title ngoài phần máy bắt được, xác nhận ứng viên OCR, danh sách đủ điều kiện `stable`.
+| Mã | Tiêu chí | Cách phát hiện |
+|---|---|---|
+| `K` | Mâu thuẫn tồn đọng | `grep -l "⚠️ Conflict" 02_wiki/*.md`; nêu hai claim và hỏi người dùng chọn hướng |
+| `C` | Claim cũ | trang có `reviewed` cũ hơn `last_updated`; trang chỉ có 1 source id trong khi nguồn nạp sau có trang riêng về cùng khái niệm (ứng viên merge) |
+| `O` | Mồ côi, link chết, sót index | phần `--all` của bảng tổng |
+| `S` | Khái niệm chưa có trang | thuật ngữ được nhắc trong thân bài của ≥ 3 trang mà chưa có trang riêng; đếm bằng `grep -li "<thuật ngữ>" 02_wiki/*.md`, theo khái niệm chứ không theo chuỗi. Trang `stub` chưa có nội dung cũng vào đây |
+| `L` | Link còn thiếu, trang trùng | hai trang cùng chủ đề không link nhau; hai trang mô tả cùng một thực thể |
+| `G` | Khoảng trống | chunk `do`/`chua` của `--coverage`, file nguồn chưa kê, mục `_inbox.md` ghi "wiki thiếu"; kèm **câu hỏi mới đáng hỏi** và **nguồn nên tìm thêm** |
 
-**1. Lượt rẻ — quét frontmatter toàn bộ `02_wiki/`.** Không đọc full content. Với khoảng 300 trang, frontmatter chỉ khoảng 3.000 dòng nên vẫn làm trong context chính; giao subagent `Explore` khi wiki vượt khoảng 600 trang hoặc khi người dùng yêu cầu.
+Kích thước, văn phong, OCR không phải tiêu chí riêng: báo cáo chép số của bảng tổng và nêu tối đa 5 trang nặng nhất mỗi loại. Ứng viên `--ocr` phải mở trang xác nhận trước khi báo; tên riêng như `Paasche` là báo giả.
 
-**2. Đối chiếu 15 tiêu chí:**
+**3. Xuất báo cáo và dừng.** Ghi `Claude outputs/lint-<YYYY-MM-DD>-<số trang>.md` (§3). Mỗi mục có mã ổn định (`K1`, `O3`, `S2`…), trang, lý do và hướng sửa đề xuất. Hai phần kèm theo:
 
-| Lỗi | Cách phát hiện |
-|---|---|
-| Trang mồ côi | outlink = 0 **HOẶC** backlink = 0. Vế outlink không áp cho `status: stub`. Bước 0 (`--all`) kiểm cả hai |
-| Link chết | `[[x]]` hoặc `[[x\|nhãn]]` trỏ tới trang không tồn tại (§6). Bước 0 kiểm |
-| Khái niệm chưa có trang | thuật ngữ được nhắc trong thân bài của **≥ 3 trang** mà chưa có trang riêng (§6). Đề xuất tạo `status: stub` rồi chèn link |
-| Mâu thuẫn tồn đọng | còn `⚠️ Conflict` chưa xử lý (`grep -l "⚠️ Conflict" 02_wiki/*.md`) |
-| Stale chưa đánh dấu | trang `stable` có nguồn liên quan được ingest sau `last_updated` mà chưa chuyển `stale` (§9). So `sources:` + `last_updated` với các mục `ingest` trong `log.md` |
-| Trùng lặp entity | hai trang cùng mô tả một thực thể |
-| Vi phạm Atomic | thân bài có heading cấp 2+, hoặc `[[wikilink]]` dồn thành danh sách "xem thêm" (§5, §7). Bước 0 kiểm |
-| Vi phạm title | `case`/`analysis` đặt title danh từ; title mơ hồ hoặc không mô tả toàn bộ nội dung trang (§8). Title phủ định **không** phải lỗi (§8 luật 1) |
-| Nợ stub | dòng `NO` của `--stub-debt` (≥ 3 lượt ingest kể từ khi tạo, §9) |
-| Nhiễu OCR còn sót | ứng viên của `--ocr`, đã mở trang xác nhận |
-| Nợ inbox | dòng `NO` của `--inbox-debt` (≥ 3 lượt lint, §11) |
-| Nguồn chưa phủ hết | dòng `NO` của `--coverage`: chunk `[x]` còn mục chưa trích mà không ghi `bỏ qua:` (§10). Đề xuất hạ `[~]` rồi `/ingest` phần đó |
-| Vượt ngưỡng kích thước | dòng `YES` của `--size`: trang > 1.000 từ hoặc đoạn > 250 từ (§4, §5). Gợi ý tách trang |
-| Vi phạm luật 6 | dòng `YES` của `--style`: giọng khuyến nghị, nhấn mạnh tầm quan trọng, tự quy chiếu (§7 luật 6). Báo cáo, người dùng đọc tay |
-| Nợ tag | dòng `SINGLE` của `--tags`: tag dùng 1 lần (§6). Không bắt buộc sửa; gợi ý quản lý từ vựng |
+- **Triage `_inbox.md`**: mỗi mục còn tồn đề xuất đúng 1 trong 3 kết cục — nâng thành trang, gộp vào trang đã có, hoặc xoá (§11). Mã `I1…`.
+- **Câu hỏi mới và nguồn nên tìm**: 3–5 câu hỏi wiki hiện chưa trả lời được, và nguồn hoặc chương nào sẽ trả lời.
 
-**Khái niệm chưa có trang** không có lệnh tự động: đọc lướt thân bài các trang ở lượt 3, ghi lại thuật ngữ lặp lại chưa có `[[link]]`, rồi đếm bằng `grep -li "<thuật ngữ>" 02_wiki/*.md --exclude=index.md`. Đếm theo khái niệm, không theo chuỗi: "thâm hụt" có thể là thâm hụt vãng lai hoặc thâm hụt ngân sách.
+Trình tóm tắt trong chat, hỏi người dùng duyệt mã nào.
 
-**Nhiễu OCR:** `--ocr` quét thân bài sau khi bỏ `[[link]]`, `$công thức$`, `` `code` `` và chú thích §7 luật 5, theo sáu họ mẫu: `l`/`O` thay chữ số hoặc `I` hoa (`lmbalance`, `tO`); số chú thích dính vào từ (`Economiesl3`); chữ số bị tách (`1 993`); HOA–thường lẫn (`COLmtries`); nguyên âm nhân đôi (`Waaes`); rác markdown (`<sup>`, `<span id=`, `[#page-`, `�`). Ứng viên chỉ là lưới lọc thô: tên riêng như `Paasche` là báo giả, và lỗi OCR tạo ra từ có thật (`set our` thay `set out`) chỉ lộ ra khi đọc. Token OCR lọt vào trang gần như chắc chắn nằm trong câu chép nguyên văn (§7 luật 4), nên báo cáo kèm cả hai lỗi.
+**4. Sửa đúng các mã đã duyệt.** Câu mới áp skill `writing-style` (profile wiki).
 
-**3. Lượt đắt — chỉ mở full content các trang bị flag ở lượt 2.**
+- `O`, `L`: chèn link vào câu kèm lý do; thêm dòng vào `index.md`. Không nâng `last_updated`.
+- `S`: tạo `stub` rồi chèn link; nội dung thật là việc của `/ingest`.
+- Đổi title: đổi tên file, sửa `title`, cập nhật mọi `[[wikilink]]` trỏ tới (`--backlinks <trang>` cho danh sách).
+- Tách trang hoặc gộp trang trùng: giữ nguyên claim và chú thích, chỉ chuyển chỗ; trang bị gộp thì cập nhật mọi link trỏ tới rồi mới xoá. Xoá file phải được người dùng xác nhận riêng.
+- `K`: ghi theo đúng lựa chọn của người dùng, bỏ dấu `⚠️ Conflict`; không tự chọn bên.
+- `C`: không sửa ở đây; chuyển danh sách cho `/review-node` hoặc `/ingest`.
+- `G`: đăng ký file nguồn chưa kê vào bản kê (§10); phần còn lại chỉ báo cáo.
+- `I`: thực hiện kết cục đã duyệt, xoá dòng khỏi `_inbox.md`.
 
-**4. Xuất báo cáo** vào `Claude outputs/lint-<YYYY-MM-DD>-<số trang>.md` (§3), nhóm theo loại lỗi, mỗi mục nêu trang + lý do + hướng sửa đề xuất. Không thực hiện sửa. Báo cáo kèm hai mục:
+Sửa xong chạy `--all`, phải sạch cho các trang đã chạm.
 
-- **Đủ điều kiện `stable`** (§9): mọi trang `status: draft` thoả **đồng thời** — `--all` không báo gì cho trang; outlink ≥ 1; backlink ≥ 2 (`--backlinks`); không còn `⚠️ Conflict`; không bị flag ở tiêu chí nào của lượt này. Lint **không** đổi `status`; người dùng duyệt danh sách rồi chạy `/promote`.
-- **Triage `_inbox.md`**: mỗi mục còn tồn đề xuất đúng 1 trong 3 kết cục — nâng thành trang, gộp vào trang đã có, hoặc xoá (§11). Người dùng quyết định.
-
-**5. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] lint | <số trang> trang`, tối đa 3 dòng: số lỗi theo loại, số trang đủ điều kiện `stable`, đường dẫn báo cáo. Giờ lấy bằng `python .claude/hooks/validate_wiki_page.py --now`.
+**5. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] lint | <số trang> trang`, tối đa 3 dòng: số mục theo mã, mã đã sửa, đường dẫn báo cáo. Giờ lấy bằng `--now`. Lượt chỉ báo cáo, chưa sửa gì, vẫn ghi log.
 
 ## Lưu ý
 
-- Đếm backlink bằng `--backlinks <trang>`, không grep tay: `grep "[[<trang>]]"` sai cả hai chiều vì `[[...]]` bị hiểu là bracket expression, và bỏ sót dạng `[[trang|nhãn]]`.
-- `--stub-debt` lấy thời điểm tạo stub từ commit git đầu tiên thêm file; stub chưa commit dùng mtime. Stub vừa tạo trong lượt chưa commit vì thế có thể bị đếm thiếu, không bị đếm thừa.
+- Đếm backlink bằng `--backlinks <trang>`, không grep tay: `[[...]]` bị grep hiểu là bracket expression và bỏ sót dạng `[[trang|nhãn]]`.
+- Không sửa mục chưa được duyệt, kể cả lỗi thấy rõ khi đang mở trang; ghi thêm vào báo cáo.
+- Wiki vượt khoảng 600 trang: lượt quét frontmatter có thể giao subagent khi người dùng cho phép.

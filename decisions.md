@@ -320,3 +320,15 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 - **Ký hiệu:** `§7.x` đổi thành `§7 luật x` ở schema, skill, hook, tài liệu để khớp `CLAUDE.md`.
 - **Hoãn:** ngoại lệ cho văn bản pháp luật ghi `_inbox.md`, quyết khi ingest lại TT50/2026.
 - **Đóng băng:** sau batch này không sửa `CLAUDE.md`, schema, skill, rule, hook cho tới khi ingest bù xong 247 mục chưa phủ. Phát hiện mới ghi `_inbox.md`.
+
+## [2026-10-10] Tối giản vận hành: 5 operation, 4 quy tắc, trạng thái do máy tính
+
+- **Quyết định:** người dùng duyệt cơ chế vận hành mới sau lượt đánh giá theo gist Karpathy. Bỏ `/promote` và hai giá trị `stable`/`stale`; lint sửa các mã mục đã duyệt; trạng thái chunk do `--coverage` tính (`phu`/`do`/`chua`/`mien`); bỏ bảng Sources ghi tay, luật tag từ vựng kiểm soát và bộ đếm nợ stub/inbox; `CLAUDE.md` còn 4 quy tắc bắt buộc. Research giữ nguyên ba pha.
+- **Đảo mục "Đóng băng" của quyết định liền trước (cùng ngày):** batch này sửa `CLAUDE.md`, schema, skill, rule và hook trước khi ingest bù xong. Người dùng duyệt trực tiếp cả hai batch.
+- **Vì sao bỏ `stable`:** điều kiện lên `stable` thuần cấu trúc (backlink ≥ 2, không conflict). 594 trang `stable` nhưng chỉ 56 trang có `reviewed`, nên nhãn này không nói gì về việc trang khớp nguồn. Độ tin cậy đo bằng `reviewed`. Trang cũ giữ nguyên giá trị, hook vẫn chấp nhận.
+- **Vì sao không đánh dấu chunk bằng tay:** 74 chunk `[x]` còn mục chưa phủ theo `--coverage`; thứ ghi tay lệch với thứ đo được. Giờ chỉ còn một nguồn sự thật là chú thích trên trang cộng dòng `bỏ qua:` đã duyệt. Cột `Xong` trong 7 state file cũ không còn được đọc, không xoá.
+- **Vì sao lint được sửa:** trước đây lint chỉ báo cáo, review-node đẩy lỗi cấu trúc sang `_inbox.md`, research đẩy sang lint, nên không operation nào sở hữu việc sửa và nợ tồn qua nhiều lượt. Lint vẫn không sửa gì ngoài mã mục người dùng duyệt.
+- **Vì sao thêm bảng merge ở ingest bước 2:** 713/790 trang chỉ có 1 source id dù 7 nguồn trùng chủ đề; ingest nghiêng về tạo trang mới thay vì hợp nhất. Bảng merge đưa lựa chọn đó ra trước mắt người dùng.
+- **Research với nguồn chưa phủ:** research được đọc chunk `phu` và các mục đã phủ của chunk `do`; mục chưa phủ vẫn chặn, vì phần đó chưa qua bước bàn ý chính của ingest.
+- **`writing-style` tự gọi:** người dùng xác nhận đây là skill nền của việc viết trang; ghi thành một dòng trong `CLAUDE.md` để không vướng quy tắc global "không gọi skill chủ động".
+- **Làm tiếp cùng ngày, sau khi người dùng duyệt:** thay bảng `## Sources` trong `02_wiki/index.md` bằng một dòng trỏ tới `--coverage` và bản kê; thêm 11 trang sót vào index; viết lại `.claude/docs/luong-van-hanh.html` theo cơ chế mới.

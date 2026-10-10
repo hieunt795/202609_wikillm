@@ -11,13 +11,13 @@ description: 'Trả lời câu hỏi bằng cách tổng hợp từ các trang t
 
 ## Quy trình hai lượt
 
-**1. Định hướng.** Chỉ đọc mục `## Sources` của `02_wiki/index.md` (cho biết nguồn nào đã nạp tới đâu), không đọc cả file:
+**1. Định hướng qua `index.md`.** Grep mục lục theo từ khoá của câu hỏi, cả tiếng Việt lẫn thuật ngữ tiếng Anh; không đọc cả file:
 
 ```bash
-sed -n '/^## Sources/,/^## Trang/p' 02_wiki/index.md
+grep -n -i -E "<từ khoá Việt>|<từ khoá Anh>" 02_wiki/index.md
 ```
 
-Cần mục lục chủ đề thì grep trong `index.md` theo từ khoá thay vì đọc hết.
+Mỗi trang có một dòng tóm tắt trong `index.md`, nên đây là chỗ tìm được bằng tiếng Việt mà không phải mở thân bài.
 
 **2. Lượt rẻ — tìm trang khả nghi bằng tên file và frontmatter.** **Không mở full content** ở bước này.
 
@@ -48,7 +48,7 @@ Outlink một chiều có thể bỏ sót trang trỏ ngược vào (backlink 2 
 
 **5. Kết tinh — chỉ khi đáng.** Câu trả lời tạo ra tổng hợp có giá trị tái sử dụng lâu dài → **hỏi người dùng xác nhận** trước khi tạo trang `type: analysis` (quy tắc bắt buộc 4). Không có gì mới đáng lưu thì không đề nghị.
 
-Trước khi tạo, kiểm trùng như `ingest` bước 3: `grep -l "^type: analysis" 02_wiki/*.md`, đối chiếu title các trang analysis đã có xem đã có trang nào tổng hợp đúng ý này chưa. Có → merge/cập nhật trang đó thay vì tạo trang mới. Không có → tạo mới.
+Trước khi tạo, kiểm trùng như `ingest` bước 2: `grep -l "^type: analysis" 02_wiki/*.md`, đối chiếu title các trang analysis đã có xem đã có trang nào tổng hợp đúng ý này chưa. Có → merge/cập nhật trang đó thay vì tạo trang mới. Không có → tạo mới.
 
 Người dùng đồng ý → đọc `00_schema.md` §1, §7, §8, §12, rồi viết trang theo đủ luật trang wiki: title câu trần thuật, không heading, link kèm lý do, thân bài áp skill `writing-style` (profile wiki). Hai điều kiện hook dễ vướng: `sources:` không rỗng — ghi source id của các trang đã tổng hợp; nếu có nguồn dài thì §7 luật 5 áp dụng — chú thích lấy lại từ chính các trang đã tổng hợp, trang nguồn chưa có chú thích thì nói rõ là chưa truy được tới dòng. Thêm trang vào `index.md`, chạy `python .claude/hooks/validate_wiki_page.py --all`, rồi ghi 1 mục vào cuối `log.md`: `## [<giờ từ --now>] query | <câu hỏi rút gọn>`.
 
@@ -58,4 +58,6 @@ Câu trả lời không tạo trang thì **không** ghi log — log chỉ ghi op
 
 Nói thẳng là wiki chưa phủ phần đó và chỉ ra nguồn/chương nào cần ingest — đừng suy đoán lấp chỗ trống rồi trình bày như thể lấy từ wiki. Kiến thức nền của model có thể bổ sung nếu người dùng cần, nhưng tách riêng và ghi rõ là không đến từ wiki.
 
-Phần nào của nguồn còn chưa nạp: mục `## Sources`; cần chi tiết theo chương thì mở `03_state/<source id>.md`. **Không** đọc `log.md` để suy ra — nó là nhật ký, không phải bảng trạng thái.
+Ghi một dòng vào `_inbox.md` để lượt lint sau nhặt lên: `- [YYYY-MM-DD] wiki thiếu: <câu hỏi rút gọn> — <nguồn/chương có thể trả lời, nếu biết>`. Đây là sổ sách, không cần hỏi và không ghi log.
+
+Phần nào của nguồn còn chưa nạp: `python .claude/hooks/validate_wiki_page.py --coverage [<source id>]`. **Không** đọc `log.md` để suy ra — nó là nhật ký, không phải bảng trạng thái.
