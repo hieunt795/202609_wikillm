@@ -1118,3 +1118,13 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Người dùng duyệt: 5 trang còn lại của cụm quasi-fiscal từ `concept` sang `analysis`; 3 trang dẫn IMF thêm câu nêu nguồn chỉ bàn quasi-fiscal ở Box 3.7
 - Tách định nghĩa chỉ số khỏi balance-sheet-expansion-leanness-… thành trang concept leanness-indicator-of-the-central-bank-balance-sheet (claim và chú thích giữ nguyên, chỉ chuyển chỗ); thêm vào index
 - Còn trong `_inbox.md`: link "trần NDA" sai đích
+
+## [2026-10-10:16-40-27] review | 5 trang
+- Hàng đợi mặc định (14 backlink mỗi trang), cả 5 đạt sau khi sửa và đã đặt `reviewed`: general-collateral-and-specials-repo-…, interest-rate-risk-in-the-banking-book-irrbb, liquidity-risk, loanable-funds-framework-…, open-market-operations
+- Claim đã sửa: liquidity-risk dẫn Cargill d.720–740 (đoạn về Đức, Nhật) cho định nghĩa, đoạn PIK không có chú thích; repo có 3 phân khúc chứ không phải 2, phần Choudhry nói quá d.4926; IRRBB thêm "ngắn hạn/dài hạn", CRD IV, "tạo lập thị trường"; OMO gán cho Bindseil d.1373 ý về autonomous factors, "dưới 14 ngày"
+- loanable-funds: sửa ba lý do chọn khung theo d.1624, bổ sung tên mục cho 7 chú thích
+
+## [2026-10-10:16-47-18] review | 1 trang
+- repo-specialness-and-financing-costs-dictate-the-break-even-hurdle-of-curve-spread-trades: đã sửa, không đặt `reviewed`
+- Bỏ các claim không có trong nguồn (lãi suất repo âm, "biến lãi thành lỗ ròng", rủi ro đối tác của T-bill, quy ước 360 ngày, tập Ancillary "chuẩn hóa chi phí repo"); giữ phần Choudhry Ch.12 d.4922–4926, d.4824–4832 và Ch.13 d.5126, d.5349–5353; cơ chế special dẫn Düring Ch.14 d.24
+- Giữ lại: trang chứa ba ý, title chỉ phủ ý đầu; cần tách, ghi `_inbox.md`
