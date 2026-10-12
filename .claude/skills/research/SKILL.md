@@ -75,7 +75,7 @@ Mở full content các node của sub. Mọi kết quả chỉ là đề xuất.
    - `C` claim: không heading, viết lại bằng lời mình, link nằm trong câu, chú thích ngay sau claim (§7). Nâng `last_updated`. Source id mới → `sources:` (inline list).
    - `L` link: chèn vào câu kèm lý do; không nâng `last_updated` (§7 luật 5). Link mới viết, ở `L` hay trong claim `C`, được gắn loại quan hệ ở frontmatter (§6 mục *Quan hệ có loại*, sổ sách).
    - `K` conflict: chèn cả hai claim + vị trí; không sửa claim nào.
-   - `N` analysis: title câu trần thuật (§8); `sources:` = source id của các trang đã tổng hợp; chú thích §7 luật 5 lấy từ chính các trang đó, thiếu thì nói rõ chưa truy được tới dòng; thêm vào `02_wiki/index.md`. Trang `analysis` có thể là *tổng quan nhóm* của một nhóm trong `index.md` (§2): khi đó nó đứng dòng đầu của nhóm với nhãn `*(tổng quan nhóm)*`.
+   - `N` analysis: title câu trần thuật (§8); `sources:` = source id của các trang đã tổng hợp; chú thích §7 luật 5 lấy từ chính các trang đó, thiếu thì nói rõ chưa truy được tới dòng; thêm vào `02_wiki/index.md`. Link của trang tổng quan nhóm không gắn loại (§6). Trang `analysis` có thể là *tổng quan nhóm* của một nhóm trong `index.md` (§2): khi đó nó đứng dòng đầu của nhóm với nhãn `*(tổng quan nhóm)*`.
    - **Không làm ngoài proposal:** không dọn format ("Xem thêm", heading…), không backfill chú thích claim cũ, không đụng `reviewed`/`reviewed_by`, không đổi `status`. Gặp lỗi cấu trúc → nêu trong báo cáo cho `/lint`.
 3. Có ghi file trong `02_wiki/` → `python .claude/hooks/validate_wiki_page.py --all`, phải sạch trước khi log (cách duy nhất bắt `analysis` mồ côi), rồi `--graph` và chép phần thay đổi vào báo cáo.
 4. Xuất báo cáo, cập nhật trạng thái sub trong map (`done <ngày>` / `partial`).

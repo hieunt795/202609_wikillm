@@ -101,6 +101,7 @@ Mỗi `[[wikilink]]` có thể được gắn loại quan hệ bằng field fron
 - **Loại lấy từ câu chứa link**, không từ hiểu biết ngoài trang. Câu nói hai quan hệ thì trang đích nằm ở hai field.
 - **Cặp lệch.** Hai trang link qua lại mà loại của hai phía không phải dạng ngược của nhau thì `--relations` liệt kê là *cặp lệch*. Đây là cảnh báo cho lint, không chặn ghi. `related` không tính là lệch với loại nào.
 - **Gắn loại là sổ sách** (quy tắc bắt buộc 3 của `CLAUDE.md`): ingest gắn cho link nó viết, review-node gắn cho link của trang nó đọc trọn. Link cũ chưa có loại vẫn hợp lệ.
+- **Trang tổng quan nhóm được miễn.** Link đi ra từ trang tổng quan nhóm (§2) không gắn loại: trang này nối tới mọi trang trục của nhóm nên loại của nó gần như luôn là `related` và làm loãng số đếm. `--relations` không tính các link đó là chưa có loại. Link từ trang khác trỏ về trang tổng quan vẫn gắn loại như thường.
 - **Dữ liệu dẫn xuất.** Độ mạnh của link (mạnh = nằm trong câu đầu tiên của trang, vừa = phần còn lại), thứ hạng trang, độ mạnh giữa hai nhóm và bản đồ đều do `--graph`, `--neighbors`, `--map` tính từ thân bài, frontmatter và `index.md`. Chúng dùng để điều hướng và xếp ưu tiên, không phải tri thức đã được chấp nhận, và không được trích như claim.
 - **Ghi nhận thay đổi.** `--graph` so thứ hạng và độ mạnh cặp nhóm với `03_state/_graph_snapshot.tsv`, so link mất và link đổi loại với commit gần nhất, in phần vượt ngưỡng rồi lưu ảnh chụp mới. Ảnh chụp được commit cùng lượt đã sinh ra nó.
 

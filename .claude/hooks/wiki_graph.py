@@ -102,8 +102,19 @@ def read_index(wiki):
     return where, order, dup
 
 
+def overview_pages(wiki):
+    """Trang tong quan nhom: dong index co nhan *(tổng quan nhóm)*; link di ra duoc mien gan loai (§6)."""
+    out = set()
+    with open(os.path.join(wiki, "index.md"), encoding="utf-8-sig") as fh:
+        for line in fh:
+            if line.startswith("- [[") and "*(tổng quan nhóm)*" in line:
+                out.update(V.link_targets(line)[:1])
+    return out
+
+
 def build(wiki):
     where, order, dup = read_index(wiki)
+    ov = overview_pages(wiki)
     pages = {}
     for f in sorted(os.listdir(wiki)):
         if f.lower().endswith(".md") and f.lower() != "index.md":
@@ -114,7 +125,7 @@ def build(wiki):
     for s, p in pages.items():
         for t, first in p["links"].items():
             if t != s and t in pages:
-                edges[(s, t)] = {"w": 3 if first else 2, "tys": p["rel"].get(t, [])}
+                edges[(s, t)] = {"w": 3 if first else 2, "tys": p["rel"].get(t, []), "ov": s in ov}
     return where, order, dup, pages, edges
 
 
@@ -388,7 +399,7 @@ def cmd_relations(wiki, arg):
                 if e:
                     n += 1
                     w("- -> %s  [%s%s]\n    %s\n" % (t, "manh" if e["w"] == 3 else "vua",
-                                                     "; " + ", ".join(e["tys"]) if e["tys"] else "; chua co loai",
+                                                     "; " + ", ".join(e["tys"]) if e["tys"] else "; mien gan loai" if e["ov"] else "; chua co loai",
                                                      link_sentence(pages[s], t)))
         w("\n# %d link\n" % n)
         return
@@ -399,13 +410,16 @@ def cmd_relations(wiki, arg):
     if by:
         w("Theo loai: %s\n" % ", ".join("%s %d" % (k, by[k]) for k in TYPES if by[k]))
     typed = sum(1 for e in edges.values() if e["tys"])
-    w("%d/%d link da gan loai, %d cap gan loai lech nhau.\n" % (typed, len(edges), len(bad)))
+    ov = sum(1 for e in edges.values() if e["ov"] and not e["tys"])
+    w("%d/%d link da gan loai, %d cap gan loai lech nhau; %d link cua trang tong quan nhom duoc mien.\n"
+      % (typed, len(edges) - ov, len(bad), ov))
 
 
 def debt(root):
     _, _, _, _, edges = build(os.path.join(root, "02_wiki"))
     typed = sum(1 for e in edges.values() if e["tys"])
-    return "link chua co loai %d/%d; %d cap quan he lech" % (len(edges) - typed, len(edges), len(mismatches(edges)))
+    need = sum(1 for e in edges.values() if e["tys"] or not e["ov"])
+    return "link chua co loai %d/%d; %d cap quan he lech" % (need - typed, need, len(mismatches(edges)))
 
 
 def cmd_map(root, wiki, key):
