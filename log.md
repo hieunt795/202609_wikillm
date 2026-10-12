@@ -1172,3 +1172,83 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Đã sửa và đặt reviewed cả 9: repricing gap, giả định bảng cân đối, earning gap, ΔMV ngoài chân trời NII, key rate duration, receiver swap, CSRBB, basis risk, giả định lãi suất; lỗi chung là tính từ mạnh, "bắt buộc", ví dụ và câu kết không có trong nguồn, 3 chú thích trỏ dòng trống
 - Lượt 1: thêm nguồn cho câu SOT trên NII (d.1015) và bảng ví dụ khe hở thời lượng (d.896–904); bỏ "sốc song song và phi song song" ở trang EVE vì không tìm thấy trong nguồn
 - Gắn loại 37 link; `--graph`: 3 link bỏ có chủ ý (giả định bảng cân đối → SOT, → EVE/earnings; CSRBB → liquidity-risk), 0 cặp lệch; cả 16 trang của nhóm đã review
+
+## [2026-10-12:14-04-52] schema | miễn gắn loại quan hệ cho trang tổng quan nhóm; đổi title tổng quan thanh khoản
+- §6 thêm luật miễn; `--relations` và bảng nợ không tính link đi ra từ trang tổng quan nhóm; skill research thêm một câu
+- Đổi tên trang thành bank-liquidity-rules-pair-a-stressed-30-day-hqla-buffer-with-ratio-limits-on-funding-structure; bỏ field `related` trên hai trang tổng quan (60 link)
+- `--all` 828 trang, 0 vấn đề; `--relations` 227/4.030, 0 cặp lệch; `--graph` báo 21 "ĐỔI LOẠI: related => (bỏ loại)" ở trang IRRBB và 40 "LINK MẤT" ở trang thanh khoản (đổi tên trang hiện ra như mất link)
+
+## [2026-10-12:14-09-21] review | 5 trang nhóm Tiền gửi và mô hình hành vi (lượt 1/2)
+- Đã sửa và đặt reviewed cả 5: non-maturity products, embedded behavioral options, replicating portfolios, rolling portfolios, replicating portfolio calibration
+- Claim bỏ vì không có trong nguồn: Jarrow–Van Deventer "khởi xướng", "cấm bán khống", ví dụ EURIBOR 1M + swap 5Y/10Y, "đường biên Markowitz", các câu kết về tác động; duration 2,29 thay bằng 2,17 tính lại vì dòng công thức nguồn không giải mã được (d.1867, d.1871)
+- Gắn loại 27 link; `--all` 828 trang, 0 vấn đề; `--graph` không báo link mất ở 5 trang này
+
+## [2026-10-12:14-12-53] review | 5 trang nhóm Tiền gửi và mô hình hành vi (lượt 2/2)
+- Đã sửa và đặt reviewed 4: dynamic replication, sticky deposit rates/deposit beta, behavioral modeling TT1, phân biệt TT1–TT2; trang TT1–TT2 viết lại gần hết vì 3 chú thích trỏ tới file không nói điều trang ghi (Chi phí vốn VND, DTTT thay thế TT22, LCR khi khủng hoảng)
+- Giữ lại không đặt reviewed: tt1-deposit-rate-stickiness — claim đã sửa theo nguồn nhưng title nói "deposit rate stickiness" trong khi nguồn đặt điểm nghẽn ở hấp thụ tín dụng ngắn hạn; đã ghi `_inbox.md`
+- Gắn loại 24 link; `--graph`: 3 link bỏ có chủ ý (TT1–TT2 → absence-of-money…, → endogenous-systemic-liquidity…; tt1-stickiness → multiple-balance-sheet-mismatches); `--all` 828 trang, 0 vấn đề
+
+## [2026-10-12:14-14-53] research | Tiền gửi và mô hình hành vi — tổng quan nhóm (lô C, 3/6)
+- Deep: 11 trang của nhóm, không enrich; 0 claim, 0 link, 0 conflict, 1 analysis (N1 đã duyệt): non-maturity-deposit-modelling-runs-from-behavioural-options-through-replicating-portfolios-to-unstable-deposit-betas
+- Sổ sách: dòng đầu nhóm trong index.md, backlink cuối trang non-maturity products; `--all` 829 trang, 0 vấn đề; `--graph`: +1 trang, +17 link, liquidity-risk là điểm nối duy nhất giữa nhóm này và nhóm Thanh khoản
+- Báo cáo: không xuất file riêng; nội dung proposal nằm trong hội thoại
+
+## [2026-10-12:15-36-02] review | 4 trang nhóm Nền tảng ALM và bảng cân đối (lượt 1/4, nguồn Clippings)
+- Đã sửa và đặt reviewed cả 4: cash-flow balancing, maturity balancing, banks rely on short-term liabilities, multiple balance-sheet mismatches
+- Claim bỏ vì không có trong nguồn: "quy luật số lớn", "niềm tin sụp đổ" (trang lấy ngắn nuôi dài); mismatch tiền tệ qua FX swap và hệ quả lên giá vàng (trang multi-mismatch, bốn lớp sửa theo nguồn: thanh khoản, duration, định giá lại, giá)
+- Gắn loại 17 link; `--graph`: 1 link bỏ có chủ ý (multi-mismatch → domestic-gold-pricing…); `--all` 829 trang, 0 vấn đề
+
+## [2026-10-12:15-38-37] review | 5 trang nhóm Nền tảng ALM và bảng cân đối (lượt 2/4, nguồn Tata Ch.1–3)
+- Đã sửa và đặt reviewed cả 5: economic value vs earnings, on-balance-sheet hedging, bank-specific ALM, NII planning, behavioral ALM
+- Claim bỏ vì không có trong nguồn: "250 ngân hàng lớn nhất Hoa Kỳ", hai "rào cản" như nguyên nhân của phòng hộ nội bảng, "8 câu hỏi chiến lược", số hiệu EBA/GL/2022/14 §38, "nghịch lý miễn dịch kép" như tên gọi của nguồn
+- Gắn loại 30 link; `--graph`: 1 link bỏ có chủ ý (economic value vs earnings → alm-balance-sheet-balancing…); `--all` 829 trang, 0 vấn đề
+
+## [2026-10-12:15-40-40] review | 5 trang nhóm Nền tảng ALM và bảng cân đối (lượt 3/4, nguồn Tata Ch.3 và Ch.6)
+- Đã sửa và đặt reviewed cả 5: holistic ALM, sàn 0% dưới NIRP, coupon/indicator floor, rapid rate tightening, FinTech
+- Claim bỏ vì không có trong nguồn: lợi suất AFS/FVOCI ăn mòn Tier 1 và "sụp đổ dây chuyền" (rapid tightening); "frictionless account switching", "rút ngắn kỳ hạn hành vi, nâng deposit beta" (FinTech, cùng dòng "Xem thêm"); "cảnh báo bị phớt lờ"; "siêu lợi nhuận" (floor)
+- Gắn loại 30 link; `--graph`: 1 link bỏ có chủ ý (FinTech → silicon-valley-bank-collapse…); `--all` 829 trang, 0 vấn đề
+
+## [2026-10-12:15-41-56] review | 5 trang nhóm Nền tảng ALM và bảng cân đối (lượt 4/4, nguồn Tata Ch.6)
+- Đã sửa và đặt reviewed cả 5: tokenized deposits, Deep ALM, model governance cho AI, climate risk, granular segmentation; bỏ bốn dòng "Xem thêm"
+- Claim bỏ vì không có trong nguồn: "algorithmic deposit run", CASPs và crypto bonds; mô tả chi tiết Deep Hedging/Deep Treasury; diễn giải riêng cho từng yếu tố của Soulellis; "Climate FTP add-on" như cơ chế đã có (nguồn chỉ nói FTP lý tưởng nên phạt); tên "SupTech"
+- Gắn loại 20 link; `--graph`: 1 link bỏ có chủ ý (Deep ALM → net-interest-income-planning…); cả 20 trang của nhóm đã review; `--all` 829 trang, 0 vấn đề
+
+## [2026-10-12:15-43-25] research | Nền tảng ALM và bảng cân đối — tổng quan nhóm (lô C, 4/6)
+- Deep: 20 trang của nhóm, không enrich; 0 claim, 0 link, 0 conflict, 1 analysis (N1 đã duyệt): alm-foundations-run-from-balance-sheet-balancing-through-eve-and-nii-measurement-to-bank-specific-and-technology-driven-practice
+- Sổ sách: dòng đầu nhóm trong index.md, backlink cuối trang economic value vs earnings; `--all` 830 trang, 0 vấn đề; `--graph`: +1 trang, +25 link, không có thay đổi hạng vượt ngưỡng
+- Báo cáo: không xuất file riêng; nội dung proposal nằm trong hội thoại
+
+## [2026-10-12:15-45-50] review | 5 trang nhóm Quản trị, FTP và quy định giám sát (lượt 1/3)
+- Đã sửa và đặt reviewed cả 5: FTP, matched maturity FTP, đường cong FTP hai thành phần, FTP điều hướng kinh doanh, chi phí LCR/NSFR trong FTP
+- Claim bỏ vì không có trong nguồn: FTP "triệt tiêu cú sốc lãi suất ngắn hạn", "100% quy mô danh nghĩa", "khủng hoảng thiếu hụt khi thị trường đóng băng", Basel III/CRD như nguồn gốc nêu tên, "thưởng điểm khuyến khích vốn", Initial/Variation Margin, câu kết về hệ quả khi FTP không định giá quy định
+- Gắn loại 27 link; không bỏ link nào; `--all` 830 trang, 0 vấn đề
+
+## [2026-10-12:15-55-01] review | 4 trang nhóm Quản trị, FTP và quy định giám sát (lượt 2/3)
+- Đã sửa và đặt reviewed cả 4: FTP so với FVA, phụ phí thanh khoản dự phòng và quyền chọn, khung quy định IRRBB nhiều tầng, EBA standardized approach
+- Claim sửa hoặc bỏ: ΔEVE tính ngược chiều (nguồn: sốc trừ cơ sở); ủy quyền SA là Điều 98 theo nguồn, không phải 84(5); NCA "thanh tra, cưỡng chế", ITS, swaption/caps, Black-Scholes, số hiệu chỉ thị không có ở dòng trích, câu kết về SVB
+- Gắn loại 20 link; bỏ 2 link không có nguồn trên trang khung quy định; `--all` 830 trang, 0 vấn đề, 0 cặp lệch
+
+## [2026-10-12:15-56-36] review | 4 trang nhóm Quản trị, FTP và quy định giám sát (lượt 3/3)
+- Đã sửa và đặt reviewed cả 4: S-SA, sàn lãi suất tuyến tính, bài toán tuân thủ đồng thời, năm mẫu báo cáo theo (EU) 2024/855
+- Claim sửa hoặc bỏ: sàn tuyến tính gắn với SOT EVE chứ không phải SA; mục đích "ngăn lãi suất âm sâu phi thực tế"; NCA "tước quyền" S-SA; diễn giải bốn điểm đơn giản hóa của S-SA; "tài sản cố định càng dài thì tỷ trọng càng hẹp"; các câu kết không có nguồn
+- Gắn loại 10 link; bỏ 9 link nằm trong câu không có nguồn; `--all` 830 trang, 0 vấn đề, 0 cặp lệch; nhóm này đã review đủ 13/13
+
+## [2026-10-12:15-58-52] review | 5 trang nhóm Case: Silicon Valley Bank (lượt 1/2)
+- Đã sửa và đặt reviewed cả 5: vụ sụp đổ SVB, kế toán HTM, gỡ hoán đổi lãi suất, duration gap 3 năm, arbitrage quy định qua giả định duration tiền gửi
+- Claim sửa hoặc bỏ: startup "rút tiền để duy trì chi phí hoạt động" (nguồn nêu hai yếu tố lãi suất ngược chiều nhân quả), lan tin "qua mạng xã hội", "tỷ lệ an toàn vốn 5,7%" (nguồn: vốn chủ trên tổng tài sản), MBS 30 năm gán cho mục 4.1, các câu kết về nguyên nhân hàng đầu
+- Gắn loại 23 link; bỏ 4 link nằm trong câu không có nguồn; `--all` 830 trang, 0 vấn đề, 0 cặp lệch
+
+## [2026-10-12:15-59-19] review | 1 trang nhóm Case: Silicon Valley Bank (lượt 2/2)
+- Đã sửa và đặt reviewed: bài học quản trị và giám sát từ SVB (bốn bài học theo mục 4.4 của nguồn)
+- Claim sửa hoặc bỏ: "bay mù" gán cho cả bộ máy kiểm soát, "chế tài bắt buộc", bài học 3 về stress test tiền gửi không bảo hiểm, Drechsler "sức mạnh định giá tiền gửi", câu kết về tái hiệu chuẩn SOT
+- Gắn loại 5 link; bỏ 2 link không có nguồn; `--all` 830 trang, 0 vấn đề; nhóm này đã review đủ 6/6
+
+## [2026-10-12:16-01-52] research | Quản trị, FTP và quy định giám sát — deep read 13 trang, trang tổng quan nhóm
+- Deep: đọc 13 trang đã review; 0 claim mới, 1 analysis (N1) đã duyệt: bank-steering-rules-run-from-internal-funds-transfer-pricing-to-eu-irrbb-measurement-outlier-tests-and-reporting
+- Thêm dòng đầu nhóm trong index, 1 câu backlink trên trang FTP chính; `--all` 832 trang, 0 vấn đề
+- Không xuất báo cáo riêng vào Claude outputs (lệch skill); proposal nằm trong hội thoại
+
+## [2026-10-12:16-01-53] research | Case: Silicon Valley Bank — deep read 6 trang, trang tổng quan nhóm
+- Deep: đọc 6 trang đã review; 0 claim mới, 1 analysis (N1) đã duyệt: the-svb-case-links-hidden-htm-losses-removed-hedges-and-a-three-year-duration-gap-to-governance-and-supervisory-failure
+- Thêm dòng đầu nhóm trong index, 1 câu backlink trên trang SVB chính; `--graph`: trang tổng quan FTP là điểm nối duy nhất giữa hai nhóm, SOT vào top 25
+- Không xuất báo cáo riêng vào Claude outputs (lệch skill); lô C đủ 6/6 trang tổng quan nhóm ngân hàng

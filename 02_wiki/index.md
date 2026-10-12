@@ -850,6 +850,7 @@
 ## Ngân hàng: ALM, rủi ro lãi suất và thanh khoản
 
 **Nền tảng ALM và bảng cân đối**
+- [[alm-foundations-run-from-balance-sheet-balancing-through-eve-and-nii-measurement-to-bank-specific-and-technology-driven-practice]] — *(tổng quan nhóm)* bốn bước cân đối, cấu trúc lấy ngắn nuôi dài và các lớp mismatch, hai góc đo EVE và NII, ALM theo từng ngân hàng, hai môi trường lãi suất, các hướng mới của chương 6 và điểm nối sang IRRBB, tiền gửi, FTP, SVB
 - [[alm-balance-sheet-balancing-progresses-through-four-operational-dimensions]] — quy trình cân đối bảng cân đối ALM tiến triển qua bốn chiều kích: dòng tiền, kỳ hạn, tỷ lệ/cấu trúc và hành vi/định giá FTP
 - [[cash-flow-balancing-resolves-immediate-payment-obligations-against-excess-reserve-opportunity-cost]] — cân dòng tiền là lớp vận hành sơ cấp giải quyết nghĩa vụ thanh toán tức thời và chi phí cơ hội của dự trữ thặng dư
 - [[maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks]] — cân kỳ hạn xác định thời gian tồn tại của trạng thái thanh khoản để triệt tiêu rủi ro tái tài trợ rollover và rủi ro định giá lại
@@ -891,6 +892,7 @@
 - [[monitoring-market-value-changes-outside-nii-horizon-prevents-deferred-interest-rate-losses]] — giám sát biến động giá trị thị trường ngoài chân trời NII: đo lường Delta MV cho các vị thế Fair Value theo CDR (EU) 2024/857 chống che giấu tổn thất dài hạn
 
 **Tiền gửi và mô hình hành vi**
+- [[non-maturity-deposit-modelling-runs-from-behavioural-options-through-replicating-portfolios-to-unstable-deposit-betas]] — *(tổng quan nhóm)* hai hồ sơ của sản phẩm không kỳ hạn, quyền chọn hành vi, chuỗi mô hình tái tạo, giới hạn từ deposit beta, bối cảnh TT1 Việt Nam và các điểm nối sang IRRBB, FTP, thanh khoản
 - [[behavioral-modeling-of-tt1-liabilities-distorts-when-banks-actively-intervene-on-pricing-and-sales]] — mô hình hóa hành vi nguồn vốn TT1 bị biến dạng khi ngân hàng chủ động can thiệp giá và chính sách giữ chân tại thời điểm đáo hạn
 - [[vietnams-banking-system-exhibits-structural-dichotomy-between-tt1-and-tt2]] — phân kỳ cấu trúc nhị phân giữa thị trường khách hàng TT1 và thị trường liên ngân hàng TT2 gây chia cắt dòng vốn
 - [[tt1-deposit-rate-stickiness-prevents-interbank-liquidity-from-lowering-lending-rates]] — tính bám dính của lãi suất TT1 và tắc nghẽn vòng quay tín dụng ngắn hạn ngăn thanh khoản rẻ từ liên ngân hàng hạ lãi suất cho vay
@@ -904,7 +906,7 @@
 - [[sticky-deposit-rates-and-unstable-deposit-betas-challenge-replication-models]] — phê phán thực nghiệm mô hình tái tạo: lãi suất dính sluggish pass-through 9% ngắn hạn, sự bất ổn của deposit beta qua các chu kỳ và hiện tượng sụp đổ duration thực nghiệm khi lãi suất đảo chiều
 
 **Thanh khoản và nguồn vốn**
-- [[the-lcr-buffers-liquidity-risk-for-30-days-while-ratio-compliance-leaves-the-funding-mismatch-in-place]] — *(tổng quan nhóm)* rủi ro thanh khoản, hai vế và phạm vi của LCR, quyền dùng kho HQLA, giới hạn của CDR và các tỷ lệ quản lý, mối nối sang ngân hàng trung ương và tài sản bảo đảm
+- [[bank-liquidity-rules-pair-a-stressed-30-day-hqla-buffer-with-ratio-limits-on-funding-structure]] — *(tổng quan nhóm)* rủi ro thanh khoản, hai vế và phạm vi của LCR, quyền dùng kho HQLA, giới hạn của CDR và các tỷ lệ quản lý, mối nối sang ngân hàng trung ương và tài sản bảo đảm
 - [[liquidity-risk]] — rủi ro thanh khoản: nguy cơ mất khả năng thanh toán ngắn hạn do lệch pha kỳ hạn giữa tài sản có và nợ
 - [[treasury-deposits-at-commercial-banks-provide-temporary-liquidity-without-easing-structural-funding-gaps]] — tiền gửi Kho bạc tại NHTM chỉ cung ứng thanh khoản tình thế trong ngắn hạn mà không giải quyết được khoảng trống vốn cấu trúc
 - [[credit-to-deposit-ratio]] — CDR, tỷ lệ tín dụng trên tiền gửi; không mô tả đủ cấu trúc tài trợ khi ngân hàng dùng vốn bán buôn, liên ngân hàng, repo
@@ -939,6 +941,7 @@
 - [[alternative-liquidity-approaches]] — stub: phương án thay thế cho đồng tiền thiếu HQLA (LCR31)
 
 **Quản trị, FTP và quy định giám sát**
+- [[bank-steering-rules-run-from-internal-funds-transfer-pricing-to-eu-irrbb-measurement-outlier-tests-and-reporting]] — *(tổng quan nhóm)* ba chức năng của FTP, cấu tạo đường cong và các phụ phí, FTP so với FVA, khung quy định IRRBB bốn tầng, SA và S-SA, sàn lãi suất, bài toán tuân thủ đồng thời, năm mẫu báo cáo
 - [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]] — định giá chuyển nhượng vốn nội bộ FTP: phân bổ biên lãi thuần NIM, tập trung hóa rủi ro về Treasury và nguyên lý chi phí cơ hội
 - [[matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions]] — phương pháp cân khớp kỳ hạn: bóc tách NIM thành biên kinh doanh và đóng góp cấu trúc bù đắp rủi ro tái tài trợ và rủi ro lãi suất cho Treasury
 - [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]] — bóc tách đường cong FTP: lãi suất phi rủi ro thuần túy cộng phần bù thanh khoản, 5 cách tiếp cận RFR và định giá sản phẩm lệch tenor reset
@@ -954,6 +957,7 @@
 - [[supervisory-irrbb-reporting-mandates-five-standardized-templates-under-eu-2024-855]] — báo cáo giám sát IRRBB theo CDR 2024/855: 5 bộ mẫu biểu chuẩn hóa bắt buộc từ tháng 10/2024 kết nối đánh giá tổng hợp, dòng tiền và thông số hành vi
 
 **Case: Silicon Valley Bank**
+- [[the-svb-case-links-hidden-htm-losses-removed-hedges-and-a-three-year-duration-gap-to-governance-and-supervisory-failure]] — *(tổng quan nhóm)* diễn biến sụp đổ, lỗ ẩn trong sổ HTM, phòng hộ bị gỡ, duration gap 3 năm và giả định duration tiền gửi, bốn bài học về quản trị và giám sát
 - [[silicon-valley-bank-collapse-epitomizes-unhedged-duration-mismatches-and-uninsured-deposit-runs]] — vụ sụp đổ Silicon Valley Bank: lệch pha thời lượng không phòng hộ, tiền gửi không bảo hiểm >88%, lỗ bán chứng khoán 1,8 tỷ USD và cuộc tháo chạy 42 tỷ USD/ngày
 - [[held-to-maturity-gaap-accounting-masks-unrealized-economic-value-losses-in-banking-books]] — kế toán HTM theo GAAP che giấu lỗ EVE: giá gốc phân bổ che giấu khoản lỗ 15,2 tỷ USD xóa sạch vốn tự có 12 tỷ USD và ảo ảnh ổn định từ báo cáo NII dương 4,5 tỷ USD
 - [[unhedged-interest-rate-swap-unwinding-magnifies-balance-sheet-vulnerability-for-short-term-pnl]] — gỡ bỏ vị thế hoán đổi IRS để thổi phồng P&L ngắn hạn: tỷ lệ phòng hộ danh mục trái phiếu 124 tỷ USD rớt từ 12,3% xuống 0,4% ngay trước chu kỳ tăng lãi suất
