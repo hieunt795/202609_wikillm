@@ -365,3 +365,13 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 - **Vì sao:** hai trang tổng quan đầu tiên đưa 60 link vào `related`, nâng loại này từ 51 lên 111 và chiếm 39% số link có loại. `related` không mô tả quan hệ nào, nên tỷ lệ "đã gắn loại" tăng mà đồ thị không thêm thông tin. Với 62 nhóm, hiệu ứng này sẽ lấn át các loại có nghĩa.
 - **Title:** bản cũ ("... ratio compliance leaves the funding mismatch in place") là một nhận định mà trang chưa dẫn đủ nguồn cho mọi câu. Bản mới chỉ mô tả hai lớp quy định. Các câu chưa truy được tới dòng nguồn trên hai trang tổng quan để lượt review sau xử lý, theo quyết định của người dùng.
 - **Ghi nhận phụ:** thao tác bỏ field là lần đầu thông báo "ĐỔI LOẠI" của `--graph` được thử trên dữ liệu thật, và nó in 21 dòng cho trang IRRBB. Trang thanh khoản bị đổi tên cùng lượt nên hiện ra thành 40 dòng "LINK MẤT": `--graph` so theo tên file và chưa nhận ra thao tác đổi tên.
+
+## [2026-10-12] Mâu thuẫn AA− và AA trên level-2a-assets: theo chuẩn mực Basel
+
+- **Quyết định (người dùng):** khi Basel và nguồn thứ cấp ghi khác nhau về một điều khoản của chuẩn mực, trang theo văn bản Basel. Trên `level-2a-assets`, ngưỡng xếp hạng là AA− (`basel_lcr`, 30.43); con số AA của Bindseil được giữ lại như một ghi nhận kèm chú thích, bỏ dấu `⚠️ Conflict`.
+- **Phạm vi:** quyết định này không áp cho hai mâu thuẫn trên các trang Ba Lan, nơi hai claim đến từ lời văn và bảng của cùng nguồn `imf_macro_accounting`; hai mục đó còn mở.
+
+## [2026-10-12] Việc còn mở: ngoại lệ ingest cho văn bản quy phạm pháp luật
+
+- **Chưa quyết.** Chuyển từ `_inbox.md` ở lượt lint 2026-10-12 vì đây là câu hỏi về schema §10, không thành trang wiki.
+- **Nội dung gốc:** Văn bản quy phạm pháp luật (TT50/2026): các lượt ingest thử dùng ngoại lệ ngoài schema — mỗi điều một node, giữ nguyên văn kèm diễn giải, đọc `.docx` thay `.md`. Ngoại lệ này ngược §5 và §7 luật 4, chưa ghi ở đâu. Quyết khi ingest lại TT50/2026: thêm lớp nguồn riêng ở §10 hay ingest như nguồn thường.

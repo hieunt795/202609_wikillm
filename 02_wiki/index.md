@@ -261,7 +261,7 @@
 
 **Nợ công và tính bền vững**
 - [[fiscal-sustainability]] — hub: định nghĩa đồng thuận, ổn định nợ và khả năng thanh toán
-- [[real-interest-rate]] — lãi suất trừ lạm phát kỳ vọng; biến trung tâm của bền vững nợ
+- [[real-interest-rate]] — lãi suất trừ lạm phát kỳ vọng, Rᵣ ≈ Rₙ − Pₑ; biến trung tâm của bền vững nợ
 - [[high-debt-ratios-raise-real-interest-rates-and-erode-market-confidence]] — nợ cao tốn kém rồi mất bền
 - [[public-debt-dynamics-depend-on-the-primary-balance-seigniorage-and-the-interest-growth-gap]] — phương trình động học nợ
 - [[when-interest-exceeds-growth-a-permanent-primary-deficit-cannot-exceed-seigniorage]] — hai chế độ r > g và r < g
@@ -365,11 +365,11 @@
 - [[polands-output-collapse-1990-91-came-from-three-distinct-causes]] — vĩ mô, thể chế, đo lường
 - [[to-what-extent-was-polands-early-transition-output-decline-overstated]] — câu hỏi còn để ngỏ
 - [[polands-recovery-from-1992-was-led-by-consumption-then-exports]] — phục hồi 1992–94
-- [[polish-national-saving-fell-sharply-at-the-onset-of-transition]] — tiết kiệm rơi mạnh; ⚠️ nguồn mâu thuẫn về năm 1992
+- [[polish-national-saving-fell-sharply-at-the-onset-of-transition]] — tiết kiệm quốc gia rơi mạnh khi chuyển đổi bắt đầu
 - [[polish-price-liberalization-left-inflation-stuck-at-30-percent]] — thả giá và lạm phát nền
 - [[polands-excess-wage-tax-popiwek-was-discontinued-after-five-years]] — kiểm soát lương trên thực tế
 - [[polish-real-wages-stabilized-but-lagged-productivity-gains]] — lương thực hồi nhẹ, tụt sau năng suất
-- [[polands-1992-sna-accounts-show-government-dissaving-and-household-saving]] — tài khoản SNA 1992 theo khu vực; ⚠️ nguồn mâu thuẫn về tiết kiệm gộp
+- [[polands-1992-sna-accounts-show-government-dissaving-and-household-saving]] — tài khoản SNA 1992 theo khu vực: chính phủ tiết kiệm âm, hộ gia đình chiếm phần lớn tiết kiệm
 - [[polish-unemployment-rose-from-near-zero-to-16-percent-in-four-years]] — từ thất nghiệp trá hình sang công khai
 - [[polands-exchange-rate-path-from-dollar-peg-to-managed-float-balanced-disinflation-and-competitiveness]] — bốn chế độ tỷ giá 1990–95
 - [[polands-exchange-rate-experience-yields-five-policy-lessons]] — năm bài học chính sách tỷ giá rút từ kinh nghiệm Ba Lan
@@ -414,7 +414,6 @@
 - [[velocity-of-money]] — V = PY/M, vòng quay thu nhập của tiền (stub)
 - [[demand-for-money-is-a-demand-for-real-balances-driven-by-income-and-opportunity-cost]] — cầu số dư tiền thực
 - [[assets-are-held-based-on-expected-return-risk-and-liquidity]] — lợi suất, rủi ro, thanh khoản
-- [[real-interest-rate]] — Rᵣ ≈ Rₙ − Pₑ (đã bổ sung Ch.5)
 - [[valuation-adjustments-separate-transaction-flows-from-exchange-rate-revaluation-of-stocks]] — Eₜ, VAd (Box 5.8)
 - [[currency-in-circulation]] — CY, tiền mặt ngoài ngân hàng; khác tiền đã phát hành; tham số $c$ của số nhân
 - [[demand-deposits]] — DD, rút ngay; mẫu số của các tỷ lệ trong số nhân tiền
@@ -479,7 +478,7 @@
 - [[forward-guidance-evolved-from-moral-suasion-as-conditional-transparent-commitment]] — tiến hóa từ thuyết phục đạo đức sang định hướng kỳ vọng: cam kết công khai có điều kiện nhằm neo giữ kỳ vọng thị trường
 - [[central-banks-cannot-simultaneously-target-money-supply-and-interest-rates]] — thế lưỡng nan Poole trong khung quỹ cho vay: sự đánh đổi tất yếu giữa biến động lãi suất và biến động khối tiền tệ
 - [[interest-rate-targeting-dominates-monetary-aggregates-due-to-measurement-and-control-limits]] — bốn lý do thực tiễn khiến mục tiêu lãi suất thay thế hoàn toàn mục tiêu cung tiền; cảnh báo dài hạn của Cargill về rủi ro lạm phát
-- [[central-bank-interest-rate-corridor-requires-separate-facilities-for-interbank-and-credit-markets]] — hành lang lãi suất của NHTW cần các công cụ phân tầng riêng giữa liên ngân hàng ngắn hạn và tín dụng trung hạn
+- [[central-bank-interest-rate-corridor-requires-separate-facilities-for-interbank-and-credit-markets]] — hành lang lãi suất của Trung Quốc chia hai thị trường (repo 7 ngày cho liên ngân hàng, MLF cho tín dụng); SBV thiếu hành lang xuống TT1 theo nhận định của nguồn
 - [[active-spot-foreign-exchange-intervention-injects-primary-liquidity-directly-into-banking-system]] — can thiệp mua ngoại hối giao ngay chủ động (Buy Spot) tạo kênh bơm thanh khoản sơ cấp trực tiếp vào hệ thống NHTM và TT1
 
 **Chính sách tiền tệ trong khủng hoảng**
@@ -615,7 +614,6 @@
 - [[liquidity-premium-hypothesis-explains-the-prevalence-of-upward-sloping-yield-curves]] — giả thuyết phần bù thanh khoản gia tăng theo kỳ hạn giải thích toàn diện tính đồng biến và ưu thế áp đảo của đường cong dốc lên
 - [[segmented-markets-hypothesis-views-maturities-as-disconnected-institutional-compartments]] — giả thuyết thị trường phân khúc và môi trường ưu tiên: định giá cục bộ theo kỳ hạn và hạn chế thể chế
 - [[yield-curve-functions-as-a-rorschach-test-of-inflation-and-business-cycle-expectations]] — đường cong lợi suất là chỉ báo sớm về lạm phát và chu kỳ; đường cong đảo ngược cảnh báo suy thoái; ẩn dụ bài test vết mực Rorschach
-- [[yield-curve]] — đường cong lợi suất: đồ thị biểu diễn mối quan hệ giữa lợi suất đáo hạn và kỳ hạn
 - [[credit-spread]] — chênh lệch tín dụng: phần bù rủi ro vỡ nợ của trái phiếu doanh nghiệp so với trái phiếu chính phủ
 - [[yield-curve]] — đường cong lợi suất: đồ thị thể hiện cấu trúc kỳ hạn, 4 chức năng thị trường, phân biệt lợi suất YTM và lãi suất zero-coupon thực sự
 - [[coupon-bias-induces-relative-yield-distortions-along-ytm-curves]] — hiệu ứng coupon: rủi ro tái đầu tư và chính sách thuế khiến trái phiếu coupon cao giao dịch rẻ hơn so với đường cong
@@ -820,7 +818,9 @@
 - [[bond-relative-value-strategies-combine-directional-spreads-with-multi-contract-futures-hedging]] — chiến lược giá trị tương đối trái phiếu: spread widener/tightener, basis trade mỏng và phòng hộ đa hợp đồng tương lai theo CTD
 - [[excess-yield-spreads-isolate-local-relative-value-across-coupon-and-liquidity-dimensions]] — chênh lệch lợi suất thặng dư: bóc tách giá trị tương đối cục bộ qua mô hình chênh lệch coupon $r_m - r_{mp} = c(C_{PD} - r_{mp}) + d$, định kiến né tránh coupon cao và sàn thanh khoản tín phiếu kho bạc
 - [[bpv-weighted-yield-spread-trading-immunizes-first-order-directional-risk-under-strict-stop-loss-governance]] — giao dịch spread cân bằng BPV: triệt tiêu rủi ro thị trường định hướng bậc một, rủi ro trôi tỷ trọng phi tuyến của Modified Duration và khung kỷ luật ba nhân tố (target spread, fixed horizon, stop-loss 50%)
-- [[repo-specialness-and-financing-costs-dictate-the-break-even-hurdle-of-curve-spread-trades]] — chi phí tài trợ repo và rủi ro lãi suất đặc biệt: ngưỡng hòa vốn của chiến lược spread liên phân đoạn, chi phí mang giữ ròng (net carry) và hiện tượng ép giá repo chân bán khống
+- [[repo-specialness-and-financing-costs-dictate-the-break-even-hurdle-of-curve-spread-trades]] — tài trợ repo định mức hòa vốn của giao dịch spread; trái phiếu bán khống đang special làm tài trợ bất lợi; ví dụ 10 triệu bảng 10 năm đối 31,47 triệu bảng 2 năm
+- [[liquidity-makes-bonds-of-similar-duration-trade-at-different-yields-with-t-bills-lowest]] — thanh khoản làm trái phiếu duration tương tự mang lợi suất khác nhau; trái phiếu benchmark và T-bill có lợi suất thấp hơn
+- [[treasury-bills-and-short-coupon-bonds-are-priced-apart-and-need-separate-fitted-curves]] — tín phiếu và trái phiếu coupon dưới một năm được định giá khác nhau; Kortanek và Medvedev loại "earlies" khỏi tập khớp đường cong
 - [[ancillary-yield-curves-expand-benchmark-definitions-via-strict-irr-admissibility]] — đường cong phụ trợ Ancillary Curve: mở rộng định nghĩa trái phiếu chuẩn qua tiêu chuẩn sàng lọc sai số IRR dưới 1 điểm cơ bản, độ chính xác MAPE vượt trội và sự hòa nhập đồng quy với Benchmark Curve
 - [[geometric-programming-optimizes-continuous-discount-curves-under-bounded-uncertainty]] — quy hoạch hình học GP và bất định phi ngẫu nhiên: đổi biến hàm mũ $x_i = e^{y_i}$, tối ưu hóa posynomials, tiếp cận sai số bị chặn set-membership và điều kiện đối ngẫu hoàn hảo khi phân tách T-bills
 - [[ancillary-anchored-butterfly-trades-isolate-relative-value-in-hyper-liquid-treasury-markets]] — giao dịch Butterfly neo theo trái phiếu Ancillary: khai thác giá trị tương đối trong thị trường Kho bạc siêu thanh khoản, bán khống mã Ancillary định giá đắt và phòng hộ hai cánh qua bài toán quy hoạch tuyến tính LP trung hòa vốn và thời lượng
@@ -851,30 +851,32 @@
 
 **Nền tảng ALM và bảng cân đối**
 - [[alm-foundations-run-from-balance-sheet-balancing-through-eve-and-nii-measurement-to-bank-specific-and-technology-driven-practice]] — *(tổng quan nhóm)* bốn bước cân đối, cấu trúc lấy ngắn nuôi dài và các lớp mismatch, hai góc đo EVE và NII, ALM theo từng ngân hàng, hai môi trường lãi suất, các hướng mới của chương 6 và điểm nối sang IRRBB, tiền gửi, FTP, SVB
-- [[alm-balance-sheet-balancing-progresses-through-four-operational-dimensions]] — quy trình cân đối bảng cân đối ALM tiến triển qua bốn chiều kích: dòng tiền, kỳ hạn, tỷ lệ/cấu trúc và hành vi/định giá FTP
-- [[cash-flow-balancing-resolves-immediate-payment-obligations-against-excess-reserve-opportunity-cost]] — cân dòng tiền là lớp vận hành sơ cấp giải quyết nghĩa vụ thanh toán tức thời và chi phí cơ hội của dự trữ thặng dư
-- [[maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks]] — cân kỳ hạn xác định thời gian tồn tại của trạng thái thanh khoản để triệt tiêu rủi ro tái tài trợ rollover và rủi ro định giá lại
-- [[banks-fundamentally-rely-on-short-term-liabilities-to-finance-long-term-capital-formation]] — ngân hàng luôn dùng nợ phải trả ngắn hạn liên tục tái tục để tài trợ cho tích lũy tư bản dài hạn của nền kinh tế
-- [[multiple-balance-sheet-mismatches-compound-banking-systemic-risk]] — bốn tầng bất cân xứng đồng thời trên bảng cân đối (kỳ hạn, lãi suất, tiền tệ, phân khúc) tích tụ và khuếch đại rủi ro hệ thống
-- [[economic-value-and-earnings-perspectives-complement-each-other-in-alm]] — hai góc nhìn bổ trợ song hành trong ALM: giá trị kinh tế EVE đo hiện giá dòng tiền dài hạn và thu nhập dồn tích NII đo lợi nhuận ngắn hạn
-- [[banks-predominantly-hedge-duration-mismatches-on-balance-sheet-rather-than-via-derivatives]] — phòng hộ duration nội bảng trong thực tiễn ngân hàng: quy mô hoán đổi IRS ròng khiêm tốn do rào cản chuyên môn và điều kiện khắt khe của kế toán phòng hộ
-- [[bank-specific-alm-tailors-balance-sheet-governance-to-business-models-and-regional-habitats]] — tính đặc thù ngân hàng trong ALM: không có mô hình cào bằng, so sánh bảng cân đối ngân hàng đầu tư vs tiết kiệm, dị biệt vùng miền Châu Âu và tổ chức ALM Profit Center vs Cost Center
-- [[net-interest-income-planning-integrates-volume-run-off-and-margin-beta-across-horizons]] — lập kế hoạch thu nhập lãi thuần NII: 3 chân trời Forecast/Budget/Plan, bản chất chính trị, kế hoạch quy mô run-off vs new business và hệ số Margin-Beta
-- [[behavioral-alm-models-customer-irrbb-optionality-and-asymmetric-interbank-competition]] — kinh tế học hành vi trong ALM: bắt buộc EBA về mô hình hóa optionality, giới hạn backtesting và bất đối xứng cạnh tranh lãi suất giữa ngân hàng truyền thống vs neobanks
-- [[holistic-alm-elevates-balance-sheet-strategy-from-tactical-compliance-to-technological-advantage]] — ALM toàn diện: nâng tầm từ tuân thủ chiến thuật sang chiến lược sinh thái, vũ khí công nghệ AI, dữ liệu thay thế và thương mại hóa năng lực đo lường rủi ro
-- [[zero-lower-bound-interest-rate-floors-distort-banking-book-margins-under-nirp]] — sàn lãi suất 0% trong kỷ nguyên NIRP: sự hình thành tiền gửi cứng nhắc rigid deposits, xói mòn biên trung gian tài chính và phán quyết tư pháp BGH cấm lãi suất vay âm
-- [[coupon-floors-and-indicator-floors-induce-asymmetric-nii-exposures-in-negative-rates]] — phân biệt Coupon Floor và Indicator Floor: công thức toán tài chính, tính chất in-the-money khi lãi suất âm và tác động bất đối xứng đẩy NII rơi vào vùng âm
-- [[rapid-rate-tightening-exposes-duration-gaps-and-asymmetric-prepayment-speeds]] — chu kỳ tăng lãi suất thần tốc: sụp đổ tâm lý tự mãn, cảnh báo sớm của ECB bị bỏ quên, bùng nổ Duration Gap và sự phân hóa tốc độ trả nợ trước hạn giữa vay cố định và thả nổi
-- [[fintech-disruption-accelerates-deposit-disintermediation-and-shortens-behavioral-maturities]] — đột phá FinTech và phi trung gian hóa tiền gửi: xói mòn quan hệ ngân hàng truyền thống, chuyển dịch tài sản thế hệ digital natives và rút ngắn kỳ hạn hành vi NMD
-- [[tokenized-deposits-and-smart-contracts-enable-automated-interest-rate-arbitrage]] — tiền gửi mã hóa và hợp đồng thông minh: cơ chế chênh lệch lãi suất tự động, triệt tiêu quán tính tâm lý người gửi tiền và nguy cơ tháo chạy dòng vốn theo thuật toán
-- [[deep-alm-and-advanced-analytics-enable-real-time-customer-level-balance-sheet-steering]] — Deep ALM và phân tích nâng cao BD&AA: ứng dụng học tăng cường sâu, Deep Hedging/Deep Treasury và mô phỏng thời lượng tiền gửi cá nhân hóa theo thời gian thực
-- [[model-governance-for-ai-in-alm-balances-predictive-power-against-black-box-opacity]] — quản trị mô hình AI trong ALM: chuẩn mực giải trình EBA GL/2022/14, rủi ro hộp đen FSB, nguy cơ bầy đàn mô hình model herding và trợ lý AI SupTech cho thanh tra
-- [[climate-risk-transmission-channels-impact-bank-balance-sheets-and-ftp-pricing]] — rủi ro khí hậu trong ALM: 4 kênh truyền dẫn vào bảng cân đối, phụ phí định giá chuyển vốn Climate FTP add-on, bài kiểm tra sức ép ECB 2022 và Hướng dẫn mô hình nội bộ ECB 2024
-- [[granular-customer-segmentation-enhances-behavioral-modeling-of-banking-book-optionality]] — phân khúc khách hàng đa biến vi mô: 5 tiêu chí định lượng Soulellis, kiểm định hồi tố backtesting và nhận diện các điểm mù tâm lý tổ chức theo thanh tra Fed hậu SVB
+- [[alm-balance-sheet-balancing-progresses-through-four-operational-dimensions]] — bốn bước cân nguồn của loạt bài ALM: dòng tiền, kỳ hạn, tỷ lệ và cấu trúc, hành vi nguồn tiền; mục đích ALM theo Tata là tối đa lợi nhuận trên mỗi đơn vị rủi ro
+- [[cash-flow-balancing-resolves-immediate-payment-obligations-against-excess-reserve-opportunity-cost]] — cân dòng tiền: đủ tiền cho nghĩa vụ thanh toán, không giữ tiền dư; chi phí cơ hội của dự trữ vượt mức; phần khó là chọn công cụ, giá, kỳ hạn
+- [[maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks]] — cân kỳ hạn: trạng thái dư hoặc thiếu tồn tại bao lâu; cân dòng tiền cân về lượng, cân kỳ hạn cân về thời gian; nhu cầu vay và cho vay liên ngân hàng
+- [[banks-fundamentally-rely-on-short-term-liabilities-to-finance-long-term-capital-formation]] — nguồn vốn lớn nhất của ngân hàng là nguồn dưới 12 tháng; nguyên tắc lấy ngắn nuôi dài; giới hạn ở Việt Nam trước và sau Thông tư 36/2014
+- [[maturity-transformation]] — stub: dùng nguồn vốn kỳ hạn ngắn tài trợ tài sản kỳ hạn dài hơn
+- [[multiple-balance-sheet-mismatches-compound-banking-systemic-risk]] — bốn lớp mismatch trên bảng cân đối hệ thống ngân hàng Việt Nam năm 2026: thanh khoản, duration, định giá lại và giá; độ trễ định giá lại của tài sản
+- [[economic-value-and-earnings-perspectives-complement-each-other-in-alm]] — hai góc nhìn về rủi ro lãi suất: giá trị kinh tế và thu nhập; EVE và NII thường phản ứng ngược chiều; ví dụ số của nguồn
+- [[banks-predominantly-hedge-duration-mismatches-on-balance-sheet-rather-than-via-derivatives]] — phòng hộ vi mô bằng swap; vị thế hoán đổi lãi suất ròng của ngân hàng tương đối nhỏ; hai điều kiện đi kèm việc dùng phái sinh
+- [[bank-specific-alm-tailors-balance-sheet-governance-to-business-models-and-regional-habitats]] — không có ALM dùng chung: khác biệt theo mô hình kinh doanh, sở thích khách hàng giữa các nước châu Âu, và ALM là trung tâm lợi nhuận hay chi phí
+- [[net-interest-income-planning-integrates-volume-run-off-and-margin-beta-across-horizons]] — lập kế hoạch NII: chiều chính trị nội bộ, ba chân trời forecast, budget, plan, kế hoạch khối lượng và biên theo mảng, biên lãi thuần đi theo mặt bằng lãi suất
+- [[behavioral-alm-models-customer-irrbb-optionality-and-asymmetric-interbank-competition]] — kinh tế học hành vi trong ALM: động cơ của khách hàng khi thực hiện quyền chọn, quyền định giá bị giới hạn bởi ngân hàng cạnh tranh, deposit beta không ổn định
+- [[holistic-alm-elevates-balance-sheet-strategy-from-tactical-compliance-to-technological-advantage]] — ALM toàn diện: bảy ví dụ về cách tiếp cận rộng hơn ALM chiến thuật, đầu tư tạo lợi thế chiến lược, cung cấp năng lực ALM để thu phí
+- [[zero-lower-bound-interest-rate-floors-distort-banking-book-margins-under-nirp]] — lãi suất âm từ 5/6/2014: sàn 0% trên tiền gửi bán lẻ, tiền gửi thanh toán thành tài sản hấp dẫn, phán quyết của tòa Đức năm 2023 rằng lãi vay không thể âm
+- [[coupon-floors-and-indicator-floors-induce-asymmetric-nii-exposures-in-negative-rates]] — hai kiểu sàn 0%: sàn coupon và sàn chỉ báo, công thức của từng kiểu và trường hợp NII âm khi tài sản và nợ chịu hai kiểu sàn khác nhau
+- [[rapid-rate-tightening-exposes-duration-gaps-and-asymmetric-prepayment-speeds]] — lãi suất tăng nhanh 2022–2023: sự chủ quan sau giai đoạn lãi suất thấp, khách hàng chuyển khỏi tiền gửi thanh toán, phân tích độ nhạy ECB 2017, trả trước đổi theo hai chiều
+- [[fintech-disruption-accelerates-deposit-disintermediation-and-shortens-behavioral-maturities]] — FinTech theo định nghĩa của FSB: khách hàng phản ứng nhanh hơn với lãi suất, người gửi tiền "ngủ quên" ít dần, ngân hàng phải xem lại mô hình quyền chọn của tiền gửi không kỳ hạn
+- [[tokenized-deposits-and-smart-contracts-enable-automated-interest-rate-arbitrage]] — DeFi và tiền gửi token hóa: thiếu dữ liệu lịch sử để hiệu chuẩn mô hình hành vi; ví dụ của nguồn về tiền gửi không kỳ hạn khi lãi suất tăng
+- [[deep-alm-and-advanced-analytics-enable-real-time-customer-level-balance-sheet-steering]] — dữ liệu lớn và phân tích nâng cao theo định nghĩa của EBA; phân tích ở cấp từng khách hàng nhờ năng lực tính toán mới; Deep ALM
+- [[model-governance-for-ai-in-alm-balances-predictive-power-against-black-box-opacity]] — khả năng kiểm toán được của AI trong ALM: kỳ vọng ghi lại và giải thích mô hình theo EBA/GL/2022/14, các rủi ro FSB nêu như bầy đàn mô hình và thuận chu kỳ
+- [[climate-risk-transmission-channels-impact-bank-balance-sheets-and-ftp-pricing]] — rủi ro khí hậu: bốn kênh tác động tới thu nhập và vốn (tín dụng đối tác, huy động vốn, đầu tư, quy định); ý về lãi suất FTP phạt tập trung rủi ro khí hậu
+- [[granular-customer-segmentation-enhances-behavioral-modeling-of-banking-book-optionality]] — phân khúc nền khách hàng theo yếu tố riêng để mô hình hóa hành vi; năm yếu tố của Soulellis (2017) về số dư tiền gửi; chú ý của giám sát sau vụ SVB
 
 **Rủi ro lãi suất sổ ngân hàng (IRRBB)**
 - [[irrbb-measurement-pairs-economic-value-and-earnings-views-over-gap-basis-and-option-risk]] — *(tổng quan nhóm)* ba cấu phần rủi ro, hai góc đo EVE và NII, kỹ thuật của từng góc, chỗ hai góc lệch nhau, bài kiểm tra SOT, mối nối sang tiền gửi, FTP và case SVB
 - [[interest-rate-risk-in-the-banking-book-irrbb]] — quản trị rủi ro lãi suất trên sổ ngân hàng: định nghĩa EBA/CRD IV, phân định banking book vs trading book và phạm vi các công cụ nhạy cảm lãi suất
+- [[trading-book]] — stub: sổ kinh doanh, phần vị thế giữ để giao dịch, phân biệt với sổ ngân hàng
 - [[interest-rate-gap-risk-stems-from-repricing-timing-mismatches]] — rủi ro khoảng chênh lệch lãi suất: bất cân xứng thời điểm và khối lượng định giá lại qua các dải kỳ hạn, phân tích khe hở tái định giá
 - [[interest-rate-basis-risk-arises-from-imperfect-correlation-between-benchmarks]] — rủi ro cơ sở lãi suất: tương quan không hoàn hảo giữa các chỉ số tham chiếu EURIBOR, OIS, RFR và Repo trên các công cụ cùng kỳ hạn
 - [[interest-rate-option-risk-combines-automatic-and-embedded-behavioural-options]] — rủi ro quyền chọn lãi suất: quyền chọn tự động caps/floors/swaptions và quyền chọn hành vi ngầm định tiền gửi không kỳ hạn/trả trước nợ
@@ -893,17 +895,17 @@
 
 **Tiền gửi và mô hình hành vi**
 - [[non-maturity-deposit-modelling-runs-from-behavioural-options-through-replicating-portfolios-to-unstable-deposit-betas]] — *(tổng quan nhóm)* hai hồ sơ của sản phẩm không kỳ hạn, quyền chọn hành vi, chuỗi mô hình tái tạo, giới hạn từ deposit beta, bối cảnh TT1 Việt Nam và các điểm nối sang IRRBB, FTP, thanh khoản
-- [[behavioral-modeling-of-tt1-liabilities-distorts-when-banks-actively-intervene-on-pricing-and-sales]] — mô hình hóa hành vi nguồn vốn TT1 bị biến dạng khi ngân hàng chủ động can thiệp giá và chính sách giữ chân tại thời điểm đáo hạn
-- [[vietnams-banking-system-exhibits-structural-dichotomy-between-tt1-and-tt2]] — phân kỳ cấu trúc nhị phân giữa thị trường khách hàng TT1 và thị trường liên ngân hàng TT2 gây chia cắt dòng vốn
-- [[tt1-deposit-rate-stickiness-prevents-interbank-liquidity-from-lowering-lending-rates]] — tính bám dính của lãi suất TT1 và tắc nghẽn vòng quay tín dụng ngắn hạn ngăn thanh khoản rẻ từ liên ngân hàng hạ lãi suất cho vay
-- [[non-maturity-products-decouple-liquidity-profiles-from-interest-rate-profiles]] — sản phẩm không kỳ hạn NMP: sự phân kỳ giữa hồ sơ thanh khoản và hồ sơ lãi suất, cơ chế lãi suất chỉ định administered rate và 4 khung mô hình hóa
-- [[embedded-behavioral-options-alter-banking-book-cash-flows-subject-to-eba-five-year-cap]] — quyền chọn hành vi ngầm định: thực thi phi tối ưu do yếu tố nhân khẩu học, lợi ích ngân hàng khi short option và trần pháp lý EBA khống chế kỳ hạn tái định giá 5 năm
-- [[replicating-portfolios-model-non-maturity-deposits-via-vintage-run-off-tranches]] — mô hình danh mục tái tạo: phân rã tiền gửi thành các tầng thế hệ vintage run-off, xác định duration kỳ vọng bình quân rủi ro lãi suất và kỳ hạn bình quân rủi ro thanh khoản
-- [[rolling-portfolios-smooth-deposit-margins-through-moving-average-market-rates]] — danh mục cuốn chiếu rolling portfolio: cơ chế tái đầu tư dòng tiền bù đắp, tỷ suất cơ hội bình quân trượt MA làm mượt biên lợi nhuận và kết nối FTP
-- [[replicating-portfolio-calibration-optimizes-margin-sharpe-ratios-across-key-rates]] — hiệu chuẩn danh mục tái tạo: tối ưu hóa tỷ số Sharpe của biên lợi nhuận, dung hòa đánh đổi giữa các lãi suất then chốt key rates 5Y vs 10Y và phân định ranh giới trách nhiệm ALM Desk
-- [[dynamic-replication-hedges-deposit-volume-fluctuations-at-prevailing-market-rates]] — tái tạo động: phòng hộ biến động quy mô tiền gửi ở lãi suất thị trường giao ngay hiện hành, nguy cơ thua lỗ mark-to-market khi rút vốn lúc lãi suất tăng và các phân rã cấu trúc nâng cao
+- [[behavioral-modeling-of-tt1-liabilities-distorts-when-banks-actively-intervene-on-pricing-and-sales]] — mô hình rollover và runoff của nguồn TT1: tỷ lệ tái tục lịch sử đã chứa can thiệp của ngân hàng về giá và bán hàng; ví dụ nhóm khách hàng tái tục 70%
+- [[vietnams-banking-system-exhibits-structural-dichotomy-between-tt1-and-tt2]] — hai khu vực của thị trường tiền tệ Việt Nam: TT1 là thị trường khách hàng, TT2 là liên ngân hàng; chưa có một đường cong định giá nguồn vốn chung
+- [[weak-short-term-credit-absorption-breaks-balance-sheet-turnover-and-keeps-long-term-lending-rates-high]] — vì sao lãi suất cho vay khó giảm sâu dù có thanh khoản: nền kinh tế không hấp thụ đủ tín dụng ngắn hạn, vòng quay bảng cân đối đứt, LDR không giải quyết được
+- [[non-maturity-products-decouple-liquidity-profiles-from-interest-rate-profiles]] — sản phẩm không kỳ hạn: kỳ hạn hành vi khác kỳ hạn hợp đồng; hồ sơ thanh khoản và hồ sơ lãi suất tách nhau; lãi suất chỉ định
+- [[embedded-behavioral-options-alter-banking-book-cash-flows-subject-to-eba-five-year-cap]] — quyền chọn tự động và quyền chọn hành vi; thực hiện không theo giả định duy lý; rủi ro mô hình; giới hạn 5 năm của EBA với ngày định giá lại bình quân
+- [[replicating-portfolios-model-non-maturity-deposits-via-vintage-run-off-tranches]] — mô hình tái tạo (run-off theo thế hệ): ví dụ sổ tiền gửi thanh toán 50 triệu EUR chia sáu cấu phần, duration kỳ vọng bình quân và kỳ hạn bình quân
+- [[rolling-portfolios-smooth-deposit-margins-through-moving-average-market-rates]] — danh mục cuốn chiếu: 80% tiền gửi ở lại tới 5 năm, 20% thay hằng tháng; lãi suất cơ hội bình quân trượt làm lãi suất FTP cho bộ phận tiền gửi
+- [[replicating-portfolio-calibration-optimizes-margin-sharpe-ratios-across-key-rates]] — hiệu chuẩn danh mục tái tạo: ba tiêu chí mục tiêu (độ lệch chuẩn của biên nhỏ nhất, biên kỳ vọng lớn nhất, tỷ số Sharpe của biên lớn nhất)
+- [[dynamic-replication-hedges-deposit-volume-fluctuations-at-prevailing-market-rates]] — tái tạo động: tính tới thay đổi khối lượng trong danh mục tái tạo; ba góc nhìn run-off, tĩnh, động về bảng cân đối
 - [[deposit-beta]] — deposit beta: tỷ lệ thay đổi lãi suất tiền gửi so với thay đổi lãi suất thị trường
-- [[sticky-deposit-rates-and-unstable-deposit-betas-challenge-replication-models]] — phê phán thực nghiệm mô hình tái tạo: lãi suất dính sluggish pass-through 9% ngắn hạn, sự bất ổn của deposit beta qua các chu kỳ và hiện tượng sụp đổ duration thực nghiệm khi lãi suất đảo chiều
+- [[sticky-deposit-rates-and-unstable-deposit-betas-challenge-replication-models]] — phê phán mô hình tái tạo: lãi suất thị trường chỉ truyền 9% trong ngắn hạn sang tiền gửi thanh toán (Hoffmann và cộng sự 2023); deposit beta không ổn định
 
 **Thanh khoản và nguồn vốn**
 - [[bank-liquidity-rules-pair-a-stressed-30-day-hqla-buffer-with-ratio-limits-on-funding-structure]] — *(tổng quan nhóm)* rủi ro thanh khoản, hai vế và phạm vi của LCR, quyền dùng kho HQLA, giới hạn của CDR và các tỷ lệ quản lý, mối nối sang ngân hàng trung ương và tài sản bảo đảm
@@ -912,6 +914,7 @@
 - [[credit-to-deposit-ratio]] — CDR, tỷ lệ tín dụng trên tiền gửi; không mô tả đủ cấu trúc tài trợ khi ngân hàng dùng vốn bán buôn, liên ngân hàng, repo
 - [[regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it]] — tỷ lệ quản lý chuyển bất cân xứng thanh khoản sang khoản mục khác, tỷ lệ báo cáo đẹp hơn mà rủi ro còn nguyên
 - [[liquidity-coverage-ratio-lcr]] — LCR: kho HQLA chia tổng dòng tiền ra ròng 30 ngày lịch, tối thiểu 100% ngoài thời kỳ căng thẳng
+- [[net-stable-funding-ratio-nsfr]] — stub: NSFR, tỷ lệ nguồn vốn ổn định sẵn có trên nguồn vốn ổn định cần có
 - [[high-quality-liquid-assets-hqla]] — HQLA, tử số của LCR: kho tài sản không bị ràng buộc, định giá trong điều kiện căng thẳng
 - [[total-net-cash-outflows]] — tổng dòng tiền ra ròng, mẫu số của LCR: tính theo tham số kịch bản chuẩn cho 30 ngày lịch
 - [[lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days]] — kịch bản căng thẳng LCR: 7 hệ quả của cú sốc riêng cộng cú sốc toàn thị trường
@@ -931,7 +934,7 @@
 - [[hqla-operational-requirements]] — yêu cầu vận hành: kiểm soát của treasury, năng lực bán, bán thử định kỳ, phòng hộ
 - [[unencumbered-assets]] — tài sản không bị ràng buộc: định nghĩa, rổ bảo đảm, tái thế chấp
 - [[level-1-assets]] — Level 1: không trần, haircut 0%; tiền mặt, dự trữ ngân hàng trung ương, chứng khoán chính phủ trọng số 0%
-- [[level-2a-assets]] — Level 2A: haircut 15%; chứng khoán trọng số 20%, trái phiếu doanh nghiệp và covered bond từ AA−; có ⚠️ Conflict với Bindseil
+- [[level-2a-assets]] — Level 2A: haircut 15%; chứng khoán trọng số 20%, trái phiếu doanh nghiệp và covered bond từ AA− theo chuẩn mực LCR (Bindseil ghi AA)
 - [[level-2b-assets]] — Level 2B: quyền quyết định quốc gia; RMBS haircut 25%, trái phiếu doanh nghiệp và cổ phiếu haircut 50%
 - [[level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]] — trần 40% và 15%, công thức kho HQLA và hai khoản điều chỉnh trần
 - [[adjusted-hqla-amounts-unwind-secured-transactions-maturing-within-30-days]] — số điều chỉnh: tháo ngược repo, cho vay có bảo đảm và hoán đổi tài sản bảo đảm trong 30 ngày
@@ -942,28 +945,29 @@
 
 **Quản trị, FTP và quy định giám sát**
 - [[bank-steering-rules-run-from-internal-funds-transfer-pricing-to-eu-irrbb-measurement-outlier-tests-and-reporting]] — *(tổng quan nhóm)* ba chức năng của FTP, cấu tạo đường cong và các phụ phí, FTP so với FVA, khung quy định IRRBB bốn tầng, SA và S-SA, sàn lãi suất, bài toán tuân thủ đồng thời, năm mẫu báo cáo
-- [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]] — định giá chuyển nhượng vốn nội bộ FTP: phân bổ biên lãi thuần NIM, tập trung hóa rủi ro về Treasury và nguyên lý chi phí cơ hội
-- [[matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions]] — phương pháp cân khớp kỳ hạn: bóc tách NIM thành biên kinh doanh và đóng góp cấu trúc bù đắp rủi ro tái tài trợ và rủi ro lãi suất cho Treasury
-- [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]] — bóc tách đường cong FTP: lãi suất phi rủi ro thuần túy cộng phần bù thanh khoản, 5 cách tiếp cận RFR và định giá sản phẩm lệch tenor reset
-- [[ftp-business-steering-functions-as-a-political-tool-for-balance-sheet-allocation]] — chức năng điều hướng kinh doanh và bản chất chính trị của FTP: điều chỉnh cơ cấu bảng cân đối và nghiên cứu BCG về sự méo mó NII nội bộ
-- [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]] — tích hợp ràng buộc LCR và NSFR vào FTP: chi phí cận biên nắm giữ HQLA 30 ngày, hình phạt vốn dài hạn NSFR và chi phí ký quỹ bù trừ trung tâm CCP
-- [[funds-transfer-pricing-contrasts-with-derivatives-funding-value-adjustments]] — so sánh FTP với FVA/XVA phái sinh: tài trợ 100% mệnh giá sổ ngân hàng vs chi phí ký quỹ tự tài trợ, và nguyên tắc loại trừ rủi ro tín dụng khỏi FTP
-- [[contingency-liquidity-and-embedded-optionality-require-specialized-ftp-add-ons]] — phụ phí thanh khoản dự phòng và quyền chọn ngầm định: phụ phí hạn mức cam kết tín dụng, điều chỉnh short/long optionality và 10 nguyên tắc vàng Farahvash
-- [[multitiered-irrbb-regulatory-framework-spans-bcbs-crd-crr-and-eba-technical-standards]] — khung quản trị IRRBB đa tầng: 4 cấp độ BCBS, CRD I-VI, CRR I-III và EBA Single Rulebook
-- [[eba-standardized-approach-for-irrbb-harmonizes-eve-and-nii-measurement]] — phương pháp chuẩn hóa EBA SA theo CDR 2024/857: hài hòa đo lường EVE (run-off, optionality) và NII (constant balance sheet, 3 cấu phần dòng tiền, Delta MV)
-- [[simplified-standardized-approach-provides-conservative-irrbb-metrics-for-small-banks]] — phương pháp chuẩn hóa đơn giản S-SA: tinh giản cho ngân hàng nhỏ SNCI, nguyên tắc thận trọng tối thiểu bằng SA và thẩm quyền can thiệp của NCA
-- [[maturity-dependent-linear-rate-floor-bounds-post-shock-yield-curves-under-irrbb]] — sàn lãi suất tuyến tính mới theo CDR 2024/856: điểm chặn dưới -150 bps tăng tuyến tính 3 bps/năm đến 0% tại kỳ hạn 50 năm
-- [[simultaneous-compliance-problem-constrains-fixed-rate-allocation-under-dual-sot-limits]] — nghịch lý tuân thủ đồng thời: mâu thuẫn giữa chặn trên/dưới của SOT EVE và sàn tối thiểu của SOT NII, bài toán quy hoạch tuyến tính và vùng tuân thủ khả thi
-- [[supervisory-irrbb-reporting-mandates-five-standardized-templates-under-eu-2024-855]] — báo cáo giám sát IRRBB theo CDR 2024/855: 5 bộ mẫu biểu chuẩn hóa bắt buộc từ tháng 10/2024 kết nối đánh giá tổng hợp, dòng tiền và thông số hành vi
+- [[funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks]] — FTP: gán lãi suất tài trợ và lãi suất thu nhập cho từng vị thế theo nguyên tắc chi phí cơ hội; ba chức năng là phân bổ biên, tập trung rủi ro về Treasury, điều hướng
+- [[matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions]] — FTP khớp kỳ hạn: ví dụ tiền gửi 1 năm 1% và cho vay 2 năm 4%; đóng góp cấu trúc bù cho Treasury rủi ro thanh khoản và rủi ro lãi suất
+- [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]] — đường cong FTP gồm đường cong lãi suất thuần cộng chênh lệch tài trợ; năm cách dựng lãi suất phi rủi ro; đường cong cho nhiều đồng tiền
+- [[ftp-business-steering-functions-as-a-political-tool-for-balance-sheet-allocation]] — chức năng điều hướng của FTP: dịch đường cong để đổi động lực giữa cho vay và tiền gửi; tính chính trị vì FTP quyết định mảng nào đóng góp vào NII
+- [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]] — chi phí biên do quy định sau 2007–2008 trong FTP: LCR, NSFR, nghĩa vụ bù trừ qua CCP và yêu cầu ký quỹ
+- [[funds-transfer-pricing-contrasts-with-derivatives-funding-value-adjustments]] — FTP so với FVA: tài trợ trên gốc danh nghĩa so với trên khoản ký quỹ, mức chính xác, bàn XVA; vì sao rủi ro tín dụng đối tác không định giá trong FTP
+- [[contingency-liquidity-and-embedded-optionality-require-specialized-ftp-add-ons]] — phụ phí trên đường cong FTP: thanh khoản dự phòng (ví dụ hạn mức tín dụng cam kết), điều chỉnh theo trạng thái bán hay mua quyền chọn; bảy đặc điểm của hệ thống FTP tốt theo Farahvash
+- [[multitiered-irrbb-regulatory-framework-spans-bcbs-crd-crr-and-eba-technical-standards]] — bốn tầng quy định IRRBB: BCBS, chuỗi CRD I–VI và CRR I–III, EBA với RTS/2022/09, RTS/2022/10 và GL/2022/14, cơ quan quốc gia
+- [[basel-iii]] — stub: bộ chuẩn mực 2010 của Ủy ban Basel về vốn và thanh khoản
+- [[eba-standardized-approach-for-irrbb-harmonizes-eve-and-nii-measurement]] — phương pháp chuẩn hóa của EBA (RTS/2022/09): thay đổi EVE, NII là tổng ba thành phần, phụ phí quyền chọn tự động, thay đổi giá trị thị trường ngoài kỳ tính NII
+- [[simplified-standardized-approach-provides-conservative-irrbb-metrics-for-small-banks]] — S-SA cho tổ chức nhỏ và không phức tạp: ít nhất thận trọng bằng SA, bốn điểm đơn giản hóa, quyền của cơ quan quốc gia yêu cầu dùng SA
+- [[maturity-dependent-linear-rate-floor-bounds-post-shock-yield-curves-under-irrbb]] — sàn lãi suất sau sốc: bản 2018 từ −100 điểm cơ bản tăng 5 điểm mỗi năm; sàn tuyến tính của RTS/2022/10 từ −150 tăng 3 điểm mỗi năm tới 0% ở 50 năm; chỉ áp cho SOT trên EVE
+- [[simultaneous-compliance-problem-constrains-fixed-rate-allocation-under-dual-sot-limits]] — bài toán tuân thủ đồng thời: SOT trên EVE đặt chặn trên và dưới cho tỷ trọng tài sản lãi suất cố định, SOT trên NII đặt mức tối thiểu; vùng tuân thủ có thể rất nhỏ
+- [[supervisory-irrbb-reporting-mandates-five-standardized-templates-under-eu-2024-855]] — báo cáo giám sát IRRBB theo Quy định thực thi (EU) 2024/855: năm bộ mẫu biểu về đánh giá, độ nhạy, dòng tiền định giá lại, tham số hành vi, thông tin định tính
 
 **Case: Silicon Valley Bank**
 - [[the-svb-case-links-hidden-htm-losses-removed-hedges-and-a-three-year-duration-gap-to-governance-and-supervisory-failure]] — *(tổng quan nhóm)* diễn biến sụp đổ, lỗ ẩn trong sổ HTM, phòng hộ bị gỡ, duration gap 3 năm và giả định duration tiền gửi, bốn bài học về quản trị và giám sát
-- [[silicon-valley-bank-collapse-epitomizes-unhedged-duration-mismatches-and-uninsured-deposit-runs]] — vụ sụp đổ Silicon Valley Bank: lệch pha thời lượng không phòng hộ, tiền gửi không bảo hiểm >88%, lỗ bán chứng khoán 1,8 tỷ USD và cuộc tháo chạy 42 tỷ USD/ngày
-- [[held-to-maturity-gaap-accounting-masks-unrealized-economic-value-losses-in-banking-books]] — kế toán HTM theo GAAP che giấu lỗ EVE: giá gốc phân bổ che giấu khoản lỗ 15,2 tỷ USD xóa sạch vốn tự có 12 tỷ USD và ảo ảnh ổn định từ báo cáo NII dương 4,5 tỷ USD
-- [[unhedged-interest-rate-swap-unwinding-magnifies-balance-sheet-vulnerability-for-short-term-pnl]] — gỡ bỏ vị thế hoán đổi IRS để thổi phồng P&L ngắn hạn: tỷ lệ phòng hộ danh mục trái phiếu 124 tỷ USD rớt từ 12,3% xuống 0,4% ngay trước chu kỳ tăng lãi suất
-- [[svb-three-year-duration-gap-breached-supervisory-outlier-thresholds-absent-deposit-modeling-manipulation]] — khe hở thời lượng 3 năm của SVB: tổn thất 12,5 tỷ USD vượt 100% vốn tự có trước cú sốc 200 bps và nghịch lý toán học đòi hỏi duration tiền gửi >3,7 năm để lách SOT
-- [[regulatory-arbitrage-via-deposit-duration-assumptions-distorts-supervisory-irrbb-compliance]] — trọng tài quy chế qua mô hình hóa thời lượng tiền gửi: báo cáo Michael Barr 2023 về việc sửa giả định thay vì phòng hộ bảng cân đối và cơ chế tháo chạy bad-news run
-- [[supervisory-and-governance-failures-in-interest-rate-risk-management-lessons-from-svb]] — thất bại quản trị và giám sát trong vụ SVB: khuyết chức danh CRO suốt 8 tháng, sự thiếu kiên quyết trong kỳ thi CAMELS 2020–2022 và 4 bài học lớn cho ALM
+- [[silicon-valley-bank-collapse-epitomizes-unhedged-duration-mismatches-and-uninsured-deposit-runs]] — vụ SVB tháng 3/2023: lỗ 1,8 tỷ USD khi bán 21 tỷ USD chứng khoán, khách hàng tìm cách rút 142 tỷ USD, bốn dấu hiệu cảnh báo sớm, tiền gửi không bảo hiểm hơn 88%
+- [[held-to-maturity-gaap-accounting-masks-unrealized-economic-value-losses-in-banking-books]] — kế toán HTM theo GAAP: giá gốc phân bổ; sổ HTM 95 tỷ USD của SVB chứa lỗ chưa thực hiện 15,2 tỷ USD so với vốn chủ 12 tỷ USD, trong khi NII 2022 là 4,5 tỷ USD
+- [[unhedged-interest-rate-swap-unwinding-magnifies-balance-sheet-vulnerability-for-short-term-pnl]] — SVB gỡ hoán đổi lãi suất: phòng hộ danh mục trái phiếu 124 tỷ USD giảm từ 12,3% cuối 2021 xuống 0,4% cuối 2022
+- [[svb-three-year-duration-gap-breached-supervisory-outlier-thresholds-absent-deposit-modeling-manipulation]] — duration gap khoảng 3 năm của SVB: lỗ 12,5 tỷ USD với cú sốc 200 điểm cơ bản; duration tiền gửi phải trên 3,7 năm mới qua phép thử SOT
+- [[regulatory-arbitrage-via-deposit-duration-assumptions-distorts-supervisory-irrbb-compliance]] — giả định duration tiền gửi của SVB: tệp người gửi tập trung, hai yếu tố lãi suất tác động tới tiền gửi PE/VC, báo cáo Barr (2023) về việc đổi giả định thay vì đổi bảng cân đối
+- [[supervisory-and-governance-failures-in-interest-rate-risk-management-lessons-from-svb]] — bốn bài học từ SVB theo nguồn: kế toán và lỗ chưa thực hiện, quản trị rủi ro lãi suất và tám tháng không có CRO, giả định duration tiền gửi tập trung, lệch kỳ hạn không phòng hộ
 
 ## Liên lĩnh vực
 
@@ -978,6 +982,7 @@
 - [[top-down-macro-analysis-fails-without-bottom-up-microstructure-and-capital-allocation]] — phân tích vĩ mô Top-down thất bại nếu tách rời cấu trúc vi mô, sự phân kỳ phân bổ vốn và mức độ cô đặc chỉ số
 - [[private-credit-selective-defaults-obscure-systemic-banking-fragility]] — vỡ nợ có chọn lọc trong tín dụng tư nhân qua hoán đổi nợ kiệt quệ và PIK toggles che giấu rủi ro hệ thống lan truyền vào ngân hàng
 - [[sovereign-debt-refinancing-dependency-constrains-monetary-policy-horizons]] — sự phụ thuộc vào tái cấp vốn nợ công biến nợ chính phủ thành bài toán luân chuyển dòng tiền và ràng buộc thời hạn thắt chặt của NHTW
-- [[offshore-foreign-currency-debt-pricing-diverges-from-domestic-benchmarks]] — định giá nợ ngoại tệ offshore phân kỳ hoàn toàn khỏi lãi suất nội tệ nội địa và phản ánh các tầng phần bù rủi ro quốc tế
-- [[endogenous-systemic-liquidity-circulation-distorts-accounting-equations-via-balance-sheet-resonance]] — hiện tượng cộng hưởng bảng cân đối do vận hành thanh khoản nội sinh làm biến dạng các phép cân đối số học và kéo dồn dòng tiền vào tài sản cuối
+- [[offshore-foreign-currency-debt-pricing-diverges-from-domestic-benchmarks]] — trái phiếu USD 10 năm quanh 7% của Việt Nam so với nhóm nước cùng hạng và với trái phiếu VND 4,5%; năm thành phần lợi suất; biên vay offshore của doanh nghiệp tăng
+- [[endogenous-systemic-liquidity-circulation-distorts-accounting-equations-via-balance-sheet-resonance]] — tài trợ nội sinh của hệ thống ngân hàng Việt Nam: tín dụng trên huy động vượt 100%, chi phí vốn cao, cộng hưởng cân đối từ tiền gửi Kho bạc, hai cơ chế xuôi và ngược giữa lãi suất TT2 và TT1
+- [[real-estate-and-gold-act-as-final-assets-and-fx-reserves-bound-a-shift-to-consumption-led-growth]] — tài sản cuối (vàng, bất động sản) trên cân đối cá nhân; xoay sang tiêu dùng và hạ tầng cần tài khóa lớn; giới hạn nằm ở dự trữ ngoại hối và tỷ giá
 - [[technological-automation-shifts-scarcity-from-commodity-production-to-relational-sectors]] — tự động hóa công nghệ đẩy bản chất của sự khan hiếm và tỷ trọng chi tiêu từ sản xuất hàng hóa chuẩn hóa sang khu vực quan hệ

@@ -6,6 +6,7 @@ sources: [clippings]
 status: draft
 last_updated: 2026-09-25
 governs: [liquidity-risk]
+contrasts: [liquidity-coverage-ratio-lcr]
 related: [maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks, regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it]
 ---
 
@@ -13,4 +14,4 @@ Tỷ lệ tín dụng trên tiền gửi (credit-to-deposit ratio, CDR) so sánh
 
 CDR không mô tả đầy đủ cấu trúc tài trợ. Khi CDR trở thành giới hạn cứng, ngân hàng vẫn có thể huy động vốn bán buôn, vay liên ngân hàng, phát hành giấy tờ có giá, thực hiện repo hoặc đổi kỳ hạn nguồn vốn (clippings, ALM, Nguồn vốn ngoài tiền gửi, cùng file, d.17). Vì vậy, CDR cần được đọc cùng [[liquidity-risk|rủi ro thanh khoản]] và [[maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks|cân bằng kỳ hạn]].
 
-Một mức CDR đáp ứng quy định không chứng minh ngân hàng đủ tiền cho nghĩa vụ sắp đáo hạn. Đánh giá đó còn cần khoảng trống dòng tiền, mức tập trung nguồn vốn, kỳ hạn hành vi và rủi ro tái tài trợ (clippings, ALM, Giới hạn của CDR, cùng file, d.19–21). [[regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it]] giải thích vì sao tuân thủ tỷ lệ khác với giảm rủi ro kinh tế.
+Một mức CDR đáp ứng quy định không chứng minh ngân hàng đủ tiền cho nghĩa vụ sắp đáo hạn. Đánh giá đó còn cần khoảng trống dòng tiền, mức tập trung nguồn vốn, kỳ hạn hành vi và rủi ro tái tài trợ (clippings, ALM, Giới hạn của CDR, cùng file, d.19–21). Tỷ lệ của chuẩn Basel đo thanh khoản theo dòng tiền ra ròng 30 ngày, thay vì theo số dư tín dụng và tiền gửi, là [[liquidity-coverage-ratio-lcr|LCR]]. [[regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it]] giải thích vì sao tuân thủ tỷ lệ khác với giảm rủi ro kinh tế.

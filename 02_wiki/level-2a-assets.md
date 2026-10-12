@@ -4,7 +4,7 @@ type: concept
 tags: [lcr, basel-iii, liquidity-regulation, hqla]
 sources: [basel_lcr, bindseil_monetary_policy]
 status: draft
-last_updated: 2026-10-10
+last_updated: 2026-10-12
 part_of: [high-quality-liquid-assets-hqla]
 governed_by: [haircut, level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]
 contrasts: [level-1-assets]
@@ -24,4 +24,4 @@ Trái phiếu doanh nghiệp ở đây chỉ là loại đơn giản, định gi
 
 Hai trường hợp giáp ranh có quy tắc riêng. Chứng khoán chính phủ trọng số 20% đồng thời đạt ngoại lệ nội tệ hoặc ngoại tệ của [[level-1-assets|Level 1]] được xếp vào Level 1 (basel_lcr, LCR30, Level 2 assets, 30.43 chú thích 12, d.298). Trái phiếu doanh nghiệp từ AA− nhưng từng giảm giá từ 10% đến 20% rơi xuống Level 2B (basel_lcr, LCR30, Level 2 assets, 30.43 FAQ1, d.306–310).
 
-⚠️ Conflict: hai nguồn ghi ngưỡng xếp hạng khác nhau cho trái phiếu doanh nghiệp và covered bond trong cấp này. Chuẩn mực LCR ghi ít nhất AA− (basel_lcr, LCR30, Level 2 assets, 30.43, d.291–292). Bindseil ghi ít nhất AA (bindseil_monetary_policy, Ch.16, §16.2, d.3664). Chưa xử lý.
+Ngưỡng xếp hạng AA− ở trên lấy theo chuẩn mực LCR (basel_lcr, LCR30, Level 2 assets, 30.43, d.291–292). Bindseil ghi ngưỡng này là ít nhất AA (bindseil_monetary_policy, Ch.16, §16.2, d.3664); trang theo văn bản chuẩn mực của Basel.

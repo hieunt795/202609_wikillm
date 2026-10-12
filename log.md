@@ -1252,3 +1252,33 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Deep: đọc 6 trang đã review; 0 claim mới, 1 analysis (N1) đã duyệt: the-svb-case-links-hidden-htm-losses-removed-hedges-and-a-three-year-duration-gap-to-governance-and-supervisory-failure
 - Thêm dòng đầu nhóm trong index, 1 câu backlink trên trang SVB chính; `--graph`: trang tổng quan FTP là điểm nối duy nhất giữa hai nhóm, SOT vào top 25
 - Không xuất báo cáo riêng vào Claude outputs (lệch skill); lô C đủ 6/6 trang tổng quan nhóm ngân hàng
+
+## [2026-10-12:16-06-49] review | 3 trang dọn dẹp sau lô C
+- Đã sửa và đặt reviewed cả 3: bốn bước cân đối ALM (trang trục), hành lang lãi suất SBV so với PBOC, định giá nợ ngoại tệ offshore
+- Claim sửa hoặc bỏ: LDR và trần vốn ngắn hạn gán cho bài Cân tỷ lệ, "cân hành vi gắn với FTP", MLF là "trần hành lang bán lẻ", diễn giải năm cấu phần lợi suất offshore, Indonesia 5,7% (nguồn 5,6–5,9%), biên offshore "10–11%" (nguồn: VHM 10% lên 11%)
+- Gắn loại 14 link; bỏ 5 link không có nguồn, thêm 2 link điều hướng để tránh mồ côi; `--all` 832 trang, 0 vấn đề
+
+## [2026-10-12:16-08-11] lint | sổ sách index sau lô C
+- Viết lại dòng mô tả `index.md` của 51 trang đã review trong lô C cho khớp nội dung hiện tại (không đổi nhóm, không đổi trang)
+- Bỏ 2 dòng trùng: `real-interest-rate` (giữ ở nhóm đầu, gộp mô tả) và `yield-curve` (giữ dòng mô tả đầy đủ hơn)
+- Không chạy `--lint` trọn bộ; `--all` 832 trang, 0 vấn đề
+
+## [2026-10-12:16-10-02] review | 1 trang: thanh khoản nội sinh và cộng hưởng cân đối
+- Đã sửa theo bốn file Clippings nhưng giữ lại, chưa đặt reviewed: trang chứa thêm ý tài sản cuối và dự trữ ngoại hối mà title không phủ; đã ghi `_inbox.md` đề nghị tách trang
+- Claim sửa hoặc bỏ: "loại bỏ hoàn toàn căng thẳng thanh khoản" ở Mỹ, cơ chế ngược "đe dọa suy giảm dự trữ ngoại hối" (nguồn: TT2 cao để giữ tỷ giá, TT1 thấp), "giá tài sản cuối tăng vọt và phân kỳ khỏi chuẩn quốc tế", "tê liệt dư địa can thiệp"
+- Gắn loại 5 link, thêm 2 link (trang TT1–TT2, trang hành lang lãi suất); `--all` 832 trang, 0 vấn đề
+
+## [2026-10-12:16-11-31] lint | 832 trang
+- Mục theo mã: K 3, C 0, O 0, S 4 (cùng 25 stub), L 3, R 0, G 5, I 9; `--verify-sources` exit 2 (18 lệch hoặc thiếu, 11 chưa kê)
+- Chưa sửa mã nào, chờ người dùng duyệt
+- Báo cáo: Claude outputs/lint-2026-10-12-832.md
+
+## [2026-10-12:16-15-30] lint | 838 trang, sửa các mã đã duyệt
+- Đã sửa: K1 (level-2a-assets theo AA− của Basel, bỏ dấu Conflict), S1–S4 (4 stub: NSFR, Basel III, maturity transformation, trading book, 8 link), L1 (3 trang nhóm thanh khoản link tới LCR), I5 (tách repo-specialness thành 3 trang, giữ nguyên claim)
+- Chưa sửa: K2, K3 (cùng nguồn IMF, không có nguồn Basel để ưu tiên, chờ người dùng), L2, G1–G5, I1–I4, I6–I9
+- Báo cáo: Claude outputs/lint-2026-10-12-832.md (đã thêm mục "Đã sửa"); `--all` 838 trang, 0 vấn đề, 0 cặp lệch
+
+## [2026-10-12:16-22-14] lint | 839 trang, sửa đợt 2 các mã đã duyệt
+- Đã sửa: K2, K3 (bỏ hai đoạn Conflict trên trang Ba Lan theo quyết định của người dùng), L2, G2 (bỏ 17 dòng file không còn trên đĩa khỏi bản kê), G3 (file Clippings chỉ đổi ký tự xuống dòng, cập nhật byte và checksum), I1–I4, I7, I8 (đổi title trang tt1-stickiness), I9 (tách trang nội sinh, thêm 1 trang)
+- G1 bỏ qua theo người dùng (11 file chưa kê, đăng ký khi ingest); G4, G5 là việc của `/ingest`, chưa làm; I6 giữ một dòng rút gọn trong `_inbox.md`
+- `--all` 839 trang, 0 vấn đề, 0 cặp lệch; `--verify-sources` 203 file, 0 lệch hoặc thiếu; báo cáo: Claude outputs/lint-2026-10-12-832.md

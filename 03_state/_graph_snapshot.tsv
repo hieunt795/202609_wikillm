@@ -1,18 +1,18 @@
 # Anh chup do thi quan he (00_schema.md §6). May ghi bang --graph; khong sua tay.
-meta	edges	4139
-meta	pages	832
+meta	edges	4154
+meta	pages	839
 meta	strong	447
-meta	taken	2026-10-12:16-01-51
-meta	typed	461
+meta	taken	2026-10-12:16-22-14
+meta	typed	501
 type	analogous	15
-type	contrasts	33
-type	driven_by	23
-type	drives	38
-type	governed_by	47
+type	contrasts	35
+type	driven_by	25
+type	drives	40
+type	governed_by	48
 type	governs	49
-type	has_part	34
-type	part_of	42
-type	related	188
+type	has_part	36
+type	part_of	43
+type	related	218
 pair	Carry, roll-down và chênh lệch đường cong lợi suất || Cấu trúc kỳ hạn và phân tích đường cong lợi suất	7
 pair	Carry, roll-down và chênh lệch đường cong lợi suất || Giao dịch đường cong và giá trị tương đối	14
 pair	Carry, roll-down và chênh lệch đường cong lợi suất || Hoán đổi lãi suất, nén giao dịch và vi cấu trúc swap	10
@@ -36,7 +36,7 @@ pair	Case: Ba Lan 1989–1994 || Phân tích chi	14
 pair	Case: Ba Lan 1989–1994 || Tỷ giá và chế độ tỷ giá	29
 pair	Case: Ba Lan 1989–1994 || Đo lường trong kinh tế chuyển đổi	12
 pair	Case: Ba Lan 1989–1994 || Đo thâm hụt tài khoá	2
-pair	Case: Ba Lan 1989–1994 || Đại lượng thu nhập và sử dụng	6
+pair	Case: Ba Lan 1989–1994 || Đại lượng thu nhập và sử dụng	4
 pair	Case: Ba Lan 1989–1994 || Đồng nhất thức đối ngoại	4
 pair	Case: Silicon Valley Bank || Nền tảng ALM và bảng cân đối	18
 pair	Case: Silicon Valley Bank || Quản trị, FTP và quy định giám sát	4
@@ -62,7 +62,8 @@ pair	Chính sách tiền tệ trong khủng hoảng || Lãi suất và mặt b�
 pair	Chính sách tiền tệ trong khủng hoảng || Lạm phát	4
 pair	Chính sách tiền tệ trong khủng hoảng || Lịch sử chế độ tài chính - tiền tệ Hoa Kỳ	2
 pair	Chính sách tiền tệ trong khủng hoảng || Phần bù kỳ hạn	2
-pair	Chính sách tiền tệ trong khủng hoảng || Thanh khoản và nguồn vốn	35
+pair	Chính sách tiền tệ trong khủng hoảng || Quản trị, FTP và quy định giám sát	3
+pair	Chính sách tiền tệ trong khủng hoảng || Thanh khoản và nguồn vốn	37
 pair	Chính sách tiền tệ trong khủng hoảng || Thể chế, mục tiêu và chiến lược của ngân hàng trung ương	2
 pair	Chính sách tiền tệ trong khủng hoảng || Thị trường thu nhập cố định, tiền tệ và chính sách phi quy ước	22
 pair	Chính sách tiền tệ trong khủng hoảng || Thị trường tiền tệ, chuẩn lãi suất RFR và repo	4
@@ -151,17 +152,18 @@ pair	Công cụ tiền mặt, cấu trúc vi mô và bù trừ trung tâm || Đi
 pair	Công cụ tiền mặt, cấu trúc vi mô và bù trừ trung tâm || Định giá trái phiếu, rủi ro lãi suất và công cụ lãi suất thả nổi	12
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Dự trữ và tài trợ cán cân	2
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Flow of funds: ghép các cân đối khu vực	4
-pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Hoạt động quasi-fiscal và bảng cân đối nhà chức trách tiền tệ	15
+pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Hoạt động quasi-fiscal và bảng cân đối nhà chức trách tiền tệ	13
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Hệ thống tài chính, quy định và giám sát	7
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Lãi suất và mặt bằng lãi suất	7
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Lạm phát	2
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Lịch sử chế độ tài chính - tiền tệ Hoa Kỳ	8
+pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công	2
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Phần bù kỳ hạn	2
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Rủi ro tín dụng, thứ bậc nợ và xếp hạng tín nhiệm	8
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Thanh khoản và nguồn vốn	10
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Thể chế, mục tiêu và chiến lược của ngân hàng trung ương	29
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Thị trường thu nhập cố định, tiền tệ và chính sách phi quy ước	14
-pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Thị trường tiền tệ, chuẩn lãi suất RFR và repo	30
+pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Thị trường tiền tệ, chuẩn lãi suất RFR và repo	29
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Tiền gửi và mô hình hành vi	4
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Tiền tệ trong kinh tế chuyển đổi và kỹ thuật IMF	20
 pair	Công cụ và cơ chế vận hành chính sách tiền tệ || Tiền và hệ thống tiền tệ	60
@@ -178,6 +180,7 @@ pair	Cấu trúc kỳ hạn và phân tích đường cong lợi suất || Hệ 
 pair	Cấu trúc kỳ hạn và phân tích đường cong lợi suất || Lãi suất và mặt bằng lãi suất	46
 pair	Cấu trúc kỳ hạn và phân tích đường cong lợi suất || Mô hình hoá lãi suất	22
 pair	Cấu trúc kỳ hạn và phân tích đường cong lợi suất || Nền tảng ALM và bảng cân đối	2
+pair	Cấu trúc kỳ hạn và phân tích đường cong lợi suất || Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công	2
 pair	Cấu trúc kỳ hạn và phân tích đường cong lợi suất || Phần bù kỳ hạn	2
 pair	Cấu trúc kỳ hạn và phân tích đường cong lợi suất || Quản trị, FTP và quy định giám sát	2
 pair	Cấu trúc kỳ hạn và phân tích đường cong lợi suất || Rủi ro lãi suất sổ ngân hàng (IRRBB)	4
@@ -245,6 +248,7 @@ pair	Hệ thống tài chính, quy định và giám sát || Lịch sử chế �
 pair	Hệ thống tài chính, quy định và giám sát || Nền tảng ALM và bảng cân đối	2
 pair	Hệ thống tài chính, quy định và giám sát || Phân tích chi	2
 pair	Hệ thống tài chính, quy định và giám sát || Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công	12
+pair	Hệ thống tài chính, quy định và giám sát || Quản trị, FTP và quy định giám sát	3
 pair	Hệ thống tài chính, quy định và giám sát || Rủi ro lãi suất sổ ngân hàng (IRRBB)	2
 pair	Hệ thống tài chính, quy định và giám sát || Thanh khoản và nguồn vốn	2
 pair	Hệ thống tài chính, quy định và giám sát || Tiền tệ trong kinh tế chuyển đổi và kỹ thuật IMF	4
@@ -307,10 +311,10 @@ pair	Mô hình hoá lãi suất || Trái phiếu liên kết lạm phát	2
 pair	Mô hình hoá lãi suất || Định giá trái phiếu, rủi ro lãi suất và công cụ lãi suất thả nổi	3
 pair	Mô hình hoá lãi suất || Ước lượng và khớp đường cong lợi suất	20
 pair	Nền tảng ALM và bảng cân đối || Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công	6
-pair	Nền tảng ALM và bảng cân đối || Quản trị, FTP và quy định giám sát	41
+pair	Nền tảng ALM và bảng cân đối || Quản trị, FTP và quy định giám sát	38
 pair	Nền tảng ALM và bảng cân đối || Rủi ro lãi suất sổ ngân hàng (IRRBB)	67
 pair	Nền tảng ALM và bảng cân đối || Thanh khoản thị trường, mô hình đường cong và phân tích cấu trúc kỳ hạn	2
-pair	Nền tảng ALM và bảng cân đối || Thanh khoản và nguồn vốn	24
+pair	Nền tảng ALM và bảng cân đối || Thanh khoản và nguồn vốn	26
 pair	Nền tảng ALM và bảng cân đối || Thị trường tiền tệ, chuẩn lãi suất RFR và repo	9
 pair	Nền tảng ALM và bảng cân đối || Tiền gửi và mô hình hành vi	46
 pair	Nền tảng ALM và bảng cân đối || Tiền và hệ thống tiền tệ	11
@@ -340,7 +344,7 @@ pair	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ côn
 pair	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Thị trường thu nhập cố định, tiền tệ và chính sách phi quy ước	2
 pair	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Thị trường trái phiếu chính phủ toàn cầu và cấu trúc thể chế	8
 pair	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Tiền gửi và mô hình hành vi	4
-pair	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Tỷ giá và chế độ tỷ giá	4
+pair	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Tỷ giá và chế độ tỷ giá	2
 pair	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Điều hành Fed, thị trường repo và nợ Kho bạc	4
 pair	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Đại lượng sản lượng	8
 pair	Phần bù kỳ hạn || Thị trường thu nhập cố định, tiền tệ và chính sách phi quy ước	2
@@ -350,8 +354,8 @@ pair	Quản trị rủi ro danh mục, phòng hộ và tái cân bằng || Thanh
 pair	Quản trị rủi ro danh mục, phòng hộ và tái cân bằng || Thị trường tiền tệ, chuẩn lãi suất RFR và repo	2
 pair	Quản trị rủi ro danh mục, phòng hộ và tái cân bằng || Thị trường trái phiếu chính phủ toàn cầu và cấu trúc thể chế	2
 pair	Quản trị rủi ro danh mục, phòng hộ và tái cân bằng || Định giá trái phiếu, rủi ro lãi suất và công cụ lãi suất thả nổi	12
-pair	Quản trị, FTP và quy định giám sát || Rủi ro lãi suất sổ ngân hàng (IRRBB)	51
-pair	Quản trị, FTP và quy định giám sát || Thanh khoản và nguồn vốn	20
+pair	Quản trị, FTP và quy định giám sát || Rủi ro lãi suất sổ ngân hàng (IRRBB)	53
+pair	Quản trị, FTP và quy định giám sát || Thanh khoản và nguồn vốn	22
 pair	Quản trị, FTP và quy định giám sát || Tiền gửi và mô hình hành vi	12
 pair	Rủi ro lãi suất sổ ngân hàng (IRRBB) || Thanh khoản thị trường, mô hình đường cong và phân tích cấu trúc kỳ hạn	4
 pair	Rủi ro lãi suất sổ ngân hàng (IRRBB) || Tiền gửi và mô hình hành vi	22
@@ -434,7 +438,6 @@ bridge	Carry, roll-down và chênh lệch đường cong lợi suất || Hợp �
 bridge	Case: Ba Lan 1989–1994 || Chính sách vĩ mô và tổ chức quốc tế	polands-exchange-rate-path-from-dollar-peg-to-managed-float-balanced-disinflation-and-competitiveness
 bridge	Case: Ba Lan 1989–1994 || Khung hạch toán	polands-1992-sna-accounts-show-government-dissaving-and-household-saving
 bridge	Case: Ba Lan 1989–1994 || Khung kế toán tài khoá (GFS)	state-owned-enterprises
-bridge	Case: Ba Lan 1989–1994 || Đại lượng thu nhập và sử dụng	gross-national-saving
 bridge	Case: Silicon Valley Bank || Quản trị, FTP và quy định giám sát	bank-steering-rules-run-from-internal-funds-transfer-pricing-to-eu-irrbb-measurement-outlier-tests-and-reporting
 bridge	Chính sách giá và thu nhập || Khung kế toán tài khoá (GFS)	state-owned-enterprises
 bridge	Chính sách giá và thu nhập || Lao động và tiền lương	incomes-policy
@@ -480,7 +483,7 @@ bridge	Phân tích chi || Tiền và hệ thống tiền tệ	central-bank
 bridge	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Rủi ro tín dụng, thứ bậc nợ và xếp hạng tín nhiệm	private-credit-selective-defaults-obscure-systemic-banking-fragility
 bridge	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Thanh khoản và nguồn vốn	liquidity-risk
 bridge	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Thị trường trái phiếu chính phủ toàn cầu và cấu trúc thể chế	sovereign-debt-refinancing-dependency-constrains-monetary-policy-horizons
-bridge	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Tỷ giá và chế độ tỷ giá	exchange-rate
+bridge	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Tiền gửi và mô hình hành vi	vietnams-banking-system-exhibits-structural-dichotomy-between-tt1-and-tt2
 bridge	Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công || Điều hành Fed, thị trường repo và nợ Kho bạc	sovereign-debt-absorption-requires-dealer-intermediation-capacity-beyond-investor-demand
 bridge	Phần bù kỳ hạn || Điều hành Fed, thị trường repo và nợ Kho bạc	sovereign-bond-term-premia-rise-from-fiscal-burdens-independently-of-inflation-expectations
 bridge	Rủi ro tín dụng, thứ bậc nợ và xếp hạng tín nhiệm || Định giá trái phiếu, rủi ro lãi suất và công cụ lãi suất thả nổi	joint-and-several-sovereign-liability-creates-moral-hazard-prohibited-by-eu-no-bailout-clause
@@ -504,8 +507,8 @@ bridge	Đo thâm hụt tài khoá || Đồng nhất thức đối ngoại	govern
 rank	central-bank	1
 rank	reserve-money	2
 rank	current-account-balance	3
-rank	deposit-money-banks	4
-rank	gdp	5
+rank	gdp	4
+rank	deposit-money-banks	5
 rank	conventional-fiscal-deficit	6
 rank	financial-and-monetary-regime	7
 rank	exchange-rate	8
@@ -513,8 +516,8 @@ rank	monetizing-the-deficit-creates-high-powered-money-and-inflation	9
 rank	gndi	10
 rank	repurchase-agreement	11
 rank	the-saving-investment-gap-equals-the-current-account-balance	12
-rank	discount-window	13
-rank	subsidies	14
+rank	subsidies	13
+rank	discount-window	14
 rank	government-safety-net-solves-bank-runs-but-generates-systemic-moral-hazard	15
 rank	cpi	16
 rank	financial-system-transfers-funds-through-direct-and-indirect-channels	17
@@ -522,182 +525,182 @@ rank	real-gdp	18
 rank	final-consumption	19
 rank	potential-gdp-measures-productive-capacity-at-full-employment	20
 rank	interest-rate-risk-in-the-banking-book-irrbb	21
-rank	interbank-market	22
-rank	supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital	23
-rank	narrow-money-m1	24
-rank	gross-investment	25
-rank	depreciation	26
-rank	gdp-deflator	27
-rank	seigniorage	28
-rank	double-entry-accounting-in-the-balance-of-payments	29
-rank	operational-target-of-monetary-policy	30
+rank	narrow-money-m1	22
+rank	gdp-deflator	23
+rank	gross-investment	24
+rank	depreciation	25
+rank	seigniorage	26
+rank	liquidity-coverage-ratio-lcr	27
+rank	double-entry-accounting-in-the-balance-of-payments	28
+rank	supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital	29
+rank	interbank-market	30
 rank	natural-rate-of-unemployment-equals-frictional-plus-structural-unemployment	31
 rank	transfers-in-the-balance-of-payments	32
-rank	types-of-inflation	33
-rank	alm-balance-sheet-balancing-progresses-through-four-operational-dimensions	34
-rank	bank-runs-investor-strikes-and-multiple-equilibria	35
-rank	supervision-differs-from-regulation-through-continuous-monitoring-and-camels-examination	36
-rank	current-account-deficit-means-absorption-exceeds-national-income	37
-rank	funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks	38
-rank	relative-vs-absolute-central-bank-intermediation	39
-rank	inflation	40
-rank	gross-national-saving	41
-rank	liquidity-coverage-ratio-lcr	42
-rank	lender-of-last-resort-foundations-and-bagehot-principles	43
-rank	central-counterparties-transform-bilateral-counterparty-risk-into-liquidity-and-concentration-risk	44
-rank	general-collateral-and-specials-repo-separate-cash-driven-from-collateral-driven-financing	45
-rank	balance-of-payments	46
-rank	gni	47
-rank	absorption	48
+rank	operational-target-of-monetary-policy	33
+rank	types-of-inflation	34
+rank	current-account-deficit-means-absorption-exceeds-national-income	35
+rank	general-collateral-and-specials-repo-separate-cash-driven-from-collateral-driven-financing	36
+rank	inflation	37
+rank	relative-vs-absolute-central-bank-intermediation	38
+rank	bank-runs-investor-strikes-and-multiple-equilibria	39
+rank	central-counterparties-transform-bilateral-counterparty-risk-into-liquidity-and-concentration-risk	40
+rank	supervision-differs-from-regulation-through-continuous-monitoring-and-camels-examination	41
+rank	lender-of-last-resort-foundations-and-bagehot-principles	42
+rank	alm-balance-sheet-balancing-progresses-through-four-operational-dimensions	43
+rank	balance-of-payments	44
+rank	gross-national-saving	45
+rank	gni	46
+rank	absorption	47
+rank	funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks	48
 rank	required-reserves	49
-rank	liquidity-risk	50
-rank	production-income-and-expenditure-approaches-yield-the-same-gdp	51
-rank	reserve-assets-in-the-balance-of-payments-are-flows-not-stocks	52
-rank	net-interest-income-forecast-serves-as-baseline-for-prospective-alm-simulations	53
-rank	government-policy-failure-is-as-critical-as-market-failure-in-financial-crises	54
-rank	the-private-sector-resource-gap-must-be-financed-by-other-sectors	55
-rank	valuation-adjustments-separate-transaction-flows-from-exchange-rate-revaluation-of-stocks	56
-rank	xva-adjustments-reconcile-unmargined-otc-derivatives-with-cleared-market-prices	57
-rank	other-items-net	58
-rank	quasi-money	59
-rank	laspeyres-and-paasche-indexes-bracket-true-inflation	60
-rank	broad-money	61
+rank	production-income-and-expenditure-approaches-yield-the-same-gdp	50
+rank	reserve-assets-in-the-balance-of-payments-are-flows-not-stocks	51
+rank	the-private-sector-resource-gap-must-be-financed-by-other-sectors	52
+rank	government-policy-failure-is-as-critical-as-market-failure-in-financial-crises	53
+rank	valuation-adjustments-separate-transaction-flows-from-exchange-rate-revaluation-of-stocks	54
+rank	other-items-net	55
+rank	xva-adjustments-reconcile-unmargined-otc-derivatives-with-cleared-market-prices	56
+rank	net-interest-income-forecast-serves-as-baseline-for-prospective-alm-simulations	57
+rank	quasi-money	58
+rank	laspeyres-and-paasche-indexes-bracket-true-inflation	59
+rank	broad-money	60
+rank	liquidity-risk	61
 rank	value-added	62
-rank	monetary-policy-transmission-breakdown-and-zero-lower-bound	63
+rank	gdp-gap-measures-deviation-of-actual-output-from-potential	63
 rank	exchange-rate-regimes	64
-rank	gdp-gap-measures-deviation-of-actual-output-from-potential	65
-rank	real-interest-rate	66
+rank	real-interest-rate	65
+rank	monetary-policy-transmission-breakdown-and-zero-lower-bound	66
 rank	core-inflation-strips-out-one-time-price-level-jumps	67
-rank	modern-monetary-system-functions-as-an-inverted-pyramid	68
-rank	interest-rate-corridor-symmetric-approach	69
-rank	silicon-valley-bank-collapse-epitomizes-unhedged-duration-mismatches-and-uninsured-deposit-runs	70
-rank	net-credit-to-government	71
-rank	fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-inflation	72
+rank	net-credit-to-government	68
+rank	modern-monetary-system-functions-as-an-inverted-pyramid	69
+rank	fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-inflation	70
+rank	monetary-authorities-influence-reserve-money-through-five-direct-instruments	71
+rank	interest-rate-corridor-symmetric-approach	72
 rank	sovereign-debt-absorption-requires-dealer-intermediation-capacity-beyond-investor-demand	73
-rank	monetary-authorities-influence-reserve-money-through-five-direct-instruments	74
-rank	central-bank-collateral-framework-design-and-risk-control	75
-rank	repo-rate-spikes-transmit-to-federal-funds-rate-via-fhlb-arbitrage	76
-rank	risk-based-capital-requirements-aim-to-constrain-leverage-but-incentivize-regulatory-arbitrage	77
-rank	the-money-multiplier-links-reserve-money-to-the-money-supply	78
-rank	loanable-funds-framework-determines-equilibrium-interest-rate-and-bond-price	79
-rank	multilateral-netting-minimizes-interbank-settlement-flows-and-credit-exposures	80
-rank	separation-principle-of-monetary-policy	81
-rank	prompt-corrective-action-establishes-tripwire-capital-ratios-to-curb-regulatory-forbearance	82
-rank	intermediate-consumption	83
-rank	economic-value-and-earnings-perspectives-complement-each-other-in-alm	84
+rank	central-bank-collateral-framework-design-and-risk-control	74
+rank	the-money-multiplier-links-reserve-money-to-the-money-supply	75
+rank	silicon-valley-bank-collapse-epitomizes-unhedged-duration-mismatches-and-uninsured-deposit-runs	76
+rank	repo-rate-spikes-transmit-to-federal-funds-rate-via-fhlb-arbitrage	77
+rank	high-quality-liquid-assets-hqla	78
+rank	multilateral-netting-minimizes-interbank-settlement-flows-and-credit-exposures	79
+rank	loanable-funds-framework-determines-equilibrium-interest-rate-and-bond-price	80
+rank	bond-carry-measures-net-income-after-repo-financing-and-defines-forward-pricing	81
+rank	intermediate-consumption	82
+rank	separation-principle-of-monetary-policy	83
+rank	prompt-corrective-action-establishes-tripwire-capital-ratios-to-curb-regulatory-forbearance	84
 rank	monetary-policy	85
-rank	high-quality-liquid-assets-hqla	86
-rank	open-market-operations	87
-rank	butterfly-and-condor-trades-exploit-curve-curvature-and-differing-market-quoting-conventions	88
+rank	butterfly-and-condor-trades-exploit-curve-curvature-and-differing-market-quoting-conventions	86
+rank	risk-based-capital-requirements-aim-to-constrain-leverage-but-incentivize-regulatory-arbitrage	87
+rank	open-market-operations	88
 rank	delivery-versus-payment-eliminates-herstatt-risk-through-intermediary-settlement-cycles	89
-rank	money-aggregates-form-a-nested-hierarchy-from-narrow-money-to-broad-liquidity	90
+rank	government-saving-investment-gap-approximates-the-overall-fiscal-deficit	90
 rank	hyperinflation	91
-rank	bank-absorption-of-sovereign-debt-is-governed-by-a-regulatory-triangle	92
-rank	bond-carry-measures-net-income-after-repo-financing-and-defines-forward-pricing	93
-rank	the-flow-of-funds-table-decomposes-the-economy-wide-identity-into-sector-columns	94
-rank	unemployment-rate	95
+rank	money-aggregates-form-a-nested-hierarchy-from-narrow-money-to-broad-liquidity	92
+rank	the-flow-of-funds-table-decomposes-the-economy-wide-identity-into-sector-columns	93
+rank	unemployment-rate	94
+rank	measured-gdp-is-an-imperfect-gauge-of-output-and-welfare	95
 rank	the-flow-of-funds-table-is-a-zero-sum-quadruple-entry-matrix	96
-rank	government-saving-investment-gap-approximates-the-overall-fiscal-deficit	97
-rank	supervisory-stress-testing-provides-forward-looking-macroprudential-evaluation	98
-rank	measured-gdp-is-an-imperfect-gauge-of-output-and-welfare	99
-rank	aggregate-demand	100
-rank	fiscal-sustainability	101
-rank	overnight-rate-is-the-natural-operational-target-of-monetary-policy	102
-rank	direct-financial-markets-fail-small-participants-due-to-risk-return-tradeoff-asymmetry	103
-rank	the-analytical-monetary-authorities-balance-sheet-groups-items-into-nfa-nda-and-rm	104
-rank	money-supply-equals-net-foreign-assets-plus-net-domestic-assets	105
-rank	mechanics-of-liquidity-crises-and-feedback-loops	106
-rank	standing-facilities-in-monetary-policy-operations	107
-rank	collateral-constraint-on-central-bank-credit	108
-rank	de-jure-central-bank-independence-diverges-from-de-facto-policy-autonomy	109
-rank	ccp-waterfall-protects-clearing-houses-through-margining-default-funds-and-mandatory-bidding	110
-rank	goods-in-the-balance-of-payments	111
-rank	services-in-the-balance-of-payments	112
-rank	incomes-policy	113
-rank	bond-futures-basis-and-implied-repo-rate-quantify-arbitrage-free-cash-and-carry-relationships	114
-rank	excess-reserves	115
-rank	three-techniques-to-control-short-term-interest-rates	116
-rank	money-is-the-only-one-hundred-percent-liquid-asset	117
-rank	financial-markets-are-divided-into-money-markets-and-capital-markets-by-maturity	118
-rank	liquidity-premium-hypothesis-explains-the-prevalence-of-upward-sloping-yield-curves	119
-rank	vietnams-banking-system-exhibits-structural-dichotomy-between-tt1-and-tt2	120
-rank	income-in-the-balance-of-payments	121
-rank	commercial-banks-create-inside-money-by-extending-credit	122
-rank	yield-curve	123
-rank	inflation-targeting-framework-anchors-expectations-through-transparent-commitment	124
-rank	forward-guidance-evolved-from-moral-suasion-as-conditional-transparent-commitment	125
-rank	claims-on-deposit-money-banks	126
-rank	current-account-balance-equals-the-change-in-net-foreign-assets	127
-rank	upward-sloping-yield-curves-mandate-forward-rates-to-exceed-zero-rates-and-par-yields	128
-rank	cash-flow-balancing-resolves-immediate-payment-obligations-against-excess-reserve-opportunity-cost	129
-rank	private-credit-selective-defaults-obscure-systemic-banking-fragility	130
-rank	direct-investment	131
-rank	a-one-time-price-shock-becomes-inflation-only-if-monetary-policy-accommodates-it	132
-rank	interest-rate-structure-is-determined-by-default-risk-liquidity-taxes-and-maturity	133
-rank	maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks	134
-rank	arbitrage-free-bond-prices-evolve-as-martingales-under-risk-neutral-measures	135
-rank	financial-institutions-operate-as-balanced-budget-entities-in-the-flow-of-funds	136
-rank	okuns-law-relates-the-gdp-gap-to-the-unemployment-gap	137
-rank	parallel-yield-curve-shifts-reflect-shifts-in-equilibrium-neutral-rates-and-central-bank-commitments	138
-rank	pure-expectations-hypothesis-equates-long-term-rates-to-the-average-of-expected-short-rates	139
-rank	term-structure-modeling-bifurcates-into-short-rate-diffusion-and-forward-rate-hjm-frameworks	140
-rank	price-stability-is-defined-by-low-and-stable-inflation-rather-than-zero-percent	141
-rank	instantaneous-forward-curves-lead-spot-curve-inflections-and-peak-earlier	142
-rank	macroprudential-regulation-bridges-financial-stability-and-macroeconomic-policy-despite-informational-limits	143
-rank	treasury-repo-market-operates-through-three-distinct-client-segments	144
-rank	liquidity-regulation-and-central-bank-operations-arbitrage	145
-rank	z-spreads-isolate-cash-flow-relative-value-across-full-zero-discount-curves	146
+rank	fiscal-sustainability	97
+rank	aggregate-demand	98
+rank	money-supply-equals-net-foreign-assets-plus-net-domestic-assets	99
+rank	the-analytical-monetary-authorities-balance-sheet-groups-items-into-nfa-nda-and-rm	100
+rank	overnight-rate-is-the-natural-operational-target-of-monetary-policy	101
+rank	direct-financial-markets-fail-small-participants-due-to-risk-return-tradeoff-asymmetry	102
+rank	mechanics-of-liquidity-crises-and-feedback-loops	103
+rank	bond-futures-basis-and-implied-repo-rate-quantify-arbitrage-free-cash-and-carry-relationships	104
+rank	goods-in-the-balance-of-payments	105
+rank	services-in-the-balance-of-payments	106
+rank	de-jure-central-bank-independence-diverges-from-de-facto-policy-autonomy	107
+rank	incomes-policy	108
+rank	excess-reserves	109
+rank	economic-value-and-earnings-perspectives-complement-each-other-in-alm	110
+rank	money-is-the-only-one-hundred-percent-liquid-asset	111
+rank	standing-facilities-in-monetary-policy-operations	112
+rank	collateral-constraint-on-central-bank-credit	113
+rank	ccp-waterfall-protects-clearing-houses-through-margining-default-funds-and-mandatory-bidding	114
+rank	three-techniques-to-control-short-term-interest-rates	115
+rank	income-in-the-balance-of-payments	116
+rank	commercial-banks-create-inside-money-by-extending-credit	117
+rank	upward-sloping-yield-curves-mandate-forward-rates-to-exceed-zero-rates-and-par-yields	118
+rank	forward-guidance-evolved-from-moral-suasion-as-conditional-transparent-commitment	119
+rank	yield-curve	120
+rank	financial-markets-are-divided-into-money-markets-and-capital-markets-by-maturity	121
+rank	inflation-targeting-framework-anchors-expectations-through-transparent-commitment	122
+rank	liquidity-premium-hypothesis-explains-the-prevalence-of-upward-sloping-yield-curves	123
+rank	current-account-balance-equals-the-change-in-net-foreign-assets	124
+rank	claims-on-deposit-money-banks	125
+rank	direct-investment	126
+rank	parallel-yield-curve-shifts-reflect-shifts-in-equilibrium-neutral-rates-and-central-bank-commitments	127
+rank	arbitrage-free-bond-prices-evolve-as-martingales-under-risk-neutral-measures	128
+rank	a-one-time-price-shock-becomes-inflation-only-if-monetary-policy-accommodates-it	129
+rank	okuns-law-relates-the-gdp-gap-to-the-unemployment-gap	130
+rank	term-structure-modeling-bifurcates-into-short-rate-diffusion-and-forward-rate-hjm-frameworks	131
+rank	bank-absorption-of-sovereign-debt-is-governed-by-a-regulatory-triangle	132
+rank	instantaneous-forward-curves-lead-spot-curve-inflections-and-peak-earlier	133
+rank	pure-expectations-hypothesis-equates-long-term-rates-to-the-average-of-expected-short-rates	134
+rank	liquidity-regulation-and-central-bank-operations-arbitrage	135
+rank	price-stability-is-defined-by-low-and-stable-inflation-rather-than-zero-percent	136
+rank	financial-institutions-operate-as-balanced-budget-entities-in-the-flow-of-funds	137
+rank	cash-flow-balancing-resolves-immediate-payment-obligations-against-excess-reserve-opportunity-cost	138
+rank	z-spreads-isolate-cash-flow-relative-value-across-full-zero-discount-curves	139
+rank	treasury-repo-market-operates-through-three-distinct-client-segments	140
+rank	interest-rate-structure-is-determined-by-default-risk-liquidity-taxes-and-maturity	141
+rank	full-employment-does-not-mean-zero-unemployment	142
+rank	tax-elasticity	143
+rank	soft-budget-constraint	144
+rank	credit-spread-risk-in-the-banking-book-csrbb	145
+rank	central-bank-transparency-anchors-public-expectations-across-five-dimensions	146
 rank	debt-acceleration-and-cross-default-clauses-prevent-time-subordination-in-multi-creditor-structures	147
-rank	full-employment-does-not-mean-zero-unemployment	148
-rank	soft-budget-constraint	149
-rank	central-bank-transparency-anchors-public-expectations-across-five-dimensions	150
-rank	tax-elasticity	151
-rank	economic-value-of-equity-eve-measures-net-present-value-of-banking-book-cash-flows	152
+rank	supervisory-stress-testing-provides-forward-looking-macroprudential-evaluation	148
+rank	institutional-sectors-in-the-sna	149
+rank	tanzi-diagnostic-test	150
+rank	net-international-investment-position	151
+rank	residency-in-the-sna-follows-the-centre-of-economic-interest	152
 rank	monetary-accounts-net-claims-on-government-but-keep-claims-on-deposit-money-banks-gross	153
-rank	autonomous-factors-of-central-bank-balance-sheet	154
-rank	tanzi-diagnostic-test	155
-rank	net-international-investment-position	156
-rank	residency-in-the-sna-follows-the-centre-of-economic-interest	157
-rank	institutional-sectors-in-the-sna	158
-rank	laspeyres-price-index	159
-rank	a-real-output-index-needs-prices-that-reflect-relative-scarcity	160
-rank	financial-intermediation	161
-rank	collateral-pool-segregation-and-double-adverse-selection	162
-rank	cpi-and-the-gdp-deflator-differ-in-coverage-import-prices-and-weights	163
-rank	social-safety-nets-trade-targeting-against-work-incentives	164
-rank	gross-output	165
-rank	interest-rate-gap-risk-stems-from-repricing-timing-mismatches	166
-rank	government-revenue-is-a-receipt-that-creates-no-repayment-obligation	167
-rank	transition-statistics-understate-private-sector-growth	168
-rank	sovereign-fx-intervention-integrates-fima-repo-facility-to-prevent-treasury-market-dislocation	169
-rank	eba-standardized-approach-for-irrbb-harmonizes-eve-and-nii-measurement	170
-rank	one-factor-term-structure-models-force-perfect-yield-correlation-across-maturities	171
-rank	price-liberalization	172
-rank	implied-forward-rates-function-as-hedge-rates-rather-than-accurate-market-forecasts	173
-rank	nominal-anchor	174
-rank	market-impact-of-collateral-framework-and-leverage-constraints	175
-rank	humped-yield-curves-reflect-peaked-interest-rate-expectations-or-maturity-habitat-imbalances	176
-rank	general-government	177
-rank	nominal-gdp	178
+rank	private-credit-selective-defaults-obscure-systemic-banking-fragility	154
+rank	laspeyres-price-index	155
+rank	vietnams-banking-system-exhibits-structural-dichotomy-between-tt1-and-tt2	156
+rank	a-real-output-index-needs-prices-that-reflect-relative-scarcity	157
+rank	autonomous-factors-of-central-bank-balance-sheet	158
+rank	cpi-and-the-gdp-deflator-differ-in-coverage-import-prices-and-weights	159
+rank	social-safety-nets-trade-targeting-against-work-incentives	160
+rank	gross-output	161
+rank	economic-value-of-equity-eve-measures-net-present-value-of-banking-book-cash-flows	162
+rank	financial-intermediation	163
+rank	government-revenue-is-a-receipt-that-creates-no-repayment-obligation	164
+rank	transition-statistics-understate-private-sector-growth	165
+rank	collateral-pool-segregation-and-double-adverse-selection	166
+rank	one-factor-term-structure-models-force-perfect-yield-correlation-across-maturities	167
+rank	implied-forward-rates-function-as-hedge-rates-rather-than-accurate-market-forecasts	168
+rank	price-liberalization	169
+rank	sovereign-fx-intervention-integrates-fima-repo-facility-to-prevent-treasury-market-dislocation	170
+rank	general-government	171
+rank	humped-yield-curves-reflect-peaked-interest-rate-expectations-or-maturity-habitat-imbalances	172
+rank	maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks	173
+rank	market-impact-of-collateral-framework-and-leverage-constraints	174
+rank	nominal-gdp	175
+rank	nominal-anchor	176
+rank	repo-specialness-and-financing-costs-dictate-the-break-even-hurdle-of-curve-spread-trades	177
+rank	interest-rate-gap-risk-stems-from-repricing-timing-mismatches	178
 rank	net-investment	179
-rank	yield-to-maturity-equates-present-value-of-cash-flows-to-asset-price	180
-rank	types-of-unemployment	181
-rank	duration-gap-analysis-quantifies-balance-sheet-mismatch-scaled-by-asset-base	182
-rank	institutional-preferred-habitats-and-solvency-regulations-induce-structural-short-convexity	183
-rank	comprehensive-inflation-models-stack-seasonally-adjusted-inflation-dynamics-onto-nominal-discount-curves	184
-rank	spline-spread-dispersion-measures-indirect-arbitrage-capacity-without-trading-bias	185
-rank	monetary-policy-instruments-three-tools	186
-rank	yield-curve-representations-bridge-discount-factors-zero-rates-and-par-yields	187
-rank	plain-vanilla-interest-rate-swaps-trade-pure-risk-and-resolve-preferred-habitat-friction	188
-rank	flow-of-funds-fundamental-equation-links-real-and-financial-decisions	189
-rank	government-net-lending-is-classed-as-expenditure-because-its-motive-is-policy	190
-rank	public-debt-dynamics-depend-on-the-primary-balance-seigniorage-and-the-interest-growth-gap	191
-rank	great-recession-stemmed-from-the-fatal-combination-of-ultra-easy-money-and-housing-subsidies	192
-rank	sticky-deposit-rates-and-unstable-deposit-betas-challenge-replication-models	193
-rank	twin-deficits-describes-the-co-movement-of-the-fiscal-and-current-account-balances	194
-rank	the-typical-monetary-authorities-balance-sheet-itemizes-foreign-assets-and-shows-reserve-money-by-holder	195
-rank	dual-curve-discounting-separates-rate-projection-from-collateralized-cash-flow-discounting	196
-rank	payments-arrears-split-the-cash-deficit-from-the-accrual-deficit	197
-rank	exchange-rate-subsidies	198
-rank	net-exports	199
-rank	lack-of-bank-competition-in-transition-economies-forces-nonprice-credit-rationing	200
+rank	types-of-unemployment	180
+rank	institutional-preferred-habitats-and-solvency-regulations-induce-structural-short-convexity	181
+rank	yield-to-maturity-equates-present-value-of-cash-flows-to-asset-price	182
+rank	spline-spread-dispersion-measures-indirect-arbitrage-capacity-without-trading-bias	183
+rank	total-net-cash-outflows	184
+rank	yield-curve-representations-bridge-discount-factors-zero-rates-and-par-yields	185
+rank	comprehensive-inflation-models-stack-seasonally-adjusted-inflation-dynamics-onto-nominal-discount-curves	186
+rank	bpv-weighted-yield-spread-trading-immunizes-first-order-directional-risk-under-strict-stop-loss-governance	187
+rank	government-net-lending-is-classed-as-expenditure-because-its-motive-is-policy	188
+rank	public-debt-dynamics-depend-on-the-primary-balance-seigniorage-and-the-interest-growth-gap	189
+rank	plain-vanilla-interest-rate-swaps-trade-pure-risk-and-resolve-preferred-habitat-friction	190
+rank	twin-deficits-describes-the-co-movement-of-the-fiscal-and-current-account-balances	191
+rank	monetary-policy-instruments-three-tools	192
+rank	flow-of-funds-fundamental-equation-links-real-and-financial-decisions	193
+rank	great-recession-stemmed-from-the-fatal-combination-of-ultra-easy-money-and-housing-subsidies	194
+rank	duration-gap-analysis-quantifies-balance-sheet-mismatch-scaled-by-asset-base	195
+rank	payments-arrears-split-the-cash-deficit-from-the-accrual-deficit	196
+rank	sticky-deposit-rates-and-unstable-deposit-betas-challenge-replication-models	197
+rank	dual-curve-discounting-separates-rate-projection-from-collateralized-cash-flow-discounting	198
+rank	the-typical-monetary-authorities-balance-sheet-itemizes-foreign-assets-and-shows-reserve-money-by-holder	199
+rank	hull-white-model-extends-vasicek-via-time-dependent-drift-to-match-the-initial-yield-curve	200

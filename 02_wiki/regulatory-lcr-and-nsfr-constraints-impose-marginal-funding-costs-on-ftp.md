@@ -8,6 +8,7 @@ last_updated: 2026-10-12
 reviewed: 2026-10-12
 reviewed_by: model
 part_of: [funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]
+governed_by: [net-stable-funding-ratio-nsfr]
 driven_by: [liquidity-coverage-ratio-lcr]
 related: [funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks, lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days, ccp-waterfall-protects-clearing-houses-through-margining-default-funds-and-mandatory-bidding, contingency-liquidity-and-embedded-optionality-require-specialized-ftp-add-ons, liquidity-risk]
 ---
@@ -20,4 +21,4 @@ Nguồn liệt kê bốn nguồn chi phí chính:
 3. **Nghĩa vụ bù trừ**: phái sinh OTC chuẩn hóa phải bù trừ qua đối tác bù trừ trung tâm (CCP), kéo theo chi phí tài trợ do yêu cầu ký quỹ của CCP (tata_bank_alm, Ch.2, Clearing Mandate, d.1714); cơ chế ký quỹ của CCP nằm ở trang [[ccp-waterfall-protects-clearing-houses-through-margining-default-funds-and-mandatory-bidding]];
 4. **Yêu cầu ký quỹ** cho phái sinh không bù trừ tập trung, cũng tạo thêm chi phí (tata_bank_alm, Ch.2, Margin Requirements, d.1718–1720).
 
-Các chi phí này cộng vào đường cong hai thành phần ở trang [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]], cùng các phụ phí thanh khoản dự phòng và quyền chọn ở trang [[contingency-liquidity-and-embedded-optionality-require-specialized-ftp-add-ons]]. LCR và NSFR là hai tỷ lệ quy định về [[liquidity-risk|rủi ro thanh khoản]].
+Các chi phí này cộng vào đường cong hai thành phần ở trang [[funds-transfer-pricing-curve-decomposes-into-pure-interest-rate-and-liquidity-spreads]], cùng các phụ phí thanh khoản dự phòng và quyền chọn ở trang [[contingency-liquidity-and-embedded-optionality-require-specialized-ftp-add-ons]]. LCR và [[net-stable-funding-ratio-nsfr|NSFR]] là hai tỷ lệ quy định về [[liquidity-risk|rủi ro thanh khoản]].

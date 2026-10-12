@@ -8,7 +8,7 @@ last_updated: 2026-10-12
 reviewed: 2026-10-12
 reviewed_by: model
 has_part: [eba-standardized-approach-for-irrbb-harmonizes-eve-and-nii-measurement, simplified-standardized-approach-provides-conservative-irrbb-metrics-for-small-banks, supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital]
-related: [credit-spread-risk-in-the-banking-book-csrbb]
+related: [credit-spread-risk-in-the-banking-book-csrbb, trading-book]
 ---
 
 Rủi ro lãi suất trên sổ ngân hàng (IRRBB) do nhiều tổ chức và cơ quan điều chỉnh; nguồn nêu bốn tầng (tata_bank_alm, Ch.5, 5.1 A Brief History of IRRBB Regulation, d.2712). Tầng thứ nhất là hợp tác giữa các cơ quan giám sát toàn cầu qua Ủy ban Basel về Giám sát Ngân hàng (BCBS). Tầng thứ hai là các quy định (regulation) và chỉ thị (directive) do Nghị viện châu Âu và Hội đồng thông qua. Tầng thứ ba là Cơ quan Ngân hàng châu Âu (EBA), được giao hài hòa quy định ngân hàng châu Âu bằng tiêu chuẩn kỹ thuật ràng buộc và hướng dẫn. Tầng thứ tư là cơ quan quốc gia, có vai trò chuyển chỉ thị của EU thành luật quốc gia (tata_bank_alm, Ch.5, 5.1 A Brief History of IRRBB Regulation, d.2712). Nguồn chỉ tóm tắt ba tầng đầu (tata_bank_alm, Ch.5, 5.1 A Brief History of IRRBB Regulation, d.2714).
@@ -21,7 +21,7 @@ Chuỗi CRD có sáu gói:
 1. **CRD I**: Điều 124(5) của Chỉ thị 2006/48/EC đặt nền cho phép thử mà về sau gọi là supervisory outlier test: cơ quan có thẩm quyền phải yêu cầu biện pháp khi giá trị kinh tế của tổ chức giảm hơn 20% vốn tự có do lãi suất thay đổi đột ngột và ngoài dự kiến, với mức thay đổi do cơ quan có thẩm quyền quy định (tata_bank_alm, Ch.5, 5.1.2.1 CRD, d.2753–2755);
 2. **CRD II (2009)** không xử lý đáng kể rủi ro lãi suất (tata_bank_alm, Ch.5, 5.1.2.1 CRD, d.2757);
 3. **CRD III (2010)** trao cho Ủy ban châu Âu quyền ban hành văn bản ủy quyền để xác định mức thay đổi lãi suất dùng trong đánh giá của cơ quan có thẩm quyền (tata_bank_alm, Ch.5, 5.1.2.1 CRD, d.2759);
-4. **CRD IV (2013)**: Điều 84 yêu cầu tổ chức có hệ thống nhận diện, đánh giá và quản lý rủi ro từ thay đổi lãi suất tác động tới hoạt động ngoài sổ kinh doanh (tata_bank_alm, Ch.5, 5.1.2.1 CRD, d.2761–2763); Điều 98(5) giữ ngưỡng 20% vốn tự có và ấn định mức thay đổi lãi suất là 200 điểm cơ bản hoặc mức do hướng dẫn của EBA xác định (tata_bank_alm, Ch.5, 5.1.2.1 CRD, d.2765–2767);
+4. **CRD IV (2013)**: Điều 84 yêu cầu tổ chức có hệ thống nhận diện, đánh giá và quản lý rủi ro từ thay đổi lãi suất tác động tới hoạt động ngoài [[trading-book|sổ kinh doanh]] (tata_bank_alm, Ch.5, 5.1.2.1 CRD, d.2761–2763); Điều 98(5) giữ ngưỡng 20% vốn tự có và ấn định mức thay đổi lãi suất là 200 điểm cơ bản hoặc mức do hướng dẫn của EBA xác định (tata_bank_alm, Ch.5, 5.1.2.1 CRD, d.2765–2767);
 5. **CRD V (2019)**, có hiệu lực từ 2021, giao EBA soạn tiêu chuẩn kỹ thuật về đo lường rủi ro lãi suất (tata_bank_alm, Ch.5, 5.1.2.1 CRD, d.2771–2773) và sửa Điều 98: quyền giám sát được thực thi ít nhất khi EVE giảm hơn 15% vốn Tier 1 ở bất kỳ kịch bản nào trong sáu kịch bản sốc giám sát, hoặc khi NII giảm mạnh ở một trong hai kịch bản sốc giám sát (tata_bank_alm, Ch.5, 5.1.2.1 CRD, d.2775–2779). Góc nhìn giá trị kinh tế nhờ đó được bổ sung bằng góc nhìn thu nhập (tata_bank_alm, Ch.5, 5.1.2.1 CRD, d.2781);
 6. **CRD VI (2024)** sửa CRD IV ở các nội dung ngoài IRRBB như quyền giám sát, chế tài, chi nhánh của nước thứ ba và rủi ro môi trường, xã hội, quản trị; hạn chuyển thành luật quốc gia là tháng 1/2026 (tata_bank_alm, Ch.5, 5.1.2.1 CRD, d.2783).
 

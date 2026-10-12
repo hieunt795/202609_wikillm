@@ -1,10 +1,12 @@
 ---
-title: tt1-deposit-rate-stickiness-prevents-interbank-liquidity-from-lowering-lending-rates
+title: weak-short-term-credit-absorption-breaks-balance-sheet-turnover-and-keeps-long-term-lending-rates-high
 type: concept
 tags: [vietnam-financial-system, monetary-transmission, interest-rates]
 sources: [clippings]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-12
+reviewed_by: model
 part_of: [vietnams-banking-system-exhibits-structural-dichotomy-between-tt1-and-tt2]
 related: [interbank-market, alm-balance-sheet-balancing-progresses-through-four-operational-dimensions]
 ---
