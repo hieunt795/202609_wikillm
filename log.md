@@ -1152,3 +1152,23 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - `query/SKILL.md` bước 3: láng giềng theo loại quan hệ thay cho outlink cộng `--backlinks`; nhánh câu hỏi cấu trúc và câu hỏi toàn cảnh
 - Đo: 6 câu mới, skill mới 49/49 tiêu chí, skill cũ 48/49; bộ tiêu chí chưa phân biệt được hai bản; lý do và giới hạn ở `decisions.md` [2026-10-12]
 - `_inbox.md` thêm 1 mục (lệch ngày TAF giữa hai trang); còn lại: lô C (tổng quan nhóm), viết lại tiêu chí evals cho khó hơn
+
+## [2026-10-12:13-41-22] research | thanh khoản và nguồn vốn — tổng quan nhóm
+- Deep: 12 trang trục của nhóm 32 trang, không enrich; 0 claim, 0 link, 0 conflict, 1 analysis (N1 đã duyệt): the-lcr-buffers-liquidity-risk-for-30-days-while-ratio-compliance-leaves-the-funding-mismatch-in-place
+- `--graph`: +1 trang, +40 link (gắn `related`); độ mạnh nhóm "Chính sách tiền tệ trong khủng hoảng" ↔ "Thanh khoản và nguồn vốn" 29 → 35; chặn: basel_lcr LCR40, LCR31
+- Báo cáo: Claude outputs/research-2026-10-12-liquidity-and-funding-overview.md
+
+## [2026-10-12:13-46-26] research | IRRBB — tổng quan nhóm
+- Deep: 16 trang của nhóm (đoạn đầu), không enrich; 0 claim, 0 link, 0 conflict, 1 analysis (N1 đã duyệt): irrbb-measurement-pairs-economic-value-and-earnings-views-over-gap-basis-and-option-risk
+- `--graph`: cộng dồn với lượt trước chưa commit +2 trang, +62 link, không có dòng vượt ngưỡng mới; 14/16 trang của nhóm chưa review
+- Báo cáo: Claude outputs/research-2026-10-12-irrbb-overview.md
+
+## [2026-10-12:13-50-37] review | 5 trang nhóm IRRBB (lượt 1/3)
+- Đã sửa và đặt reviewed cả 5: dự báo NII (bỏ "bắt buộc", sửa câu margin-beta), khe hở thời lượng (chú thích d.970 thành d.969, bỏ "mất cân đối trầm trọng"), EVE ("thường phân kỳ đáng kể" thành "có thể khác", bỏ "phi rủi ro"), gap risk (bỏ câu kỹ thuật phòng hộ không có nguồn), option risk (10 chỗ nói quá: "chắc chắn", "khổng lồ", động cơ của trần 5 năm)
+- Gắn loại 35 link của 5 trang; `--graph`: không có dòng vượt ngưỡng; 0 cặp lệch
+- Còn lại: 9 trang IRRBB chưa review; vài câu dẫn link ở cuối trang NII và EVE chưa truy tới dòng nguồn
+
+## [2026-10-12:13-56-05] review | 9 trang nhóm IRRBB (lượt 2 và 3 gộp theo yêu cầu người dùng) + 3 câu của lượt 1
+- Đã sửa và đặt reviewed cả 9: repricing gap, giả định bảng cân đối, earning gap, ΔMV ngoài chân trời NII, key rate duration, receiver swap, CSRBB, basis risk, giả định lãi suất; lỗi chung là tính từ mạnh, "bắt buộc", ví dụ và câu kết không có trong nguồn, 3 chú thích trỏ dòng trống
+- Lượt 1: thêm nguồn cho câu SOT trên NII (d.1015) và bảng ví dụ khe hở thời lượng (d.896–904); bỏ "sốc song song và phi song song" ở trang EVE vì không tìm thấy trong nguồn
+- Gắn loại 37 link; `--graph`: 3 link bỏ có chủ ý (giả định bảng cân đối → SOT, → EVE/earnings; CSRBB → liquidity-risk), 0 cặp lệch; cả 16 trang của nhóm đã review

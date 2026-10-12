@@ -872,6 +872,7 @@
 - [[granular-customer-segmentation-enhances-behavioral-modeling-of-banking-book-optionality]] — phân khúc khách hàng đa biến vi mô: 5 tiêu chí định lượng Soulellis, kiểm định hồi tố backtesting và nhận diện các điểm mù tâm lý tổ chức theo thanh tra Fed hậu SVB
 
 **Rủi ro lãi suất sổ ngân hàng (IRRBB)**
+- [[irrbb-measurement-pairs-economic-value-and-earnings-views-over-gap-basis-and-option-risk]] — *(tổng quan nhóm)* ba cấu phần rủi ro, hai góc đo EVE và NII, kỹ thuật của từng góc, chỗ hai góc lệch nhau, bài kiểm tra SOT, mối nối sang tiền gửi, FTP và case SVB
 - [[interest-rate-risk-in-the-banking-book-irrbb]] — quản trị rủi ro lãi suất trên sổ ngân hàng: định nghĩa EBA/CRD IV, phân định banking book vs trading book và phạm vi các công cụ nhạy cảm lãi suất
 - [[interest-rate-gap-risk-stems-from-repricing-timing-mismatches]] — rủi ro khoảng chênh lệch lãi suất: bất cân xứng thời điểm và khối lượng định giá lại qua các dải kỳ hạn, phân tích khe hở tái định giá
 - [[interest-rate-basis-risk-arises-from-imperfect-correlation-between-benchmarks]] — rủi ro cơ sở lãi suất: tương quan không hoàn hảo giữa các chỉ số tham chiếu EURIBOR, OIS, RFR và Repo trên các công cụ cùng kỳ hạn
@@ -903,6 +904,7 @@
 - [[sticky-deposit-rates-and-unstable-deposit-betas-challenge-replication-models]] — phê phán thực nghiệm mô hình tái tạo: lãi suất dính sluggish pass-through 9% ngắn hạn, sự bất ổn của deposit beta qua các chu kỳ và hiện tượng sụp đổ duration thực nghiệm khi lãi suất đảo chiều
 
 **Thanh khoản và nguồn vốn**
+- [[the-lcr-buffers-liquidity-risk-for-30-days-while-ratio-compliance-leaves-the-funding-mismatch-in-place]] — *(tổng quan nhóm)* rủi ro thanh khoản, hai vế và phạm vi của LCR, quyền dùng kho HQLA, giới hạn của CDR và các tỷ lệ quản lý, mối nối sang ngân hàng trung ương và tài sản bảo đảm
 - [[liquidity-risk]] — rủi ro thanh khoản: nguy cơ mất khả năng thanh toán ngắn hạn do lệch pha kỳ hạn giữa tài sản có và nợ
 - [[treasury-deposits-at-commercial-banks-provide-temporary-liquidity-without-easing-structural-funding-gaps]] — tiền gửi Kho bạc tại NHTM chỉ cung ứng thanh khoản tình thế trong ngắn hạn mà không giải quyết được khoảng trống vốn cấu trúc
 - [[credit-to-deposit-ratio]] — CDR, tỷ lệ tín dụng trên tiền gửi; không mô tả đủ cấu trúc tài trợ khi ngân hàng dùng vốn bán buôn, liên ngân hàng, repo
