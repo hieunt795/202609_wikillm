@@ -6,7 +6,7 @@ sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
 part_of: [liquidity-coverage-ratio-lcr]
-has_part: [total-expected-cash-outflows, total-expected-cash-inflows]
+has_part: [total-expected-cash-outflows, total-expected-cash-inflows, the-75-percent-inflow-cap-forces-an-hqla-stock-of-at-least-25-percent-of-outflows]
 governs: [high-quality-liquid-assets-hqla, liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]
 governed_by: [lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days, consolidated-lcr-applies-home-parameters-except-host-rules-for-retail-and-small-business-deposits]
 ---
@@ -21,4 +21,4 @@ Ngân hàng không được tính trùng một khoản ở cả tử số và m�
 
 Con số này là kết quả áp các tham số chuẩn của [[lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days|kịch bản gộp cú sốc riêng và cú sốc toàn thị trường]], không phải dự báo dòng tiền do ngân hàng tự lập. Chân trời tính toán cố định ở 30 ngày lịch kể từ ngày tính (basel_lcr, LCR20, 20.5, d.72). Kho [[high-quality-liquid-assets-hqla|HQLA]] ngoài thời kỳ căng thẳng ít nhất bằng con số này (basel_lcr, LCR20, 20.5, d.72).
 
-Tổng dòng tiền ra ròng cũng được tính riêng cho từng pháp nhân trong tập đoàn. Con số của từng pháp nhân là giới hạn cho phần HQLA chịu hạn chế chuyển thanh khoản được đưa vào LCR hợp nhất, theo quy tắc ở trang [[liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]] (basel_lcr, LCR10, Treatment of liquidity transfer restrictions, 10.7, d.39). Một số tham số của mẫu số thuộc quyền quyết định của từng quốc gia. Vì vậy [[consolidated-lcr-applies-home-parameters-except-host-rules-for-retail-and-small-business-deposits|tập đoàn xuyên biên giới phải chọn tham số nước nhà hay nước sở tại]] cho từng loại dòng tiền (basel_lcr, LCR10, Differences in home / host liquidity requirements, 10.4, d.27).
+Tổng dòng tiền ra ròng cũng được tính riêng cho từng pháp nhân trong tập đoàn. Con số của từng pháp nhân là giới hạn cho phần HQLA chịu hạn chế chuyển thanh khoản được đưa vào LCR hợp nhất, theo quy tắc ở trang [[liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]] (basel_lcr, LCR10, Treatment of liquidity transfer restrictions, 10.7, d.39). Một số tham số của mẫu số thuộc quyền quyết định của từng quốc gia. Vì vậy [[consolidated-lcr-applies-home-parameters-except-host-rules-for-retail-and-small-business-deposits|tập đoàn xuyên biên giới phải chọn tham số nước nhà hay nước sở tại]] cho từng loại dòng tiền (basel_lcr, LCR10, Differences in home / host liquidity requirements, 10.4, d.27). Lý do của trần 75% nằm ở trang [[the-75-percent-inflow-cap-forces-an-hqla-stock-of-at-least-25-percent-of-outflows]].

@@ -1282,3 +1282,23 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Đã sửa: K2, K3 (bỏ hai đoạn Conflict trên trang Ba Lan theo quyết định của người dùng), L2, G2 (bỏ 17 dòng file không còn trên đĩa khỏi bản kê), G3 (file Clippings chỉ đổi ký tự xuống dòng, cập nhật byte và checksum), I1–I4, I7, I8 (đổi title trang tt1-stickiness), I9 (tách trang nội sinh, thêm 1 trang)
 - G1 bỏ qua theo người dùng (11 file chưa kê, đăng ký khi ingest); G4, G5 là việc của `/ingest`, chưa làm; I6 giữ một dòng rút gọn trong `_inbox.md`
 - `--all` 839 trang, 0 vấn đề, 0 cặp lệch; `--verify-sources` 203 file, 0 lệch hoặc thiếu; báo cáo: Claude outputs/lint-2026-10-12-832.md
+
+## [2026-10-12:16-30-10] ingest | basel_lcr LCR40 cụm A — tiền gửi bán lẻ và vốn bán buôn không bảo đảm (40.5–40.44)
+- Tạo 10 trang: phân loại tiền gửi bán lẻ, tiền gửi ổn định 5%/3%, tiền gửi có kỳ hạn bán lẻ, unsecured-wholesale-funding, doanh nghiệp nhỏ, operational-deposits, quan hệ bù trừ/lưu ký/quản lý tiền mặt, mạng lưới ngân hàng hợp tác xã, nhóm 40%/20%, nhóm 100%; merge link vào total-expected-cash-outflows và stub deposit-insurance
+- Không tạo stub; `--graph`: liquidity-coverage-ratio-lcr vào top 25 (hạng 27 lên 18), depreciation ra; `--all` 849 trang, 0 vấn đề
+- Chunk còn dở (41%): Secured funding run-off (d.913–952) và Additional requirements (d.953–1185); chú thích d.758 của nguồn bị cắt giữa câu
+
+## [2026-10-12:16-45-16] ingest | basel_lcr LCR40 cụm A — tài trợ có bảo đảm và yêu cầu bổ sung 40.49–40.58
+- Tạo 14 trang: secured-funding và 4 trang con (giả định quay vòng, bảng tỷ lệ, vị thế bán khống của khách hàng, collateral swap); dòng ra phái sinh ròng và 2 giả định (quyền chọn, cheapest to deliver); look-back 24 tháng; downgrade trigger; add-on 20%; ba dòng ra 100% về tài sản bảo đảm; ABS và covered bond tự phát hành; nhìn xuyên SPE. Merge link vào 9 trang có sẵn
+- Không tạo stub; `--graph`: thêm 14 trang, 109 link, không trang nào vào hay ra top 25; `--all` 863 trang, 0 vấn đề
+- `--coverage` báo chunk đã `phu` vì tính theo heading, nhưng mục Additional requirements còn đoạn 40.59–40.74 (d.1072–1185) chưa ingest; câu trả lời FAQ2 của 40.47 (d.940) bị cắt trong nguồn
+
+## [2026-10-12:16-51-19] ingest | basel_lcr LCR40 cụm A — hạn mức cam kết, nghĩa vụ tiềm tàng, dòng ra hợp đồng khác (40.59–40.74)
+- Tạo 12 trang: committed-credit-and-liquidity-facilities và 3 trang con (ranh giới hạn mức thanh khoản, bảng tỷ lệ rút, trừ HQLA bảo đảm); nghĩa vụ cho vay theo hợp đồng; other-contingent-funding-obligations và 3 trang con (ngoài hợp đồng, tài trợ thương mại, bán khống phủ bằng tài sản khách hàng khác); dòng ra hợp đồng khác và 2 trang FAQ (giao dịch kỳ hạn, chứng khoán cho mượn không bảo đảm). Merge link vào 7 trang có sẵn
+- Không tạo stub; `--graph`: high-quality-liquid-assets-hqla (26 lên 16) và total-expected-cash-outflows (59 lên 24) vào top 25, gdp-deflator và gross-investment ra; `--all` 875 trang, 0 vấn đề
+- Cụm A hết nội dung (`--coverage` phủ, 88%); các FAQ dẫn sang dòng vào 40.93 chờ cụm B (d.1186–1324); trang tổng quan thanh khoản chưa cập nhật theo 36 trang mới
+
+## [2026-10-12:16-56-54] ingest | basel_lcr LCR40 cụm B — dòng tiền vào (40.75–40.93)
+- Tạo 11 trang: nguyên tắc dòng vào theo hợp đồng, trần 75%, bảng dòng vào của cho vay có bảo đảm, cho vay ký quỹ, tài sản bảo đảm dùng lại để phủ bán khống, vị thế bán khống của ngân hàng, nghĩa vụ trả lại tài sản bảo đảm, hạn mức ở tổ chức khác 0%, dòng vào khác theo đối tác, chứng khoán đáo hạn, tiền gửi vận hành đặt ở tổ chức khác. Merge claim 40.91–40.93 vào total-expected-cash-inflows; merge link và chú thích 40.93 vào 11 trang có sẵn
+- Không tạo stub; `--graph`: thêm 11 trang, không trang nào vào hay ra top 25, không mất link; `--all` 886 trang, 0 vấn đề
+- LCR40 hết nội dung (cụm A 88%, cụm B 91% theo `--coverage`); `basel_lcr` còn LCR31, LCR90, LCR99 và mục Shari'ah của LCR30; trang tổng quan thanh khoản chưa cập nhật theo 47 trang mới

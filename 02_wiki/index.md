@@ -940,7 +940,54 @@
 - [[adjusted-hqla-amounts-unwind-secured-transactions-maturing-within-30-days]] — số điều chỉnh: tháo ngược repo, cho vay có bảo đảm và hoán đổi tài sản bảo đảm trong 30 ngày
 - [[restricted-use-committed-liquidity-facility-rclf]] — RCLF của ngân hàng trung ương tính vào Level 2B; phí cam kết tối thiểu 75 điểm cơ bản
 - [[total-expected-cash-outflows]] — tổng dòng ra dự kiến: số dư nhân tỷ lệ run-off hoặc drawdown
+- [[lcr-retail-deposits-split-into-stable-and-less-stable-portions-with-run-off-floors]] — tiền gửi bán lẻ trong LCR: phần ổn định và kém ổn định, tỷ lệ run-off là mức sàn, sàn 10% cho phần kém ổn định, tiền gửi ngoại tệ, tiền gửi cầm cố và kim loại quý
+- [[stable-retail-deposits-run-off-at-5-percent-or-3-percent-under-effective-deposit-insurance]] — tiền gửi ổn định 5%: bảo hiểm đầy đủ cộng quan hệ hoặc tài khoản giao dịch; bốn tiêu chí của cơ chế bảo hiểm hiệu quả; ba tiêu chí thêm cho mức 3%
+- [[retail-term-deposits-beyond-30-days-leave-lcr-outflows-unless-withdrawable-without-penalty]] — tiền gửi có kỳ hạn bán lẻ trên 30 ngày được loại khỏi dòng ra khi không rút được hoặc rút sớm chịu phạt lớn; cho rút không phạt thì cả nhóm thành không kỳ hạn
+- [[unsecured-wholesale-funding]] — vốn bán buôn không bảo đảm: định nghĩa, phần tính trong 30 ngày, quyền chọn và kỳ vọng mua lại sớm, bảng tỷ lệ run-off theo năm nhóm
+- [[small-business-funding-below-eur-1-million-is-treated-as-retail-deposits-in-the-lcr]] — doanh nghiệp nhỏ có tổng vốn dưới 1 triệu euro được xử lý như tiền gửi bán lẻ
+- [[operational-deposits]] — tiền gửi vận hành 25%: ba tiêu chí của hoạt động đủ điều kiện, số dư thừa bị loại, dòng vào 0%, loại ngân hàng đại lý và prime brokerage
+- [[clearing-custody-and-cash-management-relationships-define-qualifying-operational-activities]] — định nghĩa quan hệ bù trừ, lưu ký và quản lý tiền mặt và các dịch vụ được tính
+- [[deposits-within-cooperative-bank-networks-run-off-at-25-percent-under-a-mutual-protection-scheme]] — tiền gửi của thành viên tại tổ chức trung tâm của mạng lưới ngân hàng hợp tác xã: 25% khi cùng cơ chế bảo vệ lẫn nhau, còn lại 100%
+- [[non-financial-corporate-and-sovereign-funding-runs-off-at-40-percent-or-20-percent-if-fully-insured]] — doanh nghiệp phi tài chính, chính phủ, ngân hàng trung ương, PSE: 40%, hoặc 20% nếu được bảo hiểm đầy đủ
+- [[funding-from-financial-institutions-and-other-legal-entities-runs-off-at-100-percent]] — ngân hàng, công ty chứng khoán, bảo hiểm, SPV, đơn vị liên kết và giấy nợ do ngân hàng phát hành: 100%; số dư prime brokerage
+- [[secured-funding]] — tài trợ có bảo đảm theo LCR: định nghĩa, loại tài sản không giao dịch được, khối thứ ba của dòng ra
+- [[the-lcr-scenario-assumes-only-hqla-backed-or-public-counterparty-secured-funding-rolls-over]] — giả định của kịch bản: chỉ giao dịch có HQLA bảo đảm hoặc với khu vực công trong nước còn quay vòng; nghĩa của "trong nước"
+- [[secured-funding-run-off-rates-mirror-the-lcr-haircut-of-the-pledged-collateral]] — bảng sáu mức 0% tới 100% theo tài sản bảo đảm; tính trên số tiền huy động; gán tài sản trong rổ theo giá trị thanh khoản tăng dần
+- [[customer-short-positions-are-treated-as-secured-funding-because-the-customer-controls-them]] — vị thế bán khống của khách hàng: định nghĩa, nguồn chứng khoán, lý do xử lý khác vị thế của ngân hàng
+- [[collateral-swaps-are-treated-as-repo-or-reverse-repo-in-the-lcr]] — hoán đổi tài sản bảo đảm được xử lý như repo hoặc repo đảo chiều
+- [[net-derivative-cash-outflows-receive-a-100-percent-factor-in-the-lcr]] — dòng ra phái sinh ròng 100%: bù trừ theo đối tác, ngoại lệ phái sinh ngoại hối, trừ tài sản bảo đảm HQLA nhận về
+- [[options-exercisable-within-30-days-are-assumed-exercised-when-in-the-money-in-the-lcr]] — quyền chọn thực hiện được trong 30 ngày coi như được thực hiện khi có lãi; ngoại lệ của nguyên tắc dòng vào tiềm tàng
+- [[delivery-obligations-assume-the-cheapest-to-deliver-asset-on-both-inflow-and-outflow-sides]] — nghĩa vụ giao tài sản giả định giao loại có giá trị thanh khoản thấp nhất, áp đối xứng
+- [[market-valuation-changes-on-derivatives-enter-the-lcr-through-a-24-month-look-back]] — thay đổi định giá phái sinh: dòng tài sản bảo đảm ròng 30 ngày lớn nhất trong 24 tháng; cấp danh mục; phái sinh STM
+- [[downgrade-triggers-require-liquidity-for-collateral-calls-up-to-a-three-notch-downgrade]] — điều khoản hạ xếp hạng: 100% tài sản bảo đảm hoặc dòng tiền cho mức hạ tới 3 bậc
+- [[non-level-1-collateral-posted-for-derivatives-needs-a-20-percent-hqla-add-on]] — tài sản bảo đảm không phải Level 1 đã nộp: cộng 20% vào HQLA cần có; không bù trừ giữa các đối tác
+- [[excess-uncalled-and-substitutable-collateral-each-count-as-a-100-percent-lcr-outflow]] — ba dòng ra 100%: tài sản bảo đảm thừa bị đòi lại, đến hạn mà chưa bị gọi, và có thể bị thay bằng tài sản kém hơn
+- [[maturing-own-issued-abs-and-covered-bonds-are-assumed-not-refinanced-in-the-lcr]] — ABS và covered bond tự phát hành đáo hạn trong 30 ngày: mất nguồn 100%, bù với HQLA được giải phóng
+- [[structured-financing-facilities-require-look-through-to-spe-debt-and-liquidity-puts]] — ABCP, conduit, SIV: 100% nợ đáo hạn và tài sản có thể bị trả lại; nhìn xuyên qua SPE; liquidity put
+- [[committed-credit-and-liquidity-facilities]] — hạn mức tín dụng và thanh khoản cam kết: định nghĩa, loại hạn mức hủy được vô điều kiện, giả định không được trả lại
+- [[a-liquidity-facility-backstops-customer-debt-maturing-within-30-days-while-the-rest-is-a-credit-facility]] — hạn mức thanh khoản bảo trợ nợ của khách hàng đáo hạn trong 30 ngày; phần còn lại và hạn mức vốn lưu động là hạn mức tín dụng
+- [[committed-facility-drawdown-rates-rise-from-5-percent-for-retail-to-100-percent-for-other-legal-entities]] — bảng tỷ lệ rút: 5% bán lẻ, 10%/30% doanh nghiệp và khu vực công, 40% ngân hàng, 40%/100% tổ chức tài chính khác, 100% pháp nhân khác
+- [[undrawn-facilities-are-netted-against-hqla-collateral-the-bank-can-re-use]] — phần chưa rút được trừ HQLA do đối tác nộp, nếu ngân hàng dùng lại được và không có tương quan quá mức
+- [[contractual-lending-obligations-count-as-outflows-in-full-for-financials-and-above-half-of-inflows-for-others]] — nghĩa vụ cho vay theo hợp đồng: 100% với tổ chức tài chính; với khách hàng khác chỉ tính phần vượt 50% dòng vào
+- [[other-contingent-funding-obligations]] — nghĩa vụ tài trợ tiềm tàng khác: tỷ lệ do quốc gia quyết định và công bố, báo cáo kèm điều kiện kích hoạt, danh sách sản phẩm
+- [[non-contractual-contingent-obligations-arise-from-reputational-pressure-to-support-sold-or-sponsored-products]] — nghĩa vụ ngoài hợp đồng từ rủi ro uy tín: mua lại nợ, sản phẩm cấu trúc, quỹ giữ giá trị ổn định, liên doanh, autocallable
+- [[trade-finance-contingent-obligations-may-receive-a-run-off-of-5-percent-or-less]] — tài trợ thương mại: tỷ lệ 5% hoặc thấp hơn; hai nhóm công cụ; loại cam kết cho vay xuất nhập khẩu
+- [[customer-shorts-covered-by-other-customers-collateral-carry-a-minimum-50-percent-run-off]] — vị thế bán khống của khách hàng phủ bằng tài sản của khách hàng khác: tối thiểu 50%, đối xứng với dòng vào của cho vay ký quỹ
+- [[other-contractual-cash-outflows-receive-a-100-percent-factor-while-operating-costs-are-excluded]] — dòng ra theo hợp đồng khác 100%: cổ tức, lãi, vị thế bán khống chưa phủ; không tính chi phí hoạt động
+- [[forward-repos-and-unsettled-trades-enter-the-lcr-only-when-they-start-inside-and-mature-beyond-30-days]] — repo kỳ hạn và giao dịch chưa quyết toán: ba nhóm bỏ qua, bù trừ với tài sản bảo đảm sau haircut
+- [[securities-lent-or-borrowed-unsecured-do-not-count-as-hqla-for-either-side]] — chứng khoán cho mượn hoặc đi mượn không có bảo đảm không tính là HQLA của bên nào
 - [[total-expected-cash-inflows]] — tổng dòng vào dự kiến: khoản phải thu nhân tỷ lệ dòng vào, trần 75% dòng ra
+- [[only-contractual-inflows-from-fully-performing-exposures-count-in-the-lcr]] — chỉ dòng vào theo hợp đồng từ khoản đang trả nợ đầy đủ; loại dòng vào tiềm tàng; theo dõi tập trung đối tác
+- [[the-75-percent-inflow-cap-forces-an-hqla-stock-of-at-least-25-percent-of-outflows]] — trần 75%: không dựa riêng vào dòng vào, kho HQLA tối thiểu bằng 25% dòng ra
+- [[secured-lending-inflow-rates-mirror-secured-funding-run-off-rates-by-collateral-level]] — bảng dòng vào của cho vay có bảo đảm đáo hạn: 0% Level 1 tới 100% tài sản khác; đối xứng với tài trợ có bảo đảm
+- [[margin-loans-against-non-hqla-collateral-yield-at-most-a-50-percent-inflow]] — cho vay ký quỹ trên tài sản không phải HQLA: tối đa 50% dòng vào; điều khoản kỳ hạn trên 30 ngày không có dòng vào
+- [[collateral-re-used-to-cover-short-positions-earns-no-inflow-and-triggers-no-outflow]] — tài sản bảo đảm dùng lại để phủ vị thế bán khống: dòng vào 0%, không dòng ra; matched book
+- [[firm-short-positions-covered-by-unsecured-borrowing-run-off-in-full]] — vị thế bán khống của ngân hàng: 100% nếu phủ bằng vay chứng khoán không bảo đảm, 0% nếu phủ bằng giao dịch có bảo đảm
+- [[banks-must-be-able-to-return-collateral-regardless-of-lcr-rollover-assumptions]] — ngân hàng phải trả lại được tài sản bảo đảm bất kể giả định quay vòng; Nguyên tắc 9
+- [[facilities-held-at-other-institutions-receive-a-zero-inflow-rate-to-limit-contagion]] — hạn mức có ở tổ chức khác: dòng vào 0% vì rủi ro lây lan và khả năng bên cấp không thực hiện
+- [[other-inflows-assume-continued-lending-at-50-percent-to-non-financial-counterparties]] — dòng vào khác theo đối tác: 50% bán lẻ và bán buôn phi tài chính, 100% tổ chức tài chính; khoản vay không kỳ hạn bị loại
+- [[maturing-securities-outside-the-hqla-stock-count-as-full-inflows-while-maturing-hqla-stays-in-the-stock]] — chứng khoán đáo hạn ngoài kho HQLA tính 100%; HQLA đáo hạn ở lại trong kho; rổ bảo đảm của covered bond
+- [[operational-deposits-placed-at-other-institutions-receive-a-zero-inflow-rate]] — tiền gửi vận hành đặt ở tổ chức khác: dòng vào 0%, trừ số dư thừa; tiền gửi ngân hàng đại lý
 - [[alternative-liquidity-approaches]] — stub: phương án thay thế cho đồng tiền thiếu HQLA (LCR31)
 
 **Quản trị, FTP và quy định giám sát**

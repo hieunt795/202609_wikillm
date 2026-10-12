@@ -7,7 +7,7 @@ status: draft
 last_updated: 2026-10-10
 part_of: [level-2b-assets]
 driven_by: [liquidity-regulation-and-central-bank-operations-arbitrage, collateral-constraint-on-central-bank-credit]
-contrasts: [alternative-liquidity-approaches]
+contrasts: [alternative-liquidity-approaches, committed-credit-and-liquidity-facilities]
 analogous: [unencumbered-assets]
 ---
 
@@ -27,4 +27,4 @@ RCLF chỉ được tính khi chưa được đưa vào HQLA theo [[alternative-
 
 Điều kiện phí làm việc giữ RCLF đắt hơn giữ HQLA thật ít nhất 25 điểm cơ bản. Mức chênh này giữ lại động cơ tự bảo hiểm thanh khoản của ngân hàng. Điều kiện thứ ba chặn việc đếm một tài sản hai lần, cùng nguyên tắc với [[unencumbered-assets|yêu cầu không bị ràng buộc]].
 
-RCLF đưa cam kết của ngân hàng trung ương vào tử số của LCR một cách có điều kiện. Nó là lời đáp ở cấp chuẩn mực cho khoảng lệch giữa HQLA và tài sản được ngân hàng trung ương chấp nhận, vốn là điểm xuất phát của trang [[liquidity-regulation-and-central-bank-operations-arbitrage]] và của [[collateral-constraint-on-central-bank-credit|ràng buộc tài sản bảo đảm đối với tín dụng ngân hàng trung ương]].
+RCLF đưa cam kết của ngân hàng trung ương vào tử số của LCR một cách có điều kiện. Nó là lời đáp ở cấp chuẩn mực cho khoảng lệch giữa HQLA và tài sản được ngân hàng trung ương chấp nhận, vốn là điểm xuất phát của trang [[liquidity-regulation-and-central-bank-operations-arbitrage]] và của [[collateral-constraint-on-central-bank-credit|ràng buộc tài sản bảo đảm đối với tín dụng ngân hàng trung ương]]. Hạn mức này do ngân hàng trung ương cấp cho ngân hàng; các hạn mức ngân hàng cấp cho khách hàng là dòng ra, ở trang [[committed-credit-and-liquidity-facilities]].
