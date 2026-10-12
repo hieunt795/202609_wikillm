@@ -5,6 +5,10 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla]
 sources: [basel_lcr, bindseil_monetary_policy]
 status: draft
 last_updated: 2026-10-10
+part_of: [high-quality-liquid-assets-hqla]
+governed_by: [haircut, level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]
+contrasts: [level-1-assets]
+related: [level-2b-assets, covered-bonds-combine-on-balance-sheet-dual-recourse-with-insolvency-ring-fencing]
 ---
 
 Tài sản Level 2A là cấp thứ hai của [[high-quality-liquid-assets-hqla|HQLA]]: mỗi tài sản chịu [[haircut]] 15% trên giá trị thị trường hiện tại khi tính vào kho (basel_lcr, LCR30, Level 2 assets, 30.43, d.279).

@@ -5,6 +5,11 @@ tags: [lcr, basel-iii, liquidity-regulation]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+has_part: [high-quality-liquid-assets-hqla, total-net-cash-outflows, lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days]
+governs: [liquidity-risk]
+governed_by: [lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days, banks-may-use-hqla-and-fall-below-the-lcr-minimum-during-stress, lcr-applies-to-internationally-active-banks-on-a-consolidated-basis, lcr-is-reported-at-least-monthly-and-a-breach-is-notified-immediately]
+drives: [regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]
+related: [liquidity-regulation-and-central-bank-operations-arbitrage, regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it]
 ---
 
 Tỷ lệ bao phủ thanh khoản (Liquidity Coverage Ratio, LCR) là tỷ lệ giữa kho [[high-quality-liquid-assets-hqla|tài sản thanh khoản chất lượng cao (HQLA)]] và [[total-net-cash-outflows|tổng dòng tiền ra ròng]] của ngân hàng trong 30 ngày lịch tiếp theo, cả hai đo trong một kịch bản căng thẳng (basel_lcr, LCR20, 20.4, d.68–70).

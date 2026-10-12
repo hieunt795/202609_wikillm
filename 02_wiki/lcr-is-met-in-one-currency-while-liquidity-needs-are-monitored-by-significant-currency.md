@@ -5,6 +5,9 @@ tags: [lcr, basel-iii, liquidity-regulation, currency-mismatch]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+governs: [liquidity-coverage-ratio-lcr, high-quality-liquid-assets-hqla]
+analogous: [liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]
+related: [central-bank-fx-swap-lines-and-cross-border-liquidity]
 ---
 
 [[liquidity-coverage-ratio-lcr|LCR]] được đáp ứng trên cơ sở hợp nhất và báo cáo bằng một đồng tiền chung, nhưng cơ quan giám sát và ngân hàng vẫn theo dõi nhu cầu thanh khoản theo từng đồng tiền trọng yếu (basel_lcr, LCR10, Currencies, 10.9, d.46).

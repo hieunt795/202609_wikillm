@@ -5,6 +5,10 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-flows]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [total-net-cash-outflows]
+governs: [high-quality-liquid-assets-hqla]
+governed_by: [total-expected-cash-outflows]
+contrasts: [level-1-assets]
 ---
 
 Tổng dòng vào dự kiến (total expected cash inflows) là vế bị trừ trong [[total-net-cash-outflows|tổng dòng tiền ra ròng]], tính bằng cách nhân số dư của từng nhóm khoản phải thu theo hợp đồng với tỷ lệ mà nhóm đó được giả định chảy về trong kịch bản, và bị chặn ở 75% [[total-expected-cash-outflows|tổng dòng ra dự kiến]] (basel_lcr, LCR40, Definition of total net cash outflows, 40.1, d.709).

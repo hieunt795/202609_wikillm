@@ -5,6 +5,10 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-flows]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [total-net-cash-outflows]
+governed_by: [lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days]
+drives: [consolidated-lcr-applies-home-parameters-except-host-rules-for-retail-and-small-business-deposits]
+related: [total-expected-cash-inflows]
 ---
 
 Tổng dòng ra dự kiến (total expected cash outflows) là vế thứ nhất của [[total-net-cash-outflows|tổng dòng tiền ra ròng]], tính bằng cách nhân số dư của từng nhóm nợ phải trả và cam kết ngoại bảng với tỷ lệ mà nhóm đó được giả định bị rút (run-off) hoặc bị giải ngân (drawdown) trong 30 ngày (basel_lcr, LCR40, Definition of total net cash outflows, 40.1, d.709).

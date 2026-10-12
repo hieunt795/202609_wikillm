@@ -5,7 +5,7 @@ description: 'Dùng skill này khi người dùng muốn xác minh một trang w
 
 # Review-node — đối chiếu trang với nguồn
 
-**Đọc `00_schema.md`:** §7 (thân bài, chú thích theo luật 5), §8 (title), §9 (`reviewed` / `reviewed_by`), §10 (bản kê, bản đồ chunk, nguồn nhiều file), §12 (log), trước khi bắt đầu.
+**Đọc `00_schema.md`:** §6 mục *Quan hệ có loại*, §7 (thân bài, chú thích theo luật 5), §8 (title), §9 (`reviewed` / `reviewed_by`), §10 (bản kê, bản đồ chunk, nguồn nhiều file), §12 (log), trước khi bắt đầu.
 **Dừng chờ duyệt:** không có điểm dừng riêng (ngoại lệ của quy tắc bắt buộc 3: sửa claim cho khớp chính nguồn nó dẫn); các trường hợp không được tự sửa nêu ở bước 5.
 **Ghi log:** luôn, op `review`.
 
@@ -29,7 +29,7 @@ Review là **kiểm chứng nội dung khớp nguồn**. Không phải lint (lin
 |---|---|
 | Đúng nguồn | mỗi claim khớp nghĩa đoạn nguồn; không thêm điều nguồn không nói; không bỏ điều kiện/giới hạn làm đổi nghĩa; số liệu khớp |
 | Diễn đạt lại | không chép nguyên văn (§7 luật 4); không có token OCR |
-| Liên kết | mỗi `[[link]]` có lý do đúng — trang đích thật sự nói điều câu văn gán cho nó |
+| Liên kết | mỗi `[[link]]` có lý do đúng — trang đích thật sự nói điều câu văn gán cho nó; field quan hệ (§6) đã ghi thì khớp câu chứa link |
 | Title | mô tả đúng **toàn bộ** nội dung trang (§8, §5) |
 | Nhất quán | không mâu thuẫn với trang được link về cùng một điểm |
 
@@ -39,9 +39,10 @@ Review là **kiểm chứng nội dung khớp nguồn**. Không phải lint (lin
 - **Hai đoạn nguồn nói khác nhau** → **không sửa**: đánh `⚠️ Conflict` kèm cả hai claim + vị trí (quy tắc bắt buộc 2); không đặt `reviewed`.
 - **Vấn đề cấu trúc** (title sai, cần tách trang, link sai đích) → không tự tách/đổi tên; ghi `_inbox.md`; không đặt `reviewed`.
 - **Trang khác mắc cùng lỗi** (chép cùng claim sai hoặc cùng dải dòng sai, phát hiện khi đối chiếu) → không sửa trang đó trong lượt này, vì nó chưa được đọc trọn; ghi `_inbox.md` một mục nêu tên trang, chú thích sai và vị trí đúng, để lượt review sau nhặt lên.
+- **Gắn loại quan hệ** (§6, sổ sách) cho mọi link của trang đã đọc trọn, kể cả trang chưa đủ điều kiện đặt `reviewed`: ghi trang đích vào field loại theo câu chứa link, sửa field ghi sai. `python .claude/hooks/validate_wiki_page.py --relations <trang>` in từng link kèm câu và loại hiện có. Không nâng `last_updated`.
 - Không bao giờ ghi đè `reviewed_by: user`.
 
-**6. Chạy `python .claude/hooks/validate_wiki_page.py --all`**, phải sạch.
+**6. Chạy `python .claude/hooks/validate_wiki_page.py --all`**, phải sạch, rồi `--graph`; nêu phần thay đổi nó in ra trong tin nhắn kết thúc lượt.
 
 **7. Ghi 1 mục vào cuối `log.md`** theo §12: `## [<giờ từ --now>] review | <số trang> trang`, tối đa 3 dòng: trang đạt · trang đã sửa (kèm claim sai ngắn gọn) · trang bị giữ lại và lý do.
 

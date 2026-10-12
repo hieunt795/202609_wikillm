@@ -5,6 +5,10 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla, central-bank]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [level-2b-assets]
+driven_by: [liquidity-regulation-and-central-bank-operations-arbitrage, collateral-constraint-on-central-bank-credit]
+contrasts: [alternative-liquidity-approaches]
+analogous: [unencumbered-assets]
 ---
 
 Hạn mức thanh khoản cam kết dùng hạn chế (restricted-use committed liquidity facility, RCLF) là hạn mức thanh khoản cam kết theo hợp đồng do ngân hàng trung ương cấp, mà cơ quan giám sát có thể cho tính phần chưa rút vào [[level-2b-assets|Level 2B]] của kho HQLA (basel_lcr, LCR30, Level 2B assets, 30.46, d.381).

@@ -73,11 +73,11 @@ Mở full content các node của sub. Mọi kết quả chỉ là đề xuất.
 1. **Trình một proposal gộp** (mục *Output contract*), một lần duyệt. Người dùng duyệt cả lô, bớt theo mã mục, hoặc từ chối hết. Không ghi gì vào `02_wiki/` trước khi duyệt.
 2. **Ghi đúng các mục đã duyệt** — áp skill `writing-style` profile wiki cho mọi câu mới. **Áp luật 6 (§7):** trang tự đủ nghĩa qua link, không giọng thuyết phục/khuyến nghị, ưu tiên mật độ ý. Chạy `python .claude/hooks/validate_wiki_page.py --style` trước khi ghi log kiểm luật này.
    - `C` claim: không heading, viết lại bằng lời mình, link nằm trong câu, chú thích ngay sau claim (§7). Nâng `last_updated`. Source id mới → `sources:` (inline list).
-   - `L` link: chèn vào câu kèm lý do; không nâng `last_updated` (§7 luật 5).
+   - `L` link: chèn vào câu kèm lý do; không nâng `last_updated` (§7 luật 5). Link mới viết, ở `L` hay trong claim `C`, được gắn loại quan hệ ở frontmatter (§6 mục *Quan hệ có loại*, sổ sách).
    - `K` conflict: chèn cả hai claim + vị trí; không sửa claim nào.
-   - `N` analysis: title câu trần thuật (§8); `sources:` = source id của các trang đã tổng hợp; chú thích §7 luật 5 lấy từ chính các trang đó, thiếu thì nói rõ chưa truy được tới dòng; thêm vào `02_wiki/index.md`.
+   - `N` analysis: title câu trần thuật (§8); `sources:` = source id của các trang đã tổng hợp; chú thích §7 luật 5 lấy từ chính các trang đó, thiếu thì nói rõ chưa truy được tới dòng; thêm vào `02_wiki/index.md`. Trang `analysis` có thể là *tổng quan nhóm* của một nhóm trong `index.md` (§2): khi đó nó đứng dòng đầu của nhóm với nhãn `*(tổng quan nhóm)*`.
    - **Không làm ngoài proposal:** không dọn format ("Xem thêm", heading…), không backfill chú thích claim cũ, không đụng `reviewed`/`reviewed_by`, không đổi `status`. Gặp lỗi cấu trúc → nêu trong báo cáo cho `/lint`.
-3. Có ghi file trong `02_wiki/` → `python .claude/hooks/validate_wiki_page.py --all`, phải sạch trước khi log (cách duy nhất bắt `analysis` mồ côi).
+3. Có ghi file trong `02_wiki/` → `python .claude/hooks/validate_wiki_page.py --all`, phải sạch trước khi log (cách duy nhất bắt `analysis` mồ côi), rồi `--graph` và chép phần thay đổi vào báo cáo.
 4. Xuất báo cáo, cập nhật trạng thái sub trong map (`done <ngày>` / `partial`).
 5. Ghi đúng 1 mục vào **cuối** `log.md`, kể cả lượt chỉ Map hoặc từ chối hết. Giờ lấy bằng `python .claude/hooks/validate_wiki_page.py --now`.
 

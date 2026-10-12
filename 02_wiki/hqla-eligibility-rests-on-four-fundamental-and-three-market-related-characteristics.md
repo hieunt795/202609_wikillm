@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+governs: [high-quality-liquid-assets-hqla, level-1-assets, level-2a-assets, level-2b-assets]
+analogous: [repo-haircuts-manage-liquidation-volatility-but-generate-asymmetric-wrong-way-risk, microscopic-versus-macroscopic-market-liquidity-separates-trade-breadth-from-balance-sheet-depth]
 ---
 
 Chuẩn mực LCR nêu bảy đặc tính mà một tài sản thường có để được coi là [[high-quality-liquid-assets-hqla|HQLA]]: bốn đặc tính cơ bản của bản thân tài sản và ba đặc tính của thị trường nơi nó giao dịch (basel_lcr, LCR30, Characteristics of HQLA, 30.2, d.125).

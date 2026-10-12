@@ -13,6 +13,8 @@ status: stub | draft     # §9; trang cũ còn stable/stale được giữ nguy�
 last_updated:
 reviewed:          # TUỲ CHỌN — ngày trang được review đối chiếu nguồn; không có = chưa review (§9)
 reviewed_by:       # user | model — bắt buộc khi có reviewed (§9)
+part_of: []        # TUỲ CHỌN — quan hệ có loại (§6); 9 field, mỗi field một dòng, chỉ ghi field có giá trị:
+                   # part_of · has_part · governs · governed_by · drives · driven_by · contrasts · analogous · related
 ```
 
 ## 2. Taxonomy (phân loại trang wiki)
@@ -28,6 +30,8 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 
 `concept` có một pattern con: **bridge note** — trang chỉ mô tả *quan hệ* giữa 2 khái niệm liền kề (vd `current-account-deficit-means-absorption-exceeds-national-income` nối `absorption` với `gndi`). Bridge note là trang độc lập, không nhét vào một trong hai trang đầu mút.
 
+`analysis` có một pattern con: **tổng quan nhóm** — trang tổng hợp một nhóm chủ đề của `index.md`, nối các trang trục của nhóm và nêu nhóm đó gắn với nhóm nào. Mỗi nhóm tối đa một trang; trong `index.md` nó đứng dòng đầu của nhóm, dòng tóm tắt mở bằng `*(tổng quan nhóm)*`. Trang này tổng hợp theo chủ đề từ các trang đã có, nên không phải trang tóm tắt nguồn nói ở dưới.
+
 **Ưu tiên lý luận trước tường thuật.** Khi một nguồn tách rõ phần khung khái niệm với phần tường thuật bối cảnh, ingest phần khung khái niệm trước; ingest phần bối cảnh **chỉ khi** wiki còn thiếu minh chứng cho một `concept` đã có. Phần bối cảnh bị bỏ qua vẫn có dòng riêng trong bản đồ chunk kèm lý do (§10).
 
 **Không có trang tóm tắt nguồn.** Vai trò đó chia cho `03_state/` (bản kê và bản đồ chunk) và trường `sources:` cộng chú thích §7 luật 5 trên từng trang. Đây là lựa chọn có chủ đích, không phải thiếu sót.
@@ -38,7 +42,7 @@ Loại trừ (không tạo trang wiki): bài tập/exercise cuối chương, b�
 - Tên file trang wiki: kebab-case, khớp với `title`.
 - **Ngôn ngữ:** `title` và tên file viết bằng **tiếng Anh**; thân bài viết bằng **tiếng Việt**, theo profile wiki của skill `writing-style`.
 - `01_sources/` chỉ đọc theo quy tắc bắt buộc 1 của `CLAUDE.md`. Phép thử: mọi file `.md`/`.pdf` trong `01_sources/` đều có trong bản kê và khớp SHA-256 (`validate_wiki_page.py --verify-sources`).
-- `03_state/` là vùng trạng thái do agent sở hữu, máy đọc được, gồm 1 bản kê xuất xứ chung `03_state/_sources_manifest.md` và 1 bản đồ chunk `03_state/<source id>.md` cho mỗi nguồn dài đã bắt đầu ingest (§10).
+- `03_state/` là vùng trạng thái do agent sở hữu, máy đọc được, gồm 1 bản kê xuất xứ chung `03_state/_sources_manifest.md` và 1 bản đồ chunk `03_state/<source id>.md` cho mỗi nguồn dài đã bắt đầu ingest (§10). `03_state/_graph_snapshot.tsv` là ảnh chụp đồ thị quan hệ do `--graph` ghi (§6); không sửa tay.
 - Vùng capture tạm `_inbox.md` nằm ở gốc dự án, **không** nằm trong `02_wiki/` (§11).
 - Báo cáo lint/audit/research lưu ở `Claude outputs/` (không commit), tên `lint-<YYYY-MM-DD>-<số trang>.md`, `audit-<YYYY-MM-DD>-<chủ đề>.md`, hoặc `research-<YYYY-MM-DD>-<chủ đề>-<sub id>.md`; bản đồ chủ đề của research là `research-map-<chủ đề>.md`, cập nhật qua các lượt. Research, audit, draft, log và transcript không phải tri thức đã được chấp nhận; chỉ trang trong `02_wiki/` mới là.
 
@@ -70,7 +74,7 @@ Chủ đề (topic) là đơn vị gom nhóm tạm thời khi ingest (`.claude/s
 
 ## 6. Liên kết giữa các trang wiki (densely linked)
 
-- Liên kết giữa trang wiki dùng `[[wikilink]]` ngay trong thân bài (không dùng field frontmatter riêng).
+- Liên kết giữa trang wiki dùng `[[wikilink]]` ngay trong thân bài. Frontmatter không tạo liên kết; nó chỉ ghi *loại* của liên kết đã có (mục *Quan hệ có loại* bên dưới).
 - **Hai dạng link, cùng một đích.** `[[tên-trang]]` và `[[tên-trang|nhãn hiển thị]]` là như nhau; phần trước `|` luôn là tên file. Đếm liên kết bằng `validate_wiki_page.py --backlinks [<trang>]`, không grep tay.
 - `sources: []` chỉ trỏ tới nguồn (source id), không dùng để liên kết giữa các trang wiki.
 - Trang hợp lệ có ít nhất 1 outlink và lý tưởng có backlink — trừ trang `status: stub` (§9). Tiêu chí lint: `.claude/skills/lint/SKILL.md`.
@@ -78,6 +82,27 @@ Chủ đề (topic) là đơn vị gom nhóm tạm thời khi ingest (`.claude/s
 - **`tags` KHÔNG phải cơ chế liên kết.** Tag chỉ là chỉ mục rẻ để lọc khi quét frontmatter. Quan hệ ý tưởng phải viết thành `[[wikilink]]` có lý do.
 - **Stub link được khuyến khích:** khi cần trỏ tới khái niệm chưa ingest, tạo luôn trang `status: stub` rồi link — không hoãn sang batch sau.
 - Heuristic chọn trang để link khi ingest: hỏi **"trang này sẽ cần xuất hiện lại trong ngữ cảnh nào?"** — không hỏi "trang này thuộc category nào".
+
+### Quan hệ có loại
+
+Mỗi `[[wikilink]]` có thể được gắn loại quan hệ bằng field frontmatter (§1). Danh sách loại là danh sách đóng, đọc từ trang chứa link sang trang đích:
+
+| Field | Trang này … trang đích | Dạng ngược |
+|---|---|---|
+| `part_of` | là thành phần, cấp con hoặc trường hợp riêng của | `has_part` |
+| `governs` | đo lường, quy định hoặc giới hạn | `governed_by` |
+| `drives` | tác động tới, hoặc là đầu vào của | `driven_by` |
+| `contrasts` | được đặt đối chiếu, phân biệt với | `contrasts` |
+| `analogous` | mô tả cùng cơ chế ở một bối cảnh khác với | `analogous` |
+| `related` | có liên hệ mà năm loại trên không nói đúng (vd "phần này được giải thích ở trang kia") | `related` |
+
+- **Quan hệ chú giải link, không thay link.** Trang đích của mọi field phải xuất hiện như `[[wikilink]]` kèm lý do trong thân bài của chính trang đó (§7 luật 3). Hook từ chối quan hệ không có link tương ứng.
+- **Chỉ ghi một chiều**, trên trang chứa link. Chiều ngược do máy suy ra; hai trang link qua lại thì mỗi trang ghi loại theo câu văn của mình.
+- **Loại lấy từ câu chứa link**, không từ hiểu biết ngoài trang. Câu nói hai quan hệ thì trang đích nằm ở hai field.
+- **Cặp lệch.** Hai trang link qua lại mà loại của hai phía không phải dạng ngược của nhau thì `--relations` liệt kê là *cặp lệch*. Đây là cảnh báo cho lint, không chặn ghi. `related` không tính là lệch với loại nào.
+- **Gắn loại là sổ sách** (quy tắc bắt buộc 3 của `CLAUDE.md`): ingest gắn cho link nó viết, review-node gắn cho link của trang nó đọc trọn. Link cũ chưa có loại vẫn hợp lệ.
+- **Dữ liệu dẫn xuất.** Độ mạnh của link (mạnh = nằm trong câu đầu tiên của trang, vừa = phần còn lại), thứ hạng trang, độ mạnh giữa hai nhóm và bản đồ đều do `--graph`, `--neighbors`, `--map` tính từ thân bài, frontmatter và `index.md`. Chúng dùng để điều hướng và xếp ưu tiên, không phải tri thức đã được chấp nhận, và không được trích như claim.
+- **Ghi nhận thay đổi.** `--graph` so thứ hạng và độ mạnh cặp nhóm với `03_state/_graph_snapshot.tsv`, so link mất và link đổi loại với commit gần nhất, in phần vượt ngưỡng rồi lưu ảnh chụp mới. Ảnh chụp được commit cùng lượt đã sinh ra nó.
 
 ## 7. Cấu trúc thân bài trang wiki
 
@@ -93,7 +118,7 @@ Thân bài (phần dưới frontmatter) tuân theo 6 luật:
 
    **Áp dụng cho trang có `last_updated` từ 2026-09-14.** Trang cũ hơn không backfill hàng loạt; nợ trả dần khi trang được sửa nội dung. Hook thực thi theo `last_updated`.
 
-   **`last_updated` đo nội dung, không đo liên kết.** Chỉ nâng khi claim thay đổi (thêm, sửa, xoá claim; merge nguồn mới). Chỉ chèn `[[wikilink]]` hoặc thêm chú thích vị trí cho claim có sẵn → **không** nâng.
+   **`last_updated` đo nội dung, không đo liên kết.** Chỉ nâng khi claim thay đổi (thêm, sửa, xoá claim; merge nguồn mới). Chỉ chèn `[[wikilink]]`, thêm chú thích vị trí cho claim có sẵn, hoặc thêm, sửa field quan hệ (§6) → **không** nâng.
 
 6. **Người đọc là chủ wiki khi quay lại sau này.** Trang tự đủ nghĩa: đọc riêng trang cùng các link của nó vẫn hiểu ý chính và lý do nối với các trang khác, không cần mở nguồn gốc. Tổ chức theo ý, không theo trình tự chương của nguồn. Không giọng thuyết phục, khuyến nghị hay nhấn mạnh tầm quan trọng bằng từ ngữ (danh từ hành động/tính từ cảm tính); ưu tiên mật độ ý hơn trau chuốt. Áp dụng cách viết `--style` của skill `writing-style`.
 

@@ -1138,3 +1138,17 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 11 trang mới: level-1-assets, level-2a-assets, level-2b-assets, trần 40%/15% và công thức kho HQLA, số điều chỉnh, đặc tính HQLA, hqla-operational-requirements, unencumbered-assets, RCLF, total-expected-cash-outflows, total-expected-cash-inflows; merge vào high-quality-liquid-assets-hqla, total-net-cash-outflows, trang hạn chế chuyển thanh khoản, trang đồng tiền
 - Stub mới: alternative-liquidity-approaches; ⚠️ Conflict trên level-2a-assets (Basel AA− và Bindseil AA); công thức 30.38 mất trong nguồn, dựng lại từ 30.35–30.39 và ghi rõ trên trang
 - Còn lại: LCR30 các mục 30.26, 30.28, 30.29, 30.47 (chunk `do`); LCR40 cụm A còn 9 mục; LCR31, LCR40 cụm B, LCR90, LCR99 `chua`
+
+## [2026-10-12:10-35-59] schema | Sắp lại `index.md` theo lĩnh vực và nhóm chủ đề
+- 111 mục theo nguồn/chương thành 9 lĩnh vực, 62 nhóm; 828 dòng trang giữ nguyên nội dung, 25 trang chuyển nhóm riêng; `--all`: 826 trang, 0 vấn đề
+- `_inbox.md` thêm 1 mục "wiki thiếu": 18 khái niệm ALM chưa có trang; lý do ở `decisions.md` [2026-10-12]
+
+## [2026-10-12:11-33-38] schema | Quan hệ có loại ở frontmatter; lệnh đồ thị `--graph`, `--neighbors`, `--relations`, `--map`
+- Sửa `00_schema.md` §1, §2, §3, §6, §7; hook thêm kiểm field quan hệ và `wiki_graph.py`; sửa skill ingest, review-node, lint, research, rule `wiki-pages`, `CLAUDE.md`
+- Gắn loại 152 link trên 30 trang nhóm "Thanh khoản và nguồn vốn" (chỉ frontmatter); ảnh chụp đầu tiên `03_state/_graph_snapshot.tsv`: 826 trang, 4.030 link, 445 mạnh, 0 cặp lệch
+- Còn lại: 3.878 link chưa có loại; lô B (skill query, bộ câu hỏi đo), lô C (tổng quan nhóm); lý do ở `decisions.md` [2026-10-12]
+
+## [2026-10-12:11-46-10] schema | Skill `query` dùng `--neighbors`; evals thêm 6 câu, đo 15 lượt
+- `query/SKILL.md` bước 3: láng giềng theo loại quan hệ thay cho outlink cộng `--backlinks`; nhánh câu hỏi cấu trúc và câu hỏi toàn cảnh
+- Đo: 6 câu mới, skill mới 49/49 tiêu chí, skill cũ 48/49; bộ tiêu chí chưa phân biệt được hai bản; lý do và giới hạn ở `decisions.md` [2026-10-12]
+- `_inbox.md` thêm 1 mục (lệch ngày TAF giữa hai trang); còn lại: lô C (tổng quan nhóm), viết lại tiêu chí evals cho khó hơn

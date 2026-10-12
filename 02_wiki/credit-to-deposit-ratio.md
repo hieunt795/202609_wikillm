@@ -5,6 +5,8 @@ tags: [banking, liquidity-risk, regulation, alm]
 sources: [clippings]
 status: draft
 last_updated: 2026-09-25
+governs: [liquidity-risk]
+related: [maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks, regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it]
 ---
 
 Tỷ lệ tín dụng trên tiền gửi (credit-to-deposit ratio, CDR) so sánh quy mô tín dụng với nguồn tiền gửi của ngân hàng để giới hạn mức sử dụng tiền gửi cho hoạt động cho vay (clippings, ALM, Credit-to-Deposit Ratio, file Dấu ấn “Pháp chế” trong điều hành- CDR một tỷ lệ kệch cỡm.md, d.17).

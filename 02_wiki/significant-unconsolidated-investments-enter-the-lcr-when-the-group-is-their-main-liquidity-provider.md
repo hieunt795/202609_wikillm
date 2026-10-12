@@ -5,6 +5,9 @@ tags: [lcr, basel-iii, liquidity-regulation, consolidation]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [total-net-cash-outflows, lcr-applies-to-internationally-active-banks-on-a-consolidated-basis]
+governs: [liquidity-coverage-ratio-lcr]
+analogous: [lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days]
 ---
 
 Một khoản đầu tư không kiểm soát vào đơn vị ngân hàng, chứng khoán hoặc tài chính không được hợp nhất vẫn được tính vào [[liquidity-coverage-ratio-lcr|LCR]] của tập đoàn nếu tập đoàn sẽ là bên cấp thanh khoản chính cho đơn vị đó khi căng thẳng (basel_lcr, LCR10, Scope of application, 10.2, d.21).

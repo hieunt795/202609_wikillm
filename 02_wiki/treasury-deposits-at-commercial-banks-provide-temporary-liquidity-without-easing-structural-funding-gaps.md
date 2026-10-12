@@ -5,6 +5,7 @@ tags: [fiscal-monetary-interaction, liquidity-management, commercial-banking]
 sources: [clippings]
 status: draft
 last_updated: 2026-09-22
+drives: [active-spot-foreign-exchange-intervention-injects-primary-liquidity-directly-into-banking-system]
 ---
 
 Tiền gửi của Kho bạc Nhà nước tại các ngân hàng thương mại cung ứng nguồn thanh khoản danh nghĩa quy mô lớn trong ngắn hạn nhưng không thể thay thế cho tiền gửi khách hàng và không giải quyết được khoảng trống thiếu hụt nguồn vốn cấu trúc của hệ thống ngân hàng (clippings, Tiền gửi Kho bạc, TGKB và thanh khoản cấu trúc, file XAUUSD vs XAUVND  2 tài sản trái ngược.md, d.94–96).

@@ -19,9 +19,9 @@ Lint nhìn cả wiki một lượt nên dễ sửa hàng loạt theo một phán
 python .claude/hooks/validate_wiki_page.py --lint
 ```
 
-Lệnh gộp `--all`, `--verify-sources`, `--coverage`, `--size`, `--style`, `--ocr` và in một bảng tổng. Cần chi tiết của dòng nào thì chạy riêng lệnh đó. `--verify-sources` báo lệch nội dung thì ghi lên đầu báo cáo: đó là vi phạm quy tắc bắt buộc 1 và lint không sửa lại nguồn.
+Lệnh gộp `--all`, `--verify-sources`, `--coverage`, `--size`, `--style`, `--ocr`, `--relations`, `--graph --no-save` và in một bảng tổng. Cần chi tiết của dòng nào thì chạy riêng lệnh đó. `--verify-sources` báo lệch nội dung thì ghi lên đầu báo cáo: đó là vi phạm quy tắc bắt buộc 1 và lint không sửa lại nguồn.
 
-**2. Đối chiếu 6 tiêu chí.** Quét frontmatter trước, chỉ mở thân bài trang bị flag.
+**2. Đối chiếu 7 tiêu chí.** Quét frontmatter trước, chỉ mở thân bài trang bị flag.
 
 | Mã | Tiêu chí | Cách phát hiện |
 |---|---|---|
@@ -30,6 +30,7 @@ Lệnh gộp `--all`, `--verify-sources`, `--coverage`, `--size`, `--style`, `--
 | `O` | Mồ côi, link chết, sót index | phần `--all` của bảng tổng |
 | `S` | Khái niệm chưa có trang | thuật ngữ được nhắc trong thân bài của ≥ 3 trang mà chưa có trang riêng; đếm bằng `grep -li "<thuật ngữ>" 02_wiki/*.md`, theo khái niệm chứ không theo chuỗi. Trang `stub` chưa có nội dung cũng vào đây |
 | `L` | Link còn thiếu, trang trùng | hai trang cùng chủ đề không link nhau; hai trang mô tả cùng một thực thể |
+| `R` | Quan hệ có loại (§6) | cặp lệch do `--relations` liệt kê: mở hai câu chứa link, đề xuất loại đúng cho từng phía; trang *tổng quan nhóm* có `last_updated` cũ hơn trang mới nhất của nhóm. Số link chưa có loại chỉ chép vào báo cáo, không lập mã |
 | `G` | Khoảng trống | chunk `do`/`chua` của `--coverage`, file nguồn chưa kê, mục `_inbox.md` ghi "wiki thiếu"; kèm **câu hỏi mới đáng hỏi** và **nguồn nên tìm thêm** |
 
 Kích thước, văn phong, OCR không phải tiêu chí riêng: báo cáo chép số của bảng tổng và nêu tối đa 5 trang nặng nhất mỗi loại. Ứng viên `--ocr` phải mở trang xác nhận trước khi báo; tên riêng như `Paasche` là báo giả.
@@ -45,14 +46,15 @@ Trình tóm tắt trong chat, hỏi người dùng duyệt mã nào.
 
 - `O`, `L`: chèn link vào câu kèm lý do; thêm dòng vào `index.md`. Không nâng `last_updated`.
 - `S`: tạo `stub` rồi chèn link; nội dung thật là việc của `/ingest`.
-- Đổi title: đổi tên file, sửa `title`, cập nhật mọi `[[wikilink]]` trỏ tới (`--backlinks <trang>` cho danh sách).
+- Đổi title: đổi tên file, sửa `title`, cập nhật mọi `[[wikilink]]` và mọi field quan hệ trỏ tới (`--backlinks <trang>` cho danh sách); gộp hoặc xoá trang cũng vậy.
+- `R`: sửa field quan hệ theo loại đã duyệt, không nâng `last_updated`; tổng quan nhóm đã cũ thì chuyển cho `/research`.
 - Tách trang hoặc gộp trang trùng: giữ nguyên claim và chú thích, chỉ chuyển chỗ; trang bị gộp thì cập nhật mọi link trỏ tới rồi mới xoá. Xoá file phải được người dùng xác nhận riêng.
 - `K`: ghi theo đúng lựa chọn của người dùng, bỏ dấu `⚠️ Conflict`; không tự chọn bên.
 - `C`: không sửa ở đây; chuyển danh sách cho `/review-node` hoặc `/ingest`.
 - `G`: đăng ký file nguồn chưa kê vào bản kê (§10); phần còn lại chỉ báo cáo.
 - `I`: thực hiện kết cục đã duyệt, xoá dòng khỏi `_inbox.md`.
 
-Sửa xong chạy `--all`, phải sạch cho các trang đã chạm.
+Sửa xong chạy `--all`, phải sạch cho các trang đã chạm, rồi `--graph` và nêu phần thay đổi trong tóm tắt.
 
 **5. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] lint | <số trang> trang`, tối đa 3 dòng: số mục theo mã, mã đã sửa, đường dẫn báo cáo. Giờ lấy bằng `--now`. Lượt chỉ báo cáo, chưa sửa gì, vẫn ghi log.
 

@@ -5,6 +5,10 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla, liquidity-risk-management]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+has_part: [unencumbered-assets]
+governs: [high-quality-liquid-assets-hqla]
+drives: [liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]
+related: [hqla-eligibility-rests-on-four-fundamental-and-three-market-related-characteristics]
 ---
 
 Yêu cầu vận hành đối với HQLA (operational requirements) là nhóm điều kiện về cách ngân hàng nắm giữ và quản lý tài sản, áp dụng cho mọi tài sản trong kho [[high-quality-liquid-assets-hqla|HQLA]] bên cạnh tiêu chí về loại tài sản, trọng số rủi ro và xếp hạng (basel_lcr, LCR30, Operational requirements, 30.13, d.157).

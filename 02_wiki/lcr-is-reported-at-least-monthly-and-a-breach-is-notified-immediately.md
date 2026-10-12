@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, supervision]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+governs: [liquidity-coverage-ratio-lcr, banks-may-use-hqla-and-fall-below-the-lcr-minimum-during-stress]
+drives: [supervisory-response-to-an-lcr-below-100-percent-is-proportionate-to-the-shortfall]
 ---
 
 Ngân hàng báo cáo [[liquidity-coverage-ratio-lcr|LCR]] cho cơ quan giám sát ít nhất mỗi tháng một lần, và báo ngay khi LCR đã hoặc dự kiến xuống dưới 100% (basel_lcr, LCR20, 20.7, d.102) (basel_lcr, LCR20, 20.8, d.104).

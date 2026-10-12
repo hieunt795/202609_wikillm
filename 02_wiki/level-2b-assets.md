@@ -5,6 +5,11 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [high-quality-liquid-assets-hqla]
+has_part: [restricted-use-committed-liquidity-facility-rclf]
+governed_by: [level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]
+contrasts: [level-1-assets]
+related: [rmbs-negative-convexity-arises-from-embedded-borrower-prepayment-options-and-wal-extension, level-2a-assets]
 ---
 
 Tài sản Level 2B là cấp thấp nhất của [[high-quality-liquid-assets-hqla|HQLA]], chỉ được tính khi cơ quan quản lý quốc gia cho phép, chịu haircut từ 25% đến 50% và chiếm không quá 15% kho (basel_lcr, LCR30, Level 2B assets, 30.44, d.314) (basel_lcr, LCR30, Definition of HQLA, 30.33, d.218).

@@ -5,6 +5,10 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla, repo]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+governs: [level-1-assets, level-2a-assets, level-2b-assets]
+governed_by: [hqla-operational-requirements]
+drives: [level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]
+related: [general-collateral-and-specials-repo-separate-cash-driven-from-collateral-driven-financing]
 ---
 
 Số điều chỉnh (adjusted amount) của một cấp HQLA là lượng tài sản cấp đó mà ngân hàng sẽ có sau khi tháo ngược mọi giao dịch tài trợ có bảo đảm, cho vay có bảo đảm và hoán đổi tài sản bảo đảm ngắn hạn có trao đổi HQLA (basel_lcr, LCR30, Definition of HQLA, 30.37, d.227).

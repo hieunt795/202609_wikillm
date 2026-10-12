@@ -5,6 +5,11 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [liquidity-coverage-ratio-lcr]
+has_part: [level-1-assets, level-2a-assets, level-2b-assets]
+governed_by: [level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock, hqla-eligibility-rests-on-four-fundamental-and-three-market-related-characteristics, hqla-operational-requirements, unencumbered-assets, total-net-cash-outflows, banks-may-use-hqla-and-fall-below-the-lcr-minimum-during-stress, liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr, lcr-is-met-in-one-currency-while-liquidity-needs-are-monitored-by-significant-currency]
+drives: [mechanics-of-liquidity-crises-and-feedback-loops]
+related: [alternative-liquidity-approaches, liquidity-regulation-and-central-bank-operations-arbitrage]
 ---
 
 Tài sản thanh khoản chất lượng cao (high-quality liquid assets, HQLA) là kho tài sản làm tử số của [[liquidity-coverage-ratio-lcr|LCR]], được định giá trong điều kiện căng thẳng chứ không theo giá thời bình (basel_lcr, LCR20, 20.4, d.68–70) (basel_lcr, LCR30, Introduction, 30.1, d.114).

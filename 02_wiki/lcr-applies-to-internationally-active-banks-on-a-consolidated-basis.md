@@ -5,6 +5,9 @@ tags: [lcr, basel-iii, liquidity-regulation, consolidation]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+has_part: [significant-unconsolidated-investments-enter-the-lcr-when-the-group-is-their-main-liquidity-provider, liquidity-risk-is-monitored-at-entity-branch-and-group-level-regardless-of-lcr-scope, consolidated-lcr-applies-home-parameters-except-host-rules-for-retail-and-small-business-deposits, liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]
+governs: [liquidity-coverage-ratio-lcr]
+contrasts: [liquidity-risk-is-monitored-at-entity-branch-and-group-level-regardless-of-lcr-scope]
 ---
 
 Chuẩn mực [[liquidity-coverage-ratio-lcr|LCR]] và các công cụ theo dõi thanh khoản đi kèm áp dụng cho mọi ngân hàng hoạt động quốc tế, tính trên cơ sở hợp nhất (basel_lcr, LCR10, Scope of application, 10.1, d.19).

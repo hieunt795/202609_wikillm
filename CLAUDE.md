@@ -30,7 +30,7 @@ Wiki tri thức 3 lớp theo mô hình Karpathy, kèm 1 vùng trạng thái ph�
 
 1. **Không bao giờ sửa nội dung trong `01_sources/`.** Không ngoại lệ: không sửa, không thêm file, không đổi tên, không xoá, không đổi ký tự xuống dòng. Mọi thứ agent cần ghi về một nguồn đều đi ra `03_state/` (§3, §10).
 2. **Không tự xử lý mâu thuẫn giữa hai nguồn.** Đánh dấu `⚠️ Conflict` kèm cả hai claim và nguồn, rồi chờ người xử lý.
-3. **Mọi thay đổi claim trong `02_wiki/` đi qua một lần duyệt danh sách thay đổi**: ý chính và bảng merge ở ingest, proposal ở research, mã mục ở lint, trang `type: analysis` ở query. Ngoại lệ duy nhất: `/review-node` sửa claim cho khớp chính nguồn nó dẫn. Sổ sách agent tự làm, không hỏi: `index.md`, backlink, stub, bản kê, state file.
+3. **Mọi thay đổi claim trong `02_wiki/` đi qua một lần duyệt danh sách thay đổi**: ý chính và bảng merge ở ingest, proposal ở research, mã mục ở lint, trang `type: analysis` ở query. Ngoại lệ duy nhất: `/review-node` sửa claim cho khớp chính nguồn nó dẫn. Sổ sách agent tự làm, không hỏi: `index.md`, backlink, stub, bản kê, state file, loại quan hệ của link (§6).
 4. Mỗi operation ghi đúng 1 mục vào **cuối** `log.md`, dạng `## [YYYY-MM-DD:hh-MM-ss] <op> | <tiêu đề>` + tối đa 3 dòng (§12). Lập luận không nằm trong log.
 
 ## Khởi động
@@ -52,12 +52,13 @@ Bắt buộc:
 | Lệnh | Khi nào |
 | --- | --- |
 | `--all` | Trước khi ghi log ở mọi operation có ghi trang. Cách duy nhất bắt trang mồ côi, trang sót trong `index.md` và file ghi bằng shell |
+| `--graph` | Sau `--all` ở mọi operation có ghi trang: in thay đổi cấu trúc vượt ngưỡng, lưu `03_state/_graph_snapshot.tsv`. Nêu phần thay đổi trong tin nhắn kết thúc lượt |
 | `--coverage [<source id>]` | Chọn chunk và chốt lượt ở ingest; kiểm chunk đã phủ ở research |
 | `--lint` | Bước 1 của lint: chạy gộp mọi lệnh quét, in một bảng tổng |
 | `--verify-sources` | Bất cứ khi nào nghi `01_sources/` bị đổi (`--lint` đã gồm) |
 | `--now` | Lấy giờ Việt Nam cho `log.md` |
 
-Các lệnh theo nhu cầu (`--backlinks`, `--size`, `--style`, `--ocr`): xem `--help`; skill nêu lúc nào cần chạy.
+Các lệnh theo nhu cầu (`--backlinks`, `--neighbors`, `--relations`, `--map`, `--size`, `--style`, `--ocr`): xem `--help`; skill nêu lúc nào cần chạy.
 
 ## Ghi chú vận hành
 

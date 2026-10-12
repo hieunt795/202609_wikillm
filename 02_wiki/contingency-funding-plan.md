@@ -5,6 +5,8 @@ tags: [liquidity-regulation, liquidity-risk-management, lcr]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+governed_by: [principles-for-sound-liquidity-risk-management-and-supervision, collateral-constraint-on-central-bank-credit]
+drives: [supervisory-response-to-an-lcr-below-100-percent-is-proportionate-to-the-shortfall]
 ---
 
 Kế hoạch tài trợ dự phòng (contingency funding plan, CFP) là văn bản trong đó ngân hàng nêu rõ các chiến lược xử lý thiếu hụt thanh khoản, cho cả căng thẳng riêng của ngân hàng lẫn căng thẳng toàn thị trường (basel_lcr, LCR20, 20.6 chú thích, d.94).

@@ -5,6 +5,10 @@ tags: [lcr, basel-iii, liquidity-regulation, consolidation, hqla]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [lcr-applies-to-internationally-active-banks-on-a-consolidated-basis]
+governs: [liquidity-coverage-ratio-lcr, high-quality-liquid-assets-hqla]
+governed_by: [total-net-cash-outflows]
+analogous: [lcr-is-met-in-one-currency-while-liquidity-needs-are-monitored-by-significant-currency]
 ---
 
 Tập đoàn ngân hàng xuyên biên giới không được ghi nhận thanh khoản dư trong [[liquidity-coverage-ratio-lcr|LCR]] hợp nhất khi có nghi ngờ hợp lý về khả năng dùng được phần thanh khoản đó (basel_lcr, LCR10, Treatment of liquidity transfer restrictions, 10.7, d.39).

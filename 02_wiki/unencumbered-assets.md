@@ -5,6 +5,11 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla, collateral]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [hqla-operational-requirements]
+governs: [high-quality-liquid-assets-hqla]
+contrasts: [asset-encumbrance-and-subordination-of-unsecured-creditors]
+analogous: [collateral-rehypothecation-chains-amplify-cascading-settlement-delays-across-counterparties]
+related: [total-expected-cash-outflows]
 ---
 
 Tài sản không bị ràng buộc (unencumbered assets) là tài sản không chịu hạn chế pháp lý, quy định, hợp đồng hay hạn chế nào khác đối với khả năng ngân hàng thanh lý, bán, chuyển nhượng hoặc chuyển giao nó (basel_lcr, LCR30, Operational requirements, 30.16, d.166).

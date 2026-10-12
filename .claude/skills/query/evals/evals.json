@@ -21,7 +21,7 @@
       "id": 1,
       "name": "query-lender-of-last-resort-not-covered",
       "prompt": "wiki có gì về lender of last resort không? fed đóng vai trò đó thế nào trong khủng hoảng 2008",
-      "expected_output": "Nói rõ wiki chưa có trang lender-of-last-resort/Fed 2008, chỉ ra nguồn chưa ingest có thể phủ (Bindseil, Cargill), không bịa nội dung như thể từ wiki, không tạo trang/log.",
+      "expected_output": "Nêu wiki đã có các trang về lender of last resort và trích chúng; nói rõ phần Fed trong khủng hoảng 2008 wiki chỉ phủ từng mảnh, chưa có trang riêng; không bịa nội dung như thể từ wiki; không tạo trang hay ghi log.",
       "files": [],
       "assertions": [
         "Không đọc 00_schema.md khi chỉ trả lời",
@@ -30,9 +30,9 @@
         "Không sửa file nào trong wiki",
         "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
         "Trích ít nhất 2 trang wiki",
-        "Nói rõ wiki chưa có nội dung về Fed/2008",
-        "Chỉ ra nguồn chưa ingest có thể phủ (Cargill/Bindseil)",
-        "Kiến thức ngoài wiki (nếu có) được ghi rõ là không từ wiki"
+        "Kiến thức ngoài wiki (nếu có) được ghi rõ là không từ wiki",
+        "Trích ít nhất 2 trang wiki về lender of last resort",
+        "Nói rõ phần Fed trong khủng hoảng 2008 wiki chỉ phủ một phần, chưa có trang riêng"
       ]
     },
     {
@@ -49,8 +49,111 @@
         "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
         "Trích ít nhất 2 trang wiki",
         "Nêu đủ 3 khác biệt: phạm vi, giá nhập khẩu, quyền số Laspeyres/Paasche",
-        "Hỏi xác nhận trước khi tạo trang analysis, không tự tạo"
+        "Không tự tạo trang analysis; nếu đề nghị tạo thì hỏi xác nhận trước"
       ]
+    },
+    {
+      "id": 3,
+      "name": "query-structure-lcr-components",
+      "prompt": "LCR gồm những thành phần nào, mỗi thành phần lại chia ra sao?",
+      "expected_output": "Nêu hai vế của LCR (kho HQLA và tổng dòng tiền ra ròng); HQLA chia Level 1, 2A, 2B; dòng tiền ra ròng là dòng ra dự kiến trừ dòng vào dự kiến với trần 75%. Trích các trang wiki tương ứng.",
+      "assertions": [
+        "Không đọc 00_schema.md khi chỉ trả lời",
+        "Không đọc trọn 02_wiki/index.md (chỉ grep theo từ khoá)",
+        "Không sửa file nào trong repo",
+        "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
+        "Nêu cả hai vế: kho HQLA và tổng dòng tiền ra ròng",
+        "Nêu đủ ba cấp Level 1, Level 2A, Level 2B",
+        "Nêu dòng ra dự kiến, dòng vào dự kiến và trần 75% của dòng vào",
+        "Trích ít nhất 4 trang wiki"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "query-structure-what-limits-hqla",
+      "prompt": "Những quy tắc nào giới hạn hoặc ràng buộc kho HQLA của một ngân hàng?",
+      "expected_output": "Liệt kê các ràng buộc có trang trong wiki: trần 40% Level 2 và 15% Level 2B, bảy đặc tính đủ điều kiện, yêu cầu vận hành, không bị ràng buộc (unencumbered), tối thiểu bằng tổng dòng tiền ra ròng, loại HQLA dư bị kẹt khỏi LCR hợp nhất, cơ cấu đồng tiền, quyền dùng HQLA khi căng thẳng.",
+      "assertions": [
+        "Không đọc 00_schema.md khi chỉ trả lời",
+        "Không đọc trọn 02_wiki/index.md (chỉ grep theo từ khoá)",
+        "Không sửa file nào trong repo",
+        "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
+        "Nêu trần 40% cho Level 2 và 15% cho Level 2B",
+        "Nêu yêu cầu vận hành hoặc điều kiện không bị ràng buộc (unencumbered)",
+        "Nêu quy tắc loại HQLA dư bị kẹt do hạn chế chuyển thanh khoản",
+        "Nêu yêu cầu cơ cấu đồng tiền của kho HQLA",
+        "Nêu ít nhất 6 ràng buộc khác nhau, mỗi ràng buộc kèm một trang wiki"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "name": "query-structure-what-drives-net-outflows",
+      "prompt": "Cái gì quyết định tổng dòng tiền ra ròng trong LCR lớn hay nhỏ?",
+      "expected_output": "Tham số của kịch bản căng thẳng chuẩn (tỷ lệ rút, tỷ lệ giải ngân), dòng ra và dòng vào dự kiến, trần 75% của dòng vào, lựa chọn tham số nước nhà hay nước sở tại khi hợp nhất, khoản đầu tư không hợp nhất.",
+      "assertions": [
+        "Không đọc 00_schema.md khi chỉ trả lời",
+        "Không đọc trọn 02_wiki/index.md (chỉ grep theo từ khoá)",
+        "Không sửa file nào trong repo",
+        "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
+        "Nêu tham số của kịch bản căng thẳng chuẩn là thứ định ra các tỷ lệ",
+        "Nêu trần 75% của dòng vào",
+        "Nêu quy tắc tham số nước nhà / nước sở tại khi hợp nhất",
+        "Nêu khoản đầu tư không hợp nhất hoặc nghĩa vụ tài trợ tiềm tàng",
+        "Trích ít nhất 4 trang wiki"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "name": "query-global-liquidity-overview",
+      "prompt": "Cho tôi bức tranh tổng thể: wiki đang có gì về quản trị thanh khoản ngân hàng, các mảng nối với nhau thế nào?",
+      "expected_output": "Tổng hợp theo mảng (LCR và HQLA; rủi ro thanh khoản và bất cân xứng kỳ hạn; tỷ lệ quản lý như CDR; chi phí thanh khoản trong FTP; stress test và kế hoạch tài trợ dự phòng; quan hệ với ngân hàng trung ương), nêu các mảng nối nhau qua trang nào, và nói rõ phần wiki chưa phủ.",
+      "assertions": [
+        "Không đọc 00_schema.md khi chỉ trả lời",
+        "Không đọc trọn 02_wiki/index.md (chỉ grep theo từ khoá)",
+        "Không sửa file nào trong repo",
+        "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
+        "Nêu ít nhất 4 mảng khác nhau của chủ đề thanh khoản",
+        "Trích ít nhất 8 trang wiki",
+        "Nêu ít nhất 2 mối nối cụ thể giữa các mảng, mỗi mối nối chỉ ra trang làm cầu",
+        "Nói rõ ít nhất một phần wiki chưa phủ (vd NSFR chưa có trang riêng, các mục run-off của LCR40 chưa nạp)"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "name": "query-global-irrbb-liquidity-link",
+      "prompt": "Trong wiki, rủi ro lãi suất sổ ngân hàng và rủi ro thanh khoản liên hệ với nhau ra sao?",
+      "expected_output": "Nối hai nhóm trang: nêu các trang làm cầu (vd sản phẩm không kỳ hạn tách hồ sơ thanh khoản khỏi hồ sơ lãi suất, cân bằng kỳ hạn, FTP khớp kỳ hạn, case SVB) và diễn giải quan hệ theo nội dung các trang đó.",
+      "assertions": [
+        "Không đọc 00_schema.md khi chỉ trả lời",
+        "Không đọc trọn 02_wiki/index.md (chỉ grep theo từ khoá)",
+        "Không sửa file nào trong repo",
+        "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
+        "Trích ít nhất 2 trang thuộc mảng rủi ro lãi suất sổ ngân hàng và 2 trang thuộc mảng thanh khoản",
+        "Nêu ít nhất 2 trang làm cầu giữa hai mảng và nói mỗi trang nối chúng bằng ý gì",
+        "Không trình bày kiến thức ngoài wiki như thể lấy từ wiki"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "name": "query-nsfr-not-covered",
+      "prompt": "NSFR tính thế nào, ASF và RSF gồm những gì?",
+      "expected_output": "Nói rõ wiki chưa có trang riêng về NSFR, ASF, RSF; chỉ ra các trang có nhắc NSFR; chỉ ra nguồn chưa nạp có thể trả lời; kiến thức ngoài wiki nếu có thì tách riêng và ghi rõ.",
+      "assertions": [
+        "Không đọc 00_schema.md khi chỉ trả lời",
+        "Không đọc trọn 02_wiki/index.md (chỉ grep theo từ khoá)",
+        "Không sửa file nào trong repo",
+        "Mọi [[link]] trong câu trả lời trỏ tới trang có thật",
+        "Nói rõ wiki chưa có trang riêng về NSFR / ASF / RSF",
+        "Chỉ ra ít nhất một trang wiki có nhắc NSFR",
+        "Chỉ ra nguồn chưa nạp có thể trả lời (chuẩn mực NSFR của Basel)",
+        "Kiến thức ngoài wiki (nếu có) được ghi rõ là không từ wiki"
+      ],
+      "files": []
     }
   ]
 }

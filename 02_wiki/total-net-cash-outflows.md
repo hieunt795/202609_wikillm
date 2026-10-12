@@ -5,6 +5,10 @@ tags: [lcr, basel-iii, liquidity-regulation]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [liquidity-coverage-ratio-lcr]
+has_part: [total-expected-cash-outflows, total-expected-cash-inflows]
+governs: [high-quality-liquid-assets-hqla, liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]
+governed_by: [lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days, consolidated-lcr-applies-home-parameters-except-host-rules-for-retail-and-small-business-deposits]
 ---
 
 Tổng dòng tiền ra ròng (total net cash outflows) là mẫu số của [[liquidity-coverage-ratio-lcr|LCR]]: lượng tiền ròng ngân hàng phải chi trong 30 ngày lịch tiếp theo, tính theo các tham số của kịch bản căng thẳng do chuẩn mực quy định (basel_lcr, LCR20, 20.4, d.68–70).

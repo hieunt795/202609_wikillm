@@ -5,6 +5,11 @@ tags: [lcr, basel-iii, liquidity-regulation, liquidity-risk-management]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [lcr-applies-to-internationally-active-banks-on-a-consolidated-basis]
+governs: [liquidity-risk]
+governed_by: [principles-for-sound-liquidity-risk-management-and-supervision]
+contrasts: [liquidity-coverage-ratio-lcr, lcr-applies-to-internationally-active-banks-on-a-consolidated-basis]
+related: [liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]
 ---
 
 Dù [[liquidity-coverage-ratio-lcr|LCR]] được áp dụng ở phạm vi nào, ngân hàng vẫn chủ động theo dõi và kiểm soát mức phơi nhiễm rủi ro thanh khoản và nhu cầu vốn ở ba cấp: từng pháp nhân, từng chi nhánh và công ty con ở nước ngoài, và cả tập đoàn (basel_lcr, LCR10, Scope of application, 10.3, d.23).

@@ -5,6 +5,9 @@ tags: [lcr, basel-iii, liquidity-regulation, stress-testing]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+driven_by: [lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days]
+contrasts: [lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days, supervisory-stress-testing-provides-forward-looking-macroprudential-evaluation]
+related: [liquidity-coverage-ratio-lcr]
 ---
 
 Ủy ban Basel coi phép thử trong [[liquidity-coverage-ratio-lcr|LCR]] là yêu cầu giám sát tối thiểu, không phải thước đo đầy đủ nhu cầu thanh khoản của một ngân hàng (basel_lcr, LCR20, 20.3, d.65).

@@ -5,6 +5,12 @@ tags: [lcr, basel-iii, liquidity-regulation, stress-testing]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [liquidity-coverage-ratio-lcr]
+governs: [liquidity-coverage-ratio-lcr, total-net-cash-outflows]
+drives: [lcr-is-a-minimum-that-banks-supplement-with-longer-horizon-internal-liquidity-stress-tests]
+driven_by: [mechanics-of-liquidity-crises-and-feedback-loops]
+contrasts: [lcr-is-a-minimum-that-banks-supplement-with-longer-horizon-internal-liquidity-stress-tests]
+analogous: [bank-runs-investor-strikes-and-multiple-equilibria]
 ---
 
 Kịch bản căng thẳng của [[liquidity-coverage-ratio-lcr|LCR]] gộp một cú sốc riêng của ngân hàng (idiosyncratic) với một cú sốc toàn thị trường (market-wide) xảy ra cùng lúc trong 30 ngày lịch (basel_lcr, LCR20, 20.2, d.56).

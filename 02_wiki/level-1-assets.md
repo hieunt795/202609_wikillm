@@ -5,6 +5,12 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [high-quality-liquid-assets-hqla]
+has_part: [required-reserves]
+governed_by: [haircut]
+drives: [level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]
+contrasts: [total-expected-cash-inflows]
+related: [level-2a-assets]
 ---
 
 Tài sản Level 1 là cấp cao nhất của [[high-quality-liquid-assets-hqla|HQLA]]: được tính vào kho không giới hạn tỷ trọng và không chịu haircut trong LCR (basel_lcr, LCR30, Level 1 assets, 30.40, d.239).

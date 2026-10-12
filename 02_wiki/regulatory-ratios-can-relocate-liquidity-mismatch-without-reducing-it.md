@@ -5,6 +5,7 @@ tags: [banking, liquidity-risk, regulation, balance-sheet]
 sources: [clippings]
 status: draft
 last_updated: 2026-09-25
+related: [credit-to-deposit-ratio, multiple-balance-sheet-mismatches-compound-banking-systemic-risk]
 ---
 
 Một tỷ lệ quản lý có thể chuyển bất cân xứng thanh khoản sang khoản mục khác mà không làm rủi ro giảm đi. Khi [[credit-to-deposit-ratio|CDR]] chặn một cấu trúc tín dụng–tiền gửi, ngân hàng có thể thay tiền gửi bằng vốn bán buôn, vốn liên ngân hàng, giấy tờ có giá hoặc repo (clippings, ALM, Dịch chuyển mismatch, file Dấu ấn “Pháp chế” trong điều hành- CDR một tỷ lệ kệch cỡm.md, d.17).

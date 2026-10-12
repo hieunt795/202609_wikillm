@@ -7,6 +7,10 @@ status: draft
 last_updated: 2026-10-10
 reviewed: 2026-10-10
 reviewed_by: model
+governed_by: [maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks, credit-to-deposit-ratio, matched-maturity-ftp-isolates-business-margins-and-structural-treasury-contributions, liquidity-coverage-ratio-lcr]
+drives: [bank-runs-investor-strikes-and-multiple-equilibria, regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]
+driven_by: [multiple-balance-sheet-mismatches-compound-banking-systemic-risk]
+related: [private-credit-selective-defaults-obscure-systemic-banking-fragility]
 ---
 
 Rủi ro thanh khoản (liquidity risk) là rủi ro một định chế tài chính không có tiền để trả nghĩa vụ đến hạn (clippings, ALM, Giới hạn của CDR, file Dấu ấn “Pháp chế” trong điều hành- CDR một tỷ lệ kệch cỡm.md, d.19). Rủi ro này bắt nguồn cố hữu từ hoạt động chuyển đổi kỳ hạn của ngân hàng, được quản trị thông qua [[maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks|cân bằng kỳ hạn dòng tiền]], và có xu hướng gia tăng đột biến khi tích tụ [[multiple-balance-sheet-mismatches-compound-banking-systemic-risk|nhiều tầng bất cân xứng trên bảng cân đối]], kích hoạt các hiện tượng [[bank-runs-investor-strikes-and-multiple-equilibria|tháo chạy ngân hàng và đình công của nhà đầu tư]]. Một [[credit-to-deposit-ratio|CDR]] đáp ứng quy định không loại trừ rủi ro này nếu ngân hàng vẫn phụ thuộc vào nguồn ngắn hạn hoặc tập trung (clippings, ALM, Giới hạn của CDR, file Dấu ấn “Pháp chế” trong điều hành- CDR một tỷ lệ kệch cỡm.md, d.19–21).

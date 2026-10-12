@@ -5,6 +5,9 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+governs: [high-quality-liquid-assets-hqla, level-2b-assets, level-2a-assets]
+driven_by: [level-1-assets, adjusted-hqla-amounts-unwind-secured-transactions-maturing-within-30-days]
+related: [liquidity-regulation-and-central-bank-operations-arbitrage]
 ---
 
 Kho [[high-quality-liquid-assets-hqla|HQLA]] nhận [[level-1-assets|Level 1]] không giới hạn, nhưng Level 2 chỉ được chiếm tối đa 40% kho và riêng [[level-2b-assets|Level 2B]] tối đa 15% kho, trong đó trần 15% nằm bên trong trần 40% (basel_lcr, LCR30, Definition of HQLA, 30.31, d.214) (basel_lcr, LCR30, Definition of HQLA, 30.33, d.218).

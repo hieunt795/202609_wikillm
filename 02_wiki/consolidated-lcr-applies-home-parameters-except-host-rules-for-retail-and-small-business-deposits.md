@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, consolidation, home-host]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+part_of: [lcr-applies-to-internationally-active-banks-on-a-consolidated-basis]
+governs: [liquidity-coverage-ratio-lcr, total-net-cash-outflows]
 ---
 
 Khi tính [[liquidity-coverage-ratio-lcr|LCR]] hợp nhất, tập đoàn ngân hàng xuyên biên giới áp tham số thanh khoản của nước nhà (home) cho mọi pháp nhân được hợp nhất, trừ tiền gửi bán lẻ và tiền gửi doanh nghiệp nhỏ thì theo tham số của nước sở tại (host) nơi chi nhánh hoặc công ty con hoạt động (basel_lcr, LCR10, Differences in home / host liquidity requirements, 10.5, d.29).
