@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, wholesale-funding, s
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [unsecured-wholesale-funding]
 governed_by: [retail-term-deposits-beyond-30-days-leave-lcr-outflows-unless-withdrawable-without-penalty]
 analogous: [lcr-retail-deposits-split-into-stable-and-less-stable-portions-with-run-off-floors]

@@ -710,6 +710,8 @@
 **Thị trường tiền tệ, chuẩn lãi suất RFR và repo**
 - [[interbank-market]] — thị trường liên ngân hàng: thị trường bán buôn điều hòa dự trữ và xác lập lãi suất qua đêm mục tiêu tác nghiệp
 - [[reverse-repurchase-agreement]] — hợp đồng mua lại đảo ngược (reverse repo): nghiệp vụ thị trường mở hút thanh khoản và thiết lập sàn lãi suất
+- [[money-market-fund]] — stub: quỹ thị trường tiền tệ, đầu tư vào công cụ nợ ngắn hạn
+- [[short-selling]] — stub: bán khống, bán chứng khoán đi vay rồi mua lại sau để trả
 - [[commercial-paper-and-short-term-instruments-compete-as-near-money]] — thương phiếu và công cụ ngắn hạn cạnh tranh trực tiếp với tiền gửi ngân hàng như tài sản tiền tệ gần (near-money)
 - [[overnight-risk-free-rates-replace-ibor-benchmarks-through-transaction-volume]] — các chuẩn lãi suất phi rủi ro qua đêm (SOFR, €STR, SONIA) thay thế chuẩn IBOR nhờ khối lượng giao dịch thực tế
 - [[lagged-compounded-overnight-rates-lack-term-risk-premia-and-delay-policy-transmission]] — lãi suất qua đêm dồn lãi có độ trễ thiếu phần bù rủi ro kỳ hạn và gây trễ hạn truyền dẫn chính sách tiền tệ
@@ -783,6 +785,7 @@
 
 **Trái phiếu có bảo đảm, chứng khoán hoá ABS và RMBS**
 - [[covered-bonds-combine-on-balance-sheet-dual-recourse-with-insolvency-ring-fencing]] — trái phiếu có bảo đảm tối ưu hóa chi phí vốn qua cơ chế hoàn trả kép nội bảng và khoanh vùng tài sản khỏi thủ tục phá sản
+- [[asset-backed-commercial-paper-abcp]] — stub: ABCP, giấy nợ ngắn hạn do thực thể có mục đích đặc biệt phát hành để tài trợ một rổ tài sản
 - [[overcollateralization-optimizes-covered-bond-spreads-against-unsecured-asset-encumbrance]] — tài sản bảo đảm vượt mức (OC) tối ưu hóa giữa biên độ covered bond và chi phí đắt đỏ do trói buộc tài sản (asset encumbrance)
 - [[danish-balance-principle-links-mortgage-origination-to-bond-pricing-through-delivery-and-prepayment-options]] — nguyên tắc cân bằng Đan Mạch khớp nối 1-1 khoản vay và trái phiếu qua quyền giao nộp (delivery) và trả trước (prepayment)
 - [[asset-backed-securitization-achieves-bankruptcy-remoteness-via-true-sale-and-non-recourse-spvs]] — chứng khoán hóa ABS đạt tính cách ly phá sản ngoại bảng qua mua đứt bán đoạn (true sale) và SPV phi truy đòi
@@ -915,8 +918,6 @@
 - [[regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it]] — tỷ lệ quản lý chuyển bất cân xứng thanh khoản sang khoản mục khác, tỷ lệ báo cáo đẹp hơn mà rủi ro còn nguyên
 - [[liquidity-coverage-ratio-lcr]] — LCR: kho HQLA chia tổng dòng tiền ra ròng 30 ngày lịch, tối thiểu 100% ngoài thời kỳ căng thẳng
 - [[net-stable-funding-ratio-nsfr]] — stub: NSFR, tỷ lệ nguồn vốn ổn định sẵn có trên nguồn vốn ổn định cần có
-- [[high-quality-liquid-assets-hqla]] — HQLA, tử số của LCR: kho tài sản không bị ràng buộc, định giá trong điều kiện căng thẳng
-- [[total-net-cash-outflows]] — tổng dòng tiền ra ròng, mẫu số của LCR: tính theo tham số kịch bản chuẩn cho 30 ngày lịch
 - [[lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days]] — kịch bản căng thẳng LCR: 7 hệ quả của cú sốc riêng cộng cú sốc toàn thị trường
 - [[lcr-is-a-minimum-that-banks-supplement-with-longer-horizon-internal-liquidity-stress-tests]] — LCR là mức tối thiểu; ngân hàng tự làm stress test thanh khoản chân trời dài hơn, gồm rủi ro khí hậu
 - [[banks-may-use-hqla-and-fall-below-the-lcr-minimum-during-stress]] — ngân hàng được dùng HQLA và rơi dưới 100% khi căng thẳng
@@ -930,6 +931,15 @@
 - [[liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]] — HQLA dư không chuyển được bị loại khỏi LCR hợp nhất
 - [[lcr-is-met-in-one-currency-while-liquidity-needs-are-monitored-by-significant-currency]] — LCR báo cáo một đồng tiền, nhu cầu theo dõi theo từng đồng tiền trọng yếu
 - [[principles-for-sound-liquidity-risk-management-and-supervision]] — stub: bộ Sound Principles của Ủy ban Basel
+- [[intraday-liquidity]] — stub: thanh khoản trong ngày cho nghĩa vụ thanh toán và quyết toán; kịch bản LCR không phủ
+- [[run-off-rate]] — stub: tỷ lệ run-off, phần của một khoản nợ mà LCR giả định bị rút trong 30 ngày căng thẳng
+- [[correspondent-banking]] — stub: ngân hàng đại lý, giữ tiền gửi của ngân hàng khác để quyết toán giao dịch ngoại tệ
+- [[prime-brokerage]] — stub: gói dịch vụ bù trừ, lưu ký, tài trợ và cho vay chứng khoán cho quỹ phòng hộ
+- [[public-sector-entity-pse]] — stub: tổ chức khu vực công ngoài chính phủ trung ương và ngân hàng trung ương
+
+**LCR: kho HQLA (tử số)**
+- [[the-hqla-stock-weights-three-asset-levels-by-haircut-under-40-and-15-percent-caps]] — *(tổng quan nhóm)* tử số của LCR: bảng từng thành phần của ba cấp với hệ số, haircut và trần; ba cửa điều kiện, đa dạng hóa, 30 ngày chống hiệu ứng vách, hai ngoại lệ (LCR31 và Shari'ah)
+- [[high-quality-liquid-assets-hqla]] — HQLA, tử số của LCR: kho tài sản không bị ràng buộc, định giá trong điều kiện căng thẳng
 - [[hqla-eligibility-rests-on-four-fundamental-and-three-market-related-characteristics]] — 4 đặc tính cơ bản và 3 đặc tính thị trường của HQLA
 - [[hqla-operational-requirements]] — yêu cầu vận hành: kiểm soát của treasury, năng lực bán, bán thử định kỳ, phòng hộ
 - [[unencumbered-assets]] — tài sản không bị ràng buộc: định nghĩa, rổ bảo đảm, tái thế chấp
@@ -939,13 +949,29 @@
 - [[level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]] — trần 40% và 15%, công thức kho HQLA và hai khoản điều chỉnh trần
 - [[adjusted-hqla-amounts-unwind-secured-transactions-maturing-within-30-days]] — số điều chỉnh: tháo ngược repo, cho vay có bảo đảm và hoán đổi tài sản bảo đảm trong 30 ngày
 - [[restricted-use-committed-liquidity-facility-rclf]] — RCLF của ngân hàng trung ương tính vào Level 2B; phí cam kết tối thiểu 75 điểm cơ bản
+- [[alternative-liquidity-approaches]] — phương án thanh khoản thay thế (LCR31) cho đồng tiền thiếu Level 1: điều kiện xuất phát và ba phương án
+- [[usage-of-alternative-liquidity-approaches-is-capped-as-a-share-of-the-required-hqla-in-the-currency]] — trần sử dụng tính trên lượng HQLA phải giữ, ví dụ trần 80%, lượng Level 1 tối thiểu, ba ràng buộc với hành vi của ngân hàng
+- [[option-1-counts-a-fee-based-committed-central-bank-liquidity-facility-as-hqla]] — Option 1: hạn mức cam kết của ngân hàng trung ương; bốn điều kiện hợp đồng, cách đặt phí, năng lực của nước áp dụng (AA−), sáu nhóm chi tiết phải nộp
+- [[option-2-foreign-currency-hqla-covers-domestic-needs-with-an-8-percent-haircut-above-a-25-percent-threshold]] — Option 2: HQLA ngoại tệ phủ nhu cầu nội tệ; haircut tối thiểu 8% với đồng tiền chính, ngưỡng không quá 25%, tiêu chí chọn đồng tiền
+- [[option-3-additional-level-2a-assets-beyond-the-40-percent-cap-take-a-minimum-20-percent-haircut]] — Option 3: Level 2A vượt trần 40% với haircut tối thiểu 20%; stress test, năm công cụ giám sát, Level 2B giữ trần 15%
+- [[three-principles-decide-whether-a-jurisdiction-qualifies-for-alternative-liquidity-approaches]] — ba nguyên tắc đủ điều kiện: thiếu HQLA, kiểm soát rủi ro của từng phương án, bốn nghĩa vụ giám sát và công bố
+- [[hqla-insufficiency-must-be-a-structural-shortfall-of-domestic-supply-against-bank-demand]] — chứng minh thiếu HQLA: phép so sánh cung cầu, bốn nhóm số liệu, ba loại ràng buộc cơ cấu và chỉ báo (thặng dư 6 trong 10 năm, nợ chính phủ dưới 20% tài sản ngân hàng)
+- [[jurisdictions-using-alternative-liquidity-approaches-must-monitor-disclose-and-self-assess-every-five-years]] — nghĩa vụ sau khi áp dụng: năm yêu cầu với ngân hàng, nội dung công bố, tự đánh giá năm năm một lần, quay về cách tính chuẩn khi hết thiếu
+- [[sharia-compliant-banks-may-count-products-such-as-sukuk-as-alternative-hqla-at-supervisory-discretion]] — ngân hàng tuân thủ Shari'ah: Sukuk là HQLA thay thế theo quyền của cơ quan giám sát; mức LCR tối thiểu không thấp hơn ngân hàng khác
+
+**LCR: tổng dòng tiền ra ròng (mẫu số)**
+- [[lcr-net-outflows-weight-liabilities-by-run-off-rates-and-receivables-by-inflow-rates-under-a-75-percent-cap]] — *(tổng quan nhóm)* phép gộp mẫu số của LCR: dòng ra trừ dòng vào dưới trần 75%, các mức tỷ lệ đại diện của từng khối, chỗ hai vế đối xứng và chỗ lệch nhau
+- [[total-net-cash-outflows]] — tổng dòng tiền ra ròng, mẫu số của LCR: tính theo tham số kịch bản chuẩn cho 30 ngày lịch
 - [[total-expected-cash-outflows]] — tổng dòng ra dự kiến: số dư nhân tỷ lệ run-off hoặc drawdown
+- [[total-expected-cash-inflows]] — tổng dòng vào dự kiến: khoản phải thu nhân tỷ lệ dòng vào, trần 75% dòng ra
+
+**LCR: dòng tiền ra**
+- [[lcr-cash-outflows-apply-run-off-and-drawdown-rates-to-four-blocks-of-liabilities-and-commitments]] — *(tổng quan nhóm)* bốn khối dòng ra và bảng tỷ lệ của từng thành phần: tiền gửi bán lẻ, vốn bán buôn không bảo đảm, tài trợ có bảo đảm, yêu cầu bổ sung (phái sinh, tài sản bảo đảm, hạn mức cam kết, nghĩa vụ tiềm tàng)
 - [[lcr-retail-deposits-split-into-stable-and-less-stable-portions-with-run-off-floors]] — tiền gửi bán lẻ trong LCR: phần ổn định và kém ổn định, tỷ lệ run-off là mức sàn, sàn 10% cho phần kém ổn định, tiền gửi ngoại tệ, tiền gửi cầm cố và kim loại quý
 - [[stable-retail-deposits-run-off-at-5-percent-or-3-percent-under-effective-deposit-insurance]] — tiền gửi ổn định 5%: bảo hiểm đầy đủ cộng quan hệ hoặc tài khoản giao dịch; bốn tiêu chí của cơ chế bảo hiểm hiệu quả; ba tiêu chí thêm cho mức 3%
 - [[retail-term-deposits-beyond-30-days-leave-lcr-outflows-unless-withdrawable-without-penalty]] — tiền gửi có kỳ hạn bán lẻ trên 30 ngày được loại khỏi dòng ra khi không rút được hoặc rút sớm chịu phạt lớn; cho rút không phạt thì cả nhóm thành không kỳ hạn
 - [[unsecured-wholesale-funding]] — vốn bán buôn không bảo đảm: định nghĩa, phần tính trong 30 ngày, quyền chọn và kỳ vọng mua lại sớm, bảng tỷ lệ run-off theo năm nhóm
 - [[small-business-funding-below-eur-1-million-is-treated-as-retail-deposits-in-the-lcr]] — doanh nghiệp nhỏ có tổng vốn dưới 1 triệu euro được xử lý như tiền gửi bán lẻ
-- [[operational-deposits]] — tiền gửi vận hành 25%: ba tiêu chí của hoạt động đủ điều kiện, số dư thừa bị loại, dòng vào 0%, loại ngân hàng đại lý và prime brokerage
 - [[clearing-custody-and-cash-management-relationships-define-qualifying-operational-activities]] — định nghĩa quan hệ bù trừ, lưu ký và quản lý tiền mặt và các dịch vụ được tính
 - [[deposits-within-cooperative-bank-networks-run-off-at-25-percent-under-a-mutual-protection-scheme]] — tiền gửi của thành viên tại tổ chức trung tâm của mạng lưới ngân hàng hợp tác xã: 25% khi cùng cơ chế bảo vệ lẫn nhau, còn lại 100%
 - [[non-financial-corporate-and-sovereign-funding-runs-off-at-40-percent-or-20-percent-if-fully-insured]] — doanh nghiệp phi tài chính, chính phủ, ngân hàng trung ương, PSE: 40%, hoặc 20% nếu được bảo hiểm đầy đủ
@@ -956,7 +982,6 @@
 - [[customer-short-positions-are-treated-as-secured-funding-because-the-customer-controls-them]] — vị thế bán khống của khách hàng: định nghĩa, nguồn chứng khoán, lý do xử lý khác vị thế của ngân hàng
 - [[collateral-swaps-are-treated-as-repo-or-reverse-repo-in-the-lcr]] — hoán đổi tài sản bảo đảm được xử lý như repo hoặc repo đảo chiều
 - [[net-derivative-cash-outflows-receive-a-100-percent-factor-in-the-lcr]] — dòng ra phái sinh ròng 100%: bù trừ theo đối tác, ngoại lệ phái sinh ngoại hối, trừ tài sản bảo đảm HQLA nhận về
-- [[options-exercisable-within-30-days-are-assumed-exercised-when-in-the-money-in-the-lcr]] — quyền chọn thực hiện được trong 30 ngày coi như được thực hiện khi có lãi; ngoại lệ của nguyên tắc dòng vào tiềm tàng
 - [[delivery-obligations-assume-the-cheapest-to-deliver-asset-on-both-inflow-and-outflow-sides]] — nghĩa vụ giao tài sản giả định giao loại có giá trị thanh khoản thấp nhất, áp đối xứng
 - [[market-valuation-changes-on-derivatives-enter-the-lcr-through-a-24-month-look-back]] — thay đổi định giá phái sinh: dòng tài sản bảo đảm ròng 30 ngày lớn nhất trong 24 tháng; cấp danh mục; phái sinh STM
 - [[downgrade-triggers-require-liquidity-for-collateral-calls-up-to-a-three-notch-downgrade]] — điều khoản hạ xếp hạng: 100% tài sản bảo đảm hoặc dòng tiền cho mức hạ tới 3 bậc
@@ -968,15 +993,19 @@
 - [[a-liquidity-facility-backstops-customer-debt-maturing-within-30-days-while-the-rest-is-a-credit-facility]] — hạn mức thanh khoản bảo trợ nợ của khách hàng đáo hạn trong 30 ngày; phần còn lại và hạn mức vốn lưu động là hạn mức tín dụng
 - [[committed-facility-drawdown-rates-rise-from-5-percent-for-retail-to-100-percent-for-other-legal-entities]] — bảng tỷ lệ rút: 5% bán lẻ, 10%/30% doanh nghiệp và khu vực công, 40% ngân hàng, 40%/100% tổ chức tài chính khác, 100% pháp nhân khác
 - [[undrawn-facilities-are-netted-against-hqla-collateral-the-bank-can-re-use]] — phần chưa rút được trừ HQLA do đối tác nộp, nếu ngân hàng dùng lại được và không có tương quan quá mức
-- [[contractual-lending-obligations-count-as-outflows-in-full-for-financials-and-above-half-of-inflows-for-others]] — nghĩa vụ cho vay theo hợp đồng: 100% với tổ chức tài chính; với khách hàng khác chỉ tính phần vượt 50% dòng vào
 - [[other-contingent-funding-obligations]] — nghĩa vụ tài trợ tiềm tàng khác: tỷ lệ do quốc gia quyết định và công bố, báo cáo kèm điều kiện kích hoạt, danh sách sản phẩm
 - [[non-contractual-contingent-obligations-arise-from-reputational-pressure-to-support-sold-or-sponsored-products]] — nghĩa vụ ngoài hợp đồng từ rủi ro uy tín: mua lại nợ, sản phẩm cấu trúc, quỹ giữ giá trị ổn định, liên doanh, autocallable
 - [[trade-finance-contingent-obligations-may-receive-a-run-off-of-5-percent-or-less]] — tài trợ thương mại: tỷ lệ 5% hoặc thấp hơn; hai nhóm công cụ; loại cam kết cho vay xuất nhập khẩu
 - [[customer-shorts-covered-by-other-customers-collateral-carry-a-minimum-50-percent-run-off]] — vị thế bán khống của khách hàng phủ bằng tài sản của khách hàng khác: tối thiểu 50%, đối xứng với dòng vào của cho vay ký quỹ
-- [[other-contractual-cash-outflows-receive-a-100-percent-factor-while-operating-costs-are-excluded]] — dòng ra theo hợp đồng khác 100%: cổ tức, lãi, vị thế bán khống chưa phủ; không tính chi phí hoạt động
 - [[forward-repos-and-unsettled-trades-enter-the-lcr-only-when-they-start-inside-and-mature-beyond-30-days]] — repo kỳ hạn và giao dịch chưa quyết toán: ba nhóm bỏ qua, bù trừ với tài sản bảo đảm sau haircut
 - [[securities-lent-or-borrowed-unsecured-do-not-count-as-hqla-for-either-side]] — chứng khoán cho mượn hoặc đi mượn không có bảo đảm không tính là HQLA của bên nào
-- [[total-expected-cash-inflows]] — tổng dòng vào dự kiến: khoản phải thu nhân tỷ lệ dòng vào, trần 75% dòng ra
+- [[operational-deposits]] — tiền gửi vận hành 25%: ba tiêu chí của hoạt động đủ điều kiện, số dư thừa bị loại, dòng vào 0%, loại ngân hàng đại lý và prime brokerage
+- [[options-exercisable-within-30-days-are-assumed-exercised-when-in-the-money-in-the-lcr]] — quyền chọn thực hiện được trong 30 ngày coi như được thực hiện khi có lãi; ngoại lệ của nguyên tắc dòng vào tiềm tàng
+- [[contractual-lending-obligations-count-as-outflows-in-full-for-financials-and-above-half-of-inflows-for-others]] — nghĩa vụ cho vay theo hợp đồng: 100% với tổ chức tài chính; với khách hàng khác chỉ tính phần vượt 50% dòng vào
+- [[other-contractual-cash-outflows-receive-a-100-percent-factor-while-operating-costs-are-excluded]] — dòng ra theo hợp đồng khác 100%: cổ tức, lãi, vị thế bán khống chưa phủ; không tính chi phí hoạt động
+
+**LCR: dòng tiền vào**
+- [[lcr-cash-inflows-count-contractual-receivables-by-counterparty-under-a-75-percent-cap]] — *(tổng quan nhóm)* công thức dòng vào dưới trần 75% và bảng tỷ lệ của từng thành phần: cho vay có bảo đảm, nguồn ở tổ chức khác, theo đối tác, dòng vào khác
 - [[only-contractual-inflows-from-fully-performing-exposures-count-in-the-lcr]] — chỉ dòng vào theo hợp đồng từ khoản đang trả nợ đầy đủ; loại dòng vào tiềm tàng; theo dõi tập trung đối tác
 - [[the-75-percent-inflow-cap-forces-an-hqla-stock-of-at-least-25-percent-of-outflows]] — trần 75%: không dựa riêng vào dòng vào, kho HQLA tối thiểu bằng 25% dòng ra
 - [[secured-lending-inflow-rates-mirror-secured-funding-run-off-rates-by-collateral-level]] — bảng dòng vào của cho vay có bảo đảm đáo hạn: 0% Level 1 tới 100% tài sản khác; đối xứng với tài trợ có bảo đảm
@@ -988,7 +1017,6 @@
 - [[other-inflows-assume-continued-lending-at-50-percent-to-non-financial-counterparties]] — dòng vào khác theo đối tác: 50% bán lẻ và bán buôn phi tài chính, 100% tổ chức tài chính; khoản vay không kỳ hạn bị loại
 - [[maturing-securities-outside-the-hqla-stock-count-as-full-inflows-while-maturing-hqla-stays-in-the-stock]] — chứng khoán đáo hạn ngoài kho HQLA tính 100%; HQLA đáo hạn ở lại trong kho; rổ bảo đảm của covered bond
 - [[operational-deposits-placed-at-other-institutions-receive-a-zero-inflow-rate]] — tiền gửi vận hành đặt ở tổ chức khác: dòng vào 0%, trừ số dư thừa; tiền gửi ngân hàng đại lý
-- [[alternative-liquidity-approaches]] — stub: phương án thay thế cho đồng tiền thiếu HQLA (LCR31)
 
 **Quản trị, FTP và quy định giám sát**
 - [[bank-steering-rules-run-from-internal-funds-transfer-pricing-to-eu-irrbb-measurement-outlier-tests-and-reporting]] — *(tổng quan nhóm)* ba chức năng của FTP, cấu tạo đường cong và các phụ phí, FTP so với FVA, khung quy định IRRBB bốn tầng, SA và S-SA, sàn lãi suất, bài toán tuân thủ đồng thời, năm mẫu báo cáo
@@ -1021,6 +1049,7 @@
 **Chính sách vĩ mô và tổ chức quốc tế**
 - [[monetary-policy]] — nhà chức trách tiền tệ điều tiết tiền qua tiền dự trữ; tự chủ phụ thuộc chế độ tỷ giá và nhu cầu tài trợ của chính phủ
 - [[fiscal-policy]] — thuế, chi tiêu công, vay nợ; tác động trực tiếp lên tổng cầu
+- [[multilateral-development-bank-mdb]] — stub: ngân hàng phát triển đa phương, do nhiều quốc gia góp vốn
 - [[international-monetary-fund-imf]] — bên cho vay, bên tạo SDR, bên ban hành chuẩn thống kê (BPM5, GFS, IFS)
 
 **Phương pháp luận vĩ mô, tín dụng tư nhân và rủi ro nợ công**

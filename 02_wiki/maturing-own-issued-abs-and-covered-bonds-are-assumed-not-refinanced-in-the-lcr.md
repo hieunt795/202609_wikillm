@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, structured-finance, 
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [total-expected-cash-outflows]
 related: [high-quality-liquid-assets-hqla, covered-bonds-combine-on-balance-sheet-dual-recourse-with-insolvency-ring-fencing, structured-financing-facilities-require-look-through-to-spe-debt-and-liquidity-puts]
 ---

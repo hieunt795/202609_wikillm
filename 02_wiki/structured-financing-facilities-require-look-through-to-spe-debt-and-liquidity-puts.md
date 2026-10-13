@@ -5,11 +5,13 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, structured-finance, 
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [total-expected-cash-outflows]
-related: [asset-backed-securitization-achieves-bankruptcy-remoteness-via-true-sale-and-non-recourse-spvs, maturing-own-issued-abs-and-covered-bonds-are-assumed-not-refinanced-in-the-lcr, committed-facility-drawdown-rates-rise-from-5-percent-for-retail-to-100-percent-for-other-legal-entities]
+related: [asset-backed-securitization-achieves-bankruptcy-remoteness-via-true-sale-and-non-recourse-spvs, maturing-own-issued-abs-and-covered-bonds-are-assumed-not-refinanced-in-the-lcr, committed-facility-drawdown-rates-rise-from-5-percent-for-retail-to-100-percent-for-other-legal-entities, asset-backed-commercial-paper-abcp]
 ---
 
-Ngân hàng có các cấu trúc tài trợ phát hành công cụ nợ ngắn hạn, như thương phiếu bảo đảm bằng tài sản (ABCP), conduit và công ty đầu tư chứng khoán, phải tính đủ rủi ro thanh khoản của các cấu trúc này trong LCR: 100% số nợ đáo hạn và 100% tài sản có thể bị trả lại (basel_lcr, LCR40, Cash outflows – Additional requirements, 40.58, d.1060). Quy tắc thuộc khối yêu cầu bổ sung của [[total-expected-cash-outflows|tổng dòng ra dự kiến]].
+Ngân hàng có các cấu trúc tài trợ phát hành công cụ nợ ngắn hạn, như [[asset-backed-commercial-paper-abcp|thương phiếu bảo đảm bằng tài sản (ABCP)]], conduit và công ty đầu tư chứng khoán, phải tính đủ rủi ro thanh khoản của các cấu trúc này trong LCR: 100% số nợ đáo hạn và 100% tài sản có thể bị trả lại (basel_lcr, LCR40, Cash outflows – Additional requirements, 40.58, d.1060). Quy tắc thuộc khối yêu cầu bổ sung của [[total-expected-cash-outflows|tổng dòng ra dự kiến]].
 
 Chuẩn mực nêu hai loại rủi ro, không giới hạn ở đó. Một là không tái tài trợ được nợ đáo hạn. Hai là các cấu phần phái sinh hoặc giống phái sinh ghi trong hồ sơ của cấu trúc, cho phép "trả lại" tài sản trong một thỏa thuận tài trợ, hoặc buộc bên chuyển giao tài sản ban đầu cấp thanh khoản, qua đó chấm dứt thỏa thuận tài trợ trong 30 ngày; chuẩn mực gọi loại này là "liquidity put" (basel_lcr, LCR40, Cash outflows – Additional requirements, 40.58, d.1060).
 

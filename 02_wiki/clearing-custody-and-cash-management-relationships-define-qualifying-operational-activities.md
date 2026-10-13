@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, operational-deposits
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 governs: [operational-deposits]
 ---
 

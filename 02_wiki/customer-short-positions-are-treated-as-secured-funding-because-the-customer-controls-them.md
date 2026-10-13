@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, secured-funding, sho
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [secured-funding]
 governed_by: [secured-funding-run-off-rates-mirror-the-lcr-haircut-of-the-pledged-collateral]
 contrasts: [customer-shorts-covered-by-other-customers-collateral-carry-a-minimum-50-percent-run-off, firm-short-positions-covered-by-unsecured-borrowing-run-off-in-full]

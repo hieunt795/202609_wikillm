@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-inflows, short-selling, securi
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 governed_by: [other-contractual-cash-outflows-receive-a-100-percent-factor-while-operating-costs-are-excluded]
 contrasts: [customer-short-positions-are-treated-as-secured-funding-because-the-customer-controls-them]
 related: [collateral-re-used-to-cover-short-positions-earns-no-inflow-and-triggers-no-outflow]

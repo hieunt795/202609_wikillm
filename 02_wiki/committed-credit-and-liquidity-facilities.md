@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, credit-facilities, o
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [total-expected-cash-outflows]
 has_part: [a-liquidity-facility-backstops-customer-debt-maturing-within-30-days-while-the-rest-is-a-credit-facility, committed-facility-drawdown-rates-rise-from-5-percent-for-retail-to-100-percent-for-other-legal-entities, undrawn-facilities-are-netted-against-hqla-collateral-the-bank-can-re-use]
 contrasts: [other-contingent-funding-obligations, facilities-held-at-other-institutions-receive-a-zero-inflow-rate-to-limit-contagion]

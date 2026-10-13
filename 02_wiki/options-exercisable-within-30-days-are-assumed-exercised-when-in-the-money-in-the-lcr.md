@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, derivatives, options
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [net-derivative-cash-outflows-receive-a-100-percent-factor-in-the-lcr]
 contrasts: [total-expected-cash-inflows]
 ---

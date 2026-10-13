@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, contingent-liabiliti
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [other-contingent-funding-obligations]
 contrasts: [committed-facility-drawdown-rates-rise-from-5-percent-for-retail-to-100-percent-for-other-legal-entities]
 ---

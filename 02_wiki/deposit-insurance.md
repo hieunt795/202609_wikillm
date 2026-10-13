@@ -2,10 +2,10 @@
 title: deposit-insurance
 type: concept
 tags: [banking, regulation, financial-stability]
-sources: [cargill_central_bank_policy]
+sources: [cargill_central_bank_policy, basel_lcr]
 status: stub
 last_updated: 2026-09-22
 governs: [stable-retail-deposits-run-off-at-5-percent-or-3-percent-under-effective-deposit-insurance]
 ---
 
-Bảo hiểm tiền gửi (deposit insurance) là cơ chế cam kết bảo vệ người gửi tiền trước nguy cơ tổn thất khi một định chế nhận tiền gửi rơi vào tình trạng mất khả năng thanh toán. Được thiết kế như cấu phần trọng yếu của [[government-safety-net-solves-bank-runs-but-generates-systemic-moral-hazard|mạng lưới an toàn của chính phủ]], bảo hiểm tiền gửi triệt tiêu động cơ tháo chạy ngân hàng nhưng đồng thời làm giảm động lực giám sát của thị trường và nảy sinh rủi ro đạo đức. Chuẩn mực LCR đặt bốn tiêu chí cho một cơ chế bảo hiểm tiền gửi "hiệu quả" và dùng chúng để xác định tiền gửi ổn định, ở trang [[stable-retail-deposits-run-off-at-5-percent-or-3-percent-under-effective-deposit-insurance]].
+Bảo hiểm tiền gửi (deposit insurance) là cơ chế cam kết bảo vệ người gửi tiền trước nguy cơ tổn thất khi một định chế nhận tiền gửi rơi vào tình trạng mất khả năng thanh toán. Được thiết kế như cấu phần trọng yếu của [[government-safety-net-solves-bank-runs-but-generates-systemic-moral-hazard|mạng lưới an toàn của chính phủ]], bảo hiểm tiền gửi triệt tiêu động cơ tháo chạy ngân hàng nhưng đồng thời làm giảm động lực giám sát của thị trường và nảy sinh rủi ro đạo đức. Chuẩn mực LCR đặt bốn tiêu chí cho một cơ chế bảo hiểm tiền gửi "hiệu quả" và dùng chúng để xác định tiền gửi ổn định, ở trang [[stable-retail-deposits-run-off-at-5-percent-or-3-percent-under-effective-deposit-insurance]] (basel_lcr, LCR40, Cash outflows – Retail deposit run-off, 40.8, d.760–764).

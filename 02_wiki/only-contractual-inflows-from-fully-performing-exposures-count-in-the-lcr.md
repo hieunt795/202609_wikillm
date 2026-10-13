@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-inflows]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [total-expected-cash-inflows]
 contrasts: [excess-uncalled-and-substitutable-collateral-each-count-as-a-100-percent-lcr-outflow, options-exercisable-within-30-days-are-assumed-exercised-when-in-the-money-in-the-lcr]
 related: [restricted-use-committed-liquidity-facility-rclf, the-75-percent-inflow-cap-forces-an-hqla-stock-of-at-least-25-percent-of-outflows]

@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, contingent-liabiliti
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [other-contingent-funding-obligations]
 analogous: [significant-unconsolidated-investments-enter-the-lcr-when-the-group-is-their-main-liquidity-provider]
 related: [structured-financing-facilities-require-look-through-to-spe-debt-and-liquidity-puts]

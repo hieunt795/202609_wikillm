@@ -1302,3 +1302,43 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Tạo 11 trang: nguyên tắc dòng vào theo hợp đồng, trần 75%, bảng dòng vào của cho vay có bảo đảm, cho vay ký quỹ, tài sản bảo đảm dùng lại để phủ bán khống, vị thế bán khống của ngân hàng, nghĩa vụ trả lại tài sản bảo đảm, hạn mức ở tổ chức khác 0%, dòng vào khác theo đối tác, chứng khoán đáo hạn, tiền gửi vận hành đặt ở tổ chức khác. Merge claim 40.91–40.93 vào total-expected-cash-inflows; merge link và chú thích 40.93 vào 11 trang có sẵn
 - Không tạo stub; `--graph`: thêm 11 trang, không trang nào vào hay ra top 25, không mất link; `--all` 886 trang, 0 vấn đề
 - LCR40 hết nội dung (cụm A 88%, cụm B 91% theo `--coverage`); `basel_lcr` còn LCR31, LCR90, LCR99 và mục Shari'ah của LCR30; trang tổng quan thanh khoản chưa cập nhật theo 47 trang mới
+
+## [2026-10-13:10-35-00] lint | 886 trang, phạm vi 4 lượt ingest LCR40
+- Mục theo mã: K 0, C 2, O 1, S 8, L 12, R 1, G 4, I 1; `--all` 0 vấn đề; `--verify-sources` exit 2 (0 lệch hoặc thiếu, 11 chưa kê)
+- Chưa sửa mã nào, chờ người dùng duyệt
+- Báo cáo: Claude outputs/lint-2026-10-13-886.md
+
+## [2026-10-13:10-46-30] lint | 894 trang, sửa các mã đã duyệt
+- Đã sửa: S1–S8 (8 stub: run-off rate, short selling, PSE, MDB, MMF, correspondent banking, prime brokerage, ABCP; 25 link), O1 (tách nhóm index thành LCR dòng tiền ra 36 trang và dòng tiền vào 11 trang), L1–L7, L9–L12, I1
+- Bỏ: L8 phía trang undrawn-facilities và L9 phía trang lcr-retail-deposits (không viết được lý do từ nội dung trang); R1 chuyển `/research`; C1, C2, G1–G4 chưa duyệt
+- `--all` 894 trang, 0 vấn đề, 0 cặp lệch; `--graph` +8 trang, +47 link, 766/4.419 link có loại; báo cáo: Claude outputs/lint-2026-10-13-886.md (mục "Đã sửa")
+
+## [2026-10-13:10-55-24] lint | 894 trang, sửa đợt 2: C1, C2
+- C1: thêm chú thích vị trí `basel_lcr` cho sáu câu link trên sáu trang có sẵn (40.8, 40.46, 40.51, 40.57, 40.81), đã đối chiếu với `LCR.md`; thêm `basel_lcr` vào `sources` của năm trang; không nâng `last_updated`
+- C2: không merge tiêu chí Basel vào stub `deposit-insurance` vì sẽ trùng trang stable-retail-deposits; stub giữ câu link có chú thích, nội dung thật chờ `/ingest` nguồn cargill
+- Nhóm G bỏ qua theo người dùng; `--all` 894 trang, 0 vấn đề; `--graph` không đổi
+
+## [2026-10-13:11-09-27] review | 4 trang LCR40 có bảng tỷ lệ
+- Đạt, không sửa claim: secured-funding-run-off-rates (sửa chú thích câu mở thành 40.46 và 40.48), other-inflows-assume-continued-lending
+- Đã sửa: secured-lending-inflow-rates (câu "cùng tỷ lệ ở hai bảng" bỏ sót dòng cho vay ký quỹ và dòng 25% đối tác công); committed-facility-drawdown-rates (40.63 thiếu dẫn chiếu 40.64)
+- Cả bốn đặt `reviewed: 2026-10-13`, `reviewed_by: model`; không trang nào bị giữ lại; `--all` 0 vấn đề, `--graph` không đổi
+
+## [2026-10-13:11-18-03] review | 43 trang LCR40 còn lại
+- Đạt 42 trang, đặt `reviewed: 2026-10-13`, `reviewed_by: model`; trong đó sửa claim hai trang: lcr-retail-deposits-split (FAQ kim loại quý thiếu nhánh thứ hai), a-liquidity-facility (tỷ lệ rút hạn mức thanh khoản không cao hơn ở mọi loại đối tác)
+- Giữ lại 1 trang: downgrade-triggers, đánh `⚠️ Conflict` vì `LCR.md` chép một FAQ ở hai chỗ với số đoạn khác nhau (40.56 ở d.978–980, 40.55 ở d.1008–1010)
+- Sổ sách: đổi loại quan hệ hai link (operational-deposits, retail-term-deposits), thêm một chú thích 40.25; hai mục mới ở `_inbox.md`; `--all` 0 vấn đề
+
+## [2026-10-13:11-24-48] research | tổng quan mẫu số LCR — deep read
+- Deep: 15 trang trục LCR40, không enrich; trang tổng quan cũ ở 993 từ nên tách trang riêng
+- 1 analysis (lcr-net-outflows-weight-liabilities-…, tổng quan nhóm dòng ra và dòng vào), 2 link (bank-liquidity-rules-pair, total-net-cash-outflows); chặn: basel_lcr LCR99, LCR31
+- Báo cáo: Claude outputs/research-2026-10-13-lcr-net-outflows-overview.md
+
+## [2026-10-13:11-36-52] ingest | basel_lcr LCR31 và tách trang tổng quan mẫu số
+- Tạo 7 trang LCR31 (trần sử dụng, Option 1–3, ba nguyên tắc, chứng minh thiếu HQLA, nghĩa vụ giám sát); stub alternative-liquidity-approaches thành draft; merge một câu vào level-2-assets-are-capped, level-2a-assets, lcr-is-met-in-one-currency, rclf
+- Thêm 2 trang tổng quan nhóm (lcr-cash-outflows-…, lcr-cash-inflows-…) với bảng tỷ lệ từng thành phần; index có nhóm mới "LCR: tổng dòng tiền ra ròng (mẫu số)" nhận 3 trang trục từ nhóm Thanh khoản; --graph: level-1-assets hạng 198 → 110, haircut 193 → 140
+- Chunk LCR31 phủ; còn LCR90, LCR99, mục Shari'ah của LCR30
+
+## [2026-10-13:11-43-32] ingest | basel_lcr LCR90, LCR99 và phần còn lại của LCR30
+- Tạo sharia-compliant-banks-… và trang tổng quan tử số the-hqla-stock-weights-…; stub intraday-liquidity; merge vào high-quality-liquid-assets-hqla (hệ số, đa dạng hóa, 30 ngày chống hiệu ứng vách), liquidity-coverage-ratio-lcr (LCR90, hai công thức), lcr-stress-scenario, hai trang tổng quan dòng ra và dòng vào
+- Index có nhóm mới "LCR: kho HQLA (tử số)" nhận 18 trang từ nhóm Thanh khoản; ⚠️ Conflict trên trang tổng quan tử số (BBB− ở 30.45, "BBB" ở bảng 99.1 d.1352), đã ghi `_inbox.md`
+- basel_lcr phủ hết: 8 chunk phu, 1 mien

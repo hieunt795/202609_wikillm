@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-inflows, secured-lending, marg
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [secured-lending-inflow-rates-mirror-secured-funding-run-off-rates-by-collateral-level]
 analogous: [customer-shorts-covered-by-other-customers-collateral-carry-a-minimum-50-percent-run-off]
 ---

@@ -4,7 +4,8 @@ type: concept
 tags: [lcr, basel-iii, liquidity-regulation, currency-mismatch]
 sources: [basel_lcr]
 status: draft
-last_updated: 2026-10-10
+last_updated: 2026-10-13
+contrasts: [option-2-foreign-currency-hqla-covers-domestic-needs-with-an-8-percent-haircut-above-a-25-percent-threshold]
 governs: [liquidity-coverage-ratio-lcr, high-quality-liquid-assets-hqla]
 analogous: [liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]
 related: [central-bank-fx-swap-lines-and-cross-border-liquidity]
@@ -18,4 +19,4 @@ Chương về HQLA nêu yêu cầu này cụ thể hơn. Ngân hàng có khả n
 
 Một LCR hợp nhất trên 100% vì vậy có thể che một khoảng thiếu ở một đồng tiền cụ thể. Minh hoạ ngoài nguồn: ngân hàng giữ HQLA bằng nội tệ trong khi dòng tiền ra bằng USD sẽ phải đổi tiền giữa lúc căng thẳng. Đây là tình huống mà [[central-bank-fx-swap-lines-and-cross-border-liquidity|đường hoán đổi ngoại tệ giữa các ngân hàng trung ương]] được lập ra để xử lý ở cấp hệ thống.
 
-Quy tắc này đi cùng quy tắc [[liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr|loại HQLA dư bị kẹt]]. Cả hai giới hạn mức độ mà một con số hợp nhất được coi là thanh khoản dùng được.
+Quy tắc này đi cùng quy tắc [[liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr|loại HQLA dư bị kẹt]]. Cả hai giới hạn mức độ mà một con số hợp nhất được coi là thanh khoản dùng được. Ở đồng tiền thiếu HQLA, chuẩn mực cho một ngoại lệ có kiểm soát: [[option-2-foreign-currency-hqla-covers-domestic-needs-with-an-8-percent-haircut-above-a-25-percent-threshold|Option 2 của các phương án thanh khoản thay thế]] cho ngân hàng giữ HQLA ngoại tệ để phủ nhu cầu nội tệ, trong hạn mức lệch đồng tiền thỏa thuận với cơ quan giám sát (basel_lcr, LCR31, Option 2 – Foreign currency HQLA to cover domestic liquidity needs, 31.13, d.460).

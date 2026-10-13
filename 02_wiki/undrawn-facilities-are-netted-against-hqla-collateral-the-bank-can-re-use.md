@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, credit-facilities, c
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [committed-credit-and-liquidity-facilities]
 governed_by: [total-expected-cash-outflows]
 related: [high-quality-liquid-assets-hqla]

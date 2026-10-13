@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, secured-funding, rep
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [secured-funding]
 governed_by: [lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days]
 related: [high-quality-liquid-assets-hqla, level-1-assets, secured-funding-run-off-rates-mirror-the-lcr-haircut-of-the-pledged-collateral]

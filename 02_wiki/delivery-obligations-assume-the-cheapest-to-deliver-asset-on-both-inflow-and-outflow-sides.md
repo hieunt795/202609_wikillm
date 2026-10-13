@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, derivatives, cheapes
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [net-derivative-cash-outflows-receive-a-100-percent-factor-in-the-lcr]
 analogous: [excess-uncalled-and-substitutable-collateral-each-count-as-a-100-percent-lcr-outflow, credit-support-annex-discounting-incorporates-cheapest-to-deliver-collateral-optionality]
 ---

@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [total-expected-cash-outflows]
 has_part: [forward-repos-and-unsettled-trades-enter-the-lcr-only-when-they-start-inside-and-mature-beyond-30-days, securities-lent-or-borrowed-unsecured-do-not-count-as-hqla-for-either-side]
 contrasts: [total-expected-cash-inflows]

@@ -5,11 +5,14 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, retail-deposits, dep
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [lcr-retail-deposits-split-into-stable-and-less-stable-portions-with-run-off-floors]
 governed_by: [deposit-insurance]
+analogous: [silicon-valley-bank-collapse-epitomizes-unhedged-duration-mismatches-and-uninsured-deposit-runs]
 ---
 
-Tiền gửi ổn định là phần của [[lcr-retail-deposits-split-into-stable-and-less-stable-portions-with-run-off-floors|tiền gửi bán lẻ trong LCR]] được bảo hiểm đầy đủ bởi một cơ chế [[deposit-insurance|bảo hiểm tiền gửi]] hiệu quả, hoặc bởi bảo lãnh công có mức bảo vệ tương đương, và thỏa một trong hai điều kiện: người gửi có các quan hệ khác với ngân hàng khiến việc rút tiền rất khó xảy ra, hoặc tiền nằm trong tài khoản giao dịch, ví dụ tài khoản nhận lương tự động (basel_lcr, LCR40, Cash outflows – Retail deposit run-off, 40.7, d.752–754). Phần này thường chịu hệ số run-off 5% (basel_lcr, LCR40, Cash outflows – Retail deposit run-off, 40.7, d.752). Riêng việc có bảo hiểm tiền gửi chưa đủ để coi một khoản tiền gửi là ổn định (basel_lcr, LCR40, Cash outflows – Retail deposit run-off, 40.10, d.768).
+Tiền gửi ổn định là phần của [[lcr-retail-deposits-split-into-stable-and-less-stable-portions-with-run-off-floors|tiền gửi bán lẻ trong LCR]] được bảo hiểm đầy đủ bởi một cơ chế [[deposit-insurance|bảo hiểm tiền gửi]] hiệu quả, hoặc bởi bảo lãnh công có mức bảo vệ tương đương, và thỏa một trong hai điều kiện: người gửi có các quan hệ khác với ngân hàng khiến việc rút tiền rất khó xảy ra, hoặc tiền nằm trong tài khoản giao dịch, ví dụ tài khoản nhận lương tự động (basel_lcr, LCR40, Cash outflows – Retail deposit run-off, 40.7, d.752–754). Phần này thường chịu hệ số run-off 5% (basel_lcr, LCR40, Cash outflows – Retail deposit run-off, 40.7, d.752). Riêng việc có bảo hiểm tiền gửi chưa đủ để coi một khoản tiền gửi là ổn định (basel_lcr, LCR40, Cash outflows – Retail deposit run-off, 40.10, d.768). Nguồn về Silicon Valley Bank mô tả cùng ranh giới đó: tiền gửi được bảo hiểm thường rất ổn định, còn tiền gửi không được bảo hiểm bị rút nhanh khi có dấu hiệu rủi ro, ở trang [[silicon-valley-bank-collapse-epitomizes-unhedged-duration-mismatches-and-uninsured-deposit-runs]].
 
 "Bảo hiểm đầy đủ" nghĩa là 100% số tiền gửi, tính tới hạn mức bảo hiểm, được cơ chế bảo hiểm hiệu quả chi trả. Số dư tới hạn mức được coi là bảo hiểm đầy đủ kể cả khi người gửi có số dư vượt hạn mức; phần vượt là kém ổn định. Ví dụ của chuẩn mực: người gửi có 150, hạn mức bảo hiểm là 100, thì 100 là tiền gửi ổn định và 50 là kém ổn định (basel_lcr, LCR40, Cash outflows – Retail deposit run-off, 40.7 chú thích, d.758). Chú thích này bị cắt giữa câu trong bản `LCR.md` của nguồn, ở đoạn nói về cơ chế chỉ bảo hiểm một tỷ lệ phần trăm của số tiền gửi; trang chưa ghi phần đó.
 

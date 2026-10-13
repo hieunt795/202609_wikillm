@@ -4,12 +4,12 @@ type: concept
 tags: [lcr, basel-iii, liquidity-regulation, stress-testing]
 sources: [basel_lcr]
 status: draft
-last_updated: 2026-10-10
+last_updated: 2026-10-13
 part_of: [liquidity-coverage-ratio-lcr]
 governs: [liquidity-coverage-ratio-lcr, total-net-cash-outflows]
 drives: [lcr-is-a-minimum-that-banks-supplement-with-longer-horizon-internal-liquidity-stress-tests]
 driven_by: [mechanics-of-liquidity-crises-and-feedback-loops]
-contrasts: [lcr-is-a-minimum-that-banks-supplement-with-longer-horizon-internal-liquidity-stress-tests]
+contrasts: [lcr-is-a-minimum-that-banks-supplement-with-longer-horizon-internal-liquidity-stress-tests, intraday-liquidity]
 analogous: [bank-runs-investor-strikes-and-multiple-equilibria]
 ---
 
@@ -27,4 +27,4 @@ Chuẩn mực mô tả kịch bản bằng bảy hệ quả, mỗi hệ quả �
 
 Ba hệ quả đầu là mất nguồn vốn, ba hệ quả tiếp là nghĩa vụ phát sinh thêm, hệ quả cuối là khoản chi ngân hàng tự nguyện để giữ uy tín. Hệ quả thứ năm là kênh mà [[mechanics-of-liquidity-crises-and-feedback-loops|vòng xoáy haircut và bán tháo]] đi vào bảng cân đối của từng ngân hàng.
 
-Kịch bản này là mức tối thiểu chung cho mọi ngân hàng, không phải kịch bản xấu nhất của riêng ngân hàng nào. Vì vậy [[lcr-is-a-minimum-that-banks-supplement-with-longer-horizon-internal-liquidity-stress-tests|ngân hàng phải tự làm thêm stress test với chân trời dài hơn]] (basel_lcr, LCR20, 20.3, d.65).
+Kịch bản này là mức tối thiểu chung cho mọi ngân hàng, không phải kịch bản xấu nhất của riêng ngân hàng nào. Vì vậy [[lcr-is-a-minimum-that-banks-supplement-with-longer-horizon-internal-liquidity-stress-tests|ngân hàng phải tự làm thêm stress test với chân trời dài hơn]] (basel_lcr, LCR20, 20.3, d.65). Kịch bản cũng không phủ nhu cầu [[intraday-liquidity|thanh khoản trong ngày]], dù dự kiến hay ngoài dự kiến (basel_lcr, LCR30, Operational requirements, 30.26, d.198).

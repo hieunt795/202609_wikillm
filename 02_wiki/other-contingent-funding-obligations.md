@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-outflows, contingent-liabiliti
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [total-expected-cash-outflows]
 has_part: [trade-finance-contingent-obligations-may-receive-a-run-off-of-5-percent-or-less, non-contractual-contingent-obligations-arise-from-reputational-pressure-to-support-sold-or-sponsored-products, customer-shorts-covered-by-other-customers-collateral-carry-a-minimum-50-percent-run-off]
 governed_by: [lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days]

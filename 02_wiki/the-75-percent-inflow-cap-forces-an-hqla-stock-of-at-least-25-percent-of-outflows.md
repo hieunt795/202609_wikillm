@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-inflows, hqla]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [total-net-cash-outflows]
 governs: [total-expected-cash-inflows, high-quality-liquid-assets-hqla]
 governed_by: [total-expected-cash-outflows]

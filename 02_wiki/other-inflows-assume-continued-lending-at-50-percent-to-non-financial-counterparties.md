@@ -5,6 +5,8 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-inflows, lending]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-12
+reviewed: 2026-10-13
+reviewed_by: model
 part_of: [total-expected-cash-inflows]
 related: [small-business-funding-below-eur-1-million-is-treated-as-retail-deposits-in-the-lcr, operational-deposits-placed-at-other-institutions-receive-a-zero-inflow-rate, committed-facility-drawdown-rates-rise-from-5-percent-for-retail-to-100-percent-for-other-legal-entities]
 ---
