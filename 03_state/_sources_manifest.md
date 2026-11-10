@@ -34,6 +34,7 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `basel` | `basel/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 | `basel_lcr` | `basel/LCR/` | Nguồn dài | `03_state/basel_lcr.md` |
 | `vietnam_regulator` | `vietnam-regulator/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
+| `tt50_2026_sbv` | `vietnam-regulator/alm/TT50_2026_SBV/` | Nguồn dài | `03_state/tt50_2026_sbv.md` |
 
 ## imf_macro_accounting
 
@@ -518,18 +519,16 @@ Chương LCR cũng nằm trong `01_sources/basel/BaselFramework/BaselFramework.m
 
 | | |
 |---|---|
-| Nhan đề | Văn bản quy phạm và tài liệu phương pháp của Việt Nam: thông tư Ngân hàng Nhà nước (TT14, TT83, TT50/2026, dự thảo thay TT22), phương pháp luận FTP, tài liệu mô hình hành vi tiền gửi có kỳ hạn và thấu chi |
-| Phân loại | Nguồn dài (`00_schema.md` §10) — 2.053 KB / 16.985 dòng trên 15 file `.md` |
+| Nhan đề | Văn bản quy phạm và tài liệu phương pháp của Việt Nam: thông tư Ngân hàng Nhà nước (TT14, TT83, dự thảo thay TT22), phương pháp luận FTP, tài liệu mô hình hành vi tiền gửi có kỳ hạn và thấu chi. TT50/2026 đã tách thành source id riêng `tt50_2026_sbv` (2026-11-09) |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 1.804 KB / 14.675 dòng trên 14 file `.md` |
 | Nguồn file | File `.md` chuyển đổi ngoài dự án, đặt trong `01_sources/vietnam-regulator/` |
-| Tiến độ ingest | Chưa ingest — đăng ký ở lượt lint 2026-10-10; tác giả, năm xuất bản và việc tách source id theo từng tài liệu bổ sung ở lượt ingest đầu |
+| Tiến độ ingest | Chưa ingest — đăng ký ở lượt lint 2026-10-10; tác giả, năm xuất bản và việc tách source id cho các tài liệu còn lại bổ sung ở lượt ingest đầu của từng tài liệu |
 
 | Đường dẫn | Bytes | Dòng | SHA-256 |
 |---|---|---|---|
 | `01_sources/vietnam-regulator/alm/10_DTTT_thay_the_Thong_tu_22_260421_37a8.md` | 358.720 | 2.008 | `d6dc151f84323f65854de7144cd35c4a774189dfe934df7aab9610f13783c224` |
 | `01_sources/vietnam-regulator/alm/TT14_1.md` | 227.791 | 1.582 | `63bcc14ba27d7cd49af03aeda61a5923244a885df385bf26f05e26f8ce7c6777` |
 | `01_sources/vietnam-regulator/alm/TT14_2.md` | 318.088 | 1.787 | `95ae25b1228ec852a4ffb504fa1b28731c774686020455e4f1916b0bcb58925f` |
-| `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV.md` | 255.335 | 2.310 | `79b2f82ad09978993bca56fcf0836b79e2c533a1c996a694b6119302dbf22c6f` |
-| `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV.pdf` | 1.406.658 | — | `b2afb2984af8576bf723850e954feb66e3d84c3fa7ac1f6c2d6273cc581bbfdf` |
 | `01_sources/vietnam-regulator/alm/TT83.md` | 240.089 | 1.927 | `c4a3900dd9b0be241261ca5264bcafca53d594e96ee12a2a8a741724b6d789be` |
 | `01_sources/vietnam-regulator/alm/VAB - Phương pháp luận FTP.md` | 242.771 | 2.117 | `362178f9eefad50f3aea3e54a8ec0b21a7762f26ff45656cae80d6c9d9b5acc6` |
 | `01_sources/vietnam-regulator/alm/ftp_transmission_analysis.md.md` | 15.896 | 188 | `362369878d692b067334dd03d5ffc857c3ed3b4758523f7d83618aea169e8ffb` |
@@ -541,3 +540,19 @@ Chương LCR cũng nằm trong `01_sources/basel/BaselFramework/BaselFramework.m
 | `01_sources/vietnam-regulator/model/BC030306_OD_HDSD_pts_FINAL (1).md` | 57.358 | 488 | `ddaf077e47fa162e7b211ca8870da5491899737f10c39d0a73d1468d6b48a3d6` |
 | `01_sources/vietnam-regulator/model/BC030306_OD_PPL_arm_FINAL (1).md` | 48.037 | 790 | `5bb7cbe73cdac0f07b86afb661e38c18711a29078d308499f2ad354def91a8f8` |
 | `01_sources/vietnam-regulator/model/BC030306_OD_PPL_pts_FINAL (1).md` | 44.525 | 580 | `a9a380e57ed23fe293cc1fc201ea5d1136075d283b58d7f9bce217cd47e18247` |
+
+## tt50_2026_sbv
+
+| | |
+|---|---|
+| Nhan đề | *Thông tư số 50/2026/TT-NHNN quy định về các giới hạn, tỷ lệ bảo đảm an toàn trong hoạt động của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài* |
+| Tác giả, nơi và năm | Ngân hàng Nhà nước Việt Nam (Thống đốc), Hà Nội, ký ngày 30/9/2026, hiệu lực từ 01/10/2026 |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 255 KB / 2.310 dòng trên 1 file `.md` (kèm bản `.pdf` không đọc) |
+| Nguồn file | File `.md` chuyển đổi ngoài dự án, đặt trong `01_sources/vietnam-regulator/alm/TT50_2026_SBV/`; chú thích wiki trỏ tới file `.md` |
+| Tiến độ ingest | `03_state/tt50_2026_sbv.md` |
+| Ghi chú | Tách khỏi `vietnam_regulator` ngày 2026-11-09 khi bắt đầu ingest phần LCR |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV.md` | 255.335 | 2.310 | `79b2f82ad09978993bca56fcf0836b79e2c533a1c996a694b6119302dbf22c6f` |
+| `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV.pdf` | 1.406.658 | — | `b2afb2984af8576bf723850e954feb66e3d84c3fa7ac1f6c2d6273cc581bbfdf` |

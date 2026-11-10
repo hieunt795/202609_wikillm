@@ -18,3 +18,7 @@ LCR kế thừa phương pháp "coverage ratio" mà các ngân hàng vẫn dùng
 Hai chương nền của chuẩn mực, LCR10 về phạm vi áp dụng và LCR20 về cách tính, có hiệu lực từ ngày 15/12/2019 (basel_lcr, LCR10, d.13–15) (basel_lcr, LCR20, d.50–52). Về phạm vi, [[lcr-applies-to-internationally-active-banks-on-a-consolidated-basis|LCR áp dụng cho ngân hàng hoạt động quốc tế trên cơ sở hợp nhất]]. Về tần suất, [[lcr-is-reported-at-least-monthly-and-a-breach-is-notified-immediately|ngân hàng báo cáo LCR ít nhất hằng tháng]].
 
 Ba trang khác đọc LCR từ phía ngoài chuẩn mực. Trang [[liquidity-regulation-and-central-bank-operations-arbitrage]] ghi lại cách ngân hàng nâng LCR bằng cách vay rồi gửi lại ngân hàng trung ương mà rủi ro không đổi. Trang [[regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]] tính chi phí giữ HQLA vào giá vốn nội bộ. Trang [[regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it]] nêu giới hạn chung của các tỷ lệ quản lý.
+
+Việc áp LCR ở Việt Nam theo [[circular-50-2026-tt-nhnn-prudential-limits-and-ratios|TT50]] có trang riêng, và phần trùng khớp với chuẩn Basel nằm ở trang [[tt50-and-basel-share-the-lcr-formula-30-day-horizon-and-75-percent-inflow-cap]].
+
+Việc công bố LCR theo Điều 27 của TT50 nằm ở [[tt50-banks-disclose-liquidity-ratios-semi-annually-under-a-written-process-sent-to-the-sbv]].

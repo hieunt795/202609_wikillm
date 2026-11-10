@@ -2,9 +2,9 @@
 title: high-quality-liquid-assets-hqla
 type: concept
 tags: [lcr, basel-iii, liquidity-regulation, hqla]
-sources: [basel_lcr]
+sources: [basel_lcr, tt50_2026_sbv]
 status: draft
-last_updated: 2026-10-10
+last_updated: 2026-11-09
 ---
 
 Tài sản thanh khoản chất lượng cao (high-quality liquid assets, HQLA) là kho tài sản làm tử số của [[liquidity-coverage-ratio-lcr|LCR]], được định giá trong điều kiện căng thẳng chứ không theo giá thời bình (basel_lcr, LCR20, 20.4, d.68–70) (basel_lcr, LCR30, Introduction, 30.1, d.114).
@@ -20,3 +20,5 @@ Chuẩn mực coi kho HQLA [[unencumbered-assets|không bị ràng buộc (unenc
 Ở cấp tập đoàn, một tài sản đủ chuẩn HQLA vẫn có thể không được tính. [[liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr|Phần HQLA dư bị kẹt ở một pháp nhân]] vì hạn chế chuyển thanh khoản bị loại khỏi LCR hợp nhất (basel_lcr, LCR10, Treatment of liquidity transfer restrictions, 10.7, d.39). Cơ cấu đồng tiền của kho HQLA cũng phải gần với nhu cầu hoạt động của ngân hàng, theo quy tắc [[lcr-is-met-in-one-currency-while-liquidity-needs-are-monitored-by-significant-currency|theo dõi thanh khoản theo từng đồng tiền trọng yếu]] (basel_lcr, LCR10, Currencies, 10.9, d.46).
 
 Cách chia HQLA thành Cấp 1 và Cấp 2 cùng mức haircut, theo tường thuật của Bindseil, nằm ở trang [[liquidity-regulation-and-central-bank-operations-arbitrage]]. Trang đó cũng chỉ ra rằng định nghĩa HQLA hẹp hơn danh mục tài sản bảo đảm mà ngân hàng trung ương chấp nhận.
+
+[[circular-50-2026-tt-nhnn-prudential-limits-and-ratios|TT50]] dùng cùng ba tầng: tài sản cấp 1, và tài sản cấp 2 gồm cấp 2A và cấp 2B, xác định theo Phụ lục I của thông tư (tt50_2026_sbv, Điều 19, khoản 1, d.653). Ngân hàng đa dạng hóa HQLA theo thực trạng thị trường, quy mô và mức phức tạp của hoạt động kinh doanh, theo quy định nội bộ (tt50_2026_sbv, Điều 19, khoản 2, d.655). TT50 tách hai thuật ngữ: HQLA đủ tiêu chuẩn là HQLA đáp ứng đủ yêu cầu vận hành (tt50_2026_sbv, Điều 20, khoản 1, d.659), còn giá trị HQLA đủ điều kiện, tử số của tỷ lệ LCR, là phần giá trị của HQLA đủ tiêu chuẩn tính theo Điều 20 và Phần A Phụ lục I (tt50_2026_sbv, Điều 16, khoản 1b, d.589). Đối chiếu với Basel ở trang [[tt50-and-basel-hqla-operational-requirements-overlap-closely-except-for-the-periodic-monetisation-test]].

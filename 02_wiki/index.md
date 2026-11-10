@@ -1055,3 +1055,98 @@
 - [[total-expected-cash-outflows]] — tổng dòng ra dự kiến: số dư nhân tỷ lệ run-off hoặc drawdown
 - [[total-expected-cash-inflows]] — tổng dòng vào dự kiến: khoản phải thu nhân tỷ lệ dòng vào, trần 75% dòng ra
 - [[alternative-liquidity-approaches]] — stub: phương án thay thế cho đồng tiền thiếu HQLA (LCR31)
+
+**LCR và các tỷ lệ thanh khoản ở Việt Nam: lộ trình, vi phạm, quyền giám sát (TT50/2026 — Điều 13–21)**
+- [[circular-50-2026-tt-nhnn-prudential-limits-and-ratios]] — TT50/2026/TT-NHNN: bảy nhóm giới hạn, tỷ lệ an toàn; quyền siết hệ số của NHNN
+- [[vietnam-lcr-minimum-for-vnd-phases-in-from-50-percent-in-2028-to-100-percent-in-2033]] — ngưỡng LCR quy VNĐ riêng lẻ: sáu bậc, mỗi năm thêm 10 điểm
+- [[vietnamese-banks-may-register-early-for-lcr-and-nsfr-on-a-phased-or-direct-100-percent-track]] — hai đường đăng ký sớm, hồ sơ kèm báo cáo của Hội đồng quản trị và kiểm toán độc lập
+- [[vietnamese-banks-stop-complying-with-the-tt22-liquidity-ratios-once-they-adopt-lcr-and-nsfr]] — các tỷ lệ cũ của TT22 chuyển từ tuân thủ sang báo cáo hoặc chấm dứt; LDR theo Điều 12
+- [[vietnam-defines-three-lcr-variants-with-a-binding-threshold-only-on-the-solo-vnd-equivalent-ratio]] — LCR quy VNĐ, LCR VNĐ, LCR ngoại tệ trọng yếu; chỉ loại đầu có ngưỡng bắt buộc
+- [[a-vietnamese-bank-breaching-the-solo-vnd-equivalent-lcr-must-self-remedy-and-report-daily-to-the-sbv]] — vi phạm LCR: tự xử lý, báo cáo hằng ngày, giám sát tăng cường từ 10% HQLA
+- [[a-vietnamese-bank-is-at-risk-of-insolvency-when-eligible-hqla-stays-below-90-percent-of-the-required-level-for-30-days]] — nguy cơ mất khả năng chi trả: HQLA dưới 90% mức yêu cầu trong 30 ngày liên tục
+- [[the-sbv-may-order-remedial-actions-on-liquidity-risk-management-after-an-inspection]] — sáu biện pháp khắc phục NHNN được yêu cầu sau thanh tra, giám sát
+- [[net-stable-funding-ratio-nsfr]] — tỷ lệ nguồn vốn ổn định ròng trong TT50: định nghĩa, công thức, lộ trình và các trang thành phần
+- [[loan-to-deposit-ratio-ldr]] — stub: tỷ lệ dư nợ cho vay so với tổng tiền gửi trong TT50
+
+**Quản lý rủi ro thanh khoản trong TT50 (Điều 14)**
+- [[liquidity-risk-controls-and-hqla-size-are-insulated-from-competitive-and-earnings-pressure-in-stress]] — hạn mức, kiểm soát và quy mô HQLA không chịu chi phối bởi cạnh tranh, kết quả kinh doanh khi căng thẳng
+- [[vietnamese-banks-must-set-liquidity-reserve-limits-for-seasonal-peaks]] — hạn mức tăng dự trữ cho cuối năm, Tết, quyết toán thuế
+- [[operational-deposit-excess-balance-methodology-is-set-in-bank-internal-policy]] — phương pháp xác định số dư vượt mức tiền gửi hoạt động do ngân hàng tự đặt
+- [[intraday-liquidity-management]] — thanh khoản trong ngày: hai mục tiêu, bảy nội dung tối thiểu
+- [[intraday-liquidity-events-and-correspondent-failures-are-reviewed-annually-by-vietnamese-banks]] — bên đại lý/lưu ký không trả nợ; thống kê 4 loại sự kiện hằng năm
+- [[collateral-position-management]] — danh sách, tiêu chí, trạng thái tài sản bảo đảm; yêu cầu bổ sung bảo đảm khi dùng phái sinh
+- [[hqla-size-must-cover-stress-net-outflows-and-the-lcr-minimum]] — quy mô HQLA đủ cho dòng ra ròng theo kịch bản stress và ngưỡng LCR
+- [[an-unused-facility-secured-by-level-1-assets-at-the-sbv-counts-as-level-1-hqla]] — hạn mức chưa dùng tại NHNN, bảo đảm bằng HQLA cấp 1, tính là cấp 1 (Phụ lục I phần A)
+- [[foreign-bank-branches-may-count-parent-bank-committed-lines-as-hqla-up-to-50-and-40-percent-caps]] — hạn mức cam kết của ngân hàng mẹ vào HQLA chi nhánh: trần 50% và 40%, điều kiện, báo cáo
+- [[the-sbv-may-apply-a-lower-liquidity-coefficient-to-hqla-or-exclude-level-2b-assets]] — NHNN hạ hệ số thanh khoản của HQLA cấp 1, 2A, 2B hoặc loại cấp 2B sau thanh tra
+- [[foreign-branch-hqla-keeps-its-tier-in-a-vietnamese-banks-lcr-with-a-net-outflow-cap-on-host-sovereign-debt]] — HQLA chi nhánh ở nước ngoài giữ nguyên cấp; trần theo dòng ra ròng cho nợ chính phủ nước sở tại
+
+**Dòng tiền ra của LCR trong TT50 (Phụ lục I phần B, mục I–III)**
+- [[tt50-counts-30-day-outflows-and-puts-overdue-and-undated-obligations-in-the-next-day-bucket]] — dòng ra 30 ngày; nghĩa vụ quá hạn hoặc không rõ hạn vào mốc ngày tiếp theo; bốn nhóm thời gian của biểu mẫu
+- [[term-funding-with-over-30-days-remaining-leaves-the-outflow-only-when-no-withdrawal-is-possible-within-30-days]] — khi nào nguồn huy động còn trên 30 ngày không tính vào dòng ra
+- [[stable-retail-deposits-run-off-at-5-percent-and-less-stable-and-foreign-currency-at-10-percent-in-tt50]] — tiền gửi bán lẻ ổn định 5%, kém ổn định và ngoại tệ 10%
+- [[sme-deposits-up-to-30-billion-dong-run-off-like-retail-deposits-in-tt50]] — doanh nghiệp nhỏ và vừa đủ điều kiện (tối đa 30 tỷ đồng) xử lý như bán lẻ
+- [[operational-deposits-qualify-only-when-tied-to-clearing-custody-or-cash-management-with-switching-costs]] — phạm vi và điều kiện của tiền gửi hoạt động
+- [[unsecured-wholesale-funding-from-corporates-and-the-public-sector-runs-off-at-40-percent-and-other-unsecured-at-100-percent]] — vốn bán buôn không bảo đảm: 40% và 100%
+- [[secured-wholesale-funding-runs-off-at-0-to-100-percent-depending-on-the-collateral]] — vốn bán buôn có bảo đảm: 0%, 15%, 25%, 50%, 100% theo tài sản bảo đảm
+
+**Dòng tiền ra của LCR trong TT50 (Phụ lục I phần B, mục IV–VII)**
+- [[derivative-cash-flows-are-netted-per-counterparty-only-under-a-qualifying-netting-agreement-and-run-off-at-100-percent-in-tt50]] — phái sinh: bù trừ theo đối tác khi có thỏa thuận đủ điều kiện, hệ số 100%
+- [[derivative-options-are-assumed-exercised-when-in-the-money-and-deliverable-assets-at-lowest-liquidity-value-in-tt50]] — quyền chọn giả định thực hiện khi có lãi; tài sản giao nhận có thanh khoản thấp nhất
+- [[a-rating-downgrade-of-up-to-three-notches-adds-the-full-triggered-calls-to-tt50-lcr-outflows]] — hạ bậc xếp hạng tối đa 3 bậc: cộng 100% giá trị bị kích hoạt
+- [[collateral-valuation-changes-add-a-20-percent-outflow-on-non-level-1-margin-collateral-in-tt50]] — cộng 20% giá trị tài sản bảo đảm không phải cấp 1
+- [[excess-non-segregated-collateral-and-uncalled-contractual-margin-add-100-percent-to-tt50-lcr-outflows]] — tài sản bảo đảm dư thừa không tách biệt và ký quỹ chưa bị yêu cầu: 100%
+- [[margin-calls-on-marked-to-market-positions-use-the-largest-30-day-net-flow-of-the-last-24-months-in-tt50]] — chênh lệch định giá: 100% hoặc dòng ký quỹ ròng 30 ngày lớn nhất trong 24 tháng
+- [[committed-credit-and-liquidity-facilities-run-off-by-counterparty-type-from-5-to-100-percent-in-tt50]] — hạn mức cam kết: 5% đến 100% theo loại khách hàng
+- [[contractual-disbursement-obligations-run-off-at-100-percent-to-financial-institutions-and-only-above-50-percent-of-inflows-to-others-in-tt50]] — nghĩa vụ giải ngân: 100% cho tổ chức tài chính; cho đối tượng khác chỉ phần vượt 50% dòng vào
+- [[contingent-obligations-run-off-at-0-3-and-5-percent-or-by-bank-estimate-and-100-percent-once-triggered-in-tt50]] — nghĩa vụ nợ tiềm ẩn: 0%, 3%, 5%, hệ số do ngân hàng xác định, 100% khi kích hoạt
+- [[any-other-contractual-outflow-within-30-days-runs-off-at-100-percent-in-tt50]] — dòng ra theo thỏa thuận khác: 100%
+- [[the-tt50-outflow-form-lists-seven-outflow-lines-and-restates-the-text-leaving-one-coefficient-blank]] — biểu mẫu dòng ra: bảy dòng nhắc lại văn bản; một ô hệ số để trống (mục 5.1.3)
+
+**Dòng tiền vào của LCR trong TT50 (Phụ lục I phần C)**
+- [[tt50-counts-an-inflow-only-from-performing-contractual-receivables-and-excludes-contingent-and-cancellable-inflows]] — điều kiện ghi nhận: nợ nhóm 1, không vỡ nợ; loại dòng vào có điều kiện, khoản không đủ căn cứ, khoản có thể bị hủy, hạn mức quay vòng
+- [[reverse-repo-and-secured-lending-inflows-run-in-at-0-to-100-percent-by-collateral-tier-in-tt50]] — reverse repo và cho vay có bảo đảm: 0%, 15%, 25%, 50%, 100% theo tài sản; cho vay ký quỹ 50%
+- [[receivables-run-in-at-50-percent-from-retail-and-non-financial-customers-and-100-percent-from-financial-institutions-in-tt50]] — khoản phải đòi: bán lẻ và doanh nghiệp nhỏ và vừa 50%; bán buôn 50% hoặc 100% (tổ chức tài chính); chứng khoán không HQLA 100%
+- [[operational-and-correspondent-deposits-placed-with-other-institutions-run-in-at-0-percent-except-the-excess-in-tt50]] — tiền gửi hoạt động và ngân hàng đại lý tại tổ chức khác: 0%, phần dư vượt mức 100%
+- [[net-derivative-inflows-run-in-at-100-percent-after-deducting-collateral-outflows-in-tt50]] — phái sinh: dòng vào ròng 100%, trừ nghĩa vụ bảo đảm bằng HQLA
+- [[non-financial-revenue-is-excluded-from-tt50-lcr-inflows]] — doanh thu phi tài chính không tính vào dòng vào
+- [[the-tt50-inflow-form-has-seven-inflow-groups-in-four-time-buckets-and-restates-the-text]] — biểu mẫu dòng vào: bảy nhóm, bốn khung thời gian, hệ số khớp văn bản
+
+**NSFR trong TT50 (Phụ lục II)**
+- [[tt50-nsfr-asf-counts-capital-at-100-percent-and-tier-2-capital-by-residual-maturity]] — NSFR, ASF: vốn lõi 100%, vốn cấp 2 theo kỳ hạn; quy tắc giá trị ghi sổ và ngoại lệ
+- [[tt50-nsfr-asf-weights-retail-and-sme-funding-at-95-and-90-percent-with-100-percent-for-non-withdrawable-term-deposits]] — ASF: tiền gửi bán lẻ và doanh nghiệp nhỏ và vừa 95% (ổn định), 90% (kém ổn định), 100% nếu không rút trước hạn từ 1 năm
+- [[tt50-nsfr-asf-weights-funding-from-the-public-sector-and-central-banks-at-0-to-100-percent]] — ASF: Chính phủ, tổ chức công, Ngân hàng Nhà nước, ngân hàng trung ương nước ngoài
+- [[tt50-nsfr-asf-weights-funding-from-financial-institutions-corporates-and-other-organisations-at-0-to-100-percent]] — ASF: tổ chức tài chính, doanh nghiệp phi tài chính, tổ chức khác; tiền gửi hoạt động 50%
+- [[tt50-nsfr-asf-weights-bond-issuance-at-0-50-100-percent-and-gives-0-percent-to-derivative-excess-and-trade-date-payables]] — ASF: trái phiếu phát hành, thuế hoãn lại, cặp phụ thuộc, chênh lệch phái sinh, trade date payables, khoản khác
+- [[tt50-nsfr-rsf-general-rules-use-net-book-value-and-put-defaulted-receivables-initial-margin-and-capital-deductions-at-high-weights]] — RSF: quy tắc chung; vỡ nợ 100%, ký quỹ ban đầu phái sinh, tài sản bị ràng buộc, giảm trừ vốn
+- [[tt50-nsfr-rsf-weights-hqla-at-0-percent-for-cash-and-reserves-and-5-15-and-50-percent-by-tier]] — RSF: tiền mặt, dự trữ bắt buộc 0%; HQLA cấp 1 5%, cấp 2A 15%, cấp 2B 50%
+- [[tt50-nsfr-rsf-weights-claims-on-the-government-and-central-banks-at-0-to-85-percent]] — RSF: khoản phải đòi Chính phủ 50% và 65%; Ngân hàng Nhà nước và ngân hàng trung ương nước ngoài
+- [[tt50-nsfr-rsf-weights-securities-commodities-and-fixed-assets-at-50-to-100-percent]] — RSF: cổ phiếu, trái phiếu niêm yết, chứng khoán khác, hàng hóa gồm vàng, tài sản cố định
+- [[tt50-nsfr-rsf-weights-deposits-and-credit-to-financial-institutions-at-10-to-100-percent]] — RSF: cấp tín dụng và tiền gửi tại tổ chức tài chính
+- [[tt50-nsfr-rsf-weights-real-estate-and-loans-by-borrower-at-50-65-and-85-percent-on-a-35-percent-risk-weight-line]] — RSF: bất động sản và cho vay theo đối tượng, ngưỡng hệ số rủi ro 35%
+- [[tt50-nsfr-rsf-weights-other-assets-add-on-values-and-off-balance-commitments]] — RSF: tài sản khác, phần giá trị bổ sung, cam kết ngoại bảng 5% và 0%
+
+**NSFR trong TT50 (Điều 22–27)**
+- [[tt50-nsfr-is-asf-over-rsf-with-a-solo-minimum-rising-from-90-to-100-percent-over-three-years]] — công thức NSFR = ASF ÷ RSF; ngưỡng riêng lẻ 90%, 95%, 100%; báo cáo và quản lý hợp nhất
+- [[tt50-nsfr-uses-the-lcr-definitions-and-the-capital-regime-the-bank-already-applies]] — định nghĩa dùng chung với LCR; chế độ vốn Thông tư 41/2016 hoặc 14/2025
+- [[tt50-nsfr-counts-repo-and-reverse-repo-gross-with-receivables-in-rsf-and-payables-in-asf]] — repo và reverse repo tính gộp: phải đòi vào RSF, phải trả vào ASF
+- [[tt50-nsfr-assigns-a-liability-the-earliest-contractual-date-and-assumes-extension-rights-are-not-exercised]] — kỳ hạn nợ phải trả: thời điểm sớm nhất, quyền mua lại và rút trước hạn, giả định không gia hạn
+- [[tt50-nsfr-sets-asf-to-0-percent-for-balances-whose-early-payment-ordered-by-an-inspection-is-breached]] — thanh toán sớm theo kết luận thanh tra: kỳ hạn theo kết luận, vi phạm thì ASF 0%
+- [[tt50-nsfr-assigns-an-asset-the-latest-extension-date-and-splits-multi-period-loans-by-instalment]] — kỳ hạn tài sản: thời điểm muộn nhất, cơ cấu lại, tách từng kỳ trả nợ
+- [[tt50-nsfr-encumbered-assets-keep-their-rsf-below-6-months-take-at-least-50-percent-to-1-year-and-100-percent-beyond]] — tài sản bị ràng buộc: 100% từ 1 năm, tối thiểu 50% từ 6 tháng đến 1 năm, như gốc dưới 6 tháng
+- [[tt50-nsfr-counts-settled-purchases-and-excludes-settled-sales-before-they-reach-the-balance-sheet]] — lệnh mua đã khớp tính vào RSF, lệnh bán đã khớp loại ra trước khi lên bảng
+- [[tt50-nsfr-measures-derivative-liabilities-and-assets-at-replacement-cost-and-nets-variation-margin]] — nợ và tài sản phái sinh theo chi phí thay thế; bù trừ hai bên đủ điều kiện; nợ NSFR
+- [[tt50-nsfr-nets-only-cash-variation-margin-that-meets-four-conditions-and-gives-other-margin-0-percent-asf]] — ký quỹ biến động bằng tiền mặt: bốn điều kiện; ký quỹ ban đầu và phần vượt ASF 0%
+- [[tt50-nsfr-derivative-position-nets-to-0-percent-asf-or-100-percent-rsf]] — chênh lệch phái sinh: nợ lớn hơn thì ASF 0%, tài sản lớn hơn thì RSF 100%
+- [[tt50-nsfr-dependent-asset-liability-pairs-take-0-percent-asf-and-rsf-when-all-conditions-are-met]] — cặp tài sản và nợ phụ thuộc: điều kiện, 0% ASF và RSF, quyền yêu cầu của NHNN
+- [[tt50-banks-disclose-liquidity-ratios-semi-annually-under-a-written-process-sent-to-the-sbv]] — Điều 27: công bố tỷ lệ thanh khoản 6 tháng một lần, quy trình nội bộ, hạn nộp NHNN
+- [[liquidity-stress-test-reports-go-to-the-sbv-within-30-days-of-quarter-end]] — báo cáo stress test thanh khoản gửi NHNN trong 30 ngày sau quý
+- [[liquidity-stress-scenarios-use-10-years-of-history-and-run-off-rates-no-lower-than-the-circular]] — dữ liệu ≥ 10 năm, thời kỳ căng thẳng, sàn hệ số rút tiền
+
+**So sánh TT50 và Basel về LCR (analysis)**
+- [[tt50-and-basel-share-the-lcr-formula-30-day-horizon-and-75-percent-inflow-cap]] — trùng khớp: công thức, chân trời 30 ngày, trần 75%, chống tính trùng
+- [[tt50-makes-the-lcr-minimum-a-binding-threshold-with-penalties-where-basel-lets-banks-draw-down-hqla-in-stress]] — khác: tính ràng buộc, nhịp báo cáo, ngưỡng cảnh báo sớm; trùng ở nội dung giải trình và công cụ giám sát
+- [[tt50-binds-the-solo-vnd-equivalent-lcr-while-basel-applies-a-consolidated-ratio-in-one-reporting-currency]] — khác: cấp riêng lẻ và quy VNĐ so với hợp nhất và một đồng tiền chung
+- [[tt50-and-basel-hqla-operational-requirements-overlap-closely-except-for-the-periodic-monetisation-test]] — HQLA: mười điểm khớp, hai điểm khác (thử bán định kỳ, tài sản bị ràng buộc một phần)
+- [[tt50-hqla-tiers-differ-from-basel-on-vietnam-government-debt-covered-bonds-and-committed-facilities]] — cấu phần HQLA: hệ số trùng Basel; khác ở phép thử giá cấp 1, covered bond, hạn mức cam kết, nợ chính phủ trong nước
+- [[tt50-requires-intraday-liquidity-management-that-the-basel-lcr-stress-scenario-does-not-cover]] — thanh khoản trong ngày: Basel chỉ nhắc LCR không phủ, TT50 đặt yêu cầu quản lý có nội dung tối thiểu

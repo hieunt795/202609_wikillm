@@ -2,9 +2,9 @@
 title: contingency-funding-plan
 type: concept
 tags: [liquidity-regulation, liquidity-risk-management, lcr]
-sources: [basel_lcr]
+sources: [basel_lcr, tt50_2026_sbv]
 status: draft
-last_updated: 2026-10-10
+last_updated: 2026-11-10
 ---
 
 Kế hoạch tài trợ dự phòng (contingency funding plan, CFP) là văn bản trong đó ngân hàng nêu rõ các chiến lược xử lý thiếu hụt thanh khoản, cho cả căng thẳng riêng của ngân hàng lẫn căng thẳng toàn thị trường (basel_lcr, LCR20, 20.6 chú thích, d.94).
@@ -14,3 +14,5 @@ Yêu cầu lập CFP đến từ bộ [[principles-for-sound-liquidity-risk-mana
 CFP xuất hiện ở hai chỗ trong cách cơ quan giám sát xử lý [[supervisory-response-to-an-lcr-below-100-percent-is-proportionate-to-the-shortfall|LCR dưới 100%]]. Nguồn tài trợ dự phòng sẵn có, như vốn vay ngân hàng trung ương, là một yếu tố khi cân nhắc mức phản ứng (basel_lcr, LCR20, 20.6, d.83). Yêu cầu ngân hàng cải thiện CFP là một trong các biện pháp cơ quan giám sát có thể áp dụng (basel_lcr, LCR20, 20.6, d.86–88).
 
 Phần vốn vay ngân hàng trung ương trong CFP phụ thuộc vào lượng tài sản ngân hàng có thể đem thế chấp, tức [[collateral-constraint-on-central-bank-credit|ràng buộc tài sản bảo đảm đối với tín dụng ngân hàng trung ương]].
+
+TT50 yêu cầu ngân hàng Việt Nam lập kế hoạch truyền thông tới các đối tượng cần thiết theo quy định nội bộ, lập kế hoạch tài trợ dự phòng, giữ các khoản dự trữ thanh khoản và đa dạng hóa nguồn tài trợ khi có vấn đề thanh khoản, để giảm khả năng lan truyền do rủi ro danh tiếng (tt50_2026_sbv, Điều 14, khoản 3, d.481). Thông tư không dùng tên CFP, nhưng nội dung là một kế hoạch tài trợ dự phòng. Phần dự trữ cho các giai đoạn nhu cầu tăng cao nằm ở [[vietnamese-banks-must-set-liquidity-reserve-limits-for-seasonal-peaks]].

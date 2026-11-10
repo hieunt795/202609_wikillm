@@ -1,0 +1,20 @@
+---
+title: tt50-makes-the-lcr-minimum-a-binding-threshold-with-penalties-where-basel-lets-banks-draw-down-hqla-in-stress
+type: analysis
+tags: [lcr, vietnam, tt50, basel-iii, comparison, supervision]
+sources: [tt50_2026_sbv, basel_lcr]
+status: draft
+last_updated: 2026-11-09
+---
+
+TT50 xử lý vi phạm ngưỡng LCR như vi phạm một quy định bắt buộc, còn Basel coi việc rơi dưới 100% khi căng thẳng là chuyện có thể xảy ra và giao cơ quan giám sát phản ứng theo hoàn cảnh. Hai khung có phần chung về thông báo và công cụ giám sát, khác nhau ở ba điểm: tính ràng buộc, nhịp báo cáo và ngưỡng cảnh báo sớm.
+
+Phần chung thứ nhất là nghĩa vụ giải trình khi tỷ lệ giảm. Basel yêu cầu ngân hàng báo ngay khi LCR đã hoặc dự kiến xuống dưới 100% và nộp bản đánh giá vị thế thanh khoản gồm yếu tố làm LCR giảm, biện pháp đã và sẽ làm, thời gian dự kiến (basel_lcr, LCR20, 20.8, d.104) (basel_lcr, LCR20, 20.6, d.84–89). Báo cáo ngày đầu của TT50 gồm đúng ba nội dung đó, cộng thêm tình hình tài chính và hồ sơ rủi ro của ngân hàng và đánh giá biến động giá của HQLA (tt50_2026_sbv, Điều 17, khoản 2b, d.625–635). Các yếu tố Basel đưa cho cơ quan giám sát cân nhắc cũng gồm lý do giảm, mức độ cú sốc riêng hay toàn thị trường và hồ sơ rủi ro của ngân hàng ([[supervisory-response-to-an-lcr-below-100-percent-is-proportionate-to-the-shortfall]]), tức là cùng các mục mà TT50 bắt ngân hàng tự nêu.
+
+Phần chung thứ hai là công cụ giám sát. Basel cho phép cơ quan giám sát yêu cầu giảm phơi nhiễm rủi ro thanh khoản, củng cố quản trị rủi ro thanh khoản và sửa [[contingency-funding-plan|kế hoạch tài trợ dự phòng]] (basel_lcr, LCR20, 20.6, d.84–89). [[the-sbv-may-order-remedial-actions-on-liquidity-risk-management-after-an-inspection|Điều 15 của TT50]] có đủ ba loại này, gồm chỉnh sửa chính sách và kiểm soát nội bộ, chỉnh sửa kế hoạch dự phòng, giảm rủi ro thanh khoản. Điều 15 thêm hai biện pháp không thấy trong trang Basel: hạn chế cấp tín dụng, góp vốn, mở rộng kinh doanh, và áp tỷ lệ an toàn vốn cao hơn (tt50_2026_sbv, Điều 15, khoản 2, d.557–569).
+
+Khác biệt thứ nhất là tính ràng buộc. Basel nêu rằng khi căng thẳng, ngân hàng dùng HQLA và rơi dưới mức tối thiểu là việc hoàn toàn phù hợp, sau đó cơ quan giám sát đánh giá ([[banks-may-use-hqla-and-fall-below-the-lcr-minimum-during-stress]]) (basel_lcr, LCR20, 20.5, d.72). Trong Điều 13 đến Điều 21 của TT50 không có điều khoản tương ứng. Vi phạm ngưỡng LCR quy VNĐ riêng lẻ dẫn tới xem xét xử phạt hành chính và nghĩa vụ [[a-vietnamese-bank-breaching-the-solo-vnd-equivalent-lcr-must-self-remedy-and-report-daily-to-the-sbv|tự xử lý ngay]] (tt50_2026_sbv, Điều 17, khoản 2, d.615–623). Điều 1 khoản 2 của TT50 chỉ miễn một số quy định của thông tư trong thời gian kiểm soát đặc biệt, một cơ chế khác với quyền dùng HQLA khi căng thẳng (tt50_2026_sbv, Điều 1, khoản 2, d.45).
+
+Khác biệt thứ hai là nhịp báo cáo. Basel đặt mức tối thiểu hằng tháng và yêu cầu năng lực nâng lên hằng tuần hoặc hằng ngày khi cơ quan giám sát đòi ([[lcr-is-reported-at-least-monthly-and-a-breach-is-notified-immediately]]) (basel_lcr, LCR20, 20.7, d.102). TT50 giao việc theo dõi hằng ngày cho một bộ phận tại trụ sở chính (tt50_2026_sbv, Điều 17, khoản 1, d.613) và đặt báo cáo hằng ngày, trước 12 giờ sáng hôm sau, ngay khi vi phạm (tt50_2026_sbv, Điều 17, khoản 2b, d.625). Tần suất báo cáo định kỳ khi không vi phạm do chế độ báo cáo thống kê quy định, không nằm trong Điều 16 (tt50_2026_sbv, Điều 16, khoản 2, d.609).
+
+Khác biệt thứ ba là ngưỡng cảnh báo sớm. TT50 gắn hai mốc vào mức độ dùng biện pháp tự xử lý và mức thiếu hụt HQLA: giám sát tăng cường khi biện pháp tự xử lý từ 10% HQLA đủ điều kiện trở lên, và trạng thái [[a-vietnamese-bank-is-at-risk-of-insolvency-when-eligible-hqla-stays-below-90-percent-of-the-required-level-for-30-days|nguy cơ mất khả năng chi trả]] khi HQLA dưới 90% mức yêu cầu trong 30 ngày liên tục (tt50_2026_sbv, Điều 17, khoản 2b, d.623) (tt50_2026_sbv, Điều 18, khoản 1, d.645). Chương LCR20 trong wiki không có mốc định lượng nào tương đương; Basel dùng phán đoán của cơ quan giám sát qua sáu yếu tố cân nhắc.

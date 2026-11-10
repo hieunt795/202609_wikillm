@@ -1,0 +1,20 @@
+---
+title: tt50-hqla-tiers-differ-from-basel-on-vietnam-government-debt-covered-bonds-and-committed-facilities
+type: analysis
+tags: [lcr, vietnam, tt50, basel-iii, comparison, hqla, level-1, level-2]
+sources: [tt50_2026_sbv, basel_lcr]
+status: draft
+last_updated: 2026-11-10
+---
+
+TT50 dùng cùng ba tầng HQLA như Basel với hệ số thanh khoản trùng nhau, và khác Basel ở bốn điểm: phép thử giá cho tài sản cấp 1 và điều kiện niêm yết, vị trí của covered bond, cách xếp hạn mức cam kết, và danh mục nợ chính phủ trong nước. Hệ số của TT50 là 100% cho cấp 1, 85% cho cấp 2A, 75% cho RMBS và 50% cho các nhóm còn lại của cấp 2B (tt50_2026_sbv, Phụ lục I, Phần A, mục II khoản 1, d.1217) (tt50_2026_sbv, Phụ lục I, Phần A, mục III khoản 1, d.1263) (tt50_2026_sbv, Phụ lục I, Phần A, mục IV khoản 3, d.1299–1337). Basel ghi [[level-2a-assets|Level 2A]] chịu haircut 15% và RMBS thuộc [[level-2b-assets|Level 2B]] chịu 25%, tức cùng hệ số sau khi đảo dấu (basel_lcr, LCR30, Level 2 assets, 30.43, d.279) (basel_lcr, LCR30, Level 2B assets, 30.45, d.316–339).
+
+Điểm một: phép thử giá và niêm yết. TT50 đòi chứng khoán cấp 1 của chính phủ nước ngoài và tổ chức quốc tế phải niêm yết và có lịch sử 10 năm với mức giảm giá hoặc tăng chiết khấu tối đa 5% trong 30 ngày căng thẳng (tt50_2026_sbv, Phụ lục I, Phần A, mục II khoản 3c, d.1243–1247). Bốn điều kiện cấp 1 của Basel gồm trọng số rủi ro 0%, thị trường lớn và sâu, nguồn thanh khoản tin cậy khi căng thẳng, và không phải nghĩa vụ của định chế tài chính, không gồm phép thử giảm giá bằng số theo mô tả ở [[level-1-assets]] (basel_lcr, LCR30, Level 1 assets, 30.41, d.243–253). Ngưỡng 10% của cấp 2A và 20% của cấp 2B thì cả hai khung đều có, và TT50 thêm yêu cầu niêm yết ở mọi cấp.
+
+Điểm hai: covered bond. Basel xếp trái phiếu doanh nghiệp và covered bond xếp hạng từ AA- vào cấp 2A (basel_lcr, LCR30, Level 2 assets, 30.43, d.279–294). Danh mục 2A của TT50 chỉ gồm chứng khoán nhà nước và tổ chức quốc tế, chứng khoán nợ doanh nghiệp xếp hạng từ AA- trở lên và tài sản của chi nhánh nước ngoài, không có covered bond (tt50_2026_sbv, Phụ lục I, Phần A, mục III khoản 3, d.1267–1289). Ngưỡng xếp hạng AA- giống Basel.
+
+Điểm ba: hạn mức cam kết. Basel cho phép tính phần chưa rút của [[restricted-use-committed-liquidity-facility-rclf|RCLF]] vào cấp 2B qua năm điều kiện (basel_lcr, LCR30, Level 2B assets, 30.46, d.381–389). TT50 coi hạn mức chưa sử dụng bảo đảm bằng HQLA cấp 1 trong giao dịch với NHNN là tài sản cấp 1, nêu ở [[an-unused-facility-secured-by-level-1-assets-at-the-sbv-counts-as-level-1-hqla]]. Basel không có tương ứng trong các trang đã nạp với quy định về hạn mức cam kết của ngân hàng mẹ dành cho chi nhánh, nêu ở [[foreign-bank-branches-may-count-parent-bank-committed-lines-as-hqla-up-to-50-and-40-percent-caps]]; chưa dò toàn bộ chương LCR của Basel để loại trừ chắc chắn.
+
+Điểm bốn: nợ chính phủ trong nước. TT50 liệt kê rõ nợ Chính phủ Việt Nam và tín phiếu NHNN bằng VNĐ và ngoại tệ, trái phiếu có bảo lãnh 100% của Chính phủ, và trái phiếu chính quyền địa phương dùng trong giao dịch với NHNN theo quyết định của Thống đốc, tất cả vào cấp 1 (tt50_2026_sbv, Phụ lục I, Phần A, mục II khoản 3d, 3đ, 3e, d.1251–1255). Basel xử lý nợ chính phủ có trọng số rủi ro khác 0% bằng hai ngoại lệ nội tệ và ngoại tệ, và phần ngoại tệ bị giới hạn theo dòng ra ròng cùng ngoại tệ (basel_lcr, LCR30, Level 1 assets, 30.41, d.243–253). Trong phần A của Phụ lục I, nợ Chính phủ Việt Nam bằng ngoại tệ không thấy kèm trần như vậy. Các trang khác của TT50 chưa nạp, như Điều 28 về trái phiếu Chính phủ, có thể điều chỉnh điểm này.
+
+Điểm khác biệt thứ năm nhỏ hơn: Basel để cơ quan giám sát quyết định có cho tính Level 2B hay không, còn TT50 đưa cấp 2B vào danh mục ngay và giữ cho NHNN quyền loại tài sản ở khâu giám sát ([[the-sbv-may-apply-a-lower-liquidity-coefficient-to-hqla-or-exclude-level-2b-assets]]). Hai khung giống nhau ở công thức trần 40% và 15%, xem [[level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]]. Điều kiện vận hành của HQLA so ở [[tt50-and-basel-hqla-operational-requirements-overlap-closely-except-for-the-periodic-monetisation-test]].

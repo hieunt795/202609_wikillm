@@ -1138,3 +1138,44 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - 11 trang mới: level-1-assets, level-2a-assets, level-2b-assets, trần 40%/15% và công thức kho HQLA, số điều chỉnh, đặc tính HQLA, hqla-operational-requirements, unencumbered-assets, RCLF, total-expected-cash-outflows, total-expected-cash-inflows; merge vào high-quality-liquid-assets-hqla, total-net-cash-outflows, trang hạn chế chuyển thanh khoản, trang đồng tiền
 - Stub mới: alternative-liquidity-approaches; ⚠️ Conflict trên level-2a-assets (Basel AA− và Bindseil AA); công thức 30.38 mất trong nguồn, dựng lại từ 30.35–30.39 và ghi rõ trên trang
 - Còn lại: LCR30 các mục 30.26, 30.28, 30.29, 30.47 (chunk `do`); LCR40 cụm A còn 9 mục; LCR31, LCR40 cụm B, LCR90, LCR99 `chua`
+
+## [2026-11-09:22-56-49] ingest | tt50_2026_sbv Điều 13–21 (LCR) và so sánh với Basel
+- 8 trang mới (entity TT50, ngưỡng 50%→100%, đăng ký sớm, thôi tuân thủ TT22, ba loại LCR, vi phạm LCR, nguy cơ mất khả năng chi trả, Điều 15) và 4 trang analysis so sánh TT50 với Basel; merge vào hqla-operational-requirements, total-net-cash-outflows, high-quality-liquid-assets-hqla
+- Stub mới: net-stable-funding-ratio-nsfr, loan-to-deposit-ratio-ldr; tách source id tt50_2026_sbv khỏi vietnam_regulator, tạo 03_state/tt50_2026_sbv.md
+- Còn lại: Điều 14 (chunk d.441–722 ở trạng thái `do`, vượt hạn 15 trang/lượt); Điều 4–5, 30, 32–33, 35–36, 38 và các chunk khác
+
+## [2026-11-10:18-34-02] ingest | tt50_2026_sbv Điều 14 (quản lý rủi ro thanh khoản)
+- Tạo 10 trang (9 concept, 1 analysis so sánh thanh khoản trong ngày với Basel 30.26); merge 3 trang: lcr-is-met-in-one-currency, contingency-funding-plan, tt50-binds-the-solo-vnd.
+- Không tạo stub mới. Chunk d.441–722 đã phủ 100% mục; còn Điều 4, 5 và cụm B (NSFR) chưa ingest.
+
+## [2026-11-10:18-57-17] ingest | tt50_2026_sbv Phụ lục I phần A (cấu phần HQLA)
+- Tạo 5 trang (4 concept, 1 analysis so sánh cấu phần HQLA TT50–Basel); merge 5 trang: level-1-assets, level-2a-assets, level-2b-assets, level-2-assets-are-capped..., adjusted-hqla-amounts-unwind...
+- Không tạo stub. Chunk d.1133–1393 đã phủ; còn Phụ lục I phần B, C và các điểm đối chiếu ghi ở _inbox.md (Điều 22, Điều 4, Điều 28).
+
+## [2026-11-10:19-04-20] ingest | tt50_2026_sbv Phụ lục I phần B lượt B1 (mục I–III: dòng ra, bán lẻ, bán buôn)
+- Tạo 7 trang concept (nguyên tắc 30 ngày, nguồn vốn trên 30 ngày, tiền gửi bán lẻ, DNNVV, tiền gửi hoạt động, bán buôn không bảo đảm, bán buôn có bảo đảm); merge 3 trang: total-expected-cash-outflows, operational-deposit-excess-balance..., liquidity-stress-scenarios-use-10-years...
+- Còn lại của chunk d.1394–1857: lượt B2 (mục IV–VII, gồm biểu mẫu). So sánh Basel hoãn tới khi nạp lại LCR40 cụm A.
+
+## [2026-11-10:19-07-50] ingest | tt50_2026_sbv Phụ lục I phần B lượt B2 (mục IV–VII: phái sinh, yêu cầu bổ sung, ngoại bảng, biểu mẫu)
+- Tạo 11 trang concept (phái sinh, quyền chọn và tài sản giao nhận, hạ bậc xếp hạng, 20% tài sản bảo đảm, tài sản dư thừa và ký quỹ chưa yêu cầu, ký quỹ 24 tháng, hạn mức cam kết, nghĩa vụ giải ngân, nghĩa vụ tiềm ẩn, dòng ra khác, biểu mẫu); merge total-expected-cash-outflows.
+- Chunk d.1394–1857 đã phủ. ⚠️ Conflict biểu mẫu mục 5.2.2 vs văn bản mục V khoản 2.2 chờ người dùng; so sánh Basel hoãn tới khi nạp LCR40 cụm A.
+
+## [2026-11-10:19-46-26] ingest | đính chính mục B2 tt50_2026_sbv: không có Conflict ở biểu mẫu mục 5.2.2
+- Người dùng xác nhận biểu mẫu mục 5.2.2 khớp mục V khoản 2.2 (100% áp lên phần vượt 50% dòng vào); gỡ dấu Conflict ở 2 trang, đổi tên trang biểu mẫu thành the-tt50-outflow-form-lists-seven-outflow-lines-and-restates-the-text-leaving-one-coefficient-blank.
+- Mục log trước (19-07-50) ghi sai là Conflict; còn lại một ô hệ số để trống ở mục 5.1.3, theo văn bản.
+
+## [2026-11-10:21-05-00] ingest | tt50_2026_sbv Phụ lục I Phần B mục V khoản 2 (bổ sung tiêu chí)
+- Cập nhật contractual-disbursement-obligations-run-off-at-100-percent-to-financial-institutions-and-only-above-50-percent-of-inflows-to-others-in-tt50: bốn tiêu chí xác định, định nghĩa tổ chức tài chính theo giấy phép (Điều 3 khoản 11), ba điểm chưa xác định.
+- Chờ nạp Phần C để chốt cách tính tổng dòng vào ở khoản 2.2.
+
+## [2026-11-10:21-18-28] ingest | tt50_2026_sbv Phụ lục I phần C (dòng tiền vào)
+- Tạo 7 trang: điều kiện ghi nhận, reverse repo, hệ số theo đối tác, tiền gửi hoạt động và đại lý, phái sinh, doanh thu phi tài chính, biểu mẫu dòng vào. Merge: total-expected-cash-inflows, contractual-disbursement-obligations-...-in-tt50; thêm backlink 4 trang dòng ra.
+- Điểm treo ở khoản 2.2 mục V Phần B (tổng dòng vào gộp hay sau hệ số) vẫn mở; so sánh Basel LCR40 hoãn.
+
+## [2026-11-10:21-36-01] ingest | tt50_2026_sbv Phụ lục II (NSFR: bảng ASF và RSF)
+- Tạo 12 trang tt50-nsfr-* (5 ASF, 7 RSF); merge stub net-stable-funding-ratio-nsfr; thêm backlink 3 trang LCR (bán lẻ, doanh nghiệp nhỏ và vừa, tiền gửi hoạt động).
+- Cụm B (Điều 19, 22–26) và Thông tư 41/2016, 14/2025 chưa nạp; so sánh Basel NSFR hoãn.
+
+## [2026-11-10:22-49-55] ingest | tt50_2026_sbv Chương II mục 5 cụm B (Điều 22–27)
+- Tạo 13 trang tt50-nsfr-* và tt50-banks-disclose-*; merge net-stable-funding-ratio-nsfr (stub thành draft), level-2-assets-..., 3 trang NSFR phụ lục II; thêm link tới Điều 27 ở 5 trang.
+- Văn bản ngoài thông tư (Thông tư 41/2016, 14/2025, chế độ báo cáo thống kê) ghi cần ingest thêm; Phụ lục IV chưa nạp.

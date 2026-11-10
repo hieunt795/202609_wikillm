@@ -2,9 +2,9 @@
 title: level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock
 type: concept
 tags: [lcr, basel-iii, liquidity-regulation, hqla]
-sources: [basel_lcr]
+sources: [basel_lcr, tt50_2026_sbv]
 status: draft
-last_updated: 2026-10-10
+last_updated: 2026-11-10
 ---
 
 Kho [[high-quality-liquid-assets-hqla|HQLA]] nhận [[level-1-assets|Level 1]] không giới hạn, nhưng Level 2 chỉ được chiếm tối đa 40% kho và riêng [[level-2b-assets|Level 2B]] tối đa 15% kho, trong đó trần 15% nằm bên trong trần 40% (basel_lcr, LCR30, Definition of HQLA, 30.31, d.214) (basel_lcr, LCR30, Definition of HQLA, 30.33, d.218).
@@ -26,3 +26,13 @@ Ba công thức trên có độ chắc khác nhau. Bản nguồn mất hẳn cô
 Trần 40% được tính sau khi đã cắt Level 2B theo trần 15%, vì vậy $A_{15}$ xuất hiện trong $A_{40}$ (basel_lcr, LCR30, Definition of HQLA, 30.35, d.222). Minh hoạ bằng số tự đặt, không lấy từ nguồn và bỏ qua giao dịch cần tháo ngược: với $L_1 = 60$, $L_{2A} = 50$, $L_{2B} = 0$ thì $A_{40} = 50 - 40 = 10$ và kho HQLA là 100, trong đó Level 2 chiếm đúng 40%.
 
 Hai trần này buộc ngân hàng giữ ít nhất 60% kho bằng Level 1. Trang [[liquidity-regulation-and-central-bank-operations-arbitrage]] ghi lại cách ngân hàng tạo thêm Level 1 bằng tiền gửi tại ngân hàng trung ương.
+
+TT50 ghi công thức này đầy đủ trong Phụ lục I. Giá trị HQLA đủ điều kiện bằng Level 1 cộng Level 2A cộng Level 2B cộng hạn mức, trừ KĐC15% và KĐC40%, trong đó KĐC là ký hiệu của số điều chỉnh của TT50 (tt50_2026_sbv, Phụ lục I, Phần A, mục I khoản 1, d.1141). Với $\hat{L}$ là số điều chỉnh, hai khoản trừ là:
+
+$$KDC_{15\%} = \max\left(\hat{L}_{2B} - \frac{15}{85}\left(\hat{L}_1 + \hat{L}_{2A}\right),\ \hat{L}_{2B} - \frac{15}{60}\hat{L}_1,\ 0\right)$$
+
+$$KDC_{40\%} = \max\left(\hat{L}_{2A} + \hat{L}_{2B} - KDC_{15\%} - \frac{2}{3}\hat{L}_1,\ 0\right)$$
+
+(tt50_2026_sbv, Phụ lục I, Phần A, mục I khoản 2–3, d.1143–1145). Cấu trúc khớp bản dựng lại ở trên, vì vậy TT50 xác nhận dạng của bản dựng đó. Hạn mức trong công thức gồm [[an-unused-facility-secured-by-level-1-assets-at-the-sbv-counts-as-level-1-hqla|hạn mức tại Ngân hàng Nhà nước]] và [[foreign-bank-branches-may-count-parent-bank-committed-lines-as-hqla-up-to-50-and-40-percent-caps|hạn mức cam kết của ngân hàng mẹ]] (tt50_2026_sbv, Phụ lục I, Phần A, mục I khoản 4–5, d.1185–1187).
+
+Số dư đầu vào của biểu mẫu tính xác định theo giá thị trường hoặc theo mô hình dùng dữ liệu thị trường. Với giấy tờ có giá giao dịch với Ngân hàng Nhà nước, số dư là giá trị giao dịch thấp nhất theo quy định của Ngân hàng Nhà nước (tt50_2026_sbv, Phụ lục I, Phần A, mục V, d.1390). Khoản 6 mục I dẫn nguyên tắc ở điểm b khoản 5 Điều 22 khi tính LCR (tt50_2026_sbv, Phụ lục I, Phần A, mục I khoản 6, d.1213). Điểm b khoản 5 Điều 22 yêu cầu dùng cấu phần vốn, loại khoản phải đòi bất động sản, hệ số rủi ro và xếp hạng tín nhiệm độc lập theo chế độ tỷ lệ an toàn vốn ngân hàng đang áp dụng, tức Thông tư 41/2016 hoặc phương pháp tiêu chuẩn của Thông tư 14/2025 (tt50_2026_sbv, Điều 22 khoản 5b, d.755–759); hai thông tư đó chưa có trong wiki, cần ingest thêm, xem [[tt50-nsfr-uses-the-lcr-definitions-and-the-capital-regime-the-bank-already-applies]].
