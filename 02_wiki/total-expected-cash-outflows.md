@@ -5,6 +5,11 @@ tags: [lcr, basel-iii, liquidity-regulation, cash-flows]
 sources: [basel_lcr, tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+part_of: [total-net-cash-outflows]
+has_part: [lcr-retail-deposits-split-into-stable-and-less-stable-portions-with-run-off-floors, unsecured-wholesale-funding, retail-term-deposits-beyond-30-days-leave-lcr-outflows-unless-withdrawable-without-penalty, secured-funding, net-derivative-cash-outflows-receive-a-100-percent-factor-in-the-lcr, committed-credit-and-liquidity-facilities, other-contingent-funding-obligations, other-contractual-cash-outflows-receive-a-100-percent-factor-while-operating-costs-are-excluded]
+governed_by: [lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days]
+drives: [consolidated-lcr-applies-home-parameters-except-host-rules-for-retail-and-small-business-deposits]
+related: [total-expected-cash-inflows]
 ---
 
 Tổng dòng ra dự kiến (total expected cash outflows) là vế thứ nhất của [[total-net-cash-outflows|tổng dòng tiền ra ròng]], tính bằng cách nhân số dư của từng nhóm nợ phải trả và cam kết ngoại bảng với tỷ lệ mà nhóm đó được giả định bị rút (run-off) hoặc bị giải ngân (drawdown) trong 30 ngày (basel_lcr, LCR40, Definition of total net cash outflows, 40.1, d.709).
@@ -17,7 +22,7 @@ Phần lớn tỷ lệ run-off và drawdown được hài hoà giữa các nư�
 
 Khi một khoản có thể rơi vào nhiều nhóm dòng ra, ngân hàng chỉ giả định tối đa bằng dòng ra lớn nhất theo hợp đồng của sản phẩm đó. Ví dụ của chuẩn mực là hạn mức thanh khoản cam kết cấp để phủ khoản nợ đáo hạn trong chính 30 ngày ấy (basel_lcr, LCR40, Definition of total net cash outflows, 40.4, d.719).
 
-Chương LCR40 có hiệu lực từ 15/12/2019 và được bổ sung FAQ ngày 30/3/2023 (basel_lcr, LCR40, d.703–705). Theo các đề mục của chương, dòng ra chia thành bốn khối: tiền gửi bán lẻ, vốn bán buôn không có bảo đảm, tài trợ có bảo đảm và các yêu cầu bổ sung. Vế còn lại của mẫu số là [[total-expected-cash-inflows|tổng dòng vào dự kiến]].
+Chương LCR40 có hiệu lực từ 15/12/2019 và được bổ sung FAQ ngày 30/3/2023 (basel_lcr, LCR40, d.703–705). Theo các đề mục của chương, dòng ra chia thành bốn khối: [[lcr-retail-deposits-split-into-stable-and-less-stable-portions-with-run-off-floors|tiền gửi bán lẻ]], [[unsecured-wholesale-funding|vốn bán buôn không có bảo đảm]], [[secured-funding|tài trợ có bảo đảm]] và các yêu cầu bổ sung, bắt đầu bằng [[net-derivative-cash-outflows-receive-a-100-percent-factor-in-the-lcr|dòng ra phái sinh ròng]] và gồm [[committed-credit-and-liquidity-facilities|hạn mức tín dụng và thanh khoản cam kết]], [[other-contingent-funding-obligations|nghĩa vụ tài trợ tiềm tàng khác]] và [[other-contractual-cash-outflows-receive-a-100-percent-factor-while-operating-costs-are-excluded|dòng ra theo hợp đồng khác]]. Tiền gửi có kỳ hạn bán lẻ còn trên 30 ngày được loại khỏi dòng ra theo điều kiện ở trang [[retail-term-deposits-beyond-30-days-leave-lcr-outflows-unless-withdrawable-without-penalty]]. Vế còn lại của mẫu số là [[total-expected-cash-inflows|tổng dòng vào dự kiến]].
 
 TT50 xếp dòng ra trong Phụ lục I, Phần B thành sáu nhóm: tiền gửi bán lẻ, nguồn vốn bán buôn (không bảo đảm và có bảo đảm), dòng ra có yêu cầu bổ sung, cam kết ngoại bảng và các dòng ra theo thỏa thuận khác (tt50_2026_sbv, Phụ lục I, Phần B, mục II–VI, d.1426, d.1470, d.1645, d.1725, d.1795). Mỗi nhóm nhân với hệ số rút tiền của Thông tư; một số khoản, như nghĩa vụ tiềm ẩn phi hợp đồng, do ngân hàng xác định theo dữ liệu lịch sử (tt50_2026_sbv, Phụ lục I, Phần B, mục V khoản 3.2d, d.1791). Quy tắc nền về 30 ngày, nghĩa vụ quá hạn và mốc thời gian nằm ở [[tt50-counts-30-day-outflows-and-puts-overdue-and-undated-obligations-in-the-next-day-bucket]]; điều kiện loại khoản huy động còn hơn 30 ngày ở [[term-funding-with-over-30-days-remaining-leaves-the-outflow-only-when-no-withdrawal-is-possible-within-30-days]].
 

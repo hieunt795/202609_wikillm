@@ -5,6 +5,10 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla]
 sources: [basel_lcr, tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+contrasts: [option-3-additional-level-2a-assets-beyond-the-40-percent-cap-take-a-minimum-20-percent-haircut]
+governs: [high-quality-liquid-assets-hqla, level-2b-assets, level-2a-assets]
+driven_by: [level-1-assets, adjusted-hqla-amounts-unwind-secured-transactions-maturing-within-30-days]
+related: [liquidity-regulation-and-central-bank-operations-arbitrage]
 ---
 
 Kho [[high-quality-liquid-assets-hqla|HQLA]] nhận [[level-1-assets|Level 1]] không giới hạn, nhưng Level 2 chỉ được chiếm tối đa 40% kho và riêng [[level-2b-assets|Level 2B]] tối đa 15% kho, trong đó trần 15% nằm bên trong trần 40% (basel_lcr, LCR30, Definition of HQLA, 30.31, d.214) (basel_lcr, LCR30, Definition of HQLA, 30.33, d.218).
@@ -25,7 +29,7 @@ Ba công thức trên có độ chắc khác nhau. Bản nguồn mất hẳn cô
 
 Trần 40% được tính sau khi đã cắt Level 2B theo trần 15%, vì vậy $A_{15}$ xuất hiện trong $A_{40}$ (basel_lcr, LCR30, Definition of HQLA, 30.35, d.222). Minh hoạ bằng số tự đặt, không lấy từ nguồn và bỏ qua giao dịch cần tháo ngược: với $L_1 = 60$, $L_{2A} = 50$, $L_{2B} = 0$ thì $A_{40} = 50 - 40 = 10$ và kho HQLA là 100, trong đó Level 2 chiếm đúng 40%.
 
-Hai trần này buộc ngân hàng giữ ít nhất 60% kho bằng Level 1. Trang [[liquidity-regulation-and-central-bank-operations-arbitrage]] ghi lại cách ngân hàng tạo thêm Level 1 bằng tiền gửi tại ngân hàng trung ương.
+Hai trần này buộc ngân hàng giữ ít nhất 60% kho bằng Level 1. Ngoại lệ là đồng tiền thiếu Level 1: theo [[option-3-additional-level-2a-assets-beyond-the-40-percent-cap-take-a-minimum-20-percent-haircut|Option 3 của các phương án thanh khoản thay thế]], phần Level 2A vượt trần 40% vẫn được tính, với haircut tối thiểu 20%, còn trần 15% của Level 2B giữ nguyên (basel_lcr, LCR31, Option 3 – Additional use of Level 2 assets with a higher haircut, 31.17, d.475). Trang [[liquidity-regulation-and-central-bank-operations-arbitrage]] ghi lại cách ngân hàng tạo thêm Level 1 bằng tiền gửi tại ngân hàng trung ương.
 
 TT50 ghi công thức này đầy đủ trong Phụ lục I. Giá trị HQLA đủ điều kiện bằng Level 1 cộng Level 2A cộng Level 2B cộng hạn mức, trừ KĐC15% và KĐC40%, trong đó KĐC là ký hiệu của số điều chỉnh của TT50 (tt50_2026_sbv, Phụ lục I, Phần A, mục I khoản 1, d.1141). Với $\hat{L}$ là số điều chỉnh, hai khoản trừ là:
 

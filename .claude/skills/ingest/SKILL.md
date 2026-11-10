@@ -43,6 +43,7 @@ Chờ người dùng xác nhận, bớt hoặc bổ sung. Lượt chạy không 
 - **Tạo trang mới**: ranh giới theo §5, title theo §8, thân bài theo §7. Trang dự tính vượt 1.000/250 từ thì tách trước khi viết (`$H --size <trang>`).
 - **Chú thích** (nguồn dài): mỗi claim kèm `(<source id>, <chương>, <mục>, d.<từ>–<đến>)` ngay sau claim. Nguồn nhiều file ghi `file <tên file>` trong mọi chú thích, không viết "cùng file", mỗi ngoặc một nguồn; `--coverage` đọc đúng dạng này.
 - **Liên kết, làm ngay không hoãn**: với mỗi trang, tìm 1–3 trang liên quan bằng câu hỏi "trang này sẽ cần xuất hiện lại trong ngữ cảnh nào?" (§6). Chèn `[[wikilink]]` trong câu kèm lý do, và cập nhật ngược trang kia để có backlink. Khái niệm chưa có trang → tạo `status: stub` rồi link. Chỉ chèn link vào câu có sẵn thì không nâng `last_updated` của trang đó. Không tìm được trang liên quan → ghi `_inbox.md`.
+- **Gắn loại quan hệ** (§6, sổ sách, không hỏi): với mỗi link vừa viết, ghi trang đích vào field loại tương ứng ở frontmatter của trang chứa link, theo đúng câu chứa link. Câu nói hai quan hệ thì ghi hai field; không rõ thì `related`. Trang có sẵn chỉ được chèn link cũng gắn loại cho link đó, không nâng `last_updated`.
 - **Phép thử tự đủ nghĩa** (§7 luật 6): đọc riêng trang cùng các link của nó, không mở nguồn, vẫn hiểu ý chính và lý do nối với trang khác.
 
 **4. Kiểm và sổ sách.**
@@ -50,13 +51,15 @@ Chờ người dùng xác nhận, bớt hoặc bổ sung. Lượt chạy không 
 ```bash
 $H --coverage <source id>   # nguồn dài
 $H --all
+$H --graph                  # sau khi --all sạch
 ```
 
 - Mỗi mục `--coverage` báo chưa phủ trong chunk vừa làm phải được viết vào trang, hoặc ghi `bỏ qua: <heading> — <lý do>` ở cột *Ghi chú* của state file. Chỉ ghi `bỏ qua:` cho mục người dùng đã duyệt ở bước 2. Còn mục thì chunk ở trạng thái `do`; không cần đánh dấu gì thêm.
 - Thêm trang mới vào mục lục chủ đề của `02_wiki/index.md`, mỗi trang một dòng tóm tắt.
 - `--all` phải sạch: trang mồ côi thì thêm liên kết có lý do thật từ trang liên quan, không vá cho đủ chỉ tiêu.
+- `--graph` in phần cấu trúc thay đổi vượt ngưỡng (link mất, đổi loại, trang vào hoặc ra top, độ mạnh giữa hai nhóm, điểm nối duy nhất) và lưu ảnh chụp. Chép các dòng đó vào tin nhắn kết thúc lượt; link mất ngoài ý muốn thì xử lý trước khi ghi log.
 
-**5. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] ingest | <source id> <chương/cụm>`, tối đa 3 dòng: trang tạo và trang merge, stub mới, phần còn lại của chunk. Giờ lấy bằng `$H --now`.
+**5. Ghi 1 mục vào cuối `log.md`** (§12): `## [<giờ>] ingest | <source id> <chương/cụm>`, tối đa 3 dòng: trang tạo và trang merge, stub mới cùng thay đổi cấu trúc mà `--graph` báo (nếu có), phần còn lại của chunk. Giờ lấy bằng `$H --now`.
 
 ## Sai lầm thường gặp
 

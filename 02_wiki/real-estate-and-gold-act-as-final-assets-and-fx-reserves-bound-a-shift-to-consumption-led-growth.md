@@ -1,0 +1,13 @@
+---
+title: real-estate-and-gold-act-as-final-assets-and-fx-reserves-bound-a-shift-to-consumption-led-growth
+type: concept
+tags: [final-assets, fx-reserves, real-estate, vietnam-financial-system, china]
+sources: [clippings]
+status: draft
+last_updated: 2026-10-12
+reviewed: 2026-10-12
+reviewed_by: model
+related: [domestic-gold-pricing-diverges-from-international-benchmarks-due-to-structural-liquidity-constraints, endogenous-systemic-liquidity-circulation-distorts-accounting-equations-via-balance-sheet-resonance]
+---
+
+Nguồn Clippings dùng khái niệm tài sản cuối (final asset): tài sản ít luân chuyển trên bảng cân đối, dùng để tích lũy và hiếm khi thay đổi trừ khi cần thanh khoản (clippings, Cụm 6, Tài sản cuối và dự trữ ngoại hối, file Kể cả muốn BĐS giảm cũng cần rất nhiều tiền – Lan man.md, d.19). Với cá nhân ở Việt Nam, đó có thể là vàng và bất động sản (clippings, Cụm 6, Tài sản cuối và dự trữ ngoại hối, file Kể cả muốn BĐS giảm cũng cần rất nhiều tiền – Lan man.md, d.21); giá vàng trong nước là chủ đề của trang [[domestic-gold-pricing-diverges-from-international-benchmarks-due-to-structural-liquidity-constraints]]. Vì là tài sản cuối, bất động sản hưởng lợi sau cùng; muốn giá của nó không tăng mà tổng lượng tiền vẫn tăng thì các tài sản khác phải tăng (clippings, Cụm 6, Tài sản cuối và dự trữ ngoại hối, file Kể cả muốn BĐS giảm cũng cần rất nhiều tiền – Lan man.md, d.35). Nguồn nêu Trung Quốc chọn tiêu dùng và hạ tầng, việc đòi rất nhiều tiền và chính sách tài khóa rất lớn (clippings, Cụm 6, Tài sản cuối và dự trữ ngoại hối, file Kể cả muốn BĐS giảm cũng cần rất nhiều tiền – Lan man.md, d.37–39). Theo nguồn, giới hạn của những nước như Trung Quốc và Việt Nam nằm ở dự trữ ngoại hối và tỷ giá hơn là ở các con số như nợ công trên GDP (clippings, Cụm 6, Tài sản cuối và dự trữ ngoại hối, file Kể cả muốn BĐS giảm cũng cần rất nhiều tiền – Lan man.md, d.43). Tỷ lệ GDP trên dự trữ ngoại hối càng lớn thì phần dự trữ hỗ trợ cho tăng trưởng càng thấp (clippings, Cụm 6, Tài sản cuối và dự trữ ngoại hối, file Kể cả muốn BĐS giảm cũng cần rất nhiều tiền – Lan man.md, d.57). Dự trữ của Việt Nam tăng từ khoảng 30 tỷ USD lên đỉnh gần 120 tỷ USD trong giai đoạn 2012–2021, rồi giảm trong 2022–2025 xuống khoảng 86–87 tỷ USD theo ước lượng của nguồn (clippings, Cụm 6, Tài sản cuối và dự trữ ngoại hối, file Kể cả muốn BĐS giảm cũng cần rất nhiều tiền – Lan man.md, d.59). Cách hệ thống ngân hàng tự tạo nguồn khi thiếu chi tiêu tài khóa, bối cảnh của lập luận này, nằm ở trang [[endogenous-systemic-liquidity-circulation-distorts-accounting-equations-via-balance-sheet-resonance]].

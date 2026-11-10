@@ -4,7 +4,7 @@ type: concept
 tags: [monetary, central-banking, monetary-policy-implementation, collateral, adverse-selection]
 sources: [bindseil_monetary_policy]
 status: stable
-last_updated: 2026-09-21
+last_updated: 2026-10-12
 ---
 
 Hiện tượng lựa chọn đối nghịch kép—dạng mở rộng trong tín dụng NHTW từ nguyên lý [[adverse-selection|lựa chọn đối nghịch]] vi mô—và sự phân tách các rổ tài sản bảo đảm (collateral pool segregation) là những thách thức chiến lược hàng đầu trong việc quản trị rủi ro bảng cân đối của ngân hàng trung ương (bindseil_monetary_policy, Ch.9, §9.5, d.1815–1855).
@@ -18,7 +18,7 @@ Hiện tượng lựa chọn đối nghịch kép—dạng mở rộng trong tí
 4. *Phân tách các rổ tài sản bảo đảm (Collateral pool segregation)*: Thiết lập các ranh giới ngăn cách giữa các loại nghiệp vụ khác nhau của NHTW (d.1825).
 
 **Thực tiễn phân tách rổ tài sản tại các NHTW lớn**:
-- *Cục Dự trữ Liên bang Mỹ (Fed)*: Phân tách tuyệt đối giữa rổ tài sản của [[open-market-operations|OMO]] và [[discount-window|cửa sổ chiết khấu]] (Primary Credit). Rổ OMO cực kỳ khắt khe, trước 2008 chỉ chấp nhận trái phiếu kho bạc Mỹ, trái phiếu cơ quan chính phủ (agency debt) và MBS được chính phủ bảo lãnh. Ngược lại, cửa sổ chiết khấu chấp nhận danh mục rất rộng, trong đó các khoản vay doanh nghiệp (credit claims) chiếm tới 73% lượng tài sản được cầm cố. Tháng 3/2008, Fed lập ra cơ chế Term Auction Facility (TAF) tạm thời gộp hai rổ tài sản này để xoá bỏ định kiến (stigma) và giải toả khan hiếm tài sản thế chấp (d.1827).
+- *Cục Dự trữ Liên bang Mỹ (Fed)*: Phân tách tuyệt đối giữa rổ tài sản của [[open-market-operations|OMO]] và [[discount-window|cửa sổ chiết khấu]] (Primary Credit). Rổ OMO cực kỳ khắt khe, trước 2008 chỉ chấp nhận trái phiếu kho bạc Mỹ, trái phiếu cơ quan chính phủ (agency debt) và MBS được chính phủ bảo lãnh. Ngược lại, cửa sổ chiết khấu chấp nhận danh mục rất rộng, trong đó các khoản vay doanh nghiệp (credit claims) chiếm tới 73% lượng tài sản được cầm cố. Tháng 3/2008, Fed lập ra cơ chế Term Auction Facility (TAF) tạm thời gộp hai rổ tài sản này để xoá bỏ định kiến (stigma) và giải toả khan hiếm tài sản thế chấp (d.1827). Mốc tháng 3/2008 là theo Ch.5 của nguồn; ở Ch.17 cùng nguồn trích thông cáo của ECB về hai phiên cấp USD gắn với Term Auction Facility, nhận thầu ngày 17 và 20 tháng 12/2007 (bindseil_monetary_policy, Ch.17, §17.2, d.3927).
 - *Ngân hàng Trung ương Anh (BoE)*: Phân tầng rổ tài sản theo 5 cấp bậc tương ứng với mức độ thanh khoản: Cấp A (trái phiếu chính phủ) dùng cho OMO ngắn hạn; Cấp B (trái phiếu doanh nghiệp, mortgage bonds) cho OMO dài hạn; Cấp C và D (khoản vay chứng khoán hoá kém thanh khoản) cho tiện ích cửa sổ chiết khấu dưới hình thức hoán đổi tài sản (asset swap) lấy trái phiếu chính phủ gilts để đảm bảo trung tính thanh khoản (d.1829).
 - *Eurosystem*: Duy trì một khung rổ tài sản gộp thống nhất (single pooled framework) cho mọi nghiệp vụ. Dữ liệu thực tế cuối năm 2010 chứng minh mối quan hệ nghịch đảo rõ rệt giữa tính thanh khoản và tỷ lệ sử dụng thực tế (usage ratio): trái phiếu chính phủ chỉ có tỷ lệ sử dụng 6% so với khối lượng đủ điều kiện, trong khi chứng khoán bảo đảm bằng tài sản (ABS) có tỷ lệ sử dụng lên tới 38% (Bảng 9.2, d.1837–1846).
 

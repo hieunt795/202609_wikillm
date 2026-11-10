@@ -1139,6 +1139,210 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Stub mới: alternative-liquidity-approaches; ⚠️ Conflict trên level-2a-assets (Basel AA− và Bindseil AA); công thức 30.38 mất trong nguồn, dựng lại từ 30.35–30.39 và ghi rõ trên trang
 - Còn lại: LCR30 các mục 30.26, 30.28, 30.29, 30.47 (chunk `do`); LCR40 cụm A còn 9 mục; LCR31, LCR40 cụm B, LCR90, LCR99 `chua`
 
+## [2026-10-12:10-35-59] schema | Sắp lại `index.md` theo lĩnh vực và nhóm chủ đề
+- 111 mục theo nguồn/chương thành 9 lĩnh vực, 62 nhóm; 828 dòng trang giữ nguyên nội dung, 25 trang chuyển nhóm riêng; `--all`: 826 trang, 0 vấn đề
+- `_inbox.md` thêm 1 mục "wiki thiếu": 18 khái niệm ALM chưa có trang; lý do ở `decisions.md` [2026-10-12]
+
+## [2026-10-12:11-33-38] schema | Quan hệ có loại ở frontmatter; lệnh đồ thị `--graph`, `--neighbors`, `--relations`, `--map`
+- Sửa `00_schema.md` §1, §2, §3, §6, §7; hook thêm kiểm field quan hệ và `wiki_graph.py`; sửa skill ingest, review-node, lint, research, rule `wiki-pages`, `CLAUDE.md`
+- Gắn loại 152 link trên 30 trang nhóm "Thanh khoản và nguồn vốn" (chỉ frontmatter); ảnh chụp đầu tiên `03_state/_graph_snapshot.tsv`: 826 trang, 4.030 link, 445 mạnh, 0 cặp lệch
+- Còn lại: 3.878 link chưa có loại; lô B (skill query, bộ câu hỏi đo), lô C (tổng quan nhóm); lý do ở `decisions.md` [2026-10-12]
+
+## [2026-10-12:11-46-10] schema | Skill `query` dùng `--neighbors`; evals thêm 6 câu, đo 15 lượt
+- `query/SKILL.md` bước 3: láng giềng theo loại quan hệ thay cho outlink cộng `--backlinks`; nhánh câu hỏi cấu trúc và câu hỏi toàn cảnh
+- Đo: 6 câu mới, skill mới 49/49 tiêu chí, skill cũ 48/49; bộ tiêu chí chưa phân biệt được hai bản; lý do và giới hạn ở `decisions.md` [2026-10-12]
+- `_inbox.md` thêm 1 mục (lệch ngày TAF giữa hai trang); còn lại: lô C (tổng quan nhóm), viết lại tiêu chí evals cho khó hơn
+
+## [2026-10-12:13-41-22] research | thanh khoản và nguồn vốn — tổng quan nhóm
+- Deep: 12 trang trục của nhóm 32 trang, không enrich; 0 claim, 0 link, 0 conflict, 1 analysis (N1 đã duyệt): the-lcr-buffers-liquidity-risk-for-30-days-while-ratio-compliance-leaves-the-funding-mismatch-in-place
+- `--graph`: +1 trang, +40 link (gắn `related`); độ mạnh nhóm "Chính sách tiền tệ trong khủng hoảng" ↔ "Thanh khoản và nguồn vốn" 29 → 35; chặn: basel_lcr LCR40, LCR31
+- Báo cáo: Claude outputs/research-2026-10-12-liquidity-and-funding-overview.md
+
+## [2026-10-12:13-46-26] research | IRRBB — tổng quan nhóm
+- Deep: 16 trang của nhóm (đoạn đầu), không enrich; 0 claim, 0 link, 0 conflict, 1 analysis (N1 đã duyệt): irrbb-measurement-pairs-economic-value-and-earnings-views-over-gap-basis-and-option-risk
+- `--graph`: cộng dồn với lượt trước chưa commit +2 trang, +62 link, không có dòng vượt ngưỡng mới; 14/16 trang của nhóm chưa review
+- Báo cáo: Claude outputs/research-2026-10-12-irrbb-overview.md
+
+## [2026-10-12:13-50-37] review | 5 trang nhóm IRRBB (lượt 1/3)
+- Đã sửa và đặt reviewed cả 5: dự báo NII (bỏ "bắt buộc", sửa câu margin-beta), khe hở thời lượng (chú thích d.970 thành d.969, bỏ "mất cân đối trầm trọng"), EVE ("thường phân kỳ đáng kể" thành "có thể khác", bỏ "phi rủi ro"), gap risk (bỏ câu kỹ thuật phòng hộ không có nguồn), option risk (10 chỗ nói quá: "chắc chắn", "khổng lồ", động cơ của trần 5 năm)
+- Gắn loại 35 link của 5 trang; `--graph`: không có dòng vượt ngưỡng; 0 cặp lệch
+- Còn lại: 9 trang IRRBB chưa review; vài câu dẫn link ở cuối trang NII và EVE chưa truy tới dòng nguồn
+
+## [2026-10-12:13-56-05] review | 9 trang nhóm IRRBB (lượt 2 và 3 gộp theo yêu cầu người dùng) + 3 câu của lượt 1
+- Đã sửa và đặt reviewed cả 9: repricing gap, giả định bảng cân đối, earning gap, ΔMV ngoài chân trời NII, key rate duration, receiver swap, CSRBB, basis risk, giả định lãi suất; lỗi chung là tính từ mạnh, "bắt buộc", ví dụ và câu kết không có trong nguồn, 3 chú thích trỏ dòng trống
+- Lượt 1: thêm nguồn cho câu SOT trên NII (d.1015) và bảng ví dụ khe hở thời lượng (d.896–904); bỏ "sốc song song và phi song song" ở trang EVE vì không tìm thấy trong nguồn
+- Gắn loại 37 link; `--graph`: 3 link bỏ có chủ ý (giả định bảng cân đối → SOT, → EVE/earnings; CSRBB → liquidity-risk), 0 cặp lệch; cả 16 trang của nhóm đã review
+
+## [2026-10-12:14-04-52] schema | miễn gắn loại quan hệ cho trang tổng quan nhóm; đổi title tổng quan thanh khoản
+- §6 thêm luật miễn; `--relations` và bảng nợ không tính link đi ra từ trang tổng quan nhóm; skill research thêm một câu
+- Đổi tên trang thành bank-liquidity-rules-pair-a-stressed-30-day-hqla-buffer-with-ratio-limits-on-funding-structure; bỏ field `related` trên hai trang tổng quan (60 link)
+- `--all` 828 trang, 0 vấn đề; `--relations` 227/4.030, 0 cặp lệch; `--graph` báo 21 "ĐỔI LOẠI: related => (bỏ loại)" ở trang IRRBB và 40 "LINK MẤT" ở trang thanh khoản (đổi tên trang hiện ra như mất link)
+
+## [2026-10-12:14-09-21] review | 5 trang nhóm Tiền gửi và mô hình hành vi (lượt 1/2)
+- Đã sửa và đặt reviewed cả 5: non-maturity products, embedded behavioral options, replicating portfolios, rolling portfolios, replicating portfolio calibration
+- Claim bỏ vì không có trong nguồn: Jarrow–Van Deventer "khởi xướng", "cấm bán khống", ví dụ EURIBOR 1M + swap 5Y/10Y, "đường biên Markowitz", các câu kết về tác động; duration 2,29 thay bằng 2,17 tính lại vì dòng công thức nguồn không giải mã được (d.1867, d.1871)
+- Gắn loại 27 link; `--all` 828 trang, 0 vấn đề; `--graph` không báo link mất ở 5 trang này
+
+## [2026-10-12:14-12-53] review | 5 trang nhóm Tiền gửi và mô hình hành vi (lượt 2/2)
+- Đã sửa và đặt reviewed 4: dynamic replication, sticky deposit rates/deposit beta, behavioral modeling TT1, phân biệt TT1–TT2; trang TT1–TT2 viết lại gần hết vì 3 chú thích trỏ tới file không nói điều trang ghi (Chi phí vốn VND, DTTT thay thế TT22, LCR khi khủng hoảng)
+- Giữ lại không đặt reviewed: tt1-deposit-rate-stickiness — claim đã sửa theo nguồn nhưng title nói "deposit rate stickiness" trong khi nguồn đặt điểm nghẽn ở hấp thụ tín dụng ngắn hạn; đã ghi `_inbox.md`
+- Gắn loại 24 link; `--graph`: 3 link bỏ có chủ ý (TT1–TT2 → absence-of-money…, → endogenous-systemic-liquidity…; tt1-stickiness → multiple-balance-sheet-mismatches); `--all` 828 trang, 0 vấn đề
+
+## [2026-10-12:14-14-53] research | Tiền gửi và mô hình hành vi — tổng quan nhóm (lô C, 3/6)
+- Deep: 11 trang của nhóm, không enrich; 0 claim, 0 link, 0 conflict, 1 analysis (N1 đã duyệt): non-maturity-deposit-modelling-runs-from-behavioural-options-through-replicating-portfolios-to-unstable-deposit-betas
+- Sổ sách: dòng đầu nhóm trong index.md, backlink cuối trang non-maturity products; `--all` 829 trang, 0 vấn đề; `--graph`: +1 trang, +17 link, liquidity-risk là điểm nối duy nhất giữa nhóm này và nhóm Thanh khoản
+- Báo cáo: không xuất file riêng; nội dung proposal nằm trong hội thoại
+
+## [2026-10-12:15-36-02] review | 4 trang nhóm Nền tảng ALM và bảng cân đối (lượt 1/4, nguồn Clippings)
+- Đã sửa và đặt reviewed cả 4: cash-flow balancing, maturity balancing, banks rely on short-term liabilities, multiple balance-sheet mismatches
+- Claim bỏ vì không có trong nguồn: "quy luật số lớn", "niềm tin sụp đổ" (trang lấy ngắn nuôi dài); mismatch tiền tệ qua FX swap và hệ quả lên giá vàng (trang multi-mismatch, bốn lớp sửa theo nguồn: thanh khoản, duration, định giá lại, giá)
+- Gắn loại 17 link; `--graph`: 1 link bỏ có chủ ý (multi-mismatch → domestic-gold-pricing…); `--all` 829 trang, 0 vấn đề
+
+## [2026-10-12:15-38-37] review | 5 trang nhóm Nền tảng ALM và bảng cân đối (lượt 2/4, nguồn Tata Ch.1–3)
+- Đã sửa và đặt reviewed cả 5: economic value vs earnings, on-balance-sheet hedging, bank-specific ALM, NII planning, behavioral ALM
+- Claim bỏ vì không có trong nguồn: "250 ngân hàng lớn nhất Hoa Kỳ", hai "rào cản" như nguyên nhân của phòng hộ nội bảng, "8 câu hỏi chiến lược", số hiệu EBA/GL/2022/14 §38, "nghịch lý miễn dịch kép" như tên gọi của nguồn
+- Gắn loại 30 link; `--graph`: 1 link bỏ có chủ ý (economic value vs earnings → alm-balance-sheet-balancing…); `--all` 829 trang, 0 vấn đề
+
+## [2026-10-12:15-40-40] review | 5 trang nhóm Nền tảng ALM và bảng cân đối (lượt 3/4, nguồn Tata Ch.3 và Ch.6)
+- Đã sửa và đặt reviewed cả 5: holistic ALM, sàn 0% dưới NIRP, coupon/indicator floor, rapid rate tightening, FinTech
+- Claim bỏ vì không có trong nguồn: lợi suất AFS/FVOCI ăn mòn Tier 1 và "sụp đổ dây chuyền" (rapid tightening); "frictionless account switching", "rút ngắn kỳ hạn hành vi, nâng deposit beta" (FinTech, cùng dòng "Xem thêm"); "cảnh báo bị phớt lờ"; "siêu lợi nhuận" (floor)
+- Gắn loại 30 link; `--graph`: 1 link bỏ có chủ ý (FinTech → silicon-valley-bank-collapse…); `--all` 829 trang, 0 vấn đề
+
+## [2026-10-12:15-41-56] review | 5 trang nhóm Nền tảng ALM và bảng cân đối (lượt 4/4, nguồn Tata Ch.6)
+- Đã sửa và đặt reviewed cả 5: tokenized deposits, Deep ALM, model governance cho AI, climate risk, granular segmentation; bỏ bốn dòng "Xem thêm"
+- Claim bỏ vì không có trong nguồn: "algorithmic deposit run", CASPs và crypto bonds; mô tả chi tiết Deep Hedging/Deep Treasury; diễn giải riêng cho từng yếu tố của Soulellis; "Climate FTP add-on" như cơ chế đã có (nguồn chỉ nói FTP lý tưởng nên phạt); tên "SupTech"
+- Gắn loại 20 link; `--graph`: 1 link bỏ có chủ ý (Deep ALM → net-interest-income-planning…); cả 20 trang của nhóm đã review; `--all` 829 trang, 0 vấn đề
+
+## [2026-10-12:15-43-25] research | Nền tảng ALM và bảng cân đối — tổng quan nhóm (lô C, 4/6)
+- Deep: 20 trang của nhóm, không enrich; 0 claim, 0 link, 0 conflict, 1 analysis (N1 đã duyệt): alm-foundations-run-from-balance-sheet-balancing-through-eve-and-nii-measurement-to-bank-specific-and-technology-driven-practice
+- Sổ sách: dòng đầu nhóm trong index.md, backlink cuối trang economic value vs earnings; `--all` 830 trang, 0 vấn đề; `--graph`: +1 trang, +25 link, không có thay đổi hạng vượt ngưỡng
+- Báo cáo: không xuất file riêng; nội dung proposal nằm trong hội thoại
+
+## [2026-10-12:15-45-50] review | 5 trang nhóm Quản trị, FTP và quy định giám sát (lượt 1/3)
+- Đã sửa và đặt reviewed cả 5: FTP, matched maturity FTP, đường cong FTP hai thành phần, FTP điều hướng kinh doanh, chi phí LCR/NSFR trong FTP
+- Claim bỏ vì không có trong nguồn: FTP "triệt tiêu cú sốc lãi suất ngắn hạn", "100% quy mô danh nghĩa", "khủng hoảng thiếu hụt khi thị trường đóng băng", Basel III/CRD như nguồn gốc nêu tên, "thưởng điểm khuyến khích vốn", Initial/Variation Margin, câu kết về hệ quả khi FTP không định giá quy định
+- Gắn loại 27 link; không bỏ link nào; `--all` 830 trang, 0 vấn đề
+
+## [2026-10-12:15-55-01] review | 4 trang nhóm Quản trị, FTP và quy định giám sát (lượt 2/3)
+- Đã sửa và đặt reviewed cả 4: FTP so với FVA, phụ phí thanh khoản dự phòng và quyền chọn, khung quy định IRRBB nhiều tầng, EBA standardized approach
+- Claim sửa hoặc bỏ: ΔEVE tính ngược chiều (nguồn: sốc trừ cơ sở); ủy quyền SA là Điều 98 theo nguồn, không phải 84(5); NCA "thanh tra, cưỡng chế", ITS, swaption/caps, Black-Scholes, số hiệu chỉ thị không có ở dòng trích, câu kết về SVB
+- Gắn loại 20 link; bỏ 2 link không có nguồn trên trang khung quy định; `--all` 830 trang, 0 vấn đề, 0 cặp lệch
+
+## [2026-10-12:15-56-36] review | 4 trang nhóm Quản trị, FTP và quy định giám sát (lượt 3/3)
+- Đã sửa và đặt reviewed cả 4: S-SA, sàn lãi suất tuyến tính, bài toán tuân thủ đồng thời, năm mẫu báo cáo theo (EU) 2024/855
+- Claim sửa hoặc bỏ: sàn tuyến tính gắn với SOT EVE chứ không phải SA; mục đích "ngăn lãi suất âm sâu phi thực tế"; NCA "tước quyền" S-SA; diễn giải bốn điểm đơn giản hóa của S-SA; "tài sản cố định càng dài thì tỷ trọng càng hẹp"; các câu kết không có nguồn
+- Gắn loại 10 link; bỏ 9 link nằm trong câu không có nguồn; `--all` 830 trang, 0 vấn đề, 0 cặp lệch; nhóm này đã review đủ 13/13
+
+## [2026-10-12:15-58-52] review | 5 trang nhóm Case: Silicon Valley Bank (lượt 1/2)
+- Đã sửa và đặt reviewed cả 5: vụ sụp đổ SVB, kế toán HTM, gỡ hoán đổi lãi suất, duration gap 3 năm, arbitrage quy định qua giả định duration tiền gửi
+- Claim sửa hoặc bỏ: startup "rút tiền để duy trì chi phí hoạt động" (nguồn nêu hai yếu tố lãi suất ngược chiều nhân quả), lan tin "qua mạng xã hội", "tỷ lệ an toàn vốn 5,7%" (nguồn: vốn chủ trên tổng tài sản), MBS 30 năm gán cho mục 4.1, các câu kết về nguyên nhân hàng đầu
+- Gắn loại 23 link; bỏ 4 link nằm trong câu không có nguồn; `--all` 830 trang, 0 vấn đề, 0 cặp lệch
+
+## [2026-10-12:15-59-19] review | 1 trang nhóm Case: Silicon Valley Bank (lượt 2/2)
+- Đã sửa và đặt reviewed: bài học quản trị và giám sát từ SVB (bốn bài học theo mục 4.4 của nguồn)
+- Claim sửa hoặc bỏ: "bay mù" gán cho cả bộ máy kiểm soát, "chế tài bắt buộc", bài học 3 về stress test tiền gửi không bảo hiểm, Drechsler "sức mạnh định giá tiền gửi", câu kết về tái hiệu chuẩn SOT
+- Gắn loại 5 link; bỏ 2 link không có nguồn; `--all` 830 trang, 0 vấn đề; nhóm này đã review đủ 6/6
+
+## [2026-10-12:16-01-52] research | Quản trị, FTP và quy định giám sát — deep read 13 trang, trang tổng quan nhóm
+- Deep: đọc 13 trang đã review; 0 claim mới, 1 analysis (N1) đã duyệt: bank-steering-rules-run-from-internal-funds-transfer-pricing-to-eu-irrbb-measurement-outlier-tests-and-reporting
+- Thêm dòng đầu nhóm trong index, 1 câu backlink trên trang FTP chính; `--all` 832 trang, 0 vấn đề
+- Không xuất báo cáo riêng vào Claude outputs (lệch skill); proposal nằm trong hội thoại
+
+## [2026-10-12:16-01-53] research | Case: Silicon Valley Bank — deep read 6 trang, trang tổng quan nhóm
+- Deep: đọc 6 trang đã review; 0 claim mới, 1 analysis (N1) đã duyệt: the-svb-case-links-hidden-htm-losses-removed-hedges-and-a-three-year-duration-gap-to-governance-and-supervisory-failure
+- Thêm dòng đầu nhóm trong index, 1 câu backlink trên trang SVB chính; `--graph`: trang tổng quan FTP là điểm nối duy nhất giữa hai nhóm, SOT vào top 25
+- Không xuất báo cáo riêng vào Claude outputs (lệch skill); lô C đủ 6/6 trang tổng quan nhóm ngân hàng
+
+## [2026-10-12:16-06-49] review | 3 trang dọn dẹp sau lô C
+- Đã sửa và đặt reviewed cả 3: bốn bước cân đối ALM (trang trục), hành lang lãi suất SBV so với PBOC, định giá nợ ngoại tệ offshore
+- Claim sửa hoặc bỏ: LDR và trần vốn ngắn hạn gán cho bài Cân tỷ lệ, "cân hành vi gắn với FTP", MLF là "trần hành lang bán lẻ", diễn giải năm cấu phần lợi suất offshore, Indonesia 5,7% (nguồn 5,6–5,9%), biên offshore "10–11%" (nguồn: VHM 10% lên 11%)
+- Gắn loại 14 link; bỏ 5 link không có nguồn, thêm 2 link điều hướng để tránh mồ côi; `--all` 832 trang, 0 vấn đề
+
+## [2026-10-12:16-08-11] lint | sổ sách index sau lô C
+- Viết lại dòng mô tả `index.md` của 51 trang đã review trong lô C cho khớp nội dung hiện tại (không đổi nhóm, không đổi trang)
+- Bỏ 2 dòng trùng: `real-interest-rate` (giữ ở nhóm đầu, gộp mô tả) và `yield-curve` (giữ dòng mô tả đầy đủ hơn)
+- Không chạy `--lint` trọn bộ; `--all` 832 trang, 0 vấn đề
+
+## [2026-10-12:16-10-02] review | 1 trang: thanh khoản nội sinh và cộng hưởng cân đối
+- Đã sửa theo bốn file Clippings nhưng giữ lại, chưa đặt reviewed: trang chứa thêm ý tài sản cuối và dự trữ ngoại hối mà title không phủ; đã ghi `_inbox.md` đề nghị tách trang
+- Claim sửa hoặc bỏ: "loại bỏ hoàn toàn căng thẳng thanh khoản" ở Mỹ, cơ chế ngược "đe dọa suy giảm dự trữ ngoại hối" (nguồn: TT2 cao để giữ tỷ giá, TT1 thấp), "giá tài sản cuối tăng vọt và phân kỳ khỏi chuẩn quốc tế", "tê liệt dư địa can thiệp"
+- Gắn loại 5 link, thêm 2 link (trang TT1–TT2, trang hành lang lãi suất); `--all` 832 trang, 0 vấn đề
+
+## [2026-10-12:16-11-31] lint | 832 trang
+- Mục theo mã: K 3, C 0, O 0, S 4 (cùng 25 stub), L 3, R 0, G 5, I 9; `--verify-sources` exit 2 (18 lệch hoặc thiếu, 11 chưa kê)
+- Chưa sửa mã nào, chờ người dùng duyệt
+- Báo cáo: Claude outputs/lint-2026-10-12-832.md
+
+## [2026-10-12:16-15-30] lint | 838 trang, sửa các mã đã duyệt
+- Đã sửa: K1 (level-2a-assets theo AA− của Basel, bỏ dấu Conflict), S1–S4 (4 stub: NSFR, Basel III, maturity transformation, trading book, 8 link), L1 (3 trang nhóm thanh khoản link tới LCR), I5 (tách repo-specialness thành 3 trang, giữ nguyên claim)
+- Chưa sửa: K2, K3 (cùng nguồn IMF, không có nguồn Basel để ưu tiên, chờ người dùng), L2, G1–G5, I1–I4, I6–I9
+- Báo cáo: Claude outputs/lint-2026-10-12-832.md (đã thêm mục "Đã sửa"); `--all` 838 trang, 0 vấn đề, 0 cặp lệch
+
+## [2026-10-12:16-22-14] lint | 839 trang, sửa đợt 2 các mã đã duyệt
+- Đã sửa: K2, K3 (bỏ hai đoạn Conflict trên trang Ba Lan theo quyết định của người dùng), L2, G2 (bỏ 17 dòng file không còn trên đĩa khỏi bản kê), G3 (file Clippings chỉ đổi ký tự xuống dòng, cập nhật byte và checksum), I1–I4, I7, I8 (đổi title trang tt1-stickiness), I9 (tách trang nội sinh, thêm 1 trang)
+- G1 bỏ qua theo người dùng (11 file chưa kê, đăng ký khi ingest); G4, G5 là việc của `/ingest`, chưa làm; I6 giữ một dòng rút gọn trong `_inbox.md`
+- `--all` 839 trang, 0 vấn đề, 0 cặp lệch; `--verify-sources` 203 file, 0 lệch hoặc thiếu; báo cáo: Claude outputs/lint-2026-10-12-832.md
+
+## [2026-10-12:16-30-10] ingest | basel_lcr LCR40 cụm A — tiền gửi bán lẻ và vốn bán buôn không bảo đảm (40.5–40.44)
+- Tạo 10 trang: phân loại tiền gửi bán lẻ, tiền gửi ổn định 5%/3%, tiền gửi có kỳ hạn bán lẻ, unsecured-wholesale-funding, doanh nghiệp nhỏ, operational-deposits, quan hệ bù trừ/lưu ký/quản lý tiền mặt, mạng lưới ngân hàng hợp tác xã, nhóm 40%/20%, nhóm 100%; merge link vào total-expected-cash-outflows và stub deposit-insurance
+- Không tạo stub; `--graph`: liquidity-coverage-ratio-lcr vào top 25 (hạng 27 lên 18), depreciation ra; `--all` 849 trang, 0 vấn đề
+- Chunk còn dở (41%): Secured funding run-off (d.913–952) và Additional requirements (d.953–1185); chú thích d.758 của nguồn bị cắt giữa câu
+
+## [2026-10-12:16-45-16] ingest | basel_lcr LCR40 cụm A — tài trợ có bảo đảm và yêu cầu bổ sung 40.49–40.58
+- Tạo 14 trang: secured-funding và 4 trang con (giả định quay vòng, bảng tỷ lệ, vị thế bán khống của khách hàng, collateral swap); dòng ra phái sinh ròng và 2 giả định (quyền chọn, cheapest to deliver); look-back 24 tháng; downgrade trigger; add-on 20%; ba dòng ra 100% về tài sản bảo đảm; ABS và covered bond tự phát hành; nhìn xuyên SPE. Merge link vào 9 trang có sẵn
+- Không tạo stub; `--graph`: thêm 14 trang, 109 link, không trang nào vào hay ra top 25; `--all` 863 trang, 0 vấn đề
+- `--coverage` báo chunk đã `phu` vì tính theo heading, nhưng mục Additional requirements còn đoạn 40.59–40.74 (d.1072–1185) chưa ingest; câu trả lời FAQ2 của 40.47 (d.940) bị cắt trong nguồn
+
+## [2026-10-12:16-51-19] ingest | basel_lcr LCR40 cụm A — hạn mức cam kết, nghĩa vụ tiềm tàng, dòng ra hợp đồng khác (40.59–40.74)
+- Tạo 12 trang: committed-credit-and-liquidity-facilities và 3 trang con (ranh giới hạn mức thanh khoản, bảng tỷ lệ rút, trừ HQLA bảo đảm); nghĩa vụ cho vay theo hợp đồng; other-contingent-funding-obligations và 3 trang con (ngoài hợp đồng, tài trợ thương mại, bán khống phủ bằng tài sản khách hàng khác); dòng ra hợp đồng khác và 2 trang FAQ (giao dịch kỳ hạn, chứng khoán cho mượn không bảo đảm). Merge link vào 7 trang có sẵn
+- Không tạo stub; `--graph`: high-quality-liquid-assets-hqla (26 lên 16) và total-expected-cash-outflows (59 lên 24) vào top 25, gdp-deflator và gross-investment ra; `--all` 875 trang, 0 vấn đề
+- Cụm A hết nội dung (`--coverage` phủ, 88%); các FAQ dẫn sang dòng vào 40.93 chờ cụm B (d.1186–1324); trang tổng quan thanh khoản chưa cập nhật theo 36 trang mới
+
+## [2026-10-12:16-56-54] ingest | basel_lcr LCR40 cụm B — dòng tiền vào (40.75–40.93)
+- Tạo 11 trang: nguyên tắc dòng vào theo hợp đồng, trần 75%, bảng dòng vào của cho vay có bảo đảm, cho vay ký quỹ, tài sản bảo đảm dùng lại để phủ bán khống, vị thế bán khống của ngân hàng, nghĩa vụ trả lại tài sản bảo đảm, hạn mức ở tổ chức khác 0%, dòng vào khác theo đối tác, chứng khoán đáo hạn, tiền gửi vận hành đặt ở tổ chức khác. Merge claim 40.91–40.93 vào total-expected-cash-inflows; merge link và chú thích 40.93 vào 11 trang có sẵn
+- Không tạo stub; `--graph`: thêm 11 trang, không trang nào vào hay ra top 25, không mất link; `--all` 886 trang, 0 vấn đề
+- LCR40 hết nội dung (cụm A 88%, cụm B 91% theo `--coverage`); `basel_lcr` còn LCR31, LCR90, LCR99 và mục Shari'ah của LCR30; trang tổng quan thanh khoản chưa cập nhật theo 47 trang mới
+
+## [2026-10-13:10-35-00] lint | 886 trang, phạm vi 4 lượt ingest LCR40
+- Mục theo mã: K 0, C 2, O 1, S 8, L 12, R 1, G 4, I 1; `--all` 0 vấn đề; `--verify-sources` exit 2 (0 lệch hoặc thiếu, 11 chưa kê)
+- Chưa sửa mã nào, chờ người dùng duyệt
+- Báo cáo: Claude outputs/lint-2026-10-13-886.md
+
+## [2026-10-13:10-46-30] lint | 894 trang, sửa các mã đã duyệt
+- Đã sửa: S1–S8 (8 stub: run-off rate, short selling, PSE, MDB, MMF, correspondent banking, prime brokerage, ABCP; 25 link), O1 (tách nhóm index thành LCR dòng tiền ra 36 trang và dòng tiền vào 11 trang), L1–L7, L9–L12, I1
+- Bỏ: L8 phía trang undrawn-facilities và L9 phía trang lcr-retail-deposits (không viết được lý do từ nội dung trang); R1 chuyển `/research`; C1, C2, G1–G4 chưa duyệt
+- `--all` 894 trang, 0 vấn đề, 0 cặp lệch; `--graph` +8 trang, +47 link, 766/4.419 link có loại; báo cáo: Claude outputs/lint-2026-10-13-886.md (mục "Đã sửa")
+
+## [2026-10-13:10-55-24] lint | 894 trang, sửa đợt 2: C1, C2
+- C1: thêm chú thích vị trí `basel_lcr` cho sáu câu link trên sáu trang có sẵn (40.8, 40.46, 40.51, 40.57, 40.81), đã đối chiếu với `LCR.md`; thêm `basel_lcr` vào `sources` của năm trang; không nâng `last_updated`
+- C2: không merge tiêu chí Basel vào stub `deposit-insurance` vì sẽ trùng trang stable-retail-deposits; stub giữ câu link có chú thích, nội dung thật chờ `/ingest` nguồn cargill
+- Nhóm G bỏ qua theo người dùng; `--all` 894 trang, 0 vấn đề; `--graph` không đổi
+
+## [2026-10-13:11-09-27] review | 4 trang LCR40 có bảng tỷ lệ
+- Đạt, không sửa claim: secured-funding-run-off-rates (sửa chú thích câu mở thành 40.46 và 40.48), other-inflows-assume-continued-lending
+- Đã sửa: secured-lending-inflow-rates (câu "cùng tỷ lệ ở hai bảng" bỏ sót dòng cho vay ký quỹ và dòng 25% đối tác công); committed-facility-drawdown-rates (40.63 thiếu dẫn chiếu 40.64)
+- Cả bốn đặt `reviewed: 2026-10-13`, `reviewed_by: model`; không trang nào bị giữ lại; `--all` 0 vấn đề, `--graph` không đổi
+
+## [2026-10-13:11-18-03] review | 43 trang LCR40 còn lại
+- Đạt 42 trang, đặt `reviewed: 2026-10-13`, `reviewed_by: model`; trong đó sửa claim hai trang: lcr-retail-deposits-split (FAQ kim loại quý thiếu nhánh thứ hai), a-liquidity-facility (tỷ lệ rút hạn mức thanh khoản không cao hơn ở mọi loại đối tác)
+- Giữ lại 1 trang: downgrade-triggers, đánh `⚠️ Conflict` vì `LCR.md` chép một FAQ ở hai chỗ với số đoạn khác nhau (40.56 ở d.978–980, 40.55 ở d.1008–1010)
+- Sổ sách: đổi loại quan hệ hai link (operational-deposits, retail-term-deposits), thêm một chú thích 40.25; hai mục mới ở `_inbox.md`; `--all` 0 vấn đề
+
+## [2026-10-13:11-24-48] research | tổng quan mẫu số LCR — deep read
+- Deep: 15 trang trục LCR40, không enrich; trang tổng quan cũ ở 993 từ nên tách trang riêng
+- 1 analysis (lcr-net-outflows-weight-liabilities-…, tổng quan nhóm dòng ra và dòng vào), 2 link (bank-liquidity-rules-pair, total-net-cash-outflows); chặn: basel_lcr LCR99, LCR31
+- Báo cáo: Claude outputs/research-2026-10-13-lcr-net-outflows-overview.md
+
+## [2026-10-13:11-36-52] ingest | basel_lcr LCR31 và tách trang tổng quan mẫu số
+- Tạo 7 trang LCR31 (trần sử dụng, Option 1–3, ba nguyên tắc, chứng minh thiếu HQLA, nghĩa vụ giám sát); stub alternative-liquidity-approaches thành draft; merge một câu vào level-2-assets-are-capped, level-2a-assets, lcr-is-met-in-one-currency, rclf
+- Thêm 2 trang tổng quan nhóm (lcr-cash-outflows-…, lcr-cash-inflows-…) với bảng tỷ lệ từng thành phần; index có nhóm mới "LCR: tổng dòng tiền ra ròng (mẫu số)" nhận 3 trang trục từ nhóm Thanh khoản; --graph: level-1-assets hạng 198 → 110, haircut 193 → 140
+- Chunk LCR31 phủ; còn LCR90, LCR99, mục Shari'ah của LCR30
+
+## [2026-10-13:11-43-32] ingest | basel_lcr LCR90, LCR99 và phần còn lại của LCR30
+- Tạo sharia-compliant-banks-… và trang tổng quan tử số the-hqla-stock-weights-…; stub intraday-liquidity; merge vào high-quality-liquid-assets-hqla (hệ số, đa dạng hóa, 30 ngày chống hiệu ứng vách), liquidity-coverage-ratio-lcr (LCR90, hai công thức), lcr-stress-scenario, hai trang tổng quan dòng ra và dòng vào
+- Index có nhóm mới "LCR: kho HQLA (tử số)" nhận 18 trang từ nhóm Thanh khoản; ⚠️ Conflict trên trang tổng quan tử số (BBB− ở 30.45, "BBB" ở bảng 99.1 d.1352), đã ghi `_inbox.md`
+- basel_lcr phủ hết: 8 chunk phu, 1 mien
+
 ## [2026-11-09:22-56-49] ingest | tt50_2026_sbv Điều 13–21 (LCR) và so sánh với Basel
 - 8 trang mới (entity TT50, ngưỡng 50%→100%, đăng ký sớm, thôi tuân thủ TT22, ba loại LCR, vi phạm LCR, nguy cơ mất khả năng chi trả, Điều 15) và 4 trang analysis so sánh TT50 với Basel; merge vào hqla-operational-requirements, total-net-cash-outflows, high-quality-liquid-assets-hqla
 - Stub mới: net-stable-funding-ratio-nsfr, loan-to-deposit-ratio-ldr; tách source id tt50_2026_sbv khỏi vietnam_regulator, tạo 03_state/tt50_2026_sbv.md

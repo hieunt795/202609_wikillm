@@ -34,15 +34,34 @@ Thuật ngữ có ≥ 2 cách dịch hợp lý không tương đương nghĩa (v
 
 **3. Lượt đắt — mở có chọn lọc.** Chỉ đọc full content những trang đã xác định là liên quan. Đi theo `[[wikilink]]` trong thân bài để mở rộng khi cần — mạng liên kết chính là đường tra cứu.
 
-Với mỗi trang cốt lõi (trực tiếp liên quan tới câu hỏi, không phải mọi trang mở rộng qua outlink), **luôn** gọi thêm:
+Với mỗi trang cốt lõi (trực tiếp liên quan tới câu hỏi, không phải mọi trang mở rộng qua outlink), **luôn** gọi:
 
 ```bash
-python .claude/hooks/validate_wiki_page.py --backlinks <trang>
+python .claude/hooks/validate_wiki_page.py --neighbors <trang>
 ```
 
-Outlink một chiều có thể bỏ sót trang trỏ ngược vào (backlink 2 chiều chỉ được đảm bảo từ lượt ingest tạo/sửa trang — §6 — không đảm bảo mọi trang cũ). Triage kết quả bằng tên file như lượt rẻ, chỉ mở full content trang backlink thực sự liên quan.
+Lệnh in mọi trang nối với trang đó theo cả hai chiều, mỗi trang một dòng: chiều link, loại quan hệ nhìn từ trang gốc, độ mạnh và nhóm chủ đề. Nó thay cho việc dò outlink bằng mắt cộng `--backlinks`, vì outlink một chiều bỏ sót trang trỏ ngược vào. Triage kết quả bằng tên file, loại quan hệ và nhóm như lượt rẻ; chỉ mở full content trang thực sự liên quan.
 
-**Giới hạn 1 vòng:** chỉ mở rộng thêm đúng 1 vòng qua trang mới phát hiện (từ outlink hoặc từ `--backlinks`) — không đệ quy tiếp sang vòng 2 dù trang mới mở lại có outlink/backlink riêng. Sau 1 vòng vẫn thấy thiếu → nói rõ phạm vi đã tra cho người dùng, không tự mở rộng vô hạn.
+**Câu hỏi về cấu trúc thì lọc theo loại.** Thêm `--type <loại>` khi câu hỏi hỏi đúng một kiểu quan hệ:
+
+| Câu hỏi dạng | `--type` |
+|---|---|
+| X gồm những gì, chia ra sao | `has_part` |
+| X thuộc về cái gì | `part_of` |
+| cái gì quy định, đo lường, giới hạn X | `governed_by` |
+| X quy định, giới hạn cái gì | `governs` |
+| cái gì tác động tới X, đầu vào của X | `driven_by` |
+| X tác động tới cái gì | `drives` |
+| X khác gì, đối chiếu với gì | `contrasts` |
+
+Hai điều giữ cho bộ lọc không gây sót:
+
+- Phần lớn link cũ chưa được gắn loại. Dòng cuối của lệnh báo có bao nhiêu link chưa có loại nằm ngoài bộ lọc; số đó khác 0 thì chạy lại không có `--type` và triage phần còn lại theo tên file. Kết quả lọc chỉ đầy đủ khi số đó bằng 0.
+- Loại quan hệ là chỉ dẫn để chọn trang mở, do máy đọc từ frontmatter, không phải claim. Nội dung câu trả lời lấy từ thân bài các trang đã mở, không lấy từ nhãn loại.
+
+**Câu hỏi toàn cảnh** ("wiki có gì về mảng X", "các mảng nối nhau thế nào"): ở bước 1 xác định nhóm chủ đề trong `index.md` (dòng in đậm). Nhóm có trang mang nhãn `*(tổng quan nhóm)*` thì mở trang đó trước và đi tiếp từ các link của nó. Nhóm chưa có thì đọc các dòng tóm tắt của nhóm trong `index.md`, chọn 2–4 trang trục, gọi `--neighbors` cho từng trang; cột nhóm trong kết quả cho biết mảng này nối sang mảng nào qua trang nào.
+
+**Giới hạn 1 vòng:** chỉ mở rộng thêm đúng 1 vòng qua trang mới phát hiện từ `--neighbors`, không đệ quy tiếp sang vòng 2 dù trang mới mở lại có láng giềng riêng. Ngoại lệ duy nhất: câu hỏi "gồm những gì" được gọi `--neighbors <trang> --type has_part --hops 2` để lấy cả thành phần của thành phần. Sau 1 vòng vẫn thấy thiếu → nói rõ phạm vi đã tra cho người dùng, không tự mở rộng vô hạn.
 
 **4. Tổng hợp.** Trả lời kèm trích dẫn trang wiki (`[[tên-trang]]`) và chú thích nguồn gốc đã có trên trang (source id, chương, dải dòng). Không tự dựng chú thích mà trang không có.
 

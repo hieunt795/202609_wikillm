@@ -1,7 +1,7 @@
 ---
 title: net-stable-funding-ratio-nsfr
 type: concept
-tags: [nsfr, liquidity-regulation, vietnam, tt50]
+tags: [nsfr, liquidity-regulation, vietnam, tt50, basel-iii, funding]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10

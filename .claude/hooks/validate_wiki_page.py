@@ -30,7 +30,14 @@ Che do:
                         trang. Tin hieu tho cho lint doc tay, khong phan quyet.
   - --now             : gio Viet Nam dang YYYY-MM-DD:hh-MM-ss cho log.md (§12).
   - --lint            : chay gop --all, --verify-sources, --coverage, --size, --style,
-                        --ocr va in mot bang tong (buoc 1 cua lint).
+                        --ocr, --relations, --graph --no-save va in mot bang tong (buoc 1 cua lint).
+  - --graph [--no-save] : do thi quan he (§6): so xep hang, do manh cap nhom voi
+                        03_state/_graph_snapshot.tsv va link mat / doi loai voi HEAD cua git,
+                        in thong bao, luu anh chup moi. Chay sau moi operation co ghi trang.
+  - --neighbors p [--type t] [--hops n] : lang gieng cua trang p theo loai quan he, ca hai chieu.
+  - --relations [x]   : khong doi so -> so link da gan loai va cap gan loai lech nhau;
+                        x la ten trang hoac ten nhom -> tung link kem cau chua no (de gan loai).
+  - --map <linh vuc>  : ban do HTML cua mot linh vuc vao Claude outputs/.
   - --session-start   : in bang no va handoff moi nhat trong .claude/session_handoffs/
                         (hook SessionStart). Luon exit 0.
   - --guard-sources   : hook PreToolUse tren Bash|PowerShell: chan lenh shell ghi vao
@@ -51,6 +58,9 @@ REQUIRED_FIELDS = ["title", "type", "tags", "sources", "status", "last_updated"]
 VALID_TYPES = {"entity", "concept", "case", "analysis"}
 VALID_STATUS = {"stub", "draft", "stable", "stale"}
 VALID_REVIEWERS = {"user", "model"}
+# §6: loai quan he ghi o frontmatter cua trang chua link. Danh sach dong.
+RELATION_FIELDS = ["part_of", "has_part", "governs", "governed_by", "drives", "driven_by",
+                   "contrasts", "analogous", "related"]
 
 # §7 luat 5 chi ap cho trang duoc ghi TU ngay luat co hieu luc tro di.
 # 51 trang cu giu nguyen, khong backfill hang loat -- nhung trang nao
@@ -300,6 +310,29 @@ def check(path, pages=None, longsrc=None, known=None):
                 "[[wikilink]] phai nam TRONG cau van kem ly do lien ket." % i
             )
             break
+
+    # §6: quan he co loai chi chu giai cho link da co trong than bai.
+    linked = set(targets)
+    for rf in RELATION_FIELDS:
+        if rf not in fields:
+            continue
+        raw = fields[rf].strip()
+        if not (raw.startswith("[") and raw.endswith("]")):
+            problems.append(
+                "`%s:` phai la inline list `[trang-a, trang-b]` tren mot dong (§1, §6)." % rf
+            )
+            continue
+        for t in yaml_list(raw):
+            if t == stem:
+                problems.append("`%s:` tro toi chinh trang nay (§6)." % rf)
+            elif pages is not None and t not in pages:
+                problems.append("`%s:` tro toi trang khong ton tai: %s (§6)." % (rf, t))
+            elif t not in linked:
+                problems.append(
+                    "`%s: %s` khong co [[wikilink]] tuong ung trong than bai (§6). Quan he co "
+                    "loai chi chu giai cho link da co kem ly do; them link vao cau van hoac bo "
+                    "quan he." % (rf, t)
+                )
 
     # §7 luat 5: claim tu nguon dai phai kem chu thich vi tri.
     if longsrc and status != "stub" and updated and updated >= CITATION_RULE_FROM:
@@ -826,10 +859,11 @@ def cmd_lint():
     """Chay gop cac lenh quet, moi lenh mot dong tong. Chi tiet: chay rieng lenh do."""
     worst = 0
     sys.stdout.write("Lenh\tExit\tDong tong\n")
-    for c in ("--all", "--verify-sources", "--coverage", "--size", "--style", "--ocr"):
+    for c in ("--all", "--verify-sources", "--coverage", "--size", "--style", "--ocr",
+              "--relations", "--graph --no-save"):
         try:
             r = subprocess.run(
-                [sys.executable, os.path.abspath(__file__), c],
+                [sys.executable, os.path.abspath(__file__)] + c.split(),
                 capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=300,
             )
             lines = [x for x in (r.stdout + r.stderr).splitlines() if x.strip()]
@@ -865,6 +899,11 @@ def debt_lines(root):
             for k, v in n.items():
                 tot[k] = tot.get(k, 0) + v
         out.append("chunk nguon: %s" % cov_fmt(tot))
+    except Exception:
+        pass
+    try:
+        import wiki_graph
+        out.append(wiki_graph.debt(root))
     except Exception:
         pass
     try:
@@ -981,6 +1020,9 @@ def main():
             cmd_lint()
         elif cmd == "--style":
             cmd_style(wiki, args[1] if len(args) > 1 else None)
+        elif cmd in ("--graph", "--neighbors", "--relations", "--map"):
+            import wiki_graph
+            wiki_graph.run(cmd, args[1:], here, wiki)
         else:
             sys.stderr.write("Lenh khong hop le: %s. Xem --help.\n" % cmd)
             sys.exit(2)

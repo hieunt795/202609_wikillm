@@ -5,6 +5,9 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-10
+governs: [high-quality-liquid-assets-hqla, liquidity-coverage-ratio-lcr]
+governed_by: [lcr-is-reported-at-least-monthly-and-a-breach-is-notified-immediately]
+drives: [supervisory-response-to-an-lcr-below-100-percent-is-proportionate-to-the-shortfall]
 ---
 
 Trong thời kỳ căng thẳng, ngân hàng được dùng kho [[high-quality-liquid-assets-hqla|HQLA]] và để [[liquidity-coverage-ratio-lcr|LCR]] rơi dưới 100%; chuẩn mực gọi việc này là hoàn toàn phù hợp (basel_lcr, LCR20, 20.5, d.72).

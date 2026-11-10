@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bản đồ quan hệ — __TITLE__</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#22211f;--mut:#6f6c66;--line:#dcd8cf;--card:#fff;--edge:#9a968c}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1a18;--fg:#eceae4;--mut:#a09c93;--line:#3a3833;--card:#24231f;--edge:#7d7a72}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{padding:16px 20px 8px}
+h1{font-size:19px;margin:0 0 4px}
+.sub{color:var(--mut);font-size:13px}
+.bar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;padding:8px 20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.bar button{font:inherit;font-size:12.5px;padding:3px 10px;border:1px solid var(--line);border-radius:14px;background:var(--card);color:var(--fg);cursor:pointer}
+.bar button.on{border-color:var(--fg);font-weight:600}
+.bar .lab{color:var(--mut);font-size:12.5px}
+.key{display:inline-flex;align-items:center;gap:5px;font-size:12.5px}
+.key svg{width:34px;height:8px}
+main{display:grid;grid-template-columns:minmax(300px,2fr) minmax(0,5fr);gap:14px;padding:14px 20px}
+@media (max-width:900px){main{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px}
+.card h2{font-size:13px;margin:0 0 6px;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+svg{width:100%;height:auto;display:block}
+svg text{fill:var(--fg);font-size:11px;pointer-events:none}
+.leg{display:flex;flex-wrap:wrap;gap:4px 10px;margin:4px 0 8px}
+.leg span{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;cursor:pointer;padding:1px 6px;border-radius:10px}
+.leg span.on{outline:1px solid var(--fg)}
+.leg i{width:10px;height:10px;border-radius:50%;display:inline-block}
+#info{min-height:90px;font-size:13px}
+#info b{font-weight:600}
+#info ul{margin:4px 0 0;padding-left:18px}
+#info li{margin:1px 0}
+.pill{font-size:11px;color:var(--mut)}
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+th,td{text-align:left;padding:3px 6px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:600}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+tr.row{cursor:pointer}
+.note{color:var(--mut);font-size:12.5px;margin-top:6px}
+</style></head><body>
+<header><h1 id="ttl"></h1><div class="sub" id="sub"></div></header>
+<div class="bar">
+  <span class="lab">Độ mạnh:</span>
+  <button data-w="0" class="on">Tất cả</button><button data-w="3">Chỉ mạnh</button>
+  <span class="lab">Loại:</span><span id="types"></span>
+  <span class="lab">Nhãn:</span><button id="lbl">Hiện mọi nhãn</button>
+</div>
+<main>
+  <div>
+    <div class="card"><h2>Nhóm với nhóm</h2><svg id="gsvg" viewBox="-150 30 720 360"></svg>
+      <div class="note">Độ dày = tổng độ mạnh của link chéo. Nút xám là các lĩnh vực khác. Bấm một nhóm để chỉ xem nhóm đó.</div></div>
+    <div class="card" style="margin-top:14px"><h2>Trang đang chọn</h2><div id="info">Rê chuột lên một trang để xem quan hệ; bấm để ghim.</div></div>
+    <div class="card" style="margin-top:14px"><h2>Trang được nối nhiều nhất</h2>
+      <table id="top"><thead><tr><th>Hạng toàn wiki</th><th>Trang</th><th>Vào</th><th>Ra</th></tr></thead><tbody></tbody></table></div>
+  </div>
+  <div class="card"><h2>Trang với trang</h2><div class="leg" id="leg"></div>
+    <svg id="nsvg" viewBox="0 0 1000 780"></svg>
+    <div class="note">Kích thước nút = thứ hạng toàn wiki. Nút nhạt = trang chưa review. Viền đứt = stub. Mũi tên theo chiều nghĩa của quan hệ: từ thành phần tới tổng thể, từ cái quy định tới cái bị quy định, từ nguyên nhân tới kết quả.</div></div>
+</main>
+<script>
+const D=__DATA__;
+const NS="http://www.w3.org/2000/svg";
+const el=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e};
+const col=g=>D.groups[g].ext?"#9a968c":D.palette[g%D.palette.length];
+const short=s=>s.length>30?s.slice(0,29)+"…":s;
+const TY={part_of:{c:"#6d6a63",d:""},governs:{c:"#c0392b",d:"7 4"},drives:{c:"#3a8a3a",d:"2 4"},contrasts:{c:"#c07a1e",d:"10 3 2 3"},analogous:{c:"#7a5cc0",d:"5 3"},related:{c:"#4e79a7",d:"1 4"},"":{c:"var(--edge)",d:""}};
+document.getElementById("ttl").textContent="Bản đồ quan hệ — "+D.domain;
+document.getElementById("sub").textContent=D.nodes.length+" trang, "+D.edges.length+" link trong lĩnh vực ("+D.typed+" đã gắn loại) · ảnh chụp "+D.taken+" · wiki "+D.total_pages+" trang";
+
+let st={w:0,types:new Set(),focus:null,pin:null,labels:false};
+const present=Object.keys(TY).filter(t=>D.edges.some(e=>e.b===t));
+const tbox=document.getElementById("types");
+present.forEach(t=>{st.types.add(t);const b=document.createElement("button");b.className="on";b.style.marginRight="4px";
+  b.innerHTML='<span class="key"><svg><line x1="0" y1="4" x2="34" y2="4" stroke="'+TY[t].c+'" stroke-width="2" stroke-dasharray="'+TY[t].d+'"/></svg>'+D.baseLabel[t]+'</span>';
+  b.onclick=()=>{st.types.has(t)?st.types.delete(t):st.types.add(t);b.classList.toggle("on");draw()};tbox.appendChild(b)});
+document.querySelectorAll("button[data-w]").forEach(b=>b.onclick=()=>{st.w=+b.dataset.w;document.querySelectorAll("button[data-w]").forEach(x=>x.classList.toggle("on",x===b));draw()});
+document.getElementById("lbl").onclick=e=>{st.labels=!st.labels;e.target.classList.toggle("on",st.labels);draw()};
+
+// ---- bang nhom
+const gs=document.getElementById("gsvg");
+const GN=D.groups.length, gpos=D.groups.map((g,i)=>{const a=2*Math.PI*i/GN-Math.PI/2;return{x:210+150*Math.cos(a),y:210+150*Math.sin(a)}});
+const gmax=Math.max(1,...D.gpairs.map(p=>p.w));
+function drawGroups(){gs.innerHTML="";
+  D.gpairs.forEach(p=>{const on=st.focus===null||p.a===st.focus||p.b===st.focus;
+    el("line",{x1:gpos[p.a].x,y1:gpos[p.a].y,x2:gpos[p.b].x,y2:gpos[p.b].y,stroke:"var(--edge)","stroke-width":0.6+7*Math.sqrt(p.w/gmax),opacity:on?0.75:0.08,"stroke-linecap":"round"},gs)
+      .appendChild(el("title",{})).textContent=D.groups[p.a].name+" ↔ "+D.groups[p.b].name+": "+p.w});
+  D.groups.forEach((g,i)=>{const on=st.focus===null||st.focus===i;
+    const c=el("circle",{cx:gpos[i].x,cy:gpos[i].y,r:g.ext?7+Math.min(9,Math.sqrt(g.n)*0.7):10+Math.sqrt(g.n)*1.6,fill:col(i),opacity:on?1:0.35,style:g.ext?"":"cursor:pointer"},gs);
+    c.appendChild(el("title",{})).textContent=g.name+" ("+g.n+" trang)";
+    if(!g.ext)c.onclick=()=>{st.focus=st.focus===i?null:i;draw()};
+    const right=gpos[i].x>=210;
+    const t=el("text",{x:gpos[i].x+(right?20:-20),y:gpos[i].y+6,"text-anchor":right?"start":"end",style:"font-size:20px",opacity:on?1:0.4},gs);
+    t.textContent=g.name.length>21?g.name.slice(0,20)+"…":g.name})}
+
+// ---- mang trang
+const ns=document.getElementById("nsvg"),W=1000,H=780;
+el("defs",{},ns).innerHTML='<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="context-stroke"/></marker>';
+const inG=D.groups.filter(g=>!g.ext).length;
+const cen=[...Array(inG)].map((_,i)=>{const a=2*Math.PI*i/inG-Math.PI/2;return{x:(W-130)/2+(inG>1?290:0)*Math.cos(a),y:H/2+(inG>1?255:0)*Math.sin(a)}});
+const N=D.nodes, idx={};N.forEach((n,i)=>{idx[n.id]=i;n.top=i<16;const a=i*2.399;n.x=cen[n.g].x+40*Math.cos(a)*(1+i%5/3);n.y=cen[n.g].y+40*Math.sin(a)*(1+i%5/3);n.r=4+9*Math.max(0,1-Math.log(n.rank)/Math.log(D.total_pages))});
+const E=D.edges.map(e=>({...e,ia:idx[e.s],ib:idx[e.t]}));
+for(let it=0;it<400;it++){const k=1-it/400;
+  for(let i=0;i<N.length;i++){let fx=0,fy=0;const p=N[i];
+    for(let j=0;j<N.length;j++){if(i===j)continue;const q=N[j];const dx=p.x-q.x,dy=p.y-q.y,d2=dx*dx+dy*dy+1;const f=2600/(d2*Math.sqrt(d2));fx+=dx*f;fy+=dy*f}
+    fx+=(cen[p.g].x-p.x)*0.05;fy+=(cen[p.g].y-p.y)*0.05;p.fx=fx;p.fy=fy}
+  E.forEach(e=>{const p=N[e.ia],q=N[e.ib];const dx=q.x-p.x,dy=q.y-p.y,d=Math.sqrt(dx*dx+dy*dy)+0.01;
+    const same=p.g===q.g,m=(d-(same?48:170))/d*(same?0.03:0.004)*(e.w/3);p.fx+=dx*m;p.fy+=dy*m;q.fx-=dx*m;q.fy-=dy*m});
+  N.forEach(p=>{const m=Math.sqrt(p.fx*p.fx+p.fy*p.fy),c=Math.min(m,12*k+0.4)/(m||1);p.x=Math.max(24,Math.min(W-150,p.x+p.fx*c));p.y=Math.max(24,Math.min(H-24,p.y+p.fy*c))})}
+for(let pass=0;pass<30;pass++)for(let i=0;i<N.length;i++)for(let j=i+1;j<N.length;j++){const p=N[i],q=N[j];let dx=q.x-p.x,dy=q.y-p.y,d=Math.sqrt(dx*dx+dy*dy)||0.01;const need=p.r+q.r+5;
+  if(d<need){const m=(need-d)/2/d;p.x-=dx*m;p.y-=dy*m;q.x+=dx*m;q.y+=dy*m}}
+const eLayer=el("g",{},ns),nLayer=el("g",{},ns),tLayer=el("g",{},ns);
+const vis=e=>e.w>=st.w&&st.types.has(e.b);
+function near(id){const s=new Set([id]);E.forEach(e=>{if(!vis(e))return;if(e.s===id)s.add(e.t);if(e.t===id)s.add(e.s)});return s}
+function drawNet(hover){const cur=hover||st.pin;const nb=cur?near(cur):null;
+  eLayer.innerHTML="";nLayer.innerHTML="";tLayer.innerHTML="";
+  E.forEach(e=>{if(!vis(e))return;const p=N[e.ia],q=N[e.ib];
+    let on=true;if(nb)on=e.s===cur||e.t===cur;else if(st.focus!==null)on=p.g===st.focus||q.g===st.focus;
+    const dx=q.x-p.x,dy=q.y-p.y,d=Math.sqrt(dx*dx+dy*dy)||1;
+    el("line",{x1:p.x+dx/d*p.r,y1:p.y+dy/d*p.r,x2:q.x-dx/d*(q.r+2),y2:q.y-dy/d*(q.r+2),stroke:TY[e.b].c,"stroke-dasharray":TY[e.b].d,"stroke-width":e.w===3?1.7:0.8,opacity:on?(nb?0.95:0.5):0.05,[e.inv?"marker-start":"marker-end"]:on&&nb&&e.b?"url(#ar)":""},eLayer)});
+  N.forEach(n=>{let on=true;if(nb)on=nb.has(n.id);else if(st.focus!==null)on=n.g===st.focus;
+    const c=el("circle",{cx:n.x,cy:n.y,r:n.r,fill:col(n.g),"fill-opacity":(n.rev?1:0.42)*(on?1:0.25),stroke:col(n.g),"stroke-width":1.2,"stroke-opacity":on?1:0.2,"stroke-dasharray":n.status==="stub"?"2 2":"",style:"cursor:pointer"},nLayer);
+    c.onmouseenter=()=>{if(!st.pin){drawNet(n.id);info(n.id)}};c.onmouseleave=()=>{if(!st.pin){drawNet();}};
+    c.onclick=()=>{st.pin=st.pin===n.id?null:n.id;drawNet();info(n.id)};
+    const showL=st.labels||(nb?nb.has(n.id):(st.focus!==null?n.g===st.focus:n.top));
+    if(showL){const t=el("text",{x:n.x+n.r+3,y:n.y+3.5,opacity:on?1:0.3},tLayer);t.textContent=short(n.id)}})}
+function info(id){const n=N[idx[id]],box=document.getElementById("info");
+  const li=e=>"<li>"+'<span class="pill">'+(e.tys.length?e.tys:[""]).map(x=>e.s===id?D.typeLabel[x]:D.invLabel[x]).join("; ")+"</span> "+(e.s===id?e.t:e.s)+' <span class="pill">· '+(e.w===3?"mạnh":"vừa")+(e.s===id?"":" · ghi ở trang kia")+"</span></li>";
+  const out=E.filter(e=>e.s===id&&vis(e)),inn=E.filter(e=>e.t===id&&vis(e));
+  box.innerHTML="<b>"+id+'</b><br><span class="pill">'+D.groups[n.g].name+" · hạng "+n.rank+" toàn wiki · "+(n.rev?"đã review":"chưa review")+(n.status==="stub"?" · stub":"")+" · link toàn wiki: "+n.inl+" vào, "+n.outl+" ra</span>"+
+    "<ul>"+out.map(li).join("")+inn.map(li).join("")+"</ul>"+((out.length+inn.length)?"":'<span class="pill">Không có link trong lĩnh vực với bộ lọc hiện tại.</span>')}
+const leg=document.getElementById("leg");
+function drawLeg(){leg.innerHTML="";D.groups.forEach((g,i)=>{if(g.ext)return;const s=document.createElement("span");s.className=st.focus===i?"on":"";
+  s.innerHTML='<i style="background:'+col(i)+'"></i>'+g.name+" ("+g.n+")";s.onclick=()=>{st.focus=st.focus===i?null:i;draw()};leg.appendChild(s)})}
+const tb=document.querySelector("#top tbody");
+N.slice(0,25).forEach(n=>{const r=document.createElement("tr");r.className="row";
+  r.innerHTML='<td class="n">'+n.rank+'</td><td><i style="display:inline-block;width:8px;height:8px;border-radius:50%;background:'+col(n.g)+';margin-right:6px"></i>'+n.id+'</td><td class="n">'+n.inl+'</td><td class="n">'+n.outl+"</td>";
+  r.onmouseenter=()=>{if(!st.pin){drawNet(n.id);info(n.id)}};r.onmouseleave=()=>{if(!st.pin)drawNet()};r.onclick=()=>{st.pin=st.pin===n.id?null:n.id;drawNet();info(n.id)};tb.appendChild(r)});
+function draw(){drawGroups();drawLeg();drawNet()}
+draw();
+</script></body></html>
