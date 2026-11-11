@@ -1383,3 +1383,12 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 ## [2026-11-10:22-49-55] ingest | tt50_2026_sbv Chương II mục 5 cụm B (Điều 22–27)
 - Tạo 13 trang tt50-nsfr-* và tt50-banks-disclose-*; merge net-stable-funding-ratio-nsfr (stub thành draft), level-2-assets-..., 3 trang NSFR phụ lục II; thêm link tới Điều 27 ở 5 trang.
 - Văn bản ngoài thông tư (Thông tư 41/2016, 14/2025, chế độ báo cáo thống kê) ghi cần ingest thêm; Phụ lục IV chưa nạp.
+
+## [2026-11-11:18-50-07] schema | sửa hook SessionStart, query và writing-style
+- Hook --session-start: handoff dài hơn 8.000 byte chỉ in các mục vừa ngân sách và nêu mục chưa nạp.
+- query/SKILL.md: tham chiếu quy tắc bắt buộc 4 đổi thành 3. writing-style: B4 từ hạn ngạch thành cấm mở câu bằng "Cơ chế X"; bỏ tham chiếu H3/I4 và "bước 5" sai; sửa chính tả.
+
+## [2026-11-11:18-54-42] lint | 985 trang
+- Phạm vi hẹp, chỉ luật writing-style B4: 102 mã W (câu mở bằng "Cơ chế") trong 84 trang; K, C, O, S, L, R, G và triage _inbox chưa đối chiếu.
+- Chưa sửa mã nào, chờ duyệt theo lô A–E.
+- Báo cáo: Claude outputs/lint-2026-11-11-985.md

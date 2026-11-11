@@ -5,7 +5,7 @@ description: "Bộ quy tắc văn phong tiếng Việt cho trang wiki và báo c
 
 # Quy tắc văn phong
 
-Rà và sửa văn bản tiếng Việt (trang wiki, báo cáo) để loại dấu vết AI và giữ đúng giọng phân tích kinh tế nghiêm túc: chủ thể cụ thể, số liệu gắn nguồn, không ẩu dụ cực đoan, không câu nhồi nhét.
+Rà và sửa văn bản tiếng Việt (trang wiki, báo cáo) để loại dấu vết AI và giữ đúng giọng phân tích kinh tế nghiêm túc: chủ thể cụ thể, số liệu gắn nguồn, không ẩn dụ cực đoan, không câu nhồi nhét.
 
 Rule số là ID ổn định — skill khác trích dẫn qua số ("áp A1, C1, C2"). Rule bị bỏ để lại khoảng trống số, không dồn lại.
 
@@ -44,7 +44,7 @@ Rule số là ID ổn định — skill khác trích dẫn qua số ("áp A1, C1
 
 **B3. Cấm "cơ chế" làm chủ ngữ của động từ hành động** ("triệt tiêu", "phá hủy", "ép buộc", "vận hành thông qua"...). Cơ chế chỉ được mô tả. Chủ ngữ hành động phải là tổ chức, biến số kinh tế, hoặc nhóm chủ thể cụ thể.
 
-**B4. Hạn ngạch "Cơ chế X" làm chủ ngữ mở câu — tối đa 1 lần/mục (section) cấp 2.**
+**B4. Cấm mở câu bằng "Cơ chế X" làm chủ ngữ**, ở cả trang wiki lẫn báo cáo. Mở câu bằng chủ thể cụ thể theo C1, hoặc bằng số liệu.
 
 **B5. Cấm tính từ định tính đứng một mình không kèm số liệu:** *khổng lồ, cực đoan, nghiêm trọng, mong manh, tột độ, cực kỳ, hoàn toàn.* Kèm số ngay sau ("lên tới X tỷ", "ở mức X%, vượt ngưỡng Y%") hoặc xóa. Ngoại lệ: hằng số định nghĩa/luật định (ví dụ hạn mức bảo hiểm tiền gửi) không bắt buộc kèm số ngay cạnh, nhưng lần đầu xuất hiện phải gắn nguồn theo C2/C3.
 
@@ -87,9 +87,9 @@ Rule số là ID ổn định — skill khác trích dẫn qua số ("áp A1, C1
 **F4.** Trang wiki là ghi chép cho người đọc là chủ wiki sau này — người dùng wiki lâu dài (không phải bạn đọc bên ngoài). Áp dụng 3 ràng buộc:
 - *Giọng:* phân tích kỹ thuật (E1 phân tích), không giải thích phổ thông hoặc khuyến nghị. Trang `type: analysis` có thể mix A2–A4 (phân tích) + giải thích, nhưng vẫn là ghi chép nội bộ, không mở bằng kết luận kiểu báo cáo.
 - *Mẫu BIS:* chỉ dùng để hiệu chuẩn C2 (số liệu gắn nguồn) và C3 (định nghĩa lần đầu). Không dùng mẫu "mở đầu BIS" (Executive Summary kèm kết luận), không viết phần "giới thiệu báo cáo" từng dòng, không lặp lại ý chính ở kết.
-- *Không khuyến nghị:* không giọng "cần, nên, phải" (H3/I4). Nếu có policy implication → để người đọc suy ra từ sự kiện/số liệu, không nêu "nên làm".
+- *Không khuyến nghị:* không giọng "cần, nên, phải". Nếu có policy implication → để người đọc suy ra từ sự kiện/số liệu, không nêu "nên làm".
 
-Quy trình bước 5 của skill: sau khi áp A–I, chạy `python .claude/hooks/validate_wiki_page.py --style` để kiểm luật 6 (giọng, nhấn mạnh, tự quy chiếu).
+Sau khi áp A–I và ba ràng buộc trên, chạy `python .claude/hooks/validate_wiki_page.py --style` để kiểm luật 6 (giọng, nhấn mạnh, tự quy chiếu).
 
 **Profile báo cáo/tài liệu khác:**
 - **F1.** Phần mở đầu/Executive Summary dẫn bằng kết luận, không mô tả quy trình ("Báo cáo phân tích..."). Câu mở trả lời: người đọc nên biết/tin gì sau khi đọc xong.
@@ -119,7 +119,7 @@ Quy trình bước 5 của skill: sau khi áp A–I, chạy `python .claude/hook
 
 ## I — Cụm tic hội thoại và tự quy chiếu
 
-Áp dụng cho nội dung skill, trang wiki, báo cáo, và câu trả lời của trợ lý. Khác bản chất với §G (hình thức trình bày): đây là cụm ngôn ngữ tự nói về quá trình viết/sửa hoặc ẩu dụ mơ hồ, không phải quy tắc trình bày kỹ thuật.
+Áp dụng cho nội dung skill, trang wiki, báo cáo, và câu trả lời của trợ lý. Khác bản chất với §G (hình thức trình bày): đây là cụm ngôn ngữ tự nói về quá trình viết/sửa hoặc ẩn dụ mơ hồ, không phải quy tắc trình bày kỹ thuật.
 
 **I1. Cấm cụm tự thông báo trạng thái/tiến độ nội dung:**
 
@@ -135,7 +135,7 @@ Quy trình bước 5 của skill: sau khi áp A–I, chạy `python .claude/hook
 | Cụm bị cấm | Vì sao bị cấm | Thay bằng |
 |---|---|---|
 | giữ neo | không rõ neo vào cái gì, bằng cách nào | nêu cụ thể dựa trên gì, hoặc xóa |
-| neo giữ / làm điểm neo / bám neo vào thực tế | cùng ẩu dụ lặp lại không cần thiết | "dựa trên [nguồn cụ thể]" |
+| neo giữ / làm điểm neo / bám neo vào thực tế | cùng ẩn dụ lặp lại không cần thiết | "dựa trên [nguồn cụ thể]" |
 
 **I3. Cấm cụm ghép sẵn dùng thay cho câu chữ rule gốc:**
 

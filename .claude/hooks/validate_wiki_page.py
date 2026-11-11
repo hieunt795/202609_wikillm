@@ -925,10 +925,52 @@ def cmd_session_start(root):
         return
     with open(os.path.join(d, files[-1]), encoding="utf-8-sig") as fh:
         body = fh.read().strip()
+    rel = ".claude/session_handoffs/%s" % files[-1]
+    if len(body.encode("utf-8")) <= SESSION_START_CAP:
+        sys.stdout.write(
+            "Handoff moi nhat (%s), hook SessionStart da nap san tron file; "
+            "khong can doc lai file nay o buoc Dau phien.\n\n%s\n" % (rel, body)
+        )
+        return
+    # Harness truncates long hook output to a short preview, so a full dump would
+    # silently drop the open-work sections. Emit only what fits and say what is missing.
+    title, sections = handoff_sections(body)
+    picked, left = [], []
+    used = len(title.encode("utf-8"))
+    for name in HANDOFF_PRIORITY:
+        for head, text in sections:
+            if head.lower().startswith(name):
+                size = len(text.encode("utf-8"))
+                if used + size <= SESSION_START_CAP:
+                    picked.append(text)
+                    used += size
+                else:
+                    left.append(head)
+    loaded = set(picked)
+    left += [h for h, t in sections if t not in loaded and h not in left]
     sys.stdout.write(
-        "Handoff moi nhat (.claude/session_handoffs/%s), hook SessionStart da nap san; "
-        "khong can doc lai file nay o buoc Dau phien.\n\n%s\n" % (files[-1], body)
+        "Handoff moi nhat (%s) dai %d byte, hook SessionStart CHI nap mot phan. "
+        "Chua nap: %s. Doc cac muc do trong file truoc khi lam viec ton.\n\n%s\n"
+        % (rel, len(body.encode("utf-8")), "; ".join(left) or "khong", "\n\n".join([title] + picked))
     )
+
+
+# Byte budget for the handoff part of the SessionStart output. The harness cut a
+# 15.2 KB output down to a 2 KB preview; the exact limit is not documented here,
+# so stay well below 10 KB.
+SESSION_START_CAP = 8000
+HANDOFF_PRIORITY = ("bước tiếp theo", "blocker", "việc còn lại", "kết quả", "kiểm tra đã chạy")
+
+
+def handoff_sections(body):
+    """Split a handoff into (title block, [(heading, section text), ...]) on '## ' headings."""
+    parts = re.split(r"(?m)^(?=## )", body)
+    title = parts[0].strip()
+    sections = []
+    for p in parts[1:]:
+        p = p.strip()
+        sections.append((p.splitlines()[0][3:].strip(), p))
+    return title, sections
 
 
 # Hook PreToolUse tren Bash|PowerShell (quy tac bat buoc 1). permissions.deny chi chan
