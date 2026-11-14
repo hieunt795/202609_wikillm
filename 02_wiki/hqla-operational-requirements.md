@@ -4,11 +4,13 @@ type: concept
 tags: [lcr, basel-iii, liquidity-regulation, hqla, liquidity-risk-management]
 sources: [basel_lcr, tt50_2026_sbv]
 status: draft
-last_updated: 2026-11-09
+last_updated: 2026-11-14
+reviewed: 2026-11-14
+reviewed_by: model
 has_part: [unencumbered-assets]
 governs: [high-quality-liquid-assets-hqla]
 drives: [liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]
-related: [hqla-eligibility-rests-on-four-fundamental-and-three-market-related-characteristics]
+related: [hqla-eligibility-rests-on-four-fundamental-and-three-market-related-characteristics, circular-50-2026-tt-nhnn-prudential-limits-and-ratios, tt50-and-basel-hqla-operational-requirements-overlap-closely-except-for-the-periodic-monetisation-test]
 ---
 
 Yêu cầu vận hành đối với HQLA (operational requirements) là nhóm điều kiện về cách ngân hàng nắm giữ và quản lý tài sản, áp dụng cho mọi tài sản trong kho [[high-quality-liquid-assets-hqla|HQLA]] bên cạnh tiêu chí về loại tài sản, trọng số rủi ro và xếp hạng (basel_lcr, LCR30, Operational requirements, 30.13, d.157).
@@ -33,4 +35,4 @@ Chuẩn mực đặt bảy yêu cầu:
 
 Yêu cầu thứ sáu là phần chuẩn bị cho quy tắc [[liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr|loại HQLA dư bị kẹt]], vì ngân hàng chỉ biết phần nào bị kẹt khi biết tài sản nằm ở pháp nhân nào. Các điều kiện về bản chất tài sản nằm ở trang [[hqla-eligibility-rests-on-four-fundamental-and-three-market-related-characteristics]].
 
-Điều 20 của [[circular-50-2026-tt-nhnn-prudential-limits-and-ratios|TT50]] đặt bộ điều kiện vận hành tương tự cho LCR ở Việt Nam. Thông tư gọi HQLA đáp ứng đầy đủ các điều kiện này là HQLA đủ tiêu chuẩn, và dùng nó để tính LCR (tt50_2026_sbv, Điều 20, khoản 1, d.659). Hai điểm TT50 nêu rõ hơn trang Basel này. Tài sản tài chính, trừ tiền mặt, bị ràng buộc một phần giá trị thì cả tài sản bị coi là bị ràng buộc (tt50_2026_sbv, Điều 20, khoản 2c, d.669). Tài sản đủ tiêu chuẩn trở thành không đủ tiêu chuẩn vẫn được giữ trong danh mục thêm 30 ngày (tt50_2026_sbv, Điều 20, khoản 2k, d.697). Đối chiếu từng điều kiện của TT50 với bảy yêu cầu trên, gồm cả điểm TT50 không có, nằm ở trang [[tt50-and-basel-hqla-operational-requirements-overlap-closely-except-for-the-periodic-monetisation-test]].
+Điều 20 của [[circular-50-2026-tt-nhnn-prudential-limits-and-ratios|TT50]] đặt bộ điều kiện vận hành tương tự cho LCR ở Việt Nam. Thông tư gọi HQLA đáp ứng đầy đủ các điều kiện này là HQLA đủ tiêu chuẩn, và dùng nó để tính LCR (tt50_2026_sbv, Điều 20, khoản 1, d.659). Hai điểm TT50 nêu thành câu riêng mà danh sách bảy yêu cầu ở trên không có. Tài sản tài chính, trừ tiền mặt, bị ràng buộc một phần giá trị thì cả tài sản bị coi là bị ràng buộc (tt50_2026_sbv, Điều 20, khoản 2c, d.669). Tài sản đủ tiêu chuẩn trở thành không đủ tiêu chuẩn vẫn được giữ trong danh mục thêm 30 ngày (tt50_2026_sbv, Điều 20, khoản 2k, d.697); Basel cũng có quy tắc này ở đoạn 30.28, ngoài bảy yêu cầu trên (basel_lcr, LCR30, Operational requirements, 30.28, d.204). Đối chiếu từng điều kiện của TT50 với bảy yêu cầu trên, gồm cả điểm TT50 không có, nằm ở trang [[tt50-and-basel-hqla-operational-requirements-overlap-closely-except-for-the-periodic-monetisation-test]].

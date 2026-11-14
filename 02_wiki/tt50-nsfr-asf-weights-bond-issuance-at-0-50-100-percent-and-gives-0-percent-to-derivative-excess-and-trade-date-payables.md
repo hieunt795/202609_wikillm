@@ -5,6 +5,9 @@ tags: [vietnam, tt50, nsfr, asf, bonds, derivatives]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+related: [tt50-nsfr-measures-derivative-liabilities-and-assets-at-replacement-cost-and-nets-variation-margin, tt50-nsfr-nets-only-cash-variation-margin-that-meets-four-conditions-and-gives-other-margin-0-percent-asf, tt50-nsfr-derivative-position-nets-to-0-percent-asf-or-100-percent-rsf, tt50-nsfr-dependent-asset-liability-pairs-take-0-percent-asf-and-rsf-when-all-conditions-are-met, tt50-nsfr-counts-settled-purchases-and-excludes-settled-sales-before-they-reach-the-balance-sheet, derivative-cash-flows-are-netted-per-counterparty-only-under-a-qualifying-netting-agreement-and-run-off-at-100-percent-in-tt50]
 ---
 
 Các khoản nợ phải trả còn lại có hệ số ASF theo từng dòng riêng. Nợ phải trả thuộc cặp tài sản và nợ phụ thuộc theo điểm b khoản 2 Điều 26 có 0% cho kỳ hạn dưới 1 năm và từ 1 năm trở lên (tt50_2026_sbv, Phụ lục II, Phần A, mục II khoản 2, d.2034). Phần chênh lệch dương giữa nợ phái sinh NSFR và tài sản phái sinh NSFR theo điểm a khoản 5 Điều 25 có 0% (tt50_2026_sbv, Phụ lục II, Phần A, mục II khoản 3, d.2035). Nợ phải trả tại ngày giao dịch (trade date payables) từ mua công cụ tài chính, ngoại tệ hoặc hàng hóa (trừ phái sinh, repo, reverse repo) chưa thanh toán có 0% khi dự kiến thanh toán theo thời hạn pháp luật hoặc thanh toán không thành công nhưng vẫn dự kiến thực hiện (tt50_2026_sbv, Phụ lục II, Phần A, mục II khoản 4, d.2036).

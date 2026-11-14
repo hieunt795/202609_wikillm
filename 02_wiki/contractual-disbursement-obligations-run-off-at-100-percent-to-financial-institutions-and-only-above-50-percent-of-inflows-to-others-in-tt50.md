@@ -5,6 +5,10 @@ tags: [vietnam, tt50, lcr, off-balance-sheet, disbursement-obligations]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+part_of: [total-expected-cash-outflows]
+related: [receivables-run-in-at-50-percent-from-retail-and-non-financial-customers-and-100-percent-from-financial-institutions-in-tt50, the-tt50-outflow-form-lists-seven-outflow-lines-and-restates-the-text-leaving-one-coefficient-blank, committed-credit-and-liquidity-facilities-run-off-by-counterparty-type-from-5-to-100-percent-in-tt50]
 ---
 
 Nghĩa vụ giải ngân hoặc thanh toán theo thỏa thuận trong 30 ngày tiếp theo được TT50 chia theo bên nhận. Với tổ chức tài chính, kể cả Ngân hàng Nhà nước, hệ số rút tiền là 100% (tt50_2026_sbv, Phụ lục I, Phần B, mục V khoản 2.1, d.1759).

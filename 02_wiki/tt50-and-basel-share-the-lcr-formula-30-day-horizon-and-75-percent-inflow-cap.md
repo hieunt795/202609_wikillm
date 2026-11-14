@@ -4,7 +4,10 @@ type: analysis
 tags: [lcr, vietnam, tt50, basel-iii, comparison, liquidity-regulation]
 sources: [tt50_2026_sbv, basel_lcr]
 status: draft
-last_updated: 2026-11-09
+last_updated: 2026-11-14
+reviewed: 2026-11-14
+reviewed_by: model
+related: [circular-50-2026-tt-nhnn-prudential-limits-and-ratios, high-quality-liquid-assets-hqla, total-net-cash-outflows, total-expected-cash-inflows, total-expected-cash-outflows, tt50-makes-the-lcr-minimum-a-binding-threshold-with-penalties-where-basel-lets-banks-draw-down-hqla-in-stress, tt50-binds-the-solo-vnd-equivalent-lcr-while-basel-applies-a-consolidated-ratio-in-one-reporting-currency, tt50-and-basel-hqla-operational-requirements-overlap-closely-except-for-the-periodic-monetisation-test]
 ---
 
 Cấu trúc tính LCR của [[circular-50-2026-tt-nhnn-prudential-limits-and-ratios|TT50]] trùng với chuẩn Basel ở bốn điểm: công thức tỷ lệ, chân trời 30 ngày, trần 75% cho dòng tiền vào và các quy tắc chống tính trùng. Phần so sánh dưới đây đối chiếu từng điểm với trang Basel tương ứng trong wiki.
@@ -15,6 +18,6 @@ Công thức mẫu số giống nhau đến mức đại số. Cả hai lấy t�
 
 Quy tắc chống tính trùng và chống tính thiếu cũng giống nhau. Tài sản đã nằm trong kho HQLA thì dòng tiền vào từ tài sản đó không được tính làm dòng vào (tt50_2026_sbv, Điều 21, khoản 3c, d.719) (basel_lcr, LCR40, Definition of total net cash outflows, 40.4, d.719). Khoản mục rơi vào nhiều nhóm dòng ra thì lấy hệ số rút tiền cao nhất, trong chuẩn Basel diễn đạt là dòng ra lớn nhất theo hợp đồng của sản phẩm (tt50_2026_sbv, Điều 21, khoản 3d, d.721) (basel_lcr, LCR40, Definition of total net cash outflows, 40.4, d.719). Cả hai chỉ tính dòng tiền có khả năng phát sinh trong 30 ngày tiếp theo (tt50_2026_sbv, Điều 21, khoản 3a, d.715).
 
-Cách tiếp cận tham số cũng gần nhau. TT50 nhân số dư nợ phải trả và cam kết ngoại bảng với hệ số rút tiền, và số dư tài sản, cam kết ngoại bảng với hệ số thu tiền, lấy hệ số từ Phụ lục I (tt50_2026_sbv, Điều 21, khoản 2a và 2b, d.709–711). Basel nhân số dư với tỷ lệ run-off hoặc drawdown và tỷ lệ dòng vào, trong đó một số ít tham số do cơ quan giám sát quốc gia đặt ([[total-expected-cash-outflows]]). Giá trị từng hệ số của Phụ lục I chưa được so với Basel, vì phụ lục này chưa nằm trong wiki.
+Cách tiếp cận tham số cũng gần nhau. TT50 nhân số dư nợ phải trả và cam kết ngoại bảng với hệ số rút tiền, và số dư tài sản, cam kết ngoại bảng với hệ số thu tiền, lấy hệ số từ Phụ lục I (tt50_2026_sbv, Điều 21, khoản 2a và 2b, d.709–711). Basel nhân số dư với tỷ lệ run-off hoặc drawdown và tỷ lệ dòng vào, trong đó một số ít tham số do cơ quan giám sát quốc gia đặt ([[total-expected-cash-outflows]]). Phụ lục I đã nạp vào wiki, nhưng giá trị từng hệ số chưa được so với Basel.
 
 Ở các điểm này TT50 và Basel khác nhau về cách dùng tỷ lệ chứ không khác về cách tính nó; phần khác biệt đó nằm ở hai trang [[tt50-makes-the-lcr-minimum-a-binding-threshold-with-penalties-where-basel-lets-banks-draw-down-hqla-in-stress]] và [[tt50-binds-the-solo-vnd-equivalent-lcr-while-basel-applies-a-consolidated-ratio-in-one-reporting-currency]]. Kho HQLA cũng được so riêng ở trang [[tt50-and-basel-hqla-operational-requirements-overlap-closely-except-for-the-periodic-monetisation-test]].

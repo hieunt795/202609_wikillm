@@ -5,6 +5,10 @@ tags: [vietnam, tt50, lcr, cash-inflows, run-in-rates, counterparty]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+part_of: [total-expected-cash-inflows]
+related: [tt50-counts-an-inflow-only-from-performing-contractual-receivables-and-excludes-contingent-and-cancellable-inflows, sme-deposits-up-to-30-billion-dong-run-off-like-retail-deposits-in-tt50, committed-credit-and-liquidity-facilities-run-off-by-counterparty-type-from-5-to-100-percent-in-tt50, contractual-disbursement-obligations-run-off-at-100-percent-to-financial-institutions-and-only-above-50-percent-of-inflows-to-others-in-tt50]
 ---
 
 Khoản phải đòi (gồm lãi và trả góp) đủ điều kiện ghi nhận có hệ số thu tiền 50% với khách hàng bán lẻ và doanh nghiệp nhỏ và vừa đủ điều kiện (tt50_2026_sbv, Phụ lục I, Phần C, mục IV khoản 5, d.1925). Với khách hàng bán buôn, hệ số là 100% cho tổ chức tài chính và Ngân hàng Nhà nước, và 50% cho doanh nghiệp không phải tổ chức tài chính; Chính phủ, Chính phủ nước ngoài, Kho bạc Nhà nước, Ủy ban nhân dân tỉnh và thành phố trực thuộc Trung ương, Bảo hiểm tiền gửi Việt Nam; tổ chức tài chính quốc tế; tổ chức công lập của Chính phủ nước ngoài; và các tổ chức khác (tt50_2026_sbv, Phụ lục I, Phần C, mục IV khoản 6, d.1927–1941).

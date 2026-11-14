@@ -5,6 +5,9 @@ tags: [vietnam, tt50, lcr, hqla, overseas-branch, host-country]
 sources: [tt50_2026_sbv, basel_lcr]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+analogous: [liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]
 ---
 
 Khi một ngân hàng thương mại Việt Nam có chi nhánh ở nước ngoài, tài sản trong danh mục HQLA của chi nhánh đó được giữ nguyên cấp nếu đạt đủ điều kiện của cấp đó theo TT50: cấp 1 (tt50_2026_sbv, Phụ lục I, Phần A, mục II khoản 3g, d.1257), cấp 2A (tt50_2026_sbv, Phụ lục I, Phần A, mục III khoản 3c, d.1289) và cấp 2B, hệ số áp theo từng loại tài sản (tt50_2026_sbv, Phụ lục I, Phần A, mục IV khoản 3đ, d.1349). Biểu mẫu tính HQLA có một dòng riêng cho tài sản của chi nhánh ở nước ngoài ở mỗi cấp (tt50_2026_sbv, Phụ lục I, Phần A, mục V, d.1366, d.1372, d.1378).

@@ -5,6 +5,9 @@ tags: [vietnam, tt50, nsfr, dependent-assets-liabilities, pass-through]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+related: [tt50-nsfr-asf-weights-bond-issuance-at-0-50-100-percent-and-gives-0-percent-to-derivative-excess-and-trade-date-payables, tt50-nsfr-rsf-general-rules-use-net-book-value-and-put-defaulted-receivables-initial-margin-and-capital-deductions-at-high-weights]
 ---
 
 Cặp tài sản và nợ phải trả phụ thuộc lẫn nhau phải đáp ứng đủ ba nhóm điều kiện (tt50_2026_sbv, Điều 26 khoản 1, d.895–913). Về thỏa thuận: nguồn huy động dùng cho một tài sản cụ thể và không dùng tài trợ tài sản khác; nợ phải trả không phải thanh toán khi tài sản chưa thu hồi; kỳ hạn, thời hạn và số tiền gốc của tài sản và nợ phải trả trùng khớp hoàn toàn; không phải giao dịch phái sinh. Về đối tác: đối tác của tài sản và của nợ phải trả trong từng cặp không phải cùng một chủ thể; đối tác không có quyền thay đổi nội dung đã thỏa thuận và phải thực hiện đầy đủ, đúng hạn. Về vai trò: ngân hàng chỉ là trung gian (pass-through), chuyển toàn bộ nguồn vốn nhận được sang tài sản tương ứng và không chịu rủi ro khi cung cấp sản phẩm, dịch vụ.

@@ -4,10 +4,13 @@ type: concept
 tags: [vietnam, tt50, nsfr, rsf, real-estate, loans]
 sources: [tt50_2026_sbv]
 status: draft
-last_updated: 2026-11-10
+last_updated: 2026-11-14
+reviewed: 2026-11-14
+reviewed_by: model
+related: [sme-deposits-up-to-30-billion-dong-run-off-like-retail-deposits-in-tt50, tt50-nsfr-rsf-weights-deposits-and-credit-to-financial-institutions-at-10-to-100-percent]
 ---
 
-Khoản phải đòi bất động sản và khoản cấp tín dụng cho bán lẻ, doanh nghiệp nhỏ và vừa đủ điều kiện, doanh nghiệp phi tài chính và tổ chức khác dùng chung một cấu trúc hệ số RSF: 50% dưới 1 năm, và từ 1 năm trở lên 65% khi hệ số rủi ro từ 35% trở xuống, 85% khi trên 35%. Hệ số rủi ro tính theo quy định của Thống đốc Ngân hàng Nhà nước về tỷ lệ an toàn vốn mà ngân hàng đang áp dụng (tt50_2026_sbv, Phụ lục II, Phần B, mục II dòng A.16–A.18, d.2143–2163).
+Khoản phải đòi bất động sản và khoản cấp tín dụng cho bán lẻ, doanh nghiệp nhỏ và vừa đủ điều kiện, doanh nghiệp phi tài chính và tổ chức khác dùng chung một cấu trúc hệ số RSF: 50% dưới 1 năm, và từ 1 năm trở lên 65% khi hệ số rủi ro từ 35% trở xuống, 85% khi trên 35%. Ngoại lệ là khoản phải đòi bất động sản không đủ tiêu chuẩn ở dòng 16.1, nhận 100% từ 1 năm trở lên. Hệ số rủi ro tính theo quy định của Thống đốc Ngân hàng Nhà nước về tỷ lệ an toàn vốn mà ngân hàng đang áp dụng (tt50_2026_sbv, Phụ lục II, Phần B, mục II dòng A.16–A.18, d.2143–2163).
 
 | Dòng | Không kỳ hạn | Dưới 6 tháng | 6 tháng đến dưới 1 năm | Từ 1 năm trở lên | Không xác định |
 |---|---|---|---|---|---|

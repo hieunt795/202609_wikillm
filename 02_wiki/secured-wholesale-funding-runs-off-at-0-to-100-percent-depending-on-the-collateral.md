@@ -5,6 +5,12 @@ tags: [vietnam, tt50, lcr, wholesale-funding, secured-funding, repo, run-off-rat
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+part_of: [total-expected-cash-outflows]
+contrasts: [unsecured-wholesale-funding-from-corporates-and-the-public-sector-runs-off-at-40-percent-and-other-unsecured-at-100-percent]
+analogous: [an-unused-facility-secured-by-level-1-assets-at-the-sbv-counts-as-level-1-hqla]
+related: [level-1-assets, level-2a-assets, level-2b-assets]
 ---
 
 Hệ số rút tiền của nguồn vốn bán buôn có bảo đảm trong TT50 chạy từ 0% đến 100% tùy loại tài sản bảo đảm: tài sản càng thanh khoản thì hệ số càng thấp. Nguồn vốn bán buôn có bảo đảm là nguồn vốn được thế chấp bằng tài sản thuộc sở hữu của ngân hàng, gồm cả giao dịch repo, kể cả khi phá sản, mất khả năng thanh toán, thanh lý hoặc tái cấu trúc. Tài sản bảo đảm phải là tài sản tài chính. Với giao dịch cùng Ngân hàng Nhà nước, tài sản bảo đảm theo quy định của Ngân hàng Nhà nước (tt50_2026_sbv, Phụ lục I, Phần B, mục III khoản 3.1, d.1616–1620).

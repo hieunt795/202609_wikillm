@@ -5,6 +5,10 @@ tags: [lcr, vietnam, tt50, basel-iii, comparison, intraday-liquidity]
 sources: [tt50_2026_sbv, basel_lcr]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+contrasts: [liquidity-coverage-ratio-lcr]
+related: [principles-for-sound-liquidity-risk-management-and-supervision, intraday-liquidity-management, intraday-liquidity-events-and-correspondent-failures-are-reviewed-annually-by-vietnamese-banks, tt50-binds-the-solo-vnd-equivalent-lcr-while-basel-applies-a-consolidated-ratio-in-one-reporting-currency]
 ---
 
 Basel nêu rằng kịch bản căng thẳng của LCR không bao phủ nhu cầu thanh khoản trong ngày, dù dự kiến hay bất ngờ, và nhắc ngân hàng cùng cơ quan giám sát nhớ điều đó (basel_lcr, LCR30, Operational requirements, 30.26, d.198). Chuẩn mực chỉ dẫn tới Nguyên tắc 8 của [[principles-for-sound-liquidity-risk-management-and-supervision|Sound Principles]]: ngân hàng chủ động quản lý trạng thái và rủi ro thanh khoản trong ngày để thanh toán đúng hạn trong cả điều kiện bình thường và căng thẳng (basel_lcr, LCR30, Operational requirements, 30.26, d.198). Đoạn này không đặt một yêu cầu định lượng hay tối thiểu nào.

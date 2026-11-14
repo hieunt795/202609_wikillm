@@ -5,6 +5,9 @@ tags: [lcr, vietnam, tt50, liquidity-regulation, currency-mismatch]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-09
+reviewed: 2026-11-14
+reviewed_by: model
+related: [vietnam-lcr-minimum-for-vnd-phases-in-from-50-percent-in-2028-to-100-percent-in-2033, tt50-binds-the-solo-vnd-equivalent-lcr-while-basel-applies-a-consolidated-ratio-in-one-reporting-currency, lcr-is-met-in-one-currency-while-liquidity-needs-are-monitored-by-significant-currency]
 ---
 
 TT50 định nghĩa ba loại tỷ lệ LCR theo đồng tiền, và chỉ loại thứ nhất, LCR quy VNĐ ở cấp riêng lẻ, có ngưỡng tối thiểu bắt buộc (tt50_2026_sbv, Điều 16, khoản 1a và 1c, d.575–581, d.593).

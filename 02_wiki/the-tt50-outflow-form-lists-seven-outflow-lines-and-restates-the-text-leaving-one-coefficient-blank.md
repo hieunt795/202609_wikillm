@@ -5,6 +5,10 @@ tags: [vietnam, tt50, lcr, cash-outflows, reporting-form]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+analogous: [the-tt50-inflow-form-has-seven-inflow-groups-in-four-time-buckets-and-restates-the-text]
+related: [tt50-counts-30-day-outflows-and-puts-overdue-and-undated-obligations-in-the-next-day-bucket, stable-retail-deposits-run-off-at-5-percent-and-less-stable-and-foreign-currency-at-10-percent-in-tt50, secured-wholesale-funding-runs-off-at-0-to-100-percent-depending-on-the-collateral, committed-credit-and-liquidity-facilities-run-off-by-counterparty-type-from-5-to-100-percent-in-tt50, contingent-obligations-run-off-at-0-3-and-5-percent-or-by-bank-estimate-and-100-percent-once-triggered-in-tt50, derivative-cash-flows-are-netted-per-counterparty-only-under-a-qualifying-netting-agreement-and-run-off-at-100-percent-in-tt50, any-other-contractual-outflow-within-30-days-runs-off-at-100-percent-in-tt50, contractual-disbursement-obligations-run-off-at-100-percent-to-financial-institutions-and-only-above-50-percent-of-inflows-to-others-in-tt50]
 ---
 
 Biểu mẫu tính "Dòng tiền ra" của Phụ lục I TT50 gom mọi hệ số rút tiền của phần B vào bảy dòng, kèm dòng tổng. Mỗi dòng ghi giá trị theo bốn nhóm thời gian đến hạn (ngày tiếp theo, ngày 2 đến 7, ngày 8 đến 14, ngày 15 đến 30), tổng, hệ số rút tiền và giá trị dòng ra theo mức độ rủi ro, kèm cột trỏ về mục hướng dẫn (tt50_2026_sbv, Phụ lục I, Phần B, mục VII, d.1805–1808). Cách xử lý các nhóm thời gian nằm ở [[tt50-counts-30-day-outflows-and-puts-overdue-and-undated-obligations-in-the-next-day-bucket]].

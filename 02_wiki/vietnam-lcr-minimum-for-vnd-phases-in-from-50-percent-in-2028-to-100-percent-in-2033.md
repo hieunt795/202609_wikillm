@@ -5,6 +5,10 @@ tags: [lcr, vietnam, tt50, liquidity-regulation, phase-in]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-09
+reviewed: 2026-11-14
+reviewed_by: model
+analogous: [liquidity-coverage-ratio-lcr]
+related: [vietnamese-banks-may-register-early-for-lcr-and-nsfr-on-a-phased-or-direct-100-percent-track, vietnam-defines-three-lcr-variants-with-a-binding-threshold-only-on-the-solo-vnd-equivalent-ratio, a-vietnamese-bank-breaching-the-solo-vnd-equivalent-lcr-must-self-remedy-and-report-daily-to-the-sbv, tt50-banks-disclose-liquidity-ratios-semi-annually-under-a-written-process-sent-to-the-sbv, tt50-nsfr-is-asf-over-rsf-with-a-solo-minimum-rising-from-90-to-100-percent-over-three-years]
 ---
 
 Ngưỡng tối thiểu của tỷ lệ LCR quy VNĐ riêng lẻ tại Việt Nam tăng qua sáu bậc, từ 50% lên 100%, mỗi bậc cách nhau một năm và thêm 10 điểm phần trăm: 50%, 60%, 70%, 80%, 90%, rồi 100% từ năm thứ sáu trở đi (tt50_2026_sbv, Điều 16, khoản 1c, d.593–603).

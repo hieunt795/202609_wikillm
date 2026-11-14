@@ -5,6 +5,12 @@ tags: [vietnam, tt50, lcr, off-balance-sheet, committed-facilities, run-off-rate
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+part_of: [total-expected-cash-outflows]
+contrasts: [contingent-obligations-run-off-at-0-3-and-5-percent-or-by-bank-estimate-and-100-percent-once-triggered-in-tt50]
+analogous: [tt50-counts-an-inflow-only-from-performing-contractual-receivables-and-excludes-contingent-and-cancellable-inflows]
+related: [sme-deposits-up-to-30-billion-dong-run-off-like-retail-deposits-in-tt50, the-tt50-outflow-form-lists-seven-outflow-lines-and-restates-the-text-leaving-one-coefficient-blank]
 ---
 
 Hạn mức cam kết mà ngân hàng cấp cho khách hàng có hệ số rút tiền từ 5% đến 100% trong LCR của TT50, tùy loại hạn mức và loại khách hàng. Hạn mức cam kết, gồm hạn mức tín dụng và hạn mức thanh khoản, là thỏa thuận không hủy ngang hoặc hủy ngang có điều kiện để cung cấp vốn vào một thời điểm tương lai cho khách hàng, khách có quyền nhưng không bắt buộc rút vốn trong 30 ngày tiếp theo. Hạn mức hủy ngang vô điều kiện thuộc quy định về nghĩa vụ nợ tiềm ẩn, xem [[contingent-obligations-run-off-at-0-3-and-5-percent-or-by-bank-estimate-and-100-percent-once-triggered-in-tt50]] (tt50_2026_sbv, Phụ lục I, Phần B, mục V khoản 1.1, d.1729–1731).

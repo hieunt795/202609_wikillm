@@ -4,13 +4,15 @@ type: concept
 tags: [lcr, basel-iii, liquidity-regulation, hqla]
 sources: [basel_lcr, tt50_2026_sbv]
 status: draft
-last_updated: 2026-11-10
+last_updated: 2026-11-14
+reviewed: 2026-11-14
+reviewed_by: model
 part_of: [high-quality-liquid-assets-hqla]
-has_part: [required-reserves]
-governed_by: [haircut]
+has_part: [required-reserves, foreign-branch-hqla-keeps-its-tier-in-a-vietnamese-banks-lcr-with-a-net-outflow-cap-on-host-sovereign-debt, an-unused-facility-secured-by-level-1-assets-at-the-sbv-counts-as-level-1-hqla]
+governed_by: [haircut, the-sbv-may-apply-a-lower-liquidity-coefficient-to-hqla-or-exclude-level-2b-assets]
 drives: [level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]
 contrasts: [total-expected-cash-inflows]
-related: [level-2a-assets]
+related: [level-2a-assets, tt50-hqla-tiers-differ-from-basel-on-vietnam-government-debt-covered-bonds-and-committed-facilities]
 ---
 
 Tài sản Level 1 là cấp cao nhất của [[high-quality-liquid-assets-hqla|HQLA]]: được tính vào kho không giới hạn tỷ trọng và không chịu haircut trong LCR (basel_lcr, LCR30, Level 1 assets, 30.40, d.239).
@@ -33,6 +35,6 @@ Hai ngoại lệ ở nhóm 4 và 5 cho phép nợ chính phủ xếp hạng dư�
 
 Vì Level 1 không có trần, nó là mốc để tính trần cho hai cấp còn lại, theo quy tắc ở trang [[level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]]. Cấp kế tiếp là [[level-2a-assets|Level 2A]].
 
-TT50 xác định tài sản cấp 1 trong Phụ lục I với hệ số thanh khoản 100%, không bị giới hạn khi tính HQLA đủ điều kiện (tt50_2026_sbv, Phụ lục I, Phần A, mục II khoản 1, d.1217). Danh mục gồm tiền mặt, tiền gửi tại Ngân hàng Nhà nước kể cả dự trữ bắt buộc, và chứng khoán của chính phủ, ngân hàng trung ương, tổ chức công lập nước ngoài, BIS, IMF, ECB và Cộng đồng châu Âu, ESM, EFSF hoặc tổ chức tài chính quốc tế (tt50_2026_sbv, Phụ lục I, Phần A, mục II khoản 3a–3c, d.1221–1241). Chứng khoán nhóm cuối phải đạt năm điều kiện: hệ số rủi ro 0% theo phương pháp tiêu chuẩn của Thông tư 14/2025/TT-NHNN hoặc Thông tư 41/2016/TT-NHNN, đủ điều kiện niêm yết và đang niêm yết, giảm giá tối đa 5% hoặc tăng chiết khấu tối đa 5% trong 30 ngày căng thẳng của lịch sử 10 năm, và không do tổ chức tài chính hay đơn vị liên quan của tổ chức tài chính phát hành (tt50_2026_sbv, Phụ lục I, Phần A, mục II khoản 3c, d.1243–1249). Hai thông tư về hệ số rủi ro chưa có trang trong wiki.
+TT50 xác định tài sản cấp 1 trong Phụ lục I với hệ số thanh khoản 100%, không bị giới hạn khi tính HQLA đủ điều kiện (tt50_2026_sbv, Phụ lục I, Phần A, mục II khoản 1, d.1217). Danh mục gồm tiền mặt, tiền gửi tại Ngân hàng Nhà nước kể cả dự trữ bắt buộc, và chứng khoán do chính phủ, ngân hàng trung ương, tổ chức công lập của các nước trừ Việt Nam, BIS, IMF, ECB và Cộng đồng châu Âu, ESM, EFSF hoặc tổ chức tài chính quốc tế phát hành hoặc bảo đảm (tt50_2026_sbv, Phụ lục I, Phần A, mục II khoản 3a–3c, d.1221–1241). Ngoài điều kiện về tổ chức phát hành, chứng khoán nhóm cuối phải đạt thêm bốn điều kiện: hệ số rủi ro 0% theo phương pháp tiêu chuẩn của Thông tư 14/2025/TT-NHNN hoặc Thông tư 41/2016/TT-NHNN, đủ điều kiện niêm yết và đang niêm yết, giảm giá tối đa 5% hoặc tăng chiết khấu tối đa 5% trong 30 ngày căng thẳng của lịch sử 10 năm (hoặc toàn bộ dữ liệu có được nếu ngắn hơn), và không do tổ chức tài chính hay đơn vị liên quan của tổ chức tài chính phát hành (tt50_2026_sbv, Phụ lục I, Phần A, mục II khoản 3c, d.1243–1249). Hai thông tư về hệ số rủi ro chưa có trang trong wiki.
 
 Phần trong nước gồm công cụ nợ của Chính phủ Việt Nam và tín phiếu Ngân hàng Nhà nước bằng VNĐ và bằng ngoại tệ, trái phiếu được Chính phủ bảo lãnh 100% gốc và lãi, và trái phiếu chính quyền địa phương dùng trong giao dịch của Ngân hàng Nhà nước theo quyết định của Thống đốc (tt50_2026_sbv, Phụ lục I, Phần A, mục II khoản 3d–3e, d.1251–1255). Tài sản HQLA của chi nhánh ở nước ngoài xem [[foreign-branch-hqla-keeps-its-tier-in-a-vietnamese-banks-lcr-with-a-net-outflow-cap-on-host-sovereign-debt]]. Phần hạn mức chưa dùng tại Ngân hàng Nhà nước tính là cấp 1 nằm ở [[an-unused-facility-secured-by-level-1-assets-at-the-sbv-counts-as-level-1-hqla]]. Ngân hàng Nhà nước có quyền yêu cầu hệ số thấp hơn 100%, xem [[the-sbv-may-apply-a-lower-liquidity-coefficient-to-hqla-or-exclude-level-2b-assets]]. Điểm khác Basel của từng nhóm nằm ở [[tt50-hqla-tiers-differ-from-basel-on-vietnam-government-debt-covered-bonds-and-committed-facilities]]. Điều 28 về trái phiếu Chính phủ chưa nạp; khi nạp cần đối chiếu với điểm 3d.

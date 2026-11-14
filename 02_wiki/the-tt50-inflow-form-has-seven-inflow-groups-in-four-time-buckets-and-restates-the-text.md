@@ -5,6 +5,10 @@ tags: [vietnam, tt50, lcr, cash-inflows, reporting-form]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+analogous: [the-tt50-outflow-form-lists-seven-outflow-lines-and-restates-the-text-leaving-one-coefficient-blank]
+related: [reverse-repo-and-secured-lending-inflows-run-in-at-0-to-100-percent-by-collateral-tier-in-tt50, operational-and-correspondent-deposits-placed-with-other-institutions-run-in-at-0-percent-except-the-excess-in-tt50, receivables-run-in-at-50-percent-from-retail-and-non-financial-customers-and-100-percent-from-financial-institutions-in-tt50, net-derivative-inflows-run-in-at-100-percent-after-deducting-collateral-outflows-in-tt50]
 ---
 
 Biểu mẫu dòng tiền vào của TT50 có bảy nhóm dòng và một dòng tổng, mỗi dòng phân số dư theo bốn khung thời gian đến hạn: ngày tiếp theo, ngày 2 đến 7, ngày 8 đến 14 và ngày 15 đến 30. Cột (5) là tổng các khung, cột (6) là hệ số thu tiền, cột (7) bằng (5) nhân (6), và cột cuối trỏ về mục hướng dẫn; ký hiệu ∑[(1)÷(4)] ở cột (5) được hiểu là cộng các cột (1) đến (4), suy từ ngữ cảnh (tt50_2026_sbv, Phụ lục I, Phần C, mục VII, d.1969–1974). Các cột (1) đến (5) là số dư đủ điều kiện trên bảng cân đối tài khoản kế toán cuối ngày chốt số liệu, phân theo hạn hợp đồng hoặc thời gian dự kiến (tt50_2026_sbv, Phụ lục I, Phần C, mục VII, d.2003).

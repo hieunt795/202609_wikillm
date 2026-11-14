@@ -5,6 +5,10 @@ tags: [vietnam, tt50, nsfr, rsf, maturity, restructuring]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+analogous: [tt50-nsfr-assigns-a-liability-the-earliest-contractual-date-and-assumes-extension-rights-are-not-exercised]
+related: [tt50-nsfr-encumbered-assets-keep-their-rsf-below-6-months-take-at-least-50-percent-to-1-year-and-100-percent-beyond]
 ---
 
 Kỳ hạn của danh mục RSF là khoảng thời gian từ thời điểm tính NSFR đến thời điểm muộn nhất phải thực hiện nghĩa vụ theo thỏa thuận phù hợp với pháp luật của tài sản; quy tắc dưới đây áp cho tài sản không bị ràng buộc (tt50_2026_sbv, Điều 24 khoản 3, d.799). Cách xác định theo quyền gia hạn của ngân hàng và khách hàng (tt50_2026_sbv, Điều 24 khoản 3 điểm a–d, d.801–813):

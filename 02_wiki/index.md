@@ -1121,6 +1121,12 @@
 - [[liquidity-stress-test-reports-go-to-the-sbv-within-30-days-of-quarter-end]] — báo cáo stress test thanh khoản gửi NHNN trong 30 ngày sau quý
 - [[liquidity-stress-scenarios-use-10-years-of-history-and-run-off-rates-no-lower-than-the-circular]] — dữ liệu ≥ 10 năm, thời kỳ căng thẳng, sàn hệ số rút tiền
 
+**Tỷ lệ đòn bẩy ở Việt Nam (TT50/2026 — Điều 8, Phụ lục III)**
+- [[leverage-ratio-lev]] — LEV = vốn cấp 1 / tổng trạng thái rủi ro; Thống đốc quyết định khi nào áp và ngưỡng, ngoài đó ngân hàng tự quản lý
+- [[tt50-leverage-exposure-measure-adds-on-balance-derivative-off-balance-and-failed-trade-exposures-with-no-collateral-offset]] — EM gồm nội bảng, phái sinh, ngoại bảng (× CCF), giao dịch chưa tất toán; không giảm bằng tài sản bảo đảm
+- [[tt50-leverage-on-balance-exposure-includes-pledged-and-trust-assets-and-nets-only-qualifying-cash-pools]] — nội bảng: tính cả tài sản thế chấp và ủy thác; cash pooling chỉ bù trừ khi đạt bốn điều kiện; repo theo rủi ro tín dụng đối tác
+- [[tt50-leverage-derivative-exposure-is-1-4-times-replacement-cost-plus-potential-future-exposure]] — phái sinh: 1,4 × (RC + PFE), RC trừ ký quỹ tiền mặt đạt điều kiện Điều 25 khoản 4b
+
 **So sánh TT50 và Basel về LCR (analysis)**
 - [[tt50-and-basel-share-the-lcr-formula-30-day-horizon-and-75-percent-inflow-cap]] — trùng khớp: công thức, chân trời 30 ngày, trần 75%, chống tính trùng
 - [[tt50-makes-the-lcr-minimum-a-binding-threshold-with-penalties-where-basel-lets-banks-draw-down-hqla-in-stress]] — khác: tính ràng buộc, nhịp báo cáo, ngưỡng cảnh báo sớm; trùng ở nội dung giải trình và công cụ giám sát

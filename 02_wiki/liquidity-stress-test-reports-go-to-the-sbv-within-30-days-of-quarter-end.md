@@ -5,6 +5,9 @@ tags: [vietnam, tt50, stress-testing, liquidity-risk-management, reporting]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+related: [liquidity-coverage-ratio-lcr, net-stable-funding-ratio-nsfr, liquidity-stress-scenarios-use-10-years-of-history-and-run-off-rates-no-lower-than-the-circular, the-sbv-may-order-remedial-actions-on-liquidity-risk-management-after-an-inspection]
 ---
 
 Ngân hàng thực hiện kiểm tra sức chịu đựng về thanh khoản theo Thông tư 83/2025/TT-NHNN và các nội dung bổ sung của TT50 (tt50_2026_sbv, Điều 14, khoản 9, d.539). Trong 30 ngày kể từ ngày kết thúc quý thực hiện, ngân hàng gửi báo cáo kết quả cho Ngân hàng Nhà nước: Cục Quản lý, giám sát tổ chức tín dụng hoặc Ngân hàng Nhà nước Khu vực, tùy đối tượng giám sát an toàn vi mô. Cấp phê duyệt báo cáo là cấp phê duyệt Báo cáo quản lý rủi ro theo TT83 (tt50_2026_sbv, Điều 14, khoản 9a, d.541).

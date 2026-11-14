@@ -5,6 +5,10 @@ tags: [vietnam, tt50, lcr, cash-outflows, term-deposits, early-withdrawal]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+governs: [total-expected-cash-outflows]
+related: [tt50-counts-30-day-outflows-and-puts-overdue-and-undated-obligations-in-the-next-day-bucket, stable-retail-deposits-run-off-at-5-percent-and-less-stable-and-foreign-currency-at-10-percent-in-tt50]
 ---
 
 Với nguồn vốn huy động của khách hàng còn kỳ hạn trên 30 ngày tại thời điểm tính LCR, TT50 chia thành hai nhóm: nhóm không tính vào dòng ra và nhóm phải tính (tt50_2026_sbv, Phụ lục I, Phần B, mục I khoản 4, d.1404). Phần nguồn vốn phải tính vào dòng ra được ghi ở mốc "Ngày tiếp theo" (tt50_2026_sbv, Phụ lục I, Phần B, mục I khoản 2, d.1400), xem thêm [[tt50-counts-30-day-outflows-and-puts-overdue-and-undated-obligations-in-the-next-day-bucket]].

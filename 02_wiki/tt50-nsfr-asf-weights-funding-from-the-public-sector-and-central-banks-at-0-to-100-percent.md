@@ -5,6 +5,10 @@ tags: [vietnam, tt50, nsfr, asf, public-sector, central-bank]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+analogous: [unsecured-wholesale-funding-from-corporates-and-the-public-sector-runs-off-at-40-percent-and-other-unsecured-at-100-percent]
+related: [operational-deposits-qualify-only-when-tied-to-clearing-custody-or-cash-management-with-switching-costs]
 ---
 
 Nguồn huy động từ Chính phủ, Chính phủ nước ngoài, tổ chức công lập nước ngoài, tổ chức tài chính quốc tế, Kho bạc Nhà nước, Ủy ban nhân dân tỉnh và thành phố trực thuộc Trung ương, Bảo hiểm tiền gửi Việt Nam và Bảo hiểm xã hội Việt Nam có hệ số ASF 50% cho mọi kỳ hạn dưới 1 năm và 100% từ 1 năm trở lên (tt50_2026_sbv, Phụ lục II, Phần A, mục II khoản 7, d.2039–2042). Nguồn huy động từ Ngân hàng Nhà nước và ngân hàng trung ương nước ngoài có hệ số thấp hơn với tiền gửi không phải tiền gửi hoạt động: 0% dưới 6 tháng (tt50_2026_sbv, Phụ lục II, Phần A, mục II khoản 8, d.2043–2046).

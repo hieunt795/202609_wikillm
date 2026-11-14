@@ -5,6 +5,11 @@ tags: [vietnam, tt50, liquidity-risk-management, stress-testing, hqla]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+governs: [high-quality-liquid-assets-hqla]
+part_of: [liquidity-risk]
+related: [hqla-size-must-cover-stress-net-outflows-and-the-lcr-minimum]
 ---
 
 TT50 quy định rằng trong giai đoạn căng thẳng của ngân hàng, ba nhóm yếu tố không bị ảnh hưởng hay chi phối bởi áp lực cạnh tranh và kết quả hoạt động kinh doanh: yêu cầu về hiệu quả quản lý rủi ro thanh khoản, các chức năng kiểm soát cùng hệ thống hạn mức, và quy mô [[high-quality-liquid-assets-hqla|HQLA]] (tt50_2026_sbv, Điều 14, khoản 2, d.479). Văn bản nêu mục đích của việc cách ly này là đáp ứng nhu cầu thanh khoản của ngân hàng (tt50_2026_sbv, Điều 14, khoản 2, d.479).

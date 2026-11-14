@@ -440,12 +440,12 @@ Lint 2026-10-12: 6 dòng file `vietnam-regulator/alm/` đã bỏ khỏi bảng v
 |---|---|
 | Nhan đề | *Thông tư số 50/2026/TT-NHNN quy định về các giới hạn, tỷ lệ bảo đảm an toàn trong hoạt động của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài* |
 | Tác giả, nơi và năm | Ngân hàng Nhà nước Việt Nam (Thống đốc), Hà Nội, ký ngày 30/9/2026, hiệu lực từ 01/10/2026 |
-| Phân loại | Nguồn dài (`00_schema.md` §10) — 255 KB / 2.310 dòng trên 1 file `.md` (kèm bản `.pdf` không đọc) |
-| Nguồn file | File `.md` chuyển đổi ngoài dự án, đặt trong `01_sources/vietnam-regulator/alm/TT50_2026_SBV/`; chú thích wiki trỏ tới file `.md` |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 271 KB / 2.310 dòng trên 1 file `.md` (kèm bản `.pdf` không đọc) |
+| Nguồn file | File `.md` chuẩn hóa từ `.docx` (`TT50_2026_SBV_normalized.md`, thay bản chuyển đổi cũ ngày 2026-11-14; báo cáo `Claude outputs/doi-chieu-2026-11-13-TT50_2026_SBV.md`), đặt trong `01_sources/vietnam-regulator/alm/TT50_2026_SBV/`; chú thích wiki trỏ tới file này, số dòng không đổi |
 | Tiến độ ingest | `03_state/tt50_2026_sbv.md` |
 | Ghi chú | Tách khỏi `vietnam_regulator` ngày 2026-11-09 khi bắt đầu ingest phần LCR |
 
 | Đường dẫn | Bytes | Dòng | SHA-256 |
 |---|---|---|---|
-| `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV.md` | 255.335 | 2.310 | `79b2f82ad09978993bca56fcf0836b79e2c533a1c996a694b6119302dbf22c6f` |
+| `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV_normalized.md` | 271.053 | 2.310 | `ee0577ddeabf00049a8e099a288e4e4fbd440c6567484baaae460e92efbf700d` |
 | `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV.pdf` | 1.406.658 | — | `b2afb2984af8576bf723850e954feb66e3d84c3fa7ac1f6c2d6273cc581bbfdf` |

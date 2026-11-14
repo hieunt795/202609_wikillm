@@ -5,6 +5,9 @@ tags: [vietnam, tt50, disclosure, liquidity-ratios]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+related: [vietnam-lcr-minimum-for-vnd-phases-in-from-50-percent-in-2028-to-100-percent-in-2033, tt50-nsfr-is-asf-over-rsf-with-a-solo-minimum-rising-from-90-to-100-percent-over-three-years, circular-50-2026-tt-nhnn-prudential-limits-and-ratios]
 ---
 
 Ngân hàng công bố thông tin về các tỷ lệ thanh khoản theo nội dung của Phụ lục IV, tối thiểu định kỳ 6 tháng một lần (tt50_2026_sbv, Điều 27 khoản 1, d.929). Công bố bán niên chậm nhất 75 ngày kể từ ngày kết thúc 6 tháng đầu năm tài chính, công bố năm chậm nhất 120 ngày kể từ ngày kết thúc năm tài chính (tt50_2026_sbv, Điều 27 khoản 1a–b, d.931–933). Phụ lục IV chưa nạp vào wiki; vì vậy nội dung công bố chưa có ở đây, cần ingest thêm.

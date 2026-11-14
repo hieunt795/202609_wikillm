@@ -4,7 +4,10 @@ type: analysis
 tags: [hqla, lcr, vietnam, tt50, basel-iii, comparison, operational-requirements]
 sources: [tt50_2026_sbv, basel_lcr]
 status: draft
-last_updated: 2026-11-09
+last_updated: 2026-11-14
+reviewed: 2026-11-14
+reviewed_by: model
+related: [hqla-operational-requirements, unencumbered-assets, tt50-and-basel-share-the-lcr-formula-30-day-horizon-and-75-percent-inflow-cap]
 ---
 
 Điều kiện vận hành đối với HQLA trong TT50 trùng với chuẩn Basel ở hầu hết các điểm. Trang [[hqla-operational-requirements]] ghi bảy yêu cầu của Basel; mười điểm của Điều 19 và Điều 20 khớp với một đoạn Basel, và hai điểm khác nhau.
@@ -21,7 +24,7 @@ Các điểm khớp, ghép theo cặp TT50 và Basel:
 
 - Xác định thành phần danh mục HQLA hằng ngày (tt50_2026_sbv, Điều 20, khoản 2e, d.689) với (basel_lcr, LCR30, Operational requirements, 30.20, d.185).
 
-- Loại tài sản chỉ bán đứt được mà không bán được, hoặc phải bán với mức giảm giá vượt mức tối đa theo loại tài sản (tt50_2026_sbv, Điều 20, khoản 2g, d.691) với (basel_lcr, LCR30, Operational requirements, 30.23, d.191).
+- Loại tài sản chỉ bán đứt được mà không bán được, hoặc phải bán với mức giảm giá vượt mức tối đa theo loại tài sản ở Phụ lục I (tt50_2026_sbv, Điều 20, khoản 2g, d.691) với (basel_lcr, LCR30, Operational requirements, 30.23, d.191). Ngưỡng của hai bên khác nhau: Basel loại tài sản khi chiết khấu bán tháo lớn tới mức làm ngân hàng vi phạm yêu cầu tối thiểu về khả năng thanh toán hoặc yêu cầu nắm giữ tài sản.
 
 - Không tính tài sản nhận theo quyền thế chấp lại khi chủ sở hữu có quyền rút trong 30 ngày căng thẳng (tt50_2026_sbv, Điều 20, khoản 2h, d.693) với (basel_lcr, LCR30, Operational requirements, 30.24, d.193–194).
 
@@ -33,6 +36,6 @@ Các điểm khớp, ghép theo cặp TT50 và Basel:
 
 Hai điểm khác nhau. Thứ nhất, Basel đòi ngân hàng định kỳ bán hoặc repo một phần đại diện của kho để thử khả năng tiếp cận thị trường, và coi giao dịch kinh doanh thông thường là đạt (basel_lcr, LCR30, Operational requirements, 30.15, d.161–164). Điều 20 của TT50 không có yêu cầu thử bán định kỳ tương ứng. Điều 20 khoản 2b chỉ yêu cầu ngân hàng đánh giá khả năng chuyển đổi thành tiền và tính sẵn có của tài sản theo quy định nội bộ phù hợp với thị trường và đặc thù hoạt động của mình (tt50_2026_sbv, Điều 20, khoản 2b, d.665).
 
-Thứ hai, TT50 xếp một tài sản tài chính, trừ tiền mặt, bị ràng buộc một phần giá trị vào nhóm bị ràng buộc (tt50_2026_sbv, Điều 20, khoản 2c, d.669). Basel có quy tắc cho trường hợp gần nhất: phần chưa dùng của tài sản đủ chuẩn trong rổ bảo đảm vẫn được tính, và nếu không xác định được tài sản cụ thể thì giả định ràng buộc theo thứ tự thanh khoản tăng dần (basel_lcr, LCR30, Operational requirements, 30.16 FAQ, d.171–177). Hai quy tắc xử lý hai tình huống khác nhau, một tài sản đơn lẻ và một rổ gồm nhiều tài sản. Phụ lục I phần A của TT50 có thể bổ sung quy tắc cho rổ bảo đảm; mục này đợi ingest chunk đó mới đối chiếu được.
+Thứ hai, TT50 xếp một tài sản tài chính, trừ tiền mặt, bị ràng buộc một phần giá trị vào nhóm bị ràng buộc (tt50_2026_sbv, Điều 20, khoản 2c, d.669). Basel có quy tắc cho trường hợp gần nhất: phần chưa dùng của tài sản đủ chuẩn trong rổ bảo đảm vẫn được tính, và nếu không xác định được tài sản cụ thể thì giả định ràng buộc theo thứ tự thanh khoản tăng dần (basel_lcr, LCR30, Operational requirements, 30.16 FAQ, d.171–177). Hai quy tắc xử lý hai tình huống khác nhau, một tài sản đơn lẻ và một rổ gồm nhiều tài sản. Phụ lục I phần A của TT50 đã nạp và không có quy tắc riêng cho rổ bảo đảm (tt50_2026_sbv, Phụ lục I, Phần A, d.1137–1393).
 
 Phần công thức tỷ lệ nằm ở trang [[tt50-and-basel-share-the-lcr-formula-30-day-horizon-and-75-percent-inflow-cap]].

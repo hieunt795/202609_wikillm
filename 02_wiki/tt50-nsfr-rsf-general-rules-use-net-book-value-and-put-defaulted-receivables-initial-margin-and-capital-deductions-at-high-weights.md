@@ -5,6 +5,9 @@ tags: [vietnam, tt50, nsfr, rsf, defaulted-receivables, initial-margin]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+related: [tt50-nsfr-encumbered-assets-keep-their-rsf-below-6-months-take-at-least-50-percent-to-1-year-and-100-percent-beyond, tt50-nsfr-rsf-weights-other-assets-add-on-values-and-off-balance-commitments, tt50-nsfr-asf-counts-capital-at-100-percent-and-tier-2-capital-by-residual-maturity, tt50-nsfr-counts-settled-purchases-and-excludes-settled-sales-before-they-reach-the-balance-sheet, tt50-nsfr-derivative-position-nets-to-0-percent-asf-or-100-percent-rsf, tt50-nsfr-dependent-asset-liability-pairs-take-0-percent-asf-and-rsf-when-all-conditions-are-met]
 ---
 
 Ngân hàng phân loại toàn bộ tài sản trên báo cáo tài chính, cam kết ngoại bảng và các phần giá trị khác để xác định hệ số RSF (tt50_2026_sbv, Phụ lục II, Phần B, mục I khoản 1, d.2089). Giá trị lấy theo giá trị ghi sổ sau khi trừ dự phòng cụ thể, hao mòn và các khoản giảm trừ khác, trừ tài sản phái sinh NSFR theo Điều 25, tài sản thuộc cặp phụ thuộc theo Điều 26, các khoản giảm trừ khỏi vốn tự có theo Thông tư 14/2025 hoặc Thông tư 41/2016, và cam kết ngoại bảng tính theo phần hạn mức chưa sử dụng (tt50_2026_sbv, Phụ lục II, Phần B, mục I khoản 2, d.2091–2099). Mọi ngân hàng, kể cả ngân hàng đang áp Thông tư 41/2016 hoặc phương pháp tiêu chuẩn của Thông tư 14/2025, phải xác định khoản phải đòi vỡ nợ theo Thông tư 14/2025 (tt50_2026_sbv, Phụ lục II, Phần B, mục I khoản 3, d.2101).

@@ -4,7 +4,10 @@ type: concept
 tags: [liquidity-regulation, liquidity-risk-management, lcr]
 sources: [basel_lcr, tt50_2026_sbv]
 status: draft
-last_updated: 2026-11-10
+last_updated: 2026-11-14
+reviewed: 2026-11-14
+reviewed_by: model
+related: [vietnamese-banks-must-set-liquidity-reserve-limits-for-seasonal-peaks]
 governed_by: [principles-for-sound-liquidity-risk-management-and-supervision, collateral-constraint-on-central-bank-credit]
 drives: [supervisory-response-to-an-lcr-below-100-percent-is-proportionate-to-the-shortfall]
 ---
@@ -17,4 +20,4 @@ CFP xuất hiện ở hai chỗ trong cách cơ quan giám sát xử lý [[super
 
 Phần vốn vay ngân hàng trung ương trong CFP phụ thuộc vào lượng tài sản ngân hàng có thể đem thế chấp, tức [[collateral-constraint-on-central-bank-credit|ràng buộc tài sản bảo đảm đối với tín dụng ngân hàng trung ương]].
 
-TT50 yêu cầu ngân hàng Việt Nam lập kế hoạch truyền thông tới các đối tượng cần thiết theo quy định nội bộ, lập kế hoạch tài trợ dự phòng, giữ các khoản dự trữ thanh khoản và đa dạng hóa nguồn tài trợ khi có vấn đề thanh khoản, để giảm khả năng lan truyền do rủi ro danh tiếng (tt50_2026_sbv, Điều 14, khoản 3, d.481). Thông tư không dùng tên CFP, nhưng nội dung là một kế hoạch tài trợ dự phòng. Phần dự trữ cho các giai đoạn nhu cầu tăng cao nằm ở [[vietnamese-banks-must-set-liquidity-reserve-limits-for-seasonal-peaks]].
+TT50 yêu cầu ngân hàng Việt Nam lập kế hoạch truyền thông tới các đối tượng cần thiết theo quy định nội bộ, lập kế hoạch tài trợ dự phòng, giữ các khoản dự trữ thanh khoản và đa dạng hóa nguồn tài trợ khi có vấn đề thanh khoản, để giảm khả năng lan truyền do rủi ro danh tiếng (tt50_2026_sbv, Điều 14, khoản 3, d.481). Thông tư dùng đúng cụm "kế hoạch tài trợ dự phòng về thanh khoản" nhưng không nêu nội dung bắt buộc của kế hoạch như đoạn Sound Principles mà Basel trích. Phần dự trữ cho các giai đoạn nhu cầu tăng cao nằm ở [[vietnamese-banks-must-set-liquidity-reserve-limits-for-seasonal-peaks]].

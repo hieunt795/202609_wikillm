@@ -4,12 +4,14 @@ type: concept
 tags: [lcr, basel-iii, liquidity-regulation, hqla]
 sources: [basel_lcr, tt50_2026_sbv]
 status: draft
-last_updated: 2026-11-10
+last_updated: 2026-11-14
+reviewed: 2026-11-14
+reviewed_by: model
 part_of: [high-quality-liquid-assets-hqla]
 has_part: [restricted-use-committed-liquidity-facility-rclf]
 governed_by: [level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]
 contrasts: [level-1-assets]
-related: [rmbs-negative-convexity-arises-from-embedded-borrower-prepayment-options-and-wal-extension, level-2a-assets]
+related: [tt50-hqla-tiers-differ-from-basel-on-vietnam-government-debt-covered-bonds-and-committed-facilities, rmbs-negative-convexity-arises-from-embedded-borrower-prepayment-options-and-wal-extension, level-2a-assets]
 ---
 
 Tài sản Level 2B là cấp thấp nhất của [[high-quality-liquid-assets-hqla|HQLA]], chỉ được tính khi cơ quan quản lý quốc gia cho phép, chịu haircut từ 25% đến 50% và chiếm không quá 15% kho (basel_lcr, LCR30, Level 2B assets, 30.44, d.314) (basel_lcr, LCR30, Definition of HQLA, 30.33, d.218).
@@ -40,4 +42,4 @@ TT50 đưa cấp 2B vào danh mục ngay, mỗi nhóm có hệ số riêng, và 
 | Cổ phiếu phổ thông | 50% | không áp dụng | 40% |
 | Tài sản chi nhánh ở nước ngoài | theo từng loại | theo điều kiện cấp 2B | theo điều kiện cấp 2B |
 
-RMBS của TT50 đòi thêm các điều kiện: không do ngân hàng hay đơn vị liên quan phát hành hoặc tạo lập khoản phải đòi, tài sản cơ sở là khoản phải đòi bất động sản thế chấp nhà ở không có sản phẩm cấu trúc, có quyền truy đòi, LTV bình quân tối đa 80% lúc phát hành, và chứng khoán hóa theo luật nước thực hiện (tt50_2026_sbv, Phụ lục I, Phần A, mục IV khoản 3a, d.1299–1315). Cổ phiếu phổ thông phải thuộc VN30 hoặc một chỉ số chứng khoán quan trọng theo quyết định của cơ quan có thẩm quyền ở nước nơi ngân hàng có rủi ro thanh khoản, phát hành bằng VNĐ hoặc đồng tiền của nước đó, niêm yết và bù trừ tập trung (tt50_2026_sbv, Phụ lục I, Phần A, mục IV khoản 3d, d.1337–1347). Mọi nhóm đều yêu cầu niêm yết và không do tổ chức tài chính phát hành, trừ RMBS có điều kiện riêng ở trên. Điểm khác Basel nằm ở [[tt50-hqla-tiers-differ-from-basel-on-vietnam-government-debt-covered-bonds-and-committed-facilities]].
+RMBS của TT50 đòi thêm các điều kiện: không do ngân hàng hay đơn vị liên quan phát hành hoặc tạo lập khoản phải đòi, tài sản cơ sở là khoản phải đòi bất động sản thế chấp nhà ở không có sản phẩm cấu trúc, có quyền truy đòi, LTV bình quân tối đa 80% lúc phát hành, và chứng khoán hóa theo luật nước thực hiện (tt50_2026_sbv, Phụ lục I, Phần A, mục IV khoản 3a, d.1299–1315). Cổ phiếu phổ thông phải thuộc VN30 hoặc một chỉ số chứng khoán quan trọng theo quyết định của cơ quan có thẩm quyền ở nước nơi ngân hàng có rủi ro thanh khoản, phát hành bằng VNĐ hoặc đồng tiền của nước đó, niêm yết và bù trừ tập trung (tt50_2026_sbv, Phụ lục I, Phần A, mục IV khoản 3d, d.1337–1347). Mọi nhóm, kể cả RMBS, đều yêu cầu niêm yết (tt50_2026_sbv, Phụ lục I, Phần A, mục IV khoản 3a–3d, d.1307, d.1323, d.1331, d.1345). Ba nhóm không phải RMBS còn yêu cầu không do tổ chức tài chính phát hành; RMBS thay điều kiện này bằng điều kiện không do chính ngân hàng hay đơn vị liên quan phát hành, tạo lập ở trên. Điểm khác Basel nằm ở [[tt50-hqla-tiers-differ-from-basel-on-vietnam-government-debt-covered-bonds-and-committed-facilities]].

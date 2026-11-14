@@ -5,6 +5,10 @@ tags: [vietnam, tt50, nsfr, rsf, off-balance-sheet, derivatives]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+contrasts: [committed-credit-and-liquidity-facilities-run-off-by-counterparty-type-from-5-to-100-percent-in-tt50, contractual-disbursement-obligations-run-off-at-100-percent-to-financial-institutions-and-only-above-50-percent-of-inflows-to-others-in-tt50, contingent-obligations-run-off-at-0-3-and-5-percent-or-by-bank-estimate-and-100-percent-once-triggered-in-tt50]
+related: [tt50-nsfr-measures-derivative-liabilities-and-assets-at-replacement-cost-and-nets-variation-margin, tt50-nsfr-counts-settled-purchases-and-excludes-settled-sales-before-they-reach-the-balance-sheet]
 ---
 
 Tài sản khác xác định được kỳ hạn có hệ số RSF 50% dưới 1 năm và 100% từ 1 năm trở lên; tài sản khác không xác định kỳ hạn có 100% (tt50_2026_sbv, Phụ lục II, Phần B, mục II dòng A.19–A.20, d.2164–2165). Phần giá trị bổ sung tính vào RSF gồm ba khoản: 10% tổng giá trị nợ phái sinh theo khoản 1 Điều 25 (giá trị trước khi trừ ký quỹ biến động đã nộp) với hệ số 100%; tài sản dự kiến nhận từ mua công cụ tài chính, ngoại tệ hoặc hàng hóa tại ngày giao dịch (trừ phái sinh, repo, reverse repo), áp hệ số như tài sản cùng loại ở mục A; và các khoản giảm trừ khỏi vốn tự có mục 15, 17, 18, 22, 28 (Thông tư 14/2025) hoặc mục 20, 24, 25 (Thông tư 41/2016) với hệ số 100% (tt50_2026_sbv, Phụ lục II, Phần B, mục II dòng B, d.2166–2169).

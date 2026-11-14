@@ -5,10 +5,12 @@ tags: [lcr, basel-iii, liquidity-regulation, hqla]
 sources: [basel_lcr, bindseil_monetary_policy, tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
 part_of: [high-quality-liquid-assets-hqla]
-governed_by: [haircut, level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock]
+governed_by: [haircut, level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock, the-sbv-may-apply-a-lower-liquidity-coefficient-to-hqla-or-exclude-level-2b-assets]
 contrasts: [level-1-assets]
-related: [level-2b-assets, covered-bonds-combine-on-balance-sheet-dual-recourse-with-insolvency-ring-fencing, option-3-additional-level-2a-assets-beyond-the-40-percent-cap-take-a-minimum-20-percent-haircut]
+related: [tt50-hqla-tiers-differ-from-basel-on-vietnam-government-debt-covered-bonds-and-committed-facilities, level-2b-assets, covered-bonds-combine-on-balance-sheet-dual-recourse-with-insolvency-ring-fencing, option-3-additional-level-2a-assets-beyond-the-40-percent-cap-take-a-minimum-20-percent-haircut]
 ---
 
 Tài sản Level 2A là cấp thứ hai của [[high-quality-liquid-assets-hqla|HQLA]]: mỗi tài sản chịu [[haircut]] 15% trên giá trị thị trường hiện tại khi tính vào kho (basel_lcr, LCR30, Level 2 assets, 30.43, d.279).
@@ -32,4 +34,4 @@ TT50 cũng có cấp 2A, áp hệ số thanh khoản 85% (tt50_2026_sbv, Phụ l
 2. Chứng khoán nợ doanh nghiệp không do tổ chức tài chính phát hành, xếp hạng độc lập từ AA- trở lên, niêm yết, qua cùng phép thử 10%.
 3. Tài sản trong danh mục HQLA của chi nhánh ở nước ngoài, đạt điều kiện cấp 2A theo Thông tư.
 
-Danh mục của TT50 không có covered bond, loại mà Basel xếp vào cấp này. Ngưỡng AA- của TT50 trùng với chuẩn mực LCR mà trang này theo; ghi chú về ngưỡng AA của Bindseil ở trên không đổi. Ngân hàng Nhà nước có quyền yêu cầu hệ số thấp hơn 85%, xem [[the-sbv-may-apply-a-lower-liquidity-coefficient-to-hqla-or-exclude-level-2b-assets]]. Điểm khác biệt đầy đủ với Basel nằm ở [[tt50-hqla-tiers-differ-from-basel-on-vietnam-government-debt-covered-bonds-and-committed-facilities]].
+Danh mục của TT50 không có covered bond, loại mà Basel xếp vào cấp này. Ngưỡng AA- của TT50 trùng với chuẩn mực LCR của Basel, không trùng với mức AA mà Bindseil ghi. Ngân hàng Nhà nước có quyền yêu cầu hệ số thấp hơn 85%, xem [[the-sbv-may-apply-a-lower-liquidity-coefficient-to-hqla-or-exclude-level-2b-assets]]. Điểm khác biệt đầy đủ với Basel nằm ở [[tt50-hqla-tiers-differ-from-basel-on-vietnam-government-debt-covered-bonds-and-committed-facilities]].

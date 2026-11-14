@@ -5,6 +5,10 @@ tags: [lcr, vietnam, tt50, basel-iii, comparison, currency-mismatch, consolidati
 sources: [tt50_2026_sbv, basel_lcr]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+contrasts: [lcr-applies-to-internationally-active-banks-on-a-consolidated-basis]
+related: [liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr, consolidated-lcr-applies-home-parameters-except-host-rules-for-retail-and-small-business-deposits, lcr-is-met-in-one-currency-while-liquidity-needs-are-monitored-by-significant-currency, vietnam-defines-three-lcr-variants-with-a-binding-threshold-only-on-the-solo-vnd-equivalent-ratio, tt50-requires-intraday-liquidity-management-that-the-basel-lcr-stress-scenario-does-not-cover]
 ---
 
 TT50 đặt ngưỡng bắt buộc lên LCR quy VNĐ của từng ngân hàng riêng lẻ, còn Basel áp LCR trên cơ sở hợp nhất và báo cáo bằng một đồng tiền chung. Hai khung giống nhau ở chỗ cả hai đều không đặt mức tối thiểu cho từng ngoại tệ, và khác nhau ở cấp tổ chức bị ràng buộc, đối tượng áp dụng và vai trò của VNĐ.

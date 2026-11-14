@@ -5,6 +5,10 @@ tags: [vietnam, tt50, nsfr, asf, wholesale-funding]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+analogous: [unsecured-wholesale-funding-from-corporates-and-the-public-sector-runs-off-at-40-percent-and-other-unsecured-at-100-percent]
+related: [operational-deposits-qualify-only-when-tied-to-clearing-custody-or-cash-management-with-switching-costs, tt50-nsfr-asf-weights-funding-from-the-public-sector-and-central-banks-at-0-to-100-percent]
 ---
 
 Nguồn huy động từ tổ chức tài chính, doanh nghiệp không phải tổ chức tài chính và tổ chức khác có hệ số ASF khác nhau chủ yếu ở phần dưới 6 tháng. Doanh nghiệp phi tài chính có 50% cho tiền gửi hoạt động, tiền gửi không hoạt động và nguồn huy động khác dưới 1 năm. Tổ chức tài chính và tổ chức khác có 0% cho nguồn dưới 6 tháng khi không phải tiền gửi hoạt động. Tiền gửi hoạt động của cả ba nhóm có 50% dưới 1 năm; từ 1 năm trở lên mọi dòng đều 100% (tt50_2026_sbv, Phụ lục II, Phần A, mục II khoản 11–13, d.2067–2078).

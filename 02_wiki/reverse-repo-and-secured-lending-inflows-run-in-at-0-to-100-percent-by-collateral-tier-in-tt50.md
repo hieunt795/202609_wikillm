@@ -5,6 +5,11 @@ tags: [vietnam, tt50, lcr, cash-inflows, reverse-repo, margin-loans]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+part_of: [total-expected-cash-inflows]
+analogous: [secured-wholesale-funding-runs-off-at-0-to-100-percent-depending-on-the-collateral]
+related: [level-1-assets, level-2a-assets, level-2b-assets, adjusted-hqla-amounts-unwind-secured-transactions-maturing-within-30-days]
 ---
 
 Dòng vào từ cấp tín dụng có bảo đảm bằng tài sản tài chính và từ giao dịch mua lại đảo ngược (reverse repo) có hệ số thu tiền từ 0% đến 100% theo loại tài sản bảo đảm trong LCR của TT50. Phạm vi gồm các giao dịch còn hạn đến 30 ngày; với cấp tín dụng có bảo đảm, ngân hàng phải có quyền thế chấp lại và chủ sở hữu tài sản không có quyền rút tài sản trong 30 ngày (tt50_2026_sbv, Phụ lục I, Phần C, mục II khoản 1.1, d.1880). Giao dịch cho phép khách hàng hoàn trả sau 30 ngày không tính vào dòng vào (tt50_2026_sbv, Phụ lục I, Phần C, mục II khoản 1.2, d.1882).

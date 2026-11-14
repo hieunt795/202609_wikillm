@@ -4,7 +4,10 @@ type: concept
 tags: [lcr, vietnam, tt50, liquidity-regulation, insolvency, supervision]
 sources: [tt50_2026_sbv]
 status: draft
-last_updated: 2026-11-09
+last_updated: 2026-11-14
+reviewed: 2026-11-14
+reviewed_by: model
+related: [vietnam-lcr-minimum-for-vnd-phases-in-from-50-percent-in-2028-to-100-percent-in-2033, a-vietnamese-bank-breaching-the-solo-vnd-equivalent-lcr-must-self-remedy-and-report-daily-to-the-sbv, the-sbv-may-order-remedial-actions-on-liquidity-risk-management-after-an-inspection, liquidity-risk]
 ---
 
 TT50 coi ngân hàng có nguy cơ mất khả năng chi trả khi giá trị HQLA đủ điều kiện tại thời điểm tính LCR thấp hơn 90% mức HQLA đủ điều kiện mà ngân hàng phải đáp ứng để tuân thủ ngưỡng LCR, liên tục trong 30 ngày (tt50_2026_sbv, Điều 18, khoản 1, d.645).
@@ -15,4 +18,4 @@ Mất khả năng chi trả là một trạng thái khác, xác định bằng h
 
 Trong cả hai trường hợp, ngân hàng phải kịp thời báo cáo NHNN, qua Cục Quản lý, giám sát tổ chức tín dụng hoặc NHNN Khu vực, về thực trạng, nguyên nhân, các biện pháp đã áp dụng, các biện pháp dự kiến để khắc phục và các đề xuất, kiến nghị (tt50_2026_sbv, Điều 18, khoản 3, d.649).
 
-Mốc 90% đứng sau bước vi phạm ngưỡng LCR đã mô tả ở trang [[a-vietnamese-bank-breaching-the-solo-vnd-equivalent-lcr-must-self-remedy-and-report-daily-to-the-sbv]], tức là ngân hàng đang báo cáo hằng ngày về mức thiếu hụt chuyển sang trạng thái này nếu HQLA tiếp tục giảm xuống dưới 90% mức yêu cầu và kéo dài 30 ngày. Các quyền can thiệp của NHNN trong tình huống này nằm ở trang [[the-sbv-may-order-remedial-actions-on-liquidity-risk-management-after-an-inspection]]. Về mặt khái niệm, nguy cơ mất khả năng chi trả liên quan trực tiếp tới [[liquidity-risk|rủi ro thanh khoản]].
+Suy từ thứ tự Điều 17 và Điều 18, nguồn không nói thẳng: mốc 90% đứng sau bước vi phạm ngưỡng LCR đã mô tả ở trang [[a-vietnamese-bank-breaching-the-solo-vnd-equivalent-lcr-must-self-remedy-and-report-daily-to-the-sbv]], tức là ngân hàng đang báo cáo hằng ngày về mức thiếu hụt chuyển sang trạng thái này nếu HQLA tiếp tục giảm xuống dưới 90% mức yêu cầu và kéo dài 30 ngày. Quyền yêu cầu khắc phục của NHNN sau thanh tra, kiểm tra, giám sát, không gắn riêng với tình huống này, nằm ở trang [[the-sbv-may-order-remedial-actions-on-liquidity-risk-management-after-an-inspection]]. Về mặt khái niệm, nguy cơ mất khả năng chi trả liên quan trực tiếp tới [[liquidity-risk|rủi ro thanh khoản]].

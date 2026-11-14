@@ -5,6 +5,10 @@ tags: [vietnam, tt50, nsfr, asf, maturity, early-redemption]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+analogous: [tt50-nsfr-assigns-an-asset-the-latest-extension-date-and-splits-multi-period-loans-by-instalment]
+related: [tt50-nsfr-sets-asf-to-0-percent-for-balances-whose-early-payment-ordered-by-an-inspection-is-breached, tt50-nsfr-asf-weights-retail-and-sme-funding-at-95-and-90-percent-with-100-percent-for-non-withdrawable-term-deposits]
 ---
 
 Kỳ hạn của danh mục ASF là khoảng thời gian từ thời điểm tính NSFR đến thời điểm sớm nhất mà ngân hàng phải thực hiện nghĩa vụ theo thỏa thuận phù hợp với pháp luật của công cụ vốn chủ sở hữu hoặc nợ phải trả (tt50_2026_sbv, Điều 23 khoản 3, d.771). Cách xác định theo quyền mua lại, thanh toán sớm của ngân hàng và quyền bán lại, rút trước hạn của khách hàng (tt50_2026_sbv, Điều 23 khoản 3 điểm a–d, d.773–783):

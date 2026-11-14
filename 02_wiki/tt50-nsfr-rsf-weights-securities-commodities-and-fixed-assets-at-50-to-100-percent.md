@@ -5,6 +5,9 @@ tags: [vietnam, tt50, nsfr, rsf, securities, commodities, fixed-assets]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+related: [tt50-nsfr-rsf-weights-hqla-at-0-percent-for-cash-and-reserves-and-5-15-and-50-percent-by-tier, tt50-nsfr-rsf-general-rules-use-net-book-value-and-put-defaulted-receivables-initial-margin-and-capital-deductions-at-high-weights]
 ---
 
 Chứng khoán không thuộc HQLA, hàng hóa vật chất giao dịch trên sàn và tài sản cố định có hệ số RSF từ 50% đến 100%. Cổ phiếu niêm yết và hàng hóa vật chất (gồm vàng) đều 85% ở cột không xác định kỳ hạn; tài sản cố định 100%; trái phiếu niêm yết 50% dưới 1 năm và 85% từ 1 năm trở lên; chứng khoán khác 50% dưới 1 năm và 100% từ 1 năm trở lên hoặc không xác định (tt50_2026_sbv, Phụ lục II, Phần B, mục II dòng A.11–A.13, d.2130–2135).

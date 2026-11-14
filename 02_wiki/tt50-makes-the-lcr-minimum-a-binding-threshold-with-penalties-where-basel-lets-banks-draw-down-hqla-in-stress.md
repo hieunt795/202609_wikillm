@@ -5,6 +5,10 @@ tags: [lcr, vietnam, tt50, basel-iii, comparison, supervision]
 sources: [tt50_2026_sbv, basel_lcr]
 status: draft
 last_updated: 2026-11-09
+reviewed: 2026-11-14
+reviewed_by: model
+contrasts: [supervisory-response-to-an-lcr-below-100-percent-is-proportionate-to-the-shortfall, banks-may-use-hqla-and-fall-below-the-lcr-minimum-during-stress, lcr-is-reported-at-least-monthly-and-a-breach-is-notified-immediately]
+related: [contingency-funding-plan, the-sbv-may-order-remedial-actions-on-liquidity-risk-management-after-an-inspection, a-vietnamese-bank-breaching-the-solo-vnd-equivalent-lcr-must-self-remedy-and-report-daily-to-the-sbv, a-vietnamese-bank-is-at-risk-of-insolvency-when-eligible-hqla-stays-below-90-percent-of-the-required-level-for-30-days]
 ---
 
 TT50 xử lý vi phạm ngưỡng LCR như vi phạm một quy định bắt buộc, còn Basel coi việc rơi dưới 100% khi căng thẳng là chuyện có thể xảy ra và giao cơ quan giám sát phản ứng theo hoàn cảnh. Hai khung có phần chung về thông báo và công cụ giám sát, khác nhau ở ba điểm: tính ràng buộc, nhịp báo cáo và ngưỡng cảnh báo sớm.

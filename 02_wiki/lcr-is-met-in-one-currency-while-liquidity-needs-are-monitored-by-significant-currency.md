@@ -4,11 +4,13 @@ type: concept
 tags: [lcr, basel-iii, liquidity-regulation, currency-mismatch]
 sources: [basel_lcr, tt50_2026_sbv]
 status: draft
-last_updated: 2026-11-10
+last_updated: 2026-11-14
+reviewed: 2026-11-14
+reviewed_by: model
 contrasts: [option-2-foreign-currency-hqla-covers-domestic-needs-with-an-8-percent-haircut-above-a-25-percent-threshold]
 governs: [liquidity-coverage-ratio-lcr, high-quality-liquid-assets-hqla]
 analogous: [liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr]
-related: [central-bank-fx-swap-lines-and-cross-border-liquidity]
+related: [central-bank-fx-swap-lines-and-cross-border-liquidity, tt50-binds-the-solo-vnd-equivalent-lcr-while-basel-applies-a-consolidated-ratio-in-one-reporting-currency]
 ---
 
 [[liquidity-coverage-ratio-lcr|LCR]] được đáp ứng trên cơ sở hợp nhất và báo cáo bằng một đồng tiền chung, nhưng cơ quan giám sát và ngân hàng vẫn theo dõi nhu cầu thanh khoản theo từng đồng tiền trọng yếu (basel_lcr, LCR10, Currencies, 10.9, d.46).
@@ -17,7 +19,7 @@ Chuẩn mực không đặt mức LCR tối thiểu cho từng đồng tiền. T
 
 Chương về HQLA nêu yêu cầu này cụ thể hơn. Ngân hàng có khả năng dùng kho HQLA để tạo thanh khoản bằng đúng đồng tiền và tại đúng nước nơi dòng tiền ra ròng phát sinh. LCR theo từng đồng tiền được theo dõi và báo cáo để phát hiện lệch pha đồng tiền, theo khung công cụ theo dõi SRP50. Khi quản trị rủi ro thanh khoản ngoại tệ, ngân hàng tính đến khả năng tiếp cận thị trường hoán đổi và thị trường ngoại hối suy giảm nhanh trong căng thẳng. Biến động tỷ giá đột ngột cũng có thể nới rộng trạng thái lệch pha sẵn có và làm giảm hiệu quả phòng hộ ngoại hối (basel_lcr, LCR30, Operational requirements, 30.27, d.200–202).
 
-Một LCR hợp nhất trên 100% vì vậy có thể che một khoảng thiếu ở một đồng tiền cụ thể. Minh hoạ ngoài nguồn: ngân hàng giữ HQLA bằng nội tệ trong khi dòng tiền ra bằng USD sẽ phải đổi tiền giữa lúc căng thẳng. Đây là tình huống mà [[central-bank-fx-swap-lines-and-cross-border-liquidity|đường hoán đổi ngoại tệ giữa các ngân hàng trung ương]] được lập ra để xử lý ở cấp hệ thống.
+Một LCR hợp nhất trên 100% vì vậy có thể che một khoảng thiếu ở một đồng tiền cụ thể (suy từ hai đoạn trên, nguồn không nói thẳng). Minh hoạ ngoài nguồn: ngân hàng giữ HQLA bằng nội tệ trong khi dòng tiền ra bằng USD sẽ phải đổi tiền giữa lúc căng thẳng. Đây là tình huống mà [[central-bank-fx-swap-lines-and-cross-border-liquidity|đường hoán đổi ngoại tệ giữa các ngân hàng trung ương]] được lập ra để xử lý ở cấp hệ thống.
 
 Quy tắc này đi cùng quy tắc [[liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr|loại HQLA dư bị kẹt]]. Cả hai giới hạn mức độ mà một con số hợp nhất được coi là thanh khoản dùng được. Ở đồng tiền thiếu HQLA, chuẩn mực cho một ngoại lệ có kiểm soát: [[option-2-foreign-currency-hqla-covers-domestic-needs-with-an-8-percent-haircut-above-a-25-percent-threshold|Option 2 của các phương án thanh khoản thay thế]] cho ngân hàng giữ HQLA ngoại tệ để phủ nhu cầu nội tệ, trong hạn mức lệch đồng tiền thỏa thuận với cơ quan giám sát (basel_lcr, LCR31, Option 2 – Foreign currency HQLA to cover domestic liquidity needs, 31.13, d.460). Cách TT50 chia LCR theo đồng tiền được so với quy tắc này ở trang [[tt50-binds-the-solo-vnd-equivalent-lcr-while-basel-applies-a-consolidated-ratio-in-one-reporting-currency]].
 

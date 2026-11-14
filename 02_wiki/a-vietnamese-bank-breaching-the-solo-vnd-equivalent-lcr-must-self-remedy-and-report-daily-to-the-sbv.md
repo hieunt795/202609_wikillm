@@ -5,6 +5,9 @@ tags: [lcr, vietnam, tt50, liquidity-regulation, supervision]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-09
+reviewed: 2026-11-14
+reviewed_by: model
+related: [tt50-makes-the-lcr-minimum-a-binding-threshold-with-penalties-where-basel-lets-banks-draw-down-hqla-in-stress, vietnam-lcr-minimum-for-vnd-phases-in-from-50-percent-in-2028-to-100-percent-in-2033, a-vietnamese-bank-is-at-risk-of-insolvency-when-eligible-hqla-stays-below-90-percent-of-the-required-level-for-30-days]
 ---
 
 Ngân hàng vi phạm ngưỡng LCR quy VNĐ riêng lẻ phải tự xử lý ngay và báo cáo NHNN hằng ngày, trong khi NHNN xem xét xử phạt hành chính và giám sát tăng cường tuỳ mức dùng biện pháp tự xử lý (tt50_2026_sbv, Điều 17, khoản 2, d.615–639).

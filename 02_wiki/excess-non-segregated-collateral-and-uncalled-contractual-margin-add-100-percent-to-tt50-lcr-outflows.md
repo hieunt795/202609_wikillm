@@ -4,10 +4,14 @@ type: concept
 tags: [vietnam, tt50, lcr, cash-outflows, collateral, margin]
 sources: [tt50_2026_sbv]
 status: draft
-last_updated: 2026-11-10
+last_updated: 2026-11-14
+reviewed: 2026-11-14
+reviewed_by: model
+analogous: [hqla-operational-requirements]
+related: [high-quality-liquid-assets-hqla, a-rating-downgrade-of-up-to-three-notches-adds-the-full-triggered-calls-to-tt50-lcr-outflows, collateral-valuation-changes-add-a-20-percent-outflow-on-non-level-1-margin-collateral-in-tt50, collateral-position-management]
 ---
 
-TT50 cộng 100% vào dòng ra hai khoản tài sản bảo đảm mà đối tác có thể kéo về bất cứ lúc nào: tài sản bảo đảm dư thừa không tách biệt đang nằm trong kho HQLA, và tài sản bảo đảm phải ký quỹ theo thỏa thuận nhưng đối tác chưa yêu cầu.
+TT50 cộng 100% vào dòng ra hai khoản tài sản bảo đảm mà đối tác có quyền đòi theo thỏa thuận: tài sản bảo đảm dư thừa không tách biệt đang nằm trong kho HQLA, và tài sản bảo đảm phải ký quỹ theo thỏa thuận nhưng đối tác chưa yêu cầu.
 
 Khoản thứ nhất áp cho giao dịch có bảo đảm mà tài sản bảo đảm dư thừa không được tách biệt (non-segregated collateral), phần giá trị dư thừa đã tính vào danh mục [[high-quality-liquid-assets-hqla|HQLA]] của ngân hàng và đối tác có thể thu hồi bất kỳ lúc nào theo thỏa thuận. Ngân hàng cộng toàn bộ 100% giá trị phần dư thừa đó vào dòng ra (tt50_2026_sbv, Phụ lục I, Phần B, mục IV khoản 2.3, d.1699–1701). Phép tính này giữ cho một tài sản không vừa tính vào kho HQLA, vừa bị coi là còn nằm trong tay ngân hàng nếu đối tác có quyền lấy lại, cùng hướng với yêu cầu [[hqla-operational-requirements|điều kiện vận hành của HQLA]]. Ý này suy từ cấu trúc quy định, nguồn không nói thẳng.
 

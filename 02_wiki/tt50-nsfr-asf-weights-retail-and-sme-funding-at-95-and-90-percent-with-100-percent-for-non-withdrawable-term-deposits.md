@@ -5,6 +5,10 @@ tags: [vietnam, tt50, nsfr, asf, retail-deposits, sme]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+analogous: [stable-retail-deposits-run-off-at-5-percent-and-less-stable-and-foreign-currency-at-10-percent-in-tt50, sme-deposits-up-to-30-billion-dong-run-off-like-retail-deposits-in-tt50]
+related: [term-funding-with-over-30-days-remaining-leaves-the-outflow-only-when-no-withdrawal-is-possible-within-30-days]
 ---
 
 Nguồn vốn từ khách hàng bán lẻ và từ doanh nghiệp nhỏ và vừa đủ điều kiện dùng cùng một cấu trúc hệ số ASF: tiền gửi ổn định 95%, tiền gửi kém ổn định 90%, và 100% cho tiền gửi có kỳ hạn từ 1 năm trở lên mà người gửi không được rút trước hạn (hoặc chỉ được rút trước hạn theo điểm a(iii) khoản 4 mục I Phần B Phụ lục I). Tiền gửi có kỳ hạn được rút trước hạn ngoài trường hợp đó giữ hệ số 95% hoặc 90% cho mọi kỳ hạn (tt50_2026_sbv, Phụ lục II, Phần A, mục II khoản 9–10, d.2047–2066).

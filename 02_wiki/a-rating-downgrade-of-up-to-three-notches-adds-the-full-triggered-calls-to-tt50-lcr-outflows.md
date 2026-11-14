@@ -5,6 +5,11 @@ tags: [vietnam, tt50, lcr, cash-outflows, rating-downgrade, collateral]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+part_of: [total-expected-cash-outflows]
+contrasts: [collateral-valuation-changes-add-a-20-percent-outflow-on-non-level-1-margin-collateral-in-tt50]
+related: [collateral-position-management]
 ---
 
 TT50 yêu cầu ngân hàng cộng vào dòng tiền ra toàn bộ 100% giá trị mà hợp đồng buộc phải thực hiện khi ngân hàng bị hạ tối đa 3 bậc xếp hạng tín nhiệm (tt50_2026_sbv, Phụ lục I, Phần B, mục IV khoản 2.1b, d.1679). Biểu mẫu ghi dòng này ở mục 4.2 với hệ số 100% (tt50_2026_sbv, Phụ lục I, Phần B, mục VII, d.1828).

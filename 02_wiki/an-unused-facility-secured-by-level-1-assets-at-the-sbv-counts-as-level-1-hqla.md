@@ -5,6 +5,11 @@ tags: [vietnam, tt50, lcr, hqla, central-bank, committed-facility]
 sources: [tt50_2026_sbv, basel_lcr]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+part_of: [level-1-assets]
+contrasts: [restricted-use-committed-liquidity-facility-rclf]
+related: [level-2b-assets, tt50-hqla-tiers-differ-from-basel-on-vietnam-government-debt-covered-bonds-and-committed-facilities, foreign-bank-branches-may-count-parent-bank-committed-lines-as-hqla-up-to-50-and-40-percent-caps]
 ---
 
 TT50 cho phép tính vào giá trị HQLA đủ điều kiện phần hạn mức chưa sử dụng mà ngân hàng thiết lập với Ngân hàng Nhà nước (NHNN), khi hạn mức đó dựa trên bảo đảm bằng HQLA cấp 1 trong giao dịch với NHNN. Phần hạn mức này được coi là tài sản cấp 1 (tt50_2026_sbv, Phụ lục I, Phần A, mục I khoản 4, d.1185). Trong biểu mẫu tính, hạn mức này nằm ở mục 5.1 và cộng vào giá trị HQLA đủ điều kiện cùng [[level-1-assets|Level 1]], 2A và 2B (tt50_2026_sbv, Phụ lục I, Phần A, mục V, d.1381–1382).

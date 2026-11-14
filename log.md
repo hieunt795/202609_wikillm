@@ -1392,3 +1392,101 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Phạm vi hẹp, chỉ luật writing-style B4: 102 mã W (câu mở bằng "Cơ chế") trong 84 trang; K, C, O, S, L, R, G và triage _inbox chưa đối chiếu.
 - Chưa sửa mã nào, chờ duyệt theo lô A–E.
 - Báo cáo: Claude outputs/lint-2026-11-11-985.md
+
+## [2026-11-14:21-22-00] review | 5 trang
+- Đạt, chỉ thêm chú thích và loại quan hệ: term-funding-with-over-30-days-remaining-leaves-the-outflow-only-when-no-withdrawal-is-possible-within-30-days.
+- Đã sửa: tt50-counts-30-day-outflows (bảng cân đối kế toán → bảng cân đối tài khoản kế toán); unsecured-wholesale-funding-from-corporates (DNNVV không đủ điều kiện thuộc nhóm 40%, không phải 100%); sme-deposits-up-to-30-billion (nêu rõ nhóm 40%); stable-retail-deposits (bỏ "bất kể có được bảo hiểm" nguồn không nói; thêm chú thích d.1468, d.2047–2055).
+- Không trang nào bị giữ lại; nguồn đọc trên TT50_2026_SBV_normalized.md.
+
+## [2026-11-14:21-26-19] review | 5 trang
+- Đạt, chỉ thêm chú thích và loại quan hệ: secured-wholesale-funding-runs-off-at-0-to-100-percent; derivative-cash-flows-are-netted-per-counterparty; a-rating-downgrade-of-up-to-three-notches.
+- Đã sửa: operational-deposits-qualify-only (bỏ câu cũ "Phần C chưa nạp", nêu đủ ngoại lệ 100% của khoản 8b kèm d.1947–1951, thêm chú thích NSFR); derivative-options-are-assumed-exercised (thanh toán tiền mặt là "có thể giả định", không bắt buộc; bỏ chữ "bảo thủ").
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:21-28-44] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: committed-credit-and-liquidity-facilities; contractual-disbursement-obligations.
+- Đã sửa: collateral-valuation-changes (điều kiện tài sản nhận về nối bằng "hoặc" như văn bản, không phải "và"; phân biệt 2.2 với 2.5 theo đúng tên khoản); margin-calls-on-marked-to-market (bỏ "chênh lệch định giá đã phát sinh", cùng phân biệt đó); excess-non-segregated-collateral (bỏ "đối tác kéo về", khoản 2.4 là tài sản ngân hàng phải nộp).
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:21-32-41] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: any-other-contractual-outflow; the-tt50-outflow-form. Đồng bộ part_of total-expected-cash-outflows ở 5 trang lô trước (sổ sách).
+- Đã sửa: contingent-obligations (cam kết ngoại bảng khác là nhóm thứ ba, không thuộc nhóm phi hợp đồng); operational-deposit-excess (phần vượt mức xếp 40% hoặc 100% theo bên gửi, không mặc định 100%; ghi chỗ chưa chắc ở 2.4a(iii)); total-expected-cash-outflows (bỏ "không phải ước lượng của ngân hàng" nguồn không nói; "sáu nhóm" → năm mục II–VI; nhãn khoản 2.5).
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:21-36-38] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: reverse-repo-and-secured-lending-inflows; receivables-run-in-at-50-percent; operational-and-correspondent-deposits-placed.
+- Đã sửa: tt50-counts-an-inflow-only-from-performing (câu "HQLA thấp hơn hoặc bằng tài sản không phải HQLA" dễ đọc thành "≤", tách rõ hai vế); total-expected-cash-inflows (lý do trần 75% thay bằng mục đích ghi ở Basel 40.77 d.1195; chú thích hệ số 0/15/25% thêm mục II d.1898–1905).
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:21-39-47] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: non-financial-revenue-is-excluded; the-tt50-inflow-form.
+- Đã sửa: level-2-assets-are-capped (bỏ "trần 15% Level 2B giữ nguyên" dưới Option 3, Basel 31.17–31.19 không nói; TT50 khớp bản dựng nhưng không "xác nhận" công thức Basel); adjusted-hqla-amounts (giao dịch thứ hai cũng phải đáo hạn trong 30 ngày, d.1157–1159; gắn nhãn suy luận); net-derivative-inflows (nghĩa vụ nộp thêm bảo đảm, không phải "nghĩa vụ bảo đảm bằng HQLA"; gắn nhãn suy luận).
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:21-47-22] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: an-unused-facility-secured-by-level-1-assets.
+- Đã sửa: foreign-bank-branches (trần 40% chỉ cần điều kiện a(i), a(ii), a(iv), không phải "ba điều kiện đầu và điều kiện 24 giờ"); level-1-assets (chứng khoán chính phủ, NHTW, PSE "của các nước trừ Việt Nam"; "năm điều kiện" nhưng liệt kê bốn → bốn điều kiện ngoài tổ chức phát hành); the-sbv-may-apply-a-lower (quyền chung Điều 1 khoản 5a gồm cả hệ số thanh khoản; so sánh Basel giới hạn ở 30.40); tt50-hqla-tiers (thêm ngưỡng 40% cổ phiếu 2B; yêu cầu niêm yết không áp cho nợ Chính phủ Việt Nam ở cấp 1).
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:21-53-03] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: level-2a-assets (sửa một câu tự quy chiếu); foreign-branch-hqla-keeps-its-tier.
+- Đã sửa: level-2b-assets (RMBS cũng phải niêm yết, d.1307; chỉ điều kiện tổ chức phát hành là khác); tt50-and-basel-hqla-operational-requirements (ngưỡng bán tháo 30.23 khác TT50 2g; bỏ câu cũ "đợi ingest Phụ lục I phần A", phần A không có quy tắc rổ bảo đảm); tt50-and-basel-share-the-lcr-formula (bỏ câu cũ "Phụ lục I chưa nằm trong wiki").
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:21-55-04] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: vietnamese-banks-stop-complying-with-the-tt22; liquidity-risk-controls-and-hqla-size-are-insulated.
+- Đã sửa: vietnamese-banks-may-register-early (IRB: tuân thủ 100% "chậm nhất 90 ngày", không phải "trong 90 ngày"); lcr-is-met-in-one-currency (gắn nhãn suy luận); contingency-funding-plan (TT50 có dùng đúng cụm "kế hoạch tài trợ dự phòng về thanh khoản").
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:21-56-02] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: tt50-requires-intraday-liquidity-management; intraday-liquidity-events-and-correspondent-failures.
+- Đã sửa: collateral-position-management ("ba nhóm" nhưng khoản 7a chỉ có hai nhóm tài sản; gắn nhãn suy luận); intraday-liquidity-management ("bảy nội dung" liệt kê sáu dòng, ghi rõ gộp (iv)+(v)); vietnamese-banks-must-set-liquidity-reserve-limits (bỏ "trước đỉnh nhu cầu" nguồn không nói; gắn nhãn suy luận).
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:21-58-55] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: liquidity-stress-test-reports; vietnam-defines-three-lcr-variants.
+- Đã sửa: hqla-size-must-cover (trang nói khớp "thử bán định kỳ", TT50 không có yêu cầu này; link sang trang insulated có lý do sai; gắn nhãn suy luận); liquidity-stress-scenarios (sàn khoản 9c(iii) chỉ cho hệ số rút tiền của tiền gửi; Basel 20.3 "không nêu", không phải "không đặt" sàn); the-sbv-may-order-remedial (Điều 1 khoản 5 gồm cả ngưỡng, giới hạn).
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:22-00-07] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: vietnam-lcr-minimum-for-vnd-phases-in; a-vietnamese-bank-breaching-the-solo; tt50-makes-the-lcr-minimum-a-binding-threshold.
+- Đã sửa: a-vietnamese-bank-is-at-risk-of-insolvency (link sang Điều 15 gán sai là quyền "trong tình huống này"; gắn nhãn suy luận); total-net-cash-outflows (bỏ "không phải dự báo do ngân hàng tự lập", nguồn không nói).
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:22-01-34] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: tt50-nsfr-uses-the-lcr-definitions; tt50-nsfr-counts-repo-gross; tt50-nsfr-assigns-a-liability-the-earliest-date; tt50-nsfr-sets-asf-to-0-percent.
+- Đã sửa: tt50-nsfr-is-asf-over-rsf (Điều 24 dẫn chung về Phụ lục II, không phải "toàn bộ"; "LCR bằng VNĐ" → "LCR quy VNĐ").
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:22-02-17] review | 5 trang
+- Đạt cả 5, chỉ thêm loại quan hệ: tt50-nsfr-assigns-an-asset-the-latest-extension-date; tt50-nsfr-encumbered-assets; tt50-nsfr-counts-settled-purchases; tt50-nsfr-measures-derivative-liabilities-and-assets; tt50-nsfr-nets-only-cash-variation-margin.
+- Không có claim sai so với Điều 24–25 (d.799–881).
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:22-04-03] review | 5 trang
+- Đạt cả 5, chỉ thêm loại quan hệ: tt50-nsfr-derivative-position-nets; tt50-nsfr-dependent-asset-liability-pairs; tt50-banks-disclose-liquidity-ratios; tt50-nsfr-asf-counts-capital; tt50-nsfr-asf-weights-bond-issuance.
+- Không có claim sai so với Điều 25 khoản 5 – Điều 27 và Phụ lục II Phần A dòng 1–6, 14 (d.883–953, 2013–2081).
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:22-04-52] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: tt50-nsfr-asf-weights-funding-from-the-public-sector; tt50-nsfr-asf-weights-retail-and-sme; tt50-nsfr-asf-weights-funding-from-financial-institutions; tt50-nsfr-rsf-general-rules.
+- Đã sửa: tt50-nsfr-rsf-weights-hqla ("tín phiếu NHNN" hẹp hơn nguồn, dòng 8.3 ghi "HQLA do NHNN phát hành").
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:22-08-22] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: tt50-nsfr-rsf-weights-securities-commodities; tt50-nsfr-rsf-weights-other-assets.
+- Đã sửa: tt50-nsfr-rsf-weights-claims-on-the-government (A.9 không có tổ chức tài chính quốc tế, không "trùng" danh sách dòng vào); tt50-nsfr-rsf-weights-deposits-and-credit (15% chỉ cho tiền gửi tại tổ chức tín dụng, không phải mọi tiền gửi không hoạt động); tt50-nsfr-rsf-weights-real-estate (câu mở bỏ sót dòng 16.1 bất động sản không đủ tiêu chuẩn 100%).
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:22-09-56] review | 5 trang
+- Đạt, chỉ thêm loại quan hệ: tt50-binds-the-solo-vnd-equivalent-lcr; net-stable-funding-ratio-nsfr; loan-to-deposit-ratio-ldr; high-quality-liquid-assets-hqla.
+- Đã sửa: circular-50-2026-tt-nhnn (hiệu lực "trừ khoản 2 Điều 37"; nhóm trái phiếu gồm cả "đầu tư" và trái phiếu được Chính phủ bảo lãnh; chú thích Mục 5 trỏ d.441–443 thay vì d.445).
+- Không trang nào bị giữ lại.
+
+## [2026-11-14:22-09-56] review | 1 trang
+- Đã sửa: hqla-operational-requirements (quy tắc giữ thêm 30 ngày không phải điểm "TT50 nêu rõ hơn": Basel có ở 30.28, d.204).
+- Hoàn tất review 91/91 trang dẫn tt50_2026_sbv trên bản nguồn chuẩn hóa.
+
+## [2026-11-14:22-17-06] ingest | tt50_2026_sbv Điều 8 và Phụ lục III (tỷ lệ đòn bẩy)
+- Tạo 4 trang: leverage-ratio-lev; tt50-leverage-exposure-measure-adds-on-balance…; tt50-leverage-on-balance-exposure…; tt50-leverage-derivative-exposure-is-1-4-times…. Merge (chèn link, thêm câu nối): circular-50-2026-tt-nhnn; tt50-nsfr-measures-derivative…; tt50-nsfr-nets-only-cash-variation-margin….
+- Không stub mới. Chunk d.259–276 và d.2176–2281 lên phu; còn chua: Mục 1, 3, 4, 6, 7 của Chương II và Phụ lục IV.

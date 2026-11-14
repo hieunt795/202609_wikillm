@@ -5,6 +5,10 @@ tags: [lcr, nsfr, ldr, vietnam, tt50, transition, liquidity-regulation]
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-09
+reviewed: 2026-11-14
+reviewed_by: model
+governed_by: [circular-50-2026-tt-nhnn-prudential-limits-and-ratios]
+related: [loan-to-deposit-ratio-ldr, vietnamese-banks-may-register-early-for-lcr-and-nsfr-on-a-phased-or-direct-100-percent-track]
 ---
 
 Khi một ngân hàng bắt đầu áp dụng LCR và NSFR theo [[circular-50-2026-tt-nhnn-prudential-limits-and-ratios|TT50]], các tỷ lệ thanh khoản cũ của Thông tư 22/2019/TT-NHNN (TT22) chuyển từ nghĩa vụ tuân thủ sang nghĩa vụ báo cáo hoặc chấm dứt hẳn, tuỳ ngân hàng chọn ngưỡng nào.

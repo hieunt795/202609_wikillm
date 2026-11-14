@@ -4,7 +4,11 @@ type: concept
 tags: [vietnam, tt50, lcr, operational-deposits, clearing, custody, cash-management]
 sources: [tt50_2026_sbv]
 status: draft
-last_updated: 2026-11-10
+last_updated: 2026-11-14
+reviewed: 2026-11-14
+reviewed_by: model
+analogous: [stable-retail-deposits-run-off-at-5-percent-and-less-stable-and-foreign-currency-at-10-percent-in-tt50, operational-and-correspondent-deposits-placed-with-other-institutions-run-in-at-0-percent-except-the-excess-in-tt50, tt50-nsfr-asf-weights-funding-from-financial-institutions-corporates-and-other-organisations-at-0-to-100-percent]
+related: [operational-deposit-excess-balance-methodology-is-set-in-bank-internal-policy, intraday-liquidity-management]
 ---
 
 Tiền gửi hoạt động trong LCR của TT50 là tiền gửi phát sinh từ hoạt động thanh toán bù trừ, lưu ký và quản lý tiền mặt của ngân hàng, kèm yêu cầu khách hàng đặt cọc, ký quỹ hoặc duy trì tiền gửi tại ngân hàng đó (tt50_2026_sbv, Phụ lục I, Phần B, mục III khoản 2.3a(i), d.1524). Hệ số rút tiền của loại này và cách xử lý số dư vượt mức nằm ở [[operational-deposit-excess-balance-methodology-is-set-in-bank-internal-policy]].
@@ -25,8 +29,8 @@ Một khoản tiền gửi được xếp là tiền gửi hoạt động khi đ
 
 Riêng bản thân khoản tiền gửi phải là kết quả của việc ngân hàng cung cấp sản phẩm, dịch vụ chứ không phải tiền huy động trên thị trường chỉ để hưởng lãi, được giữ trong tài khoản cụ thể với mức lãi không kỳ hạn thấp nhất của ngân hàng, và hai bên thỏa thuận mức tiền gửi tối thiểu phải duy trì (tt50_2026_sbv, Phụ lục I, Phần B, mục III khoản 2.3c, d.1584–1590). Khoản tiền gửi hoạt động được bảo hiểm tiền gửi hoàn toàn thì xác định hệ số như [[stable-retail-deposits-run-off-at-5-percent-and-less-stable-and-foreign-currency-at-10-percent-in-tt50|tiền gửi bán lẻ ổn định]] (tt50_2026_sbv, Phụ lục I, Phần B, mục III khoản 2.3a(viii), d.1562).
 
-Số tiền một ngân hàng đặt cọc, ký quỹ hoặc duy trì ở ngân hàng khác để làm các hoạt động này tính hệ số thu tiền 0%, trừ trường hợp ở điểm b khoản 8 mục IV phần C của phụ lục (tt50_2026_sbv, Phụ lục I, Phần B, mục III khoản 2.3a(iv), d.1530). Phần C chưa nạp; ngoại lệ đó chưa được đối chiếu ở đây. Với các hoạt động tương tự ở khía cạnh thanh toán trong ngày, xem [[intraday-liquidity-management]].
+Số tiền một ngân hàng đặt cọc, ký quỹ hoặc duy trì ở ngân hàng khác để làm các hoạt động này tính hệ số thu tiền 0%, trừ trường hợp ở điểm b khoản 8 mục IV phần C của phụ lục (tt50_2026_sbv, Phụ lục I, Phần B, mục III khoản 2.3a(iv), d.1530). Với các hoạt động tương tự ở khía cạnh thanh toán trong ngày, xem [[intraday-liquidity-management]].
 
-Phía ngân hàng gửi tiền áp hệ số thu tiền 0% cho tiền gửi hoạt động và 100% cho phần vượt mức yêu cầu rút được trong 30 ngày, xem [[operational-and-correspondent-deposits-placed-with-other-institutions-run-in-at-0-percent-except-the-excess-in-tt50]].
+Phía ngân hàng gửi tiền áp hệ số thu tiền 0% cho tiền gửi hoạt động. Ngoại lệ ở điểm b khoản 8 là phần hai bên xác định là số dư vượt mức yêu cầu, rút được trong 30 ngày và không bị thỏa thuận hạn chế rút: phần này có hệ số 100% (tt50_2026_sbv, Phụ lục I, Phần C, mục IV khoản 8, d.1947–1951), xem [[operational-and-correspondent-deposits-placed-with-other-institutions-run-in-at-0-percent-except-the-excess-in-tt50]].
 
-Phía NSFR, tiền gửi hoạt động nhận từ tổ chức tài chính, doanh nghiệp, tổ chức công và ngân hàng trung ương có hệ số ASF 50% dưới 1 năm, xem [[tt50-nsfr-asf-weights-funding-from-financial-institutions-corporates-and-other-organisations-at-0-to-100-percent]].
+Phía NSFR, tiền gửi hoạt động nhận từ tổ chức tài chính, doanh nghiệp, tổ chức công và ngân hàng trung ương có hệ số ASF 50% dưới 1 năm (tt50_2026_sbv, Phụ lục II, Phần A, mục II khoản 7, 8, 11–13, d.2039–2077), xem [[tt50-nsfr-asf-weights-funding-from-financial-institutions-corporates-and-other-organisations-at-0-to-100-percent]].

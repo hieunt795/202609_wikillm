@@ -5,6 +5,10 @@ tags: [vietnam, tt50, liquidity-risk-management, intraday-liquidity, corresponde
 sources: [tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-10
+reviewed: 2026-11-14
+reviewed_by: model
+part_of: [intraday-liquidity-management]
+related: [liquidity-coverage-ratio-lcr, total-net-cash-outflows]
 ---
 
 TT50 yêu cầu ngân hàng giữ cơ chế quản lý thanh khoản trong ngày đủ để đáp ứng kịp thời các nghĩa vụ phát sinh khi bên đại lý (correspondents) hoặc bên lưu ký (custodians) không thanh toán đầy đủ nghĩa vụ đã thỏa thuận (tt50_2026_sbv, Điều 14, khoản 6d, d.519). Đây là bổ sung cho các nội dung tối thiểu của [[intraday-liquidity-management]].
