@@ -375,3 +375,10 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 
 - **Chưa quyết.** Chuyển từ `_inbox.md` ở lượt lint 2026-10-12 vì đây là câu hỏi về schema §10, không thành trang wiki.
 - **Nội dung gốc:** Văn bản quy phạm pháp luật (TT50/2026): các lượt ingest thử dùng ngoại lệ ngoài schema — mỗi điều một node, giữ nguyên văn kèm diễn giải, đọc `.docx` thay `.md`. Ngoại lệ này ngược §5 và §7 luật 4, chưa ghi ở đâu. Quyết khi ingest lại TT50/2026: thêm lớp nguồn riêng ở §10 hay ingest như nguồn thường.
+
+## [2026-11-14] TT50: wiki dẫn bản nguồn chuẩn hóa
+
+- **Quyết định (người dùng):** nguồn của `tt50_2026_sbv` là `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV_normalized.md`, do người dùng tự thay vào `01_sources/` (bản `.md` chuyển đổi cũ đã bỏ). `03_state/tt50_2026_sbv.md` và bản kê trỏ tới file này; chú thích `d.N` trên trang wiki giữ nguyên.
+- **Lý do:** bản chuẩn hóa sinh ra từ đối chiếu `.docx` (skill `normalize-source`, báo cáo `Claude outputs/doi-chieu-2026-11-13-TT50_2026_SBV.md`). Nó giữ đủ 2.310 dòng, không đổi chữ hay số, chỉ sửa ký hiệu markdown ở 41 dòng và gắn địa chỉ điều-khoản-điểm `<!-- @Đ… -->` ở cuối 734 dòng. Vì số dòng không đổi, không chú thích nào phải dời, còn địa chỉ `@Đ…` cho phép tra thẳng một điều khoản bằng `grep`.
+- **Thay cho:** file `TT50_2026_SBV.md` chuyển đổi ngoài dự án, kê ngày 2026-11-09.
+- **Áp cho nguồn khác:** TT83 cũng đã được thay bằng bản chuẩn hóa nhưng chưa có source id; khi đăng ký thì kê bản chuẩn hóa. Thư mục TT14 còn cả bản gốc lẫn bản chuẩn hóa, chưa quyết giữ bản nào.

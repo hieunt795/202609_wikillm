@@ -1035,6 +1035,22 @@
 - [[simultaneous-compliance-problem-constrains-fixed-rate-allocation-under-dual-sot-limits]] — bài toán tuân thủ đồng thời: SOT trên EVE đặt chặn trên và dưới cho tỷ trọng tài sản lãi suất cố định, SOT trên NII đặt mức tối thiểu; vùng tuân thủ có thể rất nhỏ
 - [[supervisory-irrbb-reporting-mandates-five-standardized-templates-under-eu-2024-855]] — báo cáo giám sát IRRBB theo Quy định thực thi (EU) 2024/855: năm bộ mẫu biểu về đánh giá, độ nhạy, dòng tiền định giá lại, tham số hành vi, thông tin định tính
 
+**IRRBB ở Việt Nam (TT83/2025 — Mục 7 Chương III, Phụ lục V)**
+- [[circular-83-2025-tt-nhnn-internal-control-systems-of-banks]] — TT83/2025/TT-NHNN: hệ thống kiểm soát nội bộ, chín Mục quản lý rủi ro, hiệu lực 01/7/2026, phần IRRBB ở Mục 7 và Phụ lục V
+- [[tt83-irrbb-strategy-tracks-the-repricing-gap-and-requires-limits-on-both-delta-nii-and-delta-eve]] — Điều 53: ba chỉ số repricing gap, ΔNII, ΔEVE; hạn mức bắt buộc trên ΔNII và ΔEVE do ngân hàng tự đặt mức
+- [[tt83-irrbb-is-measured-quarterly-by-an-independent-unit-and-per-currency-above-a-5-percent-share]] — Điều 54, Điều 23: đo và stress test tối thiểu hằng quý, bộ phận độc lập, đo riêng đồng tiền chiếm từ 5% tài sản sổ ngân hàng
+- [[tt83-irrbb-reporting-runs-quarterly-internally-and-annually-to-the-sbv]] — Điều 55, Phụ lục II, Điều 9: sáu nội dung báo cáo nội bộ hằng quý, mục IRRBB trong báo cáo năm gửi NHNN trong 90 ngày
+- [[vietnamese-banks-may-measure-irrbb-by-delta-nii-or-delta-eve-alone-until-end-2027]] — Điều 74: chọn một chỉ tiêu tới 31/12/2027, cả hai từ 01/01/2028, áp dụng sớm thì báo NHNN trong 10 ngày
+- [[tt83-delta-eve-is-the-largest-sum-of-currency-level-eve-losses-across-six-shock-scenarios]] — Phụ lục V phần A: chiết khấu liên tục theo lãi suất phi rủi ro, ΔEVE = EVE cơ sở − EVE sốc + KAO, chỉ cộng đồng tiền lỗ, lấy max sáu kịch bản
+- [[tt83-delta-eve-excludes-cet1-deductions-fixed-assets-and-equity-and-sorts-items-into-three-standardisation-groups]] — bước 1: loại trừ khỏi phạm vi, ba loại dòng tiền định giá lại, ba nhóm theo mức chuẩn hóa
+- [[tt83-delta-eve-slots-repricing-cash-flows-into-19-time-buckets-or-their-midpoints]] — bước 2: 19 thang kỳ hạn và điểm giữa, quy tắc cho khoản mục cố định, thả nổi, quyền chọn tự động
+- [[tt83-core-non-maturity-deposits-are-capped-at-90-70-and-50-percent-of-each-segment]] — NMD lõi: ba phân khúc, trần 90%/5 năm, 70%/4,5 năm, 50%/4 năm; phần không lõi ở thang qua đêm
+- [[tt83-retail-prepayment-rates-scale-by-0-8-or-1-2-under-each-shock-scenario]] — CPR cá nhân = min(1, γ × CPR cơ sở), γ bằng 0,8 hoặc 1,2 theo kịch bản; khoản vay tổ chức do ngân hàng tự xác định
+- [[tt83-retail-term-deposit-early-redemption-rates-scale-by-1-2-or-0-8-and-fall-in-the-overnight-bucket]] — TDRR cá nhân = min(1, u × TDRR cơ sở), phần rút trước vào thang qua đêm
+- [[tt83-delta-nii-is-the-larger-one-year-nii-loss-under-parallel-up-and-down-shocks]] — Phụ lục V phần B: một năm, bảng cân đối không đổi, hai kịch bản song song, không có công thức
+- [[tt83-shock-sizes-come-from-a-currency-table-or-a-16-year-average-rate-scaled-by-60-85-and-40-percent]] — tham số cú sốc: bảng 21 đồng tiền (không có VND), bình quân 16 năm × 60/85/40%, sàn 100 bp, trần 400/500/300 bp, hoặc theo BCBS d578
+- [[tt83-six-shock-scenarios-combine-parallel-short-and-long-shocks-with-a-4-year-exponential-decay]] — sáu kịch bản: cú sốc ngắn hạn tắt dần e^(−t/4), dốc = −0,65|ngắn| + 0,9|dài|, phẳng = +0,8|ngắn| − 0,6|dài|, không có sàn sau sốc
+
 **LCR và các tỷ lệ thanh khoản ở Việt Nam: lộ trình, vi phạm, quyền giám sát (TT50/2026 — Điều 13–21)**
 - [[circular-50-2026-tt-nhnn-prudential-limits-and-ratios]] — TT50/2026/TT-NHNN: bảy nhóm giới hạn, tỷ lệ an toàn; quyền siết hệ số của NHNN
 - [[vietnam-lcr-minimum-for-vnd-phases-in-from-50-percent-in-2028-to-100-percent-in-2033]] — ngưỡng LCR quy VNĐ riêng lẻ: sáu bậc, mỗi năm thêm 10 điểm

@@ -1490,3 +1490,8 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 ## [2026-11-14:22-17-06] ingest | tt50_2026_sbv Điều 8 và Phụ lục III (tỷ lệ đòn bẩy)
 - Tạo 4 trang: leverage-ratio-lev; tt50-leverage-exposure-measure-adds-on-balance…; tt50-leverage-on-balance-exposure…; tt50-leverage-derivative-exposure-is-1-4-times…. Merge (chèn link, thêm câu nối): circular-50-2026-tt-nhnn; tt50-nsfr-measures-derivative…; tt50-nsfr-nets-only-cash-variation-margin….
 - Không stub mới. Chunk d.259–276 và d.2176–2281 lên phu; còn chua: Mục 1, 3, 4, 6, 7 của Chương II và Phụ lục IV.
+
+## [2026-11-15:21-48-59] ingest | tt83_2025_sbv IRRBB (Mục 7 Chương III, Phụ lục V)
+- Đăng ký nguồn `tt83_2025_sbv` (bản kê + state 21 chunk). Tạo 14 trang: hub `circular-83-2025-tt-nhnn-internal-control-systems-of-banks`, Điều 53/54/55/74, ΔEVE (5 bước, NMD lõi, CPR, TDRR), ΔNII, tham số và hình dạng cú sốc; merge Đ3.K22, K33 vào `interest-rate-risk-in-the-banking-book-irrbb`; chèn link TT83 vào 3 trang thanh khoản.
+- Không stub mới. --graph: nhóm mới IRRBB ở Việt Nam nối IRRBB (0→42), Quản trị-FTP (0→8), LCR TT50 (0→6), NSFR (0→5); điểm nối duy nhất mới: `tt83-core-non-maturity-…` sang nhóm Tiền gửi.
+- Mục 7, Phụ lục V A và B–C: phu. Còn lại: Chương I–V và Phụ lục I–IV, VI; hoãn merge gap/basis/option, `banking-book`, `trading-book` (ghi _inbox).

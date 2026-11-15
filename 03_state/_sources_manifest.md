@@ -35,6 +35,7 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `basel_lcr` | `basel/LCR/` | Nguồn dài | `03_state/basel_lcr.md` |
 | `vietnam_regulator` | `vietnam-regulator/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 | `tt50_2026_sbv` | `vietnam-regulator/alm/TT50_2026_SBV/` | Nguồn dài | `03_state/tt50_2026_sbv.md` |
+| `tt83_2025_sbv` | `vietnam-regulator/alm/TT83_2025_SBV/` | Nguồn dài | `03_state/tt83_2025_sbv.md` |
 
 ## imf_macro_accounting
 
@@ -416,7 +417,7 @@ Chương LCR cũng nằm trong `01_sources/basel/BaselFramework/BaselFramework.m
 
 | | |
 |---|---|
-| Nhan đề | Văn bản quy phạm và tài liệu phương pháp của Việt Nam: thông tư Ngân hàng Nhà nước (TT14, TT83, dự thảo thay TT22), phương pháp luận FTP, tài liệu mô hình hành vi tiền gửi có kỳ hạn và thấu chi. TT50/2026 đã tách thành source id riêng `tt50_2026_sbv` (2026-11-09) |
+| Nhan đề | Văn bản quy phạm và tài liệu phương pháp của Việt Nam: thông tư Ngân hàng Nhà nước (TT14, TT83, dự thảo thay TT22), phương pháp luận FTP, tài liệu mô hình hành vi tiền gửi có kỳ hạn và thấu chi. TT50/2026 đã tách thành source id riêng `tt50_2026_sbv` (2026-11-09), TT83/2025 thành `tt83_2025_sbv` (2026-11-15) |
 | Phân loại | Nguồn dài (`00_schema.md` §10) — 1.804 KB / 14.675 dòng trên 14 file `.md` |
 | Nguồn file | File `.md` chuyển đổi ngoài dự án, đặt trong `01_sources/vietnam-regulator/` |
 | Tiến độ ingest | Chưa ingest — đăng ký ở lượt lint 2026-10-10; tác giả, năm xuất bản và việc tách source id cho các tài liệu còn lại bổ sung ở lượt ingest đầu của từng tài liệu |
@@ -432,7 +433,7 @@ Chương LCR cũng nằm trong `01_sources/basel/BaselFramework/BaselFramework.m
 | `01_sources/vietnam-regulator/model/BC030306_OD_PPL_arm_FINAL (1).md` | 48.037 | 790 | `5bb7cbe73cdac0f07b86afb661e38c18711a29078d308499f2ad354def91a8f8` |
 | `01_sources/vietnam-regulator/model/BC030306_OD_PPL_pts_FINAL (1).md` | 44.525 | 580 | `a9a380e57ed23fe293cc1fc201ea5d1136075d283b58d7f9bce217cd47e18247` |
 
-Lint 2026-10-12: 6 dòng file `vietnam-regulator/alm/` đã bỏ khỏi bảng vì file không còn trên đĩa. Các thư mục con mới (`TT14_2025_SBV/`, `TT83_2025_SBV/`, `VAB - Phương pháp luận FTP/`) và `ftp_transmission_analysis.md` chưa kê; đăng ký khi ingest.
+Lint 2026-10-12: 6 dòng file `vietnam-regulator/alm/` đã bỏ khỏi bảng vì file không còn trên đĩa. Các thư mục con mới (`TT14_2025_SBV/`, `VAB - Phương pháp luận FTP/`) và `ftp_transmission_analysis.md` chưa kê; đăng ký khi ingest. `TT83_2025_SBV/` đã đăng ký thành `tt83_2025_sbv` (2026-11-15).
 
 ## tt50_2026_sbv
 
@@ -449,3 +450,19 @@ Lint 2026-10-12: 6 dòng file `vietnam-regulator/alm/` đã bỏ khỏi bảng v
 |---|---|---|---|
 | `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV_normalized.md` | 271.053 | 2.310 | `ee0577ddeabf00049a8e099a288e4e4fbd440c6567484baaae460e92efbf700d` |
 | `01_sources/vietnam-regulator/alm/TT50_2026_SBV/TT50_2026_SBV.pdf` | 1.406.658 | — | `b2afb2984af8576bf723850e954feb66e3d84c3fa7ac1f6c2d6273cc581bbfdf` |
+
+## tt83_2025_sbv
+
+| | |
+|---|---|
+| Nhan đề | *Thông tư số 83/2025/TT-NHNN quy định về hệ thống kiểm soát nội bộ của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài* |
+| Tác giả, nơi và năm | Ngân hàng Nhà nước Việt Nam (Phó Thống đốc Đoàn Thái Sơn ký thay Thống đốc), Hà Nội, ký ngày 31/12/2025, hiệu lực từ 01/7/2026 trừ các khoản 2–4 Điều 74 |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 260 KB / 2.867 dòng trên 1 file `.md` (kèm bản `.pdf` không đọc) |
+| Nguồn file | File `.md` chuẩn hóa từ `.docx` (`TT83_2025_SBV_normalized.md`, trùng từng byte với `Claude outputs/TT83_2025_SBV_normalized.md`; báo cáo `Claude outputs/doi-chieu-2026-11-13-TT83_2025_SBV.md`), đặt trong `01_sources/vietnam-regulator/alm/TT83_2025_SBV/`; cùng thư mục có `.docx` và `_meta.json` không kê |
+| Tiến độ ingest | `03_state/tt83_2025_sbv.md` |
+| Ghi chú | Tách khỏi `vietnam_regulator` ngày 2026-11-15 khi bắt đầu ingest phần IRRBB |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/vietnam-regulator/alm/TT83_2025_SBV/TT83_2025_SBV_normalized.md` | 259.945 | 2.867 | `4ffdfeab87f2c3d646f3c5430184696f6841b07f177f7122553dc0dc8b418960` |
+| `01_sources/vietnam-regulator/alm/TT83_2025_SBV/TT83_2025_SBV.pdf` | 985.335 | — | `93a9589581eb6bebea272bb1f1cdb6c92ff299290c2d906d7e751caf6d95e5b0` |
