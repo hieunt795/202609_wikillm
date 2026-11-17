@@ -2,12 +2,13 @@
 title: interest-rate-option-risk-combines-automatic-and-embedded-behavioural-options
 type: concept
 tags: [irrbb, alm, option-risk, behavioral-modeling, non-maturity-deposits]
-sources: [tata_bank_alm]
+sources: [tata_bank_alm, tt83_2025_sbv]
 status: stable
-last_updated: 2026-10-12
+last_updated: 2026-11-17
 reviewed: 2026-10-12
 reviewed_by: model
 part_of: [interest-rate-risk-in-the-banking-book-irrbb]
+governed_by: [circular-83-2025-tt-nhnn-internal-control-systems-of-banks]
 contrasts: [interest-rate-gap-risk-stems-from-repricing-timing-mismatches]
 related: [embedded-behavioral-options-alter-banking-book-cash-flows-subject-to-eba-five-year-cap, behavioral-modeling-of-tt1-liabilities-distorts-when-banks-actively-intervene-on-pricing-and-sales, zero-lower-bound-interest-rate-floors-distort-banking-book-margins-under-nirp, coupon-floors-and-indicator-floors-induce-asymmetric-nii-exposures-in-negative-rates, rapid-rate-tightening-exposes-duration-gaps-and-asymmetric-prepayment-speeds]
 ---
@@ -23,3 +24,5 @@ Khác biệt bản chất nhất của quyền chọn hành vi là tính chất 
 Trang [[behavioral-modeling-of-tt1-liabilities-distorts-when-banks-actively-intervene-on-pricing-and-sales]] nêu trường hợp giả định hành vi về tiền gửi lệch đi khi ngân hàng chủ động can thiệp vào giá và bán hàng. Trong kỷ nguyên chính sách lãi suất âm theo [[zero-lower-bound-interest-rate-floors-distort-banking-book-margins-under-nirp]], sàn lãi suất 0% trên tiền gửi bán lẻ trở thành quyền chọn ở trạng thái at-the-money hoặc in-the-money khi lãi suất thấp hoặc âm; ngân hàng chịu [[coupon-floors-and-indicator-floors-induce-asymmetric-nii-exposures-in-negative-rates|sàn coupon trên tài sản và sàn chỉ số trên nguồn vốn]] có thể lỗ trong môi trường lãi suất âm (tata_bank_alm, Ch.3, 0% Interest Rate Floor, d.2427–2435).
 
 Bên phía tài sản, quyền chọn hành vi trả nợ trước hạn (prepayment options) bộc lộ sự phân hóa sâu sắc khi chu kỳ lãi suất đảo chiều theo [[rapid-rate-tightening-exposes-duration-gaps-and-asymmetric-prepayment-speeds]]: người vay đã chốt lãi suất cố định thấp có xu hướng giữ khoản vay lâu hơn dự kiến, trong khi khoản vay lãi suất thả nổi có thể được trả trước nhanh hơn (tata_bank_alm, Ch.3, Rapid Rise in Interest Rates, d.2481). Khác với [[interest-rate-gap-risk-stems-from-repricing-timing-mismatches]], option risk làm quy mô và thời điểm dòng tiền thay đổi theo lãi suất.
+
+[[circular-83-2025-tt-nhnn-internal-control-systems-of-banks|Thông tư 83/2025/TT-NHNN]] chia rủi ro quyền chọn thành hai nhóm như trên, với ranh giới rõ hơn (tt83_2025_sbv, Điều 3, khoản 22, điểm c, d.115–119). Quyền chọn tự động là trường hợp lãi suất thay đổi dẫn tới việc chắc chắn thực hiện quyền chọn theo hợp đồng. Quyền lựa chọn hành vi là trường hợp lãi suất thay đổi có thể làm khách hàng đổi hành vi.

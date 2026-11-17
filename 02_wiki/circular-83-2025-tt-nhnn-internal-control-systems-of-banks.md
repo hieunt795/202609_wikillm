@@ -5,6 +5,8 @@ tags: [vietnam, tt83, internal-control, risk-management, irrbb, banking-regulati
 sources: [tt83_2025_sbv, tt50_2026_sbv]
 status: draft
 last_updated: 2026-11-15
+reviewed: 2026-11-17
+reviewed_by: model
 governs: [interest-rate-risk-in-the-banking-book-irrbb]
 has_part: [tt83-irrbb-strategy-tracks-the-repricing-gap-and-requires-limits-on-both-delta-nii-and-delta-eve, tt83-irrbb-is-measured-quarterly-by-an-independent-unit-and-per-currency-above-a-5-percent-share, tt83-irrbb-reporting-runs-quarterly-internally-and-annually-to-the-sbv, vietnamese-banks-may-measure-irrbb-by-delta-nii-or-delta-eve-alone-until-end-2027, tt83-delta-eve-is-the-largest-sum-of-currency-level-eve-losses-across-six-shock-scenarios, tt83-delta-nii-is-the-larger-one-year-nii-loss-under-parallel-up-and-down-shocks]
 related: [circular-50-2026-tt-nhnn-prudential-limits-and-ratios]

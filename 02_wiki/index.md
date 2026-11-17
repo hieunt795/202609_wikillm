@@ -879,7 +879,8 @@
 **Rủi ro lãi suất sổ ngân hàng (IRRBB)**
 - [[irrbb-measurement-pairs-economic-value-and-earnings-views-over-gap-basis-and-option-risk]] — *(tổng quan nhóm)* ba cấu phần rủi ro, hai góc đo EVE và NII, kỹ thuật của từng góc, chỗ hai góc lệch nhau, bài kiểm tra SOT, mối nối sang tiền gửi, FTP và case SVB
 - [[interest-rate-risk-in-the-banking-book-irrbb]] — quản trị rủi ro lãi suất trên sổ ngân hàng: định nghĩa EBA/CRD IV, phân định banking book vs trading book và phạm vi các công cụ nhạy cảm lãi suất
-- [[trading-book]] — stub: sổ kinh doanh, phần vị thế giữ để giao dịch, phân biệt với sổ ngân hàng
+- [[banking-book]] — sổ ngân hàng: trạng thái dài hạn gắn với khách hàng (Tata) và định nghĩa phần dư bốn nhóm của TT83 Đ3.K33; phạm vi của IRRBB
+- [[trading-book]] — sổ kinh doanh: trạng thái giữ để bán lại ngắn hạn; TT83 Đ3.K32 liệt kê bốn nhóm, giao dịch tự doanh dưới một năm, rủi ro lãi suất thuộc rủi ro thị trường
 - [[interest-rate-gap-risk-stems-from-repricing-timing-mismatches]] — rủi ro khoảng chênh lệch lãi suất: bất cân xứng thời điểm và khối lượng định giá lại qua các dải kỳ hạn, phân tích khe hở tái định giá
 - [[interest-rate-basis-risk-arises-from-imperfect-correlation-between-benchmarks]] — rủi ro cơ sở lãi suất: tương quan không hoàn hảo giữa các chỉ số tham chiếu EURIBOR, OIS, RFR và Repo trên các công cụ cùng kỳ hạn
 - [[interest-rate-option-risk-combines-automatic-and-embedded-behavioural-options]] — rủi ro quyền chọn lãi suất: quyền chọn tự động caps/floors/swaptions và quyền chọn hành vi ngầm định tiền gửi không kỳ hạn/trả trước nợ
@@ -1050,6 +1051,21 @@
 - [[tt83-delta-nii-is-the-larger-one-year-nii-loss-under-parallel-up-and-down-shocks]] — Phụ lục V phần B: một năm, bảng cân đối không đổi, hai kịch bản song song, không có công thức
 - [[tt83-shock-sizes-come-from-a-currency-table-or-a-16-year-average-rate-scaled-by-60-85-and-40-percent]] — tham số cú sốc: bảng 21 đồng tiền (không có VND), bình quân 16 năm × 60/85/40%, sàn 100 bp, trần 400/500/300 bp, hoặc theo BCBS d578
 - [[tt83-six-shock-scenarios-combine-parallel-short-and-long-shocks-with-a-4-year-exponential-decay]] — sáu kịch bản: cú sốc ngắn hạn tắt dần e^(−t/4), dốc = −0,65|ngắn| + 0,9|dài|, phẳng = +0,8|ngắn| − 0,6|dài|, không có sàn sau sốc
+
+**Quản trị ALM và kiểm soát nội bộ theo TT83/2025 (Điều 4, 6, 25)**
+- [[tt83-alm-unit-runs-the-balance-sheet-funding-plans-ftp-and-pricing-and-polices-liquidity-and-irrbb-limits]] — Đ25.K3: bộ phận ALM quản lý bảng cân đối, kế hoạch vốn, nguyên tắc FTP, khung lãi suất và khung giá, kiểm soát tuân thủ hạn mức thanh khoản, IRRBB, RWA_IRRBB
+- [[asset-liability-committee-alco]] — Hội đồng ALCO: tham mưu Tổng giám đốc về ALM, chủ tịch là Tổng giám đốc hoặc người điều hành khác, họp ít nhất hằng quý; đối chiếu Hội đồng rủi ro, Hội đồng quản lý vốn
+- [[three-lines-of-defence]] — ba tuyến bảo vệ theo Đ4.K2: bộ phận tạo rủi ro, tuân thủ và quản lý rủi ro, kiểm toán nội bộ
+
+**Đánh giá nội bộ mức đủ vốn (ICAAP) theo TT83/2025 (Mục 9, Phụ lục III, VI)**
+- [[internal-capital-adequacy-assessment-process-icaap]] — ICAAP: năm yêu cầu, sáu bước, tầm nhìn 3–5 năm, làm ít nhất hằng năm; Hội đồng quản lý vốn; ngân hàng kiểm soát đặc biệt được miễn
+- [[tt83-target-capital-is-the-larger-of-regulatory-capital-and-economic-capital]] — C_Target = max(C_R, C_E); C_E = RWA*_E × CAR_Target + ΔRWA_B × CAR_R; sáu cấu phần RWA*_E
+- [[tt83-concentration-risk-rwa-is-floored-by-exposures-above-a-declining-share-of-own-funds]] — sàn RWA_COR: dư nợ vượt A%/B% vốn tự có, A từ 8,7 xuống 6,5, B từ 16,8 xuống 12 (2026–2029)
+- [[tt83-capital-stress-tests-map-rate-fx-gold-and-credit-assumptions-onto-each-risk-type-rwa]] — Điều 60: hai kịch bản, giả định lãi suất, tỷ giá, vàng, chất lượng tín dụng nối với từng loại RWA; ít nhất hằng năm
+- [[tt83-capital-plan-closes-the-gap-between-projected-own-funds-and-target-capital]] — Điều 61, Phụ lục VI II: C_A dự phóng với bốn giả định, phương án tăng vốn, cổ tức, phân bổ vốn làm cơ sở hạn mức
+- [[tt83-icaap-is-reviewed-independently-and-reported-to-the-sbv-annually-within-90-days]] — Điều 62–63, Phụ lục III, Điều 9: rà soát độc lập, báo cáo nội bộ, mẫu báo cáo NHNN sáu mục
+- [[risk-adjusted-return-on-capital-raroc]] — RAROC = lợi nhuận trước thuế / vốn kinh tế; chỉ tiêu thu nhập trong khẩu vị rủi ro
+- [[capital-adequacy-ratio-car]] — stub: tỷ lệ an toàn vốn, chờ nạp thông tư vốn
 
 **LCR và các tỷ lệ thanh khoản ở Việt Nam: lộ trình, vi phạm, quyền giám sát (TT50/2026 — Điều 13–21)**
 - [[circular-50-2026-tt-nhnn-prudential-limits-and-ratios]] — TT50/2026/TT-NHNN: bảy nhóm giới hạn, tỷ lệ an toàn; quyền siết hệ số của NHNN

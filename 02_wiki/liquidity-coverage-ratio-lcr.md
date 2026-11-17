@@ -5,14 +5,16 @@ tags: [lcr, basel-iii, liquidity-regulation]
 sources: [basel_lcr]
 status: draft
 last_updated: 2026-10-13
-has_part: [high-quality-liquid-assets-hqla, total-net-cash-outflows, lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days]
+reviewed: 2026-11-17
+reviewed_by: model
+has_part: [high-quality-liquid-assets-hqla, total-net-cash-outflows]
 governs: [liquidity-risk]
-governed_by: [lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days, banks-may-use-hqla-and-fall-below-the-lcr-minimum-during-stress, lcr-applies-to-internationally-active-banks-on-a-consolidated-basis, lcr-is-reported-at-least-monthly-and-a-breach-is-notified-immediately]
+governed_by: [lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days, banks-may-use-hqla-and-fall-below-the-lcr-minimum-during-stress, lcr-applies-to-internationally-active-banks-on-a-consolidated-basis, lcr-is-reported-at-least-monthly-and-a-breach-is-notified-immediately, circular-50-2026-tt-nhnn-prudential-limits-and-ratios]
 drives: [regulatory-lcr-and-nsfr-constraints-impose-marginal-funding-costs-on-ftp]
-related: [liquidity-regulation-and-central-bank-operations-arbitrage, regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it, bank-liquidity-rules-pair-a-stressed-30-day-hqla-buffer-with-ratio-limits-on-funding-structure, the-hqla-stock-weights-three-asset-levels-by-haircut-under-40-and-15-percent-caps, lcr-net-outflows-weight-liabilities-by-run-off-rates-and-receivables-by-inflow-rates-under-a-75-percent-cap]
+related: [liquidity-regulation-and-central-bank-operations-arbitrage, regulatory-ratios-can-relocate-liquidity-mismatch-without-reducing-it, bank-liquidity-rules-pair-a-stressed-30-day-hqla-buffer-with-ratio-limits-on-funding-structure, the-hqla-stock-weights-three-asset-levels-by-haircut-under-40-and-15-percent-caps, lcr-net-outflows-weight-liabilities-by-run-off-rates-and-receivables-by-inflow-rates-under-a-75-percent-cap, tt50-and-basel-share-the-lcr-formula-30-day-horizon-and-75-percent-inflow-cap, tt50-banks-disclose-liquidity-ratios-semi-annually-under-a-written-process-sent-to-the-sbv]
 ---
 
-Tỷ lệ bao phủ thanh khoản (Liquidity Coverage Ratio, LCR) là tỷ lệ giữa kho [[high-quality-liquid-assets-hqla|tài sản thanh khoản chất lượng cao (HQLA)]] và [[total-net-cash-outflows|tổng dòng tiền ra ròng]] của ngân hàng trong 30 ngày lịch tiếp theo, cả hai đo trong một kịch bản căng thẳng (basel_lcr, LCR20, 20.4, d.68–70).
+Tỷ lệ bao phủ thanh khoản (Liquidity Coverage Ratio, LCR) là tỷ lệ giữa kho [[high-quality-liquid-assets-hqla|tài sản thanh khoản chất lượng cao (HQLA)]] và [[total-net-cash-outflows|tổng dòng tiền ra ròng]] của ngân hàng trong 30 ngày lịch tiếp theo, cả hai đo trong một kịch bản căng thẳng (basel_lcr, LCR20, 20.4, d.68–70) (basel_lcr, LCR20, 20.5, d.72).
 
 $$LCR = \frac{\text{Kho HQLA}}{\text{Tổng dòng tiền ra ròng trong 30 ngày lịch}} \ge 100\%$$
 

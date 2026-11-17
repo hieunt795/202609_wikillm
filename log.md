@@ -1495,3 +1495,23 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Đăng ký nguồn `tt83_2025_sbv` (bản kê + state 21 chunk). Tạo 14 trang: hub `circular-83-2025-tt-nhnn-internal-control-systems-of-banks`, Điều 53/54/55/74, ΔEVE (5 bước, NMD lõi, CPR, TDRR), ΔNII, tham số và hình dạng cú sốc; merge Đ3.K22, K33 vào `interest-rate-risk-in-the-banking-book-irrbb`; chèn link TT83 vào 3 trang thanh khoản.
 - Không stub mới. --graph: nhóm mới IRRBB ở Việt Nam nối IRRBB (0→42), Quản trị-FTP (0→8), LCR TT50 (0→6), NSFR (0→5); điểm nối duy nhất mới: `tt83-core-non-maturity-…` sang nhóm Tiền gửi.
 - Mục 7, Phụ lục V A và B–C: phu. Còn lại: Chương I–V và Phụ lục I–IV, VI; hoãn merge gap/basis/option, `banking-book`, `trading-book` (ghi _inbox).
+
+## [2026-11-17:21-36-50] ingest | tt83_2025_sbv Điều 3 (K22, K32–K34) và Phụ lục VI RWA_IRRBB
+- Tạo `banking-book`; nâng stub `trading-book` lên draft; merge TT83 vào `interest-rate-gap-risk-…`, `interest-rate-basis-risk-…`, `interest-rate-option-risk-…`, `vietnamese-banks-may-measure-irrbb-…-until-end-2027` (vốn kinh tế, RWA_IRRBB theo ΔEVE từ 2028); link `banking-book` từ trang IRRBB.
+- Không stub mới. --graph: +1 trang, +11 link; hub TT83 hạng ngoài 200 → 65; nhóm IRRBB Việt Nam ↔ IRRBB 42 → 54.
+- Chương I và Phụ lục VI ở `do`; Đ25.K3, Đ60.K1.a, Phụ lục III hoãn (ghi _inbox).
+
+## [2026-11-17:21-44-21] review | 5 trang
+- Đạt: `liquidity-coverage-ratio-lcr` (thêm chú thích 20.5, gắn loại 3 link TT50), `circular-83-2025-tt-nhnn-internal-control-systems-of-banks`, `the-saving-investment-gap-equals-the-current-account-balance` (thay chú thích "cùng mục" bằng tên mục, gắn loại 7 link).
+- Sửa: `interest-rate-risk-in-the-banking-book-irrbb` (CSRBB "khung giám sát yêu cầu bóc tách" → "thường xử lý riêng" d.626; "phải triển khai đồng thời hai góc đo" → không dựa vào một thước đo d.500–502, ngưỡng EVE và NII d.614); `repurchase-agreement` (specials: "phòng hộ bán khống" → giao sàn tương lai, tạo lập thị trường; bỏ "buộc NHTW giám sát" không có trong nguồn; thêm hậu tố file cho chú thích During).
+- Không giữ lại trang nào; ghi _inbox: `repurchase-agreement` có 2 source id không còn claim.
+
+## [2026-11-17:21-59-03] ingest | tt83_2025_sbv Điều 4.K2, 6.K4, 25 (ALM, ALCO, ba tuyến bảo vệ)
+- Tạo `tt83-alm-unit-runs-the-balance-sheet-funding-plans-ftp-and-pricing-and-polices-liquidity-and-irrbb-limits`, `asset-liability-committee-alco`, `three-lines-of-defence`; merge Đ25.K3.b vào `funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks`; nhóm index mới.
+- Không stub mới. --graph: +3 trang; nhóm IRRBB Việt Nam ↔ Quản trị ALM TT83 0 → 14.
+- Chương I còn Điều 5, 7, 8, 10; Mục 1 còn Điều 17–22, 24; Điều 46 chỉ trích để đối chiếu, Mục 5 để lượt sau (ghi _inbox câu hỏi độc lập đo IRRBB).
+
+## [2026-11-17:22-34-50] ingest | tt83_2025_sbv Mục 9, Phụ lục III, Phụ lục VI (ICAAP)
+- Tạo `internal-capital-adequacy-assessment-process-icaap`, `tt83-target-capital-is-the-larger-of-regulatory-capital-and-economic-capital`, `tt83-concentration-risk-rwa-is-floored-by-exposures-above-a-declining-share-of-own-funds`, `tt83-capital-stress-tests-map-rate-fx-gold-and-credit-assumptions-onto-each-risk-type-rwa`, `tt83-capital-plan-closes-the-gap-between-projected-own-funds-and-target-capital`, `tt83-icaap-is-reviewed-independently-and-reported-to-the-sbv-annually-within-90-days`, `risk-adjusted-return-on-capital-raroc`; chèn link từ `asset-liability-committee-alco`, `vietnamese-banks-may-measure-irrbb-…-until-end-2027`.
+- Stub mới `capital-adequacy-ratio-car`. --graph: +8 trang; nhóm IRRBB Việt Nam ↔ ICAAP TT83 0 → 11.
+- Mục 9, Phụ lục III, Phụ lục VI: phu. TT83 còn Chương II, IV, Mục 2–6, 8, Phụ lục I, IV và phần dở của Chương I, Mục 1, Mục 5, Chương V, Phụ lục II.

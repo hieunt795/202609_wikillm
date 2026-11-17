@@ -2,13 +2,13 @@
 title: interest-rate-gap-risk-stems-from-repricing-timing-mismatches
 type: concept
 tags: [irrbb, alm, gap-risk, interest-rate-risk]
-sources: [tata_bank_alm]
+sources: [tata_bank_alm, tt83_2025_sbv]
 status: stable
-last_updated: 2026-10-12
+last_updated: 2026-11-17
 reviewed: 2026-10-12
 reviewed_by: model
 part_of: [interest-rate-risk-in-the-banking-book-irrbb]
-governed_by: [repricing-gap-analysis-allocates-cash-flows-into-time-bands-by-next-reset-date, earning-gap-analysis-estimates-short-term-nii-sensitivity-via-periodic-impact-weights, key-rate-duration-isolates-interest-rate-sensitivity-to-non-parallel-yield-curve-shifts]
+governed_by: [repricing-gap-analysis-allocates-cash-flows-into-time-bands-by-next-reset-date, earning-gap-analysis-estimates-short-term-nii-sensitivity-via-periodic-impact-weights, key-rate-duration-isolates-interest-rate-sensitivity-to-non-parallel-yield-curve-shifts, circular-83-2025-tt-nhnn-internal-control-systems-of-banks, tt83-irrbb-strategy-tracks-the-repricing-gap-and-requires-limits-on-both-delta-nii-and-delta-eve]
 contrasts: [interest-rate-basis-risk-arises-from-imperfect-correlation-between-benchmarks, interest-rate-option-risk-combines-automatic-and-embedded-behavioural-options]
 ---
 
@@ -17,4 +17,6 @@ Rủi ro khoảng chênh lệch lãi suất (Interest Rate Gap Risk) là cấu p
 Bản chất của gap risk thể hiện rõ ngay cả khi tài sản và nợ được neo vào cùng một chỉ số lãi suất tham chiếu nhưng có chu kỳ định giá lệch nhau (tata_bank_alm, Ch.1, Interest Rate Gap Risk, d.639). Xét trường hợp một tài sản được định giá lại theo chỉ số 6-month EURIBOR vào tháng 8, trong khi khoản nợ tài trợ tương ứng được định giá lại theo 6-month EURIBOR vào tháng 6 (tata_bank_alm, Ch.1, Interest Rate Gap Risk, d.639–640). Nếu chỉ số EURIBOR bật tăng đột ngột từ 4% lên 5% vào tháng 5, chi phí vốn của ngân hàng sẽ nhảy vọt lên 5% ngay từ tháng 6, trong khi lợi suất tài sản vẫn bị giữ chặt ở mức 4% cũ cho tới tận tháng 8 (tata_bank_alm, Ch.1, Interest Rate Gap Risk, d.641–655). Trong tháng 6 và tháng 7, lãi suất của khoản nợ cao hơn lãi suất của tài sản, dù hai vế gắn với cùng một chỉ số (tata_bank_alm, Ch.1, Interest Rate Gap Risk, d.655).
 
 Để nhận diện và kiểm soát gap risk, các định chế tài chính triển khai [[repricing-gap-analysis-allocates-cash-flows-into-time-bands-by-next-reset-date]] bằng cách phân bổ dòng tiền vào các dải thời gian chuẩn hóa (*time bands*) (tata_bank_alm, Ch.1, Interest Rate Gap Risk, d.637; tata_bank_alm, Ch.2, Repricing Gap Analysis, d.882). Một nguyên tắc căn bản là đối với các công cụ lãi suất thả nổi, thời hạn chịu rủi ro chỉ được tính đến ngày điều chỉnh lãi suất kế tiếp (*next reset date*) thay vì ngày đáo hạn hợp đồng, bởi ngay khi lãi suất được neo lại theo giá thị trường, công cụ đó sẽ lập tức giao dịch ngang mệnh giá (*at par*) (tata_bank_alm, Ch.2, Repricing Gap Analysis, d.888). Trên cơ sở đó, ngân hàng đánh giá tác động dài hạn lên EVE hoặc áp dụng [[earning-gap-analysis-estimates-short-term-nii-sensitivity-via-periodic-impact-weights]] để đo lường độ nhạy thu nhập ngắn hạn 1 năm, đồng thời bóc tách độ nhạy cục bộ thông qua [[key-rate-duration-isolates-interest-rate-sensitivity-to-non-parallel-yield-curve-shifts]] nhằm phát hiện mức độ tập trung rủi ro trước các cú xoắn vặn của đường cong lợi suất (tata_bank_alm, Ch.1, Interest Rate Gap Risk, d.637; tata_bank_alm, Ch.2, Earning Gap Analysis, d.1065). Khác với [[interest-rate-basis-risk-arises-from-imperfect-correlation-between-benchmarks]] vốn phát sinh do sai lệch giữa các chỉ số tham chiếu, hoặc [[interest-rate-option-risk-combines-automatic-and-embedded-behavioural-options]] sinh ra từ quyền chọn gắn trong công cụ, gap risk đến từ lệch thời điểm định giá lại giữa hai vế.
+
+[[circular-83-2025-tt-nhnn-internal-control-systems-of-banks|Thông tư 83/2025/TT-NHNN]] định nghĩa rủi ro chênh lệch là rủi ro phát sinh khi tài sản và nợ phải trả trên sổ ngân hàng, kể cả khoản mục ngoại bảng, không khớp về thời điểm định giá lại lãi suất hoặc không khớp về kỳ hạn (tt83_2025_sbv, Điều 3, khoản 22, điểm a, d.111). Định nghĩa nêu cả hai dạng không khớp, trong khi phần trên của trang chỉ nói về thời điểm định giá lại. Ngân hàng theo dõi dạng rủi ro này qua trạng thái chênh lệch kỳ định lại lãi suất, chỉ số bắt buộc đầu tiên trong [[tt83-irrbb-strategy-tracks-the-repricing-gap-and-requires-limits-on-both-delta-nii-and-delta-eve|chiến lược IRRBB theo Điều 53]] (tt83_2025_sbv, Điều 53, khoản 1, điểm a, d.1459–1461).
 
