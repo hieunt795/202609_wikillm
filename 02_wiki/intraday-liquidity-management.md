@@ -2,18 +2,19 @@
 title: intraday-liquidity-management
 type: concept
 tags: [vietnam, tt50, liquidity-risk-management, intraday-liquidity, payments]
-sources: [tt50_2026_sbv, basel_lcr]
+sources: [tt50_2026_sbv, basel_lcr, tt83_2025_sbv]
 status: draft
-last_updated: 2026-11-14
+last_updated: 2026-11-18
 reviewed: 2026-11-14
 reviewed_by: model
 has_part: [intraday-liquidity-events-and-correspondent-failures-are-reviewed-annually-by-vietnamese-banks]
 driven_by: [collateral-position-management]
 contrasts: [liquidity-coverage-ratio-lcr]
 related: [tt50-requires-intraday-liquidity-management-that-the-basel-lcr-stress-scenario-does-not-cover]
+part_of: [tt83-liquidity-management-covers-five-areas-separately-in-vnd-and-usd]
 ---
 
-Quản lý thanh khoản trong ngày (intraday liquidity management) là việc ngân hàng kiểm soát trạng thái thanh khoản phát sinh giữa các thời điểm trong một ngày làm việc để thanh toán và quyết toán đúng hạn. TT50 quy định hai mục tiêu tối thiểu: đáp ứng nghĩa vụ thanh toán và quyết toán đúng hạn trong cả điều kiện bình thường và căng thẳng, và xác định, ưu tiên các nghĩa vụ có thời điểm cụ thể cùng nghĩa vụ quan trọng khác, còn nghĩa vụ ít quan trọng hơn thực hiện càng sớm càng tốt. Ngân hàng tự xác định mức quan trọng trong quy định nội bộ (tt50_2026_sbv, Điều 14, khoản 6a, d.495–499).
+Quản lý thanh khoản trong ngày (intraday liquidity management) là việc ngân hàng kiểm soát trạng thái thanh khoản phát sinh giữa các thời điểm trong một ngày làm việc để thanh toán và quyết toán đúng hạn. TT50 quy định hai mục tiêu tối thiểu: đáp ứng nghĩa vụ thanh toán và quyết toán đúng hạn trong cả điều kiện bình thường và căng thẳng, và xác định, ưu tiên các nghĩa vụ có thời điểm cụ thể cùng nghĩa vụ quan trọng khác, còn nghĩa vụ ít quan trọng hơn thực hiện càng sớm càng tốt. Ngân hàng tự xác định mức quan trọng trong quy định nội bộ (tt50_2026_sbv, Điều 14, khoản 6a, d.495–499). TT83 xếp thanh khoản trong ngày là mảng đầu tiên trong [[tt83-liquidity-management-covers-five-areas-separately-in-vnd-and-usd|năm mảng quản lý thanh khoản tối thiểu]], với ba việc: theo dõi trạng thái thanh khoản, xác định nguồn vốn và khả năng huy động nguồn đó, và dự báo tình huống làm thanh khoản thay đổi bất thường kèm biện pháp xử lý (tt83_2025_sbv, Điều 46, khoản 2, điểm a, d.1297).
 
 Bảy nội dung tối thiểu, ở đây gộp nội dung (iv) tiếp cận nguồn thanh khoản và (v) tài sản bảo đảm vào một dòng (tt50_2026_sbv, Điều 14, khoản 6b, d.501–515):
 

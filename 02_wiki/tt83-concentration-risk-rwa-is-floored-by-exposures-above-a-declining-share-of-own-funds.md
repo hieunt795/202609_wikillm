@@ -6,9 +6,10 @@ sources: [tt83_2025_sbv]
 status: draft
 last_updated: 2026-11-17
 part_of: [tt83-target-capital-is-the-larger-of-regulatory-capital-and-economic-capital]
+governs: [concentration-risk]
 ---
 
-Trong vốn kinh tế theo TT83, tổng tài sản tính theo rủi ro tập trung $RWA_{COR}$ gồm phần của hoạt động cấp tín dụng $RWA^1_{COR}$ và phần của hoạt động tự doanh $RWA^2_{COR}$; cả hai do ngân hàng tự xây phương pháp, nhưng phần cấp tín dụng không được thấp hơn một sàn công thức (tt83_2025_sbv, Phụ lục VI, mục I, điểm 1.d.iii, d.2804–2837). Đây là một trong sáu cấu phần cộng thành tổng tài sản tính theo rủi ro dùng để tính [[tt83-target-capital-is-the-larger-of-regulatory-capital-and-economic-capital|vốn kinh tế và vốn mục tiêu]].
+Trong vốn kinh tế theo TT83, tổng tài sản tính theo [[concentration-risk|rủi ro tập trung]] $RWA_{COR}$ gồm phần của hoạt động cấp tín dụng $RWA^1_{COR}$ và phần của hoạt động tự doanh $RWA^2_{COR}$; cả hai do ngân hàng tự xây phương pháp, nhưng phần cấp tín dụng không được thấp hơn một sàn công thức (tt83_2025_sbv, Phụ lục VI, mục I, điểm 1.d.iii, d.2804–2837). Đây là một trong sáu cấu phần cộng thành tổng tài sản tính theo rủi ro dùng để tính [[tt83-target-capital-is-the-larger-of-regulatory-capital-and-economic-capital|vốn kinh tế và vốn mục tiêu]].
 
 $$RWA_{COR} = RWA^{1}_{COR} + RWA^{2}_{COR}$$
 

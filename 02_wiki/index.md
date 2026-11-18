@@ -1038,6 +1038,7 @@
 
 **IRRBB ở Việt Nam (TT83/2025 — Mục 7 Chương III, Phụ lục V)**
 - [[circular-83-2025-tt-nhnn-internal-control-systems-of-banks]] — TT83/2025/TT-NHNN: hệ thống kiểm soát nội bộ, chín Mục quản lý rủi ro, hiệu lực 01/7/2026, phần IRRBB ở Mục 7 và Phụ lục V
+- [[tt83-chapter-iii-sets-strategy-limits-measurement-and-internal-reporting-for-each-risk-type]] — khung chung của Chương III cho sáu loại rủi ro (tín dụng, thị trường, hoạt động, thanh khoản, tập trung, mô hình), từng Điều nối tới trang riêng; chu kỳ báo cáo nội bộ từ hằng ngày tới hằng năm
 - [[tt83-irrbb-strategy-tracks-the-repricing-gap-and-requires-limits-on-both-delta-nii-and-delta-eve]] — Điều 53: ba chỉ số repricing gap, ΔNII, ΔEVE; hạn mức bắt buộc trên ΔNII và ΔEVE do ngân hàng tự đặt mức
 - [[tt83-irrbb-is-measured-quarterly-by-an-independent-unit-and-per-currency-above-a-5-percent-share]] — Điều 54, Điều 23: đo và stress test tối thiểu hằng quý, bộ phận độc lập, đo riêng đồng tiền chiếm từ 5% tài sản sổ ngân hàng
 - [[tt83-irrbb-reporting-runs-quarterly-internally-and-annually-to-the-sbv]] — Điều 55, Phụ lục II, Điều 9: sáu nội dung báo cáo nội bộ hằng quý, mục IRRBB trong báo cáo năm gửi NHNN trong 90 ngày
@@ -1056,6 +1057,57 @@
 - [[tt83-alm-unit-runs-the-balance-sheet-funding-plans-ftp-and-pricing-and-polices-liquidity-and-irrbb-limits]] — Đ25.K3: bộ phận ALM quản lý bảng cân đối, kế hoạch vốn, nguyên tắc FTP, khung lãi suất và khung giá, kiểm soát tuân thủ hạn mức thanh khoản, IRRBB, RWA_IRRBB
 - [[asset-liability-committee-alco]] — Hội đồng ALCO: tham mưu Tổng giám đốc về ALM, chủ tịch là Tổng giám đốc hoặc người điều hành khác, họp ít nhất hằng quý; đối chiếu Hội đồng rủi ro, Hội đồng quản lý vốn
 - [[three-lines-of-defence]] — ba tuyến bảo vệ theo Đ4.K2: bộ phận tạo rủi ro, tuân thủ và quản lý rủi ro, kiểm toán nội bộ
+- [[tt83-risk-limits-are-set-by-the-ceo-reviewed-annually-and-the-stricter-limit-applies]] — Điều 20: Tổng giám đốc ban hành hạn mức, năm yêu cầu (hạn mức cho mỗi rủi ro trọng yếu, khớp khẩu vị rủi ro và RWA phân bổ), rà soát hằng năm, nới lỏng báo cáo sau, áp hạn mức thận trọng hơn
+- [[risk-appetite]] — khẩu vị rủi ro (Đ3.K10, Đ19.K2.a): tỷ lệ an toàn vốn mục tiêu, ROE, RAROC, chỉ tiêu định tính; CAR mục tiêu đi vào vốn kinh tế
+- [[tt83-risk-management-policy-is-set-by-the-board-for-three-to-five-years-and-reviewed-annually]] — Điều 19: Hội đồng quản trị ban hành chính sách 3–5 năm, rà soát hằng năm; khẩu vị rủi ro, danh sách rủi ro trọng yếu, chiến lược từng rủi ro
+- [[tt83-material-risks-are-measured-by-short-and-long-term-impact-on-income-capital-and-liquidity]] — Điều 17, 22: chu trình chung nhận dạng, đo lường (tác động tới thu nhập, vốn, thanh khoản), theo dõi, kiểm soát; giám sát công ty con
+- [[tt83-internal-risk-rules-cover-nine-topics-from-policy-and-limits-to-stress-tests-data-and-icaap]] — Điều 18: chín nội dung quy định nội bộ, báo vi phạm lên Hội đồng quản trị, Ban kiểm soát
+- [[tt83-new-products-need-board-approval-and-a-risk-vetted-pilot-before-launch]] — Điều 21: Hội đồng quản trị duyệt chủ trương, Tổng giám đốc duyệt kế hoạch, quản lý rủi ro thẩm định quy mô và thời gian thử nghiệm
+- [[tt83-risk-data-must-be-accurate-complete-and-quickly-aggregable-across-material-risks]] — Điều 24: dữ liệu rủi ro chính xác, toàn vẹn, đủ cho mọi rủi ro trọng yếu, tổng hợp nhanh
+
+**Quản lý rủi ro thanh khoản theo TT83/2025 (Mục 5 Chương III, Điều 45–49)**
+- [[tt83-liquidity-strategy-prices-liquidity-cost-into-ftp-and-ties-limits-to-regulatory-ratios]] — Điều 45: đủ HQLA cho cả kịch bản bất lợi, chi phí thanh khoản vào giá vốn nội bộ, chiến lược ba nội dung, hạn mức bám tỷ lệ khả năng chi trả, LDR, tỷ lệ vốn ngắn hạn cho vay trung dài hạn
+- [[tt83-liquidity-management-covers-five-areas-separately-in-vnd-and-usd]] — Điều 46: phạm vi ba loại đơn vị, tách VND và USD, năm mảng (trong ngày, tài sản thanh khoản cao, nguồn vốn, dòng tiền, nguồn thanh khoản)
+- [[tt83-liquidity-risk-is-identified-from-other-risk-types-and-measured-on-four-fronts]] — Điều 47: nhận dạng từ rủi ro tín dụng, thị trường, hoạt động, danh tiếng; bốn đối tượng đo; chỉ tiêu cảnh báo sớm
+- [[tt83-liquidity-stress-tests-run-idiosyncratic-system-wide-and-combined-scenarios]] — Điều 48: ba kịch bản đặc thù, toàn hệ thống, hỗn hợp; năm yếu tố gồm loại tiền, mua lại nợ, run-off, tập trung nguồn vốn, mất chủ nợ lớn
+- [[tt83-internal-liquidity-risk-reports-run-at-least-quarterly-with-six-items]] — Điều 49: báo cáo nội bộ hằng quý hoặc đột xuất, sáu nội dung
+
+**Quản lý rủi ro mô hình theo TT83/2025 (Mục 8 Chương III, Điều 56–58)**
+- [[model-risk]] — rủi ro mô hình: lỗi khi xây, triển khai hoặc dùng sai mô hình (TT83 Đ3.K23–24); không thuộc sáu rủi ro trọng yếu
+- [[tt83-models-are-tiered-high-medium-or-low-risk-and-irb-models-are-high-risk-by-default]] — Điều 56 K1–3, K5–6, Điều 57: danh mục ba mức rủi ro, mô hình IRB là rủi ro cao, mô hình mua ngoài, hồ sơ mô hình, biện pháp khắc phục
+- [[tt83-in-house-models-are-validated-before-use-on-material-change-and-at-least-annually]] — Đ56.K4: vòng đời xây, triển khai, dùng (quản lý ghi đè), theo dõi, kiểm định ba thời điểm; tuyến 2 kiểm định
+- [[tt83-internal-model-risk-reports-run-at-least-annually-with-six-items]] — Điều 58: báo cáo nội bộ hằng năm, sáu nội dung
+
+**Quản lý rủi ro tập trung theo TT83/2025 (Mục 6 Chương III, Điều 50–52)**
+- [[concentration-risk]] — rủi ro tập trung: dồn vào một khách hàng, khách hàng và người có liên quan, đối tác, sản phẩm, ngành ở mức đáng kể theo quy định nội bộ (TT83 Đ3.K21)
+- [[tt83-concentration-risk-limits-cover-lending-and-proprietary-trading-against-own-funds-and-portfolio-totals]] — Điều 50: chiến lược cho cấp tín dụng và tự doanh, hạn mức so với vốn tự có, tổng dư nợ, tổng số dư tự doanh
+- [[tt83-concentration-risk-is-measured-by-its-impact-on-income-and-includes-unbooked-items]] — Điều 51: nhận dạng gồm khoản chưa hạch toán, đo theo tác động tới thu nhập, cảnh báo sớm khoản gần vượt
+- [[tt83-internal-concentration-risk-reports-run-at-least-every-six-months-with-five-items]] — Điều 52: báo cáo nội bộ sáu tháng, năm nội dung
+
+**Quản lý rủi ro hoạt động theo TT83/2025 (Mục 4 Chương III, Điều 38–44)**
+- [[operational-risk]] — rủi ro hoạt động: quy trình, con người, hệ thống, yếu tố bên ngoài; gồm rủi ro pháp lý, không gồm rủi ro danh tiếng và chiến lược (TT83 Đ3.K16–17)
+- [[tt83-operational-risk-strategy-sorts-activities-into-six-groups-and-limits-financial-and-non-financial-losses]] — Điều 38: bốn nội dung chiến lược, sáu nhóm hoạt động, hạn mức tổn thất tài chính theo loại sự kiện và phi tài chính
+- [[tt83-operational-risk-is-identified-across-eight-event-types-and-measured-with-at-least-two-of-nine-tools]] — Điều 39: tám loại sự kiện, chọn tối thiểu hai trong chín công cụ (RCSA, dữ liệu tổn thất, phân tích kịch bản…), tăng kiểm soát khi tổn thất vượt hạn mức
+- [[tt83-outsourcing-technology-and-insurance-support-operational-risk-management-without-shifting-the-banks-responsibility]] — Điều 40–42: thuê ngoài và rủi ro bên thứ ba, ứng dụng công nghệ, bảo hiểm không thay quản lý rủi ro
+- [[tt83-business-continuity-plans-cover-data-loss-it-failure-and-force-majeure-and-are-tested-annually]] — Điều 43, Đ38.K1.c: ba tình huống tối thiểu, tám yêu cầu, diễn tập hằng năm; đối chiếu kế hoạch tài trợ dự phòng
+- [[tt83-internal-operational-risk-reports-run-at-least-every-six-months-with-ten-items]] — Điều 44: báo cáo nội bộ sáu tháng, mười nội dung, dữ liệu tổn thất theo sáu nhóm
+
+**Quản lý rủi ro thị trường theo TT83/2025 (Mục 3 Chương III, Điều 35–37)**
+- [[market-risk]] — rủi ro thị trường: bốn loại theo TT83 Đ3.K15 (lãi suất trên sổ kinh doanh, ngoại hối gồm vàng, giá cổ phiếu, giá hàng hóa)
+- [[foreign-currency-position]] — stub: trạng thái ngoại tệ, cùng trạng thái vàng tạo rủi ro ngoại hối; TT83 đặt hạn mức trạng thái dương và âm, chưa có văn bản định nghĩa
+- [[tt83-market-risk-strategy-sets-hedging-of-trading-book-positions-and-stop-loss-and-position-limits]] — Điều 35: bốn nội dung chiến lược, hạn mức lãi suất, ngoại hối, hàng hóa, cắt lỗ và giao dịch viên; không có hạn mức riêng cho cổ phiếu
+- [[tt83-market-risk-measurement-backtests-assumptions-and-reviews-mark-to-model-pricing-annually]] — Điều 36: đo theo từng loại tài sản, kiểm định giả định với thực tế, ba yêu cầu với mô hình giá, điều chỉnh hạn mức khi theo dõi
+- [[tt83-market-risk-is-reported-internally-each-business-day-and-at-least-every-six-months]] — Điều 37: báo cáo sổ kinh doanh ngày T cho T-1, báo cáo tổng hợp ít nhất sáu tháng, tám nội dung
+
+**Quản lý rủi ro tín dụng theo TT83/2025 (Mục 2 Chương III, Điều 26–34)**
+- [[credit-risk]] — rủi ro tín dụng: hai loại theo TT83 Đ3.K14, rủi ro khách hàng và rủi ro đối tác trong năm nhóm giao dịch; rủi ro trọng yếu
+- [[tt83-credit-risk-strategy-sets-npl-targets-risk-based-pricing-and-limits-by-product-customer-sector-and-collateral]] — Điều 26: mục tiêu nợ xấu và cấp tín dụng xấu, yếu tố chu kỳ, chi phí rủi ro trong lãi suất, hạn mức theo sản phẩm, khách hàng, ngành, hình thức bảo đảm
+- [[tt83-internal-credit-rating-systems-are-reviewed-annually-by-an-independent-unit]] — Điều 27: xếp hạng nội bộ làm cơ sở đo lường, tiêu chí có yếu tố vĩ mô, đánh giá độc lập hằng năm
+- [[tt83-credit-risk-control-pairs-loan-classification-and-provisioning-with-limits-and-early-warning]] — Điều 28: phân loại nợ và dự phòng, theo dõi khoản và danh mục, kiểm soát hạn mức, giám sát từ xa và tại chỗ, cảnh báo sớm
+- [[tt83-credit-process-runs-from-appraisal-and-minuted-decisions-to-post-disbursement-monitoring]] — Điều 29–31: năm nội dung thẩm định, thẩm quyền theo tiêu chí và biên bản hội đồng, giải ngân đúng mục đích, bốn nguyên tắc giám sát sau giải ngân
+- [[tt83-problem-credits-start-at-debt-group-2-and-require-restructuring-and-recovery-plans]] — Đ3.K28, Điều 32: khoản có vấn đề từ nhóm nợ 2, cơ cấu lại, kế hoạch thu hồi, quy trách nhiệm nợ xấu
+- [[tt83-collateral-with-more-volatile-value-must-be-revalued-more-often]] — Điều 33: danh mục tài sản chấp nhận, định giá làm cơ sở khấu trừ dự phòng, tần suất đánh giá theo độ biến động
+- [[tt83-internal-credit-risk-reports-run-at-least-quarterly-with-ten-items]] — Điều 34: báo cáo nội bộ hằng quý, mười nội dung
 
 **Đánh giá nội bộ mức đủ vốn (ICAAP) theo TT83/2025 (Mục 9, Phụ lục III, VI)**
 - [[internal-capital-adequacy-assessment-process-icaap]] — ICAAP: năm yêu cầu, sáu bước, tầm nhìn 3–5 năm, làm ít nhất hằng năm; Hội đồng quản lý vốn; ngân hàng kiểm soát đặc biệt được miễn

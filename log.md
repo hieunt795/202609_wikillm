@@ -1515,3 +1515,48 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Tạo `internal-capital-adequacy-assessment-process-icaap`, `tt83-target-capital-is-the-larger-of-regulatory-capital-and-economic-capital`, `tt83-concentration-risk-rwa-is-floored-by-exposures-above-a-declining-share-of-own-funds`, `tt83-capital-stress-tests-map-rate-fx-gold-and-credit-assumptions-onto-each-risk-type-rwa`, `tt83-capital-plan-closes-the-gap-between-projected-own-funds-and-target-capital`, `tt83-icaap-is-reviewed-independently-and-reported-to-the-sbv-annually-within-90-days`, `risk-adjusted-return-on-capital-raroc`; chèn link từ `asset-liability-committee-alco`, `vietnamese-banks-may-measure-irrbb-…-until-end-2027`.
 - Stub mới `capital-adequacy-ratio-car`. --graph: +8 trang; nhóm IRRBB Việt Nam ↔ ICAAP TT83 0 → 11.
 - Mục 9, Phụ lục III, Phụ lục VI: phu. TT83 còn Chương II, IV, Mục 2–6, 8, Phụ lục I, IV và phần dở của Chương I, Mục 1, Mục 5, Chương V, Phụ lục II.
+
+## [2026-11-18:18-18-19] ingest | tt83_2025_sbv Chương III Mục 5 — rủi ro thanh khoản
+- Tạo 5 trang (Điều 45–49: chiến lược và hạn mức, năm mảng quản lý, nhận dạng và đo lường, ba kịch bản stress test, báo cáo nội bộ); merge 6 trang: circular-83, contingency-funding-plan, intraday-liquidity-management, liquidity-risk, loan-to-deposit-ratio-ldr (stub → draft), liquidity-stress-test-reports (sửa claim "TT83 chưa có trong wiki").
+- --graph: circular-83 vào top 25; nhóm mới nối IRRBB TT83 (0→29), Thanh khoản và nguồn vốn (0→19), NSFR TT50 (0→8), LCR TT50 (0→6).
+- Mục 5 đã phủ 100%; TT83 còn chưa phủ hoặc dở: Chương I, II, IV, V, Chương III Mục 1–4, 6, 8, Phụ lục I, II, IV.
+
+## [2026-11-18:18-34-30] ingest | tt83_2025_sbv Chương III Mục 2 — rủi ro tín dụng
+- Tạo 8 trang: credit-risk (Đ3.K14) và 7 trang TT83 cho Điều 26, 27, 28, 29–31 (gộp một trang quy trình cấp tín dụng), 32, 33, 34; merge circular-83 (đoạn Mục 2, has_part), chèn link credit-risk vào trang nhận dạng rủi ro thanh khoản.
+- --graph: nhóm tín dụng TT83 nối IRRBB TT83 (0→41) và thanh khoản TT83 (0→8); non-performing-loans là điểm nối duy nhất với nhóm Hệ thống tài chính, quy định và giám sát.
+- Mục 2 phủ 100%; lượt Điều 20 (hạn mức rủi ro, Mục 1) vẫn chờ duyệt.
+
+## [2026-11-18:18-51-32] ingest | tt83_2025_sbv Chương III Mục 3 — rủi ro thị trường
+- Tạo 4 trang: market-risk (Đ3.K15), Điều 35 (chiến lược, hạn mức), Điều 36 (đo lường, mô hình giá), Điều 37 (báo cáo ngày T và sáu tháng); stub foreign-currency-position; merge trading-book, circular-83; chèn link market-risk vào trang nhận dạng rủi ro thanh khoản.
+- --graph: nhóm thị trường TT83 nối IRRBB TT83 (0→19), IRRBB (0→16), tín dụng TT83 (0→6); circular-83 là điểm nối duy nhất giữa IRRBB TT83 và nhóm thị trường TT83.
+- Mục 3 phủ 100%; lượt Điều 20 (Mục 1) vẫn chờ duyệt.
+
+## [2026-11-18:18-55-45] ingest | tt83_2025_sbv Chương III Mục 4 — rủi ro hoạt động
+- Tạo 6 trang: operational-risk (Đ3.K16–17), Điều 38 (chiến lược, sáu nhóm, hạn mức), Điều 39 (tám sự kiện, chín công cụ), Điều 40–42 gộp (thuê ngoài, công nghệ, bảo hiểm), Điều 43 (duy trì hoạt động liên tục), Điều 44 (báo cáo sáu tháng); merge circular-83; chèn link operational-risk vào trang nhận dạng rủi ro thanh khoản.
+- --graph: liquidity-risk vào top 25; nhóm hoạt động TT83 nối IRRBB TT83 (0→29), circular-83 là điểm nối duy nhất giữa hai nhóm.
+- Mục 4 phủ 100%; lượt Điều 20 (Mục 1) vẫn chờ duyệt.
+
+## [2026-11-18:18-58-09] ingest | tt83_2025_sbv Chương III Mục 6 — rủi ro tập trung
+- Tạo 4 trang: concentration-risk (Đ3.K21), Điều 50 (chiến lược, hạn mức), Điều 51 (nhận dạng, đo lường, theo dõi), Điều 52 (báo cáo sáu tháng); merge circular-83; chèn link concentration-risk vào trang sàn RWA_COR.
+- --graph: nhóm tập trung TT83 nối IRRBB TT83 (0→19), ICAAP TT83 (0→7); điểm nối duy nhất: circular-83 (với IRRBB TT83), trang sàn RWA_COR (với ICAAP TT83).
+- Mục 6 phủ 100%; lượt Điều 20 (Mục 1) vẫn chờ duyệt.
+
+## [2026-11-18:19-03-08] ingest | tt83_2025_sbv Chương III Mục 8 — rủi ro mô hình
+- Tạo 4 trang: model-risk (Đ3.K23–24), Điều 56 K1–3, K5–6 + Điều 57 (xếp ba mức, mô hình IRB rủi ro cao), Đ56.K4 (vòng đời, kiểm định ba thời điểm), Điều 58 (báo cáo hằng năm); merge three-lines-of-defence (Đ56.K7), circular-83 (2 câu, thân bài 968 từ).
+- --graph: nhóm mô hình TT83 nối IRRBB TT83 (0→19), Quản trị ALM TT83 (0→6); bốn điểm nối duy nhất: circular-83, trang mô hình giá thị trường, trang xếp hạng tín dụng nội bộ, three-lines-of-defence.
+- Mục 8 phủ 100%; Chương III còn Mục 1 dở (Điều 20 chờ duyệt).
+
+## [2026-11-18:19-05-46] ingest | tt83_2025_sbv Chương III Mục 1 — Điều 20 hạn mức rủi ro
+- Tạo trang Điều 20 (thẩm quyền, năm yêu cầu, rà soát hằng năm, áp hạn mức thận trọng hơn); stub risk-appetite (Đ3.K10); chèn link vào trang chiến lược thanh khoản, ALCO, kế hoạch vốn.
+- --graph: không có thay đổi vượt ngưỡng.
+- Mục 1 còn Điều 17, 18, 19, 21, 22, 24; chỉ trích Điều 20, không gộp Đ18.K1.b và Đ22.
+
+## [2026-11-18:19-08-33] lint | tách trang circular-83: phần sáu loại rủi ro Chương III
+- Tạo tt83-chapter-iii-sets-strategy-limits-measurement-and-internal-reporting-for-each-risk-type: chuyển nguyên sáu đoạn (tín dụng, thị trường, hoạt động, thanh khoản, tập trung, mô hình) và 26 has_part từ circular-83, thêm đoạn so chu kỳ báo cáo; circular-83 giữ phần chung và IRRBB, thân bài 968 → 468 từ.
+- --graph: liquidity-risk ra top 25, potential-gdp vào lại; không mất link.
+- Coverage TT83 không đổi; đã gỡ một chú thích dải rộng d.543–1684 làm Mục 1 hiện sai thành phủ đủ.
+
+## [2026-11-18:19-11-53] ingest | tt83_2025_sbv Chương III Mục 1 — Điều 17, 18, 19, 21, 22, 24
+- Tạo 5 trang: chính sách quản lý rủi ro (Đ19), chu trình chung (Đ17, Đ22), quy định nội bộ (Đ18), sản phẩm mới (Đ21), dữ liệu rủi ro (Đ24); merge risk-appetite (stub → draft), risk-adjusted-return-on-capital-raroc; chèn link vào trang Chương III.
+- --graph: circular-50 vào top 25; Quản trị ALM TT83 nối IRRBB TT83 (19→40), ICAAP TT83 (8→16).
+- Mục 1 phủ đủ, Chương III phủ 100%; TT83 còn Chương I, II, IV, V và Phụ lục I, II, IV.
