@@ -6,6 +6,7 @@ sources: [tt83_2025_sbv]
 status: draft
 last_updated: 2026-11-18
 part_of: [circular-83-2025-tt-nhnn-internal-control-systems-of-banks]
+has_part: [tt83-stress-tests-cover-capital-and-four-material-risks-and-feed-back-into-plans-and-policies]
 related: [tt83-risk-management-policy-is-set-by-the-board-for-three-to-five-years-and-reviewed-annually, tt83-risk-limits-are-set-by-the-ceo-reviewed-annually-and-the-stricter-limit-applies, tt83-new-products-need-board-approval-and-a-risk-vetted-pilot-before-launch, tt83-risk-data-must-be-accurate-complete-and-quickly-aggregable-across-material-risks, internal-capital-adequacy-assessment-process-icaap]
 ---
 
@@ -18,7 +19,7 @@ Chín nội dung đó là:
 - nhận dạng, đo lường, theo dõi và kiểm soát tối thiểu từng rủi ro trọng yếu;
 - cơ chế báo cáo nội bộ về quản lý rủi ro;
 - quản lý rủi ro với [[tt83-new-products-need-board-approval-and-a-risk-vetted-pilot-before-launch|sản phẩm mới, hoạt động trên thị trường mới]];
-- kiểm tra sức chịu đựng;
+- kiểm tra sức chịu đựng, với nội dung tối thiểu đặt ở [[tt83-stress-tests-cover-capital-and-four-material-risks-and-feed-back-into-plans-and-policies|Điều 23]];
 - quản lý [[tt83-risk-data-must-be-accurate-complete-and-quickly-aggregable-across-material-risks|dữ liệu rủi ro]];
 - quy trình [[internal-capital-adequacy-assessment-process-icaap|đánh giá nội bộ về mức đủ vốn]];
 - nội dung cần thiết khác theo yêu cầu quản lý của từng rủi ro trọng yếu.

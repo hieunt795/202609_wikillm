@@ -1560,3 +1560,63 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Tạo 5 trang: chính sách quản lý rủi ro (Đ19), chu trình chung (Đ17, Đ22), quy định nội bộ (Đ18), sản phẩm mới (Đ21), dữ liệu rủi ro (Đ24); merge risk-appetite (stub → draft), risk-adjusted-return-on-capital-raroc; chèn link vào trang Chương III.
 - --graph: circular-50 vào top 25; Quản trị ALM TT83 nối IRRBB TT83 (19→40), ICAAP TT83 (8→16).
 - Mục 1 phủ đủ, Chương III phủ 100%; TT83 còn Chương I, II, IV, V và Phụ lục I, II, IV.
+
+## [2026-11-18:21-23-11] ingest | tt83_2025_sbv Phụ lục II, Phụ lục IV
+- Tạo 3 trang: báo cáo quản lý rủi ro năm (Đ9, PL II mục I, III), khung lặp theo loại rủi ro và stress test bốn loại (PL II mục II), báo cáo kiểm toán nội bộ năm (Đ9, PL IV).
+- Merge `risk-appetite`, `tt83-risk-data-…`, `contingency-funding-plan`, `tt83-internal-model-risk-reports-…`; hub TT83 thêm câu bốn báo cáo năm (Đ9.K2); nhóm index đổi tên thành "(Điều 4, 6, 9, 25; Phụ lục II, IV)".
+- Phụ lục II, IV: phu. TT83 còn do: Chương I, Chương V; chua: Chương II, Chương IV, Phụ lục I.
+
+## [2026-11-18:21-38-22] ingest | tt83_2025_sbv Điều 23 (stress test, phần còn thiếu K2, K3, K6)
+- Tạo 2 trang: khung stress test Điều 23 (vốn và bốn rủi ro, tần suất, quy định nội bộ, cách dùng kết quả), ba phương pháp cho tín dụng và thị trường (K3); merge `tt83-irrbb-is-measured-…` (K6).
+- Chèn link từ `tt83-internal-risk-rules-…`, `tt83-annual-risk-report-repeats-…`. `--graph`: `contingency-funding-plan` là điểm nối duy nhất giữa nhóm Quản trị ALM TT83 và nhóm Thanh khoản và nguồn vốn.
+- IRRBB stress test (Đ54, Phụ lục V) đã phủ từ trước; TT83 còn do: Chương I, Chương V; chua: Chương II, Chương IV, Phụ lục I.
+
+## [2026-11-19:18-48-06] ingest | vbhn04_2022_sbv Chương I (Điều 1–15)
+- Đăng ký nguồn mới `vbhn04_2022_sbv` (bản kê, state file 16 chunk); tạo 7 trang: hub QĐ 16/2007, bốn báo cáo theo VAS, ba cấp riêng/hợp nhất/tổng hợp, chuyển BCTC ngoại tệ sang VND, kỳ lập và hạn nộp, Bảng cân đối tài khoản hằng tháng, công khai BCTC.
+- Chèn link từ `tt50-banks-disclose-…`. `--graph`: `circular-50-2026-tt-nhnn-prudential-limits-and-ratios` vào top 25.
+- Chương I phu (bỏ qua Điều 12 đã duyệt); còn chua: Chương II–III, biểu mẫu, thuyết minh, BCTC giữa niên độ.
+
+## [2026-11-19:19-08-51] ingest | vbhn04_2022_sbv Chương II–III (Điều 16–30)
+- Tạo 2 trang (hợp nhất theo VAS 25, BCTC giữa niên độ đầy đủ/tóm lược) và 2 stub (`non-controlling-interest`, `equity-method-of-accounting`); merge trang ba cấp BCTC, trang bốn báo cáo, hub (Chương II–III).
+- `--graph`: độ mạnh nhóm Chế độ BCTC TCTD ↔ Tiền và hệ thống tiền tệ 0 → 6.
+- Chương I–III phu; Danh mục biểu mẫu do (hub trích d.619), các chunk biểu mẫu và thuyết minh còn chua.
+
+## [2026-11-19:19-32-59] ingest | vbhn04_2022_sbv Danh mục biểu mẫu và mẫu A01
+- Không tạo trang; merge 3 trang: Bảng cân đối tài khoản (bảng cột phần A và B của A01, ba đẳng thức cân đối, chữ ký, đánh giá ghi sổ kép), giữa niên độ (bảng mã đầy đủ/tóm lược kèm -HN), bốn báo cáo (bảng mã năm).
+- Sửa ranh giới chunk: biểu mẫu d.619–762, A01 d.763–899, Báo cáo tình hình tài chính d.900–1828. `--graph`: không thay đổi vượt ngưỡng.
+- Danh mục biểu mẫu và A01 phu; kế tiếp: Báo cáo tình hình tài chính (d.900–1828).
+
+## [2026-11-19:19-59-16] ingest | vbhn04_2022_sbv Mẫu B02 — trang tổng và Tài sản A.I–A.VI
+- Tạo 14 trang (trang tổng B02, 13 node chỉ tiêu A.I → A.VI.2) và 2 stub (A.VIII.1, B.IV); chèn link từ trang bốn báo cáo và trang A01.
+- Tách chunk B02 thành 5 dải theo phần của biểu. `--graph`: nhóm B02 ↔ Chế độ BCTC 0 → 40, B02 ↔ Tiền và hệ thống tiền tệ 0 → 14, Chế độ BCTC ↔ Tiền tệ 8 → 2.
+- Còn lại: A.VII → XII, phần B, vốn chủ sở hữu, ngoại bảng (khoảng 73 node).
+
+## [2026-11-19:21-37-18] ingest | vbhn04_2022_sbv Mẫu B02 — Tài sản A.VII–A.IX
+- Tạo 12 node (A.VII → A.IX.5), nâng 2 stub lên draft (`b02-available-for-sale-investment-securities`, `equity-method-of-accounting`); thêm 13 dòng vào bảng trang tổng B02.
+- `--graph`: trang tổng B02 vào hạng 126; nhóm B02 ↔ Chế độ BCTC 40 → 54.
+- Còn lại: A.X → A.XII (d.1189–1389), phần B, vốn chủ sở hữu, ngoại bảng.
+
+## [2026-11-19:21-59-25] ingest | vbhn04_2022_sbv Mẫu B02 — Tài sản A.X–A.XI
+- Tạo 13 node (A.X → A.X.3.b, A.XI → A.XI.b); thêm 13 dòng vào bảng trang tổng B02, sửa câu cột (6) cho ngoại lệ A.XI.
+- `--graph`: `depreciation` vào top 25 (35 → 19) và là điểm nối duy nhất giữa nhóm B02 và nhóm Đại lượng thu nhập và sử dụng; `circular-50-2026-tt-nhnn-prudential-limits-and-ratios` ra top 25.
+- Còn lại: A.XII và Tổng tài sản Có (d.1310–1389), phần B, vốn chủ sở hữu, ngoại bảng.
+
+## [2026-11-19:22-04-55] ingest | vbhn04_2022_sbv Mẫu B02 — A.XII và B.I–B.III
+- Tạo 14 node (A.XII → A.XII.5 kèm lợi thế thương mại, B.I → B.III) và 2 stub (B.VII.2, B.VII.3); thêm 16 dòng vào bảng trang tổng (kể cả Tổng tài sản Có, tiêu đề B); chèn link A.III → B.II, A.VI → B.III.
+- `--graph`: `interbank-market` là điểm nối duy nhất giữa nhóm B02 và nhóm Thị trường tiền tệ, chuẩn lãi suất RFR và repo.
+- Phần tài sản B02 xong; còn B.IV → B.VII (d.1472–1561), vốn chủ sở hữu, ngoại bảng.
+
+## [2026-11-19:22-10-23] ingest | vbhn04_2022_sbv Mẫu B02 — B.IV–B.VII và vốn chủ sở hữu (trừ VIII.1)
+- Tạo 11 node (B.V, B.VI, B.VII, B.VII.1, B.VII.4, B.VIII, B.VIII.2 → VIII.6), nâng 4 trang lên draft (B.IV, B.VII.2, B.VII.3, `non-controlling-interest`); bổ sung chú thích (3) về bảng cân đối tài khoản sau kết chuyển trên trang tổng và trang A01.
+- `--graph`: trang tổng B02 vào top 25 (61 → 21), `final-consumption` ra; nhóm B02 ↔ Chế độ BCTC 60 → 74.
+- Còn lại của B02: nhóm con B.VIII.1 và a–g (d.1575–1630), ngoại bảng (d.1713–1828).
+
+## [2026-11-19:22-15-24] ingest | vbhn04_2022_sbv Mẫu B02 — ngoại bảng
+- Tạo 14 trang: trang nhóm ngoại bảng và 13 node (chỉ tiêu 1–9, bốn dòng con của chỉ tiêu 2); chèn link từ trang tổng B02 và node B.VII.4.
+- `--graph`: không thay đổi vượt ngưỡng.
+- Còn lại của B02: nhóm con B.VIII.1 và a–g (d.1575–1630).
+
+## [2026-11-19:22-21-51] ingest | vbhn04_2022_sbv Mẫu B02 — vốn của TCTD (B.VIII.1), khép B02
+- Tạo 7 node (B.VIII.1 và a, b, c, d, e, g); chèn link từ trang vốn chủ sở hữu và bảng trang tổng B02.
+- `--graph`: `b02-capital-of-the-credit-institution` vào hạng 122.
+- B02 khép: năm dải d.900–1828 đều phu; kế tiếp: Báo cáo kết quả hoạt động B03 (d.1829–2095).

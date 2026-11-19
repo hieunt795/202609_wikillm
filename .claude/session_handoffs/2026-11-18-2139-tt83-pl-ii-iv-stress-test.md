@@ -1,0 +1,133 @@
+# Handoff — TT83: nạp Phụ lục II, IV và phần còn thiếu của Điều 23 (stress test)
+
+## Kết quả
+
+**Chưa commit.** Thay đổi của handoff trước (`2026-11-18-1912-…`) đã nằm trong commit `8e9b076`. Working tree: 10 file sửa, 6 mục mới (5 trang wiki + `.claude/skills/normalize-source/` có từ trước); `git diff --stat`: 10 files changed, 143 insertions, 123 deletions.
+
+Hai operation, mỗi cái một mục trong `log.md` (2026-11-18, 21-23-11 và 21-38-22):
+
+- Đầu phiên người dùng hỏi phần ALM của TT83 đã ingest chưa: đã đủ (Chương III Mục 1–9, Phụ lục III, V, VI; Đ6.K4 ALCO, Đ25.K3 bộ phận ALM). Agent liệt kê nội dung các phần còn lại cho người dùng.
+- `/ingest` Phụ lục II và IV (kèm Điều 9): 3 trang mới `tt83-annual-risk-management-report-to-the-sbv-…`, `tt83-annual-risk-report-repeats-one-template-per-risk-type-…`, `tt83-annual-internal-audit-report-is-approved-by-the-supervisory-board-…`; merge `risk-appetite`, `tt83-risk-data-…`, `contingency-funding-plan`, `tt83-internal-model-risk-reports-…`; hub TT83 thêm 1 câu về bốn báo cáo năm (Đ9.K2), câu này ngoài bảng merge đã duyệt, đã báo người dùng, chưa có phản hồi.
+- `/ingest` Điều 23 phần chưa trích (K2, K3, K6). Người dùng gọi "TT83 IRRBB stresstest"; phần stress test IRRBB (Đ54, Phụ lục V) đã phủ từ trước nên lượt này làm khung chung. 2 trang mới `tt83-stress-tests-cover-capital-and-four-material-risks-…`, `tt83-credit-and-market-risk-stress-tests-use-sensitivity-scenario-or-reverse-analysis`; merge `tt83-irrbb-is-measured-quarterly-…` (K6); chèn link từ `tt83-internal-risk-rules-…`, `tt83-annual-risk-report-repeats-…`.
+- `index.md`: nhóm "Quản trị ALM và kiểm soát nội bộ theo TT83/2025" đổi tên thành "(Điều 4, 6, 9, 25; Phụ lục II, IV)", thêm 5 dòng.
+
+## Kiểm tra đã chạy
+
+- `--all` (cuối phiên): 1060 trang, 0 vấn đề, 0 mồ côi, 0 sót index.
+- `--coverage tt83_2025_sbv`: 21 chunk — phu 15 (thêm Phụ lục II, IV), do 2 (Chương I, Chương V), chua 3 (Chương II, Chương IV, Phụ lục I), mien 1.
+- `--graph` (cuối phiên): 1060 trang, 5439 link (595 mạnh), 1705 đã gắn loại; cả phiên 0 link mất. Lượt 1: `circular-50-…` ra top 25 (25 → 27); độ mạnh thật Quản trị ALM TT83 ↔ IRRBB TT83 40→54, ↔ mô hình 8→18, ↔ ICAAP 16→18 (các dòng "→ 0" là do đổi tên nhóm). Lượt 2: điểm nối duy nhất `contingency-funding-plan` giữa nhóm Quản trị ALM TT83 và nhóm Thanh khoản và nguồn vốn. Ảnh chụp đã lưu.
+- `--size`, `--style` trên mọi trang tạo/sửa: 0 cờ trên trang mới; cờ "nên" ở câu có sẵn của `tt83-irrbb-is-measured-quarterly-…` (nghĩa "vì vậy", không sửa).
+- Chưa chạy: `--lint` trọn bộ, `--verify-sources`, `--relations`.
+
+## Việc còn lại
+
+Từ phiên này:
+
+- **Phần TT83 người dùng cho dừng** (ít liên quan ALM), còn: Chương I Điều 5, 7, 8, 10; Chương II (Điều 11–16); Chương IV (Điều 64–73); Chương V Điều 75; Phụ lục I. Phụ lục II, IV đã nạp trong phiên này. Agent đã gợi ý nếu nạp thêm thì Đ16 (kiểm soát giao dịch tự doanh) trước, Đ8 (MIS) chỉ khi cần trang dữ liệu rủi ro. Nếu muốn `--coverage` thôi báo, cần người dùng cho ghi `bỏ qua:` vào state file.
+- **Câu mới trên hub TT83** (bốn báo cáo năm, Đ9.K2) nằm ngoài bảng merge đã duyệt; người dùng chưa xác nhận giữ hay chỉ để link.
+- **5 trang mới chưa `reviewed`**, cộng các trang merge trong phiên (`risk-appetite`, `tt83-risk-data-…`, `contingency-funding-plan`, `tt83-internal-model-risk-reports-…`, `tt83-irrbb-is-measured-quarterly-…`, hub `circular-83-…`). Điểm agent tự rút cần soát:
+  - Phụ lục II: danh sách người kiến nghị không có kiểm toán nội bộ, khác báo cáo nội bộ (Đ55, Đ58) — viết thành câu so sánh trên trang khung lặp và trang báo cáo nội bộ mô hình.
+  - Đ9.K4 không nói ai duyệt báo cáo kiểm toán nội bộ của chi nhánh ngân hàng nước ngoài; trang chỉ ghi người ký theo mẫu.
+  - Trang khung stress test: "ngân hàng vẫn có thể thêm rủi ro hoạt động, tập trung vào quy định nội bộ" suy từ chữ "tối thiểu".
+  - Trang phương pháp: "stress test ngược đi từ tác động ngược về cú sốc" là diễn giải K3.c.
+- **Bài học coverage (lặp lại trong phiên):** `--coverage` tính theo heading, nên Phụ lục II mục II (chỉ có II.6) và Điều 23 (chỉ có K1, K4, K5) từng báo đã phủ dù thiếu nội dung.
+- **Hub TT83 chưa link** tới cụm ALM (`tt83-alm-unit-…`, ALCO) và ICAAP; trang Chương III cũng chưa nối ICAAP.
+
+Từ phiên 2026-11-18 (handoff `2026-11-18-1912-…`), còn mở:
+
+- **40 trang mới chưa `reviewed`**, cộng các trang merge trong phiên đó (`contingency-funding-plan`, `intraday-liquidity-management`, `liquidity-risk`, `loan-to-deposit-ratio-ldr`, `liquidity-stress-test-reports-…`, `trading-book`, `three-lines-of-defence`, `risk-adjusted-return-on-capital-raroc`, hub `circular-83-…`: `reviewed` cũ hơn `last_updated`). Điểm agent tự rút cần soát:
+  - "Tỷ lệ khả năng chi trả" ở Đ45.K3 được trình bày trung lập (TT22 30 ngày hay LCR theo tên gọi của TT50); TT22 vẫn áp tới khi ngân hàng chuyển sang LCR/NSFR.
+  - `tt83-problem-credits-…`: không khẳng định nợ xấu bắt đầu từ nhóm 3.
+  - `tt83-collateral-…`: đối chiếu tỷ lệ khấu trừ dự phòng với `haircut`.
+  - `tt83-market-risk-measurement-…`: "điều chỉnh hạn mức khi theo dõi là điểm riêng của rủi ro thị trường".
+  - `tt83-internal-concentration-risk-reports-…`: "báo cáo ngắn nhất", "không có mục stress test".
+  - `tt83-concentration-risk-is-measured-…`: "khoản chưa hạch toán làm danh mục rộng hơn bảng cân đối".
+  - `tt83-chapter-iii-…`: đoạn so chu kỳ báo cáo tổng hợp từ sáu Điều.
+- **Stub `foreign-currency-position`** chờ văn bản quy định trạng thái ngoại tệ, trạng thái vàng; agent không xác định được số hiệu thông tư. `TT14_2025_SBV/14_2025_TT-NHNN_normalized.md` Phụ lục IV mục IV.2 (d.3759–3773) có cách tính trạng thái nguyên tệ cho vốn yêu cầu, nhưng TT14 chưa đăng ký trong manifest.
+- **Bài học coverage:** chú thích dải rộng (ví dụ "Chương III, d.543–1684") làm `--coverage` báo sai mọi heading trong dải là đã phủ; trong phiên đó đã gặp và gỡ một lần.
+- **Op của mục tách trang** (log 2026-11-18 19-08-33) ghi `lint`; nếu người dùng muốn op khác thì mục log kế tiếp cùng loại ghi đính chính.
+
+Từ phiên 2026-11-17 (handoff `2026-11-17-2235-…`), còn mở:
+
+- **Trang chờ review (TT83/IRRBB):** 13 trang TT83 tạo 2026-11-15 (trừ hub), 3 trang gap/basis/option và `funds-transfer-pricing-ftp-allocates-…` (`reviewed` cũ hơn `last_updated`), `vietnamese-banks-may-measure-irrbb-…`, `banking-book`, `trading-book`, 3 trang ALM/ALCO/ba tuyến, 7 trang ICAAP. Điểm agent tự rút cần soát: trang `$RWA_{COR}$` (sàn tăng qua từng mốc nếu dư nợ không đổi), trang RAROC (mẫu số gồm phần đệm kịch bản bất lợi), trang vốn mục tiêu (phần bất lợi chỉ cần CAR luật định), trang ALCO ("chỉ hội đồng rủi ro bị cấm Tổng giám đốc làm chủ tịch").
+- **`repurchase-agreement`** khai `bindseil_monetary_policy`, `cargill_central_bank_policy` trong `sources:` nhưng không còn claim dẫn hai nguồn này (đã ghi `_inbox.md`).
+- **Câu hỏi mở ALM vs độc lập đo IRRBB** (Đ54.K1.b, Đ25.K3, Đ4.K2) — đã ghi `_inbox.md`, không thành claim.
+- **Stub `capital-adequacy-ratio-car`** chờ Thông tư 14/2025 (thông tư vốn).
+
+Từ phiên 2026-11-15 (handoff `2026-11-15-2150-…`), còn mở:
+
+- Điểm agent tự rút trên các trang TT83 cần soát khi review: VND không có trong Bảng 5; dấu ΔEVE của TT83 (EVE₀ − EVEᵢ + KAO) ngược trang EBA SA; "Phụ lục V không quy định sàn sau sốc"; "Mục 7 và Phụ lục V không ghi mức hạn mức bằng số"; hai ví dụ tự tính (lãi suất bình quân 6% → 360/500/240 bp; $S_{short}$ = 0,5 ở khoảng 2,8 năm).
+- Câu "Chương III có chín Mục…" trên hub TT83 không có chú thích dòng riêng (chú thích heading Chương III làm `--coverage` báo sai Mục 1–8 đã phủ, nên đã thu hẹp về Đ3.K13 và Đ1.K2).
+- Khi nạp Basel IRRBB (d368, d578) thì so tham số Phụ lục V (Bảng 2–6) với Basel.
+
+Từ phiên 2026-11-14 (handoff `2026-11-14-2218-…`), còn mở:
+
+- 4 trang đòn bẩy mới chưa `reviewed`; hai trang NSFR phái sinh có thêm một câu nối sau khi đã review (cùng ngày, lint không bắt).
+- Thư mục `TT14_2025_SBV/` có cả bản gốc và bản chuẩn hóa; nếu dùng bản chuẩn hóa thì nên bỏ bản gốc trước khi ingest để chú thích không dẫn nhầm.
+- Chuyển từ phiên 2026-11-10, còn mở:
+  - 41 "LINK MẤT" do `--graph` báo so với HEAD trước merge, ví dụ `alm-balance-sheet-balancing-progresses-through-four-operational-dimensions` → `ftp-business-steering-functions-as-a-political-tool-for-balance-sheet-allocation`. Chưa kiểm từng link; đều là trang remote, nhiều khả năng do lint remote gỡ. Đối chiếu với diff `origin/main` nếu cần.
+  - Script ghi file phải mở file với `newline="\n"` (script cũ ghi CRLF, gây diff cả file). Viết script Python vào scratchpad bằng Write rồi chạy, vì heredoc bash lỗi với dấu nháy tiếng Việt.
+  - Văn bản ngoài TT50 được dẫn, cần ingest thêm (đã ghi tại chỗ dẫn và `_inbox.md`): Thông tư 41/2016/TT-NHNN (sửa đổi bởi 22/2019, 22/2023) và Thông tư 14/2025/TT-NHNN (cấu phần vốn, vốn cấp 1, hệ số rủi ro, bất động sản, định nghĩa vỡ nợ, tổ chức tài chính quốc tế, xếp hạng tín nhiệm, PFE, CCF, rủi ro tín dụng đối tác của repo); khoản 9 Phụ lục II của thông tư vốn (điều kiện thỏa thuận bù trừ hai bên đủ điều kiện, Điều 25 khoản 1); quy định chế độ báo cáo thống kê (báo cáo NSFR riêng lẻ, Điều 22 khoản 4); quy định phân loại tài sản có/CIC (Phụ lục I phần C mục I).
+  - Chunk TT50 chưa ingest: Điều 4–5 (d.141–194, chunk `do`); Chương II Mục 1 Điều 6–7 (d.195–258, vốn điều lệ); Mục 3 Điều 9–11 (d.277–372, giới hạn cấp tín dụng); Mục 4 Điều 12 (d.373–440, LDR); Mục 6–7 Điều 28–29 (d.955–1012, trái phiếu Chính phủ, góp vốn); Chương III Điều 30–38 (d.1013–1132, 6 mục chưa phủ: Điều 30, 32, 33, 35, 36, 38); Phụ lục IV (công bố, d.2282–2310; trang Điều 27 `tt50-banks-disclose-…` còn ghi "Phụ lục IV chưa nạp").
+  - Cross-ref đang treo: Điều 28 so với điểm 3d mục II Phụ lục I (`level-1-assets`, `tt50-hqla-tiers-differ-from-basel-…`); Điều 4 khoản 5 (`foreign-bank-branches-may-count-parent-bank-committed-lines-…`); ngưỡng NSFR 100% ngay cho nhóm áp thẳng chỉ suy từ Điều 13 (Điều 22 khoản 2 không có dòng cho nhóm này).
+  - Điểm mở ở `contractual-disbursement-obligations-run-off-at-100-percent-…-in-tt50`: tổng dòng vào dùng cho ngưỡng 50% ở khoản 2.2 là số gộp hay sau hệ số thu tiền; tính hai lần dòng vào với trần 75% (Điều 21); xử lý nghĩa vụ ngoại tệ; nhóm Bảo hiểm tiền gửi, Kho bạc, UBND tỉnh, tổ chức tài chính quốc tế gần chắc thuộc 2.2 (suy từ Phần C, chưa được khoản 2 nói thẳng).
+  - So sánh TT50–Basel chưa làm: hệ số run-off và thu tiền (Phụ lục I phần B, C) với `basel_lcr` LCR40; quy tắc rổ bảo đảm và tài sản bị ràng buộc một phần; NSFR với Basel NSFR (`basel/NSF/` chưa ingest, chưa kê); LEV với Basel LEV (`basel/LEV/` chưa kê; trang `leverage-ratio-lev` đặt tên chung để merge). Danh sách trang cần so nằm ở `_inbox.md`.
+  - `_inbox.md` mục [2026-10-10] về ngoại lệ ingest văn bản quy phạm (mỗi điều một node) chưa quyết; TT50, TT83 vẫn ingest như nguồn thường.
+  - Phụ lục II TT50: dấu "—" trong bảng ASF/RSF được đọc là ô trống của biểu mẫu gốc, là suy luận, đã ghi trên trang.
+- Chuyển từ handoff `2026-10-13-1144-…` và cũ hơn, còn mở:
+  - 13 trang chưa `reviewed`: 7 trang LCR31, `alternative-liquidity-approaches`, `sharia-compliant-banks-…`, bốn trang tổng quan LCR. Người dùng nói chưa cần review vội.
+  - `securities-lending-programmes-and-central-bank-collateral-swaps` viết "giữa các bên thị trường", đoạn 40.46 (d.917) không có; chờ `/review-node` (đã ghi `_inbox.md`).
+  - Hai `⚠️ Conflict` chờ người dùng đối chiếu bản gốc bis.org (đã ghi `_inbox.md`): `downgrade-triggers-require-liquidity-for-collateral-calls-up-to-a-three-notch-downgrade` (`LCR.md` d.978–980 ghi "40.51, 40.52 and 40.56", d.1008–1010 ghi "…40.55") và `the-hqla-stock-weights-…` (ngưỡng dưới Level 2B là BBB− ở 30.45 d.325–332, bảng 99.1 d.1352 ghi "A+ and BBB").
+  - Chú thích trên ba trang tổng quan dòng ra, dòng vào, tử số ghi theo bảng, lấy từ trang con đã review, không mở lại nguồn cho từng dòng.
+  - `bank-liquidity-rules-pair-…` ở đúng 1.000 từ; lượt bổ sung NSFR phải tách trước; trang này chưa nhắc LCR31.
+  - `lcr-net-outflows-…` lặp một phần nội dung hai trang tổng quan dòng ra và dòng vào.
+  - `hqla-insufficiency-…`: đã bỏ phương trình "phần thiếu = cầu − cung" do agent viết lại từ 31.27.
+  - Lệch dấu câu trong nguồn, không đánh Conflict: 40.64 khoản (5) và (6).
+  - Quyết định "tối thiểu là dạng chỉ tiêu, không đánh Conflict" (ba chỗ LCR99 ghi 10%, 50%, 0–5% so với LCR40) chưa có trong `decisions.md`.
+  - Nhóm G của lint (người dùng bảo bỏ qua): `LCR.md` cắt giữa câu ở d.758 và d.940.
+  - Stub: khoảng 38 stub (thêm `capital-adequacy-ratio-car`); `intraday-liquidity` chờ nguồn khác; `deposit-insurance` chờ `cargill_central_bank_policy`; `loan-to-deposit-ratio-ldr` đã thành draft (TT83 Đ45), vẫn chờ Điều 12 TT50.
+  - `_inbox.md` còn 12 khái niệm ALM chờ ingest `basel/NSF/`, `basel/IRRBB-d368/`.
+  - `--coverage` tính theo heading: một mục dài có thể báo đã phủ khi mới trích phần đầu.
+  - Link chưa có loại: khoảng 3.730 trên 5.141; tỷ lệ link mạnh khoảng 10%, dưới mục tiêu 15–30%. Kiểm "tổng quan nhóm đã cũ" trong `--relations` chưa cài.
+  - Ba trang tách từ `repo-specialness-…` chưa `reviewed`: trang gốc, `liquidity-makes-bonds-of-similar-duration-trade-at-different-yields-with-t-bills-lowest`, `treasury-bills-and-short-coupon-bonds-are-priced-apart-and-need-separate-fitted-curves`.
+  - Hai trang vượt ngưỡng: `multitiered-irrbb-regulatory-framework-…` (1.236 từ, nên tách chuỗi CRD và CRR) và `supervisory-irrbb-reporting-…` (đoạn 730 từ); `supervisory-outlier-test-…` dài 1.144 từ.
+  - 9 file nguồn chưa kê, đăng ký khi ingest: `basel/BaselFramework/BaselFramework.md`, `basel/IRRBB-d368/d368_irrbb.md`, `basel/LEV/LEV.md`, `basel/NSF/NSF.md`, `Clippings/ALM P11 TT50(P4)…`, `vietnam-regulator/alm/ftp_transmission_analysis.md`, `TT14_2025_SBV/14_2025_TT-NHNN.md`, `TT14_2025_SBV/14_2025_TT-NHNN_normalized.md`, `VAB - Phương pháp luận FTP/VAB - Phương pháp luận FTP.md`.
+  - `tata_bank_alm` còn 15 mục chưa phủ theo `--coverage` (Ch.1, Ch.2 cụm A và B, Ch.3, Ch.5, Ch.6).
+  - Message commit `1231ca7` ghi "review 57 trang", đúng là 48; sửa cần force push.
+  - Đối chiếu duration 2,17 (trang replicating portfolios) với PDF gốc Tata nếu có.
+  - `--graph` chưa nhận ra đổi tên trang (in thành "LINK MẤT").
+  - Chưa xuất báo cáo research cho bốn nhóm lô C vào `Claude outputs/`.
+  - Câu chưa truy được tới dòng nguồn: trang thanh khoản tổng quan đoạn 1 và đoạn 9; trang IRRBB đoạn cuối về tiền gửi không kỳ hạn, FTP, SVB (review 2026-11-17 đã đối chiếu các đoạn khác của trang IRRBB, không thấy đoạn này trong thân bài hiện tại — kiểm lại khi lint).
+  - Trong 14 trang IRRBB đã review: `receiver-interest-rate-swaps-…` còn trích d.1550 cho 3,63, mới xác nhận ở d.1517; câu nối không chú thích chỉ kiểm bằng từ khoá.
+  - Hàng đợi review: `lcr-stress-scenario-…`; các trang ingest từ Clippings 2026-09-22 và 23 có cùng kiểu lỗi (tính từ mạnh, biến mô tả thành nghĩa vụ, câu kết không có nguồn).
+  - `query/evals/evals.json` cần viết lại cho khó hơn trước khi quyết lô D (vector); `benchmark.json` của `skill-creator` ra toàn 0, số đúng ở `Claude outputs/query-workspace/iteration-1/grading-summary.md`.
+  - Ngưỡng thông báo `--graph` là số tạm; `index.md` gán nhóm theo mục cũ, nhóm "Công cụ và cơ chế vận hành chính sách tiền tệ" nên tách.
+  - `.claude/docs/luong-van-hanh.html` chưa có lệnh đồ thị và luật quan hệ, còn ghi "§1–§12" và "Đọc schema: Không" cho query.
+  - Ba file bản thử trong `Claude outputs/` (`wiki_graph.py`, `relations-draft.tsv`, `graph-snapshot.json`) chưa xoá; xoá cần người dùng xác nhận.
+  - Loại quan hệ của link là phán đoán của model, chưa ai soát. Người dùng chưa mở `Claude outputs/graph-map-alm.html` và `Claude outputs/query-workspace/iteration-1/review.html`. Kế hoạch đồ thị: `~/.claude/plans/l-p-k-hoa-ch-i-u-immutable-goblet.md`; lô A, B, C xong, lô D tuỳ chọn.
+  - Công thức kho HQLA (30.38) mất trong `LCR.md` d.229, công thức điều chỉnh trần 15% (d.233) hỏng ký tự; trang trần 40%/15% dùng công thức dựng lại, cần đối chiếu bis.org.
+  - Câu minh hoạ ngoài nguồn trên các trang LCR (150/100, repo 7 ngày, chênh phí 25 điểm cơ bản…); người dùng chưa nói giữ hay bỏ.
+  - `BaselFramework.md` chứa lại chương LCR (d.14570 trở đi); khi ingest ghi `bỏ qua` phần trùng.
+  - Hook `PreToolUse` `--guard-sources` chưa thử với lệnh ghi thật vào `01_sources/`.
+  - Nếu `enabledPlugins` ở `settings.local.json` không có tác dụng, chuyển sang `~/.claude/settings.json`.
+  - Map `Claude outputs/research-map-*.md` lập trước khi `main` lùi về `6adf39e`; quét lại trước khi dùng.
+  - `lint` và `promote` chưa có evals; chưa chạy 3 eval `research`.
+  - Global `CLAUDE.md` ghi model mặc định Haiku 4.5, `~/.claude/settings.json` đặt `"model": "opus"`.
+  - `README.md:27` liệt kê skill thiếu `research`.
+  - `--coverage`: 74 chunk `[x]` còn 247 mục chưa phủ; quyết định [2026-09-26] hạ về `[~]` chưa thực hiện. Đề xuất bắt đầu `imf_macro_accounting` + `bindseil_monetary_policy`.
+  - Chưa áp 3 commit sửa văn phong `8c32c43`, `51d5c3c`, `b8ee3d6`; chờ người dùng quyết.
+  - `--style` 319/790 trang, `--size` 154 trang (số cũ), 70% tag dùng 1 lần.
+  - Vặt schema/hook: `ingest/SKILL.md:13` ghi "(§1–§12)"; §4 có hai hàng cùng tên "Kích thước 1 trang"; còn dạng `§7.5`; docstring `--tags`, `--style` hỏng chữ; `CLAUDE.md` 999 từ.
+  - Hook không hiểu `[[trang\|nhãn]]` trong bảng markdown; trong bảng dùng `[[trang]]` không nhãn.
+  - Xác nhận ở phiên mới: handoff tự hiện đầu phiên; danh sách skill không còn `engineering:*`, `design:*`, `harness`; sửa thử file trong `01_sources/` bị từ chối; "dùng source-verifier kiểm trang cpi" chạy được; `/query` có đọc §13 không.
+
+## Bước tiếp theo
+
+- Commit toàn bộ thay đổi của phiên (kèm file handoff này) khi người dùng yêu cầu; push chỉ khi người dùng nói.
+- Hỏi người dùng: giữ hay bỏ câu mới trên hub TT83; có ghi `bỏ qua:` cho các phần TT83 còn lại (Chương I Đ5, 7, 8, 10; Chương II; Chương IV; Đ75; Phụ lục I) không.
+- `/review-node` (5/lượt): ưu tiên 5 trang TT83 tạo trong phiên này cùng các trang thanh khoản và khái niệm mới (`credit-risk`, `market-risk`, `operational-risk`, `concentration-risk`, `model-risk`, `risk-appetite`), rồi các trang TT83 tạo 2026-11-15 và 2026-11-17.
+- Nối hub TT83 tới cụm ALM (`tt83-alm-unit-…`, ALCO) và ICAAP.
+- Khi có văn bản trạng thái ngoại tệ: ingest và merge vào stub `foreign-currency-position`.
+- `/ingest` TT50 Phụ lục IV (d.2282–2310), rồi Điều 4–5, 6–7, 9–12, 28–29, 30–38.
+- Khi ingest Thông tư 14/2025: nâng stub `capital-adequacy-ratio-car`, đóng các chỗ "cần ingest thêm" trên trang NSFR, Phụ lục II, Điều 22–27 và 4 trang đòn bẩy.
+- So sánh TT50–Basel về run-off và thu tiền: đọc danh sách trang trong `_inbox.md`, trình proposal trước khi viết.

@@ -36,6 +36,7 @@ Xuất xứ và checksum của các nguồn trong `01_sources/`.
 | `vietnam_regulator` | `vietnam-regulator/` | Nguồn dài | chưa dựng — tạo ở lượt ingest đầu (§10) |
 | `tt50_2026_sbv` | `vietnam-regulator/alm/TT50_2026_SBV/` | Nguồn dài | `03_state/tt50_2026_sbv.md` |
 | `tt83_2025_sbv` | `vietnam-regulator/alm/TT83_2025_SBV/` | Nguồn dài | `03_state/tt83_2025_sbv.md` |
+| `vbhn04_2022_sbv` | `vietnam-regulator/accounting/` | Nguồn dài | `03_state/vbhn04_2022_sbv.md` |
 
 ## imf_macro_accounting
 
@@ -466,3 +467,19 @@ Lint 2026-10-12: 6 dòng file `vietnam-regulator/alm/` đã bỏ khỏi bảng v
 |---|---|---|---|
 | `01_sources/vietnam-regulator/alm/TT83_2025_SBV/TT83_2025_SBV_normalized.md` | 259.945 | 2.867 | `4ffdfeab87f2c3d646f3c5430184696f6841b07f177f7122553dc0dc8b418960` |
 | `01_sources/vietnam-regulator/alm/TT83_2025_SBV/TT83_2025_SBV.pdf` | 985.335 | — | `93a9589581eb6bebea272bb1f1cdb6c92ff299290c2d906d7e751caf6d95e5b0` |
+
+## vbhn04_2022_sbv
+
+| | |
+|---|---|
+| Nhan đề | *Văn bản hợp nhất số 04/VBHN-NHNN — Quyết định ban hành Chế độ báo cáo tài chính đối với các tổ chức tín dụng* (hợp nhất Quyết định 16/2007/QĐ-NHNN với các sửa đổi tại Thông tư 49/2014/TT-NHNN, 22/2017/TT-NHNN, 27/2021/TT-NHNN) |
+| Tác giả, nơi và năm | Ngân hàng Nhà nước Việt Nam, Hà Nội, hợp nhất ngày 21/01/2022; văn bản gốc QĐ 16/2007/QĐ-NHNN ký 18/4/2007 |
+| Phân loại | Nguồn dài (`00_schema.md` §10) — 398 KB / 8.441 dòng trên 1 file `.md` (kèm bản `.docx` gốc không đọc) |
+| Nguồn file | File `.md` chuẩn hóa từ `.docx` (`04_VBHN-NHNN_BCTC_normalized.md`), đặt trong `01_sources/vietnam-regulator/accounting/`; chú thích wiki trỏ tới file này |
+| Tiến độ ingest | `03_state/vbhn04_2022_sbv.md` |
+
+| Đường dẫn | Bytes | Dòng | SHA-256 |
+|---|---|---|---|
+| `01_sources/vietnam-regulator/accounting/04_VBHN-NHNN_BCTC_normalized.md` | 398.400 | 8.441 | `922e732830c3394f55fb4758b2b5ba2181053c86ef8e19239eb3733c9e2cb916` |
+
+Bản `.docx` cùng thư mục (`04_VBHN-NHNN_BCTC.docx`, 309.861 byte, SHA-256 `28126e67afe882da4cc3a518b60c65f71f80b4c2e62c22c868c996350ac1d4b4`) là bản gốc để chuẩn hóa. `19_VBHN_NHNN_2026_He_thong_tai_khoan_ke_toan.pdf` cùng thư mục là văn bản khác (hệ thống tài khoản kế toán), chưa kê; đăng ký khi ingest.

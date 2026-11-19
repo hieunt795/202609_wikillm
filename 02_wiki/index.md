@@ -1053,7 +1053,10 @@
 - [[tt83-shock-sizes-come-from-a-currency-table-or-a-16-year-average-rate-scaled-by-60-85-and-40-percent]] — tham số cú sốc: bảng 21 đồng tiền (không có VND), bình quân 16 năm × 60/85/40%, sàn 100 bp, trần 400/500/300 bp, hoặc theo BCBS d578
 - [[tt83-six-shock-scenarios-combine-parallel-short-and-long-shocks-with-a-4-year-exponential-decay]] — sáu kịch bản: cú sốc ngắn hạn tắt dần e^(−t/4), dốc = −0,65|ngắn| + 0,9|dài|, phẳng = +0,8|ngắn| − 0,6|dài|, không có sàn sau sốc
 
-**Quản trị ALM và kiểm soát nội bộ theo TT83/2025 (Điều 4, 6, 25)**
+**Quản trị ALM và kiểm soát nội bộ theo TT83/2025 (Điều 4, 6, 9, 25; Phụ lục II, IV)**
+- [[tt83-annual-risk-management-report-to-the-sbv-covers-risk-policy-and-seven-risk-types]] — Điều 9, Phụ lục II: báo cáo quản lý rủi ro năm gửi NHNN trong 90 ngày, Tổng giám đốc duyệt; mục I bốn nội dung chính sách (khẩu vị, rủi ro trọng yếu, thay đổi, dữ liệu rủi ro)
+- [[tt83-annual-risk-report-repeats-one-template-per-risk-type-and-requires-stress-tests-for-four]] — Phụ lục II mục II: khung chung cho sáu loại rủi ro, stress test chỉ ở tín dụng, thị trường, thanh khoản, IRRBB; nội dung riêng của rủi ro hoạt động, thanh khoản, mô hình
+- [[tt83-annual-internal-audit-report-is-approved-by-the-supervisory-board-and-sent-within-60-days]] — Điều 9, Phụ lục IV: báo cáo kiểm toán nội bộ năm, Ban kiểm soát duyệt, hạn 60 ngày, báo cáo đột xuất 07 ngày làm việc; năm mục
 - [[tt83-alm-unit-runs-the-balance-sheet-funding-plans-ftp-and-pricing-and-polices-liquidity-and-irrbb-limits]] — Đ25.K3: bộ phận ALM quản lý bảng cân đối, kế hoạch vốn, nguyên tắc FTP, khung lãi suất và khung giá, kiểm soát tuân thủ hạn mức thanh khoản, IRRBB, RWA_IRRBB
 - [[asset-liability-committee-alco]] — Hội đồng ALCO: tham mưu Tổng giám đốc về ALM, chủ tịch là Tổng giám đốc hoặc người điều hành khác, họp ít nhất hằng quý; đối chiếu Hội đồng rủi ro, Hội đồng quản lý vốn
 - [[three-lines-of-defence]] — ba tuyến bảo vệ theo Đ4.K2: bộ phận tạo rủi ro, tuân thủ và quản lý rủi ro, kiểm toán nội bộ
@@ -1063,6 +1066,8 @@
 - [[tt83-material-risks-are-measured-by-short-and-long-term-impact-on-income-capital-and-liquidity]] — Điều 17, 22: chu trình chung nhận dạng, đo lường (tác động tới thu nhập, vốn, thanh khoản), theo dõi, kiểm soát; giám sát công ty con
 - [[tt83-internal-risk-rules-cover-nine-topics-from-policy-and-limits-to-stress-tests-data-and-icaap]] — Điều 18: chín nội dung quy định nội bộ, báo vi phạm lên Hội đồng quản trị, Ban kiểm soát
 - [[tt83-new-products-need-board-approval-and-a-risk-vetted-pilot-before-launch]] — Điều 21: Hội đồng quản trị duyệt chủ trương, Tổng giám đốc duyệt kế hoạch, quản lý rủi ro thẩm định quy mô và thời gian thử nghiệm
+- [[tt83-stress-tests-cover-capital-and-four-material-risks-and-feed-back-into-plans-and-policies]] — Điều 23: stress test vốn và bốn rủi ro (tín dụng, thị trường, IRRBB, thanh khoản), tần suất quý hoặc năm, năm nội dung quy định nội bộ, bốn cách dùng kết quả
+- [[tt83-credit-and-market-risk-stress-tests-use-sensitivity-scenario-or-reverse-analysis]] — Đ23.K3: tín dụng và thị trường chọn độ nhạy (≥ 2 mức), kịch bản (≥ 2 kịch bản) hoặc stress test ngược
 - [[tt83-risk-data-must-be-accurate-complete-and-quickly-aggregable-across-material-risks]] — Điều 24: dữ liệu rủi ro chính xác, toàn vẹn, đủ cho mọi rủi ro trọng yếu, tổng hợp nhanh
 
 **Quản lý rủi ro thanh khoản theo TT83/2025 (Mục 5 Chương III, Điều 45–49)**
@@ -1218,6 +1223,110 @@
 - [[tt50-and-basel-hqla-operational-requirements-overlap-closely-except-for-the-periodic-monetisation-test]] — HQLA: mười điểm khớp, hai điểm khác (thử bán định kỳ, tài sản bị ràng buộc một phần)
 - [[tt50-hqla-tiers-differ-from-basel-on-vietnam-government-debt-covered-bonds-and-committed-facilities]] — cấu phần HQLA: hệ số trùng Basel; khác ở phép thử giá cấp 1, covered bond, hạn mức cam kết, nợ chính phủ trong nước
 - [[tt50-requires-intraday-liquidity-management-that-the-basel-lcr-stress-scenario-does-not-cover]] — thanh khoản trong ngày: Basel chỉ nhắc LCR không phủ, TT50 đặt yêu cầu quản lý có nội dung tối thiểu
+
+**Chế độ báo cáo tài chính của TCTD Việt Nam (QĐ 16/2007, VBHN 04/2022 — Chương I–III)**
+- [[decision-16-2007-qd-nhnn-financial-reporting-regime-for-credit-institutions]] — QĐ 16/2007/QĐ-NHNN qua VBHN 04/2022: ba lần sửa đổi (TT49/2014, TT22/2017, TT27/2021), ba chương, mốc áp dụng chậm 2008–2009, kiểm toán và lưu trữ dẫn chiếu luật chung
+- [[vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately]] — Điều 18–22: hợp nhất theo VAS 25, kỳ lệch tối đa 3 tháng, bốn bước loại trừ, phương pháp vốn chủ sở hữu, năm nội dung thuyết minh
+- [[vietnamese-credit-institution-interim-statements-come-in-full-or-condensed-form-under-vas-27]] — Điều 25–28: dạng đầy đủ B02a–B05a để nộp, dạng tóm lược để công khai, ba nội dung thuyết minh chọn lọc
+- [[non-controlling-interest]] — lợi ích cổ đông không kiểm soát: định nghĩa theo Điều 21, đổi tên năm 2022, tiêu chí quyền kiểm soát
+- [[equity-method-of-accounting]] — phương pháp vốn chủ sở hữu: VAS 07, 08; ba nguồn điều chỉnh giá trị ghi sổ theo cột (6) của B02
+
+**Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01**
+- [[b02-statement-of-financial-position-of-vietnamese-credit-institutions]] — trang tổng: bảy cột của biểu, đẳng thức tổng tài sản, bảng chỉ tiêu kèm công thức tài khoản và link tới từng node
+- [[b02-cash-gold-silver-and-gemstones]] — A.I: DN TK 101, 103, 104, 105; tiền mặt và vàng chung một dòng
+- [[b02-deposits-at-the-sbv]] — A.II: DN TK 111, 112; dự trữ bắt buộc và vượt mức chung một dòng
+- [[b02-deposits-at-and-loans-to-other-credit-institutions-net-of-provisions]] — A.III: tổng ba dòng con, phía phải thu liên ngân hàng
+- [[b02-deposits-at-other-credit-institutions]] — A.III.1: DN TK 131 → 136
+- [[b02-loans-to-other-credit-institutions]] — A.III.2: DN TK 201, 202, 203, 205
+- [[b02-provision-for-deposits-at-and-loans-to-other-credit-institutions]] — A.III.3 (*): DC TK 139, 209
+- [[b02-trading-securities-net-of-provisions]] — A.IV: chứng khoán kinh doanh thuần, so với sổ kinh doanh
+- [[b02-trading-securities-gross]] — A.IV.1: (DN − DC) TK 141, 142, 148, tùy chọn DN TK 121–123
+- [[b02-provision-for-trading-securities]] — A.IV.2 (*): DC TK 149 và phần kinh doanh của TK 129
+- [[b02-derivatives-and-other-financial-assets]] — A.V: (DN − DC) TK 486 khi dương; âm thì sang B.IV
+- [[b02-loans-to-customers-net-of-provisions]] — A.VI: dư nợ khách hàng thuần sau dự phòng
+- [[b02-loans-to-customers-gross]] — A.VI.1: DN chín cụm TK 21x–29x
+- [[b02-provision-for-loans-to-customers]] — A.VI.2 (*): DC TK 219, 229, …, 299
+- [[b02-debt-purchases-net-of-provisions]] — A.VII: mua nợ thuần, tách khỏi cho vay khách hàng
+- [[b02-debt-purchases-gross]] — A.VII.1: DN TK 371, 372
+- [[b02-provision-for-debt-purchases]] — A.VII.2 (*): DC TK 379
+- [[b02-investment-securities-net-of-provisions]] — A.VIII: chứng khoán đầu tư thuần, gần với sổ ngân hàng
+- [[b02-available-for-sale-investment-securities]] — A.VIII.1: (DN − DC) TK 151 → 157, tùy chọn TK 121–123
+- [[b02-held-to-maturity-investment-securities]] — A.VIII.2: (DN − DC) TK 161 → 164; so với sổ HTM của SVB
+- [[b02-provision-for-investment-securities]] — A.VIII.3 (*): DC TK 159, 169 và phần đầu tư của TK 129
+- [[b02-capital-contributions-and-long-term-investments-net-of-provisions]] — A.IX: ba cách xử lý hợp nhất theo mức kiểm soát
+- [[b02-investments-in-subsidiaries]] — A.IX.1: DN TK 341, 345; không có trên báo cáo hợp nhất
+- [[b02-capital-contributions-to-joint-ventures]] — A.IX.2: DN TK 342, 346; hợp nhất theo phương pháp vốn chủ sở hữu
+- [[b02-investments-in-associates]] — A.IX.3: DN TK 343, 347; hợp nhất theo phương pháp vốn chủ sở hữu
+- [[b02-other-long-term-investments]] — A.IX.4: DN TK 344, 348
+- [[b02-provision-for-impairment-of-long-term-investments]] — A.IX.5 (*): DC TK 349, một tài khoản cho cả nhóm
+- [[b02-fixed-assets]] — A.X: ba loại TSCĐ, mỗi loại nguyên giá trừ hao mòn, không có dòng dự phòng
+- [[b02-tangible-fixed-assets-net]] — A.X.1: DN TK 301 − DC TK 3051
+- [[b02-tangible-fixed-assets-cost]] — A.X.1.a: DN TK 301
+- [[b02-accumulated-depreciation-of-tangible-fixed-assets]] — A.X.1.b (*): DC TK 3051; hao mòn lũy kế so với khấu hao SNA
+- [[b02-finance-leased-fixed-assets-net]] — A.X.2: DN TK 303 − DC TK 3053
+- [[b02-finance-leased-fixed-assets-cost]] — A.X.2.a: DN TK 303
+- [[b02-accumulated-depreciation-of-finance-leased-fixed-assets]] — A.X.2.b (*): DC TK 3053
+- [[b02-intangible-fixed-assets-net]] — A.X.3: DN TK 302 − DC TK 3052
+- [[b02-intangible-fixed-assets-cost]] — A.X.3.a: DN TK 302
+- [[b02-accumulated-amortisation-of-intangible-fixed-assets]] — A.X.3.b (*): DC TK 3052
+- [[b02-investment-property-net]] — A.XI: chỉ có trên báo cáo hợp nhất, ngược với A.IX.1
+- [[b02-investment-property-cost]] — A.XI.a: DN TK 304 (công ty con kinh doanh bất động sản)
+- [[b02-accumulated-depreciation-of-investment-property]] — A.XI.b (*): DC TK 3054
+- [[b02-other-assets-net-of-provisions]] — A.XII: phải thu, lãi dự thu, thuế hoãn lại, tài sản khác, dự phòng; nhiều tài khoản đổi bên nhất
+- [[b02-receivables]] — A.XII.1: DN TK 32, 351–355, 3591–3592, 36 (trừ 3535, 366), 453 nếu dư Nợ
+- [[b02-interest-and-fees-receivable]] — A.XII.2: DN TK 391, 392, 394–397; lãi tách khỏi gốc cho vay
+- [[b02-deferred-income-tax-assets]] — A.XII.3: DN TK 3535; đối ứng TK 4535 bên nợ
+- [[b02-other-assets]] — A.XII.4: (DN − DC) 31, DN 38, 458, TK 50–56 khi dư Nợ
+- [[b02-goodwill]] — A.XII.4 trong đó: lợi thế thương mại theo VAS 11, chỉ có trên báo cáo hợp nhất
+- [[b02-provision-for-other-on-balance-sheet-assets]] — A.XII.5 (*): DC TK 3597–3599, 386, 4892, 4899; TK 4899 chia hai bên
+- [[b02-liabilities-to-the-government-and-the-sbv]] — B.I: nợ Chính phủ và NHNN, đối ứng của tín dụng NHTW cho ngân hàng
+- [[b02-deposits-and-borrowings-from-the-government-and-the-sbv]] — B.I.1: DC TK 401–404
+- [[b02-government-bond-repos-with-the-state-treasury]] — B.I.2: DC TK 405; repo trái phiếu Chính phủ với Kho bạc
+- [[b02-deposits-and-borrowings-from-other-credit-institutions]] — B.II: phía phải trả liên ngân hàng, đối xứng A.III
+- [[b02-deposits-from-other-credit-institutions]] — B.II.1: DC TK 411–414
+- [[b02-borrowings-from-other-credit-institutions]] — B.II.2: DC TK 415–419
+- [[b02-customer-deposits]] — B.III: DC TK 42; một dòng cho mọi loại tiền gửi khách hàng
+- [[b02-derivatives-and-other-financial-liabilities]] — B.IV: (DC − DN) TK 486 khi dương; gương của A.V
+- [[b02-entrusted-funds-and-funds-for-lending-at-ci-risk]] — B.V: DC TK 441, 442; vốn ủy thác TCTD chịu rủi ro
+- [[b02-valuable-papers-issued]] — B.VI: (DC − DN) toàn nhóm TK 43
+- [[b02-other-liabilities]] — B.VII: bốn dòng con, bảng đối ứng với A.XII
+- [[b02-interest-and-fees-payable]] — B.VII.1: DC TK 491–494, 496, 497; gương của A.XII.2
+- [[b02-deferred-income-tax-liabilities]] — B.VII.2: DC TK 4535; gương của A.XII.3
+- [[b02-other-payables-and-liabilities]] — B.VII.3: DC TK 45, 46, 481–488, TK 50–56 khi dư Có; chú thích (c), (d)
+- [[b02-other-provisions-for-contingent-liabilities]] — B.VII.4: DC TK 4891, 4895, 4896, 4899; nhóm 489 chia hai bên
+- [[b02-owners-equity]] — B.VIII: sáu dòng, đẳng thức đóng của biểu, quy ước "dư Nợ ghi số âm"
+- [[b02-capital-of-the-credit-institution]] — B.VIII.1: vốn góp hoặc cấp, sáu dòng con TK 601–604, 609, 65
+- [[b02-charter-capital]] — B.VIII.1.a: DC TK 601; ngoại tệ theo tỷ giá ngày góp vốn
+- [[b02-capital-for-construction-and-fixed-asset-purchases]] — B.VIII.1.b: DC TK 602
+- [[b02-share-premium]] — B.VIII.1.c: (DC − DN) TK 603, có thể âm
+- [[b02-treasury-shares]] — B.VIII.1.d (*): DN TK 604, dòng vốn duy nhất lấy dư Nợ
+- [[b02-preference-shares]] — B.VIII.1.e: DC TK 65, ngoài dải 601–609
+- [[b02-other-capital]] — B.VIII.1.g: DC TK 609
+- [[b02-reserve-funds-of-the-credit-institution]] — B.VIII.2: DC TK 61
+- [[b02-foreign-exchange-differences-in-equity]] — B.VIII.3: (DC − DN) TK 63; nơi ghi chênh lệch quy đổi BCTC ngoại tệ
+- [[b02-asset-revaluation-differences]] — B.VIII.4: (DC − DN) TK 64
+- [[b02-retained-earnings-or-accumulated-losses]] — B.VIII.5: (DC − DN) TK 69; ba thành phần hợp nhất, nối sang B03
+- [[b02-non-controlling-interests-line]] — B.VIII.6: chỉ có trên báo cáo hợp nhất, theo VAS 25
+- [[b02-off-balance-sheet-items]] — ngoại bảng: chín chỉ tiêu TK loại 9, hai cụm (cam kết 1–6 trừ ký quỹ; quyền đòi và tài sản giữ hộ 7–9)
+- [[b02-loan-guarantees]] — NB.1: TK 921 trừ ký quỹ
+- [[b02-foreign-exchange-commitments]] — NB.2: TK 923, bốn dòng con; quy mô danh nghĩa, không phải rủi ro
+- [[b02-commitments-to-buy-foreign-currency]] — NB.2a: TK 9231, 9233, 9236
+- [[b02-commitments-to-sell-foreign-currency]] — NB.2b: TK 9232, 9234, 9237
+- [[b02-foreign-exchange-swap-commitments]] — NB.2c: TK 9235
+- [[b02-foreign-exchange-futures-commitments]] — NB.2d: TK 9238
+- [[b02-irrevocable-loan-commitments]] — NB.3: TK 924; hạn mức chưa rút, đầu vào LCR
+- [[b02-letter-of-credit-commitments]] — NB.4: TK 925; tài trợ thương mại
+- [[b02-other-guarantees]] — NB.5: TK 922, 926–928
+- [[b02-other-commitments]] — NB.6: TK 929
+- [[b02-unrecovered-interest-and-fees-on-loans]] — NB.7: TK 94; lãi đã ra khỏi thu nhập
+- [[b02-written-off-bad-debts]] — NB.8: TK 97; nợ đã xử lý bằng dự phòng
+- [[b02-other-assets-and-documents-held]] — NB.9: TK 991–999; loại trừ nội bộ khi hợp nhất
+- [[vietnamese-credit-institution-financial-statements-comprise-four-reports-prepared-under-vas]] — Điều 1, 3, 4: bốn báo cáo theo VAS, đối tượng áp dụng, sáu nguyên tắc trình bày, bảy nhóm thông tin
+- [[vietnamese-credit-institutions-prepare-solo-consolidated-and-combined-financial-statements]] — Điều 2, 6: báo cáo riêng, hợp nhất, tổng hợp; chi nhánh đầu mối của chi nhánh ngân hàng nước ngoài
+- [[foreign-currency-financial-statements-of-vietnamese-credit-institutions-are-translated-into-vnd-with-differences-booked-to-equity]] — Điều 3, 3a: chuyển BCTC ngoại tệ sang VND, ngưỡng 1% và 3%, chênh lệch vào vốn chủ sở hữu
+- [[vietnamese-credit-institutions-file-annual-statements-within-45-to-90-days-and-quarterly-statements-by-day-30]] — Điều 5, 7, 8: kỳ lập, hạn nộp 45/60/90 ngày, quý trước ngày 30, bán niên soát xét, nơi nhận
+- [[vietnamese-credit-institutions-file-a-monthly-trial-balance-electronically-by-the-7th]] — Điều 9–11: Bảng cân đối tài khoản A01 hằng tháng, kênh nộp điện tử, trách nhiệm và sửa sai
+- [[vietnamese-credit-institutions-publish-audited-annual-statements-within-90-or-120-days]] — Điều 14: công khai BCTC năm 90/120 ngày, giữa niên độ 45 ngày, nội dung tối thiểu, xác nhận gửi NHNN
 
 **Case: Silicon Valley Bank**
 - [[the-svb-case-links-hidden-htm-losses-removed-hedges-and-a-three-year-duration-gap-to-governance-and-supervisory-failure]] — *(tổng quan nhóm)* diễn biến sụp đổ, lỗ ẩn trong sổ HTM, phòng hộ bị gỡ, duration gap 3 năm và giả định duration tiền gửi, bốn bài học về quản trị và giám sát

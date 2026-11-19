@@ -1,0 +1,20 @@
+---
+title: vietnamese-credit-institutions-prepare-solo-consolidated-and-combined-financial-statements
+type: concept
+tags: [vietnam, sbv, financial-reporting, consolidation, foreign-bank-branch]
+sources: [vbhn04_2022_sbv]
+status: draft
+last_updated: 2026-11-19
+part_of: [decision-16-2007-qd-nhnn-financial-reporting-regime-for-credit-institutions]
+analogous: [consolidation-nets-out-inter-entity-claims-unlike-aggregation]
+related: [vietnamese-credit-institution-financial-statements-comprise-four-reports-prepared-under-vas]
+has_part: [vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately]
+---
+
+Chế độ báo cáo tài chính của NHNN phân ba cấp báo cáo theo phạm vi số liệu. Báo cáo tài chính của tổ chức tín dụng (TCTD), gọi tắt là báo cáo riêng, gộp số liệu toàn hệ thống của một pháp nhân: trụ sở chính, sở giao dịch, các chi nhánh và đơn vị hạch toán phụ thuộc (vbhn04_2022_sbv, Chương I, Điều 2, khoản 2 và khoản 7, d.66, d.76). Báo cáo tài chính hợp nhất gộp báo cáo của TCTD với báo cáo của các công ty con để phản ánh cả tập đoàn TCTD (vbhn04_2022_sbv, Chương I, Điều 2, khoản 8, d.78). Báo cáo tài chính tổng hợp cộng số liệu của các đơn vị kế toán cùng loại hình hoặc cùng nhóm, hạch toán độc lập với nhau (vbhn04_2022_sbv, Chương I, Điều 2, khoản 9, d.80).
+
+Công ty mẹ là TCTD có ít nhất một công ty con; công ty con và công ty liên kết xác định theo Luật các TCTD (vbhn04_2022_sbv, Chương I, Điều 2, khoản 3–6, d.68–74). Mọi TCTD lập báo cáo riêng cho pháp nhân của mình. TCTD có công ty con lập thêm báo cáo hợp nhất của tập đoàn, ở cả kỳ năm và kỳ giữa niên độ (vbhn04_2022_sbv, Chương I, Điều 6, khoản 1 và khoản 2, d.190–204). Báo cáo tổng hợp dùng chủ yếu cho chi nhánh ngân hàng nước ngoài: khi các chi nhánh của cùng một ngân hàng nước ngoài có chi nhánh đầu mối, chi nhánh đầu mối gộp số liệu mọi chi nhánh tại Việt Nam, lập báo cáo tổng hợp và chịu trách nhiệm pháp lý về số liệu đó (vbhn04_2022_sbv, Chương I, Điều 6, khoản 1, điểm b, d.194). Chi nhánh đầu mối phải báo NHNN (Cơ quan Thanh tra, giám sát ngân hàng) về việc được ủy quyền làm đầu mối (vbhn04_2022_sbv, Chương I, Điều 11, khoản 3, d.365).
+
+Mọi TCTD đều lập báo cáo riêng (vbhn04_2022_sbv, Chương II, Mục 1, Điều 16, d.467–469). Khi gộp số liệu của trụ sở chính, sở giao dịch và chi nhánh, TCTD loại trừ giao dịch nội bộ trong hệ thống, dùng bốn mẫu B02 đến B05/TCTD (vbhn04_2022_sbv, Chương II, Mục 1, Điều 17, d.471–483). Khoản thu nhập, chi phí nội bộ giữa các đơn vị vẫn hiện trên Bảng cân đối tài khoản kế toán hằng tháng; vì vậy chế độ yêu cầu thuyết minh riêng các khoản này khi nộp bảng (vbhn04_2022_sbv, Chương I, Điều 9, khoản 2, điểm a, d.301).
+
+Báo cáo hợp nhất cũng triệt tiêu số dư và giao dịch nội bộ, nhưng giữa các pháp nhân trong tập đoàn, đồng thời loại trừ khoản đầu tư của công ty mẹ đối ứng với vốn công ty con; trình tự đó nằm ở trang [[vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately|hợp nhất theo VAS 25]]. Báo cáo tổng hợp do đơn vị đầu mối hoặc đơn vị được chỉ định đại diện cho nhóm TCTD hạch toán độc lập lập, dùng mẫu như báo cáo riêng (vbhn04_2022_sbv, Chương II, Mục 3, Điều 23 và Điều 24, khoản 1, d.547–553). Đơn vị đầu mối cộng các báo cáo tài chính của thành viên, hoặc lập thẳng từ Bảng cân đối tài khoản kế toán tổng hợp của nhóm (vbhn04_2022_sbv, Chương II, Mục 3, Điều 24, khoản 2, d.555). Điều 24 không đòi loại trừ giao dịch giữa các thành viên. Cách phân biệt này giống cặp khái niệm của thống kê tiền tệ, nơi [[consolidation-nets-out-inter-entity-claims-unlike-aggregation|hợp nhất triệt tiêu khoản phải thu, phải trả giữa các thực thể còn tổng hợp chỉ cộng dồn]]. Cả ba cấp dùng chung [[vietnamese-credit-institution-financial-statements-comprise-four-reports-prepared-under-vas|bộ bốn báo cáo theo chuẩn mực VAS]]. Vị trí của quy định này trong cả chế độ được tóm ở [[decision-16-2007-qd-nhnn-financial-reporting-regime-for-credit-institutions]].
