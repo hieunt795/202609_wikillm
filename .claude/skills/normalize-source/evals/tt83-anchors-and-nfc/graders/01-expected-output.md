@@ -1,0 +1,7 @@
+---
+type: llm
+focus: trace
+weight: 1
+---
+
+The result matches this description: Chạy audit.py; nêu md gần khớp docx và các chỗ lệch (1 đoạn docx không thấy trong md, công thức, bảng lệch ô, docx không có style Heading, Unicode chưa NFC); chạy apply.py với --anchors (và --nfc) ghi bản sao cùng số dòng vào Claude outputs/; báo số địa chỉ đã gắn và số địa chỉ trùng; 01_sources/ không đổi.

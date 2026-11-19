@@ -7,7 +7,7 @@ status: draft
 last_updated: 2026-11-19
 part_of: [decision-16-2007-qd-nhnn-financial-reporting-regime-for-credit-institutions]
 related: [vietnamese-credit-institutions-prepare-solo-consolidated-and-combined-financial-statements, vietnamese-credit-institutions-file-a-monthly-trial-balance-electronically-by-the-7th, vietnamese-credit-institution-interim-statements-come-in-full-or-condensed-form-under-vas-27]
-has_part: [b02-statement-of-financial-position-of-vietnamese-credit-institutions]
+has_part: [b02-statement-of-financial-position-of-vietnamese-credit-institutions, b03-income-statement-of-vietnamese-credit-institutions, b04-cash-flow-statement-of-vietnamese-credit-institutions]
 ---
 
 Báo cáo tài chính của tổ chức tín dụng (TCTD) Việt Nam là bộ bốn báo cáo lập theo Chuẩn mực Kế toán Việt Nam (VAS), chế độ kế toán và pháp luật liên quan: Báo cáo tình hình tài chính, Báo cáo kết quả hoạt động, Báo cáo lưu chuyển tiền tệ và Thuyết minh báo cáo tài chính (vbhn04_2022_sbv, Chương I, Điều 1, khoản 1, d.50–52). Bốn báo cáo năm lần lượt dùng mẫu B02, B03, B04 và B05/TCTD; bản hợp nhất thêm hậu tố "-HN" (vbhn04_2022_sbv, Chương II, Mục 1, Điều 17, khoản 2, d.475–483) (vbhn04_2022_sbv, Chương II, Mục 2, Điều 18, khoản 2, d.491–499). Danh mục biểu mẫu báo cáo năm ghi đúng các mã đó (vbhn04_2022_sbv, Hệ thống biểu mẫu báo cáo tài chính năm, d.619–665):
@@ -15,8 +15,8 @@ Báo cáo tài chính của tổ chức tín dụng (TCTD) Việt Nam là bộ b
 | STT | Tên báo cáo | Mã BCTC | Mã BCTC hợp nhất |
 |---|---|---|---|
 | 1 | Báo cáo tình hình tài chính ([[b02-statement-of-financial-position-of-vietnamese-credit-institutions]]) | B02/TCTD | B02/TCTD-HN |
-| 2 | Báo cáo kết quả hoạt động | B03/TCTD | B03/TCTD-HN |
-| 3 | Báo cáo lưu chuyển tiền tệ | B04/TCTD | B04/TCTD-HN |
+| 2 | Báo cáo kết quả hoạt động ([[b03-income-statement-of-vietnamese-credit-institutions]]) | B03/TCTD | B03/TCTD-HN |
+| 3 | Báo cáo lưu chuyển tiền tệ ([[b04-cash-flow-statement-of-vietnamese-credit-institutions]]) | B04/TCTD | B04/TCTD-HN |
 | 4 | Thuyết minh báo cáo tài chính | B05/TCTD | B05/TCTD-HN |
 
 Mã A01/TCTD dành cho Bảng cân đối tài khoản kế toán, không nằm trong danh mục báo cáo tài chính (vbhn04_2022_sbv, Báo cáo kế toán, d.766–770). Báo cáo giữa niên độ dùng mẫu riêng ở [[vietnamese-credit-institution-interim-statements-come-in-full-or-condensed-form-under-vas-27|hai dạng đầy đủ và tóm lược]]. Hai tên đầu là tên mới sau sửa đổi, thay cho "Bảng cân đối kế toán" và "Báo cáo kết quả hoạt động kinh doanh"; bản hợp nhất năm 2022 còn sót tên cũ ở một chỗ (vbhn04_2022_sbv, Chương I, Điều 3a, khoản 3, d.148). Chế độ áp dụng cho TCTD và chi nhánh ngân hàng nước ngoài thành lập theo Luật các TCTD, trừ quỹ tín dụng nhân dân và tổ chức tài chính vi mô; hai loại này có chế độ riêng do NHNN hướng dẫn trên cơ sở vận dụng chế độ này (vbhn04_2022_sbv, Chương I, Điều 1, khoản 1 và khoản 4, d.50, d.58). Theo định nghĩa của chế độ, TCTD gồm ngân hàng, TCTD phi ngân hàng và chi nhánh ngân hàng nước ngoài (vbhn04_2022_sbv, Chương I, Điều 2, khoản 1, d.64).

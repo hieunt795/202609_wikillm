@@ -1328,6 +1328,85 @@
 - [[vietnamese-credit-institutions-file-a-monthly-trial-balance-electronically-by-the-7th]] — Điều 9–11: Bảng cân đối tài khoản A01 hằng tháng, kênh nộp điện tử, trách nhiệm và sửa sai
 - [[vietnamese-credit-institutions-publish-audited-annual-statements-within-90-or-120-days]] — Điều 14: công khai BCTC năm 90/120 ngày, giữa niên độ 45 ngày, nội dung tối thiểu, xác nhận gửi NHNN
 
+**Báo cáo kết quả hoạt động B03/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01**
+- [[b03-income-statement-of-vietnamese-credit-institutions]] — trang tổng: số dư trước kết chuyển, chuỗi IX → XI → XIII, bảng 23 chỉ tiêu kèm công thức tài khoản
+- [[b03-interest-and-similar-income]] — dòng 1: DC TK 701–706, 709; thu nhập lãi dồn tích
+- [[b03-interest-and-similar-expenses]] — dòng 2: DN TK 801, 802, 803, 805, 809
+- [[b03-net-interest-income]] — I: 1 − 2; so với NII trong ALM
+- [[b03-fee-and-commission-income]] — dòng 3: DC TK 71
+- [[b03-fee-and-commission-expenses]] — dòng 4: DN TK 81; quy ước cặp 7x/8x
+- [[b03-net-gain-or-loss-from-services]] — II: 3 − 4; thuyết minh VI.26
+- [[b03-net-gain-or-loss-from-foreign-exchange-trading]] — III: chênh lệch TK 72 và 82, chỉ một dòng thuần
+- [[b03-net-gain-or-loss-from-trading-securities]] — IV: TK 741/841 phần kinh doanh trừ thay đổi dự phòng
+- [[b03-net-gain-or-loss-from-investment-securities]] — V: TK 741/841 phần đầu tư; dự phòng trái phiếu VAMC chuyển sang X
+- [[b03-other-income]] — dòng 5: DC TK 742, 748, 749, 79, không gồm hoàn nhập dự phòng
+- [[b03-other-expenses]] — dòng 6: DN TK 842, 843, 848, 849, 89
+- [[b03-net-gain-or-loss-from-other-activities]] — VI: 5 − 6; thuyết minh VI.31
+- [[b03-income-from-capital-contributions-and-share-purchases]] — VII: DC TK 78; hợp nhất gồm cổ tức ngoài tập đoàn và phần lãi lỗ theo vốn chủ sở hữu
+- [[b03-operating-expenses]] — VIII: TK 831, 832, 85–87, 883 và dự phòng ngoài rủi ro tín dụng của TK 882
+- [[b03-operating-profit-before-credit-loss-provisions]] — IX: I + … + VII − VIII
+- [[b03-credit-loss-provision-expense]] — X: dự phòng rủi ro tín dụng của TK 882, cộng dự phòng trái phiếu VAMC
+- [[b03-total-profit-before-tax]] — XI: IX − X
+- [[b03-current-corporate-income-tax-expense]] — dòng 7: DN TK 8331
+- [[b03-deferred-corporate-income-tax-expense]] — dòng 8: số dư TK 8332
+- [[b03-corporate-income-tax-expense]] — XII: 7 + 8; thuyết minh VI.33
+- [[b03-profit-after-tax]] — XIII: XI − XII
+- [[b03-non-controlling-interests-in-profit]] — XIV: phần lợi nhuận của cổ đông không kiểm soát
+- [[b03-basic-earnings-per-share]] — XV: theo VAS 30
+
+**Báo cáo lưu chuyển tiền tệ B04/TCTD — phương pháp trực tiếp, nối với B02, B03**
+- [[b04-cash-flow-statement-of-vietnamese-credit-institutions]] — trang tổng: ba hoạt động, wiki chỉ theo phương pháp trực tiếp, IV = I + II + III = VII − VI − V, quy ước dấu (*)
+- [[b04-direct-method-converts-accrued-income-and-expenses-into-cash-received-and-paid]] — dòng 01–08 trực tiếp: dự thu đầu kỳ + phát sinh − dự thu cuối kỳ; dòng 04 lấy thẳng III + IV + V của B03
+- [[b04-changes-in-operating-assets-and-liabilities-are-period-changes-of-b02-lines]] — bảng ghép dòng 09–22 với chỉ tiêu B02; ⚠️ Conflict dòng 11 trực tiếp dẫn chỉ tiêu phía nợ
+- [[b04-investing-cash-flows-of-vietnamese-credit-institutions]] — mục II: TSCĐ, bất động sản đầu tư (chỉ công ty con kinh doanh bất động sản), góp vốn, cổ tức
+- [[b04-financing-cash-flows-of-vietnamese-credit-institutions]] — mục III: vốn cổ phần, giấy tờ có giá dài hạn tính vào vốn tự có, cổ tức, cổ phiếu quỹ; ⚠️ Conflict dòng 03
+- [[b04-cash-and-cash-equivalents-of-vietnamese-credit-institutions]] — dòng VII: năm loại khoản mục, ngưỡng 3 tháng; khác HQLA
+- [[vietnamese-credit-institution-consolidated-cash-flow-statements-include-acquired-subsidiaries-and-eliminate-intragroup-flows]] — ghi chú 2: công ty con mua/bán trong năm, loại luồng tiền nội bộ, cộng từng báo cáo con lập theo phương pháp trực tiếp
+- [[b04-direct-interest-and-similar-income-received]] — dòng 01: lãi dự thu đầu kỳ + thu nhập lãi − lãi dự thu cuối kỳ
+- [[b04-direct-interest-and-similar-expenses-paid]] — dòng 02 (*): lãi dự trả đầu kỳ + chi trả lãi − lãi dự trả cuối kỳ
+- [[b04-direct-net-fee-and-commission-income-received]] — dòng 03: phí thực thu trừ phí thực trả; bản tiền của II B03
+- [[b04-direct-net-receipts-from-foreign-exchange-gold-and-securities-trading]] — dòng 04: III + IV + V của B03, không đổi dồn tích
+- [[b04-direct-net-other-income-received]] — dòng 05: thu nhập khác trừ chi phí khác đã thu chi, trừ dòng 06
+- [[b04-direct-recoveries-of-written-off-debts]] — dòng 06: tiền thu nợ đã xóa theo dõi ngoại bảng
+- [[b04-direct-payments-to-employees-and-for-administration]] — dòng 07 (*): chi cho nhân viên và quản lý, công vụ
+- [[b04-direct-income-tax-paid]] — dòng 08 (*): thuế thu nhập thực nộp, gồm nợ kỳ trước và nộp trước
+- [[b04-direct-operating-cash-flow-before-changes-in-operating-assets-and-working-capital]] — tổng phụ Σ 01–08 trước thay đổi tài sản và vốn lưu động
+- [[b04-direct-use-of-provisions-to-handle-risks-and-cover-losses]] — dòng 13: dự phòng đã dùng để xử lý rủi ro, bù đắp tổn thất
+- [[b04-net-cash-flow-from-investing-activities]] — II: Σ 01–09 hoạt động đầu tư
+- [[b04-net-cash-flow-from-financing-activities]] — III: Σ 01–06 hoạt động tài chính
+- [[b04-net-cash-flow-for-the-period]] — IV = I + II + III = VII − VI − V
+- [[b04-cash-and-cash-equivalents-at-the-beginning-of-the-period]] — V: dòng VII của báo cáo kỳ trước
+- [[b04-effect-of-exchange-rate-changes-on-cash-and-cash-equivalents]] — VI: ảnh hưởng tỷ giá lên tiền và tương đương tiền
+- [[b04-change-in-deposits-at-and-loans-to-other-credit-institutions]] — dòng 09: Δ tiền gửi, cho vay TCTD khác A.III, trừ tương đương tiền
+- [[b04-change-in-securities-trading-items]] — dòng 10: Δ tín phiếu, chứng khoán kinh doanh và đầu tư
+- [[b04-change-in-derivatives-and-other-financial-assets]] — dòng 11: Δ phái sinh phía tài sản; ⚠️ Conflict cách lấy dẫn chỉ tiêu phía nợ
+- [[b04-change-in-loans-to-customers]] — dòng 12: Δ dư nợ cho vay khách hàng gộp
+- [[b04-change-in-other-operating-assets]] — dòng 14: Δ phải thu, tài sản có khác; điều chỉnh tỷ giá, đánh giá lại
+- [[b04-change-in-amounts-due-to-the-government-and-the-sbv]] — dòng 15: Δ nợ Chính phủ và NHNN
+- [[b04-change-in-deposits-and-borrowings-from-other-credit-institutions]] — dòng 16: Δ tiền gửi, tiền vay các TCTD
+- [[b04-change-in-customer-deposits]] — dòng 17: Δ tiền gửi khách hàng
+- [[b04-change-in-valuable-papers-issued]] — dòng 18: Δ giấy tờ có giá, trừ phần dài hạn vào hoạt động tài chính
+- [[b04-change-in-entrusted-funds-and-funds-for-lending-at-ci-risk]] — dòng 19: Δ vốn tài trợ, ủy thác
+- [[b04-change-in-derivatives-and-other-financial-liabilities]] — dòng 20: Δ phái sinh phía nợ
+- [[b04-change-in-other-operating-liabilities]] — dòng 21: Δ phải trả và nợ khác, trừ lương, lãi phí phải trả
+- [[b04-payments-from-funds-of-the-credit-institution]] — dòng 22 (*): chi từ các quỹ, xếp theo tính chất chi
+- [[b04-net-cash-flow-from-operating-activities]] — I: Σ 01–22 hoạt động kinh doanh
+- [[b04-purchases-of-fixed-assets]] — đầu tư 01 (*): chi mua TSCĐ theo nguyên giá
+- [[b04-proceeds-from-disposal-of-fixed-assets]] — đầu tư 02: tiền thu thanh lý TSCĐ
+- [[b04-payments-for-disposal-of-fixed-assets]] — đầu tư 03 (*): tiền chi thanh lý TSCĐ
+- [[b04-purchases-of-investment-property]] — đầu tư 04 (*): mua bất động sản đầu tư; chỉ công ty con kinh doanh bất động sản
+- [[b04-proceeds-from-sale-of-investment-property]] — đầu tư 05: thu bán bất động sản đầu tư
+- [[b04-payments-for-sale-of-investment-property]] — đầu tư 06 (*): chi bán bất động sản đầu tư, cộng giá trị còn lại
+- [[b04-payments-for-investments-in-other-entities]] — đầu tư 07 (*): chi mua công ty con, góp vốn liên doanh, liên kết
+- [[b04-proceeds-from-investments-in-other-entities]] — đầu tư 08: thu thanh lý các khoản đầu tư, góp vốn
+- [[b04-dividends-and-profits-received-from-long-term-investments]] — đầu tư 09: cổ tức, lợi nhuận được chia đã thu
+- [[b04-proceeds-from-share-capital-increases]] — tài chính 01: góp vốn, phát hành cổ phiếu
+- [[b04-proceeds-from-issuing-long-term-valuable-papers-eligible-for-own-capital]] — tài chính 02: thu phát hành giấy tờ có giá dài hạn tính vào vốn tự có
+- [[b04-repayments-of-long-term-valuable-papers-eligible-for-own-capital]] — tài chính 03: chi thanh toán giấy tờ đó; ⚠️ Conflict cách lấy chép dòng 02
+- [[b04-dividends-paid]] — tài chính 04 (*): cổ tức đã trả
+- [[b04-payments-to-purchase-treasury-shares]] — tài chính 05 (*): chi mua cổ phiếu quỹ
+- [[b04-proceeds-from-sale-of-treasury-shares]] — tài chính 06: thu bán cổ phiếu quỹ
+
 **Case: Silicon Valley Bank**
 - [[the-svb-case-links-hidden-htm-losses-removed-hedges-and-a-three-year-duration-gap-to-governance-and-supervisory-failure]] — *(tổng quan nhóm)* diễn biến sụp đổ, lỗ ẩn trong sổ HTM, phòng hộ bị gỡ, duration gap 3 năm và giả định duration tiền gửi, bốn bài học về quản trị và giám sát
 - [[silicon-valley-bank-collapse-epitomizes-unhedged-duration-mismatches-and-uninsured-deposit-runs]] — vụ SVB tháng 3/2023: lỗ 1,8 tỷ USD khi bán 21 tỷ USD chứng khoán, khách hàng tìm cách rút 142 tỷ USD, bốn dấu hiệu cảnh báo sớm, tiền gửi không bảo hiểm hơn 88%

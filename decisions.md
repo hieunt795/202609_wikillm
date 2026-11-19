@@ -382,3 +382,9 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 - **Lý do:** bản chuẩn hóa sinh ra từ đối chiếu `.docx` (skill `normalize-source`, báo cáo `Claude outputs/doi-chieu-2026-11-13-TT50_2026_SBV.md`). Nó giữ đủ 2.310 dòng, không đổi chữ hay số, chỉ sửa ký hiệu markdown ở 41 dòng và gắn địa chỉ điều-khoản-điểm `<!-- @Đ… -->` ở cuối 734 dòng. Vì số dòng không đổi, không chú thích nào phải dời, còn địa chỉ `@Đ…` cho phép tra thẳng một điều khoản bằng `grep`.
 - **Thay cho:** file `TT50_2026_SBV.md` chuyển đổi ngoài dự án, kê ngày 2026-11-09.
 - **Áp cho nguồn khác:** TT83 cũng đã được thay bằng bản chuẩn hóa nhưng chưa có source id; khi đăng ký thì kê bản chuẩn hóa. Thư mục TT14 còn cả bản gốc lẫn bản chuẩn hóa, chưa quyết giữ bản nào.
+
+## [2026-11-19] B04: wiki chỉ theo phương pháp trực tiếp
+
+- **Quyết định (người dùng):** Báo cáo lưu chuyển tiền tệ B04/TCTD (`vbhn04_2022_sbv`) chỉ ghi theo phương pháp trực tiếp; mỗi dòng một node. Phương pháp gián tiếp (d.2584–3129) được gỡ khỏi wiki và ghi `bỏ qua:` trong `03_state/vbhn04_2022_sbv.md`.
+- **Đã gỡ:** trang nhóm `b04-indirect-method-…`, cột gián tiếp trong bảng thay đổi tài sản/công nợ, số dòng gián tiếp trên các node B02, link từ `b03-total-profit-before-tax`. Trang tổng B04 giữ một câu nêu biểu có hai mẫu.
+- **Hệ quả:** ⚠️ Conflict dòng 11 (phái sinh) nay chỉ dựa trên chỗ lệch giữa tên dòng và cột cách lấy của bản trực tiếp.

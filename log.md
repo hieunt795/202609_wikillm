@@ -1620,3 +1620,34 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Tạo 7 node (B.VIII.1 và a, b, c, d, e, g); chèn link từ trang vốn chủ sở hữu và bảng trang tổng B02.
 - `--graph`: `b02-capital-of-the-credit-institution` vào hạng 122.
 - B02 khép: năm dải d.900–1828 đều phu; kế tiếp: Báo cáo kết quả hoạt động B03 (d.1829–2095).
+## [2026-11-19:22-40-17] query | B02 phái sinh A.V/B.IV — viết lại công thức dạng max
+- Thêm công thức max[DN−DC, 0] / max[DC−DN, 0] vào đoạn cách đọc của wiki trên 2 trang `b02-derivatives-and-other-financial-assets`, `b02-derivatives-and-other-financial-liabilities`.
+- Sửa "chỉ một" thành "nhiều nhất một" chỉ tiêu khác 0 (trường hợp DN = DC cả hai bằng 0).
+## [2026-11-19:23-15-45] ingest | vbhn04_2022_sbv Mẫu B03 — trang tổng và dòng 1 → VIII
+- Tạo trang tổng `b03-income-statement-of-vietnamese-credit-institutions` + 14 node (1, 2, I, 3, 4, II, III, IV, V, 5, 6, VI, VII, VIII); 9 stub cho IX → XV; link từ trang bốn báo cáo; nhóm mới trong `index.md`.
+- `--graph`: trang tổng B03 vào top 25 (hạng 11); độ mạnh B03 ↔ B02 0 → 26.
+- Còn lại: nâng 9 stub IX → XV lên draft và merge các trang B02, hub, khái niệm (lượt 2).
+## [2026-11-19:23-17-21] ingest | vbhn04_2022_sbv Mẫu B03 — dòng IX → XV, khép B03
+- Nâng 9 stub lên draft (IX, X, XI, 7, 8, XII, XIII, XIV, XV); merge câu nối B03 vào trang tổng B02, `b02-retained-earnings-or-accumulated-losses`, `non-controlling-interest`, `equity-method-of-accounting`.
+- `--graph`: độ mạnh B03 ↔ B02 26 → 44; B03 ↔ Chế độ BCTC 4 → 10.
+- B03 (d.1829–2095) phu; kế tiếp: B04 (d.2096–3160).
+## [2026-11-19:23-21-46] ingest | vbhn04_2022_sbv Mẫu B04 — hai phương pháp, khép B04
+- Tạo trang tổng `b04-cash-flow-statement-of-vietnamese-credit-institutions` + 7 trang (trực tiếp, gián tiếp, thay đổi tài sản/công nợ, đầu tư, tài chính, tiền và tương đương tiền, hợp nhất); 2 ⚠️ Conflict trong nguồn (dòng 11 trực tiếp, dòng 03 tài chính); chèn câu nối B04 vào 16 node B02 và 2 node B03.
+- `--graph`: B04 ↔ B02 0 → 92, B04 ↔ B03 0 → 21; trang ghép B02 lên hạng 62.
+- B04 (d.2096–3160) phu; kế tiếp: Thuyết minh I–IV (d.3161–3310) hoặc V (d.3311–4375).
+## [2026-11-19:23-35-01] ingest | vbhn04_2022_sbv Mẫu B04 — node dòng phương pháp trực tiếp 01–08, 13 và II–VI
+- Tạo 15 node (dòng 01–08, tổng phụ, 13, II, III, IV, V, VI); thêm cột link vào bảng trang nhóm trực tiếp, has_part cho trang nhóm và trang tổng. Người dùng chốt B04 chỉ theo phương pháp trực tiếp, không tách node gián tiếp.
+- `--graph`: trang tổng B04 lên hạng 75; B03 ↔ B04 21 → 41.
+- Còn lại: 14 node thay đổi tài sản/công nợ và dòng I (lượt sau), 15 node đầu tư, tài chính.
+## [2026-11-19:23-35-36] ingest | vbhn04_2022_sbv Mẫu B04 — node thay đổi tài sản/công nợ 09–22 và dòng I
+- Tạo 14 node (dòng 09–12, 14–22 và I); thêm cột node vào bảng trang nhóm thay đổi tài sản/công nợ; đổi đích link B04 trên 14 node B02 và `b03-current-corporate-income-tax-expense` sang đúng node dòng.
+- `--graph`: trang tổng B04 vào top 25 (75 → 19); B04 ↔ B02 100 → 130.
+- Còn lại: 15 node đầu tư 01–09 và tài chính 01–06 (lượt cuối).
+## [2026-11-19:23-36-06] ingest | vbhn04_2022_sbv Mẫu B04 — node đầu tư 01–09 và tài chính 01–06, khép node B04
+- Tạo 15 node (đầu tư 01–09, tài chính 01–06); thêm cột link vào bảng hai trang nhóm đầu tư, tài chính.
+- `--graph`: không có thay đổi vượt ngưỡng.
+- B04 theo phương pháp trực tiếp đủ 44 node dòng; trang nhóm gián tiếp giữ nguyên, không tách node.
+## [2026-11-19:23-39-48] ingest | vbhn04_2022_sbv Mẫu B04 — gỡ phương pháp gián tiếp khỏi wiki
+- Xoá trang `b04-indirect-method-…`; bỏ cột gián tiếp, chú thích gián tiếp trên 7 trang B04, hợp nhất B04, 16 node B02 và `b03-total-profit-before-tax`; ghi `bỏ qua:` d.2584–3129 vào state file, lý do ở `decisions.md`.
+- `--graph`: nhóm B04 đổi tên; độ mạnh B04 ↔ B02 148 → 140, B04 ↔ B03 43 → 34.
+- B04 chỉ còn phương pháp trực tiếp (44 node dòng + 7 trang khối); chunk d.2096–3160 vẫn phu.

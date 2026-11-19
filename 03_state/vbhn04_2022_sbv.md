@@ -23,7 +23,7 @@ Nguồn một file (văn bản hợp nhất tiếng Việt, 21/01/2022). Chú th
 | Báo cáo tình hình tài chính · Vốn chủ sở hữu | d.1562–1712 | B.VIII → Tổng nợ phải trả và vốn chủ sở hữu | |
 | Báo cáo tình hình tài chính · ngoại bảng và ghi chú | d.1713–1828 | Chỉ tiêu ngoài báo cáo 1 → 9, ghi chú cuối biểu | |
 | Báo cáo kết quả hoạt động | d.1829–2095 | Mẫu năm | |
-| Báo cáo lưu chuyển tiền tệ | d.2096–3160 | Mẫu năm | |
+| Báo cáo lưu chuyển tiền tệ | d.2096–3160 | Mẫu năm | bỏ qua: Báo cáo lưu chuyển tiền tệ theo phương pháp gián tiếp (d.2584–3129) — người dùng chốt wiki chỉ dùng phương pháp trực tiếp |
 | Thuyết minh I–IV | d.3161–3310 | Đặc điểm, kỳ kế toán, chuẩn mực, chính sách kế toán | |
 | Thuyết minh V | d.3311–4375 | Khoản mục 1 → 23 | |
 | Thuyết minh VI–VIII | d.4376–4818 | Khoản mục 24 → 44 | |
