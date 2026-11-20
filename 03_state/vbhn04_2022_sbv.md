@@ -2,12 +2,12 @@
 source: vbhn04_2022_sbv
 file: 01_sources/vietnam-regulator/accounting/04_VBHN-NHNN_BCTC_normalized.md
 total_lines: 8441
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 ---
 
 Nguồn một file (văn bản hợp nhất tiếng Việt, 21/01/2022). Chú thích §7 luật 5 dạng `(vbhn04_2022_sbv, <Điều hoặc biểu mẫu>, <khoản hoặc mục>, d.<từ>–<đến>)`. Cuối dòng khoản, điểm có địa chỉ dạng `<!-- @Đ3a.K1.đ -->`, tra bằng `grep -n "@Đ3a.K1.đ "`. Chú thích `[^n]` (d.8023–8441) ghi thông tư nào sửa đổi từng điều; chỉ tra khi cần.
 
-Đặc điểm bản chuyển đổi: d.349 viết "Điền 11" (đúng là Điều 11); tiêu đề Điều 3a (d.108) có dấu ngoặc kép mở thừa; d.148 còn tên cũ "Bảng cân đối kế toán giữa niên độ" trong khi phần còn lại đã đổi thành "Báo cáo tình hình tài chính" — sót khi đổi tên, không phải mâu thuẫn.
+Đặc điểm bản chuyển đổi: d.349 viết "Điền 11" (đúng là Điều 11); tiêu đề Điều 3a (d.108) có dấu ngoặc kép mở thừa; d.148 còn tên cũ "Bảng cân đối kế toán giữa niên độ" trong khi phần còn lại đã đổi thành "Báo cáo tình hình tài chính" — sót khi đổi tên, không phải mâu thuẫn. Phần giữa niên độ: tiêu đề các biểu B02a, B03a, B02b, B03b vẫn dùng tên cũ (d.6042, d.6143, d.7579, d.7789); B05a mục IV.6.1 chép nhầm "đánh giá rủi ro khoản nợ mua" vào phần cho vay khách hàng (d.6316); tiêu đề "133. Cổ phiếu" là 13.3 (d.7009).
 
 | Chunk | Dòng | Mục trong nguồn | Ghi chú |
 |---|---|---|---|

@@ -4,13 +4,15 @@ type: concept
 tags: [vietnam, financial-reporting, b04, cash-flow, direct-method]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
+reviewed: 2026-11-20
+reviewed_by: model
 part_of: [b04-cash-flow-statement-of-vietnamese-credit-institutions]
 related: [b03-interest-and-similar-income, b03-interest-and-similar-expenses, b03-net-gain-or-loss-from-foreign-exchange-trading, b02-written-off-bad-debts, b03-current-corporate-income-tax-expense, b04-changes-in-operating-assets-and-liabilities-are-period-changes-of-b02-lines]
 has_part: [b04-direct-interest-and-similar-income-received, b04-direct-interest-and-similar-expenses-paid, b04-direct-net-fee-and-commission-income-received, b04-direct-net-receipts-from-foreign-exchange-gold-and-securities-trading, b04-direct-net-other-income-received, b04-direct-recoveries-of-written-off-debts, b04-direct-payments-to-employees-and-for-administration, b04-direct-income-tax-paid, b04-direct-operating-cash-flow-before-changes-in-operating-assets-and-working-capital]
 ---
 
-Theo phương pháp trực tiếp của [[b04-cash-flow-statement-of-vietnamese-credit-institutions|Báo cáo lưu chuyển tiền tệ B04]], tám dòng đầu của hoạt động kinh doanh đổi thu nhập, chi phí ghi theo cơ sở dồn tích thành tiền thực thu, thực chi trong năm (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng 01–08, d.2127–2190). Cách đổi chung là cộng khoản dự thu (dự trả) đầu kỳ và trừ khoản dự thu (dự trả) cuối kỳ. Với dòng 01:
+Theo phương pháp trực tiếp của [[b04-cash-flow-statement-of-vietnamese-credit-institutions|Báo cáo lưu chuyển tiền tệ B04]], tám dòng đầu của hoạt động kinh doanh ghi tiền thực thu, thực chi trong năm (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng 01–08, d.2127–2190). Bốn dòng 01, 02, 03 và 07 đổi từ số dồn tích: cộng số dự thu, dự trả hoặc phải trả đầu kỳ và trừ số cuối kỳ. Bốn dòng còn lại lấy số khác: dòng 04 lấy thẳng lãi lỗ thuần trên B03, dòng 05, 06 và 08 lấy số tiền đã thu hoặc đã nộp. Với dòng 01:
 
 $$\text{Lãi đã thu} = \text{Lãi dự thu}_{\text{đầu kỳ}} + \text{Thu nhập lãi}_{\text{trong kỳ}} - \text{Lãi dự thu}_{\text{cuối kỳ}}$$
 

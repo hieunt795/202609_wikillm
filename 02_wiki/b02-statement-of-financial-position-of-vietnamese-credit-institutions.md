@@ -4,7 +4,9 @@ type: entity
 tags: [vietnam, sbv, financial-reporting, balance-sheet, b02]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
+reviewed: 2026-11-20
+reviewed_by: model
 part_of: [vietnamese-credit-institution-financial-statements-comprise-four-reports-prepared-under-vas]
 driven_by: [vietnamese-credit-institutions-file-a-monthly-trial-balance-electronically-by-the-7th]
 has_part: [b02-cash-gold-silver-and-gemstones, b02-deposits-at-the-sbv, b02-deposits-at-and-loans-to-other-credit-institutions-net-of-provisions, b02-trading-securities-net-of-provisions, b02-derivatives-and-other-financial-assets, b02-loans-to-customers-net-of-provisions, b02-debt-purchases-net-of-provisions, b02-investment-securities-net-of-provisions, b02-capital-contributions-and-long-term-investments-net-of-provisions, b02-fixed-assets, b02-investment-property-net, b02-other-assets-net-of-provisions, b02-liabilities-to-the-government-and-the-sbv, b02-deposits-and-borrowings-from-other-credit-institutions, b02-customer-deposits, b02-derivatives-and-other-financial-liabilities, b02-entrusted-funds-and-funds-for-lending-at-ci-risk, b02-valuable-papers-issued, b02-other-liabilities, b02-owners-equity, b02-off-balance-sheet-items]
@@ -16,7 +18,7 @@ Báo cáo tình hình tài chính (mẫu B02/TCTD, bản hợp nhất B02/TCTD-H
 
 Mỗi dòng có bảy cột: (1) số thứ tự và chỉ tiêu, (2) mục thuyết minh, (3) năm nay, (4) năm trước, (5) cách lấy số liệu từ Bảng cân đối tài khoản kế toán cho báo cáo riêng, (6) cách lấy số liệu cho báo cáo hợp nhất (vbhn04_2022_sbv, Mẫu B02/TCTD, đầu biểu, d.910–936). Cột (5) và (6) chỉ hướng dẫn cách lập, TCTD không đưa hai cột này vào báo cáo công bố. Chỉ tiêu đánh dấu (*) ghi số âm trong ngoặc đơn (vbhn04_2022_sbv, Mẫu B02/TCTD, ghi chú cuối biểu, d.1818–1822). Số liệu cột (5) lấy từ [[vietnamese-credit-institutions-file-a-monthly-trial-balance-electronically-by-the-7th|Bảng cân đối tài khoản kế toán (A01)]]|  hoàn chỉnh của tháng cuối năm tài chính, tức bảng đã xử lý số dư chênh lệch tỷ giá, chênh lệch đánh giá lại và đã kết chuyển thu nhập, chi phí vào tài khoản xác định kết quả kinh doanh (vbhn04_2022_sbv, Chú thích sửa đổi, chú thích (3), d.8265). Bảng này khác bảng A01 tháng 12 gửi NHNN, vốn lập trước khi kết chuyển thu nhập, chi phí (vbhn04_2022_sbv, Chương I, Điều 9, khoản 2, điểm b, d.303). [[b03-income-statement-of-vietnamese-credit-institutions|Báo cáo kết quả hoạt động B03]] cũng lấy số từ bảng chưa kết chuyển (vbhn04_2022_sbv, Mẫu B03/TCTD, ghi chú cuối biểu, d.2087). Bản chuyển đổi viết "hành chính" ở chỗ đúng ra là "hoàn chỉnh". Trong cột (5), DN là dư Nợ, DC là dư Có của tài khoản (TK) ghi số hiệu kèm theo.
 
-Tổng hai phần phải bằng nhau:
+Mỗi phần kết bằng một dòng tổng, và theo đẳng thức kế toán hai dòng tổng bằng nhau:
 
 $$\text{Tổng tài sản Có} = \text{Tổng nợ phải trả} + \text{Vốn chủ sở hữu}$$
 

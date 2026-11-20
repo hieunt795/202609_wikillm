@@ -1228,6 +1228,8 @@
 - [[decision-16-2007-qd-nhnn-financial-reporting-regime-for-credit-institutions]] — QĐ 16/2007/QĐ-NHNN qua VBHN 04/2022: ba lần sửa đổi (TT49/2014, TT22/2017, TT27/2021), ba chương, mốc áp dụng chậm 2008–2009, kiểm toán và lưu trữ dẫn chiếu luật chung
 - [[vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately]] — Điều 18–22: hợp nhất theo VAS 25, kỳ lệch tối đa 3 tháng, bốn bước loại trừ, phương pháp vốn chủ sở hữu, năm nội dung thuyết minh
 - [[vietnamese-credit-institution-interim-statements-come-in-full-or-condensed-form-under-vas-27]] — Điều 25–28: dạng đầy đủ B02a–B05a để nộp, dạng tóm lược để công khai, ba nội dung thuyết minh chọn lọc
+- [[b05a-selected-interim-notes-keep-a-subset-of-the-annual-b05-items]] — B05a: giữ khung tám phần, còn 13 mục chính sách, 13 mục phần V, 6 mục phần VI; bỏ báo cáo bộ phận, tài sản bảo đảm, rủi ro tín dụng
+- [[condensed-interim-statements-of-vietnamese-credit-institutions-keep-only-the-roman-numeral-lines]] — B02b, B03b, B04b chỉ giữ dòng số La Mã; B03b gộp hai dòng chứng khoán, bỏ dòng thuế, có lợi nhuận/cổ phiếu trước và sau ngày phân phối
 - [[non-controlling-interest]] — lợi ích cổ đông không kiểm soát: định nghĩa theo Điều 21, đổi tên năm 2022, tiêu chí quyền kiểm soát
 - [[equity-method-of-accounting]] — phương pháp vốn chủ sở hữu: VAS 07, 08; ba nguồn điều chỉnh giá trị ghi sổ theo cột (6) của B02
 
@@ -1406,6 +1408,18 @@
 - [[b04-dividends-paid]] — tài chính 04 (*): cổ tức đã trả
 - [[b04-payments-to-purchase-treasury-shares]] — tài chính 05 (*): chi mua cổ phiếu quỹ
 - [[b04-proceeds-from-sale-of-treasury-shares]] — tài chính 06: thu bán cổ phiếu quỹ
+
+**Thuyết minh báo cáo tài chính B05/TCTD**
+- [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions]] — trang tổng: ba việc của thuyết minh, phần I đặc điểm hoạt động, II kỳ kế toán và đơn vị tiền tệ, III chuẩn mực và chế độ áp dụng
+- [[b05-accounting-policy-notes-of-vietnamese-credit-institutions-cover-twenty-items]] — phần IV: 20 mục chính sách kế toán; TCTD vốn nước ngoài áp IFRS cho ngoại hối, phái sinh phải nêu khác biệt với VAS
+- [[b05-notes-classify-every-credit-risk-asset-into-five-debt-groups]] — phần V: một thang năm nhóm nợ cho bảy loại tài sản có rủi ro tín dụng; dự phòng chung, cụ thể, giảm giá; mua nợ nhóm 2–5 phải giải trình
+- [[vamc-special-bonds]] — trái phiếu đặc biệt VAMC: tách khỏi chứng khoán giữ đến ngày đáo hạn (V.08.3, V.08.5), mệnh giá trừ dự phòng, dự phòng vào chi phí rủi ro tín dụng B03
+- [[b05-statement-of-changes-in-owners-equity-of-vietnamese-credit-institutions]] — V.23.1: 12 cột thành phần vốn và cột tổng, 5 khoản tăng và 6 khoản giảm mẫu; tách ba quỹ có tên, không có cột cổ phiếu ưu đãi
+- [[b05-notes-disclose-collateral-received-and-pledged-including-collateral-the-bank-may-reuse]] — VIII.38: tài sản bảo đảm nhận (khách hàng, TCTD khác) và đưa đi theo bốn nhóm; giải trình khi TCTD được bán hoặc tái thế chấp tài sản của khách
+- [[vietnamese-credit-institutions-disclose-related-party-transactions-under-vas-26]] — VIII.42: bên liên quan theo VAS 26 và khoản 28 Điều 4 Luật các TCTD; năm nhóm thông tin phải trình bày
+- [[b05-interest-rate-risk-note-shows-a-repricing-gap-table-of-vietnamese-credit-institutions]] — IX.47.1: bảng định lại lãi suất 10 cột (quá hạn, không chịu lãi, 6 khung, tổng), chênh nội bảng cộng cam kết ngoại bảng ròng, chưa trừ dự phòng
+- [[b05-liquidity-risk-note-shows-a-maturity-gap-table-of-vietnamese-credit-institutions]] — IX.47.3: bảng kỳ đáo hạn thực tế (quá hạn 2 cột, trong hạn 5 khung), mức chênh thanh khoản ròng; nằm dưới tiêu đề rủi ro thị trường
+- [[vietnamese-credit-institutions-report-primary-and-secondary-segments-by-business-line-or-geography]] — X: báo cáo bộ phận bắt buộc với TCTD niêm yết; chính yếu theo lĩnh vực hoặc địa lý, thứ yếu theo chiều còn lại; tách lãi nội bộ, cột điều chỉnh
 
 **Case: Silicon Valley Bank**
 - [[the-svb-case-links-hidden-htm-losses-removed-hedges-and-a-three-year-duration-gap-to-governance-and-supervisory-failure]] — *(tổng quan nhóm)* diễn biến sụp đổ, lỗ ẩn trong sổ HTM, phòng hộ bị gỡ, duration gap 3 năm và giả định duration tiền gửi, bốn bài học về quản trị và giám sát

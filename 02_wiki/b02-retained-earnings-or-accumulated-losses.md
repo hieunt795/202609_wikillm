@@ -4,9 +4,9 @@ type: concept
 tags: [vietnam, financial-reporting, b02, equity, retained-earnings]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 part_of: [b02-owners-equity]
-related: [vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately, equity-method-of-accounting, b02-reserve-funds-of-the-credit-institution]
+related: [vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately, equity-method-of-accounting, b02-reserve-funds-of-the-credit-institution, vietnamese-credit-institution-interim-statements-come-in-full-or-condensed-form-under-vas-27]
 driven_by: [b03-profit-after-tax]
 ---
 
@@ -21,5 +21,11 @@ Báo cáo hợp nhất có ba thành phần (vbhn04_2022_sbv, Mẫu B02/TCTD, B.
 - số của chỉ tiêu này trên báo cáo của công ty mẹ và các công ty con;
 - trừ lãi, lỗ chưa thực hiện phát sinh từ giao dịch nội bộ tập đoàn, đúng bước loại trừ khi [[vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately|hợp nhất theo VAS 25]];
 - phần điều chỉnh theo phần sở hữu của công ty mẹ, theo [[equity-method-of-accounting|phương pháp vốn chủ sở hữu]], trong lãi lỗ sau thuế của liên doanh, liên kết và do khác biệt chính sách kế toán.
+
+Trên Báo cáo tình hình tài chính giữa niên độ dạng đầy đủ B02a, dòng này tách làm hai dòng con (vbhn04_2022_sbv, Mẫu B02a/TCTD, B.VIII.5, d.6102–6119). Dòng a là lợi nhuận hoặc lỗ năm nay, bằng chênh lệch tài khoản loại 7 trừ tài khoản loại 8, âm thì ghi số âm. Dòng b là lợi nhuận hoặc lỗ lũy kế năm trước, bằng dư Có TK 69, dư Nợ thì ghi số âm:
+
+$$\text{B.VIII.5}_{\text{giữa niên độ}} = \underbrace{(\text{TK loại 7} - \text{TK loại 8})}_{\text{a. năm nay}} + \underbrace{\text{DC}_{69}}_{\text{b. lũy kế năm trước}}$$
+
+Cách tách này nằm trong [[vietnamese-credit-institution-interim-statements-come-in-full-or-condensed-form-under-vas-27|mẫu báo cáo giữa niên độ dạng đầy đủ]].
 
 Phần sau là cách đọc của wiki. Dòng này là chỗ nối B02 với báo cáo kết quả hoạt động B03: lợi nhuận sau thuế trong năm, sau khi trích [[b02-reserve-funds-of-the-credit-institution|quỹ B.VIII.2]] và chia cổ tức, làm thay đổi số dư nhóm 69. Phía B03 của mối nối là [[b03-profit-after-tax|lợi nhuận sau thuế XIII]].

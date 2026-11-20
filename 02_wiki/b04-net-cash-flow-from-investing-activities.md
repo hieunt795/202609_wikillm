@@ -4,7 +4,7 @@ type: concept
 tags: [vietnam, financial-reporting, b04, cash-flow, investing]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 part_of: [b04-investing-cash-flows-of-vietnamese-credit-institutions]
 drives: [b04-net-cash-flow-for-the-period]
 related: [b04-cash-flow-statement-of-vietnamese-credit-institutions]
@@ -15,5 +15,3 @@ Lưu chuyển tiền thuần từ hoạt động đầu tư là dòng II của [
 $$\text{II} = \sum_{k=01}^{09} \text{Dòng } k$$
 
 Dòng II cùng I và III cộng thành [[b04-net-cash-flow-for-the-period|lưu chuyển tiền thuần trong kỳ IV]].
-
-Phần sau là cách đọc của wiki. Ở ngân hàng, dòng II thường nhỏ so với dòng I vì chứng khoán đầu tư được tính trong hoạt động kinh doanh, không ở đây.

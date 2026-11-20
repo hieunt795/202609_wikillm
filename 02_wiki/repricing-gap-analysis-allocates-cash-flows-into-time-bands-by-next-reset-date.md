@@ -2,13 +2,13 @@
 title: repricing-gap-analysis-allocates-cash-flows-into-time-bands-by-next-reset-date
 type: concept
 tags: [alm, irrbb, gap-analysis, repricing, eve]
-sources: [tata_bank_alm]
+sources: [tata_bank_alm, vbhn04_2022_sbv]
 status: stable
-last_updated: 2026-10-12
+last_updated: 2026-11-20
 reviewed: 2026-10-12
 reviewed_by: model
 governs: [economic-value-of-equity-eve-measures-net-present-value-of-banking-book-cash-flows, interest-rate-gap-risk-stems-from-repricing-timing-mismatches]
-analogous: [earning-gap-analysis-estimates-short-term-nii-sensitivity-via-periodic-impact-weights]
+analogous: [earning-gap-analysis-estimates-short-term-nii-sensitivity-via-periodic-impact-weights, b05-interest-rate-risk-note-shows-a-repricing-gap-table-of-vietnamese-credit-institutions]
 related: [supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital, duration-gap-analysis-quantifies-balance-sheet-mismatch-scaled-by-asset-base]
 ---
 
@@ -19,3 +19,5 @@ Mô hình phân bổ căn cứ vào ngày đáo hạn hợp đồng đối với
 Quy trình chuẩn hóa 5 bước của một phân tích Repricing Gap bao gồm: (1) Tổng hợp các vị thế bảng cân đối thành các nhóm sản phẩm xác định; (2) Gán chu kỳ điều chỉnh lãi suất cho từng sản phẩm; (3) Phân bổ khối lượng số dư vào các dải thời gian tương ứng; (4) Tính toán khe hở tái định giá ròng ($Net\ Repricing\ Gap = Assets - Liabilities$), trong đó khe hở âm phản ánh trạng thái nhạy cảm nguồn vốn (*liability-sensitive*) khi nợ phải trả vượt quá tài sản trong dải kỳ hạn đó; và (5) Nhân từng khe hở ròng với độ co giãn Modified Duration trung bình của dải kỳ hạn tương ứng để tính trọng số rủi ro ($Weighted\ Gap$), rồi cộng gộp lại thành Tổng khe hở tái định giá (*Total Repricing Gap*) (tata_bank_alm, Ch.2, Repricing Gap Analysis, d.886–895).
 
 Chỉ số Total Repricing Gap cung cấp ước lượng trực tiếp về mức độ suy giảm của EVE khi đường cong lợi suất dịch chuyển song song 1% (100 bps) (tata_bank_alm, Ch.2, Repricing Gap Analysis, d.894; tata_bank_alm, Ch.2, Repricing Gap Analysis, d.937). Ví dụ trong mô hình ngân hàng chuẩn của Tata, tổng khe hở tái định giá đạt 1,74 đơn vị tiền tệ trên tổng tài sản 500, tương ứng mức xói mòn 3,48% vốn chủ sở hữu 50 trước cú sốc lãi suất tăng 100 bps; khi quy đổi sang cú sốc 200 bps trong khuôn khổ [[supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital]], tỷ lệ tổn thất Basel II đạt 6,96% (tata_bank_alm, Ch.2, Repricing Gap Analysis, d.937–939). Kỹ thuật này đo [[interest-rate-gap-risk-stems-from-repricing-timing-mismatches]] (tata_bank_alm, Ch.1, Interest Rate Gap Risk, d.637). Khung này được mở rộng thành [[duration-gap-analysis-quantifies-balance-sheet-mismatch-scaled-by-asset-base]] khi thời lượng được tính chính xác cho từng vị thế (tata_bank_alm, Ch.2, Repricing Gap Analysis, d.941), và bước đầu của nó giống bước đầu của [[earning-gap-analysis-estimates-short-term-nii-sensitivity-via-periodic-impact-weights]] ở phía thu nhập (tata_bank_alm, Ch.2, Earning Gap Analysis, d.1065).
+
+Ở Việt Nam, mục 47.1 của Thuyết minh B05 buộc tổ chức tín dụng công bố [[b05-interest-rate-risk-note-shows-a-repricing-gap-table-of-vietnamese-credit-institutions|bảng chênh lệch định lại lãi suất]] trên báo cáo tài chính, với sáu khung từ dưới 1 tháng tới trên 5 năm cùng cột quá hạn và không chịu lãi (vbhn04_2022_sbv, Mẫu B05/TCTD, IX.47.1, d.4839–4841).

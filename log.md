@@ -1651,3 +1651,70 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 - Xoá trang `b04-indirect-method-…`; bỏ cột gián tiếp, chú thích gián tiếp trên 7 trang B04, hợp nhất B04, 16 node B02 và `b03-total-profit-before-tax`; ghi `bỏ qua:` d.2584–3129 vào state file, lý do ở `decisions.md`.
 - `--graph`: nhóm B04 đổi tên; độ mạnh B04 ↔ B02 148 → 140, B04 ↔ B03 43 → 34.
 - B04 chỉ còn phương pháp trực tiếp (44 node dòng + 7 trang khối); chunk d.2096–3160 vẫn phu.
+
+## [2026-11-20:18-09-12] ingest | vbhn04_2022_sbv Thuyết minh B05 phần I–IV
+- tạo 2 trang: trang tổng B05 (phần I–III), trang 20 mục chính sách kế toán (phần IV); merge câu nối vào 8 trang (chuyển đổi tiền tệ, hợp nhất, B04 tiền và tương đương tiền, 5 node B02), link B05 từ trang bốn báo cáo và hub QĐ 16
+- --graph: nhóm B05 mới nối B02 (độ mạnh 39) và Chế độ BCTC (12); không mất link
+- chunk d.3161–3310 phu 100%; còn Thuyết minh V–X và BCTC giữa niên độ
+
+## [2026-11-20:18-21-06] ingest | vbhn04_2022_sbv Thuyết minh B05 V (lời dẫn, V.01–V.05)
+- tạo `b05-notes-classify-every-credit-risk-asset-into-five-debt-groups`; merge trang tổng B05 và 9 node B02 (A.I, A.II, A.III cùng 2 dòng con, A.IV.1, A.IV.2, A.V, B.IV)
+- --graph: trang tổng B05 vào hạng 77; độ mạnh B02 ↔ B05 39 → 77; không mất link
+- chunk d.3311–4375 còn V.09–V.23 (lượt B, C)
+
+## [2026-11-20:18-23-52] ingest | vbhn04_2022_sbv Thuyết minh B05 V.06–V.15
+- tạo `vamc-special-bonds`; merge 14 node B02 (A.VI.1–2, A.VII.1, A.VIII.1–3, A.IX, nguyên giá TSCĐ hữu hình, thuê tài chính, vô hình, BĐS đầu tư, A.XII, A.XII.4, lợi thế thương mại); link VAMC từ 2 node B03
+- 1 ⚠️ Conflict trên `b02-other-assets-net-of-provisions` (ghi chú V.14 d.3968 và V.14.2 d.3981 về phải thu nội bộ)
+- chunk d.3311–4375 còn V.16–V.23 (lượt C)
+
+## [2026-11-20:18-26-33] ingest | vbhn04_2022_sbv Thuyết minh B05 V.16–V.23
+- tạo `b05-statement-of-changes-in-owners-equity-of-vietnamese-credit-institutions`; merge 14 trang (B.I, B.II.1–2, B.III, B.V, B.VI, B.VII, B.VII.4, A.XII.3, B.VII.2, B.VIII, B.VIII.1, B.VIII.1.e, B03 dòng XV)
+- 1 ⚠️ Conflict trên `b02-other-liabilities` (B02 dẫn B.VII tới V.22, B05 đánh số V.21); --graph cả ba lượt: trang tổng B05 vào top 25 (hạng 16), độ mạnh B02 ↔ B05 39 → 164, không mất link
+- chunk d.3311–4375 phu 99%; kế tiếp Thuyết minh VI–VIII (d.4376–4818)
+
+## [2026-11-20:18-30-27] ingest | vbhn04_2022_sbv Thuyết minh B05 VI (mục 24–33)
+- merge trang tổng B05 (lời dẫn VI–VIII) và 11 node B03 (dòng 1, 2, II–VIII, thuế hiện hành, thuế hoãn lại); VIII.36 gộp vào chi phí hoạt động
+- không tạo trang; không mất link
+- chunk d.4376–4818 còn VII.34–35, VIII.37–44 (lượt E)
+
+## [2026-11-20:18-34-10] ingest | vbhn04_2022_sbv Thuyết minh B05 VII–VIII (mục 34–44)
+- tạo 2 trang: tài sản bảo đảm nhận và đưa đi (VIII.38), bên liên quan theo VAS 26 (VIII.42); merge trang tổng B05, B04 tiền và tương đương tiền, B04 hợp nhất, ngoại bảng và 3 chỉ tiêu 7–9, vốn ủy thác, `concentration-risk`
+- 1 ⚠️ Conflict trên trang B04 tiền và tương đương tiền (B04 dòng VII 5 khoản, B05 VII.34 4 khoản); --graph: `concentration-risk` thành điểm nối duy nhất giữa cụm tập trung TT83 và B05; không mất link
+- chunk d.4376–4818 phu 99%; kế tiếp Thuyết minh IX–X (d.4819–6041)
+
+## [2026-11-20:18-39-56] ingest | vbhn04_2022_sbv Thuyết minh B05 IX–X (mục 45–49)
+- tạo 3 trang: bảng định lại lãi suất (47.1), bảng kỳ đáo hạn (47.3), báo cáo bộ phận (X); nâng stub `foreign-currency-position` lên draft (47.2); merge trang tổng B05 (rút gọn để dưới 1.000 từ), `credit-risk`, `market-risk` (đối chiếu cách gom nhóm B05–TT83), `liquidity-risk`, trang repricing gap; link từ hub QĐ 16
+- --graph: B05 nối mới với cụm rủi ro thị trường TT83 (16), IRRBB (8), thanh khoản (5); trang bảng định lại là điểm nối duy nhất IRRBB ↔ B05; không mất link
+- chunk d.4819–6041 phu 100%; kế tiếp BCTC giữa niên độ dạng đầy đủ (d.6042–7578)
+
+## [2026-11-20:18-44-25] ingest | vbhn04_2022_sbv BCTC giữa niên độ dạng đầy đủ và tóm lược
+- tạo 2 trang: thuyết minh chọn lọc B05a, dạng tóm lược B02b–B04b; merge trang giữa niên độ (cột kỳ, B04a trực tiếp hoặc gián tiếp, tên biểu cũ), lợi nhuận chưa phân phối (tách TK 7 − TK 8 và DC TK 69 trên B02a), lãi trên cổ phiếu (dòng XI–XII B03b)
+- --graph: độ mạnh Chế độ BCTC ↔ B05 24 → 35, B03 ↔ Chế độ BCTC 10 → 16; không mất link
+- vbhn04_2022_sbv: 18 chunk phu, 2 mien, hết chunk chua
+
+## [2026-11-20:18-50-12] lint | gỡ ⚠️ Conflict phải thu nội bộ trên b02-other-assets-net-of-provisions
+- người dùng xác nhận V.14.2 không cộng vào dòng 2 "các khoản phải thu (*)" của bảng V.14; thay Conflict bằng câu nêu phạm vi khác nhau
+- còn 2 Conflict mới của phiên (B.VII dẫn V.22; tiền và tương đương tiền 5 và 4 khoản)
+
+## [2026-11-20:19-16-42] lint | viết lại các đoạn merge B05 theo writing-style
+- sửa 14 trang: tách câu > 60 từ, đổi danh sách nối bằng dấu chấm phẩy thành gạch đầu dòng, tách đoạn quá dài, khôi phục dòng trống trước "Phần sau là cách đọc của wiki" trên b02-other-assets-net-of-provisions; không đổi nội dung claim
+- vốn ủy thác: nêu rõ VIII.40.1 (ủy thác) và 40.2 (nhận ủy thác) là hai chiều
+
+## [2026-11-20:19-24-06] review | 5 trang
+- đạt: `b05-notes-classify-every-credit-risk-asset-into-five-debt-groups`
+- đã sửa: A.II (bỏ câu "khoản phải thu duy nhất có đối tác là NHNN" không có nguồn; đoạn cách đọc trỏ đúng trang bảng cân đối mẫu IMF cho định nghĩa dự trữ), A.I (cùng lỗi link, bỏ câu "phải xuống mức tài khoản" đã cũ), trang tổng B05 (chú thích B05/TCTD-HN dẫn Điều 18), trang 20 mục chính sách (dời câu suy luận vào đoạn cách đọc)
+- cả 5 trang đặt reviewed; còn 186 trang VBHN 04 chưa review
+
+## [2026-11-20:19-28-24] review | 5 trang
+- đạt: trang báo cáo giữa niên độ (Điều 25–28)
+- đã sửa: hub QĐ 16 (ba quyết định bị thay không đều là của NHTMCP; câu TT83 "chạy song song" không có nguồn), trang bốn báo cáo (tên cũ còn sót không chỉ một chỗ), trang tổng B04 (câu thiếu vị ngữ, chú thích TT49 trỏ nhầm vào mẫu gián tiếp, thêm chú thích dòng 09–20), trang tổng B03 (thêm chú thích (3)-2 cho câu B02 dùng bảng đã kết chuyển; ba dòng bảng bỏ sót điều kiện VAMC và hoàn nhập)
+- cả 5 trang đặt reviewed; còn 181 trang VBHN 04 chưa review
+
+## [2026-11-20:19-31-46] review | 3 trang
+- đạt (sửa nhỏ): trang tổng B02 (81 dòng bảng khớp cột (2), (5) của biểu; câu "tổng hai phần phải bằng nhau" ghi rõ là đẳng thức kế toán)
+- đã sửa: phương pháp trực tiếp (chỉ dòng 01, 02, 03, 07 đổi từ dồn tích, không phải cả tám dòng); khối thay đổi tài sản và công nợ (dòng 13, 22 không phải chênh lệch B02; dòng 10 trỏ TK gốc thay vì nhóm sau dự phòng; dòng 14 thêm điều kiện loại lãi, phí phải thu)
+- giữ lại: khối thay đổi tài sản và công nợ chưa đặt reviewed (title khái quát quá, ghi `_inbox.md`); thêm `_inbox.md` mục XII.5 dẫn V.14.3; còn 179 trang
+
+## [2026-11-20:19-40-37] lint | rà đoạn "cách đọc của wiki" trên các node VBHN 04
+- bỏ hoặc thu hẹp câu suy luận không có nguồn trên 30 trang: kiến thức VAS chưa nạp (quyền kiểm soát, nguồn gốc lợi thế thương mại), khái quát "thường", hệ quả định lượng; viết lại đoạn cách đọc của A.IX, lợi thế thương mại, lợi ích cổ đông không kiểm soát; bỏ 2 câu "chưa nạp" đã cũ
+- chỉ xử lý 113 câu có từ dấu hiệu; còn khoảng 400 câu cách đọc chưa đọc lại; --graph mất 7 link theo các câu bị bỏ

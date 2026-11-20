@@ -4,9 +4,9 @@ type: concept
 tags: [vietnam, financial-reporting, b04, cash-flow, cash-equivalents]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 part_of: [b04-cash-flow-statement-of-vietnamese-credit-institutions]
-related: [b02-cash-gold-silver-and-gemstones, b02-deposits-at-the-sbv, b02-deposits-at-other-credit-institutions, high-quality-liquid-assets-hqla]
+related: [b02-cash-gold-silver-and-gemstones, b02-deposits-at-the-sbv, b02-deposits-at-other-credit-institutions, high-quality-liquid-assets-hqla, b05-accounting-policy-notes-of-vietnamese-credit-institutions-cover-twenty-items, b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions]
 has_part: [b04-cash-and-cash-equivalents-at-the-beginning-of-the-period, b04-effect-of-exchange-rate-changes-on-cash-and-cash-equivalents]
 ---
 
@@ -21,5 +21,16 @@ Tiền và các khoản tương đương tiền cuối kỳ (dòng VII của [[b
 [[b04-cash-and-cash-equivalents-at-the-beginning-of-the-period|Dòng V]] (đầu kỳ) lấy dòng VII trên báo cáo năm trước. [[b04-effect-of-exchange-rate-changes-on-cash-and-cash-equivalents|Dòng VI]] là ảnh hưởng của thay đổi tỷ giá lên các khoản mục (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng V–VI, d.2550–2565). Lưu chuyển tiền thuần trong kỳ IV vừa bằng tổng ba hoạt động, vừa bằng chênh lệch tiền cuối kỳ và đầu kỳ sau khi bỏ ảnh hưởng tỷ giá (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng IV, d.2542–2549):
 
 $$\text{IV} = \text{I} + \text{II} + \text{III} = \text{VII} - \text{VI} - \text{V}$$
+
+Ngoài danh sách năm khoản mục của biểu, TCTD phải tự nêu khái niệm tiền và tương đương tiền mình dùng ở mục IV.13 của [[b05-accounting-policy-notes-of-vietnamese-credit-institutions-cover-twenty-items|phần chính sách kế toán trong Thuyết minh B05]] (vbhn04_2022_sbv, Mẫu B05/TCTD, IV.13, d.3281).
+
+Mục VII.34 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] liệt kê bốn khoản (vbhn04_2022_sbv, Mẫu B05/TCTD, VII.34, d.4603–4611):
+
+- tiền mặt và các khoản tương đương tiền tại quỹ;
+- tiền gửi tại NHNN;
+- tiền, ngoại hối gửi tại các TCTD khác, gồm không kỳ hạn và có kỳ hạn không quá 3 tháng;
+- chứng khoán có thời hạn thu hồi hoặc đáo hạn không quá 3 tháng kể từ ngày mua.
+
+⚠️ Conflict: dòng VII của mẫu B04 kê năm khoản, trong đó có tín phiếu Chính phủ và giấy tờ có giá ngắn hạn đủ điều kiện tái chiết khấu với NHNN, và ghi "tiền mặt tại quỹ" (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng VII, d.2566–2575). Bảng VII.34 của B05 chỉ kê bốn khoản, không có tín phiếu Chính phủ và giấy tờ có giá tái chiết khấu, và ghi "tiền mặt và các khoản tương đương tiền tại quỹ" (vbhn04_2022_sbv, Mẫu B05/TCTD, VII.34, d.4605–4611). Chờ người dùng xử lý.
 
 Phần sau là cách đọc của wiki. Trên B02, các khoản này nằm rải ở [[b02-cash-gold-silver-and-gemstones|tiền mặt, vàng bạc, đá quý A.I]], [[b02-deposits-at-the-sbv|tiền gửi tại NHNN A.II]], [[b02-deposits-at-other-credit-institutions|tiền gửi tại TCTD khác A.III.1]] và các dòng chứng khoán. Không dòng B02 nào bằng đúng dòng VII. Dòng A.I còn gồm vàng bạc, đá quý, trong khi định nghĩa ở đây chỉ nói "tiền mặt tại quỹ". Tiền gửi tại NHNN gồm cả dự trữ bắt buộc. Tương đương tiền là khái niệm kế toán theo kỳ hạn còn lại tính từ ngày mua; nó khác [[high-quality-liquid-assets-hqla|tài sản thanh khoản chất lượng cao]] của LCR, vốn xét khả năng bán hoặc cầm cố khi căng thẳng.

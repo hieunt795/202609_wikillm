@@ -4,7 +4,7 @@ type: concept
 tags: [vietnam, financial-reporting, b02, fixed-assets]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 part_of: [b02-statement-of-financial-position-of-vietnamese-credit-institutions]
 has_part: [b02-tangible-fixed-assets-net, b02-finance-leased-fixed-assets-net, b02-intangible-fixed-assets-net]
 contrasts: [b02-investment-property-net]
@@ -20,4 +20,4 @@ Tài sản cố định là chỉ tiêu nhóm A.X của [[b02-statement-of-finan
 
 $$\text{A.X} = \left(\text{DN}_{301}-\text{DC}_{3051}\right) + \left(\text{DN}_{303}-\text{DC}_{3053}\right) + \left(\text{DN}_{302}-\text{DC}_{3052}\right)$$
 
-Phần sau là cách đọc của wiki. Khác các nhóm tài sản tài chính phía trên, nhóm A.X không có dòng dự phòng: phần giảm giá trị được phản ánh qua hao mòn, tài khoản 305 với ba tài khoản con. Tài sản thuê tài chính được ghi như tài sản của TCTD dù TCTD không sở hữu pháp lý; vì vậy nó có dòng riêng tách khỏi TSCĐ hữu hình. Bất động sản mà công ty con kinh doanh bất động sản nắm giữ để đầu tư không nằm ở nhóm này mà ở [[b02-investment-property-net|chỉ tiêu A.XI]], dù dùng tài khoản cùng nhóm 30 (TK 304).
+Phần sau là cách đọc của wiki. Khác các nhóm tài sản tài chính phía trên, nhóm A.X không có dòng dự phòng: phần giảm giá trị được phản ánh qua hao mòn, tài khoản 305 với ba tài khoản con. Bất động sản mà công ty con kinh doanh bất động sản nắm giữ để đầu tư không nằm ở nhóm này mà ở [[b02-investment-property-net|chỉ tiêu A.XI]], dù dùng tài khoản cùng nhóm 30 (TK 304).
