@@ -15,4 +15,4 @@ Mục V.23.2 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-
 
 Báo cáo kết quả hoạt động giữa niên độ dạng tóm lược B03b không có dòng lãi cơ bản trên cổ phiếu. Thay vào đó, B03b có hai dòng cuối: lợi nhuận trên cổ phiếu trước ngày phân phối và lợi nhuận trên cổ phiếu sau ngày phân phối (vbhn04_2022_sbv, Mẫu B03b/TCTD, dòng XI–XII, d.7913–7922). Mẫu không định nghĩa "ngày phân phối" và không dẫn chuẩn mực tính hai dòng này. Các dòng còn lại của biểu được ghi ở trang [[condensed-interim-statements-of-vietnamese-credit-institutions-keep-only-the-roman-numeral-lines|báo cáo giữa niên độ dạng tóm lược]].
 
-Phần sau là cách đọc của wiki. Biểu chỉ có lãi cơ bản, không có dòng lãi suy giảm trên cổ phiếu. Cách tính tử số và mẫu số nằm trong VAS 30, văn bản chưa nạp vào wiki; thuyết minh V.23.2 chỉ yêu cầu nêu hai đại lượng đó.
+Biểu chỉ có dòng lãi cơ bản trên cổ phiếu, không có dòng lãi suy giảm trên cổ phiếu (vbhn04_2022_sbv, Mẫu B03/TCTD, dòng XV, d.2071–2081).

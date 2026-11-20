@@ -4,7 +4,7 @@ type: concept
 tags: [vietnam, financial-reporting, b04, cash-flow, investing]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 part_of: [b04-cash-flow-statement-of-vietnamese-credit-institutions]
 related: [b02-fixed-assets, b02-investment-property-net, b02-capital-contributions-and-long-term-investments-net-of-provisions]
 has_part: [b04-net-cash-flow-from-investing-activities, b04-purchases-of-fixed-assets, b04-proceeds-from-disposal-of-fixed-assets, b04-payments-for-disposal-of-fixed-assets, b04-purchases-of-investment-property, b04-proceeds-from-sale-of-investment-property, b04-payments-for-sale-of-investment-property, b04-payments-for-investments-in-other-entities, b04-proceeds-from-investments-in-other-entities, b04-dividends-and-profits-received-from-long-term-investments]
@@ -26,4 +26,4 @@ Lưu chuyển tiền từ hoạt động đầu tư (mục II) của [[b04-cash-
 
 [[b04-net-cash-flow-from-investing-activities|Dòng II]] là tổng 01–09. Dòng 04, 05, 06 về bất động sản đầu tư không có trên báo cáo của TCTD; chúng chỉ xuất hiện trên báo cáo của công ty con có chức năng kinh doanh bất động sản dùng hệ thống tài khoản TCTD (vbhn04_2022_sbv, Mẫu B04/TCTD, ghi chú 1, d.3140).
 
-Phần sau là cách đọc của wiki. Phía bảng cân đối của ba nhóm dòng là [[b02-fixed-assets|tài sản cố định A.X]], [[b02-investment-property-net|bất động sản đầu tư A.XI]] và [[b02-capital-contributions-and-long-term-investments-net-of-provisions|góp vốn, đầu tư dài hạn A.IX]]. Phương pháp trực tiếp không có dòng lãi lỗ thanh lý hay cổ tức ở hoạt động kinh doanh; tiền thu chi tương ứng chỉ hiện ở mục II. Chứng khoán đầu tư không nằm ở mục này mà ở dòng 10 của hoạt động kinh doanh.
+Phía bảng cân đối của ba nhóm dòng là [[b02-fixed-assets|tài sản cố định A.X]] (vbhn04_2022_sbv, Mẫu B02/TCTD, A.X, d.1189–1197), [[b02-investment-property-net|bất động sản đầu tư A.XI]] (vbhn04_2022_sbv, Mẫu B02/TCTD, A.XI, d.1277–1293) và [[b02-capital-contributions-and-long-term-investments-net-of-provisions|góp vốn, đầu tư dài hạn A.IX]] (vbhn04_2022_sbv, Mẫu B02/TCTD, A.IX, d.1128–1136). Chứng khoán đầu tư không nằm ở mục II mà ở dòng 10 của hoạt động kinh doanh (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng 10, d.2225).

@@ -2,7 +2,7 @@
 title: b02-liabilities-to-the-government-and-the-sbv
 type: concept
 tags: [vietnam, financial-reporting, b02, sbv, government]
-sources: [vbhn04_2022_sbv]
+sources: [vbhn04_2022_sbv, imf_macro_accounting]
 status: draft
 last_updated: 2026-11-20
 part_of: [b02-statement-of-financial-position-of-vietnamese-credit-institutions]
@@ -22,4 +22,4 @@ Trên [[b04-change-in-amounts-due-to-the-government-and-the-sbv|Báo cáo lưu c
 
 Mục V.16 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] chia nhóm này thành bốn phần (vbhn04_2022_sbv, Mẫu B05/TCTD, V.16, d.4034–4051). Phần vay NHNN gồm vay theo hồ sơ tín dụng, vay chiết khấu giấy tờ có giá, vay có bảo đảm bằng cầm cố giấy tờ có giá, vay thanh toán bù trừ, vay đặc biệt, vay khác (kể cả vay có thời hạn theo mục tiêu Chính phủ chỉ định) và nợ quá hạn. Ba phần còn lại là tiền gửi của Kho bạc Nhà nước (tách VND và ngoại tệ), [[b02-government-bond-repos-with-the-state-treasury|giao dịch bán và mua lại trái phiếu Chính phủ với Kho bạc Nhà nước]], và các khoản nợ khác. Mục V.16 được sửa theo Thông tư 27/2021/TT-NHNN (vbhn04_2022_sbv, Chú thích sửa đổi, chú thích 141, d.8389).
 
-Phần sau là cách đọc của wiki. Phần vay NHNN trong B.I là mặt đối ứng của [[claims-on-deposit-money-banks|tín dụng của nhà chức trách tiền tệ cho ngân hàng]] trong thống kê tiền tệ: cùng một khoản, ghi bên tài sản của NHNN và bên nợ của TCTD. Chiều ngược lại, tiền TCTD gửi tại NHNN nằm ở [[b02-deposits-at-the-sbv|tài sản A.II]]. Hiệu A.II − B.I không phải vị thế ròng chính xác với NHNN, vì B.I gộp cả Chính phủ và Kho bạc.
+Phần vay NHNN trong B.I ứng với [[claims-on-deposit-money-banks|tín dụng của nhà chức trách tiền tệ cho ngân hàng]] bên tài sản của nhà chức trách tiền tệ trong thống kê tiền tệ (imf_macro_accounting, Ch.5, The Balance Sheet of Monetary Authorities, d.4612). Chiều ngược lại, tiền TCTD gửi tại NHNN nằm ở [[b02-deposits-at-the-sbv|tài sản A.II]] (vbhn04_2022_sbv, Mẫu B02/TCTD, A.II, d.959–967).

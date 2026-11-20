@@ -20,4 +20,4 @@ TK 4535 bị trừ ra khỏi nhóm 45 ở dòng [[b02-other-payables-and-liabili
 
 Mục V.22.2 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] ghi thuế hoãn lại phải trả phát sinh từ chênh lệch tạm thời chịu thuế, kèm dòng hoàn nhập thuế hoãn lại phải trả đã ghi nhận từ các kỳ trước (vbhn04_2022_sbv, Mẫu B05/TCTD, V.22.2, d.4240–4246).
 
-Phần sau là cách đọc của wiki. Mặt đối ứng là [[b02-deferred-income-tax-assets|tài sản thuế hoãn lại A.XII.3]] (DN TK 3535). Hai dòng chung mục thuyết minh V.22 và được trình bày gộp ở hai bên bảng, không bù trừ với nhau.
+Phía tài sản tương ứng là [[b02-deferred-income-tax-assets|tài sản thuế hoãn lại A.XII.3]], lấy DN TK 3535 (vbhn04_2022_sbv, Mẫu B02/TCTD, A.XII.3, d.1343–1350). Hai dòng chung mục thuyết minh V.22 (vbhn04_2022_sbv, Mẫu B05/TCTD, V.22, d.4228–4246).

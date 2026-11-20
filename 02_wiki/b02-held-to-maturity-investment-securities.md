@@ -7,8 +7,7 @@ status: draft
 last_updated: 2026-11-20
 part_of: [b02-investment-securities-net-of-provisions]
 contrasts: [b02-available-for-sale-investment-securities, vamc-special-bonds]
-analogous: [held-to-maturity-gaap-accounting-masks-unrealized-economic-value-losses-in-banking-books]
-related: [b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions]
+related: [b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions, b05-accounting-policy-notes-of-vietnamese-credit-institutions-cover-twenty-items]
 ---
 
 Chứng khoán đầu tư giữ đến ngày đáo hạn là chỉ tiêu A.VIII.2 của Báo cáo tình hình tài chính B02, nằm trong [[b02-investment-securities-net-of-provisions|nhóm chứng khoán đầu tư A.VIII]] (vbhn04_2022_sbv, Mẫu B02/TCTD, A.VIII.2, d.1112–1119). Báo cáo riêng lấy số dư thuần của bốn tài khoản 161 → 164, có thể cộng dư Nợ TK 121, 122, 123:
@@ -19,4 +18,4 @@ Báo cáo hợp nhất lấy tổng chỉ tiêu tương ứng của các đơn v
 
 Mục V.08.3 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] trình bày chứng khoán giữ đến ngày đáo hạn, không gồm [[vamc-special-bonds|trái phiếu đặc biệt do VAMC phát hành]] (vbhn04_2022_sbv, Mẫu B05/TCTD, V.08.3, d.3760–3772). Bảng chỉ có chứng khoán nợ, chia theo bên phát hành như nhóm sẵn sàng để bán, rồi trừ dự phòng gồm dự phòng giảm giá, chung và cụ thể. Phân loại lại chứng khoán giữ đến ngày đáo hạn cũng phải nêu nguyên nhân và ảnh hưởng (vbhn04_2022_sbv, Mẫu B05/TCTD, V.08.4, d.3774–3776).
 
-Phần sau là cách đọc của wiki. B02 tách dòng giữ đến đáo hạn khỏi [[b02-available-for-sale-investment-securities|dòng sẵn sàng để bán]] theo nhóm tài khoản (16x so với 15x). Biểu không nói giá trị nào được ghi cho mỗi nhóm, giá gốc hay giá thị trường; điều này thuộc chính sách kế toán ở thuyết minh, chưa nạp vào wiki. Nếu nhóm giữ đến đáo hạn ghi theo giá phân bổ thì có cùng rủi ro đã thấy ở Mỹ năm 2023, nơi [[held-to-maturity-gaap-accounting-masks-unrealized-economic-value-losses-in-banking-books|sổ HTM theo GAAP che lỗ chưa thực hiện]] khi lãi suất tăng. Khi đó con số trên B02 không phản ánh giá trị kinh tế của danh mục.
+B02 tách dòng giữ đến đáo hạn khỏi [[b02-available-for-sale-investment-securities|dòng sẵn sàng để bán]] theo nhóm tài khoản, 16x so với 15x (vbhn04_2022_sbv, Mẫu B02/TCTD, A.VIII.1–2, d.1104–1119). Nguyên tắc ghi nhận giá trị chứng khoán đầu tư do TCTD nêu ở mục IV.7.3 trong [[b05-accounting-policy-notes-of-vietnamese-credit-institutions-cover-twenty-items|phần chính sách kế toán của Thuyết minh B05]] (vbhn04_2022_sbv, Mẫu B05/TCTD, IV.7.3, d.3243).

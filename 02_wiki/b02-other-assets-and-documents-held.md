@@ -26,4 +26,4 @@ Mục VIII.40c của [[b05-notes-to-the-financial-statements-of-vietnamese-credi
 
 Thông tư 27/2021/TT-NHNN bổ sung mục này (vbhn04_2022_sbv, Chú thích sửa đổi, chú thích 146, d.8399). Tài sản gán nợ đã chuyển quyền sở hữu cho TCTD thì được trình bày trong bảng cân đối, ở mục V.14.3 của [[b02-other-assets|tài sản Có khác A.XII.4]] (vbhn04_2022_sbv, Mẫu B05/TCTD, V.14.3, d.3985–3992).
 
-Phần sau là cách đọc của wiki. Bước loại trừ ở đây là cùng nguyên tắc mà [[vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately|hợp nhất theo VAS 25]] áp cho các khoản mục trong bảng. Ví dụ, tài sản thế chấp mà một công ty con giao cho ngân hàng mẹ giữ hộ không còn là tài sản của bên thứ ba khi nhìn cả tập đoàn.
+Bước loại trừ ở đây cùng nguyên tắc mà [[vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately|hợp nhất theo VAS 25]] áp cho giao dịch nội bộ trong tập đoàn (vbhn04_2022_sbv, Chương II, Mục 2, Điều 21, khoản 1, điểm b, d.523).

@@ -16,4 +16,4 @@ $$\text{XII} = \text{DN}_{8331} + \left(\text{DN}_{8332} - \text{DC}_{8332}\righ
 
 Ô hợp nhất bỏ trống (vbhn04_2022_sbv, Mẫu B03/TCTD, dòng XII, d.2040–2048). [[b03-profit-after-tax|Lợi nhuận sau thuế XIII]] bằng tổng lợi nhuận trước thuế XI trừ dòng XII (vbhn04_2022_sbv, Mẫu B03/TCTD, dòng XIII, d.2049–2057).
 
-Phần sau là cách đọc của wiki. Tỷ lệ XII trên XI là thuế suất hiệu dụng kế toán của TCTD. Tỷ lệ này lệch khỏi thuế suất luật định khi có thu nhập không chịu thuế, chẳng hạn cổ tức nhận được, hoặc chi phí không được trừ; giải trình nằm ở thuyết minh VI.33.
+Mục VI.33.1 đi từ lợi nhuận trước thuế, trừ thu nhập được miễn thuế, cộng chi phí không được khấu trừ để ra thu nhập chịu thuế (vbhn04_2022_sbv, Mẫu B05/TCTD, VI.33.1, d.4575–4584). Các bước tính ghi ở trang [[b03-current-corporate-income-tax-expense|thuế hiện hành dòng 7]].

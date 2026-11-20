@@ -20,8 +20,8 @@ Dòng này và [[b02-derivatives-and-other-financial-assets|chỉ tiêu A.V phí
 
 Bảng của mục V.05 trong [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] có cột công nợ riêng trong phần giá trị ghi sổ, theo tỷ giá ngày lập báo cáo, cho từng loại hợp đồng phái sinh (vbhn04_2022_sbv, Mẫu B05/TCTD, V.05, d.3448–3640). Danh sách loại hợp đồng và thước đo thứ hai (tổng giá trị hợp đồng) nằm ở [[b02-derivatives-and-other-financial-assets|trang chỉ tiêu A.V]].
 
-Phần sau là cách đọc của wiki. Công thức trên tương đương
+Công thức trên tương đương (vbhn04_2022_sbv, Mẫu B02/TCTD, B.IV, d.1472–1480)
 
 $$\text{B.IV} = \max[\text{DC}_{486} - \text{DN}_{486},\,0]$$
 
-và là gương của $\text{A.V} = \max[\text{DN}_{486} - \text{DC}_{486},\,0]$. Trong một kỳ nhiều nhất một trong hai dòng khác 0; số trên B02 là vị thế phái sinh ròng của cả tài khoản, không phải tổng giá trị nợ phái sinh. Giá trị gộp của từng loại hợp đồng phải tìm ở thuyết minh V.05.
+và là gương của $\text{A.V} = \max[\text{DN}_{486} - \text{DC}_{486},\,0]$. Trong một kỳ nhiều nhất một trong hai dòng khác 0; số trên B02 là số dư thuần của TK 486. Mục V.05 có cột công nợ theo từng loại hợp đồng (vbhn04_2022_sbv, Mẫu B05/TCTD, V.05, d.3448–3640).

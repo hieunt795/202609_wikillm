@@ -4,7 +4,7 @@ type: concept
 tags: [vietnam, financial-reporting, b02, accrued-interest]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 part_of: [b02-other-liabilities]
 contrasts: [b02-interest-and-fees-receivable]
 ---
@@ -15,4 +15,4 @@ $$\text{B.VII.1} = \text{DC}_{491}+\text{DC}_{492}+\text{DC}_{493}+\text{DC}_{49
 
 Báo cáo hợp nhất lấy tổng chỉ tiêu tương ứng của các đơn vị trong tập đoàn (vbhn04_2022_sbv, Mẫu B02/TCTD, B.VII.1–4, d.1508–1553).
 
-Phần sau là cách đọc của wiki. Dòng là mặt đối ứng của [[b02-interest-and-fees-receivable|lãi, phí phải thu A.XII.2]] (nhóm 39): lãi dồn tích chưa trả trên tiền gửi, khoản vay và giấy tờ có giá. Hai nhóm tài khoản 39 và 49 đối xứng về số hiệu, nhưng tài khoản bị bỏ qua khác nhau: phía phải thu bỏ TK 393, phía phải trả bỏ TK 495. Biểu không giải thích cả hai chỗ.
+Phía tài sản tương ứng là [[b02-interest-and-fees-receivable|lãi, phí phải thu A.XII.2]], lấy nhóm 39 (vbhn04_2022_sbv, Mẫu B02/TCTD, A.XII.2, d.1335–1342). Hai nhóm 39 và 49 bỏ qua tài khoản khác nhau: phía phải thu bỏ TK 393, phía phải trả bỏ TK 495 (vbhn04_2022_sbv, Mẫu B02/TCTD, A.XII.2, d.1335–1342) (vbhn04_2022_sbv, Mẫu B02/TCTD, B.VII.1, d.1508–1524).

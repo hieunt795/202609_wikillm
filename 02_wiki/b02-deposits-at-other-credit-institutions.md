@@ -2,7 +2,7 @@
 title: b02-deposits-at-other-credit-institutions
 type: concept
 tags: [vietnam, financial-reporting, b02, interbank]
-sources: [vbhn04_2022_sbv]
+sources: [vbhn04_2022_sbv, basel_lcr]
 status: draft
 last_updated: 2026-11-20
 part_of: [b02-deposits-at-and-loans-to-other-credit-institutions-net-of-provisions]
@@ -20,4 +20,4 @@ B02 tách khoản gửi tiền tại TCTD khác khỏi [[b02-loans-to-other-cred
 
 Mục V.03.1 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] tách tiền gửi không kỳ hạn với tiền gửi có kỳ hạn, mỗi loại chia VND và ngoại hối, rồi trừ dự phòng rủi ro (vbhn04_2022_sbv, Mẫu B05/TCTD, V.03.1, d.3344–3352).
 
-Phần sau là cách đọc của wiki. Cách tách này giúp nối B02 với các tỷ lệ thanh khoản, nơi tiền gửi đặt tại tổ chức khác có cách xử lý riêng. Ví dụ, TT50 cho [[operational-deposits-placed-at-other-institutions-receive-a-zero-inflow-rate|tiền gửi vận hành đặt tại tổ chức khác]] hệ số dòng vào 0%. Tuy vậy B02 không tách tiền gửi vận hành với tiền gửi có kỳ hạn; phần này cần số liệu tài khoản chi tiết.
+Chuẩn LCR của Basel cho [[operational-deposits-placed-at-other-institutions-receive-a-zero-inflow-rate|tiền gửi vận hành đặt tại tổ chức khác]] hệ số dòng vào 0% (basel_lcr, LCR40, Cash inflows – other inflows by counterparty, 40.89, d.1276). Mục V.03.1 chỉ tách tiền gửi không kỳ hạn và có kỳ hạn (vbhn04_2022_sbv, Mẫu B05/TCTD, V.03.1, d.3344–3352).

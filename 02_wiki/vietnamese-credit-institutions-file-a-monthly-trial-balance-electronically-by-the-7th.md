@@ -4,11 +4,10 @@ type: concept
 tags: [vietnam, sbv, financial-reporting, trial-balance, supervisory-reporting]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 part_of: [decision-16-2007-qd-nhnn-financial-reporting-regime-for-credit-institutions]
 contrasts: [vietnamese-credit-institution-financial-statements-comprise-four-reports-prepared-under-vas]
-related: [vietnamese-credit-institutions-file-annual-statements-within-45-to-90-days-and-quarterly-statements-by-day-30, financial-statistics-are-organized-in-three-tiers-from-institutional-balance-sheets-to-the-financial-survey]
-analogous: [double-entry-accounting-in-the-balance-of-payments]
+related: [vietnamese-credit-institutions-file-annual-statements-within-45-to-90-days-and-quarterly-statements-by-day-30]
 drives: [b02-statement-of-financial-position-of-vietnamese-credit-institutions]
 ---
 
@@ -34,7 +33,7 @@ $$\Sigma(3) = \Sigma(4), \qquad \Sigma(5) = \Sigma(6), \qquad \Sigma(7) = \Sigma
 
 Bảng có ba chữ ký: người lập bảng, trưởng phòng kế toán hoặc kế toán trưởng, và người đại diện theo pháp luật (ký, đóng dấu) (vbhn04_2022_sbv, Báo cáo kế toán, Mẫu A01/TCTD, d.890).
 
-Phần đánh giá dưới đây là cách đọc của wiki; văn bản không nêu lý do cho cấu trúc mẫu. Ba đẳng thức là hệ quả của ghi sổ kép: mỗi nghiệp vụ nội bảng ghi Nợ một tài khoản và Có một tài khoản khác cùng số tiền; do đó tổng hai bên bằng nhau ở cả số dư đầu kỳ, số phát sinh và số dư cuối kỳ. Cũng vì nguyên lý này mà [[double-entry-accounting-in-the-balance-of-payments|cán cân thanh toán luôn cân bằng về mặt kế toán]]. Phần B không có yêu cầu cân đối và chỉ có một cột số dư, khớp với cách ghi đơn của tài khoản ngoại bảng: các khoản như cam kết hay tài sản giữ hộ không có tài khoản đối ứng để cân. Đẳng thức chỉ bắt được lỗi ghi lệch một vế. Bút toán ghi nhầm tài khoản mà hai vế vẫn bằng nhau thì không bị phát hiện, vì vậy chế độ đặt thêm bước tra soát và sửa sai theo Điều 11 nêu dưới đây. Ở NHNN, Cục Công nghệ tin học tổng hợp chỉ tiêu từ các báo cáo theo nhu cầu của các Vụ, Cục (vbhn04_2022_sbv, Chương I, Điều 12, khoản 3, điểm c, d.391). Số dư từng tài khoản theo tháng của A01 thuộc cùng tầng dữ liệu bảng cân đối từng tổ chức mà [[financial-statistics-are-organized-in-three-tiers-from-institutional-balance-sheets-to-the-financial-survey|thống kê tài chính của IMF]] lấy làm gốc. Văn bản không nói A01 là nguồn của thống kê tiền tệ.
+Ở NHNN, Cục Công nghệ tin học tổng hợp chỉ tiêu từ các báo cáo theo nhu cầu của các Vụ, Cục (vbhn04_2022_sbv, Chương I, Điều 12, khoản 3, điểm c, d.391).
 
 Bảng này là nguồn số liệu của [[b02-statement-of-financial-position-of-vietnamese-credit-institutions|Báo cáo tình hình tài chính B02]], nơi mỗi chỉ tiêu ghi công thức lấy dư Nợ, dư Có của tài khoản nào trên A01. B02 dùng bảng tháng cuối năm bản hoàn chỉnh, tức sau khi đã kết chuyển thu nhập, chi phí, khác bản tháng 12 nộp NHNN (vbhn04_2022_sbv, Chú thích sửa đổi, chú thích (3), d.8265). Bảng khác [[vietnamese-credit-institution-financial-statements-comprise-four-reports-prepared-under-vas|bộ bốn báo cáo tài chính]] ở tần suất (tháng so với quý và năm) và cấp lập: từng chi nhánh, sở giao dịch, đơn vị phụ thuộc cũng lập bảng riêng. Ba yêu cầu riêng khi lập (vbhn04_2022_sbv, Chương I, Điều 9, khoản 2, d.299–305):
 

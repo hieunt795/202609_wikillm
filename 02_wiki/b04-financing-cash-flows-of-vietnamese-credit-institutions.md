@@ -4,9 +4,9 @@ type: concept
 tags: [vietnam, financial-reporting, b04, cash-flow, financing]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 part_of: [b04-cash-flow-statement-of-vietnamese-credit-institutions]
-related: [b02-valuable-papers-issued, b02-treasury-shares, b02-retained-earnings-or-accumulated-losses, b04-changes-in-operating-assets-and-liabilities-are-period-changes-of-b02-lines]
+related: [b02-valuable-papers-issued, b02-treasury-shares, b04-changes-in-operating-assets-and-liabilities-are-period-changes-of-b02-lines]
 has_part: [b04-net-cash-flow-from-financing-activities, b04-proceeds-from-share-capital-increases, b04-proceeds-from-issuing-long-term-valuable-papers-eligible-for-own-capital, b04-repayments-of-long-term-valuable-papers-eligible-for-own-capital, b04-dividends-paid, b04-payments-to-purchase-treasury-shares, b04-proceeds-from-sale-of-treasury-shares]
 ---
 
@@ -23,6 +23,6 @@ Lưu chuyển tiền từ hoạt động tài chính (mục III) của [[b04-cas
 
 [[b04-net-cash-flow-from-financing-activities|Dòng III]] là tổng 01–06.
 
-⚠️ Conflict: dòng 03 là khoản chi thanh toán, nhưng cột cách lấy số liệu ghi "số tiền ngân hàng thực tế nhận được từ việc phát hành các giấy tờ có giá dài hạn…", trùng chữ với dòng 02 (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng 02–03, d.2494–2509). Wiki chưa sửa thay nguồn.
+⚠️ Conflict: dòng 03 là khoản chi thanh toán, nhưng cột cách lấy số liệu ghi "số tiền ngân hàng thực tế nhận được từ việc phát hành các giấy tờ có giá dài hạn…", trùng chữ với dòng 02 (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng 02–03, d.2494–2509). Chờ người dùng xử lý.
 
-Phần sau là cách đọc của wiki. Ranh giới giữa hoạt động tài chính và kinh doanh đi qua [[b02-valuable-papers-issued|giấy tờ có giá phát hành B.VI]]. Giấy tờ dài hạn đủ điều kiện tính vào vốn tự có nằm ở đây; phần còn lại nằm ở [[b04-changes-in-operating-assets-and-liabilities-are-period-changes-of-b02-lines|dòng 18/23 của hoạt động kinh doanh]]. Dòng 05, 06 là phía tiền của [[b02-treasury-shares|cổ phiếu quỹ]]; dòng 04 làm giảm [[b02-retained-earnings-or-accumulated-losses|lợi nhuận chưa phân phối]] khi chia.
+Giấy tờ có giá dài hạn đủ điều kiện tính vào vốn tự có nằm ở dòng 02 và 03 (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, hoạt động tài chính, dòng 02–03, d.2496–2508). Phần còn lại của [[b02-valuable-papers-issued|giấy tờ có giá phát hành B.VI]] (vbhn04_2022_sbv, Mẫu B02/TCTD, B.VI, d.1490–1498) đi qua dòng 18 của [[b04-changes-in-operating-assets-and-liabilities-are-period-changes-of-b02-lines|phần thay đổi công nợ hoạt động]] (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng 18, d.2336). Dòng 05 và 06 ứng với [[b02-treasury-shares|cổ phiếu quỹ B.VIII.1.d]] trên B02 (vbhn04_2022_sbv, Mẫu B02/TCTD, B.VIII.1.d, d.1607–1614).

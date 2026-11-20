@@ -18,4 +18,4 @@ Báo cáo hợp nhất theo ô "Như trên" chung của ba dòng 3, 4 và II, t�
 
 Mục VI.26 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] không có bảng mẫu: TCTD tự nêu các khoản thu nhập, chi phí chính từ phí dịch vụ và tính ra lãi, lỗ thuần (vbhn04_2022_sbv, Mẫu B05/TCTD, VI.26, d.4410). Mục này viết thành đoạn văn in đậm chứ không phải tiêu đề như các mục VI khác.
 
-Phần sau là cách đọc của wiki. Khác cặp lãi, mục thuyết minh của mảng dịch vụ gắn với dòng thuần II thay vì với từng dòng thu và chi. Tên dòng có "lãi/lỗ" vì chi phí dịch vụ có thể vượt thu nhập dịch vụ, khi đó dòng II mang số âm.
+Mảng dịch vụ gắn số thuyết minh VI.26 vào dòng thuần II (vbhn04_2022_sbv, Mẫu B03/TCTD, dòng II, d.1907–1914). Mảng lãi thì gắn số thuyết minh vào từng dòng thành phần, VI.24 cho dòng 1 và VI.25 cho dòng 2 (vbhn04_2022_sbv, Mẫu B03/TCTD, dòng 1, d.1861–1873) (vbhn04_2022_sbv, Mẫu B03/TCTD, dòng 2, d.1874–1881).

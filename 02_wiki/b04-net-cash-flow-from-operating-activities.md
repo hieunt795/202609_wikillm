@@ -16,5 +16,3 @@ Lưu chuyển tiền thuần từ hoạt động kinh doanh là dòng I của [[
 $$\text{I} = \sum_{k=01}^{22} \text{Dòng } k$$
 
 Tổng này gồm [[b04-direct-operating-cash-flow-before-changes-in-operating-assets-and-working-capital|tổng phụ thu chi 01–08]] và các dòng [[b04-changes-in-operating-assets-and-liabilities-are-period-changes-of-b02-lines|thay đổi tài sản, công nợ hoạt động]] 09–22, dòng cuối là [[b04-payments-from-funds-of-the-credit-institution|chi từ các quỹ 22]]. Dòng I cùng II và III cộng thành [[b04-net-cash-flow-for-the-period|lưu chuyển tiền thuần trong kỳ IV]].
-
-Phần sau là cách đọc của wiki. Ở ngân hàng, dòng I phản ánh chủ yếu chênh lệch giữa tăng tiền gửi, vay và tăng cho vay, chứng khoán trong năm.

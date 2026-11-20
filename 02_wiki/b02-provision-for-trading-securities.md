@@ -20,4 +20,4 @@ TK 129 là tài khoản dự phòng chung của nhóm TK 12. Số dư của nó 
 
 Mục V.04.5 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] tách dòng dự phòng này thành dự phòng giảm giá, dự phòng chung và dự phòng cụ thể (vbhn04_2022_sbv, Mẫu B05/TCTD, V.04.5, d.3425–3428). Cùng mục có [[b05-notes-classify-every-credit-risk-asset-into-five-debt-groups|bảng năm nhóm nợ]] cho phần chứng khoán kinh doanh được phân loại là tài sản có rủi ro tín dụng (vbhn04_2022_sbv, Mẫu B05/TCTD, V.04.4, d.3418–3424).
 
-Phần sau là cách đọc của wiki: tỷ lệ chia TK 129 phải theo đúng tỷ lệ chia giá trị TK 121–123 giữa hai nhóm, nếu không thì giá trị thuần của [[b02-trading-securities-net-of-provisions|nhóm A.IV]] bị lệch. Biểu không nêu phương pháp phân bổ.
+Dòng âm này đưa [[b02-trading-securities-net-of-provisions|nhóm A.IV]] về giá trị thuần (vbhn04_2022_sbv, Mẫu B02/TCTD, A.IV, d.1005–1033).

@@ -22,4 +22,4 @@ $$\text{Thuế hiện hành} = \text{Thu nhập chịu thuế}\times t + \text{�
 
 Bảng còn ghi thuế đã nộp trong kỳ, điều chỉnh chênh lệch thuế các năm trước và thuế còn phải nộp cuối kỳ (vbhn04_2022_sbv, Mẫu B05/TCTD, VI.33.1, d.4588–4590).
 
-Phần sau là cách đọc của wiki. Thuế hiện hành là thuế tính trên thu nhập chịu thuế của năm theo luật thuế. Số tiền thuế thực nộp trong năm có thể khác dòng 7. [[b04-direct-income-tax-paid|Báo cáo lưu chuyển tiền tệ B04]] ghi số thực nộp ở dòng riêng, gồm cả thuế còn nợ kỳ trước nộp trong kỳ và số nộp trước (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng 08, d.2183–2190).
+Số thuế thực nộp trong năm ghi ở [[b04-direct-income-tax-paid|dòng 08 của Báo cáo lưu chuyển tiền tệ B04]], gồm cả thuế còn nợ kỳ trước nộp trong kỳ và số nộp trước (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng 08, d.2183–2190).

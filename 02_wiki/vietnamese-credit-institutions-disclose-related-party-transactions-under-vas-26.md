@@ -2,7 +2,7 @@
 title: vietnamese-credit-institutions-disclose-related-party-transactions-under-vas-26
 type: concept
 tags: [vietnam, financial-reporting, b05, related-parties, vas]
-sources: [vbhn04_2022_sbv]
+sources: [vbhn04_2022_sbv, tt83_2025_sbv]
 status: draft
 last_updated: 2026-11-20
 part_of: [b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions]
@@ -19,4 +19,4 @@ Mẫu nêu năm nhóm thông tin chủ yếu phải trình bày (vbhn04_2022_sbv
 - các mối quan hệ có tồn tại quyền kiểm soát giữa TCTD và các bên liên quan;
 - các giao dịch giữa các bên liên quan có ảnh hưởng trọng yếu tới tình hình tài chính của TCTD.
 
-Phần sau là cách đọc của wiki. Văn bản không ghi năm của Luật các TCTD được dẫn. [[decision-16-2007-qd-nhnn-financial-reporting-regime-for-credit-institutions|Chế độ báo cáo tài chính]] ghi căn cứ ban hành là luật năm 1997, nhưng câu về bên liên quan có thể đến từ một lần sửa đổi sau. Vì vậy định nghĩa người có liên quan cần đối chiếu với luật đang hiệu lực. Nhóm thông tin về cho vay, bảo lãnh cho bên liên quan nối với cách TT83 gộp khách hàng với người có liên quan khi đo [[concentration-risk|rủi ro tập trung]].
+Mục VIII.42 không ghi năm của Luật các TCTD được dẫn (vbhn04_2022_sbv, Mẫu B05/TCTD, VIII.42, d.4792). Phần căn cứ ban hành của [[decision-16-2007-qd-nhnn-financial-reporting-regime-for-credit-institutions|chế độ báo cáo tài chính]] dẫn Luật các TCTD năm 1997 và luật sửa đổi năm 2004 (vbhn04_2022_sbv, Quyết định, căn cứ ban hành, d.21). TT83 gộp khách hàng với người có liên quan khi định nghĩa [[concentration-risk|rủi ro tập trung]] (tt83_2025_sbv, Điều 3, khoản 21, d.107).

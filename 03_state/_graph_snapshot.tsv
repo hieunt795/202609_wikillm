@@ -1,49 +1,42 @@
 # Anh chup do thi quan he (00_schema.md §6). May ghi bang --graph; khong sua tay.
-meta	edges	6498
+meta	edges	6478
 meta	pages	1247
 meta	strong	804
-meta	taken	2026-11-20:19-40-35
-meta	typed	2684
-type	analogous	140
-type	contrasts	243
+meta	taken	2026-11-20:23-09-47
+meta	typed	2666
+type	analogous	132
+type	contrasts	237
 type	driven_by	109
 type	drives	106
 type	governed_by	119
 type	governs	110
 type	has_part	394
 type	part_of	373
-type	related	1098
-pair	Báo cáo kết quả hoạt động B03/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Báo cáo lưu chuyển tiền tệ B04/TCTD — phương pháp trực tiếp, nối với B02, B03	34
+type	related	1094
+pair	Báo cáo kết quả hoạt động B03/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Báo cáo lưu chuyển tiền tệ B04/TCTD — phương pháp trực tiếp, nối với B02, B03	30
 pair	Báo cáo kết quả hoạt động B03/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01	44
 pair	Báo cáo kết quả hoạt động B03/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Chế độ báo cáo tài chính của TCTD Việt Nam (QĐ 16/2007, VBHN 04/2022 — Chương I–III)	16
 pair	Báo cáo kết quả hoạt động B03/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Hệ thống tài chính, quy định và giám sát	2
-pair	Báo cáo kết quả hoạt động B03/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Quản lý rủi ro thị trường theo TT83/2025 (Mục 3 Chương III, Điều 35–37)	2
 pair	Báo cáo kết quả hoạt động B03/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Quản lý rủi ro tín dụng theo TT83/2025 (Mục 2 Chương III, Điều 26–34)	2
-pair	Báo cáo kết quả hoạt động B03/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Rủi ro lãi suất sổ ngân hàng (IRRBB)	4
+pair	Báo cáo kết quả hoạt động B03/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Rủi ro lãi suất sổ ngân hàng (IRRBB)	2
 pair	Báo cáo kết quả hoạt động B03/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Thuyết minh báo cáo tài chính B05/TCTD	32
-pair	Báo cáo lưu chuyển tiền tệ B04/TCTD — phương pháp trực tiếp, nối với B02, B03 || Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01	142
+pair	Báo cáo lưu chuyển tiền tệ B04/TCTD — phương pháp trực tiếp, nối với B02, B03 || Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01	140
 pair	Báo cáo lưu chuyển tiền tệ B04/TCTD — phương pháp trực tiếp, nối với B02, B03 || Chế độ báo cáo tài chính của TCTD Việt Nam (QĐ 16/2007, VBHN 04/2022 — Chương I–III)	4
 pair	Báo cáo lưu chuyển tiền tệ B04/TCTD — phương pháp trực tiếp, nối với B02, B03 || LCR: kho HQLA (tử số)	2
-pair	Báo cáo lưu chuyển tiền tệ B04/TCTD — phương pháp trực tiếp, nối với B02, B03 || Thuyết minh báo cáo tài chính B05/TCTD	12
-pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Case: Silicon Valley Bank	2
+pair	Báo cáo lưu chuyển tiền tệ B04/TCTD — phương pháp trực tiếp, nối với B02, B03 || Thuyết minh báo cáo tài chính B05/TCTD	14
 pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Chế độ báo cáo tài chính của TCTD Việt Nam (QĐ 16/2007, VBHN 04/2022 — Chương I–III)	82
-pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Cán cân thanh toán: khung khái niệm	2
-pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Công cụ và cơ chế vận hành chính sách tiền tệ	4
+pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Công cụ và cơ chế vận hành chính sách tiền tệ	2
 pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Dòng tiền ra của LCR trong TT50 (Phụ lục I phần B, mục IV–VII)	6
 pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Dòng tiền ra của LCR trong TT50 (Phụ lục I phần B, mục I–III)	2
 pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || LCR: dòng tiền ra	4
 pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || LCR: dòng tiền vào	2
 pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || NSFR trong TT50 (Điều 22–27)	4
-pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Phân tích chi	2
-pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Quản lý rủi ro thị trường theo TT83/2025 (Mục 3 Chương III, Điều 35–37)	2
+pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Quản lý rủi ro thị trường theo TT83/2025 (Mục 3 Chương III, Điều 35–37)	4
 pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Quản lý rủi ro tín dụng theo TT83/2025 (Mục 2 Chương III, Điều 26–34)	2
-pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Rủi ro lãi suất sổ ngân hàng (IRRBB)	4
-pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Thuyết minh báo cáo tài chính B05/TCTD	178
+pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Thuyết minh báo cáo tài chính B05/TCTD	188
 pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Thị trường tiền tệ, chuẩn lãi suất RFR và repo	4
-pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Tiền và hệ thống tiền tệ	22
+pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Tiền và hệ thống tiền tệ	20
 pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Tài sản dự trữ, giao dịch với IMF và tài trợ đặc biệt	2
-pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Đánh giá nội bộ mức đủ vốn (ICAAP) theo TT83/2025 (Mục 9, Phụ lục III, VI)	4
-pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Đại lượng thu nhập và sử dụng	6
 pair	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Đồng nhất thức tiền tệ, cầu tiền và cung tiền	4
 pair	Carry, roll-down và chênh lệch đường cong lợi suất || Cấu trúc kỳ hạn và phân tích đường cong lợi suất	7
 pair	Carry, roll-down và chênh lệch đường cong lợi suất || Giao dịch đường cong và giá trị tương đối	14
@@ -323,7 +316,6 @@ pair	Hệ thống tài chính, quy định và giám sát || Quản lý rủi ro
 pair	Hệ thống tài chính, quy định và giám sát || Quản trị, FTP và quy định giám sát	3
 pair	Hệ thống tài chính, quy định và giám sát || Rủi ro lãi suất sổ ngân hàng (IRRBB)	2
 pair	Hệ thống tài chính, quy định và giám sát || Thanh khoản và nguồn vốn	2
-pair	Hệ thống tài chính, quy định và giám sát || Thuyết minh báo cáo tài chính B05/TCTD	2
 pair	Hệ thống tài chính, quy định và giám sát || Tiền tệ trong kinh tế chuyển đổi và kỹ thuật IMF	4
 pair	Hệ thống tài chính, quy định và giám sát || Tiền và hệ thống tiền tệ	28
 pair	Hệ thống tài chính, quy định và giám sát || Tỷ giá và chế độ tỷ giá	6
@@ -452,7 +444,6 @@ pair	Nền tảng ALM và bảng cân đối || Quản trị, FTP và quy địn
 pair	Nền tảng ALM và bảng cân đối || Rủi ro lãi suất sổ ngân hàng (IRRBB)	67
 pair	Nền tảng ALM và bảng cân đối || Thanh khoản thị trường, mô hình đường cong và phân tích cấu trúc kỳ hạn	2
 pair	Nền tảng ALM và bảng cân đối || Thanh khoản và nguồn vốn	28
-pair	Nền tảng ALM và bảng cân đối || Thuyết minh báo cáo tài chính B05/TCTD	2
 pair	Nền tảng ALM và bảng cân đối || Thị trường tiền tệ, chuẩn lãi suất RFR và repo	9
 pair	Nền tảng ALM và bảng cân đối || Tiền gửi và mô hình hành vi	46
 pair	Nền tảng ALM và bảng cân đối || Tiền và hệ thống tiền tệ	11
@@ -535,7 +526,7 @@ pair	Quản trị, FTP và quy định giám sát || Rủi ro lãi suất sổ n
 pair	Quản trị, FTP và quy định giám sát || Thanh khoản và nguồn vốn	22
 pair	Quản trị, FTP và quy định giám sát || Tiền gửi và mô hình hành vi	12
 pair	Rủi ro lãi suất sổ ngân hàng (IRRBB) || Thanh khoản thị trường, mô hình đường cong và phân tích cấu trúc kỳ hạn	4
-pair	Rủi ro lãi suất sổ ngân hàng (IRRBB) || Thuyết minh báo cáo tài chính B05/TCTD	8
+pair	Rủi ro lãi suất sổ ngân hàng (IRRBB) || Thuyết minh báo cáo tài chính B05/TCTD	6
 pair	Rủi ro lãi suất sổ ngân hàng (IRRBB) || Tiền gửi và mô hình hành vi	22
 pair	Rủi ro lãi suất sổ ngân hàng (IRRBB) || Tiền và hệ thống tiền tệ	3
 pair	Rủi ro lãi suất sổ ngân hàng (IRRBB) || Định giá trái phiếu, rủi ro lãi suất và công cụ lãi suất thả nổi	13
@@ -612,8 +603,8 @@ pair	Đo thâm hụt tài khoá || Đồng nhất thức đối ngoại	8
 pair	Đại lượng sản lượng || Đại lượng thu nhập và sử dụng	83
 pair	Đại lượng sản lượng || Đồng nhất thức tiền tệ, cầu tiền và cung tiền	4
 pair	Đại lượng thu nhập và sử dụng || Đồng nhất thức đối ngoại	28
+bridge	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Quản lý rủi ro thị trường theo TT83/2025 (Mục 3 Chương III, Điều 35–37)	foreign-currency-position
 bridge	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Thị trường tiền tệ, chuẩn lãi suất RFR và repo	interbank-market
-bridge	Báo cáo tình hình tài chính B02/TCTD — từng chỉ tiêu và cách lấy số liệu từ A01 || Đại lượng thu nhập và sử dụng	depreciation
 bridge	Carry, roll-down và chênh lệch đường cong lợi suất || Hợp đồng tương lai trái phiếu chính phủ và giao dịch basis	cash-settled-bond-futures-and-exchange-for-physical-substitute-delivery-with-swap-or-yield-baskets
 bridge	Case: Ba Lan 1989–1994 || Chính sách vĩ mô và tổ chức quốc tế	polands-exchange-rate-path-from-dollar-peg-to-managed-float-balanced-disinflation-and-competitiveness
 bridge	Case: Ba Lan 1989–1994 || Khung hạch toán	polands-1992-sna-accounts-show-government-dissaving-and-household-saving
@@ -713,8 +704,8 @@ bridge	Tài trợ thâm hụt || Đo thâm hụt tài khoá	government-saving-in
 bridge	Đo lường trong kinh tế chuyển đổi || Đại lượng sản lượng	transition-statistics-understate-private-sector-growth
 bridge	Đo thâm hụt tài khoá || Đại lượng thu nhập và sử dụng	gross-national-saving
 bridge	Đo thâm hụt tài khoá || Đồng nhất thức đối ngoại	government-saving-investment-gap-approximates-the-overall-fiscal-deficit
-rank	central-bank	1
-rank	b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions	2
+rank	b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions	1
+rank	central-bank	2
 rank	circular-83-2025-tt-nhnn-internal-control-systems-of-banks	3
 rank	reserve-money	4
 rank	liquidity-coverage-ratio-lcr	5
@@ -722,194 +713,194 @@ rank	interest-rate-risk-in-the-banking-book-irrbb	6
 rank	deposit-money-banks	7
 rank	current-account-balance	8
 rank	high-quality-liquid-assets-hqla	9
-rank	gdp	10
+rank	b02-statement-of-financial-position-of-vietnamese-credit-institutions	10
 rank	b04-cash-flow-statement-of-vietnamese-credit-institutions	11
-rank	conventional-fiscal-deficit	12
-rank	b02-statement-of-financial-position-of-vietnamese-credit-institutions	13
-rank	financial-and-monetary-regime	14
-rank	b03-income-statement-of-vietnamese-credit-institutions	15
+rank	gdp	12
+rank	conventional-fiscal-deficit	13
+rank	b03-income-statement-of-vietnamese-credit-institutions	14
+rank	financial-and-monetary-regime	15
 rank	supervisory-outlier-test-applies-six-interest-rate-shock-scenarios-against-tier-one-capital	16
 rank	total-expected-cash-outflows	17
 rank	monetizing-the-deficit-creates-high-powered-money-and-inflation	18
 rank	exchange-rate	19
-rank	gndi	20
-rank	discount-window	21
+rank	discount-window	20
+rank	gndi	21
 rank	the-saving-investment-gap-equals-the-current-account-balance	22
-rank	subsidies	23
-rank	repurchase-agreement	24
-rank	depreciation	25
+rank	repurchase-agreement	23
+rank	subsidies	24
+rank	liquidity-risk	25
 rank	financial-system-transfers-funds-through-direct-and-indirect-channels	26
-rank	liquidity-risk	27
-rank	circular-50-2026-tt-nhnn-prudential-limits-and-ratios	28
+rank	circular-50-2026-tt-nhnn-prudential-limits-and-ratios	27
+rank	decision-16-2007-qd-nhnn-financial-reporting-regime-for-credit-institutions	28
 rank	cpi	29
-rank	interbank-market	30
-rank	real-gdp	31
-rank	final-consumption	32
-rank	government-safety-net-solves-bank-runs-but-generates-systemic-moral-hazard	33
-rank	narrow-money-m1	34
-rank	potential-gdp-measures-productive-capacity-at-full-employment	35
-rank	gross-investment	36
-rank	double-entry-accounting-in-the-balance-of-payments	37
-rank	net-interest-income-forecast-serves-as-baseline-for-prospective-alm-simulations	38
-rank	seigniorage	39
-rank	gdp-deflator	40
-rank	decision-16-2007-qd-nhnn-financial-reporting-regime-for-credit-institutions	41
-rank	level-1-assets	42
-rank	relative-vs-absolute-central-bank-intermediation	43
-rank	transfers-in-the-balance-of-payments	44
+rank	real-gdp	30
+rank	interbank-market	31
+rank	government-safety-net-solves-bank-runs-but-generates-systemic-moral-hazard	32
+rank	final-consumption	33
+rank	b02-capital-of-the-credit-institution	34
+rank	narrow-money-m1	35
+rank	potential-gdp-measures-productive-capacity-at-full-employment	36
+rank	net-interest-income-forecast-serves-as-baseline-for-prospective-alm-simulations	37
+rank	seigniorage	38
+rank	gdp-deflator	39
+rank	level-1-assets	40
+rank	gross-investment	41
+rank	depreciation	42
+rank	double-entry-accounting-in-the-balance-of-payments	43
+rank	relative-vs-absolute-central-bank-intermediation	44
 rank	bank-runs-investor-strikes-and-multiple-equilibria	45
 rank	natural-rate-of-unemployment-equals-frictional-plus-structural-unemployment	46
-rank	required-reserves	47
-rank	alm-balance-sheet-balancing-progresses-through-four-operational-dimensions	48
-rank	total-net-cash-outflows	49
+rank	transfers-in-the-balance-of-payments	47
+rank	total-net-cash-outflows	48
+rank	required-reserves	49
 rank	types-of-inflation	50
-rank	operational-target-of-monetary-policy	51
-rank	silicon-valley-bank-collapse-epitomizes-unhedged-duration-mismatches-and-uninsured-deposit-runs	52
-rank	current-account-deficit-means-absorption-exceeds-national-income	53
-rank	central-counterparties-transform-bilateral-counterparty-risk-into-liquidity-and-concentration-risk	54
-rank	total-expected-cash-inflows	55
-rank	inflation	56
-rank	funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks	57
-rank	vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately	58
-rank	supervision-differs-from-regulation-through-continuous-monitoring-and-camels-examination	59
-rank	general-collateral-and-specials-repo-separate-cash-driven-from-collateral-driven-financing	60
-rank	gross-national-saving	61
+rank	alm-balance-sheet-balancing-progresses-through-four-operational-dimensions	51
+rank	vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately	52
+rank	operational-target-of-monetary-policy	53
+rank	silicon-valley-bank-collapse-epitomizes-unhedged-duration-mismatches-and-uninsured-deposit-runs	54
+rank	central-counterparties-transform-bilateral-counterparty-risk-into-liquidity-and-concentration-risk	55
+rank	total-expected-cash-inflows	56
+rank	current-account-deficit-means-absorption-exceeds-national-income	57
+rank	inflation	58
+rank	general-collateral-and-specials-repo-separate-cash-driven-from-collateral-driven-financing	59
+rank	funds-transfer-pricing-ftp-allocates-margins-and-centralizes-balance-sheet-risks	60
+rank	supervision-differs-from-regulation-through-continuous-monitoring-and-camels-examination	61
 rank	lender-of-last-resort-foundations-and-bagehot-principles	62
-rank	balance-of-payments	63
-rank	absorption	64
-rank	gni	65
-rank	production-income-and-expenditure-approaches-yield-the-same-gdp	66
-rank	level-2b-assets	67
-rank	valuation-adjustments-separate-transaction-flows-from-exchange-rate-revaluation-of-stocks	68
-rank	other-items-net	69
-rank	reserve-assets-in-the-balance-of-payments-are-flows-not-stocks	70
-rank	economic-value-and-earnings-perspectives-complement-each-other-in-alm	71
+rank	market-risk	63
+rank	balance-of-payments	64
+rank	gross-national-saving	65
+rank	gni	66
+rank	absorption	67
+rank	level-2b-assets	68
+rank	vietnamese-credit-institution-financial-statements-comprise-four-reports-prepared-under-vas	69
+rank	valuation-adjustments-separate-transaction-flows-from-exchange-rate-revaluation-of-stocks	70
+rank	other-items-net	71
 rank	level-2a-assets	72
-rank	the-private-sector-resource-gap-must-be-financed-by-other-sectors	73
-rank	market-risk	74
-rank	quasi-money	75
-rank	xva-adjustments-reconcile-unmargined-otc-derivatives-with-cleared-market-prices	76
-rank	broad-money	77
-rank	government-policy-failure-is-as-critical-as-market-failure-in-financial-crises	78
-rank	central-bank-collateral-framework-design-and-risk-control	79
-rank	laspeyres-and-paasche-indexes-bracket-true-inflation	80
-rank	vietnamese-credit-institution-financial-statements-comprise-four-reports-prepared-under-vas	81
-rank	value-added	82
-rank	economic-value-of-equity-eve-measures-net-present-value-of-banking-book-cash-flows	83
-rank	monetary-authorities-influence-reserve-money-through-five-direct-instruments	84
-rank	collateral-constraint-on-central-bank-credit	85
-rank	interest-rate-corridor-symmetric-approach	86
+rank	production-income-and-expenditure-approaches-yield-the-same-gdp	73
+rank	reserve-assets-in-the-balance-of-payments-are-flows-not-stocks	74
+rank	b05-accounting-policy-notes-of-vietnamese-credit-institutions-cover-twenty-items	75
+rank	the-private-sector-resource-gap-must-be-financed-by-other-sectors	76
+rank	economic-value-and-earnings-perspectives-complement-each-other-in-alm	77
+rank	xva-adjustments-reconcile-unmargined-otc-derivatives-with-cleared-market-prices	78
+rank	quasi-money	79
+rank	government-policy-failure-is-as-critical-as-market-failure-in-financial-crises	80
+rank	broad-money	81
+rank	b04-changes-in-operating-assets-and-liabilities-are-period-changes-of-b02-lines	82
+rank	central-bank-collateral-framework-design-and-risk-control	83
+rank	laspeyres-and-paasche-indexes-bracket-true-inflation	84
+rank	value-added	85
+rank	collateral-constraint-on-central-bank-credit	86
 rank	net-credit-to-government	87
-rank	gdp-gap-measures-deviation-of-actual-output-from-potential	88
-rank	the-money-multiplier-links-reserve-money-to-the-money-supply	89
-rank	exchange-rate-regimes	90
-rank	real-interest-rate	91
-rank	b04-changes-in-operating-assets-and-liabilities-are-period-changes-of-b02-lines	92
-rank	modern-monetary-system-functions-as-an-inverted-pyramid	93
-rank	fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-inflation	94
+rank	interest-rate-corridor-symmetric-approach	88
+rank	economic-value-of-equity-eve-measures-net-present-value-of-banking-book-cash-flows	89
+rank	monetary-authorities-influence-reserve-money-through-five-direct-instruments	90
+rank	gdp-gap-measures-deviation-of-actual-output-from-potential	91
+rank	exchange-rate-regimes	92
+rank	real-interest-rate	93
+rank	the-money-multiplier-links-reserve-money-to-the-money-supply	94
 rank	core-inflation-strips-out-one-time-price-level-jumps	95
-rank	b05-accounting-policy-notes-of-vietnamese-credit-institutions-cover-twenty-items	96
-rank	eba-standardized-approach-for-irrbb-harmonizes-eve-and-nii-measurement	97
+rank	modern-monetary-system-functions-as-an-inverted-pyramid	96
+rank	fisher-effect-shifts-nominal-interest-rates-one-to-one-with-expected-inflation	97
 rank	sovereign-debt-absorption-requires-dealer-intermediation-capacity-beyond-investor-demand	98
-rank	credit-spread-risk-in-the-banking-book-csrbb	99
+rank	eba-standardized-approach-for-irrbb-harmonizes-eve-and-nii-measurement	99
 rank	multilateral-netting-minimizes-interbank-settlement-flows-and-credit-exposures	100
 rank	liquidity-regulation-and-central-bank-operations-arbitrage	101
 rank	monetary-policy-transmission-breakdown-and-zero-lower-bound	102
-rank	loanable-funds-framework-determines-equilibrium-interest-rate-and-bond-price	103
-rank	interest-rate-gap-risk-stems-from-repricing-timing-mismatches	104
-rank	intermediate-consumption	105
-rank	mechanics-of-liquidity-crises-and-feedback-loops	106
-rank	haircut	107
+rank	credit-spread-risk-in-the-banking-book-csrbb	103
+rank	b02-investment-securities-net-of-provisions	104
+rank	loanable-funds-framework-determines-equilibrium-interest-rate-and-bond-price	105
+rank	haircut	106
+rank	mechanics-of-liquidity-crises-and-feedback-loops	107
 rank	money-aggregates-form-a-nested-hierarchy-from-narrow-money-to-broad-liquidity	108
-rank	b02-capital-of-the-credit-institution	109
-rank	bond-carry-measures-net-income-after-repo-financing-and-defines-forward-pricing	110
-rank	risk-based-capital-requirements-aim-to-constrain-leverage-but-incentivize-regulatory-arbitrage	111
-rank	monetary-policy	112
-rank	prompt-corrective-action-establishes-tripwire-capital-ratios-to-curb-regulatory-forbearance	113
-rank	separation-principle-of-monetary-policy	114
-rank	repo-rate-spikes-transmit-to-federal-funds-rate-via-fhlb-arbitrage	115
-rank	open-market-operations	116
-rank	repricing-gap-analysis-allocates-cash-flows-into-time-bands-by-next-reset-date	117
+rank	b02-owners-equity	109
+rank	b05-notes-classify-every-credit-risk-asset-into-five-debt-groups	110
+rank	bond-carry-measures-net-income-after-repo-financing-and-defines-forward-pricing	111
+rank	risk-based-capital-requirements-aim-to-constrain-leverage-but-incentivize-regulatory-arbitrage	112
+rank	intermediate-consumption	113
+rank	monetary-policy	114
+rank	repricing-gap-analysis-allocates-cash-flows-into-time-bands-by-next-reset-date	115
+rank	prompt-corrective-action-establishes-tripwire-capital-ratios-to-curb-regulatory-forbearance	116
+rank	separation-principle-of-monetary-policy	117
 rank	butterfly-and-condor-trades-exploit-curve-curvature-and-differing-market-quoting-conventions	118
-rank	excess-reserves	119
-rank	interest-rate-option-risk-combines-automatic-and-embedded-behavioural-options	120
-rank	government-saving-investment-gap-approximates-the-overall-fiscal-deficit	121
-rank	delivery-versus-payment-eliminates-herstatt-risk-through-intermediary-settlement-cycles	122
-rank	the-flow-of-funds-table-decomposes-the-economy-wide-identity-into-sector-columns	123
-rank	b05-notes-classify-every-credit-risk-asset-into-five-debt-groups	124
+rank	open-market-operations	119
+rank	repo-rate-spikes-transmit-to-federal-funds-rate-via-fhlb-arbitrage	120
+rank	delivery-versus-payment-eliminates-herstatt-risk-through-intermediary-settlement-cycles	121
+rank	excess-reserves	122
+rank	government-saving-investment-gap-approximates-the-overall-fiscal-deficit	123
+rank	b02-capital-contributions-and-long-term-investments-net-of-provisions	124
 rank	the-flow-of-funds-table-is-a-zero-sum-quadruple-entry-matrix	125
 rank	hyperinflation	126
-rank	measured-gdp-is-an-imperfect-gauge-of-output-and-welfare	127
-rank	money-supply-equals-net-foreign-assets-plus-net-domestic-assets	128
-rank	maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks	129
-rank	aggregate-demand	130
-rank	the-analytical-monetary-authorities-balance-sheet-groups-items-into-nfa-nda-and-rm	131
-rank	stable-retail-deposits-run-off-at-5-percent-and-less-stable-and-foreign-currency-at-10-percent-in-tt50	132
-rank	overnight-rate-is-the-natural-operational-target-of-monetary-policy	133
-rank	unemployment-rate	134
+rank	the-flow-of-funds-table-decomposes-the-economy-wide-identity-into-sector-columns	127
+rank	interest-rate-option-risk-combines-automatic-and-embedded-behavioural-options	128
+rank	money-supply-equals-net-foreign-assets-plus-net-domestic-assets	129
+rank	sme-deposits-up-to-30-billion-dong-run-off-like-retail-deposits-in-tt50	130
+rank	b05-interest-rate-risk-note-shows-a-repricing-gap-table-of-vietnamese-credit-institutions	131
+rank	unemployment-rate	132
+rank	the-analytical-monetary-authorities-balance-sheet-groups-items-into-nfa-nda-and-rm	133
+rank	measured-gdp-is-an-imperfect-gauge-of-output-and-welfare	134
 rank	direct-financial-markets-fail-small-participants-due-to-risk-return-tradeoff-asymmetry	135
-rank	sme-deposits-up-to-30-billion-dong-run-off-like-retail-deposits-in-tt50	136
-rank	b02-investment-securities-net-of-provisions	137
-rank	cash-flow-balancing-resolves-immediate-payment-obligations-against-excess-reserve-opportunity-cost	138
-rank	b02-capital-contributions-and-long-term-investments-net-of-provisions	139
-rank	fiscal-sustainability	140
-rank	claims-on-deposit-money-banks	141
-rank	duration-gap-analysis-quantifies-balance-sheet-mismatch-scaled-by-asset-base	142
-rank	trading-book	143
+rank	stable-retail-deposits-run-off-at-5-percent-and-less-stable-and-foreign-currency-at-10-percent-in-tt50	136
+rank	overnight-rate-is-the-natural-operational-target-of-monetary-policy	137
+rank	aggregate-demand	138
+rank	fiscal-sustainability	139
+rank	b02-off-balance-sheet-items	140
+rank	interest-rate-gap-risk-stems-from-repricing-timing-mismatches	141
+rank	claims-on-deposit-money-banks	142
+rank	duration-gap-analysis-quantifies-balance-sheet-mismatch-scaled-by-asset-base	143
 rank	standing-facilities-in-monetary-policy-operations	144
-rank	tt83-delta-eve-is-the-largest-sum-of-currency-level-eve-losses-across-six-shock-scenarios	145
-rank	ccp-waterfall-protects-clearing-houses-through-margining-default-funds-and-mandatory-bidding	146
+rank	ccp-waterfall-protects-clearing-houses-through-margining-default-funds-and-mandatory-bidding	145
+rank	vietnam-lcr-minimum-for-vnd-phases-in-from-50-percent-in-2028-to-100-percent-in-2033	146
 rank	liquidity-transfer-restrictions-exclude-trapped-surplus-hqla-from-the-consolidated-lcr	147
-rank	de-jure-central-bank-independence-diverges-from-de-facto-policy-autonomy	148
-rank	vietnam-lcr-minimum-for-vnd-phases-in-from-50-percent-in-2028-to-100-percent-in-2033	149
-rank	goods-in-the-balance-of-payments	150
-rank	services-in-the-balance-of-payments	151
+rank	tt83-delta-eve-is-the-largest-sum-of-currency-level-eve-losses-across-six-shock-scenarios	148
+rank	tt50-banks-disclose-liquidity-ratios-semi-annually-under-a-written-process-sent-to-the-sbv	149
+rank	cash-flow-balancing-resolves-immediate-payment-obligations-against-excess-reserve-opportunity-cost	150
+rank	de-jure-central-bank-independence-diverges-from-de-facto-policy-autonomy	151
 rank	bond-futures-basis-and-implied-repo-rate-quantify-arbitrage-free-cash-and-carry-relationships	152
 rank	three-techniques-to-control-short-term-interest-rates	153
-rank	b02-fixed-assets	154
-rank	level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock	155
-rank	tt50-banks-disclose-liquidity-ratios-semi-annually-under-a-written-process-sent-to-the-sbv	156
-rank	supervisory-stress-testing-provides-forward-looking-macroprudential-evaluation	157
-rank	money-is-the-only-one-hundred-percent-liquid-asset	158
-rank	incomes-policy	159
-rank	derivative-cash-flows-are-netted-per-counterparty-only-under-a-qualifying-netting-agreement-and-run-off-at-100-percent-in-tt50	160
+rank	level-2-assets-are-capped-at-40-percent-and-level-2b-at-15-percent-of-the-hqla-stock	154
+rank	derivative-cash-flows-are-netted-per-counterparty-only-under-a-qualifying-netting-agreement-and-run-off-at-100-percent-in-tt50	155
+rank	goods-in-the-balance-of-payments	156
+rank	services-in-the-balance-of-payments	157
+rank	supervisory-stress-testing-provides-forward-looking-macroprudential-evaluation	158
+rank	money-is-the-only-one-hundred-percent-liquid-asset	159
+rank	incomes-policy	160
 rank	financial-markets-are-divided-into-money-markets-and-capital-markets-by-maturity	161
-rank	income-in-the-balance-of-payments	162
-rank	inflation-targeting-framework-anchors-expectations-through-transparent-commitment	163
-rank	interest-rate-structure-is-determined-by-default-risk-liquidity-taxes-and-maturity	164
-rank	vietnams-banking-system-exhibits-structural-dichotomy-between-tt1-and-tt2	165
-rank	yield-curve	166
-rank	upward-sloping-yield-curves-mandate-forward-rates-to-exceed-zero-rates-and-par-yields	167
-rank	liquidity-premium-hypothesis-explains-the-prevalence-of-upward-sloping-yield-curves	168
-rank	financial-institutions-operate-as-balanced-budget-entities-in-the-flow-of-funds	169
-rank	forward-guidance-evolved-from-moral-suasion-as-conditional-transparent-commitment	170
-rank	current-account-balance-equals-the-change-in-net-foreign-assets	171
-rank	bank-absorption-of-sovereign-debt-is-governed-by-a-regulatory-triangle	172
+rank	inflation-targeting-framework-anchors-expectations-through-transparent-commitment	162
+rank	b04-direct-method-converts-accrued-income-and-expenses-into-cash-received-and-paid	163
+rank	upward-sloping-yield-curves-mandate-forward-rates-to-exceed-zero-rates-and-par-yields	164
+rank	yield-curve	165
+rank	liquidity-premium-hypothesis-explains-the-prevalence-of-upward-sloping-yield-curves	166
+rank	income-in-the-balance-of-payments	167
+rank	forward-guidance-evolved-from-moral-suasion-as-conditional-transparent-commitment	168
+rank	vietnams-banking-system-exhibits-structural-dichotomy-between-tt1-and-tt2	169
+rank	financial-institutions-operate-as-balanced-budget-entities-in-the-flow-of-funds	170
+rank	maturity-balancing-manages-liquidity-duration-to-mitigate-rollover-and-repricing-risks	171
+rank	current-account-balance-equals-the-change-in-net-foreign-assets	172
 rank	lcr-stress-scenario-combines-idiosyncratic-and-market-wide-shocks-over-30-days	173
-rank	b05-interest-rate-risk-note-shows-a-repricing-gap-table-of-vietnamese-credit-institutions	174
-rank	parallel-yield-curve-shifts-reflect-shifts-in-equilibrium-neutral-rates-and-central-bank-commitments	175
-rank	a-one-time-price-shock-becomes-inflation-only-if-monetary-policy-accommodates-it	176
-rank	direct-investment	177
+rank	bank-absorption-of-sovereign-debt-is-governed-by-a-regulatory-triangle	174
+rank	b02-other-assets-net-of-provisions	175
+rank	parallel-yield-curve-shifts-reflect-shifts-in-equilibrium-neutral-rates-and-central-bank-commitments	176
+rank	interest-rate-structure-is-determined-by-default-risk-liquidity-taxes-and-maturity	177
 rank	commercial-banks-create-inside-money-by-extending-credit	178
-rank	arbitrage-free-bond-prices-evolve-as-martingales-under-risk-neutral-measures	179
-rank	okuns-law-relates-the-gdp-gap-to-the-unemployment-gap	180
-rank	private-credit-selective-defaults-obscure-systemic-banking-fragility	181
-rank	pure-expectations-hypothesis-equates-long-term-rates-to-the-average-of-expected-short-rates	182
+rank	private-credit-selective-defaults-obscure-systemic-banking-fragility	179
+rank	a-one-time-price-shock-becomes-inflation-only-if-monetary-policy-accommodates-it	180
+rank	direct-investment	181
+rank	arbitrage-free-bond-prices-evolve-as-martingales-under-risk-neutral-measures	182
 rank	collateral-pool-segregation-and-double-adverse-selection	183
-rank	price-stability-is-defined-by-low-and-stable-inflation-rather-than-zero-percent	184
-rank	monetary-accounts-net-claims-on-government-but-keep-claims-on-deposit-money-banks-gross	185
-rank	b02-owners-equity	186
-rank	term-structure-modeling-bifurcates-into-short-rate-diffusion-and-forward-rate-hjm-frameworks	187
-rank	b04-direct-method-converts-accrued-income-and-expenses-into-cash-received-and-paid	188
-rank	instantaneous-forward-curves-lead-spot-curve-inflections-and-peak-earlier	189
-rank	multitiered-irrbb-regulatory-framework-spans-bcbs-crd-crr-and-eba-technical-standards	190
-rank	autonomous-factors-of-central-bank-balance-sheet	191
-rank	central-bank-transparency-anchors-public-expectations-across-five-dimensions	192
-rank	balance-sheet-evolution-assumptions-differentiate-run-off-static-and-dynamic-views	193
-rank	b02-off-balance-sheet-items	194
-rank	z-spreads-isolate-cash-flow-relative-value-across-full-zero-discount-curves	195
-rank	financial-intermediation	196
-rank	tt50-nsfr-measures-derivative-liabilities-and-assets-at-replacement-cost-and-nets-variation-margin	197
-rank	residency-in-the-sna-follows-the-centre-of-economic-interest	198
-rank	soft-budget-constraint	199
+rank	okuns-law-relates-the-gdp-gap-to-the-unemployment-gap	184
+rank	price-stability-is-defined-by-low-and-stable-inflation-rather-than-zero-percent	185
+rank	monetary-accounts-net-claims-on-government-but-keep-claims-on-deposit-money-banks-gross	186
+rank	pure-expectations-hypothesis-equates-long-term-rates-to-the-average-of-expected-short-rates	187
+rank	term-structure-modeling-bifurcates-into-short-rate-diffusion-and-forward-rate-hjm-frameworks	188
+rank	equity-method-of-accounting	189
+rank	instantaneous-forward-curves-lead-spot-curve-inflections-and-peak-earlier	190
+rank	central-bank-transparency-anchors-public-expectations-across-five-dimensions	191
+rank	autonomous-factors-of-central-bank-balance-sheet	192
+rank	tt50-nsfr-measures-derivative-liabilities-and-assets-at-replacement-cost-and-nets-variation-margin	193
+rank	z-spreads-isolate-cash-flow-relative-value-across-full-zero-discount-curves	194
+rank	multitiered-irrbb-regulatory-framework-spans-bcbs-crd-crr-and-eba-technical-standards	195
+rank	b05-liquidity-risk-note-shows-a-maturity-gap-table-of-vietnamese-credit-institutions	196
+rank	financial-intermediation	197
+rank	trading-book	198
+rank	hqla-operational-requirements	199
 rank	full-employment-does-not-mean-zero-unemployment	200

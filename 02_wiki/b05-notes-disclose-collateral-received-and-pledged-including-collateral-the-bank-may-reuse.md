@@ -2,7 +2,7 @@
 title: b05-notes-disclose-collateral-received-and-pledged-including-collateral-the-bank-may-reuse
 type: concept
 tags: [vietnam, financial-reporting, b05, collateral, encumbrance]
-sources: [vbhn04_2022_sbv]
+sources: [vbhn04_2022_sbv, basel_lcr]
 status: draft
 last_updated: 2026-11-20
 part_of: [b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions]
@@ -18,4 +18,4 @@ Phía nhận chia theo đối tượng (vbhn04_2022_sbv, Mẫu B05/TCTD, VIII.38
 
 Phía đưa đi, TCTD nêu loại hình và giá trị tài sản, GTCG đã đưa đi tại thời điểm lập báo cáo. Kèm theo là điều khoản thế chấp, cầm cố, hoặc điều khoản chuyển giao rủi ro, lợi ích và quyền sở hữu với công cụ chuyển nhượng, GTCG bán có kỳ hạn. Số liệu chia theo bốn nhóm: [[b02-trading-securities-gross|chứng khoán kinh doanh]], [[b02-investment-securities-net-of-provisions|chứng khoán đầu tư]], [[b02-fixed-assets|tài sản cố định]] và tài sản khác (vbhn04_2022_sbv, Mẫu B05/TCTD, VIII.38.2, d.4734–4744).
 
-Phần sau là cách đọc của wiki. Điểm c là chỗ B05 chạm tới việc tái sử dụng tài sản bảo đảm, cùng loại cơ chế với [[collateral-rehypothecation-chains-amplify-cascading-settlement-delays-across-counterparties|chuỗi tái thế chấp trên thị trường repo]]. Thuyết minh cho biết quy mô phần đã tái sử dụng và nghĩa vụ hoàn trả, nhưng không cho biết tài sản đã đi tiếp tới đâu. Phía đưa đi cho biết phần tài sản của TCTD đã bị ràng buộc. Thông tin này cần khi xét tài sản nào còn tính được vào [[high-quality-liquid-assets-hqla|tài sản thanh khoản chất lượng cao]].
+Điểm c là trường hợp TCTD đem tài sản thế chấp của khách hàng đi bán hoặc thế chấp tiếp cho bên thứ ba (vbhn04_2022_sbv, Mẫu B05/TCTD, VIII.38.1.c, d.4726–4732). Thế chấp tiếp tài sản đã nhận là mắt xích của [[collateral-rehypothecation-chains-amplify-cascading-settlement-delays-across-counterparties|chuỗi tái thế chấp trên thị trường repo]]. Phía đưa đi cho biết phần tài sản của TCTD đã đem thế chấp, cầm cố (vbhn04_2022_sbv, Mẫu B05/TCTD, VIII.38.2, d.4734–4744). Chuẩn mực Basel coi kho [[high-quality-liquid-assets-hqla|tài sản thanh khoản chất lượng cao]] là kho không bị ràng buộc (basel_lcr, LCR20, 20.5, d.72).

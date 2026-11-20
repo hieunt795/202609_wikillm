@@ -6,7 +6,6 @@ sources: [vbhn04_2022_sbv]
 status: draft
 last_updated: 2026-11-20
 part_of: [b02-statement-of-financial-position-of-vietnamese-credit-institutions]
-contrasts: [b02-customer-deposits]
 related: [b04-change-in-entrusted-funds-and-funds-for-lending-at-ci-risk, b05-accounting-policy-notes-of-vietnamese-credit-institutions-cover-twenty-items, b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions]
 ---
 
@@ -30,5 +29,3 @@ Mục VIII.40 của Thuyết minh B05 tách hai chiều ủy thác. Mục 40.1 v
 - hoạt động ủy thác khác.
 
 Mục 40.2 về hoạt động nhận ủy thác và đại lý chỉ có tiêu đề, không có bảng mẫu (vbhn04_2022_sbv, Mẫu B05/TCTD, VIII.40.2, d.4756).
-
-Phần sau là cách đọc của wiki. Tên chỉ tiêu giới hạn phạm vi ở các khoản vốn nhận tài trợ, ủy thác mà TCTD dùng để cho vay và tự chịu rủi ro tín dụng. Vốn ủy thác mà TCTD không chịu rủi ro thì theo dõi ngoài bảng; mục 40.2 về nhận ủy thác và đại lý là nơi để đối chiếu, nhưng mẫu chỉ có tiêu đề. Dòng này khác [[b02-customer-deposits|tiền gửi khách hàng B.III]] ở chỗ nguồn vốn đi kèm mục đích sử dụng do bên tài trợ đặt ra.

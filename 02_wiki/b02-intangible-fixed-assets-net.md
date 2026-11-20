@@ -4,7 +4,7 @@ type: concept
 tags: [vietnam, financial-reporting, b02, fixed-assets]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 part_of: [b02-fixed-assets]
 has_part: [b02-intangible-fixed-assets-cost, b02-accumulated-amortisation-of-intangible-fixed-assets]
 analogous: [b02-tangible-fixed-assets-net, b02-finance-leased-fixed-assets-net]
@@ -16,4 +16,4 @@ $$\text{A.X.3} = \text{DN}_{302} - \text{DC}_{3052}$$
 
 Cột (6) dùng một ô chung cho dòng 3 và hai dòng con a, b: báo cáo hợp nhất lấy tổng các khoản mục tương ứng trên báo cáo của các đơn vị trong tập đoàn (vbhn04_2022_sbv, Mẫu B02/TCTD, A.X.3, d.1252–1260).
 
-Phần sau là cách đọc của wiki. Cùng khuôn nguyên giá trừ hao mòn được dùng cho [[b02-tangible-fixed-assets-net|TSCĐ hữu hình]] và [[b02-finance-leased-fixed-assets-net|TSCĐ thuê tài chính]], mỗi loại một cặp tài khoản riêng. B02 không cho biết TSCĐ được ghi theo giá gốc hay đánh giá lại; khoản chênh lệch đánh giá lại, nếu có, nằm ở vốn chủ sở hữu (B.VIII.4), chưa nạp vào wiki.
+Cùng khuôn nguyên giá trừ hao mòn được dùng cho [[b02-tangible-fixed-assets-net|TSCĐ hữu hình]] và [[b02-finance-leased-fixed-assets-net|TSCĐ thuê tài chính]], mỗi loại một cặp tài khoản riêng (vbhn04_2022_sbv, Mẫu B02/TCTD, A.X.1–3, d.1198–1276).

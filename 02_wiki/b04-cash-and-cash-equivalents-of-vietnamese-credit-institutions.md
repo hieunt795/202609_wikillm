@@ -2,7 +2,7 @@
 title: b04-cash-and-cash-equivalents-of-vietnamese-credit-institutions
 type: concept
 tags: [vietnam, financial-reporting, b04, cash-flow, cash-equivalents]
-sources: [vbhn04_2022_sbv]
+sources: [vbhn04_2022_sbv, basel_lcr]
 status: draft
 last_updated: 2026-11-20
 part_of: [b04-cash-flow-statement-of-vietnamese-credit-institutions]
@@ -33,4 +33,4 @@ Mục VII.34 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-
 
 ⚠️ Conflict: dòng VII của mẫu B04 kê năm khoản, trong đó có tín phiếu Chính phủ và giấy tờ có giá ngắn hạn đủ điều kiện tái chiết khấu với NHNN, và ghi "tiền mặt tại quỹ" (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng VII, d.2566–2575). Bảng VII.34 của B05 chỉ kê bốn khoản, không có tín phiếu Chính phủ và giấy tờ có giá tái chiết khấu, và ghi "tiền mặt và các khoản tương đương tiền tại quỹ" (vbhn04_2022_sbv, Mẫu B05/TCTD, VII.34, d.4605–4611). Chờ người dùng xử lý.
 
-Phần sau là cách đọc của wiki. Trên B02, các khoản này nằm rải ở [[b02-cash-gold-silver-and-gemstones|tiền mặt, vàng bạc, đá quý A.I]], [[b02-deposits-at-the-sbv|tiền gửi tại NHNN A.II]], [[b02-deposits-at-other-credit-institutions|tiền gửi tại TCTD khác A.III.1]] và các dòng chứng khoán. Không dòng B02 nào bằng đúng dòng VII. Dòng A.I còn gồm vàng bạc, đá quý, trong khi định nghĩa ở đây chỉ nói "tiền mặt tại quỹ". Tiền gửi tại NHNN gồm cả dự trữ bắt buộc. Tương đương tiền là khái niệm kế toán theo kỳ hạn còn lại tính từ ngày mua; nó khác [[high-quality-liquid-assets-hqla|tài sản thanh khoản chất lượng cao]] của LCR, vốn xét khả năng bán hoặc cầm cố khi căng thẳng.
+Trên B02, các khoản này nằm ở [[b02-cash-gold-silver-and-gemstones|tiền mặt, vàng bạc, đá quý A.I]] (vbhn04_2022_sbv, Mẫu B02/TCTD, A.I, d.946–958), [[b02-deposits-at-the-sbv|tiền gửi tại NHNN A.II]] (vbhn04_2022_sbv, Mẫu B02/TCTD, A.II, d.959–967), [[b02-deposits-at-other-credit-institutions|tiền gửi tại TCTD khác A.III.1]] (vbhn04_2022_sbv, Mẫu B02/TCTD, A.III.1, d.981–988) và các dòng chứng khoán. Dòng A.I còn gồm vàng bạc, đá quý (vbhn04_2022_sbv, Mẫu B02/TCTD, A.I, d.946–958), trong khi dòng VII ghi "tiền mặt tại quỹ" (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng VII, d.2566–2575). Tương đương tiền xác định theo kỳ hạn tính từ ngày mua hoặc ngày gửi (vbhn04_2022_sbv, Mẫu B04/TCTD, phương pháp trực tiếp, dòng VII, d.2566–2575). [[high-quality-liquid-assets-hqla|Tài sản thanh khoản chất lượng cao]] của LCR thì được định giá trong điều kiện căng thẳng (basel_lcr, LCR20, 20.4, d.68–70).

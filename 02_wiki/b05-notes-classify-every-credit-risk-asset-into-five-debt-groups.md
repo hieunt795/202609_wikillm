@@ -2,13 +2,13 @@
 title: b05-notes-classify-every-credit-risk-asset-into-five-debt-groups
 type: concept
 tags: [vietnam, financial-reporting, b05, loan-classification, credit-risk, provisioning]
-sources: [vbhn04_2022_sbv]
+sources: [vbhn04_2022_sbv, tt83_2025_sbv]
 status: draft
 last_updated: 2026-11-20
 reviewed: 2026-11-20
 reviewed_by: model
 part_of: [b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions]
-related: [b02-deposits-at-and-loans-to-other-credit-institutions-net-of-provisions, b02-trading-securities-gross, b02-loans-to-customers-gross, b02-debt-purchases-gross, b02-investment-securities-net-of-provisions, b02-other-assets-net-of-provisions, b02-provision-for-loans-to-customers, non-performing-loans, tt83-problem-credits-start-at-debt-group-2-and-require-restructuring-and-recovery-plans]
+related: [b02-deposits-at-and-loans-to-other-credit-institutions-net-of-provisions, b02-trading-securities-gross, b02-loans-to-customers-gross, b02-debt-purchases-gross, b02-investment-securities-net-of-provisions, b02-other-assets-net-of-provisions, b02-provision-for-loans-to-customers, tt83-problem-credits-start-at-debt-group-2-and-require-restructuring-and-recovery-plans]
 ---
 
 [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] của tổ chức tín dụng (TCTD) dùng một bảng năm nhóm nợ giống nhau cho bảy loại tài sản có rủi ro tín dụng, không riêng dư nợ cho vay khách hàng. Năm nhóm là: nợ đủ tiêu chuẩn, nợ cần chú ý, nợ dưới tiêu chuẩn, nợ nghi ngờ, nợ có khả năng mất vốn. Mỗi bảng ghi số cuối kỳ cạnh số đầu kỳ (vbhn04_2022_sbv, Mẫu B05/TCTD, V.03, d.3366–3375). Bảy chỗ bảng xuất hiện:
@@ -23,4 +23,4 @@ related: [b02-deposits-at-and-loans-to-other-credit-institutions-net-of-provisio
 
 Các bảng dự phòng đi kèm tách dự phòng chung với dự phòng cụ thể. Dòng dự phòng của chứng khoán kinh doanh, chứng khoán sẵn sàng để bán và chứng khoán giữ đến ngày đáo hạn còn có thêm dự phòng giảm giá (vbhn04_2022_sbv, Mẫu B05/TCTD, V.04.5, d.3425–3428) (vbhn04_2022_sbv, Mẫu B05/TCTD, V.08.1, d.3750–3753) (vbhn04_2022_sbv, Mẫu B05/TCTD, V.08.3, d.3768–3771). Cho vay quỹ tín dụng nhân dân và tài sản Có khác cũng chia dự phòng chung và cụ thể (vbhn04_2022_sbv, Mẫu B05/TCTD, V.03.3, d.3386–3388) (vbhn04_2022_sbv, Mẫu B05/TCTD, V.14.5, d.4010–4012). Riêng [[b02-provision-for-loans-to-customers|dự phòng cho vay khách hàng]] có bảng biến động: số đầu kỳ, trích lập hoặc hoàn nhập, sử dụng trong kỳ, số cuối kỳ, cho cả kỳ này và kỳ trước (vbhn04_2022_sbv, Mẫu B05/TCTD, V.06.2, d.3690–3703). Khi TCTD mua lại khoản nợ thuộc nhóm 2 đến nhóm 5, thuyết minh phải nêu lý do mua và ảnh hưởng tới thu nhập, chi phí (vbhn04_2022_sbv, Mẫu B05/TCTD, V.07, d.3733).
 
-Phần sau là cách đọc của wiki. Vì cùng thang năm nhóm áp cho nhiều loại tài sản, người đọc có thể cộng các bảng để có bức tranh chất lượng tài sản có rủi ro tín dụng rộng hơn tỷ lệ [[non-performing-loans|nợ xấu]] tính trên dư nợ cho vay. B05 không nói nhóm nào được tính là nợ xấu. TT83 xếp khoản tín dụng từ nhóm 2 trở lên vào diện [[tt83-problem-credits-start-at-debt-group-2-and-require-restructuring-and-recovery-plans|tín dụng có vấn đề cần kế hoạch xử lý]]. Tiêu chí xếp nhóm thuộc quy định phân loại nợ của NHNN, văn bản chưa nạp vào wiki.
+TT83 gọi mọi khoản cấp tín dụng được phân loại vào nhóm nợ 2 trở lên là [[tt83-problem-credits-start-at-debt-group-2-and-require-restructuring-and-recovery-plans|khoản cấp tín dụng có vấn đề]], cộng các khoản ngân hàng tự xếp là có vấn đề trong quy định nội bộ (tt83_2025_sbv, Điều 3, khoản 28, d.141).

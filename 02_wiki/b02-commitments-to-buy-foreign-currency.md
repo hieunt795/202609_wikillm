@@ -4,7 +4,7 @@ type: concept
 tags: [vietnam, financial-reporting, b02, off-balance-sheet, foreign-exchange]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 part_of: [b02-foreign-exchange-commitments]
 contrasts: [b02-commitments-to-sell-foreign-currency]
 ---
@@ -15,4 +15,4 @@ $$\text{NB.2a} = \text{Số dư}_{9231} + \text{Số dư}_{9233} + \text{Số d�
 
 Theo chú thích (4) của biểu, chỉ tiêu 2 lấy bằng số dư tài khoản trừ giá trị khách hàng đã ký quỹ (vbhn04_2022_sbv, Chú thích sửa đổi, chú thích (4), d.8281). Báo cáo hợp nhất lấy tổng các khoản mục tương ứng (vbhn04_2022_sbv, Mẫu B02/TCTD, ngoại bảng, cột (6), d.1738–1787).
 
-Phần sau là cách đọc của wiki. Ba tài khoản cấp 4 lẻ (9231, 9233, 9236) ghi cam kết mua, đối xứng với ba tài khoản chẵn ghi [[b02-commitments-to-sell-foreign-currency|cam kết bán]] (9232, 9234, 9237). Biểu không ghi tên từng tài khoản; số tài khoản gợi ý ba cặp mua, bán ứng với ba loại giao dịch, nhưng điều này cần hệ thống tài khoản để xác nhận. Cam kết mua chưa thực hiện làm trạng thái ngoại tệ của TCTD tăng khi tới hạn giao dịch.
+[[b02-commitments-to-sell-foreign-currency|Cam kết bán ngoại tệ]] lấy ba tài khoản 9232, 9234, 9237 (vbhn04_2022_sbv, Mẫu B02/TCTD, ngoại bảng 2, d.1756–1759).

@@ -7,7 +7,7 @@ status: draft
 last_updated: 2026-11-20
 part_of: [b02-owners-equity]
 has_part: [b02-charter-capital, b02-capital-for-construction-and-fixed-asset-purchases, b02-share-premium, b02-treasury-shares, b02-preference-shares, b02-other-capital]
-related: [tt83-capital-plan-closes-the-gap-between-projected-own-funds-and-target-capital, b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions]
+related: [b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions]
 ---
 
 Vốn của TCTD là chỉ tiêu B.VIII.1, nhóm con đầu tiên của [[b02-owners-equity|vốn chủ sở hữu B.VIII]] trên Báo cáo tình hình tài chính B02 (vbhn04_2022_sbv, Mẫu B02/TCTD, B.VIII.1, d.1575–1582). Dòng nhóm không có công thức riêng; giá trị là tổng sáu dòng con, trong đó cổ phiếu quỹ mang dấu âm (vbhn04_2022_sbv, Mẫu B02/TCTD, B.VIII.1.a–g, d.1583–1630):
@@ -26,5 +26,3 @@ $$\text{B.VIII.1} = \text{DC}_{601} + \text{DC}_{602} + (\text{DC}-\text{DN})_{6
 Báo cáo hợp nhất lấy tổng các khoản mục tương ứng, theo ô cột (6) chung cho dòng vốn chủ sở hữu, nhóm con này và dòng quỹ (vbhn04_2022_sbv, Mẫu B02/TCTD, B.VIII, d.1562–1574).
 
 Mục V.23.4 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] chi tiết vốn đầu tư của TCTD thành bốn dòng: vốn đầu tư của Nhà nước, vốn góp của cổ đông hoặc thành viên, thặng dư vốn cổ phần, cổ phiếu quỹ (số âm). Mỗi dòng tách tổng số, vốn cổ phần thường và vốn cổ phần ưu đãi, cho kỳ này và kỳ trước; kèm giá trị trái phiếu đã chuyển thành cổ phiếu trong kỳ (vbhn04_2022_sbv, Mẫu B05/TCTD, V.23.4, d.4284–4347).
-
-Phần sau là cách đọc của wiki. Nhóm B.VIII.1 là phần vốn do chủ sở hữu góp hoặc cấp, tách khỏi phần vốn tích lũy từ hoạt động (quỹ, lợi nhuận chưa phân phối) và phần chênh lệch treo ở vốn (tỷ giá, đánh giá lại) ở các dòng B.VIII.2–5. Vốn tự có dùng cho các chỉ tiêu an toàn, như trong [[tt83-capital-plan-closes-the-gap-between-projected-own-funds-and-target-capital|kế hoạch vốn theo TT83]], được xây từ các dòng vốn chủ sở hữu này cộng, trừ các khoản điều chỉnh theo quy định riêng, ngoài nguồn này.

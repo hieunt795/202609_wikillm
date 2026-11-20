@@ -4,7 +4,7 @@ type: concept
 tags: [vietnam, financial-reporting, b02, investment-property, depreciation]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 part_of: [b02-investment-property-net]
 contrasts: [b02-investment-property-cost]
 analogous: [b02-accumulated-depreciation-of-tangible-fixed-assets]
@@ -16,4 +16,4 @@ $$\text{A.XI.b} = -\,\text{DC}_{3054}$$
 
 Như toàn nhóm A.XI, công thức áp cho báo cáo của công ty con kinh doanh bất động sản; báo cáo hợp nhất lấy tổng các khoản mục tương ứng (vbhn04_2022_sbv, Mẫu B02/TCTD, A.XI, d.1277–1293). Dòng âm này đưa [[b02-investment-property-net|nhóm A.XI]] về giá trị còn lại.
 
-Phần sau là cách đọc của wiki. TK 3054 là tài khoản con thứ tư của nhóm hao mòn 305, đi cặp với [[b02-investment-property-cost|nguyên giá TK 304]], cùng quy ước với [[b02-accumulated-depreciation-of-tangible-fixed-assets|hao mòn TSCĐ hữu hình]] (TK 3051). Việc biểu yêu cầu trừ hao mòn cho thấy bất động sản đầu tư được trình bày theo giá gốc trừ hao mòn lũy kế, không theo giá trị hợp lý.
+Dòng này đi cặp với [[b02-investment-property-cost|nguyên giá A.XI.a]], lấy TK 304 (vbhn04_2022_sbv, Mẫu B02/TCTD, A.XI.a, d.1294–1301). TK 3054 cùng nhóm hao mòn 305 với [[b02-accumulated-depreciation-of-tangible-fixed-assets|hao mòn TSCĐ hữu hình]], lấy TK 3051 (vbhn04_2022_sbv, Mẫu B02/TCTD, A.X.1.b, d.1219–1226).

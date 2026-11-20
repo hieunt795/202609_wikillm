@@ -22,4 +22,4 @@ Mục VII.35 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-
 
 Trên báo cáo riêng, hai dòng cuối ghi 0 (vbhn04_2022_sbv, Mẫu B05/TCTD, VII.35, d.4642–4651).
 
-Phần sau là cách đọc của wiki. Đây là phần áp riêng cho B04 của các bước loại trừ chung khi [[vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately|hợp nhất báo cáo TCTD theo VAS 25]]. Bản trực tiếp phải cộng từng báo cáo con. Do đó mọi đơn vị trong tập đoàn phải dùng chung phương pháp trực tiếp.
+Ba nguyên tắc trên là phần áp riêng cho B04 của bước loại trừ nội bộ chung khi [[vietnamese-credit-institution-consolidated-statements-eliminate-intragroup-items-and-show-non-controlling-interests-separately|hợp nhất báo cáo TCTD]] (vbhn04_2022_sbv, Mẫu B04/TCTD, ghi chú 2, d.3142–3150).

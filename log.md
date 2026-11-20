@@ -1718,3 +1718,35 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 ## [2026-11-20:19-40-37] lint | rà đoạn "cách đọc của wiki" trên các node VBHN 04
 - bỏ hoặc thu hẹp câu suy luận không có nguồn trên 30 trang: kiến thức VAS chưa nạp (quyền kiểm soát, nguồn gốc lợi thế thương mại), khái quát "thường", hệ quả định lượng; viết lại đoạn cách đọc của A.IX, lợi thế thương mại, lợi ích cổ đông không kiểm soát; bỏ 2 câu "chưa nạp" đã cũ
 - chỉ xử lý 113 câu có từ dấu hiệu; còn khoảng 400 câu cách đọc chưa đọc lại; --graph mất 7 link theo các câu bị bỏ
+
+## [2026-11-20:20-17-28] lint | bỏ cụm "Phần sau là cách đọc của wiki", lô 1 rà câu cách đọc
+- lô 1 (17 trang B05, B05a, tóm lược, equity method, NCI, trạng thái ngoại tệ, VAMC, bên liên quan, A01, bộ phận): câu có nguồn viết lại kèm chú thích, câu suy luận hoặc tự quy chiếu bị xoá; thêm nguồn tt83_2025_sbv, basel_lcr vào 4 trang
+- xoá cụm mở đầu trên 160 trang còn lại, nội dung sau cụm giữ nguyên chờ rà theo lô (B03, B04, B02); --graph mất 5 link theo câu bị xoá
+
+## [2026-11-20:20-32-04] lint | rà câu cách đọc lô 2, 23 trang B03
+- câu có nguồn viết lại kèm chú thích (B03, B05 VI, dòng B02 tương ứng, Điều 3 và 21); xoá suy luận, câu "chưa nạp", khuyến nghị; xoá cả đoạn ở trang chi phí dịch vụ
+- sửa 3 câu sai: V.23.2 có bốn nội dung (lãi cơ bản), VI.26 đã nạp (thu nhập dịch vụ), bỏ cụm "thoái thu" (thu nhập lãi); --graph mất 2 link (foreign-currency-position, trading-book), thêm 1 link
+
+## [2026-11-20:21-07-29] lint | rà câu cách đọc lô 3a, 24 trang B04 (tiền và tương đương tiền, thay đổi tài sản và công nợ, phương pháp trực tiếp 01–08)
+- câu có nguồn viết lại kèm chú thích (B04 trực tiếp, dòng B02, B03 tương ứng); xoá suy luận về mục đích của biểu, khái quát "với ngân hàng…", câu tự quy chiếu; thêm basel_lcr vào trang tiền và tương đương tiền
+- bỏ 2 câu sai: "B04 không có công thức tài khoản", "dòng III B03 gồm đánh giá lại trạng thái ngoại tệ"; --graph mất 1 link (phương pháp trực tiếp → B03 III), thêm 2 link
+
+## [2026-11-20:21-10-39] lint | rà câu cách đọc lô 3b, 25 trang B04 (đầu tư, tài chính, dòng tổng, dòng trực tiếp 06, 07, 13)
+- câu có nguồn viết lại kèm chú thích (B04 trực tiếp, dòng B02, B03, B05 tương ứng); xoá suy luận mục đích, khuyến nghị, câu "chưa nạp"; xoá cả đoạn ở trang IV và I; câu Conflict trang hoạt động tài chính đổi thành "Chờ người dùng xử lý"
+- bỏ 3 câu sai: "dòng 18/23", dòng 03 "không đánh dấu (*)", "lãi lỗ thanh lý không ở hoạt động kinh doanh"; --graph mất 3 link, thêm 2 link
+
+## [2026-11-20:21-14-25] lint | rà câu cách đọc lô 4a, 22 trang B02 (hao mòn, chênh lệch đánh giá lại → tiền gửi và vay Chính phủ, NHNN)
+- câu có nguồn viết lại kèm chú thích (B02, B05, Điều 21, IMF Box 5.5, TT50); xoá suy luận, câu "ngoài nguồn này", khuyến nghị; xoá cả đoạn ở 5 trang; thêm imf_macro_accounting, tt50_2026_sbv vào 3 trang
+- sửa 4 câu sai "V.07, V.10–V.12 chưa nạp", bỏ câu có thể sai về chênh lệch đánh giá lại; ⚠️ Conflict mới ở chứng khoán sẵn sàng để bán (chú thích (1)(2) và dòng A.VIII.2 về TK 12); --graph mất 9 link
+
+## [2026-11-20:21-19-26] lint | rà câu cách đọc lô 4b, 22 trang B02 (tiền gửi và cho vay TCTD → nguyên giá bất động sản đầu tư)
+- câu có nguồn viết lại kèm chú thích (B02, B05, Điều 21, IMF, Basel LCR, TT50); xoá suy luận, khuyến nghị, so sánh có điều kiện; xoá cả đoạn ở trang vốn ủy thác; thêm basel_lcr, imf_macro_accounting, tt50_2026_sbv vào 3 trang
+- sửa 5 câu sai: trích TT50 nhầm cho tiền gửi vận hành (đúng là Basel), "B.VIII.4, IV.7, ngoại bảng 7 chưa nạp"; --graph mất 2 link
+
+## [2026-11-20:21-23-04] lint | rà câu cách đọc lô 4c, 22 trang B02 (bất động sản đầu tư → các khoản phải trả)
+- câu có nguồn viết lại kèm chú thích (B02, B05, Điều 21–22, IMF, Basel LCR, TT50); xoá suy luận, khuyến nghị, câu "chưa nạp"; bỏ cột "đối ứng phía tài sản" tự dựng ở trang nhóm B.VII; 02_wiki không còn chuỗi "cách đọc của wiki"
+- sửa 2 câu sai: trích TT50 nhầm cho L/C (đúng là Basel), "V.06 chưa nạp"; --graph mất 6 link
+
+## [2026-11-20:23-09-01] lint | rà câu cách đọc lô 4d, 23 trang B02 (dự phòng công nợ tiềm ẩn → nợ khó đòi đã xử lý, gồm trang tổng B02)
+- câu có nguồn viết lại kèm chú thích (B02, B03, B04, B05, Điều 21, IMF, TT50, TT83); xoá suy luận, khuyến nghị, câu "chưa nạp"; sửa chuỗi "]]|" thừa trên trang tổng B02; xong rà 177 trang có cụm "cách đọc của wiki"
+- sửa 5 câu sai "V.06.2, V.23, V.20, B.VIII.4, thu hồi nợ chưa nạp"; --graph mất 9 link (gồm provision A.XII.5 → dự phòng cho vay, ngoài dự kiến)

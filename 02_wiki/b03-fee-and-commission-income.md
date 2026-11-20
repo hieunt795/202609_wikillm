@@ -4,7 +4,7 @@ type: concept
 tags: [vietnam, financial-reporting, b03, fee-income]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-19
+last_updated: 2026-11-20
 part_of: [b03-net-gain-or-loss-from-services]
 contrasts: [b03-fee-and-commission-expenses]
 ---
@@ -15,4 +15,4 @@ $$\text{Dòng 3} = \text{DC}_{71}$$
 
 Cột (6) ghi "Như trên" cho cả ba dòng 3, 4 và II, tức cách hợp nhất giống dòng 1: cộng chỉ tiêu của các đơn vị trong tập đoàn và loại trừ giao dịch nội bộ (vbhn04_2022_sbv, Mẫu B03/TCTD, dòng 3, cột 6, d.1897) (vbhn04_2022_sbv, Mẫu B03/TCTD, dòng 1, cột 6, d.1867–1872). Dòng này trừ [[b03-fee-and-commission-expenses|chi phí dịch vụ dòng 4]] ra [[b03-net-gain-or-loss-from-services|lãi/lỗ thuần từ dịch vụ II]].
 
-Phần sau là cách đọc của wiki. Dòng 3 không có mục thuyết minh riêng; phân tích thu nhập phí theo loại dịch vụ nằm ở thuyết minh VI.26 gắn với dòng II, chưa nạp vào wiki. Biểu ghi cả nhóm 71 mà không liệt kê tài khoản con.
+Dòng 3 không có mục thuyết minh riêng (vbhn04_2022_sbv, Mẫu B03/TCTD, dòng 3, d.1890–1898). Mục VI.26 gắn với dòng II nêu các khoản thu nhập, chi phí chính từ phí dịch vụ (vbhn04_2022_sbv, Mẫu B05/TCTD, VI.26, d.4410).

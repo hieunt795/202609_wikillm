@@ -26,4 +26,4 @@ Mục này còn một bảng thông tin khác về TSCĐ hữu hình (vbhn04_202
 - nguyên giá tài sản đã khấu hao hết nhưng vẫn dùng;
 - giá trị còn lại của tài sản đang chờ thanh lý.
 
-Phần sau là cách đọc của wiki. Nguyên giá là giá trị ghi nhận ban đầu của tài sản và không giảm theo thời gian sử dụng; phần giá trị đã tiêu dùng được ghi riêng ở [[b02-accumulated-depreciation-of-tangible-fixed-assets|dòng hao mòn A.X.1.b]]. Ba loại TSCĐ dùng ba tài khoản cấp 3 liền nhau (301 hữu hình, 302 vô hình, 303 thuê tài chính), nhưng thứ tự dòng trên biểu là hữu hình, thuê tài chính, vô hình.
+Phần hao mòn trừ khỏi nguyên giá ghi riêng ở [[b02-accumulated-depreciation-of-tangible-fixed-assets|dòng hao mòn A.X.1.b]] (vbhn04_2022_sbv, Mẫu B02/TCTD, A.X.1.b, d.1219–1226). Ba loại TSCĐ dùng ba tài khoản cấp 3 liền nhau (301 hữu hình, 302 vô hình, 303 thuê tài chính), nhưng thứ tự dòng trên biểu là hữu hình, thuê tài chính, vô hình (vbhn04_2022_sbv, Mẫu B02/TCTD, A.X.1–3, d.1198–1276).

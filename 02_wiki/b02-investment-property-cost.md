@@ -18,4 +18,4 @@ Công thức này áp cho báo cáo của công ty con kinh doanh bất động 
 
 Mục V.13 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] chỉ áp cho báo cáo hợp nhất. Mục này trình bày bất động sản đầu tư của tập đoàn TCTD theo bốn loại: quyền sử dụng đất, nhà, nhà và quyền sử dụng đất, bất động sản đầu tư khác. Mỗi phần nguyên giá, hao mòn lũy kế và giá trị còn lại có cột số đầu năm, tăng, giảm, số cuối năm (vbhn04_2022_sbv, Mẫu B05/TCTD, V.13, d.3945–3956).
 
-Phần sau là cách đọc của wiki. TK 304 nằm ngay sau ba tài khoản nguyên giá TSCĐ 301–303 trong nhóm 30, và [[b02-accumulated-depreciation-of-investment-property|hao mòn tương ứng]] dùng TK 3054, cùng quy ước chữ số cuối như ba loại TSCĐ.
+Hao mòn tương ứng là [[b02-accumulated-depreciation-of-investment-property|dòng A.XI.b]], lấy TK 3054 (vbhn04_2022_sbv, Mẫu B02/TCTD, A.XI.b, d.1302–1309).

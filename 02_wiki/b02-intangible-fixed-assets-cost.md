@@ -28,4 +28,4 @@ Mục này có thêm bảng TSCĐ vô hình đặc biệt với bốn cột: ngu
 - chi phí trong giai đoạn nghiên cứu, triển khai;
 - cam kết mua, bán TSCĐ vô hình giá trị lớn trong tương lai (vbhn04_2022_sbv, Mẫu B05/TCTD, V.12, d.3935–3943).
 
-Phần sau là cách đọc của wiki. Nguyên giá là giá trị ghi nhận ban đầu của tài sản và không giảm theo thời gian sử dụng; phần giá trị đã tiêu dùng được ghi riêng ở [[b02-accumulated-amortisation-of-intangible-fixed-assets|dòng hao mòn A.X.3.b]]. Ba loại TSCĐ dùng ba tài khoản cấp 3 liền nhau (301 hữu hình, 302 vô hình, 303 thuê tài chính), nhưng thứ tự dòng trên biểu là hữu hình, thuê tài chính, vô hình.
+Phần hao mòn trừ khỏi nguyên giá ghi riêng ở [[b02-accumulated-amortisation-of-intangible-fixed-assets|dòng hao mòn A.X.3.b]] (vbhn04_2022_sbv, Mẫu B02/TCTD, A.X.3.b, d.1269–1276). Ba loại TSCĐ dùng ba tài khoản cấp 3 liền nhau (301 hữu hình, 302 vô hình, 303 thuê tài chính), nhưng thứ tự dòng trên biểu là hữu hình, thuê tài chính, vô hình (vbhn04_2022_sbv, Mẫu B02/TCTD, A.X.1–3, d.1198–1276).

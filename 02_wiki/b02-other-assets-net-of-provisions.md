@@ -7,7 +7,7 @@ status: draft
 last_updated: 2026-11-20
 part_of: [b02-statement-of-financial-position-of-vietnamese-credit-institutions]
 has_part: [b02-receivables, b02-interest-and-fees-receivable, b02-deferred-income-tax-assets, b02-other-assets, b02-provision-for-other-on-balance-sheet-assets]
-related: [b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions, b05-notes-classify-every-credit-risk-asset-into-five-debt-groups]
+related: [b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions, b05-notes-classify-every-credit-risk-asset-into-five-debt-groups, b02-other-liabilities]
 ---
 
 Tài sản Có khác là chỉ tiêu nhóm A.XII, nhóm cuối của phía tài sản trên [[b02-statement-of-financial-position-of-vietnamese-credit-institutions|Báo cáo tình hình tài chính B02]], thuyết minh ở mục V.14 (vbhn04_2022_sbv, Mẫu B02/TCTD, A.XII, d.1310–1322). Dòng nhóm là tổng năm dòng con (vbhn04_2022_sbv, Mẫu B02/TCTD, A.XII.1–5, d.1323–1380):
@@ -33,4 +33,4 @@ Bốn mục con còn lại của V.14 gồm:
 - V.14.4: [[b05-notes-classify-every-credit-risk-asset-into-five-debt-groups|bảng năm nhóm nợ]] cho phần tài sản Có khác có rủi ro tín dụng (vbhn04_2022_sbv, Mẫu B05/TCTD, V.14.4, d.3994–4003);
 - V.14.5: dự phòng, chia thành dự phòng giảm giá hàng tồn kho, dự phòng rủi ro tín dụng (chung, cụ thể) và dự phòng rủi ro khác chi tiết theo tính trọng yếu (vbhn04_2022_sbv, Mẫu B05/TCTD, V.14.5, d.4005–4015).
 
-Phần sau là cách đọc của wiki. A.XII gom các khoản dồn tích và khoản phải thu phát sinh từ hoạt động, khác các nhóm tài sản sinh lãi phía trên. Nhóm này cũng chứa nhiều tài khoản đổi bên theo dấu số dư nhất (453, 458, 50–56), và mỗi tài khoản đó có một dòng đối ứng bên nợ phải trả. Muốn đối chiếu đủ thì phải đọc nhóm A.XII cùng nhóm nợ khác B.VII.
+TK 458 và các nhóm 50, 51, 52, 56 vào A.XII.4 khi dư Nợ (vbhn04_2022_sbv, Mẫu B02/TCTD, A.XII.4, d.1351–1363). Nhóm 50–56 vào B.VII.3 khi dư Có (vbhn04_2022_sbv, Mẫu B02/TCTD, B.VII.3, d.1534–1545), thuộc [[b02-other-liabilities|nhóm các khoản nợ khác B.VII]].

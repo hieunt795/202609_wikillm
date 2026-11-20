@@ -28,4 +28,4 @@ $$\text{B.VIII.5}_{\text{giữa niên độ}} = \underbrace{(\text{TK loại 7} 
 
 Cách tách này nằm trong [[vietnamese-credit-institution-interim-statements-come-in-full-or-condensed-form-under-vas-27|mẫu báo cáo giữa niên độ dạng đầy đủ]].
 
-Phần sau là cách đọc của wiki. Dòng này là chỗ nối B02 với báo cáo kết quả hoạt động B03: lợi nhuận sau thuế trong năm, sau khi trích [[b02-reserve-funds-of-the-credit-institution|quỹ B.VIII.2]] và chia cổ tức, làm thay đổi số dư nhóm 69. Phía B03 của mối nối là [[b03-profit-after-tax|lợi nhuận sau thuế XIII]].
+Phía B03 là [[b03-profit-after-tax|lợi nhuận sau thuế XIII]] (vbhn04_2022_sbv, Mẫu B03/TCTD, dòng XIII, d.2049–2057). Bảng V.23.1 ghi các khoản giảm như tạm trích lập các quỹ và chia cổ tức (vbhn04_2022_sbv, Mẫu B05/TCTD, V.23.1, d.4256); các quỹ nằm ở [[b02-reserve-funds-of-the-credit-institution|quỹ B.VIII.2]] (vbhn04_2022_sbv, Mẫu B02/TCTD, B.VIII.2, d.1631–1639).

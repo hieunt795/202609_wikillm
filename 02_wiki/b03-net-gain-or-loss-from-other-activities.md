@@ -18,4 +18,4 @@ $$\text{VI} = \text{Dòng 5} - \text{Dòng 6}$$
 
 Mục VI.31 của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] không có bảng mẫu: TCTD nêu số liệu thu, chi chi tiết cho từng loại hoạt động (vbhn04_2022_sbv, Mẫu B05/TCTD, VI.31, d.4456).
 
-Phần sau là cách đọc của wiki. Số thuyết minh của dòng VI (VI.31) đứng sau số của dòng VII (VI.30), ngược thứ tự dòng trên biểu. Biểu không giải thích; có thể thứ tự mục thuyết minh giữ theo mẫu trước khi dòng VII được sửa bởi Thông tư 27/2021/TT-NHNN (vbhn04_2022_sbv, Chú thích sửa đổi, chú thích 94, d.8293).
+Số thuyết minh của dòng VI là VI.31, đứng sau số VI.30 của dòng VII, ngược thứ tự dòng trên biểu (vbhn04_2022_sbv, Mẫu B03/TCTD, dòng VI, d.1960–1968) (vbhn04_2022_sbv, Mẫu B03/TCTD, dòng VII, d.1969–1981).

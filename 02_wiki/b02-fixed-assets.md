@@ -20,4 +20,4 @@ Tài sản cố định là chỉ tiêu nhóm A.X của [[b02-statement-of-finan
 
 $$\text{A.X} = \left(\text{DN}_{301}-\text{DC}_{3051}\right) + \left(\text{DN}_{303}-\text{DC}_{3053}\right) + \left(\text{DN}_{302}-\text{DC}_{3052}\right)$$
 
-Phần sau là cách đọc của wiki. Khác các nhóm tài sản tài chính phía trên, nhóm A.X không có dòng dự phòng: phần giảm giá trị được phản ánh qua hao mòn, tài khoản 305 với ba tài khoản con. Bất động sản mà công ty con kinh doanh bất động sản nắm giữ để đầu tư không nằm ở nhóm này mà ở [[b02-investment-property-net|chỉ tiêu A.XI]], dù dùng tài khoản cùng nhóm 30 (TK 304).
+Nhóm A.X không có dòng dự phòng; dòng âm của mỗi loại là hao mòn lấy từ TK 305x (vbhn04_2022_sbv, Mẫu B02/TCTD, A.X, d.1189–1276). Bất động sản đầu tư nằm ở [[b02-investment-property-net|chỉ tiêu A.XI]], dùng TK 304 cùng nhóm 30 (vbhn04_2022_sbv, Mẫu B02/TCTD, A.XI, d.1277–1301).

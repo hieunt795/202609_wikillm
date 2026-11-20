@@ -18,4 +18,4 @@ Chỉ tiêu này không thuộc phạm vi trừ ký quỹ của chú thích (4) 
 
 Mục VIII.40a của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] chia chỉ tiêu này thành bốn dòng: lãi cho vay chưa thu được, lãi chứng khoán chưa thu được, lãi tiền gửi chưa thu được, phí phải thu chưa thu được (vbhn04_2022_sbv, Mẫu B05/TCTD, VIII.40a, d.4758–4766). Bảng vì vậy gồm cả lãi chứng khoán và lãi tiền gửi, rộng hơn chữ "lãi cho vay" trong tên chỉ tiêu. Mục này do Thông tư 27/2021/TT-NHNN bổ sung (vbhn04_2022_sbv, Chú thích sửa đổi, chú thích 144, d.8395).
 
-Phần sau là cách đọc của wiki. Lãi, phí đã đến hạn mà chưa thu được nằm ở đây, còn [[b02-interest-and-fees-receivable|lãi, phí phải thu A.XII.2]] trong bảng là lãi dự thu được ghi nhận vào thu nhập. Một khoản lãi đi ra ngoài bảng thì không còn được tính vào thu nhập cho tới khi thu được tiền. Dòng này vì vậy cho biết phần lãi từ các khoản vay có vấn đề. Tiêu chí chuyển lãi ra ngoại bảng nằm ở quy định phân loại nợ, ngoài nguồn này.
+Lãi dự thu trong bảng nằm ở [[b02-interest-and-fees-receivable|lãi, phí phải thu A.XII.2]] (vbhn04_2022_sbv, Mẫu B02/TCTD, A.XII.2, d.1335–1342).

@@ -15,4 +15,4 @@ $$\text{NB.5} = \text{Số dư}_{922} + \text{Số dư}_{926} + \text{Số dư}_
 
 Theo chú thích (4) của biểu, chỉ tiêu 5 lấy bằng số dư tài khoản trừ giá trị khách hàng đã ký quỹ (vbhn04_2022_sbv, Chú thích sửa đổi, chú thích (4), d.8281). Báo cáo hợp nhất lấy tổng các khoản mục tương ứng (vbhn04_2022_sbv, Mẫu B02/TCTD, ngoại bảng, cột (6), d.1738–1787).
 
-Phần sau là cách đọc của wiki. Dòng gom mọi loại bảo lãnh trừ [[b02-loan-guarantees|bảo lãnh vay vốn]], theo bốn tài khoản không liền nhau trong nhóm 92. TK 922 nằm ngay sau TK 921 của bảo lãnh vay vốn, còn 926–928 đứng sau các cam kết hối đoái, cho vay và L/C. Biểu không ghi tên từng tài khoản.
+Dòng gom các loại bảo lãnh trừ [[b02-loan-guarantees|bảo lãnh vay vốn]] lấy TK 921 (vbhn04_2022_sbv, Mẫu B02/TCTD, ngoại bảng 1, d.1738–1746). Bốn tài khoản của dòng không liền nhau: 922, 926, 927, 928 (vbhn04_2022_sbv, Mẫu B02/TCTD, ngoại bảng 5, d.1778–1782).
