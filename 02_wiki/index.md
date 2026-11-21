@@ -1359,7 +1359,7 @@
 **Báo cáo lưu chuyển tiền tệ B04/TCTD — phương pháp trực tiếp, nối với B02, B03**
 - [[b04-cash-flow-statement-of-vietnamese-credit-institutions]] — trang tổng: ba hoạt động, wiki chỉ theo phương pháp trực tiếp, IV = I + II + III = VII − VI − V, quy ước dấu (*)
 - [[b04-direct-method-converts-accrued-income-and-expenses-into-cash-received-and-paid]] — dòng 01–08 trực tiếp: dự thu đầu kỳ + phát sinh − dự thu cuối kỳ; dòng 04 lấy thẳng III + IV + V của B03
-- [[b04-changes-in-operating-assets-and-liabilities-are-period-changes-of-b02-lines]] — bảng ghép dòng 09–22 với chỉ tiêu B02; ⚠️ Conflict dòng 11 trực tiếp dẫn chỉ tiêu phía nợ
+- [[b04-changes-in-operating-assets-and-liabilities-are-period-changes-of-b02-lines]] — bảng ghép dòng 09–22 với chỉ tiêu B02; dòng 11 trực tiếp ghi nhầm chỉ tiêu phía nợ (lỗi đánh máy)
 - [[b04-investing-cash-flows-of-vietnamese-credit-institutions]] — mục II: TSCĐ, bất động sản đầu tư (chỉ công ty con kinh doanh bất động sản), góp vốn, cổ tức
 - [[b04-financing-cash-flows-of-vietnamese-credit-institutions]] — mục III: vốn cổ phần, giấy tờ có giá dài hạn tính vào vốn tự có, cổ tức, cổ phiếu quỹ; ⚠️ Conflict dòng 03
 - [[b04-cash-and-cash-equivalents-of-vietnamese-credit-institutions]] — dòng VII: năm loại khoản mục, ngưỡng 3 tháng; khác HQLA
@@ -1381,7 +1381,7 @@
 - [[b04-effect-of-exchange-rate-changes-on-cash-and-cash-equivalents]] — VI: ảnh hưởng tỷ giá lên tiền và tương đương tiền
 - [[b04-change-in-deposits-at-and-loans-to-other-credit-institutions]] — dòng 09: Δ tiền gửi, cho vay TCTD khác A.III, trừ tương đương tiền
 - [[b04-change-in-securities-trading-items]] — dòng 10: Δ tín phiếu, chứng khoán kinh doanh và đầu tư
-- [[b04-change-in-derivatives-and-other-financial-assets]] — dòng 11: Δ phái sinh phía tài sản; ⚠️ Conflict cách lấy dẫn chỉ tiêu phía nợ
+- [[b04-change-in-derivatives-and-other-financial-assets]] — dòng 11: Δ phái sinh phía tài sản (A.V); cách lấy ghi nhầm chỉ tiêu phía nợ
 - [[b04-change-in-loans-to-customers]] — dòng 12: Δ dư nợ cho vay khách hàng gộp
 - [[b04-change-in-other-operating-assets]] — dòng 14: Δ phải thu, tài sản có khác; điều chỉnh tỷ giá, đánh giá lại
 - [[b04-change-in-amounts-due-to-the-government-and-the-sbv]] — dòng 15: Δ nợ Chính phủ và NHNN

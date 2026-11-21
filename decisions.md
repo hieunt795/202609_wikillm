@@ -388,3 +388,9 @@ Schema chỉ giữ luật; lý do dời về đây theo từng mục.
 - **Quyết định (người dùng):** Báo cáo lưu chuyển tiền tệ B04/TCTD (`vbhn04_2022_sbv`) chỉ ghi theo phương pháp trực tiếp; mỗi dòng một node. Phương pháp gián tiếp (d.2584–3129) được gỡ khỏi wiki và ghi `bỏ qua:` trong `03_state/vbhn04_2022_sbv.md`.
 - **Đã gỡ:** trang nhóm `b04-indirect-method-…`, cột gián tiếp trong bảng thay đổi tài sản/công nợ, số dòng gián tiếp trên các node B02, link từ `b03-total-profit-before-tax`. Trang tổng B04 giữ một câu nêu biểu có hai mẫu.
 - **Hệ quả:** ⚠️ Conflict dòng 11 (phái sinh) nay chỉ dựa trên chỗ lệch giữa tên dòng và cột cách lấy của bản trực tiếp.
+
+## [2026-11-21] B04 dòng 11: cột cách lấy số liệu là lỗi đánh máy
+
+- **Quyết định (người dùng):** trong `vbhn04_2022_sbv`, Mẫu B04/TCTD phương pháp trực tiếp, dòng 11 "(Tăng)/Giảm các công cụ tài chính phái sinh và các tài sản tài chính khác" có cột cách lấy số liệu dẫn chỉ tiêu "... các khoản nợ tài chính khác" (d.2229–2240). Đây là lỗi đánh máy; wiki ghi dòng 11 lấy chênh lệch của chỉ tiêu B02 A.V và gỡ ⚠️ Conflict. Đóng hệ quả nêu ở mục [2026-11-19] B04.
+- **Lý do:** tên dòng và dấu (Tăng)/Giảm chỉ phía tài sản; chỉ tiêu phía nợ đã có dòng 20 với tên và cách lấy khớp nhau (d.2353–2360). Dòng 13 cùng tên của phương pháp gián tiếp dẫn đúng chỉ tiêu phía tài sản (d.2745–2755); căn cứ này chỉ ghi ở đây, không đưa lên trang, vì wiki đã gỡ phương pháp gián tiếp.
+- **Tiền lệ:** lần đầu wiki đọc một chỗ trong nguồn là lỗi soạn thảo. Chỉ áp khi người dùng quyết từng trường hợp; `01_sources/` giữ nguyên, trang ghi rõ chữ trong nguồn và nói đó là lỗi đánh máy. Hai lệch số thuyết minh (B.VII → V.22, XII.5 → V.14.3) chưa được quyết theo tiền lệ này.

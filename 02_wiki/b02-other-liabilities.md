@@ -4,7 +4,7 @@ type: concept
 tags: [vietnam, financial-reporting, b02, other-liabilities]
 sources: [vbhn04_2022_sbv]
 status: draft
-last_updated: 2026-11-20
+last_updated: 2026-11-21
 part_of: [b02-statement-of-financial-position-of-vietnamese-credit-institutions]
 has_part: [b02-interest-and-fees-payable, b02-deferred-income-tax-liabilities, b02-other-payables-and-liabilities, b02-other-provisions-for-contingent-liabilities]
 contrasts: [b02-other-assets-net-of-provisions]
@@ -24,4 +24,4 @@ Cộng B.VII với sáu nhóm trước ra tổng nợ phải trả (vbhn04_2022_
 
 Mục V.21 "Các khoản nợ khác" của [[b05-notes-to-the-financial-statements-of-vietnamese-credit-institutions|Thuyết minh B05]] có các dòng: phải trả nội bộ, phải trả bên ngoài, [[b02-other-provisions-for-contingent-liabilities|dự phòng rủi ro khác]] và quỹ khen thưởng, phúc lợi (vbhn04_2022_sbv, Mẫu B05/TCTD, V.21, d.4215–4226).
 
-⚠️ Conflict: biểu B02 dẫn nhóm B.VII tới thuyết minh V.22 (vbhn04_2022_sbv, Mẫu B02/TCTD, B.VII, d.1499–1507). Trong mẫu B05, mục V.22 là thuế thu nhập hoãn lại, còn "Các khoản nợ khác" là mục V.21 (vbhn04_2022_sbv, Mẫu B05/TCTD, V.21–V.22, d.4215, d.4228). Chờ người dùng xử lý.
+⚠️ Conflict: dòng nhóm B.VII trên biểu B02 dẫn thuyết minh V.22 (vbhn04_2022_sbv, Mẫu B02/TCTD, B.VII, d.1499–1507). Các dòng con dẫn khác: VII.2 dẫn V.22.2, VII.3 và VII.4 dẫn V.21, VII.1 không dẫn mục nào (vbhn04_2022_sbv, Mẫu B02/TCTD, B.VII.1–4, d.1508–1553). Trong mẫu B05, mục V.21 là "Các khoản nợ khác", mục V.22 là thuế thu nhập hoãn lại (vbhn04_2022_sbv, Mẫu B05/TCTD, V.21–V.22, d.4215, d.4228). Chờ người dùng xử lý số thuyết minh của dòng nhóm.

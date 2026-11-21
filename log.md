@@ -1750,3 +1750,13 @@ Rà lại bảng cân đối MA/DMB (Box 5.1/5.2/5.5/5.6) và công thức số 
 ## [2026-11-20:23-09-01] lint | rà câu cách đọc lô 4d, 23 trang B02 (dự phòng công nợ tiềm ẩn → nợ khó đòi đã xử lý, gồm trang tổng B02)
 - câu có nguồn viết lại kèm chú thích (B02, B03, B04, B05, Điều 21, IMF, TT50, TT83); xoá suy luận, khuyến nghị, câu "chưa nạp"; sửa chuỗi "]]|" thừa trên trang tổng B02; xong rà 177 trang có cụm "cách đọc của wiki"
 - sửa 5 câu sai "V.06.2, V.23, V.20, B.VIII.4, thu hồi nợ chưa nạp"; --graph mất 9 link (gồm provision A.XII.5 → dự phòng cho vay, ngoài dự kiến)
+
+## [2026-11-21:18-44-54] lint | Xử lý hai ⚠️ Conflict trên trang B02 (VBHN 04)
+- `b02-available-for-sale-investment-securities`: gỡ Conflict TK 12; chú thích (1)(2) dùng "có thể", không loại trừ A.VIII.2, viết lại thành câu mô tả kèm dự phòng TK 129.
+- `b02-other-liabilities`: giữ Conflict, nêu thêm thuyết minh của các dòng con B.VII.1–4 (V.22.2, V.21).
+- Conflict B04 dòng 11 (trang phái sinh) để lượt sau. `--all`: 1247 trang, 0 vấn đề; `--graph`: không thay đổi vượt ngưỡng.
+
+## [2026-11-21:20-08-11] lint | Xử lý ⚠️ Conflict B04 dòng 11 (phái sinh phía tài sản) theo quyết định người dùng
+- Người dùng xác định cột cách lấy số dòng 11 trực tiếp ghi "khoản nợ tài chính" là lỗi đánh máy; dòng 11 lấy chênh lệch A.V. Trang chỉ dẫn căn cứ trực tiếp (dòng 20); lý do đầy đủ ở decisions.md.
+- Gỡ Conflict trên trang nhóm thay đổi tài sản, công nợ B04, trang dòng 11 B04, trang A.V B02; cập nhật 2 dòng index.md.
+- `--all`: 1247 trang, 0 vấn đề; `--graph`: không thay đổi vượt ngưỡng.
